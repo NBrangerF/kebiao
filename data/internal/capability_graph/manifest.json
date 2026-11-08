@@ -1,5 +1,5 @@
 {
-  "alignment_fingerprint": "c98c911738e8a6c234a9c59e3921caf73d107945a2ad6f1a57197f87eb0661dc",
+  "alignment_fingerprint": "76fe5a312edf7a2930e7c1ef507985ec9bddfe7fd6818c65314b89d1dbc809a6",
   "alignment_policy": {
     "L0_gap": "当前教材库无同学科同学段范围；明确记录缺口。",
     "L1_scope": "同学科同学段适用范围，不构成具体单元证据。",
@@ -8,7 +8,7 @@
     "L4_teacher_guide": "教师用书目标与教材正文或练习自动交叉印证，并保留两侧逐字证据与来源版本。",
     "L5_official_crosswalk": "保留给出版方或官方明示的课标映射。"
   },
-  "build_id": "capability-graph-4f2588e6-4f44a9f16b-c98c911738",
+  "build_id": "capability-graph-4f2588e6-4f44a9f16b-76fe5a312e",
   "component_decomposition_policy": {
     "default_method": "deterministic_clause_decomposition_v2",
     "fingerprint": "d948c92b3102e11f61b7b99032d1f319300b4c360cb1f6d25496ca3a685a219c",
@@ -53,8 +53,8 @@
     "english": {
       "gaps": 0,
       "learning_components": 515,
-      "page_alignments": 1,
-      "scope_alignments": 680,
+      "page_alignments": 2,
+      "scope_alignments": 1090,
       "standards": 236,
       "unit_alignments": 0,
       "unit_topic_candidates": 0
@@ -80,10 +80,10 @@
     "math": {
       "gaps": 0,
       "learning_components": 525,
-      "page_alignments": 113,
-      "scope_alignments": 428,
+      "page_alignments": 251,
+      "scope_alignments": 856,
       "standards": 164,
-      "unit_alignments": 116,
+      "unit_alignments": 126,
       "unit_topic_candidates": 0
     },
     "morality_law": {
@@ -120,11 +120,11 @@
     "forward_connections": 1709,
     "hardest_cases": 2958,
     "learning_components": 5226,
-    "page_alignments": 605,
+    "page_alignments": 744,
     "prerequisite_candidates": 1719,
-    "scope_alignments": 6174,
+    "scope_alignments": 7012,
     "standards": 2025,
-    "unit_alignments": 239,
+    "unit_alignments": 249,
     "unit_topic_candidates": 0,
     "verified_prerequisites": 0
   }

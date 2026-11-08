@@ -86,12 +86,177 @@
     "evidence_note": "已有教材正文、任务或练习的页内证据；关系由机器自动生成并附带原文定位、证据哈希和置信度。",
     "gap_reason": null,
     "highest_evidence_level": "L3_page_evidence",
-    "page_evidence_count": 1,
-    "scope_count": 4,
-    "specific_count": 6,
+    "page_evidence_count": 4,
+    "scope_count": 8,
+    "specific_count": 9,
     "unit_topic_candidate_count": 0
   },
   "curriculum_alignments": [
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_04900be12b3940fb",
+      "alignment_type": "practices",
+      "confidence": 0.92,
+      "coverage": "partial",
+      "edition_id": "ed_1a83ac0b357a32c7a13d",
+      "evidence_basis": "textbook_page_span",
+      "evidence_gap": null,
+      "evidence_level": "L3_page_evidence",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_primary_grade_4_down",
+        "tes_d683be48d81f5b05",
+        "textbook-node:tcn_81c6ebbce3a81d75",
+        "textbook-unit:tcu_7297df06a8fdc1e9"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "完成下面的条形统计图。说一说,你用1格表示多少人?",
+          "excerpt_hash": "d5f2f5813a4531bf70d4cc48f792c05fa632af19fcbf644186ea336c2894b518",
+          "pdf_page": 90,
+          "printed_page": null,
+          "span_id": "tes_d683be48d81f5b05"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_3e5b2ca4f90fd7fe"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_3e5b2ca4f90fd7fe",
+          "label": "用条形统计图合理表示数据"
+        }
+      ],
+      "level": "page",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_81c6ebbce3a81d75",
+      "node_title": "完成下面的条形统计图。说一说,你用1格表示多少人?",
+      "pdf_page": 90,
+      "printed_page": null,
+      "publication_status": "published",
+      "rationale": "教材练习“完成下面的条形统计图。说一说,你用1格表示多少人?”与课标 MA-D2-ST-002 的可教学小能力“用条形统计图合理表示数据”形成页内证据匹配。",
+      "relation_type": "practices",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "textbook_grade": 4,
+      "textbook_subject": "数学",
+      "textbook_title": "数学4年级下册",
+      "textbook_volume": "下册",
+      "unit_id": "tcu_7297df06a8fdc1e9",
+      "unit_title": "六 数据的表示和分析"
+    },
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_4ebcb59b473e6de2",
+      "alignment_type": "supports",
+      "confidence": 0.92,
+      "coverage": "partial",
+      "edition_id": "ed_1a83ac0b357a32c7a13d",
+      "evidence_basis": "textbook_page_span",
+      "evidence_gap": null,
+      "evidence_level": "L3_page_evidence",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_primary_grade_4_down",
+        "tes_3a836a024bc0093c",
+        "textbook-node:tcn_f22b6d8f7b2f77ad",
+        "textbook-unit:tcu_7297df06a8fdc1e9"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "在下图中完成条形统计图。",
+          "excerpt_hash": "c2526e10a5b256ac195bc1a4910423caa4593b791fff72ba3b8ed198df0cf084",
+          "pdf_page": 89,
+          "printed_page": null,
+          "span_id": "tes_3a836a024bc0093c"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_3e5b2ca4f90fd7fe"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_3e5b2ca4f90fd7fe",
+          "label": "用条形统计图合理表示数据"
+        }
+      ],
+      "level": "page",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_f22b6d8f7b2f77ad",
+      "node_title": "在下图中完成条形统计图。",
+      "pdf_page": 89,
+      "printed_page": null,
+      "publication_status": "published",
+      "rationale": "教材学习目标“在下图中完成条形统计图。”与课标 MA-D2-ST-002 的可教学小能力“用条形统计图合理表示数据”形成页内证据匹配。",
+      "relation_type": "supports",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "textbook_grade": 4,
+      "textbook_subject": "数学",
+      "textbook_title": "数学4年级下册",
+      "textbook_volume": "下册",
+      "unit_id": "tcu_7297df06a8fdc1e9",
+      "unit_title": "六 数据的表示和分析"
+    },
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_4380605d165e6457",
+      "alignment_type": "practices",
+      "confidence": 0.92,
+      "coverage": "partial",
+      "edition_id": "ed_d606965a5c7bfd83f238",
+      "evidence_basis": "textbook_page_span",
+      "evidence_gap": null,
+      "evidence_level": "L3_page_evidence",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_primary_grade_4_up",
+        "tes_6801355d2fe3a4ec",
+        "textbook-node:tcn_07384656819466d9",
+        "textbook-unit:tcu_9214c458f8f6a7a4"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "根据上面的表格,完成条形统计图。",
+          "excerpt_hash": "b9433e0c558c608c0f4626490d96a21ae5ec1bddca3e5c3622272799ede0716b",
+          "pdf_page": 102,
+          "printed_page": "97",
+          "span_id": "tes_6801355d2fe3a4ec"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_3e5b2ca4f90fd7fe"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_3e5b2ca4f90fd7fe",
+          "label": "用条形统计图合理表示数据"
+        }
+      ],
+      "level": "page",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_07384656819466d9",
+      "node_title": "根据上面的表格,完成条形统计图。",
+      "pdf_page": 102,
+      "printed_page": "97",
+      "publication_status": "published",
+      "rationale": "教材练习“根据上面的表格,完成条形统计图。”与课标 MA-D2-ST-002 的可教学小能力“用条形统计图合理表示数据”形成页内证据匹配。",
+      "relation_type": "practices",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "textbook_grade": 4,
+      "textbook_subject": "数学",
+      "textbook_title": "数学4年级上册",
+      "textbook_volume": "上册",
+      "unit_id": "tcu_9214c458f8f6a7a4",
+      "unit_title": "第八单元 数据的表示和分析（一）"
+    },
     {
       "algorithm_version": "component-evidence-hybrid-v3",
       "alignment_id": "tca_3e7907c839ea03e2",
@@ -424,6 +589,68 @@
     },
     {
       "algorithm_version": "full-alignment-scope-preserve-v2",
+      "alignment_id": "ca_ee9948f75207c633",
+      "alignment_type": "references",
+      "confidence": null,
+      "coverage": "scope_only",
+      "edition_id": "ed_1a83ac0b357a32c7a13d",
+      "evidence_basis": "subject_grade_scope",
+      "evidence_level": "L1_scope",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_primary_grade_4_down"
+      ],
+      "evidence_role": "direct_textbook",
+      "level": "scope",
+      "method": "subject_grade_scope_mapping",
+      "pdf_page": null,
+      "printed_page": null,
+      "publication_status": "published_scope",
+      "rationale": "教材与课标处于同学科、同学段的适用范围；此关系不证明某一单元直接教授该条标准。",
+      "relation_type": "curriculum_scope",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "scope_id": "tcs_6a805c971793f914",
+      "textbook_grade": 4,
+      "textbook_subject": "数学",
+      "textbook_title": "数学4年级下册",
+      "textbook_volume": "下册",
+      "unit_id": null,
+      "unit_title": ""
+    },
+    {
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "alignment_id": "ca_4f1bbaa8c504fc67",
+      "alignment_type": "references",
+      "confidence": null,
+      "coverage": "scope_only",
+      "edition_id": "ed_1ff36a7d6984de2292ee",
+      "evidence_basis": "subject_grade_scope",
+      "evidence_level": "L1_scope",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_primary_grade_3_up"
+      ],
+      "evidence_role": "direct_textbook",
+      "level": "scope",
+      "method": "subject_grade_scope_mapping",
+      "pdf_page": null,
+      "printed_page": null,
+      "publication_status": "published_scope",
+      "rationale": "教材与课标处于同学科、同学段的适用范围；此关系不证明某一单元直接教授该条标准。",
+      "relation_type": "curriculum_scope",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "scope_id": "tcs_782e0285ce562503",
+      "textbook_grade": 3,
+      "textbook_subject": "数学",
+      "textbook_title": "数学3年级上册",
+      "textbook_volume": "上册",
+      "unit_id": null,
+      "unit_title": ""
+    },
+    {
+      "algorithm_version": "full-alignment-scope-preserve-v2",
       "alignment_id": "ca_2b4625cf0e35c2c3",
       "alignment_type": "references",
       "confidence": null,
@@ -450,6 +677,37 @@
       "textbook_subject": "数学",
       "textbook_title": "数学3年级下册",
       "textbook_volume": "下册",
+      "unit_id": null,
+      "unit_title": ""
+    },
+    {
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "alignment_id": "ca_fd7401cc2adc7d99",
+      "alignment_type": "references",
+      "confidence": null,
+      "coverage": "scope_only",
+      "edition_id": "ed_d606965a5c7bfd83f238",
+      "evidence_basis": "subject_grade_scope",
+      "evidence_level": "L1_scope",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_primary_grade_4_up"
+      ],
+      "evidence_role": "direct_textbook",
+      "level": "scope",
+      "method": "subject_grade_scope_mapping",
+      "pdf_page": null,
+      "printed_page": null,
+      "publication_status": "published_scope",
+      "rationale": "教材与课标处于同学科、同学段的适用范围；此关系不证明某一单元直接教授该条标准。",
+      "relation_type": "curriculum_scope",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "scope_id": "tcs_9449849eca554409",
+      "textbook_grade": 4,
+      "textbook_subject": "数学",
+      "textbook_title": "数学4年级上册",
+      "textbook_volume": "上册",
       "unit_id": null,
       "unit_title": ""
     },
@@ -511,6 +769,37 @@
       "textbook_grade": 4,
       "textbook_subject": "数学",
       "textbook_title": "数学4年级下册",
+      "textbook_volume": "下册",
+      "unit_id": null,
+      "unit_title": ""
+    },
+    {
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "alignment_id": "ca_71ea50c4f1abebac",
+      "alignment_type": "references",
+      "confidence": null,
+      "coverage": "scope_only",
+      "edition_id": "ed_e9b67fbb7a2f5b25129e",
+      "evidence_basis": "subject_grade_scope",
+      "evidence_level": "L1_scope",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_primary_grade_3_down"
+      ],
+      "evidence_role": "direct_textbook",
+      "level": "scope",
+      "method": "subject_grade_scope_mapping",
+      "pdf_page": null,
+      "printed_page": null,
+      "publication_status": "published_scope",
+      "rationale": "教材与课标处于同学科、同学段的适用范围；此关系不证明某一单元直接教授该条标准。",
+      "relation_type": "curriculum_scope",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "scope_id": "tcs_a681503ea7b6890d",
+      "textbook_grade": 3,
+      "textbook_subject": "数学",
+      "textbook_title": "数学3年级下册",
       "textbook_volume": "下册",
       "unit_id": null,
       "unit_title": ""

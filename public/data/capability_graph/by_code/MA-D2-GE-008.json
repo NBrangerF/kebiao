@@ -123,16 +123,131 @@
   ],
   "curriculum_alignment_summary": {
     "candidate_count": 0,
-    "disposition": "unit_aligned",
-    "evidence_note": "已有公开单元主题关系；仍需教材正文、练习或教师用书的页内证据，才能提升到可教学落实。",
+    "disposition": "page_aligned",
+    "evidence_note": "已有教材正文、任务或练习的页内证据；关系由机器自动生成并附带原文定位、证据哈希和置信度。",
     "gap_reason": null,
-    "highest_evidence_level": "L2_topic",
-    "page_evidence_count": 0,
-    "scope_count": 4,
-    "specific_count": 4,
+    "highest_evidence_level": "L3_page_evidence",
+    "page_evidence_count": 2,
+    "scope_count": 8,
+    "specific_count": 6,
     "unit_topic_candidate_count": 0
   },
   "curriculum_alignments": [
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_c4d0b56655613773",
+      "alignment_type": "practices",
+      "confidence": 0.92,
+      "coverage": "partial",
+      "edition_id": "ed_d606965a5c7bfd83f238",
+      "evidence_basis": "textbook_page_span",
+      "evidence_gap": null,
+      "evidence_level": "L3_page_evidence",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_primary_grade_4_up",
+        "tes_aad62c216e52c2a9",
+        "textbook-node:tcn_c3a5ab15bcf44abd",
+        "textbook-unit:tcu_23d0433fbd822a9f"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "练一练练一练练一练练一练1. 说一说,找一找生活中的平行线。",
+          "excerpt_hash": "5ddd42a6c5875a3f3b8b39296e6f35e86961e9cc95f469536279689f22665cc9",
+          "pdf_page": 33,
+          "printed_page": "28",
+          "span_id": "tes_aad62c216e52c2a9"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_5dc314d5b125a1b1",
+        "lc_34b08f0d991f3b45"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_5dc314d5b125a1b1",
+          "label": "辨认出生活中的平移、旋转和轴对称现象，直观感知平移、旋转和轴对称的特征"
+        },
+        {
+          "component_id": "lc_34b08f0d991f3b45",
+          "label": "利用平移或旋转解释现实生活中的现象"
+        }
+      ],
+      "level": "page",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_c3a5ab15bcf44abd",
+      "node_title": "练一练练一练练一练练一练1. 说一说,找一找生活中的平行线。",
+      "pdf_page": 33,
+      "printed_page": "28",
+      "publication_status": "published",
+      "rationale": "教材练习“练一练练一练练一练练一练1. 说一说,找一找生活中的平行线。”与课标 MA-D2-GE-008 的可教学小能力“辨认出生活中的平移、旋转和轴对称现象，直观感知平移、旋转和轴对称的特征、利用平移或旋转解释现实生活中的现象”形成页内证据匹配。",
+      "relation_type": "practices",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "textbook_grade": 4,
+      "textbook_subject": "数学",
+      "textbook_title": "数学4年级上册",
+      "textbook_volume": "上册",
+      "unit_id": "tcu_23d0433fbd822a9f",
+      "unit_title": "第二单元 线与角"
+    },
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_ecf67086008d940d",
+      "alignment_type": "supports",
+      "confidence": 0.92,
+      "coverage": "partial",
+      "edition_id": "ed_e9b67fbb7a2f5b25129e",
+      "evidence_basis": "textbook_page_span",
+      "evidence_gap": null,
+      "evidence_level": "L3_page_evidence",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_primary_grade_3_down",
+        "tes_9166bc8752d5c455",
+        "textbook-node:tcn_910769c7ef76fa46",
+        "textbook-unit:tcu_37eec4c1641b9d0d"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "试着做一个表示平移或旋转的动作。",
+          "excerpt_hash": "a2c33ee699b214dc8a388184949730f6bc377544bdf0910a71e117e769c64f72",
+          "pdf_page": 28,
+          "printed_page": null,
+          "span_id": "tes_9166bc8752d5c455"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_34b08f0d991f3b45"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_34b08f0d991f3b45",
+          "label": "利用平移或旋转解释现实生活中的现象"
+        }
+      ],
+      "level": "page",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_910769c7ef76fa46",
+      "node_title": "试着做一个表示平移或旋转的动作。",
+      "pdf_page": 28,
+      "printed_page": null,
+      "publication_status": "published",
+      "rationale": "教材学习目标“试着做一个表示平移或旋转的动作。”与课标 MA-D2-GE-008 的可教学小能力“利用平移或旋转解释现实生活中的现象”形成页内证据匹配。",
+      "relation_type": "supports",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "textbook_grade": 3,
+      "textbook_subject": "数学",
+      "textbook_title": "数学3年级下册",
+      "textbook_volume": "下册",
+      "unit_id": "tcu_37eec4c1641b9d0d",
+      "unit_title": "第二单元 图形的运动（二）"
+    },
     {
       "algorithm_version": "component-evidence-hybrid-v3",
       "alignment_id": "tca_5f80a07a53c9f8b3",
@@ -375,6 +490,68 @@
     },
     {
       "algorithm_version": "full-alignment-scope-preserve-v2",
+      "alignment_id": "ca_215cc49d8eb58ae0",
+      "alignment_type": "references",
+      "confidence": null,
+      "coverage": "scope_only",
+      "edition_id": "ed_1a83ac0b357a32c7a13d",
+      "evidence_basis": "subject_grade_scope",
+      "evidence_level": "L1_scope",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_primary_grade_4_down"
+      ],
+      "evidence_role": "direct_textbook",
+      "level": "scope",
+      "method": "subject_grade_scope_mapping",
+      "pdf_page": null,
+      "printed_page": null,
+      "publication_status": "published_scope",
+      "rationale": "教材与课标处于同学科、同学段的适用范围；此关系不证明某一单元直接教授该条标准。",
+      "relation_type": "curriculum_scope",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "scope_id": "tcs_6a805c971793f914",
+      "textbook_grade": 4,
+      "textbook_subject": "数学",
+      "textbook_title": "数学4年级下册",
+      "textbook_volume": "下册",
+      "unit_id": null,
+      "unit_title": ""
+    },
+    {
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "alignment_id": "ca_8e6e2905d785ef74",
+      "alignment_type": "references",
+      "confidence": null,
+      "coverage": "scope_only",
+      "edition_id": "ed_1ff36a7d6984de2292ee",
+      "evidence_basis": "subject_grade_scope",
+      "evidence_level": "L1_scope",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_primary_grade_3_up"
+      ],
+      "evidence_role": "direct_textbook",
+      "level": "scope",
+      "method": "subject_grade_scope_mapping",
+      "pdf_page": null,
+      "printed_page": null,
+      "publication_status": "published_scope",
+      "rationale": "教材与课标处于同学科、同学段的适用范围；此关系不证明某一单元直接教授该条标准。",
+      "relation_type": "curriculum_scope",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "scope_id": "tcs_782e0285ce562503",
+      "textbook_grade": 3,
+      "textbook_subject": "数学",
+      "textbook_title": "数学3年级上册",
+      "textbook_volume": "上册",
+      "unit_id": null,
+      "unit_title": ""
+    },
+    {
+      "algorithm_version": "full-alignment-scope-preserve-v2",
       "alignment_id": "ca_74d9af96795c91a6",
       "alignment_type": "references",
       "confidence": null,
@@ -401,6 +578,37 @@
       "textbook_subject": "数学",
       "textbook_title": "数学3年级下册",
       "textbook_volume": "下册",
+      "unit_id": null,
+      "unit_title": ""
+    },
+    {
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "alignment_id": "ca_b8c2e2dbd79337aa",
+      "alignment_type": "references",
+      "confidence": null,
+      "coverage": "scope_only",
+      "edition_id": "ed_d606965a5c7bfd83f238",
+      "evidence_basis": "subject_grade_scope",
+      "evidence_level": "L1_scope",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_primary_grade_4_up"
+      ],
+      "evidence_role": "direct_textbook",
+      "level": "scope",
+      "method": "subject_grade_scope_mapping",
+      "pdf_page": null,
+      "printed_page": null,
+      "publication_status": "published_scope",
+      "rationale": "教材与课标处于同学科、同学段的适用范围；此关系不证明某一单元直接教授该条标准。",
+      "relation_type": "curriculum_scope",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "scope_id": "tcs_9449849eca554409",
+      "textbook_grade": 4,
+      "textbook_subject": "数学",
+      "textbook_title": "数学4年级上册",
+      "textbook_volume": "上册",
       "unit_id": null,
       "unit_title": ""
     },
@@ -462,6 +670,37 @@
       "textbook_grade": 4,
       "textbook_subject": "数学",
       "textbook_title": "数学4年级下册",
+      "textbook_volume": "下册",
+      "unit_id": null,
+      "unit_title": ""
+    },
+    {
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "alignment_id": "ca_387a712fb04df730",
+      "alignment_type": "references",
+      "confidence": null,
+      "coverage": "scope_only",
+      "edition_id": "ed_e9b67fbb7a2f5b25129e",
+      "evidence_basis": "subject_grade_scope",
+      "evidence_level": "L1_scope",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_primary_grade_3_down"
+      ],
+      "evidence_role": "direct_textbook",
+      "level": "scope",
+      "method": "subject_grade_scope_mapping",
+      "pdf_page": null,
+      "printed_page": null,
+      "publication_status": "published_scope",
+      "rationale": "教材与课标处于同学科、同学段的适用范围；此关系不证明某一单元直接教授该条标准。",
+      "relation_type": "curriculum_scope",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "scope_id": "tcs_a681503ea7b6890d",
+      "textbook_grade": 3,
+      "textbook_subject": "数学",
+      "textbook_title": "数学3年级下册",
       "textbook_volume": "下册",
       "unit_id": null,
       "unit_title": ""

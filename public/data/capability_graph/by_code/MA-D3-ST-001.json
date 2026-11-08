@@ -164,9 +164,9 @@
     "evidence_note": "已有教材正文、任务或练习的页内证据；关系由机器自动生成并附带原文定位、证据哈希和置信度。",
     "gap_reason": null,
     "highest_evidence_level": "L3_page_evidence",
-    "page_evidence_count": 1,
-    "scope_count": 4,
-    "specific_count": 1,
+    "page_evidence_count": 3,
+    "scope_count": 8,
+    "specific_count": 4,
     "unit_topic_candidate_count": 0
   },
   "curriculum_alignments": [
@@ -224,6 +224,171 @@
       "textbook_volume": "下册",
       "unit_id": "tcu_18057a78a879faa4",
       "unit_title": "7 折线统计图"
+    },
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_f43d24735a810873",
+      "alignment_type": "practices",
+      "confidence": 0.92,
+      "coverage": "partial",
+      "edition_id": "ed_b1800b5b9d4356b970d0",
+      "evidence_basis": "textbook_page_span",
+      "evidence_gap": null,
+      "evidence_level": "L3_page_evidence",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_primary_grade_6_down",
+        "tes_890640ad5e3ca685",
+        "textbook-node:tcn_64ca46dbcbe13ad7",
+        "textbook-unit:tcu_e5b40bb17ac0add7"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "根据表中数据制作折线统计图。",
+          "excerpt_hash": "8f73cfc59879d89a84b2d30dd75f56d60c93112b76fa9d4f8e6f1e732d227aef",
+          "pdf_page": 108,
+          "printed_page": null,
+          "span_id": "tes_890640ad5e3ca685"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_2c04e4a86c151cff"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_2c04e4a86c151cff",
+          "label": "把数据整理成条形统计图、折线统计图，知道条形统计图、折线统计图和扇形统计图的功能"
+        }
+      ],
+      "level": "page",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_64ca46dbcbe13ad7",
+      "node_title": "根据表中数据制作折线统计图。",
+      "pdf_page": 108,
+      "printed_page": null,
+      "publication_status": "published",
+      "rationale": "教材练习“根据表中数据制作折线统计图。”与课标 MA-D3-ST-001 的可教学小能力“把数据整理成条形统计图、折线统计图，知道条形统计图、折线统计图和扇形统计图的功能”形成页内证据匹配。",
+      "relation_type": "practices",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "textbook_grade": 6,
+      "textbook_subject": "数学",
+      "textbook_title": "数学6年级下册",
+      "textbook_volume": "下册",
+      "unit_id": "tcu_e5b40bb17ac0add7",
+      "unit_title": "总复习"
+    },
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_9533b3f15cd3e67b",
+      "alignment_type": "supports",
+      "confidence": 0.86,
+      "coverage": "partial",
+      "edition_id": "ed_ec7081b7432dd6fd4fe7",
+      "evidence_basis": "textbook_page_span",
+      "evidence_gap": null,
+      "evidence_level": "L3_page_evidence",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_primary_grade_5_up",
+        "tes_6549a59da7a3bf80",
+        "textbook-node:tcn_2d8857afd8210f52",
+        "textbook-unit:tcu_c925892e89e015c3"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "根据小组的最终方案,选择落叶并用合适的方法测量。",
+          "excerpt_hash": "7eea4d5c72ce0767291d5243728249709e67677fe6f92c8545608ef3ef398d42",
+          "pdf_page": 116,
+          "printed_page": "111",
+          "span_id": "tes_6549a59da7a3bf80"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_34d637abc43e98b2"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_34d637abc43e98b2",
+          "label": "根据问题的需要，从报纸、杂志、电视、互联网等媒体上获取数据，或者通过其他合适的方式获取数据"
+        }
+      ],
+      "level": "page",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_2d8857afd8210f52",
+      "node_title": "根据小组的最终方案,选择落叶并用合适的方法测量。",
+      "pdf_page": 116,
+      "printed_page": "111",
+      "publication_status": "published",
+      "rationale": "教材学习目标“根据小组的最终方案,选择落叶并用合适的方法测量。”与课标 MA-D3-ST-001 的可教学小能力“根据问题的需要，从报纸、杂志、电视、互联网等媒体上获取数据，或者通过其他合适的方式获取数据”形成页内证据匹配。",
+      "relation_type": "supports",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "textbook_grade": 5,
+      "textbook_subject": "数学",
+      "textbook_title": "数学5年级上册",
+      "textbook_volume": "上册",
+      "unit_id": "tcu_c925892e89e015c3",
+      "unit_title": "综合实践 多少落叶能铺满"
+    },
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_ce2e4831a0818d87",
+      "alignment_type": "supports",
+      "confidence": 0.92,
+      "coverage": "partial",
+      "edition_id": "ed_576cc2fce461f0e08cb2",
+      "evidence_basis": "toc_title",
+      "evidence_gap": "当前证据来自目录标题与课标概念匹配，尚未保存教材正文或练习摘录；因此只能声明主题支持，不能声明完整教授。",
+      "evidence_level": "L2_topic",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_primary_grade_5_down",
+        "tes_645468c54e515a61",
+        "textbook-node:tcn_99907d8fa7b4d0f7",
+        "textbook-unit:tcu_a3625d7fe46208e2"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "2. 从报纸上找到条形统计图和折线",
+          "excerpt_hash": "f2a7f15940ac93ea8d3541aecd2c3c8bd489a3d2ebbb730c622c631469b8cf34",
+          "pdf_page": 97,
+          "printed_page": null,
+          "span_id": "tes_645468c54e515a61"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_2c04e4a86c151cff"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_2c04e4a86c151cff",
+          "label": "把数据整理成条形统计图、折线统计图，知道条形统计图、折线统计图和扇形统计图的功能"
+        }
+      ],
+      "level": "unit",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_99907d8fa7b4d0f7",
+      "node_title": "2从报纸上找到条形统计图和折线",
+      "pdf_page": 97,
+      "printed_page": null,
+      "publication_status": "published",
+      "rationale": "教材课文“2从报纸上找到条形统计图和折线”与课标 MA-D3-ST-001 的可教学小能力“把数据整理成条形统计图、折线统计图，知道条形统计图、折线统计图和扇形统计图的功能”形成页内证据匹配。",
+      "relation_type": "supports",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "textbook_grade": 5,
+      "textbook_subject": "数学",
+      "textbook_title": "数学5年级下册",
+      "textbook_volume": "下册",
+      "unit_id": "tcu_a3625d7fe46208e2",
+      "unit_title": "总复习"
     },
     {
       "algorithm_version": "full-alignment-scope-preserve-v2",
@@ -320,6 +485,37 @@
     },
     {
       "algorithm_version": "full-alignment-scope-preserve-v2",
+      "alignment_id": "ca_6a21ff0359462dd1",
+      "alignment_type": "references",
+      "confidence": null,
+      "coverage": "scope_only",
+      "edition_id": "ed_576cc2fce461f0e08cb2",
+      "evidence_basis": "subject_grade_scope",
+      "evidence_level": "L1_scope",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_primary_grade_5_down"
+      ],
+      "evidence_role": "direct_textbook",
+      "level": "scope",
+      "method": "subject_grade_scope_mapping",
+      "pdf_page": null,
+      "printed_page": null,
+      "publication_status": "published_scope",
+      "rationale": "教材与课标处于同学科、同学段的适用范围；此关系不证明某一单元直接教授该条标准。",
+      "relation_type": "curriculum_scope",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "scope_id": "tcs_4e566921b9cb64d3",
+      "textbook_grade": 5,
+      "textbook_subject": "数学",
+      "textbook_title": "数学5年级下册",
+      "textbook_volume": "下册",
+      "unit_id": null,
+      "unit_title": ""
+    },
+    {
+      "algorithm_version": "full-alignment-scope-preserve-v2",
       "alignment_id": "ca_024c424817b88d78",
       "alignment_type": "references",
       "confidence": null,
@@ -342,6 +538,99 @@
       "review_status": "machine_checked",
       "revision_status": "current_confirmed",
       "scope_id": "tcs_e1c2312794f3e566",
+      "textbook_grade": 5,
+      "textbook_subject": "数学",
+      "textbook_title": "数学5年级上册",
+      "textbook_volume": "上册",
+      "unit_id": null,
+      "unit_title": ""
+    },
+    {
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "alignment_id": "ca_60146ecb1406da5c",
+      "alignment_type": "references",
+      "confidence": null,
+      "coverage": "scope_only",
+      "edition_id": "ed_b1800b5b9d4356b970d0",
+      "evidence_basis": "subject_grade_scope",
+      "evidence_level": "L1_scope",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_primary_grade_6_down"
+      ],
+      "evidence_role": "direct_textbook",
+      "level": "scope",
+      "method": "subject_grade_scope_mapping",
+      "pdf_page": null,
+      "printed_page": null,
+      "publication_status": "published_scope",
+      "rationale": "教材与课标处于同学科、同学段的适用范围；此关系不证明某一单元直接教授该条标准。",
+      "relation_type": "curriculum_scope",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "scope_id": "tcs_ee4eb223123317f3",
+      "textbook_grade": 6,
+      "textbook_subject": "数学",
+      "textbook_title": "数学6年级下册",
+      "textbook_volume": "下册",
+      "unit_id": null,
+      "unit_title": ""
+    },
+    {
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "alignment_id": "ca_b0f8b45962870591",
+      "alignment_type": "references",
+      "confidence": null,
+      "coverage": "scope_only",
+      "edition_id": "ed_c450559fa44fadf1df17",
+      "evidence_basis": "subject_grade_scope",
+      "evidence_level": "L1_scope",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_primary_grade_6_up"
+      ],
+      "evidence_role": "direct_textbook",
+      "level": "scope",
+      "method": "subject_grade_scope_mapping",
+      "pdf_page": null,
+      "printed_page": null,
+      "publication_status": "published_scope",
+      "rationale": "教材与课标处于同学科、同学段的适用范围；此关系不证明某一单元直接教授该条标准。",
+      "relation_type": "curriculum_scope",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "scope_id": "tcs_cbb6bc8a56e6cd94",
+      "textbook_grade": 6,
+      "textbook_subject": "数学",
+      "textbook_title": "数学6年级上册",
+      "textbook_volume": "上册",
+      "unit_id": null,
+      "unit_title": ""
+    },
+    {
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "alignment_id": "ca_9e0a396183e0c0fa",
+      "alignment_type": "references",
+      "confidence": null,
+      "coverage": "scope_only",
+      "edition_id": "ed_ec7081b7432dd6fd4fe7",
+      "evidence_basis": "subject_grade_scope",
+      "evidence_level": "L1_scope",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_primary_grade_5_up"
+      ],
+      "evidence_role": "direct_textbook",
+      "level": "scope",
+      "method": "subject_grade_scope_mapping",
+      "pdf_page": null,
+      "printed_page": null,
+      "publication_status": "published_scope",
+      "rationale": "教材与课标处于同学科、同学段的适用范围；此关系不证明某一单元直接教授该条标准。",
+      "relation_type": "curriculum_scope",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "scope_id": "tcs_e0716786d706e600",
       "textbook_grade": 5,
       "textbook_subject": "数学",
       "textbook_title": "数学5年级上册",

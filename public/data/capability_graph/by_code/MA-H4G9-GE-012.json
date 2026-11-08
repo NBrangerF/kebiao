@@ -47,9 +47,9 @@
     "evidence_note": "已有教材正文、任务或练习的页内证据；关系由机器自动生成并附带原文定位、证据哈希和置信度。",
     "gap_reason": null,
     "highest_evidence_level": "L3_page_evidence",
-    "page_evidence_count": 1,
-    "scope_count": 2,
-    "specific_count": 3,
+    "page_evidence_count": 2,
+    "scope_count": 4,
+    "specific_count": 4,
     "unit_topic_candidate_count": 0
   },
   "curriculum_alignments": [
@@ -107,6 +107,61 @@
       "textbook_volume": "上册",
       "unit_id": "tcu_eb66122887868eca",
       "unit_title": "第二十九章 圆"
+    },
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_b63bf93675988ba1",
+      "alignment_type": "supports",
+      "confidence": 0.92,
+      "coverage": "partial",
+      "edition_id": "ed_ef4497f053950395a66d",
+      "evidence_basis": "textbook_page_span",
+      "evidence_gap": null,
+      "evidence_level": "L3_page_evidence",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_junior_grade_9_down",
+        "tes_2f60a7521dbd07a0",
+        "textbook-node:tcn_5d1ead8c0d737f44",
+        "textbook-unit:tcu_d5730daaa3d909ad"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "探索直角三角形的边角关系,发展几何直观",
+          "excerpt_hash": "b6b71dc02c69fa2b30877032e3e6f5f7e833bfeb2806bf78664e522dd45fb7f7",
+          "pdf_page": 6,
+          "printed_page": null,
+          "span_id": "tes_2f60a7521dbd07a0"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_bc142ca1103d2bc1"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_bc142ca1103d2bc1",
+          "label": "探索并证明所列几何性质与定理"
+        }
+      ],
+      "level": "page",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_5d1ead8c0d737f44",
+      "node_title": "探索直角三角形的边角关系,发展几何直观",
+      "pdf_page": 6,
+      "printed_page": null,
+      "publication_status": "published",
+      "rationale": "教材学习目标“探索直角三角形的边角关系,发展几何直观”与课标 MA-H4G9-GE-012 的可教学小能力“探索并证明所列几何性质与定理”形成页内证据匹配。",
+      "relation_type": "supports",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "textbook_grade": 9,
+      "textbook_subject": "数学",
+      "textbook_title": "数学9年级下册",
+      "textbook_volume": "下册",
+      "unit_id": "tcu_d5730daaa3d909ad",
+      "unit_title": "第一章 直角三角形的边角关系"
     },
     {
       "algorithm_version": "pre-full-alignment",
@@ -255,6 +310,68 @@
       "review_status": "machine_checked",
       "revision_status": "revision_unknown",
       "scope_id": "tcs_3e651d0e242caded",
+      "textbook_grade": 9,
+      "textbook_subject": "数学",
+      "textbook_title": "数学9年级下册",
+      "textbook_volume": "下册",
+      "unit_id": null,
+      "unit_title": ""
+    },
+    {
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "alignment_id": "ca_5f3fa865b7b99de8",
+      "alignment_type": "references",
+      "confidence": null,
+      "coverage": "scope_only",
+      "edition_id": "ed_40d19fde240347eaa591",
+      "evidence_basis": "subject_grade_scope",
+      "evidence_level": "L1_scope",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_junior_grade_9_up"
+      ],
+      "evidence_role": "direct_textbook",
+      "level": "scope",
+      "method": "subject_grade_scope_mapping",
+      "pdf_page": null,
+      "printed_page": null,
+      "publication_status": "published_scope",
+      "rationale": "教材与课标处于同学科、同学段的适用范围；此关系不证明某一单元直接教授该条标准。",
+      "relation_type": "curriculum_scope",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "scope_id": "tcs_e74e9fb9bfcc1148",
+      "textbook_grade": 9,
+      "textbook_subject": "数学",
+      "textbook_title": "数学9年级上册",
+      "textbook_volume": "上册",
+      "unit_id": null,
+      "unit_title": ""
+    },
+    {
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "alignment_id": "ca_27c2fc293ae60e47",
+      "alignment_type": "references",
+      "confidence": null,
+      "coverage": "scope_only",
+      "edition_id": "ed_ef4497f053950395a66d",
+      "evidence_basis": "subject_grade_scope",
+      "evidence_level": "L1_scope",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_junior_grade_9_down"
+      ],
+      "evidence_role": "direct_textbook",
+      "level": "scope",
+      "method": "subject_grade_scope_mapping",
+      "pdf_page": null,
+      "printed_page": null,
+      "publication_status": "published_scope",
+      "rationale": "教材与课标处于同学科、同学段的适用范围；此关系不证明某一单元直接教授该条标准。",
+      "relation_type": "curriculum_scope",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "scope_id": "tcs_8281375193798050",
       "textbook_grade": 9,
       "textbook_subject": "数学",
       "textbook_title": "数学9年级下册",

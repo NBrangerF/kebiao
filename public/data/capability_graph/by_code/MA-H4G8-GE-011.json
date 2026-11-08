@@ -47,9 +47,9 @@
     "evidence_note": "已有教材正文、任务或练习的页内证据；关系由机器自动生成并附带原文定位、证据哈希和置信度。",
     "gap_reason": null,
     "highest_evidence_level": "L3_page_evidence",
-    "page_evidence_count": 8,
-    "scope_count": 2,
-    "specific_count": 9,
+    "page_evidence_count": 11,
+    "scope_count": 4,
+    "specific_count": 12,
     "unit_topic_candidate_count": 0
   },
   "curriculum_alignments": [
@@ -167,6 +167,181 @@
       "textbook_volume": "上册",
       "unit_id": "tcu_92a8b08d2974b0c1",
       "unit_title": "第十四章 全等三角形"
+    },
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_b437f43b48fbea32",
+      "alignment_type": "practices",
+      "confidence": 0.92,
+      "coverage": "partial",
+      "edition_id": "ed_b5476da69a964f1a7245",
+      "evidence_basis": "textbook_page_span",
+      "evidence_gap": null,
+      "evidence_level": "L3_page_evidence",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_junior_grade_8_down",
+        "tes_d51267f7efa09d86",
+        "textbook-node:tcn_7f32a8e80e49d23c",
+        "textbook-unit:tcu_36830457f416c754"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "观察图3-26中的等边三角形,点O是它的角平分线的交点,将这个三角形绕着点 O旋转120°,可以发现,旋转后的图形与旋转前的图形重合。",
+          "excerpt_hash": "22277df58640df46450e83690092c7a0ed2973055b6c6629709b55aaae7c6420",
+          "pdf_page": 103,
+          "printed_page": null,
+          "span_id": "tes_d51267f7efa09d86"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_4c0a2792f4f42e76",
+        "lc_5eb30a22dd8f5099"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_4c0a2792f4f42e76",
+          "label": "探索并证明所列几何性质与定理"
+        },
+        {
+          "component_id": "lc_5eb30a22dd8f5099",
+          "label": "用自己的话解释三角形及其内角、外角、中线、高线、角平分线等概念"
+        }
+      ],
+      "level": "page",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_7f32a8e80e49d23c",
+      "node_title": "观察图3-26中的等边三角形,点O是它的角平分线的交点,将这个三角形绕着点 O旋转120°,可以发现,旋转后的图形与旋转前的图形重合。",
+      "pdf_page": 103,
+      "printed_page": null,
+      "publication_status": "published",
+      "rationale": "教材练习“观察图3-26中的等边三角形,点O是它的角平分线的交点,将这个三角形绕着点 O旋转120°,可以发现,旋转后的图形与旋转前的图形重合。”与课标 MA-H4G8-GE-011 的可教学小能力“探索并证明所列几何性质与定理、用自己的话解释三角形及其内角、外角、中线、高线、角平分线等概念”形成页内证据匹配。",
+      "relation_type": "practices",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "textbook_grade": 8,
+      "textbook_subject": "数学",
+      "textbook_title": "数学8年级下册",
+      "textbook_volume": "下册",
+      "unit_id": "tcu_36830457f416c754",
+      "unit_title": "第三章 图形的平移与旋转"
+    },
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_6d342cb604a2245d",
+      "alignment_type": "practices",
+      "confidence": 0.86,
+      "coverage": "partial",
+      "edition_id": "ed_b5476da69a964f1a7245",
+      "evidence_basis": "textbook_page_span",
+      "evidence_gap": null,
+      "evidence_level": "L3_page_evidence",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_junior_grade_8_down",
+        "tes_9dba00fa5068e33c",
+        "textbook-node:tcn_4b94935286a9d1d9",
+        "textbook-unit:tcu_db4b6f68ac12c2d5"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "证明:如图1-24(2),作 RtAABC,使LA'=90°,AB'=AB, AIC'=AC,则 AB”+ACR_BC2(勾股定理)。",
+          "excerpt_hash": "484108fa6fbbf36d0ee883714d5bf7c2a790f5e6e8f68a9004e2d0b43d8f0d5a",
+          "pdf_page": 31,
+          "printed_page": null,
+          "span_id": "tes_9dba00fa5068e33c"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_4c0a2792f4f42e76"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_4c0a2792f4f42e76",
+          "label": "探索并证明所列几何性质与定理"
+        }
+      ],
+      "level": "page",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_4b94935286a9d1d9",
+      "node_title": "证明:如图1-24(2),作 RtAABC,使LA'=90°,AB'=AB, AIC'=AC,则 AB”+ACR_BC2(勾股定理)。",
+      "pdf_page": 31,
+      "printed_page": null,
+      "publication_status": "published",
+      "rationale": "教材练习“证明:如图1-24(2),作 RtAABC,使LA'=90°,AB'=AB, AIC'=AC,则 AB”+ACR_BC2(勾股定理)。”与课标 MA-H4G8-GE-011 的可教学小能力“探索并证明所列几何性质与定理”形成页内证据匹配。",
+      "relation_type": "practices",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "textbook_grade": 8,
+      "textbook_subject": "数学",
+      "textbook_title": "数学8年级下册",
+      "textbook_volume": "下册",
+      "unit_id": "tcu_db4b6f68ac12c2d5",
+      "unit_title": "第一章 三角形的证明及其应用"
+    },
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_be73e6f4c0bc5117",
+      "alignment_type": "supports",
+      "confidence": 0.86,
+      "coverage": "partial",
+      "edition_id": "ed_b5476da69a964f1a7245",
+      "evidence_basis": "textbook_page_span",
+      "evidence_gap": null,
+      "evidence_level": "L3_page_evidence",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_junior_grade_8_down",
+        "tes_7187f704b746d54e",
+        "textbook-node:tcn_6d2ee55f3ae2289e",
+        "textbook-unit:tcu_db4b6f68ac12c2d5"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "BM是AABC的角平分线,",
+          "excerpt_hash": "aca0523e6f3957dc4f271bfc5f7bf06a50b56b17fbe83bb7b2c5b7cc3861d08c",
+          "pdf_page": 49,
+          "printed_page": null,
+          "span_id": "tes_7187f704b746d54e"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_4c0a2792f4f42e76",
+        "lc_5eb30a22dd8f5099"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_4c0a2792f4f42e76",
+          "label": "探索并证明所列几何性质与定理"
+        },
+        {
+          "component_id": "lc_5eb30a22dd8f5099",
+          "label": "用自己的话解释三角形及其内角、外角、中线、高线、角平分线等概念"
+        }
+      ],
+      "level": "page",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_6d2ee55f3ae2289e",
+      "node_title": "BM是AABC的角平分线,",
+      "pdf_page": 49,
+      "printed_page": null,
+      "publication_status": "published",
+      "rationale": "教材学习目标“BM是AABC的角平分线,”与课标 MA-H4G8-GE-011 的可教学小能力“探索并证明所列几何性质与定理、用自己的话解释三角形及其内角、外角、中线、高线、角平分线等概念”形成页内证据匹配。",
+      "relation_type": "supports",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "textbook_grade": 8,
+      "textbook_subject": "数学",
+      "textbook_title": "数学8年级下册",
+      "textbook_volume": "下册",
+      "unit_id": "tcu_db4b6f68ac12c2d5",
+      "unit_title": "第一章 三角形的证明及其应用"
     },
     {
       "algorithm_version": "component-evidence-hybrid-v3",
@@ -555,6 +730,37 @@
     },
     {
       "algorithm_version": "full-alignment-scope-preserve-v2",
+      "alignment_id": "ca_660139c3c22ec6a7",
+      "alignment_type": "references",
+      "confidence": null,
+      "coverage": "scope_only",
+      "edition_id": "ed_61803eb53474fb83201e",
+      "evidence_basis": "subject_grade_scope",
+      "evidence_level": "L1_scope",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_junior_grade_8_up"
+      ],
+      "evidence_role": "direct_textbook",
+      "level": "scope",
+      "method": "subject_grade_scope_mapping",
+      "pdf_page": null,
+      "printed_page": null,
+      "publication_status": "published_scope",
+      "rationale": "教材与课标处于同学科、同学段的适用范围；此关系不证明某一单元直接教授该条标准。",
+      "relation_type": "curriculum_scope",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "scope_id": "tcs_181d371b81dc4ec5",
+      "textbook_grade": 8,
+      "textbook_subject": "数学",
+      "textbook_title": "数学8年级上册",
+      "textbook_volume": "上册",
+      "unit_id": null,
+      "unit_title": ""
+    },
+    {
+      "algorithm_version": "full-alignment-scope-preserve-v2",
       "alignment_id": "ca_2e10dcceb85f2070",
       "alignment_type": "references",
       "confidence": null,
@@ -581,6 +787,37 @@
       "textbook_subject": "数学",
       "textbook_title": "数学8年级上册",
       "textbook_volume": "上册",
+      "unit_id": null,
+      "unit_title": ""
+    },
+    {
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "alignment_id": "ca_79a813e120f52119",
+      "alignment_type": "references",
+      "confidence": null,
+      "coverage": "scope_only",
+      "edition_id": "ed_b5476da69a964f1a7245",
+      "evidence_basis": "subject_grade_scope",
+      "evidence_level": "L1_scope",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_junior_grade_8_down"
+      ],
+      "evidence_role": "direct_textbook",
+      "level": "scope",
+      "method": "subject_grade_scope_mapping",
+      "pdf_page": null,
+      "printed_page": null,
+      "publication_status": "published_scope",
+      "rationale": "教材与课标处于同学科、同学段的适用范围；此关系不证明某一单元直接教授该条标准。",
+      "relation_type": "curriculum_scope",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "scope_id": "tcs_f23d1c0f12e0c622",
+      "textbook_grade": 8,
+      "textbook_subject": "数学",
+      "textbook_title": "数学8年级下册",
+      "textbook_volume": "下册",
       "unit_id": null,
       "unit_title": ""
     },

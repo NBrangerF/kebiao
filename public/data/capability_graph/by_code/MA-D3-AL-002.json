@@ -126,9 +126,9 @@
     "evidence_note": "已有教材正文、任务或练习的页内证据；关系由机器自动生成并附带原文定位、证据哈希和置信度。",
     "gap_reason": null,
     "highest_evidence_level": "L3_page_evidence",
-    "page_evidence_count": 5,
-    "scope_count": 4,
-    "specific_count": 6,
+    "page_evidence_count": 10,
+    "scope_count": 8,
+    "specific_count": 12,
     "unit_topic_candidate_count": 0
   },
   "curriculum_alignments": [
@@ -419,6 +419,286 @@
     },
     {
       "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_4d8f76ed834edeff",
+      "alignment_type": "supports",
+      "confidence": 0.86,
+      "coverage": "partial",
+      "edition_id": "ed_576cc2fce461f0e08cb2",
+      "evidence_basis": "textbook_page_span",
+      "evidence_gap": null,
+      "evidence_level": "L3_page_evidence",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_primary_grade_5_down",
+        "tes_08adf377c976d21d",
+        "textbook-node:tcn_a3e22e1ad31f81df",
+        "textbook-unit:tcu_dd1290f57765535b"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "列方程解决问题。",
+          "excerpt_hash": "626f79cd6fb6324e9becd3fd3cc72ef550503db8d1319f36724c4b3238546661",
+          "pdf_page": 64,
+          "printed_page": null,
+          "span_id": "tes_08adf377c976d21d"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_3d1c84205b3d59d7"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_3d1c84205b3d59d7",
+          "label": "运用小数和分数解决问题，进一步发展符号意识和数感"
+        }
+      ],
+      "level": "page",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_a3e22e1ad31f81df",
+      "node_title": "列方程解决问题。",
+      "pdf_page": 64,
+      "printed_page": null,
+      "publication_status": "published",
+      "rationale": "教材学习目标“列方程解决问题。”与课标 MA-D3-AL-002 的可教学小能力“运用小数和分数解决问题，进一步发展符号意识和数感”形成页内证据匹配。",
+      "relation_type": "supports",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "textbook_grade": 5,
+      "textbook_subject": "数学",
+      "textbook_title": "数学5年级下册",
+      "textbook_volume": "下册",
+      "unit_id": "tcu_dd1290f57765535b",
+      "unit_title": "五 分数除法"
+    },
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_9786e1eb624eaff0",
+      "alignment_type": "practices",
+      "confidence": 0.86,
+      "coverage": "partial",
+      "edition_id": "ed_576cc2fce461f0e08cb2",
+      "evidence_basis": "textbook_page_span",
+      "evidence_gap": null,
+      "evidence_level": "L3_page_evidence",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_primary_grade_5_down",
+        "tes_4f9eb778cd412da7",
+        "textbook-node:tcn_70325f1cc3cb9a5a",
+        "textbook-unit:tcu_dd1290f57765535b"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "想一想,用方程解决问题的步骤是什么?",
+          "excerpt_hash": "eed3dac7aa33e68fd6bce502913efd1d8275f988a992449730f8a213f599c9ab",
+          "pdf_page": 65,
+          "printed_page": null,
+          "span_id": "tes_4f9eb778cd412da7"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_3d1c84205b3d59d7"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_3d1c84205b3d59d7",
+          "label": "运用小数和分数解决问题，进一步发展符号意识和数感"
+        }
+      ],
+      "level": "page",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_70325f1cc3cb9a5a",
+      "node_title": "想一想,用方程解决问题的步骤是什么?",
+      "pdf_page": 65,
+      "printed_page": null,
+      "publication_status": "published",
+      "rationale": "教材练习“想一想,用方程解决问题的步骤是什么?”与课标 MA-D3-AL-002 的可教学小能力“运用小数和分数解决问题，进一步发展符号意识和数感”形成页内证据匹配。",
+      "relation_type": "practices",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "textbook_grade": 5,
+      "textbook_subject": "数学",
+      "textbook_title": "数学5年级下册",
+      "textbook_volume": "下册",
+      "unit_id": "tcu_dd1290f57765535b",
+      "unit_title": "五 分数除法"
+    },
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_efc4c5c58d53e941",
+      "alignment_type": "supports",
+      "confidence": 0.86,
+      "coverage": "partial",
+      "edition_id": "ed_576cc2fce461f0e08cb2",
+      "evidence_basis": "textbook_page_span",
+      "evidence_gap": null,
+      "evidence_level": "L3_page_evidence",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_primary_grade_5_down",
+        "tes_c9bed54bd8417ba2",
+        "textbook-node:tcn_6f6a0ab9cd1b2995",
+        "textbook-unit:tcu_dd1290f57765535b"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "用方程解决问题的关键是找到等量关系,试一试。",
+          "excerpt_hash": "7541d165e2af9cff4d76105e10be5a529a155ea0af252bac26a02bfe809801a2",
+          "pdf_page": 64,
+          "printed_page": null,
+          "span_id": "tes_c9bed54bd8417ba2"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_3d1c84205b3d59d7"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_3d1c84205b3d59d7",
+          "label": "运用小数和分数解决问题，进一步发展符号意识和数感"
+        }
+      ],
+      "level": "page",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_6f6a0ab9cd1b2995",
+      "node_title": "用方程解决问题的关键是找到等量关系,试一试。",
+      "pdf_page": 64,
+      "printed_page": null,
+      "publication_status": "published",
+      "rationale": "教材学习目标“用方程解决问题的关键是找到等量关系,试一试。”与课标 MA-D3-AL-002 的可教学小能力“运用小数和分数解决问题，进一步发展符号意识和数感”形成页内证据匹配。",
+      "relation_type": "supports",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "textbook_grade": 5,
+      "textbook_subject": "数学",
+      "textbook_title": "数学5年级下册",
+      "textbook_volume": "下册",
+      "unit_id": "tcu_dd1290f57765535b",
+      "unit_title": "五 分数除法"
+    },
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_d38bddcdeff70000",
+      "alignment_type": "supports",
+      "confidence": 0.86,
+      "coverage": "partial",
+      "edition_id": "ed_b1800b5b9d4356b970d0",
+      "evidence_basis": "textbook_page_span",
+      "evidence_gap": null,
+      "evidence_level": "L3_page_evidence",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_primary_grade_6_down",
+        "tes_5fbf0098d853fa99",
+        "textbook-node:tcn_3329c01d69d0e530",
+        "textbook-unit:tcu_e5b40bb17ac0add7"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "选择解决问题的方法,列式并计算。",
+          "excerpt_hash": "b451bac5a09ebfd48ad1e4d853bb628515d4d70f41d41fd743268c520e7df27b",
+          "pdf_page": 77,
+          "printed_page": null,
+          "span_id": "tes_5fbf0098d853fa99"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_3d1c84205b3d59d7"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_3d1c84205b3d59d7",
+          "label": "运用小数和分数解决问题，进一步发展符号意识和数感"
+        }
+      ],
+      "level": "page",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_3329c01d69d0e530",
+      "node_title": "选择解决问题的方法,列式并计算。",
+      "pdf_page": 77,
+      "printed_page": null,
+      "publication_status": "published",
+      "rationale": "教材学习目标“选择解决问题的方法,列式并计算。”与课标 MA-D3-AL-002 的可教学小能力“运用小数和分数解决问题，进一步发展符号意识和数感”形成页内证据匹配。",
+      "relation_type": "supports",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "textbook_grade": 6,
+      "textbook_subject": "数学",
+      "textbook_title": "数学6年级下册",
+      "textbook_volume": "下册",
+      "unit_id": "tcu_e5b40bb17ac0add7",
+      "unit_title": "总复习"
+    },
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_7c94563c4fc94ae2",
+      "alignment_type": "practices",
+      "confidence": 0.92,
+      "coverage": "partial",
+      "edition_id": "ed_c450559fa44fadf1df17",
+      "evidence_basis": "textbook_page_span",
+      "evidence_gap": null,
+      "evidence_level": "L3_page_evidence",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_primary_grade_6_up",
+        "tes_04bab5c2b0d00d63",
+        "textbook-node:tcn_2688051cfb5f7b28",
+        "textbook-unit:tcu_1ef12efa7fa5568a"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "想一想,百分数怎样化成小数和分数?算一算,说一说。",
+          "excerpt_hash": "4bbd7391c789f716a7bae45a53c19d9f3edc2782530673e194c6ae1e1caf8452",
+          "pdf_page": 85,
+          "printed_page": "80",
+          "span_id": "tes_04bab5c2b0d00d63"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_3d1c84205b3d59d7",
+        "lc_a6c3635bfff2fe54"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_3d1c84205b3d59d7",
+          "label": "运用小数和分数解决问题，进一步发展符号意识和数感"
+        },
+        {
+          "component_id": "lc_a6c3635bfff2fe54",
+          "label": "进行小数和分数的转化（不包括将循环小数转化成分数）"
+        }
+      ],
+      "level": "page",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_2688051cfb5f7b28",
+      "node_title": "想一想,百分数怎样化成小数和分数?算一算,说一说。",
+      "pdf_page": 85,
+      "printed_page": "80",
+      "publication_status": "published",
+      "rationale": "教材练习“想一想,百分数怎样化成小数和分数?算一算,说一说。”与课标 MA-D3-AL-002 的可教学小能力“运用小数和分数解决问题，进一步发展符号意识和数感、进行小数和分数的转化（不包括将循环小数转化成分数）”形成页内证据匹配。",
+      "relation_type": "practices",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "textbook_grade": 6,
+      "textbook_subject": "数学",
+      "textbook_title": "数学6年级上册",
+      "textbook_volume": "上册",
+      "unit_id": "tcu_1ef12efa7fa5568a",
+      "unit_title": "第七单元 百分数的认识与应用（一）"
+    },
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
       "alignment_id": "tca_1452cf0890712048",
       "alignment_type": "supports",
       "confidence": 0.92,
@@ -471,6 +751,61 @@
       "textbook_volume": "下册",
       "unit_id": "tcu_5bd0bef9f163010a",
       "unit_title": "4 分数的意义和性质"
+    },
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_ee2084dbdb8fffe7",
+      "alignment_type": "supports",
+      "confidence": 0.92,
+      "coverage": "partial",
+      "edition_id": "ed_ec7081b7432dd6fd4fe7",
+      "evidence_basis": "toc_title",
+      "evidence_gap": "当前证据来自目录标题与课标概念匹配，尚未保存教材正文或练习摘录；因此只能声明主题支持，不能声明完整教授。",
+      "evidence_level": "L2_topic",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_primary_grade_5_up",
+        "tes_ab56429b1138f509",
+        "textbook-node:tcn_9eb1060ea21083c2",
+        "textbook-unit:tcu_60697496f5867d15"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "0.32 和 0.320...... “0”,小数的大小不变。",
+          "excerpt_hash": "6193fcc6da9885c61804d80865dc5cc71187fc58b1435216c017558db2e5c7f2",
+          "pdf_page": 11,
+          "printed_page": "6",
+          "span_id": "tes_ab56429b1138f509"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_7716116c07f4ceac"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_7716116c07f4ceac",
+          "label": "比较两个分数的大小和两个小数的大小"
+        }
+      ],
+      "level": "unit",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_9eb1060ea21083c2",
+      "node_title": "0.32 和 0.320...... “0”,小数的大小不变。",
+      "pdf_page": 11,
+      "printed_page": "6",
+      "publication_status": "published",
+      "rationale": "教材小节“0.32 和 0.320...... “0”,小数的大小不变。”与课标 MA-D3-AL-002 的可教学小能力“比较两个分数的大小和两个小数的大小”形成页内证据匹配。",
+      "relation_type": "supports",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "textbook_grade": 5,
+      "textbook_subject": "数学",
+      "textbook_title": "数学5年级上册",
+      "textbook_volume": "上册",
+      "unit_id": "tcu_60697496f5867d15",
+      "unit_title": "第一单元 小数的再认识和加减法"
     },
     {
       "algorithm_version": "full-alignment-scope-preserve-v2",
@@ -567,6 +902,37 @@
     },
     {
       "algorithm_version": "full-alignment-scope-preserve-v2",
+      "alignment_id": "ca_38e6707d3d391580",
+      "alignment_type": "references",
+      "confidence": null,
+      "coverage": "scope_only",
+      "edition_id": "ed_576cc2fce461f0e08cb2",
+      "evidence_basis": "subject_grade_scope",
+      "evidence_level": "L1_scope",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_primary_grade_5_down"
+      ],
+      "evidence_role": "direct_textbook",
+      "level": "scope",
+      "method": "subject_grade_scope_mapping",
+      "pdf_page": null,
+      "printed_page": null,
+      "publication_status": "published_scope",
+      "rationale": "教材与课标处于同学科、同学段的适用范围；此关系不证明某一单元直接教授该条标准。",
+      "relation_type": "curriculum_scope",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "scope_id": "tcs_4e566921b9cb64d3",
+      "textbook_grade": 5,
+      "textbook_subject": "数学",
+      "textbook_title": "数学5年级下册",
+      "textbook_volume": "下册",
+      "unit_id": null,
+      "unit_title": ""
+    },
+    {
+      "algorithm_version": "full-alignment-scope-preserve-v2",
       "alignment_id": "ca_e2982466d2ae79f0",
       "alignment_type": "references",
       "confidence": null,
@@ -589,6 +955,99 @@
       "review_status": "machine_checked",
       "revision_status": "current_confirmed",
       "scope_id": "tcs_e1c2312794f3e566",
+      "textbook_grade": 5,
+      "textbook_subject": "数学",
+      "textbook_title": "数学5年级上册",
+      "textbook_volume": "上册",
+      "unit_id": null,
+      "unit_title": ""
+    },
+    {
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "alignment_id": "ca_fd1fe19cceab3eb1",
+      "alignment_type": "references",
+      "confidence": null,
+      "coverage": "scope_only",
+      "edition_id": "ed_b1800b5b9d4356b970d0",
+      "evidence_basis": "subject_grade_scope",
+      "evidence_level": "L1_scope",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_primary_grade_6_down"
+      ],
+      "evidence_role": "direct_textbook",
+      "level": "scope",
+      "method": "subject_grade_scope_mapping",
+      "pdf_page": null,
+      "printed_page": null,
+      "publication_status": "published_scope",
+      "rationale": "教材与课标处于同学科、同学段的适用范围；此关系不证明某一单元直接教授该条标准。",
+      "relation_type": "curriculum_scope",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "scope_id": "tcs_ee4eb223123317f3",
+      "textbook_grade": 6,
+      "textbook_subject": "数学",
+      "textbook_title": "数学6年级下册",
+      "textbook_volume": "下册",
+      "unit_id": null,
+      "unit_title": ""
+    },
+    {
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "alignment_id": "ca_f3344316a689d993",
+      "alignment_type": "references",
+      "confidence": null,
+      "coverage": "scope_only",
+      "edition_id": "ed_c450559fa44fadf1df17",
+      "evidence_basis": "subject_grade_scope",
+      "evidence_level": "L1_scope",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_primary_grade_6_up"
+      ],
+      "evidence_role": "direct_textbook",
+      "level": "scope",
+      "method": "subject_grade_scope_mapping",
+      "pdf_page": null,
+      "printed_page": null,
+      "publication_status": "published_scope",
+      "rationale": "教材与课标处于同学科、同学段的适用范围；此关系不证明某一单元直接教授该条标准。",
+      "relation_type": "curriculum_scope",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "scope_id": "tcs_cbb6bc8a56e6cd94",
+      "textbook_grade": 6,
+      "textbook_subject": "数学",
+      "textbook_title": "数学6年级上册",
+      "textbook_volume": "上册",
+      "unit_id": null,
+      "unit_title": ""
+    },
+    {
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "alignment_id": "ca_76f7e93e7e6cafaf",
+      "alignment_type": "references",
+      "confidence": null,
+      "coverage": "scope_only",
+      "edition_id": "ed_ec7081b7432dd6fd4fe7",
+      "evidence_basis": "subject_grade_scope",
+      "evidence_level": "L1_scope",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_primary_grade_5_up"
+      ],
+      "evidence_role": "direct_textbook",
+      "level": "scope",
+      "method": "subject_grade_scope_mapping",
+      "pdf_page": null,
+      "printed_page": null,
+      "publication_status": "published_scope",
+      "rationale": "教材与课标处于同学科、同学段的适用范围；此关系不证明某一单元直接教授该条标准。",
+      "relation_type": "curriculum_scope",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "scope_id": "tcs_e0716786d706e600",
       "textbook_grade": 5,
       "textbook_subject": "数学",
       "textbook_title": "数学5年级上册",

@@ -48,8 +48,8 @@
     "gap_reason": null,
     "highest_evidence_level": "L3_page_evidence",
     "page_evidence_count": 1,
-    "scope_count": 2,
-    "specific_count": 1,
+    "scope_count": 4,
+    "specific_count": 2,
     "unit_topic_candidate_count": 0
   },
   "curriculum_alignments": [
@@ -109,6 +109,61 @@
       "unit_title": "第二十九章 圆"
     },
     {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_5b60fef3685b2b25",
+      "alignment_type": "supports",
+      "confidence": 0.86,
+      "coverage": "partial",
+      "edition_id": "ed_ef4497f053950395a66d",
+      "evidence_basis": "toc_title",
+      "evidence_gap": "当前证据来自目录标题与课标概念匹配，尚未保存教材正文或练习摘录；因此只能声明主题支持，不能声明完整教授。",
+      "evidence_level": "L2_topic",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_junior_grade_9_down",
+        "tes_718ab50eb9173476",
+        "textbook-node:tcn_b6847ef9431d1994",
+        "textbook-unit:tcu_8b3934b72796ea3c"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "4.00半径为r,其内接正三角形、正四边形、正六边形的边长分别为a,b,C.",
+          "excerpt_hash": "70c0d420810c6cebd619b842bd6fb7098ad4d85bb8f5c13b78daef8e42be91af",
+          "pdf_page": 104,
+          "printed_page": null,
+          "span_id": "tes_718ab50eb9173476"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_9fb4ce41b950f6a3"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_9fb4ce41b950f6a3",
+          "label": "用尺规作三点确定的圆、三角形外接圆和内切圆、圆内接正方形和正六边形"
+        }
+      ],
+      "level": "unit",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_b6847ef9431d1994",
+      "node_title": "4.00半径为r,其内接正三角形、正四边形、正六边形的边长分别为a,b,C.",
+      "pdf_page": 104,
+      "printed_page": null,
+      "publication_status": "published",
+      "rationale": "教材小节“4.00半径为r,其内接正三角形、正四边形、正六边形的边长分别为a,b,C.”与课标 MA-H4G9-GE-018 的可教学小能力“用尺规作三点确定的圆、三角形外接圆和内切圆、圆内接正方形和正六边形”形成页内证据匹配。",
+      "relation_type": "supports",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "textbook_grade": 9,
+      "textbook_subject": "数学",
+      "textbook_title": "数学9年级下册",
+      "textbook_volume": "下册",
+      "unit_id": "tcu_8b3934b72796ea3c",
+      "unit_title": "第三章 圆"
+    },
+    {
       "algorithm_version": "full-alignment-scope-preserve-v2",
       "alignment_id": "ca_617115a56b848f07",
       "alignment_type": "references",
@@ -163,6 +218,68 @@
       "review_status": "machine_checked",
       "revision_status": "revision_unknown",
       "scope_id": "tcs_3e651d0e242caded",
+      "textbook_grade": 9,
+      "textbook_subject": "数学",
+      "textbook_title": "数学9年级下册",
+      "textbook_volume": "下册",
+      "unit_id": null,
+      "unit_title": ""
+    },
+    {
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "alignment_id": "ca_0e2cb80d3e7e021d",
+      "alignment_type": "references",
+      "confidence": null,
+      "coverage": "scope_only",
+      "edition_id": "ed_40d19fde240347eaa591",
+      "evidence_basis": "subject_grade_scope",
+      "evidence_level": "L1_scope",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_junior_grade_9_up"
+      ],
+      "evidence_role": "direct_textbook",
+      "level": "scope",
+      "method": "subject_grade_scope_mapping",
+      "pdf_page": null,
+      "printed_page": null,
+      "publication_status": "published_scope",
+      "rationale": "教材与课标处于同学科、同学段的适用范围；此关系不证明某一单元直接教授该条标准。",
+      "relation_type": "curriculum_scope",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "scope_id": "tcs_e74e9fb9bfcc1148",
+      "textbook_grade": 9,
+      "textbook_subject": "数学",
+      "textbook_title": "数学9年级上册",
+      "textbook_volume": "上册",
+      "unit_id": null,
+      "unit_title": ""
+    },
+    {
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "alignment_id": "ca_4f4b60a12daa4adf",
+      "alignment_type": "references",
+      "confidence": null,
+      "coverage": "scope_only",
+      "edition_id": "ed_ef4497f053950395a66d",
+      "evidence_basis": "subject_grade_scope",
+      "evidence_level": "L1_scope",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_junior_grade_9_down"
+      ],
+      "evidence_role": "direct_textbook",
+      "level": "scope",
+      "method": "subject_grade_scope_mapping",
+      "pdf_page": null,
+      "printed_page": null,
+      "publication_status": "published_scope",
+      "rationale": "教材与课标处于同学科、同学段的适用范围；此关系不证明某一单元直接教授该条标准。",
+      "relation_type": "curriculum_scope",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "scope_id": "tcs_8281375193798050",
       "textbook_grade": 9,
       "textbook_subject": "数学",
       "textbook_title": "数学9年级下册",

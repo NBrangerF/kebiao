@@ -1,0 +1,1374 @@
+{
+ "edition_id": "ed_889bf0017a1cc9222ced",
+ "textbook_title": "英语4年级下册",
+ "platform_textbook_id": "7083258c-1eed-4573-83bb-b1c9fd90d793",
+ "platform_title": "新教材-小学英语外研社版（主编：孙有中）四年级下册",
+ "match": {
+  "title_hits": 54,
+  "method": "book_text",
+  "score": 1.2,
+  "candidates": 7
+ },
+ "tree": [
+  {
+   "id": "9488272e-bd25-4cd3-b226-01a5001b872e",
+   "title": "Unit 1 People at work",
+   "children": [
+    {
+     "id": "4c61e7ba-d05f-4477-83d2-abe3d8cfe50f",
+     "title": "Get ready",
+     "children": []
+    },
+    {
+     "id": "0f561bdb-9270-4251-8c78-bd07561f86f9",
+     "title": "Start up",
+     "children": []
+    },
+    {
+     "id": "f67f5022-16f9-4946-b0b6-9ac4eac96949",
+     "title": "Speed up",
+     "children": []
+    },
+    {
+     "id": "78439b6d-e41e-482d-8df2-d27ca35f95d9",
+     "title": "Fuel up",
+     "children": []
+    },
+    {
+     "id": "c6a9413a-dcd9-4ebd-860b-7a5c13dbf03f",
+     "title": "Hit it big",
+     "children": []
+    },
+    {
+     "id": "ff460371-c733-43b1-8b9f-d9189d85c7a0",
+     "title": "Wrap up",
+     "children": []
+    },
+    {
+     "id": "fe512734-ffa7-4237-beb4-3bfbb902324a",
+     "title": "Check it",
+     "children": []
+    },
+    {
+     "id": "a9ad5f4e-1689-4e87-a88a-852f5da25806",
+     "title": "Let's explore",
+     "children": []
+    }
+   ]
+  },
+  {
+   "id": "bf01a0f5-c524-49cf-a8fa-723ea92fa5d5",
+   "title": "Unit 2 How do you feel today?",
+   "children": [
+    {
+     "id": "de4b9c2f-f094-4053-aa7a-061d23f6faaf",
+     "title": "Get ready",
+     "children": []
+    },
+    {
+     "id": "223f7e31-5280-4728-b94e-3c6f05f6991b",
+     "title": "Start up",
+     "children": []
+    },
+    {
+     "id": "132ebdc5-a7e7-4a85-8c0a-d287af888217",
+     "title": "Speed up",
+     "children": []
+    },
+    {
+     "id": "e8219789-2ea7-4877-8cfb-cb46e5b983e4",
+     "title": "Fuel up",
+     "children": []
+    },
+    {
+     "id": "b0f80d97-b715-4218-be0e-e715b6ffd8b2",
+     "title": "Hit it big",
+     "children": []
+    },
+    {
+     "id": "c7d62e2b-ef05-469b-8a6a-02061a12459e",
+     "title": "Wrap up",
+     "children": []
+    },
+    {
+     "id": "e1a21df0-a742-419d-81ec-0ebe793535fc",
+     "title": "Check it",
+     "children": []
+    },
+    {
+     "id": "c38c91f7-eaee-4534-b555-8535a06830ea",
+     "title": "Let's explore",
+     "children": []
+    }
+   ]
+  },
+  {
+   "id": "00cc70c8-1815-4c91-a349-93f7c7eaeeec",
+   "title": "Unit 3 Everyone's got talent!",
+   "children": [
+    {
+     "id": "95aa3fb0-f47a-40fd-baf1-5228a4fab16e",
+     "title": "Get ready",
+     "children": []
+    },
+    {
+     "id": "796883f4-cc55-4e14-a6f2-a0d645b430bd",
+     "title": "Start up",
+     "children": []
+    },
+    {
+     "id": "6efd7ea2-8e8e-41d4-93cc-5cb6f6c63fa9",
+     "title": "Speed up",
+     "children": []
+    },
+    {
+     "id": "4b63be0c-0587-4391-8ede-9011626acb16",
+     "title": "Fuel up",
+     "children": []
+    },
+    {
+     "id": "d45f3ddd-09b5-4bf4-a325-8192e066a819",
+     "title": "Hit it big",
+     "children": []
+    },
+    {
+     "id": "72e441f6-c06f-47ef-88ba-91ed26c0d04c",
+     "title": "Wrap up",
+     "children": []
+    },
+    {
+     "id": "f34bb4d6-8c89-4b28-9fa6-3bd4f738709a",
+     "title": "Check it",
+     "children": []
+    },
+    {
+     "id": "8becb7ab-2cb9-4d3a-9210-1d1d5ebdf0c4",
+     "title": "Let's explore",
+     "children": []
+    }
+   ]
+  },
+  {
+   "id": "a2f7cc6b-1463-4238-b23e-8c2eaf176bcd",
+   "title": "Unit 4 Plant life",
+   "children": [
+    {
+     "id": "79459d9a-6bfe-4ed9-90e5-fcbc20e453ca",
+     "title": "Get ready",
+     "children": []
+    },
+    {
+     "id": "6545c099-f9e6-434e-af8c-36dc9ec7408a",
+     "title": "Start up",
+     "children": []
+    },
+    {
+     "id": "00c0a3c0-979e-422a-8987-071b9030c420",
+     "title": "Speed up",
+     "children": []
+    },
+    {
+     "id": "cb566877-5139-4f78-8e80-500afab72beb",
+     "title": "Fuel up",
+     "children": []
+    },
+    {
+     "id": "12bd0b74-68c2-4726-bfe5-2f50af2482c9",
+     "title": "Hit it big",
+     "children": []
+    },
+    {
+     "id": "42d6892f-00a2-4312-b33c-c0243c5b4964",
+     "title": "Wrap up",
+     "children": []
+    },
+    {
+     "id": "e12805d1-a761-42e1-af1e-9f9ffa84cc2e",
+     "title": "Check it",
+     "children": []
+    },
+    {
+     "id": "a0a0fb96-7503-4da6-aa0b-42bce8b18222",
+     "title": "Let's explore",
+     "children": []
+    }
+   ]
+  },
+  {
+   "id": "5033bd1e-e774-4611-bb1d-81931ea543d1",
+   "title": "Unit 5 School activities",
+   "children": [
+    {
+     "id": "69bede48-e55e-4b51-8ed9-559b98853879",
+     "title": "Get ready",
+     "children": []
+    },
+    {
+     "id": "3746d4b5-a61a-40a5-b492-b06c7737eeb2",
+     "title": "Start up",
+     "children": []
+    },
+    {
+     "id": "4859b6fd-6a50-4c2e-815e-cfa6f8cdf06f",
+     "title": "Speed up",
+     "children": []
+    },
+    {
+     "id": "bf718f59-5ef7-42da-8f80-5dd676d21907",
+     "title": "Fuel up",
+     "children": []
+    },
+    {
+     "id": "bed2eaec-0a2b-47b1-bb6b-c34a1c8b47d6",
+     "title": "Hit it big",
+     "children": []
+    },
+    {
+     "id": "3ec19908-aae8-450f-9802-d97b875effca",
+     "title": "Wrap up",
+     "children": []
+    },
+    {
+     "id": "e5e33c02-43f8-4938-871d-0f7879b3864f",
+     "title": "Check it",
+     "children": []
+    },
+    {
+     "id": "18f0dadc-dbe1-4c5f-9903-7fe0c1a51c21",
+     "title": "Let's explore",
+     "children": []
+    }
+   ]
+  },
+  {
+   "id": "1b5f8a9b-d567-42b9-9868-d229a7acccbc",
+   "title": "Unit 6 Cool clothes",
+   "children": [
+    {
+     "id": "b25d7678-0c57-49aa-bfad-9b2d23a38d5e",
+     "title": "Get ready",
+     "children": []
+    },
+    {
+     "id": "a660260e-1058-486c-8968-71f379d66ac8",
+     "title": "Start up",
+     "children": []
+    },
+    {
+     "id": "2b5e6dd9-7f32-4f6f-92d5-7293eab857e7",
+     "title": "Speed up",
+     "children": []
+    },
+    {
+     "id": "67bbe7ed-ebb6-4ecc-b5dc-5ab890f0026a",
+     "title": "Fuel up",
+     "children": []
+    },
+    {
+     "id": "2375d332-df5a-4889-957c-cd9c78526180",
+     "title": "Hit it big",
+     "children": []
+    },
+    {
+     "id": "6247cbb7-3c8a-40ba-926c-ab6d4fd020be",
+     "title": "Wrap up",
+     "children": []
+    },
+    {
+     "id": "46d2cef0-a9ac-44b3-84e1-083ecbf70a08",
+     "title": "Check it",
+     "children": []
+    },
+    {
+     "id": "634ad787-ac42-43a1-beea-3d08df8ab25c",
+     "title": "Let's explore",
+     "children": []
+    }
+   ]
+  }
+ ],
+ "lessons": [
+  {
+   "id": "6848dcdb-2826-1dfb-8849-e4c37f144ed5",
+   "title": "Unit 1 People at work (Get ready)",
+   "chapter_path": [
+    "9488272e-bd25-4cd3-b226-01a5001b872e",
+    "4c61e7ba-d05f-4477-83d2-abe3d8cfe50f"
+   ],
+   "pdf_page": null,
+   "materials": [
+    "课件",
+    "教学设计",
+    "学习任务单",
+    "课后练习"
+   ],
+   "hours": 1
+  },
+  {
+   "id": "089b7dd4-57b3-3f02-5157-5b02085e7235",
+   "title": "Unit 1 People at work (Start up)",
+   "chapter_path": [
+    "9488272e-bd25-4cd3-b226-01a5001b872e",
+    "0f561bdb-9270-4251-8c78-bd07561f86f9"
+   ],
+   "pdf_page": null,
+   "materials": [
+    "课件",
+    "教学设计",
+    "学习任务单",
+    "课后练习"
+   ],
+   "hours": 1
+  },
+  {
+   "id": "f00b8ea3-17ef-84a4-526a-2d3b147da206",
+   "title": "Unit 1 People at work (Speed up)",
+   "chapter_path": [
+    "9488272e-bd25-4cd3-b226-01a5001b872e",
+    "f67f5022-16f9-4946-b0b6-9ac4eac96949"
+   ],
+   "pdf_page": null,
+   "materials": [
+    "课件",
+    "教学设计",
+    "学习任务单",
+    "课后练习"
+   ],
+   "hours": 1
+  },
+  {
+   "id": "65e2d29b-c47d-b620-555c-63ec89538b92",
+   "title": "Unit 1 People at work (Fuel up)",
+   "chapter_path": [
+    "9488272e-bd25-4cd3-b226-01a5001b872e",
+    "78439b6d-e41e-482d-8df2-d27ca35f95d9"
+   ],
+   "pdf_page": null,
+   "materials": [
+    "课件",
+    "教学设计",
+    "学习任务单",
+    "课后练习"
+   ],
+   "hours": 1
+  },
+  {
+   "id": "069ec312-973d-351a-6ee1-5477d3d1838d",
+   "title": "Unit 1 People at work (Hit it big)",
+   "chapter_path": [
+    "9488272e-bd25-4cd3-b226-01a5001b872e",
+    "c6a9413a-dcd9-4ebd-860b-7a5c13dbf03f"
+   ],
+   "pdf_page": null,
+   "materials": [
+    "课件",
+    "教学设计",
+    "学习任务单",
+    "课后练习"
+   ],
+   "hours": 1
+  },
+  {
+   "id": "327a703f-8cdf-7766-a637-cd86b4dae4e5",
+   "title": "Unit 1 People at work (Wrap up & Check it & Let's explore)",
+   "chapter_path": [
+    "9488272e-bd25-4cd3-b226-01a5001b872e",
+    "a9ad5f4e-1689-4e87-a88a-852f5da25806"
+   ],
+   "pdf_page": null,
+   "materials": [
+    "课件",
+    "教学设计",
+    "学习任务单",
+    "课后练习"
+   ],
+   "hours": 1
+  },
+  {
+   "id": "da294dca-084d-a2fc-1e9c-5997f9dac6eb",
+   "title": "Unit 2 How do you feel today？(Get ready)",
+   "chapter_path": [
+    "bf01a0f5-c524-49cf-a8fa-723ea92fa5d5",
+    "de4b9c2f-f094-4053-aa7a-061d23f6faaf"
+   ],
+   "pdf_page": null,
+   "materials": [
+    "课件",
+    "教学设计",
+    "学习任务单",
+    "课后练习"
+   ],
+   "hours": 1
+  },
+  {
+   "id": "85f02f6c-c987-1aff-d8f3-2233a1e36380",
+   "title": "Unit 2 How do you feel today？(Start up)",
+   "chapter_path": [
+    "bf01a0f5-c524-49cf-a8fa-723ea92fa5d5",
+    "223f7e31-5280-4728-b94e-3c6f05f6991b"
+   ],
+   "pdf_page": null,
+   "materials": [
+    "课件",
+    "教学设计",
+    "学习任务单",
+    "课后练习"
+   ],
+   "hours": 1
+  },
+  {
+   "id": "b29ae458-72aa-1508-8793-d075ffe59165",
+   "title": "Unit 2 How do you feel today？(Speed up)",
+   "chapter_path": [
+    "bf01a0f5-c524-49cf-a8fa-723ea92fa5d5",
+    "132ebdc5-a7e7-4a85-8c0a-d287af888217"
+   ],
+   "pdf_page": null,
+   "materials": [
+    "课件",
+    "教学设计",
+    "学习任务单",
+    "课后练习"
+   ],
+   "hours": 1
+  },
+  {
+   "id": "6532c836-ad9c-9546-9065-5389afba9612",
+   "title": "Unit 2 How do you feel today？(Fuel up)",
+   "chapter_path": [
+    "bf01a0f5-c524-49cf-a8fa-723ea92fa5d5",
+    "e8219789-2ea7-4877-8cfb-cb46e5b983e4"
+   ],
+   "pdf_page": null,
+   "materials": [
+    "课件",
+    "教学设计",
+    "学习任务单",
+    "课后练习"
+   ],
+   "hours": 1
+  },
+  {
+   "id": "bc710673-ab0d-60af-4fa6-9853b08094f8",
+   "title": "Unit 2 How do you feel today？(Hit it big)",
+   "chapter_path": [
+    "bf01a0f5-c524-49cf-a8fa-723ea92fa5d5",
+    "b0f80d97-b715-4218-be0e-e715b6ffd8b2"
+   ],
+   "pdf_page": null,
+   "materials": [
+    "课件",
+    "教学设计",
+    "学习任务单",
+    "课后练习"
+   ],
+   "hours": 1
+  },
+  {
+   "id": "c5bcaa10-0d4e-0e2b-312b-32dfafb8a860",
+   "title": "Unit 3 Everyone's got talent! (Get ready)",
+   "chapter_path": [
+    "00cc70c8-1815-4c91-a349-93f7c7eaeeec",
+    "95aa3fb0-f47a-40fd-baf1-5228a4fab16e"
+   ],
+   "pdf_page": null,
+   "materials": [
+    "课件",
+    "教学设计",
+    "学习任务单",
+    "课后练习"
+   ],
+   "hours": 1
+  },
+  {
+   "id": "ce594284-1be5-670b-fd4c-26ecef59e567",
+   "title": "Unit 3 Everyone's got talent! (Start up)",
+   "chapter_path": [
+    "00cc70c8-1815-4c91-a349-93f7c7eaeeec",
+    "796883f4-cc55-4e14-a6f2-a0d645b430bd"
+   ],
+   "pdf_page": null,
+   "materials": [
+    "课件",
+    "教学设计",
+    "学习任务单",
+    "课后练习"
+   ],
+   "hours": 1
+  },
+  {
+   "id": "c03a147d-5f19-1322-c614-37a4b1046a86",
+   "title": "Unit 3 Everyone's got talent! (Speed up)",
+   "chapter_path": [
+    "00cc70c8-1815-4c91-a349-93f7c7eaeeec",
+    "6efd7ea2-8e8e-41d4-93cc-5cb6f6c63fa9"
+   ],
+   "pdf_page": null,
+   "materials": [
+    "课件",
+    "教学设计",
+    "学习任务单",
+    "课后练习"
+   ],
+   "hours": 1
+  },
+  {
+   "id": "4fc18168-3e63-4ba8-cca0-1ba50b5721ae",
+   "title": "Unit 3 Everyone's got talent! (Fuel up)",
+   "chapter_path": [
+    "00cc70c8-1815-4c91-a349-93f7c7eaeeec",
+    "4b63be0c-0587-4391-8ede-9011626acb16"
+   ],
+   "pdf_page": null,
+   "materials": [
+    "课件",
+    "教学设计",
+    "学习任务单",
+    "课后练习"
+   ],
+   "hours": 1
+  },
+  {
+   "id": "41fc4e4a-ac32-a64c-7640-09a731141fe4",
+   "title": "Unit 3 Everyone's got talent! (Hit it big)",
+   "chapter_path": [
+    "00cc70c8-1815-4c91-a349-93f7c7eaeeec",
+    "d45f3ddd-09b5-4bf4-a325-8192e066a819"
+   ],
+   "pdf_page": null,
+   "materials": [
+    "课件",
+    "教学设计",
+    "学习任务单",
+    "课后练习"
+   ],
+   "hours": 1
+  },
+  {
+   "id": "f94fd701-771d-1041-0172-91b3349793d3",
+   "title": "Unit 3 Everyone's got talent! (Wrap up & Check up & Let's explore)",
+   "chapter_path": [
+    "00cc70c8-1815-4c91-a349-93f7c7eaeeec",
+    "72e441f6-c06f-47ef-88ba-91ed26c0d04c"
+   ],
+   "pdf_page": null,
+   "materials": [
+    "课件",
+    "教学设计",
+    "学习任务单",
+    "课后练习"
+   ],
+   "hours": 1
+  },
+  {
+   "id": "9e398075-4efb-62b5-caba-8b7b0cc901dd",
+   "title": "Unit 4 Plant life (Get ready)",
+   "chapter_path": [
+    "a2f7cc6b-1463-4238-b23e-8c2eaf176bcd",
+    "79459d9a-6bfe-4ed9-90e5-fcbc20e453ca"
+   ],
+   "pdf_page": null,
+   "materials": [
+    "课件",
+    "教学设计",
+    "学习任务单",
+    "课后练习"
+   ],
+   "hours": 1
+  },
+  {
+   "id": "d43339c0-c9fe-80aa-c7e0-1b03be34e408",
+   "title": "Unit 4 Plant life (Start up)",
+   "chapter_path": [
+    "a2f7cc6b-1463-4238-b23e-8c2eaf176bcd",
+    "6545c099-f9e6-434e-af8c-36dc9ec7408a"
+   ],
+   "pdf_page": null,
+   "materials": [
+    "课件",
+    "教学设计",
+    "学习任务单",
+    "课后练习"
+   ],
+   "hours": 1
+  },
+  {
+   "id": "1a8e32e8-13fe-f888-b5af-16647bb8f555",
+   "title": "Unit 4 Plant life (Speed up)",
+   "chapter_path": [
+    "a2f7cc6b-1463-4238-b23e-8c2eaf176bcd",
+    "00c0a3c0-979e-422a-8987-071b9030c420"
+   ],
+   "pdf_page": null,
+   "materials": [
+    "课件",
+    "教学设计",
+    "学习任务单",
+    "课后练习"
+   ],
+   "hours": 1
+  },
+  {
+   "id": "d0d434ce-64e9-11dd-2242-6579e819e249",
+   "title": "Unit 4 Plant life (Fuel up)",
+   "chapter_path": [
+    "a2f7cc6b-1463-4238-b23e-8c2eaf176bcd",
+    "cb566877-5139-4f78-8e80-500afab72beb"
+   ],
+   "pdf_page": null,
+   "materials": [
+    "课件",
+    "教学设计",
+    "学习任务单",
+    "课后练习"
+   ],
+   "hours": 1
+  },
+  {
+   "id": "9290deef-7ea5-47c0-712c-e9ad8574681d",
+   "title": "Unit 4 Plant life (Hit it big)",
+   "chapter_path": [
+    "a2f7cc6b-1463-4238-b23e-8c2eaf176bcd",
+    "12bd0b74-68c2-4726-bfe5-2f50af2482c9"
+   ],
+   "pdf_page": null,
+   "materials": [
+    "课件",
+    "教学设计",
+    "学习任务单",
+    "课后练习"
+   ],
+   "hours": 1
+  },
+  {
+   "id": "b02ca0a6-869b-0337-0707-c1030363e660",
+   "title": "Unit 4 Plant life (Wrap up & Check it & Let’s explore)",
+   "chapter_path": [
+    "a2f7cc6b-1463-4238-b23e-8c2eaf176bcd",
+    "42d6892f-00a2-4312-b33c-c0243c5b4964"
+   ],
+   "pdf_page": null,
+   "materials": [
+    "课件",
+    "教学设计",
+    "学习任务单",
+    "课后练习"
+   ],
+   "hours": 1
+  },
+  {
+   "id": "e6479b50-2eff-8203-c29d-91f1a238eaac",
+   "title": "Unit 5 School activities (Get ready)",
+   "chapter_path": [
+    "5033bd1e-e774-4611-bb1d-81931ea543d1",
+    "69bede48-e55e-4b51-8ed9-559b98853879"
+   ],
+   "pdf_page": null,
+   "materials": [
+    "课件",
+    "教学设计",
+    "学习任务单",
+    "课后练习"
+   ],
+   "hours": 1
+  },
+  {
+   "id": "8620bc60-fe27-cfcc-f4be-0f9cbf0082b1",
+   "title": "Unit 5 School activities (Start up)",
+   "chapter_path": [
+    "5033bd1e-e774-4611-bb1d-81931ea543d1",
+    "3746d4b5-a61a-40a5-b492-b06c7737eeb2"
+   ],
+   "pdf_page": null,
+   "materials": [
+    "课件",
+    "教学设计",
+    "学习任务单",
+    "课后练习"
+   ],
+   "hours": 1
+  },
+  {
+   "id": "994fe35c-2947-83d6-5f81-6e4cacf40290",
+   "title": "Unit 5 School activities (Speed up)",
+   "chapter_path": [
+    "5033bd1e-e774-4611-bb1d-81931ea543d1",
+    "4859b6fd-6a50-4c2e-815e-cfa6f8cdf06f"
+   ],
+   "pdf_page": null,
+   "materials": [
+    "课件",
+    "教学设计",
+    "学习任务单",
+    "课后练习"
+   ],
+   "hours": 1
+  },
+  {
+   "id": "9e89e91d-4c9f-f4ef-8bb2-2453d904fcdb",
+   "title": "Unit 5 School activities (Fuel up)",
+   "chapter_path": [
+    "5033bd1e-e774-4611-bb1d-81931ea543d1",
+    "bf718f59-5ef7-42da-8f80-5dd676d21907"
+   ],
+   "pdf_page": null,
+   "materials": [
+    "课件",
+    "教学设计",
+    "学习任务单",
+    "课后练习"
+   ],
+   "hours": 1
+  },
+  {
+   "id": "178d89b3-c7ce-155d-3f6b-875db38c5de4",
+   "title": "Unit 5 School activities (Hit it big)",
+   "chapter_path": [
+    "5033bd1e-e774-4611-bb1d-81931ea543d1",
+    "bed2eaec-0a2b-47b1-bb6b-c34a1c8b47d6"
+   ],
+   "pdf_page": null,
+   "materials": [
+    "课件",
+    "教学设计",
+    "学习任务单",
+    "课后练习"
+   ],
+   "hours": 1
+  },
+  {
+   "id": "90899b2d-b892-fc45-35b8-88e2e2fce37d",
+   "title": "Unit 5 School activities (Wrap up & Check it & Let's explore)",
+   "chapter_path": [
+    "5033bd1e-e774-4611-bb1d-81931ea543d1",
+    "18f0dadc-dbe1-4c5f-9903-7fe0c1a51c21"
+   ],
+   "pdf_page": null,
+   "materials": [
+    "课件",
+    "教学设计",
+    "学习任务单",
+    "课后练习"
+   ],
+   "hours": 1
+  },
+  {
+   "id": "0956e8a2-ac55-1d62-d449-3ea4f263e864",
+   "title": "Unit 6 Cool clothes (Get ready)",
+   "chapter_path": [
+    "1b5f8a9b-d567-42b9-9868-d229a7acccbc",
+    "b25d7678-0c57-49aa-bfad-9b2d23a38d5e"
+   ],
+   "pdf_page": null,
+   "materials": [
+    "课件",
+    "教学设计",
+    "学习任务单",
+    "课后练习"
+   ],
+   "hours": 1
+  },
+  {
+   "id": "bbf0bb4e-4813-a346-0304-a7d32ddb1e0b",
+   "title": "Unit 6 Cool clothes (Start up)",
+   "chapter_path": [
+    "1b5f8a9b-d567-42b9-9868-d229a7acccbc",
+    "a660260e-1058-486c-8968-71f379d66ac8"
+   ],
+   "pdf_page": null,
+   "materials": [
+    "课件",
+    "教学设计",
+    "学习任务单",
+    "课后练习"
+   ],
+   "hours": 1
+  },
+  {
+   "id": "a05e979a-0108-9fc0-29f5-ce72bb626230",
+   "title": "Unit 6 Cool clothes (Speed up)",
+   "chapter_path": [
+    "1b5f8a9b-d567-42b9-9868-d229a7acccbc",
+    "2b5e6dd9-7f32-4f6f-92d5-7293eab857e7"
+   ],
+   "pdf_page": null,
+   "materials": [
+    "课件",
+    "教学设计",
+    "学习任务单",
+    "课后练习"
+   ],
+   "hours": 1
+  },
+  {
+   "id": "af6a7856-4457-a1af-7af8-426dd0ff347f",
+   "title": "Unit 6 Cool clothes (Fuel up)",
+   "chapter_path": [
+    "1b5f8a9b-d567-42b9-9868-d229a7acccbc",
+    "67bbe7ed-ebb6-4ecc-b5dc-5ab890f0026a"
+   ],
+   "pdf_page": null,
+   "materials": [
+    "课件",
+    "教学设计",
+    "学习任务单",
+    "课后练习"
+   ],
+   "hours": 1
+  },
+  {
+   "id": "2ea22a60-4360-7461-701c-c27a10c56a0f",
+   "title": "Unit 6 Cool clothes (Hit it big)",
+   "chapter_path": [
+    "1b5f8a9b-d567-42b9-9868-d229a7acccbc",
+    "2375d332-df5a-4889-957c-cd9c78526180"
+   ],
+   "pdf_page": null,
+   "materials": [
+    "课件",
+    "教学设计",
+    "学习任务单",
+    "课后练习"
+   ],
+   "hours": 1
+  },
+  {
+   "id": "499be447-aeb4-4cbd-808d-b2f6c81c3842",
+   "title": "Unit 6 Cool clothes (Wrap up & Check it & Let's explore)",
+   "chapter_path": [
+    "1b5f8a9b-d567-42b9-9868-d229a7acccbc",
+    "46d2cef0-a9ac-44b3-84e1-083ecbf70a08"
+   ],
+   "pdf_page": null,
+   "materials": [
+    "课件",
+    "教学设计",
+    "学习任务单",
+    "课后练习"
+   ],
+   "hours": 1
+  },
+  {
+   "id": "f2711e5d-85e2-b556-5044-9d16391bafdf",
+   "title": "Unit 2 How do you feel today？(Wrap up & Check it & Let's explore)",
+   "chapter_path": [
+    "bf01a0f5-c524-49cf-a8fa-723ea92fa5d5",
+    "c38c91f7-eaee-4534-b555-8535a06830ea"
+   ],
+   "pdf_page": null,
+   "materials": [
+    "课件",
+    "教学设计",
+    "学习任务单",
+    "课后练习"
+   ],
+   "hours": 1
+  },
+  {
+   "id": "346ab85a-b705-49e1-1518-783e0d8f97c1",
+   "title": "Unit 1_Get ready_1 Listen and sing.",
+   "chapter_path": [
+    "9488272e-bd25-4cd3-b226-01a5001b872e",
+    "4c61e7ba-d05f-4477-83d2-abe3d8cfe50f"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "4ca575f2-9923-73aa-3084-74b9dea54186",
+   "title": "Unit 1_Start up_1 Read and answer.",
+   "chapter_path": [
+    "9488272e-bd25-4cd3-b226-01a5001b872e",
+    "0f561bdb-9270-4251-8c78-bd07561f86f9"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "aed87f8c-384f-1621-d882-2a50f5ceca73",
+   "title": "Unit 1_Start up_3 Listen and circle.",
+   "chapter_path": [
+    "9488272e-bd25-4cd3-b226-01a5001b872e",
+    "0f561bdb-9270-4251-8c78-bd07561f86f9"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "c957dc9f-3bc0-433a-a210-3db5c5f4ae92",
+   "title": "Unit 1_Speed up_1 Read and answer.",
+   "chapter_path": [
+    "9488272e-bd25-4cd3-b226-01a5001b872e",
+    "f67f5022-16f9-4946-b0b6-9ac4eac96949"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "a6eec0e5-7839-0c3f-b093-a04b46510daa",
+   "title": "Unit 1_Fuel up_1 Listen and chant.",
+   "chapter_path": [
+    "9488272e-bd25-4cd3-b226-01a5001b872e",
+    "78439b6d-e41e-482d-8df2-d27ca35f95d9"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "a8f6ba25-8e7d-4f88-9c0f-f34123b00df7",
+   "title": "Unit 1_Fuel up_3 Listen and match.",
+   "chapter_path": [
+    "9488272e-bd25-4cd3-b226-01a5001b872e",
+    "78439b6d-e41e-482d-8df2-d27ca35f95d9"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "38d62dfb-9341-d720-b2c7-25a6b35891d9",
+   "title": "Unit 1_Fuel up_4 Listen again and write.",
+   "chapter_path": [
+    "9488272e-bd25-4cd3-b226-01a5001b872e",
+    "78439b6d-e41e-482d-8df2-d27ca35f95d9"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "6a14f188-dde0-b441-1a51-1e9de71b1bf2",
+   "title": "Unit 1_Words and expressions",
+   "chapter_path": [
+    "9488272e-bd25-4cd3-b226-01a5001b872e"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "bbe6f0eb-bca1-f625-4e76-90aac9bda3e5",
+   "title": "Unit 2_Get ready_1 Listen and sing.",
+   "chapter_path": [
+    "bf01a0f5-c524-49cf-a8fa-723ea92fa5d5",
+    "de4b9c2f-f094-4053-aa7a-061d23f6faaf"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "c1fcf832-3954-8c47-7657-cab2e0525dac",
+   "title": "Unit 2_Start up_1 Read and answer.",
+   "chapter_path": [
+    "bf01a0f5-c524-49cf-a8fa-723ea92fa5d5",
+    "223f7e31-5280-4728-b94e-3c6f05f6991b"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "3a7f579c-c34e-d7c7-ae1f-3aed75d33d72",
+   "title": "Unit 2_Speed up_1 Read and answer.",
+   "chapter_path": [
+    "bf01a0f5-c524-49cf-a8fa-723ea92fa5d5",
+    "132ebdc5-a7e7-4a85-8c0a-d287af888217"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "9fccd217-fe76-edb0-0d1f-f0e3f55ae568",
+   "title": "Unit 2_Fuel up_1 Listen and chant.",
+   "chapter_path": [
+    "bf01a0f5-c524-49cf-a8fa-723ea92fa5d5",
+    "e8219789-2ea7-4877-8cfb-cb46e5b983e4"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "4c5ba3b9-0f87-265b-6b87-8221a43e8fe3",
+   "title": "Unit 2_Fuel up_3 Listen and number.",
+   "chapter_path": [
+    "bf01a0f5-c524-49cf-a8fa-723ea92fa5d5",
+    "e8219789-2ea7-4877-8cfb-cb46e5b983e4"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "ed7c3147-9e4f-552e-cf27-3b58cc7f439e",
+   "title": "Unit 2_Fuel up_4 Listen again and colour.",
+   "chapter_path": [
+    "bf01a0f5-c524-49cf-a8fa-723ea92fa5d5",
+    "e8219789-2ea7-4877-8cfb-cb46e5b983e4"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "93246d2d-41fb-f665-68b1-f06a58e276b8",
+   "title": "Unit 2_Let’s explore_1 Listen and write.",
+   "chapter_path": [
+    "bf01a0f5-c524-49cf-a8fa-723ea92fa5d5",
+    "c38c91f7-eaee-4534-b555-8535a06830ea"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "4ccd7665-4e30-4f73-749d-f6773e13a517",
+   "title": "Unit 2_Words and expressions",
+   "chapter_path": [
+    "bf01a0f5-c524-49cf-a8fa-723ea92fa5d5"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "efa22606-b4ab-940e-819b-2d5be815f880",
+   "title": "Unit 3_Get ready_1 Listen and sing.",
+   "chapter_path": [
+    "00cc70c8-1815-4c91-a349-93f7c7eaeeec",
+    "95aa3fb0-f47a-40fd-baf1-5228a4fab16e"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "b7bb9c20-92bb-3519-ef74-dffd6334933c",
+   "title": "Unit 3_Start up_1 Read and answer.",
+   "chapter_path": [
+    "00cc70c8-1815-4c91-a349-93f7c7eaeeec",
+    "796883f4-cc55-4e14-a6f2-a0d645b430bd"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "d5f6ae23-67e7-8ad3-50c5-2413a505d27a",
+   "title": "Unit 3_Speed up_1 Read and answer.",
+   "chapter_path": [
+    "00cc70c8-1815-4c91-a349-93f7c7eaeeec",
+    "6efd7ea2-8e8e-41d4-93cc-5cb6f6c63fa9"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "f2bdcbf7-0db1-8bc2-73e5-2839d0042283",
+   "title": "Unit 3_Fuel up_1 Listen and chant.",
+   "chapter_path": [
+    "00cc70c8-1815-4c91-a349-93f7c7eaeeec",
+    "4b63be0c-0587-4391-8ede-9011626acb16"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "de4196fb-c3e4-8d10-99e7-435b5c893e09",
+   "title": "Unit 3_Fuel up_3 Listen and number.",
+   "chapter_path": [
+    "00cc70c8-1815-4c91-a349-93f7c7eaeeec",
+    "4b63be0c-0587-4391-8ede-9011626acb16"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "64611ad9-1f40-a264-138d-f5d0c889d172",
+   "title": "Unit 3_Words and expressions",
+   "chapter_path": [
+    "00cc70c8-1815-4c91-a349-93f7c7eaeeec"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "4feb57d0-4812-0ce4-2d29-0f4786cb9e8f",
+   "title": "Unit 4_Get ready_1 Listen and sing.",
+   "chapter_path": [
+    "a2f7cc6b-1463-4238-b23e-8c2eaf176bcd",
+    "79459d9a-6bfe-4ed9-90e5-fcbc20e453ca"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "89a6cb84-e32b-a085-b221-9fd4fcbac98f",
+   "title": "Unit 4_Start up_1 Read and answer.",
+   "chapter_path": [
+    "a2f7cc6b-1463-4238-b23e-8c2eaf176bcd",
+    "6545c099-f9e6-434e-af8c-36dc9ec7408a"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "5e967509-a45c-68d2-0411-5cceeea357a0",
+   "title": "Unit 4_Speed up_1 Read and answer.",
+   "chapter_path": [
+    "a2f7cc6b-1463-4238-b23e-8c2eaf176bcd",
+    "00c0a3c0-979e-422a-8987-071b9030c420"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "a9e26e8b-30f2-46b5-7288-57a6ffe73415",
+   "title": "Unit 4_Fuel up_1 Listen and chant.",
+   "chapter_path": [
+    "a2f7cc6b-1463-4238-b23e-8c2eaf176bcd",
+    "cb566877-5139-4f78-8e80-500afab72beb"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "b1af1cf4-028e-1c6d-499d-506be89b5c8c",
+   "title": "Unit 4_Fuel up_3 Listen and choose.",
+   "chapter_path": [
+    "a2f7cc6b-1463-4238-b23e-8c2eaf176bcd",
+    "cb566877-5139-4f78-8e80-500afab72beb"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "e2586ca4-939f-34e6-88f0-2767c6b6ab17",
+   "title": "Unit 4_Let’s explore_2 Listen and check.",
+   "chapter_path": [
+    "a2f7cc6b-1463-4238-b23e-8c2eaf176bcd",
+    "a0a0fb96-7503-4da6-aa0b-42bce8b18222"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "c33b1d75-5eb4-9ef5-559d-6adfb1d21160",
+   "title": "Unit 4_Words and expressions",
+   "chapter_path": [
+    "a2f7cc6b-1463-4238-b23e-8c2eaf176bcd"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "d26afa7d-77ca-b11f-b1d5-06dd5ef0dc86",
+   "title": "Unit 5_Get ready_1 Listen and sing.",
+   "chapter_path": [
+    "5033bd1e-e774-4611-bb1d-81931ea543d1",
+    "69bede48-e55e-4b51-8ed9-559b98853879"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "0c24a315-c69c-a43a-dfdb-8487d7ce3507",
+   "title": "Unit 5_Start up_1 Read and answer.",
+   "chapter_path": [
+    "5033bd1e-e774-4611-bb1d-81931ea543d1",
+    "3746d4b5-a61a-40a5-b492-b06c7737eeb2"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "00098376-ac64-df05-6b1b-485e8a256469",
+   "title": "Unit 5_Start up_3 Listen and choose.",
+   "chapter_path": [
+    "5033bd1e-e774-4611-bb1d-81931ea543d1",
+    "3746d4b5-a61a-40a5-b492-b06c7737eeb2"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "e22ab1e0-403f-feb2-08c7-5375dbe95d3d",
+   "title": "Unit 5_Speed up_1 Read and answer.",
+   "chapter_path": [
+    "5033bd1e-e774-4611-bb1d-81931ea543d1",
+    "4859b6fd-6a50-4c2e-815e-cfa6f8cdf06f"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "937c7fb9-9ec8-2f05-b98e-3efd6ac9e7c3",
+   "title": "Unit 5_Fuel up_1 Listen and chant.",
+   "chapter_path": [
+    "5033bd1e-e774-4611-bb1d-81931ea543d1",
+    "bf718f59-5ef7-42da-8f80-5dd676d21907"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "9b63150d-7827-93cd-c292-7027781d84c2",
+   "title": "Unit 5_Fuel up_3 Listen and choose.",
+   "chapter_path": [
+    "5033bd1e-e774-4611-bb1d-81931ea543d1",
+    "bf718f59-5ef7-42da-8f80-5dd676d21907"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "4fd87e8b-8d79-1259-7aed-3b014b87e98e",
+   "title": "Unit 5_Words and expressions",
+   "chapter_path": [
+    "5033bd1e-e774-4611-bb1d-81931ea543d1"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "406d89fe-979d-f909-9b13-725d9ebf07c6",
+   "title": "Unit 6_Get ready_1 Listen and sing.",
+   "chapter_path": [
+    "1b5f8a9b-d567-42b9-9868-d229a7acccbc",
+    "b25d7678-0c57-49aa-bfad-9b2d23a38d5e"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "16bbb4c8-cf50-f5e7-5df9-8c98938c2162",
+   "title": "Unit 6_Start up_1 Read and answer.",
+   "chapter_path": [
+    "1b5f8a9b-d567-42b9-9868-d229a7acccbc",
+    "a660260e-1058-486c-8968-71f379d66ac8"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "c13f3892-b2bf-00f4-90c8-84f089092e4a",
+   "title": "Unit 6_Speed up_1 Read and answer.",
+   "chapter_path": [
+    "1b5f8a9b-d567-42b9-9868-d229a7acccbc",
+    "2b5e6dd9-7f32-4f6f-92d5-7293eab857e7"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "7f8afe60-b40e-e037-c589-05d9067016f6",
+   "title": "Unit 6_Fuel up_1 Listen and chant.",
+   "chapter_path": [
+    "1b5f8a9b-d567-42b9-9868-d229a7acccbc",
+    "67bbe7ed-ebb6-4ecc-b5dc-5ab890f0026a"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "2cf7ecb9-d5b2-679e-bbe7-9857ddd0a23c",
+   "title": "Unit 6_Fuel up_3 Listen and match.",
+   "chapter_path": [
+    "1b5f8a9b-d567-42b9-9868-d229a7acccbc",
+    "67bbe7ed-ebb6-4ecc-b5dc-5ab890f0026a"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "a032da48-b11d-0d7b-ae4f-f07facc43333",
+   "title": "Unit 6_Words and expressions",
+   "chapter_path": [
+    "1b5f8a9b-d567-42b9-9868-d229a7acccbc"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "6ddd1bfb-3d5c-550c-106f-45f470843627",
+   "title": "Plays_Act it out_Hats and monkeys",
+   "chapter_path": [
+    "1b5f8a9b-d567-42b9-9868-d229a7acccbc"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "bd45cc70-fac5-5683-94b4-470393259884",
+   "title": "Plays_Act it out_Nanguo “plays” the yu",
+   "chapter_path": [
+    "1b5f8a9b-d567-42b9-9868-d229a7acccbc"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "8c60896f-1404-b03f-66be-933791cb3fda",
+   "title": "Plays_Act it out_The king’s new clothes",
+   "chapter_path": [
+    "1b5f8a9b-d567-42b9-9868-d229a7acccbc"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "8d9f7293-2249-cc38-8cac-1ef45e12c9bd",
+   "title": "Plays_Words and expressions in Plays",
+   "chapter_path": [
+    "1b5f8a9b-d567-42b9-9868-d229a7acccbc"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "0e74de97-20d9-5fa8-c82e-53bf000eb8d3",
+   "title": "Proper nouns",
+   "chapter_path": [
+    "1b5f8a9b-d567-42b9-9868-d229a7acccbc"
+   ],
+   "pdf_page": 80,
+   "materials": [],
+   "hours": 1
+  }
+ ]
+}

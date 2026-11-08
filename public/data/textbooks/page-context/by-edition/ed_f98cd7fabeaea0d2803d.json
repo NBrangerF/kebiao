@@ -1,0 +1,833 @@
+{
+  "edition_id": "ed_f98cd7fabeaea0d2803d",
+  "generated_at": "2026-11-08T05:34:29.502Z",
+  "pages": {
+    "1": {
+      "alignment_ids": [],
+      "evidence_span_ids": [],
+      "node_ids": [
+        "tcn_23c19d3517bb4767"
+      ]
+    },
+    "2": {
+      "alignment_ids": [],
+      "evidence_span_ids": [],
+      "node_ids": [
+        "tcn_1e78c5c4efd3b9fc"
+      ]
+    },
+    "3": {
+      "alignment_ids": [],
+      "evidence_span_ids": [],
+      "node_ids": [
+        "tcn_f2e4515cef3ae829"
+      ]
+    },
+    "4": {
+      "alignment_ids": [],
+      "evidence_span_ids": [],
+      "node_ids": [
+        "tcn_fec24df0ca22e02f"
+      ]
+    },
+    "5": {
+      "alignment_ids": [],
+      "evidence_span_ids": [],
+      "node_ids": [
+        "tcn_fd55c5d36866f742"
+      ]
+    },
+    "6": {
+      "alignment_ids": [],
+      "evidence_span_ids": [],
+      "node_ids": [
+        "tcn_d5963fff77df2e7d"
+      ]
+    },
+    "7": {
+      "alignment_ids": [],
+      "evidence_span_ids": [],
+      "node_ids": [
+        "tcn_104e88396c8d3916",
+        "tcn_92859088480d7b6b"
+      ]
+    },
+    "8": {
+      "alignment_ids": [],
+      "evidence_span_ids": [],
+      "node_ids": [
+        "tcn_8e4f9928455523c2",
+        "tcn_92859088480d7b6b"
+      ]
+    },
+    "9": {
+      "alignment_ids": [],
+      "evidence_span_ids": [],
+      "node_ids": [
+        "tcn_39bbd1ee04227e30",
+        "tcn_92859088480d7b6b"
+      ]
+    },
+    "10": {
+      "alignment_ids": [],
+      "evidence_span_ids": [
+        "tes_0eed8546f574342f",
+        "tes_a2a5f68b5d7e9124",
+        "tes_e2bb0d69b0f66245",
+        "tes_eeeeba43bbbf4bdd",
+        "tes_f7664a6bda7caec3",
+        "tes_fbb8312e65419e3a"
+      ],
+      "node_ids": [
+        "tcn_0f4d6c07ebc99607",
+        "tcn_24931a4af0c6c785",
+        "tcn_29a7bf131f1bde5d",
+        "tcn_424c30dab3ae342f",
+        "tcn_493e16177f9cd000",
+        "tcn_92859088480d7b6b",
+        "tcn_d2506a9a1df1b66c",
+        "tcn_e948d2366341cf36"
+      ]
+    },
+    "11": {
+      "alignment_ids": [],
+      "evidence_span_ids": [],
+      "node_ids": [
+        "tcn_47d9f209c530bdaa",
+        "tcn_92859088480d7b6b",
+        "tcn_e948d2366341cf36"
+      ]
+    },
+    "12": {
+      "alignment_ids": [],
+      "evidence_span_ids": [],
+      "node_ids": [
+        "tcn_92859088480d7b6b",
+        "tcn_a000767d45f69c6c",
+        "tcn_e948d2366341cf36"
+      ]
+    },
+    "13": {
+      "alignment_ids": [],
+      "evidence_span_ids": [],
+      "node_ids": [
+        "tcn_7744c601cab7db26",
+        "tcn_92859088480d7b6b",
+        "tcn_e948d2366341cf36"
+      ]
+    },
+    "14": {
+      "alignment_ids": [],
+      "evidence_span_ids": [],
+      "node_ids": [
+        "tcn_675075eee057b6e3",
+        "tcn_92859088480d7b6b",
+        "tcn_e948d2366341cf36"
+      ]
+    },
+    "15": {
+      "alignment_ids": [],
+      "evidence_span_ids": [],
+      "node_ids": [
+        "tcn_92859088480d7b6b",
+        "tcn_9b1889528c68e8dd",
+        "tcn_e948d2366341cf36"
+      ]
+    },
+    "16": {
+      "alignment_ids": [],
+      "evidence_span_ids": [],
+      "node_ids": [
+        "tcn_3ab065216f73c017",
+        "tcn_92859088480d7b6b",
+        "tcn_e948d2366341cf36"
+      ]
+    },
+    "17": {
+      "alignment_ids": [],
+      "evidence_span_ids": [
+        "tes_8c09763952f24563"
+      ],
+      "node_ids": [
+        "tcn_1c89c2fcfc30d15e",
+        "tcn_274fd50b7bb5cbb1",
+        "tcn_bf7c8639464a41c3"
+      ]
+    },
+    "18": {
+      "alignment_ids": [],
+      "evidence_span_ids": [],
+      "node_ids": [
+        "tcn_0845e07d8ee08945",
+        "tcn_274fd50b7bb5cbb1",
+        "tcn_bf7c8639464a41c3"
+      ]
+    },
+    "19": {
+      "alignment_ids": [],
+      "evidence_span_ids": [],
+      "node_ids": [
+        "tcn_274fd50b7bb5cbb1",
+        "tcn_64470e4adc6eb4cc",
+        "tcn_bf7c8639464a41c3"
+      ]
+    },
+    "20": {
+      "alignment_ids": [],
+      "evidence_span_ids": [
+        "tes_1a8ed8aa5c6f59c9"
+      ],
+      "node_ids": [
+        "tcn_272b2d0027659887",
+        "tcn_274fd50b7bb5cbb1",
+        "tcn_bf7c8639464a41c3",
+        "tcn_dfcd3dd2f3c1f102"
+      ]
+    },
+    "21": {
+      "alignment_ids": [],
+      "evidence_span_ids": [],
+      "node_ids": [
+        "tcn_274fd50b7bb5cbb1",
+        "tcn_7a930fce088e5c1d",
+        "tcn_bf7c8639464a41c3"
+      ]
+    },
+    "22": {
+      "alignment_ids": [],
+      "evidence_span_ids": [],
+      "node_ids": [
+        "tcn_274fd50b7bb5cbb1",
+        "tcn_555c6045a9907c28",
+        "tcn_bf7c8639464a41c3"
+      ]
+    },
+    "23": {
+      "alignment_ids": [],
+      "evidence_span_ids": [],
+      "node_ids": [
+        "tcn_274fd50b7bb5cbb1",
+        "tcn_992ee5cde57eb3e5",
+        "tcn_bf7c8639464a41c3"
+      ]
+    },
+    "24": {
+      "alignment_ids": [],
+      "evidence_span_ids": [
+        "tes_97379151a488fd50"
+      ],
+      "node_ids": [
+        "tcn_274fd50b7bb5cbb1",
+        "tcn_296fb8cb68e51438",
+        "tcn_2c1618cc5837b2ef",
+        "tcn_bf7c8639464a41c3"
+      ]
+    },
+    "25": {
+      "alignment_ids": [],
+      "evidence_span_ids": [],
+      "node_ids": [
+        "tcn_2416b682f91e5840",
+        "tcn_274fd50b7bb5cbb1",
+        "tcn_bf7c8639464a41c3"
+      ]
+    },
+    "26": {
+      "alignment_ids": [],
+      "evidence_span_ids": [
+        "tes_f72866716abf44e1"
+      ],
+      "node_ids": [
+        "tcn_16baa9f6aa91690a",
+        "tcn_274fd50b7bb5cbb1",
+        "tcn_89be4496ccbb4370",
+        "tcn_bf7c8639464a41c3"
+      ]
+    },
+    "27": {
+      "alignment_ids": [],
+      "evidence_span_ids": [],
+      "node_ids": [
+        "tcn_274fd50b7bb5cbb1",
+        "tcn_bf7c8639464a41c3",
+        "tcn_c3eb9159db07cb04"
+      ]
+    },
+    "28": {
+      "alignment_ids": [],
+      "evidence_span_ids": [],
+      "node_ids": [
+        "tcn_274fd50b7bb5cbb1",
+        "tcn_9596885c912afbfa",
+        "tcn_bf7c8639464a41c3"
+      ]
+    },
+    "29": {
+      "alignment_ids": [],
+      "evidence_span_ids": [],
+      "node_ids": [
+        "tcn_274fd50b7bb5cbb1",
+        "tcn_6bfc069cefd2d66d",
+        "tcn_bf7c8639464a41c3"
+      ]
+    },
+    "30": {
+      "alignment_ids": [],
+      "evidence_span_ids": [],
+      "node_ids": [
+        "tcn_274fd50b7bb5cbb1",
+        "tcn_bf7c8639464a41c3",
+        "tcn_d52debaa9e8c6b4f"
+      ]
+    },
+    "31": {
+      "alignment_ids": [],
+      "evidence_span_ids": [],
+      "node_ids": [
+        "tcn_274fd50b7bb5cbb1",
+        "tcn_402ce4da3336203a",
+        "tcn_bf7c8639464a41c3"
+      ]
+    },
+    "32": {
+      "alignment_ids": [],
+      "evidence_span_ids": [],
+      "node_ids": [
+        "tcn_274fd50b7bb5cbb1",
+        "tcn_92edab475c860d92",
+        "tcn_bf7c8639464a41c3"
+      ]
+    },
+    "33": {
+      "alignment_ids": [],
+      "evidence_span_ids": [],
+      "node_ids": [
+        "tcn_1d6cdda0c9202e99",
+        "tcn_274fd50b7bb5cbb1",
+        "tcn_bf7c8639464a41c3"
+      ]
+    },
+    "34": {
+      "alignment_ids": [],
+      "evidence_span_ids": [],
+      "node_ids": [
+        "tcn_ef25cf0b299a971c",
+        "tcn_fbee469b128701cd"
+      ]
+    },
+    "35": {
+      "alignment_ids": [],
+      "evidence_span_ids": [],
+      "node_ids": [
+        "tcn_f946bd42b7c1d752",
+        "tcn_fbee469b128701cd"
+      ]
+    },
+    "36": {
+      "alignment_ids": [],
+      "evidence_span_ids": [],
+      "node_ids": [
+        "tcn_4c1cd5c7486158fd",
+        "tcn_fbee469b128701cd"
+      ]
+    },
+    "37": {
+      "alignment_ids": [],
+      "evidence_span_ids": [],
+      "node_ids": [
+        "tcn_8a97de7632706202",
+        "tcn_fbee469b128701cd"
+      ]
+    },
+    "38": {
+      "alignment_ids": [],
+      "evidence_span_ids": [],
+      "node_ids": [
+        "tcn_11b14531313ae79e",
+        "tcn_fbee469b128701cd"
+      ]
+    },
+    "39": {
+      "alignment_ids": [],
+      "evidence_span_ids": [],
+      "node_ids": [
+        "tcn_4ef787c0c0a89dc8",
+        "tcn_fbee469b128701cd"
+      ]
+    },
+    "40": {
+      "alignment_ids": [],
+      "evidence_span_ids": [],
+      "node_ids": [
+        "tcn_55e72d762538657c",
+        "tcn_fbee469b128701cd"
+      ]
+    },
+    "41": {
+      "alignment_ids": [],
+      "evidence_span_ids": [
+        "tes_7c0b65b9593ab20f"
+      ],
+      "node_ids": [
+        "tcn_8ff4bfae37957679",
+        "tcn_9b38327145961ee9",
+        "tcn_fbee469b128701cd"
+      ]
+    },
+    "42": {
+      "alignment_ids": [],
+      "evidence_span_ids": [],
+      "node_ids": [
+        "tcn_d49f8ceb9477867f",
+        "tcn_fbee469b128701cd"
+      ]
+    },
+    "43": {
+      "alignment_ids": [],
+      "evidence_span_ids": [],
+      "node_ids": [
+        "tcn_dd7bd71c3ffec4a4",
+        "tcn_fbee469b128701cd"
+      ]
+    },
+    "44": {
+      "alignment_ids": [],
+      "evidence_span_ids": [],
+      "node_ids": [
+        "tcn_4bc46b464dae23a0",
+        "tcn_fbee469b128701cd"
+      ]
+    },
+    "45": {
+      "alignment_ids": [],
+      "evidence_span_ids": [],
+      "node_ids": [
+        "tcn_6c60c3fb6f4719af",
+        "tcn_a294c1e7c476bab5"
+      ]
+    },
+    "46": {
+      "alignment_ids": [],
+      "evidence_span_ids": [],
+      "node_ids": [
+        "tcn_0795c8f50187c088",
+        "tcn_6c60c3fb6f4719af"
+      ]
+    },
+    "47": {
+      "alignment_ids": [],
+      "evidence_span_ids": [],
+      "node_ids": [
+        "tcn_63fa2660fb2ba15b",
+        "tcn_6c60c3fb6f4719af"
+      ]
+    },
+    "48": {
+      "alignment_ids": [],
+      "evidence_span_ids": [],
+      "node_ids": [
+        "tcn_1f3bddf685f74c86",
+        "tcn_1f9b9a73ab25764c"
+      ]
+    },
+    "49": {
+      "alignment_ids": [],
+      "evidence_span_ids": [],
+      "node_ids": [
+        "tcn_1f9b9a73ab25764c",
+        "tcn_4703d49a07be9820"
+      ]
+    },
+    "50": {
+      "alignment_ids": [],
+      "evidence_span_ids": [],
+      "node_ids": [
+        "tcn_1f9b9a73ab25764c",
+        "tcn_3c7b60bad9ba96d9"
+      ]
+    },
+    "51": {
+      "alignment_ids": [],
+      "evidence_span_ids": [],
+      "node_ids": [
+        "tcn_1f9b9a73ab25764c",
+        "tcn_b7cb98b7cb78d8fe"
+      ]
+    },
+    "52": {
+      "alignment_ids": [],
+      "evidence_span_ids": [
+        "tes_6ffd1ffa86d81a92"
+      ],
+      "node_ids": [
+        "tcn_1f9b9a73ab25764c",
+        "tcn_5b1b8cdb5dfd26fa",
+        "tcn_a9532f83b053561b"
+      ]
+    },
+    "53": {
+      "alignment_ids": [],
+      "evidence_span_ids": [
+        "tes_c538d979479670ee"
+      ],
+      "node_ids": [
+        "tcn_33faa1050a29b7ba",
+        "tcn_8f4960f9ec6b77ae",
+        "tcn_da102437c0978dc2"
+      ]
+    },
+    "54": {
+      "alignment_ids": [],
+      "evidence_span_ids": [],
+      "node_ids": [
+        "tcn_8f4960f9ec6b77ae",
+        "tcn_9d261ea99cc479fd"
+      ]
+    },
+    "55": {
+      "alignment_ids": [],
+      "evidence_span_ids": [],
+      "node_ids": [
+        "tcn_40f440f62e560b6c",
+        "tcn_8f4960f9ec6b77ae"
+      ]
+    },
+    "56": {
+      "alignment_ids": [],
+      "evidence_span_ids": [],
+      "node_ids": [
+        "tcn_7ec50499c6d24ab8",
+        "tcn_8f4960f9ec6b77ae"
+      ]
+    },
+    "57": {
+      "alignment_ids": [],
+      "evidence_span_ids": [
+        "tes_ae644f56571d3878"
+      ],
+      "node_ids": [
+        "tcn_6bcc3de0a07ac6c5",
+        "tcn_74d5dd330063cf6c",
+        "tcn_8f4960f9ec6b77ae"
+      ]
+    },
+    "58": {
+      "alignment_ids": [],
+      "evidence_span_ids": [],
+      "node_ids": [
+        "tcn_0923f250bfa5eece",
+        "tcn_8f4960f9ec6b77ae"
+      ]
+    },
+    "59": {
+      "alignment_ids": [],
+      "evidence_span_ids": [],
+      "node_ids": [
+        "tcn_636881b9f6b67958",
+        "tcn_8f4960f9ec6b77ae"
+      ]
+    },
+    "60": {
+      "alignment_ids": [],
+      "evidence_span_ids": [],
+      "node_ids": [
+        "tcn_8f4960f9ec6b77ae",
+        "tcn_edfb424afe5b9d2d"
+      ]
+    },
+    "61": {
+      "alignment_ids": [],
+      "evidence_span_ids": [],
+      "node_ids": [
+        "tcn_87aa6cd51408ed60",
+        "tcn_8f4960f9ec6b77ae"
+      ]
+    },
+    "62": {
+      "alignment_ids": [],
+      "evidence_span_ids": [],
+      "node_ids": [
+        "tcn_8f4960f9ec6b77ae",
+        "tcn_a7489f0db5b3761e"
+      ]
+    },
+    "63": {
+      "alignment_ids": [],
+      "evidence_span_ids": [
+        "tes_94ba45dcdda16f03"
+      ],
+      "node_ids": [
+        "tcn_391bc639a7ff1c1e",
+        "tcn_8f4960f9ec6b77ae",
+        "tcn_be9d987cdc6ffd15"
+      ]
+    },
+    "64": {
+      "alignment_ids": [],
+      "evidence_span_ids": [],
+      "node_ids": [
+        "tcn_3ac9a9c629337f95",
+        "tcn_8f4960f9ec6b77ae"
+      ]
+    },
+    "65": {
+      "alignment_ids": [],
+      "evidence_span_ids": [],
+      "node_ids": [
+        "tcn_47f576e837733a91",
+        "tcn_8f4960f9ec6b77ae"
+      ]
+    },
+    "66": {
+      "alignment_ids": [],
+      "evidence_span_ids": [
+        "tes_e49aafb8d7eed159"
+      ],
+      "node_ids": [
+        "tcn_39579ab371877f9d",
+        "tcn_8f4960f9ec6b77ae",
+        "tcn_fe907e67299370fd"
+      ]
+    },
+    "67": {
+      "alignment_ids": [],
+      "evidence_span_ids": [],
+      "node_ids": [
+        "tcn_26b18d8b3645fb56",
+        "tcn_8f4960f9ec6b77ae"
+      ]
+    },
+    "68": {
+      "alignment_ids": [],
+      "evidence_span_ids": [],
+      "node_ids": [
+        "tcn_8f4960f9ec6b77ae",
+        "tcn_a8d8c5af1e0efcdd"
+      ]
+    },
+    "69": {
+      "alignment_ids": [],
+      "evidence_span_ids": [],
+      "node_ids": [
+        "tcn_375259cb5b24318e",
+        "tcn_8f4960f9ec6b77ae"
+      ]
+    },
+    "70": {
+      "alignment_ids": [],
+      "evidence_span_ids": [],
+      "node_ids": [
+        "tcn_27186e35730b8b13",
+        "tcn_8f4960f9ec6b77ae"
+      ]
+    },
+    "71": {
+      "alignment_ids": [],
+      "evidence_span_ids": [
+        "tes_6411a312415a5140"
+      ],
+      "node_ids": [
+        "tcn_66cfb1f4657369a3",
+        "tcn_83e83922ac701874",
+        "tcn_8f4960f9ec6b77ae"
+      ]
+    },
+    "72": {
+      "alignment_ids": [],
+      "evidence_span_ids": [],
+      "node_ids": [
+        "tcn_8f4960f9ec6b77ae",
+        "tcn_cbd6fe26ed24c37f"
+      ]
+    },
+    "73": {
+      "alignment_ids": [],
+      "evidence_span_ids": [],
+      "node_ids": [
+        "tcn_8f4960f9ec6b77ae",
+        "tcn_a3447577004f2b40"
+      ]
+    },
+    "74": {
+      "alignment_ids": [],
+      "evidence_span_ids": [],
+      "node_ids": [
+        "tcn_8f4960f9ec6b77ae",
+        "tcn_e86e7b32a503b35b"
+      ]
+    },
+    "75": {
+      "alignment_ids": [],
+      "evidence_span_ids": [],
+      "node_ids": [
+        "tcn_c6b56d53031a4db1",
+        "tcn_c6e5f60dcf4d20ad"
+      ]
+    },
+    "76": {
+      "alignment_ids": [],
+      "evidence_span_ids": [],
+      "node_ids": [
+        "tcn_0f46011e668c6075",
+        "tcn_c6b56d53031a4db1"
+      ]
+    },
+    "77": {
+      "alignment_ids": [],
+      "evidence_span_ids": [],
+      "node_ids": [
+        "tcn_1c158439ebc3f1e0",
+        "tcn_40f97d2cd1f8664d"
+      ]
+    },
+    "78": {
+      "alignment_ids": [],
+      "evidence_span_ids": [],
+      "node_ids": [
+        "tcn_1b55009795e6ba51",
+        "tcn_40f97d2cd1f8664d"
+      ]
+    },
+    "79": {
+      "alignment_ids": [],
+      "evidence_span_ids": [],
+      "node_ids": [
+        "tcn_40f97d2cd1f8664d",
+        "tcn_b6fe624157c0aa3c"
+      ]
+    },
+    "80": {
+      "alignment_ids": [],
+      "evidence_span_ids": [],
+      "node_ids": [
+        "tcn_40f97d2cd1f8664d",
+        "tcn_e2f2436e52bda61f"
+      ]
+    },
+    "81": {
+      "alignment_ids": [],
+      "evidence_span_ids": [],
+      "node_ids": [
+        "tcn_2b4a049dfa7e3783",
+        "tcn_40f97d2cd1f8664d"
+      ]
+    },
+    "82": {
+      "alignment_ids": [],
+      "evidence_span_ids": [
+        "tes_0ab353255a2cc8a0",
+        "tes_478fe1bb67a60a89",
+        "tes_a05f2799337951d0"
+      ],
+      "node_ids": [
+        "tcn_351047e614a8e3f6",
+        "tcn_40f97d2cd1f8664d",
+        "tcn_49d842d5efbb5fd6",
+        "tcn_a446a8c433ced3d2",
+        "tcn_e2736e6906cc3e2b"
+      ]
+    },
+    "83": {
+      "alignment_ids": [],
+      "evidence_span_ids": [],
+      "node_ids": [
+        "tcn_49c72496324787f7",
+        "tcn_f30cf1c3867ccc76"
+      ]
+    },
+    "84": {
+      "alignment_ids": [],
+      "evidence_span_ids": [],
+      "node_ids": [
+        "tcn_147c3b198eab28a2",
+        "tcn_49c72496324787f7"
+      ]
+    },
+    "85": {
+      "alignment_ids": [],
+      "evidence_span_ids": [],
+      "node_ids": [
+        "tcn_49c72496324787f7",
+        "tcn_e853c0d1ac81c858"
+      ]
+    },
+    "86": {
+      "alignment_ids": [],
+      "evidence_span_ids": [],
+      "node_ids": [
+        "tcn_751a2e4a7059ac04",
+        "tcn_cff4e057f801a904"
+      ]
+    },
+    "87": {
+      "alignment_ids": [],
+      "evidence_span_ids": [],
+      "node_ids": [
+        "tcn_3298dc32e9579159",
+        "tcn_751a2e4a7059ac04"
+      ]
+    },
+    "88": {
+      "alignment_ids": [],
+      "evidence_span_ids": [],
+      "node_ids": [
+        "tcn_751a2e4a7059ac04",
+        "tcn_adf38bea4af49810"
+      ]
+    },
+    "89": {
+      "alignment_ids": [],
+      "evidence_span_ids": [],
+      "node_ids": [
+        "tcn_751a2e4a7059ac04",
+        "tcn_cb5a70752d8632db"
+      ]
+    },
+    "90": {
+      "alignment_ids": [],
+      "evidence_span_ids": [
+        "tes_6b7ace687d807998",
+        "tes_af1f844c696e143d"
+      ],
+      "node_ids": [
+        "tcn_6228f5b5637b0351",
+        "tcn_751a2e4a7059ac04",
+        "tcn_7a159f3c0c2ce085",
+        "tcn_d5fffba32362dcdc"
+      ]
+    },
+    "91": {
+      "alignment_ids": [],
+      "evidence_span_ids": [],
+      "node_ids": [
+        "tcn_23135ab3e8b2725a",
+        "tcn_751a2e4a7059ac04"
+      ]
+    },
+    "92": {
+      "alignment_ids": [],
+      "evidence_span_ids": [],
+      "node_ids": [
+        "tcn_751a2e4a7059ac04",
+        "tcn_ff0ea827ac5833f4"
+      ]
+    },
+    "93": {
+      "alignment_ids": [],
+      "evidence_span_ids": [],
+      "node_ids": [
+        "tcn_751a2e4a7059ac04",
+        "tcn_9fcf54ad4771b3f4"
+      ]
+    },
+    "94": {
+      "alignment_ids": [],
+      "evidence_span_ids": [],
+      "node_ids": [
+        "tcn_751a2e4a7059ac04",
+        "tcn_79cea10020ac5cab"
+      ]
+    }
+  },
+  "schema_version": 1
+}
