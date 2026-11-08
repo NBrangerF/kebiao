@@ -605,6 +605,7 @@ export default function LessonPlanPage() {
                         ) : null}
                         <SyncLessons context={context} />
                         <LessonChecks context={context} selected={selected} />
+                        <RequiredLabs labs={context.required_labs} />
                     </div>
                     {!isUnit && context.lesson_goals ? (
                         <>
@@ -1015,6 +1016,18 @@ function LessonChecks({ context, selected }) {
             <span>课堂诊断题</span>
             {items.map(item => <Link key={item.id} to={presentHref([item.id], { back })}>{item.topic}</Link>)}
             <small>上课先问一道，全班手势作答 · <Link to={presentHref(items.map(item => item.id), { title: context.lesson.title, back })}>连着放映</Link></small>
+        </p>
+    )
+}
+
+// 学生必做实验 the 课标 lists for this lesson: the plan has the students do it, not only watch a demonstration
+function RequiredLabs({ labs }) {
+    if (!labs?.length) return null
+    return (
+        <p className={styles.sync}>
+            <span>学生必做实验</span>
+            {labs.map(lab => <Link key={lab.text} to="/experiments">{lab.text}</Link>)}
+            <small>{[labs.map(lab => [lab.code, lab.page ? `课标第 ${lab.page} 页` : ''].filter(Boolean).join(' · ')).join('；'), '课标要求学生亲手做，教案会安排分组实验'].filter(Boolean).join(' · ')}</small>
         </p>
     )
 }
