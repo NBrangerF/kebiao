@@ -45,7 +45,7 @@ test('本页 links reach every part the plan has', async ({ page }) => {
 })
 
 test('the AI\'s ids read as 目标 n and 评价 n; the 评价任务 rows are numbered to match', async ({ page }) => {
-    await openSavedPlan(page)
+    await openSavedPlan(page, { ...docPlan, lesson: { ...docPlan.lesson, subject_slug: 'chinese' } })
     const plan = doc(page)
     const stage = plan.getByRole('listitem').filter({ hasText: '折纸探究' })
     await expect(stage.getByText('目标 1', { exact: true })).toBeVisible()
@@ -60,6 +60,44 @@ test('the AI\'s ids read as 目标 n and 评价 n; the 评价任务 rows are num
     await expect(rows.nth(1).locator('td').last()).toHaveText('目标 2')
     const text = await plan.innerText()
     expect(text).not.toMatch(/(^|[^A-Za-z0-9])[OA][1-3](?![A-Za-z0-9])(?!纸)/u)
+})
+
+test('in 数学 a bare id stays as the AI wrote it; only a bracket of ids reads as 目标 n or 评价 n', async ({ page }) => {
+    await openSavedPlan(page)
+    const plan = doc(page)
+    const stage = plan.getByRole('listitem').filter({ hasText: '折纸探究' })
+    await expect(stage.getByText('目标 1', { exact: true })).toBeVisible()
+    await expect(stage.getByText('评价 1', { exact: true })).toBeVisible()
+    await expect(plan.getByText('完成O1与评价任务（评价 1）')).toBeVisible()
+    await expect(plan.getByText('完成O2并为A2准备作业')).toBeVisible()
+    await expect(plan.getByText('课堂作业：完成分数改写表（评价 2）')).toBeVisible()
+    const rows = plan.getByRole('region', { name: '评价任务表' }).locator('tbody tr')
+    await expect(rows.nth(0).locator('td').first()).toHaveText('评价 1用折纸说明 1/2=2/4')
+})
+
+// points A1/A2, circle centres O1/O2 and ammeters A1/A2 are lesson content, not the plan's ids
+const withContent = (subject_slug, question, answer) => ({
+    ...docPlan,
+    lesson: { ...docPlan.lesson, subject_slug },
+    practice: { items: [{ ...docPlan.practice.items[0], question, answer }] }
+})
+
+test('a 数学 plan keeps its points and circles: 点A1, ⊙O1, A1、A2、A3', async ({ page }) => {
+    await openSavedPlan(page, withContent('math', '点A平移后得到点A1，⊙O1与⊙O2外切。', 'A1、A2、A3三点在同一直线上'))
+    const plan = doc(page)
+    await expect(plan.getByText('点A平移后得到点A1，⊙O1与⊙O2外切。')).toBeVisible()
+    await plan.locator('summary', { hasText: '参考答案' }).click()
+    await expect(plan.getByText('A1、A2、A3三点在同一直线上')).toBeVisible()
+})
+
+test('a 物理 plan keeps its ammeters: 电流表A1', async ({ page }) => {
+    await openSavedPlan(page, withContent('physics', '闭合开关后，电流表A1的示数比A2大，说明什么？', '电流表A1测干路电流'))
+    const plan = doc(page)
+    await expect(plan.getByText('闭合开关后，电流表A1的示数比A2大，说明什么？')).toBeVisible()
+    await plan.locator('summary', { hasText: '参考答案' }).click()
+    await expect(plan.getByText('电流表A1测干路电流')).toBeVisible()
+    // its own ids in brackets still read as 评价 n
+    await expect(plan.getByText('课堂作业：完成分数改写表（评价 2）')).toBeVisible()
 })
 
 test('核验 says how many checks passed and lists the 提醒 first, in words', async ({ page }) => {

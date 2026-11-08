@@ -814,10 +814,17 @@ const CHECK_LABEL = { ok: '通过', warn: '提醒', risk: '需改' }
 const CHECK_ORDER = { risk: 0, warn: 1, ok: 2 }
 
 // The AI's own ids (O2, A1) read as 「目标 2」「评价 1」: only ids this plan has, only as whole tokens (not CO2, H2O
-// or A4纸). In 化学/科学/生物 an O2 is more likely oxygen, so O-ids stay. No lookbehind: older iOS WebViews lack it.
+// or A4纸). In 数学/理科 a bare A1 or O1 is as likely a point, a circle's centre or an ammeter, so there only a bracket
+// that holds nothing but ids, as in （A1） or （O1、A2）, is rewritten; in 化学/科学/生物 an O2 is oxygen, so O-ids stay.
+// No lookbehind: older iOS WebViews lack it.
+const CONTENT_IDS = new Set(['math', 'physics', 'chemistry', 'science', 'biology'])
+const ID_TOKEN = /(^|[^A-Za-z0-9])([OA])(\d{1,2})(?![A-Za-z0-9.]|\s*[纸张])/gu
+const ID_BRACKET = /[（(]\s*[OA]\d{1,2}(?:\s*[、，,/]\s*[OA]\d{1,2})*\s*[）)]/gu
 function idReader(objectives, assessments, subjectSlug) {
     const known = new Set([...(subjectSlug === 'chemistry' || subjectSlug === 'science' || subjectSlug === 'biology' ? [] : objectives || []), ...(assessments || [])].map(item => item.id))
-    return text => (typeof text === 'string' && known.size ? text.replace(/(^|[^A-Za-z0-9])([OA])(\d{1,2})(?![A-Za-z0-9.]|\s*[纸张])/gu, (whole, before, kind, no) => (known.has(kind + no) ? `${before}${kind === 'O' ? '目标' : '评价'} ${no}` : whole)) : text)
+    const swap = text => text.replace(ID_TOKEN, (whole, before, kind, no) => (known.has(kind + no) ? `${before}${kind === 'O' ? '目标' : '评价'} ${no}` : whole))
+    const read = CONTENT_IDS.has(subjectSlug) ? text => text.replace(ID_BRACKET, swap) : swap
+    return text => (typeof text === 'string' && known.size ? read(text) : text)
 }
 const objectiveNo = id => id.replace(/^O/u, '')
 const assessmentNo = id => id.replace(/^A/u, '')
