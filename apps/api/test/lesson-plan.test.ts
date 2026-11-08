@@ -6,7 +6,7 @@ import { FileCurriculumRepository } from '@curriculum/core'
 import { createApp } from '../src/app.js'
 import { tocLessons } from '../../../scripts/resources/toc_lessons.mjs'
 import { redactSensitiveText } from '../src/ai-privacy.js'
-import { checkPlan, checkPractice, notesChecks, checkTest, classroomChecks, fitHours, fitMinutes, limitsOf, orgOf, sanitiseProcess, splitTest, type DraftInput, type Frame, type Process } from '../src/lesson-plan.js'
+import { checkPlan, checkPractice, notesChecks, fitTrialMinutes, sanitiseProcess as cleanProcess, checkTest, classroomChecks, fitHours, fitMinutes, limitsOf, orgOf, sanitiseProcess, splitTest, type DraftInput, type Frame, type Process } from '../src/lesson-plan.js'
 
 const publicDataRoot = resolve(process.cwd(), '../../public/data')
 const app = createApp(new FileCurriculumRepository(publicDataRoot))
@@ -980,4 +980,43 @@ test('a lesson that hosts a 学生必做实验 says so, and a plan that only dem
     const lab: Process = { ...planProcess, stages: [{ name: '分组实验：用天平测质量', minutes: 12, org: '四人小组', teacher: '分发器材，巡视', students: '四人一组按步骤称量并记录', check: '巡视抽看记录表', purpose: '学会使用天平', objective_ids: ['O1'], assessment_ids: [] }, { ...planProcess.stages[2], org: '独立', check: '同桌互查' }] }
     assert.ok(!classroomChecks(lab, 40, 8, labs).some(item => item.kind === 'lab_missing' || item.kind === 'group_work'))
     assert.ok(classroomChecks(lab, 40, 8).some(item => item.kind === 'group_work'))
+})
+
+test('a draft is written from the lesson\'s own textbook pages', async t => {
+    const saved = process.env.KEBIAO_LLM_API_KEY
+    process.env.KEBIAO_LLM_API_KEY = 'test-secret'
+    t.after(() => { if (saved === undefined) delete process.env.KEBIAO_LLM_API_KEY; else process.env.KEBIAO_LLM_API_KEY = saved })
+    const prompts: string[] = []
+    t.mock.method(globalThis, 'fetch', async (_url: string, init: RequestInit) => {
+        prompts.push(String(JSON.parse(String(init.body)).messages?.at(-1)?.content || ''))
+        return new Response(JSON.stringify({ choices: [{ message: { content: JSON.stringify(frame()) } }], usage: { prompt_tokens: 900, completion_tokens: 600, total_tokens: 1500 } }), { status: 200, headers: { 'content-type': 'application/json' } })
+    })
+    const request = { step: 'frame', lesson: { title: '分数的基本性质', subject_slug: 'math', grade: 5, edition_id: math5b, lesson_id: fractionLesson.id }, indicator_codes: [LIMITED] }
+    assert.equal((await app.request('/api/v1/lesson-plans/draft', { method: 'POST', headers: { 'content-type': 'application/json', 'x-forwarded-for': CLASS_IP }, body: JSON.stringify(request) })).status, 200)
+    assert.match(prompts[0], /本课教材内容（教材 PDF 第 \d+/u)
+    assert.match(prompts[0], /分数的分子和分母同时乘或者除以相同的数/u)
+})
+
+test('a later lesson with a long title still keeps its key terms out of this lesson', () => {
+    const indicators = [{ code: LIMITED, text: '会比较', pages: [], standard_code: 'MA-S3-NA-01', standard_title: '', stage_label: '' }]
+    const unitLessons = [{ title: '平均分——包含', current: true }, { title: '平均分——等分' }, { title: '除法（包含）及算式读法' }, { title: '除法（等分）及算式各部分名称' }, { title: '用2~6的乘法口诀求商（1）' }]
+    const ahead = frame({ objectives: [{ ...frame().objectives[0], text: '学生能用除法算式表示包含分的过程并读出算式' }] })
+    const flagged = checkPlan(ahead, null, { indicators, standards: [], periodMinutes: 40, unitLessons }).filter(item => item.kind === 'later_lesson').map(item => item.message.match(/「(.+?)」/)?.[1])
+    assert.ok(flagged.includes('除法'), flagged.join(','))
+})
+
+test('every stage names an objective, and a 试讲 is cut to 10 minutes', () => {
+    const plan = frame()
+    const process = cleanProcess({ stages: [{ name: '导入', minutes: 5, teacher: '出示问题', students: '思考', objective_ids: [] }, { name: '探究', minutes: 25, teacher: '组织', students: '折纸', objective_ids: ['O2'] }, { name: '小结', minutes: 10, teacher: '总结', students: '回顾', objective_ids: [] }], homework: [] }, plan)!
+    assert.deepEqual(process.stages.map(stage => stage.objective_ids), [['O2'], ['O2'], plan.objectives.map(item => item.id)])
+    const stages = [{ minutes: 2 }, { minutes: 2 }, { minutes: 1 }, { minutes: 3 }, { minutes: 5 }, { minutes: 2 }]
+    fitTrialMinutes(stages)
+    assert.equal(stages.reduce((sum, item) => sum + item.minutes, 0), 10)
+    assert.ok(stages.every(item => item.minutes >= 1))
+})
+
+test('homework a parent must grade or sign is flagged', () => {
+    const checks = classroomChecks({ ...planProcess, homework: [{ level: '基础', task: '读给家长听，请家长判断对错并签字', minutes: 10 }] }, 40, 3)
+    assert.ok(checks.some(item => item.kind === 'homework_parent'))
+    assert.ok(!classroomChecks({ ...planProcess, homework: [{ level: '基础', task: '把今天学的故事讲给家长听', minutes: 10 }] }, 40, 3).some(item => item.kind === 'homework_parent'))
 })

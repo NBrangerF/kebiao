@@ -14,6 +14,7 @@ import { writeLessonObjectives, type ObjectivePoint } from './lesson-objectives.
 import type { ApiBindings } from './http.js'
 import { checkPlan, notesChecks, checkPractice, checkTeacherPlan, checkUnit, DEFAULT_CLASS_SIZE, draftFrame, draftPractice, draftProcess, draftReading, draftTalk, draftTrial, draftUnit, LESSON_TYPES, limitsOf, rankPoints, readTest, checkTest, splitTest, mergeReads, sanitiseProcess, readTeacherPlan, sanitiseFrame, v2SubjectSlug, type DraftInput, type PlanIndicator, type PlanLesson, type PlanStandard, type PointLink, type PointLinks, type RequiredLab, type SubjectNote } from './lesson-plan.js'
 import type { V2Store } from './v2-store.js'
+import { resolveTextbookPrivateDataRoot } from './textbook-assets.js'
 
 type Deps = {
     repository: FileCurriculumRepository
@@ -477,6 +478,33 @@ export function registerLessonPlanRoutes(app: Hono<ApiBindings>, deps: Deps) {
         return labs.slice(0, 3)
     }
 
+    // what the class learned just before: the book's previous unit (a 2nd-grade plan said the class 「认读十以内数」
+    // when it had just finished 表内乘法)
+    async function priorUnit(editionId: string | undefined, lessonId: string | undefined, title: string) {
+        const national = editionId ? await lessonList(editionId) : null
+        const lesson = national ? findLesson(national, lessonId, title) : null
+        if (!national || !lesson?.chapters[0]) return null
+        const chapters = [...new Set(national.lessons.map(item => item.chapters[0]).filter(Boolean))]
+        const previous = chapters[chapters.indexOf(lesson.chapters[0]) - 1]
+        if (!previous) return null
+        const lessons = canonicalLessons(national.lessons.filter(item => item.chapters[0] === previous)).map(item => item.title).filter(name => name !== previous).slice(0, 10)
+        return { title: previous, lessons }
+    }
+
+    // the lesson's own pages in the textbook (scripts/resources/extract_lesson_text.mjs; server-side data, not public)
+    const lessonTexts = new Map<string, Promise<{ lessons: Record<string, { from: number, to: number, text: string }> } | null>>()
+    async function lessonText(editionId: string | undefined, lessonId: string | undefined, title: string) {
+        if (!editionId || !/^ed_[0-9a-f]+$/u.test(editionId)) return null
+        const root = resolveTextbookPrivateDataRoot()
+        if (!root) return null
+        if (!lessonTexts.has(editionId)) lessonTexts.set(editionId, readFile(`${root}/lesson-text/${editionId}.json`, 'utf8').then(text => JSON.parse(text)).catch(() => null))
+        const file = await lessonTexts.get(editionId)
+        if (!file) return null
+        const national = await nationalFile(editionId)
+        const lesson = national ? findLesson(national, lessonId, title) : null
+        return (lesson && file.lessons[lesson.id]) || null
+    }
+
     // this lesson's own words from the textbook (教材与课标对应), quoted for 课标解读 and the exercises
     async function lessonQuotes(editionId: string | undefined, lessonId: string | undefined, title: string) {
         const national = editionId ? await nationalFile(editionId) : null
@@ -545,7 +573,9 @@ export function registerLessonPlanRoutes(app: Hono<ApiBindings>, deps: Deps) {
             lessonQuotes: await lessonQuotes(body.lesson.edition_id, body.lesson.lesson_id, body.lesson.title),
             presetGoals: await lessonGoals(body.lesson.edition_id, body.lesson.lesson_id, body.lesson.title),
             unitLessons: await unitSequence(body.lesson.edition_id, body.lesson.lesson_id, body.lesson.title),
-            requiredLabs: await requiredLabs(body.lesson.edition_id, body.lesson.lesson_id, body.lesson.title)
+            requiredLabs: await requiredLabs(body.lesson.edition_id, body.lesson.lesson_id, body.lesson.title),
+            lessonText: await lessonText(body.lesson.edition_id, body.lesson.lesson_id, body.lesson.title),
+            priorUnit: await priorUnit(body.lesson.edition_id, body.lesson.lesson_id, body.lesson.title)
         }
         const privacy = { redacted: classNotes.redacted || teacherNotes.redacted, redaction_count: classNotes.redaction_count + teacherNotes.redaction_count }
         const evidence = input.indicators.map(item => ({ code: item.code, text: item.text, pages: item.pages, standard_code: item.standard_code, standard_title: item.standard_title, stage_label: item.stage_label }))
