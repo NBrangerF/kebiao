@@ -208,6 +208,8 @@ export default function LessonPlanPage() {
         setSettings(current => (current.countSet ? current : { ...current, count: bookHours, index: Math.min(current.index, bookHours) }))
     }, [bookHours])
     const runRef = useRef(0)
+    // a unit design still drafting when the lesson changes (browser back/forward) is dropped when it returns
+    const unitRunRef = useRef(0)
 
     const subject = params.get('subject') || ''
     const edition = params.get('edition') || ''
@@ -309,6 +311,7 @@ export default function LessonPlanPage() {
         setPickAsked(false)
         setPlan(null)
         setUnitPlan(null)
+        unitRunRef.current += 1
         setStep('')
         setError('')
         setTalkError('')
@@ -514,6 +517,7 @@ export default function LessonPlanPage() {
         const lesson = context.lesson
         const lessons = context.unit_lessons || []
         const hours = unitHours || defaultUnitHours(lessons)
+        const run = ++unitRunRef.current
         try {
             setStep('unit')
             const payload = (await postApi('/api/v1/lesson-plans/draft', {
@@ -526,11 +530,13 @@ export default function LessonPlanPage() {
                 unit_lessons: lessons.map(item => item.title.slice(0, 60)).slice(0, 40),
                 unit_hours: hours
             })).data
+            if (run !== unitRunRef.current) return
             setUnitPlan({ ...payload, lesson: { ...lesson, subject_name: context.subject_note?.name || subject }, unit_lessons: lessons, hours })
             setStep('done')
             revealHeading('lp-unit-title')
             trackUmamiEvent('unit_plan_drafted', { subject: lesson.subject_slug, lessons: lessons.length })
         } catch (errorValue) {
+            if (run !== unitRunRef.current) return
             setError(aiError(errorValue, { drafting: true }))
             setStep('')
         }
@@ -615,6 +621,8 @@ export default function LessonPlanPage() {
     }
 
     const busy = step === 'frame' || step === 'process' || step === 'check'
+    // while any draft runs (a unit design too) the lesson cannot change under it
+    const locked = busy || step === 'unit'
     const isUnit = Boolean(context?.unit_lessons?.length)
     const selectedCount = selected.size
     const maxPoints = isUnit ? MAX_POINTS.unit : MAX_POINTS.lesson
@@ -649,8 +657,8 @@ export default function LessonPlanPage() {
                                 const name = `${item.frame?.title || item.lesson?.title}${item.partial ? '（未写完）' : ''}`
                                 return (
                                     <li key={storedKey(item)}>
-                                        <button type="button" className={styles.restore} aria-current={plan && storedKey(plan) === storedKey(item) ? 'true' : undefined} disabled={busy} onClick={() => restore(item)}>{name}{item.talk || item.trial ? `（含${[item.talk ? '说课稿' : '', item.trial ? '试讲稿' : ''].filter(Boolean).join('、')}）` : ''}<small>{[item.lesson?.subject_name, item.lesson?.grade ? `${item.lesson.grade} 年级` : '', draftDate(item.created_at)].filter(Boolean).join(' · ')}</small></button>
-                                        <button type="button" className={styles.historyDelete} disabled={busy} onClick={() => forget(item)}>删除</button>
+                                        <button type="button" className={styles.restore} aria-current={plan && storedKey(plan) === storedKey(item) ? 'true' : undefined} disabled={locked} onClick={() => restore(item)}>{name}{item.talk || item.trial ? `（含${[item.talk ? '说课稿' : '', item.trial ? '试讲稿' : ''].filter(Boolean).join('、')}）` : ''}<small>{[item.lesson?.subject_name, item.lesson?.grade ? `${item.lesson.grade} 年级` : '', draftDate(item.created_at)].filter(Boolean).join(' · ')}</small></button>
+                                        <button type="button" className={styles.historyDelete} disabled={locked} onClick={() => forget(item)}>删除</button>
                                     </li>
                                 )
                             })}
@@ -662,13 +670,13 @@ export default function LessonPlanPage() {
             <section className={styles.step} aria-labelledby="lp-pick">
                 <h2 id="lp-pick"><span>1</span>选一课</h2>
                 <div className={styles.modeSwitch} role="group" aria-label="选课方式">
-                    <button type="button" aria-pressed={!freeMode} disabled={busy} onClick={() => update({ mode: null, topic: null })}>从教材选</button>
-                    <button type="button" aria-pressed={freeMode} disabled={busy} onClick={() => update({ mode: 'topic', edition: null, lesson: null, unit: null })}>直接写课题</button>
+                    <button type="button" aria-pressed={!freeMode} disabled={locked} onClick={() => update({ mode: null, topic: null })}>从教材选</button>
+                    <button type="button" aria-pressed={freeMode} disabled={locked} onClick={() => update({ mode: 'topic', edition: null, lesson: null, unit: null })}>直接写课题</button>
                 </div>
                 <div className={styles.pickers}>
                     <label>
                         <span>学科</span>
-                        <select value={subject} disabled={busy} onChange={event => update({ subject: event.target.value, edition: null, lesson: null, unit: null, topic: null })}>
+                        <select value={subject} disabled={locked} onChange={event => update({ subject: event.target.value, edition: null, lesson: null, unit: null, topic: null })}>
                             <option value="">选择学科</option>
                             {(freeMode ? TOPIC_SUBJECTS.map(([name]) => name) : subjects).map(name => <option key={name} value={name}>{name}</option>)}
                         </select>
@@ -677,28 +685,28 @@ export default function LessonPlanPage() {
                         <>
                             <label>
                                 <span>年级（必选）</span>
-                                <select value={grade || ''} disabled={busy} onChange={event => update({ grade: event.target.value, topic: null })}>
+                                <select value={grade || ''} disabled={locked} onChange={event => update({ grade: event.target.value, topic: null })}>
                                     <option value="">选择年级</option>
                                     {[1, 2, 3, 4, 5, 6, 7, 8, 9].map(value => <option key={value} value={value}>{value} 年级</option>)}
                                 </select>
                             </label>
                             <label className={styles.wide}>
                                 <span>课题</span>
-                                <TopicInput value={topic} ready={Boolean(subject && grade) && !busy} onCommit={value => update({ topic: value })} />
+                                <TopicInput value={topic} ready={Boolean(subject && grade) && !locked} onCommit={value => update({ topic: value })} />
                             </label>
                         </>
                     ) : (
                         <>
                             <label>
                                 <span>教材</span>
-                                <select value={edition} disabled={!subject || busy} onChange={event => update({ edition: event.target.value, lesson: null, unit: null })}>
+                                <select value={edition} disabled={!subject || locked} onChange={event => update({ edition: event.target.value, lesson: null, unit: null })}>
                                     <option value="">{subject ? '选择年级和册次' : '先选学科'}</option>
                                     {subjectBooks.map(item => <option key={item.edition_id} value={item.edition_id}>{item.edition_name} · {item.grade} 年级{item.volume}</option>)}
                                 </select>
                             </label>
                             <label className={styles.wide}>
                                 <span>哪一课</span>
-                                <select value={chapter ? `chapter::${chapter}` : lessonId} disabled={!edition || !lessons || busy} onChange={event => {
+                                <select value={chapter ? `chapter::${chapter}` : lessonId} disabled={!edition || !lessons || locked} onChange={event => {
                                     const value = event.target.value
                                     if (value.startsWith('chapter::')) update({ chapter: value.slice('chapter::'.length), lesson: null, unit: null })
                                     else update({ lesson: value, chapter: null, unit: null })

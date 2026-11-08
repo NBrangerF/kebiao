@@ -334,3 +334,53 @@ test('a textbook unit page opens AI 备课 on its 国家平台 lesson, and no lo
     await expect(page.getByRole('link', { name: /单元整体设计/ })).toHaveAttribute('href', /chapter=/u)
     await expect(page.getByRole('link', { name: '核验这个单元的测试卷' })).toHaveCount(0)
 })
+
+test('a unit design still drafting locks the lesson; one that returns after the lesson changed is dropped', async ({ page }) => {
+    const unitContext = contextOf({ lesson: { ...lesson, title: '分数的意义和性质', lesson_id: null }, unit_lessons: [{ id: 'L1', title: '分数的基本性质', section: null, pdf_page: 62, hours: 2 }, { id: 'L2', title: '约分', section: null, pdf_page: 70, hours: 2 }] })
+    const unit = {
+        title: '旧单元设计', big_idea: '同一个数可以有多种等值的分数表示', essential_questions: ['什么时候两个分数一样大？'],
+        objectives: [{ id: 'O1', text: '学生能说明分数的意义', basis: ['MA-S3-NA-01.3'], kind: '理解' }],
+        performance_task: { title: '班级分饼会', scenario: '设计公平分配方案', product: '方案', criteria: ['用分数表示'] },
+        assessments: [{ id: 'A1', objective_ids: ['O1'], task: '分配方案', evidence: '方案', criteria: '正确' }],
+        lessons: [{ title: '分数的基本性质', hours: 2, focus: '等值分数', objective_ids: ['O1'], assessment_ids: ['A1'] }, { title: '约分', hours: 2, focus: '约分', objective_ids: ['O1'], assessment_ids: [] }],
+        prior_knowledge: [], connections: ''
+    }
+    let release
+    const held = new Promise(resolve => { release = resolve })
+    const drafts = [{ lesson: { ...lesson, subject_name: '数学' }, frame, process: processDraft, evidence, checks: [], meta: { period_minutes: 40, lesson_index: 1, lesson_count: 1 }, created_at: '2026-10-10T08:00:00.000Z' }]
+    await page.addInitScript(value => { if (!window.sessionStorage.getItem('seeded')) { window.localStorage.setItem('kebiao.lessonPlan.history', JSON.stringify(value)); window.sessionStorage.setItem('seeded', '1') } }, drafts)
+    await mockLessonPlans(page, {
+        context: query => (query.get('chapter') ? unitContext : contextOf()),
+        draft: async body => {
+            if (body.step !== 'unit') return draftAnswer(body)
+            await held
+            return { step: 'unit', unit, checks: [], evidence, privacy: { redacted: false }, model: 'gpt-5-mini' }
+        }
+    })
+    // the lesson first, then the unit as a new history entry, so 「后退」 goes back to the lesson in the page
+    await page.goto(`/lesson-plan?subject=${MATH}&edition=${EDITION}&lesson=L1`)
+    await expect(page.getByRole('checkbox', { name: /能用直观的方式表示分数和小数/ })).toBeChecked()
+    await page.evaluate(url => { window.history.pushState(null, '', url); window.dispatchEvent(new PopStateEvent('popstate')) }, `/lesson-plan?subject=${MATH}&edition=${EDITION}&chapter=${encodeURIComponent('4 分数的意义和性质')}`)
+    await page.getByRole('button', { name: /按选定的 1 条要点起草单元设计/ }).click()
+    await expect(page.getByRole('button', { name: /AI 正在做单元设计/ })).toBeDisabled()
+    // nothing that changes the lesson can be used while the unit design is drafting
+    await expect(page.getByRole('combobox', { name: '哪一课' })).toBeDisabled()
+    await expect(page.getByRole('combobox', { name: '教材' })).toBeDisabled()
+    await expect(page.getByRole('combobox', { name: '学科' })).toBeDisabled()
+    await expect(page.getByRole('button', { name: '直接写课题' })).toBeDisabled()
+    await expect(page.getByRole('button', { name: /分数的基本性质.*数学 · 5 年级/ })).toBeDisabled()
+    await expect(page.getByRole('button', { name: '删除' })).toBeDisabled()
+
+    // the browser's back button still changes the lesson; the unit design that comes back afterwards is dropped
+    await page.goBack()
+    await expect(page.getByRole('button', { name: /按选定的 1 条要点起草教案/ })).toBeVisible()
+    const answered = page.waitForResponse(response => response.url().includes('/lesson-plans/draft'))
+    release()
+    await answered
+    await page.waitForTimeout(300)
+    await expect(page.locator('ol li[data-state]')).toHaveCount(0)
+    await expect(page.getByRole('status').filter({ hasText: /写好了/ })).toHaveCount(0)
+    await expect(page.getByText('同一个数可以有多种等值的分数表示')).toHaveCount(0)
+    await expect(page.getByRole('combobox', { name: '哪一课' })).toBeEnabled()
+    await expect(page.getByRole('button', { name: /按选定的 1 条要点起草教案/ })).toBeEnabled()
+})
