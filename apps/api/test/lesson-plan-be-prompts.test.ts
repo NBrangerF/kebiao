@@ -104,6 +104,11 @@ test('「双减」 homework: written work is found by its writing words, labels 
     assert.equal(load('完成课本第 30 页练习 1—4 题，并把错题讲给同桌听', 5, 25).length, 1)
     assert.equal(load('听写本单元词语，订正错字', 5, 25).length, 1)
     assert.equal(load('完成学案第 2 页，做完后读给家长听', 8, 40).length, 1)
+    // the usual primary phrasing: 写一写、写在本子上、写几句
+    assert.equal(load('写一写你最喜欢的季节', 2).length, 1)
+    assert.equal(load('用几句话写一写今天的天气', 2).length, 1)
+    assert.equal(load('把今天学的生字写在本子上', 2).length, 1)
+    assert.equal(load('画一画、写一写', 2).length, 1)
     // oral, reading and hands-on work is not written: 做 in 「选做」「必做」 is a label, 「做一做」 is not writing
     assert.equal(load('选做：给家人讲一讲观潮的故事', 1).length, 0)
     assert.equal(load('口头作业（必做）：把课文读给家人听', 1).length, 0)

@@ -171,7 +171,7 @@ const HOMEWORK_LABEL = /[（(【[]\s*(?:选做|必做|基础|提高|拓展|挑�
 const OPTIONAL_LABEL = /^\s*[（(【[]?\s*(?:选做|提高|拓展|挑战)|[（(【[]\s*(?:选做|提高|拓展|挑战)\s*[）)】\]]/u
 const NOT_NEEDED = /(?:不需要|不需|不用|无需|无须|不必|不要)[^，。；、,;）)]{0,12}/gu
 const homeworkTask = (task: string) => task.replace(HOMEWORK_LABEL, ' ').replace(NOT_NEEDED, ' ')
-const WRITTEN = /抄|默写|听写|描红|书写|写出|写下|仿写|写作|作文|日记|写[^，。；]{0,6}(?:话|段|句|字|词|遍|篇|算式|过程)|练习册|练习本|作业本|学案|学习单|练习纸|订正|填空|计算题|口算题|(?:完成|做)[^，。；]{0,12}(?:题|练习|作业纸)/u
+const WRITTEN = /抄|默写|听写|描红|书写|写出|写下|仿写|写作|作文|日记|写(?:一写|写|在|上|几|一)|写[^，。；]{0,6}(?:话|段|句|字|词|遍|篇|算式|过程)|练习册|练习本|作业本|学案|学习单|练习纸|订正|填空|计算题|口算题|(?:完成|做)[^，。；]{0,12}(?:题|练习|作业纸)/u
 function homeworkLoad(process: Process, grade: number | null | undefined) {
     const written = process.homework.filter(item => item.level !== '实践' && WRITTEN.test(homeworkTask(item.task)))
     const minutes = written.filter(item => !/提高|选做|拓展|挑战/u.test(item.level) && !OPTIONAL_LABEL.test(item.task)).reduce((sum, item) => sum + (item.minutes || 0), 0)
