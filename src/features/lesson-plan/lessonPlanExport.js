@@ -47,11 +47,16 @@ function numbering(objectives = [], assessments = []) {
     return { goals, checks, link, objective, assessment }
 }
 
-// The drafted text still cites 「A1」「O2」; read them as 评价 1 / 目标 2. Left alone: A4 paper; O2 where it may be oxygen
-// or a circle's centre (sciences, 地理, 数学) unless the words before make it a goal (「推进 O4、O2」); and in 数学 the
-// exercises, where A1 is a point.
+// The drafted text still cites 「A1」「O2」; read them as 评价 1 / 目标 2. A1 may be an ammeter, a cell or a point, so it
+// becomes 评价 1 only when the words before make it one (「用于A1」) or it stands alone in brackets (「（A1）」); A4 paper
+// stays. O2 may be oxygen or a circle's centre (sciences, 地理, 数学), so there it needs the words before (「推进 O4、O2」).
+// In 物理, 信息科技 and 数学 the exercises are left as written.
 const SUBJECTS_WITH_O = /化学|科学|生物|地理|物理|数学|chemistry|science|biology|geography|physics|math/u
 const GOAL_WORDS = /(?:推进|对应|达成|目标|指向)\s*(?:O\d{1,2}\s*[、，,和与]\s*)*$/u
+const CHECK_WORDS = /(?:评价|任务|对应|完成|用于|指向|达成)\s*(?:A\d{1,2}\s*[、，,和与]\s*)*$/u
+const BRACKET_OPEN = /[（(]\s*(?:A\d{1,2}\s*[、，,和与]\s*)*$/u
+const BRACKET_CLOSE = /^\s*(?:[、，,和与]\s*A\d{1,2}\s*)*[）)]/u
+const EXERCISE_IDS_KEPT = /数学|物理|信息科技|math|physics|\sit$/u
 const PAPER = /^(?:[^，。；、（()）\s]{0,3}纸|大小|尺寸|幅面|规格)/u
 function relabeler(plan, objectives = [], assessments = []) {
     const { objective, assessment } = numbering(objectives, assessments)
@@ -59,10 +64,13 @@ function relabeler(plan, objectives = [], assessments = []) {
     const keepO = SUBJECTS_WITH_O.test(subject)
     const relabel = text => String(text ?? '').replace(/(^|[^A-Za-z0-9.+\-_])([AO])(\d{1,2})(?![A-Za-z0-9])/gu, (all, before, letter, digits, offset, whole) => {
         const number = (letter === 'A' ? assessment : objective).get(`${letter}${digits}`)
-        if (!number || (letter === 'O' && keepO && !GOAL_WORDS.test(whole.slice(0, offset + before.length))) || (letter === 'A' && PAPER.test(whole.slice(offset + all.length)))) return all
+        const head = whole.slice(0, offset + before.length)
+        const tail = whole.slice(offset + all.length)
+        if (!number || (letter === 'O' && keepO && !GOAL_WORDS.test(head))) return all
+        if (letter === 'A' && (PAPER.test(tail) || !(CHECK_WORDS.test(head) || (BRACKET_OPEN.test(head) && BRACKET_CLOSE.test(tail))))) return all
         return `${before}${letter === 'A' ? '评价' : '目标'} ${number}`
     }).replace(/(评价|目标) ?\1 (\d+)/gu, '$1 $2').replace(/(评价|目标) (\d+)\1/gu, '$1 $2')
-    relabel.exercise = /数学|math/u.test(subject) ? text => text : relabel
+    relabel.exercise = EXERCISE_IDS_KEPT.test(subject) ? text => text : relabel
     return relabel
 }
 

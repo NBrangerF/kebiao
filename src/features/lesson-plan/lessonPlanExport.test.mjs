@@ -283,3 +283,30 @@ test('the zip reads back with or without CompressionStream', async () => {
     const files = unzip(await zip([{ name: 'a.xml', data: '<a>课标</a>'.repeat(50) }, { name: 'b.bin', data: new Uint8Array([1, 2, 3]) }]))
     assert.equal(files['a.xml'], '<a>课标</a>'.repeat(50))
 })
+
+test('an empty table cell still holds a paragraph, or Word will not open the file', async () => {
+    // a 讲授 环节: no 关键问题, no 看全班, no 学生活动; a 板书 but no 作业 or 练习
+    const bare = { ...plan, practice: null, process: { ...process, homework: [], stages: [{ ...process.stages[0], questions: [], check: '', students: '', support: '' }, process.stages[1]] } }
+    for (const run of [() => downloadWord(bare), () => downloadBriefWord(bare)]) {
+        const xml = (await download(run)).files['word/document.xml']
+        const cells = xml.match(/<w:tc>.*?<\/w:tc>/gu)
+        assert.ok(cells.length)
+        for (const cell of cells) assert.match(cell, /<w:p>/u, cell)
+    }
+})
+
+test('A1 is 评价 1 only where it is cited as one: not an ammeter, a cell or a point', async () => {
+    const cited = '（A1）用于A1评价，完成A1、A2。'
+    const physics = { ...plan, practice: { items: [{ kind: '检测', level: '基础', question: '电流表A1示数0.3A（A1），A2示数多少？', answer: '0.5A', code: '', objective_id: 'O1' }] }, lesson: { ...lesson, subject_name: '物理', subject_slug: 'physics' }, process: { ...process, stages: [{ ...process.stages[0], teacher: `让学生读出电流表A1和A2的示数。${cited}`, questions: [{ q: '电流表A1的示数与A2有什么关系？', expect: '相等' }] }, process.stages[1]] } }
+    const text = planToText(physics)
+    assert.ok(text.includes('让学生读出电流表A1和A2的示数。（评价 1）用于评价 1，完成评价 1、评价 2。'), text)
+    assert.ok(text.includes('电流表A1的示数与A2有什么关系？'))
+    // the exercises of 物理 are left as written, even an id in brackets
+    assert.ok(text.includes('电流表A1示数0.3A（A1），A2示数多少？'))
+    const brief = await download(() => downloadBriefWord(physics))
+    assert.ok(brief.text.includes('问：电流表A1的示数与A2有什么关系？'))
+    const it = { ...plan, lesson: { ...lesson, subject_name: '信息科技', subject_slug: 'it' }, process: { ...process, stages: [{ ...process.stages[0], teacher: '在A1单元格输入公式（A2）。' }, process.stages[1]] } }
+    assert.ok(planToText(it).includes('在A1单元格输入公式（评价 2）。'))
+    const math = { ...plan, process: { ...process, stages: [{ ...process.stages[0], teacher: '在数轴上标出点A1，收集作品（A1）。' }, process.stages[1]] } }
+    assert.ok(planToText(math).includes('在数轴上标出点A1，收集作品（评价 1）。'))
+})
