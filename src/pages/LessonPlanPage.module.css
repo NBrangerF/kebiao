@@ -122,17 +122,33 @@
 }
 
 .step {
-    margin-top: 1.25rem;
-    padding: clamp(1.1rem, 3vw, 1.6rem);
-    border: 1px solid var(--kb-line);
-    border-radius: 0;
-    background: rgba(255, 255, 255, 0.02);
+    margin-top: clamp(32px, 4vw, 48px);
+    padding-top: 14px;
+    border-top: 1px solid var(--kb-line-strong);
+    scroll-margin-top: 80px;
+}
+
+/* 星表: on a wide screen the step's name sits in the label rail (3 of 12 columns, 24 px gutters), everything else
+   in the 9 columns beside it. The rail is positioned, not a grid row, so a long step never stretches its rows. */
+@media (min-width: 861px) {
+    .step {
+        position: relative;
+        padding-left: calc((100% - 11 * 24px) / 12 * 3 + 3 * 24px);
+    }
+
+    .step > h2 {
+        position: absolute;
+        top: 14px;
+        left: 0;
+        flex-wrap: wrap;
+        width: calc((100% - 11 * 24px) / 12 * 3 + 2 * 24px);
+    }
 }
 
 .step h2 {
     display: flex;
     gap: 0.6rem;
-    align-items: center;
+    align-items: baseline;
     margin: 0 0 1rem;
     color: var(--kb-moon);
     font-family: var(--font-display);
@@ -141,15 +157,10 @@
 }
 
 .step h2 span {
-    display: inline-grid;
-    width: 1.8rem;
-    height: 1.8rem;
-    place-items: center;
-    border-radius: 50%;
-    background: var(--kb-gold);
-    color: var(--kb-night);
+    color: var(--kb-dim);
     font-family: var(--font-num);
-    font-size: 16px;
+    font-size: 20px;
+    font-weight: 400;
 }
 
 .step h2 small {
@@ -160,17 +171,18 @@
 }
 
 .modeSwitch {
-    display: inline-flex;
+    display: flex;
+    gap: 1.25rem;
+    justify-self: start;
     margin-bottom: 1rem;
-    padding: 3px;
-    border: 1px solid var(--kb-line);
-    border-radius: 0;
 }
 
+/* underline tabs: the current one carries the gold rule */
 .modeSwitch button {
     min-height: 2.2rem;
-    padding: 0 1rem;
+    padding: 0;
     border: 0;
+    border-bottom: 2px solid transparent;
     border-radius: 0;
     background: transparent;
     color: var(--kb-mist);
@@ -181,7 +193,7 @@
 }
 
 .modeSwitch button[aria-selected='true'] {
-    background: var(--kb-accent-soft);
+    border-bottom-color: var(--kb-gold);
     color: var(--kb-moon);
 }
 
@@ -314,7 +326,7 @@
 .aiStatus {
     min-height: 1.5em;
     margin: 1rem 0 0.75rem;
-    color: var(--kb-gold);
+    color: var(--kb-moon);
     font-size: 14px;
     line-height: 1.7;
 }
@@ -339,9 +351,8 @@
 }
 
 .standard {
-    padding: 0.85rem 1rem;
-    border: 1px solid var(--kb-line);
-    border-radius: 0;
+    padding: 0.75rem 0 0;
+    border-top: 1px solid var(--kb-line);
 }
 
 .standardHead {
@@ -492,11 +503,57 @@
 }
 
 .doc h3 {
-    margin: 1.4rem 0 0.5rem;
+    margin: 0 0 0.5rem;
     color: var(--kb-paper-ink);
     font-family: var(--font-display);
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 700;
+    line-height: 1.4;
+}
+
+.doc h4 {
+    margin: 0;
+    color: var(--kb-paper-mute);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* each part of the plan hangs from a hairline; on a wide screen its name sits in the label rail */
+.doc > section {
+    margin-top: 2rem;
+    padding-top: 0.75rem;
+    border-top: 1px solid rgba(37, 34, 28, 0.22);
+    scroll-margin-top: 80px;
+}
+
+@media (min-width: 861px) {
+    .doc > section,
+    .docHead,
+    .jump,
+    .docActions {
+        position: relative;
+        padding-left: calc((100% - 11 * 24px) / 12 * 3 + 3 * 24px);
+    }
+
+    .doc > section > h3,
+    .docHead > .aiBadge,
+    .jump > span {
+        position: absolute;
+        left: 0;
+        width: calc((100% - 11 * 24px) / 12 * 3 + 2 * 24px);
+    }
+
+    .doc > section > h3 {
+        top: 0.75rem;
+    }
+
+    .docHead > .aiBadge {
+        top: 0.6rem;
+    }
+
+    .jump > span {
+        top: 0;
+    }
 }
 
 .doc p {
@@ -518,35 +575,102 @@
     flex-wrap: wrap;
     gap: 0.5rem;
     align-items: center;
-    justify-content: flex-end;
+    margin-bottom: 1.5rem;
 }
 
 .docActions :global(.btn-secondary),
 .docActions :global(.btn-ghost) {
     border-color: rgba(37, 34, 28, 0.35);
+    background: transparent;
     color: var(--kb-paper-ink);
 }
 
-.aiBadge {
-    margin-right: auto;
-    padding: 0.15rem 0.6rem;
-    border: 1px solid #8a5a0b;
-    border-radius: 0;
-    color: #8a5a0b;
+.docActions :global(.btn-secondary):hover,
+.docActions :global(.btn-ghost):hover {
+    border-color: #6b4a10;
+    background: rgba(37, 34, 28, 0.05);
+}
+
+/* 更多: a small panel under its button, on the paper */
+.more {
+    position: relative;
+}
+
+.more summary {
+    display: flex;
+    line-height: normal;
+    list-style: none;
+    cursor: pointer;
+}
+
+.more summary::-webkit-details-marker {
+    display: none;
+}
+
+.more summary::after {
+    margin-left: 0.35rem;
+    content: '▾';
+    font-size: 12px;
+    line-height: 1;
+}
+
+.more[open] summary {
+    border-color: #6b4a10;
+}
+
+.moreMenu {
+    position: absolute;
+    top: calc(100% + 6px);
+    right: 0;
+    z-index: 20;
+    display: grid;
+    gap: 2px;
+    width: max-content;
+    min-width: 12rem;
+    max-width: min(18rem, 80vw);
+    padding: 0.5rem;
+    border: 1px solid rgba(37, 34, 28, 0.35);
+    background: var(--kb-paper);
+}
+
+.docActions .moreMenu :global(.btn) {
+    justify-content: flex-start;
+    border-color: transparent;
+}
+
+.moreMenu small {
+    padding: 0.5rem 0.5rem 0;
+    border-top: 1px solid rgba(37, 34, 28, 0.15);
+    color: var(--kb-paper-mute);
     font-size: 12px;
 }
 
-.docHead {
-    margin-top: 1rem;
-    text-align: center;
+.docHead > .aiBadge {
+    margin: 0;
+    color: #8a5a0b;
+    font-size: 12px;
+    line-height: 1.6;
 }
+
+
 
 .docHead h2 {
     margin: 0;
     color: var(--kb-paper-ink);
     font-family: var(--font-display);
-    font-size: clamp(1.4rem, 3vw, 1.9rem);
+    font-size: 40px;
     font-weight: 700;
+    line-height: 1.2;
+    scroll-margin-top: 80px;
+}
+
+.docHead h2:focus {
+    outline: none;
+}
+
+.docHead h2:focus-visible {
+    outline: 2px solid #6b4a10;
+    outline-offset: 4px;
 }
 
 .docHead p {
@@ -554,16 +678,45 @@
     font-size: 14px;
 }
 
-.checks {
-    margin-top: 1.25rem;
-    padding: 0.75rem 1rem;
-    border: 1px solid rgba(37, 34, 28, 0.2);
-    border-radius: 0;
-    background: rgba(255, 255, 255, 0.5);
+/* 本页: links to the plan's parts */
+.jump {
+    margin-top: 1rem;
+    font-size: 14px;
 }
 
-.checks h3 {
-    margin-top: 0;
+.jump > span {
+    color: var(--kb-paper-mute);
+    font-size: 12px;
+    line-height: 32px;
+}
+
+.jump ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 0.25rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.jump a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 32px;
+    padding: 0 0.9rem 0 0;
+    text-decoration: underline;
+    text-decoration-color: rgba(107, 74, 16, 0.4);
+    text-underline-offset: 3px;
+}
+
+.checks h3 small {
+    margin-left: 0.4rem;
+}
+
+.checkCount {
+    margin: 0 !important;
+    color: var(--kb-paper-mute);
+    font-size: 14px;
 }
 
 .checks ul {
@@ -585,9 +738,18 @@
     margin-top: 0.3rem;
 }
 
-.checks li[data-level='ok'] svg { color: #1b8a4e; }
-.checks li[data-level='warn'] svg { color: #a15f07; }
-.checks li[data-level='risk'] svg { color: #b5303d; }
+/* the level in words as well as the icon's colour */
+.checks li b {
+    margin-right: 0.5rem;
+    font-size: 12px;
+}
+
+.checks li[data-level='ok'] svg,
+.checks li[data-level='ok'] b { color: #1b6e40; }
+.checks li[data-level='warn'] svg,
+.checks li[data-level='warn'] b { color: #8a4f05; }
+.checks li[data-level='risk'] svg,
+.checks li[data-level='risk'] b { color: #a32a36; }
 
 .checks small {
     display: block;
@@ -613,9 +775,8 @@
 }
 
 .core {
-    padding: 0.6rem 0.9rem;
-    border-left: 3px solid #8a5a0b;
-    background: rgba(138, 90, 11, 0.07);
+    padding: 0 0 0 0.9rem;
+    border-left: 1px solid #8a5a0b;
 }
 
 .core b {
@@ -649,7 +810,7 @@
 .twoCol {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
-    gap: 0 1.5rem;
+    gap: 0.5rem 1.5rem;
 }
 
 .misconceptions {
@@ -669,6 +830,12 @@
 
 .tableWrap {
     overflow-x: auto;
+}
+
+.rowNo {
+    display: block;
+    font-size: 12px;
+    white-space: nowrap;
 }
 
 .doc table {
@@ -693,16 +860,19 @@
 
 .stages {
     display: grid;
-    gap: 0.75rem;
+    gap: 0;
     padding-left: 0 !important;
     list-style: none;
 }
 
 .stages li {
-    padding: 0.75rem 0.9rem;
-    border: 1px solid rgba(37, 34, 28, 0.2);
-    border-radius: 0;
-    background: rgba(255, 255, 255, 0.45);
+    padding: 0.75rem 0;
+    border-top: 1px solid rgba(37, 34, 28, 0.15);
+}
+
+.stages li:first-child {
+    border-top: 0;
+    padding-top: 0.25rem;
 }
 
 .stageHead {
@@ -768,20 +938,136 @@
         grid-template-columns: 1fr;
         gap: 0;
     }
+
+    .doc {
+        padding: 1.25rem 1rem;
+    }
+
+    .doc h3 {
+        font-size: 16px;
+    }
+
+    .docHead h2 {
+        font-size: 20px;
+    }
+
+    /* the toolbar keeps one row: the short names, tighter buttons */
+    .extra {
+        display: none;
+    }
+
+    .docActions {
+        gap: 0.375rem;
+    }
+
+    .docActions > :global(.btn),
+    .more summary {
+        padding-right: 0.75rem;
+        padding-left: 0.75rem;
+        white-space: nowrap;
+    }
+
+    /* 评价任务: each row a card, every column with its own label */
+    .doc table,
+    .doc tbody,
+    .doc tr,
+    .doc td {
+        display: block;
+        width: auto;
+        min-width: 0;
+    }
+
+    .doc thead {
+        display: none;
+    }
+
+    .doc tr {
+        padding: 0.6rem 0;
+        border-top: 1px solid rgba(37, 34, 28, 0.25);
+    }
+
+    .doc td {
+        padding: 0.15rem 0;
+        border: 0;
+    }
+
+    .doc td[data-label]::before {
+        display: block;
+        color: var(--kb-paper-mute);
+        font-size: 12px;
+        content: attr(data-label);
+    }
+
+    .doc td:first-child::before {
+        display: none;
+    }
+
+    .rowNo {
+        font-size: 14px;
+    }
+
+    /* tap targets: 44 px for the plan's links, toggles and small buttons */
+    .jump a,
+    .practice summary,
+    .standardText summary,
+    .modeSwitch button,
+    .quickNotes button {
+        min-height: 44px;
+    }
+
+    .practice summary,
+    .standardText summary {
+        display: flex;
+        align-items: center;
+    }
+
+    .evidence > li > a,
+    .practiceHead a {
+        display: inline-flex;
+        align-items: center;
+        min-height: 44px;
+    }
+
+    .standardHead a.graphLink {
+        display: inline-flex;
+        align-items: center;
+        min-height: 44px;
+        padding: 0 0.25rem;
+    }
 }
 
+/* printed: the plan alone, without the page around it; 核验 goes to the end, as in the Word file */
 @media print {
     .hero,
     .step,
-    .docActions {
+    .docActions,
+    .jump {
+        display: none !important;
+    }
+
+    :global(html[data-lp-print]) .script {
         display: none !important;
     }
 
     .doc {
+        display: flex;
+        flex-direction: column;
         margin: 0;
         padding: 0;
         background: #fff;
         color: #000;
+    }
+
+    .doc > .checks {
+        order: 1;
+    }
+
+    .doc > .docFoot {
+        order: 2;
+    }
+
+    .doc > section {
+        break-inside: auto;
     }
 }
 
@@ -867,9 +1153,8 @@
     display: grid;
     gap: 0.2rem;
     margin: 0.35rem 0 0.7rem;
-    padding: 0.5rem 0.8rem;
-    border-left: 2px solid rgba(138, 90, 11, 0.35);
-    background: rgba(255, 255, 255, 0.4);
+    padding: 0 0 0 0.8rem;
+    border-left: 1px solid rgba(138, 90, 11, 0.35);
     font-size: 14px;
 }
 
@@ -904,9 +1189,8 @@
 }
 
 .limits {
-    padding: 0.5rem 0.9rem;
-    border-left: 3px solid #b5303d;
-    background: rgba(181, 48, 61, 0.06);
+    padding: 0 0 0 0.9rem;
+    border-left: 1px solid #b5303d;
 }
 
 .limits b,
@@ -971,11 +1255,14 @@
 }
 
 .practice li {
-    padding: 0.6rem 0.9rem;
-    border: 1px solid rgba(37, 34, 28, 0.2);
-    border-radius: 0;
-    background: rgba(255, 255, 255, 0.45);
+    padding: 0.6rem 0;
+    border-top: 1px solid rgba(37, 34, 28, 0.15);
     counter-increment: practice;
+}
+
+.practice li:first-child {
+    border-top: 0;
+    padding-top: 0.25rem;
 }
 
 .practiceHead {
