@@ -269,3 +269,21 @@ test('说课稿 and 试讲稿 are told the plan\'s own 课时, not 「第 1 课�
         assert.doesNotMatch(prompt, /第 1 课时（共 1 课时）/)
     }
 })
+
+test('a pupil name is removed whatever word comes before it', () => {
+    const removed: Array<[string, string, number]> = [
+        ['今天王小明请假', '今天某学生请假', 1],
+        ['昨天李四生病', '昨天某学生生病', 1],
+        ['班上张三 58 分', '班上某学生 58 分', 1],
+        ['另外王五 40 分', '另外某学生 40 分', 1],
+        ['我班刘洋数学 58 分', '我班某学生数学 58 分', 1],
+        ['有个学生叫王明请假', '有个学生叫某学生请假', 1],
+        ['学困生陈明 35 分', '学困生某学生 35 分', 1],
+        ['全班张三58分，李四60分', '全班某学生58分，某学生60分', 2]
+    ]
+    for (const [text, expected, count] of removed) {
+        const result = redactSensitiveText(text)
+        assert.equal(result.text, expected, text)
+        assert.equal(result.redaction_count, count, text)
+    }
+})

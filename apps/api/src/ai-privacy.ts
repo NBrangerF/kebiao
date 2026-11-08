@@ -2,10 +2,8 @@ export type RedactionCategory = 'email' | 'phone' | 'national_id' | 'named_ident
 // the commonest surnames, enough to catch a pupil's name written next to a score
 const SURNAMES = '王李张刘陈杨黄赵吴周徐孙马朱胡郭何高林罗郑梁谢宋唐许韩冯邓曹彭曾肖田董袁潘蒋蔡余杜叶程苏魏吕丁任沈姚卢姜崔钟谭陆汪范金石廖贾夏韦付方白邹孟熊秦邱江尹薛闫段雷侯龙史陶黎贺顾毛郝龚邵万钱严覃武戴莫孔向汤于傅温'
 const COMPOUND_SURNAMES = '欧阳|司马|上官|诸葛|东方|皇甫|慕容|司徒|夏侯|令狐|公孙|尉迟|长孙|宇文|南宫|西门'
-// A name starts the sentence or follows punctuation, a space or a word that introduces one (「其中王五 40 分」);
-// inside a run of words a surname is usually part of another word (「高于 80 分」「历史考了」).
-const NAME_BEFORE = '(?:(?<![\\u4e00-\\u9fa5])|(?<=学生|同学|其中|比如|例如|还有|和|跟|与|及|是|有))'
-// a given name is not a word that leads to the score (「高于」「史考了」「最高分」)
+// A given name is not a word that leads to the score (「高于 80 分」「历史考了」「最高分」), so those stay intact.
+// No rule about the word before the name: 学情 puts anything there (「今天王小明请假」「班上张三 58 分」).
 const GIVEN_NAME = '(?:(?![于考得了只都也共约的分])[\\u4e00-\\u9fa5]){1,2}'
 
 export interface RedactedText {
@@ -43,7 +41,7 @@ const REDACTION_RULES: Array<{
     {
         // a pupil named next to a score or an absence (「张三数学 58 分」「王小明请假」): the name never reaches the model
         category: 'student_name',
-        pattern: new RegExp(`${NAME_BEFORE}(?:(?:${COMPOUND_SURNAMES})|[${SURNAMES}])${GIVEN_NAME}(?=\\s*(?:同学)?\\s*[:：]?\\s*(?:(?:语文|数学|英语|科学|物理|化学|生物|历史|地理)\\s*)?(?:考了|得了|只有|才)?\\s*\\d{1,3}(?:\\.\\d)?\\s*分|请假|生病|缺课)`, 'gu'),
+        pattern: new RegExp(`(?:(?:${COMPOUND_SURNAMES})|[${SURNAMES}])${GIVEN_NAME}(?=\\s*(?:同学)?\\s*[:：]?\\s*(?:(?:语文|数学|英语|科学|物理|化学|生物|历史|地理)\\s*)?(?:考了|得了|只有|才)?\\s*\\d{1,3}(?:\\.\\d)?\\s*分|请假|生病|缺课)`, 'gu'),
         replace: '某学生'
     }
 ]
