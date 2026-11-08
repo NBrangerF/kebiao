@@ -28,12 +28,13 @@ export function bookFields(book) {
     return { edition, subject, title, edition_name, grade, volume, subject_slug }
 }
 
-/** Remember a book; fields for the same book are merged, a different book replaces the old one. */
+/** Remember a book; fields for the same book are merged, a different book replaces the old one. `lesson: null` forgets the lesson. */
 export function saveMyBook(patch) {
     if (!patch?.edition || !patch?.subject) return
     const prev = readMyBook()
     const defined = Object.fromEntries(Object.entries(patch).filter(([, value]) => value !== undefined && value !== null && value !== ''))
     const next = prev?.edition === patch.edition ? { ...prev, ...defined } : defined
+    if (patch.lesson === null) delete next.lesson
     const raw = JSON.stringify(next)
     if (raw === readRaw()) return
     try { window.localStorage.setItem(KEY, raw) } catch { return }

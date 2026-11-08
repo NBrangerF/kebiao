@@ -115,16 +115,21 @@ export function questionsForPoint(bank, code) {
 /**
  * Questions that fit a lesson of any edition: same 要点 first, then a title word match within the grade.
  * A question filed by 学段 also counts the lesson's grade being in its 学段.
+ * `sameText` (语文, 英语): a question filed under texts must name this lesson's text, since a shared 要点 alone
+ * would offer 《散步》 for 《藤野先生》.
  */
-export function questionsForLesson(bank, { grade, title = '', chapters = [], points = [] }) {
+export function questionsForLesson(bank, { grade, title = '', chapters = [], points = [], sameText = false }) {
     const text = squash([title, ...chapters].join(' '))
     return bank.items
         .map(item => {
             const grades = item.grades || [item.grade]
             let score = 0
+            const named = (item.lessons || []).some(keyword => text.includes(squash(keyword)))
+            if (sameText && item.lessons?.length && !named) return { item, score: 0 }
             if (item.points.some(code => points.includes(code))) score += 2
-            if ((item.lessons || []).some(keyword => text.includes(squash(keyword)))) score += 3
-            if (text.includes(squash(item.unit))) score += 1
+            if (named) score += 3
+            // 「第二单元」 is in every book: only a unit with a name of its own counts
+            if (!/^第.{1,3}单元$/u.test(item.unit || '') && text.includes(squash(item.unit))) score += 1
             if (item.grades && item.grades.includes(Number(grade))) score += 1
             if (grade && !grades.some(value => Math.abs(value - grade) <= 1)) score = 0
             return { item, score }

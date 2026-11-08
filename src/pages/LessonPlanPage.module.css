@@ -1019,3 +1019,79 @@
 .doc .small {
     color: var(--kb-paper-mute);
 }
+
+/* fe-flow: 最近的草稿 folds while a plan is open; each draft can be removed */
+.historyBox > summary {
+    color: var(--kb-dim);
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.history li {
+    display: inline-flex;
+    align-items: stretch;
+}
+
+.restore[aria-current='true'] {
+    border-style: solid;
+}
+
+.historyDelete {
+    min-width: 2.75rem;
+    padding: 0 0.6rem;
+    border: 1px dashed var(--kb-line-strong);
+    border-left: 0;
+    border-radius: 0;
+    background: transparent;
+    color: var(--kb-dim);
+    font: inherit;
+    font-size: 12px;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.modeSwitch button[aria-pressed='true'] {
+    background: var(--kb-accent-soft);
+    color: var(--kb-moon);
+}
+
+.modeSwitch button:disabled,
+.historyDelete:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+.inAppNote {
+    margin: 1.5rem 0 -0.75rem;
+    color: var(--kb-gold);
+    font-size: 14px;
+}
+
+/* where the clipboard is refused: the text, selected, at the foot of the screen */
+.copyFallback {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 50;
+    display: grid;
+    gap: 0.5rem;
+    padding: 0.75rem 16px calc(0.75rem + env(safe-area-inset-bottom));
+    border-top: 1px solid var(--kb-line-strong);
+    background: var(--kb-night);
+    color: var(--kb-moon);
+    font-size: 14px;
+}
+
+.copyFallback p {
+    margin: 0;
+}
+
+.copyFallback textarea {
+    width: 100%;
+    font-size: 16px;
+}
+
+.copyFallback button {
+    justify-self: end;
+}

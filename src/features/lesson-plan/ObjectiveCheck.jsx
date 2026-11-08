@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { postApi } from '../../data/api'
+import { errorText } from './errorText.js'
 import styles from './ObjectiveCheck.module.css'
 
 const standardHref = code => `/standards/${code.replace(/\.\d+$/u, '')}#${code}`
@@ -27,7 +28,7 @@ export default function ObjectiveCheck({ lesson, codes, taught, isUnit = false, 
             const response = await postApi('/api/v1/lesson-plans/check-objectives', { lesson, indicator_codes: codes.slice(0, 24), taught_codes: taught.slice(0, 24), objectives_text: text.trim(), ...(isUnit ? { scope: 'unit' } : {}) })
             setState({ status: 'ok', data: response.data, error: '' })
         } catch (error) {
-            setState({ status: 'error', data: null, error: error?.message || 'AI 这次没有读完，请再试一次。' })
+            setState({ status: 'error', data: null, error: errorText(error) })
         }
     }
     const data = state.data
