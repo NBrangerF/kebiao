@@ -133,7 +133,7 @@ export function textbookMeta(book) {
 export function textbookAlignmentMeta(book) {
     return page(
         `${book.title}（${book.edition_name}）课标对应表：每一课教哪些课标要点`,
-        `${book.edition_name}${book.title}每一课对应的义务教育课程标准（2022年版2025年修订）要点：主要在教、也涉及，每条附这一课教材原文为证；并列出本年级没有在本册找到的要点。`,
+        `${book.edition_name}${book.title}每一课对应的义务教育课程标准（2022年版2025年修订）要点：主要在教、也涉及，每条附这一课材料的原话（教材原文、国家平台教学设计或课题），机器判断，待核验。`,
         `/textbooks/${book.edition_id}/standards`
     )
 }
@@ -142,8 +142,9 @@ export function textbookUnitMeta(unit, book) {
     // Some tables of contents repeat a unit heading, so the page keeps titles unique.
     const pageLabel = unit.printed_page ? `第 ${unit.printed_page} 页` : unit.pdf_page ? `PDF 第 ${unit.pdf_page} 页` : ''
     const bookTitle = unit.textbook_title || book?.title || ''
+    // 人教版 and 北师大版 数学7上 both have 「第五章 一元一次方程」: the edition keeps the two pages apart
     return page(
-        `${unit.title}${pageLabel ? `（${pageLabel}）` : ''} · ${bookTitle}`,
+        `${unit.title}${pageLabel ? `（${pageLabel}）` : ''} · ${bookTitle}${book?.edition_name ? `（${book.edition_name}）` : ''}`,
         `${book?.edition_name || ''}${bookTitle}「${unit.title}」${pageLabel ? `（${pageLabel}起）` : ''}对应哪些课程标准、该怎么教。`,
         `/textbook-units/${unit.entry_id || unit.unit_id}`
     )

@@ -63,12 +63,15 @@ function sourceOf(quote, lesson) {
     return lesson.sources.textbook ? ['book', lesson.sources.textbook.pages[0]] : ['title', null]
 }
 
+// why the last attempt of a unit failed (HTTP status and error code), for the FAILED line
+let lastFailure = ''
 async function align(body) {
     for (let attempt = 0; attempt < 4; attempt += 1) {
-        const response = await fetch(`${BASE}/api/v1/lesson-plans/align`, { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify(body) }).catch(() => null)
-        if (response?.status === 429) { await sleep(30000); continue }
-        const payload = await response?.json().catch(() => null)
-        if (response?.ok && ['ok', 'partial'].includes(payload?.data?.status)) return payload.data
+        const response = await fetch(`${BASE}/api/v1/lesson-plans/align`, { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify(body) }).catch(error => ({ status: `network ${error.cause?.code || error.message}`, ok: false, json: async () => null }))
+        if (response.status === 429) { lastFailure = '429'; await sleep(30000); continue }
+        const payload = await response.json().catch(() => null)
+        if (response.ok && ['ok', 'partial'].includes(payload?.data?.status)) return payload.data
+        lastFailure = `${response.status} ${payload?.error?.code || payload?.data?.status || ''}`.trim()
         await sleep(10000)
     }
     return null
@@ -136,7 +139,7 @@ for (const file of REVERSE ? files.reverse() : files) {
                 }
                 save()
             }
-            const shown = data ? data.lessons.map(result => `${chunk.find(item => item.lesson.id === result.id)?.lesson.title}→${result.matches.filter(match => match.relation === 'teaches').map(match => match.point).join(',') || '∅'}`).join(' ') : 'FAILED'
+            const shown = data ? data.lessons.map(result => `${chunk.find(item => item.lesson.id === result.id)?.lesson.title}→${result.matches.filter(match => match.relation === 'teaches').map(match => match.point).join(',') || '∅'}`).join(' ') : `FAILED (${lastFailure})`
             console.log(`${done} ${evidence.textbook_title} ${unitTitle}: ${shown}`)
             await sleep(Math.max(0, GAP_MS - (Date.now() - started)))
         }

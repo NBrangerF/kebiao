@@ -429,7 +429,7 @@ function reusableOcrPages(args, asset) {
         page.asset_sha256 === asset.sha256
         && page.edition_id === asset.edition_id
         && Number.isInteger(Number(page.pdf_page))
-        && String(page.extraction_method || '').includes('tesseract')
+        && /tesseract|vision/u.test(String(page.extraction_method || ''))
         && Array.isArray(page.lines)
         && page.lines.length > 0
         && page.lines.every(line => {
@@ -471,7 +471,7 @@ async function extractPages(asset, structure, pdfPath, args) {
   }
   const ocrCandidates = pages
     .filter(page => (
-      !String(page.extraction_method || '').includes('tesseract')
+      !/tesseract|vision/u.test(String(page.extraction_method || ''))
       && (args.ocr === 'all' || (shouldFillMissing && compactText(page.text).length < 20))
     ))
     .sort((a, b) => Number(tocStarts.has(b.pdf_page)) - Number(tocStarts.has(a.pdf_page)) || a.pdf_page - b.pdf_page)

@@ -5,7 +5,7 @@ import QuestionCard from '../features/checks/QuestionCard.jsx'
 import { MarkupContext } from '../features/checks/markup.js'
 import { bookOfKey, buildDeck, loadBank, loadChecksIndex, pickBook, pickSubject, presentHref, questionsForBook, questionsForPoint, unitsOf } from '../features/checks/checksData.js'
 import { subjectBySlug } from '../features/checks/subjects.js'
-import { useMyBook } from '../features/mybook/myBook.js'
+import { publisherOf, useMyBook } from '../features/mybook/myBook.js'
 import { STATIC_PAGE_META } from '../seo/pageMeta.js'
 import { usePageMeta } from '../seo/usePageMeta.js'
 import concepts from './ConceptsPage.module.css'
@@ -112,7 +112,7 @@ export default function ChecksPage() {
                                 </button>
                             ))}
                         </nav>
-                        {book ? <p className={styles.edition}>{book.edition === '课标' ? `${bank.subject}按课标的学段和学习任务编排，各地教材版本都能用。` : `按${book.edition}${book.label}的单元编排。`}</p> : null}
+                        {book ? <p className={styles.edition}>{book.edition === '课标' ? `${bank.subject}按课标的学段和学习任务编排，各地教材版本都能用。` : `按${book.edition}${book.label}的单元编排。`}{book.edition !== '课标' && myBook?.subject === bank.subject && myBook.edition_name && publisherOf(myBook.edition_name) !== publisherOf(book.edition) ? `你的书是${myBook.edition_name}：同一年级的课标要点相同，单元名和顺序不同，可以按课标要点挑题。` : ''}</p> : null}
                     </>
                 )}
 

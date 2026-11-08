@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { loadTextbookCatalog } from '../textbooks/textbookApi'
-import { SPINE_COLORS } from './myBook.js'
+import { SPINE_COLORS, bookFields, publisherOf, saveMyBook, useMyBook } from './myBook.js'
 import styles from './BookPicker.module.css'
 
 const SUBJECT_ORDER = ['语文', '数学', '英语', '道德与法治', '科学', '物理', '化学', '生物学', '历史', '地理', '信息科技', '体育与健康', '艺术', '美术', '音乐', '劳动']
@@ -36,6 +36,9 @@ export default function BookPicker({ className = '', inline = false }) {
     const [subject, setSubject] = useState('')
     const [slot, setSlot] = useState('')
     const [edition, setEdition] = useState('')
+    // a teacher who changes book keeps her publisher: 北师大版 comes first and is picked for her
+    const myBook = useMyBook()
+    const preferred = myBook?.subject === subject ? publisherOf(myBook.edition_name) : ''
 
     useEffect(() => {
         let active = true
@@ -51,8 +54,8 @@ export default function BookPicker({ className = '', inline = false }) {
     }, [books, subject])
     const versions = useMemo(() => (books || [])
         .filter(book => book.subject === subject && slotOf(book) === slot)
-        .sort((a, b) => Number(a.platform_only) - Number(b.platform_only) || a.edition_name.localeCompare(b.edition_name, 'zh-CN')), [books, subject, slot])
-    const chosen = versions.find(book => book.edition_id === edition) || (versions.length === 1 ? versions[0] : null)
+        .sort((a, b) => Number(publisherOf(b.edition_name) === preferred) - Number(publisherOf(a.edition_name) === preferred) || Number(a.platform_only) - Number(b.platform_only) || a.edition_name.localeCompare(b.edition_name, 'zh-CN')), [books, subject, slot, preferred])
+    const chosen = versions.find(book => book.edition_id === edition) || (versions.length === 1 ? versions[0] : versions.find(book => preferred && publisherOf(book.edition_name) === preferred && !book.platform_only) || null)
 
     const pickSubject = name => { setSubject(name); setSlot(''); setEdition('') }
     const pickSlot = value => { setSlot(value); setEdition('') }
@@ -80,7 +83,7 @@ export default function BookPicker({ className = '', inline = false }) {
                 {subject ? (
                     <div className={styles.grades}>
                         {slots.map(book => (
-                            <button key={slotOf(book)} type="button" aria-pressed={slot === slotOf(book)} aria-label={`${book.grade} 年级${book.volume}`} onClick={() => pickSlot(slotOf(book))}>
+                            <button key={slotOf(book)} type="button" aria-pressed={slot === slotOf(book)} aria-label={`${slotLabel(book)}（${book.grade} 年级${book.volume}）`} onClick={() => pickSlot(slotOf(book))}>
                                 {slotLabel(book)}
                             </button>
                         ))}
@@ -101,7 +104,7 @@ export default function BookPicker({ className = '', inline = false }) {
                 ) : <p className={styles.wait}>先选年级</p>}
             </fieldset>}
             {chosen ? (
-                <Link className={`btn btn-primary ${styles.go}`} to={bookHref(chosen)}>
+                <Link className={`btn btn-primary ${styles.go}`} to={bookHref(chosen)} onClick={() => saveMyBook(bookFields(chosen))}>
                     打开 {chosen.subject}{slotLabel(chosen)} · {chosen.edition_name} →
                 </Link>
             ) : inline ? null : (

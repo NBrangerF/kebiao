@@ -27,4 +27,7 @@ test('unit titles fall back to the PDF page when the printed page is missing', (
     const book = { title: '音乐9年级上册', edition_name: '人音版' }
     assert.match(textbookUnitMeta({ entry_id: 'tcu_a', title: '流行乐风', pdf_page: 70, textbook_title: book.title }, book).title, /（PDF 第 70 页）/u)
     assert.match(textbookUnitMeta({ entry_id: 'tcu_b', title: '建筑艺术的美', printed_page: '2', pdf_page: 4 }, book).title, /（第 2 页）/u)
+    // two editions of one volume can share a unit title and page
+    const unit = { title: '第五章 一元一次方程', printed_page: '130', textbook_title: '数学7年级上册' }
+    assert.notEqual(textbookUnitMeta({ ...unit, entry_id: 'tcu_c' }, { title: '数学7年级上册', edition_name: '人教版' }).title, textbookUnitMeta({ ...unit, entry_id: 'tcu_d' }, { title: '数学7年级上册', edition_name: '北师大版' }).title)
 })

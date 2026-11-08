@@ -460,7 +460,7 @@ export default function TextbookReader({ book, fileUrl, initialPage = null, init
             noData={<div className={styles.documentState}>正在加载 PDF…</div>}
             onLoadSuccess={documentValue => { setPdf(documentValue); setNumPages(documentValue.numPages) }}
             loading={<div className={styles.documentState}>正在加载 PDF…</div>}
-            error={<div className={styles.documentState}>无法加载 PDF。请检查 X9 Pro 连接或对象存储配置。</div>}
+            error={<div className={styles.documentState}>原书暂时没有打开。请检查网络后刷新页面再试。</div>}
         >
             <div className={styles.reader}>
                 <div className={styles.toolbar}>

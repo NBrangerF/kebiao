@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from 'react'
-import { bookFields, saveMyBook } from '../features/mybook/myBook.js'
-import { Link, useParams } from 'react-router-dom'
+import { bookFields, viewMyBook } from '../features/mybook/myBook.js'
+import { Link, useNavigate, useParams } from 'react-router-dom'
 import { PageLoading, ErrorState } from '../components/StateComponents'
 import { loadTextbookDetail } from '../features/textbooks/textbookApi'
 import { RELATION_LABELS, alignmentUnits, bookCoverage, pointIndex, reviewSheet, sourceLabel, v2Slug } from '../features/textbooks/alignmentModel'
@@ -18,7 +18,7 @@ const esc = value => String(value ?? '').replace(/[&<>"]/gu, char => ({ '&': '&a
 
 // 「这张表是怎么做的」, folded under the header: how a lesson was matched, and how the matches were checked
 const METHOD = [
-    ['找到这一课在原书的哪几页', '按国家平台同步课的课题，在原书里顺着书页往后找标题，跳过目录、单元导语和附录；扫描版教材先做文字识别。5,447 节课里 4,711 节找到了自己的页。'],
+    ['找到这一课在原书的哪几页', '按国家平台同步课的课题，在原书里顺着书页往后找标题，跳过目录、单元导语和附录；扫描版教材先做文字识别。大多数课都找到了自己的页，没找到的读这一课的其他材料。'],
     ['读这一课自己的材料', '教材原文那几页；国家平台教学设计里写的教学目标和重难点；没找到原书文字的课，再读学习任务单或课件；平台的课程简介。都没有的，只读课题。'],
     ['对照本年级的全部要点', 'AI 读这门课这个年级的全部课标要点（历史按这一册的时期），判断这一课「主要在教」哪几条——这一课的教学目标，最多两条——和「也涉及」哪几条。'],
     ['每一条都要有原话为证', 'AI 必须从这一课的材料里摘一段原话说明理由。系统逐条核对：原话不在材料里的、摘的是课标原文而不是教材的，一律不算。']
@@ -34,7 +34,10 @@ async function loadJson(url) {
 // an edition the library has no PDF of (pf_…): its details come from the platform list
 async function loadBook(editionId) {
     if (!editionId.startsWith('pf_')) return loadTextbookDetail(editionId)
-    const book = (await loadJson('/data/textbooks/platform_books.json')).books.find(item => item.edition_id === editionId)
+    const platform = await loadJson('/data/textbooks/platform_books.json')
+    const book = platform.books.find(item => item.edition_id === editionId)
+    // a pilot edition whose real book is now in the library (北师大版 数学): its table moved to the book's
+    if (!book && platform.replaced?.[editionId]) return { moved_to: platform.replaced[editionId] }
     if (!book) throw new Error('没有这本教材的对应表。')
     return { ...book, platform_only: true }
 }
@@ -47,7 +50,7 @@ function downloadWord(book, units, points) {
     const url = URL.createObjectURL(blob)
     const link = document.createElement('a')
     link.href = url
-    link.download = `${book.title}-课标对应表.doc`
+    link.download = `${book.title}-${book.edition_name}-课标对应表.doc`
     link.click()
     setTimeout(() => URL.revokeObjectURL(url), 1000)
 }
@@ -81,6 +84,7 @@ function Evidence({ book, row, points }) {
 
 export default function TextbookAlignmentPage() {
     const { editionId } = useParams()
+    const navigate = useNavigate()
     const [data, setData] = useState(null)
     const [error, setError] = useState('')
     usePageMeta(data ? textbookAlignmentMeta(data.book) : null)
@@ -90,6 +94,10 @@ export default function TextbookAlignmentPage() {
         setData(null)
         setError('')
         loadBook(editionId).then(async book => {
+            if (book.moved_to) {
+                if (active) navigate(`/textbooks/${book.moved_to}/standards${window.location.hash}`, { replace: true })
+                return
+            }
             const [record, subject] = await Promise.all([
                 loadJson(`/data/textbooks/national-lessons/${editionId}.json`),
                 loadJson(`/data/v2/by_subject/${v2Slug(book.subject_slug)}.json`)
@@ -99,14 +107,14 @@ export default function TextbookAlignmentPage() {
             if (active) setData({ book, record, subject, elsewhere })
         }).catch(errorValue => { if (active) setError(errorValue.message) })
         return () => { active = false }
-    }, [editionId])
-    useEffect(() => { if (data) saveMyBook(bookFields(data.book)) }, [data])
+    }, [editionId, navigate])
+    useEffect(() => { if (data) viewMyBook(bookFields(data.book)) }, [data])
 
     const view = useMemo(() => {
         if (!data) return null
         const units = alignmentUnits(data.record)
         const points = pointIndex(data.subject)
-        return { units, points, coverage: bookCoverage(units, data.subject, data.book) }
+        return { units, points, coverage: bookCoverage(units, data.subject, data.book, data.record.edition_grades) }
     }, [data])
 
     if (error) return <ErrorState title="课标对应表加载失败" message={error} />
@@ -114,7 +122,12 @@ export default function TextbookAlignmentPage() {
     const { book, record, elsewhere } = data
     const { units, points, coverage } = view
     const missing = coverage.groups.map(group => ({ ...group, points: group.points.filter(item => !item.state) })).filter(group => group.points.length)
-    const otherBooks = code => [...new Set((elsewhere[code] || []).filter(row => row[0] !== book.edition_id && row[5] === 'T').map(row => row[1]))]
+    const otherBooks = code => {
+        const rows = (elsewhere[code] || []).filter(row => row[0] !== book.edition_id && row[5] === 'T')
+        // two editions of a subject: a 北师大版 book points to the 北师大版 book that teaches it, when there is one
+        const own = rows.filter(row => String(row[1]).endsWith(`（${book.edition_name}）`))
+        return [...new Set((own.length ? own : rows).map(row => row[1]))]
+    }
 
     return (
         <div className={`container ${concepts.page}`}>

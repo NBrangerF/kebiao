@@ -20,6 +20,13 @@
 .edition em { color: var(--kb-gold); font-family: var(--font-num); font-size: 1.35em; line-height: 1; }
 .badges { display: flex; flex-wrap: wrap; gap: .45rem; margin-top: var(--space-5); }
 .summary { max-width: 44rem; margin-top: var(--space-5); color: var(--kb-mist); font-size: 16px; line-height: 1.8; }
+/* 这一册的版本: this one, then links to the others */
+.editions { display: flex; flex-wrap: wrap; gap: 4px 16px; margin: 14px 0 0; font-size: 14px; }
+.editions span { color: var(--kb-moon); font-weight: 500; }
+.editions span::after { content: ' ·'; color: var(--kb-dim); }
+.editions a { color: var(--kb-mist); text-decoration: underline; text-decoration-color: var(--kb-line-strong); text-underline-offset: 4px; }
+.editions a:hover { color: var(--kb-moon); text-decoration-color: var(--kb-gold); }
+button.textLink { border: 0; background: none; padding: 0; font: inherit; font-size: 14px; font-weight: 500; cursor: pointer; }
 .actions { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 24px; margin-top: 28px; }
 .facts { border: 1px solid var(--kb-line); border-radius: 0; background: var(--kb-night-glass); }
 .facts div { display: flex; align-items: baseline; justify-content: space-between; padding: 14px 18px; border-bottom: 1px solid var(--kb-line); }

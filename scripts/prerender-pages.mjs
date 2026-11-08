@@ -19,8 +19,11 @@ const readJson = path => JSON.parse(readFileSync(join(DATA, path), 'utf8'))
 // dist/index.html becomes the home page, so keep the bare shell for every other route.
 const SHELL_PATH = join(DIST, 'app-shell.html')
 const builtIndex = readFileSync(join(DIST, 'index.html'), 'utf8')
-const shell = builtIndex.includes('data-prerender=') ? readFileSync(SHELL_PATH, 'utf8') : builtIndex
-writeFileSync(SHELL_PATH, shell)
+// The shell answers every URL that has no prerendered page, unknown ones included (HTTP 200): it tells search
+// engines not to index it. Every page in the sitemap is prerendered, and those pages never carry the tag.
+const NOINDEX = '<meta name="robots" content="noindex" />'
+const shell = (builtIndex.includes('data-prerender=') ? readFileSync(SHELL_PATH, 'utf8') : builtIndex).replace(NOINDEX, '')
+writeFileSync(SHELL_PATH, shell.replace('<head>', `<head>${NOINDEX}`))
 
 const esc = value => String(value ?? '').replace(/[&<>"']/gu, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[char]))
 const scriptJson = value => JSON.stringify(value).replace(/</gu, '\\u003c')
@@ -281,10 +284,14 @@ function textbookPages() {
     const bySubject = [...new Set(textbooks.map(book => book.subject))]
     // the editions the library has no PDF of (fetch_platform_editions.mjs)
     const platformBooks = existsSync(join(DATA, 'textbooks/platform_books.json')) ? readJson('textbooks/platform_books.json').books : []
+    // the pilot editions' publishers, most books first (as on the page)
+    const pilotCounts = new Map()
+    for (const book of platformBooks) if (/版$/u.test(book.edition_name)) pilotCounts.set(book.edition_name.replace(/版$/u, ''), (pilotCounts.get(book.edition_name.replace(/版$/u, '')) || 0) + 1)
+    const pilotPublishers = [...pilotCounts.entries()].sort((a, b) => b[1] - a[1]).map(([name]) => name).slice(0, 5).join('、')
     add(textbooksMeta({ textbookCount: textbooks.length }), `${crumbNav(crumbs)}
 <p class="kbp-kicker">教材馆 · ${textbooks.length} 册</p>
 <h1>选你的教材</h1>
-<p class="kbp-lede">${textbooks.length} 本有原书；${platformBooks.length ? `另有北师大、苏教、冀教、华东师大、青岛版等 ${platformBooks.length} 本只有国家平台的课目录。` : ''}每一课教哪几条课标、原话在第几页，都已逐课标好。</p>
+<p class="kbp-lede">${textbooks.length} 本有原书；${platformBooks.length ? `另有${pilotPublishers}版等 ${platformBooks.length} 本只有国家平台的课目录。` : ''}每一课教哪几条课标、原话在第几页，都已逐课标好。</p>
 ${bySubject.map(subject => section(subject, list(textbooks.filter(book => book.subject === subject).map(book => link(`/textbooks/${book.edition_id}`, `${book.edition_name}${book.title}`))))).join('')}
 ${platformBooks.length ? section('只有课目录的版本', `<p>馆里没有这些书的原书；课目录来自国家中小学智慧教育平台，每一课教哪几条课标同样逐课标好。</p>${list(platformBooks.map(book => link(`/textbooks/${book.edition_id}/standards`, `${book.edition_name}${book.title}`)))}`) : ''}`, { jsonLd: [breadcrumbs(crumbs)] })
 
@@ -337,6 +344,19 @@ ${section('对应的课程标准', list(aligned))}`, {
 ${[...byUnit].map(([unit, lessons]) => section(unit, list([...lessons].map(([title, item]) => `<strong>${esc(title)}</strong><br>${rows(item.align)}`)))).join('')}`, { jsonLd: [breadcrumbs(tableCrumbs)] })
     }
 
+    // each unit's lessons with their 课标 judgments (national-lessons, by the unit each lesson falls in): what the
+    // app's unit page shows, so the static page does not claim the unit has none
+    const lessonsByUnit = new Map()
+    for (const book of textbooks) {
+        if (!hasAlignment(book.edition_id)) continue
+        for (const lesson of readJson(`textbooks/national-lessons/${book.edition_id}.json`).lessons) {
+            if (!lesson.unit_id || !lesson.align?.length) continue
+            const title = lesson.title.replace(/[（(]?第[一二三四五六七八九十\d]+课时[）)]?/gu, '').trim()
+            if (!lessonsByUnit.has(lesson.unit_id)) lessonsByUnit.set(lesson.unit_id, new Map())
+            if (!lessonsByUnit.get(lesson.unit_id).has(title)) lessonsByUnit.get(lesson.unit_id).set(title, lesson.align)
+        }
+    }
+    const alignRows = align => align.map(([code, relation, quote, source, page]) => `${link(`/standards/${code.replace(/\.\d+$/u, '')}#${code}`, code)} ${esc(RELATION_LABEL[relation])}：${esc(v2Points.get(code) || '')}<span class="kbp-note">（“${esc(quote)}”，${esc(SOURCE_LABEL(source, page))}）</span>`).join('<br>')
     for (const unit of units) {
         const book = textbooksById.get(unit.edition_id)
         const unitCrumbs = [...crumbs, [book.title, `/textbooks/${book.edition_id}`], [unit.title, `/textbook-units/${unit.entry_id}`]]
@@ -357,7 +377,8 @@ ${[...byUnit].map(([unit, lessons]) => section(unit, list([...lessons].map(([tit
 <p class="kbp-kicker">${esc([book.edition_name, book.title].join(' · '))}</p>
 <h1>${esc(unit.title)}</h1>
 <p class="kbp-lede">${unit.printed_page ? `教材第 ${esc(unit.printed_page)} 页起` : ''}</p>
-${aligned.length ? section('对应的课程标准', list(aligned)) : `<p class="kbp-note">这个单元还没有逐条对应的课标，可以在${link(`/subjects/${book.subject_slug}`, `${book.subject}课程标准`)}里按年级查找。</p>`}`, { jsonLd: [breadcrumbs(unitCrumbs)] })
+${[...(lessonsByUnit.get(unit.entry_id) || [])].length ? section('这个单元的课教哪几条课标', `${list([...lessonsByUnit.get(unit.entry_id)].slice(0, 16).map(([title, align]) => `<strong>${esc(title)}</strong><br>${alignRows(align)}`))}<p class="kbp-note">AI 逐课读教材后判断，待核验。整本书见${link(`/textbooks/${book.edition_id}/standards`, '课标对应表')}。</p>`) : ''}
+${aligned.length ? section('对应的课程标准', list(aligned)) : lessonsByUnit.has(unit.entry_id) ? '' : `<p class="kbp-note">这个单元还没有逐条对应的课标，可以在${link(`/subjects/${['art', 'music'].includes(book.subject_slug) ? 'arts' : book.subject_slug}`, `${['art', 'music'].includes(book.subject_slug) ? '艺术' : book.subject}课程标准`)}里按年级查找。</p>`}`, { jsonLd: [breadcrumbs(unitCrumbs)] })
     }
 }
 

@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import { parseArgs, readJson, readJsonLines } from './library_common.js'
 
-const EXPECTED = { primary: 86, junior: 57, current: 143, editions: 144, scheduled: 1, companions: 4 }
+const EXPECTED = { primary: 104, junior: 65, current: 169, editions: 170, scheduled: 1, companions: 4 }
 
 function main() {
   const args = parseArgs(process.argv.slice(2))
@@ -27,7 +27,8 @@ function main() {
   for (const row of rows) {
     if (ids.has(row.edition_id)) errors.push(`duplicate edition_id ${row.edition_id}`)
     ids.add(row.edition_id)
-    const slot = `${row.resource_type}|${row.stage}|${row.subject}|${row.grade}|${row.volume}`
+    // a slot can hold more than one edition (人教版 and 北师大版 数学5上)
+    const slot = `${row.resource_type}|${row.stage}|${row.subject}|${row.grade}|${row.volume}|${row.edition_name}`
     if (slots.has(slot)) errors.push(`duplicate active slot ${slot}`)
     slots.add(slot)
     if (row.selection_class === 'national_unified' && !['语文', '道德与法治', '历史'].includes(row.subject)) errors.push(`invalid national_unified subject ${row.subject}`)

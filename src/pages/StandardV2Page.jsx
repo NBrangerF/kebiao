@@ -12,6 +12,7 @@ import ResourceBadges, { OpenOriginalLink } from '../features/learning-resources
 import { v2StandardMeta } from '../seo/pageMeta.js'
 import { usePageMeta } from '../seo/usePageMeta.js'
 import styles from './StandardV2Page.module.css'
+import { useMyBook } from '../features/mybook/myBook.js'
 
 const pagesLabel = pages => (pages?.length ? `课标第 ${pages.join('、')} 页` : '')
 
@@ -165,8 +166,9 @@ function useNationalLessons(code) {
     return data
 }
 
-// each book that teaches one of these 要点, with its lessons, library books before the pf_ editions, in grade order
-function booksFor(data, indicators) {
+// each book that teaches one of these 要点, with its lessons: the teacher's own book and edition first, then library
+// books before the pf_ editions, in grade order
+function booksFor(data, indicators, myBook) {
     const books = new Map()
     for (const item of indicators) {
         for (const [edition, textbook, , lessonId, , relation] of data?.points?.[item.code] || []) {
@@ -176,7 +178,9 @@ function booksFor(data, indicators) {
             books.set(edition, book)
         }
     }
-    return [...books.values()].sort((a, b) => Number(a.edition.startsWith('pf_')) - Number(b.edition.startsWith('pf_')) || a.textbook.localeCompare(b.textbook, 'zh-Hans-CN', { numeric: true }))
+    // 「数学5年级上册（北师大版）」: two editions of a volume carry their edition in the label
+    const own = book => (myBook?.edition === book.edition ? 2 : myBook?.edition_name && book.textbook.endsWith(`（${myBook.edition_name}）`) ? 1 : 0)
+    return [...books.values()].sort((a, b) => own(b) - own(a) || Number(a.edition.startsWith('pf_')) - Number(b.edition.startsWith('pf_')) || a.textbook.localeCompare(b.textbook, 'zh-Hans-CN', { numeric: true }))
 }
 
 function TextbookLine({ code, data, list }) {
@@ -326,7 +330,8 @@ export default function StandardV2Page() {
     }, [state.status, target])
 
     const lessonData = useNationalLessons(standardCode)
-    const books = useMemo(() => (lessonData ? booksFor(lessonData, standard?.indicators || []) : []), [lessonData, standard])
+    const myBook = useMyBook()
+    const books = useMemo(() => (lessonData ? booksFor(lessonData, standard?.indicators || [], myBook) : []), [lessonData, standard, myBook])
 
     const stage = useMemo(() => subject?.stages?.find(s => s.stage_code === standard?.stage_code), [subject, standard])
     const neighbours = useMemo(() => {

@@ -2,7 +2,8 @@
 // the chapter tree and, for every lesson, its title, chapter path and which materials it has
 // (视频课程、课件、教学设计、学习任务单、课后练习…). Only titles and ids are kept; the platform hosts the content.
 // Output: data/textbooks/smartedu/<edition_id>.json and data/textbooks/smartedu/index.json.
-// Usage: node scripts/resources/fetch_smartedu_lessons.mjs [--only ed_xxx] [--refresh]
+// Usage: node scripts/resources/fetch_smartedu_lessons.mjs [--only ed_xxx[,ed_yyy…]] [--refresh]
+// --only matches just those books and merges them into the existing index.json; a full run re-matches every book.
 import { existsSync, mkdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
@@ -14,7 +15,7 @@ const OUT = path.join(ROOT, 'data/textbooks/smartedu')
 const CACHE = path.join(ROOT, 'generated/smartedu')
 const BASE = 'https://s-file-1.ykt.cbern.com.cn/zxx/ndrs/national_lesson'
 const args = process.argv.slice(2)
-const only = args.includes('--only') ? args[args.indexOf('--only') + 1] : null
+const only = args.includes('--only') ? new Set(args.flatMap((arg, i) => (args[i - 1] === '--only' ? arg.split(',') : [])).filter(Boolean)) : null
 const refresh = args.includes('--refresh')
 mkdirSync(OUT, { recursive: true })
 mkdirSync(CACHE, { recursive: true })
@@ -43,6 +44,8 @@ async function getJson(url, cacheName) {
 // 我们的版本名 → 平台标题里的版本写法
 const EDITION_TOKENS = [
     [/人教版 PEP/u, ['人教版']],
+    [/北师大/u, ['北师大版']],
+    [/外研/u, ['外研社版', '外研版']],
     [/人美版/u, ['人美版']],
     [/人音版（简谱/u, ['人音版（简谱）', '人音版']],
     [/教科版/u, ['教科版']],
@@ -65,11 +68,13 @@ function candidatesFor(book, materials) {
     const grade = `${GRADE_CN[book.grade]}年级`
     const volume = book.volume === '全一册' ? '' : book.volume
     return materials.filter(item => {
-        // 「新教材- 初中历史…」: the platform sometimes leaves a space after the prefix
-        const title = item.title.replace(/^新教材-\s*/u, '')
+        // 「新教材- 初中历史…」: the platform sometimes leaves a space after the prefix;
+        // 「新教材-北师大版小学数学四年级上册目录」 puts the edition before the stage
+        const full = item.title.replace(/^新教材-\s*/u, '')
+        const title = full.replace(/^\S{2,12}?版(?=小学|初中)/u, '')
         if (!title.startsWith(stage) || /五•四学制|五四学制/u.test(title)) return false
         if (!subjects.some(subject => title.includes(subject))) return false
-        if (!tokens.some(token => title.includes(token))) return false
+        if (!tokens.some(token => full.includes(token))) return false
         // 「三年级起点」 names where the English series starts, not the book's grade
         if (!title.replace(/[一三]年级起点/gu, '').includes(grade)) return false
         return volume ? title.includes(volume) : /全一册|年级$/u.test(title) || !/[上下]册/u.test(title)
@@ -152,7 +157,7 @@ console.log(`national_lesson textbooks: ${materials.length}`)
 const index = { fetched_at: new Date().toISOString().slice(0, 10), source: 'https://basic.smartedu.cn/syncClassroom', editions: {} }
 let lessonTotal = 0
 for (const book of books) {
-    if (only && book.edition_id !== only) continue
+    if (only && !only.has(book.edition_id)) continue
     const candidates = candidatesFor(book, materials)
     const ours = unitTitles.get(book.edition_id) || new Set()
     const pages = bookPages(book.edition_id)
@@ -232,5 +237,8 @@ for (const book of books) {
     index.editions[book.edition_id] = { status: 'matched', platform_textbook_id: best.candidate.id, platform_title: best.candidate.title, lessons: lessons.length, title_hits: best.overlap, method: fromOcr ? 'toc_ocr' : bookText ? 'book_text' : 'toc', pages_found: lessons.filter(item => item.pdf_page).length }
     console.log(`  ✓ ${book.title} → ${best.candidate.title}: ${lessons.length} lessons, overlap ${best.overlap}`)
 }
-if (!only) writeFileSync(path.join(OUT, 'index.json'), `${JSON.stringify(index, null, 1)}\n`)
+// --only: keep every other book's entry as the last full run left it
+const indexFile = path.join(OUT, 'index.json')
+const written = only && existsSync(indexFile) ? { ...JSON.parse(readFileSync(indexFile, 'utf8')), editions: { ...JSON.parse(readFileSync(indexFile, 'utf8')).editions, ...index.editions } } : index
+writeFileSync(indexFile, `${JSON.stringify(written, null, 1)}\n`)
 console.log(`done: ${Object.values(index.editions).filter(item => item.status === 'matched').length} matched, ${lessonTotal} lessons`)

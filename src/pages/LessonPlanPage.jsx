@@ -8,7 +8,7 @@ import { XCircleIcon } from '@phosphor-icons/react/dist/csr/XCircle'
 import { postApi } from '../data/api'
 import { trackUmamiEvent } from '../observability/umamiTelemetry.js'
 import { loadTextbookCatalog } from '../features/textbooks/textbookApi'
-import { bookFields, readMyBook, saveMyBook } from '../features/mybook/myBook.js'
+import { bookFields, publisherOf, readMyBook, saveMyBook } from '../features/mybook/myBook.js'
 import { downloadBriefWord, downloadObservationWord, downloadReflectionWord, downloadRubricWord, downloadSkeletonWord, downloadScriptWord, downloadWord, downloadUnitWord, planToText, unitToText } from '../features/lesson-plan/lessonPlanExport'
 import { usePageMeta } from '../seo/usePageMeta.js'
 import { STATIC_PAGE_META } from '../seo/pageMeta.js'
@@ -200,6 +200,17 @@ export default function LessonPlanPage() {
     const subjectBooks = useMemo(() => books
         .filter(book => book.subject === subject && book.resource_type === 'student_textbook')
         .sort((a, b) => a.grade - b.grade || a.volume.localeCompare(b.volume, 'zh-CN')), [books, subject])
+    // two editions of a subject (人教版, 北师大版): one group each, the teacher's own publisher first
+    const bookGroups = useMemo(() => {
+        const mine = readMyBook()
+        const own = mine?.subject === subject ? publisherOf(mine.edition_name) : ''
+        const groups = new Map()
+        for (const item of subjectBooks) {
+            if (!groups.has(item.edition_name)) groups.set(item.edition_name, [])
+            groups.get(item.edition_name).push(item)
+        }
+        return [...groups.entries()].sort(([a, x], [b, y]) => Number(Boolean(own) && publisherOf(b) === own) - Number(Boolean(own) && publisherOf(a) === own) || x[0].grade - y[0].grade || a.localeCompare(b, 'zh-CN'))
+    }, [subjectBooks, subject])
     const book = books.find(item => item.edition_id === edition) || null
 
     // 国家平台 lesson list for the chosen textbook
@@ -570,7 +581,9 @@ export default function LessonPlanPage() {
                                 <span>教材</span>
                                 <select value={edition} disabled={!subject} onChange={event => update({ edition: event.target.value, lesson: null, unit: null })}>
                                     <option value="">{subject ? '选择年级和册次' : '先选学科'}</option>
-                                    {subjectBooks.map(item => <option key={item.edition_id} value={item.edition_id}>{item.edition_name} · {item.grade} 年级{item.volume}</option>)}
+                                    {bookGroups.length > 1
+                                        ? bookGroups.map(([name, items]) => <optgroup key={name} label={name}>{items.map(item => <option key={item.edition_id} value={item.edition_id}>{item.edition_name} · {item.grade} 年级{item.volume}</option>)}</optgroup>)
+                                        : subjectBooks.map(item => <option key={item.edition_id} value={item.edition_id}>{item.edition_name} · {item.grade} 年级{item.volume}</option>)}
                                 </select>
                             </label>
                             <label className={styles.wide}>

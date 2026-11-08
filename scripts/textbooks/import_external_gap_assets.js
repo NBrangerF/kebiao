@@ -154,9 +154,10 @@ async function resolveQuarkPdf(source) {
 }
 
 function findTarget(catalog, source) {
-  const target = catalog.find(row => row.resource_type === 'student_textbook' && row.stage === source.stage && row.subject === source.subject && row.grade === source.grade && row.volume === source.volume)
-  if (!target) throw new Error(`No target slot for ${source.stage}/${source.subject}/${source.grade}/${source.volume}`)
-  return target
+  // a slot can hold several editions (人教版 and 北师大版 数学5上): a source names its row by edition_id, or must match exactly one row
+  const rows = catalog.filter(row => row.resource_type === 'student_textbook' && row.stage === source.stage && row.subject === source.subject && row.grade === source.grade && row.volume === source.volume && (!source.edition_id || row.edition_id === source.edition_id))
+  if (rows.length !== 1) throw new Error(`${rows.length ? 'Ambiguous' : 'No'} target slot for ${source.stage}/${source.subject}/${source.grade}/${source.volume}${source.edition_id ? ` (${source.edition_id})` : ''}`)
+  return rows[0]
 }
 
 async function acquireSource({ source, catalog, root, runId, journalPath }) {

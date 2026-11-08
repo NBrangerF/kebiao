@@ -24,7 +24,8 @@ function filtersFromParams(params) {
         stage: params.get('stage') || '',
         subject: params.get('subject') || '',
         grade: params.get('grade') || '',
-        volume: params.get('volume') || ''
+        volume: params.get('volume') || '',
+        edition: params.get('edition') || ''
     }
 }
 
@@ -49,21 +50,32 @@ export default function TextbookLibraryPage() {
 
     const filtered = useMemo(
         () => filterTextbooks(catalog?.items || [], filters).slice().sort(shelfOrder),
-        [catalog, filters.query, filters.stage, filters.subject, filters.grade, filters.volume]
+        [catalog, filters.query, filters.stage, filters.subject, filters.grade, filters.volume, filters.edition]
     )
+    // 版本: the editions of the books the other filters leave, the pilot editions too, with how many books each has
+    const editions = useMemo(() => {
+        const counts = new Map()
+        for (const book of filterTextbooks(catalog?.items || [], { ...filters, query: '', edition: '' })) counts.set(book.edition_name, (counts.get(book.edition_name) || 0) + 1)
+        for (const book of pilots) {
+            if ((filters.subject && book.subject_slug !== filters.subject) || (filters.grade && String(book.grade) !== String(filters.grade)) || (filters.volume && book.volume !== filters.volume)) continue
+            counts.set(book.edition_name, (counts.get(book.edition_name) || 0) + 1)
+        }
+        return [...counts.entries()].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0], 'zh-CN'))
+    }, [catalog, pilots, filters.stage, filters.subject, filters.grade, filters.volume])
     const pilotGroups = useMemo(() => {
         const groups = new Map()
         for (const book of pilots) {
-            if (filters.subject && book.subject !== filters.subject) continue
+            if (filters.subject && book.subject_slug !== filters.subject) continue
             if (filters.grade && String(book.grade) !== String(filters.grade)) continue
+            if (filters.edition && book.edition_name !== filters.edition) continue
             const key = `${book.edition_name} · ${book.subject}`
             if (!groups.has(key)) groups.set(key, [])
             groups.get(key).push(book)
         }
         return [...groups.entries()].sort(([, a], [, b]) => shelfOrder(a[0], b[0]))
-    }, [pilots, filters.subject, filters.grade])
+    }, [pilots, filters.subject, filters.grade, filters.edition])
 
-    useEffect(() => setVisibleCount(36), [filters.query, filters.stage, filters.subject, filters.grade, filters.volume])
+    useEffect(() => setVisibleCount(36), [filters.query, filters.stage, filters.subject, filters.grade, filters.volume, filters.edition])
 
     function updateFilter(key, value) {
         const next = new URLSearchParams(searchParams)
@@ -76,6 +88,10 @@ export default function TextbookLibraryPage() {
     if (!catalog) return <PageLoading message="正在整理教材馆" />
 
     const manifest = catalog.manifest
+    // the publishers of the pilot editions, most books first
+    const pilotCounts = new Map()
+    for (const book of pilots) if (/版$/u.test(book.edition_name)) pilotCounts.set(book.edition_name.replace(/版$/u, ''), (pilotCounts.get(book.edition_name.replace(/版$/u, '')) || 0) + 1)
+    const pilotPublishers = [...pilotCounts.entries()].sort((a, b) => b[1] - a[1]).map(([name]) => name)
 
     return (
         <div className={styles.page}>
@@ -84,7 +100,7 @@ export default function TextbookLibraryPage() {
                     <div className={styles.intro}>
                         <span className={styles.eyebrow}><BookOpenTextIcon size={16} aria-hidden="true" /> 教材馆 · 义务教育教科书</span>
                         <h1>选你的教材</h1>
-                        <p>{manifest.count} 本有原书；{pilots.length ? `另有北师大、苏教、冀教、华东师大、青岛版等 ${pilots.length} 本只有国家平台的课目录。` : ''}每一课教哪几条课标、原话在第几页，都已逐课标好。</p>
+                        <p>{manifest.count} 本有原书；{pilots.length ? `另有${pilotPublishers.slice(0, 5).join('、')}版等 ${pilots.length} 本只有国家平台的课目录。` : ''}每一课教哪几条课标、原话在第几页，都已逐课标好。</p>
                         <p className={styles.download}>要下载最新修订版的原书 PDF，可以去 GitHub：<a href="https://github.com/NBrangerF/China-Textbook-New" target="_blank" rel="noopener noreferrer">China Textbook New ↗</a>，每本都和国家中小学智慧教育平台核对过。</p>
                     </div>
                     {myBook && !changing
@@ -104,22 +120,23 @@ export default function TextbookLibraryPage() {
                     <label><span>学科</span><select value={filters.subject} onChange={event => updateFilter('subject', event.target.value)}><option value="">全部学科</option>{manifest.filters.subjects.map(item => <option key={item.value} value={item.value}>{item.label}（{item.count}）</option>)}</select></label>
                     <label><span>年级</span><select value={filters.grade} onChange={event => updateFilter('grade', event.target.value)}><option value="">全部年级</option>{manifest.filters.grades.map(item => <option key={item.value} value={item.value}>{item.label}（{item.count}）</option>)}</select></label>
                     <label><span>册次</span><select value={filters.volume} onChange={event => updateFilter('volume', event.target.value)}><option value="">全部册次</option>{manifest.filters.volumes.map(item => <option key={item.value} value={item.value}>{item.label}（{item.count}）</option>)}</select></label>
+                    <label><span>版本</span><select value={filters.edition} onChange={event => updateFilter('edition', event.target.value)}><option value="">全部版本</option>{editions.map(([name, count]) => <option key={name} value={name}>{name}（{count}）</option>)}{filters.edition && !editions.some(([name]) => name === filters.edition) ? <option value={filters.edition}>{filters.edition}（0）</option> : null}</select></label>
                     {Object.values(filters).some(Boolean) && <button className={styles.reset} onClick={() => setSearchParams({})}>清除筛选</button>}
                 </div>
             </section>
 
             <section className={`container ${styles.results}`}>
                 <div className={styles.resultsHeader}>
-                    <div><span>共 {filtered.length} 本</span><h2>{filters.subject || filters.stage ? '筛选结果' : '全部教材'}</h2></div>
+                    <div><span>共 {filtered.length} 本</span><h2>{filters.subject || filters.stage || filters.edition ? '筛选结果' : '全部教材'}</h2></div>
                     <p>点一本书：每一课教哪几条课标、原书页码、备课入口。</p>
                 </div>
 
-                {filtered.length === 0 ? <EmptyState title="没有找到匹配教材" description="试试清除部分筛选条件。" /> : (
+                {filtered.length === 0 ? (pilotGroups.length && !filters.query && !filters.volume ? null : <EmptyState title="没有找到匹配教材" description="试试清除部分筛选条件。" />) : (
                     <>
                         <div className={styles.grid}>
                             {filtered.slice(0, visibleCount).map(book => (
                                 <article className={styles.card} key={book.edition_id}>
-                                    <Link to={`/textbooks/${book.edition_id}`} className={styles.coverLink} aria-label={`查看${book.title}`}><TextbookCover book={book} /></Link>
+                                    <Link to={`/textbooks/${book.edition_id}`} className={styles.coverLink} aria-label={`查看${book.edition_name}${book.title}`}><TextbookCover book={book} /></Link>
                                     <div className={styles.cardBody}>
                                         <h3><Link to={`/textbooks/${book.edition_id}`}>{book.title}</Link></h3>
                                         <p>{book.edition_name} · {book.page_count} PDF 页</p>
