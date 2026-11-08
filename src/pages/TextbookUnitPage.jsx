@@ -74,7 +74,9 @@ function PrepPanel({ unit, book, prep }) {
     const national = prep?.national_lessons || []
     // the 国家平台 unit this lesson sits in, for 单元整体设计
     const chapter = national.find(item => item.chapters?.[0])?.chapters[0] || null
-    const planUrl = `/lesson-plan?subject=${encodeURIComponent(book.subject || unit.subject || '')}&edition=${unit.edition_id}&unit=${encodeURIComponent(unit.entry_id)}`
+    // the 国家平台 lesson of this unit opens with its pre-judged 要点 and 课堂学习目标; the unit id alone has neither
+    const own = national.find(item => item.unit_id === unit.entry_id)
+    const planUrl = `/lesson-plan?subject=${encodeURIComponent(book.subject || unit.subject || '')}&edition=${unit.edition_id}&${own ? `lesson=${encodeURIComponent(own.id)}` : `unit=${encodeURIComponent(unit.entry_id)}`}`
     return (
         <section className={styles.prep} aria-labelledby="unit-prep-heading">
             <div className={styles.prepHead}>
@@ -82,7 +84,6 @@ function PrepPanel({ unit, book, prep }) {
                 <span className={styles.prepActions}>
                     <Link className="btn btn-primary" to={planUrl}>用 AI 起草这一课的教案 <ArrowRightIcon size={16} aria-hidden="true" /></Link>
                     {chapter ? <Link className="btn btn-secondary" to={`/lesson-plan?subject=${encodeURIComponent(book.subject || unit.subject || '')}&edition=${unit.edition_id}&chapter=${encodeURIComponent(chapter)}`}>做「{chapter.replace(/^\d+\s*/u, '')}」的单元整体设计</Link> : null}
-                    {chapter ? <Link className="btn btn-secondary" to={`/lesson-plan?subject=${encodeURIComponent(book.subject || unit.subject || '')}&edition=${unit.edition_id}&chapter=${encodeURIComponent(chapter)}&task=test`}>核验这个单元的测试卷</Link> : null}
                 </span>
             </div>
             <div className={styles.prepGrid}>
