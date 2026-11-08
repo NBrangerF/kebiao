@@ -128,3 +128,57 @@ test('runRetriedLlm pauses for Retry-After, reports both attempts and the whole 
     assert.equal(spent.attempts, 1)
     assert.equal(spent.provider_status, 429)
 })
+
+test('the draft log line names the step, the attempts and the provider status of a failed call', async t => {
+    withKey(t)
+    let calls = 0
+    t.mock.method(globalThis, 'fetch', async () => {
+        calls += 1
+        if (calls === 1) return new Response('{"error":"no available channel"}', { status: 502, headers: { 'retry-after': '0' } })
+        return answer(frame())
+    })
+    const { response, ai } = await loggedAi(t, 'frame', () => app.request('/api/v1/lesson-plans/draft', { method: 'POST', headers: { 'content-type': 'application/json', 'x-forwarded-for': '203.0.113.201' }, body: JSON.stringify({ step: 'frame', lesson: { title: '分数的基本性质', subject_slug: 'math', grade: 5 }, indicator_codes: [LIMITED] }) }))
+    assert.equal(response.status, 200)
+    assert.equal(ai.feature, 'lesson_plan')
+    assert.equal(ai.step, 'frame')
+    assert.equal(ai.status, 'ok')
+    assert.equal(ai.attempts, 2)
+    assert.equal(ai.retries, 1)
+    assert.equal(ai.provider_status, 502)
+    assert.match(ai.provider_error, /no available channel/)
+    assert.equal(typeof ai.first_latency_ms, 'number')
+})
+
+test('the draft log line carries the 自查 when it ran', async t => {
+    withKey(t)
+    let calls = 0
+    // the first frame breaks a hard rule (an objective not starting 「学生能」), the fix keeps it
+    t.mock.method(globalThis, 'fetch', async () => {
+        calls += 1
+        return answer(calls === 1 ? frame('借助折纸和画图，说出分数的分子和分母同时乘或除以相同的数，分数大小不变') : frame())
+    })
+    const { response, ai } = await loggedAi(t, 'selfcheck', () => app.request('/api/v1/lesson-plans/draft', { method: 'POST', headers: { 'content-type': 'application/json', 'x-forwarded-for': '203.0.113.202' }, body: JSON.stringify({ step: 'frame', lesson: { title: '分数的基本性质', subject_slug: 'math', grade: 5 }, indicator_codes: [LIMITED] }) }))
+    assert.equal(response.status, 200)
+    assert.equal(ai.step, 'frame')
+    assert.equal(ai.attempts, 2)
+    assert.equal(ai.retries, 0)
+    assert.equal(ai.provider_status, undefined)
+    assert.ok(ai.self_check.sent >= 1)
+    assert.equal(ai.self_check.kept, true)
+    assert.equal(ai.self_check.status, 'ok')
+})
+
+test('the pick log line names the step and how its calls ended', async t => {
+    withKey(t)
+    t.mock.method(globalThis, 'fetch', async (_input: unknown, init?: RequestInit) => {
+        const user = String(JSON.parse(String(init?.body)).messages[1].content)
+        const codes = [...user.matchAll(/【([A-Z]{2}-S\d-[A-Z]{2,3}-\d{2})】/gu)].map(match => match[1])
+        return answer({ judgements: codes.map(code => ({ code, grade: 0, reason: '不相关', point: '' })) })
+    })
+    const { response, ai } = await loggedAi(t, 'pick', () => app.request('/api/v1/lesson-plans/pick', { method: 'POST', headers: { 'content-type': 'application/json', 'x-forwarded-for': '203.0.113.203' }, body: JSON.stringify({ lesson: { title: '日志测试课（be-plumbing）', subject_slug: 'math', grade: 5 } }) }))
+    assert.equal(response.status, 200)
+    assert.equal(ai.step, 'pick')
+    assert.ok(ai.judge_read > 0)
+    assert.match(ai.judge_calls, /^ok:\d+$/)
+    assert.equal(ai.attempts, Number(ai.judge_calls.split(':')[1]))
+})
