@@ -2023,6 +2023,14 @@ test('the request log names the MCP tools and the app that called them, never th
     assert.deepEqual(events[2].mcp, { methods: ['tools/call'], tools: ['get_standard'], client: 'Cursor 2.0', user_agent: 'Cursor/2.0' })
 })
 
+test('a 要点 code the standard does not have is not found', async () => {
+    const headers = { 'x-forwarded-for': 'made-up-point-test' }
+    assert.equal((await publicApp.request('/api/v1/standards/MA-S2-NA-02.1', { headers })).status, 200)
+    assert.equal((await publicApp.request('/api/v1/standards/MA-S2-NA-02.9', { headers })).status, 404)
+    const call = await json(await mcp({ jsonrpc: '2.0', id: 1, method: 'tools/call', params: { name: 'get_standard', arguments: { code: 'MA-S2-NA-02.9' } } }))
+    assert.equal(call.result.isError, true)
+})
+
 test('search_standards keeps to the asked grade: 艺术 学段 are 1–2, 3–5, 6–7, 8–9', async () => {
     const call = async (args: Record<string, unknown>) => (await json(await mcp({ jsonrpc: '2.0', id: 1, method: 'tools/call', params: { name: 'search_standards', arguments: args } }))).result.structuredContent
     const five = await call({ query: '五年级 音乐 欣赏' })
