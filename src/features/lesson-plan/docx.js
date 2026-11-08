@@ -34,9 +34,14 @@ const STYLE = { title: 'Title', h: 'Heading1', meta: 'Meta', p: '', note: 'Note'
 const para = (style, runs, extra = '') => `<w:p>${style || extra ? `<w:pPr>${style ? `<w:pStyle w:val="${style}"/>` : ''}${extra}</w:pPr>` : ''}${runsXml(runs)}</w:p>`
 
 const BORDER = side => `<w:${side} w:val="single" w:sz="4" w:space="0" w:color="808080"/>`
+// Word refuses a cell without a paragraph, so an empty cell still gets one
+const cellParas = cell => {
+    const paras = cell && cell.paras ? cell.paras : [cell]
+    return paras.length ? paras : ['']
+}
 const tableXml = (widths, rows, { head = false, minHeight = 0 } = {}) => {
     const total = widths.reduce((sum, width) => sum + width, 0)
-    const row = (cells, isHead) => `<w:tr>${isHead || minHeight ? `<w:trPr>${isHead ? '<w:tblHeader/>' : ''}${!isHead && minHeight ? `<w:trHeight w:val="${minHeight}" w:hRule="atLeast"/>` : ''}</w:trPr>` : ''}${cells.map((cell, index) => `<w:tc><w:tcPr><w:tcW w:w="${widths[index]}" w:type="dxa"/>${isHead ? '<w:shd w:val="clear" w:color="auto" w:fill="EEEEEE"/>' : ''}</w:tcPr>${(cell && cell.paras ? cell.paras : [cell]).map(item => para('Cell', isHead ? segments(item).map(seg => ({ ...seg, b: true })) : item)).join('')}</w:tc>`).join('')}</w:tr>`
+    const row = (cells, isHead) => `<w:tr>${isHead || minHeight ? `<w:trPr>${isHead ? '<w:tblHeader/>' : ''}${!isHead && minHeight ? `<w:trHeight w:val="${minHeight}" w:hRule="atLeast"/>` : ''}</w:trPr>` : ''}${cells.map((cell, index) => `<w:tc><w:tcPr><w:tcW w:w="${widths[index]}" w:type="dxa"/>${isHead ? '<w:shd w:val="clear" w:color="auto" w:fill="EEEEEE"/>' : ''}</w:tcPr>${cellParas(cell).map(item => para('Cell', isHead ? segments(item).map(seg => ({ ...seg, b: true })) : item)).join('')}</w:tc>`).join('')}</w:tr>`
     return `<w:tbl><w:tblPr><w:tblW w:w="5000" w:type="pct"/><w:tblBorders>${['top', 'left', 'bottom', 'right', 'insideH', 'insideV'].map(BORDER).join('')}</w:tblBorders><w:tblLayout w:type="fixed"/><w:tblCellMar><w:top w:w="40" w:type="dxa"/><w:left w:w="85" w:type="dxa"/><w:bottom w:w="40" w:type="dxa"/><w:right w:w="85" w:type="dxa"/></w:tblCellMar></w:tblPr><w:tblGrid>${widths.map(width => `<w:gridCol w:w="${width}"/>`).join('')}</w:tblGrid>${rows.map((cells, index) => row(cells, head && index === 0)).join('')}</w:tbl>`
 }
 
