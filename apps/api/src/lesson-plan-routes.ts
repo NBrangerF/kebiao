@@ -12,7 +12,7 @@ import { alignLessons, type AlignPoint } from './textbook-align.js'
 import { checkObjectives, splitObjectives, type CheckPoint } from './objectives-check.js'
 import { writeLessonObjectives, type ObjectivePoint } from './lesson-objectives.js'
 import type { ApiBindings } from './http.js'
-import { checkPlan, notesChecks, checkPractice, checkTeacherPlan, checkUnit, DEFAULT_CLASS_SIZE, draftFrame, draftPractice, draftProcess, draftReading, draftTalk, draftTrial, draftUnit, LESSON_TYPES, limitsOf, rankPoints, readTest, checkTest, splitTest, mergeReads, sanitiseProcess, readTeacherPlan, sanitiseFrame, v2SubjectSlug, type DraftInput, type PlanIndicator, type PlanLesson, type PlanStandard, type PointLink, type PointLinks, type SubjectNote } from './lesson-plan.js'
+import { checkPlan, notesChecks, checkPractice, checkTeacherPlan, checkUnit, DEFAULT_CLASS_SIZE, draftFrame, draftPractice, draftProcess, draftReading, draftTalk, draftTrial, draftUnit, LESSON_TYPES, limitsOf, rankPoints, readTest, checkTest, splitTest, mergeReads, sanitiseProcess, readTeacherPlan, sanitiseFrame, v2SubjectSlug, type DraftInput, type PlanIndicator, type PlanLesson, type PlanStandard, type PointLink, type PointLinks, type RequiredLab, type SubjectNote } from './lesson-plan.js'
 import type { V2Store } from './v2-store.js'
 
 type Deps = {
@@ -31,6 +31,9 @@ type NationalFile = { edition_id: string, platform_title: string, confidence: st
 // a lesson the picker offers: a 国家平台 lesson, or (toc) an entry of the book's own 目录 that the platform list lacks
 type BookLesson = NationalLesson & { toc?: true }
 type LessonList = { platform: NationalFile | null, lessons: BookLesson[] }
+// 学生必做实验 (public/data/experiments.json, from the 课标 appendices): each item lists the textbook lessons it is done in
+type LabItem = { code?: string, no?: number, text: string, pages?: number[], page?: number, lessons?: Array<[string, string, string, string]> }
+type ExperimentsFile = { science?: { title: string, stages: Array<{ items: LabItem[] }> }, groups?: Array<{ subject_slug: string, title: string, standards: Array<{ items: LabItem[] }> }> }
 type ConceptsFile = { subjects: Array<SubjectNote & { slug: string, name: string, terms: string[] }>, terms: Array<{ id: string, term: string }> }
 // kebiao 知识图谱 (scripts/v2/build_knowledge_graph.mjs): each 要点 with its 年级 column, and 要先会 lines [from, to, reason]
 type GraphFile = {
@@ -391,6 +394,8 @@ export function registerLessonPlanRoutes(app: Hono<ApiBindings>, deps: Deps) {
             lesson_align: chosen && Array.isArray(chosen.align) ? chosen.align.filter(row => standards.some(standard => standard.indicators.some(item => item.code === row[0]))) : null,
             // 课堂学习目标 written for this lesson ahead of time (data/v2/lesson_objectives): the page shows them first
             lesson_goals: chosen?.goals || null,
+            // 学生必做实验 the 课标 lists for this lesson
+            required_labs: chosen ? await requiredLabs(edition, chosen.id, title) : [],
             subject_note: subjectSlug ? await subjectNote(subjectSlug) : null,
             national_lessons: nationalLessons,
             national_confidence: national?.platform?.confidence || null,
@@ -453,6 +458,24 @@ export function registerLessonPlanRoutes(app: Hono<ApiBindings>, deps: Deps) {
 
     // the lesson a request names: by id, or else by title
     const findLesson = (national: { lessons: BookLesson[] }, lessonId: string | undefined, title: string) => (lessonId && national.lessons.find(item => item.id === lessonId)) || national.lessons.find(item => item.title === title) || null
+
+    // the 学生必做实验 the 课标 lists for this lesson (by its 国家平台 id, or its title in the same book): the plan must
+    // have the students do it, not only watch a demonstration
+    async function requiredLabs(editionId: string | null | undefined, lessonId: string | null | undefined, title: string): Promise<RequiredLab[]> {
+        if (!editionId) return []
+        const file = await readData<ExperimentsFile>('experiments.json')
+        if (!file) return []
+        const own = canonicalTitle(cleanTitle(title)).replace(/\s+/gu, '')
+        const hosts = (item: LabItem) => (item.lessons || []).some(([edition, id, name]) => edition === editionId && ((lessonId && id === lessonId) || (own && canonicalTitle(cleanTitle(name)).replace(/\s+/gu, '') === own)))
+        const labs: RequiredLab[] = []
+        for (const group of file.groups || []) for (const standard of group.standards) for (const item of standard.items) {
+            if (hosts(item)) labs.push({ code: item.code || null, text: item.text, page: item.pages?.[0] ?? null, source: group.title })
+        }
+        for (const stage of file.science?.stages || []) for (const item of stage.items) {
+            if (hosts(item)) labs.push({ code: null, text: item.text, page: item.page ?? null, source: file.science!.title })
+        }
+        return labs.slice(0, 3)
+    }
 
     // this lesson's own words from the textbook (教材与课标对应), quoted for 课标解读 and the exercises
     async function lessonQuotes(editionId: string | undefined, lessonId: string | undefined, title: string) {
@@ -521,7 +544,8 @@ export function registerLessonPlanRoutes(app: Hono<ApiBindings>, deps: Deps) {
             links: await pointLinks(indicators.slice(0, 12).map(item => item.code), body.lesson.subject_slug, body.lesson.edition_id, body.lesson.lesson_id, body.lesson.title),
             lessonQuotes: await lessonQuotes(body.lesson.edition_id, body.lesson.lesson_id, body.lesson.title),
             presetGoals: await lessonGoals(body.lesson.edition_id, body.lesson.lesson_id, body.lesson.title),
-            unitLessons: await unitSequence(body.lesson.edition_id, body.lesson.lesson_id, body.lesson.title)
+            unitLessons: await unitSequence(body.lesson.edition_id, body.lesson.lesson_id, body.lesson.title),
+            requiredLabs: await requiredLabs(body.lesson.edition_id, body.lesson.lesson_id, body.lesson.title)
         }
         const privacy = { redacted: classNotes.redacted || teacherNotes.redacted, redaction_count: classNotes.redaction_count + teacherNotes.redaction_count }
         const evidence = input.indicators.map(item => ({ code: item.code, text: item.text, pages: item.pages, standard_code: item.standard_code, standard_title: item.standard_title, stage_label: item.stage_label }))

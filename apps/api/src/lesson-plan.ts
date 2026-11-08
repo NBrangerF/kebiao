@@ -105,7 +105,11 @@ export type DraftInput = {
     presetGoals?: Array<{ text: string, basis: string[], from: string }>
     // the unit's lessons in textbook order, this one marked: what the later lessons teach stays out of this one
     unitLessons?: Array<{ title: string, current?: boolean }>
+    // 学生必做实验 the 课标 lists for this lesson: the students do them, a demonstration is not enough
+    requiredLabs?: RequiredLab[]
 }
+
+export type RequiredLab = { code: string | null, text: string, page: number | null, source: string }
 
 const str = (value: unknown, max = 400) => String(value ?? '').replace(/\s+/gu, ' ').trim().slice(0, max)
 const strList = (value: unknown, max: number, itemMax = 200) => (Array.isArray(value) ? value : []).map(item => str(item, itemMax)).filter(Boolean).slice(0, max)
@@ -133,15 +137,21 @@ export type CheckOptions = { planText?: string, assessmentsPlaced?: boolean }
 
 // a big class in practice: how long students think and do themselves, how often they go into groups, whether the
 // teacher sees the whole class, and homework within 「双减」
-export function classroomChecks(process: Process, periodMinutes: number, grade: number | null | undefined): PlanCheck[] {
+// a stage where the students do an experiment or make something themselves
+const HANDS_ON = /实验|探究|测量|操作|制作|动手/u
+export function classroomChecks(process: Process, periodMinutes: number, grade: number | null | undefined, labs: RequiredLab[] = []): PlanCheck[] {
     const checks: PlanCheck[] = []
+    if (labs.length && !process.stages.some(stage => stage.org && stage.org !== '全班' && HANDS_ON.test(`${stage.name}${stage.students}`))) {
+        checks.push({ level: 'warn', kind: 'lab_missing', message: `课标把「${labs[0].text}」列为学生必做实验${labs[0].code ? `（${labs[0].code}）` : ''}，教学过程里没有学生自己动手做的环节；只看演示不算完成。`, quote: labs[0].text })
+    }
     const withOrg = process.stages.filter(stage => stage.org)
     if (withOrg.length >= Math.ceil(process.stages.length / 2)) {
         const active = process.stages.filter(stage => /独立|同桌|四人小组/u.test(stage.org || '')).reduce((sum, stage) => sum + stage.minutes, 0)
         if (periodMinutes && active / periodMinutes < 0.3) checks.push({ level: 'warn', kind: 'student_time', message: `学生独立思考、同桌交流和练习的时间约 ${active} 分钟，不到一节课的三成；可以在讲解前加一次「先试」，或把一段讲解换成练习和反馈。` })
         const groups = process.stages.filter(stage => /四人小组/u.test(stage.org || ''))
         if (groups.length > 2) checks.push({ level: 'warn', kind: 'group_work', message: `一节课安排了 ${groups.length} 次小组活动，四十多人的班组织起来很费时间，建议保留最关键的一两次，其余改为同桌交流。` })
-        const long = groups.find(stage => stage.minutes > 8)
+        // a required experiment may take one group stage up to 15 minutes
+        const long = groups.find((stage, index) => stage.minutes > (labs.length && index === groups.findIndex(item => HANDS_ON.test(`${item.name}${item.students}`)) ? 15 : 8))
         if (long) checks.push({ level: 'warn', kind: 'group_work', message: `「${long.name}」的小组活动有 ${long.minutes} 分钟；大班的小组活动超过 8 分钟容易散，建议分成两步、中间收一次。` })
         const unseen = process.stages.filter(stage => /独立|同桌|四人小组/u.test(stage.org || '') && !stage.check).map(stage => stage.name)
         if (unseen.length) checks.push({ level: 'warn', kind: 'class_check', message: `「${unseen.join('」「')}」让学生自己做，但没写老师怎样看到全班的情况（手势表决、同桌互查、巡视抽看……）。` })
@@ -174,7 +184,7 @@ function laterLessons(unitLessons: DraftInput['unitLessons']) {
     return list.slice(at + 1).map(item => item.title).filter(title => title.length >= 2 && title.length <= 8 && !list[at].title.includes(title) && !/…|整理|复习|练习|园地|口语交际|习作|Unit|Section/u.test(title))
 }
 
-export function checkPlan(frame: Frame, process: Process | null, input: Pick<DraftInput, 'indicators' | 'standards' | 'periodMinutes' | 'unitLessons'> & { lesson?: Pick<PlanLesson, 'grade'> }, options: CheckOptions = {}): PlanCheck[] {
+export function checkPlan(frame: Frame, process: Process | null, input: Pick<DraftInput, 'indicators' | 'standards' | 'periodMinutes' | 'unitLessons' | 'requiredLabs'> & { lesson?: Pick<PlanLesson, 'grade'> }, options: CheckOptions = {}): PlanCheck[] {
     const checks: PlanCheck[] = []
     const picked = new Set(input.indicators.map(item => item.code))
     const cited = new Set(frame.objectives.flatMap(item => item.basis))
@@ -208,7 +218,7 @@ export function checkPlan(frame: Frame, process: Process | null, input: Pick<Dra
                 checks.push({ level: 'warn', kind: 'assessment_unplaced', message: `评价任务 ${assessment.id} 没有安排在哪个环节完成。`, quote: assessment.task })
             }
         }
-        checks.push(...classroomChecks(process, input.periodMinutes, input.lesson?.grade))
+        checks.push(...classroomChecks(process, input.periodMinutes, input.lesson?.grade, input.requiredLabs))
     }
     // 课标 says what is not required; flag a plan that mentions it
     const planText = options.planText ?? JSON.stringify({ frame, process })
@@ -353,6 +363,9 @@ function classroomBlock(input: DraftInput) {
     ]
     const moves = SUBJECT_MOVES[v2SubjectSlug(input.lesson.subject_slug)]
     if (moves) lines.push(`- ${moves}`)
+    for (const lab of input.requiredLabs || []) {
+        lines.push(`- 本课有课标规定的学生必做实验：「${lab.text}」（${[lab.code, lab.source, lab.page ? `课标第 ${lab.page} 页` : ''].filter(Boolean).join('，')}）。这是课标的基本要求：一定让学生 2–4 人一组亲手做，器材不够就分批轮换，不能只用教师演示代替；写清分组、器材、步骤、记录表和安全要求。这个实验环节可以到 15 分钟，中间收一次。评价任务要用到学生的实验记录。`)
+    }
     if (input.lessonType) lines.push(`- 课型：${input.lessonType}。`)
     return lines.join('\n')
 }
@@ -635,6 +648,7 @@ const REVISE_ORDERS: Record<string, string> = {
     beyond_standard: '删掉超出课标限定的这部分内容。',
     group_work: '小组活动每节最多 2 次，有小组活动的环节不超过 8 分钟：把长的小组环节拆成「小组活动（不超过 8 分钟）」和「全班交流」或「独立练习」两个环节，总时长不变；多出的小组活动改成同桌交流。',
     class_check: '给这些学生自己做的环节写上 check：老师在 1 分钟内看到全班学会没有的办法（手势表决、同桌互查、巡视抽看、随机点名）。',
+    lab_missing: '这节课有课标规定的学生必做实验：安排一个学生 2–4 人一组亲手做的实验环节（器材不够就分批轮换），写清分组、器材、步骤、记录表和安全要求；这个环节可以到 15 分钟。',
     homework_load: '按「双减」改作业：一、二年级不布置书面作业（改成口头、阅读或实践类）；三至六年级必做书面作业不超过 15 分钟，初中不超过 25 分钟。'
 }
 const problemsOf = (checks: PlanCheck[]) => checks.filter(item => item.level !== 'ok' && REVISE_ORDERS[item.kind]).map(item => `${item.message}${item.quote ? `（「${item.quote}」）` : ''} → ${REVISE_ORDERS[item.kind]}`)
@@ -652,7 +666,7 @@ export function frameProblems(frame: Frame, input: DraftInput): string[] {
 }
 
 export function processProblems(process: Process, frame: Frame, input: DraftInput): string[] {
-    const checks = [...classroomChecks(process, input.periodMinutes, input.lesson?.grade), ...checkPlan(frame, null, input, { planText: JSON.stringify(process) }).filter(item => item.kind === 'beyond_standard')]
+    const checks = [...classroomChecks(process, input.periodMinutes, input.lesson?.grade, input.requiredLabs), ...checkPlan(frame, null, input, { planText: JSON.stringify(process) }).filter(item => item.kind === 'beyond_standard')]
     const problems = problemsOf(checks)
     if (STAMP.test(JSON.stringify(process))) problems.push('教案里不写「完全符合课标」之类的评语，删掉这句。')
     return problems

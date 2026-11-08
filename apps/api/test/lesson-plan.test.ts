@@ -966,3 +966,18 @@ test('a draft whose first model answer fails fast is sent once more', async t =>
     assert.ok(calls >= 2)
     assert.ok((await json(response)).data.frame.objectives.length)
 })
+
+test('a lesson that hosts a 学生必做实验 says so, and a plan that only demonstrates it is flagged', async () => {
+    const ctx = (await json(await app.request('/api/v1/lesson-plans/context?edition_id=ed_f0de8cbbeb88661f44d6&lesson_id=aaedacba-449e-44cf-8cf5-1e1ffa3a0c3a'))).data
+    assert.deepEqual(ctx.required_labs.map((lab: { code: string }) => lab.code), ['PH-S4-EX-01.1'])
+    assert.equal(ctx.required_labs[0].page, 31)
+    // a lesson with no listed experiment has none
+    assert.deepEqual((await json(await app.request(`/api/v1/lesson-plans/context?edition_id=${math5b}&lesson_id=${fractionLesson.id}`))).data.required_labs, [])
+    const labs = [{ code: 'PH-S4-EX-01.1', text: '用托盘天平测量物体的质量', page: 31, source: '物理学生必做实验' }]
+    const demo: Process = { ...planProcess, stages: [{ name: '教师演示', minutes: 20, org: '全班', teacher: '演示用天平称量', students: '观察并记录', purpose: '示范', objective_ids: ['O1'], assessment_ids: [] }, { ...planProcess.stages[2], org: '独立' }] }
+    assert.ok(classroomChecks(demo, 40, 8, labs).some(item => item.kind === 'lab_missing'))
+    // the students' own experiment may run 12 minutes; without a required experiment a 12-minute group stage is too long
+    const lab: Process = { ...planProcess, stages: [{ name: '分组实验：用天平测质量', minutes: 12, org: '四人小组', teacher: '分发器材，巡视', students: '四人一组按步骤称量并记录', check: '巡视抽看记录表', purpose: '学会使用天平', objective_ids: ['O1'], assessment_ids: [] }, { ...planProcess.stages[2], org: '独立', check: '同桌互查' }] }
+    assert.ok(!classroomChecks(lab, 40, 8, labs).some(item => item.kind === 'lab_missing' || item.kind === 'group_work'))
+    assert.ok(classroomChecks(lab, 40, 8).some(item => item.kind === 'group_work'))
+})
