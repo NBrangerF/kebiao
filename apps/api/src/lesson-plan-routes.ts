@@ -11,10 +11,10 @@ import { judgeSearchCandidates, searchJudgeCache, type JudgeCandidate } from './
 import { alignLessons, type AlignPoint } from './textbook-align.js'
 import { checkObjectives, splitObjectives, type CheckPoint } from './objectives-check.js'
 import { writeLessonObjectives, type ObjectivePoint } from './lesson-objectives.js'
-import type { ApiBindings } from './http.js'
-import { checkPlan, notesChecks, checkPractice, checkTeacherPlan, checkUnit, DEFAULT_CLASS_SIZE, draftFrame, draftPractice, draftProcess, draftReading, draftTalk, draftTrial, draftUnit, LESSON_TYPES, limitsOf, rankPoints, readTest, checkTest, splitTest, mergeReads, sanitiseProcess, readTeacherPlan, sanitiseFrame, v2SubjectSlug, type DraftInput, type PlanIndicator, type PlanLesson, type PlanStandard, type PointLink, type PointLinks, type RequiredLab, type SubjectNote } from './lesson-plan.js'
+import type { AiMetrics, ApiBindings } from './http.js'
+import { checkPlan, notesChecks, checkPractice, checkTeacherPlan, checkUnit, DEFAULT_CLASS_SIZE, draftFrame, draftPractice, draftProcess, draftReading, draftTalk, draftTrial, draftUnit, LESSON_TYPES, limitsOf, rankPoints, readTest, checkTest, splitTest, mergeReads, sanitiseProcess, readTeacherPlan, sanitiseFrame, v2SubjectSlug, type DraftInput, type PlanIndicator, type PlanLesson, type PlanStandard, type DraftResult, type PointLink, type PointLinks, type RequiredLab, type SubjectNote } from './lesson-plan.js'
 import type { V2Store } from './v2-store.js'
-import { resolveTextbookPrivateDataRoot } from './textbook-assets.js'
+import { CRAWLER_USER_AGENT, resolveTextbookPrivateDataRoot } from './textbook-assets.js'
 
 type Deps = {
     repository: FileCurriculumRepository
@@ -61,6 +61,10 @@ export const HISTORY_SCOPE: Record<string, string[]> = {
 const v2Slug = (slug: string) => (['art', 'music'].includes(slug) ? 'arts' : slug)
 const cleanTitle = (title: string) => title.replace(/^(?:第[一二三四五六七八九十百零\d]+(?:单元|章|节|课)|课题\s*\d+|\d+(?:\.\d+)*\*?)\s*/u, '').trim()
 
+// a unit spans many 要点 (语文 units offer 13–23), so up to 16 may be ticked; a single lesson's draft reads the first 12
+const MAX_CODES = 16
+const LESSON_CODES = 12
+const UNIT_CODES = 16
 const BaseRequestSchema = z.object({
     lesson: z.object({
         title: z.string().trim().min(1).max(120), // 国家平台 titles can run past 60 characters
@@ -74,7 +78,7 @@ const BaseRequestSchema = z.object({
         edition_id: z.string().trim().regex(/^ed_[0-9a-f]+$/u).optional(),
         lesson_id: z.string().trim().max(60).optional()
     }),
-    indicator_codes: z.array(z.string().trim().max(24)).min(1).max(10),
+    indicator_codes: z.array(z.string().trim().max(24)).min(1).max(MAX_CODES),
     period_minutes: z.number().int().min(20).max(90).default(40),
     lesson_index: z.number().int().min(1).max(30).default(1),
     lesson_count: z.number().int().min(1).max(30).default(1),
@@ -160,6 +164,36 @@ export const ObjectivesCheckSchema = z.object({
     // 'unit': 单元目标 for a whole unit (the old 课程对齐工作台's use), not one lesson's
     scope: z.enum(['lesson', 'unit']).default('lesson')
 })
+
+// A request a teacher's own ticks can make invalid gets words that say what to change, not 「请求参数校验失败。」
+export function requestProblem(issues: Array<{ code: string, path: PropertyKey[] }>, body: unknown, fallback = '请求参数校验失败。') {
+    const issue = issues.find(item => item.path[0] === 'indicator_codes' && item.path.length === 1)
+    if (issue?.code === 'too_big') {
+        const ticked = Array.isArray((body as { indicator_codes?: unknown })?.indicator_codes) ? (body as { indicator_codes: unknown[] }).indicator_codes.length : 0
+        return `要点最多选 ${MAX_CODES} 条${ticked ? `，现在选了 ${ticked} 条` : ''}：只留真正要教的几条再写。`
+    }
+    if (issue?.code === 'too_small') return '请至少勾选一条课标要点。'
+    return fallback
+}
+
+// the AI line of a draft's log: which step, how the call ended, and the 自查 when it ran
+// (attempts, retries and the provider's status are added from the request's model calls, see http.ts)
+function draftMetrics(step: string, run: DraftResult<unknown>, redactionCount: number): AiMetrics {
+    return {
+        feature: 'lesson_plan',
+        step,
+        used: run.status === 'ok',
+        status: run.status,
+        model: run.model,
+        protocol: 'chat_completions',
+        latency_ms: run.latency_ms,
+        redaction_count: redactionCount,
+        input_tokens: run.usage?.input_tokens || 0,
+        output_tokens: run.usage?.output_tokens || 0,
+        total_tokens: run.usage?.total_tokens || 0,
+        ...(run.self_check ? { self_check: run.self_check } : {})
+    }
+}
 
 export function registerLessonPlanRoutes(app: Hono<ApiBindings>, deps: Deps) {
     const { repository, textbookRepository, v2 } = deps
@@ -538,7 +572,7 @@ export function registerLessonPlanRoutes(app: Hono<ApiBindings>, deps: Deps) {
     }
 
     // 要点 text always comes from kebiao's data, never from the request
-    async function resolveInput(body: z.infer<typeof BaseRequestSchema>) {
+    async function resolveInput(body: z.infer<typeof BaseRequestSchema>, limit = LESSON_CODES) {
         const standards: PlanStandard[] = []
         const indicators: PlanIndicator[] = []
         for (const code of [...new Set(body.indicator_codes)]) {
@@ -560,7 +594,7 @@ export function registerLessonPlanRoutes(app: Hono<ApiBindings>, deps: Deps) {
         const input: DraftInput = {
             lesson,
             standards,
-            indicators: indicators.slice(0, 12),
+            indicators: indicators.slice(0, limit),
             subjectNote: note,
             periodMinutes: body.period_minutes,
             lessonIndex: Math.min(body.lesson_index, body.lesson_count),
@@ -569,7 +603,7 @@ export function registerLessonPlanRoutes(app: Hono<ApiBindings>, deps: Deps) {
             teacherNotes: teacherNotes.text.trim(),
             classSize: body.class_size,
             lessonType: body.lesson_type,
-            links: await pointLinks(indicators.slice(0, 12).map(item => item.code), body.lesson.subject_slug, body.lesson.edition_id, body.lesson.lesson_id, body.lesson.title),
+            links: await pointLinks(indicators.slice(0, limit).map(item => item.code), body.lesson.subject_slug, body.lesson.edition_id, body.lesson.lesson_id, body.lesson.title),
             lessonQuotes: await lessonQuotes(body.lesson.edition_id, body.lesson.lesson_id, body.lesson.title),
             presetGoals: await lessonGoals(body.lesson.edition_id, body.lesson.lesson_id, body.lesson.title),
             unitLessons: await unitSequence(body.lesson.edition_id, body.lesson.lesson_id, body.lesson.title),
@@ -579,22 +613,27 @@ export function registerLessonPlanRoutes(app: Hono<ApiBindings>, deps: Deps) {
         }
         const privacy = { redacted: classNotes.redacted || teacherNotes.redacted, redaction_count: classNotes.redaction_count + teacherNotes.redaction_count }
         const evidence = input.indicators.map(item => ({ code: item.code, text: item.text, pages: item.pages, standard_code: item.standard_code, standard_title: item.standard_title, stage_label: item.stage_label }))
-        return { input, privacy, evidence }
+        return { input, privacy, evidence, ticked: indicators.length }
     }
 
     app.post('/api/v1/lesson-plans/draft', async c => {
         const version = await deps.v2.version()
-        const parsed = DraftRequestSchema.safeParse(await deps.parseJson(c))
-        if (!parsed.success) return deps.apiError(c, 422, 'validation_error', '请求参数校验失败。', parsed.error.issues)
+        const raw = await deps.parseJson(c)
+        const parsed = DraftRequestSchema.safeParse(raw)
+        if (!parsed.success) return deps.apiError(c, 422, 'validation_error', requestProblem(parsed.error.issues, raw), parsed.error.issues)
         const body = parsed.data
-        const resolved = await resolveInput(body)
+        const resolved = await resolveInput(body, body.step === 'unit' ? UNIT_CODES : LESSON_CODES)
         if ('error' in resolved) return deps.apiError(c, 422, 'validation_error', String(resolved.error))
         const { input, privacy, evidence } = resolved
+        // more 要点 than one lesson's draft reads: say which were used rather than drop the rest unseen
+        const tooMany = resolved.ticked > input.indicators.length
+            ? [{ level: 'warn' as const, kind: 'too_many_points', message: `勾了 ${resolved.ticked} 条要点，一节课的教案只按前 ${input.indicators.length} 条写（见「依据」）。要换别的，少勾几条再写。` }]
+            : []
 
         if (body.step === 'unit') {
             const hours = body.unit_hours || Math.max(1, body.unit_lessons.length)
             const run = await draftUnit(input, body.unit_lessons, hours)
-            c.set('aiMetrics', { feature: 'lesson_plan', used: run.status === 'ok', status: run.status, model: run.model, protocol: 'chat_completions', latency_ms: run.latency_ms, redaction_count: privacy.redaction_count, input_tokens: run.usage?.input_tokens || 0, output_tokens: run.usage?.output_tokens || 0, total_tokens: run.usage?.total_tokens || 0 })
+            c.set('aiMetrics', draftMetrics('unit', run, privacy.redaction_count))
             if (!run.output) return deps.apiError(c, run.status === 'disabled' ? 503 : 502, `draft_${run.status}`, run.status === 'disabled' ? 'AI 起草暂不可用。' : run.status === 'timeout' ? 'AI 这次写得太久，没有完成。请再试一次。' : 'AI 这次没有写出可用的单元设计。请再试一次。')
             return deps.ok(c, version as never, { step: 'unit', unit: run.output, checks: checkUnit(run.output, input, hours), evidence, privacy, model: run.model, latency_ms: run.latency_ms })
         }
@@ -604,7 +643,7 @@ export function registerLessonPlanRoutes(app: Hono<ApiBindings>, deps: Deps) {
             const process = frame ? sanitiseProcess(body.process, frame) : null
             if (!frame || !process) return deps.apiError(c, 422, 'validation_error', '说课稿需要一份写好的教案（目标和教学过程）。')
             const run = await draftTalk(input, frame, process)
-            c.set('aiMetrics', { feature: 'lesson_plan', used: run.status === 'ok', status: run.status, model: run.model, protocol: 'chat_completions', latency_ms: run.latency_ms, redaction_count: privacy.redaction_count, input_tokens: run.usage?.input_tokens || 0, output_tokens: run.usage?.output_tokens || 0, total_tokens: run.usage?.total_tokens || 0 })
+            c.set('aiMetrics', draftMetrics('talk', run, privacy.redaction_count))
             if (!run.output) return deps.apiError(c, run.status === 'disabled' ? 503 : 502, `draft_${run.status}`, run.status === 'disabled' ? 'AI 暂不可用。' : 'AI 这次没有写出可用的说课稿。请再试一次。')
             return deps.ok(c, version as never, { step: 'talk', talk: run.output, evidence, model: run.model, latency_ms: run.latency_ms })
         }
@@ -614,7 +653,7 @@ export function registerLessonPlanRoutes(app: Hono<ApiBindings>, deps: Deps) {
             const process = frame ? sanitiseProcess(body.process, frame) : null
             if (!frame || !process) return deps.apiError(c, 422, 'validation_error', '试讲稿需要一份写好的教案（目标和教学过程）。')
             const run = await draftTrial(input, frame, process)
-            c.set('aiMetrics', { feature: 'lesson_plan', used: run.status === 'ok', status: run.status, model: run.model, protocol: 'chat_completions', latency_ms: run.latency_ms, redaction_count: privacy.redaction_count, input_tokens: run.usage?.input_tokens || 0, output_tokens: run.usage?.output_tokens || 0, total_tokens: run.usage?.total_tokens || 0 })
+            c.set('aiMetrics', draftMetrics('trial', run, privacy.redaction_count))
             if (!run.output) return deps.apiError(c, run.status === 'disabled' ? 503 : 502, `draft_${run.status}`, run.status === 'disabled' ? 'AI 暂不可用。' : 'AI 这次没有写出可用的试讲稿。请再试一次。')
             return deps.ok(c, version as never, { step: 'trial', trial: run.output, evidence, model: run.model, latency_ms: run.latency_ms })
         }
@@ -623,7 +662,7 @@ export function registerLessonPlanRoutes(app: Hono<ApiBindings>, deps: Deps) {
             // the 课标 itself (statement, 学业要求, 教学提示, 不包括) and the links are facts the teacher always gets;
             // the model's reading of them is added when it answers
             const run = await draftReading(input)
-            c.set('aiMetrics', { feature: 'lesson_plan', used: run.status === 'ok', status: run.status, model: run.model, protocol: 'chat_completions', latency_ms: run.latency_ms, redaction_count: privacy.redaction_count, input_tokens: run.usage?.input_tokens || 0, output_tokens: run.usage?.output_tokens || 0, total_tokens: run.usage?.total_tokens || 0 })
+            c.set('aiMetrics', draftMetrics('reading', run, privacy.redaction_count))
             const sources = [...input.indicators.map(item => item.text), ...input.standards.flatMap(item => [...item.requirements, ...item.guidance])]
             return deps.ok(c, version as never, {
                 step: 'reading',
@@ -642,24 +681,24 @@ export function registerLessonPlanRoutes(app: Hono<ApiBindings>, deps: Deps) {
             const frame = sanitiseFrame(body.frame, new Set(input.indicators.map(item => item.code)))
             if (!frame) return deps.apiError(c, 422, 'validation_error', '缺少第一步生成的目标与评价。')
             const run = await draftPractice(input, frame)
-            c.set('aiMetrics', { feature: 'lesson_plan', used: run.status === 'ok', status: run.status, model: run.model, protocol: 'chat_completions', latency_ms: run.latency_ms, redaction_count: privacy.redaction_count, input_tokens: run.usage?.input_tokens || 0, output_tokens: run.usage?.output_tokens || 0, total_tokens: run.usage?.total_tokens || 0 })
+            c.set('aiMetrics', draftMetrics('practice', run, privacy.redaction_count))
             if (!run.output) return deps.apiError(c, run.status === 'disabled' ? 503 : 502, `draft_${run.status}`, run.status === 'disabled' ? 'AI 起草暂不可用。' : 'AI 这次没有写出可用的练习题。')
             return deps.ok(c, version as never, { step: 'practice', practice: run.output, checks: checkPractice(run.output, frame, input), model: run.model, latency_ms: run.latency_ms, self_check: run.self_check ?? null })
         }
 
         if (body.step === 'frame') {
             const run = await draftFrame(input)
-            c.set('aiMetrics', { feature: 'lesson_plan', used: run.status === 'ok', status: run.status, model: run.model, protocol: 'chat_completions', latency_ms: run.latency_ms, redaction_count: privacy.redaction_count, input_tokens: run.usage?.input_tokens || 0, output_tokens: run.usage?.output_tokens || 0, total_tokens: run.usage?.total_tokens || 0 })
+            c.set('aiMetrics', draftMetrics('frame', run, privacy.redaction_count))
             if (!run.output) return deps.apiError(c, run.status === 'disabled' ? 503 : 502, `draft_${run.status}`, run.status === 'disabled' ? 'AI 起草暂不可用。' : run.status === 'timeout' ? 'AI 这次写得太久，没有完成。请再试一次。' : 'AI 这次没有写出可用的草稿。请再试一次。')
-            return deps.ok(c, version as never, { step: 'frame', frame: run.output, checks: [...notesChecks(input.teacherNotes), ...checkPlan(run.output, null, input)], evidence, privacy, model: run.model, latency_ms: run.latency_ms, self_check: run.self_check ?? null })
+            return deps.ok(c, version as never, { step: 'frame', frame: run.output, checks: [...tooMany, ...notesChecks(input.teacherNotes), ...checkPlan(run.output, null, input)], evidence, privacy, model: run.model, latency_ms: run.latency_ms, self_check: run.self_check ?? null })
         }
 
         const frame = sanitiseFrame(body.frame, new Set(input.indicators.map(item => item.code)))
         if (!frame) return deps.apiError(c, 422, 'validation_error', '缺少第一步生成的目标与评价。')
         const run = await draftProcess(input, frame)
-        c.set('aiMetrics', { feature: 'lesson_plan', used: run.status === 'ok', status: run.status, model: run.model, protocol: 'chat_completions', latency_ms: run.latency_ms, redaction_count: privacy.redaction_count, input_tokens: run.usage?.input_tokens || 0, output_tokens: run.usage?.output_tokens || 0, total_tokens: run.usage?.total_tokens || 0 })
+        c.set('aiMetrics', draftMetrics('process', run, privacy.redaction_count))
         if (!run.output) return deps.apiError(c, run.status === 'disabled' ? 503 : 502, `draft_${run.status}`, run.status === 'disabled' ? 'AI 起草暂不可用。' : run.status === 'timeout' ? 'AI 这次写得太久，没有完成。请再试一次。' : 'AI 这次没有写出可用的教学过程。请再试一次。')
-        return deps.ok(c, version as never, { step: 'process', frame, process: run.output, checks: [...notesChecks(input.teacherNotes), ...checkPlan(frame, run.output, input)], evidence, privacy, model: run.model, latency_ms: run.latency_ms, self_check: run.self_check ?? null })
+        return deps.ok(c, version as never, { step: 'process', frame, process: run.output, checks: [...tooMany, ...notesChecks(input.teacherNotes), ...checkPlan(frame, run.output, input)], evidence, privacy, model: run.model, latency_ms: run.latency_ms, self_check: run.self_check ?? null })
     })
 
     // 核验我的教案: the teacher's own (or another AI's) plan, read and checked against the picked 要点
@@ -750,6 +789,11 @@ export function registerLessonPlanRoutes(app: Hono<ApiBindings>, deps: Deps) {
     // The AI reads every standard of the lesson's subject at its grade (at most ~33) and says which 要点 the lesson
     // teaches. Retrieval by words misses lessons whose topic word is not in the 课标 (「河流」, 「My friends」).
     app.post('/api/v1/lesson-plans/pick', async c => {
+        // automated page renders fired a pick on every load (238 of 247 abandoned picks in 4 days); a crawler gets
+        // the same plain refusal as the textbook files, before any model call
+        if (CRAWLER_USER_AGENT.test(c.req.header('user-agent') || '')) {
+            return deps.apiError(c, 403, 'crawler_not_allowed', 'AI 找要点只供老师在页面上使用，不向自动抓取程序提供。')
+        }
         const version = await deps.v2.version()
         const parsed = PickRequestSchema.safeParse(await deps.parseJson(c))
         if (!parsed.success) return deps.apiError(c, 422, 'validation_error', '请求参数校验失败。', parsed.error.issues)
@@ -796,7 +840,7 @@ export function registerLessonPlanRoutes(app: Hono<ApiBindings>, deps: Deps) {
                 ranked = true
             }
         }
-        c.set('aiMetrics', { feature: 'lesson_plan', used: judge.used, status: judge.status, model: judge.model, protocol: 'chat_completions', latency_ms: judge.latency_ms, redaction_count: 0, input_tokens: (judge.usage?.input_tokens || 0) + rankTokens.input_tokens, output_tokens: (judge.usage?.output_tokens || 0) + rankTokens.output_tokens, total_tokens: (judge.usage?.total_tokens || 0) + rankTokens.total_tokens })
+        c.set('aiMetrics', { feature: 'lesson_plan', step: 'pick', used: judge.used, status: judge.status, model: judge.model, protocol: 'chat_completions', latency_ms: judge.latency_ms, redaction_count: 0, judge_read: candidates.length, judge_calls: Object.entries(judge.calls).map(([status, count]) => `${status}:${count}`).join(','), judge_retries: judge.retries, input_tokens: (judge.usage?.input_tokens || 0) + rankTokens.input_tokens, output_tokens: (judge.usage?.output_tokens || 0) + rankTokens.output_tokens, total_tokens: (judge.usage?.total_tokens || 0) + rankTokens.total_tokens })
         return deps.ok(c, version as never, {
             status: judge.status,
             read: candidates.length,

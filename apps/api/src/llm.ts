@@ -1,3 +1,4 @@
+import { AsyncLocalStorage } from 'node:async_hooks'
 import { createHash } from 'node:crypto'
 
 const SUBJECTS = ['chinese', 'math', 'english', 'morality_law', 'history', 'geography', 'science', 'physics', 'chemistry', 'biology', 'it', 'pe', 'arts', 'labor'] as const
@@ -56,6 +57,21 @@ export interface StructuredLlmResult<T> {
     usage: LlmUsage | null
     /** Calls sent for this answer: 2 when runRetriedLlm sent it once more. */
     attempts?: number
+    /** a provider_error's HTTP status, or 'network' when no answer came; and the start of its error text */
+    provider_status?: number | 'network'
+    provider_error?: string
+    /** the provider's Retry-After, when it sent one */
+    retry_after_ms?: number
+}
+
+/** one model call, as the request's log line counts it */
+export interface LlmCall {
+    status: LlmStatus
+    latency_ms: number
+    /** runRetriedLlm's second attempt */
+    retry: boolean
+    provider_status?: number | 'network'
+    provider_error?: string
 }
 
 export interface StructuredLlmAdapter<T> {
@@ -73,6 +89,8 @@ export interface StructuredLlmOptions {
     env?: NodeJS.ProcessEnv
     fetchImpl?: typeof fetch
     timeoutMs?: number
+    /** set by runRetriedLlm on its second attempt, for the log */
+    retry?: boolean
 }
 
 interface LlmConfig {
@@ -336,10 +354,49 @@ function requestBody<T>(protocol: LlmProtocol, model: string, input: string, ada
     }
 }
 
+// Every model call a request makes, for its log line: the draft steps and the pick pass only their answer up, and
+// the log needs to tell a retried or failed provider call from a slow one.
+const llmCalls = new AsyncLocalStorage<LlmCall[]>()
+
+export function recordLlmCalls<T>(calls: LlmCall[], fn: () => Promise<T>): Promise<T> {
+    return llmCalls.run(calls, fn)
+}
+
+// enough of the provider's error text to tell a quota 429 from a gateway 5xx; anything key-like is masked
+function errorSnippet(text: string) {
+    return text.replace(/\b(sk|pk|rk)-[\w-]{4,}/gu, '$1-***').replace(/Bearer\s+\S+/giu, 'Bearer ***').replace(/\s+/gu, ' ').trim().slice(0, 160)
+}
+
+// Retry-After in seconds or as an HTTP date
+function retryAfterMs(value: string | null) {
+    if (!value) return undefined
+    const seconds = Number(value)
+    const ms = Number.isFinite(seconds) ? seconds * 1000 : Date.parse(value) - Date.now()
+    return Number.isFinite(ms) ? Math.max(0, Math.round(ms)) : undefined
+}
+
 export async function runStructuredLlm<T>(
     input: string,
     adapter: StructuredLlmAdapter<T>,
     options: StructuredLlmOptions = {}
+): Promise<StructuredLlmResult<T>> {
+    const result = await callStructuredLlm(input, adapter, options)
+    if (result.status !== 'disabled' && result.status !== 'invalid_config') {
+        llmCalls.getStore()?.push({
+            status: result.status,
+            latency_ms: result.latency_ms,
+            retry: Boolean(options.retry),
+            ...(result.provider_status !== undefined ? { provider_status: result.provider_status } : {}),
+            ...(result.provider_error ? { provider_error: result.provider_error } : {})
+        })
+    }
+    return result
+}
+
+async function callStructuredLlm<T>(
+    input: string,
+    adapter: StructuredLlmAdapter<T>,
+    options: StructuredLlmOptions
 ): Promise<StructuredLlmResult<T>> {
     const started = performance.now()
     const config = resolveLlmConfig(options.env)
@@ -384,12 +441,17 @@ export async function runStructuredLlm<T>(
                     && index === 0
                     && [400, 404, 405, 422, 501].includes(response.status)
                 if (canFallback) continue
+                const text = await response.text().catch(() => '')
+                const retryAfter = retryAfterMs(response.headers.get('retry-after'))
                 return {
                     ...base,
                     status: 'provider_error',
                     model: config.model,
                     protocol,
-                    latency_ms: Math.round((performance.now() - started) * 100) / 100
+                    latency_ms: Math.round((performance.now() - started) * 100) / 100,
+                    provider_status: response.status,
+                    provider_error: errorSnippet(text),
+                    ...(retryAfter !== undefined ? { retry_after_ms: retryAfter } : {})
                 }
             }
             const payload = await response.json().catch(() => null)
@@ -420,12 +482,15 @@ export async function runStructuredLlm<T>(
             latency_ms: Math.round((performance.now() - started) * 100) / 100
         }
     } catch (error) {
+        const timedOut = error instanceof Error && error.name === 'AbortError'
         return {
             ...base,
-            status: error instanceof Error && error.name === 'AbortError' ? 'timeout' : 'provider_error',
+            status: timedOut ? 'timeout' : 'provider_error',
             model: config.model,
             protocol: activeProtocol,
-            latency_ms: Math.round((performance.now() - started) * 100) / 100
+            latency_ms: Math.round((performance.now() - started) * 100) / 100,
+            // no answer at all: a reset connection, a failed lookup
+            ...(timedOut ? {} : { provider_status: 'network' as const, provider_error: errorSnippet(error instanceof Error ? error.message : String(error)) })
         }
     } finally {
         clearTimeout(timeout)
@@ -437,6 +502,9 @@ export async function runStructuredLlm<T>(
  * more within what is left of the budget. A slow call is not: the provider's calls run 5–12 s on a slow day, and a
  * second call sent at half the budget then only doubled the load (nearly every check call was sent twice in a test
  * round, and the second answer almost never came first).
+ * An error answer waits 1–3 s first (or the provider's Retry-After, up to 5 s): in the 11-07 outage an instant second
+ * call mostly failed the same way. A longer Retry-After (a spent quota) is not retried at all.
+ * latency_ms is the whole wait, both calls and the pause between them.
  */
 export async function runRetriedLlm<T>(
     input: string,
@@ -448,8 +516,24 @@ export async function runRetriedLlm<T>(
     const first = await runStructuredLlm(input, adapter, { ...options, timeoutMs })
     const elapsed = performance.now() - started
     if (!['provider_error', 'invalid_response'].includes(first.status) || elapsed > timeoutMs / 2) return { ...first, attempts: 1 }
-    const second = await runStructuredLlm(input, adapter, { ...options, timeoutMs: Math.max(1000, Math.round(timeoutMs - elapsed)) })
-    return { ...second, attempts: 2 }
+    const wait = retryWaitMs(first, timeoutMs - elapsed)
+    if (wait === null) return { ...first, attempts: 1 }
+    if (wait > 0) await new Promise(resolve => setTimeout(resolve, wait))
+    const left = timeoutMs - (performance.now() - started)
+    const second = await runStructuredLlm(input, adapter, { ...options, timeoutMs: Math.max(1000, Math.round(left)), retry: true })
+    return { ...second, attempts: 2, latency_ms: Math.round((performance.now() - started) * 100) / 100 }
+}
+
+/**
+ * How long to wait before the second call, or null to send none. JSON that did not fit is sent again at once (the
+ * provider is up); an error answer waits 1–3 s, spread so parallel calls do not return together, or the provider's
+ * Retry-After when it is 5 s or less. The pause never takes more than half of what is left of the budget.
+ */
+export function retryWaitMs(first: Pick<StructuredLlmResult<unknown>, 'status' | 'retry_after_ms'>, leftMs: number, random = Math.random): number | null {
+    if (first.status !== 'provider_error') return 0
+    const wanted = first.retry_after_ms !== undefined ? first.retry_after_ms : 1000 + Math.round(random() * 2000)
+    if (first.retry_after_ms !== undefined && (wanted > 5000 || wanted > leftMs / 2)) return null
+    return Math.max(0, Math.min(wanted, Math.floor(leftMs / 2)))
 }
 
 const QUERY_INTERPRETATION_ADAPTER: StructuredLlmAdapter<LlmQueryInterpretation> = {

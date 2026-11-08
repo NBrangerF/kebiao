@@ -3,6 +3,7 @@ import { dirname } from 'path'
 import { createHash } from 'crypto'
 import type { Context, MiddlewareHandler } from 'hono'
 import type { AccessTier, DataVersion, JsonObject } from '@curriculum/core'
+import { recordLlmCalls, type LlmCall } from './llm.js'
 
 export type ApiBindings = {
     Variables: {
@@ -42,6 +43,29 @@ export interface AiMetrics {
     judge_retries?: number
     /** 2 when the question reading was sent a second time */
     read_attempts?: number
+    /** AI 备课: the draft step ('frame', 'process', 'unit', …) or 'pick' */
+    step?: string
+    /** model calls the request sent (a retry and the 自查 call each count one), the retries among them, and the first call's time */
+    attempts?: number
+    retries?: number
+    first_latency_ms?: number
+    /** the last failed call's provider HTTP status ('network' when no answer came) and the start of its error text */
+    provider_status?: number | 'network'
+    provider_error?: string
+    /** 自查: problems sent back to the model, whether its fix was kept, and how that second call ended */
+    self_check?: { sent: number, kept: boolean, status: string }
+}
+
+// what the request's model calls add to its AI log line
+function callMetrics(calls: LlmCall[]): Partial<AiMetrics> {
+    if (!calls.length) return {}
+    const failed = calls.filter(call => call.provider_status !== undefined).at(-1)
+    return {
+        attempts: calls.length,
+        retries: calls.filter(call => call.retry).length,
+        first_latency_ms: calls[0].latency_ms,
+        ...(failed ? { provider_status: failed.provider_status, provider_error: failed.provider_error || '' } : {})
+    }
 }
 
 const TIER_LIMITS: Record<AccessTier, number> = {
@@ -329,7 +353,8 @@ export const cdnCacheMiddleware: MiddlewareHandler<ApiBindings> = async (c, next
 
 export const observabilityMiddleware: MiddlewareHandler<ApiBindings> = async (c, next) => {
     const started = performance.now()
-    await next()
+    const calls: LlmCall[] = []
+    await recordLlmCalls(calls, next)
     const durationMs = Math.round((performance.now() - started) * 100) / 100
     const status = String(c.res.status)
     const routeKey = `${c.req.method} ${c.req.path}`
@@ -344,7 +369,7 @@ export const observabilityMiddleware: MiddlewareHandler<ApiBindings> = async (c,
         api_key_id: c.get('apiKeyId') || 'anonymous'
     }
     const aiMetrics = c.get('aiMetrics')
-    if (aiMetrics) event.ai = aiMetrics
+    if (aiMetrics) event.ai = { ...aiMetrics, ...callMetrics(calls) }
     const mcpMetrics = c.get('mcpMetrics')
     if (mcpMetrics) event.mcp = mcpMetrics
     await recordMetricsEvent(event)
