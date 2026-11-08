@@ -149,6 +149,28 @@ const checks: SmokeCheck[] = [
             assert(typeof data.schema_version === 'string', 'Expected schema_version')
         }
     },
+    // AI 备课 without calling the model: a lesson's context carries its 要点 and the textbook's words, and a physics
+    // lesson that hosts a 学生必做实验 says so
+    {
+        name: 'lesson plan context',
+        path: '/api/v1/lesson-plans/context?edition_id=ed_1bb9d396d4d884aee79e&lesson_id=9158d483-13f0-49b7-89ea-1aeddfb25f65',
+        expect(response, payload) {
+            expectEnvelope(response, payload)
+            const data = expectObject(getData(payload), 'Expected lesson plan context')
+            assert(expectObject(data.lesson, 'Expected lesson').title === '分数的基本性质', 'Expected the lesson 分数的基本性质')
+            assert(expectArray(data.standards, 'Expected standards').length >= 1, 'Expected the lesson to have standards')
+            assert(expectArray(data.ai_points, 'Expected ai_points').includes('MA-S3-NA-01.3'), 'Expected the pre-judged 要点 MA-S3-NA-01.3')
+        }
+    },
+    {
+        name: 'lesson plan required lab',
+        path: '/api/v1/lesson-plans/context?edition_id=ed_f0de8cbbeb88661f44d6&lesson_id=aaedacba-449e-44cf-8cf5-1e1ffa3a0c3a',
+        expect(response, payload) {
+            expectEnvelope(response, payload)
+            const labs = expectArray(expectObject(getData(payload), 'Expected lesson plan context').required_labs, 'Expected required_labs')
+            assert(labs.some(item => expectObject(item, 'Expected lab').code === 'PH-S4-EX-01.1'), 'Expected the 学生必做实验 PH-S4-EX-01.1')
+        }
+    },
     {
         name: 'subjects',
         path: '/api/v1/subjects',
