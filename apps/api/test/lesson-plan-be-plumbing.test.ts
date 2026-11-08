@@ -214,3 +214,24 @@ test('up to 16 要点 are accepted: a unit reads all 16, a lesson the first 12 a
     assert.equal(none.status, 422)
     assert.match((await json(none)).error.message, /至少勾选一条/)
 })
+
+test('pupil names next to a score are removed; words around a score are left alone', () => {
+    const removed: Array<[string, string, number]> = [
+        ['张三：58分，李四：61分', '某学生：58分，某学生：61分', 2],
+        ['于洋 52 分，傅雷 48 分，温馨请假', '某学生 52 分，某学生 48 分，某学生请假', 3],
+        ['欧阳娜娜数学 58 分', '某学生数学 58 分', 1],
+        ['司马光请假', '某学生请假', 1],
+        ['其中王小明 58 分', '其中某学生 58 分', 1],
+        ['张三数学 58 分、李四 61 分，王小明请假刚回来', '某学生数学 58 分、某学生 61 分，某学生请假刚回来', 3]
+    ]
+    for (const [text, expected, count] of removed) {
+        const result = redactSensitiveText(text)
+        assert.equal(result.text, expected, text)
+        assert.equal(result.redaction_count, count, text)
+    }
+    for (const text of ['平均分高于 80 分', '前测历史考了 85 分', '成绩高于 85 分的学生', '最高分 98 分', '低于 60 分的有 5 人', '高于80分的有12人', '马上要期中考试']) {
+        const result = redactSensitiveText(text)
+        assert.equal(result.text, text)
+        assert.equal(result.redaction_count, 0, text)
+    }
+})
