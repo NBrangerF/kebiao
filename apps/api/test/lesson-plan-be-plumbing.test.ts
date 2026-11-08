@@ -182,3 +182,35 @@ test('the pick log line names the step and how its calls ended', async t => {
     assert.match(ai.judge_calls, /^ok:\d+$/)
     assert.equal(ai.attempts, Number(ai.judge_calls.split(':')[1]))
 })
+
+test('up to 16 要点 are accepted: a unit reads all 16, a lesson the first 12 and says so; 17 get a message naming the limit', async t => {
+    withKey(t)
+    const prompts: string[] = []
+    t.mock.method(globalThis, 'fetch', async (_input: unknown, init?: RequestInit) => {
+        prompts.push(String(JSON.parse(String(init?.body)).messages[1].content))
+        // JSON that does not fit: the unit draft fails at once, after its prompt is seen
+        return answer({ nothing: true })
+    })
+    const sixteen = grade5Codes.slice(0, 16)
+    const unit = await app.request('/api/v1/lesson-plans/draft', { method: 'POST', headers: { 'content-type': 'application/json', 'x-forwarded-for': '203.0.113.204' }, body: JSON.stringify({ step: 'unit', lesson: { title: '多个要点的单元', subject_slug: 'math', grade: 5 }, indicator_codes: sixteen, unit_lessons: ['一', '二'], unit_hours: 2 }) })
+    assert.equal(unit.status, 502)
+    assert.ok(prompts[0].includes(`${sixteen[15]}：`), 'the 16th 要点 reaches the unit prompt')
+
+    t.mock.method(globalThis, 'fetch', async () => answer(frame()))
+    const lesson = await app.request('/api/v1/lesson-plans/draft', { method: 'POST', headers: { 'content-type': 'application/json', 'x-forwarded-for': '203.0.113.204' }, body: JSON.stringify({ step: 'frame', lesson: { title: '分数的基本性质', subject_slug: 'math', grade: 5 }, indicator_codes: grade5Codes.slice(0, 14) }) })
+    assert.equal(lesson.status, 200)
+    const drafted = (await json(lesson)).data
+    assert.equal(drafted.evidence.length, 12)
+    assert.equal(drafted.checks[0].kind, 'too_many_points')
+    assert.match(drafted.checks[0].message, /勾了 14 条要点.*前 12 条/)
+
+    const tooMany = await app.request('/api/v1/lesson-plans/draft', { method: 'POST', headers: { 'content-type': 'application/json', 'x-forwarded-for': '203.0.113.204' }, body: JSON.stringify({ step: 'unit', lesson: { title: '多个要点的单元', subject_slug: 'math', grade: 5 }, indicator_codes: grade5Codes.slice(0, 17) }) })
+    assert.equal(tooMany.status, 422)
+    const refused = await json(tooMany)
+    assert.match(refused.error.message, /要点最多选 16 条，现在选了 17 条/)
+    assert.doesNotMatch(refused.error.message, /请求参数校验失败/)
+
+    const none = await app.request('/api/v1/lesson-plans/draft', { method: 'POST', headers: { 'content-type': 'application/json', 'x-forwarded-for': '203.0.113.204' }, body: JSON.stringify({ step: 'frame', lesson: { title: '分数的基本性质', subject_slug: 'math', grade: 5 }, indicator_codes: [] }) })
+    assert.equal(none.status, 422)
+    assert.match((await json(none)).error.message, /至少勾选一条/)
+})
