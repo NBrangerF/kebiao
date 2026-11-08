@@ -40,6 +40,8 @@ const LESSON_TYPES = ['新授课', '复习课', '练习课', '实验课', '讲�
 // When the AI is slow or down, a teacher drafting a plan still has a way on: the ticked 要点 as a prompt for
 // another AI, or a skeleton to write in.
 function aiError(errorValue, drafting = false) {
+    // fetch itself failed (no HTTP status): a phone that locked or switched apps, or a dropped connection
+    if (!errorValue.status) return drafting ? '网络连接中断了（手机锁屏、切到别的应用或信号不好时常见）。已写好的部分存在这台设备上，可以点「继续写」接着写，或重新起草。' : '网络连接中断了，请再试一次。'
     if (errorValue.status === 429) return '用得太频繁了，请一分钟后再试。'
     if (drafting && errorValue.status >= 500) return `${errorValue.message} 也可以先点上面的「复制成提示词」，把勾好的要点带到豆包、DeepSeek 里写；或「下载教案框架」自己写。`
     return errorValue.message
@@ -92,6 +94,32 @@ function writeStored(plan) {
     } catch { /* private mode or full */ }
     return history
 }
+// the request a saved plan was drafted with, to write its missing parts again (older saves lack the notes)
+function requestOf(plan) {
+    const meta = plan.meta || {}
+    return {
+        lesson: draftLesson(plan.lesson),
+        indicator_codes: plan.evidence.map(item => item.code),
+        period_minutes: meta.period_minutes || 40,
+        lesson_index: meta.lesson_index || 1,
+        lesson_count: meta.lesson_count || 1,
+        ...(meta.class_size ? { class_size: meta.class_size } : {}),
+        lesson_type: meta.lesson_type || '',
+        class_notes: meta.class_notes || '',
+        teacher_notes: meta.teacher_notes || ''
+    }
+}
+
+// a phone that locks during the minute of drafting drops the request; keep the screen on while it runs
+async function keepAwake() {
+    try {
+        const lock = await navigator.wakeLock?.request('screen')
+        return () => { lock?.release().catch(() => {}) }
+    } catch {
+        return () => {}
+    }
+}
+
 const draftDate = value => {
     const date = new Date(value)
     return Number.isNaN(date.getTime()) ? '' : `${date.getMonth() + 1} 月 ${date.getDate()} 日`
@@ -327,30 +355,59 @@ export default function LessonPlanPage() {
         setPlan(null)
         setTalk(null)
         setTrial(null)
-        // 课标解读 and 当堂练习 add to the plan; when one of them fails the plan stands without it
-        const extra = step => postApi('/api/v1/lesson-plans/draft', step).then(response => response.data).catch(() => null)
+        const release = await keepAwake()
         try {
             setStep('frame')
             const [first, reading] = await Promise.all([
                 postApi('/api/v1/lesson-plans/draft', { ...request, step: 'frame' }).then(response => response.data),
                 extra({ ...request, step: 'reading' })
             ])
-            const partial = { ...base, meta: { ...base.meta, class_size: settings.classSize, lesson_type: settings.lessonType }, frame: first.frame, process: null, practice: null, reading, evidence: first.evidence, checks: first.checks, model: first.model, privacy: first.privacy }
+            // kept on this device as soon as the frame is back: a phone that sleeps before the process returns
+            // loses only the second half, which 「继续写」 writes again from the saved frame
+            const partial = { ...base, meta: { ...base.meta, class_size: settings.classSize, lesson_type: settings.lessonType, class_notes: settings.classNotes, teacher_notes: settings.teacherNotes }, frame: first.frame, process: null, practice: null, reading, evidence: first.evidence, checks: first.checks, model: first.model, privacy: first.privacy, created_at: new Date().toISOString(), partial: true }
             setPlan(partial)
-            setStep('process')
-            const [second, practice] = await Promise.all([
-                postApi('/api/v1/lesson-plans/draft', { ...request, step: 'process', frame: first.frame }).then(response => response.data),
-                extra({ ...request, step: 'practice', frame: first.frame })
-            ])
-            setStep('check')
-            const done = { ...partial, process: second.process, practice: practice?.practice || null, checks: [...second.checks, ...(practice?.checks || [])], created_at: new Date().toISOString() }
-            setPlan(done)
-            setStored(writeStored(done))
-            setStep('done')
-            trackUmamiEvent('lesson_plan_drafted', { subject: lesson.subject_slug, indicators: selected.size, risks: second.checks.filter(item => item.level === 'risk').length })
+            setStored(writeStored(partial))
+            const done = await writeProcess(partial)
+            trackUmamiEvent('lesson_plan_drafted', { subject: lesson.subject_slug, indicators: selected.size, risks: done.checks.filter(item => item.level === 'risk').length })
         } catch (errorValue) {
             setError(aiError(errorValue, true))
             setStep('')
+        } finally {
+            release()
+        }
+    }
+
+    // 课标解读 and 当堂练习 add to the plan; when one of them fails the plan stands without it
+    const extra = step => postApi('/api/v1/lesson-plans/draft', step).then(response => response.data).catch(() => null)
+
+    // the second half of a plan (教学过程 ∥ 当堂练习) from its frame: right after the frame, or to finish a saved draft
+    async function writeProcess(current) {
+        const request = requestOf(current)
+        setStep('process')
+        const [second, practice] = await Promise.all([
+            postApi('/api/v1/lesson-plans/draft', { ...request, step: 'process', frame: current.frame }).then(response => response.data),
+            extra({ ...request, step: 'practice', frame: current.frame })
+        ])
+        setStep('check')
+        const { partial: _partial, ...rest } = current
+        const done = { ...rest, process: second.process, practice: practice?.practice || null, checks: [...second.checks, ...(practice?.checks || [])], created_at: current.created_at || new Date().toISOString() }
+        setPlan(done)
+        setStored(writeStored(done))
+        setStep('done')
+        return done
+    }
+
+    async function continuePlan() {
+        if (!plan?.frame || plan.process || step) return
+        setError('')
+        const release = await keepAwake()
+        try {
+            await writeProcess(plan)
+        } catch (errorValue) {
+            setError(aiError(errorValue, true))
+            setStep('')
+        } finally {
+            release()
         }
     }
 
@@ -466,7 +523,7 @@ export default function LessonPlanPage() {
                         <ul>
                             {stored.slice(0, 5).map(item => (
                                 <li key={`${item.lesson?.title}-${item.created_at}`}>
-                                    <button type="button" className={styles.restore} onClick={() => setPlan(item)}>{item.frame?.title || item.lesson?.title}<small>{[item.lesson?.subject_name, item.lesson?.grade ? `${item.lesson.grade} 年级` : '', draftDate(item.created_at)].filter(Boolean).join(' · ')}</small></button>
+                                    <button type="button" className={styles.restore} onClick={() => setPlan(item)}>{item.frame?.title || item.lesson?.title}{item.partial ? '（未写完）' : ''}<small>{[item.lesson?.subject_name, item.lesson?.grade ? `${item.lesson.grade} 年级` : '', draftDate(item.created_at)].filter(Boolean).join(' · ')}</small></button>
                                 </li>
                             ))}
                         </ul>
@@ -695,7 +752,7 @@ export default function LessonPlanPage() {
             ) : null}
 
             {unitPlan && isUnit ? <UnitDocument plan={unitPlan} edition={edition} subject={subject} onCopy={async () => { try { await navigator.clipboard.writeText(unitToText(unitPlan)); setCopied(true) } catch { setCopied(false) } }} copied={copied} /> : null}
-            {plan && !isUnit ? <PlanDocument plan={plan} done={!busy && Boolean(plan.process)} onCopy={copy} copied={copied} onTalk={makeTalk} talking={talking} onPractice={retryPractice} /> : null}
+            {plan && !isUnit ? <PlanDocument plan={plan} done={!busy && Boolean(plan.process)} writing={busy} onCopy={copy} copied={copied} onTalk={makeTalk} talking={talking} onPractice={retryPractice} onContinue={continuePlan} /> : null}
             {talk && plan && !isUnit ? <TalkScriptView talk={talk} title={plan.frame?.title || plan.lesson.title} /> : null}
             {trial && plan && !isUnit ? <TrialScriptView trial={trial} title={plan.frame?.title || plan.lesson.title} /> : null}
         </div>
@@ -976,7 +1033,7 @@ function SyncLessons({ context }) {
     )
 }
 
-function PlanDocument({ plan, done, onCopy, copied, onTalk, talking, onPractice }) {
+function PlanDocument({ plan, done, writing, onCopy, copied, onTalk, talking, onPractice, onContinue }) {
     const { lesson, frame, process, practice, reading, evidence, checks, meta } = plan
     const objectiveNo = id => id.replace('O', '')
     const metaLine = [lesson.subject_name, lesson.grade ? `${lesson.grade} 年级` : '', lesson.textbook_title ? `${lesson.edition_name || ''}${lesson.textbook_title}` : '', meta ? `第 ${meta.lesson_index} 课时（共 ${meta.lesson_count} 课时）· ${meta.period_minutes} 分钟` : '', meta?.class_size ? `约 ${meta.class_size} 人` : '', meta?.lesson_type || ''].filter(Boolean).join(' · ')
@@ -1121,7 +1178,13 @@ function PlanDocument({ plan, done, onCopy, copied, onTalk, talking, onPractice 
                     {process.board.length ? <section><h3>九、板书设计</h3><pre className={styles.board}>{process.board.join('\n')}</pre></section> : null}
                     {process.homework.length ? <section><h3>十、作业设计</h3><ul>{process.homework.map(item => <li key={item.task}><b>【{item.level}】</b>{item.task}{item.minutes ? <small className={styles.minutes}>约 {item.minutes} 分钟</small> : null}</li>)}</ul></section> : null}
                 </>
-            ) : frame ? <p className={styles.small}>正在写教学过程和当堂练习…</p> : null}
+            ) : frame ? (writing ? <p className={styles.small}>正在写教学过程和当堂练习…</p> : (
+                <section>
+                    <h3>七、教学过程</h3>
+                    <p className={styles.small}>教学过程和当堂练习还没写完（常见原因：手机锁屏或切到别的应用，网络中断）。上面的目标和评价已经存在这台设备上。</p>
+                    {onContinue ? <button type="button" className="btn btn-primary" onClick={onContinue}>继续写教学过程和当堂练习</button> : null}
+                </section>
+            )) : null}
 
             <p className={styles.docFoot}>本教案由 AI{plan.model ? `（${plan.model}）` : ''}依据 kebiao.org 收录的《义务教育课程标准（2022年版2025年修订）》要点起草，按常规大班课堂设计：以讲解示范为主线，讲之前让学生先想先试，讲之后练习反馈。课标原文以官方出版物为准；请结合教材和班级实际修改后使用。{plan.privacy?.redacted ? ' 你填写的内容里有可识别的个人信息，发送前已移除。' : ''}</p>
         </article>

@@ -588,3 +588,46 @@ test('AI 备课: lessons the 国家平台 list lacks come from the book\'s own �
     await page.reload()
     await expect(page.getByText('课按这本书自己的目录列出，国家平台没有这一册的同步课。')).toBeVisible()
 })
+
+test('a draft cut off after its 目标与评价 is kept on the device and finished with 继续写', async ({ page }) => {
+    let processCalls = 0
+    await page.route('**/api/v1/lesson-plans/textbooks/*/lessons', route => route.fulfill({ contentType: 'application/json', body: JSON.stringify(envelope({ platform_title: '小学数学人教版五年级下册', confidence: 'text', lessons: [{ id: 'L1', title: '分数的基本性质', chapters: ['4 分数的意义和性质'], pdf_page: 62, materials: [], url: '' }] })) }))
+    await page.route('**/api/v1/lesson-plans/context?*', route => route.fulfill({ contentType: 'application/json', body: JSON.stringify(envelope(context)) }))
+    await page.route('**/api/v1/lesson-plans/pick', route => route.fulfill({ contentType: 'application/json', body: JSON.stringify(envelope({ status: 'ok', read: 9, picks: [{ code: 'MA-S3-NA-01', grade: 2, reason: '分数', point: 'MA-S3-NA-01.3' }] })) }))
+    await page.route('**/api/v1/lesson-plans/draft', route => {
+        const body = route.request().postDataJSON()
+        if (body.step === 'process') {
+            processCalls += 1
+            // the phone locked: the first 教学过程 request never comes back
+            if (processCalls === 1) return route.abort('failed')
+            expect(body.frame.objectives[0].basis).toEqual(['MA-S3-NA-01.3'])
+            expect(body.class_notes).toBe('学生会画图表示分数')
+            return route.fulfill({ contentType: 'application/json', body: JSON.stringify(envelope({ step: 'process', frame, process: processDraft, checks: [{ level: 'ok', kind: 'aligned', message: '每条目标都有课标要点依据、教学环节和评价任务，没有发现超出课标限定的内容。' }], evidence, privacy: { redacted: false }, model: 'gpt-5-mini' })) })
+        }
+        const data = body.step === 'frame' ? { step: 'frame', frame, checks: [], evidence, privacy: { redacted: false }, model: 'gpt-5-mini' } : body.step === 'reading' ? readingDraft : practiceDraft
+        return route.fulfill({ contentType: 'application/json', body: JSON.stringify(envelope(data)) })
+    })
+    await page.goto(`/lesson-plan?subject=${encodeURIComponent('数学')}&edition=ed_1bb9d396d4d884aee79e&lesson=L1`)
+    await expect(page.getByText(/AI 读完了，已勾选/)).toBeVisible()
+    await page.getByPlaceholder(/班级整体情况/).fill('学生会画图表示分数')
+    await page.getByRole('button', { name: /按选定的 1 条要点起草教案/ }).click()
+    await expect(page.getByRole('alert')).toContainText('网络连接中断了')
+    await expect(page.getByRole('heading', { name: '二、教学目标' })).toBeVisible()
+    await expect(page.getByRole('button', { name: '继续写教学过程和当堂练习' })).toBeVisible()
+    // the frame was saved before the 教学过程 came back
+    const saved = await page.evaluate(() => JSON.parse(window.localStorage.getItem('kebiao.lessonPlan.history') || '[]'))
+    expect(saved[0].partial).toBe(true)
+    expect(saved[0].frame.objectives[0].text).toContain('折纸')
+
+    // after a reload the unfinished draft is offered and finished from where it stopped
+    await page.goto('/lesson-plan')
+    await page.getByRole('button', { name: /分数的基本性质（未写完）/ }).click()
+    await page.getByRole('button', { name: '继续写教学过程和当堂练习' }).click()
+    await expect(page.locator('ol').filter({ hasText: '折纸探究' }).first()).toBeVisible()
+    await expect(page.getByRole('button', { name: '下载 Word（详案）' })).toBeVisible()
+    expect(processCalls).toBe(2)
+    const finished = await page.evaluate(() => JSON.parse(window.localStorage.getItem('kebiao.lessonPlan.history') || '[]'))
+    expect(finished).toHaveLength(1)
+    expect(finished[0].partial).toBeUndefined()
+    expect(finished[0].process.stages.length).toBe(2)
+})
