@@ -251,3 +251,21 @@ test('/pick refuses crawler user agents before any model call; a browser still g
     assert.equal(browser.status, 200)
     assert.ok(calls > 0)
 })
+
+test('说课稿 and 试讲稿 are told the plan\'s own 课时, not 「第 1 课时（共 1 课时）」', async t => {
+    withKey(t)
+    const prompts: string[] = []
+    t.mock.method(globalThis, 'fetch', async (_input: unknown, init?: RequestInit) => {
+        prompts.push(String(JSON.parse(String(init?.body)).messages[1].content))
+        return answer({ nothing: true })
+    })
+    for (const step of ['talk', 'trial']) {
+        const response = await app.request('/api/v1/lesson-plans/draft', { method: 'POST', headers: { 'content-type': 'application/json', 'x-forwarded-for': '203.0.113.206' }, body: JSON.stringify({ step, lesson: { title: '分数的基本性质', subject_slug: 'math', grade: 5 }, indicator_codes: [LIMITED], lesson_index: 2, lesson_count: 3, class_size: 52, frame: frame(), process: planProcess }) })
+        assert.equal(response.status, 502, step)
+    }
+    assert.equal(prompts.length, 4)
+    for (const prompt of prompts) {
+        assert.match(prompt, /第 2 课时（共 3 课时）/)
+        assert.doesNotMatch(prompt, /第 1 课时（共 1 课时）/)
+    }
+})
