@@ -186,7 +186,8 @@ export function classroomChecks(process: Process, periodMinutes: number, grade: 
     if (labs.length && !process.stages.some(stage => stage.org && stage.org !== '全班' && HANDS_ON.test(`${stage.name}${stage.students}`))) {
         checks.push({ level: 'warn', kind: 'lab_missing', message: `课标把「${labs[0].text}」列为学生必做实验${labs[0].code ? `（${labs[0].code}）` : ''}，教学过程里没有学生自己动手做的环节；只看演示不算完成。`, quote: labs[0].text })
     }
-    if (field) checks.push(...peLoadChecks(process))
+    // a teacher's own plan, read back, has stage names only, and its 体能 often sits inside 基本部分: not judged
+    if (field && process.stages.some(stage => stage.teacher || stage.students)) checks.push(...peLoadChecks(process))
     const withOrg = process.stages.filter(stage => stage.org)
     // a field lesson works in rotating groups throughout: the classroom's group and seat-work advice does not apply
     if (!field && withOrg.length >= Math.ceil(process.stages.length / 2)) {
@@ -317,7 +318,7 @@ export function checkPlan(frame: Frame, process: Process | null, input: Pick<Dra
     if (process) {
         for (const stage of process.stages) {
             if (!stage.minutes && options.assessmentsPlaced !== false) checks.push({ level: 'warn', kind: 'timing', message: `环节「${stage.name}」没有安排时间。` })
-            else if (stage.minutes === 1) checks.push({ level: 'warn', kind: 'timing', message: `环节「${stage.name}」只有 1 分钟，课上很难做完；可以并入相邻的环节。` })
+            else if (stage.minutes === 1) checks.push({ level: 'warn', kind: 'short_stage', message: `环节「${stage.name}」只有 1 分钟，课上很难做完；可以并入相邻的环节。` })
         }
         const total = process.stages.reduce((sum, stage) => sum + (Number.isFinite(stage.minutes) ? stage.minutes : 0), 0)
         if (Math.abs(total - input.periodMinutes) > 3) checks.push({ level: 'warn', kind: 'timing', message: `各环节合计 ${total} 分钟，和一节课 ${input.periodMinutes} 分钟不一致。` })
@@ -369,7 +370,7 @@ export function notesChecks(teacherNotes: string): PlanCheck[] {
 }
 
 // advice that does not undo the alignment verdict (pe_load does: the 课标 asks for the load and the 体能 time)
-const CLASSROOM_KINDS = new Set(['student_time', 'group_work', 'class_check', 'homework_load', 'homework_parent', 'practice_gap', 'later_lesson', 'objective_long'])
+const CLASSROOM_KINDS = new Set(['student_time', 'group_work', 'class_check', 'homework_load', 'homework_parent', 'practice_gap', 'later_lesson', 'objective_long', 'short_stage'])
 
 // ---------- prompts ----------
 const SHARED_RULES = `规则：
@@ -1030,6 +1031,8 @@ export async function readTeacherPlan(planText: string, input: DraftInput, optio
 export function checkTeacherPlan(read: ReadPlan & { period?: number }, planText: string, input: DraftInput): PlanCheck[] {
     const checks = checkPlan(read.frame, read.process, { ...input, periodMinutes: read.period || input.periodMinutes }, { planText, assessmentsPlaced: false })
         .filter(item => !(item.kind === 'timing' && read.process?.stages.every(stage => !stage.minutes)))
+        // teachers' own plans often have 1-minute stages; any remark here would take the verdict away
+        .filter(item => item.kind !== 'short_stage')
     const notes = read.notes.map(item => {
         const objective = read.frame.objectives.find(entry => entry.id === item.objective_id)
         return { level: 'warn' as const, kind: 'reader_note', message: `目标 ${item.objective_id.replace('O', '')}：${item.note}`, quote: objective?.text }

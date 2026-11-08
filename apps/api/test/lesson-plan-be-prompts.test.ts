@@ -6,7 +6,7 @@ import { test } from 'node:test'
 import { resolve } from 'node:path'
 import { FileCurriculumRepository } from '@curriculum/core'
 import { createApp } from '../src/app.js'
-import { checkPlan, checkPractice, classroomChecks, clip, fieldLesson, frameKeeps, frameProblems, practiceKeeps, processKeeps, processProblems, repairGroups, sanitiseProcess, speakable, talkMinutes, type DraftInput, type Frame, type PlanIndicator, type PlanStandard, type Process, type Stage } from '../src/lesson-plan.js'
+import { checkPlan, checkPractice, checkTeacherPlan, classroomChecks, clip, fieldLesson, frameKeeps, frameProblems, practiceKeeps, processKeeps, processProblems, repairGroups, sanitiseProcess, speakable, talkMinutes, type DraftInput, type Frame, type PlanIndicator, type PlanStandard, type Process, type ReadPlan, type Stage } from '../src/lesson-plan.js'
 
 const app = createApp(new FileCurriculumRepository(resolve(process.cwd(), '../../public/data')))
 const json = async (response: Response) => JSON.parse(await response.text())
@@ -207,6 +207,20 @@ test('the alignment verdict says what was checked: the 超标 sentence only with
     assert.match(verdict(null), /依据和评价任务。课标写明的「不包括将循环小数转化成分数」，教学过程写完后再核/u)
     const plain = [{ ...indicators[0], text: '能比较两个分数的大小' }]
     assert.ok(!/超出|再核/u.test(verdict(plan(), plain)))
+})
+
+test('核验我的教案: stage names alone do not judge a PE load, and a 1-minute stage does not take the verdict away', () => {
+    const named = (name: string, minutes: number): Stage => ({ name, minutes, teacher: '', students: '', purpose: '', objective_ids: ['O1', 'O2'], assessment_ids: [] })
+    const read = (stages: Stage[]): ReadPlan => ({ frame: frame(), process: { stages, homework: [], board: [], materials: [], safety: [] }, notes: [], beyond: [] })
+    const kinds = (stages: Stage[], overrides: Partial<DraftInput> = {}) => checkTeacherPlan(read(stages), '教案原文', input(overrides)).map(item => `${item.level}:${item.kind}`)
+    const pe = { lesson: { title: '传接棒', subject: '体育与健康', subject_slug: 'pe', grade: 4 } }
+    // the 体能 sits inside 基本部分, as teachers write it
+    assert.deepEqual(kinds([named('准备部分', 8), named('基本部分', 27), named('结束部分', 5)], pe), ['ok:aligned'])
+    // a teacher's 1-minute stage is not remarked on; in a written plan it is advice next to the verdict
+    assert.deepEqual(kinds([named('导入', 1), named('探究', 19), named('练习', 20)]), ['ok:aligned'])
+    assert.deepEqual(kinds([named('导入', 2), named('探究', 18), named('练习', 20)]), ['ok:aligned'])
+    const written = checkPlan(frame(), plan({ stages: [stage('导入', 1), stage('探究', 19, '独立→同桌'), stage('练习', 20, '独立', { assessment_ids: ['A1'] })] }), input()).map(item => `${item.level}:${item.kind}`)
+    assert.deepEqual(written, ['warn:short_stage', 'ok:aligned'])
 })
 
 test('当堂练习 items on a later lesson or past a 课标 limit are named to the teacher', () => {
