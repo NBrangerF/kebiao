@@ -16,6 +16,8 @@ import styles from './LessonPlanPage.module.css'
 import { sourceLabel } from '../features/textbooks/alignmentModel'
 import LessonGoals from '../features/textbooks/LessonGoals'
 import ObjectiveCheck from '../features/lesson-plan/ObjectiveCheck'
+import { COPY_FALLBACK_EVENT, copyText } from '../features/lesson-plan/copyText.js'
+import { errorText } from '../features/lesson-plan/errorText.js'
 import { loadBank, presentHref, questionsForLesson } from '../features/checks/checksData.js'
 import { subjectBySlug } from '../features/checks/subjects.js'
 import { subjectOfCode } from '../data/v2Data.js'
@@ -38,14 +40,31 @@ const CLASS_SIZES = [30, 35, 40, 45, 50, 55, 60]
 const LESSON_TYPES = ['新授课', '复习课', '练习课', '实验课', '讲评课']
 
 // When the AI is slow or down, a teacher drafting a plan still has a way on: the ticked 要点 as a prompt for
-// another AI, or a skeleton to write in.
-function aiError(errorValue, drafting = false) {
+// another AI, or a skeleton to write in. `kept` is true when a half plan is saved for 「继续写」.
+function aiError(errorValue, { drafting = false, kept = false } = {}) {
     // fetch itself failed (no HTTP status): a phone that locked or switched apps, or a dropped connection
-    if (!errorValue.status) return drafting ? '网络连接中断了（手机锁屏、切到别的应用或信号不好时常见）。已写好的部分存在这台设备上，可以点「继续写」接着写，或重新起草。' : '网络连接中断了，请再试一次。'
-    if (errorValue.status === 429) return '用得太频繁了，请一分钟后再试。'
+    const dropped = '网络连接中断了（手机锁屏、切到别的应用或信号不好时常见）。'
+    if (!errorValue.status && drafting) return kept ? `${dropped}已写好的部分存在这台设备上，可以点「继续写」接着写，或重新起草。` : `${dropped}请保持屏幕亮着，再试一次。`
     if (drafting && errorValue.status >= 500) return `${errorValue.message} 也可以先点上面的「复制成提示词」，把勾好的要点带到豆包、DeepSeek 里写；或「下载教案框架」自己写。`
-    return errorValue.message
+    return errorText(errorValue)
 }
+
+// the server takes at most this many 要点 for one draft; the page says so before a request is refused
+const MAX_POINTS = { lesson: 12, unit: 16 }
+
+// automated browsers and crawlers render the page without reading it; there the AI pick waits for a click.
+// Local runs (the e2e tests) keep the automatic pick.
+function automatedVisit() {
+    if (typeof navigator === 'undefined') return false
+    if (/(?:bot|crawler|spider)\/|bytespider|bingpreview|slurp/iu.test(navigator.userAgent || '')) return true
+    return Boolean(navigator.webdriver) && !/^(localhost|127\.0\.0\.1|\[::1\])$/u.test(window.location.hostname)
+}
+
+// WeChat's browser cannot save a downloaded file (as ShareStandardButton notes)
+const inWeChat = () => typeof navigator !== 'undefined' && /MicroMessenger/iu.test(navigator.userAgent || '')
+
+// a 目录 title without its 「第一节」/「1」 prefix: a reprint renames 「疆域」 to 「第一节 疆域」
+const bareTitle = title => String(title || '').replace(/^(第[一二三四五六七八九十百\d]+[节课章单元]+|\d+)\s*/u, '').replace(/\s+/gu, '')
 
 // where the picker's lessons come from: the 国家平台 list, and the book's own 目录 for what the list lacks
 function lessonSource({ platform_title: platform, confidence, lessons }) {
@@ -55,10 +74,14 @@ function lessonSource({ platform_title: platform, confidence, lessons }) {
     return `课时目录来自国家中小学智慧教育平台「${platform}」${fromToc ? '，平台缺的课按这本书自己的目录补上' : ''}。${edition}`
 }
 
-async function getJson(url) {
-    const response = await fetch(url)
+async function getJson(url, signal) {
+    const response = await fetch(url, { signal })
     const payload = await response.json().catch(() => null)
-    if (!response.ok) throw new Error(payload?.error?.message || `请求失败（${response.status}）`)
+    if (!response.ok) {
+        const error = new Error(payload?.error?.message || `请求失败（${response.status}）`)
+        error.status = response.status
+        throw error
+    }
     return payload.data
 }
 
@@ -78,22 +101,27 @@ function draftLesson(lesson) {
     }
 }
 
+// a saved draft that cannot be shown (an older shape, or edited by hand) is skipped instead of blanking the page
+const usable = item => Boolean(item?.lesson?.title && Array.isArray(item.evidence) && (!item.frame || Array.isArray(item.frame.objectives)))
 function readStored() {
     try {
         const history = JSON.parse(window.localStorage.getItem(STORE_KEY) || '[]')
         const old = JSON.parse(window.localStorage.getItem(OLD_KEY) || 'null')
-        return Array.isArray(history) ? (old && !history.length ? [old] : history) : []
+        return (Array.isArray(history) ? (old && !history.length ? [old] : history) : []).filter(usable)
     } catch { return [] }
 }
-function writeStored(plan) {
-    const key = item => `${item.lesson?.title}|${item.created_at}`
-    const history = [plan, ...readStored().filter(item => key(item) !== key(plan))].slice(0, HISTORY_SIZE)
+const storedKey = item => `${item.lesson?.title}|${item.created_at}`
+function saveHistory(history) {
     try {
         window.localStorage.setItem(STORE_KEY, JSON.stringify(history))
         window.localStorage.removeItem(OLD_KEY)
     } catch { /* private mode or full */ }
     return history
 }
+function writeStored(plan) {
+    return saveHistory([plan, ...readStored().filter(item => storedKey(item) !== storedKey(plan))].slice(0, HISTORY_SIZE))
+}
+const removeStored = plan => saveHistory(readStored().filter(item => storedKey(item) !== storedKey(plan)))
 // the request a saved plan was drafted with, to write its missing parts again (older saves lack the notes)
 function requestOf(plan) {
     const meta = plan.meta || {}
@@ -142,18 +170,33 @@ export default function LessonPlanPage() {
     const [selected, setSelected] = useState(() => new Set())
     const [settings, setSettings] = useState({ period: 40, periodSet: false, index: 1, count: 1, classSize: 45, lessonType: '', classNotes: '', teacherNotes: '' })
     const [unitPlan, setUnitPlan] = useState(null)
-    const [talk, setTalk] = useState(null)
-    const [trial, setTrial] = useState(null)
     // what is being written after the plan: '' | 'talk' (说课稿) | 'trial' (试讲稿) | 'practice' (当堂练习 again)
     const [talking, setTalking] = useState('')
+    // a failed 说课稿/试讲稿/练习 shows by the plan, which may be a restored draft with no step 3 on the page
+    const [talkError, setTalkError] = useState('')
     const [unitHours, setUnitHours] = useState(0)
     const [hint, setHint] = useState('')
     const [hintFor, setHintFor] = useState('')
+    // set by 「让 AI 找要点」 where the pick does not start by itself
+    const [pickAsked, setPickAsked] = useState(false)
     const [plan, setPlan] = useState(null)
     const [step, setStep] = useState('')
     const [error, setError] = useState('')
     const [copied, setCopied] = useState(false)
     const [stored, setStored] = useState(readStored)
+    const [lessonGone, setLessonGone] = useState(false)
+    // a heading to bring into view and focus once it renders: the finished plan, a restored draft, a 说课稿
+    const [reveal, setReveal] = useState(null)
+    useEffect(() => {
+        const heading = reveal && document.getElementById(reveal.id)
+        if (!heading) return
+        heading.setAttribute('tabindex', '-1')
+        heading.focus({ preventScroll: true })
+        heading.scrollIntoView({ block: 'start' })
+    }, [reveal])
+    const revealHeading = id => setReveal({ id, at: Date.now() })
+    // 要点 the teacher ticked or unticked while the AI pick ran: its answer does not undo them
+    const editsRef = useRef(new Map())
     // 初中 periods are usually 45 minutes and 小学 40, until the teacher picks one
     const lessonGrade = context?.lesson?.grade || 0
     useEffect(() => {
@@ -207,9 +250,23 @@ export default function LessonPlanPage() {
         setLessons(null)
         if (!edition) return
         let active = true
-        getJson(`/api/v1/lesson-plans/textbooks/${edition}/lessons`).then(data => active && setLessons(data)).catch(() => active && setLessons({ lessons: [] }))
+        getJson(`/api/v1/lesson-plans/textbooks/${edition}/lessons`).then(data => active && setLessons(data)).catch(() => active && setLessons({ lessons: [], failed: true }))
         return () => { active = false }
     }, [edition])
+
+    // a lesson id the book no longer has (a reprint replaced its lessons, and 我的书 still points at the old one):
+    // the lesson with the same title, else none, with a line saying why
+    useEffect(() => {
+        if (!lessonId || !lessons?.lessons?.length || lessons.lessons.some(item => item.id === lessonId)) return
+        const saved = readMyBook()
+        const mine = saved?.edition === edition && saved?.lesson?.id === lessonId
+        const match = mine ? lessons.lessons.find(item => bareTitle(item.title) === bareTitle(saved.lesson.title)) : null
+        if (!match) {
+            setLessonGone(true)
+            if (mine) saveMyBook({ subject, edition, lesson: null })
+        }
+        update({ lesson: match?.id || null })
+    }, [lessonId, lessons]) // eslint-disable-line react-hooks/exhaustive-deps -- when the list or the id changes
 
     // the textbook picked here, and the lesson being prepared, become 「我的书」
     useEffect(() => {
@@ -234,7 +291,7 @@ export default function LessonPlanPage() {
     const contextQuery = chapter && edition ? `edition_id=${edition}&chapter=${encodeURIComponent(chapter)}`
         : lessonId && edition ? `edition_id=${edition}&lesson_id=${lessonId}`
         : unitId ? `unit_id=${unitId}`
-            : freeMode && topic.trim().length >= 2 && subject ? `subject=${encodeURIComponent(TOPIC_SUBJECTS.find(([name]) => name === subject)?.[1] || subjectSlugOf(books, subject))}&grade=${grade || ''}&topic=${encodeURIComponent(topic.trim())}`
+            : freeMode && topic.trim().length >= 2 && subject && grade ? `subject=${encodeURIComponent(TOPIC_SUBJECTS.find(([name]) => name === subject)?.[1] || subjectSlugOf(books, subject))}&grade=${grade}&topic=${encodeURIComponent(topic.trim())}`
                 : ''
     const seedCodes = params.get('codes') || ''
     // a hint belongs to one lesson
@@ -242,19 +299,28 @@ export default function LessonPlanPage() {
         setHintFor(contextQuery)
         if (hint) setHint('')
     }
-    // 1. the lesson's 课标 context
+    // 1. the lesson's 课标 context; a draft of the lesson before is put away (it stays in 最近的草稿)
     useEffect(() => {
         setBase(null)
         setContext(null)
         setContextError('')
         setAi({ status: 'idle', reasons: {} })
         setSelected(new Set())
+        setPickAsked(false)
+        setPlan(null)
+        setUnitPlan(null)
+        setStep('')
+        setError('')
+        setTalkError('')
+        setUnitHours(0)
+        setSettings(current => ({ ...current, index: 1, count: 1, countSet: false }))
         if (!contextQuery) return
+        setLessonGone(false)
         let active = true
         // a standard page sends its own code along so it is among the candidates
         getJson(`/api/v1/lesson-plans/context?${contextQuery}${seedCodes ? `&seed=${encodeURIComponent(seedCodes)}` : ''}`)
             .then(data => { if (active) { setBase(data); setContext(data) } })
-            .catch(errorValue => active && setContextError(errorValue.message))
+            .catch(errorValue => active && setContextError(errorText(errorValue)))
         return () => { active = false }
     }, [contextQuery, seedCodes])
 
@@ -263,14 +329,23 @@ export default function LessonPlanPage() {
     useEffect(() => {
         if (!base) return
         const run = ++runRef.current
-        setAi({ status: 'loading', reasons: {} })
+        editsRef.current = new Map()
         const lesson = base.lesson
         const isUnitPick = Boolean(base.unit_lessons?.length)
+        // what the AI ticked, with what the teacher changed meanwhile on top
+        const withEdits = codes => {
+            const next = new Set(codes)
+            for (const [code, on] of editsRef.current) {
+                if (on) next.add(code)
+                else next.delete(code)
+            }
+            return next
+        }
         // when the live pick fails, the 要点 the AI judged for the whole unit earlier are ticked instead of nothing
         const unitFallback = () => {
             const points = (base.ai_points || []).filter(code => base.standards.some(standard => standard.indicators.some(item => item.code === code)))
             if (!points.length) return false
-            setSelected(new Set(points))
+            setSelected(withEdits(points))
             setAi({ status: 'fallback', reasons: {} })
             return true
         }
@@ -287,6 +362,13 @@ export default function LessonPlanPage() {
             setAi({ status: 'lesson', reasons })
             return
         }
+        if (!hint && !pickAsked && automatedVisit()) {
+            setAi({ status: 'manual', reasons: {} })
+            return
+        }
+        setAi({ status: 'loading', reasons: {} })
+        // another lesson, a new hint or leaving the page cancels the pick still running
+        const controller = new AbortController()
         postApi('/api/v1/lesson-plans/pick', {
             lesson: {
                 title: String(lesson.title || '').slice(0, 60),
@@ -297,7 +379,7 @@ export default function LessonPlanPage() {
             },
             hint,
             lessons: (base.unit_lessons || []).map(item => item.title.slice(0, 60)).slice(0, 20)
-        }).then(async payload => {
+        }, controller.signal).then(async payload => {
             if (run !== runRef.current) return
             if (!['ok', 'partial'].includes(payload.data?.status) && unitFallback()) return
             const judged = payload.data?.picks || []
@@ -310,7 +392,7 @@ export default function LessonPlanPage() {
             const missing = [...new Set(chosen.map(item => item.code))].filter(code => !base.standards.some(standard => standard.code === code))
             let standards = base.standards
             if (missing.length) {
-                const more = await getJson(`/api/v1/lesson-plans/context?${contextQuery}&codes=${missing.join(',')}${seedCodes ? `&seed=${encodeURIComponent(seedCodes)}` : ''}`)
+                const more = await getJson(`/api/v1/lesson-plans/context?${contextQuery}&codes=${missing.join(',')}${seedCodes ? `&seed=${encodeURIComponent(seedCodes)}` : ''}`, controller.signal)
                 if (run !== runRef.current) return
                 setContext(more)
                 standards = more.standards
@@ -326,22 +408,28 @@ export default function LessonPlanPage() {
                     }
                 }
             }
-            setSelected(picked)
+            setSelected(withEdits(picked))
             const read = ['ok', 'partial'].includes(payload.data?.status)
             setAi({ status: !read ? 'failed' : strict.length ? 'ok' : closest.length ? 'closest' : 'none', reasons })
-        }).catch(() => { if (run === runRef.current && !unitFallback()) setAi({ status: 'failed', reasons: {} }) })
-    }, [base, hint]) // contextQuery changes always replace base first
+        }).catch(() => { if (!controller.signal.aborted && run === runRef.current && !unitFallback()) setAi({ status: 'failed', reasons: {} }) })
+        return () => controller.abort()
+    }, [base, hint, pickAsked]) // contextQuery changes always replace base first
 
-    const toggle = code => setSelected(current => {
-        const next = new Set(current)
-        if (next.has(code)) next.delete(code)
-        else next.add(code)
-        return next
-    })
+    const toggle = code => {
+        const on = !selected.has(code)
+        editsRef.current.set(code, on)
+        setSelected(current => {
+            const next = new Set(current)
+            if (on) next.add(code)
+            else next.delete(code)
+            return next
+        })
+    }
 
     async function generate() {
-        if (!context || !selected.size) return
+        if (!context || !selected.size || selected.size > MAX_POINTS.lesson) return
         setError('')
+        setTalkError('')
         setCopied(false)
         const lesson = context.lesson
         const subjectName = context.subject_note?.name || subject
@@ -358,9 +446,8 @@ export default function LessonPlanPage() {
         }
         const base = { lesson: { ...lesson, subject_name: subjectName }, meta: { period_minutes: settings.period, lesson_index: request.lesson_index, lesson_count: settings.count } }
         setPlan(null)
-        setTalk(null)
-        setTrial(null)
         const release = await keepAwake()
+        let kept = false
         try {
             setStep('frame')
             const [first, reading] = await Promise.all([
@@ -372,10 +459,11 @@ export default function LessonPlanPage() {
             const partial = { ...base, meta: { ...base.meta, class_size: settings.classSize, lesson_type: settings.lessonType, class_notes: settings.classNotes, teacher_notes: settings.teacherNotes }, frame: first.frame, process: null, practice: null, reading, evidence: first.evidence, checks: first.checks, model: first.model, privacy: first.privacy, created_at: new Date().toISOString(), partial: true }
             setPlan(partial)
             setStored(writeStored(partial))
+            kept = true
             const done = await writeProcess(partial)
             trackUmamiEvent('lesson_plan_drafted', { subject: lesson.subject_slug, indicators: selected.size, risks: done.checks.filter(item => item.level === 'risk').length })
         } catch (errorValue) {
-            setError(aiError(errorValue, true))
+            setError(aiError(errorValue, { drafting: true, kept }))
             setStep('')
         } finally {
             release()
@@ -389,27 +477,29 @@ export default function LessonPlanPage() {
     async function writeProcess(current) {
         const request = requestOf(current)
         setStep('process')
-        const [second, practice] = await Promise.all([
-            postApi('/api/v1/lesson-plans/draft', { ...request, step: 'process', frame: current.frame }).then(response => response.data),
-            extra({ ...request, step: 'practice', frame: current.frame })
-        ])
+        const practiceCall = extra({ ...request, step: 'practice', frame: current.frame })
+        const second = await postApi('/api/v1/lesson-plans/draft', { ...request, step: 'process', frame: current.frame }).then(response => response.data)
+        // 教学过程 is back and checked; the 当堂练习 call may still be running with its own checks
         setStep('check')
+        const practice = await practiceCall
         const { partial: _partial, ...rest } = current
         const done = { ...rest, process: second.process, practice: practice?.practice || null, checks: [...second.checks, ...(practice?.checks || [])], created_at: current.created_at || new Date().toISOString() }
         setPlan(done)
         setStored(writeStored(done))
         setStep('done')
+        revealHeading('lp-doc-title')
         return done
     }
 
     async function continuePlan() {
         if (!plan?.frame || plan.process || step) return
         setError('')
+        setTalkError('')
         const release = await keepAwake()
         try {
             await writeProcess(plan)
         } catch (errorValue) {
-            setError(aiError(errorValue, true))
+            setTalkError(aiError(errorValue, { drafting: true, kept: true }))
             setStep('')
         } finally {
             release()
@@ -417,7 +507,7 @@ export default function LessonPlanPage() {
     }
 
     async function generateUnit() {
-        if (!context || !selected.size) return
+        if (!context || !selected.size || selected.size > MAX_POINTS.unit) return
         setError('')
         setCopied(false)
         setUnitPlan(null)
@@ -438,33 +528,46 @@ export default function LessonPlanPage() {
             })).data
             setUnitPlan({ ...payload, lesson: { ...lesson, subject_name: context.subject_note?.name || subject }, unit_lessons: lessons, hours })
             setStep('done')
+            revealHeading('lp-unit-title')
             trackUmamiEvent('unit_plan_drafted', { subject: lesson.subject_slug, lessons: lessons.length })
         } catch (errorValue) {
-            setError(aiError(errorValue, true))
+            setError(aiError(errorValue, { drafting: true }))
             setStep('')
         }
     }
 
     // 说课稿 (说课比赛) or 试讲稿 + 答辩 (教资面试) from the drafted plan
+    // a plan written to after a later call: kept with the plan in 最近的草稿, and shown unless another plan replaced it
+    function keepPlan(next) {
+        setPlan(current => (current && storedKey(current) === storedKey(next) ? next : current))
+        setStored(writeStored(next))
+    }
+
+    // 说课稿 (说课比赛) or 试讲稿 + 答辩 (教资面试) from the drafted plan, saved with it
     async function makeTalk(step = 'talk') {
         if (!plan?.process || talking) return
         setTalking(step)
-        setError('')
+        setTalkError('')
         try {
             const lesson = plan.lesson
+            const meta = plan.meta || {}
             const payload = (await postApi('/api/v1/lesson-plans/draft', {
                 step,
                 lesson: { title: lesson.title.slice(0, 60), ...(lesson.unit_title ? { unit_title: lesson.unit_title.slice(0, 60) } : {}), ...(lesson.textbook_title ? { textbook_title: lesson.textbook_title } : {}), ...(lesson.edition_name ? { edition_name: lesson.edition_name } : {}), subject_slug: lesson.subject_slug, grade: lesson.grade || null },
                 indicator_codes: plan.evidence.map(item => item.code),
-                period_minutes: plan.meta?.period_minutes || 40,
+                period_minutes: meta.period_minutes || 40,
+                // where the lesson sits, so the script does not say 「第 1 课时（共 1 课时）」 of every lesson
+                lesson_index: meta.lesson_index || 1,
+                lesson_count: meta.lesson_count || 1,
+                ...(meta.class_size ? { class_size: meta.class_size } : {}),
                 frame: plan.frame,
                 process: plan.process
             })).data
-            if (step === 'trial') setTrial(payload.trial)
-            else setTalk(payload.talk)
+            keepPlan({ ...plan, [step]: payload[step] })
+            revealHeading(step === 'trial' ? 'lp-trial-title' : 'lp-talk-title')
             trackUmamiEvent('lesson_plan_export', { format: step, kind: 'lesson' })
         } catch (errorValue) {
-            setError(aiError(errorValue))
+            setTalkError(`${step === 'trial' ? '试讲稿' : '说课稿'}没写出来：${aiError(errorValue)}`)
         } finally {
             setTalking('')
         }
@@ -474,7 +577,7 @@ export default function LessonPlanPage() {
     async function retryPractice() {
         if (!plan?.frame || talking) return
         setTalking('practice')
-        setError('')
+        setTalkError('')
         try {
             const payload = (await postApi('/api/v1/lesson-plans/draft', {
                 step: 'practice',
@@ -484,29 +587,45 @@ export default function LessonPlanPage() {
                 ...(plan.meta?.class_size ? { class_size: plan.meta.class_size } : {}),
                 frame: plan.frame
             })).data
-            const next = { ...plan, practice: payload.practice, checks: [...plan.checks, ...payload.checks] }
-            setPlan(next)
-            setStored(writeStored(next))
+            keepPlan({ ...plan, practice: payload.practice, checks: [...plan.checks, ...payload.checks] })
         } catch (errorValue) {
-            setError(aiError(errorValue))
+            setTalkError(`当堂练习没写出来：${aiError(errorValue)}`)
         } finally {
             setTalking('')
         }
     }
 
     async function copy() {
-        try {
-            await navigator.clipboard.writeText(planToText(plan))
-            setCopied(true)
-            trackUmamiEvent('lesson_plan_export', { format: 'copy', kind: 'lesson' })
-        } catch {
-            setCopied(false)
-        }
+        const done = await copyText(planToText(plan))
+        setCopied(done)
+        if (done) trackUmamiEvent('lesson_plan_export', { format: 'copy', kind: 'lesson' })
+    }
+
+    // a draft from 最近的草稿: shown below whatever lesson is picked, brought into view
+    function restore(item) {
+        setPlan(item)
+        setStep('')
+        setError('')
+        setTalkError('')
+        setCopied(false)
+        revealHeading('lp-doc-title')
+    }
+    function forget(item) {
+        setStored(removeStored(item))
     }
 
     const busy = step === 'frame' || step === 'process' || step === 'check'
     const isUnit = Boolean(context?.unit_lessons?.length)
     const selectedCount = selected.size
+    const maxPoints = isUnit ? MAX_POINTS.unit : MAX_POINTS.lesson
+    const overMax = selectedCount > maxPoints
+    const picking = ai.status === 'loading'
+    // for screen readers: one line that says where the draft is
+    const status = step === 'frame' ? '正在起草：AI 在写目标、重难点和评价'
+        : step === 'process' ? '第 1 步完成，正在写教学过程和当堂练习'
+            : step === 'check' ? '教学过程写好了，正在核验'
+                : step === 'unit' ? '正在做单元设计'
+                    : step === 'done' ? (isUnit ? '单元设计写好了' : '教案写好了') : ''
 
     return (
         <div className={`container ${styles.page}`}>
@@ -522,30 +641,34 @@ export default function LessonPlanPage() {
                 {params.get('for') === 'trial' ? (
                     <p className={styles.trialNote}>教资面试试讲：先在下面选一课（手边没有教材就选「直接写课题」），起草教案后点「试讲稿 + 答辩」，约 1 分钟生成 10 分钟的试讲稿和 3 道答辩题。</p>
                 ) : null}
-                {stored.length && !plan ? (
-                    <div className={styles.history}>
-                        <span>最近的草稿（只存在这台设备的浏览器里）</span>
+                {stored.length ? (
+                    <details className={`${styles.history} ${styles.historyBox}`} open={!plan}>
+                        <summary>最近的草稿（只存在这台设备的浏览器里）{plan ? ` · ${stored.length} 份` : ''}</summary>
                         <ul>
-                            {stored.slice(0, 5).map(item => (
-                                <li key={`${item.lesson?.title}-${item.created_at}`}>
-                                    <button type="button" className={styles.restore} onClick={() => setPlan(item)}>{item.frame?.title || item.lesson?.title}{item.partial ? '（未写完）' : ''}<small>{[item.lesson?.subject_name, item.lesson?.grade ? `${item.lesson.grade} 年级` : '', draftDate(item.created_at)].filter(Boolean).join(' · ')}</small></button>
-                                </li>
-                            ))}
+                            {stored.map(item => {
+                                const name = `${item.frame?.title || item.lesson?.title}${item.partial ? '（未写完）' : ''}`
+                                return (
+                                    <li key={storedKey(item)}>
+                                        <button type="button" className={styles.restore} aria-current={plan && storedKey(plan) === storedKey(item) ? 'true' : undefined} disabled={busy} onClick={() => restore(item)}>{name}{item.talk || item.trial ? `（含${[item.talk ? '说课稿' : '', item.trial ? '试讲稿' : ''].filter(Boolean).join('、')}）` : ''}<small>{[item.lesson?.subject_name, item.lesson?.grade ? `${item.lesson.grade} 年级` : '', draftDate(item.created_at)].filter(Boolean).join(' · ')}</small></button>
+                                        <button type="button" className={styles.historyDelete} disabled={busy} onClick={() => forget(item)}>删除</button>
+                                    </li>
+                                )
+                            })}
                         </ul>
-                    </div>
+                    </details>
                 ) : null}
             </header>
 
             <section className={styles.step} aria-labelledby="lp-pick">
                 <h2 id="lp-pick"><span>1</span>选一课</h2>
-                <div className={styles.modeSwitch} role="tablist" aria-label="选课方式">
-                    <button type="button" role="tab" aria-selected={!freeMode} onClick={() => update({ mode: null, topic: null })}>从教材选</button>
-                    <button type="button" role="tab" aria-selected={freeMode} onClick={() => update({ mode: 'topic', edition: null, lesson: null, unit: null })}>直接写课题</button>
+                <div className={styles.modeSwitch} role="group" aria-label="选课方式">
+                    <button type="button" aria-pressed={!freeMode} disabled={busy} onClick={() => update({ mode: null, topic: null })}>从教材选</button>
+                    <button type="button" aria-pressed={freeMode} disabled={busy} onClick={() => update({ mode: 'topic', edition: null, lesson: null, unit: null })}>直接写课题</button>
                 </div>
                 <div className={styles.pickers}>
                     <label>
                         <span>学科</span>
-                        <select value={subject} onChange={event => update({ subject: event.target.value, edition: null, lesson: null, unit: null })}>
+                        <select value={subject} disabled={busy} onChange={event => update({ subject: event.target.value, edition: null, lesson: null, unit: null, topic: null })}>
                             <option value="">选择学科</option>
                             {(freeMode ? TOPIC_SUBJECTS.map(([name]) => name) : subjects).map(name => <option key={name} value={name}>{name}</option>)}
                         </select>
@@ -553,34 +676,34 @@ export default function LessonPlanPage() {
                     {freeMode ? (
                         <>
                             <label>
-                                <span>年级</span>
-                                <select value={grade || ''} onChange={event => update({ grade: event.target.value })}>
+                                <span>年级（必选）</span>
+                                <select value={grade || ''} disabled={busy} onChange={event => update({ grade: event.target.value, topic: null })}>
                                     <option value="">选择年级</option>
                                     {[1, 2, 3, 4, 5, 6, 7, 8, 9].map(value => <option key={value} value={value}>{value} 年级</option>)}
                                 </select>
                             </label>
                             <label className={styles.wide}>
                                 <span>课题</span>
-                                <TopicInput value={topic} onCommit={value => update({ topic: value })} />
+                                <TopicInput value={topic} ready={Boolean(subject && grade) && !busy} onCommit={value => update({ topic: value })} />
                             </label>
                         </>
                     ) : (
                         <>
                             <label>
                                 <span>教材</span>
-                                <select value={edition} disabled={!subject} onChange={event => update({ edition: event.target.value, lesson: null, unit: null })}>
+                                <select value={edition} disabled={!subject || busy} onChange={event => update({ edition: event.target.value, lesson: null, unit: null })}>
                                     <option value="">{subject ? '选择年级和册次' : '先选学科'}</option>
                                     {subjectBooks.map(item => <option key={item.edition_id} value={item.edition_id}>{item.edition_name} · {item.grade} 年级{item.volume}</option>)}
                                 </select>
                             </label>
                             <label className={styles.wide}>
                                 <span>哪一课</span>
-                                <select value={chapter ? `chapter::${chapter}` : lessonId} disabled={!edition || !lessons} onChange={event => {
+                                <select value={chapter ? `chapter::${chapter}` : lessonId} disabled={!edition || !lessons || busy} onChange={event => {
                                     const value = event.target.value
                                     if (value.startsWith('chapter::')) update({ chapter: value.slice('chapter::'.length), lesson: null, unit: null })
                                     else update({ lesson: value, chapter: null, unit: null })
                                 }}>
-                                    <option value="">{!edition ? '先选教材' : !lessons ? '正在读取目录…' : lessonGroups.length ? '选择一课，或整个单元' : '这册暂无课时目录，请改用「直接写课题」'}</option>
+                                    <option value="">{!edition ? '先选教材' : !lessons ? '正在读取目录…' : lessons.failed ? '目录没读到，请刷新页面再试' : lessonGroups.length ? '选择一课，或整个单元' : '这册暂无课时目录，请改用「直接写课题」'}</option>
                                     {lessonGroups.map(group => (
                                         <optgroup key={group.name} label={group.name}>
                                             {/* a 目录 unit with no lessons under it is offered as the one item; there is no unit of lessons to design */}
@@ -594,6 +717,8 @@ export default function LessonPlanPage() {
                     )}
                 </div>
                 {!freeMode && lessons?.lessons?.length ? <p className={styles.small}>{lessonSource(lessons)}</p> : null}
+                {freeMode && topic && !grade ? <p className={styles.small}>先选年级：AI 只读这个年级的课标找要点。</p> : null}
+                {!freeMode && lessonGone && !lessonId ? <p className={styles.small} role="status">这本书里没有找到上次那一课（教材换成了最新印次），请重新选一课。</p> : null}
             </section>
 
             {contextError ? <p className={styles.error} role="alert">{contextError}</p> : null}
@@ -626,10 +751,12 @@ export default function LessonPlanPage() {
                                 : ai.status === 'none' ? 'AI 没有找到直接对应的要点。请从下面的候选里自己勾选，或换个课题写法。'
                                     : ai.status === 'lesson' ? `已按这一课的教材原文勾好它主要在教的 ${selectedCount} 条要点（AI 事先逐课读过，每条附这一课的原话）。请核对；想换个角度，在下面补一句，AI 会重新找。`
                                     : ai.status === 'fallback' ? 'AI 这次没能读完要点，先勾上了它此前按整个单元判断的要点：不一定都是这一课教的，请读原文，按这一课增删。'
-                                    : ai.status === 'failed' ? 'AI 这次没能读完要点。请读下面候选的原文，自己勾选：机器对齐和字面匹配可能出错，比如会把「分数的基本性质」对到「等式的基本性质」。' : ''}
+                                    : ai.status === 'failed' ? 'AI 这次没能读完要点。请读下面候选的原文，自己勾选：机器对齐和字面匹配可能出错，比如会把「分数的基本性质」对到「等式的基本性质」。'
+                                    : ai.status === 'manual' ? '可以让 AI 把这个年级的课标读一遍，勾出这一课要教的要点；也可以直接从下面的候选里勾选。' : ''}
                     </p>
+                    {ai.status === 'manual' ? <p><button type="button" className="btn btn-secondary" onClick={() => setPickAsked(true)}>让 AI 找要点</button></p> : null}
 
-                    {ai.status !== 'loading' ? <HintInput key={contextQuery} onSubmit={setHint} current={hint} /> : null}
+                    {ai.status !== 'loading' && ai.status !== 'manual' ? <HintInput key={contextQuery} onSubmit={setHint} current={hint} /> : null}
 
                     <ul className={styles.standards}>
                         {context.standards.map(standard => (
@@ -655,7 +782,7 @@ export default function LessonPlanPage() {
                     </ul>
                     {!context.standards.length ? <p className={styles.small}>这一课还没有对齐的课标。等 AI 读完，或改用「直接写课题」。</p> : null}
                     {context.standards.length ? <ObjectiveCheck key={`check:${contextQuery}`}lesson={draftLesson(context.lesson)} codes={[...selected, ...context.standards.flatMap(standard => standard.indicators.map(item => item.code)).filter(code => !selected.has(code))]} taught={[...selected]} isUnit={isUnit} open={params.get('check') === '1'} /> : null}
-                    {selectedCount && ai.status !== 'loading' ? <PromptCopy context={context} selected={selected} isUnit={isUnit} settings={settings} /> : null}
+                    {selectedCount && ai.status !== 'loading' ? <PromptCopy context={context} selected={selected} isUnit={isUnit} settings={settings} unitHours={unitHours || defaultUnitHours(context.unit_lessons)} /> : null}
                 </section>
             ) : null}
 
@@ -685,10 +812,10 @@ export default function LessonPlanPage() {
                             <textarea rows={3} maxLength={1000} value={settings.teacherNotes} onChange={event => setSettings({ ...settings, teacherNotes: event.target.value })} placeholder="例如：想用一个贯穿单元的真实任务；某两课想合并；学校的实践条件。" />
                         </label>
                         <div className={styles.go}>
-                            <button type="button" className="btn btn-primary" disabled={step === 'unit' || !selectedCount} onClick={generateUnit}>
-                                {step === 'unit' ? 'AI 正在做单元设计（约 30–50 秒）…' : `按选定的 ${selectedCount} 条要点起草单元设计`}
+                            <button type="button" className="btn btn-primary" disabled={step === 'unit' || !selectedCount || overMax || picking} onClick={generateUnit}>
+                                {step === 'unit' ? 'AI 正在做单元设计（约 30–50 秒）…' : picking ? '等 AI 找完要点…' : overMax ? `已选 ${selectedCount} 条要点，最多 ${maxPoints} 条：请去掉 ${selectedCount - maxPoints} 条` : `按选定的 ${selectedCount} 条要点起草单元设计`}
                             </button>
-                            {!selectedCount ? <span className={styles.small}>先在上面勾选这个单元依据的要点。</span> : null}
+                            {!selectedCount ? <span className={styles.small}>先在上面勾选这个单元依据的要点。</span> : <span className={styles.small}>一个单元最多选 {maxPoints} 条要点。</span>}
                         </div>
                         {error ? <p className={styles.error} role="alert">{error}</p> : null}
                     </section>
@@ -737,18 +864,19 @@ export default function LessonPlanPage() {
                         <textarea rows={3} maxLength={1000} value={settings.teacherNotes} onChange={event => setSettings({ ...settings, teacherNotes: event.target.value })} placeholder="例如：想用折纸活动导入；重点练习说理；学校没有多媒体。" />
                     </label>
                     <div className={styles.go}>
-                        <button type="button" className="btn btn-primary" disabled={busy || !selectedCount} onClick={generate}>
-                            {busy ? '正在起草…' : `按选定的 ${selectedCount} 条要点起草教案`}
+                        {/* once a plan is on the page, drafting again replaces it: the button says so and steps back */}
+                        <button type="button" className={`btn ${plan && !busy ? 'btn-secondary' : 'btn-primary'}`} disabled={busy || !selectedCount || overMax || picking} onClick={generate}>
+                            {busy ? '正在起草…' : picking ? '等 AI 找完要点…' : overMax ? `已选 ${selectedCount} 条要点，最多 ${maxPoints} 条：请去掉 ${selectedCount - maxPoints} 条` : plan ? '重新起草（会替换下面的教案）' : `按选定的 ${selectedCount} 条要点起草教案`}
                         </button>
-                        {!selectedCount ? <span className={styles.small}>先在上面勾选至少一条要点。</span> : null}
+                        {!selectedCount ? <span className={styles.small}>先在上面勾选至少一条要点。</span> : overMax ? <span className={styles.small}>一节课最多选 {maxPoints} 条要点，只留这节课真正要教的。</span> : null}
                     </div>
                     {busy || step === 'done' ? (
-                        <ol className={styles.progress} aria-live="polite">
+                        <ol className={styles.progress}>
                             {STEPS.map(item => {
                                 const order = STEPS.findIndex(s => s.key === item.key)
                                 const current = STEPS.findIndex(s => s.key === step)
                                 const state = step === 'done' || order < current ? 'done' : order === current ? 'active' : 'waiting'
-                                return <li key={item.key} data-state={state}><b>{item.label}</b><span>{item.hint}</span></li>
+                                return <li key={item.key} data-state={state}><b>{item.label}</b><span>{item.hint}</span><span className="sr-only">{state === 'done' ? '（已完成）' : state === 'active' ? '（进行中）' : '（等待）'}</span></li>
                             })}
                         </ol>
                     ) : null}
@@ -757,10 +885,15 @@ export default function LessonPlanPage() {
                 )
             ) : null}
 
-            {unitPlan && isUnit ? <UnitDocument plan={unitPlan} edition={edition} subject={subject} onCopy={async () => { try { await navigator.clipboard.writeText(unitToText(unitPlan)); setCopied(true) } catch { setCopied(false) } }} copied={copied} /> : null}
-            {plan && !isUnit ? <PlanDocument plan={plan} done={!busy && Boolean(plan.process)} writing={busy} onCopy={copy} copied={copied} onTalk={makeTalk} talking={talking} onPractice={retryPractice} onContinue={continuePlan} /> : null}
-            {talk && plan && !isUnit ? <TalkScriptView talk={talk} title={plan.frame?.title || plan.lesson.title} /> : null}
-            {trial && plan && !isUnit ? <TrialScriptView trial={trial} title={plan.frame?.title || plan.lesson.title} /> : null}
+            <p className="sr-only" role="status">{status}</p>
+            {inWeChat() && ((unitPlan && isUnit) || plan?.process) ? <p className={styles.inAppNote}>微信里不能直接下载：点右上角「···」选「在浏览器打开」，或用「复制全文」</p> : null}
+            {unitPlan && isUnit ? <UnitDocument plan={unitPlan} edition={edition} subject={subject} onCopy={async () => setCopied(await copyText(unitToText(unitPlan)))} copied={copied} /> : null}
+            {/* the 说课稿/试讲稿/练习 buttons sit at the plan's head; their errors show right above it */}
+            {plan && talkError ? <p className={styles.error} role="alert">{talkError}</p> : null}
+            {plan ? <PlanDocument plan={plan} done={!busy && Boolean(plan.process)} writing={busy} onCopy={copy} copied={copied} onTalk={makeTalk} talking={talking} onPractice={retryPractice} onContinue={continuePlan} /> : null}
+            {plan?.talk ? <TalkScriptView talk={plan.talk} title={plan.frame?.title || plan.lesson.title} /> : null}
+            {plan?.trial ? <TrialScriptView trial={plan.trial} title={plan.frame?.title || plan.lesson.title} /> : null}
+            <CopyFallback />
         </div>
     )
 }
@@ -798,14 +931,40 @@ function HintInput({ onSubmit, current }) {
     )
 }
 
-function TopicInput({ value, onCommit }) {
+// 「找课标」 waits for 学科 and 年级; changing either clears the committed topic but keeps the typed words
+function TopicInput({ value, ready, onCommit }) {
     const [text, setText] = useState(value)
-    useEffect(() => setText(value), [value])
+    useEffect(() => { if (value) setText(value) }, [value])
+    const commit = () => { if (ready && text.trim().length >= 2) onCommit(text.trim()) }
     return (
         <span className={styles.topicRow}>
-            <input type="text" value={text} maxLength={60} placeholder="例如：分数的基本性质、浮力、植物的一生" onChange={event => setText(event.target.value)} onKeyDown={event => { if (event.key === 'Enter') onCommit(text.trim()) }} />
-            <button type="button" className="btn btn-secondary" onClick={() => onCommit(text.trim())} disabled={text.trim().length < 2}>找课标</button>
+            <input type="text" value={text} maxLength={60} placeholder="例如：分数的基本性质、浮力、植物的一生" onChange={event => setText(event.target.value)} onKeyDown={event => { if (event.key === 'Enter') commit() }} />
+            <button type="button" className="btn btn-secondary" onClick={commit} disabled={!ready || text.trim().length < 2} title={ready ? undefined : '先选学科和年级'}>找课标</button>
         </span>
+    )
+}
+
+// where the clipboard is refused, the text to copy, selected in a box at the foot of the screen
+function CopyFallback() {
+    const [text, setText] = useState('')
+    const boxRef = useRef(null)
+    useEffect(() => {
+        const show = event => setText(String(event.detail || ''))
+        window.addEventListener(COPY_FALLBACK_EVENT, show)
+        return () => window.removeEventListener(COPY_FALLBACK_EVENT, show)
+    }, [])
+    useEffect(() => {
+        if (!text || !boxRef.current) return
+        boxRef.current.focus()
+        boxRef.current.select()
+    }, [text])
+    if (!text) return null
+    return (
+        <div className={styles.copyFallback} role="dialog" aria-label="手动复制">
+            <p role="alert">这个浏览器不让直接复制。下面的文字已全选：长按选「复制」（电脑上按 Ctrl+C）。</p>
+            <textarea ref={boxRef} readOnly rows={6} value={text} aria-label="要复制的文字" />
+            <button type="button" className="btn btn-secondary" onClick={() => setText('')}>关闭</button>
+        </div>
     )
 }
 
@@ -906,7 +1065,7 @@ function TalkScriptView({ talk, title }) {
         <article className={styles.doc} aria-labelledby="lp-talk-title">
             <div className={styles.docActions}>
                 <span className={styles.aiBadge}>AI 根据上面的教案改写 · 约 {talk.minutes} 分钟</span>
-                <button type="button" className="btn btn-secondary" onClick={async () => { try { await navigator.clipboard.writeText(text); setCopied(true) } catch { setCopied(false) } }}>{copied ? '已复制' : '复制说课稿'}</button>
+                <button type="button" className="btn btn-secondary" onClick={async () => setCopied(await copyText(text))}>{copied ? '已复制' : '复制说课稿'}</button>
                 <button type="button" className="btn btn-secondary" onClick={() => downloadScriptWord(`《${title}》说课稿`, talk.sections, `${title}-说课稿`)}>下载 Word</button>
             </div>
             <header className={styles.docHead}><h2 id="lp-talk-title">《{title}》说课稿</h2><p>说课比赛、教师资格面试用。只改写教案已有的内容，没有新增活动。</p></header>
@@ -930,7 +1089,7 @@ function TrialScriptView({ trial, title }) {
         <article className={styles.doc} aria-labelledby="lp-trial-title">
             <div className={styles.docActions}>
                 <span className={styles.aiBadge}>AI 根据上面的教案改写 · 约 {trial.minutes} 分钟</span>
-                <button type="button" className="btn btn-secondary" onClick={async () => { try { await navigator.clipboard.writeText(text); setCopied(true) } catch { setCopied(false) } }}>{copied ? '已复制' : '复制试讲稿'}</button>
+                <button type="button" className="btn btn-secondary" onClick={async () => setCopied(await copyText(text))}>{copied ? '已复制' : '复制试讲稿'}</button>
                 <button type="button" className="btn btn-secondary" onClick={() => downloadScriptWord(`《${title}》试讲稿`, [...trial.stages.map(item => ({ heading: `${item.name}（约 ${item.minutes} 分钟）`, text: item.text })), ...(trial.board.length ? [{ heading: '板书', text: trial.board.join('\n') }] : []), { heading: '答辩准备', text: trial.defense.map((item, index) => `${index + 1}. ${item.question}\n${item.answer}`).join('\n') }], `${title}-试讲稿`)}>下载 Word</button>
             </div>
             <header className={styles.docHead}><h2 id="lp-trial-title">《{title}》试讲稿</h2><p>教师资格面试用：面对评委模拟上课 10 分钟，再答辩。只改写教案已有的内容。灰色括号里是模拟的学生回答和板书时机。</p></header>
@@ -962,34 +1121,55 @@ function CheckList({ checks }) {
     )
 }
 
-// For teachers who write with 豆包、DeepSeek or 元宝: the ticked 要点, verbatim with pages, and the rules kebiao's own
-// drafts follow, as one prompt to paste there.
-function PromptCopy({ context, selected, isUnit, settings }) {
+// For teachers who write with 豆包、DeepSeek or 元宝: the ticked 要点, verbatim with pages, what the teacher said about
+// the class, and the rules kebiao's own drafts follow, as one prompt to paste there.
+function PromptCopy({ context, selected, isUnit, settings, unitHours }) {
     const [copied, setCopied] = useState(false)
     const lesson = context.lesson
     const points = context.standards.flatMap(standard => standard.indicators.filter(item => selected.has(item.code)))
     const period = settings?.period || 40
     const what = isUnit ? '单元整体教学设计（单元大概念、基本问题、单元目标、表现性任务、课时安排）' : `一份 ${period} 分钟的教案`
+    const unitLessons = context.unit_lessons || []
+    // kebiao's 课堂学习目标 for this lesson, the starting point its own draft uses
+    const goals = !isUnit ? context.lesson_goals?.items || [] : []
+    const situation = [
+        isUnit ? `课时：教材里本单元的课是${unitLessons.map(item => `「${item.title}」`).join('、')}，共 ${unitHours} 课时，每课时 ${period} 分钟。` : `课时：本课共 ${settings.count} 课时，这是第 ${Math.min(settings.index, settings.count)} 课时，${period} 分钟。`,
+        !isUnit && settings.lessonType ? `课型：${settings.lessonType}。` : '',
+        settings.classNotes?.trim() ? `班级情况：${settings.classNotes.trim()}` : '',
+        settings.teacherNotes?.trim() ? `老师的想法：${settings.teacherNotes.trim()}` : ''
+    ].filter(Boolean)
+    const rules = isUnit ? [
+        '1. 先写「单元课标分析」：这些要点要学生做到什么，本单元承担哪一部分，单元里的课怎样分工落实。',
+        '2. 写单元大概念 1 条、基本问题 2–3 个。',
+        '3. 单元目标 3–5 条，每条以「学生能」开头，写清条件、行为和程度，并在括号里注明依据的要点编码。',
+        '4. 先定评价证据：一个贯穿单元的表现性任务（情境、学生要交的成果、分级评价标准），再写每条目标看什么证据。',
+        '5. 课时安排：按上面的课时数把课排进教材本单元的课，每课时写教学重点和推进哪几条目标；作业符合「双减」要求。',
+        '6. 要点里写明「不包括」「不要求」的内容不要出现；只用上面的要点编码，不要编造课标编码或原文。'
+    ] : [
+        '1. 先写「课标分析」：逐条说清这条要点要学生做到什么，关键行为词（如「理解」「运用」）要求到什么程度，本课承担哪一部分，怎样用教材去落实它（不要只把教材讲一遍）。',
+        `2. 教学目标 2–4 条，每条以「学生能」开头，写清条件、行为和程度，用看得见的动词，并在括号里注明依据的要点编码。${goals.length ? '可以从下面已写好的课堂学习目标出发调整。' : ''}`,
+        '3. 先写评价任务（每条目标至少对应一个），再写教学过程（环节、时间、组织形式、教师活动、学生活动、关键问题与预设回答、设计意图），每个环节注明推进哪条目标。',
+        `4. 按常规大班设计（约 ${settings?.classSize || 45} 人，按排就座，一位老师）：以讲解和示范为主线，讲之前留 1–3 分钟让学生先想、先试，再同桌交流；小组活动一节课最多 2 次；写清老师怎样看到全班学会没有，不要只靠举手。`,
+        '5. 附当堂练习与检测题（基础、变式、提高）和参考答案；作业分层并写预计用时，符合「双减」要求。',
+        '6. 要点里写明「不包括」「不要求」的内容不要出现；只用上面的要点编码，不要编造课标编码或原文。'
+    ]
     const text = [
         `请你作为${context.subject_note?.name || ''}教研员，依据下面的课程标准要点，为${[lesson.edition_name, lesson.textbook_title].filter(Boolean).join('')}${lesson.textbook_title ? '的' : ''}「${lesson.title}」${lesson.grade ? `（${lesson.grade} 年级）` : ''}写${what}。`,
         '',
         '课标依据（《义务教育课程标准（2022年版2025年修订）》原文）：',
         ...points.map(item => `- ${item.code}：${item.text}（修订版第 ${item.pages.join('、')} 页）`),
+        ...(goals.length ? ['', 'kebiao 已为这一课写好的课堂学习目标（可作起点）：', ...goals.map(([goal, basis]) => `- ${goal}（依据 ${basis.join('、')}）`)] : []),
+        '',
+        '班级与课时：',
+        ...situation.map(line => `- ${line}`),
         '',
         '要求：',
-        '1. 先写「课标分析」：逐条说清这条要点要学生做到什么，关键行为词（如「理解」「运用」）要求到什么程度，本课承担哪一部分，怎样用教材去落实它（不要只把教材讲一遍）。',
-        '2. 教学目标 2–4 条，每条以「学生能」开头，写清条件、行为和程度，用看得见的动词，并在括号里注明依据的要点编码。',
-        '3. 先写评价任务（每条目标至少对应一个），再写教学过程（环节、时间、组织形式、教师活动、学生活动、关键问题与预设回答、设计意图），每个环节注明推进哪条目标。',
-        `4. 按常规大班设计（约 ${settings?.classSize || 45} 人，按排就座，一位老师）：以讲解和示范为主线，讲之前留 1–3 分钟让学生先想、先试，再同桌交流；小组活动一节课最多 2 次；写清老师怎样看到全班学会没有，不要只靠举手。`,
-        '5. 附当堂练习与检测题（基础、变式、提高）和参考答案；作业分层并写预计用时，符合「双减」要求。',
-        '6. 要点里写明「不包括」「不要求」的内容不要出现；只用上面的要点编码，不要编造课标编码或原文。'
+        ...rules
     ].join('\n')
     async function copy() {
-        try {
-            await navigator.clipboard.writeText(text)
-            setCopied(true)
-            trackUmamiEvent('lesson_plan_export', { format: 'prompt', kind: isUnit ? 'unit' : 'lesson' })
-        } catch { setCopied(false) }
+        const done = await copyText(text)
+        setCopied(done)
+        if (done) trackUmamiEvent('lesson_plan_export', { format: 'prompt', kind: isUnit ? 'unit' : 'lesson' })
     }
     return (
         <div className={styles.promptCopy}>
@@ -1013,7 +1193,8 @@ function LessonChecks({ context, selected }) {
         return () => { active = false }
     }, [slug])
     if (!slug || !bank) return null
-    const items = questionsForLesson(bank, { grade: context.lesson.grade, title: context.lesson.title, chapters: [context.lesson.unit_title || ''], points: [...selected] }).slice(0, 3)
+    // a 语文 or 英语 question is about one text: only questions about this lesson's text are offered
+    const items = questionsForLesson(bank, { grade: context.lesson.grade, title: context.lesson.title, chapters: [context.lesson.unit_title || ''], points: [...selected], sameText: ['chinese', 'english'].includes(slug) }).slice(0, 3)
     if (!items.length) return null
     const back = `${window.location.pathname}${window.location.search}`
     return (
