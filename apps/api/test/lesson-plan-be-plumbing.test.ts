@@ -152,10 +152,11 @@ test('the draft log line names the step, the attempts and the provider status of
 test('the draft log line carries the 自查 when it ran', async t => {
     withKey(t)
     let calls = 0
-    // the first frame breaks a hard rule (an objective not starting 「学生能」), the fix keeps it
+    // the first frame breaks a hard rule (an objective with no 依据), the fix keeps it
     t.mock.method(globalThis, 'fetch', async () => {
         calls += 1
-        return answer(calls === 1 ? frame('借助折纸和画图，说出分数的分子和分母同时乘或除以相同的数，分数大小不变') : frame())
+        const first = frame()
+        return answer(calls === 1 ? { ...first, objectives: [{ ...first.objectives[0], basis: [] }] } : frame())
     })
     const { response, ai } = await loggedAi(t, 'selfcheck', () => app.request('/api/v1/lesson-plans/draft', { method: 'POST', headers: { 'content-type': 'application/json', 'x-forwarded-for': '203.0.113.202' }, body: JSON.stringify({ step: 'frame', lesson: { title: '分数的基本性质', subject_slug: 'math', grade: 5 }, indicator_codes: [LIMITED] }) }))
     assert.equal(response.status, 200)

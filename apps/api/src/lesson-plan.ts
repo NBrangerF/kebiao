@@ -211,7 +211,7 @@ export function classroomChecks(process: Process, periodMinutes: number, grade: 
     return checks
 }
 
-// 体育与健康课标 on 运动负荷, as the 11-08 audit quoted it from the 2025 修订版 PDF (p127); this text is not in data/v2
+// 体育与健康课标, 课程实施·教学建议「科学设置运动负荷」; checked against the 2022 版 text (OCR, 11-09); not in data/v2
 export const PE_LOAD = '每节课群体运动密度应不低于 75%，个体运动密度应不低于 50%；班级所有学生平均心率原则上在 140～160 次/分；每节课应有 10 分钟左右的体能练习；要引导学生做好充分的准备活动'
 function peLoadChecks(process: Process): PlanCheck[] {
     const missing: string[] = []
@@ -510,7 +510,7 @@ function fieldBlock(input: DraftInput) {
         '- 结构：准备部分（集合、热身 5–8 分钟）— 基本部分（学·练·赛：讲解示范要短，分组练习、游戏或比赛，含一个约 10 分钟的体能练习环节）— 结束部分（放松、小结 3–5 分钟）。环节名用「准备部分：……」「基本部分：……」「结束部分：……」。',
         '- 分组轮换：四十多人分 4–8 组，写清队形、分组、轮换顺序和信号；少讲解、少调队，让所有学生都动起来。',
         '- 场地上没有课桌和座位：不写纸笔练习、学习单和「前后桌」；老师看全班用观察、示范展示、计数计时和同伴互评。',
-        `- 课标对运动负荷的要求：${PE_LOAD}（体育与健康课标，修订版 PDF 第 127 页）。`,
+        `- 课标对运动负荷的要求：${PE_LOAD}（体育与健康课标·教学建议「科学设置运动负荷」）。`,
         '- 写清安全要求：场地和器材检查、练习间距、保护与帮助。'
     ]
     const moves = subjectMoves(input)

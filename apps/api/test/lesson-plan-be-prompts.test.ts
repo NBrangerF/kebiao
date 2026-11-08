@@ -185,7 +185,7 @@ test('a 体育 lesson on the 操场 gets the field block and its load is checked
     const lesson = { title: '上挑式、下压式传接棒', subject_slug: 'pe', grade: 4 }
     await draft({ step: 'frame', lesson, indicator_codes: ['PE-S2-SS-02.1'], class_notes: '在操场上课，接力棒 12 根。' })
     assert.match(prompts[0], /体育课，在操场或场馆上/u)
-    assert.match(prompts[0], /群体运动密度应不低于 75%.*140～160 次\/分.*10 分钟左右的体能练习.*修订版 PDF 第 127 页/u)
+    assert.match(prompts[0], /群体运动密度应不低于 75%.*140～160 次\/分.*10 分钟左右的体能练习.*科学设置运动负荷/u)
     assert.ok(!prompts[0].includes('按排就座'))
     await draft({ step: 'frame', lesson: { ...lesson, title: '预防近视' }, indicator_codes: ['PE-S2-HE-01.1'] })
     assert.match(prompts[1], /按排就座/u)

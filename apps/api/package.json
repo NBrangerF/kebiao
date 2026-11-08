@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "tsx src/index.ts",
-    "test": "tsx test/api.test.ts && tsx test/lesson-plan.test.ts",
+    "test": "tsx test/api.test.ts && tsx test/lesson-plan.test.ts && tsx test/lesson-plan-be-prompts.test.ts && tsx test/lesson-plan-be-plumbing.test.ts",
     "typecheck": "tsc -p tsconfig.json --noEmit"
   },
   "dependencies": {
