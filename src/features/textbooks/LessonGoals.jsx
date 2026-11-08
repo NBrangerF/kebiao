@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
+import { copyText } from '../lesson-plan/copyText.js'
 import styles from './LessonGoals.module.css'
 
 const standardHref = code => `/standards/${code.replace(/\.\d+$/u, '')}#${code}`
@@ -17,10 +18,7 @@ export default function LessonGoals({ goals, lessonHref, focus = null, compact =
     if (!items.length) return null
     async function copy() {
         const text = items.map(([text, basis, from], index) => `${index + 1}. ${text}（依据 ${basis.join('、')}：「${from}」）`).join('\n')
-        try {
-            await navigator.clipboard.writeText(text)
-            setCopied(true)
-        } catch { setCopied(false) }
+        setCopied(await copyText(text))
     }
     return (
         <section className={`${styles.goals} ${compact ? styles.compact : ''}`} aria-label="课堂学习目标">
