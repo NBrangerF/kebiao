@@ -644,7 +644,7 @@ export function registerLessonPlanRoutes(app: Hono<ApiBindings>, deps: Deps) {
             const run = await draftPractice(input, frame)
             c.set('aiMetrics', { feature: 'lesson_plan', used: run.status === 'ok', status: run.status, model: run.model, protocol: 'chat_completions', latency_ms: run.latency_ms, redaction_count: privacy.redaction_count, input_tokens: run.usage?.input_tokens || 0, output_tokens: run.usage?.output_tokens || 0, total_tokens: run.usage?.total_tokens || 0 })
             if (!run.output) return deps.apiError(c, run.status === 'disabled' ? 503 : 502, `draft_${run.status}`, run.status === 'disabled' ? 'AI 起草暂不可用。' : 'AI 这次没有写出可用的练习题。')
-            return deps.ok(c, version as never, { step: 'practice', practice: run.output, checks: checkPractice(run.output, frame), model: run.model, latency_ms: run.latency_ms, self_check: run.self_check ?? null })
+            return deps.ok(c, version as never, { step: 'practice', practice: run.output, checks: checkPractice(run.output, frame, input), model: run.model, latency_ms: run.latency_ms, self_check: run.self_check ?? null })
         }
 
         if (body.step === 'frame') {

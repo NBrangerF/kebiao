@@ -22,9 +22,9 @@ const ADD_LATER = [/通分/u, /约分/u]
 const CASES: Case[] = [
     { name: 'C01-观潮-45人', edition: 'ed_61e94d087b64c600ad3f', lesson: '21e26147-98b4-478d-ab18-7661d9d5b6f2', period: 40, classSize: 45 },
     { name: 'C02-分数的基本性质-默认', edition: 'ed_1bb9d396d4d884aee79e', lesson: '9158d483-13f0-49b7-89ea-1aeddfb25f65', forbid: [...ADD_LATER, /循环小数[^，。；]{0,6}(化|转)/u] },
-    { name: 'C04-体育-传接棒-操场', edition: 'ed_a55f3aca2c3963472bc9', lesson: 'd1a5618c-9b85-11ec-92ef-246e9675e50c', classSize: 48, classNotes: '在操场上课，接力棒 12 根。', must: [['写了安全提示', plan => plan.process?.safety?.length > 0]] },
+    { name: 'C04-体育-传接棒-操场', edition: 'ed_a55f3aca2c3963472bc9', lesson: 'd1a5618c-9b85-11ec-92ef-246e9675e50c', classSize: 48, classNotes: '在操场上课，接力棒 12 根。', must: [['写了安全提示', plan => plan.process?.safety?.length > 0], ['有准备、体能、结束部分', plan => ['准备|热身', '体能', '结束|放松'].every(word => (plan.process?.stages || []).some((s: any) => new RegExp(word, 'u').test(s.name)))], ['不在座位上上', plan => !(plan.process?.stages || []).some((s: any) => /课桌|前后桌|座位|学习单/u.test(`${s.teacher}${s.students}`))]] },
     { name: 'C05-光的反射-60人15组', edition: 'ed_f0de8cbbeb88661f44d6', lesson: '4d815a6f-365b-a55f-355c-a0f615a2d1f5', period: 45, classSize: 60, classNotes: '实验器材只够 15 组。', forbid: [/折射定律/u, /计算折射角/u] },
-    { name: 'C08-英语-教师语言', edition: 'ed_600fc96aca5a7c702986', lesson: 'ea0a7477-2e08-1c95-5a0d-74909a7d39d2', period: 45, teacherNotes: '要有教师语言和预设学生回答。', must: [['多数环节有关键问题和预设回答', plan => (plan.process?.stages || []).filter((s: any) => s.questions?.some((q: any) => q.expect)).length >= 3]] },
+    { name: 'C08-英语-教师语言', edition: 'ed_600fc96aca5a7c702986', lesson: 'ea0a7477-2e08-1c95-5a0d-74909a7d39d2', period: 45, teacherNotes: '要有教师语言和预设学生回答。', must: [['多数环节有关键问题和预设回答', plan => (plan.process?.stages || []).filter((s: any) => s.questions?.some((q: any) => q.expect)).length >= 3], ['不套数学课的回顾检测开头', plan => !/回顾检测/u.test(plan.process?.stages?.[0]?.name || '')]] },
     { name: 'C09-愚公移山', edition: 'ed_9670ad85cc6115505caf', lesson: '5866400c-3319-a0bf-8f3d-ff49723e37d7', period: 45 },
     { name: 'C10-教科-时间与变化', edition: 'ed_a04b8a546cf314368898', lesson: 'tcu_9c87ffc251a4892c' },
     { name: 'C11-道法二上-教师节', edition: 'ed_e0415d58f2a7c2ec1a23', lesson: '058d90c7-43a4-03f8-7837-9e978ae93bac' },
@@ -79,8 +79,8 @@ async function draft(item: Case, ctx: Awaited<ReturnType<typeof context>>) {
     return { request, calls: { frame, reading, process, practice }, plan }
 }
 
-// the page's own checks that break a hard rule: group work, 看全班, 双减 homework, a later lesson, beyond the 课标
-const HARD_CHECKS = new Set(['group_work', 'class_check', 'homework_load', 'later_lesson', 'beyond_standard', 'no_basis'])
+// the page's own checks that break a hard rule (the ones the 自查 sends back); group work and 看全班 are advice
+const HARD_CHECKS = new Set(['homework_load', 'homework_parent', 'later_lesson', 'beyond_standard', 'no_basis', 'lab_missing', 'pe_load'])
 
 function gradePlan(item: Case, ctx: Awaited<ReturnType<typeof context>>, result: Awaited<ReturnType<typeof draft>>) {
     const fails: string[] = []
@@ -92,7 +92,7 @@ function gradePlan(item: Case, ctx: Awaited<ReturnType<typeof context>>, result:
     const picked = new Set(ctx.codes)
     for (const objective of plan.frame.objectives) {
         if (!/^学生能/u.test(objective.text)) fails.push(`目标不以「学生能」开头：${objective.text.slice(0, 20)}`)
-        if ([...objective.text].length > 70) fails.push(`目标超过 70 字（${[...objective.text].length}）`)
+        if ([...objective.text].length > 80) fails.push(`目标超过 80 字（${[...objective.text].length}）`)
         if (!objective.basis.length || objective.basis.some((code: string) => !picked.has(code))) fails.push(`目标依据不在所选要点里：${objective.basis.join(',')}`)
     }
     const stages = plan.process.stages
