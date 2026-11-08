@@ -34,6 +34,8 @@
     background: rgba(0, 0, 0, 0.2);
     color: var(--kb-moon);
     font: inherit;
+    /* under 16 px iOS zooms the page on focus and leaves it zoomed */
+    font-size: 16px;
     line-height: 1.6;
 }
 
