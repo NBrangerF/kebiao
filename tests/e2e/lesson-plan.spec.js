@@ -157,6 +157,8 @@ test('AI 备课: the AI search ticks the closest 要点, the draft cites it and 
     expect(briefFile.suggestedFilename()).toBe('分数的基本性质-简案.docx')
     const briefText = await docxText(await briefFile.path())
     for (const part of ['0–30′', '30–40′', '看全班', '3/4 和 9/12 相等吗？说明理由。', '课标依据：MA-S3-NA-01.3']) expect(briefText).toContain(part)
+    // the rarer actions sit under 更多
+    await page.locator('summary', { hasText: '更多' }).click()
     const sheet = page.waitForEvent('download')
     await page.getByRole('button', { name: '听课观察表' }).click()
     const sheetFile = await sheet

@@ -977,10 +977,103 @@ function CopyFallback() {
 }
 
 const CHECK_ICON = { ok: CheckCircleIcon, warn: WarningIcon, risk: XCircleIcon }
+const CHECK_LABEL = { ok: '通过', warn: '提醒', risk: '需改' }
+const CHECK_ORDER = { risk: 0, warn: 1, ok: 2 }
+
+// The AI's own ids (O2, A1) read as 「目标 2」「评价 1」: only ids this plan has, only as whole tokens (not CO2, H2O
+// or A4纸). In 数学/理科 a bare A1 or O1 is as likely a point, a circle's centre or an ammeter, so there only a bracket
+// that holds nothing but ids, as in （A1） or （O1、A2）, is rewritten; in 化学/科学/生物 an O2 is oxygen, so O-ids stay.
+// No lookbehind: older iOS WebViews lack it.
+const CONTENT_IDS = new Set(['math', 'physics', 'chemistry', 'science', 'biology'])
+const ID_TOKEN = /(^|[^A-Za-z0-9])([OA])(\d{1,2})(?![A-Za-z0-9.]|\s*[纸张])/gu
+const ID_BRACKET = /[（(]\s*[OA]\d{1,2}(?:\s*[、，,/]\s*[OA]\d{1,2})*\s*[）)]/gu
+function idReader(objectives, assessments, subjectSlug) {
+    const known = new Set([...(subjectSlug === 'chemistry' || subjectSlug === 'science' || subjectSlug === 'biology' ? [] : objectives || []), ...(assessments || [])].map(item => item.id))
+    const swap = text => text.replace(ID_TOKEN, (whole, before, kind, no) => (known.has(kind + no) ? `${before}${kind === 'O' ? '目标' : '评价'} ${no}` : whole))
+    const read = CONTENT_IDS.has(subjectSlug) ? text => text.replace(ID_BRACKET, swap) : swap
+    return text => (typeof text === 'string' && known.size ? read(text) : text)
+}
+const objectiveNo = id => id.replace(/^O/u, '')
+const assessmentNo = id => id.replace(/^A/u, '')
+
+// 更多: the actions a teacher needs less often, folded so 下载 Word stands out. A plain disclosure (Tab, Enter, Space);
+// Escape or a tap outside closes it.
+function MoreMenu({ label, children }) {
+    const ref = useRef(null)
+    useEffect(() => {
+        const close = event => { if (ref.current?.open && !ref.current.contains(event.target)) ref.current.open = false }
+        document.addEventListener('pointerdown', close)
+        return () => document.removeEventListener('pointerdown', close)
+    }, [])
+    const onKeyDown = event => {
+        if (event.key !== 'Escape' || !ref.current?.open) return
+        ref.current.open = false
+        ref.current.querySelector('summary')?.focus()
+    }
+    return (
+        <details ref={ref} className={styles.more} onKeyDown={onKeyDown}>
+            <summary className="btn btn-secondary">{label}</summary>
+            <div className={styles.moreMenu}>{children}</div>
+        </details>
+    )
+}
+
+// 本页: one row of links to the plan's sections, so a 15-screen plan on a phone is a tap from 过程 or 作业
+function JumpRow({ items }) {
+    if (items.length < 2) return null
+    return (
+        <nav className={styles.jump} aria-label="本页">
+            <span>本页</span>
+            <ul>{items.map(([id, label]) => <li key={id}><a href={`#${id}`}>{label}</a></li>)}</ul>
+        </nav>
+    )
+}
+
+// which 目标 and 评价 a 环节 (or a unit's 课时) serves, in the same words and order in every head
+function StageLinks({ objectives, assessments }) {
+    return (
+        <>
+            {objectives?.length ? <span>目标 {objectives.map(objectiveNo).join('、')}</span> : null}
+            {assessments?.length ? <span>评价 {assessments.map(assessmentNo).join('、')}</span> : null}
+        </>
+    )
+}
+
+// 评价任务, numbered 评价 1, 2… as the 环节 heads cite them; on a phone each row stacks as a card with its labels
+function AssessmentTable({ assessments, say }) {
+    return (
+        <div className={styles.tableWrap} tabIndex={0} role="region" aria-label="评价任务表">
+            <table>
+                <thead><tr><th>评价任务</th><th>证据</th><th>达成标准</th><th>对应目标</th></tr></thead>
+                <tbody>
+                    {assessments.map((item, index) => (
+                        <tr key={item.id}>
+                            <td data-label="评价任务"><b className={styles.rowNo}>评价 {/^A\d+$/u.test(item.id) ? assessmentNo(item.id) : index + 1}</b>{say(item.task)}</td>
+                            <td data-label="证据">{say(item.evidence)}</td>
+                            <td data-label="达成标准">{say(item.criteria)}</td>
+                            <td data-label="对应目标">{item.objective_ids.length ? `目标 ${item.objective_ids.map(objectiveNo).join('、')}` : ''}</td>
+                        </tr>
+                    ))}
+                </tbody>
+            </table>
+        </div>
+    )
+}
+
+// a 说课稿 or 试讲稿 lands far below the button that asked for it: bring it into view and put focus on its title
+function useArrival(value) {
+    const ref = useRef(null)
+    useEffect(() => {
+        if (!value || !ref.current) return
+        ref.current.scrollIntoView({ block: 'start' })
+        ref.current.focus({ preventScroll: true })
+    }, [value])
+    return ref
+}
 
 function UnitDocument({ plan, edition, subject, onCopy, copied }) {
     const { unit, lesson, evidence, checks, unit_lessons: lessons, hours } = plan
-    const no = id => id.replace('O', '')
+    const say = idReader(unit.objectives, unit.assessments, lesson.subject_slug)
     // a unit row may join several textbook lessons (「分数的基本性质、约分」); each opens its own lesson plan
     const lessonLink = title => {
         const first = title.split(/[、，,]/u)[0].trim()
@@ -990,13 +1083,13 @@ function UnitDocument({ plan, edition, subject, onCopy, copied }) {
     return (
         <article className={styles.doc} aria-labelledby="lp-unit-title">
             <div className={styles.docActions}>
-                <span className={styles.aiBadge}>AI 起草 · 需老师修改</span>
+                <button type="button" className="btn btn-primary" onClick={() => { downloadUnitWord(plan); trackUmamiEvent('lesson_plan_export', { format: 'word', kind: 'unit' }) }}>下载 Word</button>
                 <button type="button" className="btn btn-secondary" onClick={onCopy}>{copied ? '已复制' : '复制全文'}</button>
-                <button type="button" className="btn btn-secondary" onClick={() => { downloadUnitWord(plan); trackUmamiEvent('lesson_plan_export', { format: 'word', kind: 'unit' }) }}>下载 Word</button>
-                <button type="button" className="btn btn-ghost" onClick={() => { trackUmamiEvent('lesson_plan_export', { format: 'print', kind: 'unit' }); window.print() }}>打印</button>
-                {unit.performance_task?.criteria?.length ? <button type="button" className="btn btn-ghost" title="表现性任务的评价标准排成三级量规，可以先发给学生" onClick={() => { downloadRubricWord(plan); trackUmamiEvent('lesson_plan_export', { format: 'rubric', kind: 'unit' }) }}>评价量规</button> : null}
+                <button type="button" className="btn btn-secondary" onClick={() => { trackUmamiEvent('lesson_plan_export', { format: 'print', kind: 'unit' }); window.print() }}>打印</button>
+                {unit.performance_task?.criteria?.length ? <button type="button" className="btn btn-secondary" title="表现性任务的评价标准排成三级量规，可以先发给学生" onClick={() => { downloadRubricWord(plan); trackUmamiEvent('lesson_plan_export', { format: 'rubric', kind: 'unit' }) }}>评价量规</button> : null}
             </div>
             <header className={styles.docHead}>
+                <p className={styles.aiBadge}>AI 起草 · 需老师修改</p>
                 <h2 id="lp-unit-title">单元整体设计：{unit.title || lesson.title}</h2>
                 <p>{[lesson.subject_name, lesson.grade ? `${lesson.grade} 年级` : '', lesson.textbook_title ? `${lesson.edition_name || ''}${lesson.textbook_title}` : '', `共 ${hours} 课时`].filter(Boolean).join(' · ')}</p>
             </header>
@@ -1032,12 +1125,7 @@ function UnitDocument({ plan, edition, subject, onCopy, copied }) {
             ) : null}
             <section>
                 <h3>五、评价任务</h3>
-                <div className={styles.tableWrap} tabIndex={0} role="region" aria-label="评价任务表（可左右滑动）">
-                    <table>
-                        <thead><tr><th>评价任务</th><th>证据</th><th>达成标准</th><th>对应目标</th></tr></thead>
-                        <tbody>{unit.assessments.map(item => <tr key={item.id}><td>{item.task}</td><td>{item.evidence}</td><td>{item.criteria}</td><td>{item.objective_ids.map(no).join('、')}</td></tr>)}</tbody>
-                    </table>
-                </div>
+                <AssessmentTable assessments={unit.assessments} say={say} />
             </section>
             <section>
                 <h3>六、课时安排（按教材顺序）</h3>
@@ -1046,8 +1134,8 @@ function UnitDocument({ plan, edition, subject, onCopy, copied }) {
                         const href = lessonLink(item.title)
                         return (
                             <li key={`${item.title}-${index}`}>
-                                <div className={styles.stageHead}><b>{item.title}</b><span>{item.hours} 课时</span>{item.objective_ids.length ? <span>目标 {item.objective_ids.map(no).join('、')}</span> : null}{item.assessment_ids.length ? <span>评价 {item.assessment_ids.join('、')}</span> : null}</div>
-                                <p>{item.focus}</p>
+                                <div className={styles.stageHead}><b>{item.title}</b><span>{item.hours} 课时</span><StageLinks objectives={item.objective_ids} assessments={item.assessment_ids} /></div>
+                                <p>{say(item.focus)}</p>
                                 {href ? <Link to={href}>起草这一课的教案 →</Link> : null}
                             </li>
                         )
@@ -1069,14 +1157,14 @@ function UnitDocument({ plan, edition, subject, onCopy, copied }) {
 function TalkScriptView({ talk, title }) {
     const [copied, setCopied] = useState(false)
     const text = [`《${title}》说课稿`, ...talk.sections.flatMap(item => [`${item.heading}`, item.text])].join('\n\n')
+    const heading = useArrival(talk)
     return (
-        <article className={styles.doc} aria-labelledby="lp-talk-title">
+        <article className={`${styles.doc} ${styles.script}`} aria-labelledby="lp-talk-title">
             <div className={styles.docActions}>
-                <span className={styles.aiBadge}>AI 根据上面的教案改写 · 约 {talk.minutes} 分钟</span>
                 <button type="button" className="btn btn-secondary" onClick={async () => setCopied(await copyText(text))}>{copied ? '已复制' : '复制说课稿'}</button>
                 <button type="button" className="btn btn-secondary" onClick={() => downloadScriptWord(`《${title}》说课稿`, talk.sections, `${title}-说课稿`)}>下载 Word</button>
             </div>
-            <header className={styles.docHead}><h2 id="lp-talk-title">《{title}》说课稿</h2><p>说课比赛、教师资格面试用。只改写教案已有的内容，没有新增活动。</p></header>
+            <header className={styles.docHead}><p className={styles.aiBadge}>AI 根据上面的教案改写 · 约 {talk.minutes} 分钟</p><h2 id="lp-talk-title" ref={heading} tabIndex={-1}>《{title}》说课稿</h2><p>说课比赛、教师资格面试用。只改写教案已有的内容，没有新增活动。</p></header>
             {talk.sections.map(item => (
                 <section key={item.heading}>
                     <h3>{item.heading}</h3>
@@ -1093,14 +1181,14 @@ function TrialScriptView({ trial, title }) {
     const text = [`《${title}》试讲稿（约 ${trial.minutes} 分钟）`, ...trial.stages.flatMap(item => [`【${item.name}】约 ${item.minutes} 分钟`, item.text]), trial.board.length ? `板书\n${trial.board.join('\n')}` : '', '答辩', ...trial.defense.flatMap((item, index) => [`${index + 1}. ${item.question}`, item.answer])].filter(Boolean).join('\n\n')
     // （模拟学生回答：……） and （板书：……） stand out from what the teacher says
     const cues = line => line.split(/(（(?:模拟[^：:）]{0,10}|板书)[：:][^）]*）)/u).map((part, index) => (index % 2 ? <span key={index} className={styles.cue}>{part}</span> : part))
+    const heading = useArrival(trial)
     return (
-        <article className={styles.doc} aria-labelledby="lp-trial-title">
+        <article className={`${styles.doc} ${styles.script}`} aria-labelledby="lp-trial-title">
             <div className={styles.docActions}>
-                <span className={styles.aiBadge}>AI 根据上面的教案改写 · 约 {trial.minutes} 分钟</span>
                 <button type="button" className="btn btn-secondary" onClick={async () => setCopied(await copyText(text))}>{copied ? '已复制' : '复制试讲稿'}</button>
                 <button type="button" className="btn btn-secondary" onClick={() => downloadScriptWord(`《${title}》试讲稿`, [...trial.stages.map(item => ({ heading: `${item.name}（约 ${item.minutes} 分钟）`, text: item.text })), ...(trial.board.length ? [{ heading: '板书', text: trial.board.join('\n') }] : []), { heading: '答辩准备', text: trial.defense.map((item, index) => `${index + 1}. ${item.question}\n${item.answer}`).join('\n') }], `${title}-试讲稿`)}>下载 Word</button>
             </div>
-            <header className={styles.docHead}><h2 id="lp-trial-title">《{title}》试讲稿</h2><p>教师资格面试用：面对评委模拟上课 10 分钟，再答辩。只改写教案已有的内容。灰色括号里是模拟的学生回答和板书时机。</p></header>
+            <header className={styles.docHead}><p className={styles.aiBadge}>AI 根据上面的教案改写 · 约 {trial.minutes} 分钟</p><h2 id="lp-trial-title" ref={heading} tabIndex={-1}>《{title}》试讲稿</h2><p>教师资格面试用：面对评委模拟上课 10 分钟，再答辩。只改写教案已有的内容。灰色括号里是模拟的学生回答和板书时机。</p></header>
             {trial.stages.map((item, index) => (
                 <section key={`${item.name}-${index}`}>
                     <h3>{item.name}<small> · 约 {item.minutes} 分钟</small></h3>
@@ -1118,14 +1206,22 @@ function TrialScriptView({ trial, title }) {
     )
 }
 
+// 核验: a count first (通过 n 项 · 提醒 m 项), then what needs a look before what passed, each labelled in words so a
+// 提醒 never reads as one more green line
 function CheckList({ checks }) {
+    const level = item => (CHECK_LABEL[item.level] ? item.level : 'warn')
+    const sorted = [...checks].sort((a, b) => CHECK_ORDER[level(a)] - CHECK_ORDER[level(b)])
+    const count = key => checks.filter(item => level(item) === key).length
     return (
-        <ul>
-            {checks.map((item, index) => {
-                const Icon = CHECK_ICON[item.level] || WarningIcon
-                return <li key={`${item.kind}-${index}`} data-level={item.level}><Icon size={16} aria-hidden="true" /><span>{item.message}{item.quote ? <small>「{item.quote}」</small> : null}</span></li>
-            })}
-        </ul>
+        <>
+            <p className={styles.checkCount}>{['ok', 'warn', 'risk'].filter(count).map(key => `${CHECK_LABEL[key]} ${count(key)} 项`).join(' · ')}</p>
+            <ul>
+                {sorted.map((item, index) => {
+                    const Icon = CHECK_ICON[level(item)]
+                    return <li key={`${item.kind}-${index}`} data-level={level(item)}><Icon size={16} aria-hidden="true" /><span><b>{CHECK_LABEL[level(item)]}</b>{item.message}{item.quote ? <small>「{item.quote}」</small> : null}</span></li>
+                })}
+            </ul>
+        </>
     )
 }
 
@@ -1242,39 +1338,70 @@ function SyncLessons({ context }) {
 
 function PlanDocument({ plan, done, writing, onCopy, copied, onTalk, talking, onPractice, onContinue }) {
     const { lesson, frame, process, practice, reading, evidence, checks, meta } = plan
-    const objectiveNo = id => id.replace('O', '')
+    const article = useRef(null)
+    const say = idReader(frame?.objectives, frame?.assessments, lesson.subject_slug)
     const metaLine = [lesson.subject_name, lesson.grade ? `${lesson.grade} 年级` : '', lesson.textbook_title ? `${lesson.edition_name || ''}${lesson.textbook_title}` : '', meta ? `第 ${meta.lesson_index} 课时（共 ${meta.lesson_count} 课时）· ${meta.period_minutes} 分钟` : '', meta?.class_size ? `约 ${meta.class_size} 人` : '', meta?.lesson_type || ''].filter(Boolean).join(' · ')
+    const hasPractice = Boolean(practice?.items?.length || (process && done && onPractice))
+    const jump = [
+        ['lp-sec-standards', '课标分析', true], ['lp-sec-objectives', '目标', frame], ['lp-sec-keys', '重难点', frame], ['lp-sec-learners', '学情', frame],
+        ['lp-sec-assessments', '评价', frame], ['lp-sec-process', '过程', process], ['lp-sec-practice', '练习', hasPractice],
+        ['lp-sec-board', '板书', process?.board.length], ['lp-sec-homework', '作业', process?.homework.length]
+    ].filter(item => item[2])
+    // printed, the plan reads like its Word file: every 参考答案 and the 课标原文 open (closed again after)
+    useEffect(() => {
+        const opened = []
+        const before = () => article.current?.querySelectorAll('section details:not([open])').forEach(item => { item.open = true; opened.push(item) })
+        const after = () => {
+            opened.splice(0).forEach(item => { item.open = false })
+            delete document.documentElement.dataset.lpPrint
+        }
+        window.addEventListener('beforeprint', before)
+        window.addEventListener('afterprint', after)
+        return () => {
+            window.removeEventListener('beforeprint', before)
+            window.removeEventListener('afterprint', after)
+        }
+    }, [])
+    // 打印 here prints this plan alone, without a 说课稿 or 试讲稿 drafted below it
+    const print = () => {
+        trackUmamiEvent('lesson_plan_export', { format: 'print', kind: 'lesson' })
+        document.documentElement.dataset.lpPrint = 'plan'
+        window.print()
+    }
     return (
-        <article className={styles.doc} aria-labelledby="lp-doc-title">
-            <div className={styles.docActions}>
-                <span className={styles.aiBadge}>AI 起草 · 需老师修改</span>
-                {done ? (
-                    <>
-                        <button type="button" className="btn btn-secondary" onClick={() => { downloadWord(plan); trackUmamiEvent('lesson_plan_export', { format: 'word', kind: 'lesson' }) }}>下载 Word（详案）</button>
-                        <button type="button" className="btn btn-secondary" title="一页纸：环节、时间、关键问题、练习和板书，带进课堂用" onClick={() => { downloadBriefWord(plan); trackUmamiEvent('lesson_plan_export', { format: 'brief', kind: 'lesson' }) }}>简案（上课用）</button>
-                        <button type="button" className="btn btn-ghost" onClick={onCopy}>{copied ? '已复制' : '复制全文'}</button>
-                        <button type="button" className="btn btn-ghost" onClick={() => { trackUmamiEvent('lesson_plan_export', { format: 'print', kind: 'lesson' }); window.print() }}>打印</button>
-                        {onTalk ? <button type="button" className="btn btn-ghost" onClick={() => onTalk('talk')} disabled={Boolean(talking)}>{talking === 'talk' ? '正在写说课稿…' : '生成说课稿'}</button> : null}
-                        {onTalk ? <button type="button" className="btn btn-ghost" onClick={() => onTalk('trial')} disabled={Boolean(talking)}>{talking === 'trial' ? '正在写试讲稿…' : '试讲稿 + 答辩'}</button> : null}
+        <article ref={article} className={styles.doc} aria-labelledby="lp-doc-title">
+            {done ? (
+                // each label is one inline span: a flex button would otherwise read 「下载 Word （详案）」 with a space
+                <div className={styles.docActions}>
+                    <button type="button" className="btn btn-primary" onClick={() => { downloadWord(plan); trackUmamiEvent('lesson_plan_export', { format: 'word', kind: 'lesson' }) }}><span>下载 Word<span className={styles.extra}>（详案）</span></span></button>
+                    <button type="button" className="btn btn-secondary" title="一页纸：环节、时间、关键问题、练习和板书，带进课堂用" onClick={() => { downloadBriefWord(plan); trackUmamiEvent('lesson_plan_export', { format: 'brief', kind: 'lesson' }) }}><span>简案<span className={styles.extra}>（上课用）</span></span></button>
+                    <button type="button" className="btn btn-secondary" onClick={onCopy}>{copied ? '已复制' : <span>复制<span className={styles.extra}>全文</span></span>}</button>
+                    <MoreMenu label={<>更多{talking === 'talk' || talking === 'trial' ? ' · 正在写…' : ''}</>}>
+                        <button type="button" className="btn btn-ghost" onClick={print}>打印</button>
+                        {onTalk ? (
+                            <>
+                                <small>AI 改写，约 20 秒</small>
+                                <button type="button" className="btn btn-ghost" onClick={() => onTalk('talk')} disabled={Boolean(talking)}>{talking === 'talk' ? '正在写说课稿…' : '生成说课稿'}</button>
+                                <button type="button" className="btn btn-ghost" onClick={() => onTalk('trial')} disabled={Boolean(talking)}>{talking === 'trial' ? '正在写试讲稿…' : '试讲稿 + 答辩'}</button>
+                            </>
+                        ) : null}
+                        <small>下载表格</small>
                         <button type="button" className="btn btn-ghost" title="按这份教案的目标、评价和环节生成，供听课、评课、磨课时填写" onClick={() => { downloadObservationWord(plan); trackUmamiEvent('lesson_plan_export', { format: 'observation', kind: 'lesson' }) }}>听课观察表</button>
                         <button type="button" className="btn btn-ghost" title="按这份教案的目标、证据和预设难点生成，上完课填写" onClick={() => { downloadReflectionWord(plan); trackUmamiEvent('lesson_plan_export', { format: 'reflection', kind: 'lesson' }) }}>课后反思表</button>
-                    </>
-                ) : null}
-            </div>
+                    </MoreMenu>
+                </div>
+            ) : null}
             <header className={styles.docHead}>
+                <p className={styles.aiBadge}>AI 起草 · 需老师修改</p>
                 <h2 id="lp-doc-title">{frame?.title || lesson.title}</h2>
                 <p>{metaLine}</p>
             </header>
+            <JumpRow items={jump} />
 
             {checks?.length ? (
                 <section className={styles.checks} aria-label="核验">
-                    <h3>核验{done ? '' : '（教学过程写完后再核一次）'}</h3>
-                    <ul>
-                        {checks.map((item, index) => {
-                            const Icon = CHECK_ICON[item.level] || WarningIcon
-                            return <li key={`${item.kind}-${index}`} data-level={item.level}><Icon size={16} aria-hidden="true" /><span>{item.message}{item.quote ? <small>「{item.quote}」</small> : null}</span></li>
-                        })}
-                    </ul>
+                    <h3>核验{done ? '' : <small>（教学过程写完后再核一次）</small>}</h3>
+                    <CheckList checks={checks} />
                 </section>
             ) : null}
 
@@ -1282,43 +1409,39 @@ function PlanDocument({ plan, done, writing, onCopy, copied, onTalk, talking, on
 
             {frame ? (
                 <>
-                    <section>
+                    <section id="lp-sec-objectives">
                         <h3>二、教学目标</h3>
                         <ol className={styles.objectives}>
                             {frame.objectives.map(item => (
                                 <li key={item.id}>
-                                    <span>{item.text}</span>
+                                    <span>{say(item.text)}</span>
                                     <span className={styles.basis}><em>{item.kind}</em>{item.basis.map(code => <code key={code}>{code}</code>)}</span>
                                 </li>
                             ))}
                         </ol>
                     </section>
-                    <section className={styles.twoCol}>
-                        <div><h3>三、教学重点</h3><ul>{frame.key_points.map(text => <li key={text}>{text}</li>)}</ul></div>
-                        <div><h3>教学难点</h3><ul>{frame.difficult_points.map(text => <li key={text}>{text}</li>)}</ul></div>
+                    <section id="lp-sec-keys">
+                        <h3>三、教学重点与难点</h3>
+                        <div className={styles.twoCol}>
+                            <div><h4>教学重点</h4><ul>{frame.key_points.map(text => <li key={text}>{say(text)}</li>)}</ul></div>
+                            <div><h4>教学难点</h4><ul>{frame.difficult_points.map(text => <li key={text}>{say(text)}</li>)}</ul></div>
+                        </div>
+                        {frame.strategies?.length ? <p className={styles.strategies}><b>突破难点：</b>{say(frame.strategies.join('；'))}</p> : null}
                     </section>
-                    {frame.strategies?.length ? <p className={styles.strategies}><b>突破难点：</b>{frame.strategies.join('；')}</p> : null}
-                    <section>
+                    <section id="lp-sec-learners">
                         <h3>四、学情分析</h3>
-                        <p>{frame.learner_analysis}</p>
+                        <p>{say(frame.learner_analysis)}</p>
                         {frame.prior_knowledge.length ? <p><b>前置知识：</b>{frame.prior_knowledge.join('；')}</p> : null}
                         {frame.misconceptions.length ? (
                             <dl className={styles.misconceptions}>
-                                {frame.misconceptions.map(item => <div key={item.text}><dt>常见误解：{item.text}</dt><dd>应对：{item.response}</dd></div>)}
+                                {frame.misconceptions.map(item => <div key={item.text}><dt>常见误解：{item.text}</dt><dd>应对：{say(item.response)}</dd></div>)}
                             </dl>
                         ) : null}
                         {frame.keywords.length ? <p><b>关键词：</b>{frame.keywords.map(item => `${item.term}（${item.definition}）`).join('；')}</p> : null}
                     </section>
-                    <section>
+                    <section id="lp-sec-assessments">
                         <h3>五、评价任务</h3>
-                        <div className={styles.tableWrap} tabIndex={0} role="region" aria-label="评价任务表（可左右滑动）">
-                            <table>
-                                <thead><tr><th>评价任务</th><th>证据</th><th>达成标准</th><th>对应目标</th></tr></thead>
-                                <tbody>
-                                    {frame.assessments.map(item => <tr key={item.id}><td>{item.task}</td><td>{item.evidence}</td><td>{item.criteria}</td><td>{item.objective_ids.map(objectiveNo).join('、')}</td></tr>)}
-                                </tbody>
-                            </table>
-                        </div>
+                        <AssessmentTable assessments={frame.assessments} say={say} />
                     </section>
                 </>
             ) : null}
@@ -1332,15 +1455,15 @@ function PlanDocument({ plan, done, writing, onCopy, copied, onTalk, talking, on
                             {process.safety.length ? <p className={styles.safety}><b>安全提示：</b>{process.safety.join('；')}</p> : null}
                         </section>
                     ) : null}
-                    <section>
+                    <section id="lp-sec-process">
                         <h3>七、教学过程</h3>
                         <ol className={styles.stages}>
                             {process.stages.map((stage, index) => (
                                 <li key={`${stage.name}-${index}`}>
-                                    <div className={styles.stageHead}><b>{stage.name}</b><span>{stage.minutes} 分钟</span>{stage.org ? <span className={styles.org}>{stage.org}</span> : null}{stage.objective_ids.length ? <span>目标 {stage.objective_ids.map(objectiveNo).join('、')}</span> : null}{stage.assessment_ids.length ? <span>评价 {stage.assessment_ids.join('、')}</span> : null}</div>
+                                    <div className={styles.stageHead}><b>{stage.name}</b><span>{stage.minutes} 分钟</span>{stage.org ? <span className={styles.org}>{stage.org}</span> : null}<StageLinks objectives={stage.objective_ids} assessments={stage.assessment_ids} /></div>
                                     <dl>
-                                        <div><dt>教师活动</dt><dd>{stage.teacher}</dd></div>
-                                        <div><dt>学生活动</dt><dd>{stage.students}</dd></div>
+                                        <div><dt>教师活动</dt><dd>{say(stage.teacher)}</dd></div>
+                                        <div><dt>学生活动</dt><dd>{say(stage.students)}</dd></div>
                                         {stage.questions?.length ? (
                                             <div><dt>关键问题</dt><dd>
                                                 <ul className={styles.questions}>
@@ -1354,36 +1477,36 @@ function PlanDocument({ plan, done, writing, onCopy, copied, onTalk, talking, on
                                                 </ul>
                                             </dd></div>
                                         ) : null}
-                                        {stage.check ? <div><dt>看全班</dt><dd>{stage.check}</dd></div> : null}
-                                        {stage.support ? <div><dt>照顾差异</dt><dd>{stage.support}</dd></div> : null}
-                                        <div><dt>设计意图</dt><dd>{stage.purpose}</dd></div>
+                                        {stage.check ? <div><dt>看全班</dt><dd>{say(stage.check)}</dd></div> : null}
+                                        {stage.support ? <div><dt>照顾差异</dt><dd>{say(stage.support)}</dd></div> : null}
+                                        <div><dt>设计意图</dt><dd>{say(stage.purpose)}</dd></div>
                                     </dl>
                                 </li>
                             ))}
                         </ol>
                     </section>
                     {practice?.items?.length ? (
-                        <section>
+                        <section id="lp-sec-practice">
                             <h3>八、当堂练习与检测</h3>
                             <ol className={styles.practice}>
                                 {practice.items.map((item, index) => (
                                     <li key={`${item.question}-${index}`}>
                                         <div className={styles.practiceHead}><span data-kind={item.kind}>{item.kind}</span><span>{item.level}</span>{item.code ? <Link to={`/standards/${item.code.replace(/\.\d+$/u, '')}#${item.code}`} target="_blank" rel="noopener"><code>{item.code}</code></Link> : null}</div>
-                                        <p>{item.question}</p>
-                                        <details><summary>参考答案</summary><p>{item.answer}</p></details>
+                                        <p>{say(item.question)}</p>
+                                        <details><summary>参考答案</summary><p>{say(item.answer)}</p></details>
                                     </li>
                                 ))}
                             </ol>
                             <p className={styles.small}>题目和答案由 AI 起草，课前请核对后再用。</p>
                         </section>
                     ) : done && onPractice ? (
-                        <section>
+                        <section id="lp-sec-practice">
                             <h3>八、当堂练习与检测</h3>
                             <p className={styles.small}>这次没写出当堂练习。 <button type="button" className="btn btn-ghost" onClick={onPractice} disabled={Boolean(talking)}>{talking === 'practice' ? '正在写当堂练习…' : '再写一次'}</button></p>
                         </section>
                     ) : null}
-                    {process.board.length ? <section><h3>九、板书设计</h3><pre className={styles.board}>{process.board.join('\n')}</pre></section> : null}
-                    {process.homework.length ? <section><h3>十、作业设计</h3><ul>{process.homework.map(item => <li key={item.task}><b>【{item.level}】</b>{item.task}{item.minutes ? <small className={styles.minutes}>约 {item.minutes} 分钟</small> : null}</li>)}</ul></section> : null}
+                    {process.board.length ? <section id="lp-sec-board"><h3>九、板书设计</h3><pre className={styles.board}>{process.board.map(say).join('\n')}</pre></section> : null}
+                    {process.homework.length ? <section id="lp-sec-homework"><h3>十、作业设计</h3><ul>{process.homework.map(item => <li key={item.task}><b>【{item.level}】</b>{say(item.task)}{item.minutes ? <small className={styles.minutes}>约 {item.minutes} 分钟</small> : null}</li>)}</ul></section> : null}
                 </>
             ) : frame ? (writing ? <p className={styles.small}>正在写教学过程和当堂练习…</p> : (
                 <section>
@@ -1407,7 +1530,7 @@ function StandardReading({ evidence, reading, core }) {
     const standards = reading?.standards || []
     const linkText = item => <><Link to={`/standards/${item.code.replace(/\.\d+$/u, '')}#${item.code}`} target="_blank" rel="noopener"><code>{item.code}</code></Link>{item.grade ? `（${item.grade}）` : ''}{item.text.length > 34 ? `${item.text.slice(0, 34)}…` : item.text}{item.reason ? <small>——{item.reason}</small> : null}</>
     return (
-        <section>
+        <section id="lp-sec-standards">
             <h3>一、课标分析</h3>
             <ul className={styles.evidence}>
                 {evidence.map(item => {

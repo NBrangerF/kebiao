@@ -230,6 +230,12 @@ h6 {
   color: var(--text-primary);
 }
 
+/* a button that cannot be pressed yet has to look it */
+.btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
 .btn-lg {
   padding: var(--space-4) var(--space-8);
   font-size: var(--font-size-base);
