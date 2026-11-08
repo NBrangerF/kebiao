@@ -2,7 +2,7 @@
 // on, which words of the 要点 it comes from (checked to be the 要点's own words), whether it asks more or less than
 // the 要点, what it lacks (条件 / 行为 / 程度) and how it could read. The program adds what it can see itself:
 // vague verbs, a later lesson's content, a 课标 「不包括」, a 要点 no objective covers.
-import { runStructuredLlm, type LlmStatus, type LlmUsage, type StructuredLlmAdapter, type StructuredLlmOptions } from './llm.js'
+import { runRetriedLlm, type LlmStatus, type LlmUsage, type StructuredLlmAdapter, type StructuredLlmOptions } from './llm.js'
 import { VERB_SCALES } from './lesson-objectives.js'
 import { limitsOf, VAGUE } from './lesson-plan.js'
 
@@ -159,6 +159,6 @@ export async function checkObjectives(objectives: string[], input: ObjectiveChec
         '老师写的学习目标：',
         ...objectives.map((text, index) => `${index + 1}. ${text}`)
     ].filter(Boolean).join('\n')
-    const run = await runStructuredLlm(prompt, adapter(objectives, input), { ...options, timeoutMs: options.timeoutMs ?? 45000 })
+    const run = await runRetriedLlm(prompt, adapter(objectives, input), { ...options, timeoutMs: options.timeoutMs ?? 45000 })
     return { status: run.status, model: run.model, latency_ms: run.latency_ms, usage: run.usage, output: run.output }
 }

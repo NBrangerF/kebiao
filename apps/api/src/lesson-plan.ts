@@ -3,7 +3,7 @@
 // as in backward design); 'process' writes 教学过程、作业、板书 from that frame. Every objective must cite the
 // picked 要点 codes; the server re-reads 要点 text from kebiao's data (never from the client), then checks the
 // draft: codes, 「不包括……」 limits in the 课标, objective–activity–assessment links, vague verbs and timing.
-import { runStructuredLlm, type LlmStatus, type LlmUsage, type StructuredLlmAdapter, type StructuredLlmOptions } from './llm.js'
+import { runRetriedLlm, runStructuredLlm, type LlmStatus, type LlmUsage, type StructuredLlmAdapter, type StructuredLlmOptions } from './llm.js'
 
 export type PlanIndicator = { code: string, text: string, pages: number[], standard_code: string, standard_title: string, stage_label: string }
 export type PlanStandard = {
@@ -615,7 +615,8 @@ const addUsage = (a: LlmUsage | null, b: LlmUsage | null): LlmUsage | null => (a
 
 async function draftChecked<T>(prompt: string, adapter: StructuredLlmAdapter<T>, options: StructuredLlmOptions, problemsOf: (value: T) => string[]): Promise<DraftResult<T>> {
     const started = performance.now()
-    const first = await runStructuredLlm(prompt, adapter, { ...options, timeoutMs: options.timeoutMs ?? DRAFT_TIMEOUT_MS })
+    // a fast failure (provider error, JSON that does not fit) is sent once more; 15 of 385 draft calls failed so in 4 days
+    const first = await runRetriedLlm(prompt, adapter, { ...options, timeoutMs: options.timeoutMs ?? DRAFT_TIMEOUT_MS })
     const result: DraftResult<T> = { status: first.status, output: first.output, usage: first.usage, latency_ms: first.latency_ms, model: first.model }
     const problems = first.output ? problemsOf(first.output) : []
     const elapsed = performance.now() - started
@@ -698,7 +699,7 @@ export async function draftProcess(input: DraftInput, frame: Frame, options: Str
 export async function draftReading(input: DraftInput, options: StructuredLlmOptions = {}): Promise<DraftResult<Reading>> {
     const names = literacyNames(input)
     const prompt = [lessonBlock(input), basisBlock(input), linksBlock(input), bookBlock(input), names.length ? `素养名称：${names.join('、')}` : '', teacherBlock(input)].filter(Boolean).join('\n\n')
-    const run = await runStructuredLlm(prompt, readingAdapter(input), { ...options, timeoutMs: options.timeoutMs ?? DRAFT_TIMEOUT_MS })
+    const run = await runRetriedLlm(prompt, readingAdapter(input), { ...options, timeoutMs: options.timeoutMs ?? DRAFT_TIMEOUT_MS })
     return { status: run.status, output: run.output, usage: run.usage, latency_ms: run.latency_ms, model: run.model }
 }
 
@@ -777,7 +778,7 @@ export async function readTeacherPlan(planText: string, input: DraftInput, optio
         maxCompletionTokens: 3000,
         validate: value => validateRead(value, codes)
     }
-    const run = await runStructuredLlm(prompt, adapter, { ...options, timeoutMs: options.timeoutMs ?? DRAFT_TIMEOUT_MS })
+    const run = await runRetriedLlm(prompt, adapter, { ...options, timeoutMs: options.timeoutMs ?? DRAFT_TIMEOUT_MS })
     return { status: run.status, output: run.output, usage: run.usage, latency_ms: run.latency_ms, model: run.model }
 }
 
@@ -890,7 +891,7 @@ export async function draftUnit(input: DraftInput, lessonTitles: string[], total
         maxCompletionTokens: 4000,
         validate: value => validateUnit(value, codes, lessonTitles)
     }
-    const run = await runStructuredLlm(prompt, adapter, { ...options, timeoutMs: options.timeoutMs ?? DRAFT_TIMEOUT_MS })
+    const run = await runRetriedLlm(prompt, adapter, { ...options, timeoutMs: options.timeoutMs ?? DRAFT_TIMEOUT_MS })
     if (run.output) fitHours(run.output.lessons, totalHours)
     return { status: run.status, output: run.output, usage: run.usage, latency_ms: run.latency_ms, model: run.model }
 }
@@ -971,7 +972,7 @@ export async function draftTalk(input: DraftInput, frame: Frame, process: Proces
             return { sections, minutes: Number.isFinite(minutes) && minutes > 0 && minutes < 20 ? minutes : 6 }
         }
     }
-    const run = await runStructuredLlm(prompt, adapter, { ...options, timeoutMs: options.timeoutMs ?? DRAFT_TIMEOUT_MS })
+    const run = await runRetriedLlm(prompt, adapter, { ...options, timeoutMs: options.timeoutMs ?? DRAFT_TIMEOUT_MS })
     return { status: run.status, output: run.output, usage: run.usage, latency_ms: run.latency_ms, model: run.model }
 }
 
@@ -1012,7 +1013,7 @@ export async function draftTrial(input: DraftInput, frame: Frame, process: Proce
             return { stages, board: strList(raw.board, 8, 60), defense, minutes: stages.reduce((sum, item) => sum + item.minutes, 0) }
         }
     }
-    const run = await runStructuredLlm(prompt, adapter, { ...options, timeoutMs: options.timeoutMs ?? DRAFT_TIMEOUT_MS })
+    const run = await runRetriedLlm(prompt, adapter, { ...options, timeoutMs: options.timeoutMs ?? DRAFT_TIMEOUT_MS })
     return { status: run.status, output: run.output, usage: run.usage, latency_ms: run.latency_ms, model: run.model }
 }
 
@@ -1146,7 +1147,7 @@ export async function readTest(testText: string, input: DraftInput, options: Str
         maxCompletionTokens: 5000,
         validate: value => validateTest(value, testText, codes, literacy, levels?.levels || [])
     }
-    const run = await runStructuredLlm(prompt, adapter, { ...options, timeoutMs: options.timeoutMs ?? DRAFT_TIMEOUT_MS })
+    const run = await runRetriedLlm(prompt, adapter, { ...options, timeoutMs: options.timeoutMs ?? DRAFT_TIMEOUT_MS })
     return { status: run.status, output: run.output, usage: run.usage, latency_ms: run.latency_ms, model: run.model }
 }
 

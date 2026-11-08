@@ -949,3 +949,20 @@ test('a pupil named next to a score or an absence is removed before the model se
     assert.equal(notes.text, '某学生数学 58 分、某学生 61 分，某学生请假刚回来；全班三成学生计算慢，马上要考试。')
     assert.ok(notes.categories.includes('student_name'))
 })
+
+test('a draft whose first model answer fails fast is sent once more', async t => {
+    const saved = process.env.KEBIAO_LLM_API_KEY
+    process.env.KEBIAO_LLM_API_KEY = 'test-secret'
+    t.after(() => { if (saved === undefined) delete process.env.KEBIAO_LLM_API_KEY; else process.env.KEBIAO_LLM_API_KEY = saved })
+    let calls = 0
+    t.mock.method(globalThis, 'fetch', async () => {
+        calls += 1
+        if (calls === 1) return new Response('upstream busy', { status: 500 })
+        return new Response(JSON.stringify({ choices: [{ message: { content: JSON.stringify(frame()) } }], usage: { prompt_tokens: 900, completion_tokens: 600, total_tokens: 1500 } }), { status: 200, headers: { 'content-type': 'application/json' } })
+    })
+    const request = { step: 'frame', lesson: { title: '分数的基本性质', subject_slug: 'math', grade: 5, edition_id: math5b, lesson_id: fractionLesson.id }, indicator_codes: [LIMITED] }
+    const response = await app.request('/api/v1/lesson-plans/draft', { method: 'POST', headers: { 'content-type': 'application/json', 'x-forwarded-for': CLASS_IP }, body: JSON.stringify(request) })
+    assert.equal(response.status, 200)
+    assert.ok(calls >= 2)
+    assert.ok((await json(response)).data.frame.objectives.length)
+})
