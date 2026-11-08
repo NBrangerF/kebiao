@@ -159,6 +159,11 @@ export default function LessonPlanPage() {
     useEffect(() => {
         if (lessonGrade) setSettings(current => (current.periodSet ? current : { ...current, period: lessonGrade >= 7 ? 45 : 40 }))
     }, [lessonGrade])
+    // the lesson's own number of 课时 in the book (人教 6上 「分数除法」 has 3), until the teacher picks one
+    const bookHours = Math.min(4, context?.national_lessons?.find(item => item.id === context?.lesson?.lesson_id)?.hours || 1)
+    useEffect(() => {
+        setSettings(current => (current.countSet ? current : { ...current, count: bookHours, index: Math.min(current.index, bookHours) }))
+    }, [bookHours])
     const runRef = useRef(0)
 
     const subject = params.get('subject') || ''
@@ -697,7 +702,7 @@ export default function LessonPlanPage() {
                             </select>
                         </label>
                         <label><span>本课共</span>
-                            <select value={settings.count} onChange={event => setSettings({ ...settings, count: Number(event.target.value), index: Math.min(settings.index, Number(event.target.value)) })}>
+                            <select value={settings.count} onChange={event => setSettings({ ...settings, count: Number(event.target.value), countSet: true, index: Math.min(settings.index, Number(event.target.value)) })}>
                                 {[1, 2, 3, 4].map(value => <option key={value} value={value}>{value} 课时</option>)}
                             </select>
                         </label>
