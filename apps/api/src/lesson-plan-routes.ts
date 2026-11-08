@@ -14,7 +14,7 @@ import { writeLessonObjectives, type ObjectivePoint } from './lesson-objectives.
 import type { AiMetrics, ApiBindings } from './http.js'
 import { checkPlan, notesChecks, checkPractice, checkTeacherPlan, checkUnit, DEFAULT_CLASS_SIZE, draftFrame, draftPractice, draftProcess, draftReading, draftTalk, draftTrial, draftUnit, LESSON_TYPES, limitsOf, rankPoints, readTest, checkTest, splitTest, mergeReads, sanitiseProcess, readTeacherPlan, sanitiseFrame, v2SubjectSlug, type DraftInput, type PlanIndicator, type PlanLesson, type PlanStandard, type DraftResult, type PointLink, type PointLinks, type RequiredLab, type SubjectNote } from './lesson-plan.js'
 import type { V2Store } from './v2-store.js'
-import { resolveTextbookPrivateDataRoot } from './textbook-assets.js'
+import { CRAWLER_USER_AGENT, resolveTextbookPrivateDataRoot } from './textbook-assets.js'
 
 type Deps = {
     repository: FileCurriculumRepository
@@ -789,6 +789,11 @@ export function registerLessonPlanRoutes(app: Hono<ApiBindings>, deps: Deps) {
     // The AI reads every standard of the lesson's subject at its grade (at most ~33) and says which 要点 the lesson
     // teaches. Retrieval by words misses lessons whose topic word is not in the 课标 (「河流」, 「My friends」).
     app.post('/api/v1/lesson-plans/pick', async c => {
+        // automated page renders fired a pick on every load (238 of 247 abandoned picks in 4 days); a crawler gets
+        // the same plain refusal as the textbook files, before any model call
+        if (CRAWLER_USER_AGENT.test(c.req.header('user-agent') || '')) {
+            return deps.apiError(c, 403, 'crawler_not_allowed', 'AI 找要点只供老师在页面上使用，不向自动抓取程序提供。')
+        }
         const version = await deps.v2.version()
         const parsed = PickRequestSchema.safeParse(await deps.parseJson(c))
         if (!parsed.success) return deps.apiError(c, 422, 'validation_error', '请求参数校验失败。', parsed.error.issues)

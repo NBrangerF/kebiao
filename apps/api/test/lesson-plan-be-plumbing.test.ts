@@ -235,3 +235,19 @@ test('pupil names next to a score are removed; words around a score are left alo
         assert.equal(result.redaction_count, 0, text)
     }
 })
+
+test('/pick refuses crawler user agents before any model call; a browser still gets its pick', async t => {
+    withKey(t)
+    let calls = 0
+    t.mock.method(globalThis, 'fetch', async () => { calls += 1; return answer({ judgements: [] }) })
+    const body = JSON.stringify({ lesson: { title: '分数的基本性质（爬虫测试）', subject_slug: 'math', grade: 5 } })
+    for (const agent of ['Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)', 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/131.0.0.0 Safari/537.36', 'Mozilla/5.0 (compatible; Bytespider; spider-feedback@bytedance.com)']) {
+        const response = await app.request('/api/v1/lesson-plans/pick', { method: 'POST', headers: { 'content-type': 'application/json', 'user-agent': agent, 'x-forwarded-for': '203.0.113.205' }, body })
+        assert.equal(response.status, 403, agent)
+        assert.equal((await json(response)).error.code, 'crawler_not_allowed')
+    }
+    assert.equal(calls, 0)
+    const browser = await app.request('/api/v1/lesson-plans/pick', { method: 'POST', headers: { 'content-type': 'application/json', 'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.50', 'x-forwarded-for': '203.0.113.205' }, body })
+    assert.equal(browser.status, 200)
+    assert.ok(calls > 0)
+})

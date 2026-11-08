@@ -31,7 +31,7 @@ interface SupportResourceRecord {
 // Crawlers announce themselves with a contact URL ("+https://…"), a "Namebot/1.0" token, or a
 // spider/crawler/headless keyword; real browsers never do. A bare "bot" would also catch phone
 // models such as "Cubot".
-const CRAWLER_USER_AGENT = /\+https?:\/\/|bot\/|spider|crawler|headlesschrome/i
+export const CRAWLER_USER_AGENT = /\+https?:\/\/|bot\/|spider|crawler|headlesschrome/i
 
 const REMOTE_RESPONSE_HEADERS = [
     'accept-ranges',
