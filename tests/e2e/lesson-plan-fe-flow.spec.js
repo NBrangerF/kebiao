@@ -235,6 +235,8 @@ test('a 说课稿 is saved with its plan, comes back with it, errors show by the
     await page.goto(`/lesson-plan?subject=${MATH}&edition=${EDITION}&lesson=L1`)
     await expect(page.getByText(/AI 读完了，已勾选/)).toBeVisible()
     await page.getByRole('button', { name: /按选定的 1 条要点起草教案/ }).click()
+    // 说课稿 sits under 更多
+    await page.locator('summary', { hasText: '更多' }).click()
     await expect(page.getByRole('button', { name: '生成说课稿' })).toBeVisible()
     await page.getByRole('button', { name: '生成说课稿' }).click()
     await expect(page.getByRole('alert')).toContainText('说课稿没写出来')

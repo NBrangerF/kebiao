@@ -1060,17 +1060,6 @@ function AssessmentTable({ assessments, say }) {
     )
 }
 
-// a 说课稿 or 试讲稿 lands far below the button that asked for it: bring it into view and put focus on its title
-function useArrival(value) {
-    const ref = useRef(null)
-    useEffect(() => {
-        if (!value || !ref.current) return
-        ref.current.scrollIntoView({ block: 'start' })
-        ref.current.focus({ preventScroll: true })
-    }, [value])
-    return ref
-}
-
 function UnitDocument({ plan, edition, subject, onCopy, copied }) {
     const { unit, lesson, evidence, checks, unit_lessons: lessons, hours } = plan
     const say = idReader(unit.objectives, unit.assessments, lesson.subject_slug)
@@ -1157,14 +1146,13 @@ function UnitDocument({ plan, edition, subject, onCopy, copied }) {
 function TalkScriptView({ talk, title }) {
     const [copied, setCopied] = useState(false)
     const text = [`《${title}》说课稿`, ...talk.sections.flatMap(item => [`${item.heading}`, item.text])].join('\n\n')
-    const heading = useArrival(talk)
     return (
         <article className={`${styles.doc} ${styles.script}`} aria-labelledby="lp-talk-title">
             <div className={styles.docActions}>
                 <button type="button" className="btn btn-secondary" onClick={async () => setCopied(await copyText(text))}>{copied ? '已复制' : '复制说课稿'}</button>
                 <button type="button" className="btn btn-secondary" onClick={() => downloadScriptWord(`《${title}》说课稿`, talk.sections, `${title}-说课稿`)}>下载 Word</button>
             </div>
-            <header className={styles.docHead}><p className={styles.aiBadge}>AI 根据上面的教案改写 · 约 {talk.minutes} 分钟</p><h2 id="lp-talk-title" ref={heading} tabIndex={-1}>《{title}》说课稿</h2><p>说课比赛、教师资格面试用。只改写教案已有的内容，没有新增活动。</p></header>
+            <header className={styles.docHead}><p className={styles.aiBadge}>AI 根据上面的教案改写 · 约 {talk.minutes} 分钟</p><h2 id="lp-talk-title" tabIndex={-1}>《{title}》说课稿</h2><p>说课比赛、教师资格面试用。只改写教案已有的内容，没有新增活动。</p></header>
             {talk.sections.map(item => (
                 <section key={item.heading}>
                     <h3>{item.heading}</h3>
@@ -1181,14 +1169,13 @@ function TrialScriptView({ trial, title }) {
     const text = [`《${title}》试讲稿（约 ${trial.minutes} 分钟）`, ...trial.stages.flatMap(item => [`【${item.name}】约 ${item.minutes} 分钟`, item.text]), trial.board.length ? `板书\n${trial.board.join('\n')}` : '', '答辩', ...trial.defense.flatMap((item, index) => [`${index + 1}. ${item.question}`, item.answer])].filter(Boolean).join('\n\n')
     // （模拟学生回答：……） and （板书：……） stand out from what the teacher says
     const cues = line => line.split(/(（(?:模拟[^：:）]{0,10}|板书)[：:][^）]*）)/u).map((part, index) => (index % 2 ? <span key={index} className={styles.cue}>{part}</span> : part))
-    const heading = useArrival(trial)
     return (
         <article className={`${styles.doc} ${styles.script}`} aria-labelledby="lp-trial-title">
             <div className={styles.docActions}>
                 <button type="button" className="btn btn-secondary" onClick={async () => setCopied(await copyText(text))}>{copied ? '已复制' : '复制试讲稿'}</button>
                 <button type="button" className="btn btn-secondary" onClick={() => downloadScriptWord(`《${title}》试讲稿`, [...trial.stages.map(item => ({ heading: `${item.name}（约 ${item.minutes} 分钟）`, text: item.text })), ...(trial.board.length ? [{ heading: '板书', text: trial.board.join('\n') }] : []), { heading: '答辩准备', text: trial.defense.map((item, index) => `${index + 1}. ${item.question}\n${item.answer}`).join('\n') }], `${title}-试讲稿`)}>下载 Word</button>
             </div>
-            <header className={styles.docHead}><p className={styles.aiBadge}>AI 根据上面的教案改写 · 约 {trial.minutes} 分钟</p><h2 id="lp-trial-title" ref={heading} tabIndex={-1}>《{title}》试讲稿</h2><p>教师资格面试用：面对评委模拟上课 10 分钟，再答辩。只改写教案已有的内容。灰色括号里是模拟的学生回答和板书时机。</p></header>
+            <header className={styles.docHead}><p className={styles.aiBadge}>AI 根据上面的教案改写 · 约 {trial.minutes} 分钟</p><h2 id="lp-trial-title" tabIndex={-1}>《{title}》试讲稿</h2><p>教师资格面试用：面对评委模拟上课 10 分钟，再答辩。只改写教案已有的内容。灰色括号里是模拟的学生回答和板书时机。</p></header>
             {trial.stages.map((item, index) => (
                 <section key={`${item.name}-${index}`}>
                     <h3>{item.name}<small> · 约 {item.minutes} 分钟</small></h3>
