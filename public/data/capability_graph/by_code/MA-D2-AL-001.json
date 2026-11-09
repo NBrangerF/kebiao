@@ -129,7 +129,7 @@
   "curriculum_alignments": [
     {
       "algorithm_version": "component-evidence-hybrid-v3",
-      "alignment_id": "tca_04b896973d5eca1b",
+      "alignment_id": "tca_596fc29806de6876",
       "alignment_type": "supports",
       "confidence": 0.92,
       "coverage": "partial",
@@ -139,19 +139,19 @@
       "evidence_level": "L2_topic",
       "evidence_refs": [
         "external_smartedu_2026_math_primary_grade_4_up",
-        "tes_ecf52a4776748a24",
-        "textbook-node:tcn_8afd79878aeefa66",
+        "tes_1728f7e47a62439b",
+        "textbook-node:tcn_fd8419d5d780b938",
         "textbook-unit:tcu_0e7eec2643c43008"
       ],
       "evidence_role": "direct_textbook",
       "evidence_spans": [
         {
           "evidence_role": "direct_textbook",
-          "excerpt": "20 万以上数的认识",
-          "excerpt_hash": "208b4d5ccb338f168e21c56b98b7bb13335abf6eea6deb37c6131f9546d7ad35",
-          "pdf_page": 25,
-          "printed_page": "20",
-          "span_id": "tes_ecf52a4776748a24"
+          "excerpt": "2 万以上数的认识",
+          "excerpt_hash": "73b596919c940c67823c9aaf3254ba46967a64f297891c4572441860b9fec15a",
+          "pdf_page": 7,
+          "printed_page": "2",
+          "span_id": "tes_1728f7e47a62439b"
         }
       ],
       "learning_component_ids": [
@@ -165,67 +165,12 @@
       ],
       "level": "unit",
       "method": "component_evidence_hybrid",
-      "node_id": "tcn_8afd79878aeefa66",
-      "node_title": "20万以上数的认识",
-      "pdf_page": 25,
-      "printed_page": "20",
+      "node_id": "tcn_fd8419d5d780b938",
+      "node_title": "2万以上数的认识",
+      "pdf_page": 7,
+      "printed_page": "2",
       "publication_status": "published",
-      "rationale": "教材课文“20万以上数的认识”与课标 MA-D2-AL-001 的可教学小能力“结合具体实例解释万以上数的含义”形成页内证据匹配。",
-      "relation_type": "supports",
-      "resource_type": "student_textbook",
-      "review_status": "machine_checked",
-      "revision_status": "current_confirmed",
-      "textbook_grade": 4,
-      "textbook_subject": "数学",
-      "textbook_title": "数学4年级上册",
-      "textbook_volume": "上册",
-      "unit_id": "tcu_0e7eec2643c43008",
-      "unit_title": "一 万以上数的认识"
-    },
-    {
-      "algorithm_version": "component-evidence-hybrid-v3",
-      "alignment_id": "tca_3be26bcd6ea4737d",
-      "alignment_type": "supports",
-      "confidence": 0.92,
-      "coverage": "partial",
-      "edition_id": "ed_dda80e43104244896faa",
-      "evidence_basis": "toc_title",
-      "evidence_gap": "当前证据来自目录标题与课标概念匹配，尚未保存教材正文或练习摘录；因此只能声明主题支持，不能声明完整教授。",
-      "evidence_level": "L2_topic",
-      "evidence_refs": [
-        "external_smartedu_2026_math_primary_grade_4_up",
-        "tes_5f417231d07f1be4",
-        "textbook-node:tcn_6a4dfedaac151899",
-        "textbook-unit:tcu_0e7eec2643c43008"
-      ],
-      "evidence_role": "direct_textbook",
-      "evidence_spans": [
-        {
-          "evidence_role": "direct_textbook",
-          "excerpt": "12 万以上数的认识",
-          "excerpt_hash": "9a30848408523c5999d7390385db2b8bd7d8dc3385385c6d3fffe64e2ede4c81",
-          "pdf_page": 17,
-          "printed_page": "12",
-          "span_id": "tes_5f417231d07f1be4"
-        }
-      ],
-      "learning_component_ids": [
-        "lc_4ff1d1f2ada9ed9e"
-      ],
-      "learning_components": [
-        {
-          "component_id": "lc_4ff1d1f2ada9ed9e",
-          "label": "结合具体实例解释万以上数的含义"
-        }
-      ],
-      "level": "unit",
-      "method": "component_evidence_hybrid",
-      "node_id": "tcn_6a4dfedaac151899",
-      "node_title": "12万以上数的认识",
-      "pdf_page": 17,
-      "printed_page": "12",
-      "publication_status": "published",
-      "rationale": "教材课文“12万以上数的认识”与课标 MA-D2-AL-001 的可教学小能力“结合具体实例解释万以上数的含义”形成页内证据匹配。",
+      "rationale": "教材课文“2万以上数的认识”与课标 MA-D2-AL-001 的可教学小能力“结合具体实例解释万以上数的含义”形成页内证据匹配。",
       "relation_type": "supports",
       "resource_type": "student_textbook",
       "review_status": "machine_checked",
@@ -294,7 +239,7 @@
     },
     {
       "algorithm_version": "component-evidence-hybrid-v3",
-      "alignment_id": "tca_596fc29806de6876",
+      "alignment_id": "tca_dd7b8d8be5673801",
       "alignment_type": "supports",
       "confidence": 0.92,
       "coverage": "partial",
@@ -304,19 +249,19 @@
       "evidence_level": "L2_topic",
       "evidence_refs": [
         "external_smartedu_2026_math_primary_grade_4_up",
-        "tes_1728f7e47a62439b",
-        "textbook-node:tcn_fd8419d5d780b938",
+        "tes_94a989aa858f3321",
+        "textbook-node:tcn_012ada14d4cb337e",
         "textbook-unit:tcu_0e7eec2643c43008"
       ],
       "evidence_role": "direct_textbook",
       "evidence_spans": [
         {
           "evidence_role": "direct_textbook",
-          "excerpt": "2 万以上数的认识",
-          "excerpt_hash": "73b596919c940c67823c9aaf3254ba46967a64f297891c4572441860b9fec15a",
-          "pdf_page": 7,
-          "printed_page": "2",
-          "span_id": "tes_1728f7e47a62439b"
+          "excerpt": "6 万以上数的认识",
+          "excerpt_hash": "a8ca8ca120558164cbb41c302218f449ee0a77a4a00ff10b8e7fa3cdbc449f17",
+          "pdf_page": 11,
+          "printed_page": "6",
+          "span_id": "tes_94a989aa858f3321"
         }
       ],
       "learning_component_ids": [
@@ -330,232 +275,12 @@
       ],
       "level": "unit",
       "method": "component_evidence_hybrid",
-      "node_id": "tcn_fd8419d5d780b938",
-      "node_title": "2万以上数的认识",
-      "pdf_page": 7,
-      "printed_page": "2",
+      "node_id": "tcn_012ada14d4cb337e",
+      "node_title": "6万以上数的认识",
+      "pdf_page": 11,
+      "printed_page": "6",
       "publication_status": "published",
-      "rationale": "教材课文“2万以上数的认识”与课标 MA-D2-AL-001 的可教学小能力“结合具体实例解释万以上数的含义”形成页内证据匹配。",
-      "relation_type": "supports",
-      "resource_type": "student_textbook",
-      "review_status": "machine_checked",
-      "revision_status": "current_confirmed",
-      "textbook_grade": 4,
-      "textbook_subject": "数学",
-      "textbook_title": "数学4年级上册",
-      "textbook_volume": "上册",
-      "unit_id": "tcu_0e7eec2643c43008",
-      "unit_title": "一 万以上数的认识"
-    },
-    {
-      "algorithm_version": "component-evidence-hybrid-v3",
-      "alignment_id": "tca_69d7b6e75bf48216",
-      "alignment_type": "supports",
-      "confidence": 0.92,
-      "coverage": "partial",
-      "edition_id": "ed_dda80e43104244896faa",
-      "evidence_basis": "toc_title",
-      "evidence_gap": "当前证据来自目录标题与课标概念匹配，尚未保存教材正文或练习摘录；因此只能声明主题支持，不能声明完整教授。",
-      "evidence_level": "L2_topic",
-      "evidence_refs": [
-        "external_smartedu_2026_math_primary_grade_4_up",
-        "tes_ae022493634b5e6c",
-        "textbook-node:tcn_5c53965d0e3d6855",
-        "textbook-unit:tcu_0e7eec2643c43008"
-      ],
-      "evidence_role": "direct_textbook",
-      "evidence_spans": [
-        {
-          "evidence_role": "direct_textbook",
-          "excerpt": "16 万以上数的认识",
-          "excerpt_hash": "77286f9ab846d736b5c9863575557d8ad19598fdf3b2568ae637da36eefd5fd7",
-          "pdf_page": 21,
-          "printed_page": "16",
-          "span_id": "tes_ae022493634b5e6c"
-        }
-      ],
-      "learning_component_ids": [
-        "lc_4ff1d1f2ada9ed9e"
-      ],
-      "learning_components": [
-        {
-          "component_id": "lc_4ff1d1f2ada9ed9e",
-          "label": "结合具体实例解释万以上数的含义"
-        }
-      ],
-      "level": "unit",
-      "method": "component_evidence_hybrid",
-      "node_id": "tcn_5c53965d0e3d6855",
-      "node_title": "16万以上数的认识",
-      "pdf_page": 21,
-      "printed_page": "16",
-      "publication_status": "published",
-      "rationale": "教材课文“16万以上数的认识”与课标 MA-D2-AL-001 的可教学小能力“结合具体实例解释万以上数的含义”形成页内证据匹配。",
-      "relation_type": "supports",
-      "resource_type": "student_textbook",
-      "review_status": "machine_checked",
-      "revision_status": "current_confirmed",
-      "textbook_grade": 4,
-      "textbook_subject": "数学",
-      "textbook_title": "数学4年级上册",
-      "textbook_volume": "上册",
-      "unit_id": "tcu_0e7eec2643c43008",
-      "unit_title": "一 万以上数的认识"
-    },
-    {
-      "algorithm_version": "component-evidence-hybrid-v3",
-      "alignment_id": "tca_80a6f4134e6c26c4",
-      "alignment_type": "supports",
-      "confidence": 0.92,
-      "coverage": "partial",
-      "edition_id": "ed_dda80e43104244896faa",
-      "evidence_basis": "toc_title",
-      "evidence_gap": "当前证据来自目录标题与课标概念匹配，尚未保存教材正文或练习摘录；因此只能声明主题支持，不能声明完整教授。",
-      "evidence_level": "L2_topic",
-      "evidence_refs": [
-        "external_smartedu_2026_math_primary_grade_4_up",
-        "tes_43551a90972e0a83",
-        "textbook-node:tcn_9eae7626c19518f6",
-        "textbook-unit:tcu_0e7eec2643c43008"
-      ],
-      "evidence_role": "direct_textbook",
-      "evidence_spans": [
-        {
-          "evidence_role": "direct_textbook",
-          "excerpt": "10 万以上数的认识",
-          "excerpt_hash": "ca29d2f9dcd0584dce2080687e20388745d8475f2dec76503ebfa557bf7a3026",
-          "pdf_page": 15,
-          "printed_page": "10",
-          "span_id": "tes_43551a90972e0a83"
-        }
-      ],
-      "learning_component_ids": [
-        "lc_4ff1d1f2ada9ed9e"
-      ],
-      "learning_components": [
-        {
-          "component_id": "lc_4ff1d1f2ada9ed9e",
-          "label": "结合具体实例解释万以上数的含义"
-        }
-      ],
-      "level": "unit",
-      "method": "component_evidence_hybrid",
-      "node_id": "tcn_9eae7626c19518f6",
-      "node_title": "10万以上数的认识",
-      "pdf_page": 15,
-      "printed_page": "10",
-      "publication_status": "published",
-      "rationale": "教材课文“10万以上数的认识”与课标 MA-D2-AL-001 的可教学小能力“结合具体实例解释万以上数的含义”形成页内证据匹配。",
-      "relation_type": "supports",
-      "resource_type": "student_textbook",
-      "review_status": "machine_checked",
-      "revision_status": "current_confirmed",
-      "textbook_grade": 4,
-      "textbook_subject": "数学",
-      "textbook_title": "数学4年级上册",
-      "textbook_volume": "上册",
-      "unit_id": "tcu_0e7eec2643c43008",
-      "unit_title": "一 万以上数的认识"
-    },
-    {
-      "algorithm_version": "component-evidence-hybrid-v3",
-      "alignment_id": "tca_9c4757ab452eb8fd",
-      "alignment_type": "supports",
-      "confidence": 0.92,
-      "coverage": "partial",
-      "edition_id": "ed_dda80e43104244896faa",
-      "evidence_basis": "toc_title",
-      "evidence_gap": "当前证据来自目录标题与课标概念匹配，尚未保存教材正文或练习摘录；因此只能声明主题支持，不能声明完整教授。",
-      "evidence_level": "L2_topic",
-      "evidence_refs": [
-        "external_smartedu_2026_math_primary_grade_4_up",
-        "tes_b45454f54f7539fb",
-        "textbook-node:tcn_378ea7a2892a4331",
-        "textbook-unit:tcu_0e7eec2643c43008"
-      ],
-      "evidence_role": "direct_textbook",
-      "evidence_spans": [
-        {
-          "evidence_role": "direct_textbook",
-          "excerpt": "22 万以上数的认识",
-          "excerpt_hash": "4f9c431142aed9159a966b7ec906b05c73052986aafdb5fbffa9c266b35c678c",
-          "pdf_page": 27,
-          "printed_page": "22",
-          "span_id": "tes_b45454f54f7539fb"
-        }
-      ],
-      "learning_component_ids": [
-        "lc_4ff1d1f2ada9ed9e"
-      ],
-      "learning_components": [
-        {
-          "component_id": "lc_4ff1d1f2ada9ed9e",
-          "label": "结合具体实例解释万以上数的含义"
-        }
-      ],
-      "level": "unit",
-      "method": "component_evidence_hybrid",
-      "node_id": "tcn_378ea7a2892a4331",
-      "node_title": "22万以上数的认识",
-      "pdf_page": 27,
-      "printed_page": "22",
-      "publication_status": "published",
-      "rationale": "教材课文“22万以上数的认识”与课标 MA-D2-AL-001 的可教学小能力“结合具体实例解释万以上数的含义”形成页内证据匹配。",
-      "relation_type": "supports",
-      "resource_type": "student_textbook",
-      "review_status": "machine_checked",
-      "revision_status": "current_confirmed",
-      "textbook_grade": 4,
-      "textbook_subject": "数学",
-      "textbook_title": "数学4年级上册",
-      "textbook_volume": "上册",
-      "unit_id": "tcu_0e7eec2643c43008",
-      "unit_title": "一 万以上数的认识"
-    },
-    {
-      "algorithm_version": "component-evidence-hybrid-v3",
-      "alignment_id": "tca_a6843c6023613b36",
-      "alignment_type": "supports",
-      "confidence": 0.92,
-      "coverage": "partial",
-      "edition_id": "ed_dda80e43104244896faa",
-      "evidence_basis": "toc_title",
-      "evidence_gap": "当前证据来自目录标题与课标概念匹配，尚未保存教材正文或练习摘录；因此只能声明主题支持，不能声明完整教授。",
-      "evidence_level": "L2_topic",
-      "evidence_refs": [
-        "external_smartedu_2026_math_primary_grade_4_up",
-        "tes_1a127b046f4be2de",
-        "textbook-node:tcn_c34c2d319f7e054e",
-        "textbook-unit:tcu_0e7eec2643c43008"
-      ],
-      "evidence_role": "direct_textbook",
-      "evidence_spans": [
-        {
-          "evidence_role": "direct_textbook",
-          "excerpt": "14 万以上数的认识",
-          "excerpt_hash": "191127b23dc475d9a41ba2ba52064a0a087f52d5e813cf720851cade7d09542e",
-          "pdf_page": 19,
-          "printed_page": "14",
-          "span_id": "tes_1a127b046f4be2de"
-        }
-      ],
-      "learning_component_ids": [
-        "lc_4ff1d1f2ada9ed9e"
-      ],
-      "learning_components": [
-        {
-          "component_id": "lc_4ff1d1f2ada9ed9e",
-          "label": "结合具体实例解释万以上数的含义"
-        }
-      ],
-      "level": "unit",
-      "method": "component_evidence_hybrid",
-      "node_id": "tcn_c34c2d319f7e054e",
-      "node_title": "14万以上数的认识",
-      "pdf_page": 19,
-      "printed_page": "14",
-      "publication_status": "published",
-      "rationale": "教材课文“14万以上数的认识”与课标 MA-D2-AL-001 的可教学小能力“结合具体实例解释万以上数的含义”形成页内证据匹配。",
+      "rationale": "教材课文“6万以上数的认识”与课标 MA-D2-AL-001 的可教学小能力“结合具体实例解释万以上数的含义”形成页内证据匹配。",
       "relation_type": "supports",
       "resource_type": "student_textbook",
       "review_status": "machine_checked",
@@ -624,6 +349,226 @@
     },
     {
       "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_80a6f4134e6c26c4",
+      "alignment_type": "supports",
+      "confidence": 0.92,
+      "coverage": "partial",
+      "edition_id": "ed_dda80e43104244896faa",
+      "evidence_basis": "toc_title",
+      "evidence_gap": "当前证据来自目录标题与课标概念匹配，尚未保存教材正文或练习摘录；因此只能声明主题支持，不能声明完整教授。",
+      "evidence_level": "L2_topic",
+      "evidence_refs": [
+        "external_smartedu_2026_math_primary_grade_4_up",
+        "tes_43551a90972e0a83",
+        "textbook-node:tcn_9eae7626c19518f6",
+        "textbook-unit:tcu_0e7eec2643c43008"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "10 万以上数的认识",
+          "excerpt_hash": "ca29d2f9dcd0584dce2080687e20388745d8475f2dec76503ebfa557bf7a3026",
+          "pdf_page": 15,
+          "printed_page": "10",
+          "span_id": "tes_43551a90972e0a83"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_4ff1d1f2ada9ed9e"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_4ff1d1f2ada9ed9e",
+          "label": "结合具体实例解释万以上数的含义"
+        }
+      ],
+      "level": "unit",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_9eae7626c19518f6",
+      "node_title": "10万以上数的认识",
+      "pdf_page": 15,
+      "printed_page": "10",
+      "publication_status": "published",
+      "rationale": "教材课文“10万以上数的认识”与课标 MA-D2-AL-001 的可教学小能力“结合具体实例解释万以上数的含义”形成页内证据匹配。",
+      "relation_type": "supports",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "textbook_grade": 4,
+      "textbook_subject": "数学",
+      "textbook_title": "数学4年级上册",
+      "textbook_volume": "上册",
+      "unit_id": "tcu_0e7eec2643c43008",
+      "unit_title": "一 万以上数的认识"
+    },
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_3be26bcd6ea4737d",
+      "alignment_type": "supports",
+      "confidence": 0.92,
+      "coverage": "partial",
+      "edition_id": "ed_dda80e43104244896faa",
+      "evidence_basis": "toc_title",
+      "evidence_gap": "当前证据来自目录标题与课标概念匹配，尚未保存教材正文或练习摘录；因此只能声明主题支持，不能声明完整教授。",
+      "evidence_level": "L2_topic",
+      "evidence_refs": [
+        "external_smartedu_2026_math_primary_grade_4_up",
+        "tes_5f417231d07f1be4",
+        "textbook-node:tcn_6a4dfedaac151899",
+        "textbook-unit:tcu_0e7eec2643c43008"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "12 万以上数的认识",
+          "excerpt_hash": "9a30848408523c5999d7390385db2b8bd7d8dc3385385c6d3fffe64e2ede4c81",
+          "pdf_page": 17,
+          "printed_page": "12",
+          "span_id": "tes_5f417231d07f1be4"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_4ff1d1f2ada9ed9e"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_4ff1d1f2ada9ed9e",
+          "label": "结合具体实例解释万以上数的含义"
+        }
+      ],
+      "level": "unit",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_6a4dfedaac151899",
+      "node_title": "12万以上数的认识",
+      "pdf_page": 17,
+      "printed_page": "12",
+      "publication_status": "published",
+      "rationale": "教材课文“12万以上数的认识”与课标 MA-D2-AL-001 的可教学小能力“结合具体实例解释万以上数的含义”形成页内证据匹配。",
+      "relation_type": "supports",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "textbook_grade": 4,
+      "textbook_subject": "数学",
+      "textbook_title": "数学4年级上册",
+      "textbook_volume": "上册",
+      "unit_id": "tcu_0e7eec2643c43008",
+      "unit_title": "一 万以上数的认识"
+    },
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_a6843c6023613b36",
+      "alignment_type": "supports",
+      "confidence": 0.92,
+      "coverage": "partial",
+      "edition_id": "ed_dda80e43104244896faa",
+      "evidence_basis": "toc_title",
+      "evidence_gap": "当前证据来自目录标题与课标概念匹配，尚未保存教材正文或练习摘录；因此只能声明主题支持，不能声明完整教授。",
+      "evidence_level": "L2_topic",
+      "evidence_refs": [
+        "external_smartedu_2026_math_primary_grade_4_up",
+        "tes_1a127b046f4be2de",
+        "textbook-node:tcn_c34c2d319f7e054e",
+        "textbook-unit:tcu_0e7eec2643c43008"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "14 万以上数的认识",
+          "excerpt_hash": "191127b23dc475d9a41ba2ba52064a0a087f52d5e813cf720851cade7d09542e",
+          "pdf_page": 19,
+          "printed_page": "14",
+          "span_id": "tes_1a127b046f4be2de"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_4ff1d1f2ada9ed9e"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_4ff1d1f2ada9ed9e",
+          "label": "结合具体实例解释万以上数的含义"
+        }
+      ],
+      "level": "unit",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_c34c2d319f7e054e",
+      "node_title": "14万以上数的认识",
+      "pdf_page": 19,
+      "printed_page": "14",
+      "publication_status": "published",
+      "rationale": "教材课文“14万以上数的认识”与课标 MA-D2-AL-001 的可教学小能力“结合具体实例解释万以上数的含义”形成页内证据匹配。",
+      "relation_type": "supports",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "textbook_grade": 4,
+      "textbook_subject": "数学",
+      "textbook_title": "数学4年级上册",
+      "textbook_volume": "上册",
+      "unit_id": "tcu_0e7eec2643c43008",
+      "unit_title": "一 万以上数的认识"
+    },
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_69d7b6e75bf48216",
+      "alignment_type": "supports",
+      "confidence": 0.92,
+      "coverage": "partial",
+      "edition_id": "ed_dda80e43104244896faa",
+      "evidence_basis": "toc_title",
+      "evidence_gap": "当前证据来自目录标题与课标概念匹配，尚未保存教材正文或练习摘录；因此只能声明主题支持，不能声明完整教授。",
+      "evidence_level": "L2_topic",
+      "evidence_refs": [
+        "external_smartedu_2026_math_primary_grade_4_up",
+        "tes_ae022493634b5e6c",
+        "textbook-node:tcn_5c53965d0e3d6855",
+        "textbook-unit:tcu_0e7eec2643c43008"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "16 万以上数的认识",
+          "excerpt_hash": "77286f9ab846d736b5c9863575557d8ad19598fdf3b2568ae637da36eefd5fd7",
+          "pdf_page": 21,
+          "printed_page": "16",
+          "span_id": "tes_ae022493634b5e6c"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_4ff1d1f2ada9ed9e"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_4ff1d1f2ada9ed9e",
+          "label": "结合具体实例解释万以上数的含义"
+        }
+      ],
+      "level": "unit",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_5c53965d0e3d6855",
+      "node_title": "16万以上数的认识",
+      "pdf_page": 21,
+      "printed_page": "16",
+      "publication_status": "published",
+      "rationale": "教材课文“16万以上数的认识”与课标 MA-D2-AL-001 的可教学小能力“结合具体实例解释万以上数的含义”形成页内证据匹配。",
+      "relation_type": "supports",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "textbook_grade": 4,
+      "textbook_subject": "数学",
+      "textbook_title": "数学4年级上册",
+      "textbook_volume": "上册",
+      "unit_id": "tcu_0e7eec2643c43008",
+      "unit_title": "一 万以上数的认识"
+    },
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
       "alignment_id": "tca_b7316bb24692a6ed",
       "alignment_type": "supports",
       "confidence": 0.92,
@@ -679,7 +624,7 @@
     },
     {
       "algorithm_version": "component-evidence-hybrid-v3",
-      "alignment_id": "tca_dd7b8d8be5673801",
+      "alignment_id": "tca_04b896973d5eca1b",
       "alignment_type": "supports",
       "confidence": 0.92,
       "coverage": "partial",
@@ -689,19 +634,19 @@
       "evidence_level": "L2_topic",
       "evidence_refs": [
         "external_smartedu_2026_math_primary_grade_4_up",
-        "tes_94a989aa858f3321",
-        "textbook-node:tcn_012ada14d4cb337e",
+        "tes_ecf52a4776748a24",
+        "textbook-node:tcn_8afd79878aeefa66",
         "textbook-unit:tcu_0e7eec2643c43008"
       ],
       "evidence_role": "direct_textbook",
       "evidence_spans": [
         {
           "evidence_role": "direct_textbook",
-          "excerpt": "6 万以上数的认识",
-          "excerpt_hash": "a8ca8ca120558164cbb41c302218f449ee0a77a4a00ff10b8e7fa3cdbc449f17",
-          "pdf_page": 11,
-          "printed_page": "6",
-          "span_id": "tes_94a989aa858f3321"
+          "excerpt": "20 万以上数的认识",
+          "excerpt_hash": "208b4d5ccb338f168e21c56b98b7bb13335abf6eea6deb37c6131f9546d7ad35",
+          "pdf_page": 25,
+          "printed_page": "20",
+          "span_id": "tes_ecf52a4776748a24"
         }
       ],
       "learning_component_ids": [
@@ -715,12 +660,67 @@
       ],
       "level": "unit",
       "method": "component_evidence_hybrid",
-      "node_id": "tcn_012ada14d4cb337e",
-      "node_title": "6万以上数的认识",
-      "pdf_page": 11,
-      "printed_page": "6",
+      "node_id": "tcn_8afd79878aeefa66",
+      "node_title": "20万以上数的认识",
+      "pdf_page": 25,
+      "printed_page": "20",
       "publication_status": "published",
-      "rationale": "教材课文“6万以上数的认识”与课标 MA-D2-AL-001 的可教学小能力“结合具体实例解释万以上数的含义”形成页内证据匹配。",
+      "rationale": "教材课文“20万以上数的认识”与课标 MA-D2-AL-001 的可教学小能力“结合具体实例解释万以上数的含义”形成页内证据匹配。",
+      "relation_type": "supports",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "textbook_grade": 4,
+      "textbook_subject": "数学",
+      "textbook_title": "数学4年级上册",
+      "textbook_volume": "上册",
+      "unit_id": "tcu_0e7eec2643c43008",
+      "unit_title": "一 万以上数的认识"
+    },
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_9c4757ab452eb8fd",
+      "alignment_type": "supports",
+      "confidence": 0.92,
+      "coverage": "partial",
+      "edition_id": "ed_dda80e43104244896faa",
+      "evidence_basis": "toc_title",
+      "evidence_gap": "当前证据来自目录标题与课标概念匹配，尚未保存教材正文或练习摘录；因此只能声明主题支持，不能声明完整教授。",
+      "evidence_level": "L2_topic",
+      "evidence_refs": [
+        "external_smartedu_2026_math_primary_grade_4_up",
+        "tes_b45454f54f7539fb",
+        "textbook-node:tcn_378ea7a2892a4331",
+        "textbook-unit:tcu_0e7eec2643c43008"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "22 万以上数的认识",
+          "excerpt_hash": "4f9c431142aed9159a966b7ec906b05c73052986aafdb5fbffa9c266b35c678c",
+          "pdf_page": 27,
+          "printed_page": "22",
+          "span_id": "tes_b45454f54f7539fb"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_4ff1d1f2ada9ed9e"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_4ff1d1f2ada9ed9e",
+          "label": "结合具体实例解释万以上数的含义"
+        }
+      ],
+      "level": "unit",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_378ea7a2892a4331",
+      "node_title": "22万以上数的认识",
+      "pdf_page": 27,
+      "printed_page": "22",
+      "publication_status": "published",
+      "rationale": "教材课文“22万以上数的认识”与课标 MA-D2-AL-001 的可教学小能力“结合具体实例解释万以上数的含义”形成页内证据匹配。",
       "relation_type": "supports",
       "resource_type": "student_textbook",
       "review_status": "machine_checked",

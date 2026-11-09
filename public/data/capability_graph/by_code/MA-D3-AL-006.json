@@ -260,7 +260,7 @@
     },
     {
       "algorithm_version": "component-evidence-hybrid-v3",
-      "alignment_id": "tca_094f121f25b8f69e",
+      "alignment_id": "tca_5e30ba436ed49e8e",
       "alignment_type": "supports",
       "confidence": 0.92,
       "coverage": "partial",
@@ -270,19 +270,19 @@
       "evidence_level": "L2_topic",
       "evidence_refs": [
         "external_smartedu_2026_math_primary_grade_5_up",
-        "tes_83cdcd98ffe7fc06",
-        "textbook-node:tcn_7a8f612d7c8fc281",
+        "tes_48656a91f4b88e60",
+        "textbook-node:tcn_8a269e4d65ae0447",
         "textbook-unit:tcu_94c5dfd4ebcd8d84"
       ],
       "evidence_role": "direct_textbook",
       "evidence_spans": [
         {
           "evidence_role": "direct_textbook",
-          "excerpt": "60 用字母表示数和数量关系",
-          "excerpt_hash": "a49f0c6770469554c6f858adf97594dd4b09b79e47c6e26159e08ae8a5753984",
-          "pdf_page": 65,
-          "printed_page": "60",
-          "span_id": "tes_83cdcd98ffe7fc06"
+          "excerpt": "56 用字母表示数和数量关系",
+          "excerpt_hash": "9579cec9add9b806726f2fe2adcead960248649acda35b0ebfff738ee09ec8a6",
+          "pdf_page": 61,
+          "printed_page": "56",
+          "span_id": "tes_48656a91f4b88e60"
         }
       ],
       "learning_component_ids": [
@@ -296,12 +296,12 @@
       ],
       "level": "unit",
       "method": "component_evidence_hybrid",
-      "node_id": "tcn_7a8f612d7c8fc281",
-      "node_title": "60用字母表示数和数量关系",
-      "pdf_page": 65,
-      "printed_page": "60",
+      "node_id": "tcn_8a269e4d65ae0447",
+      "node_title": "56用字母表示数和数量关系",
+      "pdf_page": 61,
+      "printed_page": "56",
       "publication_status": "published",
-      "rationale": "教材课文“60用字母表示数和数量关系”与课标 MA-D3-AL-006 的可教学小能力“在具体情境中，用字母或含有字母的式子表示数量之间的关系、性质和规律，感悟用字母表示的一般性”形成页内证据匹配。",
+      "rationale": "教材课文“56用字母表示数和数量关系”与课标 MA-D3-AL-006 的可教学小能力“在具体情境中，用字母或含有字母的式子表示数量之间的关系、性质和规律，感悟用字母表示的一般性”形成页内证据匹配。",
       "relation_type": "supports",
       "resource_type": "student_textbook",
       "review_status": "machine_checked",
@@ -370,7 +370,7 @@
     },
     {
       "algorithm_version": "component-evidence-hybrid-v3",
-      "alignment_id": "tca_5e30ba436ed49e8e",
+      "alignment_id": "tca_094f121f25b8f69e",
       "alignment_type": "supports",
       "confidence": 0.92,
       "coverage": "partial",
@@ -380,19 +380,19 @@
       "evidence_level": "L2_topic",
       "evidence_refs": [
         "external_smartedu_2026_math_primary_grade_5_up",
-        "tes_48656a91f4b88e60",
-        "textbook-node:tcn_8a269e4d65ae0447",
+        "tes_83cdcd98ffe7fc06",
+        "textbook-node:tcn_7a8f612d7c8fc281",
         "textbook-unit:tcu_94c5dfd4ebcd8d84"
       ],
       "evidence_role": "direct_textbook",
       "evidence_spans": [
         {
           "evidence_role": "direct_textbook",
-          "excerpt": "56 用字母表示数和数量关系",
-          "excerpt_hash": "9579cec9add9b806726f2fe2adcead960248649acda35b0ebfff738ee09ec8a6",
-          "pdf_page": 61,
-          "printed_page": "56",
-          "span_id": "tes_48656a91f4b88e60"
+          "excerpt": "60 用字母表示数和数量关系",
+          "excerpt_hash": "a49f0c6770469554c6f858adf97594dd4b09b79e47c6e26159e08ae8a5753984",
+          "pdf_page": 65,
+          "printed_page": "60",
+          "span_id": "tes_83cdcd98ffe7fc06"
         }
       ],
       "learning_component_ids": [
@@ -406,67 +406,12 @@
       ],
       "level": "unit",
       "method": "component_evidence_hybrid",
-      "node_id": "tcn_8a269e4d65ae0447",
-      "node_title": "56用字母表示数和数量关系",
-      "pdf_page": 61,
-      "printed_page": "56",
+      "node_id": "tcn_7a8f612d7c8fc281",
+      "node_title": "60用字母表示数和数量关系",
+      "pdf_page": 65,
+      "printed_page": "60",
       "publication_status": "published",
-      "rationale": "教材课文“56用字母表示数和数量关系”与课标 MA-D3-AL-006 的可教学小能力“在具体情境中，用字母或含有字母的式子表示数量之间的关系、性质和规律，感悟用字母表示的一般性”形成页内证据匹配。",
-      "relation_type": "supports",
-      "resource_type": "student_textbook",
-      "review_status": "machine_checked",
-      "revision_status": "current_confirmed",
-      "textbook_grade": 5,
-      "textbook_subject": "数学",
-      "textbook_title": "数学5年级上册",
-      "textbook_volume": "上册",
-      "unit_id": "tcu_94c5dfd4ebcd8d84",
-      "unit_title": "五 用字母表示数和数量关系"
-    },
-    {
-      "algorithm_version": "component-evidence-hybrid-v3",
-      "alignment_id": "tca_7bcbcc03eee6024d",
-      "alignment_type": "supports",
-      "confidence": 0.92,
-      "coverage": "partial",
-      "edition_id": "ed_6f696b62cd631c35e5d0",
-      "evidence_basis": "toc_title",
-      "evidence_gap": "当前证据来自目录标题与课标概念匹配，尚未保存教材正文或练习摘录；因此只能声明主题支持，不能声明完整教授。",
-      "evidence_level": "L2_topic",
-      "evidence_refs": [
-        "external_smartedu_2026_math_primary_grade_5_up",
-        "tes_fde3f319e96c1bd1",
-        "textbook-node:tcn_75f4ffe0d6358539",
-        "textbook-unit:tcu_94c5dfd4ebcd8d84"
-      ],
-      "evidence_role": "direct_textbook",
-      "evidence_spans": [
-        {
-          "evidence_role": "direct_textbook",
-          "excerpt": "66 用字母表示数和数量关系",
-          "excerpt_hash": "2de9c8a36c6f68d10be515ac488a96be4e327a9d7e44f02dd63302eeb5c8ad34",
-          "pdf_page": 71,
-          "printed_page": "66",
-          "span_id": "tes_fde3f319e96c1bd1"
-        }
-      ],
-      "learning_component_ids": [
-        "lc_977f1b35edd7188a"
-      ],
-      "learning_components": [
-        {
-          "component_id": "lc_977f1b35edd7188a",
-          "label": "在具体情境中，用字母或含有字母的式子表示数量之间的关系、性质和规律，感悟用字母表示的一般性"
-        }
-      ],
-      "level": "unit",
-      "method": "component_evidence_hybrid",
-      "node_id": "tcn_75f4ffe0d6358539",
-      "node_title": "66用字母表示数和数量关系",
-      "pdf_page": 71,
-      "printed_page": "66",
-      "publication_status": "published",
-      "rationale": "教材课文“66用字母表示数和数量关系”与课标 MA-D3-AL-006 的可教学小能力“在具体情境中，用字母或含有字母的式子表示数量之间的关系、性质和规律，感悟用字母表示的一般性”形成页内证据匹配。",
+      "rationale": "教材课文“60用字母表示数和数量关系”与课标 MA-D3-AL-006 的可教学小能力“在具体情境中，用字母或含有字母的式子表示数量之间的关系、性质和规律，感悟用字母表示的一般性”形成页内证据匹配。",
       "relation_type": "supports",
       "resource_type": "student_textbook",
       "review_status": "machine_checked",
@@ -577,6 +522,61 @@
       "printed_page": "64",
       "publication_status": "published",
       "rationale": "教材课文“64用字母表示数和数量关系”与课标 MA-D3-AL-006 的可教学小能力“在具体情境中，用字母或含有字母的式子表示数量之间的关系、性质和规律，感悟用字母表示的一般性”形成页内证据匹配。",
+      "relation_type": "supports",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "textbook_grade": 5,
+      "textbook_subject": "数学",
+      "textbook_title": "数学5年级上册",
+      "textbook_volume": "上册",
+      "unit_id": "tcu_94c5dfd4ebcd8d84",
+      "unit_title": "五 用字母表示数和数量关系"
+    },
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_7bcbcc03eee6024d",
+      "alignment_type": "supports",
+      "confidence": 0.92,
+      "coverage": "partial",
+      "edition_id": "ed_6f696b62cd631c35e5d0",
+      "evidence_basis": "toc_title",
+      "evidence_gap": "当前证据来自目录标题与课标概念匹配，尚未保存教材正文或练习摘录；因此只能声明主题支持，不能声明完整教授。",
+      "evidence_level": "L2_topic",
+      "evidence_refs": [
+        "external_smartedu_2026_math_primary_grade_5_up",
+        "tes_fde3f319e96c1bd1",
+        "textbook-node:tcn_75f4ffe0d6358539",
+        "textbook-unit:tcu_94c5dfd4ebcd8d84"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "66 用字母表示数和数量关系",
+          "excerpt_hash": "2de9c8a36c6f68d10be515ac488a96be4e327a9d7e44f02dd63302eeb5c8ad34",
+          "pdf_page": 71,
+          "printed_page": "66",
+          "span_id": "tes_fde3f319e96c1bd1"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_977f1b35edd7188a"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_977f1b35edd7188a",
+          "label": "在具体情境中，用字母或含有字母的式子表示数量之间的关系、性质和规律，感悟用字母表示的一般性"
+        }
+      ],
+      "level": "unit",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_75f4ffe0d6358539",
+      "node_title": "66用字母表示数和数量关系",
+      "pdf_page": 71,
+      "printed_page": "66",
+      "publication_status": "published",
+      "rationale": "教材课文“66用字母表示数和数量关系”与课标 MA-D3-AL-006 的可教学小能力“在具体情境中，用字母或含有字母的式子表示数量之间的关系、性质和规律，感悟用字母表示的一般性”形成页内证据匹配。",
       "relation_type": "supports",
       "resource_type": "student_textbook",
       "review_status": "machine_checked",

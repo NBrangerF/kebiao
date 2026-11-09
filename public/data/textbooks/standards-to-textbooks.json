@@ -43485,8 +43485,8 @@
           }
         ],
         "textbook_title": "数学3年级上册",
-        "unit_id": "tcu_0d8200eae031c6cf",
-        "unit_title": "第八单元 调查与记录"
+        "unit_id": "tcu_a41e23e5c8b69e72",
+        "unit_title": "综合实践 探索年月日的秘密"
       },
       {
         "algorithm_version": "component-evidence-hybrid-v3",
@@ -54987,8 +54987,8 @@
           }
         ],
         "textbook_title": "数学6年级上册",
-        "unit_id": "tcu_65896354770aa4bd",
-        "unit_title": "第一单元 分数除法"
+        "unit_id": "tcu_4b89433a2b986f80",
+        "unit_title": "第二单元 圆"
       }
     ],
     "MA-D3-GE-010": [
@@ -55226,8 +55226,8 @@
           }
         ],
         "textbook_title": "数学6年级上册",
-        "unit_id": "tcu_c873f595c4ad496d",
-        "unit_title": "第三单元 用字母表示（二）"
+        "unit_id": "tcu_464c8dde0f70f022",
+        "unit_title": "综合实践 制订节水方案"
       }
     ],
     "MA-D3-PR-001": [
@@ -55644,14 +55644,17 @@
         ],
         "matched_fields": [
           "learning_components",
-          "standard_context"
+          "standard_context",
+          "textbook_unit"
         ],
         "matched_keywords": [
           "解决问题",
           "发现",
           "提出",
           "方案",
-          "调查"
+          "调查",
+          "方案调查",
+          "综合"
         ],
         "node_id": "tcn_7c40c096e7025924",
         "node_ids": [
@@ -55701,8 +55704,8 @@
           }
         ],
         "textbook_title": "数学6年级上册",
-        "unit_id": "tcu_c873f595c4ad496d",
-        "unit_title": "第三单元 用字母表示（二）"
+        "unit_id": "tcu_464c8dde0f70f022",
+        "unit_title": "综合实践 制订节水方案"
       }
     ],
     "MA-D3-ST-001": [

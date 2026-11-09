@@ -1,6 +1,6 @@
 // 课堂诊断题: loading the banks (one per subject), finding questions for a book, a unit, a 要点 or a lesson,
 // and turning questions into slides. The slide list is shared by the projector view and the PPT export, so both show the same thing.
-import { bandOfGrade, subjectByName, subjectBySlug } from './subjects.js'
+import { bookKeyOf, subjectByName, subjectBySlug } from './subjects.js'
 
 const banks = new Map()
 let pendingIndex = null
@@ -42,24 +42,41 @@ export function pickSubject(index, { subject = '', point = '', myBook = null } =
     return wanted.find(slug => slug && available.has(slug)) || index?.subjects?.[0]?.slug || 'math'
 }
 
-const TERM_OF_VOLUME = { 上册: '上', 下册: '下', 全一册: '全' }
-
-/** A volume's book key in a bank: 5下 or 9全, or the 学段 (3-4, 3-5) its grade falls in for subjects filed by 学段. */
-export function bookKeyFor(bank, grade, term) {
-    const subject = subjectBySlug(bank?.subject_slug)
-    if (subject?.bands) return grade ? bandOfGrade(subject, grade) || '' : ''
-    return grade && term ? `${grade}${TERM_OF_VOLUME[term] || term}` : ''
+/** A volume's book key in a bank: 5下, 北师大5下 or 9全, or the 学段 (3-4, 3-5) its grade falls in for subjects filed by 学段. */
+export function bookKeyFor(bank, grade, term, edition = '') {
+    return bookKeyOf(subjectBySlug(bank?.subject_slug), { grade, volume: term, term, edition })
 }
 
 /** The book a page opens: ?book=, else ?grade=&term=, else 我的书, else the first book with questions. */
 export function pickBook(bank, { book = '', grade = '', term = '', myBook = null } = {}) {
     const books = bank?.books || []
     const has = key => books.some(entry => entry.key === key && entry.count)
-    const mine = myBook && myBook.subject === bank?.subject ? bookKeyFor(bank, myBook.grade, myBook.volume) : ''
+    const mine = myBook && myBook.subject === bank?.subject ? bookKeyFor(bank, myBook.grade, myBook.volume, myBook.edition_name) : ''
     return [book, bookKeyFor(bank, grade, term), mine].find(key => key && has(key)) || books.find(entry => entry.count)?.key || ''
 }
 
 export const bookOfKey = (bank, key) => bank?.books?.find(entry => entry.key === key) || null
+
+const publisher = edition => String(edition || '').replace(/（.*?）|\(.*?\)/gu, '').replace(/\s*PEP\b/u, '').replace(/版$/u, '').trim()
+
+/** A bank's books by publisher, for subjects with two editions (数学 人教/北师大): [{ name: '北师大版', books, count }]. */
+export function bookGroups(bank) {
+    const groups = []
+    for (const entry of bank?.books || []) {
+        const name = entry.edition === '课标' ? '' : `${publisher(entry.edition)}版`
+        let group = groups.find(item => item.name === name)
+        if (!group) groups.push(group = { name, books: [], count: 0 })
+        group.books.push(entry)
+        group.count += entry.count || 0
+    }
+    return groups.filter(group => group.count)
+}
+
+/** The book to open when a teacher switches to another publisher: the same volume if it has questions, else its first. */
+export function bookInGroup(group, current) {
+    const has = entry => entry.count
+    return (group.books.find(entry => has(entry) && entry.grade === current?.grade && entry.term === current?.term) || group.books.find(has) || group.books[0])?.key || ''
+}
 
 // How a class of 40–60 answers at once, without devices.
 export const TYPE_META = {

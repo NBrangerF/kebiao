@@ -105,7 +105,7 @@
         "external_smartedu_2026_bsd_math_primary_grade_6_up",
         "tes_29aba8e2d664a5ab",
         "textbook-node:tcn_1395351a495f4fc2",
-        "textbook-unit:tcu_c873f595c4ad496d"
+        "textbook-unit:tcu_464c8dde0f70f022"
       ],
       "evidence_role": "direct_textbook",
       "evidence_spans": [
@@ -143,8 +143,8 @@
       "textbook_subject": "数学",
       "textbook_title": "数学6年级上册",
       "textbook_volume": "上册",
-      "unit_id": "tcu_c873f595c4ad496d",
-      "unit_title": "第三单元 用字母表示（二）"
+      "unit_id": "tcu_464c8dde0f70f022",
+      "unit_title": "综合实践 制订节水方案"
     },
     {
       "algorithm_version": "full-alignment-scope-preserve-v2",

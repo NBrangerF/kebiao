@@ -34,8 +34,9 @@
     margin-top: 1.6rem;
 }
 
-/* the books row hangs right under the subjects, sharing their rule */
-.subjects + .books {
+/* the books row hangs right under the subjects (or the edition row), sharing their rule */
+.subjects + .books,
+.books + .books {
     border-top: 0;
 }
 

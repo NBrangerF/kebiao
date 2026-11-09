@@ -1,0 +1,516 @@
+{
+  "book": {"subject": "英语", "grade": 4, "term": "下", "edition": "外研社版（孙有中）"},
+  "misconceptions": [
+    {"id": "wy-police-as-person-4b", "name": "把 police 单用当“一个警察”", "why": "汉语“警察”能指一个人，police 又常被译成“警察”，就说成 a police。", "move": "把 police 和 police officer 写成两张卡：说一个人时举 officer 那张，说 a police officer。"},
+    {"id": "wy-place-for-job-4b", "name": "把上班的地方当成职业", "why": "先听到了 police station、fire station，就把地点直接填到“他是……”后面。", "move": "追问一句：这是一个人，还是一栋房子？人用 police officer、fireman，房子用 station。"},
+    {"id": "wy-wh-statement-order-4b", "name": "特殊疑问句没把 is 提前", "why": "汉语问句和陈述句语序一样（“他在看什么”），就照着说 What he is ...", "move": "先写陈述句 He is looking at ...，再把 is 移到 he 前面，用 What 换掉看的东西。"},
+    {"id": "wy-look-no-at-4b", "name": "“看某物”漏掉了 at", "why": "汉语“看什么”中间没有别的词，就以为 look 后面能直接跟要看的东西。", "move": "手指一样东西说 look at the bird，再问 What are you looking at?，让全班把 at 和“指”的动作连起来记。"},
+    {"id": "wy-ing-keep-e-4b", "name": "加 -ing 时保留了词尾 e", "why": "只记住“直接加 -ing”，没注意 write、dance 这类以不发音的 e 结尾的词要先去掉 e。", "move": "在卡片上写 write，用手盖住 e 再接上 ing，读一读 writing：e 本来就不发音，去掉后读音不变。"},
+    {"id": "wy-want-no-to-4b", "name": "want 后面直接接动词", "why": "汉语“想当”“想种”两个字直接连着，就把 want 和后面的动词直接连起来。", "move": "把 want to 写在同一张卡上不剪开，后面再接 be、plant、play 等动作卡。"},
+    {"id": "wy-pinyin-e-4b", "name": "照拼音把 e 读成“鹅”", "why": "拼音里 e 读“鹅”，he 又和拼音 hē（喝）写法一样，就照拼音读。", "move": "把 he、me、be 连着读，再和拼音 hē（喝）对比，让学生听出两个音不一样。"},
+    {"id": "wy-e-short-only-4b", "name": "见到 e 就读 bed 里的短音", "why": "最先学会的 e 是 bed、red、pen 里的短音，就以为 e 都这样读。", "move": "分两栏读：bed、red、ten | he、me、be，问：哪一栏的 e 读得和字母 E 的名字一样？"},
+    {"id": "wy-final-e-pronounced-4b", "name": "把词尾不发音的 e 读出来", "why": "拼音里每个字母都要读出来，看到末尾有 e 就以为也要多读一个音。", "move": "拍手数音节：robe、cute、home 都只拍一下，末尾的 e 不出声。"},
+    {"id": "wy-field-trip-as-farm-4b", "name": "把 field trip 当成去田里", "why": "Unit 1 刚学过 field 是“田地”，就按字面拼成“去田里的旅行”。", "move": "问：全班去动物园参观学习，算不算 field trip？算——它指学校组织的外出参观学习。"},
+    {"id": "wy-trip-as-holiday-4b", "name": "以为 trip 就是放假出游", "why": "trip 先记成了“旅游”，就以为 field trip 也是放假和家人出去玩。", "move": "圈出句子里的 our class：是谁一起去？全班一起去，是学校组织的外出学习。"},
+    {"id": "wy-there-answer-they-4b", "name": "把 there 答成了 they", "why": "trees、birds 是“它们”，就用 they 来答，没注意问句是 Are there 开头。", "move": "问句里有 there，答句照样用 there：Are there ...? — Yes, there are. / No, there aren't."},
+    {"id": "wy-spelling-only-4b", "name": "只看拼写像，不读出来比", "why": "come 和 home 只差一个字母，就以为读音也一样，没有把两个词读出来比一比。", "move": "全班大声读 come、home，再读 some、love，听出这几个词里的 o 和 home 不一样。"},
+    {"id": "wy-magic-e-ignored-4b", "name": "以为词尾不发音的 e 不改读音", "why": "词尾 e 不读出来，就以为它不起作用，把前面的元音还读成 cut、six 里那样的短音。", "move": "成对读：Sam—same、cut—cute、kit—kite，让学生自己说出：加了 e，前面的元音就读字母的名字音。"},
+    {"id": "wy-o-short-only-4b", "name": "见到 o 就读 hot 里的短音", "why": "最熟的 o 是 dog、hot 里的短音，没注意词尾不发音的 e 让 o 读字母 O 的名字音。", "move": "成对读：not—note、hot—home，听出加了 e 以后 o 读字母 O 的名字。"}
+  ],
+  "items": [
+    {
+      "id": "en-wy-4b-01",
+      "type": "choice",
+      "unit": "Unit 1 People at work",
+      "lesson": "Unit 1 People at work (Get ready)",
+      "lessons": ["People at work", "Get ready"],
+      "points": ["EN-S1-LK-01.6", "EN-S1-TH-01.15"],
+      "topic": "一名警察：police officer",
+      "stem": "高叔叔在派出所上班，他是一名警察。用英语说“他是一名警察”：He is a ____.",
+      "options": ["police station", "police officer", "police"],
+      "answer": 1,
+      "wrong": {"0": "wy-place-for-job-4b", "2": "wy-police-as-person-4b"},
+      "right": ["一名警察是 a police officer：He is a police officer.", "police station 是派出所，是他上班的地方，不是人。"],
+      "typical": ["“警察”就是 police：", "He is a police."],
+      "typical_error": "wy-police-as-person-4b",
+      "ladder": [
+        {"q": "用英语说“她是一名医生”：She is a ____.", "a": "doctor"},
+        {"q": "Mr Zhou works at a fire station. He is a ____.", "a": "fireman"},
+        {"q": "用英语说：我叔叔是一名警察，他在派出所上班。", "a": "My uncle is a police officer. He works at a police station."}
+      ]
+    },
+    {
+      "id": "en-wy-4b-02",
+      "type": "choice",
+      "unit": "Unit 1 People at work",
+      "lesson": "Unit 1 People at work (Start up)",
+      "lessons": ["People at work", "Start up"],
+      "points": ["EN-S1-LK-01.11", "EN-S1-LS-01.11"],
+      "topic": "回答 What does she do?",
+      "stem": "— What does Ms Lin do?　— ____（林女士是一名作家）",
+      "options": ["She's writer.", "Yes, she does.", "He's a writer.", "She's a writer."],
+      "answer": 3,
+      "wrong": {"0": "article-drop", "1": "wh-yes-no", "2": "he-she-mixup"},
+      "right": ["What does ... do? 问职业，不用 Yes / No 回答；", "Ms 是女士，用 she；职业前加 a：She's a writer."],
+      "typical": ["汉语说“她是作家”，不说“一个”：", "She's writer."],
+      "typical_error": "article-drop",
+      "ladder": [
+        {"q": "— What does Mr Wu do?　— ____ a farmer.", "a": "He's"},
+        {"q": "— What does your mum do?　— ____（她是护士）", "a": "She's a nurse."},
+        {"q": "用英语问“你哥哥是做什么的？”，再答“他是一名厨师”。", "a": "What does your brother do? He's a cook."}
+      ]
+    },
+    {
+      "id": "en-wy-4b-03",
+      "type": "judge",
+      "unit": "Unit 1 People at work",
+      "lesson": "Unit 1 People at work (Speed up)",
+      "lessons": ["People at work", "Speed up"],
+      "points": ["EN-S1-LK-01.9", "EN-S1-TH-01.15"],
+      "topic": "夜里上班：at night",
+      "stem": "Amy 这样介绍她的姑姑，你同意这样写吗？",
+      "work": ["My aunt is a nurse.", "She often works at night."],
+      "answer": true,
+      "wrong": {"disagree": "zai-always-in"},
+      "right": ["“在夜里”说 at night：She often works at night.", "这句写得对，at 不用改成 in。"],
+      "ladder": [
+        {"q": "补全：We sleep ____ night.", "a": "at"},
+        {"q": "补全：I get up ____ 7:00 ____ the morning.", "a": "at，in"},
+        {"q": "改错：My uncle is a cook. He often works in night.", "a": "in night → at night"}
+      ]
+    },
+    {
+      "id": "en-wy-4b-04",
+      "type": "judge",
+      "unit": "Unit 1 People at work",
+      "lesson": "Unit 1 People at work (Fuel up)",
+      "lessons": ["People at work", "Fuel up"],
+      "points": ["EN-S1-LK-01.3", "EN-S1-LK-01.2"],
+      "topic": "Sam 和 same 里的 a",
+      "stem": "读一读这两个词，你同意小明的说法吗？",
+      "work": ["Sam 和 same 里的 a 读音一样，", "因为 same 末尾的 e 不发音。"],
+      "answer": false,
+      "wrong": {"agree": "wy-magic-e-ignored-4b"},
+      "right": ["same 末尾的 e 不发音，但它让 a 读字母 A 的名字音，", "和 name 里的 a 一样；Sam 里的 a 读 bag 里的音。"],
+      "ladder": [
+        {"q": "读一读，圈出 a 读字母名音的词：cat, cake, bag", "a": "cake"},
+        {"q": "plan 加上 e 变成 plane，a 读得像 name 里的还是 bag 里的？", "a": "像 name 里的"},
+        {"q": "选出 a 读字母名音的两个词：game, cap, face, hand", "a": "game，face"}
+      ]
+    },
+    {
+      "id": "en-wy-4b-05",
+      "type": "choice",
+      "unit": "Unit 2 How do you feel today?",
+      "lesson": "Unit 2 How do you feel today？(Get ready)",
+      "lessons": ["How do you feel today", "Get ready"],
+      "points": ["EN-S1-LK-01.7", "EN-S1-LS-01.12"],
+      "topic": "I feel + 感受词",
+      "stem": "你今天很开心。用英语说“我感到很开心”：",
+      "options": ["I feel happy.", "I'm feel happy.", "I very happy."],
+      "answer": 0,
+      "wrong": {"1": "be-plus-verb", "2": "be-drop"},
+      "right": ["feel 是动词“感到”，后面直接跟 happy，", "前面不再加 am：I feel happy.（也可以说 I'm happy.）"],
+      "typical": ["说惯了 I'm happy，又加上 feel：", "I'm feel happy."],
+      "typical_error": "be-plus-verb",
+      "ladder": [
+        {"q": "补全：I ____ sad.（感到）", "a": "feel"},
+        {"q": "改错：I'm feel scared.", "a": "I feel scared.（或 I'm scared.）"},
+        {"q": "用英语说：我感到害怕，我告诉妈妈。", "a": "I feel scared. I tell my mum."}
+      ]
+    },
+    {
+      "id": "en-wy-4b-06",
+      "type": "choice",
+      "unit": "Unit 2 How do you feel today?",
+      "lesson": "Unit 2 How do you feel today？(Start up)",
+      "lessons": ["How do you feel today", "Start up"],
+      "points": ["EN-S1-LK-01.10", "EN-S1-LK-01.11"],
+      "topic": "正在哭：is crying",
+      "stem": "小弟弟 Tom 想妈妈了，这会儿正在哭。Tom ____ now.",
+      "options": ["crying", "cries", "is crying", "is cry"],
+      "answer": 2,
+      "wrong": {"0": "progressive-be-drop", "1": "simple-for-progressive", "3": "progressive-bare-verb"},
+      "right": ["正在发生的事用 am / is / are + 动词-ing：", "Tom is crying now."],
+      "typical": ["“正在哭”就是 crying：", "Tom crying now."],
+      "typical_error": "progressive-be-drop",
+      "ladder": [
+        {"q": "补全：Look! Mum ____ ____.（laugh，正在笑）", "a": "is laughing"},
+        {"q": "— Is Amy dancing?　— Yes, she ____.", "a": "is"},
+        {"q": "用英语说：我妹妹正在笑，她很开心。", "a": "My sister is laughing. She's happy."}
+      ]
+    },
+    {
+      "id": "en-wy-4b-07",
+      "type": "choice",
+      "unit": "Unit 2 How do you feel today?",
+      "lesson": "Unit 2 How do you feel today？(Speed up)",
+      "lessons": ["How do you feel today", "Speed up"],
+      "points": ["EN-S1-LK-01.9", "EN-S1-TH-01.11"],
+      "topic": "不该做：shouldn't",
+      "stem": "Tim 想拿妹妹的笔。妈妈对他说：你不应该拿她的笔。",
+      "options": ["You don't should take her pen.", "You shouldn't to take her pen.", "You shouldn't take her pen."],
+      "answer": 2,
+      "wrong": {"0": "dont-should-5a", "1": "modal-plus-to"},
+      "right": ["“不该做”是 shouldn't + 动词原形，", "前面不加 don't，后面不加 to。"],
+      "typical": ["“不”就是 don't：", "You don't should take her pen."],
+      "typical_error": "dont-should-5a",
+      "ladder": [
+        {"q": "补全：You ____ play in the street.（不该）", "a": "shouldn't"},
+        {"q": "改错：We shouldn't to laugh at him.", "a": "We shouldn't laugh at him."},
+        {"q": "用英语提醒弟弟：你不应该在床上吃东西。", "a": "You shouldn't eat in bed."}
+      ]
+    },
+    {
+      "id": "en-wy-4b-08",
+      "type": "choice",
+      "unit": "Unit 2 How do you feel today?",
+      "lesson": "Unit 2 How do you feel today？(Fuel up)",
+      "lessons": ["How do you feel today", "Fuel up"],
+      "points": ["EN-S1-LK-01.3", "EN-S1-LK-01.2"],
+      "topic": "cut 加 e 变成 cute",
+      "stem": "cut 加上 e 就变成 cute。读的时候有什么变化？",
+      "options": ["u 改读字母 U 的名字音", "不变，词尾 e 不发音", "末尾多读一个音：cu-te"],
+      "answer": 0,
+      "wrong": {"1": "wy-magic-e-ignored-4b", "2": "wy-final-e-pronounced-4b"},
+      "right": ["词尾 e 自己不发音，却让前面的 u 读字母 U 的名字音；", "cut 里的 u 读 bus 里的音，cute 只有一个音节。"],
+      "typical": ["e 不发音，就当它不存在：", "cute 读得和 cut 一样。"],
+      "typical_error": "wy-magic-e-ignored-4b",
+      "ladder": [
+        {"q": "cut 和 cute，哪个词里的 u 读字母 U 的名字音？", "a": "cute"},
+        {"q": "读一读，哪个词里的 u 和 cute 里的一样：bus, run, music", "a": "music"},
+        {"q": "再说一个 u 读字母 U 名字音的词（cute、music 除外）。", "a": "use（合理即可）"}
+      ]
+    },
+    {
+      "id": "en-wy-4b-09",
+      "type": "choice",
+      "unit": "Unit 3 Everyone's got talent!",
+      "lesson": "Unit 3 Everyone's got talent! (Get ready)",
+      "lessons": ["Everyone's got talent", "Get ready"],
+      "points": ["EN-S1-LK-01.11", "EN-S1-LS-01.11"],
+      "topic": "can 后接动词原形",
+      "stem": "Bob 叔叔会变魔术。选出正确的一句。",
+      "options": ["Uncle Bob can does magic.", "Uncle Bob can to do magic.", "Uncle Bob can doing magic.", "Uncle Bob can do magic."],
+      "answer": 3,
+      "wrong": {"0": "can-then-verb-s", "1": "can-to-verb", "2": "modal-plus-ing"},
+      "right": ["can 后面直接跟动词原形，不加 s、to、-ing：", "Uncle Bob can do magic."],
+      "typical": ["主语 Uncle Bob 是“他”，就把 do 变成 does：", "Uncle Bob can does magic."],
+      "typical_error": "can-then-verb-s",
+      "ladder": [
+        {"q": "选词补全：My sister can ____ photos.（take / takes）", "a": "take"},
+        {"q": "改错：Grandpa can draws birds.", "a": "Grandpa can draw birds."},
+        {"q": "用 can 说一说你家里一个人的才艺。", "a": "My dad can sing.（合理即可）"}
+      ]
+    },
+    {
+      "id": "en-wy-4b-10",
+      "type": "choice",
+      "unit": "Unit 3 Everyone's got talent!",
+      "lesson": "Unit 3 Everyone's got talent! (Start up)",
+      "lessons": ["Everyone's got talent", "Start up"],
+      "points": ["EN-S1-LK-01.10", "EN-S1-LK-01.11"],
+      "topic": "问“他在看什么”",
+      "stem": "Tom 一直盯着窗外。你小声问同桌：他在看什么？",
+      "options": ["What he is looking at?", "What is he looking at?", "What is he looking?"],
+      "answer": 1,
+      "wrong": {"0": "wy-wh-statement-order-4b", "2": "wy-look-no-at-4b"},
+      "right": ["问“在看什么”：What + is + he + looking at?", "is 要放到 he 前面，at 不能丢。"],
+      "typical": ["照汉语“他在看什么”的顺序说：", "What he is looking at?"],
+      "typical_error": "wy-wh-statement-order-4b",
+      "ladder": [
+        {"q": "补全：— What are you looking ____?　— A bird.", "a": "at"},
+        {"q": "连词成句：is / what / she / doing", "a": "What is she doing?"},
+        {"q": "用英语问“他们在看什么？”", "a": "What are they looking at?"}
+      ]
+    },
+    {
+      "id": "en-wy-4b-11",
+      "type": "choice",
+      "unit": "Unit 3 Everyone's got talent!",
+      "lesson": "Unit 3 Everyone's got talent! (Speed up)",
+      "lessons": ["Everyone's got talent", "Speed up"],
+      "points": ["EN-S1-LK-01.11", "EN-S1-LC-01.6"],
+      "topic": "good at 后接 -ing",
+      "stem": "兔子跳得特别好。Rabbits are good at ____.",
+      "options": ["jumping", "jump", "to jump"],
+      "answer": 0,
+      "wrong": {"1": "good-at-bare-verb-5a", "2": "good-at-to-do-7a"},
+      "right": ["be good at 后面接动作时，用动词的 -ing 形式：", "Rabbits are good at jumping."],
+      "typical": ["“擅长跳”，跳就是 jump：", "Rabbits are good at jump."],
+      "typical_error": "good-at-bare-verb-5a",
+      "ladder": [
+        {"q": "补全：Fish are good at ____.（swim）", "a": "swimming"},
+        {"q": "补全：My dad is good at ____.（cook）", "a": "cooking"},
+        {"q": "用 I'm good at 说一说你的才艺。", "a": "I'm good at drawing.（合理即可）"}
+      ]
+    },
+    {
+      "id": "en-wy-4b-12",
+      "type": "choice",
+      "unit": "Unit 3 Everyone's got talent!",
+      "lesson": "Unit 3 Everyone's got talent! (Fuel up)",
+      "lessons": ["Everyone's got talent", "Fuel up"],
+      "points": ["EN-S1-LK-01.3", "EN-S1-LK-01.2"],
+      "topic": "i_e 里的 i 怎么读",
+      "stem": "下面哪个词里 i 的读音和 write 里的 i 一样？",
+      "options": ["six", "nine", "fish"],
+      "answer": 1,
+      "wrong": {"0": "wy-magic-e-ignored-4b", "2": "wy-magic-e-ignored-4b"},
+      "right": ["write、nine 都是 i + 辅音 + 不发音的 e，i 读字母 I 的名字音；", "six、fish 末尾没有 e，i 读短音。"],
+      "typical": ["没管 write 末尾的 e，把 i 读成短音：", "fish 里的 i 和 write 里的一样。"],
+      "typical_error": "wy-magic-e-ignored-4b",
+      "ladder": [
+        {"q": "读一读，圈出 i 读字母名音的词：pig, bike, milk", "a": "bike"},
+        {"q": "kit 加上 e 变成什么词？i 怎么读？", "a": "kite；i 读字母 I 的名字音"},
+        {"q": "说出两个 i 读字母 I 名字音的词（write 除外）。", "a": "five, kite（合理即可）"}
+      ]
+    },
+    {
+      "id": "en-wy-4b-13",
+      "type": "choice",
+      "unit": "Unit 4 Plant life",
+      "lesson": "Unit 4 Plant life (Get ready)",
+      "lessons": ["Plant life", "Get ready"],
+      "points": ["EN-S1-LK-01.6", "EN-S1-TH-01.19"],
+      "topic": "leaf 的复数",
+      "stem": "这棵小苗长出了两片叶子。It has two ____.",
+      "options": ["leaf", "leafs", "leaves"],
+      "answer": 2,
+      "wrong": {"0": "plural-s-drop", "1": "plural-overgeneralize"},
+      "right": ["leaf 变复数要把 f 变成 v，再加 es：leaves。", "It has two leaves."],
+      "typical": ["复数就在词尾加 s：", "It has two leafs."],
+      "typical_error": "plural-overgeneralize",
+      "ladder": [
+        {"q": "写出复数：one leaf → three ____", "a": "leaves"},
+        {"q": "写出复数：one seed → five ____，one root → many ____", "a": "seeds，roots"},
+        {"q": "用英语说：这朵花有五片绿叶子。", "a": "This flower has five green leaves."}
+      ]
+    },
+    {
+      "id": "en-wy-4b-14",
+      "type": "choice",
+      "unit": "Unit 4 Plant life",
+      "lesson": "Unit 4 Plant life (Start up)",
+      "lessons": ["Plant life", "Start up"],
+      "points": ["EN-S1-LK-01.10", "EN-S1-LS-01.18"],
+      "topic": "动词加 -ing 的拼写",
+      "stem": "Tim 正在跑步，Amy 正在写字。选出拼写全对的一组。",
+      "options": ["Tim is running. Amy is writing.", "Tim is runing. Amy is writing.", "Tim is running. Amy is writeing."],
+      "answer": 0,
+      "wrong": {"1": "ing-no-double-5b", "2": "wy-ing-keep-e-4b"},
+      "right": ["run 末尾是“短元音 + 一个辅音”，双写 n 再加 ing：running；", "write 去掉不发音的 e 再加 ing：writing。"],
+      "typical": ["write 后面直接加 ing：", "Amy is writeing."],
+      "typical_error": "wy-ing-keep-e-4b",
+      "ladder": [
+        {"q": "写出 -ing 形式：swim → ____，dance → ____", "a": "swimming，dancing"},
+        {"q": "写出 -ing 形式：sit → ____，come → ____", "a": "sitting，coming"},
+        {"q": "改错：Mum is cuting the cake. Dad is takeing photos.", "a": "cutting，taking"}
+      ]
+    },
+    {
+      "id": "en-wy-4b-15",
+      "type": "choice",
+      "unit": "Unit 4 Plant life",
+      "lesson": "Unit 4 Plant life (Speed up)",
+      "lessons": ["Plant life", "Speed up"],
+      "points": ["EN-S1-LK-01.11", "EN-S1-LC-01.6"],
+      "topic": "want to + 动词原形",
+      "stem": "Lily 长大想当一名医生。选出正确的一句。",
+      "options": ["Lily want to be a doctor.", "Lily wants to be a doctor.", "Lily wants be a doctor."],
+      "answer": 1,
+      "wrong": {"0": "3sg-no-s", "2": "wy-want-no-to-4b"},
+      "right": ["“想要做某事”是 want to + 动词原形；", "主语 Lily 是“她”，want 加 s：Lily wants to be a doctor."],
+      "typical": ["“想当”就是 want + be：", "Lily wants be a doctor."],
+      "typical_error": "wy-want-no-to-4b",
+      "ladder": [
+        {"q": "补全：I want ____ be a teacher.", "a": "to"},
+        {"q": "补全：My brother ____ to be a fireman.（want）", "a": "wants"},
+        {"q": "用英语说：他想种很多向日葵。", "a": "He wants to plant many sunflowers."}
+      ]
+    },
+    {
+      "id": "en-wy-4b-16",
+      "type": "choice",
+      "unit": "Unit 4 Plant life",
+      "lesson": "Unit 4 Plant life (Fuel up)",
+      "lessons": ["Plant life", "Fuel up"],
+      "points": ["EN-S1-LK-01.3", "EN-S1-LC-02.3"],
+      "topic": "he 里的 e 怎么读",
+      "stem": "he 里的 e 怎么读？",
+      "options": ["和 bed 里的 e 一样", "和拼音 hē（喝）里的 e 一样", "和 me 里的 e 一样"],
+      "answer": 2,
+      "wrong": {"0": "wy-e-short-only-4b", "1": "wy-pinyin-e-4b"},
+      "right": ["he 里的 e 读字母 E 的名字音，和 me 里的 e 一样；", "不读 bed 里的短音，也不读成拼音 hē（喝）。"],
+      "typical": ["照拼音读：", "he 读成“喝”。"],
+      "typical_error": "wy-pinyin-e-4b",
+      "ladder": [
+        {"q": "读一读，圈出 e 读字母名音的词：red, be, ten", "a": "be"},
+        {"q": "me 和 men 里的 e 读音一样吗？", "a": "不一样：me 读字母名音，men 读短音"},
+        {"q": "Kate 把 he 读成了拼音 hē（喝），你怎么提醒她？", "a": "e 读字母 E 的名字音，像 me 里的 e"}
+      ]
+    },
+    {
+      "id": "en-wy-4b-17",
+      "type": "choice",
+      "unit": "Unit 5 School activities",
+      "lesson": "Unit 5 School activities (Get ready)",
+      "lessons": ["School activities", "Get ready"],
+      "points": ["EN-S1-LK-01.8", "EN-S1-LS-01.14"],
+      "topic": "field trip 是什么",
+      "stem": "老师说：Today our class has a field trip to the zoo. 这里的 field trip 指什么？",
+      "options": ["全班到校外参观学习", "到田地里去干农活", "放假和家人去旅游"],
+      "answer": 0,
+      "wrong": {"1": "wy-field-trip-as-farm-4b", "2": "wy-trip-as-holiday-4b"},
+      "right": ["field trip 是学校组织的外出参观学习；", "全班一起去动物园边看边学，不是下田，也不是放假出游。"],
+      "typical": ["field 是田地，trip 是旅行：", "field trip 就是去田里。"],
+      "typical_error": "wy-field-trip-as-farm-4b",
+      "ladder": [
+        {"q": "Sports Day 是什么活动？", "a": "运动会"},
+        {"q": "全班去农场参观学习，用英语补全：We have a ____ ____ to a farm.", "a": "field trip"},
+        {"q": "说出两个你们学校有的活动的英文名。", "a": "Sports Day, Book Week（合理即可）"}
+      ]
+    },
+    {
+      "id": "en-wy-4b-18",
+      "type": "choice",
+      "unit": "Unit 5 School activities",
+      "lesson": "Unit 5 School activities (Start up)",
+      "lessons": ["School activities", "Start up"],
+      "points": ["EN-S1-LK-01.11", "EN-S1-LS-01.16"],
+      "topic": "Are there 的否定回答",
+      "stem": "— Are there any trees in your picture?　— No, ____.",
+      "options": ["there isn't", "they aren't", "there aren't"],
+      "answer": 2,
+      "wrong": {"0": "there-be-agreement", "1": "wy-there-answer-they-4b"},
+      "right": ["Are there ...? 用 there are / there aren't 来回答；", "画里没有树，就说 No, there aren't."],
+      "typical": ["trees 是“它们”，就用 they：", "No, they aren't."],
+      "typical_error": "wy-there-answer-they-4b",
+      "ladder": [
+        {"q": "— Is there a tree in the picture?　— Yes, ____ ____.", "a": "there is"},
+        {"q": "— Are there any ducks on the river?　— Yes, ____ ____.", "a": "there are"},
+        {"q": "用 Are there any ...? 问同桌铅笔盒里有什么，再替他回答。", "a": "Are there any rulers? Yes, there are.（合理即可）"}
+      ]
+    },
+    {
+      "id": "en-wy-4b-19",
+      "type": "judge",
+      "unit": "Unit 5 School activities",
+      "lesson": "Unit 5 School activities (Speed up)",
+      "lessons": ["School activities", "Speed up"],
+      "points": ["EN-S1-LK-01.11", "EN-S1-LS-01.16"],
+      "topic": "某处有：there are",
+      "stem": "Kate 看着桌子说“桌上有六个苹果”。你同意她这样说吗？",
+      "work": ["There are six apples on the table."],
+      "answer": true,
+      "wrong": {"disagree": "there-have"},
+      "right": ["“某处有某物”用 there be，不用 have；", "six apples 是复数，用 are，这句话说得对。"],
+      "ladder": [
+        {"q": "补全：There ____ a cat under the chair.", "a": "is"},
+        {"q": "补全：There ____ two red kites in the sky.", "a": "are"},
+        {"q": "改错：There have three baby ducks by the river.", "a": "have → are"}
+      ]
+    },
+    {
+      "id": "en-wy-4b-20",
+      "type": "choice",
+      "unit": "Unit 5 School activities",
+      "lesson": "Unit 5 School activities (Fuel up)",
+      "lessons": ["School activities", "Fuel up"],
+      "points": ["EN-S1-LK-01.3", "EN-S1-LK-01.2"],
+      "topic": "o_e 里的 o 怎么读",
+      "stem": "下面哪个词里 o 的读音和 home 里的 o 一样？",
+      "options": ["hot", "nose", "come"],
+      "answer": 1,
+      "wrong": {"0": "wy-o-short-only-4b", "2": "wy-spelling-only-4b"},
+      "right": ["home、nose 里的 o 都读字母 O 的名字音；", "hot 里的 o 读短音；come 拼法像 home，读音却不一样。"],
+      "typical": ["come 和 home 只差一个字母：", "就以为 come 里的 o 和 home 一样。"],
+      "typical_error": "wy-spelling-only-4b",
+      "ladder": [
+        {"q": "读一读，圈出 o 读字母名音的词：dog, rose, box", "a": "rose"},
+        {"q": "not 加上 e 变成什么词？o 怎么读？", "a": "note；o 读字母 O 的名字音"},
+        {"q": "读一读，哪个词里 o 的读音和另外两个不一样：go, no, do", "a": "do"}
+      ]
+    },
+    {
+      "id": "en-wy-4b-21",
+      "type": "choice",
+      "unit": "Unit 6 Cool clothes",
+      "lesson": "Unit 6 Cool clothes (Get ready)",
+      "lessons": ["Cool clothes", "Get ready"],
+      "points": ["EN-S1-LK-01.6", "EN-S1-TH-01.17"],
+      "topic": "trousers 总是复数",
+      "stem": "It's cold today. I'm wearing a sweater and ____.（一条裤子）",
+      "options": ["trousers", "a trousers", "trouser"],
+      "answer": 0,
+      "wrong": {"1": "pair-noun-singular", "2": "pair-noun-singular"},
+      "right": ["trousers（裤子）有两条裤腿，总用复数形式，", "前面不加 a：a sweater and trousers。"],
+      "typical": ["一条裤子是一件，就加上 a：", "a sweater and a trousers"],
+      "typical_error": "pair-noun-singular",
+      "ladder": [
+        {"q": "补全：It's hot. I'm wearing a T-shirt and ____.（短裤）", "a": "shorts"},
+        {"q": "改错：My brother is wearing a shorts.", "a": "a shorts → shorts"},
+        {"q": "用英语说：爸爸穿着一件衬衫和一条裤子。", "a": "Dad is wearing a shirt and trousers."}
+      ]
+    },
+    {
+      "id": "en-wy-4b-22",
+      "type": "judge",
+      "unit": "Unit 6 Cool clothes",
+      "lesson": "Unit 6 Cool clothes (Start up)",
+      "lessons": ["Cool clothes", "Start up"],
+      "points": ["EN-S1-LK-01.10", "EN-S1-LS-01.16"],
+      "topic": "Is 问句的简略回答",
+      "stem": "你同意这组问答吗？",
+      "work": ["— Is your dad wearing a hat?", "— Yes, he does."],
+      "answer": false,
+      "wrong": {"agree": "be-q-do-answer-5b"},
+      "right": ["问句用 Is 开头，回答也用 is：", "Yes, he is."],
+      "ladder": [
+        {"q": "— Is Lucy wearing a skirt?　— Yes, she ____.", "a": "is"},
+        {"q": "— Are you wearing a scarf?　— No, ____ ____.", "a": "I'm not"},
+        {"q": "用 Is he / she wearing ...? 问一问同桌穿的衣服，再回答。", "a": "Is she wearing a coat? Yes, she is.（合理即可）"}
+      ]
+    },
+    {
+      "id": "en-wy-4b-23",
+      "type": "choice",
+      "unit": "Unit 6 Cool clothes",
+      "lesson": "Unit 6 Cool clothes (Speed up)",
+      "lessons": ["Cool clothes", "Speed up"],
+      "points": ["EN-S1-LK-01.10", "EN-S1-LC-01.6"],
+      "topic": "天天做的事：三单",
+      "stem": "Mr Li is a dressmaker. He ____ dresses for children every day.",
+      "options": ["make", "makes", "is make"],
+      "answer": 1,
+      "wrong": {"0": "3sg-no-s", "2": "be-plus-verb"},
+      "right": ["every day 说的是天天都做的事，用一般现在时；", "主语 He 是“他”，动词加 s：He makes dresses ..."],
+      "typical": ["He 后面直接用 make：", "He make dresses for children every day."],
+      "typical_error": "3sg-no-s",
+      "ladder": [
+        {"q": "补全：My mum ____ dinner every day.（cook）", "a": "cooks"},
+        {"q": "补全：Tom ____ hats. He ____ his job.（make，like）", "a": "makes，likes"},
+        {"q": "用英语说：我叔叔是一名厨师，他每天做蛋糕。", "a": "My uncle is a cook. He makes cakes every day."}
+      ]
+    },
+    {
+      "id": "en-wy-4b-24",
+      "type": "judge",
+      "unit": "Unit 6 Cool clothes",
+      "lesson": "Unit 6 Cool clothes (Fuel up)",
+      "lessons": ["Cool clothes", "Fuel up"],
+      "points": ["EN-S1-LK-01.3", "EN-S1-LC-02.3"],
+      "topic": "词尾 e 不发音",
+      "stem": "Lily 读 robe 这个词时这样说，你同意吗？",
+      "work": ["robe 要读成两个音节：ro-be，", "末尾的 e 也要读出来。"],
+      "answer": false,
+      "wrong": {"agree": "wy-final-e-pronounced-4b"},
+      "right": ["robe 只有一个音节，末尾的 e 不发音；", "它让 o 读字母 O 的名字音，和 nose、home 里的 o 一样。"],
+      "ladder": [
+        {"q": "读一读，哪个词末尾的 e 不发音：he, cake, me", "a": "cake"},
+        {"q": "cute 有几个音节？", "a": "一个"},
+        {"q": "选出 o 读字母 O 名字音的两个词：robe, hot, nose, dog", "a": "robe，nose"}
+      ]
+    }
+  ]
+}

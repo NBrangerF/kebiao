@@ -3,7 +3,7 @@ import { Link, useSearchParams } from 'react-router-dom'
 import { PageLoading, ErrorState } from '../components/StateComponents'
 import MathText from '../features/checks/MathText.jsx'
 import { MarkupContext } from '../features/checks/markup.js'
-import { LEVELS, bookOfKey, buildDeck, deleteRecord, loadBank, loadChecksIndex, misconceptionsOf, pickBook, pickSubject, planFromSeen, presentHref, questionsForBook, readRecords, saveRecord, unitsOf } from '../features/checks/checksData.js'
+import { LEVELS, bookGroups, bookInGroup, bookOfKey, buildDeck, deleteRecord, loadBank, loadChecksIndex, misconceptionsOf, pickBook, pickSubject, planFromSeen, presentHref, questionsForBook, readRecords, saveRecord, unitsOf } from '../features/checks/checksData.js'
 import { useMyBook } from '../features/mybook/myBook.js'
 import { STATIC_PAGE_META } from '../seo/pageMeta.js'
 import { usePageMeta } from '../seo/usePageMeta.js'
@@ -67,6 +67,8 @@ export default function ChecksAfterPage() {
     const ready = Boolean(bank && bank.subject_slug === slug)
     const bookKey = useMemo(() => (ready ? pickBook(bank, { book: params.get('book') || '', grade: params.get('grade') || '', term: params.get('term') || '', myBook }) : ''), [ready, bank, params, myBook])
     const book = ready ? bookOfKey(bank, bookKey) : null
+    const groups = ready ? bookGroups(bank) : []
+    const group = groups.find(entry => entry.books.some(item => item.key === bookKey)) || groups[0]
     const units = useMemo(() => (ready ? unitsOf(questionsForBook(bank, bookKey)) : []), [ready, bank, bookKey])
     // a saved link may name the unit without its number ("分数的意义和性质" for "4 分数的意义和性质")
     const asked = (params.get('unit') || '').replace(/\s/gu, '')
@@ -127,10 +129,18 @@ export default function ChecksAfterPage() {
                         {index.subjects.map(entry => <button key={entry.slug} type="button" aria-pressed={entry.slug === slug} onClick={() => setQuery({ subject: entry.slug })}>{entry.name}</button>)}
                     </nav>
                 </div>
+                {groups.length > 1 ? (
+                    <div className={styles.field}>
+                        <span>哪个版本</span>
+                        <nav className={`${styles.books} ${styles.booksInline}`} aria-label={`选${bank.subject}的教材版本`}>
+                            {groups.map(entry => <button key={entry.name} type="button" aria-pressed={entry === group} onClick={() => setQuery({ book: bookInGroup(entry, book) })}>{entry.name}</button>)}
+                        </nav>
+                    </div>
+                ) : null}
                 <div className={styles.field}>
                     <span>{bank.books.some(entry => entry.grades?.length > 1) ? '哪个学段' : '批的是哪一册'}</span>
                     <nav className={`${styles.books} ${styles.booksInline}`} aria-label={`选${bank.subject}的年级`}>
-                        {bank.books.map(entry => <button key={entry.key} type="button" aria-pressed={entry.key === bookKey} onClick={() => setQuery({ book: entry.key })} title={`${entry.label} · ${entry.count} 题`}>{entry.short}</button>)}
+                        {(group?.books || bank.books).map(entry => <button key={entry.key} type="button" aria-pressed={entry.key === bookKey} onClick={() => setQuery({ book: entry.key })} title={`${entry.label} · ${entry.count} 题`}>{groups.length > 1 ? `${entry.grade}${entry.term}` : entry.short}</button>)}
                     </nav>
                 </div>
                 {units.length ? (

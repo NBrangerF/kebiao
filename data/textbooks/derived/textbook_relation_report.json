@@ -2,7 +2,7 @@
   "approved_count": 6,
   "candidate_count": 6,
   "candidate_relation_count": 0,
-  "generated_at": "2026-11-04T05:24:35.977Z",
+  "generated_at": "2026-11-09T10:37:56.463Z",
   "matched": [
     {
       "edition_id": "ed_1e968d721145a524c670",
@@ -67,7 +67,7 @@
   ],
   "matched_count": 6,
   "schema_version": 1,
-  "source_generation_id": "gen-20261101134208-b8f171a8f8",
+  "source_generation_id": "gen-20261109053054-9c34b8a97a",
   "unmatched": [],
   "unmatched_count": 0
 }

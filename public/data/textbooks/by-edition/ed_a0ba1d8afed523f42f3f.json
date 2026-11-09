@@ -3799,6 +3799,24 @@
       "unit_id": "tcu_4a0999eec5a2130d"
     },
     {
+      "confidence": 0.95,
+      "end_pdf_page": 57,
+      "end_printed_page": null,
+      "evidence_span_ids": [],
+      "kind": "lesson",
+      "level": 0,
+      "node_id": "tcn_20ac375ab772b053",
+      "parent_id": "tcn_8849b8f6277f687d",
+      "pdf_page": 55,
+      "printed_page": "50",
+      "review_status": "approved",
+      "source": "verified_toc",
+      "text_excerpt": "11 桥",
+      "title": "11 桥",
+      "toc_entry_id": "tcu_e1a476eb21992528",
+      "unit_id": "tcu_e1a476eb21992528"
+    },
+    {
       "confidence": 0.98,
       "end_pdf_page": 55,
       "end_printed_page": "50",
@@ -3806,7 +3824,7 @@
       "kind": "page",
       "level": 0,
       "node_id": "tcn_f08e74c553d75eab",
-      "parent_id": "tcn_8849b8f6277f687d",
+      "parent_id": "tcn_20ac375ab772b053",
       "pdf_page": 55,
       "printed_page": "50",
       "review_status": "machine_checked",
@@ -3822,7 +3840,7 @@
       "kind": "page",
       "level": 0,
       "node_id": "tcn_5fb1920b45d93cab",
-      "parent_id": "tcn_8849b8f6277f687d",
+      "parent_id": "tcn_20ac375ab772b053",
       "pdf_page": 56,
       "printed_page": "51",
       "review_status": "machine_checked",
@@ -3895,7 +3913,7 @@
       "kind": "page",
       "level": 0,
       "node_id": "tcn_4a80eef7b9103ce8",
-      "parent_id": "tcn_8849b8f6277f687d",
+      "parent_id": "tcn_20ac375ab772b053",
       "pdf_page": 57,
       "printed_page": "52",
       "review_status": "machine_checked",
@@ -4588,7 +4606,7 @@
     },
     {
       "confidence": 0.95,
-      "end_pdf_page": 81,
+      "end_pdf_page": 77,
       "end_printed_page": null,
       "evidence_span_ids": [],
       "kind": "lesson",
@@ -4653,6 +4671,24 @@
       "unit_id": "tcu_e99bed77342a4f70"
     },
     {
+      "confidence": 0.95,
+      "end_pdf_page": 81,
+      "end_printed_page": null,
+      "evidence_span_ids": [],
+      "kind": "lesson",
+      "level": 0,
+      "node_id": "tcn_0c6688eb0e9674f6",
+      "parent_id": "tcn_7114a256dd2bb2b6",
+      "pdf_page": 78,
+      "printed_page": "73",
+      "review_status": "approved",
+      "source": "verified_toc",
+      "text_excerpt": "15 盼",
+      "title": "15 盼",
+      "toc_entry_id": "tcu_cc335e7667797d2a",
+      "unit_id": "tcu_cc335e7667797d2a"
+    },
+    {
       "confidence": 0.98,
       "end_pdf_page": 78,
       "end_printed_page": "73",
@@ -4660,7 +4696,7 @@
       "kind": "page",
       "level": 0,
       "node_id": "tcn_3514d6de5699cd87",
-      "parent_id": "tcn_65cbb767a938a063",
+      "parent_id": "tcn_0c6688eb0e9674f6",
       "pdf_page": 78,
       "printed_page": "73",
       "review_status": "machine_checked",
@@ -4676,7 +4712,7 @@
       "kind": "page",
       "level": 0,
       "node_id": "tcn_364f2b27bcecb292",
-      "parent_id": "tcn_65cbb767a938a063",
+      "parent_id": "tcn_0c6688eb0e9674f6",
       "pdf_page": 79,
       "printed_page": "74",
       "review_status": "machine_checked",
@@ -4730,7 +4766,7 @@
       "kind": "page",
       "level": 0,
       "node_id": "tcn_15c2f3129816a421",
-      "parent_id": "tcn_65cbb767a938a063",
+      "parent_id": "tcn_0c6688eb0e9674f6",
       "pdf_page": 80,
       "printed_page": "75",
       "review_status": "machine_checked",
@@ -4746,7 +4782,7 @@
       "kind": "page",
       "level": 0,
       "node_id": "tcn_a025b935d40f2575",
-      "parent_id": "tcn_65cbb767a938a063",
+      "parent_id": "tcn_0c6688eb0e9674f6",
       "pdf_page": 81,
       "printed_page": "76",
       "review_status": "machine_checked",
@@ -4820,8 +4856,8 @@
       "printed_page": "78",
       "review_status": "approved",
       "source": "verified_toc",
-      "text_excerpt": "爸爸的计划",
-      "title": "爸爸的计划",
+      "text_excerpt": "习作例文：爸爸的计划",
+      "title": "习作例文：爸爸的计划",
       "toc_entry_id": "tcu_de0f5847f6dea200",
       "unit_id": "tcu_de0f5847f6dea200"
     },
@@ -6737,8 +6773,8 @@
       "printed_page": "121",
       "review_status": "approved",
       "source": "verified_toc",
-      "text_excerpt": "26* 有的人—纪念鲁迅有感",
-      "title": "26* 有的人—纪念鲁迅有感",
+      "text_excerpt": "26* 有的人——纪念鲁迅有感",
+      "title": "26* 有的人——纪念鲁迅有感",
       "toc_entry_id": "tcu_c5be48df13fb2abf",
       "unit_id": "tcu_c5be48df13fb2abf"
     },
@@ -10969,6 +11005,19 @@
     },
     {
       "confidence": 0.95,
+      "end_pdf_page": 57,
+      "entry_id": "tcu_e1a476eb21992528",
+      "kind": "lesson",
+      "level": 2,
+      "parent_id": "tcu_4a0999eec5a2130d",
+      "pdf_page": 55,
+      "printed_page": "50",
+      "review_status": "approved",
+      "source": "printed_toc",
+      "title": "11 桥"
+    },
+    {
+      "confidence": 0.95,
       "end_pdf_page": 62,
       "entry_id": "tcu_1ef96e045a4a685d",
       "kind": "lesson",
@@ -11060,7 +11109,7 @@
     },
     {
       "confidence": 0.95,
-      "end_pdf_page": 81,
+      "end_pdf_page": 77,
       "entry_id": "tcu_56d9c4dcbc2e9e15",
       "kind": "lesson",
       "level": 2,
@@ -11070,6 +11119,19 @@
       "review_status": "approved",
       "source": "printed_toc",
       "title": "14 灯光"
+    },
+    {
+      "confidence": 0.95,
+      "end_pdf_page": 81,
+      "entry_id": "tcu_cc335e7667797d2a",
+      "kind": "lesson",
+      "level": 2,
+      "parent_id": "tcu_e99bed77342a4f70",
+      "pdf_page": 78,
+      "printed_page": "73",
+      "review_status": "approved",
+      "source": "printed_toc",
+      "title": "15 盼"
     },
     {
       "confidence": 0.95,
@@ -11095,7 +11157,7 @@
       "printed_page": "78",
       "review_status": "approved",
       "source": "printed_toc",
-      "title": "爸爸的计划"
+      "title": "习作例文：爸爸的计划"
     },
     {
       "confidence": 0.95,
@@ -11420,7 +11482,7 @@
       "printed_page": "121",
       "review_status": "approved",
       "source": "printed_toc",
-      "title": "26* 有的人—纪念鲁迅有感"
+      "title": "26* 有的人——纪念鲁迅有感"
     },
     {
       "confidence": 0.95,
@@ -11475,7 +11537,7 @@
       "title": "词语表"
     }
   ],
-  "toc_entry_count": 63,
+  "toc_entry_count": 65,
   "toc_status": "approved",
   "unit_count": 8,
   "volume": "上册",

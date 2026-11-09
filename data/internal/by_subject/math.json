@@ -1,5 +1,5 @@
 {
-  "capability_graph_build_id": "capability-graph-4f2588e6-4f44a9f16b-e4fd630172",
+  "capability_graph_build_id": "capability-graph-4f2588e6-4f44a9f16b-5c7ac16cae",
   "capability_graph_schema_version": "1.1.0",
   "columns": [
     "art_discipline",
@@ -6049,7 +6049,7 @@
       "curriculum_alignments": [
         {
           "algorithm_version": "component-evidence-hybrid-v3",
-          "alignment_id": "tca_04b896973d5eca1b",
+          "alignment_id": "tca_596fc29806de6876",
           "alignment_type": "supports",
           "confidence": 0.92,
           "coverage": "partial",
@@ -6059,19 +6059,19 @@
           "evidence_level": "L2_topic",
           "evidence_refs": [
             "external_smartedu_2026_math_primary_grade_4_up",
-            "tes_ecf52a4776748a24",
-            "textbook-node:tcn_8afd79878aeefa66",
+            "tes_1728f7e47a62439b",
+            "textbook-node:tcn_fd8419d5d780b938",
             "textbook-unit:tcu_0e7eec2643c43008"
           ],
           "evidence_role": "direct_textbook",
           "evidence_spans": [
             {
               "evidence_role": "direct_textbook",
-              "excerpt": "20 万以上数的认识",
-              "excerpt_hash": "208b4d5ccb338f168e21c56b98b7bb13335abf6eea6deb37c6131f9546d7ad35",
-              "pdf_page": 25,
-              "printed_page": "20",
-              "span_id": "tes_ecf52a4776748a24"
+              "excerpt": "2 万以上数的认识",
+              "excerpt_hash": "73b596919c940c67823c9aaf3254ba46967a64f297891c4572441860b9fec15a",
+              "pdf_page": 7,
+              "printed_page": "2",
+              "span_id": "tes_1728f7e47a62439b"
             }
           ],
           "learning_component_ids": [
@@ -6085,67 +6085,12 @@
           ],
           "level": "unit",
           "method": "component_evidence_hybrid",
-          "node_id": "tcn_8afd79878aeefa66",
-          "node_title": "20万以上数的认识",
-          "pdf_page": 25,
-          "printed_page": "20",
+          "node_id": "tcn_fd8419d5d780b938",
+          "node_title": "2万以上数的认识",
+          "pdf_page": 7,
+          "printed_page": "2",
           "publication_status": "published",
-          "rationale": "教材课文“20万以上数的认识”与课标 MA-D2-AL-001 的可教学小能力“结合具体实例解释万以上数的含义”形成页内证据匹配。",
-          "relation_type": "supports",
-          "resource_type": "student_textbook",
-          "review_status": "machine_checked",
-          "revision_status": "current_confirmed",
-          "textbook_grade": 4,
-          "textbook_subject": "数学",
-          "textbook_title": "数学4年级上册",
-          "textbook_volume": "上册",
-          "unit_id": "tcu_0e7eec2643c43008",
-          "unit_title": "一 万以上数的认识"
-        },
-        {
-          "algorithm_version": "component-evidence-hybrid-v3",
-          "alignment_id": "tca_3be26bcd6ea4737d",
-          "alignment_type": "supports",
-          "confidence": 0.92,
-          "coverage": "partial",
-          "edition_id": "ed_dda80e43104244896faa",
-          "evidence_basis": "toc_title",
-          "evidence_gap": "当前证据来自目录标题与课标概念匹配，尚未保存教材正文或练习摘录；因此只能声明主题支持，不能声明完整教授。",
-          "evidence_level": "L2_topic",
-          "evidence_refs": [
-            "external_smartedu_2026_math_primary_grade_4_up",
-            "tes_5f417231d07f1be4",
-            "textbook-node:tcn_6a4dfedaac151899",
-            "textbook-unit:tcu_0e7eec2643c43008"
-          ],
-          "evidence_role": "direct_textbook",
-          "evidence_spans": [
-            {
-              "evidence_role": "direct_textbook",
-              "excerpt": "12 万以上数的认识",
-              "excerpt_hash": "9a30848408523c5999d7390385db2b8bd7d8dc3385385c6d3fffe64e2ede4c81",
-              "pdf_page": 17,
-              "printed_page": "12",
-              "span_id": "tes_5f417231d07f1be4"
-            }
-          ],
-          "learning_component_ids": [
-            "lc_4ff1d1f2ada9ed9e"
-          ],
-          "learning_components": [
-            {
-              "component_id": "lc_4ff1d1f2ada9ed9e",
-              "label": "结合具体实例解释万以上数的含义"
-            }
-          ],
-          "level": "unit",
-          "method": "component_evidence_hybrid",
-          "node_id": "tcn_6a4dfedaac151899",
-          "node_title": "12万以上数的认识",
-          "pdf_page": 17,
-          "printed_page": "12",
-          "publication_status": "published",
-          "rationale": "教材课文“12万以上数的认识”与课标 MA-D2-AL-001 的可教学小能力“结合具体实例解释万以上数的含义”形成页内证据匹配。",
+          "rationale": "教材课文“2万以上数的认识”与课标 MA-D2-AL-001 的可教学小能力“结合具体实例解释万以上数的含义”形成页内证据匹配。",
           "relation_type": "supports",
           "resource_type": "student_textbook",
           "review_status": "machine_checked",
@@ -6214,7 +6159,7 @@
         },
         {
           "algorithm_version": "component-evidence-hybrid-v3",
-          "alignment_id": "tca_596fc29806de6876",
+          "alignment_id": "tca_dd7b8d8be5673801",
           "alignment_type": "supports",
           "confidence": 0.92,
           "coverage": "partial",
@@ -6224,19 +6169,19 @@
           "evidence_level": "L2_topic",
           "evidence_refs": [
             "external_smartedu_2026_math_primary_grade_4_up",
-            "tes_1728f7e47a62439b",
-            "textbook-node:tcn_fd8419d5d780b938",
+            "tes_94a989aa858f3321",
+            "textbook-node:tcn_012ada14d4cb337e",
             "textbook-unit:tcu_0e7eec2643c43008"
           ],
           "evidence_role": "direct_textbook",
           "evidence_spans": [
             {
               "evidence_role": "direct_textbook",
-              "excerpt": "2 万以上数的认识",
-              "excerpt_hash": "73b596919c940c67823c9aaf3254ba46967a64f297891c4572441860b9fec15a",
-              "pdf_page": 7,
-              "printed_page": "2",
-              "span_id": "tes_1728f7e47a62439b"
+              "excerpt": "6 万以上数的认识",
+              "excerpt_hash": "a8ca8ca120558164cbb41c302218f449ee0a77a4a00ff10b8e7fa3cdbc449f17",
+              "pdf_page": 11,
+              "printed_page": "6",
+              "span_id": "tes_94a989aa858f3321"
             }
           ],
           "learning_component_ids": [
@@ -6250,232 +6195,12 @@
           ],
           "level": "unit",
           "method": "component_evidence_hybrid",
-          "node_id": "tcn_fd8419d5d780b938",
-          "node_title": "2万以上数的认识",
-          "pdf_page": 7,
-          "printed_page": "2",
+          "node_id": "tcn_012ada14d4cb337e",
+          "node_title": "6万以上数的认识",
+          "pdf_page": 11,
+          "printed_page": "6",
           "publication_status": "published",
-          "rationale": "教材课文“2万以上数的认识”与课标 MA-D2-AL-001 的可教学小能力“结合具体实例解释万以上数的含义”形成页内证据匹配。",
-          "relation_type": "supports",
-          "resource_type": "student_textbook",
-          "review_status": "machine_checked",
-          "revision_status": "current_confirmed",
-          "textbook_grade": 4,
-          "textbook_subject": "数学",
-          "textbook_title": "数学4年级上册",
-          "textbook_volume": "上册",
-          "unit_id": "tcu_0e7eec2643c43008",
-          "unit_title": "一 万以上数的认识"
-        },
-        {
-          "algorithm_version": "component-evidence-hybrid-v3",
-          "alignment_id": "tca_69d7b6e75bf48216",
-          "alignment_type": "supports",
-          "confidence": 0.92,
-          "coverage": "partial",
-          "edition_id": "ed_dda80e43104244896faa",
-          "evidence_basis": "toc_title",
-          "evidence_gap": "当前证据来自目录标题与课标概念匹配，尚未保存教材正文或练习摘录；因此只能声明主题支持，不能声明完整教授。",
-          "evidence_level": "L2_topic",
-          "evidence_refs": [
-            "external_smartedu_2026_math_primary_grade_4_up",
-            "tes_ae022493634b5e6c",
-            "textbook-node:tcn_5c53965d0e3d6855",
-            "textbook-unit:tcu_0e7eec2643c43008"
-          ],
-          "evidence_role": "direct_textbook",
-          "evidence_spans": [
-            {
-              "evidence_role": "direct_textbook",
-              "excerpt": "16 万以上数的认识",
-              "excerpt_hash": "77286f9ab846d736b5c9863575557d8ad19598fdf3b2568ae637da36eefd5fd7",
-              "pdf_page": 21,
-              "printed_page": "16",
-              "span_id": "tes_ae022493634b5e6c"
-            }
-          ],
-          "learning_component_ids": [
-            "lc_4ff1d1f2ada9ed9e"
-          ],
-          "learning_components": [
-            {
-              "component_id": "lc_4ff1d1f2ada9ed9e",
-              "label": "结合具体实例解释万以上数的含义"
-            }
-          ],
-          "level": "unit",
-          "method": "component_evidence_hybrid",
-          "node_id": "tcn_5c53965d0e3d6855",
-          "node_title": "16万以上数的认识",
-          "pdf_page": 21,
-          "printed_page": "16",
-          "publication_status": "published",
-          "rationale": "教材课文“16万以上数的认识”与课标 MA-D2-AL-001 的可教学小能力“结合具体实例解释万以上数的含义”形成页内证据匹配。",
-          "relation_type": "supports",
-          "resource_type": "student_textbook",
-          "review_status": "machine_checked",
-          "revision_status": "current_confirmed",
-          "textbook_grade": 4,
-          "textbook_subject": "数学",
-          "textbook_title": "数学4年级上册",
-          "textbook_volume": "上册",
-          "unit_id": "tcu_0e7eec2643c43008",
-          "unit_title": "一 万以上数的认识"
-        },
-        {
-          "algorithm_version": "component-evidence-hybrid-v3",
-          "alignment_id": "tca_80a6f4134e6c26c4",
-          "alignment_type": "supports",
-          "confidence": 0.92,
-          "coverage": "partial",
-          "edition_id": "ed_dda80e43104244896faa",
-          "evidence_basis": "toc_title",
-          "evidence_gap": "当前证据来自目录标题与课标概念匹配，尚未保存教材正文或练习摘录；因此只能声明主题支持，不能声明完整教授。",
-          "evidence_level": "L2_topic",
-          "evidence_refs": [
-            "external_smartedu_2026_math_primary_grade_4_up",
-            "tes_43551a90972e0a83",
-            "textbook-node:tcn_9eae7626c19518f6",
-            "textbook-unit:tcu_0e7eec2643c43008"
-          ],
-          "evidence_role": "direct_textbook",
-          "evidence_spans": [
-            {
-              "evidence_role": "direct_textbook",
-              "excerpt": "10 万以上数的认识",
-              "excerpt_hash": "ca29d2f9dcd0584dce2080687e20388745d8475f2dec76503ebfa557bf7a3026",
-              "pdf_page": 15,
-              "printed_page": "10",
-              "span_id": "tes_43551a90972e0a83"
-            }
-          ],
-          "learning_component_ids": [
-            "lc_4ff1d1f2ada9ed9e"
-          ],
-          "learning_components": [
-            {
-              "component_id": "lc_4ff1d1f2ada9ed9e",
-              "label": "结合具体实例解释万以上数的含义"
-            }
-          ],
-          "level": "unit",
-          "method": "component_evidence_hybrid",
-          "node_id": "tcn_9eae7626c19518f6",
-          "node_title": "10万以上数的认识",
-          "pdf_page": 15,
-          "printed_page": "10",
-          "publication_status": "published",
-          "rationale": "教材课文“10万以上数的认识”与课标 MA-D2-AL-001 的可教学小能力“结合具体实例解释万以上数的含义”形成页内证据匹配。",
-          "relation_type": "supports",
-          "resource_type": "student_textbook",
-          "review_status": "machine_checked",
-          "revision_status": "current_confirmed",
-          "textbook_grade": 4,
-          "textbook_subject": "数学",
-          "textbook_title": "数学4年级上册",
-          "textbook_volume": "上册",
-          "unit_id": "tcu_0e7eec2643c43008",
-          "unit_title": "一 万以上数的认识"
-        },
-        {
-          "algorithm_version": "component-evidence-hybrid-v3",
-          "alignment_id": "tca_9c4757ab452eb8fd",
-          "alignment_type": "supports",
-          "confidence": 0.92,
-          "coverage": "partial",
-          "edition_id": "ed_dda80e43104244896faa",
-          "evidence_basis": "toc_title",
-          "evidence_gap": "当前证据来自目录标题与课标概念匹配，尚未保存教材正文或练习摘录；因此只能声明主题支持，不能声明完整教授。",
-          "evidence_level": "L2_topic",
-          "evidence_refs": [
-            "external_smartedu_2026_math_primary_grade_4_up",
-            "tes_b45454f54f7539fb",
-            "textbook-node:tcn_378ea7a2892a4331",
-            "textbook-unit:tcu_0e7eec2643c43008"
-          ],
-          "evidence_role": "direct_textbook",
-          "evidence_spans": [
-            {
-              "evidence_role": "direct_textbook",
-              "excerpt": "22 万以上数的认识",
-              "excerpt_hash": "4f9c431142aed9159a966b7ec906b05c73052986aafdb5fbffa9c266b35c678c",
-              "pdf_page": 27,
-              "printed_page": "22",
-              "span_id": "tes_b45454f54f7539fb"
-            }
-          ],
-          "learning_component_ids": [
-            "lc_4ff1d1f2ada9ed9e"
-          ],
-          "learning_components": [
-            {
-              "component_id": "lc_4ff1d1f2ada9ed9e",
-              "label": "结合具体实例解释万以上数的含义"
-            }
-          ],
-          "level": "unit",
-          "method": "component_evidence_hybrid",
-          "node_id": "tcn_378ea7a2892a4331",
-          "node_title": "22万以上数的认识",
-          "pdf_page": 27,
-          "printed_page": "22",
-          "publication_status": "published",
-          "rationale": "教材课文“22万以上数的认识”与课标 MA-D2-AL-001 的可教学小能力“结合具体实例解释万以上数的含义”形成页内证据匹配。",
-          "relation_type": "supports",
-          "resource_type": "student_textbook",
-          "review_status": "machine_checked",
-          "revision_status": "current_confirmed",
-          "textbook_grade": 4,
-          "textbook_subject": "数学",
-          "textbook_title": "数学4年级上册",
-          "textbook_volume": "上册",
-          "unit_id": "tcu_0e7eec2643c43008",
-          "unit_title": "一 万以上数的认识"
-        },
-        {
-          "algorithm_version": "component-evidence-hybrid-v3",
-          "alignment_id": "tca_a6843c6023613b36",
-          "alignment_type": "supports",
-          "confidence": 0.92,
-          "coverage": "partial",
-          "edition_id": "ed_dda80e43104244896faa",
-          "evidence_basis": "toc_title",
-          "evidence_gap": "当前证据来自目录标题与课标概念匹配，尚未保存教材正文或练习摘录；因此只能声明主题支持，不能声明完整教授。",
-          "evidence_level": "L2_topic",
-          "evidence_refs": [
-            "external_smartedu_2026_math_primary_grade_4_up",
-            "tes_1a127b046f4be2de",
-            "textbook-node:tcn_c34c2d319f7e054e",
-            "textbook-unit:tcu_0e7eec2643c43008"
-          ],
-          "evidence_role": "direct_textbook",
-          "evidence_spans": [
-            {
-              "evidence_role": "direct_textbook",
-              "excerpt": "14 万以上数的认识",
-              "excerpt_hash": "191127b23dc475d9a41ba2ba52064a0a087f52d5e813cf720851cade7d09542e",
-              "pdf_page": 19,
-              "printed_page": "14",
-              "span_id": "tes_1a127b046f4be2de"
-            }
-          ],
-          "learning_component_ids": [
-            "lc_4ff1d1f2ada9ed9e"
-          ],
-          "learning_components": [
-            {
-              "component_id": "lc_4ff1d1f2ada9ed9e",
-              "label": "结合具体实例解释万以上数的含义"
-            }
-          ],
-          "level": "unit",
-          "method": "component_evidence_hybrid",
-          "node_id": "tcn_c34c2d319f7e054e",
-          "node_title": "14万以上数的认识",
-          "pdf_page": 19,
-          "printed_page": "14",
-          "publication_status": "published",
-          "rationale": "教材课文“14万以上数的认识”与课标 MA-D2-AL-001 的可教学小能力“结合具体实例解释万以上数的含义”形成页内证据匹配。",
+          "rationale": "教材课文“6万以上数的认识”与课标 MA-D2-AL-001 的可教学小能力“结合具体实例解释万以上数的含义”形成页内证据匹配。",
           "relation_type": "supports",
           "resource_type": "student_textbook",
           "review_status": "machine_checked",
@@ -6544,6 +6269,226 @@
         },
         {
           "algorithm_version": "component-evidence-hybrid-v3",
+          "alignment_id": "tca_80a6f4134e6c26c4",
+          "alignment_type": "supports",
+          "confidence": 0.92,
+          "coverage": "partial",
+          "edition_id": "ed_dda80e43104244896faa",
+          "evidence_basis": "toc_title",
+          "evidence_gap": "当前证据来自目录标题与课标概念匹配，尚未保存教材正文或练习摘录；因此只能声明主题支持，不能声明完整教授。",
+          "evidence_level": "L2_topic",
+          "evidence_refs": [
+            "external_smartedu_2026_math_primary_grade_4_up",
+            "tes_43551a90972e0a83",
+            "textbook-node:tcn_9eae7626c19518f6",
+            "textbook-unit:tcu_0e7eec2643c43008"
+          ],
+          "evidence_role": "direct_textbook",
+          "evidence_spans": [
+            {
+              "evidence_role": "direct_textbook",
+              "excerpt": "10 万以上数的认识",
+              "excerpt_hash": "ca29d2f9dcd0584dce2080687e20388745d8475f2dec76503ebfa557bf7a3026",
+              "pdf_page": 15,
+              "printed_page": "10",
+              "span_id": "tes_43551a90972e0a83"
+            }
+          ],
+          "learning_component_ids": [
+            "lc_4ff1d1f2ada9ed9e"
+          ],
+          "learning_components": [
+            {
+              "component_id": "lc_4ff1d1f2ada9ed9e",
+              "label": "结合具体实例解释万以上数的含义"
+            }
+          ],
+          "level": "unit",
+          "method": "component_evidence_hybrid",
+          "node_id": "tcn_9eae7626c19518f6",
+          "node_title": "10万以上数的认识",
+          "pdf_page": 15,
+          "printed_page": "10",
+          "publication_status": "published",
+          "rationale": "教材课文“10万以上数的认识”与课标 MA-D2-AL-001 的可教学小能力“结合具体实例解释万以上数的含义”形成页内证据匹配。",
+          "relation_type": "supports",
+          "resource_type": "student_textbook",
+          "review_status": "machine_checked",
+          "revision_status": "current_confirmed",
+          "textbook_grade": 4,
+          "textbook_subject": "数学",
+          "textbook_title": "数学4年级上册",
+          "textbook_volume": "上册",
+          "unit_id": "tcu_0e7eec2643c43008",
+          "unit_title": "一 万以上数的认识"
+        },
+        {
+          "algorithm_version": "component-evidence-hybrid-v3",
+          "alignment_id": "tca_3be26bcd6ea4737d",
+          "alignment_type": "supports",
+          "confidence": 0.92,
+          "coverage": "partial",
+          "edition_id": "ed_dda80e43104244896faa",
+          "evidence_basis": "toc_title",
+          "evidence_gap": "当前证据来自目录标题与课标概念匹配，尚未保存教材正文或练习摘录；因此只能声明主题支持，不能声明完整教授。",
+          "evidence_level": "L2_topic",
+          "evidence_refs": [
+            "external_smartedu_2026_math_primary_grade_4_up",
+            "tes_5f417231d07f1be4",
+            "textbook-node:tcn_6a4dfedaac151899",
+            "textbook-unit:tcu_0e7eec2643c43008"
+          ],
+          "evidence_role": "direct_textbook",
+          "evidence_spans": [
+            {
+              "evidence_role": "direct_textbook",
+              "excerpt": "12 万以上数的认识",
+              "excerpt_hash": "9a30848408523c5999d7390385db2b8bd7d8dc3385385c6d3fffe64e2ede4c81",
+              "pdf_page": 17,
+              "printed_page": "12",
+              "span_id": "tes_5f417231d07f1be4"
+            }
+          ],
+          "learning_component_ids": [
+            "lc_4ff1d1f2ada9ed9e"
+          ],
+          "learning_components": [
+            {
+              "component_id": "lc_4ff1d1f2ada9ed9e",
+              "label": "结合具体实例解释万以上数的含义"
+            }
+          ],
+          "level": "unit",
+          "method": "component_evidence_hybrid",
+          "node_id": "tcn_6a4dfedaac151899",
+          "node_title": "12万以上数的认识",
+          "pdf_page": 17,
+          "printed_page": "12",
+          "publication_status": "published",
+          "rationale": "教材课文“12万以上数的认识”与课标 MA-D2-AL-001 的可教学小能力“结合具体实例解释万以上数的含义”形成页内证据匹配。",
+          "relation_type": "supports",
+          "resource_type": "student_textbook",
+          "review_status": "machine_checked",
+          "revision_status": "current_confirmed",
+          "textbook_grade": 4,
+          "textbook_subject": "数学",
+          "textbook_title": "数学4年级上册",
+          "textbook_volume": "上册",
+          "unit_id": "tcu_0e7eec2643c43008",
+          "unit_title": "一 万以上数的认识"
+        },
+        {
+          "algorithm_version": "component-evidence-hybrid-v3",
+          "alignment_id": "tca_a6843c6023613b36",
+          "alignment_type": "supports",
+          "confidence": 0.92,
+          "coverage": "partial",
+          "edition_id": "ed_dda80e43104244896faa",
+          "evidence_basis": "toc_title",
+          "evidence_gap": "当前证据来自目录标题与课标概念匹配，尚未保存教材正文或练习摘录；因此只能声明主题支持，不能声明完整教授。",
+          "evidence_level": "L2_topic",
+          "evidence_refs": [
+            "external_smartedu_2026_math_primary_grade_4_up",
+            "tes_1a127b046f4be2de",
+            "textbook-node:tcn_c34c2d319f7e054e",
+            "textbook-unit:tcu_0e7eec2643c43008"
+          ],
+          "evidence_role": "direct_textbook",
+          "evidence_spans": [
+            {
+              "evidence_role": "direct_textbook",
+              "excerpt": "14 万以上数的认识",
+              "excerpt_hash": "191127b23dc475d9a41ba2ba52064a0a087f52d5e813cf720851cade7d09542e",
+              "pdf_page": 19,
+              "printed_page": "14",
+              "span_id": "tes_1a127b046f4be2de"
+            }
+          ],
+          "learning_component_ids": [
+            "lc_4ff1d1f2ada9ed9e"
+          ],
+          "learning_components": [
+            {
+              "component_id": "lc_4ff1d1f2ada9ed9e",
+              "label": "结合具体实例解释万以上数的含义"
+            }
+          ],
+          "level": "unit",
+          "method": "component_evidence_hybrid",
+          "node_id": "tcn_c34c2d319f7e054e",
+          "node_title": "14万以上数的认识",
+          "pdf_page": 19,
+          "printed_page": "14",
+          "publication_status": "published",
+          "rationale": "教材课文“14万以上数的认识”与课标 MA-D2-AL-001 的可教学小能力“结合具体实例解释万以上数的含义”形成页内证据匹配。",
+          "relation_type": "supports",
+          "resource_type": "student_textbook",
+          "review_status": "machine_checked",
+          "revision_status": "current_confirmed",
+          "textbook_grade": 4,
+          "textbook_subject": "数学",
+          "textbook_title": "数学4年级上册",
+          "textbook_volume": "上册",
+          "unit_id": "tcu_0e7eec2643c43008",
+          "unit_title": "一 万以上数的认识"
+        },
+        {
+          "algorithm_version": "component-evidence-hybrid-v3",
+          "alignment_id": "tca_69d7b6e75bf48216",
+          "alignment_type": "supports",
+          "confidence": 0.92,
+          "coverage": "partial",
+          "edition_id": "ed_dda80e43104244896faa",
+          "evidence_basis": "toc_title",
+          "evidence_gap": "当前证据来自目录标题与课标概念匹配，尚未保存教材正文或练习摘录；因此只能声明主题支持，不能声明完整教授。",
+          "evidence_level": "L2_topic",
+          "evidence_refs": [
+            "external_smartedu_2026_math_primary_grade_4_up",
+            "tes_ae022493634b5e6c",
+            "textbook-node:tcn_5c53965d0e3d6855",
+            "textbook-unit:tcu_0e7eec2643c43008"
+          ],
+          "evidence_role": "direct_textbook",
+          "evidence_spans": [
+            {
+              "evidence_role": "direct_textbook",
+              "excerpt": "16 万以上数的认识",
+              "excerpt_hash": "77286f9ab846d736b5c9863575557d8ad19598fdf3b2568ae637da36eefd5fd7",
+              "pdf_page": 21,
+              "printed_page": "16",
+              "span_id": "tes_ae022493634b5e6c"
+            }
+          ],
+          "learning_component_ids": [
+            "lc_4ff1d1f2ada9ed9e"
+          ],
+          "learning_components": [
+            {
+              "component_id": "lc_4ff1d1f2ada9ed9e",
+              "label": "结合具体实例解释万以上数的含义"
+            }
+          ],
+          "level": "unit",
+          "method": "component_evidence_hybrid",
+          "node_id": "tcn_5c53965d0e3d6855",
+          "node_title": "16万以上数的认识",
+          "pdf_page": 21,
+          "printed_page": "16",
+          "publication_status": "published",
+          "rationale": "教材课文“16万以上数的认识”与课标 MA-D2-AL-001 的可教学小能力“结合具体实例解释万以上数的含义”形成页内证据匹配。",
+          "relation_type": "supports",
+          "resource_type": "student_textbook",
+          "review_status": "machine_checked",
+          "revision_status": "current_confirmed",
+          "textbook_grade": 4,
+          "textbook_subject": "数学",
+          "textbook_title": "数学4年级上册",
+          "textbook_volume": "上册",
+          "unit_id": "tcu_0e7eec2643c43008",
+          "unit_title": "一 万以上数的认识"
+        },
+        {
+          "algorithm_version": "component-evidence-hybrid-v3",
           "alignment_id": "tca_b7316bb24692a6ed",
           "alignment_type": "supports",
           "confidence": 0.92,
@@ -6599,7 +6544,7 @@
         },
         {
           "algorithm_version": "component-evidence-hybrid-v3",
-          "alignment_id": "tca_dd7b8d8be5673801",
+          "alignment_id": "tca_04b896973d5eca1b",
           "alignment_type": "supports",
           "confidence": 0.92,
           "coverage": "partial",
@@ -6609,19 +6554,19 @@
           "evidence_level": "L2_topic",
           "evidence_refs": [
             "external_smartedu_2026_math_primary_grade_4_up",
-            "tes_94a989aa858f3321",
-            "textbook-node:tcn_012ada14d4cb337e",
+            "tes_ecf52a4776748a24",
+            "textbook-node:tcn_8afd79878aeefa66",
             "textbook-unit:tcu_0e7eec2643c43008"
           ],
           "evidence_role": "direct_textbook",
           "evidence_spans": [
             {
               "evidence_role": "direct_textbook",
-              "excerpt": "6 万以上数的认识",
-              "excerpt_hash": "a8ca8ca120558164cbb41c302218f449ee0a77a4a00ff10b8e7fa3cdbc449f17",
-              "pdf_page": 11,
-              "printed_page": "6",
-              "span_id": "tes_94a989aa858f3321"
+              "excerpt": "20 万以上数的认识",
+              "excerpt_hash": "208b4d5ccb338f168e21c56b98b7bb13335abf6eea6deb37c6131f9546d7ad35",
+              "pdf_page": 25,
+              "printed_page": "20",
+              "span_id": "tes_ecf52a4776748a24"
             }
           ],
           "learning_component_ids": [
@@ -6635,12 +6580,67 @@
           ],
           "level": "unit",
           "method": "component_evidence_hybrid",
-          "node_id": "tcn_012ada14d4cb337e",
-          "node_title": "6万以上数的认识",
-          "pdf_page": 11,
-          "printed_page": "6",
+          "node_id": "tcn_8afd79878aeefa66",
+          "node_title": "20万以上数的认识",
+          "pdf_page": 25,
+          "printed_page": "20",
           "publication_status": "published",
-          "rationale": "教材课文“6万以上数的认识”与课标 MA-D2-AL-001 的可教学小能力“结合具体实例解释万以上数的含义”形成页内证据匹配。",
+          "rationale": "教材课文“20万以上数的认识”与课标 MA-D2-AL-001 的可教学小能力“结合具体实例解释万以上数的含义”形成页内证据匹配。",
+          "relation_type": "supports",
+          "resource_type": "student_textbook",
+          "review_status": "machine_checked",
+          "revision_status": "current_confirmed",
+          "textbook_grade": 4,
+          "textbook_subject": "数学",
+          "textbook_title": "数学4年级上册",
+          "textbook_volume": "上册",
+          "unit_id": "tcu_0e7eec2643c43008",
+          "unit_title": "一 万以上数的认识"
+        },
+        {
+          "algorithm_version": "component-evidence-hybrid-v3",
+          "alignment_id": "tca_9c4757ab452eb8fd",
+          "alignment_type": "supports",
+          "confidence": 0.92,
+          "coverage": "partial",
+          "edition_id": "ed_dda80e43104244896faa",
+          "evidence_basis": "toc_title",
+          "evidence_gap": "当前证据来自目录标题与课标概念匹配，尚未保存教材正文或练习摘录；因此只能声明主题支持，不能声明完整教授。",
+          "evidence_level": "L2_topic",
+          "evidence_refs": [
+            "external_smartedu_2026_math_primary_grade_4_up",
+            "tes_b45454f54f7539fb",
+            "textbook-node:tcn_378ea7a2892a4331",
+            "textbook-unit:tcu_0e7eec2643c43008"
+          ],
+          "evidence_role": "direct_textbook",
+          "evidence_spans": [
+            {
+              "evidence_role": "direct_textbook",
+              "excerpt": "22 万以上数的认识",
+              "excerpt_hash": "4f9c431142aed9159a966b7ec906b05c73052986aafdb5fbffa9c266b35c678c",
+              "pdf_page": 27,
+              "printed_page": "22",
+              "span_id": "tes_b45454f54f7539fb"
+            }
+          ],
+          "learning_component_ids": [
+            "lc_4ff1d1f2ada9ed9e"
+          ],
+          "learning_components": [
+            {
+              "component_id": "lc_4ff1d1f2ada9ed9e",
+              "label": "结合具体实例解释万以上数的含义"
+            }
+          ],
+          "level": "unit",
+          "method": "component_evidence_hybrid",
+          "node_id": "tcn_378ea7a2892a4331",
+          "node_title": "22万以上数的认识",
+          "pdf_page": 27,
+          "printed_page": "22",
+          "publication_status": "published",
+          "rationale": "教材课文“22万以上数的认识”与课标 MA-D2-AL-001 的可教学小能力“结合具体实例解释万以上数的含义”形成页内证据匹配。",
           "relation_type": "supports",
           "resource_type": "student_textbook",
           "review_status": "machine_checked",
@@ -13810,226 +13810,6 @@
         },
         {
           "algorithm_version": "component-evidence-hybrid-v3",
-          "alignment_id": "tca_07f4c3abc5d02fc5",
-          "alignment_type": "supports",
-          "confidence": 0.92,
-          "coverage": "partial",
-          "edition_id": "ed_dda80e43104244896faa",
-          "evidence_basis": "toc_title",
-          "evidence_gap": "当前证据来自目录标题与课标概念匹配，尚未保存教材正文或练习摘录；因此只能声明主题支持，不能声明完整教授。",
-          "evidence_level": "L2_topic",
-          "evidence_refs": [
-            "external_smartedu_2026_math_primary_grade_4_up",
-            "tes_2ae659c0c78f032a",
-            "textbook-node:tcn_b0d653b9e07df1b6",
-            "textbook-unit:tcu_8924cda0fe91094c"
-          ],
-          "evidence_role": "direct_textbook",
-          "evidence_spans": [
-            {
-              "evidence_role": "direct_textbook",
-              "excerpt": "74 平行四边形和梯形",
-              "excerpt_hash": "e87d3818b952624f21a27d71f2b521d3cf57efe6e5de0412400ea827c9f7a64e",
-              "pdf_page": 79,
-              "printed_page": "74",
-              "span_id": "tes_2ae659c0c78f032a"
-            }
-          ],
-          "learning_component_ids": [
-            "lc_2c57372dca985e06"
-          ],
-          "learning_components": [
-            {
-              "component_id": "lc_2c57372dca985e06",
-              "label": "说出长方形、正方形、平行四边形、梯形的特征"
-            }
-          ],
-          "level": "unit",
-          "method": "component_evidence_hybrid",
-          "node_id": "tcn_b0d653b9e07df1b6",
-          "node_title": "74平行四边形和梯形",
-          "pdf_page": 79,
-          "printed_page": "74",
-          "publication_status": "published",
-          "rationale": "教材课文“74平行四边形和梯形”与课标 MA-D2-GE-004 的可教学小能力“说出长方形、正方形、平行四边形、梯形的特征”形成页内证据匹配。",
-          "relation_type": "supports",
-          "resource_type": "student_textbook",
-          "review_status": "machine_checked",
-          "revision_status": "current_confirmed",
-          "textbook_grade": 4,
-          "textbook_subject": "数学",
-          "textbook_title": "数学4年级上册",
-          "textbook_volume": "上册",
-          "unit_id": "tcu_8924cda0fe91094c",
-          "unit_title": "五 平行四边形和梯形"
-        },
-        {
-          "algorithm_version": "component-evidence-hybrid-v3",
-          "alignment_id": "tca_2f6b9f498e1eb212",
-          "alignment_type": "supports",
-          "confidence": 0.92,
-          "coverage": "partial",
-          "edition_id": "ed_dda80e43104244896faa",
-          "evidence_basis": "toc_title",
-          "evidence_gap": "当前证据来自目录标题与课标概念匹配，尚未保存教材正文或练习摘录；因此只能声明主题支持，不能声明完整教授。",
-          "evidence_level": "L2_topic",
-          "evidence_refs": [
-            "external_smartedu_2026_math_primary_grade_4_up",
-            "tes_ae99c7ccc7228f33",
-            "textbook-node:tcn_928ee58d6773606e",
-            "textbook-unit:tcu_8924cda0fe91094c"
-          ],
-          "evidence_role": "direct_textbook",
-          "evidence_spans": [
-            {
-              "evidence_role": "direct_textbook",
-              "excerpt": "80 平行四边形和梯形",
-              "excerpt_hash": "ed66ab5b19f2444d2a41a84096705c2d9db8662f48292ecac8f46efb57321efc",
-              "pdf_page": 85,
-              "printed_page": "80",
-              "span_id": "tes_ae99c7ccc7228f33"
-            }
-          ],
-          "learning_component_ids": [
-            "lc_2c57372dca985e06"
-          ],
-          "learning_components": [
-            {
-              "component_id": "lc_2c57372dca985e06",
-              "label": "说出长方形、正方形、平行四边形、梯形的特征"
-            }
-          ],
-          "level": "unit",
-          "method": "component_evidence_hybrid",
-          "node_id": "tcn_928ee58d6773606e",
-          "node_title": "80平行四边形和梯形",
-          "pdf_page": 85,
-          "printed_page": "80",
-          "publication_status": "published",
-          "rationale": "教材课文“80平行四边形和梯形”与课标 MA-D2-GE-004 的可教学小能力“说出长方形、正方形、平行四边形、梯形的特征”形成页内证据匹配。",
-          "relation_type": "supports",
-          "resource_type": "student_textbook",
-          "review_status": "machine_checked",
-          "revision_status": "current_confirmed",
-          "textbook_grade": 4,
-          "textbook_subject": "数学",
-          "textbook_title": "数学4年级上册",
-          "textbook_volume": "上册",
-          "unit_id": "tcu_8924cda0fe91094c",
-          "unit_title": "五 平行四边形和梯形"
-        },
-        {
-          "algorithm_version": "component-evidence-hybrid-v3",
-          "alignment_id": "tca_329b25cb51e0c600",
-          "alignment_type": "supports",
-          "confidence": 0.92,
-          "coverage": "partial",
-          "edition_id": "ed_dda80e43104244896faa",
-          "evidence_basis": "toc_title",
-          "evidence_gap": "当前证据来自目录标题与课标概念匹配，尚未保存教材正文或练习摘录；因此只能声明主题支持，不能声明完整教授。",
-          "evidence_level": "L2_topic",
-          "evidence_refs": [
-            "external_smartedu_2026_math_primary_grade_4_up",
-            "tes_faa8f83713191407",
-            "textbook-node:tcn_88126d20f6c08c3c",
-            "textbook-unit:tcu_8924cda0fe91094c"
-          ],
-          "evidence_role": "direct_textbook",
-          "evidence_spans": [
-            {
-              "evidence_role": "direct_textbook",
-              "excerpt": "84 平行四边形和梯形",
-              "excerpt_hash": "8fbbe678acd4296fac825cb118bb3c4024dfffb7e867bec7a7d41f094296df3e",
-              "pdf_page": 89,
-              "printed_page": "84",
-              "span_id": "tes_faa8f83713191407"
-            }
-          ],
-          "learning_component_ids": [
-            "lc_2c57372dca985e06"
-          ],
-          "learning_components": [
-            {
-              "component_id": "lc_2c57372dca985e06",
-              "label": "说出长方形、正方形、平行四边形、梯形的特征"
-            }
-          ],
-          "level": "unit",
-          "method": "component_evidence_hybrid",
-          "node_id": "tcn_88126d20f6c08c3c",
-          "node_title": "84平行四边形和梯形",
-          "pdf_page": 89,
-          "printed_page": "84",
-          "publication_status": "published",
-          "rationale": "教材课文“84平行四边形和梯形”与课标 MA-D2-GE-004 的可教学小能力“说出长方形、正方形、平行四边形、梯形的特征”形成页内证据匹配。",
-          "relation_type": "supports",
-          "resource_type": "student_textbook",
-          "review_status": "machine_checked",
-          "revision_status": "current_confirmed",
-          "textbook_grade": 4,
-          "textbook_subject": "数学",
-          "textbook_title": "数学4年级上册",
-          "textbook_volume": "上册",
-          "unit_id": "tcu_8924cda0fe91094c",
-          "unit_title": "五 平行四边形和梯形"
-        },
-        {
-          "algorithm_version": "component-evidence-hybrid-v3",
-          "alignment_id": "tca_3a184821ee386cd6",
-          "alignment_type": "supports",
-          "confidence": 0.92,
-          "coverage": "partial",
-          "edition_id": "ed_dda80e43104244896faa",
-          "evidence_basis": "toc_title",
-          "evidence_gap": "当前证据来自目录标题与课标概念匹配，尚未保存教材正文或练习摘录；因此只能声明主题支持，不能声明完整教授。",
-          "evidence_level": "L2_topic",
-          "evidence_refs": [
-            "external_smartedu_2026_math_primary_grade_4_up",
-            "tes_05cd903cd607f507",
-            "textbook-node:tcn_3a2e8aa94d0dceb0",
-            "textbook-unit:tcu_8924cda0fe91094c"
-          ],
-          "evidence_role": "direct_textbook",
-          "evidence_spans": [
-            {
-              "evidence_role": "direct_textbook",
-              "excerpt": "86 平行四边形和梯形",
-              "excerpt_hash": "d0fd186c04bda98c5ca8e13e52952fb043e027aa70eab124eef7256a2720541e",
-              "pdf_page": 91,
-              "printed_page": "86",
-              "span_id": "tes_05cd903cd607f507"
-            }
-          ],
-          "learning_component_ids": [
-            "lc_2c57372dca985e06"
-          ],
-          "learning_components": [
-            {
-              "component_id": "lc_2c57372dca985e06",
-              "label": "说出长方形、正方形、平行四边形、梯形的特征"
-            }
-          ],
-          "level": "unit",
-          "method": "component_evidence_hybrid",
-          "node_id": "tcn_3a2e8aa94d0dceb0",
-          "node_title": "86平行四边形和梯形",
-          "pdf_page": 91,
-          "printed_page": "86",
-          "publication_status": "published",
-          "rationale": "教材课文“86平行四边形和梯形”与课标 MA-D2-GE-004 的可教学小能力“说出长方形、正方形、平行四边形、梯形的特征”形成页内证据匹配。",
-          "relation_type": "supports",
-          "resource_type": "student_textbook",
-          "review_status": "machine_checked",
-          "revision_status": "current_confirmed",
-          "textbook_grade": 4,
-          "textbook_subject": "数学",
-          "textbook_title": "数学4年级上册",
-          "textbook_volume": "上册",
-          "unit_id": "tcu_8924cda0fe91094c",
-          "unit_title": "五 平行四边形和梯形"
-        },
-        {
-          "algorithm_version": "component-evidence-hybrid-v3",
           "alignment_id": "tca_40e7f9cfd9670f59",
           "alignment_type": "supports",
           "confidence": 0.92,
@@ -14140,7 +13920,7 @@
         },
         {
           "algorithm_version": "component-evidence-hybrid-v3",
-          "alignment_id": "tca_9fde38cafeaf02c1",
+          "alignment_id": "tca_07f4c3abc5d02fc5",
           "alignment_type": "supports",
           "confidence": 0.92,
           "coverage": "partial",
@@ -14150,19 +13930,19 @@
           "evidence_level": "L2_topic",
           "evidence_refs": [
             "external_smartedu_2026_math_primary_grade_4_up",
-            "tes_d055158d496f51b7",
-            "textbook-node:tcn_39a1cd969568613e",
+            "tes_2ae659c0c78f032a",
+            "textbook-node:tcn_b0d653b9e07df1b6",
             "textbook-unit:tcu_8924cda0fe91094c"
           ],
           "evidence_role": "direct_textbook",
           "evidence_spans": [
             {
               "evidence_role": "direct_textbook",
-              "excerpt": "78 平行四边形和梯形",
-              "excerpt_hash": "4ef2617df104fdbfa0a636adab96c1520028acc577349b671092288800e4849c",
-              "pdf_page": 83,
-              "printed_page": "78",
-              "span_id": "tes_d055158d496f51b7"
+              "excerpt": "74 平行四边形和梯形",
+              "excerpt_hash": "e87d3818b952624f21a27d71f2b521d3cf57efe6e5de0412400ea827c9f7a64e",
+              "pdf_page": 79,
+              "printed_page": "74",
+              "span_id": "tes_2ae659c0c78f032a"
             }
           ],
           "learning_component_ids": [
@@ -14176,12 +13956,12 @@
           ],
           "level": "unit",
           "method": "component_evidence_hybrid",
-          "node_id": "tcn_39a1cd969568613e",
-          "node_title": "78平行四边形和梯形",
-          "pdf_page": 83,
-          "printed_page": "78",
+          "node_id": "tcn_b0d653b9e07df1b6",
+          "node_title": "74平行四边形和梯形",
+          "pdf_page": 79,
+          "printed_page": "74",
           "publication_status": "published",
-          "rationale": "教材课文“78平行四边形和梯形”与课标 MA-D2-GE-004 的可教学小能力“说出长方形、正方形、平行四边形、梯形的特征”形成页内证据匹配。",
+          "rationale": "教材课文“74平行四边形和梯形”与课标 MA-D2-GE-004 的可教学小能力“说出长方形、正方形、平行四边形、梯形的特征”形成页内证据匹配。",
           "relation_type": "supports",
           "resource_type": "student_textbook",
           "review_status": "machine_checked",
@@ -14250,6 +14030,116 @@
         },
         {
           "algorithm_version": "component-evidence-hybrid-v3",
+          "alignment_id": "tca_9fde38cafeaf02c1",
+          "alignment_type": "supports",
+          "confidence": 0.92,
+          "coverage": "partial",
+          "edition_id": "ed_dda80e43104244896faa",
+          "evidence_basis": "toc_title",
+          "evidence_gap": "当前证据来自目录标题与课标概念匹配，尚未保存教材正文或练习摘录；因此只能声明主题支持，不能声明完整教授。",
+          "evidence_level": "L2_topic",
+          "evidence_refs": [
+            "external_smartedu_2026_math_primary_grade_4_up",
+            "tes_d055158d496f51b7",
+            "textbook-node:tcn_39a1cd969568613e",
+            "textbook-unit:tcu_8924cda0fe91094c"
+          ],
+          "evidence_role": "direct_textbook",
+          "evidence_spans": [
+            {
+              "evidence_role": "direct_textbook",
+              "excerpt": "78 平行四边形和梯形",
+              "excerpt_hash": "4ef2617df104fdbfa0a636adab96c1520028acc577349b671092288800e4849c",
+              "pdf_page": 83,
+              "printed_page": "78",
+              "span_id": "tes_d055158d496f51b7"
+            }
+          ],
+          "learning_component_ids": [
+            "lc_2c57372dca985e06"
+          ],
+          "learning_components": [
+            {
+              "component_id": "lc_2c57372dca985e06",
+              "label": "说出长方形、正方形、平行四边形、梯形的特征"
+            }
+          ],
+          "level": "unit",
+          "method": "component_evidence_hybrid",
+          "node_id": "tcn_39a1cd969568613e",
+          "node_title": "78平行四边形和梯形",
+          "pdf_page": 83,
+          "printed_page": "78",
+          "publication_status": "published",
+          "rationale": "教材课文“78平行四边形和梯形”与课标 MA-D2-GE-004 的可教学小能力“说出长方形、正方形、平行四边形、梯形的特征”形成页内证据匹配。",
+          "relation_type": "supports",
+          "resource_type": "student_textbook",
+          "review_status": "machine_checked",
+          "revision_status": "current_confirmed",
+          "textbook_grade": 4,
+          "textbook_subject": "数学",
+          "textbook_title": "数学4年级上册",
+          "textbook_volume": "上册",
+          "unit_id": "tcu_8924cda0fe91094c",
+          "unit_title": "五 平行四边形和梯形"
+        },
+        {
+          "algorithm_version": "component-evidence-hybrid-v3",
+          "alignment_id": "tca_2f6b9f498e1eb212",
+          "alignment_type": "supports",
+          "confidence": 0.92,
+          "coverage": "partial",
+          "edition_id": "ed_dda80e43104244896faa",
+          "evidence_basis": "toc_title",
+          "evidence_gap": "当前证据来自目录标题与课标概念匹配，尚未保存教材正文或练习摘录；因此只能声明主题支持，不能声明完整教授。",
+          "evidence_level": "L2_topic",
+          "evidence_refs": [
+            "external_smartedu_2026_math_primary_grade_4_up",
+            "tes_ae99c7ccc7228f33",
+            "textbook-node:tcn_928ee58d6773606e",
+            "textbook-unit:tcu_8924cda0fe91094c"
+          ],
+          "evidence_role": "direct_textbook",
+          "evidence_spans": [
+            {
+              "evidence_role": "direct_textbook",
+              "excerpt": "80 平行四边形和梯形",
+              "excerpt_hash": "ed66ab5b19f2444d2a41a84096705c2d9db8662f48292ecac8f46efb57321efc",
+              "pdf_page": 85,
+              "printed_page": "80",
+              "span_id": "tes_ae99c7ccc7228f33"
+            }
+          ],
+          "learning_component_ids": [
+            "lc_2c57372dca985e06"
+          ],
+          "learning_components": [
+            {
+              "component_id": "lc_2c57372dca985e06",
+              "label": "说出长方形、正方形、平行四边形、梯形的特征"
+            }
+          ],
+          "level": "unit",
+          "method": "component_evidence_hybrid",
+          "node_id": "tcn_928ee58d6773606e",
+          "node_title": "80平行四边形和梯形",
+          "pdf_page": 85,
+          "printed_page": "80",
+          "publication_status": "published",
+          "rationale": "教材课文“80平行四边形和梯形”与课标 MA-D2-GE-004 的可教学小能力“说出长方形、正方形、平行四边形、梯形的特征”形成页内证据匹配。",
+          "relation_type": "supports",
+          "resource_type": "student_textbook",
+          "review_status": "machine_checked",
+          "revision_status": "current_confirmed",
+          "textbook_grade": 4,
+          "textbook_subject": "数学",
+          "textbook_title": "数学4年级上册",
+          "textbook_volume": "上册",
+          "unit_id": "tcu_8924cda0fe91094c",
+          "unit_title": "五 平行四边形和梯形"
+        },
+        {
+          "algorithm_version": "component-evidence-hybrid-v3",
           "alignment_id": "tca_d93ef9aa1695813e",
           "alignment_type": "supports",
           "confidence": 0.92,
@@ -14292,6 +14182,116 @@
           "printed_page": "82",
           "publication_status": "published",
           "rationale": "教材课文“82平行四边形和梯形”与课标 MA-D2-GE-004 的可教学小能力“说出长方形、正方形、平行四边形、梯形的特征”形成页内证据匹配。",
+          "relation_type": "supports",
+          "resource_type": "student_textbook",
+          "review_status": "machine_checked",
+          "revision_status": "current_confirmed",
+          "textbook_grade": 4,
+          "textbook_subject": "数学",
+          "textbook_title": "数学4年级上册",
+          "textbook_volume": "上册",
+          "unit_id": "tcu_8924cda0fe91094c",
+          "unit_title": "五 平行四边形和梯形"
+        },
+        {
+          "algorithm_version": "component-evidence-hybrid-v3",
+          "alignment_id": "tca_329b25cb51e0c600",
+          "alignment_type": "supports",
+          "confidence": 0.92,
+          "coverage": "partial",
+          "edition_id": "ed_dda80e43104244896faa",
+          "evidence_basis": "toc_title",
+          "evidence_gap": "当前证据来自目录标题与课标概念匹配，尚未保存教材正文或练习摘录；因此只能声明主题支持，不能声明完整教授。",
+          "evidence_level": "L2_topic",
+          "evidence_refs": [
+            "external_smartedu_2026_math_primary_grade_4_up",
+            "tes_faa8f83713191407",
+            "textbook-node:tcn_88126d20f6c08c3c",
+            "textbook-unit:tcu_8924cda0fe91094c"
+          ],
+          "evidence_role": "direct_textbook",
+          "evidence_spans": [
+            {
+              "evidence_role": "direct_textbook",
+              "excerpt": "84 平行四边形和梯形",
+              "excerpt_hash": "8fbbe678acd4296fac825cb118bb3c4024dfffb7e867bec7a7d41f094296df3e",
+              "pdf_page": 89,
+              "printed_page": "84",
+              "span_id": "tes_faa8f83713191407"
+            }
+          ],
+          "learning_component_ids": [
+            "lc_2c57372dca985e06"
+          ],
+          "learning_components": [
+            {
+              "component_id": "lc_2c57372dca985e06",
+              "label": "说出长方形、正方形、平行四边形、梯形的特征"
+            }
+          ],
+          "level": "unit",
+          "method": "component_evidence_hybrid",
+          "node_id": "tcn_88126d20f6c08c3c",
+          "node_title": "84平行四边形和梯形",
+          "pdf_page": 89,
+          "printed_page": "84",
+          "publication_status": "published",
+          "rationale": "教材课文“84平行四边形和梯形”与课标 MA-D2-GE-004 的可教学小能力“说出长方形、正方形、平行四边形、梯形的特征”形成页内证据匹配。",
+          "relation_type": "supports",
+          "resource_type": "student_textbook",
+          "review_status": "machine_checked",
+          "revision_status": "current_confirmed",
+          "textbook_grade": 4,
+          "textbook_subject": "数学",
+          "textbook_title": "数学4年级上册",
+          "textbook_volume": "上册",
+          "unit_id": "tcu_8924cda0fe91094c",
+          "unit_title": "五 平行四边形和梯形"
+        },
+        {
+          "algorithm_version": "component-evidence-hybrid-v3",
+          "alignment_id": "tca_3a184821ee386cd6",
+          "alignment_type": "supports",
+          "confidence": 0.92,
+          "coverage": "partial",
+          "edition_id": "ed_dda80e43104244896faa",
+          "evidence_basis": "toc_title",
+          "evidence_gap": "当前证据来自目录标题与课标概念匹配，尚未保存教材正文或练习摘录；因此只能声明主题支持，不能声明完整教授。",
+          "evidence_level": "L2_topic",
+          "evidence_refs": [
+            "external_smartedu_2026_math_primary_grade_4_up",
+            "tes_05cd903cd607f507",
+            "textbook-node:tcn_3a2e8aa94d0dceb0",
+            "textbook-unit:tcu_8924cda0fe91094c"
+          ],
+          "evidence_role": "direct_textbook",
+          "evidence_spans": [
+            {
+              "evidence_role": "direct_textbook",
+              "excerpt": "86 平行四边形和梯形",
+              "excerpt_hash": "d0fd186c04bda98c5ca8e13e52952fb043e027aa70eab124eef7256a2720541e",
+              "pdf_page": 91,
+              "printed_page": "86",
+              "span_id": "tes_05cd903cd607f507"
+            }
+          ],
+          "learning_component_ids": [
+            "lc_2c57372dca985e06"
+          ],
+          "learning_components": [
+            {
+              "component_id": "lc_2c57372dca985e06",
+              "label": "说出长方形、正方形、平行四边形、梯形的特征"
+            }
+          ],
+          "level": "unit",
+          "method": "component_evidence_hybrid",
+          "node_id": "tcn_3a2e8aa94d0dceb0",
+          "node_title": "86平行四边形和梯形",
+          "pdf_page": 91,
+          "printed_page": "86",
+          "publication_status": "published",
+          "rationale": "教材课文“86平行四边形和梯形”与课标 MA-D2-GE-004 的可教学小能力“说出长方形、正方形、平行四边形、梯形的特征”形成页内证据匹配。",
           "relation_type": "supports",
           "resource_type": "student_textbook",
           "review_status": "machine_checked",
@@ -14858,6 +14858,71 @@
       "curriculum_alignments": [
         {
           "algorithm_version": "component-evidence-hybrid-v3",
+          "alignment_id": "tca_ade400164139298f",
+          "alignment_type": "practices",
+          "confidence": 0.92,
+          "coverage": "partial",
+          "edition_id": "ed_1ff36a7d6984de2292ee",
+          "evidence_basis": "textbook_page_span",
+          "evidence_gap": null,
+          "evidence_level": "L3_page_evidence",
+          "evidence_refs": [
+            "external_smartedu_2026_bsd_math_primary_grade_3_up",
+            "tes_bbd8393f8dec9297",
+            "textbook-node:tcn_d7918917a7f8ac9a",
+            "textbook-unit:tcu_06da880204671671"
+          ],
+          "evidence_role": "direct_textbook",
+          "evidence_spans": [
+            {
+              "evidence_role": "direct_textbook",
+              "excerpt": "想一想,填上合适的长度单位。",
+              "excerpt_hash": "92b9bd7ed9af38bea0a698ee6af208f389873de350ac5e6d4f35309d5842b08a",
+              "pdf_page": 19,
+              "printed_page": "14",
+              "span_id": "tes_bbd8393f8dec9297"
+            }
+          ],
+          "learning_component_ids": [
+            "lc_b07e86692efaa1c0",
+            "lc_08809dd6ae12b0a4",
+            "lc_f575ab73d98d3bd7"
+          ],
+          "learning_components": [
+            {
+              "component_id": "lc_b07e86692efaa1c0",
+              "label": "选择合适的长度单位"
+            },
+            {
+              "component_id": "lc_08809dd6ae12b0a4",
+              "label": "描述长度单位千米、分米、毫米"
+            },
+            {
+              "component_id": "lc_f575ab73d98d3bd7",
+              "label": "进行长度单位之间的换算"
+            }
+          ],
+          "level": "page",
+          "method": "component_evidence_hybrid",
+          "node_id": "tcn_d7918917a7f8ac9a",
+          "node_title": "想一想,填上合适的长度单位。",
+          "pdf_page": 19,
+          "printed_page": "14",
+          "publication_status": "published",
+          "rationale": "教材练习“想一想,填上合适的长度单位。”与课标 MA-D2-GE-005 的可教学小能力“选择合适的长度单位、描述长度单位千米、分米、毫米、进行长度单位之间的换算”形成页内证据匹配。",
+          "relation_type": "practices",
+          "resource_type": "student_textbook",
+          "review_status": "machine_checked",
+          "revision_status": "current_confirmed",
+          "textbook_grade": 3,
+          "textbook_subject": "数学",
+          "textbook_title": "数学3年级上册",
+          "textbook_volume": "上册",
+          "unit_id": "tcu_06da880204671671",
+          "unit_title": "第二单元 测量（二）"
+        },
+        {
+          "algorithm_version": "component-evidence-hybrid-v3",
           "alignment_id": "tca_5a36c239be10bbee",
           "alignment_type": "practices",
           "confidence": 0.86,
@@ -14975,71 +15040,6 @@
           "printed_page": "21",
           "publication_status": "published",
           "rationale": "教材练习“想一想,我们认识了哪些长度单位?用自己喜欢的方式整理出来。”与课标 MA-D2-GE-005 的可教学小能力“描述长度单位千米、分米、毫米、选择合适的长度单位、进行长度单位之间的换算”形成页内证据匹配。",
-          "relation_type": "practices",
-          "resource_type": "student_textbook",
-          "review_status": "machine_checked",
-          "revision_status": "current_confirmed",
-          "textbook_grade": 3,
-          "textbook_subject": "数学",
-          "textbook_title": "数学3年级上册",
-          "textbook_volume": "上册",
-          "unit_id": "tcu_06da880204671671",
-          "unit_title": "第二单元 测量（二）"
-        },
-        {
-          "algorithm_version": "component-evidence-hybrid-v3",
-          "alignment_id": "tca_ade400164139298f",
-          "alignment_type": "practices",
-          "confidence": 0.92,
-          "coverage": "partial",
-          "edition_id": "ed_1ff36a7d6984de2292ee",
-          "evidence_basis": "textbook_page_span",
-          "evidence_gap": null,
-          "evidence_level": "L3_page_evidence",
-          "evidence_refs": [
-            "external_smartedu_2026_bsd_math_primary_grade_3_up",
-            "tes_bbd8393f8dec9297",
-            "textbook-node:tcn_d7918917a7f8ac9a",
-            "textbook-unit:tcu_06da880204671671"
-          ],
-          "evidence_role": "direct_textbook",
-          "evidence_spans": [
-            {
-              "evidence_role": "direct_textbook",
-              "excerpt": "想一想,填上合适的长度单位。",
-              "excerpt_hash": "92b9bd7ed9af38bea0a698ee6af208f389873de350ac5e6d4f35309d5842b08a",
-              "pdf_page": 19,
-              "printed_page": "14",
-              "span_id": "tes_bbd8393f8dec9297"
-            }
-          ],
-          "learning_component_ids": [
-            "lc_b07e86692efaa1c0",
-            "lc_08809dd6ae12b0a4",
-            "lc_f575ab73d98d3bd7"
-          ],
-          "learning_components": [
-            {
-              "component_id": "lc_b07e86692efaa1c0",
-              "label": "选择合适的长度单位"
-            },
-            {
-              "component_id": "lc_08809dd6ae12b0a4",
-              "label": "描述长度单位千米、分米、毫米"
-            },
-            {
-              "component_id": "lc_f575ab73d98d3bd7",
-              "label": "进行长度单位之间的换算"
-            }
-          ],
-          "level": "page",
-          "method": "component_evidence_hybrid",
-          "node_id": "tcn_d7918917a7f8ac9a",
-          "node_title": "想一想,填上合适的长度单位。",
-          "pdf_page": 19,
-          "printed_page": "14",
-          "publication_status": "published",
-          "rationale": "教材练习“想一想,填上合适的长度单位。”与课标 MA-D2-GE-005 的可教学小能力“选择合适的长度单位、描述长度单位千米、分米、毫米、进行长度单位之间的换算”形成页内证据匹配。",
           "relation_type": "practices",
           "resource_type": "student_textbook",
           "review_status": "machine_checked",
@@ -15865,7 +15865,7 @@
             "external_smartedu_2026_bsd_math_primary_grade_3_up",
             "tes_35f42c6dac48661b",
             "textbook-node:tcn_127eaefb4b353b70",
-            "textbook-unit:tcu_0d8200eae031c6cf"
+            "textbook-unit:tcu_a41e23e5c8b69e72"
           ],
           "evidence_role": "direct_textbook",
           "evidence_spans": [
@@ -15903,63 +15903,8 @@
           "textbook_subject": "数学",
           "textbook_title": "数学3年级上册",
           "textbook_volume": "上册",
-          "unit_id": "tcu_0d8200eae031c6cf",
-          "unit_title": "第八单元 调查与记录"
-        },
-        {
-          "algorithm_version": "component-evidence-hybrid-v3",
-          "alignment_id": "tca_bddea561b7d161f8",
-          "alignment_type": "supports",
-          "confidence": 0.86,
-          "coverage": "partial",
-          "edition_id": "ed_d606965a5c7bfd83f238",
-          "evidence_basis": "textbook_page_span",
-          "evidence_gap": null,
-          "evidence_level": "L3_page_evidence",
-          "evidence_refs": [
-            "external_smartedu_2026_bsd_math_primary_grade_4_up",
-            "tes_9b792fb058ce1c20",
-            "textbook-node:tcn_b38e860932bda520",
-            "textbook-unit:tcu_af5816368ca5e68a"
-          ],
-          "evidence_role": "direct_textbook",
-          "evidence_spans": [
-            {
-              "evidence_role": "direct_textbook",
-              "excerpt": "谁占的格子先形成一条直线,谁就获胜。",
-              "excerpt_hash": "f0a2f95c23775a322633a71796d1fd254607b72bd755cf1cf45b525d069a83cc",
-              "pdf_page": 62,
-              "printed_page": "57",
-              "span_id": "tes_9b792fb058ce1c20"
-            }
-          ],
-          "learning_component_ids": [
-            "lc_25b3dbd17b68879c"
-          ],
-          "learning_components": [
-            {
-              "component_id": "lc_25b3dbd17b68879c",
-              "label": "经历用直尺和圆规将三角形的三条边画到一条直线上的过程，直观感受三角形的周长，知道什么是图形的周长"
-            }
-          ],
-          "level": "page",
-          "method": "component_evidence_hybrid",
-          "node_id": "tcn_b38e860932bda520",
-          "node_title": "谁占的格子先形成一条直线,谁就获胜。",
-          "pdf_page": 62,
-          "printed_page": "57",
-          "publication_status": "published",
-          "rationale": "教材学习目标“谁占的格子先形成一条直线,谁就获胜。”与课标 MA-D2-GE-006 的可教学小能力“经历用直尺和圆规将三角形的三条边画到一条直线上的过程，直观感受三角形的周长，知道什么是图形的周长”形成页内证据匹配。",
-          "relation_type": "supports",
-          "resource_type": "student_textbook",
-          "review_status": "machine_checked",
-          "revision_status": "current_confirmed",
-          "textbook_grade": 4,
-          "textbook_subject": "数学",
-          "textbook_title": "数学4年级上册",
-          "textbook_volume": "上册",
-          "unit_id": "tcu_af5816368ca5e68a",
-          "unit_title": "第三单元 整数乘法（二）"
+          "unit_id": "tcu_a41e23e5c8b69e72",
+          "unit_title": "综合实践 探索年月日的秘密"
         },
         {
           "algorithm_version": "component-evidence-hybrid-v3",
@@ -16006,6 +15951,61 @@
           "publication_status": "published",
           "rationale": "教材练习“计算器是生活中常用的计算工具。关于计算器你知道什么?”与课标 MA-D2-GE-006 的可教学小能力“经历用直尺和圆规将三角形的三条边画到一条直线上的过程，直观感受三角形的周长，知道什么是图形的周长”形成页内证据匹配。",
           "relation_type": "practices",
+          "resource_type": "student_textbook",
+          "review_status": "machine_checked",
+          "revision_status": "current_confirmed",
+          "textbook_grade": 4,
+          "textbook_subject": "数学",
+          "textbook_title": "数学4年级上册",
+          "textbook_volume": "上册",
+          "unit_id": "tcu_af5816368ca5e68a",
+          "unit_title": "第三单元 整数乘法（二）"
+        },
+        {
+          "algorithm_version": "component-evidence-hybrid-v3",
+          "alignment_id": "tca_bddea561b7d161f8",
+          "alignment_type": "supports",
+          "confidence": 0.86,
+          "coverage": "partial",
+          "edition_id": "ed_d606965a5c7bfd83f238",
+          "evidence_basis": "textbook_page_span",
+          "evidence_gap": null,
+          "evidence_level": "L3_page_evidence",
+          "evidence_refs": [
+            "external_smartedu_2026_bsd_math_primary_grade_4_up",
+            "tes_9b792fb058ce1c20",
+            "textbook-node:tcn_b38e860932bda520",
+            "textbook-unit:tcu_af5816368ca5e68a"
+          ],
+          "evidence_role": "direct_textbook",
+          "evidence_spans": [
+            {
+              "evidence_role": "direct_textbook",
+              "excerpt": "谁占的格子先形成一条直线,谁就获胜。",
+              "excerpt_hash": "f0a2f95c23775a322633a71796d1fd254607b72bd755cf1cf45b525d069a83cc",
+              "pdf_page": 62,
+              "printed_page": "57",
+              "span_id": "tes_9b792fb058ce1c20"
+            }
+          ],
+          "learning_component_ids": [
+            "lc_25b3dbd17b68879c"
+          ],
+          "learning_components": [
+            {
+              "component_id": "lc_25b3dbd17b68879c",
+              "label": "经历用直尺和圆规将三角形的三条边画到一条直线上的过程，直观感受三角形的周长，知道什么是图形的周长"
+            }
+          ],
+          "level": "page",
+          "method": "component_evidence_hybrid",
+          "node_id": "tcn_b38e860932bda520",
+          "node_title": "谁占的格子先形成一条直线,谁就获胜。",
+          "pdf_page": 62,
+          "printed_page": "57",
+          "publication_status": "published",
+          "rationale": "教材学习目标“谁占的格子先形成一条直线,谁就获胜。”与课标 MA-D2-GE-006 的可教学小能力“经历用直尺和圆规将三角形的三条边画到一条直线上的过程，直观感受三角形的周长，知道什么是图形的周长”形成页内证据匹配。",
+          "relation_type": "supports",
           "resource_type": "student_textbook",
           "review_status": "machine_checked",
           "revision_status": "current_confirmed",
@@ -16128,71 +16128,6 @@
         },
         {
           "algorithm_version": "component-evidence-hybrid-v3",
-          "alignment_id": "tca_b0c51bc49a27e0a0",
-          "alignment_type": "supports",
-          "confidence": 0.92,
-          "coverage": "partial",
-          "edition_id": "ed_e9b67fbb7a2f5b25129e",
-          "evidence_basis": "textbook_page_span",
-          "evidence_gap": null,
-          "evidence_level": "L3_page_evidence",
-          "evidence_refs": [
-            "external_smartedu_2026_bsd_math_primary_grade_3_down",
-            "tes_8ac3ee2b757eb444",
-            "textbook-node:tcn_b0dc482225282dee",
-            "textbook-unit:tcu_201d736991e84a31"
-          ],
-          "evidence_role": "direct_textbook",
-          "evidence_spans": [
-            {
-              "evidence_role": "direct_textbook",
-              "excerpt": "量一量,算出右面长方形的周长,",
-              "excerpt_hash": "f6020ae537bb27201c82e94884f4428b0ec1156fec5beac991996ff843c00237",
-              "pdf_page": 40,
-              "printed_page": null,
-              "span_id": "tes_8ac3ee2b757eb444"
-            }
-          ],
-          "learning_component_ids": [
-            "lc_8380938e75c88796",
-            "lc_a35aea4ec4f35180",
-            "lc_25b3dbd17b68879c"
-          ],
-          "learning_components": [
-            {
-              "component_id": "lc_8380938e75c88796",
-              "label": "计算长方形、正方形的周长和面积"
-            },
-            {
-              "component_id": "lc_a35aea4ec4f35180",
-              "label": "测量三角形、长方形和正方形的周长"
-            },
-            {
-              "component_id": "lc_25b3dbd17b68879c",
-              "label": "经历用直尺和圆规将三角形的三条边画到一条直线上的过程，直观感受三角形的周长，知道什么是图形的周长"
-            }
-          ],
-          "level": "page",
-          "method": "component_evidence_hybrid",
-          "node_id": "tcn_b0dc482225282dee",
-          "node_title": "量一量,算出右面长方形的周长,",
-          "pdf_page": 40,
-          "printed_page": null,
-          "publication_status": "published",
-          "rationale": "教材学习目标“量一量,算出右面长方形的周长,”与课标 MA-D2-GE-006 的可教学小能力“计算长方形、正方形的周长和面积、测量三角形、长方形和正方形的周长、经历用直尺和圆规将三角形的三条边画到一条直线上的过程，直观感受三角形的周长，知道什么是图形的周长”形成页内证据匹配。",
-          "relation_type": "supports",
-          "resource_type": "student_textbook",
-          "review_status": "machine_checked",
-          "revision_status": "current_confirmed",
-          "textbook_grade": 3,
-          "textbook_subject": "数学",
-          "textbook_title": "数学3年级下册",
-          "textbook_volume": "下册",
-          "unit_id": "tcu_201d736991e84a31",
-          "unit_title": "第三单元 周长"
-        },
-        {
-          "algorithm_version": "component-evidence-hybrid-v3",
           "alignment_id": "tca_cd00041e622bdc96",
           "alignment_type": "supports",
           "confidence": 0.92,
@@ -16245,6 +16180,71 @@
           "printed_page": null,
           "publication_status": "published",
           "rationale": "教材学习目标“描一描,数一数,下面图形的周长分别是多少厘米?”与课标 MA-D2-GE-006 的可教学小能力“经历用直尺和圆规将三角形的三条边画到一条直线上的过程，直观感受三角形的周长，知道什么是图形的周长、计算长方形、正方形的周长和面积、测量三角形、长方形和正方形的周长”形成页内证据匹配。",
+          "relation_type": "supports",
+          "resource_type": "student_textbook",
+          "review_status": "machine_checked",
+          "revision_status": "current_confirmed",
+          "textbook_grade": 3,
+          "textbook_subject": "数学",
+          "textbook_title": "数学3年级下册",
+          "textbook_volume": "下册",
+          "unit_id": "tcu_201d736991e84a31",
+          "unit_title": "第三单元 周长"
+        },
+        {
+          "algorithm_version": "component-evidence-hybrid-v3",
+          "alignment_id": "tca_b0c51bc49a27e0a0",
+          "alignment_type": "supports",
+          "confidence": 0.92,
+          "coverage": "partial",
+          "edition_id": "ed_e9b67fbb7a2f5b25129e",
+          "evidence_basis": "textbook_page_span",
+          "evidence_gap": null,
+          "evidence_level": "L3_page_evidence",
+          "evidence_refs": [
+            "external_smartedu_2026_bsd_math_primary_grade_3_down",
+            "tes_8ac3ee2b757eb444",
+            "textbook-node:tcn_b0dc482225282dee",
+            "textbook-unit:tcu_201d736991e84a31"
+          ],
+          "evidence_role": "direct_textbook",
+          "evidence_spans": [
+            {
+              "evidence_role": "direct_textbook",
+              "excerpt": "量一量,算出右面长方形的周长,",
+              "excerpt_hash": "f6020ae537bb27201c82e94884f4428b0ec1156fec5beac991996ff843c00237",
+              "pdf_page": 40,
+              "printed_page": null,
+              "span_id": "tes_8ac3ee2b757eb444"
+            }
+          ],
+          "learning_component_ids": [
+            "lc_8380938e75c88796",
+            "lc_a35aea4ec4f35180",
+            "lc_25b3dbd17b68879c"
+          ],
+          "learning_components": [
+            {
+              "component_id": "lc_8380938e75c88796",
+              "label": "计算长方形、正方形的周长和面积"
+            },
+            {
+              "component_id": "lc_a35aea4ec4f35180",
+              "label": "测量三角形、长方形和正方形的周长"
+            },
+            {
+              "component_id": "lc_25b3dbd17b68879c",
+              "label": "经历用直尺和圆规将三角形的三条边画到一条直线上的过程，直观感受三角形的周长，知道什么是图形的周长"
+            }
+          ],
+          "level": "page",
+          "method": "component_evidence_hybrid",
+          "node_id": "tcn_b0dc482225282dee",
+          "node_title": "量一量,算出右面长方形的周长,",
+          "pdf_page": 40,
+          "printed_page": null,
+          "publication_status": "published",
+          "rationale": "教材学习目标“量一量,算出右面长方形的周长,”与课标 MA-D2-GE-006 的可教学小能力“计算长方形、正方形的周长和面积、测量三角形、长方形和正方形的周长、经历用直尺和圆规将三角形的三条边画到一条直线上的过程，直观感受三角形的周长，知道什么是图形的周长”形成页内证据匹配。",
           "relation_type": "supports",
           "resource_type": "student_textbook",
           "review_status": "machine_checked",
@@ -19537,7 +19537,7 @@
         },
         {
           "algorithm_version": "component-evidence-hybrid-v3",
-          "alignment_id": "tca_39ecb7cf73a3ba58",
+          "alignment_id": "tca_e62da17f4ba3acca",
           "alignment_type": "supports",
           "confidence": 0.92,
           "coverage": "partial",
@@ -19547,19 +19547,19 @@
           "evidence_level": "L2_topic",
           "evidence_refs": [
             "external_smartedu_2026_math_primary_grade_4_up",
-            "tes_5c449f83822ae8f0",
-            "textbook-node:tcn_64903d20030c44df",
+            "tes_bebd3fe65c1e1f50",
+            "textbook-node:tcn_1b3c95e9ea1d0017",
             "textbook-unit:tcu_07ea1c44be4fed34"
           ],
           "evidence_role": "direct_textbook",
           "evidence_spans": [
             {
               "evidence_role": "direct_textbook",
-              "excerpt": "98 条形统计图",
-              "excerpt_hash": "f19a5a3494baa31782dc0734c83bc931ce6566980ffd6f069fb63ea792eeef9e",
-              "pdf_page": 103,
-              "printed_page": "98",
-              "span_id": "tes_5c449f83822ae8f0"
+              "excerpt": "90 条形统计图",
+              "excerpt_hash": "5d686cf61040452530a837dadad872bd05710713530875234c0a30dfcb1f642d",
+              "pdf_page": 95,
+              "printed_page": "90",
+              "span_id": "tes_bebd3fe65c1e1f50"
             }
           ],
           "learning_component_ids": [
@@ -19573,67 +19573,12 @@
           ],
           "level": "unit",
           "method": "component_evidence_hybrid",
-          "node_id": "tcn_64903d20030c44df",
-          "node_title": "98条形统计图",
-          "pdf_page": 103,
-          "printed_page": "98",
+          "node_id": "tcn_1b3c95e9ea1d0017",
+          "node_title": "90条形统计图",
+          "pdf_page": 95,
+          "printed_page": "90",
           "publication_status": "published",
-          "rationale": "教材课文“98条形统计图”与课标 MA-D2-ST-002 的可教学小能力“用条形统计图合理表示数据”形成页内证据匹配。",
-          "relation_type": "supports",
-          "resource_type": "student_textbook",
-          "review_status": "machine_checked",
-          "revision_status": "current_confirmed",
-          "textbook_grade": 4,
-          "textbook_subject": "数学",
-          "textbook_title": "数学4年级上册",
-          "textbook_volume": "上册",
-          "unit_id": "tcu_07ea1c44be4fed34",
-          "unit_title": "六 条形统计图"
-        },
-        {
-          "algorithm_version": "component-evidence-hybrid-v3",
-          "alignment_id": "tca_5a27406c5dbf23e0",
-          "alignment_type": "supports",
-          "confidence": 0.92,
-          "coverage": "partial",
-          "edition_id": "ed_dda80e43104244896faa",
-          "evidence_basis": "toc_title",
-          "evidence_gap": "当前证据来自目录标题与课标概念匹配，尚未保存教材正文或练习摘录；因此只能声明主题支持，不能声明完整教授。",
-          "evidence_level": "L2_topic",
-          "evidence_refs": [
-            "external_smartedu_2026_math_primary_grade_4_up",
-            "tes_ee30fb85d3a00256",
-            "textbook-node:tcn_08d579e76175a306",
-            "textbook-unit:tcu_07ea1c44be4fed34"
-          ],
-          "evidence_role": "direct_textbook",
-          "evidence_spans": [
-            {
-              "evidence_role": "direct_textbook",
-              "excerpt": "94 条形统计图",
-              "excerpt_hash": "2b765d7f26666b75091b48b86ccaac4f8b39d5499a2f8d98bad33d2bd8008b7c",
-              "pdf_page": 99,
-              "printed_page": "94",
-              "span_id": "tes_ee30fb85d3a00256"
-            }
-          ],
-          "learning_component_ids": [
-            "lc_3e5b2ca4f90fd7fe"
-          ],
-          "learning_components": [
-            {
-              "component_id": "lc_3e5b2ca4f90fd7fe",
-              "label": "用条形统计图合理表示数据"
-            }
-          ],
-          "level": "unit",
-          "method": "component_evidence_hybrid",
-          "node_id": "tcn_08d579e76175a306",
-          "node_title": "94条形统计图",
-          "pdf_page": 99,
-          "printed_page": "94",
-          "publication_status": "published",
-          "rationale": "教材课文“94条形统计图”与课标 MA-D2-ST-002 的可教学小能力“用条形统计图合理表示数据”形成页内证据匹配。",
+          "rationale": "教材课文“90条形统计图”与课标 MA-D2-ST-002 的可教学小能力“用条形统计图合理表示数据”形成页内证据匹配。",
           "relation_type": "supports",
           "resource_type": "student_textbook",
           "review_status": "machine_checked",
@@ -19702,7 +19647,7 @@
         },
         {
           "algorithm_version": "component-evidence-hybrid-v3",
-          "alignment_id": "tca_e62da17f4ba3acca",
+          "alignment_id": "tca_5a27406c5dbf23e0",
           "alignment_type": "supports",
           "confidence": 0.92,
           "coverage": "partial",
@@ -19712,19 +19657,19 @@
           "evidence_level": "L2_topic",
           "evidence_refs": [
             "external_smartedu_2026_math_primary_grade_4_up",
-            "tes_bebd3fe65c1e1f50",
-            "textbook-node:tcn_1b3c95e9ea1d0017",
+            "tes_ee30fb85d3a00256",
+            "textbook-node:tcn_08d579e76175a306",
             "textbook-unit:tcu_07ea1c44be4fed34"
           ],
           "evidence_role": "direct_textbook",
           "evidence_spans": [
             {
               "evidence_role": "direct_textbook",
-              "excerpt": "90 条形统计图",
-              "excerpt_hash": "5d686cf61040452530a837dadad872bd05710713530875234c0a30dfcb1f642d",
-              "pdf_page": 95,
-              "printed_page": "90",
-              "span_id": "tes_bebd3fe65c1e1f50"
+              "excerpt": "94 条形统计图",
+              "excerpt_hash": "2b765d7f26666b75091b48b86ccaac4f8b39d5499a2f8d98bad33d2bd8008b7c",
+              "pdf_page": 99,
+              "printed_page": "94",
+              "span_id": "tes_ee30fb85d3a00256"
             }
           ],
           "learning_component_ids": [
@@ -19738,12 +19683,67 @@
           ],
           "level": "unit",
           "method": "component_evidence_hybrid",
-          "node_id": "tcn_1b3c95e9ea1d0017",
-          "node_title": "90条形统计图",
-          "pdf_page": 95,
-          "printed_page": "90",
+          "node_id": "tcn_08d579e76175a306",
+          "node_title": "94条形统计图",
+          "pdf_page": 99,
+          "printed_page": "94",
           "publication_status": "published",
-          "rationale": "教材课文“90条形统计图”与课标 MA-D2-ST-002 的可教学小能力“用条形统计图合理表示数据”形成页内证据匹配。",
+          "rationale": "教材课文“94条形统计图”与课标 MA-D2-ST-002 的可教学小能力“用条形统计图合理表示数据”形成页内证据匹配。",
+          "relation_type": "supports",
+          "resource_type": "student_textbook",
+          "review_status": "machine_checked",
+          "revision_status": "current_confirmed",
+          "textbook_grade": 4,
+          "textbook_subject": "数学",
+          "textbook_title": "数学4年级上册",
+          "textbook_volume": "上册",
+          "unit_id": "tcu_07ea1c44be4fed34",
+          "unit_title": "六 条形统计图"
+        },
+        {
+          "algorithm_version": "component-evidence-hybrid-v3",
+          "alignment_id": "tca_39ecb7cf73a3ba58",
+          "alignment_type": "supports",
+          "confidence": 0.92,
+          "coverage": "partial",
+          "edition_id": "ed_dda80e43104244896faa",
+          "evidence_basis": "toc_title",
+          "evidence_gap": "当前证据来自目录标题与课标概念匹配，尚未保存教材正文或练习摘录；因此只能声明主题支持，不能声明完整教授。",
+          "evidence_level": "L2_topic",
+          "evidence_refs": [
+            "external_smartedu_2026_math_primary_grade_4_up",
+            "tes_5c449f83822ae8f0",
+            "textbook-node:tcn_64903d20030c44df",
+            "textbook-unit:tcu_07ea1c44be4fed34"
+          ],
+          "evidence_role": "direct_textbook",
+          "evidence_spans": [
+            {
+              "evidence_role": "direct_textbook",
+              "excerpt": "98 条形统计图",
+              "excerpt_hash": "f19a5a3494baa31782dc0734c83bc931ce6566980ffd6f069fb63ea792eeef9e",
+              "pdf_page": 103,
+              "printed_page": "98",
+              "span_id": "tes_5c449f83822ae8f0"
+            }
+          ],
+          "learning_component_ids": [
+            "lc_3e5b2ca4f90fd7fe"
+          ],
+          "learning_components": [
+            {
+              "component_id": "lc_3e5b2ca4f90fd7fe",
+              "label": "用条形统计图合理表示数据"
+            }
+          ],
+          "level": "unit",
+          "method": "component_evidence_hybrid",
+          "node_id": "tcn_64903d20030c44df",
+          "node_title": "98条形统计图",
+          "pdf_page": 103,
+          "printed_page": "98",
+          "publication_status": "published",
+          "rationale": "教材课文“98条形统计图”与课标 MA-D2-ST-002 的可教学小能力“用条形统计图合理表示数据”形成页内证据匹配。",
           "relation_type": "supports",
           "resource_type": "student_textbook",
           "review_status": "machine_checked",
@@ -21991,66 +21991,6 @@
       "curriculum_alignments": [
         {
           "algorithm_version": "component-evidence-hybrid-v3",
-          "alignment_id": "tca_07c9323d6a7e395d",
-          "alignment_type": "practices",
-          "confidence": 0.92,
-          "coverage": "partial",
-          "edition_id": "ed_1ba8117dec0624e11c0e",
-          "evidence_basis": "textbook_page_span",
-          "evidence_gap": null,
-          "evidence_level": "L3_page_evidence",
-          "evidence_refs": [
-            "external_smartedu_2026_math_primary_grade_6_up",
-            "tes_9cfc0f4346e5bc48",
-            "textbook-node:tcn_3544f94caa4f1420",
-            "textbook-unit:tcu_6da88f707eca954f"
-          ],
-          "evidence_role": "direct_textbook",
-          "evidence_spans": [
-            {
-              "evidence_role": "direct_textbook",
-              "excerpt": "讨论:百分数如何转化成小数和分数?",
-              "excerpt_hash": "c1e308aab8d4cc5ff4de5560717c7e87b904a4cd91e887986e7b4a16b7fb2e47",
-              "pdf_page": 87,
-              "printed_page": "82",
-              "span_id": "tes_9cfc0f4346e5bc48"
-            }
-          ],
-          "learning_component_ids": [
-            "lc_3d1c84205b3d59d7",
-            "lc_a6c3635bfff2fe54"
-          ],
-          "learning_components": [
-            {
-              "component_id": "lc_3d1c84205b3d59d7",
-              "label": "运用小数和分数解决问题，进一步发展符号意识和数感"
-            },
-            {
-              "component_id": "lc_a6c3635bfff2fe54",
-              "label": "进行小数和分数的转化（不包括将循环小数转化成分数）"
-            }
-          ],
-          "level": "page",
-          "method": "component_evidence_hybrid",
-          "node_id": "tcn_3544f94caa4f1420",
-          "node_title": "讨论:百分数如何转化成小数和分数?",
-          "pdf_page": 87,
-          "printed_page": "82",
-          "publication_status": "published",
-          "rationale": "教材练习“讨论:百分数如何转化成小数和分数?”与课标 MA-D3-AL-002 的可教学小能力“运用小数和分数解决问题，进一步发展符号意识和数感、进行小数和分数的转化（不包括将循环小数转化成分数）”形成页内证据匹配。",
-          "relation_type": "practices",
-          "resource_type": "student_textbook",
-          "review_status": "machine_checked",
-          "revision_status": "current_confirmed",
-          "textbook_grade": 6,
-          "textbook_subject": "数学",
-          "textbook_title": "数学6年级上册",
-          "textbook_volume": "上册",
-          "unit_id": "tcu_6da88f707eca954f",
-          "unit_title": "五 百分数"
-        },
-        {
-          "algorithm_version": "component-evidence-hybrid-v3",
           "alignment_id": "tca_f104144c928242f0",
           "alignment_type": "practices",
           "confidence": 0.92,
@@ -22098,6 +22038,66 @@
           "printed_page": "81",
           "publication_status": "published",
           "rationale": "教材练习“讨论:小数和分数如何转化成百分数?”与课标 MA-D3-AL-002 的可教学小能力“运用小数和分数解决问题，进一步发展符号意识和数感、进行小数和分数的转化（不包括将循环小数转化成分数）”形成页内证据匹配。",
+          "relation_type": "practices",
+          "resource_type": "student_textbook",
+          "review_status": "machine_checked",
+          "revision_status": "current_confirmed",
+          "textbook_grade": 6,
+          "textbook_subject": "数学",
+          "textbook_title": "数学6年级上册",
+          "textbook_volume": "上册",
+          "unit_id": "tcu_6da88f707eca954f",
+          "unit_title": "五 百分数"
+        },
+        {
+          "algorithm_version": "component-evidence-hybrid-v3",
+          "alignment_id": "tca_07c9323d6a7e395d",
+          "alignment_type": "practices",
+          "confidence": 0.92,
+          "coverage": "partial",
+          "edition_id": "ed_1ba8117dec0624e11c0e",
+          "evidence_basis": "textbook_page_span",
+          "evidence_gap": null,
+          "evidence_level": "L3_page_evidence",
+          "evidence_refs": [
+            "external_smartedu_2026_math_primary_grade_6_up",
+            "tes_9cfc0f4346e5bc48",
+            "textbook-node:tcn_3544f94caa4f1420",
+            "textbook-unit:tcu_6da88f707eca954f"
+          ],
+          "evidence_role": "direct_textbook",
+          "evidence_spans": [
+            {
+              "evidence_role": "direct_textbook",
+              "excerpt": "讨论:百分数如何转化成小数和分数?",
+              "excerpt_hash": "c1e308aab8d4cc5ff4de5560717c7e87b904a4cd91e887986e7b4a16b7fb2e47",
+              "pdf_page": 87,
+              "printed_page": "82",
+              "span_id": "tes_9cfc0f4346e5bc48"
+            }
+          ],
+          "learning_component_ids": [
+            "lc_3d1c84205b3d59d7",
+            "lc_a6c3635bfff2fe54"
+          ],
+          "learning_components": [
+            {
+              "component_id": "lc_3d1c84205b3d59d7",
+              "label": "运用小数和分数解决问题，进一步发展符号意识和数感"
+            },
+            {
+              "component_id": "lc_a6c3635bfff2fe54",
+              "label": "进行小数和分数的转化（不包括将循环小数转化成分数）"
+            }
+          ],
+          "level": "page",
+          "method": "component_evidence_hybrid",
+          "node_id": "tcn_3544f94caa4f1420",
+          "node_title": "讨论:百分数如何转化成小数和分数?",
+          "pdf_page": 87,
+          "printed_page": "82",
+          "publication_status": "published",
+          "rationale": "教材练习“讨论:百分数如何转化成小数和分数?”与课标 MA-D3-AL-002 的可教学小能力“运用小数和分数解决问题，进一步发展符号意识和数感、进行小数和分数的转化（不包括将循环小数转化成分数）”形成页内证据匹配。",
           "relation_type": "practices",
           "resource_type": "student_textbook",
           "review_status": "machine_checked",
@@ -25631,7 +25631,7 @@
         },
         {
           "algorithm_version": "component-evidence-hybrid-v3",
-          "alignment_id": "tca_094f121f25b8f69e",
+          "alignment_id": "tca_5e30ba436ed49e8e",
           "alignment_type": "supports",
           "confidence": 0.92,
           "coverage": "partial",
@@ -25641,19 +25641,19 @@
           "evidence_level": "L2_topic",
           "evidence_refs": [
             "external_smartedu_2026_math_primary_grade_5_up",
-            "tes_83cdcd98ffe7fc06",
-            "textbook-node:tcn_7a8f612d7c8fc281",
+            "tes_48656a91f4b88e60",
+            "textbook-node:tcn_8a269e4d65ae0447",
             "textbook-unit:tcu_94c5dfd4ebcd8d84"
           ],
           "evidence_role": "direct_textbook",
           "evidence_spans": [
             {
               "evidence_role": "direct_textbook",
-              "excerpt": "60 用字母表示数和数量关系",
-              "excerpt_hash": "a49f0c6770469554c6f858adf97594dd4b09b79e47c6e26159e08ae8a5753984",
-              "pdf_page": 65,
-              "printed_page": "60",
-              "span_id": "tes_83cdcd98ffe7fc06"
+              "excerpt": "56 用字母表示数和数量关系",
+              "excerpt_hash": "9579cec9add9b806726f2fe2adcead960248649acda35b0ebfff738ee09ec8a6",
+              "pdf_page": 61,
+              "printed_page": "56",
+              "span_id": "tes_48656a91f4b88e60"
             }
           ],
           "learning_component_ids": [
@@ -25667,12 +25667,12 @@
           ],
           "level": "unit",
           "method": "component_evidence_hybrid",
-          "node_id": "tcn_7a8f612d7c8fc281",
-          "node_title": "60用字母表示数和数量关系",
-          "pdf_page": 65,
-          "printed_page": "60",
+          "node_id": "tcn_8a269e4d65ae0447",
+          "node_title": "56用字母表示数和数量关系",
+          "pdf_page": 61,
+          "printed_page": "56",
           "publication_status": "published",
-          "rationale": "教材课文“60用字母表示数和数量关系”与课标 MA-D3-AL-006 的可教学小能力“在具体情境中，用字母或含有字母的式子表示数量之间的关系、性质和规律，感悟用字母表示的一般性”形成页内证据匹配。",
+          "rationale": "教材课文“56用字母表示数和数量关系”与课标 MA-D3-AL-006 的可教学小能力“在具体情境中，用字母或含有字母的式子表示数量之间的关系、性质和规律，感悟用字母表示的一般性”形成页内证据匹配。",
           "relation_type": "supports",
           "resource_type": "student_textbook",
           "review_status": "machine_checked",
@@ -25741,7 +25741,7 @@
         },
         {
           "algorithm_version": "component-evidence-hybrid-v3",
-          "alignment_id": "tca_5e30ba436ed49e8e",
+          "alignment_id": "tca_094f121f25b8f69e",
           "alignment_type": "supports",
           "confidence": 0.92,
           "coverage": "partial",
@@ -25751,19 +25751,19 @@
           "evidence_level": "L2_topic",
           "evidence_refs": [
             "external_smartedu_2026_math_primary_grade_5_up",
-            "tes_48656a91f4b88e60",
-            "textbook-node:tcn_8a269e4d65ae0447",
+            "tes_83cdcd98ffe7fc06",
+            "textbook-node:tcn_7a8f612d7c8fc281",
             "textbook-unit:tcu_94c5dfd4ebcd8d84"
           ],
           "evidence_role": "direct_textbook",
           "evidence_spans": [
             {
               "evidence_role": "direct_textbook",
-              "excerpt": "56 用字母表示数和数量关系",
-              "excerpt_hash": "9579cec9add9b806726f2fe2adcead960248649acda35b0ebfff738ee09ec8a6",
-              "pdf_page": 61,
-              "printed_page": "56",
-              "span_id": "tes_48656a91f4b88e60"
+              "excerpt": "60 用字母表示数和数量关系",
+              "excerpt_hash": "a49f0c6770469554c6f858adf97594dd4b09b79e47c6e26159e08ae8a5753984",
+              "pdf_page": 65,
+              "printed_page": "60",
+              "span_id": "tes_83cdcd98ffe7fc06"
             }
           ],
           "learning_component_ids": [
@@ -25777,67 +25777,12 @@
           ],
           "level": "unit",
           "method": "component_evidence_hybrid",
-          "node_id": "tcn_8a269e4d65ae0447",
-          "node_title": "56用字母表示数和数量关系",
-          "pdf_page": 61,
-          "printed_page": "56",
+          "node_id": "tcn_7a8f612d7c8fc281",
+          "node_title": "60用字母表示数和数量关系",
+          "pdf_page": 65,
+          "printed_page": "60",
           "publication_status": "published",
-          "rationale": "教材课文“56用字母表示数和数量关系”与课标 MA-D3-AL-006 的可教学小能力“在具体情境中，用字母或含有字母的式子表示数量之间的关系、性质和规律，感悟用字母表示的一般性”形成页内证据匹配。",
-          "relation_type": "supports",
-          "resource_type": "student_textbook",
-          "review_status": "machine_checked",
-          "revision_status": "current_confirmed",
-          "textbook_grade": 5,
-          "textbook_subject": "数学",
-          "textbook_title": "数学5年级上册",
-          "textbook_volume": "上册",
-          "unit_id": "tcu_94c5dfd4ebcd8d84",
-          "unit_title": "五 用字母表示数和数量关系"
-        },
-        {
-          "algorithm_version": "component-evidence-hybrid-v3",
-          "alignment_id": "tca_7bcbcc03eee6024d",
-          "alignment_type": "supports",
-          "confidence": 0.92,
-          "coverage": "partial",
-          "edition_id": "ed_6f696b62cd631c35e5d0",
-          "evidence_basis": "toc_title",
-          "evidence_gap": "当前证据来自目录标题与课标概念匹配，尚未保存教材正文或练习摘录；因此只能声明主题支持，不能声明完整教授。",
-          "evidence_level": "L2_topic",
-          "evidence_refs": [
-            "external_smartedu_2026_math_primary_grade_5_up",
-            "tes_fde3f319e96c1bd1",
-            "textbook-node:tcn_75f4ffe0d6358539",
-            "textbook-unit:tcu_94c5dfd4ebcd8d84"
-          ],
-          "evidence_role": "direct_textbook",
-          "evidence_spans": [
-            {
-              "evidence_role": "direct_textbook",
-              "excerpt": "66 用字母表示数和数量关系",
-              "excerpt_hash": "2de9c8a36c6f68d10be515ac488a96be4e327a9d7e44f02dd63302eeb5c8ad34",
-              "pdf_page": 71,
-              "printed_page": "66",
-              "span_id": "tes_fde3f319e96c1bd1"
-            }
-          ],
-          "learning_component_ids": [
-            "lc_977f1b35edd7188a"
-          ],
-          "learning_components": [
-            {
-              "component_id": "lc_977f1b35edd7188a",
-              "label": "在具体情境中，用字母或含有字母的式子表示数量之间的关系、性质和规律，感悟用字母表示的一般性"
-            }
-          ],
-          "level": "unit",
-          "method": "component_evidence_hybrid",
-          "node_id": "tcn_75f4ffe0d6358539",
-          "node_title": "66用字母表示数和数量关系",
-          "pdf_page": 71,
-          "printed_page": "66",
-          "publication_status": "published",
-          "rationale": "教材课文“66用字母表示数和数量关系”与课标 MA-D3-AL-006 的可教学小能力“在具体情境中，用字母或含有字母的式子表示数量之间的关系、性质和规律，感悟用字母表示的一般性”形成页内证据匹配。",
+          "rationale": "教材课文“60用字母表示数和数量关系”与课标 MA-D3-AL-006 的可教学小能力“在具体情境中，用字母或含有字母的式子表示数量之间的关系、性质和规律，感悟用字母表示的一般性”形成页内证据匹配。",
           "relation_type": "supports",
           "resource_type": "student_textbook",
           "review_status": "machine_checked",
@@ -25948,6 +25893,61 @@
           "printed_page": "64",
           "publication_status": "published",
           "rationale": "教材课文“64用字母表示数和数量关系”与课标 MA-D3-AL-006 的可教学小能力“在具体情境中，用字母或含有字母的式子表示数量之间的关系、性质和规律，感悟用字母表示的一般性”形成页内证据匹配。",
+          "relation_type": "supports",
+          "resource_type": "student_textbook",
+          "review_status": "machine_checked",
+          "revision_status": "current_confirmed",
+          "textbook_grade": 5,
+          "textbook_subject": "数学",
+          "textbook_title": "数学5年级上册",
+          "textbook_volume": "上册",
+          "unit_id": "tcu_94c5dfd4ebcd8d84",
+          "unit_title": "五 用字母表示数和数量关系"
+        },
+        {
+          "algorithm_version": "component-evidence-hybrid-v3",
+          "alignment_id": "tca_7bcbcc03eee6024d",
+          "alignment_type": "supports",
+          "confidence": 0.92,
+          "coverage": "partial",
+          "edition_id": "ed_6f696b62cd631c35e5d0",
+          "evidence_basis": "toc_title",
+          "evidence_gap": "当前证据来自目录标题与课标概念匹配，尚未保存教材正文或练习摘录；因此只能声明主题支持，不能声明完整教授。",
+          "evidence_level": "L2_topic",
+          "evidence_refs": [
+            "external_smartedu_2026_math_primary_grade_5_up",
+            "tes_fde3f319e96c1bd1",
+            "textbook-node:tcn_75f4ffe0d6358539",
+            "textbook-unit:tcu_94c5dfd4ebcd8d84"
+          ],
+          "evidence_role": "direct_textbook",
+          "evidence_spans": [
+            {
+              "evidence_role": "direct_textbook",
+              "excerpt": "66 用字母表示数和数量关系",
+              "excerpt_hash": "2de9c8a36c6f68d10be515ac488a96be4e327a9d7e44f02dd63302eeb5c8ad34",
+              "pdf_page": 71,
+              "printed_page": "66",
+              "span_id": "tes_fde3f319e96c1bd1"
+            }
+          ],
+          "learning_component_ids": [
+            "lc_977f1b35edd7188a"
+          ],
+          "learning_components": [
+            {
+              "component_id": "lc_977f1b35edd7188a",
+              "label": "在具体情境中，用字母或含有字母的式子表示数量之间的关系、性质和规律，感悟用字母表示的一般性"
+            }
+          ],
+          "level": "unit",
+          "method": "component_evidence_hybrid",
+          "node_id": "tcn_75f4ffe0d6358539",
+          "node_title": "66用字母表示数和数量关系",
+          "pdf_page": 71,
+          "printed_page": "66",
+          "publication_status": "published",
+          "rationale": "教材课文“66用字母表示数和数量关系”与课标 MA-D3-AL-006 的可教学小能力“在具体情境中，用字母或含有字母的式子表示数量之间的关系、性质和规律，感悟用字母表示的一般性”形成页内证据匹配。",
           "relation_type": "supports",
           "resource_type": "student_textbook",
           "review_status": "machine_checked",
@@ -29018,6 +29018,61 @@
         },
         {
           "algorithm_version": "component-evidence-hybrid-v3",
+          "alignment_id": "tca_c1e1a1529ae1cd5b",
+          "alignment_type": "practices",
+          "confidence": 0.92,
+          "coverage": "partial",
+          "edition_id": "ed_ec7081b7432dd6fd4fe7",
+          "evidence_basis": "textbook_page_span",
+          "evidence_gap": null,
+          "evidence_level": "L3_page_evidence",
+          "evidence_refs": [
+            "external_smartedu_2026_bsd_math_primary_grade_5_up",
+            "tes_e82a0b72c0e7c0f1",
+            "textbook-node:tcn_4d79b3de066b5031",
+            "textbook-unit:tcu_9b97cfe511275d02"
+          ],
+          "evidence_role": "direct_textbook",
+          "evidence_spans": [
+            {
+              "evidence_role": "direct_textbook",
+              "excerpt": "结合方格纸想一想,如何得到平行四边形的面积?",
+              "excerpt_hash": "103ad143ddf549522e345b3ce752256ea8778c03fc26a2ff0db1e223feb6cc4f",
+              "pdf_page": 69,
+              "printed_page": "64",
+              "span_id": "tes_e82a0b72c0e7c0f1"
+            }
+          ],
+          "learning_component_ids": [
+            "lc_ed8cf8eca8c3b394"
+          ],
+          "learning_components": [
+            {
+              "component_id": "lc_ed8cf8eca8c3b394",
+              "label": "计算平行四边形、三角形、梯形的面积"
+            }
+          ],
+          "level": "page",
+          "method": "component_evidence_hybrid",
+          "node_id": "tcn_4d79b3de066b5031",
+          "node_title": "结合方格纸想一想,如何得到平行四边形的面积?",
+          "pdf_page": 69,
+          "printed_page": "64",
+          "publication_status": "published",
+          "rationale": "教材练习“结合方格纸想一想,如何得到平行四边形的面积?”与课标 MA-D3-GE-002 的可教学小能力“计算平行四边形、三角形、梯形的面积”形成页内证据匹配。",
+          "relation_type": "practices",
+          "resource_type": "student_textbook",
+          "review_status": "machine_checked",
+          "revision_status": "current_confirmed",
+          "textbook_grade": 5,
+          "textbook_subject": "数学",
+          "textbook_title": "数学5年级上册",
+          "textbook_volume": "上册",
+          "unit_id": "tcu_9b97cfe511275d02",
+          "unit_title": "第五单元 多边形的面积"
+        },
+        {
+          "algorithm_version": "component-evidence-hybrid-v3",
           "alignment_id": "tca_12e3415aaa2dfa92",
           "alignment_type": "practices",
           "confidence": 0.92,
@@ -29060,61 +29115,6 @@
           "printed_page": "65",
           "publication_status": "published",
           "rationale": "教材练习“练一练练一练练一练1. 平行四边形的面积公式是怎么得到的?画一画,并与同伴交流。”与课标 MA-D3-GE-002 的可教学小能力“计算平行四边形、三角形、梯形的面积”形成页内证据匹配。",
-          "relation_type": "practices",
-          "resource_type": "student_textbook",
-          "review_status": "machine_checked",
-          "revision_status": "current_confirmed",
-          "textbook_grade": 5,
-          "textbook_subject": "数学",
-          "textbook_title": "数学5年级上册",
-          "textbook_volume": "上册",
-          "unit_id": "tcu_9b97cfe511275d02",
-          "unit_title": "第五单元 多边形的面积"
-        },
-        {
-          "algorithm_version": "component-evidence-hybrid-v3",
-          "alignment_id": "tca_1e76372b624bae6c",
-          "alignment_type": "practices",
-          "confidence": 0.92,
-          "coverage": "partial",
-          "edition_id": "ed_ec7081b7432dd6fd4fe7",
-          "evidence_basis": "textbook_page_span",
-          "evidence_gap": null,
-          "evidence_level": "L3_page_evidence",
-          "evidence_refs": [
-            "external_smartedu_2026_bsd_math_primary_grade_5_up",
-            "tes_30e16a83c2e507d0",
-            "textbook-node:tcn_6cfdfeaad6da1e39",
-            "textbook-unit:tcu_9b97cfe511275d02"
-          ],
-          "evidence_role": "direct_textbook",
-          "evidence_spans": [
-            {
-              "evidence_role": "direct_textbook",
-              "excerpt": "练一练练一练练一练1. 你是怎样得到梯形的面积公式的?",
-              "excerpt_hash": "9ff94f84acbf2e7ce2e3e15871d8f63172ccfcdd4b01874b3f937231ef0a2093",
-              "pdf_page": 75,
-              "printed_page": "70",
-              "span_id": "tes_30e16a83c2e507d0"
-            }
-          ],
-          "learning_component_ids": [
-            "lc_ed8cf8eca8c3b394"
-          ],
-          "learning_components": [
-            {
-              "component_id": "lc_ed8cf8eca8c3b394",
-              "label": "计算平行四边形、三角形、梯形的面积"
-            }
-          ],
-          "level": "page",
-          "method": "component_evidence_hybrid",
-          "node_id": "tcn_6cfdfeaad6da1e39",
-          "node_title": "练一练练一练练一练1. 你是怎样得到梯形的面积公式的?",
-          "pdf_page": 75,
-          "printed_page": "70",
-          "publication_status": "published",
-          "rationale": "教材练习“练一练练一练练一练1. 你是怎样得到梯形的面积公式的?”与课标 MA-D3-GE-002 的可教学小能力“计算平行四边形、三角形、梯形的面积”形成页内证据匹配。",
           "relation_type": "practices",
           "resource_type": "student_textbook",
           "review_status": "machine_checked",
@@ -29238,7 +29238,7 @@
         },
         {
           "algorithm_version": "component-evidence-hybrid-v3",
-          "alignment_id": "tca_c1e1a1529ae1cd5b",
+          "alignment_id": "tca_1e76372b624bae6c",
           "alignment_type": "practices",
           "confidence": 0.92,
           "coverage": "partial",
@@ -29248,19 +29248,19 @@
           "evidence_level": "L3_page_evidence",
           "evidence_refs": [
             "external_smartedu_2026_bsd_math_primary_grade_5_up",
-            "tes_e82a0b72c0e7c0f1",
-            "textbook-node:tcn_4d79b3de066b5031",
+            "tes_30e16a83c2e507d0",
+            "textbook-node:tcn_6cfdfeaad6da1e39",
             "textbook-unit:tcu_9b97cfe511275d02"
           ],
           "evidence_role": "direct_textbook",
           "evidence_spans": [
             {
               "evidence_role": "direct_textbook",
-              "excerpt": "结合方格纸想一想,如何得到平行四边形的面积?",
-              "excerpt_hash": "103ad143ddf549522e345b3ce752256ea8778c03fc26a2ff0db1e223feb6cc4f",
-              "pdf_page": 69,
-              "printed_page": "64",
-              "span_id": "tes_e82a0b72c0e7c0f1"
+              "excerpt": "练一练练一练练一练1. 你是怎样得到梯形的面积公式的?",
+              "excerpt_hash": "9ff94f84acbf2e7ce2e3e15871d8f63172ccfcdd4b01874b3f937231ef0a2093",
+              "pdf_page": 75,
+              "printed_page": "70",
+              "span_id": "tes_30e16a83c2e507d0"
             }
           ],
           "learning_component_ids": [
@@ -29274,12 +29274,12 @@
           ],
           "level": "page",
           "method": "component_evidence_hybrid",
-          "node_id": "tcn_4d79b3de066b5031",
-          "node_title": "结合方格纸想一想,如何得到平行四边形的面积?",
-          "pdf_page": 69,
-          "printed_page": "64",
+          "node_id": "tcn_6cfdfeaad6da1e39",
+          "node_title": "练一练练一练练一练1. 你是怎样得到梯形的面积公式的?",
+          "pdf_page": 75,
+          "printed_page": "70",
           "publication_status": "published",
-          "rationale": "教材练习“结合方格纸想一想,如何得到平行四边形的面积?”与课标 MA-D3-GE-002 的可教学小能力“计算平行四边形、三角形、梯形的面积”形成页内证据匹配。",
+          "rationale": "教材练习“练一练练一练练一练1. 你是怎样得到梯形的面积公式的?”与课标 MA-D3-GE-002 的可教学小能力“计算平行四边形、三角形、梯形的面积”形成页内证据匹配。",
           "relation_type": "practices",
           "resource_type": "student_textbook",
           "review_status": "machine_checked",
@@ -29348,7 +29348,7 @@
         },
         {
           "algorithm_version": "component-evidence-hybrid-v3",
-          "alignment_id": "tca_3d7b03a7e422a75f",
+          "alignment_id": "tca_cecdfd5176cec848",
           "alignment_type": "supports",
           "confidence": 0.86,
           "coverage": "partial",
@@ -29358,19 +29358,19 @@
           "evidence_level": "L2_topic",
           "evidence_refs": [
             "external_smartedu_2026_math_primary_grade_5_up",
-            "tes_b7d30bf9130bde57",
-            "textbook-node:tcn_52124e0f5dbc9b28",
+            "tes_a8f83864e9bffa2f",
+            "textbook-node:tcn_e9f451d9eb33d288",
             "textbook-unit:tcu_3b1fe896b58e7f77"
           ],
           "evidence_role": "direct_textbook",
           "evidence_spans": [
             {
               "evidence_role": "direct_textbook",
-              "excerpt": "82 多边形的面积",
-              "excerpt_hash": "813ef824fceff6d18362bc175111398cb049a93e976003701eb6332452f75dd4",
-              "pdf_page": 87,
-              "printed_page": "82",
-              "span_id": "tes_b7d30bf9130bde57"
+              "excerpt": "74 多边形的面积",
+              "excerpt_hash": "0923769daad63ce8cc5cbea0f8c2807627856727f1cdd7db8957698c86ac3a8f",
+              "pdf_page": 79,
+              "printed_page": "74",
+              "span_id": "tes_a8f83864e9bffa2f"
             }
           ],
           "learning_component_ids": [
@@ -29384,177 +29384,12 @@
           ],
           "level": "unit",
           "method": "component_evidence_hybrid",
-          "node_id": "tcn_52124e0f5dbc9b28",
-          "node_title": "82多边形的面积",
-          "pdf_page": 87,
-          "printed_page": "82",
+          "node_id": "tcn_e9f451d9eb33d288",
+          "node_title": "74多边形的面积",
+          "pdf_page": 79,
+          "printed_page": "74",
           "publication_status": "published",
-          "rationale": "教材课文“82多边形的面积”与课标 MA-D3-GE-002 的可教学小能力“计算平行四边形、三角形、梯形的面积”形成页内证据匹配。",
-          "relation_type": "supports",
-          "resource_type": "student_textbook",
-          "review_status": "machine_checked",
-          "revision_status": "current_confirmed",
-          "textbook_grade": 5,
-          "textbook_subject": "数学",
-          "textbook_title": "数学5年级上册",
-          "textbook_volume": "上册",
-          "unit_id": "tcu_3b1fe896b58e7f77",
-          "unit_title": "六 多边形的面积"
-        },
-        {
-          "algorithm_version": "component-evidence-hybrid-v3",
-          "alignment_id": "tca_4ed455f1f228fe58",
-          "alignment_type": "supports",
-          "confidence": 0.86,
-          "coverage": "partial",
-          "edition_id": "ed_6f696b62cd631c35e5d0",
-          "evidence_basis": "toc_title",
-          "evidence_gap": "当前证据来自目录标题与课标概念匹配，尚未保存教材正文或练习摘录；因此只能声明主题支持，不能声明完整教授。",
-          "evidence_level": "L2_topic",
-          "evidence_refs": [
-            "external_smartedu_2026_math_primary_grade_5_up",
-            "tes_127dcd969402ca17",
-            "textbook-node:tcn_99c7944ceab417a7",
-            "textbook-unit:tcu_3b1fe896b58e7f77"
-          ],
-          "evidence_role": "direct_textbook",
-          "evidence_spans": [
-            {
-              "evidence_role": "direct_textbook",
-              "excerpt": "92 多边形的面积",
-              "excerpt_hash": "b02d6f049cdfca43342e62cfd6d331bd1f187887b5d5b7507e6b5dfd6f122632",
-              "pdf_page": 97,
-              "printed_page": "92",
-              "span_id": "tes_127dcd969402ca17"
-            }
-          ],
-          "learning_component_ids": [
-            "lc_ed8cf8eca8c3b394"
-          ],
-          "learning_components": [
-            {
-              "component_id": "lc_ed8cf8eca8c3b394",
-              "label": "计算平行四边形、三角形、梯形的面积"
-            }
-          ],
-          "level": "unit",
-          "method": "component_evidence_hybrid",
-          "node_id": "tcn_99c7944ceab417a7",
-          "node_title": "92多边形的面积",
-          "pdf_page": 97,
-          "printed_page": "92",
-          "publication_status": "published",
-          "rationale": "教材课文“92多边形的面积”与课标 MA-D3-GE-002 的可教学小能力“计算平行四边形、三角形、梯形的面积”形成页内证据匹配。",
-          "relation_type": "supports",
-          "resource_type": "student_textbook",
-          "review_status": "machine_checked",
-          "revision_status": "current_confirmed",
-          "textbook_grade": 5,
-          "textbook_subject": "数学",
-          "textbook_title": "数学5年级上册",
-          "textbook_volume": "上册",
-          "unit_id": "tcu_3b1fe896b58e7f77",
-          "unit_title": "六 多边形的面积"
-        },
-        {
-          "algorithm_version": "component-evidence-hybrid-v3",
-          "alignment_id": "tca_71a675b1619a6eda",
-          "alignment_type": "supports",
-          "confidence": 0.86,
-          "coverage": "partial",
-          "edition_id": "ed_6f696b62cd631c35e5d0",
-          "evidence_basis": "toc_title",
-          "evidence_gap": "当前证据来自目录标题与课标概念匹配，尚未保存教材正文或练习摘录；因此只能声明主题支持，不能声明完整教授。",
-          "evidence_level": "L2_topic",
-          "evidence_refs": [
-            "external_smartedu_2026_math_primary_grade_5_up",
-            "tes_a5f235d5ea8afbca",
-            "textbook-node:tcn_da77d19e0cb0fba5",
-            "textbook-unit:tcu_3b1fe896b58e7f77"
-          ],
-          "evidence_role": "direct_textbook",
-          "evidence_spans": [
-            {
-              "evidence_role": "direct_textbook",
-              "excerpt": "84 多边形的面积",
-              "excerpt_hash": "d849f3998d83f21602a06be14faee779da6f9068ec60b774b4d86bfe0b8b23d9",
-              "pdf_page": 89,
-              "printed_page": "84",
-              "span_id": "tes_a5f235d5ea8afbca"
-            }
-          ],
-          "learning_component_ids": [
-            "lc_ed8cf8eca8c3b394"
-          ],
-          "learning_components": [
-            {
-              "component_id": "lc_ed8cf8eca8c3b394",
-              "label": "计算平行四边形、三角形、梯形的面积"
-            }
-          ],
-          "level": "unit",
-          "method": "component_evidence_hybrid",
-          "node_id": "tcn_da77d19e0cb0fba5",
-          "node_title": "84多边形的面积",
-          "pdf_page": 89,
-          "printed_page": "84",
-          "publication_status": "published",
-          "rationale": "教材课文“84多边形的面积”与课标 MA-D3-GE-002 的可教学小能力“计算平行四边形、三角形、梯形的面积”形成页内证据匹配。",
-          "relation_type": "supports",
-          "resource_type": "student_textbook",
-          "review_status": "machine_checked",
-          "revision_status": "current_confirmed",
-          "textbook_grade": 5,
-          "textbook_subject": "数学",
-          "textbook_title": "数学5年级上册",
-          "textbook_volume": "上册",
-          "unit_id": "tcu_3b1fe896b58e7f77",
-          "unit_title": "六 多边形的面积"
-        },
-        {
-          "algorithm_version": "component-evidence-hybrid-v3",
-          "alignment_id": "tca_78e00c4fe9ddbb34",
-          "alignment_type": "supports",
-          "confidence": 0.86,
-          "coverage": "partial",
-          "edition_id": "ed_6f696b62cd631c35e5d0",
-          "evidence_basis": "toc_title",
-          "evidence_gap": "当前证据来自目录标题与课标概念匹配，尚未保存教材正文或练习摘录；因此只能声明主题支持，不能声明完整教授。",
-          "evidence_level": "L2_topic",
-          "evidence_refs": [
-            "external_smartedu_2026_math_primary_grade_5_up",
-            "tes_306493b1c7737307",
-            "textbook-node:tcn_c2f7d64cdb80d2d9",
-            "textbook-unit:tcu_3b1fe896b58e7f77"
-          ],
-          "evidence_role": "direct_textbook",
-          "evidence_spans": [
-            {
-              "evidence_role": "direct_textbook",
-              "excerpt": "88 多边形的面积",
-              "excerpt_hash": "4f86b62afe2482b1f779a118ddd66635d2416acf38a74c4d1a019fb2239236ae",
-              "pdf_page": 93,
-              "printed_page": "88",
-              "span_id": "tes_306493b1c7737307"
-            }
-          ],
-          "learning_component_ids": [
-            "lc_ed8cf8eca8c3b394"
-          ],
-          "learning_components": [
-            {
-              "component_id": "lc_ed8cf8eca8c3b394",
-              "label": "计算平行四边形、三角形、梯形的面积"
-            }
-          ],
-          "level": "unit",
-          "method": "component_evidence_hybrid",
-          "node_id": "tcn_c2f7d64cdb80d2d9",
-          "node_title": "88多边形的面积",
-          "pdf_page": 93,
-          "printed_page": "88",
-          "publication_status": "published",
-          "rationale": "教材课文“88多边形的面积”与课标 MA-D3-GE-002 的可教学小能力“计算平行四边形、三角形、梯形的面积”形成页内证据匹配。",
+          "rationale": "教材课文“74多边形的面积”与课标 MA-D3-GE-002 的可教学小能力“计算平行四边形、三角形、梯形的面积”形成页内证据匹配。",
           "relation_type": "supports",
           "resource_type": "student_textbook",
           "review_status": "machine_checked",
@@ -29623,6 +29458,171 @@
         },
         {
           "algorithm_version": "component-evidence-hybrid-v3",
+          "alignment_id": "tca_d3d14f1483a99aa6",
+          "alignment_type": "supports",
+          "confidence": 0.86,
+          "coverage": "partial",
+          "edition_id": "ed_6f696b62cd631c35e5d0",
+          "evidence_basis": "toc_title",
+          "evidence_gap": "当前证据来自目录标题与课标概念匹配，尚未保存教材正文或练习摘录；因此只能声明主题支持，不能声明完整教授。",
+          "evidence_level": "L2_topic",
+          "evidence_refs": [
+            "external_smartedu_2026_math_primary_grade_5_up",
+            "tes_7f061e2307c30c82",
+            "textbook-node:tcn_3e363276c2f13724",
+            "textbook-unit:tcu_3b1fe896b58e7f77"
+          ],
+          "evidence_role": "direct_textbook",
+          "evidence_spans": [
+            {
+              "evidence_role": "direct_textbook",
+              "excerpt": "80 多边形的面积",
+              "excerpt_hash": "50c5d28020af410a77c2e7366f2c118db638ff044137e51fb6648cc6f9054d8a",
+              "pdf_page": 85,
+              "printed_page": "80",
+              "span_id": "tes_7f061e2307c30c82"
+            }
+          ],
+          "learning_component_ids": [
+            "lc_ed8cf8eca8c3b394"
+          ],
+          "learning_components": [
+            {
+              "component_id": "lc_ed8cf8eca8c3b394",
+              "label": "计算平行四边形、三角形、梯形的面积"
+            }
+          ],
+          "level": "unit",
+          "method": "component_evidence_hybrid",
+          "node_id": "tcn_3e363276c2f13724",
+          "node_title": "80多边形的面积",
+          "pdf_page": 85,
+          "printed_page": "80",
+          "publication_status": "published",
+          "rationale": "教材课文“80多边形的面积”与课标 MA-D3-GE-002 的可教学小能力“计算平行四边形、三角形、梯形的面积”形成页内证据匹配。",
+          "relation_type": "supports",
+          "resource_type": "student_textbook",
+          "review_status": "machine_checked",
+          "revision_status": "current_confirmed",
+          "textbook_grade": 5,
+          "textbook_subject": "数学",
+          "textbook_title": "数学5年级上册",
+          "textbook_volume": "上册",
+          "unit_id": "tcu_3b1fe896b58e7f77",
+          "unit_title": "六 多边形的面积"
+        },
+        {
+          "algorithm_version": "component-evidence-hybrid-v3",
+          "alignment_id": "tca_3d7b03a7e422a75f",
+          "alignment_type": "supports",
+          "confidence": 0.86,
+          "coverage": "partial",
+          "edition_id": "ed_6f696b62cd631c35e5d0",
+          "evidence_basis": "toc_title",
+          "evidence_gap": "当前证据来自目录标题与课标概念匹配，尚未保存教材正文或练习摘录；因此只能声明主题支持，不能声明完整教授。",
+          "evidence_level": "L2_topic",
+          "evidence_refs": [
+            "external_smartedu_2026_math_primary_grade_5_up",
+            "tes_b7d30bf9130bde57",
+            "textbook-node:tcn_52124e0f5dbc9b28",
+            "textbook-unit:tcu_3b1fe896b58e7f77"
+          ],
+          "evidence_role": "direct_textbook",
+          "evidence_spans": [
+            {
+              "evidence_role": "direct_textbook",
+              "excerpt": "82 多边形的面积",
+              "excerpt_hash": "813ef824fceff6d18362bc175111398cb049a93e976003701eb6332452f75dd4",
+              "pdf_page": 87,
+              "printed_page": "82",
+              "span_id": "tes_b7d30bf9130bde57"
+            }
+          ],
+          "learning_component_ids": [
+            "lc_ed8cf8eca8c3b394"
+          ],
+          "learning_components": [
+            {
+              "component_id": "lc_ed8cf8eca8c3b394",
+              "label": "计算平行四边形、三角形、梯形的面积"
+            }
+          ],
+          "level": "unit",
+          "method": "component_evidence_hybrid",
+          "node_id": "tcn_52124e0f5dbc9b28",
+          "node_title": "82多边形的面积",
+          "pdf_page": 87,
+          "printed_page": "82",
+          "publication_status": "published",
+          "rationale": "教材课文“82多边形的面积”与课标 MA-D3-GE-002 的可教学小能力“计算平行四边形、三角形、梯形的面积”形成页内证据匹配。",
+          "relation_type": "supports",
+          "resource_type": "student_textbook",
+          "review_status": "machine_checked",
+          "revision_status": "current_confirmed",
+          "textbook_grade": 5,
+          "textbook_subject": "数学",
+          "textbook_title": "数学5年级上册",
+          "textbook_volume": "上册",
+          "unit_id": "tcu_3b1fe896b58e7f77",
+          "unit_title": "六 多边形的面积"
+        },
+        {
+          "algorithm_version": "component-evidence-hybrid-v3",
+          "alignment_id": "tca_71a675b1619a6eda",
+          "alignment_type": "supports",
+          "confidence": 0.86,
+          "coverage": "partial",
+          "edition_id": "ed_6f696b62cd631c35e5d0",
+          "evidence_basis": "toc_title",
+          "evidence_gap": "当前证据来自目录标题与课标概念匹配，尚未保存教材正文或练习摘录；因此只能声明主题支持，不能声明完整教授。",
+          "evidence_level": "L2_topic",
+          "evidence_refs": [
+            "external_smartedu_2026_math_primary_grade_5_up",
+            "tes_a5f235d5ea8afbca",
+            "textbook-node:tcn_da77d19e0cb0fba5",
+            "textbook-unit:tcu_3b1fe896b58e7f77"
+          ],
+          "evidence_role": "direct_textbook",
+          "evidence_spans": [
+            {
+              "evidence_role": "direct_textbook",
+              "excerpt": "84 多边形的面积",
+              "excerpt_hash": "d849f3998d83f21602a06be14faee779da6f9068ec60b774b4d86bfe0b8b23d9",
+              "pdf_page": 89,
+              "printed_page": "84",
+              "span_id": "tes_a5f235d5ea8afbca"
+            }
+          ],
+          "learning_component_ids": [
+            "lc_ed8cf8eca8c3b394"
+          ],
+          "learning_components": [
+            {
+              "component_id": "lc_ed8cf8eca8c3b394",
+              "label": "计算平行四边形、三角形、梯形的面积"
+            }
+          ],
+          "level": "unit",
+          "method": "component_evidence_hybrid",
+          "node_id": "tcn_da77d19e0cb0fba5",
+          "node_title": "84多边形的面积",
+          "pdf_page": 89,
+          "printed_page": "84",
+          "publication_status": "published",
+          "rationale": "教材课文“84多边形的面积”与课标 MA-D3-GE-002 的可教学小能力“计算平行四边形、三角形、梯形的面积”形成页内证据匹配。",
+          "relation_type": "supports",
+          "resource_type": "student_textbook",
+          "review_status": "machine_checked",
+          "revision_status": "current_confirmed",
+          "textbook_grade": 5,
+          "textbook_subject": "数学",
+          "textbook_title": "数学5年级上册",
+          "textbook_volume": "上册",
+          "unit_id": "tcu_3b1fe896b58e7f77",
+          "unit_title": "六 多边形的面积"
+        },
+        {
+          "algorithm_version": "component-evidence-hybrid-v3",
           "alignment_id": "tca_c090d49db93e7c1c",
           "alignment_type": "supports",
           "confidence": 0.86,
@@ -29678,7 +29678,7 @@
         },
         {
           "algorithm_version": "component-evidence-hybrid-v3",
-          "alignment_id": "tca_cecdfd5176cec848",
+          "alignment_id": "tca_78e00c4fe9ddbb34",
           "alignment_type": "supports",
           "confidence": 0.86,
           "coverage": "partial",
@@ -29688,19 +29688,19 @@
           "evidence_level": "L2_topic",
           "evidence_refs": [
             "external_smartedu_2026_math_primary_grade_5_up",
-            "tes_a8f83864e9bffa2f",
-            "textbook-node:tcn_e9f451d9eb33d288",
+            "tes_306493b1c7737307",
+            "textbook-node:tcn_c2f7d64cdb80d2d9",
             "textbook-unit:tcu_3b1fe896b58e7f77"
           ],
           "evidence_role": "direct_textbook",
           "evidence_spans": [
             {
               "evidence_role": "direct_textbook",
-              "excerpt": "74 多边形的面积",
-              "excerpt_hash": "0923769daad63ce8cc5cbea0f8c2807627856727f1cdd7db8957698c86ac3a8f",
-              "pdf_page": 79,
-              "printed_page": "74",
-              "span_id": "tes_a8f83864e9bffa2f"
+              "excerpt": "88 多边形的面积",
+              "excerpt_hash": "4f86b62afe2482b1f779a118ddd66635d2416acf38a74c4d1a019fb2239236ae",
+              "pdf_page": 93,
+              "printed_page": "88",
+              "span_id": "tes_306493b1c7737307"
             }
           ],
           "learning_component_ids": [
@@ -29714,12 +29714,12 @@
           ],
           "level": "unit",
           "method": "component_evidence_hybrid",
-          "node_id": "tcn_e9f451d9eb33d288",
-          "node_title": "74多边形的面积",
-          "pdf_page": 79,
-          "printed_page": "74",
+          "node_id": "tcn_c2f7d64cdb80d2d9",
+          "node_title": "88多边形的面积",
+          "pdf_page": 93,
+          "printed_page": "88",
           "publication_status": "published",
-          "rationale": "教材课文“74多边形的面积”与课标 MA-D3-GE-002 的可教学小能力“计算平行四边形、三角形、梯形的面积”形成页内证据匹配。",
+          "rationale": "教材课文“88多边形的面积”与课标 MA-D3-GE-002 的可教学小能力“计算平行四边形、三角形、梯形的面积”形成页内证据匹配。",
           "relation_type": "supports",
           "resource_type": "student_textbook",
           "review_status": "machine_checked",
@@ -29733,7 +29733,7 @@
         },
         {
           "algorithm_version": "component-evidence-hybrid-v3",
-          "alignment_id": "tca_d3d14f1483a99aa6",
+          "alignment_id": "tca_4ed455f1f228fe58",
           "alignment_type": "supports",
           "confidence": 0.86,
           "coverage": "partial",
@@ -29743,19 +29743,19 @@
           "evidence_level": "L2_topic",
           "evidence_refs": [
             "external_smartedu_2026_math_primary_grade_5_up",
-            "tes_7f061e2307c30c82",
-            "textbook-node:tcn_3e363276c2f13724",
+            "tes_127dcd969402ca17",
+            "textbook-node:tcn_99c7944ceab417a7",
             "textbook-unit:tcu_3b1fe896b58e7f77"
           ],
           "evidence_role": "direct_textbook",
           "evidence_spans": [
             {
               "evidence_role": "direct_textbook",
-              "excerpt": "80 多边形的面积",
-              "excerpt_hash": "50c5d28020af410a77c2e7366f2c118db638ff044137e51fb6648cc6f9054d8a",
-              "pdf_page": 85,
-              "printed_page": "80",
-              "span_id": "tes_7f061e2307c30c82"
+              "excerpt": "92 多边形的面积",
+              "excerpt_hash": "b02d6f049cdfca43342e62cfd6d331bd1f187887b5d5b7507e6b5dfd6f122632",
+              "pdf_page": 97,
+              "printed_page": "92",
+              "span_id": "tes_127dcd969402ca17"
             }
           ],
           "learning_component_ids": [
@@ -29769,12 +29769,12 @@
           ],
           "level": "unit",
           "method": "component_evidence_hybrid",
-          "node_id": "tcn_3e363276c2f13724",
-          "node_title": "80多边形的面积",
-          "pdf_page": 85,
-          "printed_page": "80",
+          "node_id": "tcn_99c7944ceab417a7",
+          "node_title": "92多边形的面积",
+          "pdf_page": 97,
+          "printed_page": "92",
           "publication_status": "published",
-          "rationale": "教材课文“80多边形的面积”与课标 MA-D3-GE-002 的可教学小能力“计算平行四边形、三角形、梯形的面积”形成页内证据匹配。",
+          "rationale": "教材课文“92多边形的面积”与课标 MA-D3-GE-002 的可教学小能力“计算平行四边形、三角形、梯形的面积”形成页内证据匹配。",
           "relation_type": "supports",
           "resource_type": "student_textbook",
           "review_status": "machine_checked",
@@ -30983,6 +30983,61 @@
         },
         {
           "algorithm_version": "component-evidence-hybrid-v3",
+          "alignment_id": "tca_fcec2354a04db56a",
+          "alignment_type": "supports",
+          "confidence": 0.8404,
+          "coverage": "partial",
+          "edition_id": "ed_b1800b5b9d4356b970d0",
+          "evidence_basis": "textbook_page_span",
+          "evidence_gap": null,
+          "evidence_level": "L3_page_evidence",
+          "evidence_refs": [
+            "external_smartedu_2026_bsd_math_primary_grade_6_down",
+            "tes_b015ca5707c28fe5",
+            "textbook-node:tcn_35da20824c874cbb",
+            "textbook-unit:tcu_54aac8a5ac652966"
+          ],
+          "evidence_role": "direct_textbook",
+          "evidence_spans": [
+            {
+              "evidence_role": "direct_textbook",
+              "excerpt": "你能计算出 “至少需要用多大面积的纸板”吗?",
+              "excerpt_hash": "b413005223a6166fd2d67ce38ea64e46a7bcbb9192a269f58ab76f833ca83623",
+              "pdf_page": 9,
+              "printed_page": null,
+              "span_id": "tes_b015ca5707c28fe5"
+            }
+          ],
+          "learning_component_ids": [
+            "lc_dcf10f8276336508"
+          ],
+          "learning_components": [
+            {
+              "component_id": "lc_dcf10f8276336508",
+              "label": "计算这些图形的体积和表面积"
+            }
+          ],
+          "level": "page",
+          "method": "component_evidence_hybrid",
+          "node_id": "tcn_35da20824c874cbb",
+          "node_title": "你能计算出 “至少需要用多大面积的纸板”吗?",
+          "pdf_page": 9,
+          "printed_page": null,
+          "publication_status": "published",
+          "rationale": "教材学习目标“你能计算出 “至少需要用多大面积的纸板”吗?”与课标 MA-D3-GE-003 的可教学小能力“计算这些图形的体积和表面积”形成页内证据匹配。",
+          "relation_type": "supports",
+          "resource_type": "student_textbook",
+          "review_status": "machine_checked",
+          "revision_status": "current_confirmed",
+          "textbook_grade": 6,
+          "textbook_subject": "数学",
+          "textbook_title": "数学6年级下册",
+          "textbook_volume": "下册",
+          "unit_id": "tcu_54aac8a5ac652966",
+          "unit_title": "一 圆柱与圆锥"
+        },
+        {
+          "algorithm_version": "component-evidence-hybrid-v3",
           "alignment_id": "tca_27a9cfc450f56209",
           "alignment_type": "practices",
           "confidence": 0.8593,
@@ -31135,61 +31190,6 @@
           "printed_page": null,
           "publication_status": "published",
           "rationale": "教材学习目标“如果用V表示圆锥的体积,S表示底面积,h表示高,你能写出圆锥体积的”与课标 MA-D3-GE-003 的可教学小能力“计算圆锥的体积”形成页内证据匹配。",
-          "relation_type": "supports",
-          "resource_type": "student_textbook",
-          "review_status": "machine_checked",
-          "revision_status": "current_confirmed",
-          "textbook_grade": 6,
-          "textbook_subject": "数学",
-          "textbook_title": "数学6年级下册",
-          "textbook_volume": "下册",
-          "unit_id": "tcu_54aac8a5ac652966",
-          "unit_title": "一 圆柱与圆锥"
-        },
-        {
-          "algorithm_version": "component-evidence-hybrid-v3",
-          "alignment_id": "tca_fcec2354a04db56a",
-          "alignment_type": "supports",
-          "confidence": 0.8404,
-          "coverage": "partial",
-          "edition_id": "ed_b1800b5b9d4356b970d0",
-          "evidence_basis": "textbook_page_span",
-          "evidence_gap": null,
-          "evidence_level": "L3_page_evidence",
-          "evidence_refs": [
-            "external_smartedu_2026_bsd_math_primary_grade_6_down",
-            "tes_b015ca5707c28fe5",
-            "textbook-node:tcn_35da20824c874cbb",
-            "textbook-unit:tcu_54aac8a5ac652966"
-          ],
-          "evidence_role": "direct_textbook",
-          "evidence_spans": [
-            {
-              "evidence_role": "direct_textbook",
-              "excerpt": "你能计算出 “至少需要用多大面积的纸板”吗?",
-              "excerpt_hash": "b413005223a6166fd2d67ce38ea64e46a7bcbb9192a269f58ab76f833ca83623",
-              "pdf_page": 9,
-              "printed_page": null,
-              "span_id": "tes_b015ca5707c28fe5"
-            }
-          ],
-          "learning_component_ids": [
-            "lc_dcf10f8276336508"
-          ],
-          "learning_components": [
-            {
-              "component_id": "lc_dcf10f8276336508",
-              "label": "计算这些图形的体积和表面积"
-            }
-          ],
-          "level": "page",
-          "method": "component_evidence_hybrid",
-          "node_id": "tcn_35da20824c874cbb",
-          "node_title": "你能计算出 “至少需要用多大面积的纸板”吗?",
-          "pdf_page": 9,
-          "printed_page": null,
-          "publication_status": "published",
-          "rationale": "教材学习目标“你能计算出 “至少需要用多大面积的纸板”吗?”与课标 MA-D3-GE-003 的可教学小能力“计算这些图形的体积和表面积”形成页内证据匹配。",
           "relation_type": "supports",
           "resource_type": "student_textbook",
           "review_status": "machine_checked",
@@ -34938,7 +34938,7 @@
             "external_smartedu_2026_bsd_math_primary_grade_6_up",
             "tes_1b3d89987cf38cbb",
             "textbook-node:tcn_a7619330d2218156",
-            "textbook-unit:tcu_65896354770aa4bd"
+            "textbook-unit:tcu_4b89433a2b986f80"
           ],
           "evidence_role": "direct_textbook",
           "evidence_spans": [
@@ -34976,8 +34976,8 @@
           "textbook_subject": "数学",
           "textbook_title": "数学6年级上册",
           "textbook_volume": "上册",
-          "unit_id": "tcu_65896354770aa4bd",
-          "unit_title": "第一单元 分数除法"
+          "unit_id": "tcu_4b89433a2b986f80",
+          "unit_title": "第二单元 圆"
         },
         {
           "algorithm_version": "full-alignment-scope-preserve-v2",
@@ -36070,7 +36070,7 @@
             "external_smartedu_2026_bsd_math_primary_grade_6_up",
             "tes_29aba8e2d664a5ab",
             "textbook-node:tcn_1395351a495f4fc2",
-            "textbook-unit:tcu_c873f595c4ad496d"
+            "textbook-unit:tcu_464c8dde0f70f022"
           ],
           "evidence_role": "direct_textbook",
           "evidence_spans": [
@@ -36108,8 +36108,8 @@
           "textbook_subject": "数学",
           "textbook_title": "数学6年级上册",
           "textbook_volume": "上册",
-          "unit_id": "tcu_c873f595c4ad496d",
-          "unit_title": "第三单元 用字母表示（二）"
+          "unit_id": "tcu_464c8dde0f70f022",
+          "unit_title": "综合实践 制订节水方案"
         },
         {
           "algorithm_version": "full-alignment-scope-preserve-v2",
@@ -37784,61 +37784,6 @@
       "curriculum_alignments": [
         {
           "algorithm_version": "component-evidence-hybrid-v3",
-          "alignment_id": "tca_414cefec3b2abcfa",
-          "alignment_type": "supports",
-          "confidence": 0.86,
-          "coverage": "partial",
-          "edition_id": "ed_1ba8117dec0624e11c0e",
-          "evidence_basis": "toc_title",
-          "evidence_gap": "当前证据来自目录标题与课标概念匹配，尚未保存教材正文或练习摘录；因此只能声明主题支持，不能声明完整教授。",
-          "evidence_level": "L2_topic",
-          "evidence_refs": [
-            "external_smartedu_2026_math_primary_grade_6_up",
-            "tes_688d5fb5e32ff796",
-            "textbook-node:tcn_bed3532c16850053",
-            "textbook-unit:tcu_6da88f707eca954f"
-          ],
-          "evidence_role": "direct_textbook",
-          "evidence_spans": [
-            {
-              "evidence_role": "direct_textbook",
-              "excerpt": "2. 百分数的应用",
-              "excerpt_hash": "74decd04244efce3bdef6b9df2e4b9d018dd0981b1ba7ccd3335f9b6f771db15",
-              "pdf_page": 90,
-              "printed_page": "85",
-              "span_id": "tes_688d5fb5e32ff796"
-            }
-          ],
-          "learning_component_ids": [
-            "lc_409387805f5755e4"
-          ],
-          "learning_components": [
-            {
-              "component_id": "lc_409387805f5755e4",
-              "label": "用自己的话解释百分数的统计意义"
-            }
-          ],
-          "level": "unit",
-          "method": "component_evidence_hybrid",
-          "node_id": "tcn_bed3532c16850053",
-          "node_title": "2百分数的应用",
-          "pdf_page": 90,
-          "printed_page": "85",
-          "publication_status": "published",
-          "rationale": "教材课文“2百分数的应用”与课标 MA-D3-ST-002 的可教学小能力“用自己的话解释百分数的统计意义”形成页内证据匹配。",
-          "relation_type": "supports",
-          "resource_type": "student_textbook",
-          "review_status": "machine_checked",
-          "revision_status": "current_confirmed",
-          "textbook_grade": 6,
-          "textbook_subject": "数学",
-          "textbook_title": "数学6年级上册",
-          "textbook_volume": "上册",
-          "unit_id": "tcu_6da88f707eca954f",
-          "unit_title": "五 百分数"
-        },
-        {
-          "algorithm_version": "component-evidence-hybrid-v3",
           "alignment_id": "tca_5e97badda0b54eed",
           "alignment_type": "supports",
           "confidence": 0.86,
@@ -37881,6 +37826,61 @@
           "printed_page": "79",
           "publication_status": "published",
           "rationale": "教材课文“1百分数的意义”与课标 MA-D3-ST-002 的可教学小能力“用自己的话解释百分数的统计意义”形成页内证据匹配。",
+          "relation_type": "supports",
+          "resource_type": "student_textbook",
+          "review_status": "machine_checked",
+          "revision_status": "current_confirmed",
+          "textbook_grade": 6,
+          "textbook_subject": "数学",
+          "textbook_title": "数学6年级上册",
+          "textbook_volume": "上册",
+          "unit_id": "tcu_6da88f707eca954f",
+          "unit_title": "五 百分数"
+        },
+        {
+          "algorithm_version": "component-evidence-hybrid-v3",
+          "alignment_id": "tca_414cefec3b2abcfa",
+          "alignment_type": "supports",
+          "confidence": 0.86,
+          "coverage": "partial",
+          "edition_id": "ed_1ba8117dec0624e11c0e",
+          "evidence_basis": "toc_title",
+          "evidence_gap": "当前证据来自目录标题与课标概念匹配，尚未保存教材正文或练习摘录；因此只能声明主题支持，不能声明完整教授。",
+          "evidence_level": "L2_topic",
+          "evidence_refs": [
+            "external_smartedu_2026_math_primary_grade_6_up",
+            "tes_688d5fb5e32ff796",
+            "textbook-node:tcn_bed3532c16850053",
+            "textbook-unit:tcu_6da88f707eca954f"
+          ],
+          "evidence_role": "direct_textbook",
+          "evidence_spans": [
+            {
+              "evidence_role": "direct_textbook",
+              "excerpt": "2. 百分数的应用",
+              "excerpt_hash": "74decd04244efce3bdef6b9df2e4b9d018dd0981b1ba7ccd3335f9b6f771db15",
+              "pdf_page": 90,
+              "printed_page": "85",
+              "span_id": "tes_688d5fb5e32ff796"
+            }
+          ],
+          "learning_component_ids": [
+            "lc_409387805f5755e4"
+          ],
+          "learning_components": [
+            {
+              "component_id": "lc_409387805f5755e4",
+              "label": "用自己的话解释百分数的统计意义"
+            }
+          ],
+          "level": "unit",
+          "method": "component_evidence_hybrid",
+          "node_id": "tcn_bed3532c16850053",
+          "node_title": "2百分数的应用",
+          "pdf_page": 90,
+          "printed_page": "85",
+          "publication_status": "published",
+          "rationale": "教材课文“2百分数的应用”与课标 MA-D3-ST-002 的可教学小能力“用自己的话解释百分数的统计意义”形成页内证据匹配。",
           "relation_type": "supports",
           "resource_type": "student_textbook",
           "review_status": "machine_checked",
@@ -117652,66 +117652,6 @@
         },
         {
           "algorithm_version": "component-evidence-hybrid-v3",
-          "alignment_id": "tca_5fbd2aefd8e047a4",
-          "alignment_type": "supports",
-          "confidence": 0.92,
-          "coverage": "partial",
-          "edition_id": "ed_026e3aaeacf415f2782d",
-          "evidence_basis": "toc_title",
-          "evidence_gap": "当前证据来自目录标题与课标概念匹配，尚未保存教材正文或练习摘录；因此只能声明主题支持，不能声明完整教授。",
-          "evidence_level": "L2_topic",
-          "evidence_refs": [
-            "external_smartedu_2026_math_junior_grade_9_up",
-            "tes_b6572d86bbf837fd",
-            "textbook-node:tcn_4c4bcfdb993da0a0",
-            "textbook-unit:tcu_87b2c6b9fbf08409"
-          ],
-          "evidence_role": "direct_textbook",
-          "evidence_spans": [
-            {
-              "evidence_role": "direct_textbook",
-              "excerpt": "2 为利用一元二次方程求",
-              "excerpt_hash": "f1a2a4b778915254bae9087da2a7d66873ad692e42786d8d15e9242d1d719ce2",
-              "pdf_page": 25,
-              "printed_page": "18",
-              "span_id": "tes_b6572d86bbf837fd"
-            }
-          ],
-          "learning_component_ids": [
-            "lc_32948e2d317e092b",
-            "lc_b7758a99c5ced065"
-          ],
-          "learning_components": [
-            {
-              "component_id": "lc_32948e2d317e092b",
-              "label": "识别并说出一元二次方程根与系数关系的关键特征"
-            },
-            {
-              "component_id": "lc_b7758a99c5ced065",
-              "label": "解一元一次方程、可化为一元一次方程的分式方程、二元一次方程组和数字系数一元二次方程"
-            }
-          ],
-          "level": "unit",
-          "method": "component_evidence_hybrid",
-          "node_id": "tcn_4c4bcfdb993da0a0",
-          "node_title": "2为利用一元二次方程求",
-          "pdf_page": 25,
-          "printed_page": "18",
-          "publication_status": "published",
-          "rationale": "教材课文“2为利用一元二次方程求”与课标 MA-H4G9-AL-015 的可教学小能力“识别并说出一元二次方程根与系数关系的关键特征、解一元一次方程、可化为一元一次方程的分式方程、二元一次方程组和数字系数一元二次方程”形成页内证据匹配。",
-          "relation_type": "supports",
-          "resource_type": "student_textbook",
-          "review_status": "machine_checked",
-          "revision_status": "current_confirmed",
-          "textbook_grade": 9,
-          "textbook_subject": "数学",
-          "textbook_title": "数学9年级上册",
-          "textbook_volume": "上册",
-          "unit_id": "tcu_87b2c6b9fbf08409",
-          "unit_title": "第二十五章 一元二次方程"
-        },
-        {
-          "algorithm_version": "component-evidence-hybrid-v3",
           "alignment_id": "tca_c0ad4eeee78882a9",
           "alignment_type": "supports",
           "confidence": 0.92,
@@ -117759,6 +117699,66 @@
           "printed_page": "2",
           "publication_status": "published",
           "rationale": "教材课文“2第二十五章一元二次方程”与课标 MA-H4G9-AL-015 的可教学小能力“识别并说出一元二次方程根与系数关系的关键特征、解一元一次方程、可化为一元一次方程的分式方程、二元一次方程组和数字系数一元二次方程”形成页内证据匹配。",
+          "relation_type": "supports",
+          "resource_type": "student_textbook",
+          "review_status": "machine_checked",
+          "revision_status": "current_confirmed",
+          "textbook_grade": 9,
+          "textbook_subject": "数学",
+          "textbook_title": "数学9年级上册",
+          "textbook_volume": "上册",
+          "unit_id": "tcu_87b2c6b9fbf08409",
+          "unit_title": "第二十五章 一元二次方程"
+        },
+        {
+          "algorithm_version": "component-evidence-hybrid-v3",
+          "alignment_id": "tca_5fbd2aefd8e047a4",
+          "alignment_type": "supports",
+          "confidence": 0.92,
+          "coverage": "partial",
+          "edition_id": "ed_026e3aaeacf415f2782d",
+          "evidence_basis": "toc_title",
+          "evidence_gap": "当前证据来自目录标题与课标概念匹配，尚未保存教材正文或练习摘录；因此只能声明主题支持，不能声明完整教授。",
+          "evidence_level": "L2_topic",
+          "evidence_refs": [
+            "external_smartedu_2026_math_junior_grade_9_up",
+            "tes_b6572d86bbf837fd",
+            "textbook-node:tcn_4c4bcfdb993da0a0",
+            "textbook-unit:tcu_87b2c6b9fbf08409"
+          ],
+          "evidence_role": "direct_textbook",
+          "evidence_spans": [
+            {
+              "evidence_role": "direct_textbook",
+              "excerpt": "2 为利用一元二次方程求",
+              "excerpt_hash": "f1a2a4b778915254bae9087da2a7d66873ad692e42786d8d15e9242d1d719ce2",
+              "pdf_page": 25,
+              "printed_page": "18",
+              "span_id": "tes_b6572d86bbf837fd"
+            }
+          ],
+          "learning_component_ids": [
+            "lc_32948e2d317e092b",
+            "lc_b7758a99c5ced065"
+          ],
+          "learning_components": [
+            {
+              "component_id": "lc_32948e2d317e092b",
+              "label": "识别并说出一元二次方程根与系数关系的关键特征"
+            },
+            {
+              "component_id": "lc_b7758a99c5ced065",
+              "label": "解一元一次方程、可化为一元一次方程的分式方程、二元一次方程组和数字系数一元二次方程"
+            }
+          ],
+          "level": "unit",
+          "method": "component_evidence_hybrid",
+          "node_id": "tcn_4c4bcfdb993da0a0",
+          "node_title": "2为利用一元二次方程求",
+          "pdf_page": 25,
+          "printed_page": "18",
+          "publication_status": "published",
+          "rationale": "教材课文“2为利用一元二次方程求”与课标 MA-H4G9-AL-015 的可教学小能力“识别并说出一元二次方程根与系数关系的关键特征、解一元一次方程、可化为一元一次方程的分式方程、二元一次方程组和数字系数一元二次方程”形成页内证据匹配。",
           "relation_type": "supports",
           "resource_type": "student_textbook",
           "review_status": "machine_checked",
@@ -154877,7 +154877,7 @@
             "external_smartedu_2026_bsd_math_primary_grade_6_up",
             "tes_691f4ba3db42648f",
             "textbook-node:tcn_7c40c096e7025924",
-            "textbook-unit:tcu_c873f595c4ad496d"
+            "textbook-unit:tcu_464c8dde0f70f022"
           ],
           "evidence_role": "direct_textbook",
           "evidence_spans": [
@@ -154915,8 +154915,8 @@
           "textbook_subject": "数学",
           "textbook_title": "数学6年级上册",
           "textbook_volume": "上册",
-          "unit_id": "tcu_c873f595c4ad496d",
-          "unit_title": "第三单元 用字母表示（二）"
+          "unit_id": "tcu_464c8dde0f70f022",
+          "unit_title": "综合实践 制订节水方案"
         },
         {
           "algorithm_version": "component-evidence-hybrid-v3",

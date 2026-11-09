@@ -1,0 +1,222 @@
+{
+  "book": {"subject": "英语", "grade": 9, "term": "下", "edition": "人教版"},
+  "misconceptions": [
+    {"id": "9b-compound-as-complex", "name": "把并列句当成复合句", "why": "看到一句里有两套主谓就叫复合句，没看两半是用 and、but、so 平等地连起来，还是一半挂在另一半上。", "move": "把两半拆开读：两半都能单独成句、用 and/but/so 连的是并列句；一半由 when、if、because、that 等引出、离开另一半说不完整的，才是复合句。"},
+    {"id": "9b-two-verbs-as-complex", "name": "有两个动词就当成复合句", "why": "数到 watched、ate 两个动词，就以为是两个句子合成的。", "move": "问：这句有几组“主语 + 谓语”？Mia and I 一个主语做了两件事，只有一组，是简单句。"},
+    {"id": "9b-long-as-complex", "name": "句首有短语加逗号就当复合句", "why": "把“复合”理解成“复杂、长”，看到句首一串短语后跟逗号，就以为逗号前后是两个句子。", "move": "让学生划出主语和谓语：逗号前的 On New Year's Eve 没有主谓，整句只有一组主谓，是简单句。"},
+    {"id": "9b-cant-as-ability", "name": "把推测的 can't 读成“不能”", "why": "只记住了 can 是“能、会”，看到 can't 就译成“不能做到”。", "move": "问：句子在说谁有没有能力吗？还是说话人在猜杯子重不重？把 can't 换成“不可能”读一遍。"},
+    {"id": "9b-cant-as-maybe", "name": "以为 can't 是没把握的推测", "why": "知道 can't 表示推测，但没分清 must、can't 和 might、could 的把握大小。", "move": "画一条把握线：must（几乎肯定是）、might/could（也许）、can't（几乎肯定不是），让学生把 can't 放上去。"},
+    {"id": "9b-one-word-one-class", "name": "以为一个词只有一种词性", "why": "背单词时只记了一个词性和意思，看到这个词就照套。", "move": "看 aim 的位置：前面有 the、my 是名词；紧跟在主语后、带 -s 或 -ed 的是动词。再把句子读一遍，看意思通不通。"},
+    {"id": "9b-complement-no-to", "name": "tell/ask sb 后漏了 to", "why": "汉语“让我别用”中间没有连接词，就把动词直接接在 me 后面。", "move": "板书 tell / ask / expect + 人 + to do，把 to 圈出来，再让学生把 not 放到 to 前面。"},
+    {"id": "9b-dont-in-infinitive", "name": "不定式的否定用了 don't", "why": "把妈妈的原话 Don't use your phone. 原样搬进了句子。", "move": "并排写原话和转述：Don't use… → told me not to use…，说明转述时 don't 要换成 not to。"},
+    {"id": "9b-come-across-as-look-for", "name": "把 come across 当成找", "why": "看到“在抽屉里”，就按情景猜成在找东西，没注意它是无意中碰到。", "move": "问：“我”是打开抽屉专门去找毛笔，还是无意中看到它？再和 look for（有意去找）对比。"},
+    {"id": "9b-question-order-in-object-clause", "name": "宾语从句仍用疑问语序", "why": "原句是问句，就把 can we、is it 的顺序原样搬进了从句。", "move": "把从句单独拿出来读：how we can reduce waste 是在陈述“我们怎样做”，主语 we 要放回 can 前面。"},
+    {"id": "9b-because-before-noun", "name": "名词短语前用了 because", "why": "汉语“因为”后面接词、接句都行，就把 because 直接放在名词短语前。", "move": "看“因为”后面：有主语和谓语的完整句子用 because；只有名词短语（the heavy smog）用 because of。"},
+    {"id": "9b-know-progressive", "name": "状态动词 know 用了进行时", "why": "觉得“到现在还认识”就是“正在”，就用了 be + doing。", "move": "问：know 能“正在做”吗？know、like、have（有）表示状态，从过去持续到现在用 have known。"}
+  ],
+  "items": [
+    {
+      "id": "en-9b-01",
+      "type": "choice",
+      "unit": "Unit 1 Let's Celebrate!",
+      "lesson": "Section A How do people celebrate festivals?",
+      "lessons": ["celebrate festivals"],
+      "points": ["EN-S3-LK-01.13"],
+      "topic": "分清简单句、并列句和复合句",
+      "stem": "下面哪一句是复合句（complex sentence）？",
+      "options": ["Mia and I watched lanterns and ate yuanxiao.", "We made zongzi, and Grandpa told us a story.", "I wonder when the boat race will start.", "On New Year's Eve, my family eats dumplings."],
+      "answer": 2,
+      "wrong": {"0": "9b-two-verbs-as-complex", "1": "9b-compound-as-complex", "3": "9b-long-as-complex"},
+      "right": ["I wonder 后面跟着从句 when the boat race will start，", "一个主句加一个从句，是复合句。", "用 and 连起两个简单句是并列句；只有一组主谓是简单句。"],
+      "typical": ["We made zongzi, and Grandpa told us a story.", "有两部分，所以是复合句。"],
+      "typical_error": "9b-compound-as-complex",
+      "ladder": [
+        {"q": "判断句型：Tomb-sweeping Day is usually in April.", "a": "简单句"},
+        {"q": "判断句型：I wanted to go out, but it rained all day.", "a": "并列句（but 连接两个简单句）"},
+        {"q": "用 because 把两句合成复合句：We eat zongzi. We want to remember Qu Yuan.", "a": "We eat zongzi because we want to remember Qu Yuan."}
+      ]
+    },
+    {
+      "id": "en-9b-02",
+      "type": "judge",
+      "unit": "Unit 1 Let's Celebrate!",
+      "lesson": "Section B What can festivals bring us?",
+      "lessons": ["festivals bring us"],
+      "points": ["EN-S3-LS-01.30"],
+      "topic": "没有 I think 也可能是观点",
+      "stem": "读到下面这句话，小林这样判断。你同意吗？",
+      "work": ["The Spring Festival is the best time of the year.", "小林：这句没有 I think，但它是观点，不是事实。"],
+      "answer": true,
+      "wrong": {"disagree": "opinion-needs-keyword-8b"},
+      "right": ["best 是对节日的评价，别人可能觉得中秋节更好，没法查证，所以是观点。", "事实能查证，如 People in Egypt celebrate Sham El-Nessim in April."],
+      "ladder": [
+        {"q": "事实还是观点？Chinese people eat mooncakes at the Mid-Autumn Festival.", "a": "事实"},
+        {"q": "事实还是观点？Holi is the most exciting festival in India.", "a": "观点（most exciting 是评价）"},
+        {"q": "把这句观点改成一句事实：The Dragon Boat Festival is the most interesting festival.", "a": "如：People eat zongzi at the Dragon Boat Festival."}
+      ]
+    },
+    {
+      "id": "en-9b-03",
+      "type": "choice",
+      "unit": "Unit 2 A Look into the Past",
+      "lesson": "Section A What can ancient objects tell us about history?",
+      "lessons": ["ancient objects", "history"],
+      "points": ["EN-S3-LK-01.14"],
+      "topic": "can't 表示的推测",
+      "stem": "This jade cup is so small. It can't weigh much. 这里的 can't 是什么意思？",
+      "options": ["一定不重，说话人很有把握", "也许不太重，说话人没什么把握", "人们没有能力把它做得很重"],
+      "answer": 0,
+      "wrong": {"1": "9b-cant-as-maybe", "2": "9b-cant-as-ability"},
+      "right": ["can't 在这里是很有把握的否定推测：“不可能……”，依据是杯子很小。", "must be 是很有把握的肯定推测；might / could be 才是没把握。"],
+      "typical": ["can't 就是“不能”：", "人们不能把它做得很重。"],
+      "typical_error": "9b-cant-as-ability",
+      "ladder": [
+        {"q": "选 must / can't 填空：Tom takes photos every day. He ____ love photography.", "a": "must"},
+        {"q": "选 must / can't 填空：Lily is in Beijing today. The girl I saw in Shanghai today ____ be Lily.", "a": "can't"},
+        {"q": "用 might 改写，表示没把握：Perhaps the box is made of wood.", "a": "The box might be made of wood."}
+      ]
+    },
+    {
+      "id": "en-9b-04",
+      "type": "judge",
+      "unit": "Unit 2 A Look into the Past",
+      "lesson": "Section B How can we bring the past back to life?",
+      "lessons": ["bring the past back to life"],
+      "points": ["EN-S3-LK-01.8"],
+      "topic": "同一个词作名词和动词",
+      "stem": "小华这样判断。你同意吗？",
+      "work": ["aim 是名词，意思是“目标”，", "所以 She aims to become a tour guide. 这句话错了。"],
+      "answer": false,
+      "wrong": {"agree": "9b-one-word-one-class"},
+      "right": ["aim 既是名词（目标），也是动词（力争做到）。", "这里 aims 是动词：她力争成为一名导游。trade、repair 也是这样一词两用。"],
+      "ladder": [
+        {"q": "aim 是名词还是动词？The main aim of the trip is to learn about history.", "a": "名词"},
+        {"q": "用 repair 的正确形式填空：The workers ____ the bronze mask last year.", "a": "repaired（动词）"},
+        {"q": "用 trade 造两个句子，一句当名词，一句当动词。", "a": "如：Trade helps both countries. / They traded tea for silk."}
+      ]
+    },
+    {
+      "id": "en-9b-05",
+      "type": "choice",
+      "unit": "Unit 3 A Taste of Art",
+      "lesson": "Section A What do you like about art?",
+      "lessons": ["like about art"],
+      "points": ["EN-S3-LK-01.15"],
+      "topic": "tell sb not to do",
+      "stem": "Mum told me ____ my phone during dinner.",
+      "options": ["not use", "not to use", "don't use"],
+      "answer": 1,
+      "wrong": {"0": "9b-complement-no-to", "2": "9b-dont-in-infinitive"},
+      "right": ["tell sb (not) to do：让某人（不要）做某事，不定式作宾语补足语；", "否定把 not 放在 to 前面：told me not to use。"],
+      "typical": ["照“妈妈告诉我：别用手机”直接写：", "Mum told me don't use my phone."],
+      "typical_error": "9b-dont-in-infinitive",
+      "ladder": [
+        {"q": "补全：The teacher asked us ____ (close) the windows.", "a": "to close"},
+        {"q": "补全：The guide told us ____ (not touch) the paintings.", "a": "not to touch"},
+        {"q": "改错：I expect you not come late again.", "a": "not come → not to come"}
+      ]
+    },
+    {
+      "id": "en-9b-06",
+      "type": "choice",
+      "unit": "Unit 3 A Taste of Art",
+      "lesson": "Section B How can art inspire us?",
+      "lessons": ["art inspire us"],
+      "points": ["EN-S3-LK-01.7"],
+      "topic": "come across 的意思",
+      "stem": "I came across an old calligraphy brush in Grandpa's drawer. came across 是什么意思？",
+      "options": ["仔细地寻找", "从上面走了过去", "偶然发现"],
+      "answer": 2,
+      "wrong": {"0": "9b-come-across-as-look-for", "1": "idiom-literal-8b"},
+      "right": ["come across = 偶然遇见、碰到（人或物）；", "抽屉里的旧毛笔是“我”无意中发现的，不是专门去找的。"],
+      "typical": ["在抽屉里，那就是在找东西：", "came across = 寻找"],
+      "typical_error": "9b-come-across-as-look-for",
+      "ladder": [
+        {"q": "选意思：I came across my old classmate in the museum.（A 偶然遇见 B 约好见面）", "a": "A"},
+        {"q": "用 come across 的正确形式填空：Yesterday I ____ a beautiful painting in an old shop.", "a": "came across"},
+        {"q": "用 come across 写一句话，说说你偶然看到书法的经历。", "a": "如：I came across a calligraphy show in a shopping mall."}
+      ]
+    },
+    {
+      "id": "en-9b-07",
+      "type": "step",
+      "unit": "Unit 4 Reduce, Reuse, Recycle",
+      "lesson": "Section A What causes pollution?",
+      "lessons": ["causes pollution"],
+      "points": ["EN-S3-LK-01.13"],
+      "topic": "宾语从句用陈述语序",
+      "stem": "小东把一个问句放进 Can you tell me 后面。他从第几步开始错了？",
+      "work": ["原问句：How can we reduce waste?", "把它放在 tell me 后面，作宾语从句", "从句开头保留疑问词 how", "照抄问句：Can you tell me how can we reduce waste?"],
+      "answer": 3,
+      "error": "9b-question-order-in-object-clause",
+      "right": ["宾语从句用陈述语序：疑问词 + 主语 + 谓语，", "Can you tell me how we can reduce waste?"],
+      "ladder": [
+        {"q": "合成一句：Where is the waste centre? I don't know.", "a": "I don't know where the waste centre is."},
+        {"q": "合成一句：Why is the river so dirty? Do you know?", "a": "Do you know why the river is so dirty?"},
+        {"q": "合成一句：Does the factory cause the smog? I wonder.", "a": "I wonder if / whether the factory causes the smog."}
+      ]
+    },
+    {
+      "id": "en-9b-08",
+      "type": "choice",
+      "unit": "Unit 4 Reduce, Reuse, Recycle",
+      "lesson": "Section B How can we protect our environment?",
+      "lessons": ["protect our environment"],
+      "points": ["EN-S3-LK-01.19"],
+      "topic": "because 还是 because of",
+      "stem": "Many people stayed indoors ____ the heavy smog.",
+      "options": ["because of", "because", "so"],
+      "answer": 0,
+      "wrong": {"1": "9b-because-before-noun", "2": "wy-so-before-cause-7a"},
+      "right": ["the heavy smog 是名词短语，前面用 because of；", "后面是完整的句子才用 because，如 because the smog was heavy."],
+      "typical": ["“因为”就是 because：", "Many people stayed indoors because the heavy smog."],
+      "typical_error": "9b-because-before-noun",
+      "ladder": [
+        {"q": "选 because / because of：Many fish died ____ the dirty water.", "a": "because of"},
+        {"q": "选 because / because of：Fishing was banned ____ there were too few fish.", "a": "because"},
+        {"q": "用 as a result 改写：Factories put waste into the river, so the fish died.", "a": "Factories put waste into the river. As a result, the fish died."}
+      ]
+    },
+    {
+      "id": "en-9b-09",
+      "type": "choice",
+      "unit": "Unit 5 Open to New Beginnings",
+      "lesson": "Section A How has your junior high experience shaped you?",
+      "lessons": ["junior high experience"],
+      "points": ["EN-S3-LK-01.15"],
+      "topic": "毕业时说认识多久了",
+      "stem": "Lucy and I ____ each other since Grade 7. Now we are graduating!",
+      "options": ["knew", "know", "are knowing", "have known"],
+      "answer": 3,
+      "wrong": {"0": "since-with-past-tense", "1": "present-for-duration", "2": "9b-know-progressive"},
+      "right": ["since Grade 7 表示从那时一直到现在，用现在完成时；", "know 表示状态，不用进行时：have known。"],
+      "typical": ["认识是过去的事：", "Lucy and I knew each other since Grade 7."],
+      "typical_error": "since-with-past-tense",
+      "ladder": [
+        {"q": "用所给词的正确形式填空：I ____ (study) at this school for three years.", "a": "have studied"},
+        {"q": "用所给词的正确形式填空：My uncle ____ (live) in Shanghai since 2020.", "a": "has lived"},
+        {"q": "用所给词的正确形式填空：We ____ (be) friends since we ____ (meet) in Grade 7.", "a": "have been；met"}
+      ]
+    },
+    {
+      "id": "en-9b-10",
+      "type": "write",
+      "unit": "Unit 5 Open to New Beginnings",
+      "lesson": "Section B What do you have to say upon graduation?",
+      "lessons": ["graduation"],
+      "points": ["EN-S3-LK-01.9"],
+      "topic": "形容词变成名词",
+      "stem": "用括号里的词的正确形式填空：Ms Li always listens to us with great ____ (patient).",
+      "answer": "patience",
+      "wrong": {"patient": "adjective-as-noun-8a", "patientness": "ness-for-all-8a"},
+      "right": ["with great 后面要用名词；patient（耐心的）的名词是 patience，", "像 silent → silence、different → difference。"],
+      "typical": ["patient 就是“耐心”，直接填：with great patient"],
+      "typical_error": "adjective-as-noun-8a",
+      "ladder": [
+        {"q": "用括号里的词填空：Please keep ____ (silent) in the library.", "a": "silence"},
+        {"q": "写出名词形式：encourage → ____；develop → ____", "a": "encouragement；development"},
+        {"q": "用括号里的词填空：Thanks for the useful ____ (inform) about high schools.", "a": "information"}
+      ]
+    }
+  ]
+}

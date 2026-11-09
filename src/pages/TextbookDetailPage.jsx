@@ -14,7 +14,7 @@ import { bookHref, loadAllBooks } from '../features/mybook/BookPicker.jsx'
 import { alignmentUnits, pointIndex, v2Slug } from '../features/textbooks/alignmentModel'
 import UnitMap from '../features/textbooks/UnitMap'
 import { loadChecksIndex } from '../features/checks/checksData.js'
-import { bandOfGrade, subjectByName } from '../features/checks/subjects.js'
+import { bookKeyOf, subjectByName } from '../features/checks/subjects.js'
 import styles from './TextbookDetailPage.module.css'
 
 const RELATION_LABELS = {
@@ -65,8 +65,8 @@ function useChecksLink(book) {
     useEffect(() => {
         setHref('')
         const subject = subjectByName(name)
-        if (!subject || !grade || (!subject.bands && !subject.editions.includes(edition))) return undefined
-        const key = subject.bands ? bandOfGrade(subject, grade) : `${grade}${{ 上册: '上', 下册: '下', 全一册: '全' }[volume] || ''}`
+        const key = bookKeyOf(subject, { grade, volume, edition })
+        if (!key) return undefined
         let active = true
         loadChecksIndex().then(index => {
             const entry = index?.subjects?.find(item => item.slug === subject.slug)

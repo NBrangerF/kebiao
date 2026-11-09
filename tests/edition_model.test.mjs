@@ -31,3 +31,37 @@ test('publisherOf keeps the publisher only', () => {
     assert.equal(publisherOf('北师大版'), '北师大')
     assert.equal(publisherOf('人音版（简谱，赵季平、杜永寿）'), '人音')
 })
+
+// 课堂诊断: a second edition of a subject (北师大版 数学, 外研社版 英语) gets its own files, ids and book keys
+import { bookKeyOf, bookOf, subjectBySlug } from '../src/features/checks/subjects.js'
+import { bookGroups, bookInGroup } from '../src/features/checks/checksData.js'
+
+test('a second edition of a check bank has its own file, ids and book key', () => {
+    const book = bookOf({ subject: '数学', grade: 5, term: '上', edition: '北师大版' })
+    assert.equal(book.key, '北师大5上')
+    assert.equal(book.stem, 'bsd-5a')
+    assert.equal(book.label, '五年级上册')
+    // the main edition keeps its old keys, so saved links still open
+    assert.equal(bookOf({ subject: '数学', grade: 5, term: '上', edition: '人教版' }).key, '5上')
+    assert.equal(bookOf({ subject: '英语', grade: 7, term: '下', edition: '外研社版（孙有中）' }).stem, 'wy-7b')
+})
+
+test('a library volume finds its own edition in the bank', () => {
+    const math = subjectBySlug('math')
+    assert.equal(bookKeyOf(math, { grade: 5, volume: '上册', edition: '北师大版' }), '北师大5上')
+    assert.equal(bookKeyOf(math, { grade: 5, volume: '上册', edition: '人教版' }), '5上')
+    // an edition the bank doesn't cover has no key (its page shows no checks link)
+    assert.equal(bookKeyOf(math, { grade: 5, volume: '上册', edition: '苏教版' }), '')
+    assert.equal(bookKeyOf(subjectBySlug('labor'), { grade: 4 }), '3-4')
+})
+
+test('switching publisher keeps the volume when it has questions', () => {
+    const bank = { books: [
+        { key: '5上', grade: 5, term: '上', edition: '人教版', count: 20 },
+        { key: '北师大5上', grade: 5, term: '上', edition: '北师大版', count: 30 },
+        { key: '北师大6上', grade: 6, term: '上', edition: '北师大版', count: 0 }
+    ] }
+    const groups = bookGroups(bank)
+    assert.deepEqual(groups.map(group => group.name), ['人教版', '北师大版'])
+    assert.equal(bookInGroup(groups[1], bank.books[0]), '北师大5上')
+})
