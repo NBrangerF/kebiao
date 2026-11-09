@@ -1,5 +1,5 @@
 {
-  "count": 170,
+  "count": 174,
   "filters": {
     "grades": [
       {
@@ -23,7 +23,7 @@
         "value": 4
       },
       {
-        "count": 18,
+        "count": 19,
         "label": "5年级",
         "value": 5
       },
@@ -38,24 +38,24 @@
         "value": 7
       },
       {
-        "count": 23,
+        "count": 25,
         "label": "8年级",
         "value": 8
       },
       {
-        "count": 20,
+        "count": 21,
         "label": "9年级",
         "value": 9
       }
     ],
     "stages": [
       {
-        "count": 66,
+        "count": 69,
         "label": "初中",
         "value": "junior"
       },
       {
-        "count": 104,
+        "count": 105,
         "label": "小学",
         "value": "primary"
       }
@@ -117,7 +117,7 @@
         "value": "music"
       },
       {
-        "count": 22,
+        "count": 26,
         "label": "英语",
         "value": "english"
       },
@@ -134,18 +134,18 @@
         "value": "全一册"
       },
       {
-        "count": 81,
+        "count": 83,
         "label": "上册",
         "value": "上册"
       },
       {
-        "count": 79,
+        "count": 81,
         "label": "下册",
         "value": "下册"
       }
     ]
   },
-  "generated_at": "2026-11-08T05:34:29.502Z",
+  "generated_at": "2026-11-09T05:30:55.002Z",
   "schema_version": 2,
-  "source_generation_id": "gen-20261108053426-067549b650"
+  "source_generation_id": "gen-20261109053054-9c34b8a97a"
 }

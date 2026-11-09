@@ -1,0 +1,643 @@
+{
+ "edition_id": "ed_02a1ae4afa3be288718e",
+ "textbook_title": "英语5年级下册",
+ "platform_textbook_id": "24d93365-89f2-48ea-878a-dfb0702c9369",
+ "platform_title": "新教材-小学英语外研社版（主编：孙有中）五年级下册",
+ "match": {
+  "title_hits": 35,
+  "method": "book_text",
+  "score": 1.2,
+  "candidates": 6
+ },
+ "tree": [
+  {
+   "id": "03cb20fb-b7a0-4c6a-94f4-2537673d7e3d",
+   "title": "Unit 1 Growing up",
+   "children": [
+    {
+     "id": "3c344ff8-91f4-4ee5-b1f1-a75d822c340b",
+     "title": "Start up",
+     "children": []
+    },
+    {
+     "id": "905d9fd5-7105-4882-b462-16cb435e179e",
+     "title": "Speed up",
+     "children": []
+    },
+    {
+     "id": "de3259af-7557-4915-8e83-2a159ae9624f",
+     "title": "Fuel up",
+     "children": []
+    },
+    {
+     "id": "1d88ba90-ede2-430c-91b4-8eba9f0543dd",
+     "title": "Words and expressions",
+     "children": []
+    }
+   ]
+  },
+  {
+   "id": "c3df2f40-909d-4825-b861-2e4640ac1317",
+   "title": "Unit 2 You can make a difference",
+   "children": [
+    {
+     "id": "fe009982-6763-458e-a6a9-1539f966a3d2",
+     "title": "Start up",
+     "children": []
+    },
+    {
+     "id": "a8286828-3507-46d8-8a73-01fd22e6246b",
+     "title": "Speed up",
+     "children": []
+    },
+    {
+     "id": "3568160a-2279-4a43-ab5c-453e20dac727",
+     "title": "Fuel up",
+     "children": []
+    },
+    {
+     "id": "d0028bef-f949-4dba-87e5-5a3605283fec",
+     "title": "Words and expressions",
+     "children": []
+    }
+   ]
+  },
+  {
+   "id": "b88e3cc8-1488-411c-a6ae-3310c3591245",
+   "title": "Unit 3 We love reading",
+   "children": [
+    {
+     "id": "1ffa4a96-f960-4570-adc9-dc873e286ef3",
+     "title": "Start up",
+     "children": []
+    },
+    {
+     "id": "e7bb7046-392f-441e-8d26-3ce4db1003f0",
+     "title": "Speed up",
+     "children": []
+    },
+    {
+     "id": "2809260f-a5f6-4f3b-a55c-33565f88911e",
+     "title": "Fuel up",
+     "children": []
+    },
+    {
+     "id": "02f3dfc5-14ab-48a5-87c6-a132a07eac11",
+     "title": "Words and expressions",
+     "children": []
+    }
+   ]
+  },
+  {
+   "id": "b1d09efc-9a1d-486a-91ae-f24e6ef0b0e6",
+   "title": "Unit 4 Back in time",
+   "children": [
+    {
+     "id": "076719b9-380d-4215-8771-0dc1c546f97c",
+     "title": "Start up",
+     "children": []
+    },
+    {
+     "id": "aaa88fc5-e3d8-47d8-92f6-cf2a0aacf0be",
+     "title": "Speed up",
+     "children": []
+    },
+    {
+     "id": "779bf6ff-0c24-43e2-9eb9-ca9fe9da43ce",
+     "title": "Fuel up",
+     "children": []
+    },
+    {
+     "id": "990eb96d-13d5-4c0b-9162-220b332d1275",
+     "title": "Words and expressions",
+     "children": []
+    }
+   ]
+  },
+  {
+   "id": "5f736a38-f012-4c78-885a-128397ccc127",
+   "title": "Unit 5 Work it out",
+   "children": [
+    {
+     "id": "104b1a6c-d9b7-4783-96a9-5f5b54bc18f0",
+     "title": "Start up",
+     "children": []
+    },
+    {
+     "id": "730057fa-0c8b-4eb4-8c13-a50ac53bba43",
+     "title": "Speed up",
+     "children": []
+    },
+    {
+     "id": "bda6a5fe-923d-4770-b6df-a93de0345449",
+     "title": "Fuel up",
+     "children": []
+    },
+    {
+     "id": "bf67ba3f-b6df-4ba1-a9c3-cfee92ef1a41",
+     "title": "Words and expressions",
+     "children": []
+    }
+   ]
+  },
+  {
+   "id": "28ab05d0-0c9c-4c68-9ade-f778722622d0",
+   "title": "Unit 6 Then and now",
+   "children": [
+    {
+     "id": "3058fb4d-b569-4595-9dc4-31d3149547c4",
+     "title": "Start up",
+     "children": []
+    },
+    {
+     "id": "b65638f5-1716-4fbf-b5dd-6051ee2c4325",
+     "title": "Speed up",
+     "children": []
+    },
+    {
+     "id": "361fc36b-b1b8-4a06-9359-9924a48e3a54",
+     "title": "Fuel up",
+     "children": []
+    },
+    {
+     "id": "c4d953c2-3c37-4a4e-aee7-2224161b0bf3",
+     "title": "Words and expressions",
+     "children": []
+    }
+   ]
+  },
+  {
+   "id": "b0a9ff9e-d7f6-454b-adf1-afc3c6a31754",
+   "title": "More activities",
+   "children": [
+    {
+     "id": "52b743aa-095c-4f46-9080-eb12164787cf",
+     "title": "Unit 6",
+     "children": []
+    }
+   ]
+  },
+  {
+   "id": "e25c4645-080f-4305-83ff-c408cf16acea",
+   "title": "Plays",
+   "children": [
+    {
+     "id": "df94b6a8-fe85-45ca-a95b-c6aa51d1d301",
+     "title": "Act it out",
+     "children": []
+    },
+    {
+     "id": "ec1b4f88-da2d-4610-b6ee-af4f02712a72",
+     "title": "Words and expressions in Plays",
+     "children": []
+    }
+   ]
+  },
+  {
+   "id": "d569091b-4ef2-4e6e-8a03-748aa7070076",
+   "title": "Proper nouns",
+   "children": []
+  }
+ ],
+ "lessons": [
+  {
+   "id": "6d2a43db-a1f1-e283-3bdc-c4753b17ec76",
+   "title": "Unit 1_Start up_1 Read and answer",
+   "chapter_path": [
+    "03cb20fb-b7a0-4c6a-94f4-2537673d7e3d",
+    "3c344ff8-91f4-4ee5-b1f1-a75d822c340b"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "55464c63-8886-8019-1a6b-651c849b669a",
+   "title": "Unit 1_Speed up_1 Read and answer",
+   "chapter_path": [
+    "03cb20fb-b7a0-4c6a-94f4-2537673d7e3d",
+    "905d9fd5-7105-4882-b462-16cb435e179e"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "a84b8e83-291a-ba3d-068a-1871997154b8",
+   "title": "Unit 1_Fuel up_1 Listen and chant",
+   "chapter_path": [
+    "03cb20fb-b7a0-4c6a-94f4-2537673d7e3d",
+    "de3259af-7557-4915-8e83-2a159ae9624f"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "19b67fec-b868-59a9-efbe-2faec7dc6bf0",
+   "title": "Unit 1_Fuel up_3 Listen and choose",
+   "chapter_path": [
+    "03cb20fb-b7a0-4c6a-94f4-2537673d7e3d",
+    "de3259af-7557-4915-8e83-2a159ae9624f"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "f7dd6edc-be77-14d9-8bcc-a280ae88102f",
+   "title": "Unit 1_Fuel up_4 Listen again and write",
+   "chapter_path": [
+    "03cb20fb-b7a0-4c6a-94f4-2537673d7e3d",
+    "de3259af-7557-4915-8e83-2a159ae9624f"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "4c88c278-2e76-6a22-39e4-3e3658036879",
+   "title": "Unit 1_Words and expressions",
+   "chapter_path": [
+    "03cb20fb-b7a0-4c6a-94f4-2537673d7e3d",
+    "1d88ba90-ede2-430c-91b4-8eba9f0543dd"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "8b01f9d7-1520-cb19-4d14-4dc8297e0e0f",
+   "title": "Unit 2_Start up_1 Read and answer",
+   "chapter_path": [
+    "c3df2f40-909d-4825-b861-2e4640ac1317",
+    "fe009982-6763-458e-a6a9-1539f966a3d2"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "30f76d19-95d3-29d0-27b4-21eab24341f2",
+   "title": "Unit 2_Speed up_1 Read and answer",
+   "chapter_path": [
+    "c3df2f40-909d-4825-b861-2e4640ac1317",
+    "a8286828-3507-46d8-8a73-01fd22e6246b"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "e255eb82-bda8-60f9-ff08-087fbd8cb50a",
+   "title": "Unit 2_Fuel up_1 Listen and chant",
+   "chapter_path": [
+    "c3df2f40-909d-4825-b861-2e4640ac1317",
+    "3568160a-2279-4a43-ab5c-453e20dac727"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "b6da59e9-a252-433d-15a1-ef42b177b5a4",
+   "title": "Unit 2_Fuel up_3 Listen and write",
+   "chapter_path": [
+    "c3df2f40-909d-4825-b861-2e4640ac1317",
+    "3568160a-2279-4a43-ab5c-453e20dac727"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "cd39d12f-6ad9-39a3-ea56-bdf35b8b0e29",
+   "title": "Unit 2_Words and expressions",
+   "chapter_path": [
+    "c3df2f40-909d-4825-b861-2e4640ac1317",
+    "d0028bef-f949-4dba-87e5-5a3605283fec"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "28634994-fc0b-f687-6820-32a9b2965880",
+   "title": "Unit 3_Start up_1 Read and answer",
+   "chapter_path": [
+    "b88e3cc8-1488-411c-a6ae-3310c3591245",
+    "1ffa4a96-f960-4570-adc9-dc873e286ef3"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "460c699a-dbab-db38-553f-4e0032ac4c66",
+   "title": "Unit 3_Speed up_1 Read and answer",
+   "chapter_path": [
+    "b88e3cc8-1488-411c-a6ae-3310c3591245",
+    "e7bb7046-392f-441e-8d26-3ce4db1003f0"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "5c6ada65-1ee3-e5dc-61b3-801661be53b9",
+   "title": "Unit 3_Fuel up_1 Listen and chant",
+   "chapter_path": [
+    "b88e3cc8-1488-411c-a6ae-3310c3591245",
+    "2809260f-a5f6-4f3b-a55c-33565f88911e"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "61ec07ad-34af-73d0-d4b0-5dd211c154aa",
+   "title": "Unit 3_Fuel up_3 Listen and choose",
+   "chapter_path": [
+    "b88e3cc8-1488-411c-a6ae-3310c3591245",
+    "2809260f-a5f6-4f3b-a55c-33565f88911e"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "126b68f4-ec62-decc-5096-cd69a47f5df0",
+   "title": "Unit 3_Fuel up_4 Listen again and write",
+   "chapter_path": [
+    "b88e3cc8-1488-411c-a6ae-3310c3591245",
+    "2809260f-a5f6-4f3b-a55c-33565f88911e"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "4ee23f8c-9613-26f5-1877-48ded075b290",
+   "title": "Unit 3_Words and expressions",
+   "chapter_path": [
+    "b88e3cc8-1488-411c-a6ae-3310c3591245",
+    "02f3dfc5-14ab-48a5-87c6-a132a07eac11"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "57ddcc44-222d-5aab-4eb2-0628a79a23ff",
+   "title": "Unit 4_Start up_1 Read and answer",
+   "chapter_path": [
+    "b1d09efc-9a1d-486a-91ae-f24e6ef0b0e6",
+    "076719b9-380d-4215-8771-0dc1c546f97c"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "ff8335e8-0d05-97d6-828a-289b64e553a2",
+   "title": "Unit 4_Speed up_1 Read and answer",
+   "chapter_path": [
+    "b1d09efc-9a1d-486a-91ae-f24e6ef0b0e6",
+    "aaa88fc5-e3d8-47d8-92f6-cf2a0aacf0be"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "c100eab0-8427-d2c9-c295-38a8e9956e22",
+   "title": "Unit 4_Fuel up_1 Listen and chant",
+   "chapter_path": [
+    "b1d09efc-9a1d-486a-91ae-f24e6ef0b0e6",
+    "779bf6ff-0c24-43e2-9eb9-ca9fe9da43ce"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "5da07cca-34a8-f0d3-69c5-f5295000ef1a",
+   "title": "Unit 4_Fuel up_3 Listen and write",
+   "chapter_path": [
+    "b1d09efc-9a1d-486a-91ae-f24e6ef0b0e6",
+    "779bf6ff-0c24-43e2-9eb9-ca9fe9da43ce"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "b4128361-51e8-6d7d-78d5-7993694a5d39",
+   "title": "Unit 4_Words and expressions",
+   "chapter_path": [
+    "b1d09efc-9a1d-486a-91ae-f24e6ef0b0e6",
+    "990eb96d-13d5-4c0b-9162-220b332d1275"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "71d2d95f-86ef-8ce6-d757-8f8fb90e0fe1",
+   "title": "Unit 5_Start up_1 Read and answer",
+   "chapter_path": [
+    "5f736a38-f012-4c78-885a-128397ccc127",
+    "104b1a6c-d9b7-4783-96a9-5f5b54bc18f0"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "9b0038d9-2be3-cdfc-d6b6-7e7518a2fa66",
+   "title": "Unit 5_Speed up_1 Read and answer",
+   "chapter_path": [
+    "5f736a38-f012-4c78-885a-128397ccc127",
+    "730057fa-0c8b-4eb4-8c13-a50ac53bba43"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "c081bb9b-c97a-a326-b332-65aa15491b5a",
+   "title": "Unit 5_Fuel up_1 Listen and chant",
+   "chapter_path": [
+    "5f736a38-f012-4c78-885a-128397ccc127",
+    "bda6a5fe-923d-4770-b6df-a93de0345449"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "b50cd4f9-e8aa-301a-17eb-9377a043648c",
+   "title": "Unit 5_Fuel up_3 Listen and choose",
+   "chapter_path": [
+    "5f736a38-f012-4c78-885a-128397ccc127",
+    "bda6a5fe-923d-4770-b6df-a93de0345449"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "d5921916-2a49-97fe-3f4d-5f13b95d7b38",
+   "title": "Unit 5_Fuel up_4 Listen again and circle",
+   "chapter_path": [
+    "5f736a38-f012-4c78-885a-128397ccc127",
+    "bda6a5fe-923d-4770-b6df-a93de0345449"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "f22a4e73-2765-b2a0-403c-faf4c99a419f",
+   "title": "Unit 5_Words and expressions",
+   "chapter_path": [
+    "5f736a38-f012-4c78-885a-128397ccc127",
+    "bf67ba3f-b6df-4ba1-a9c3-cfee92ef1a41"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "47efd9ad-df5b-e2fd-1818-5c297441781a",
+   "title": "Unit 6_Start up_1 Read and answer",
+   "chapter_path": [
+    "28ab05d0-0c9c-4c68-9ade-f778722622d0",
+    "3058fb4d-b569-4595-9dc4-31d3149547c4"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "07150564-9b1b-eb7f-80d4-20807ce2b678",
+   "title": "Unit 6_Speed up_1 Read and answer",
+   "chapter_path": [
+    "28ab05d0-0c9c-4c68-9ade-f778722622d0",
+    "b65638f5-1716-4fbf-b5dd-6051ee2c4325"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "30a0434b-a81b-1ce8-1d8a-be6274fe3ec0",
+   "title": "Unit 6_Fuel up_1 Listen and chant",
+   "chapter_path": [
+    "28ab05d0-0c9c-4c68-9ade-f778722622d0",
+    "361fc36b-b1b8-4a06-9359-9924a48e3a54"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "0c257ced-1887-e9f8-3cf6-4b60051dda75",
+   "title": "Unit 6_Fuel up_3 Listen and write “√” or “×”",
+   "chapter_path": [
+    "28ab05d0-0c9c-4c68-9ade-f778722622d0",
+    "361fc36b-b1b8-4a06-9359-9924a48e3a54"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "8ea7cf7e-d2f7-7607-4054-0538f02990d1",
+   "title": "Unit 6_Fuel up_4 Listen again and write",
+   "chapter_path": [
+    "28ab05d0-0c9c-4c68-9ade-f778722622d0",
+    "361fc36b-b1b8-4a06-9359-9924a48e3a54"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "00d85a97-3899-4839-d87d-d2c35d1f4196",
+   "title": "Unit 6_Words and expressions",
+   "chapter_path": [
+    "28ab05d0-0c9c-4c68-9ade-f778722622d0",
+    "c4d953c2-3c37-4a4e-aee7-2224161b0bf3"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "f19f9de1-4528-b389-1798-cf3b9bd6e061",
+   "title": "More activities_Unit 6_2 Listen and write",
+   "chapter_path": [
+    "b0a9ff9e-d7f6-454b-adf1-afc3c6a31754",
+    "52b743aa-095c-4f46-9080-eb12164787cf"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "bd4efddd-952c-1a59-6a90-b8788a2b7533",
+   "title": "Plays_Act it out_The ugly duckling",
+   "chapter_path": [
+    "e25c4645-080f-4305-83ff-c408cf16acea",
+    "df94b6a8-fe85-45ca-a95b-c6aa51d1d301"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "d13ca630-4b04-df0b-b3d4-ebe6ea3934bc",
+   "title": "Plays_Act it out_Matilda",
+   "chapter_path": [
+    "e25c4645-080f-4305-83ff-c408cf16acea",
+    "df94b6a8-fe85-45ca-a95b-c6aa51d1d301"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "1f77206c-af12-38e1-c457-8fa6499ea8bb",
+   "title": "Plays_Act it out_Finding a lost dog's home",
+   "chapter_path": [
+    "e25c4645-080f-4305-83ff-c408cf16acea",
+    "df94b6a8-fe85-45ca-a95b-c6aa51d1d301"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "e34401e4-dc7b-dbdd-2da3-ea8f1fa5ce22",
+   "title": "Plays_Words and expressions in Plays",
+   "chapter_path": [
+    "e25c4645-080f-4305-83ff-c408cf16acea",
+    "ec1b4f88-da2d-4610-b6ee-af4f02712a72"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "25a1a097-8be1-c554-5591-1f8ca25657d6",
+   "title": "Proper nouns",
+   "chapter_path": [
+    "d569091b-4ef2-4e6e-8a03-748aa7070076"
+   ],
+   "pdf_page": 80,
+   "materials": [],
+   "hours": 1
+  }
+ ]
+}

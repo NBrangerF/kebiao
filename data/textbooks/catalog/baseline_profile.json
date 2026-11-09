@@ -46,11 +46,13 @@
     { "stage": "primary", "subject": "英语", "subject_slug": "english", "edition_name": "外研社版（孙有中）", "source_edition": "外研社版（主编：孙有中）", "publisher": "外语教学与研究出版社", "selection_class": "additional_edition", "start_grade": 3, "custom_volumes": [
       { "grade": 3, "volume": "上册" }, { "grade": 3, "volume": "下册" },
       { "grade": 4, "volume": "上册" }, { "grade": 4, "volume": "下册" },
-      { "grade": 5, "volume": "上册" },
+      { "grade": 5, "volume": "上册" }, { "grade": 5, "volume": "下册" },
       { "grade": 6, "volume": "上册" }
     ] },
     { "stage": "junior", "subject": "英语", "subject_slug": "english", "edition_name": "外研社版（孙有中）", "source_edition": "外研社版（主编：孙有中）", "publisher": "外语教学与研究出版社", "selection_class": "additional_edition", "start_grade": 7, "custom_volumes": [
-      { "grade": 7, "volume": "上册" }, { "grade": 7, "volume": "下册" }
+      { "grade": 7, "volume": "上册" }, { "grade": 7, "volume": "下册" },
+      { "grade": 8, "volume": "上册" }, { "grade": 8, "volume": "下册" },
+      { "grade": 9, "volume": "上册" }
     ] }
   ],
   "companions": [

@@ -1510,6 +1510,42 @@
    "title_hits": 49,
    "method": "book_text",
    "pages_found": 67
+  },
+  "ed_a93a5178587dcb63a569": {
+   "status": "matched",
+   "platform_textbook_id": "1fa84972-522a-43d7-9a8c-3b63c292cf86",
+   "platform_title": "新教材-初中英语外研社版八年级上册",
+   "lessons": 65,
+   "title_hits": 22,
+   "method": "book_text",
+   "pages_found": 18
+  },
+  "ed_e6f7135f2b385ccbb47a": {
+   "status": "matched",
+   "platform_textbook_id": "93e40320-ef4b-4c7f-936f-839cf0a0ebe2",
+   "platform_title": "新教材-初中英语外研社版八年级下册",
+   "lessons": 49,
+   "title_hits": 18,
+   "method": "book_text",
+   "pages_found": 2
+  },
+  "ed_339d3168060589726092": {
+   "status": "matched",
+   "platform_textbook_id": "1e7a0cde-8b5b-4587-8c35-af575bfb0a14",
+   "platform_title": "新教材-初中英语外研社版（主编：孙有中）九年级上册",
+   "lessons": 0,
+   "title_hits": 0,
+   "method": "book_text",
+   "pages_found": 0
+  },
+  "ed_02a1ae4afa3be288718e": {
+   "status": "matched",
+   "platform_textbook_id": "24d93365-89f2-48ea-878a-dfb0702c9369",
+   "platform_title": "新教材-小学英语外研社版（主编：孙有中）五年级下册",
+   "lessons": 40,
+   "title_hits": 35,
+   "method": "book_text",
+   "pages_found": 1
   }
  }
 }

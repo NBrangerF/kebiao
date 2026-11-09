@@ -1,0 +1,642 @@
+{
+ "edition_id": "ed_e6f7135f2b385ccbb47a",
+ "textbook_title": "英语8年级下册",
+ "platform_textbook_id": "93e40320-ef4b-4c7f-936f-839cf0a0ebe2",
+ "platform_title": "新教材-初中英语外研社版八年级下册",
+ "match": {
+  "title_hits": 18,
+  "method": "book_text",
+  "score": 1,
+  "candidates": 2
+ },
+ "tree": [
+  {
+   "id": "200f55fa-bc01-4c5b-947e-ff2a0746b9f6",
+   "title": "Unit 1 Career talks",
+   "children": [
+    {
+     "id": "09b481e9-306c-4804-86dd-2c708e481424",
+     "title": "Understanding ideas",
+     "children": []
+    },
+    {
+     "id": "d5313cd9-4af2-45ce-a4f6-1d46c84986b4",
+     "title": "Developing ideas",
+     "children": []
+    }
+   ]
+  },
+  {
+   "id": "bb54a2a8-456d-4d81-8ac6-7da7c22acd15",
+   "title": "Unit 2 Growing pains and gains",
+   "children": [
+    {
+     "id": "15bdb613-69b4-4c2e-87ab-5ecdf303d3c2",
+     "title": "Understanding ideas",
+     "children": []
+    },
+    {
+     "id": "b5d36114-00dc-4d53-8fc1-2559c725dda0",
+     "title": "Developing ideas",
+     "children": []
+    }
+   ]
+  },
+  {
+   "id": "00fc5a57-9f72-4a1a-ab11-4996a5b8a335",
+   "title": "Unit 3 What makes a great team?",
+   "children": [
+    {
+     "id": "3320e1b8-edae-486a-9b1f-f425f9124065",
+     "title": "Understanding ideas",
+     "children": []
+    },
+    {
+     "id": "1173e4e8-ad2a-47d9-865f-8e98b6a4cbd7",
+     "title": "Developing ideas",
+     "children": []
+    }
+   ]
+  },
+  {
+   "id": "ae01e01e-9ba4-49fa-807a-abf3b698d64e",
+   "title": "Unit 4 Helping out",
+   "children": [
+    {
+     "id": "eba29ee0-9a0f-4cd1-833e-b2e2061908a8",
+     "title": "Understanding ideas",
+     "children": []
+    },
+    {
+     "id": "6e1ddad0-f3f1-4dc2-bd90-f66c3dba031a",
+     "title": "Developing ideas",
+     "children": []
+    }
+   ]
+  },
+  {
+   "id": "5efbf6ef-bab0-4c49-acfe-dde71447410f",
+   "title": "Unit 5 Looking into nature",
+   "children": [
+    {
+     "id": "93678f1e-45b2-41f0-8429-38d4a022aa30",
+     "title": "Understanding ideas",
+     "children": []
+    },
+    {
+     "id": "957624b3-a5d5-4ad7-a425-537679bcd467",
+     "title": "Developing ideas",
+     "children": []
+    }
+   ]
+  },
+  {
+   "id": "5b68cfd3-39e2-4dcc-bbf8-72e34b0086c5",
+   "title": "Unit 6 Living with nature",
+   "children": [
+    {
+     "id": "eaa1eefc-99b4-4d86-9b47-7fdaf25a30fc",
+     "title": "Understanding ideas",
+     "children": []
+    },
+    {
+     "id": "36eb18e1-42c5-4419-a0b4-d2350975d5db",
+     "title": "Developing ideas",
+     "children": []
+    }
+   ]
+  }
+ ],
+ "lessons": [
+  {
+   "id": "8c26dcbc-1091-a3fe-3e4d-ce6b71f28270",
+   "title": "Unit 1_Understanding ideas_2 Read Robert's speech. How does he feel about his job?",
+   "chapter_path": [
+    "200f55fa-bc01-4c5b-947e-ff2a0746b9f6",
+    "09b481e9-306c-4804-86dd-2c708e481424"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "01e6ef47-ce0e-1082-cd47-8b73573fa49b",
+   "title": "Unit 1_Understanding ideas_8 Work in pairs. Choose a job and complete the notes.",
+   "chapter_path": [
+    "200f55fa-bc01-4c5b-947e-ff2a0746b9f6",
+    "09b481e9-306c-4804-86dd-2c708e481424"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "8d541a47-d0ed-1ee5-9938-94c0d310c582",
+   "title": "Unit 1_Developing ideas_1 Listen to the preview of a radio programme and choose what next week's show is.",
+   "chapter_path": [
+    "200f55fa-bc01-4c5b-947e-ff2a0746b9f6",
+    "d5313cd9-4af2-45ce-a4f6-1d46c84986b4"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "9b9a7f22-1eda-58ed-b7bd-781e48b314a9",
+   "title": "Unit 1_Developing ideas_Phonetics in use",
+   "chapter_path": [
+    "200f55fa-bc01-4c5b-947e-ff2a0746b9f6",
+    "d5313cd9-4af2-45ce-a4f6-1d46c84986b4"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "f862e5f1-fad0-fb67-e6b1-dc9974394a66",
+   "title": "Unit 1_Developing ideas_2 Listen again and complete the webpage.",
+   "chapter_path": [
+    "200f55fa-bc01-4c5b-947e-ff2a0746b9f6",
+    "d5313cd9-4af2-45ce-a4f6-1d46c84986b4"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "e9605d2b-3f4a-92b4-b9d7-f13d6c66fd57",
+   "title": "Unit 1_Developing ideas_3 Listen to the interview of Yan Jing and complete the diagram.",
+   "chapter_path": [
+    "200f55fa-bc01-4c5b-947e-ff2a0746b9f6",
+    "d5313cd9-4af2-45ce-a4f6-1d46c84986b4"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "04dc62d3-4d86-47a6-b00b-da324a004dd4",
+   "title": "Unit 1_Developing ideas_Reading for writing_2 Read the passage.Why are traditional jobs disappearing and new jobs springing up?",
+   "chapter_path": [
+    "200f55fa-bc01-4c5b-947e-ff2a0746b9f6",
+    "d5313cd9-4af2-45ce-a4f6-1d46c84986b4"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "11c918db-f4e7-5862-d6f4-5bcfb137e1cd",
+   "title": "Unit 1_Words and expressions",
+   "chapter_path": [
+    "200f55fa-bc01-4c5b-947e-ff2a0746b9f6"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "800c7b5a-24a4-0cf1-b818-f243729f74cf",
+   "title": "Unit 2_Understanding ideas_2 Read the play. What does the mother expect from her son?",
+   "chapter_path": [
+    "bb54a2a8-456d-4d81-8ac6-7da7c22acd15",
+    "15bdb613-69b4-4c2e-87ab-5ecdf303d3c2"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "3ae4ad3f-48ab-2e03-0911-7cea445f2d7c",
+   "title": "Unit 2_Developing ideas_1 Listen to the conversation and choose Colin's attitude.",
+   "chapter_path": [
+    "bb54a2a8-456d-4d81-8ac6-7da7c22acd15",
+    "b5d36114-00dc-4d53-8fc1-2559c725dda0"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "60fff10c-a9ae-3633-0296-c3dd02a511ff",
+   "title": "Unit 2_Developing ideas_Phonetics in use",
+   "chapter_path": [
+    "bb54a2a8-456d-4d81-8ac6-7da7c22acd15",
+    "b5d36114-00dc-4d53-8fc1-2559c725dda0"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "75690348-df0e-0f7c-827e-111dae1b776c",
+   "title": "Unit 2_Developing ideas_2 Listen again and complete the application form.",
+   "chapter_path": [
+    "bb54a2a8-456d-4d81-8ac6-7da7c22acd15",
+    "b5d36114-00dc-4d53-8fc1-2559c725dda0"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "516e3fb2-f6c1-5d3d-b240-3959a71fee0a",
+   "title": "Unit 2_Developing ideas_3 Listen to the radio and complete the notes.",
+   "chapter_path": [
+    "bb54a2a8-456d-4d81-8ac6-7da7c22acd15",
+    "b5d36114-00dc-4d53-8fc1-2559c725dda0"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "ab3ee686-85bd-9a34-6a0d-234de85842f3",
+   "title": "Unit 2_Developing ideas_Reading for writing_2 Read the passage. What was the writer's pain?",
+   "chapter_path": [
+    "bb54a2a8-456d-4d81-8ac6-7da7c22acd15",
+    "b5d36114-00dc-4d53-8fc1-2559c725dda0"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "83d52704-4001-0385-f156-572144853633",
+   "title": "Unit 2_Words and expressions",
+   "chapter_path": [
+    "bb54a2a8-456d-4d81-8ac6-7da7c22acd15"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "9a376498-88e1-cf7a-57ad-7f583906807b",
+   "title": "Unit 3_Understanding ideas_2 Read the emails and find out Tony's problems and Ms White's advices.",
+   "chapter_path": [
+    "00fc5a57-9f72-4a1a-ab11-4996a5b8a335",
+    "3320e1b8-edae-486a-9b1f-f425f9124065"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "e240eb51-56ef-02a1-b8fe-95da33d1f4a3",
+   "title": "Unit 3_Understanding ideas_8 Work in pairs. Discuss the qualities of a good leader.",
+   "chapter_path": [
+    "00fc5a57-9f72-4a1a-ab11-4996a5b8a335",
+    "3320e1b8-edae-486a-9b1f-f425f9124065"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "3cf67320-69b4-27c5-8211-334f25f5b51f",
+   "title": "Unit 3_Developing ideas_1 Listen to the conversation. What will Amy's mother do after the call?",
+   "chapter_path": [
+    "00fc5a57-9f72-4a1a-ab11-4996a5b8a335",
+    "1173e4e8-ad2a-47d9-865f-8e98b6a4cbd7"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "caf65f15-049f-f00a-149f-be724ee9cd18",
+   "title": "Unit 3_Developing ideas_Phonetics in use",
+   "chapter_path": [
+    "00fc5a57-9f72-4a1a-ab11-4996a5b8a335",
+    "1173e4e8-ad2a-47d9-865f-8e98b6a4cbd7"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "deab77d5-c778-252a-1832-dc8d4504a962",
+   "title": "Unit 3_Developing ideas_2 Listen again and complete the post.",
+   "chapter_path": [
+    "00fc5a57-9f72-4a1a-ab11-4996a5b8a335",
+    "1173e4e8-ad2a-47d9-865f-8e98b6a4cbd7"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "bf9f84d2-1836-4ae6-e065-50b92986fe88",
+   "title": "Unit 3_Developing ideas_3 Listen to the conversation and complete the diagram.",
+   "chapter_path": [
+    "00fc5a57-9f72-4a1a-ab11-4996a5b8a335",
+    "1173e4e8-ad2a-47d9-865f-8e98b6a4cbd7"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "1cee33b1-0ca2-ba8d-a52e-0ddcf501f429",
+   "title": "Unit 3_Developing ideas_Reading for writing_2 Read the passage and check your answers.",
+   "chapter_path": [
+    "00fc5a57-9f72-4a1a-ab11-4996a5b8a335",
+    "1173e4e8-ad2a-47d9-865f-8e98b6a4cbd7"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "aff4c927-5ace-990b-6e51-b26fbf4ee8e2",
+   "title": "Unit 3_Words and expressions",
+   "chapter_path": [
+    "00fc5a57-9f72-4a1a-ab11-4996a5b8a335"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "68bdf456-c1ec-8d3f-c7c9-f838cba9a57e",
+   "title": "Unit 4_Understanding ideas_2 Read the passage. What did Leah do to help other patients?",
+   "chapter_path": [
+    "ae01e01e-9ba4-49fa-807a-abf3b698d64e",
+    "eba29ee0-9a0f-4cd1-833e-b2e2061908a8"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "8cec08d7-8669-421f-e1de-11377d994885",
+   "title": "Unit 4_Understanding ideas_8 Work in pairs. Discuss things to do to help people around you.",
+   "chapter_path": [
+    "ae01e01e-9ba4-49fa-807a-abf3b698d64e",
+    "eba29ee0-9a0f-4cd1-833e-b2e2061908a8"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "933f9bd4-8ce2-8e0a-48ac-d29c472a5815",
+   "title": "Unit 4_Developing ideas_1 Listen to the news and choose the headline.",
+   "chapter_path": [
+    "ae01e01e-9ba4-49fa-807a-abf3b698d64e",
+    "6e1ddad0-f3f1-4dc2-bd90-f66c3dba031a"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "1d6f62b0-eb31-4f85-adf8-bf9c1cfbb3c2",
+   "title": "Unit 4_Developing ideas_Phonetics in use",
+   "chapter_path": [
+    "ae01e01e-9ba4-49fa-807a-abf3b698d64e",
+    "6e1ddad0-f3f1-4dc2-bd90-f66c3dba031a"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "eea02d98-f3be-0f0f-8cc9-258ec4480ad3",
+   "title": "Unit 4_Developing ideas_2 Listen again and complete the outline for the news.",
+   "chapter_path": [
+    "ae01e01e-9ba4-49fa-807a-abf3b698d64e",
+    "6e1ddad0-f3f1-4dc2-bd90-f66c3dba031a"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "029a4055-b161-07ab-f33f-1d5d8085695c",
+   "title": "Unit 4_Developing ideas_3 Listen to the conversation and complete the poster.",
+   "chapter_path": [
+    "ae01e01e-9ba4-49fa-807a-abf3b698d64e",
+    "6e1ddad0-f3f1-4dc2-bd90-f66c3dba031a"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "eb242dff-4db2-ff8e-ed45-a613edbfc839",
+   "title": "Unit 4_Developing ideas_Reading for writing_2 Read the passage and check your answer.",
+   "chapter_path": [
+    "ae01e01e-9ba4-49fa-807a-abf3b698d64e",
+    "6e1ddad0-f3f1-4dc2-bd90-f66c3dba031a"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "d4588024-774d-a3e0-ccf6-e20b5b828d7d",
+   "title": "Unit 4_Words and expressions",
+   "chapter_path": [
+    "ae01e01e-9ba4-49fa-807a-abf3b698d64e"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "5dbe324a-5c8d-fb7d-8098-83868d7a1501",
+   "title": "Unit 5_Understanding ideas_2 Read the passage and check your answer.",
+   "chapter_path": [
+    "5efbf6ef-bab0-4c49-acfe-dde71447410f",
+    "93678f1e-45b2-41f0-8429-38d4a022aa30"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "64a132d1-22a3-1cf0-0b36-7ab5c9bde997",
+   "title": "Unit 5_Developing ideas_1 Listen to the talk and choose the correct topic.",
+   "chapter_path": [
+    "5efbf6ef-bab0-4c49-acfe-dde71447410f",
+    "957624b3-a5d5-4ad7-a425-537679bcd467"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "eb040aeb-cbde-c91d-f2db-d53730be3ef7",
+   "title": "Unit 5_Developing ideas_Phonetics in use",
+   "chapter_path": [
+    "5efbf6ef-bab0-4c49-acfe-dde71447410f",
+    "957624b3-a5d5-4ad7-a425-537679bcd467"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "a800d63f-a61c-38d0-e002-188fb83521d1",
+   "title": "Unit 5_Developing ideas_2 Listen again and complete the profile.",
+   "chapter_path": [
+    "5efbf6ef-bab0-4c49-acfe-dde71447410f",
+    "957624b3-a5d5-4ad7-a425-537679bcd467"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "36495bf8-1be5-c38f-ce4f-140fb8e64ab4",
+   "title": "Unit 5_Developing ideas_3 Listen to the conversation and complete the table.",
+   "chapter_path": [
+    "5efbf6ef-bab0-4c49-acfe-dde71447410f",
+    "957624b3-a5d5-4ad7-a425-537679bcd467"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "e493ab2d-8d0d-953f-2ad7-901df22e1ec3",
+   "title": "Unit 5_Developing ideas_Reading for writing_2 Read the passage and check your answers.",
+   "chapter_path": [
+    "5efbf6ef-bab0-4c49-acfe-dde71447410f",
+    "957624b3-a5d5-4ad7-a425-537679bcd467"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "f759677c-15f7-2cd3-fe70-1dc1ed595fd5",
+   "title": "Unit 5_Words and expressions",
+   "chapter_path": [
+    "5efbf6ef-bab0-4c49-acfe-dde71447410f"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "ce48213b-794e-15d4-0b97-1588966598f9",
+   "title": "Unit 6_Understanding ideas_2 Read the passgae and check your answer.",
+   "chapter_path": [
+    "5b68cfd3-39e2-4dcc-bbf8-72e34b0086c5",
+    "eaa1eefc-99b4-4d86-9b47-7fdaf25a30fc"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "ea6de1c7-21eb-10b0-07ff-8ffd711a9f68",
+   "title": "Unit 6_Understanding ideas_8 Work in pairs. Talk about how people live by the laws of nature.",
+   "chapter_path": [
+    "5b68cfd3-39e2-4dcc-bbf8-72e34b0086c5",
+    "eaa1eefc-99b4-4d86-9b47-7fdaf25a30fc"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "2927d8ae-c5be-9b57-d6e5-a39d84349ec8",
+   "title": "Unit 6_Developing ideas_1 Listen to the conversation and choose the main idea.",
+   "chapter_path": [
+    "5b68cfd3-39e2-4dcc-bbf8-72e34b0086c5",
+    "36eb18e1-42c5-4419-a0b4-d2350975d5db"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "82d8780b-a57f-7b08-d843-cdc3b2e4cf75",
+   "title": "Unit 6_Developing ideas_Phonetics in use",
+   "chapter_path": [
+    "5b68cfd3-39e2-4dcc-bbf8-72e34b0086c5",
+    "36eb18e1-42c5-4419-a0b4-d2350975d5db"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "431e452e-8a8e-3235-97a3-210fc86ef959",
+   "title": "Unit 6_Developing ideas_2 Listen again and complete the table.",
+   "chapter_path": [
+    "5b68cfd3-39e2-4dcc-bbf8-72e34b0086c5",
+    "36eb18e1-42c5-4419-a0b4-d2350975d5db"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "a7b74772-2311-7ee7-c178-6295dcd6a3b8",
+   "title": "Unit 6_Developing ideas_3 Listen to the radio and complete the notes.",
+   "chapter_path": [
+    "5b68cfd3-39e2-4dcc-bbf8-72e34b0086c5",
+    "36eb18e1-42c5-4419-a0b4-d2350975d5db"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "fa324af0-4800-c729-b652-f2f55e86f876",
+   "title": "Unit 6_Developing ideas_Reading for writing_2 Read the passage and check your answers.",
+   "chapter_path": [
+    "5b68cfd3-39e2-4dcc-bbf8-72e34b0086c5",
+    "36eb18e1-42c5-4419-a0b4-d2350975d5db"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "ae290838-7bc9-e6cc-426e-8c5605fb8280",
+   "title": "Unit 6_Words and expressions",
+   "chapter_path": [
+    "5b68cfd3-39e2-4dcc-bbf8-72e34b0086c5"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "eeeeb80c-c835-4c6c-d4bb-cf76db73aa1c",
+   "title": "Proper nouns",
+   "chapter_path": [
+    "5b68cfd3-39e2-4dcc-bbf8-72e34b0086c5"
+   ],
+   "pdf_page": 103,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "80d856f1-9a64-15d2-2a8e-b1fdbcdf6fb6",
+   "title": "Pronunciation guide",
+   "chapter_path": [
+    "5b68cfd3-39e2-4dcc-bbf8-72e34b0086c5"
+   ],
+   "pdf_page": 103,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "b3a20843-91f2-d22e-bc1b-24adaa2cca8e",
+   "title": "Irregualr verbs",
+   "chapter_path": [
+    "5b68cfd3-39e2-4dcc-bbf8-72e34b0086c5"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  }
+ ]
+}

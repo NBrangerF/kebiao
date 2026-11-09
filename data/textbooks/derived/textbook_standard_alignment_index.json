@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-09T03:47:32.054Z",
-  "source_generation_id": "gen-20261108053426-067549b650",
+  "generated_at": "2026-11-09T06:07:12.003Z",
+  "source_generation_id": "gen-20261109053054-9c34b8a97a",
   "algorithm_version": "full-alignment-scope-preserve-v2",
   "pipeline_versions": [
     "full-alignment-scope-preserve-v2",
@@ -33,14 +33,14 @@
     "adjacent_discipline_relations_are_not_direct_support": true
   },
   "summary": {
-    "textbooks": 170,
+    "textbooks": 174,
     "textbooks_by_status": {
       "unit_aligned": 108,
-      "scope_aligned_unit_review_needed": 62
+      "scope_aligned_unit_review_needed": 66
     },
-    "toc_units": 4706,
+    "toc_units": 4740,
     "units_by_status": {
-      "no_reliable_match": 4348,
+      "no_reliable_match": 4382,
       "aligned": 358
     },
     "standards": 2025,
@@ -54,7 +54,7 @@
     "approved_matches": 6,
     "machine_checked_matches": 987,
     "candidate_matches": 0,
-    "scope_relations": 7012,
+    "scope_relations": 7191,
     "legacy_approved_relations": 6,
     "restored_legacy_unit_locators": 6
   },
@@ -179,6 +179,27 @@
       ],
       "structure_status_reason": null,
       "status": "unit_aligned"
+    },
+    {
+      "edition_id": "ed_02a1ae4afa3be288718e",
+      "evidence_id": "external_smartedu_2026_wy_english_primary_grade_5_down",
+      "subject_slug": "english",
+      "grade": 5,
+      "grade_band": "H3",
+      "toc_unit_count": 13,
+      "processed_unit_scope_count": 13,
+      "published_specific_match_count": 0,
+      "candidate_specific_match_count": 0,
+      "scope_standard_count": 47,
+      "standard_subject_mappings": [
+        {
+          "subject_slug": "english",
+          "evidence_role": "direct_textbook",
+          "source": "subject_policy_fallback"
+        }
+      ],
+      "structure_status_reason": null,
+      "status": "scope_aligned_unit_review_needed"
     },
     {
       "edition_id": "ed_032926ad81d86eb77eb2",
@@ -776,6 +797,27 @@
       "grade_band": "H4G7",
       "toc_unit_count": 8,
       "processed_unit_scope_count": 8,
+      "published_specific_match_count": 0,
+      "candidate_specific_match_count": 0,
+      "scope_standard_count": 44,
+      "standard_subject_mappings": [
+        {
+          "subject_slug": "english",
+          "evidence_role": "direct_textbook",
+          "source": "subject_policy_fallback"
+        }
+      ],
+      "structure_status_reason": null,
+      "status": "scope_aligned_unit_review_needed"
+    },
+    {
+      "edition_id": "ed_339d3168060589726092",
+      "evidence_id": "external_smartedu_2026_wy_english_junior_grade_9_up",
+      "subject_slug": "english",
+      "grade": 9,
+      "grade_band": "H4G9",
+      "toc_unit_count": 7,
+      "processed_unit_scope_count": 7,
       "published_specific_match_count": 0,
       "candidate_specific_match_count": 0,
       "scope_standard_count": 44,
@@ -2344,6 +2386,27 @@
       "status": "unit_aligned"
     },
     {
+      "edition_id": "ed_a93a5178587dcb63a569",
+      "evidence_id": "external_smartedu_2026_wy_english_junior_grade_8_up",
+      "subject_slug": "english",
+      "grade": 8,
+      "grade_band": "H4G8",
+      "toc_unit_count": 7,
+      "processed_unit_scope_count": 7,
+      "published_specific_match_count": 0,
+      "candidate_specific_match_count": 0,
+      "scope_standard_count": 44,
+      "standard_subject_mappings": [
+        {
+          "subject_slug": "english",
+          "evidence_role": "direct_textbook",
+          "source": "subject_policy_fallback"
+        }
+      ],
+      "structure_status_reason": null,
+      "status": "scope_aligned_unit_review_needed"
+    },
+    {
       "edition_id": "ed_abbd5db6223f36ab3c5c",
       "evidence_id": "external_smartedu_2026_morality_law_primary_grade_3_down",
       "subject_slug": "morality_law",
@@ -3065,6 +3128,27 @@
       "grade_band": "H4G9",
       "toc_unit_count": 15,
       "processed_unit_scope_count": 15,
+      "published_specific_match_count": 0,
+      "candidate_specific_match_count": 0,
+      "scope_standard_count": 44,
+      "standard_subject_mappings": [
+        {
+          "subject_slug": "english",
+          "evidence_role": "direct_textbook",
+          "source": "subject_policy_fallback"
+        }
+      ],
+      "structure_status_reason": null,
+      "status": "scope_aligned_unit_review_needed"
+    },
+    {
+      "edition_id": "ed_e6f7135f2b385ccbb47a",
+      "evidence_id": "external_smartedu_2026_wy_english_junior_grade_8_down",
+      "subject_slug": "english",
+      "grade": 8,
+      "grade_band": "H4G8",
+      "toc_unit_count": 7,
+      "processed_unit_scope_count": 7,
       "published_specific_match_count": 0,
       "candidate_specific_match_count": 0,
       "scope_standard_count": 44,
@@ -5343,6 +5427,136 @@
       "unit_title": "综合与实践：生活中的优化问题",
       "standard_subject_slug": "math",
       "grade_band": "H4G9",
+      "status": "no_reliable_match",
+      "match_count": 0,
+      "published_match_count": 0
+    },
+    {
+      "edition_id": "ed_02a1ae4afa3be288718e",
+      "unit_id": "tcu_abb74cc19c402a13",
+      "unit_title": "Unit 1 Growing up",
+      "standard_subject_slug": "english",
+      "grade_band": "H3",
+      "status": "no_reliable_match",
+      "match_count": 0,
+      "published_match_count": 0
+    },
+    {
+      "edition_id": "ed_02a1ae4afa3be288718e",
+      "unit_id": "tcu_5043f18344a15d93",
+      "unit_title": "Unit 2 You can make a difference",
+      "standard_subject_slug": "english",
+      "grade_band": "H3",
+      "status": "no_reliable_match",
+      "match_count": 0,
+      "published_match_count": 0
+    },
+    {
+      "edition_id": "ed_02a1ae4afa3be288718e",
+      "unit_id": "tcu_10b1ed67567dfaeb",
+      "unit_title": "Unit 3 We love reading",
+      "standard_subject_slug": "english",
+      "grade_band": "H3",
+      "status": "no_reliable_match",
+      "match_count": 0,
+      "published_match_count": 0
+    },
+    {
+      "edition_id": "ed_02a1ae4afa3be288718e",
+      "unit_id": "tcu_383925554e65d9af",
+      "unit_title": "Unit 4 Back in time",
+      "standard_subject_slug": "english",
+      "grade_band": "H3",
+      "status": "no_reliable_match",
+      "match_count": 0,
+      "published_match_count": 0
+    },
+    {
+      "edition_id": "ed_02a1ae4afa3be288718e",
+      "unit_id": "tcu_f7fbb4831ae74331",
+      "unit_title": "Unit 5 Work it out",
+      "standard_subject_slug": "english",
+      "grade_band": "H3",
+      "status": "no_reliable_match",
+      "match_count": 0,
+      "published_match_count": 0
+    },
+    {
+      "edition_id": "ed_02a1ae4afa3be288718e",
+      "unit_id": "tcu_2e3819b685bd9bb5",
+      "unit_title": "Unit 6 Then and now",
+      "standard_subject_slug": "english",
+      "grade_band": "H3",
+      "status": "no_reliable_match",
+      "match_count": 0,
+      "published_match_count": 0
+    },
+    {
+      "edition_id": "ed_02a1ae4afa3be288718e",
+      "unit_id": "tcu_d6155e3a8db26680",
+      "unit_title": "Appendices",
+      "standard_subject_slug": "english",
+      "grade_band": "H3",
+      "status": "no_reliable_match",
+      "match_count": 0,
+      "published_match_count": 0
+    },
+    {
+      "edition_id": "ed_02a1ae4afa3be288718e",
+      "unit_id": "tcu_5281e17039b0c4f4",
+      "unit_title": "More activities",
+      "standard_subject_slug": "english",
+      "grade_band": "H3",
+      "status": "no_reliable_match",
+      "match_count": 0,
+      "published_match_count": 0
+    },
+    {
+      "edition_id": "ed_02a1ae4afa3be288718e",
+      "unit_id": "tcu_0371fda840fd6abe",
+      "unit_title": "Plays",
+      "standard_subject_slug": "english",
+      "grade_band": "H3",
+      "status": "no_reliable_match",
+      "match_count": 0,
+      "published_match_count": 0
+    },
+    {
+      "edition_id": "ed_02a1ae4afa3be288718e",
+      "unit_id": "tcu_d0335c9b70ee6d58",
+      "unit_title": "Words and expressions",
+      "standard_subject_slug": "english",
+      "grade_band": "H3",
+      "status": "no_reliable_match",
+      "match_count": 0,
+      "published_match_count": 0
+    },
+    {
+      "edition_id": "ed_02a1ae4afa3be288718e",
+      "unit_id": "tcu_a2725ce4cb71ed1b",
+      "unit_title": "Word list",
+      "standard_subject_slug": "english",
+      "grade_band": "H3",
+      "status": "no_reliable_match",
+      "match_count": 0,
+      "published_match_count": 0
+    },
+    {
+      "edition_id": "ed_02a1ae4afa3be288718e",
+      "unit_id": "tcu_1618fc9a19e51e4b",
+      "unit_title": "Proper nouns",
+      "standard_subject_slug": "english",
+      "grade_band": "H3",
+      "status": "no_reliable_match",
+      "match_count": 0,
+      "published_match_count": 0
+    },
+    {
+      "edition_id": "ed_02a1ae4afa3be288718e",
+      "unit_id": "tcu_82cfd7a85e15bcd8",
+      "unit_title": "Words and expressions in plays",
+      "standard_subject_slug": "english",
+      "grade_band": "H3",
       "status": "no_reliable_match",
       "match_count": 0,
       "published_match_count": 0
@@ -12353,6 +12567,76 @@
       "unit_title": "Appendices",
       "standard_subject_slug": "english",
       "grade_band": "H4G7",
+      "status": "no_reliable_match",
+      "match_count": 0,
+      "published_match_count": 0
+    },
+    {
+      "edition_id": "ed_339d3168060589726092",
+      "unit_id": "tcu_c609ff692de983ee",
+      "unit_title": "Unit 1 Teenagers today",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G9",
+      "status": "no_reliable_match",
+      "match_count": 0,
+      "published_match_count": 0
+    },
+    {
+      "edition_id": "ed_339d3168060589726092",
+      "unit_id": "tcu_6d7b5201232e8be8",
+      "unit_title": "Unit 2 On the money",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G9",
+      "status": "no_reliable_match",
+      "match_count": 0,
+      "published_match_count": 0
+    },
+    {
+      "edition_id": "ed_339d3168060589726092",
+      "unit_id": "tcu_6c6e0603f07eceb4",
+      "unit_title": "Unit 3 Past passing by",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G9",
+      "status": "no_reliable_match",
+      "match_count": 0,
+      "published_match_count": 0
+    },
+    {
+      "edition_id": "ed_339d3168060589726092",
+      "unit_id": "tcu_4a056760b9a6a6c9",
+      "unit_title": "Unit 4 Heroes",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G9",
+      "status": "no_reliable_match",
+      "match_count": 0,
+      "published_match_count": 0
+    },
+    {
+      "edition_id": "ed_339d3168060589726092",
+      "unit_id": "tcu_82b11d7104e11234",
+      "unit_title": "Unit 5 A fine balance",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G9",
+      "status": "no_reliable_match",
+      "match_count": 0,
+      "published_match_count": 0
+    },
+    {
+      "edition_id": "ed_339d3168060589726092",
+      "unit_id": "tcu_67d080f8925fe107",
+      "unit_title": "Unit 6 Live green",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G9",
+      "status": "no_reliable_match",
+      "match_count": 0,
+      "published_match_count": 0
+    },
+    {
+      "edition_id": "ed_339d3168060589726092",
+      "unit_id": "tcu_700e14b121097532",
+      "unit_title": "Appendices",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G9",
       "status": "no_reliable_match",
       "match_count": 0,
       "published_match_count": 0
@@ -33918,6 +34202,76 @@
       "published_match_count": 0
     },
     {
+      "edition_id": "ed_a93a5178587dcb63a569",
+      "unit_id": "tcu_d91c36297d8a6083",
+      "unit_title": "Unit 1 This is me",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G8",
+      "status": "no_reliable_match",
+      "match_count": 0,
+      "published_match_count": 0
+    },
+    {
+      "edition_id": "ed_a93a5178587dcb63a569",
+      "unit_id": "tcu_015a63506eb74624",
+      "unit_title": "Unit 2 Getting along",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G8",
+      "status": "no_reliable_match",
+      "match_count": 0,
+      "published_match_count": 0
+    },
+    {
+      "edition_id": "ed_a93a5178587dcb63a569",
+      "unit_id": "tcu_cd2aa9e07c8845fd",
+      "unit_title": "Unit 3 Make it happen!",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G8",
+      "status": "no_reliable_match",
+      "match_count": 0,
+      "published_match_count": 0
+    },
+    {
+      "edition_id": "ed_a93a5178587dcb63a569",
+      "unit_id": "tcu_1030e294d2ec7521",
+      "unit_title": "Unit 4 Digital life",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G8",
+      "status": "no_reliable_match",
+      "match_count": 0,
+      "published_match_count": 0
+    },
+    {
+      "edition_id": "ed_a93a5178587dcb63a569",
+      "unit_id": "tcu_df1edd9164745fe3",
+      "unit_title": "Unit 5 Play by the rules?",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G8",
+      "status": "no_reliable_match",
+      "match_count": 0,
+      "published_match_count": 0
+    },
+    {
+      "edition_id": "ed_a93a5178587dcb63a569",
+      "unit_id": "tcu_263e4eec67637f2f",
+      "unit_title": "Unit 6 When disaster strikes",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G8",
+      "status": "no_reliable_match",
+      "match_count": 0,
+      "published_match_count": 0
+    },
+    {
+      "edition_id": "ed_a93a5178587dcb63a569",
+      "unit_id": "tcu_61bc7f0a674b677c",
+      "unit_title": "Appendices",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G8",
+      "status": "no_reliable_match",
+      "match_count": 0,
+      "published_match_count": 0
+    },
+    {
       "edition_id": "ed_abbd5db6223f36ab3c5c",
       "unit_id": "tcu_4ab06afc0198c3ba",
       "unit_title": "第一单元 共建美好生活",
@@ -43793,6 +44147,76 @@
       "unit_title": "Irregular Verbs",
       "standard_subject_slug": "english",
       "grade_band": "H4G9",
+      "status": "no_reliable_match",
+      "match_count": 0,
+      "published_match_count": 0
+    },
+    {
+      "edition_id": "ed_e6f7135f2b385ccbb47a",
+      "unit_id": "tcu_a87f429fcdb9ab3c",
+      "unit_title": "Unit 1 Career talks",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G8",
+      "status": "no_reliable_match",
+      "match_count": 0,
+      "published_match_count": 0
+    },
+    {
+      "edition_id": "ed_e6f7135f2b385ccbb47a",
+      "unit_id": "tcu_875ee5fe55d70345",
+      "unit_title": "Unit 2 Growing pains and gains",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G8",
+      "status": "no_reliable_match",
+      "match_count": 0,
+      "published_match_count": 0
+    },
+    {
+      "edition_id": "ed_e6f7135f2b385ccbb47a",
+      "unit_id": "tcu_3db7b278b7bb9d46",
+      "unit_title": "Unit 3 What makes a great team?",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G8",
+      "status": "no_reliable_match",
+      "match_count": 0,
+      "published_match_count": 0
+    },
+    {
+      "edition_id": "ed_e6f7135f2b385ccbb47a",
+      "unit_id": "tcu_cba4cf542b9e85a6",
+      "unit_title": "Unit 4 Helping out",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G8",
+      "status": "no_reliable_match",
+      "match_count": 0,
+      "published_match_count": 0
+    },
+    {
+      "edition_id": "ed_e6f7135f2b385ccbb47a",
+      "unit_id": "tcu_d5341f59df1fdc44",
+      "unit_title": "Unit 5 Looking into nature",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G8",
+      "status": "no_reliable_match",
+      "match_count": 0,
+      "published_match_count": 0
+    },
+    {
+      "edition_id": "ed_e6f7135f2b385ccbb47a",
+      "unit_id": "tcu_1a6acaba33d1e5e8",
+      "unit_title": "Unit 6 Living with nature",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G8",
+      "status": "no_reliable_match",
+      "match_count": 0,
+      "published_match_count": 0
+    },
+    {
+      "edition_id": "ed_e6f7135f2b385ccbb47a",
+      "unit_id": "tcu_025f4bb4228c95ae",
+      "unit_title": "Appendices",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G8",
       "status": "no_reliable_match",
       "match_count": 0,
       "published_match_count": 0
@@ -56152,7 +56576,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 6
+      "textbook_scope_count": 7
     },
     {
       "standard_code": "EN-D2-CA-002",
@@ -56161,7 +56585,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 6
+      "textbook_scope_count": 7
     },
     {
       "standard_code": "EN-D2-CA-003",
@@ -56170,7 +56594,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 6
+      "textbook_scope_count": 7
     },
     {
       "standard_code": "EN-D2-CA-004",
@@ -56179,7 +56603,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 6
+      "textbook_scope_count": 7
     },
     {
       "standard_code": "EN-D2-CA-005",
@@ -56188,7 +56612,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 6
+      "textbook_scope_count": 7
     },
     {
       "standard_code": "EN-D2-CA-006",
@@ -56197,7 +56621,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 6
+      "textbook_scope_count": 7
     },
     {
       "standard_code": "EN-D2-CA-007",
@@ -56206,7 +56630,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 6
+      "textbook_scope_count": 7
     },
     {
       "standard_code": "EN-D2-CA-008",
@@ -56215,7 +56639,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 6
+      "textbook_scope_count": 7
     },
     {
       "standard_code": "EN-D2-CA-009",
@@ -56224,7 +56648,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 6
+      "textbook_scope_count": 7
     },
     {
       "standard_code": "EN-D2-CA-010",
@@ -56233,7 +56657,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 6
+      "textbook_scope_count": 7
     },
     {
       "standard_code": "EN-D2-CA-011",
@@ -56242,7 +56666,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 6
+      "textbook_scope_count": 7
     },
     {
       "standard_code": "EN-D2-CA-012",
@@ -56251,7 +56675,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 6
+      "textbook_scope_count": 7
     },
     {
       "standard_code": "EN-D2-LA-001",
@@ -56260,7 +56684,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 6
+      "textbook_scope_count": 7
     },
     {
       "standard_code": "EN-D2-LA-002",
@@ -56269,7 +56693,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 6
+      "textbook_scope_count": 7
     },
     {
       "standard_code": "EN-D2-LA-003",
@@ -56278,7 +56702,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 6
+      "textbook_scope_count": 7
     },
     {
       "standard_code": "EN-D2-LA-004",
@@ -56287,7 +56711,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 6
+      "textbook_scope_count": 7
     },
     {
       "standard_code": "EN-D2-LA-005",
@@ -56296,7 +56720,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 6
+      "textbook_scope_count": 7
     },
     {
       "standard_code": "EN-D2-LA-006",
@@ -56305,7 +56729,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 6
+      "textbook_scope_count": 7
     },
     {
       "standard_code": "EN-D2-LA-007",
@@ -56314,7 +56738,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 6
+      "textbook_scope_count": 7
     },
     {
       "standard_code": "EN-D2-LA-008",
@@ -56323,7 +56747,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 6
+      "textbook_scope_count": 7
     },
     {
       "standard_code": "EN-D2-LA-009",
@@ -56332,7 +56756,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 6
+      "textbook_scope_count": 7
     },
     {
       "standard_code": "EN-D2-LA-010",
@@ -56341,7 +56765,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 6
+      "textbook_scope_count": 7
     },
     {
       "standard_code": "EN-D2-LA-011",
@@ -56350,7 +56774,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 6
+      "textbook_scope_count": 7
     },
     {
       "standard_code": "EN-D2-LA-012",
@@ -56359,7 +56783,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 6
+      "textbook_scope_count": 7
     },
     {
       "standard_code": "EN-D2-LA-013",
@@ -56368,7 +56792,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 6
+      "textbook_scope_count": 7
     },
     {
       "standard_code": "EN-D2-LA-014",
@@ -56377,7 +56801,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 6
+      "textbook_scope_count": 7
     },
     {
       "standard_code": "EN-D2-LA-015",
@@ -56386,7 +56810,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 6
+      "textbook_scope_count": 7
     },
     {
       "standard_code": "EN-D2-LA-016",
@@ -56395,7 +56819,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 6
+      "textbook_scope_count": 7
     },
     {
       "standard_code": "EN-D2-LA-017",
@@ -56404,7 +56828,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 6
+      "textbook_scope_count": 7
     },
     {
       "standard_code": "EN-D2-LA-018",
@@ -56413,7 +56837,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 6
+      "textbook_scope_count": 7
     },
     {
       "standard_code": "EN-D2-LA-019",
@@ -56422,7 +56846,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 6
+      "textbook_scope_count": 7
     },
     {
       "standard_code": "EN-D2-LA-020",
@@ -56431,7 +56855,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 6
+      "textbook_scope_count": 7
     },
     {
       "standard_code": "EN-D2-SA-001",
@@ -56440,7 +56864,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 6
+      "textbook_scope_count": 7
     },
     {
       "standard_code": "EN-D2-SA-002",
@@ -56449,7 +56873,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 6
+      "textbook_scope_count": 7
     },
     {
       "standard_code": "EN-D2-SA-003",
@@ -56458,7 +56882,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 6
+      "textbook_scope_count": 7
     },
     {
       "standard_code": "EN-D2-SA-004",
@@ -56467,7 +56891,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 6
+      "textbook_scope_count": 7
     },
     {
       "standard_code": "EN-D2-SA-005",
@@ -56476,7 +56900,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 6
+      "textbook_scope_count": 7
     },
     {
       "standard_code": "EN-D2-SA-006",
@@ -56485,7 +56909,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 6
+      "textbook_scope_count": 7
     },
     {
       "standard_code": "EN-D2-SA-007",
@@ -56494,7 +56918,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 6
+      "textbook_scope_count": 7
     },
     {
       "standard_code": "EN-D2-SA-008",
@@ -56503,7 +56927,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 6
+      "textbook_scope_count": 7
     },
     {
       "standard_code": "EN-D2-TP-001",
@@ -56512,7 +56936,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 6
+      "textbook_scope_count": 7
     },
     {
       "standard_code": "EN-D2-TP-002",
@@ -56521,7 +56945,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 6
+      "textbook_scope_count": 7
     },
     {
       "standard_code": "EN-D2-TP-003",
@@ -56530,7 +56954,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 6
+      "textbook_scope_count": 7
     },
     {
       "standard_code": "EN-D2-TP-004",
@@ -56539,7 +56963,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 6
+      "textbook_scope_count": 7
     },
     {
       "standard_code": "EN-D2-TP-005",
@@ -56548,7 +56972,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 6
+      "textbook_scope_count": 7
     },
     {
       "standard_code": "EN-D2-TP-006",
@@ -56557,7 +56981,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 6
+      "textbook_scope_count": 7
     },
     {
       "standard_code": "EN-D2-TP-007",
@@ -56566,7 +56990,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 6
+      "textbook_scope_count": 7
     },
     {
       "standard_code": "EN-H4G7-CA-001",
@@ -56971,7 +57395,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 2
+      "textbook_scope_count": 4
     },
     {
       "standard_code": "EN-H4G8-CA-002",
@@ -56980,7 +57404,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 2
+      "textbook_scope_count": 4
     },
     {
       "standard_code": "EN-H4G8-CA-003",
@@ -56989,7 +57413,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 2
+      "textbook_scope_count": 4
     },
     {
       "standard_code": "EN-H4G8-CA-004",
@@ -56998,7 +57422,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 2
+      "textbook_scope_count": 4
     },
     {
       "standard_code": "EN-H4G8-CA-005",
@@ -57007,7 +57431,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 2
+      "textbook_scope_count": 4
     },
     {
       "standard_code": "EN-H4G8-CA-006",
@@ -57016,7 +57440,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 2
+      "textbook_scope_count": 4
     },
     {
       "standard_code": "EN-H4G8-CA-007",
@@ -57025,7 +57449,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 2
+      "textbook_scope_count": 4
     },
     {
       "standard_code": "EN-H4G8-CA-008",
@@ -57034,7 +57458,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 2
+      "textbook_scope_count": 4
     },
     {
       "standard_code": "EN-H4G8-CA-014",
@@ -57043,7 +57467,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 2
+      "textbook_scope_count": 4
     },
     {
       "standard_code": "EN-H4G8-CA-020",
@@ -57052,7 +57476,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 2
+      "textbook_scope_count": 4
     },
     {
       "standard_code": "EN-H4G8-LA-001",
@@ -57061,7 +57485,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 2
+      "textbook_scope_count": 4
     },
     {
       "standard_code": "EN-H4G8-LA-002",
@@ -57070,7 +57494,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 2
+      "textbook_scope_count": 4
     },
     {
       "standard_code": "EN-H4G8-LA-003",
@@ -57079,7 +57503,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 2
+      "textbook_scope_count": 4
     },
     {
       "standard_code": "EN-H4G8-LA-004",
@@ -57088,7 +57512,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 2
+      "textbook_scope_count": 4
     },
     {
       "standard_code": "EN-H4G8-LA-005",
@@ -57097,7 +57521,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 2
+      "textbook_scope_count": 4
     },
     {
       "standard_code": "EN-H4G8-LA-006",
@@ -57106,7 +57530,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 2
+      "textbook_scope_count": 4
     },
     {
       "standard_code": "EN-H4G8-LA-007",
@@ -57115,7 +57539,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 2
+      "textbook_scope_count": 4
     },
     {
       "standard_code": "EN-H4G8-LA-008",
@@ -57124,7 +57548,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 2
+      "textbook_scope_count": 4
     },
     {
       "standard_code": "EN-H4G8-LA-009",
@@ -57133,7 +57557,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 2
+      "textbook_scope_count": 4
     },
     {
       "standard_code": "EN-H4G8-LA-010",
@@ -57142,7 +57566,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 2
+      "textbook_scope_count": 4
     },
     {
       "standard_code": "EN-H4G8-LA-011",
@@ -57151,7 +57575,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 2
+      "textbook_scope_count": 4
     },
     {
       "standard_code": "EN-H4G8-LA-012",
@@ -57160,7 +57584,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 2
+      "textbook_scope_count": 4
     },
     {
       "standard_code": "EN-H4G8-LA-013",
@@ -57169,7 +57593,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 2
+      "textbook_scope_count": 4
     },
     {
       "standard_code": "EN-H4G8-LA-014",
@@ -57178,7 +57602,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 2
+      "textbook_scope_count": 4
     },
     {
       "standard_code": "EN-H4G8-LA-015",
@@ -57187,7 +57611,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 2
+      "textbook_scope_count": 4
     },
     {
       "standard_code": "EN-H4G8-LA-017",
@@ -57196,7 +57620,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 2
+      "textbook_scope_count": 4
     },
     {
       "standard_code": "EN-H4G8-LA-020",
@@ -57205,7 +57629,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 2
+      "textbook_scope_count": 4
     },
     {
       "standard_code": "EN-H4G8-LA-023",
@@ -57214,7 +57638,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 2
+      "textbook_scope_count": 4
     },
     {
       "standard_code": "EN-H4G8-LA-026",
@@ -57223,7 +57647,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 2
+      "textbook_scope_count": 4
     },
     {
       "standard_code": "EN-H4G8-SA-001",
@@ -57232,7 +57656,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 2
+      "textbook_scope_count": 4
     },
     {
       "standard_code": "EN-H4G8-SA-002",
@@ -57241,7 +57665,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 2
+      "textbook_scope_count": 4
     },
     {
       "standard_code": "EN-H4G8-SA-003",
@@ -57250,7 +57674,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 2
+      "textbook_scope_count": 4
     },
     {
       "standard_code": "EN-H4G8-SA-004",
@@ -57259,7 +57683,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 2
+      "textbook_scope_count": 4
     },
     {
       "standard_code": "EN-H4G8-SA-005",
@@ -57268,7 +57692,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 2
+      "textbook_scope_count": 4
     },
     {
       "standard_code": "EN-H4G8-SA-008",
@@ -57277,7 +57701,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 2
+      "textbook_scope_count": 4
     },
     {
       "standard_code": "EN-H4G8-SA-011",
@@ -57286,7 +57710,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 2
+      "textbook_scope_count": 4
     },
     {
       "standard_code": "EN-H4G8-TP-001",
@@ -57295,7 +57719,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 2
+      "textbook_scope_count": 4
     },
     {
       "standard_code": "EN-H4G8-TP-002",
@@ -57304,7 +57728,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 2
+      "textbook_scope_count": 4
     },
     {
       "standard_code": "EN-H4G8-TP-003",
@@ -57313,7 +57737,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 2
+      "textbook_scope_count": 4
     },
     {
       "standard_code": "EN-H4G8-TP-005",
@@ -57322,7 +57746,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 2
+      "textbook_scope_count": 4
     },
     {
       "standard_code": "EN-H4G8-TP-006",
@@ -57331,7 +57755,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 2
+      "textbook_scope_count": 4
     },
     {
       "standard_code": "EN-H4G8-TP-007",
@@ -57340,7 +57764,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 2
+      "textbook_scope_count": 4
     },
     {
       "standard_code": "EN-H4G8-TP-008",
@@ -57349,7 +57773,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 2
+      "textbook_scope_count": 4
     },
     {
       "standard_code": "EN-H4G8-TP-011",
@@ -57358,7 +57782,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 2
+      "textbook_scope_count": 4
     },
     {
       "standard_code": "EN-H4G9-CA-001",
@@ -57367,7 +57791,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 2
+      "textbook_scope_count": 3
     },
     {
       "standard_code": "EN-H4G9-CA-002",
@@ -57376,7 +57800,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 2
+      "textbook_scope_count": 3
     },
     {
       "standard_code": "EN-H4G9-CA-003",
@@ -57385,7 +57809,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 2
+      "textbook_scope_count": 3
     },
     {
       "standard_code": "EN-H4G9-CA-004",
@@ -57394,7 +57818,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 2
+      "textbook_scope_count": 3
     },
     {
       "standard_code": "EN-H4G9-CA-005",
@@ -57403,7 +57827,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 2
+      "textbook_scope_count": 3
     },
     {
       "standard_code": "EN-H4G9-CA-006",
@@ -57412,7 +57836,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 2
+      "textbook_scope_count": 3
     },
     {
       "standard_code": "EN-H4G9-CA-007",
@@ -57421,7 +57845,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 2
+      "textbook_scope_count": 3
     },
     {
       "standard_code": "EN-H4G9-CA-009",
@@ -57430,7 +57854,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 2
+      "textbook_scope_count": 3
     },
     {
       "standard_code": "EN-H4G9-CA-015",
@@ -57439,7 +57863,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 2
+      "textbook_scope_count": 3
     },
     {
       "standard_code": "EN-H4G9-CA-021",
@@ -57448,7 +57872,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 2
+      "textbook_scope_count": 3
     },
     {
       "standard_code": "EN-H4G9-LA-001",
@@ -57457,7 +57881,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 2
+      "textbook_scope_count": 3
     },
     {
       "standard_code": "EN-H4G9-LA-002",
@@ -57466,7 +57890,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 2
+      "textbook_scope_count": 3
     },
     {
       "standard_code": "EN-H4G9-LA-003",
@@ -57475,7 +57899,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 2
+      "textbook_scope_count": 3
     },
     {
       "standard_code": "EN-H4G9-LA-004",
@@ -57484,7 +57908,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 2
+      "textbook_scope_count": 3
     },
     {
       "standard_code": "EN-H4G9-LA-005",
@@ -57493,7 +57917,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 2
+      "textbook_scope_count": 3
     },
     {
       "standard_code": "EN-H4G9-LA-006",
@@ -57502,7 +57926,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 2
+      "textbook_scope_count": 3
     },
     {
       "standard_code": "EN-H4G9-LA-007",
@@ -57511,7 +57935,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 2
+      "textbook_scope_count": 3
     },
     {
       "standard_code": "EN-H4G9-LA-008",
@@ -57520,7 +57944,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 2
+      "textbook_scope_count": 3
     },
     {
       "standard_code": "EN-H4G9-LA-009",
@@ -57529,7 +57953,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 2
+      "textbook_scope_count": 3
     },
     {
       "standard_code": "EN-H4G9-LA-010",
@@ -57538,7 +57962,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 2
+      "textbook_scope_count": 3
     },
     {
       "standard_code": "EN-H4G9-LA-011",
@@ -57547,7 +57971,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 2
+      "textbook_scope_count": 3
     },
     {
       "standard_code": "EN-H4G9-LA-012",
@@ -57556,7 +57980,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 2
+      "textbook_scope_count": 3
     },
     {
       "standard_code": "EN-H4G9-LA-013",
@@ -57565,7 +57989,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 2
+      "textbook_scope_count": 3
     },
     {
       "standard_code": "EN-H4G9-LA-014",
@@ -57574,7 +57998,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 2
+      "textbook_scope_count": 3
     },
     {
       "standard_code": "EN-H4G9-LA-015",
@@ -57583,7 +58007,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 2
+      "textbook_scope_count": 3
     },
     {
       "standard_code": "EN-H4G9-LA-018",
@@ -57592,7 +58016,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 2
+      "textbook_scope_count": 3
     },
     {
       "standard_code": "EN-H4G9-LA-021",
@@ -57601,7 +58025,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 2
+      "textbook_scope_count": 3
     },
     {
       "standard_code": "EN-H4G9-LA-024",
@@ -57610,7 +58034,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 2
+      "textbook_scope_count": 3
     },
     {
       "standard_code": "EN-H4G9-LA-027",
@@ -57619,7 +58043,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 2
+      "textbook_scope_count": 3
     },
     {
       "standard_code": "EN-H4G9-SA-001",
@@ -57628,7 +58052,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 2
+      "textbook_scope_count": 3
     },
     {
       "standard_code": "EN-H4G9-SA-002",
@@ -57637,7 +58061,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 2
+      "textbook_scope_count": 3
     },
     {
       "standard_code": "EN-H4G9-SA-003",
@@ -57646,7 +58070,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 2
+      "textbook_scope_count": 3
     },
     {
       "standard_code": "EN-H4G9-SA-004",
@@ -57655,7 +58079,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 2
+      "textbook_scope_count": 3
     },
     {
       "standard_code": "EN-H4G9-SA-006",
@@ -57664,7 +58088,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 2
+      "textbook_scope_count": 3
     },
     {
       "standard_code": "EN-H4G9-SA-009",
@@ -57673,7 +58097,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 2
+      "textbook_scope_count": 3
     },
     {
       "standard_code": "EN-H4G9-SA-012",
@@ -57682,7 +58106,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 2
+      "textbook_scope_count": 3
     },
     {
       "standard_code": "EN-H4G9-TP-001",
@@ -57691,7 +58115,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 2
+      "textbook_scope_count": 3
     },
     {
       "standard_code": "EN-H4G9-TP-002",
@@ -57700,7 +58124,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 2
+      "textbook_scope_count": 3
     },
     {
       "standard_code": "EN-H4G9-TP-003",
@@ -57709,7 +58133,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 2
+      "textbook_scope_count": 3
     },
     {
       "standard_code": "EN-H4G9-TP-004",
@@ -57718,7 +58142,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 2
+      "textbook_scope_count": 3
     },
     {
       "standard_code": "EN-H4G9-TP-006",
@@ -57727,7 +58151,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 2
+      "textbook_scope_count": 3
     },
     {
       "standard_code": "EN-H4G9-TP-009",
@@ -57736,7 +58160,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 2
+      "textbook_scope_count": 3
     },
     {
       "standard_code": "EN-H4G9-TP-011",
@@ -57745,7 +58169,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 2
+      "textbook_scope_count": 3
     },
     {
       "standard_code": "EN-H4G9-TP-012",
@@ -57754,7 +58178,7 @@
       "status": "scope_aligned_no_unit_evidence",
       "gap_reason": null,
       "specific_match_count": 0,
-      "textbook_scope_count": 2
+      "textbook_scope_count": 3
     },
     {
       "standard_code": "IT-H1-CS-001",
@@ -133766,6 +134190,523 @@
       "standard_code": "MA-H4G9-ST-015"
     },
     {
+      "scope_id": "tcs_fcb985e7e6b3a81b",
+      "edition_id": "ed_02a1ae4afa3be288718e",
+      "standard_subject_slug": "english",
+      "grade_band": "H3",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-D2-CA-001"
+    },
+    {
+      "scope_id": "tcs_fcb985e7e6b3a81b",
+      "edition_id": "ed_02a1ae4afa3be288718e",
+      "standard_subject_slug": "english",
+      "grade_band": "H3",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-D2-CA-002"
+    },
+    {
+      "scope_id": "tcs_fcb985e7e6b3a81b",
+      "edition_id": "ed_02a1ae4afa3be288718e",
+      "standard_subject_slug": "english",
+      "grade_band": "H3",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-D2-CA-003"
+    },
+    {
+      "scope_id": "tcs_fcb985e7e6b3a81b",
+      "edition_id": "ed_02a1ae4afa3be288718e",
+      "standard_subject_slug": "english",
+      "grade_band": "H3",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-D2-CA-004"
+    },
+    {
+      "scope_id": "tcs_fcb985e7e6b3a81b",
+      "edition_id": "ed_02a1ae4afa3be288718e",
+      "standard_subject_slug": "english",
+      "grade_band": "H3",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-D2-CA-005"
+    },
+    {
+      "scope_id": "tcs_fcb985e7e6b3a81b",
+      "edition_id": "ed_02a1ae4afa3be288718e",
+      "standard_subject_slug": "english",
+      "grade_band": "H3",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-D2-CA-006"
+    },
+    {
+      "scope_id": "tcs_fcb985e7e6b3a81b",
+      "edition_id": "ed_02a1ae4afa3be288718e",
+      "standard_subject_slug": "english",
+      "grade_band": "H3",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-D2-CA-007"
+    },
+    {
+      "scope_id": "tcs_fcb985e7e6b3a81b",
+      "edition_id": "ed_02a1ae4afa3be288718e",
+      "standard_subject_slug": "english",
+      "grade_band": "H3",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-D2-CA-008"
+    },
+    {
+      "scope_id": "tcs_fcb985e7e6b3a81b",
+      "edition_id": "ed_02a1ae4afa3be288718e",
+      "standard_subject_slug": "english",
+      "grade_band": "H3",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-D2-CA-009"
+    },
+    {
+      "scope_id": "tcs_fcb985e7e6b3a81b",
+      "edition_id": "ed_02a1ae4afa3be288718e",
+      "standard_subject_slug": "english",
+      "grade_band": "H3",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-D2-CA-010"
+    },
+    {
+      "scope_id": "tcs_fcb985e7e6b3a81b",
+      "edition_id": "ed_02a1ae4afa3be288718e",
+      "standard_subject_slug": "english",
+      "grade_band": "H3",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-D2-CA-011"
+    },
+    {
+      "scope_id": "tcs_fcb985e7e6b3a81b",
+      "edition_id": "ed_02a1ae4afa3be288718e",
+      "standard_subject_slug": "english",
+      "grade_band": "H3",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-D2-CA-012"
+    },
+    {
+      "scope_id": "tcs_fcb985e7e6b3a81b",
+      "edition_id": "ed_02a1ae4afa3be288718e",
+      "standard_subject_slug": "english",
+      "grade_band": "H3",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-D2-LA-001"
+    },
+    {
+      "scope_id": "tcs_fcb985e7e6b3a81b",
+      "edition_id": "ed_02a1ae4afa3be288718e",
+      "standard_subject_slug": "english",
+      "grade_band": "H3",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-D2-LA-002"
+    },
+    {
+      "scope_id": "tcs_fcb985e7e6b3a81b",
+      "edition_id": "ed_02a1ae4afa3be288718e",
+      "standard_subject_slug": "english",
+      "grade_band": "H3",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-D2-LA-003"
+    },
+    {
+      "scope_id": "tcs_fcb985e7e6b3a81b",
+      "edition_id": "ed_02a1ae4afa3be288718e",
+      "standard_subject_slug": "english",
+      "grade_band": "H3",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-D2-LA-004"
+    },
+    {
+      "scope_id": "tcs_fcb985e7e6b3a81b",
+      "edition_id": "ed_02a1ae4afa3be288718e",
+      "standard_subject_slug": "english",
+      "grade_band": "H3",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-D2-LA-005"
+    },
+    {
+      "scope_id": "tcs_fcb985e7e6b3a81b",
+      "edition_id": "ed_02a1ae4afa3be288718e",
+      "standard_subject_slug": "english",
+      "grade_band": "H3",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-D2-LA-006"
+    },
+    {
+      "scope_id": "tcs_fcb985e7e6b3a81b",
+      "edition_id": "ed_02a1ae4afa3be288718e",
+      "standard_subject_slug": "english",
+      "grade_band": "H3",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-D2-LA-007"
+    },
+    {
+      "scope_id": "tcs_fcb985e7e6b3a81b",
+      "edition_id": "ed_02a1ae4afa3be288718e",
+      "standard_subject_slug": "english",
+      "grade_band": "H3",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-D2-LA-008"
+    },
+    {
+      "scope_id": "tcs_fcb985e7e6b3a81b",
+      "edition_id": "ed_02a1ae4afa3be288718e",
+      "standard_subject_slug": "english",
+      "grade_band": "H3",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-D2-LA-009"
+    },
+    {
+      "scope_id": "tcs_fcb985e7e6b3a81b",
+      "edition_id": "ed_02a1ae4afa3be288718e",
+      "standard_subject_slug": "english",
+      "grade_band": "H3",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-D2-LA-010"
+    },
+    {
+      "scope_id": "tcs_fcb985e7e6b3a81b",
+      "edition_id": "ed_02a1ae4afa3be288718e",
+      "standard_subject_slug": "english",
+      "grade_band": "H3",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-D2-LA-011"
+    },
+    {
+      "scope_id": "tcs_fcb985e7e6b3a81b",
+      "edition_id": "ed_02a1ae4afa3be288718e",
+      "standard_subject_slug": "english",
+      "grade_band": "H3",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-D2-LA-012"
+    },
+    {
+      "scope_id": "tcs_fcb985e7e6b3a81b",
+      "edition_id": "ed_02a1ae4afa3be288718e",
+      "standard_subject_slug": "english",
+      "grade_band": "H3",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-D2-LA-013"
+    },
+    {
+      "scope_id": "tcs_fcb985e7e6b3a81b",
+      "edition_id": "ed_02a1ae4afa3be288718e",
+      "standard_subject_slug": "english",
+      "grade_band": "H3",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-D2-LA-014"
+    },
+    {
+      "scope_id": "tcs_fcb985e7e6b3a81b",
+      "edition_id": "ed_02a1ae4afa3be288718e",
+      "standard_subject_slug": "english",
+      "grade_band": "H3",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-D2-LA-015"
+    },
+    {
+      "scope_id": "tcs_fcb985e7e6b3a81b",
+      "edition_id": "ed_02a1ae4afa3be288718e",
+      "standard_subject_slug": "english",
+      "grade_band": "H3",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-D2-LA-016"
+    },
+    {
+      "scope_id": "tcs_fcb985e7e6b3a81b",
+      "edition_id": "ed_02a1ae4afa3be288718e",
+      "standard_subject_slug": "english",
+      "grade_band": "H3",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-D2-LA-017"
+    },
+    {
+      "scope_id": "tcs_fcb985e7e6b3a81b",
+      "edition_id": "ed_02a1ae4afa3be288718e",
+      "standard_subject_slug": "english",
+      "grade_band": "H3",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-D2-LA-018"
+    },
+    {
+      "scope_id": "tcs_fcb985e7e6b3a81b",
+      "edition_id": "ed_02a1ae4afa3be288718e",
+      "standard_subject_slug": "english",
+      "grade_band": "H3",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-D2-LA-019"
+    },
+    {
+      "scope_id": "tcs_fcb985e7e6b3a81b",
+      "edition_id": "ed_02a1ae4afa3be288718e",
+      "standard_subject_slug": "english",
+      "grade_band": "H3",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-D2-LA-020"
+    },
+    {
+      "scope_id": "tcs_fcb985e7e6b3a81b",
+      "edition_id": "ed_02a1ae4afa3be288718e",
+      "standard_subject_slug": "english",
+      "grade_band": "H3",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-D2-SA-001"
+    },
+    {
+      "scope_id": "tcs_fcb985e7e6b3a81b",
+      "edition_id": "ed_02a1ae4afa3be288718e",
+      "standard_subject_slug": "english",
+      "grade_band": "H3",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-D2-SA-002"
+    },
+    {
+      "scope_id": "tcs_fcb985e7e6b3a81b",
+      "edition_id": "ed_02a1ae4afa3be288718e",
+      "standard_subject_slug": "english",
+      "grade_band": "H3",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-D2-SA-003"
+    },
+    {
+      "scope_id": "tcs_fcb985e7e6b3a81b",
+      "edition_id": "ed_02a1ae4afa3be288718e",
+      "standard_subject_slug": "english",
+      "grade_band": "H3",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-D2-SA-004"
+    },
+    {
+      "scope_id": "tcs_fcb985e7e6b3a81b",
+      "edition_id": "ed_02a1ae4afa3be288718e",
+      "standard_subject_slug": "english",
+      "grade_band": "H3",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-D2-SA-005"
+    },
+    {
+      "scope_id": "tcs_fcb985e7e6b3a81b",
+      "edition_id": "ed_02a1ae4afa3be288718e",
+      "standard_subject_slug": "english",
+      "grade_band": "H3",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-D2-SA-006"
+    },
+    {
+      "scope_id": "tcs_fcb985e7e6b3a81b",
+      "edition_id": "ed_02a1ae4afa3be288718e",
+      "standard_subject_slug": "english",
+      "grade_band": "H3",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-D2-SA-007"
+    },
+    {
+      "scope_id": "tcs_fcb985e7e6b3a81b",
+      "edition_id": "ed_02a1ae4afa3be288718e",
+      "standard_subject_slug": "english",
+      "grade_band": "H3",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-D2-SA-008"
+    },
+    {
+      "scope_id": "tcs_fcb985e7e6b3a81b",
+      "edition_id": "ed_02a1ae4afa3be288718e",
+      "standard_subject_slug": "english",
+      "grade_band": "H3",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-D2-TP-001"
+    },
+    {
+      "scope_id": "tcs_fcb985e7e6b3a81b",
+      "edition_id": "ed_02a1ae4afa3be288718e",
+      "standard_subject_slug": "english",
+      "grade_band": "H3",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-D2-TP-002"
+    },
+    {
+      "scope_id": "tcs_fcb985e7e6b3a81b",
+      "edition_id": "ed_02a1ae4afa3be288718e",
+      "standard_subject_slug": "english",
+      "grade_band": "H3",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-D2-TP-003"
+    },
+    {
+      "scope_id": "tcs_fcb985e7e6b3a81b",
+      "edition_id": "ed_02a1ae4afa3be288718e",
+      "standard_subject_slug": "english",
+      "grade_band": "H3",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-D2-TP-004"
+    },
+    {
+      "scope_id": "tcs_fcb985e7e6b3a81b",
+      "edition_id": "ed_02a1ae4afa3be288718e",
+      "standard_subject_slug": "english",
+      "grade_band": "H3",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-D2-TP-005"
+    },
+    {
+      "scope_id": "tcs_fcb985e7e6b3a81b",
+      "edition_id": "ed_02a1ae4afa3be288718e",
+      "standard_subject_slug": "english",
+      "grade_band": "H3",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-D2-TP-006"
+    },
+    {
+      "scope_id": "tcs_fcb985e7e6b3a81b",
+      "edition_id": "ed_02a1ae4afa3be288718e",
+      "standard_subject_slug": "english",
+      "grade_band": "H3",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-D2-TP-007"
+    },
+    {
       "scope_id": "tcs_58c66aa4067b40f9",
       "edition_id": "ed_032926ad81d86eb77eb2",
       "standard_subject_slug": "pe",
@@ -146766,6 +147707,490 @@
       "review_status": "machine_checked",
       "algorithm_version": "full-alignment-scope-preserve-v2",
       "standard_code": "EN-H4G7-TP-010"
+    },
+    {
+      "scope_id": "tcs_590ef4e23d4729bc",
+      "edition_id": "ed_339d3168060589726092",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G9",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G9-CA-001"
+    },
+    {
+      "scope_id": "tcs_590ef4e23d4729bc",
+      "edition_id": "ed_339d3168060589726092",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G9",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G9-CA-002"
+    },
+    {
+      "scope_id": "tcs_590ef4e23d4729bc",
+      "edition_id": "ed_339d3168060589726092",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G9",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G9-CA-003"
+    },
+    {
+      "scope_id": "tcs_590ef4e23d4729bc",
+      "edition_id": "ed_339d3168060589726092",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G9",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G9-CA-004"
+    },
+    {
+      "scope_id": "tcs_590ef4e23d4729bc",
+      "edition_id": "ed_339d3168060589726092",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G9",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G9-CA-005"
+    },
+    {
+      "scope_id": "tcs_590ef4e23d4729bc",
+      "edition_id": "ed_339d3168060589726092",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G9",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G9-CA-006"
+    },
+    {
+      "scope_id": "tcs_590ef4e23d4729bc",
+      "edition_id": "ed_339d3168060589726092",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G9",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G9-CA-007"
+    },
+    {
+      "scope_id": "tcs_590ef4e23d4729bc",
+      "edition_id": "ed_339d3168060589726092",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G9",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G9-CA-009"
+    },
+    {
+      "scope_id": "tcs_590ef4e23d4729bc",
+      "edition_id": "ed_339d3168060589726092",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G9",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G9-CA-015"
+    },
+    {
+      "scope_id": "tcs_590ef4e23d4729bc",
+      "edition_id": "ed_339d3168060589726092",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G9",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G9-CA-021"
+    },
+    {
+      "scope_id": "tcs_590ef4e23d4729bc",
+      "edition_id": "ed_339d3168060589726092",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G9",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G9-LA-001"
+    },
+    {
+      "scope_id": "tcs_590ef4e23d4729bc",
+      "edition_id": "ed_339d3168060589726092",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G9",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G9-LA-002"
+    },
+    {
+      "scope_id": "tcs_590ef4e23d4729bc",
+      "edition_id": "ed_339d3168060589726092",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G9",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G9-LA-003"
+    },
+    {
+      "scope_id": "tcs_590ef4e23d4729bc",
+      "edition_id": "ed_339d3168060589726092",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G9",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G9-LA-004"
+    },
+    {
+      "scope_id": "tcs_590ef4e23d4729bc",
+      "edition_id": "ed_339d3168060589726092",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G9",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G9-LA-005"
+    },
+    {
+      "scope_id": "tcs_590ef4e23d4729bc",
+      "edition_id": "ed_339d3168060589726092",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G9",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G9-LA-006"
+    },
+    {
+      "scope_id": "tcs_590ef4e23d4729bc",
+      "edition_id": "ed_339d3168060589726092",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G9",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G9-LA-007"
+    },
+    {
+      "scope_id": "tcs_590ef4e23d4729bc",
+      "edition_id": "ed_339d3168060589726092",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G9",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G9-LA-008"
+    },
+    {
+      "scope_id": "tcs_590ef4e23d4729bc",
+      "edition_id": "ed_339d3168060589726092",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G9",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G9-LA-009"
+    },
+    {
+      "scope_id": "tcs_590ef4e23d4729bc",
+      "edition_id": "ed_339d3168060589726092",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G9",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G9-LA-010"
+    },
+    {
+      "scope_id": "tcs_590ef4e23d4729bc",
+      "edition_id": "ed_339d3168060589726092",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G9",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G9-LA-011"
+    },
+    {
+      "scope_id": "tcs_590ef4e23d4729bc",
+      "edition_id": "ed_339d3168060589726092",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G9",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G9-LA-012"
+    },
+    {
+      "scope_id": "tcs_590ef4e23d4729bc",
+      "edition_id": "ed_339d3168060589726092",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G9",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G9-LA-013"
+    },
+    {
+      "scope_id": "tcs_590ef4e23d4729bc",
+      "edition_id": "ed_339d3168060589726092",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G9",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G9-LA-014"
+    },
+    {
+      "scope_id": "tcs_590ef4e23d4729bc",
+      "edition_id": "ed_339d3168060589726092",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G9",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G9-LA-015"
+    },
+    {
+      "scope_id": "tcs_590ef4e23d4729bc",
+      "edition_id": "ed_339d3168060589726092",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G9",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G9-LA-018"
+    },
+    {
+      "scope_id": "tcs_590ef4e23d4729bc",
+      "edition_id": "ed_339d3168060589726092",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G9",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G9-LA-021"
+    },
+    {
+      "scope_id": "tcs_590ef4e23d4729bc",
+      "edition_id": "ed_339d3168060589726092",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G9",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G9-LA-024"
+    },
+    {
+      "scope_id": "tcs_590ef4e23d4729bc",
+      "edition_id": "ed_339d3168060589726092",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G9",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G9-LA-027"
+    },
+    {
+      "scope_id": "tcs_590ef4e23d4729bc",
+      "edition_id": "ed_339d3168060589726092",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G9",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G9-SA-001"
+    },
+    {
+      "scope_id": "tcs_590ef4e23d4729bc",
+      "edition_id": "ed_339d3168060589726092",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G9",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G9-SA-002"
+    },
+    {
+      "scope_id": "tcs_590ef4e23d4729bc",
+      "edition_id": "ed_339d3168060589726092",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G9",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G9-SA-003"
+    },
+    {
+      "scope_id": "tcs_590ef4e23d4729bc",
+      "edition_id": "ed_339d3168060589726092",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G9",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G9-SA-004"
+    },
+    {
+      "scope_id": "tcs_590ef4e23d4729bc",
+      "edition_id": "ed_339d3168060589726092",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G9",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G9-SA-006"
+    },
+    {
+      "scope_id": "tcs_590ef4e23d4729bc",
+      "edition_id": "ed_339d3168060589726092",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G9",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G9-SA-009"
+    },
+    {
+      "scope_id": "tcs_590ef4e23d4729bc",
+      "edition_id": "ed_339d3168060589726092",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G9",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G9-SA-012"
+    },
+    {
+      "scope_id": "tcs_590ef4e23d4729bc",
+      "edition_id": "ed_339d3168060589726092",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G9",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G9-TP-001"
+    },
+    {
+      "scope_id": "tcs_590ef4e23d4729bc",
+      "edition_id": "ed_339d3168060589726092",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G9",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G9-TP-002"
+    },
+    {
+      "scope_id": "tcs_590ef4e23d4729bc",
+      "edition_id": "ed_339d3168060589726092",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G9",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G9-TP-003"
+    },
+    {
+      "scope_id": "tcs_590ef4e23d4729bc",
+      "edition_id": "ed_339d3168060589726092",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G9",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G9-TP-004"
+    },
+    {
+      "scope_id": "tcs_590ef4e23d4729bc",
+      "edition_id": "ed_339d3168060589726092",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G9",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G9-TP-006"
+    },
+    {
+      "scope_id": "tcs_590ef4e23d4729bc",
+      "edition_id": "ed_339d3168060589726092",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G9",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G9-TP-009"
+    },
+    {
+      "scope_id": "tcs_590ef4e23d4729bc",
+      "edition_id": "ed_339d3168060589726092",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G9",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G9-TP-011"
+    },
+    {
+      "scope_id": "tcs_590ef4e23d4729bc",
+      "edition_id": "ed_339d3168060589726092",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G9",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G9-TP-012"
     },
     {
       "scope_id": "tcs_736b449efa98c23e",
@@ -182056,6 +183481,490 @@
       "standard_code": "MA-H4G8-ST-014"
     },
     {
+      "scope_id": "tcs_f2b656b65152f629",
+      "edition_id": "ed_a93a5178587dcb63a569",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G8",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G8-CA-001"
+    },
+    {
+      "scope_id": "tcs_f2b656b65152f629",
+      "edition_id": "ed_a93a5178587dcb63a569",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G8",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G8-CA-002"
+    },
+    {
+      "scope_id": "tcs_f2b656b65152f629",
+      "edition_id": "ed_a93a5178587dcb63a569",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G8",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G8-CA-003"
+    },
+    {
+      "scope_id": "tcs_f2b656b65152f629",
+      "edition_id": "ed_a93a5178587dcb63a569",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G8",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G8-CA-004"
+    },
+    {
+      "scope_id": "tcs_f2b656b65152f629",
+      "edition_id": "ed_a93a5178587dcb63a569",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G8",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G8-CA-005"
+    },
+    {
+      "scope_id": "tcs_f2b656b65152f629",
+      "edition_id": "ed_a93a5178587dcb63a569",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G8",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G8-CA-006"
+    },
+    {
+      "scope_id": "tcs_f2b656b65152f629",
+      "edition_id": "ed_a93a5178587dcb63a569",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G8",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G8-CA-007"
+    },
+    {
+      "scope_id": "tcs_f2b656b65152f629",
+      "edition_id": "ed_a93a5178587dcb63a569",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G8",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G8-CA-008"
+    },
+    {
+      "scope_id": "tcs_f2b656b65152f629",
+      "edition_id": "ed_a93a5178587dcb63a569",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G8",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G8-CA-014"
+    },
+    {
+      "scope_id": "tcs_f2b656b65152f629",
+      "edition_id": "ed_a93a5178587dcb63a569",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G8",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G8-CA-020"
+    },
+    {
+      "scope_id": "tcs_f2b656b65152f629",
+      "edition_id": "ed_a93a5178587dcb63a569",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G8",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G8-LA-001"
+    },
+    {
+      "scope_id": "tcs_f2b656b65152f629",
+      "edition_id": "ed_a93a5178587dcb63a569",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G8",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G8-LA-002"
+    },
+    {
+      "scope_id": "tcs_f2b656b65152f629",
+      "edition_id": "ed_a93a5178587dcb63a569",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G8",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G8-LA-003"
+    },
+    {
+      "scope_id": "tcs_f2b656b65152f629",
+      "edition_id": "ed_a93a5178587dcb63a569",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G8",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G8-LA-004"
+    },
+    {
+      "scope_id": "tcs_f2b656b65152f629",
+      "edition_id": "ed_a93a5178587dcb63a569",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G8",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G8-LA-005"
+    },
+    {
+      "scope_id": "tcs_f2b656b65152f629",
+      "edition_id": "ed_a93a5178587dcb63a569",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G8",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G8-LA-006"
+    },
+    {
+      "scope_id": "tcs_f2b656b65152f629",
+      "edition_id": "ed_a93a5178587dcb63a569",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G8",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G8-LA-007"
+    },
+    {
+      "scope_id": "tcs_f2b656b65152f629",
+      "edition_id": "ed_a93a5178587dcb63a569",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G8",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G8-LA-008"
+    },
+    {
+      "scope_id": "tcs_f2b656b65152f629",
+      "edition_id": "ed_a93a5178587dcb63a569",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G8",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G8-LA-009"
+    },
+    {
+      "scope_id": "tcs_f2b656b65152f629",
+      "edition_id": "ed_a93a5178587dcb63a569",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G8",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G8-LA-010"
+    },
+    {
+      "scope_id": "tcs_f2b656b65152f629",
+      "edition_id": "ed_a93a5178587dcb63a569",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G8",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G8-LA-011"
+    },
+    {
+      "scope_id": "tcs_f2b656b65152f629",
+      "edition_id": "ed_a93a5178587dcb63a569",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G8",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G8-LA-012"
+    },
+    {
+      "scope_id": "tcs_f2b656b65152f629",
+      "edition_id": "ed_a93a5178587dcb63a569",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G8",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G8-LA-013"
+    },
+    {
+      "scope_id": "tcs_f2b656b65152f629",
+      "edition_id": "ed_a93a5178587dcb63a569",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G8",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G8-LA-014"
+    },
+    {
+      "scope_id": "tcs_f2b656b65152f629",
+      "edition_id": "ed_a93a5178587dcb63a569",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G8",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G8-LA-015"
+    },
+    {
+      "scope_id": "tcs_f2b656b65152f629",
+      "edition_id": "ed_a93a5178587dcb63a569",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G8",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G8-LA-017"
+    },
+    {
+      "scope_id": "tcs_f2b656b65152f629",
+      "edition_id": "ed_a93a5178587dcb63a569",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G8",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G8-LA-020"
+    },
+    {
+      "scope_id": "tcs_f2b656b65152f629",
+      "edition_id": "ed_a93a5178587dcb63a569",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G8",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G8-LA-023"
+    },
+    {
+      "scope_id": "tcs_f2b656b65152f629",
+      "edition_id": "ed_a93a5178587dcb63a569",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G8",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G8-LA-026"
+    },
+    {
+      "scope_id": "tcs_f2b656b65152f629",
+      "edition_id": "ed_a93a5178587dcb63a569",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G8",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G8-SA-001"
+    },
+    {
+      "scope_id": "tcs_f2b656b65152f629",
+      "edition_id": "ed_a93a5178587dcb63a569",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G8",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G8-SA-002"
+    },
+    {
+      "scope_id": "tcs_f2b656b65152f629",
+      "edition_id": "ed_a93a5178587dcb63a569",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G8",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G8-SA-003"
+    },
+    {
+      "scope_id": "tcs_f2b656b65152f629",
+      "edition_id": "ed_a93a5178587dcb63a569",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G8",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G8-SA-004"
+    },
+    {
+      "scope_id": "tcs_f2b656b65152f629",
+      "edition_id": "ed_a93a5178587dcb63a569",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G8",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G8-SA-005"
+    },
+    {
+      "scope_id": "tcs_f2b656b65152f629",
+      "edition_id": "ed_a93a5178587dcb63a569",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G8",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G8-SA-008"
+    },
+    {
+      "scope_id": "tcs_f2b656b65152f629",
+      "edition_id": "ed_a93a5178587dcb63a569",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G8",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G8-SA-011"
+    },
+    {
+      "scope_id": "tcs_f2b656b65152f629",
+      "edition_id": "ed_a93a5178587dcb63a569",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G8",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G8-TP-001"
+    },
+    {
+      "scope_id": "tcs_f2b656b65152f629",
+      "edition_id": "ed_a93a5178587dcb63a569",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G8",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G8-TP-002"
+    },
+    {
+      "scope_id": "tcs_f2b656b65152f629",
+      "edition_id": "ed_a93a5178587dcb63a569",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G8",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G8-TP-003"
+    },
+    {
+      "scope_id": "tcs_f2b656b65152f629",
+      "edition_id": "ed_a93a5178587dcb63a569",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G8",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G8-TP-005"
+    },
+    {
+      "scope_id": "tcs_f2b656b65152f629",
+      "edition_id": "ed_a93a5178587dcb63a569",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G8",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G8-TP-006"
+    },
+    {
+      "scope_id": "tcs_f2b656b65152f629",
+      "edition_id": "ed_a93a5178587dcb63a569",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G8",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G8-TP-007"
+    },
+    {
+      "scope_id": "tcs_f2b656b65152f629",
+      "edition_id": "ed_a93a5178587dcb63a569",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G8",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G8-TP-008"
+    },
+    {
+      "scope_id": "tcs_f2b656b65152f629",
+      "edition_id": "ed_a93a5178587dcb63a569",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G8",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G8-TP-011"
+    },
+    {
       "scope_id": "tcs_bcb8fe719c29a97c",
       "edition_id": "ed_abbd5db6223f36ab3c5c",
       "standard_subject_slug": "morality_law",
@@ -197388,6 +199297,490 @@
       "review_status": "machine_checked",
       "algorithm_version": "full-alignment-scope-preserve-v2",
       "standard_code": "EN-H4G9-TP-012"
+    },
+    {
+      "scope_id": "tcs_1ac7a64087f3326f",
+      "edition_id": "ed_e6f7135f2b385ccbb47a",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G8",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G8-CA-001"
+    },
+    {
+      "scope_id": "tcs_1ac7a64087f3326f",
+      "edition_id": "ed_e6f7135f2b385ccbb47a",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G8",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G8-CA-002"
+    },
+    {
+      "scope_id": "tcs_1ac7a64087f3326f",
+      "edition_id": "ed_e6f7135f2b385ccbb47a",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G8",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G8-CA-003"
+    },
+    {
+      "scope_id": "tcs_1ac7a64087f3326f",
+      "edition_id": "ed_e6f7135f2b385ccbb47a",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G8",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G8-CA-004"
+    },
+    {
+      "scope_id": "tcs_1ac7a64087f3326f",
+      "edition_id": "ed_e6f7135f2b385ccbb47a",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G8",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G8-CA-005"
+    },
+    {
+      "scope_id": "tcs_1ac7a64087f3326f",
+      "edition_id": "ed_e6f7135f2b385ccbb47a",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G8",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G8-CA-006"
+    },
+    {
+      "scope_id": "tcs_1ac7a64087f3326f",
+      "edition_id": "ed_e6f7135f2b385ccbb47a",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G8",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G8-CA-007"
+    },
+    {
+      "scope_id": "tcs_1ac7a64087f3326f",
+      "edition_id": "ed_e6f7135f2b385ccbb47a",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G8",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G8-CA-008"
+    },
+    {
+      "scope_id": "tcs_1ac7a64087f3326f",
+      "edition_id": "ed_e6f7135f2b385ccbb47a",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G8",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G8-CA-014"
+    },
+    {
+      "scope_id": "tcs_1ac7a64087f3326f",
+      "edition_id": "ed_e6f7135f2b385ccbb47a",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G8",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G8-CA-020"
+    },
+    {
+      "scope_id": "tcs_1ac7a64087f3326f",
+      "edition_id": "ed_e6f7135f2b385ccbb47a",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G8",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G8-LA-001"
+    },
+    {
+      "scope_id": "tcs_1ac7a64087f3326f",
+      "edition_id": "ed_e6f7135f2b385ccbb47a",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G8",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G8-LA-002"
+    },
+    {
+      "scope_id": "tcs_1ac7a64087f3326f",
+      "edition_id": "ed_e6f7135f2b385ccbb47a",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G8",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G8-LA-003"
+    },
+    {
+      "scope_id": "tcs_1ac7a64087f3326f",
+      "edition_id": "ed_e6f7135f2b385ccbb47a",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G8",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G8-LA-004"
+    },
+    {
+      "scope_id": "tcs_1ac7a64087f3326f",
+      "edition_id": "ed_e6f7135f2b385ccbb47a",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G8",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G8-LA-005"
+    },
+    {
+      "scope_id": "tcs_1ac7a64087f3326f",
+      "edition_id": "ed_e6f7135f2b385ccbb47a",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G8",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G8-LA-006"
+    },
+    {
+      "scope_id": "tcs_1ac7a64087f3326f",
+      "edition_id": "ed_e6f7135f2b385ccbb47a",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G8",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G8-LA-007"
+    },
+    {
+      "scope_id": "tcs_1ac7a64087f3326f",
+      "edition_id": "ed_e6f7135f2b385ccbb47a",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G8",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G8-LA-008"
+    },
+    {
+      "scope_id": "tcs_1ac7a64087f3326f",
+      "edition_id": "ed_e6f7135f2b385ccbb47a",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G8",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G8-LA-009"
+    },
+    {
+      "scope_id": "tcs_1ac7a64087f3326f",
+      "edition_id": "ed_e6f7135f2b385ccbb47a",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G8",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G8-LA-010"
+    },
+    {
+      "scope_id": "tcs_1ac7a64087f3326f",
+      "edition_id": "ed_e6f7135f2b385ccbb47a",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G8",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G8-LA-011"
+    },
+    {
+      "scope_id": "tcs_1ac7a64087f3326f",
+      "edition_id": "ed_e6f7135f2b385ccbb47a",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G8",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G8-LA-012"
+    },
+    {
+      "scope_id": "tcs_1ac7a64087f3326f",
+      "edition_id": "ed_e6f7135f2b385ccbb47a",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G8",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G8-LA-013"
+    },
+    {
+      "scope_id": "tcs_1ac7a64087f3326f",
+      "edition_id": "ed_e6f7135f2b385ccbb47a",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G8",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G8-LA-014"
+    },
+    {
+      "scope_id": "tcs_1ac7a64087f3326f",
+      "edition_id": "ed_e6f7135f2b385ccbb47a",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G8",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G8-LA-015"
+    },
+    {
+      "scope_id": "tcs_1ac7a64087f3326f",
+      "edition_id": "ed_e6f7135f2b385ccbb47a",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G8",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G8-LA-017"
+    },
+    {
+      "scope_id": "tcs_1ac7a64087f3326f",
+      "edition_id": "ed_e6f7135f2b385ccbb47a",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G8",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G8-LA-020"
+    },
+    {
+      "scope_id": "tcs_1ac7a64087f3326f",
+      "edition_id": "ed_e6f7135f2b385ccbb47a",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G8",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G8-LA-023"
+    },
+    {
+      "scope_id": "tcs_1ac7a64087f3326f",
+      "edition_id": "ed_e6f7135f2b385ccbb47a",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G8",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G8-LA-026"
+    },
+    {
+      "scope_id": "tcs_1ac7a64087f3326f",
+      "edition_id": "ed_e6f7135f2b385ccbb47a",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G8",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G8-SA-001"
+    },
+    {
+      "scope_id": "tcs_1ac7a64087f3326f",
+      "edition_id": "ed_e6f7135f2b385ccbb47a",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G8",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G8-SA-002"
+    },
+    {
+      "scope_id": "tcs_1ac7a64087f3326f",
+      "edition_id": "ed_e6f7135f2b385ccbb47a",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G8",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G8-SA-003"
+    },
+    {
+      "scope_id": "tcs_1ac7a64087f3326f",
+      "edition_id": "ed_e6f7135f2b385ccbb47a",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G8",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G8-SA-004"
+    },
+    {
+      "scope_id": "tcs_1ac7a64087f3326f",
+      "edition_id": "ed_e6f7135f2b385ccbb47a",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G8",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G8-SA-005"
+    },
+    {
+      "scope_id": "tcs_1ac7a64087f3326f",
+      "edition_id": "ed_e6f7135f2b385ccbb47a",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G8",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G8-SA-008"
+    },
+    {
+      "scope_id": "tcs_1ac7a64087f3326f",
+      "edition_id": "ed_e6f7135f2b385ccbb47a",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G8",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G8-SA-011"
+    },
+    {
+      "scope_id": "tcs_1ac7a64087f3326f",
+      "edition_id": "ed_e6f7135f2b385ccbb47a",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G8",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G8-TP-001"
+    },
+    {
+      "scope_id": "tcs_1ac7a64087f3326f",
+      "edition_id": "ed_e6f7135f2b385ccbb47a",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G8",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G8-TP-002"
+    },
+    {
+      "scope_id": "tcs_1ac7a64087f3326f",
+      "edition_id": "ed_e6f7135f2b385ccbb47a",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G8",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G8-TP-003"
+    },
+    {
+      "scope_id": "tcs_1ac7a64087f3326f",
+      "edition_id": "ed_e6f7135f2b385ccbb47a",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G8",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G8-TP-005"
+    },
+    {
+      "scope_id": "tcs_1ac7a64087f3326f",
+      "edition_id": "ed_e6f7135f2b385ccbb47a",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G8",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G8-TP-006"
+    },
+    {
+      "scope_id": "tcs_1ac7a64087f3326f",
+      "edition_id": "ed_e6f7135f2b385ccbb47a",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G8",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G8-TP-007"
+    },
+    {
+      "scope_id": "tcs_1ac7a64087f3326f",
+      "edition_id": "ed_e6f7135f2b385ccbb47a",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G8",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G8-TP-008"
+    },
+    {
+      "scope_id": "tcs_1ac7a64087f3326f",
+      "edition_id": "ed_e6f7135f2b385ccbb47a",
+      "standard_subject_slug": "english",
+      "grade_band": "H4G8",
+      "evidence_role": "direct_textbook",
+      "relation_type": "curriculum_scope",
+      "review_status": "machine_checked",
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "standard_code": "EN-H4G8-TP-011"
     },
     {
       "scope_id": "tcs_056cb0cc3385568d",

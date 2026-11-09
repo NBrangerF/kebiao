@@ -2,9 +2,9 @@
   "valid": true,
   "index": "data/textbooks/derived/textbook_standard_alignment_index.json",
   "summary": {
-    "textbooks": 170,
-    "textbook_dispositions": 170,
-    "unit_dispositions": 4706,
+    "textbooks": 174,
+    "textbook_dispositions": 174,
+    "unit_dispositions": 4740,
     "standards": 2025,
     "standard_dispositions": 2025,
     "matches": 993,

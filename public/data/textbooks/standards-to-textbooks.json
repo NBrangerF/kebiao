@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-08T05:34:29.502Z",
+  "generated_at": "2026-11-09T05:30:55.002Z",
   "items": {
     "AR-D1-AA-008": [
       {
@@ -147288,6 +147288,22 @@
     ],
     "EN-D2-CA-001": [
       {
+        "alignment_id": "tcs_fcb985e7e6b3a81b:EN-D2-CA-001",
+        "confidence": 0.78,
+        "edition_id": "ed_02a1ae4afa3be288718e",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H3 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_fcb985e7e6b3a81b",
+        "textbook_title": "英语5年级下册",
+        "unit_id": null,
+        "unit_title": "H3 教材范围"
+      },
+      {
         "alignment_id": "tcs_c7482c5a46d0afd5:EN-D2-CA-001",
         "confidence": 0.78,
         "edition_id": "ed_0a82af2ca44e60586d90",
@@ -147385,6 +147401,22 @@
       }
     ],
     "EN-D2-CA-002": [
+      {
+        "alignment_id": "tcs_fcb985e7e6b3a81b:EN-D2-CA-002",
+        "confidence": 0.78,
+        "edition_id": "ed_02a1ae4afa3be288718e",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H3 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_fcb985e7e6b3a81b",
+        "textbook_title": "英语5年级下册",
+        "unit_id": null,
+        "unit_title": "H3 教材范围"
+      },
       {
         "alignment_id": "tcs_c7482c5a46d0afd5:EN-D2-CA-002",
         "confidence": 0.78,
@@ -147484,6 +147516,22 @@
     ],
     "EN-D2-CA-003": [
       {
+        "alignment_id": "tcs_fcb985e7e6b3a81b:EN-D2-CA-003",
+        "confidence": 0.78,
+        "edition_id": "ed_02a1ae4afa3be288718e",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H3 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_fcb985e7e6b3a81b",
+        "textbook_title": "英语5年级下册",
+        "unit_id": null,
+        "unit_title": "H3 教材范围"
+      },
+      {
         "alignment_id": "tcs_c7482c5a46d0afd5:EN-D2-CA-003",
         "confidence": 0.78,
         "edition_id": "ed_0a82af2ca44e60586d90",
@@ -147581,6 +147629,22 @@
       }
     ],
     "EN-D2-CA-004": [
+      {
+        "alignment_id": "tcs_fcb985e7e6b3a81b:EN-D2-CA-004",
+        "confidence": 0.78,
+        "edition_id": "ed_02a1ae4afa3be288718e",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H3 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_fcb985e7e6b3a81b",
+        "textbook_title": "英语5年级下册",
+        "unit_id": null,
+        "unit_title": "H3 教材范围"
+      },
       {
         "alignment_id": "tcs_c7482c5a46d0afd5:EN-D2-CA-004",
         "confidence": 0.78,
@@ -147680,6 +147744,22 @@
     ],
     "EN-D2-CA-005": [
       {
+        "alignment_id": "tcs_fcb985e7e6b3a81b:EN-D2-CA-005",
+        "confidence": 0.78,
+        "edition_id": "ed_02a1ae4afa3be288718e",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H3 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_fcb985e7e6b3a81b",
+        "textbook_title": "英语5年级下册",
+        "unit_id": null,
+        "unit_title": "H3 教材范围"
+      },
+      {
         "alignment_id": "tcs_c7482c5a46d0afd5:EN-D2-CA-005",
         "confidence": 0.78,
         "edition_id": "ed_0a82af2ca44e60586d90",
@@ -147777,6 +147857,22 @@
       }
     ],
     "EN-D2-CA-006": [
+      {
+        "alignment_id": "tcs_fcb985e7e6b3a81b:EN-D2-CA-006",
+        "confidence": 0.78,
+        "edition_id": "ed_02a1ae4afa3be288718e",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H3 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_fcb985e7e6b3a81b",
+        "textbook_title": "英语5年级下册",
+        "unit_id": null,
+        "unit_title": "H3 教材范围"
+      },
       {
         "alignment_id": "tcs_c7482c5a46d0afd5:EN-D2-CA-006",
         "confidence": 0.78,
@@ -147876,6 +147972,22 @@
     ],
     "EN-D2-CA-007": [
       {
+        "alignment_id": "tcs_fcb985e7e6b3a81b:EN-D2-CA-007",
+        "confidence": 0.78,
+        "edition_id": "ed_02a1ae4afa3be288718e",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H3 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_fcb985e7e6b3a81b",
+        "textbook_title": "英语5年级下册",
+        "unit_id": null,
+        "unit_title": "H3 教材范围"
+      },
+      {
         "alignment_id": "tcs_c7482c5a46d0afd5:EN-D2-CA-007",
         "confidence": 0.78,
         "edition_id": "ed_0a82af2ca44e60586d90",
@@ -147973,6 +148085,22 @@
       }
     ],
     "EN-D2-CA-008": [
+      {
+        "alignment_id": "tcs_fcb985e7e6b3a81b:EN-D2-CA-008",
+        "confidence": 0.78,
+        "edition_id": "ed_02a1ae4afa3be288718e",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H3 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_fcb985e7e6b3a81b",
+        "textbook_title": "英语5年级下册",
+        "unit_id": null,
+        "unit_title": "H3 教材范围"
+      },
       {
         "alignment_id": "tcs_c7482c5a46d0afd5:EN-D2-CA-008",
         "confidence": 0.78,
@@ -148072,6 +148200,22 @@
     ],
     "EN-D2-CA-009": [
       {
+        "alignment_id": "tcs_fcb985e7e6b3a81b:EN-D2-CA-009",
+        "confidence": 0.78,
+        "edition_id": "ed_02a1ae4afa3be288718e",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H3 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_fcb985e7e6b3a81b",
+        "textbook_title": "英语5年级下册",
+        "unit_id": null,
+        "unit_title": "H3 教材范围"
+      },
+      {
         "alignment_id": "tcs_c7482c5a46d0afd5:EN-D2-CA-009",
         "confidence": 0.78,
         "edition_id": "ed_0a82af2ca44e60586d90",
@@ -148169,6 +148313,22 @@
       }
     ],
     "EN-D2-CA-010": [
+      {
+        "alignment_id": "tcs_fcb985e7e6b3a81b:EN-D2-CA-010",
+        "confidence": 0.78,
+        "edition_id": "ed_02a1ae4afa3be288718e",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H3 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_fcb985e7e6b3a81b",
+        "textbook_title": "英语5年级下册",
+        "unit_id": null,
+        "unit_title": "H3 教材范围"
+      },
       {
         "alignment_id": "tcs_c7482c5a46d0afd5:EN-D2-CA-010",
         "confidence": 0.78,
@@ -148268,6 +148428,22 @@
     ],
     "EN-D2-CA-011": [
       {
+        "alignment_id": "tcs_fcb985e7e6b3a81b:EN-D2-CA-011",
+        "confidence": 0.78,
+        "edition_id": "ed_02a1ae4afa3be288718e",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H3 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_fcb985e7e6b3a81b",
+        "textbook_title": "英语5年级下册",
+        "unit_id": null,
+        "unit_title": "H3 教材范围"
+      },
+      {
         "alignment_id": "tcs_c7482c5a46d0afd5:EN-D2-CA-011",
         "confidence": 0.78,
         "edition_id": "ed_0a82af2ca44e60586d90",
@@ -148365,6 +148541,22 @@
       }
     ],
     "EN-D2-CA-012": [
+      {
+        "alignment_id": "tcs_fcb985e7e6b3a81b:EN-D2-CA-012",
+        "confidence": 0.78,
+        "edition_id": "ed_02a1ae4afa3be288718e",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H3 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_fcb985e7e6b3a81b",
+        "textbook_title": "英语5年级下册",
+        "unit_id": null,
+        "unit_title": "H3 教材范围"
+      },
       {
         "alignment_id": "tcs_c7482c5a46d0afd5:EN-D2-CA-012",
         "confidence": 0.78,
@@ -148464,6 +148656,22 @@
     ],
     "EN-D2-LA-001": [
       {
+        "alignment_id": "tcs_fcb985e7e6b3a81b:EN-D2-LA-001",
+        "confidence": 0.78,
+        "edition_id": "ed_02a1ae4afa3be288718e",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H3 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_fcb985e7e6b3a81b",
+        "textbook_title": "英语5年级下册",
+        "unit_id": null,
+        "unit_title": "H3 教材范围"
+      },
+      {
         "alignment_id": "tcs_c7482c5a46d0afd5:EN-D2-LA-001",
         "confidence": 0.78,
         "edition_id": "ed_0a82af2ca44e60586d90",
@@ -148561,6 +148769,22 @@
       }
     ],
     "EN-D2-LA-002": [
+      {
+        "alignment_id": "tcs_fcb985e7e6b3a81b:EN-D2-LA-002",
+        "confidence": 0.78,
+        "edition_id": "ed_02a1ae4afa3be288718e",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H3 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_fcb985e7e6b3a81b",
+        "textbook_title": "英语5年级下册",
+        "unit_id": null,
+        "unit_title": "H3 教材范围"
+      },
       {
         "alignment_id": "tcs_c7482c5a46d0afd5:EN-D2-LA-002",
         "confidence": 0.78,
@@ -148660,6 +148884,22 @@
     ],
     "EN-D2-LA-003": [
       {
+        "alignment_id": "tcs_fcb985e7e6b3a81b:EN-D2-LA-003",
+        "confidence": 0.78,
+        "edition_id": "ed_02a1ae4afa3be288718e",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H3 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_fcb985e7e6b3a81b",
+        "textbook_title": "英语5年级下册",
+        "unit_id": null,
+        "unit_title": "H3 教材范围"
+      },
+      {
         "alignment_id": "tcs_c7482c5a46d0afd5:EN-D2-LA-003",
         "confidence": 0.78,
         "edition_id": "ed_0a82af2ca44e60586d90",
@@ -148757,6 +148997,22 @@
       }
     ],
     "EN-D2-LA-004": [
+      {
+        "alignment_id": "tcs_fcb985e7e6b3a81b:EN-D2-LA-004",
+        "confidence": 0.78,
+        "edition_id": "ed_02a1ae4afa3be288718e",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H3 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_fcb985e7e6b3a81b",
+        "textbook_title": "英语5年级下册",
+        "unit_id": null,
+        "unit_title": "H3 教材范围"
+      },
       {
         "alignment_id": "tcs_c7482c5a46d0afd5:EN-D2-LA-004",
         "confidence": 0.78,
@@ -148856,6 +149112,22 @@
     ],
     "EN-D2-LA-005": [
       {
+        "alignment_id": "tcs_fcb985e7e6b3a81b:EN-D2-LA-005",
+        "confidence": 0.78,
+        "edition_id": "ed_02a1ae4afa3be288718e",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H3 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_fcb985e7e6b3a81b",
+        "textbook_title": "英语5年级下册",
+        "unit_id": null,
+        "unit_title": "H3 教材范围"
+      },
+      {
         "alignment_id": "tcs_c7482c5a46d0afd5:EN-D2-LA-005",
         "confidence": 0.78,
         "edition_id": "ed_0a82af2ca44e60586d90",
@@ -148953,6 +149225,22 @@
       }
     ],
     "EN-D2-LA-006": [
+      {
+        "alignment_id": "tcs_fcb985e7e6b3a81b:EN-D2-LA-006",
+        "confidence": 0.78,
+        "edition_id": "ed_02a1ae4afa3be288718e",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H3 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_fcb985e7e6b3a81b",
+        "textbook_title": "英语5年级下册",
+        "unit_id": null,
+        "unit_title": "H3 教材范围"
+      },
       {
         "alignment_id": "tcs_c7482c5a46d0afd5:EN-D2-LA-006",
         "confidence": 0.78,
@@ -149052,6 +149340,22 @@
     ],
     "EN-D2-LA-007": [
       {
+        "alignment_id": "tcs_fcb985e7e6b3a81b:EN-D2-LA-007",
+        "confidence": 0.78,
+        "edition_id": "ed_02a1ae4afa3be288718e",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H3 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_fcb985e7e6b3a81b",
+        "textbook_title": "英语5年级下册",
+        "unit_id": null,
+        "unit_title": "H3 教材范围"
+      },
+      {
         "alignment_id": "tcs_c7482c5a46d0afd5:EN-D2-LA-007",
         "confidence": 0.78,
         "edition_id": "ed_0a82af2ca44e60586d90",
@@ -149149,6 +149453,22 @@
       }
     ],
     "EN-D2-LA-008": [
+      {
+        "alignment_id": "tcs_fcb985e7e6b3a81b:EN-D2-LA-008",
+        "confidence": 0.78,
+        "edition_id": "ed_02a1ae4afa3be288718e",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H3 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_fcb985e7e6b3a81b",
+        "textbook_title": "英语5年级下册",
+        "unit_id": null,
+        "unit_title": "H3 教材范围"
+      },
       {
         "alignment_id": "tcs_c7482c5a46d0afd5:EN-D2-LA-008",
         "confidence": 0.78,
@@ -149248,6 +149568,22 @@
     ],
     "EN-D2-LA-009": [
       {
+        "alignment_id": "tcs_fcb985e7e6b3a81b:EN-D2-LA-009",
+        "confidence": 0.78,
+        "edition_id": "ed_02a1ae4afa3be288718e",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H3 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_fcb985e7e6b3a81b",
+        "textbook_title": "英语5年级下册",
+        "unit_id": null,
+        "unit_title": "H3 教材范围"
+      },
+      {
         "alignment_id": "tcs_c7482c5a46d0afd5:EN-D2-LA-009",
         "confidence": 0.78,
         "edition_id": "ed_0a82af2ca44e60586d90",
@@ -149345,6 +149681,22 @@
       }
     ],
     "EN-D2-LA-010": [
+      {
+        "alignment_id": "tcs_fcb985e7e6b3a81b:EN-D2-LA-010",
+        "confidence": 0.78,
+        "edition_id": "ed_02a1ae4afa3be288718e",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H3 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_fcb985e7e6b3a81b",
+        "textbook_title": "英语5年级下册",
+        "unit_id": null,
+        "unit_title": "H3 教材范围"
+      },
       {
         "alignment_id": "tcs_c7482c5a46d0afd5:EN-D2-LA-010",
         "confidence": 0.78,
@@ -149444,6 +149796,22 @@
     ],
     "EN-D2-LA-011": [
       {
+        "alignment_id": "tcs_fcb985e7e6b3a81b:EN-D2-LA-011",
+        "confidence": 0.78,
+        "edition_id": "ed_02a1ae4afa3be288718e",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H3 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_fcb985e7e6b3a81b",
+        "textbook_title": "英语5年级下册",
+        "unit_id": null,
+        "unit_title": "H3 教材范围"
+      },
+      {
         "alignment_id": "tcs_c7482c5a46d0afd5:EN-D2-LA-011",
         "confidence": 0.78,
         "edition_id": "ed_0a82af2ca44e60586d90",
@@ -149541,6 +149909,22 @@
       }
     ],
     "EN-D2-LA-012": [
+      {
+        "alignment_id": "tcs_fcb985e7e6b3a81b:EN-D2-LA-012",
+        "confidence": 0.78,
+        "edition_id": "ed_02a1ae4afa3be288718e",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H3 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_fcb985e7e6b3a81b",
+        "textbook_title": "英语5年级下册",
+        "unit_id": null,
+        "unit_title": "H3 教材范围"
+      },
       {
         "alignment_id": "tcs_c7482c5a46d0afd5:EN-D2-LA-012",
         "confidence": 0.78,
@@ -149640,6 +150024,22 @@
     ],
     "EN-D2-LA-013": [
       {
+        "alignment_id": "tcs_fcb985e7e6b3a81b:EN-D2-LA-013",
+        "confidence": 0.78,
+        "edition_id": "ed_02a1ae4afa3be288718e",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H3 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_fcb985e7e6b3a81b",
+        "textbook_title": "英语5年级下册",
+        "unit_id": null,
+        "unit_title": "H3 教材范围"
+      },
+      {
         "alignment_id": "tcs_c7482c5a46d0afd5:EN-D2-LA-013",
         "confidence": 0.78,
         "edition_id": "ed_0a82af2ca44e60586d90",
@@ -149737,6 +150137,22 @@
       }
     ],
     "EN-D2-LA-014": [
+      {
+        "alignment_id": "tcs_fcb985e7e6b3a81b:EN-D2-LA-014",
+        "confidence": 0.78,
+        "edition_id": "ed_02a1ae4afa3be288718e",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H3 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_fcb985e7e6b3a81b",
+        "textbook_title": "英语5年级下册",
+        "unit_id": null,
+        "unit_title": "H3 教材范围"
+      },
       {
         "alignment_id": "tcs_c7482c5a46d0afd5:EN-D2-LA-014",
         "confidence": 0.78,
@@ -149836,6 +150252,22 @@
     ],
     "EN-D2-LA-015": [
       {
+        "alignment_id": "tcs_fcb985e7e6b3a81b:EN-D2-LA-015",
+        "confidence": 0.78,
+        "edition_id": "ed_02a1ae4afa3be288718e",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H3 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_fcb985e7e6b3a81b",
+        "textbook_title": "英语5年级下册",
+        "unit_id": null,
+        "unit_title": "H3 教材范围"
+      },
+      {
         "alignment_id": "tcs_c7482c5a46d0afd5:EN-D2-LA-015",
         "confidence": 0.78,
         "edition_id": "ed_0a82af2ca44e60586d90",
@@ -149933,6 +150365,22 @@
       }
     ],
     "EN-D2-LA-016": [
+      {
+        "alignment_id": "tcs_fcb985e7e6b3a81b:EN-D2-LA-016",
+        "confidence": 0.78,
+        "edition_id": "ed_02a1ae4afa3be288718e",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H3 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_fcb985e7e6b3a81b",
+        "textbook_title": "英语5年级下册",
+        "unit_id": null,
+        "unit_title": "H3 教材范围"
+      },
       {
         "alignment_id": "tcs_c7482c5a46d0afd5:EN-D2-LA-016",
         "confidence": 0.78,
@@ -150032,6 +150480,22 @@
     ],
     "EN-D2-LA-017": [
       {
+        "alignment_id": "tcs_fcb985e7e6b3a81b:EN-D2-LA-017",
+        "confidence": 0.78,
+        "edition_id": "ed_02a1ae4afa3be288718e",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H3 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_fcb985e7e6b3a81b",
+        "textbook_title": "英语5年级下册",
+        "unit_id": null,
+        "unit_title": "H3 教材范围"
+      },
+      {
         "alignment_id": "tcs_c7482c5a46d0afd5:EN-D2-LA-017",
         "confidence": 0.78,
         "edition_id": "ed_0a82af2ca44e60586d90",
@@ -150129,6 +150593,22 @@
       }
     ],
     "EN-D2-LA-018": [
+      {
+        "alignment_id": "tcs_fcb985e7e6b3a81b:EN-D2-LA-018",
+        "confidence": 0.78,
+        "edition_id": "ed_02a1ae4afa3be288718e",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H3 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_fcb985e7e6b3a81b",
+        "textbook_title": "英语5年级下册",
+        "unit_id": null,
+        "unit_title": "H3 教材范围"
+      },
       {
         "alignment_id": "tcs_c7482c5a46d0afd5:EN-D2-LA-018",
         "confidence": 0.78,
@@ -150228,6 +150708,22 @@
     ],
     "EN-D2-LA-019": [
       {
+        "alignment_id": "tcs_fcb985e7e6b3a81b:EN-D2-LA-019",
+        "confidence": 0.78,
+        "edition_id": "ed_02a1ae4afa3be288718e",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H3 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_fcb985e7e6b3a81b",
+        "textbook_title": "英语5年级下册",
+        "unit_id": null,
+        "unit_title": "H3 教材范围"
+      },
+      {
         "alignment_id": "tcs_c7482c5a46d0afd5:EN-D2-LA-019",
         "confidence": 0.78,
         "edition_id": "ed_0a82af2ca44e60586d90",
@@ -150325,6 +150821,22 @@
       }
     ],
     "EN-D2-LA-020": [
+      {
+        "alignment_id": "tcs_fcb985e7e6b3a81b:EN-D2-LA-020",
+        "confidence": 0.78,
+        "edition_id": "ed_02a1ae4afa3be288718e",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H3 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_fcb985e7e6b3a81b",
+        "textbook_title": "英语5年级下册",
+        "unit_id": null,
+        "unit_title": "H3 教材范围"
+      },
       {
         "alignment_id": "tcs_c7482c5a46d0afd5:EN-D2-LA-020",
         "confidence": 0.78,
@@ -150424,6 +150936,22 @@
     ],
     "EN-D2-SA-001": [
       {
+        "alignment_id": "tcs_fcb985e7e6b3a81b:EN-D2-SA-001",
+        "confidence": 0.78,
+        "edition_id": "ed_02a1ae4afa3be288718e",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H3 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_fcb985e7e6b3a81b",
+        "textbook_title": "英语5年级下册",
+        "unit_id": null,
+        "unit_title": "H3 教材范围"
+      },
+      {
         "alignment_id": "tcs_c7482c5a46d0afd5:EN-D2-SA-001",
         "confidence": 0.78,
         "edition_id": "ed_0a82af2ca44e60586d90",
@@ -150521,6 +151049,22 @@
       }
     ],
     "EN-D2-SA-002": [
+      {
+        "alignment_id": "tcs_fcb985e7e6b3a81b:EN-D2-SA-002",
+        "confidence": 0.78,
+        "edition_id": "ed_02a1ae4afa3be288718e",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H3 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_fcb985e7e6b3a81b",
+        "textbook_title": "英语5年级下册",
+        "unit_id": null,
+        "unit_title": "H3 教材范围"
+      },
       {
         "alignment_id": "tcs_c7482c5a46d0afd5:EN-D2-SA-002",
         "confidence": 0.78,
@@ -150620,6 +151164,22 @@
     ],
     "EN-D2-SA-003": [
       {
+        "alignment_id": "tcs_fcb985e7e6b3a81b:EN-D2-SA-003",
+        "confidence": 0.78,
+        "edition_id": "ed_02a1ae4afa3be288718e",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H3 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_fcb985e7e6b3a81b",
+        "textbook_title": "英语5年级下册",
+        "unit_id": null,
+        "unit_title": "H3 教材范围"
+      },
+      {
         "alignment_id": "tcs_c7482c5a46d0afd5:EN-D2-SA-003",
         "confidence": 0.78,
         "edition_id": "ed_0a82af2ca44e60586d90",
@@ -150717,6 +151277,22 @@
       }
     ],
     "EN-D2-SA-004": [
+      {
+        "alignment_id": "tcs_fcb985e7e6b3a81b:EN-D2-SA-004",
+        "confidence": 0.78,
+        "edition_id": "ed_02a1ae4afa3be288718e",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H3 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_fcb985e7e6b3a81b",
+        "textbook_title": "英语5年级下册",
+        "unit_id": null,
+        "unit_title": "H3 教材范围"
+      },
       {
         "alignment_id": "tcs_c7482c5a46d0afd5:EN-D2-SA-004",
         "confidence": 0.78,
@@ -150816,6 +151392,22 @@
     ],
     "EN-D2-SA-005": [
       {
+        "alignment_id": "tcs_fcb985e7e6b3a81b:EN-D2-SA-005",
+        "confidence": 0.78,
+        "edition_id": "ed_02a1ae4afa3be288718e",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H3 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_fcb985e7e6b3a81b",
+        "textbook_title": "英语5年级下册",
+        "unit_id": null,
+        "unit_title": "H3 教材范围"
+      },
+      {
         "alignment_id": "tcs_c7482c5a46d0afd5:EN-D2-SA-005",
         "confidence": 0.78,
         "edition_id": "ed_0a82af2ca44e60586d90",
@@ -150913,6 +151505,22 @@
       }
     ],
     "EN-D2-SA-006": [
+      {
+        "alignment_id": "tcs_fcb985e7e6b3a81b:EN-D2-SA-006",
+        "confidence": 0.78,
+        "edition_id": "ed_02a1ae4afa3be288718e",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H3 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_fcb985e7e6b3a81b",
+        "textbook_title": "英语5年级下册",
+        "unit_id": null,
+        "unit_title": "H3 教材范围"
+      },
       {
         "alignment_id": "tcs_c7482c5a46d0afd5:EN-D2-SA-006",
         "confidence": 0.78,
@@ -151012,6 +151620,22 @@
     ],
     "EN-D2-SA-007": [
       {
+        "alignment_id": "tcs_fcb985e7e6b3a81b:EN-D2-SA-007",
+        "confidence": 0.78,
+        "edition_id": "ed_02a1ae4afa3be288718e",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H3 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_fcb985e7e6b3a81b",
+        "textbook_title": "英语5年级下册",
+        "unit_id": null,
+        "unit_title": "H3 教材范围"
+      },
+      {
         "alignment_id": "tcs_c7482c5a46d0afd5:EN-D2-SA-007",
         "confidence": 0.78,
         "edition_id": "ed_0a82af2ca44e60586d90",
@@ -151109,6 +151733,22 @@
       }
     ],
     "EN-D2-SA-008": [
+      {
+        "alignment_id": "tcs_fcb985e7e6b3a81b:EN-D2-SA-008",
+        "confidence": 0.78,
+        "edition_id": "ed_02a1ae4afa3be288718e",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H3 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_fcb985e7e6b3a81b",
+        "textbook_title": "英语5年级下册",
+        "unit_id": null,
+        "unit_title": "H3 教材范围"
+      },
       {
         "alignment_id": "tcs_c7482c5a46d0afd5:EN-D2-SA-008",
         "confidence": 0.78,
@@ -151208,6 +151848,22 @@
     ],
     "EN-D2-TP-001": [
       {
+        "alignment_id": "tcs_fcb985e7e6b3a81b:EN-D2-TP-001",
+        "confidence": 0.78,
+        "edition_id": "ed_02a1ae4afa3be288718e",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H3 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_fcb985e7e6b3a81b",
+        "textbook_title": "英语5年级下册",
+        "unit_id": null,
+        "unit_title": "H3 教材范围"
+      },
+      {
         "alignment_id": "tcs_c7482c5a46d0afd5:EN-D2-TP-001",
         "confidence": 0.78,
         "edition_id": "ed_0a82af2ca44e60586d90",
@@ -151305,6 +151961,22 @@
       }
     ],
     "EN-D2-TP-002": [
+      {
+        "alignment_id": "tcs_fcb985e7e6b3a81b:EN-D2-TP-002",
+        "confidence": 0.78,
+        "edition_id": "ed_02a1ae4afa3be288718e",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H3 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_fcb985e7e6b3a81b",
+        "textbook_title": "英语5年级下册",
+        "unit_id": null,
+        "unit_title": "H3 教材范围"
+      },
       {
         "alignment_id": "tcs_c7482c5a46d0afd5:EN-D2-TP-002",
         "confidence": 0.78,
@@ -151404,6 +152076,22 @@
     ],
     "EN-D2-TP-003": [
       {
+        "alignment_id": "tcs_fcb985e7e6b3a81b:EN-D2-TP-003",
+        "confidence": 0.78,
+        "edition_id": "ed_02a1ae4afa3be288718e",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H3 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_fcb985e7e6b3a81b",
+        "textbook_title": "英语5年级下册",
+        "unit_id": null,
+        "unit_title": "H3 教材范围"
+      },
+      {
         "alignment_id": "tcs_c7482c5a46d0afd5:EN-D2-TP-003",
         "confidence": 0.78,
         "edition_id": "ed_0a82af2ca44e60586d90",
@@ -151501,6 +152189,22 @@
       }
     ],
     "EN-D2-TP-004": [
+      {
+        "alignment_id": "tcs_fcb985e7e6b3a81b:EN-D2-TP-004",
+        "confidence": 0.78,
+        "edition_id": "ed_02a1ae4afa3be288718e",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H3 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_fcb985e7e6b3a81b",
+        "textbook_title": "英语5年级下册",
+        "unit_id": null,
+        "unit_title": "H3 教材范围"
+      },
       {
         "alignment_id": "tcs_c7482c5a46d0afd5:EN-D2-TP-004",
         "confidence": 0.78,
@@ -151600,6 +152304,22 @@
     ],
     "EN-D2-TP-005": [
       {
+        "alignment_id": "tcs_fcb985e7e6b3a81b:EN-D2-TP-005",
+        "confidence": 0.78,
+        "edition_id": "ed_02a1ae4afa3be288718e",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H3 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_fcb985e7e6b3a81b",
+        "textbook_title": "英语5年级下册",
+        "unit_id": null,
+        "unit_title": "H3 教材范围"
+      },
+      {
         "alignment_id": "tcs_c7482c5a46d0afd5:EN-D2-TP-005",
         "confidence": 0.78,
         "edition_id": "ed_0a82af2ca44e60586d90",
@@ -151698,6 +152418,22 @@
     ],
     "EN-D2-TP-006": [
       {
+        "alignment_id": "tcs_fcb985e7e6b3a81b:EN-D2-TP-006",
+        "confidence": 0.78,
+        "edition_id": "ed_02a1ae4afa3be288718e",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H3 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_fcb985e7e6b3a81b",
+        "textbook_title": "英语5年级下册",
+        "unit_id": null,
+        "unit_title": "H3 教材范围"
+      },
+      {
         "alignment_id": "tcs_c7482c5a46d0afd5:EN-D2-TP-006",
         "confidence": 0.78,
         "edition_id": "ed_0a82af2ca44e60586d90",
@@ -151795,6 +152531,22 @@
       }
     ],
     "EN-D2-TP-007": [
+      {
+        "alignment_id": "tcs_fcb985e7e6b3a81b:EN-D2-TP-007",
+        "confidence": 0.78,
+        "edition_id": "ed_02a1ae4afa3be288718e",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H3 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_fcb985e7e6b3a81b",
+        "textbook_title": "英语5年级下册",
+        "unit_id": null,
+        "unit_title": "H3 教材范围"
+      },
       {
         "alignment_id": "tcs_c7482c5a46d0afd5:EN-D2-TP-007",
         "confidence": 0.78,
@@ -154828,6 +155580,38 @@
         "textbook_title": "英语8年级上册",
         "unit_id": null,
         "unit_title": "H4G8 教材范围"
+      },
+      {
+        "alignment_id": "tcs_f2b656b65152f629:EN-H4G8-CA-001",
+        "confidence": 0.78,
+        "edition_id": "ed_a93a5178587dcb63a569",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G8 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_f2b656b65152f629",
+        "textbook_title": "英语8年级上册",
+        "unit_id": null,
+        "unit_title": "H4G8 教材范围"
+      },
+      {
+        "alignment_id": "tcs_1ac7a64087f3326f:EN-H4G8-CA-001",
+        "confidence": 0.78,
+        "edition_id": "ed_e6f7135f2b385ccbb47a",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G8 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_1ac7a64087f3326f",
+        "textbook_title": "英语8年级下册",
+        "unit_id": null,
+        "unit_title": "H4G8 教材范围"
       }
     ],
     "EN-H4G8-CA-002": [
@@ -154860,6 +155644,38 @@
         "review_status": "machine_checked",
         "scope_id": "tcs_4db7656086d72cec",
         "textbook_title": "英语8年级上册",
+        "unit_id": null,
+        "unit_title": "H4G8 教材范围"
+      },
+      {
+        "alignment_id": "tcs_f2b656b65152f629:EN-H4G8-CA-002",
+        "confidence": 0.78,
+        "edition_id": "ed_a93a5178587dcb63a569",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G8 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_f2b656b65152f629",
+        "textbook_title": "英语8年级上册",
+        "unit_id": null,
+        "unit_title": "H4G8 教材范围"
+      },
+      {
+        "alignment_id": "tcs_1ac7a64087f3326f:EN-H4G8-CA-002",
+        "confidence": 0.78,
+        "edition_id": "ed_e6f7135f2b385ccbb47a",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G8 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_1ac7a64087f3326f",
+        "textbook_title": "英语8年级下册",
         "unit_id": null,
         "unit_title": "H4G8 教材范围"
       }
@@ -154896,6 +155712,38 @@
         "textbook_title": "英语8年级上册",
         "unit_id": null,
         "unit_title": "H4G8 教材范围"
+      },
+      {
+        "alignment_id": "tcs_f2b656b65152f629:EN-H4G8-CA-003",
+        "confidence": 0.78,
+        "edition_id": "ed_a93a5178587dcb63a569",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G8 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_f2b656b65152f629",
+        "textbook_title": "英语8年级上册",
+        "unit_id": null,
+        "unit_title": "H4G8 教材范围"
+      },
+      {
+        "alignment_id": "tcs_1ac7a64087f3326f:EN-H4G8-CA-003",
+        "confidence": 0.78,
+        "edition_id": "ed_e6f7135f2b385ccbb47a",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G8 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_1ac7a64087f3326f",
+        "textbook_title": "英语8年级下册",
+        "unit_id": null,
+        "unit_title": "H4G8 教材范围"
       }
     ],
     "EN-H4G8-CA-004": [
@@ -154928,6 +155776,38 @@
         "review_status": "machine_checked",
         "scope_id": "tcs_4db7656086d72cec",
         "textbook_title": "英语8年级上册",
+        "unit_id": null,
+        "unit_title": "H4G8 教材范围"
+      },
+      {
+        "alignment_id": "tcs_f2b656b65152f629:EN-H4G8-CA-004",
+        "confidence": 0.78,
+        "edition_id": "ed_a93a5178587dcb63a569",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G8 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_f2b656b65152f629",
+        "textbook_title": "英语8年级上册",
+        "unit_id": null,
+        "unit_title": "H4G8 教材范围"
+      },
+      {
+        "alignment_id": "tcs_1ac7a64087f3326f:EN-H4G8-CA-004",
+        "confidence": 0.78,
+        "edition_id": "ed_e6f7135f2b385ccbb47a",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G8 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_1ac7a64087f3326f",
+        "textbook_title": "英语8年级下册",
         "unit_id": null,
         "unit_title": "H4G8 教材范围"
       }
@@ -154964,6 +155844,38 @@
         "textbook_title": "英语8年级上册",
         "unit_id": null,
         "unit_title": "H4G8 教材范围"
+      },
+      {
+        "alignment_id": "tcs_f2b656b65152f629:EN-H4G8-CA-005",
+        "confidence": 0.78,
+        "edition_id": "ed_a93a5178587dcb63a569",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G8 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_f2b656b65152f629",
+        "textbook_title": "英语8年级上册",
+        "unit_id": null,
+        "unit_title": "H4G8 教材范围"
+      },
+      {
+        "alignment_id": "tcs_1ac7a64087f3326f:EN-H4G8-CA-005",
+        "confidence": 0.78,
+        "edition_id": "ed_e6f7135f2b385ccbb47a",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G8 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_1ac7a64087f3326f",
+        "textbook_title": "英语8年级下册",
+        "unit_id": null,
+        "unit_title": "H4G8 教材范围"
       }
     ],
     "EN-H4G8-CA-006": [
@@ -154996,6 +155908,38 @@
         "review_status": "machine_checked",
         "scope_id": "tcs_4db7656086d72cec",
         "textbook_title": "英语8年级上册",
+        "unit_id": null,
+        "unit_title": "H4G8 教材范围"
+      },
+      {
+        "alignment_id": "tcs_f2b656b65152f629:EN-H4G8-CA-006",
+        "confidence": 0.78,
+        "edition_id": "ed_a93a5178587dcb63a569",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G8 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_f2b656b65152f629",
+        "textbook_title": "英语8年级上册",
+        "unit_id": null,
+        "unit_title": "H4G8 教材范围"
+      },
+      {
+        "alignment_id": "tcs_1ac7a64087f3326f:EN-H4G8-CA-006",
+        "confidence": 0.78,
+        "edition_id": "ed_e6f7135f2b385ccbb47a",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G8 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_1ac7a64087f3326f",
+        "textbook_title": "英语8年级下册",
         "unit_id": null,
         "unit_title": "H4G8 教材范围"
       }
@@ -155032,6 +155976,38 @@
         "textbook_title": "英语8年级上册",
         "unit_id": null,
         "unit_title": "H4G8 教材范围"
+      },
+      {
+        "alignment_id": "tcs_f2b656b65152f629:EN-H4G8-CA-007",
+        "confidence": 0.78,
+        "edition_id": "ed_a93a5178587dcb63a569",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G8 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_f2b656b65152f629",
+        "textbook_title": "英语8年级上册",
+        "unit_id": null,
+        "unit_title": "H4G8 教材范围"
+      },
+      {
+        "alignment_id": "tcs_1ac7a64087f3326f:EN-H4G8-CA-007",
+        "confidence": 0.78,
+        "edition_id": "ed_e6f7135f2b385ccbb47a",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G8 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_1ac7a64087f3326f",
+        "textbook_title": "英语8年级下册",
+        "unit_id": null,
+        "unit_title": "H4G8 教材范围"
       }
     ],
     "EN-H4G8-CA-008": [
@@ -155064,6 +156040,38 @@
         "review_status": "machine_checked",
         "scope_id": "tcs_4db7656086d72cec",
         "textbook_title": "英语8年级上册",
+        "unit_id": null,
+        "unit_title": "H4G8 教材范围"
+      },
+      {
+        "alignment_id": "tcs_f2b656b65152f629:EN-H4G8-CA-008",
+        "confidence": 0.78,
+        "edition_id": "ed_a93a5178587dcb63a569",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G8 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_f2b656b65152f629",
+        "textbook_title": "英语8年级上册",
+        "unit_id": null,
+        "unit_title": "H4G8 教材范围"
+      },
+      {
+        "alignment_id": "tcs_1ac7a64087f3326f:EN-H4G8-CA-008",
+        "confidence": 0.78,
+        "edition_id": "ed_e6f7135f2b385ccbb47a",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G8 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_1ac7a64087f3326f",
+        "textbook_title": "英语8年级下册",
         "unit_id": null,
         "unit_title": "H4G8 教材范围"
       }
@@ -155100,6 +156108,38 @@
         "textbook_title": "英语8年级上册",
         "unit_id": null,
         "unit_title": "H4G8 教材范围"
+      },
+      {
+        "alignment_id": "tcs_f2b656b65152f629:EN-H4G8-CA-014",
+        "confidence": 0.78,
+        "edition_id": "ed_a93a5178587dcb63a569",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G8 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_f2b656b65152f629",
+        "textbook_title": "英语8年级上册",
+        "unit_id": null,
+        "unit_title": "H4G8 教材范围"
+      },
+      {
+        "alignment_id": "tcs_1ac7a64087f3326f:EN-H4G8-CA-014",
+        "confidence": 0.78,
+        "edition_id": "ed_e6f7135f2b385ccbb47a",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G8 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_1ac7a64087f3326f",
+        "textbook_title": "英语8年级下册",
+        "unit_id": null,
+        "unit_title": "H4G8 教材范围"
       }
     ],
     "EN-H4G8-CA-020": [
@@ -155132,6 +156172,38 @@
         "review_status": "machine_checked",
         "scope_id": "tcs_4db7656086d72cec",
         "textbook_title": "英语8年级上册",
+        "unit_id": null,
+        "unit_title": "H4G8 教材范围"
+      },
+      {
+        "alignment_id": "tcs_f2b656b65152f629:EN-H4G8-CA-020",
+        "confidence": 0.78,
+        "edition_id": "ed_a93a5178587dcb63a569",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G8 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_f2b656b65152f629",
+        "textbook_title": "英语8年级上册",
+        "unit_id": null,
+        "unit_title": "H4G8 教材范围"
+      },
+      {
+        "alignment_id": "tcs_1ac7a64087f3326f:EN-H4G8-CA-020",
+        "confidence": 0.78,
+        "edition_id": "ed_e6f7135f2b385ccbb47a",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G8 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_1ac7a64087f3326f",
+        "textbook_title": "英语8年级下册",
         "unit_id": null,
         "unit_title": "H4G8 教材范围"
       }
@@ -155168,6 +156240,38 @@
         "textbook_title": "英语8年级上册",
         "unit_id": null,
         "unit_title": "H4G8 教材范围"
+      },
+      {
+        "alignment_id": "tcs_f2b656b65152f629:EN-H4G8-LA-001",
+        "confidence": 0.78,
+        "edition_id": "ed_a93a5178587dcb63a569",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G8 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_f2b656b65152f629",
+        "textbook_title": "英语8年级上册",
+        "unit_id": null,
+        "unit_title": "H4G8 教材范围"
+      },
+      {
+        "alignment_id": "tcs_1ac7a64087f3326f:EN-H4G8-LA-001",
+        "confidence": 0.78,
+        "edition_id": "ed_e6f7135f2b385ccbb47a",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G8 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_1ac7a64087f3326f",
+        "textbook_title": "英语8年级下册",
+        "unit_id": null,
+        "unit_title": "H4G8 教材范围"
       }
     ],
     "EN-H4G8-LA-002": [
@@ -155200,6 +156304,38 @@
         "review_status": "machine_checked",
         "scope_id": "tcs_4db7656086d72cec",
         "textbook_title": "英语8年级上册",
+        "unit_id": null,
+        "unit_title": "H4G8 教材范围"
+      },
+      {
+        "alignment_id": "tcs_f2b656b65152f629:EN-H4G8-LA-002",
+        "confidence": 0.78,
+        "edition_id": "ed_a93a5178587dcb63a569",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G8 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_f2b656b65152f629",
+        "textbook_title": "英语8年级上册",
+        "unit_id": null,
+        "unit_title": "H4G8 教材范围"
+      },
+      {
+        "alignment_id": "tcs_1ac7a64087f3326f:EN-H4G8-LA-002",
+        "confidence": 0.78,
+        "edition_id": "ed_e6f7135f2b385ccbb47a",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G8 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_1ac7a64087f3326f",
+        "textbook_title": "英语8年级下册",
         "unit_id": null,
         "unit_title": "H4G8 教材范围"
       }
@@ -155236,6 +156372,38 @@
         "textbook_title": "英语8年级上册",
         "unit_id": null,
         "unit_title": "H4G8 教材范围"
+      },
+      {
+        "alignment_id": "tcs_f2b656b65152f629:EN-H4G8-LA-003",
+        "confidence": 0.78,
+        "edition_id": "ed_a93a5178587dcb63a569",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G8 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_f2b656b65152f629",
+        "textbook_title": "英语8年级上册",
+        "unit_id": null,
+        "unit_title": "H4G8 教材范围"
+      },
+      {
+        "alignment_id": "tcs_1ac7a64087f3326f:EN-H4G8-LA-003",
+        "confidence": 0.78,
+        "edition_id": "ed_e6f7135f2b385ccbb47a",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G8 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_1ac7a64087f3326f",
+        "textbook_title": "英语8年级下册",
+        "unit_id": null,
+        "unit_title": "H4G8 教材范围"
       }
     ],
     "EN-H4G8-LA-004": [
@@ -155268,6 +156436,38 @@
         "review_status": "machine_checked",
         "scope_id": "tcs_4db7656086d72cec",
         "textbook_title": "英语8年级上册",
+        "unit_id": null,
+        "unit_title": "H4G8 教材范围"
+      },
+      {
+        "alignment_id": "tcs_f2b656b65152f629:EN-H4G8-LA-004",
+        "confidence": 0.78,
+        "edition_id": "ed_a93a5178587dcb63a569",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G8 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_f2b656b65152f629",
+        "textbook_title": "英语8年级上册",
+        "unit_id": null,
+        "unit_title": "H4G8 教材范围"
+      },
+      {
+        "alignment_id": "tcs_1ac7a64087f3326f:EN-H4G8-LA-004",
+        "confidence": 0.78,
+        "edition_id": "ed_e6f7135f2b385ccbb47a",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G8 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_1ac7a64087f3326f",
+        "textbook_title": "英语8年级下册",
         "unit_id": null,
         "unit_title": "H4G8 教材范围"
       }
@@ -155304,6 +156504,38 @@
         "textbook_title": "英语8年级上册",
         "unit_id": null,
         "unit_title": "H4G8 教材范围"
+      },
+      {
+        "alignment_id": "tcs_f2b656b65152f629:EN-H4G8-LA-005",
+        "confidence": 0.78,
+        "edition_id": "ed_a93a5178587dcb63a569",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G8 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_f2b656b65152f629",
+        "textbook_title": "英语8年级上册",
+        "unit_id": null,
+        "unit_title": "H4G8 教材范围"
+      },
+      {
+        "alignment_id": "tcs_1ac7a64087f3326f:EN-H4G8-LA-005",
+        "confidence": 0.78,
+        "edition_id": "ed_e6f7135f2b385ccbb47a",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G8 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_1ac7a64087f3326f",
+        "textbook_title": "英语8年级下册",
+        "unit_id": null,
+        "unit_title": "H4G8 教材范围"
       }
     ],
     "EN-H4G8-LA-006": [
@@ -155336,6 +156568,38 @@
         "review_status": "machine_checked",
         "scope_id": "tcs_4db7656086d72cec",
         "textbook_title": "英语8年级上册",
+        "unit_id": null,
+        "unit_title": "H4G8 教材范围"
+      },
+      {
+        "alignment_id": "tcs_f2b656b65152f629:EN-H4G8-LA-006",
+        "confidence": 0.78,
+        "edition_id": "ed_a93a5178587dcb63a569",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G8 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_f2b656b65152f629",
+        "textbook_title": "英语8年级上册",
+        "unit_id": null,
+        "unit_title": "H4G8 教材范围"
+      },
+      {
+        "alignment_id": "tcs_1ac7a64087f3326f:EN-H4G8-LA-006",
+        "confidence": 0.78,
+        "edition_id": "ed_e6f7135f2b385ccbb47a",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G8 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_1ac7a64087f3326f",
+        "textbook_title": "英语8年级下册",
         "unit_id": null,
         "unit_title": "H4G8 教材范围"
       }
@@ -155372,6 +156636,38 @@
         "textbook_title": "英语8年级上册",
         "unit_id": null,
         "unit_title": "H4G8 教材范围"
+      },
+      {
+        "alignment_id": "tcs_f2b656b65152f629:EN-H4G8-LA-007",
+        "confidence": 0.78,
+        "edition_id": "ed_a93a5178587dcb63a569",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G8 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_f2b656b65152f629",
+        "textbook_title": "英语8年级上册",
+        "unit_id": null,
+        "unit_title": "H4G8 教材范围"
+      },
+      {
+        "alignment_id": "tcs_1ac7a64087f3326f:EN-H4G8-LA-007",
+        "confidence": 0.78,
+        "edition_id": "ed_e6f7135f2b385ccbb47a",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G8 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_1ac7a64087f3326f",
+        "textbook_title": "英语8年级下册",
+        "unit_id": null,
+        "unit_title": "H4G8 教材范围"
       }
     ],
     "EN-H4G8-LA-008": [
@@ -155404,6 +156700,38 @@
         "review_status": "machine_checked",
         "scope_id": "tcs_4db7656086d72cec",
         "textbook_title": "英语8年级上册",
+        "unit_id": null,
+        "unit_title": "H4G8 教材范围"
+      },
+      {
+        "alignment_id": "tcs_f2b656b65152f629:EN-H4G8-LA-008",
+        "confidence": 0.78,
+        "edition_id": "ed_a93a5178587dcb63a569",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G8 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_f2b656b65152f629",
+        "textbook_title": "英语8年级上册",
+        "unit_id": null,
+        "unit_title": "H4G8 教材范围"
+      },
+      {
+        "alignment_id": "tcs_1ac7a64087f3326f:EN-H4G8-LA-008",
+        "confidence": 0.78,
+        "edition_id": "ed_e6f7135f2b385ccbb47a",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G8 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_1ac7a64087f3326f",
+        "textbook_title": "英语8年级下册",
         "unit_id": null,
         "unit_title": "H4G8 教材范围"
       }
@@ -155440,6 +156768,38 @@
         "textbook_title": "英语8年级上册",
         "unit_id": null,
         "unit_title": "H4G8 教材范围"
+      },
+      {
+        "alignment_id": "tcs_f2b656b65152f629:EN-H4G8-LA-009",
+        "confidence": 0.78,
+        "edition_id": "ed_a93a5178587dcb63a569",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G8 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_f2b656b65152f629",
+        "textbook_title": "英语8年级上册",
+        "unit_id": null,
+        "unit_title": "H4G8 教材范围"
+      },
+      {
+        "alignment_id": "tcs_1ac7a64087f3326f:EN-H4G8-LA-009",
+        "confidence": 0.78,
+        "edition_id": "ed_e6f7135f2b385ccbb47a",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G8 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_1ac7a64087f3326f",
+        "textbook_title": "英语8年级下册",
+        "unit_id": null,
+        "unit_title": "H4G8 教材范围"
       }
     ],
     "EN-H4G8-LA-010": [
@@ -155472,6 +156832,38 @@
         "review_status": "machine_checked",
         "scope_id": "tcs_4db7656086d72cec",
         "textbook_title": "英语8年级上册",
+        "unit_id": null,
+        "unit_title": "H4G8 教材范围"
+      },
+      {
+        "alignment_id": "tcs_f2b656b65152f629:EN-H4G8-LA-010",
+        "confidence": 0.78,
+        "edition_id": "ed_a93a5178587dcb63a569",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G8 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_f2b656b65152f629",
+        "textbook_title": "英语8年级上册",
+        "unit_id": null,
+        "unit_title": "H4G8 教材范围"
+      },
+      {
+        "alignment_id": "tcs_1ac7a64087f3326f:EN-H4G8-LA-010",
+        "confidence": 0.78,
+        "edition_id": "ed_e6f7135f2b385ccbb47a",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G8 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_1ac7a64087f3326f",
+        "textbook_title": "英语8年级下册",
         "unit_id": null,
         "unit_title": "H4G8 教材范围"
       }
@@ -155508,6 +156900,38 @@
         "textbook_title": "英语8年级上册",
         "unit_id": null,
         "unit_title": "H4G8 教材范围"
+      },
+      {
+        "alignment_id": "tcs_f2b656b65152f629:EN-H4G8-LA-011",
+        "confidence": 0.78,
+        "edition_id": "ed_a93a5178587dcb63a569",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G8 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_f2b656b65152f629",
+        "textbook_title": "英语8年级上册",
+        "unit_id": null,
+        "unit_title": "H4G8 教材范围"
+      },
+      {
+        "alignment_id": "tcs_1ac7a64087f3326f:EN-H4G8-LA-011",
+        "confidence": 0.78,
+        "edition_id": "ed_e6f7135f2b385ccbb47a",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G8 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_1ac7a64087f3326f",
+        "textbook_title": "英语8年级下册",
+        "unit_id": null,
+        "unit_title": "H4G8 教材范围"
       }
     ],
     "EN-H4G8-LA-012": [
@@ -155540,6 +156964,38 @@
         "review_status": "machine_checked",
         "scope_id": "tcs_4db7656086d72cec",
         "textbook_title": "英语8年级上册",
+        "unit_id": null,
+        "unit_title": "H4G8 教材范围"
+      },
+      {
+        "alignment_id": "tcs_f2b656b65152f629:EN-H4G8-LA-012",
+        "confidence": 0.78,
+        "edition_id": "ed_a93a5178587dcb63a569",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G8 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_f2b656b65152f629",
+        "textbook_title": "英语8年级上册",
+        "unit_id": null,
+        "unit_title": "H4G8 教材范围"
+      },
+      {
+        "alignment_id": "tcs_1ac7a64087f3326f:EN-H4G8-LA-012",
+        "confidence": 0.78,
+        "edition_id": "ed_e6f7135f2b385ccbb47a",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G8 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_1ac7a64087f3326f",
+        "textbook_title": "英语8年级下册",
         "unit_id": null,
         "unit_title": "H4G8 教材范围"
       }
@@ -155576,6 +157032,38 @@
         "textbook_title": "英语8年级上册",
         "unit_id": null,
         "unit_title": "H4G8 教材范围"
+      },
+      {
+        "alignment_id": "tcs_f2b656b65152f629:EN-H4G8-LA-013",
+        "confidence": 0.78,
+        "edition_id": "ed_a93a5178587dcb63a569",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G8 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_f2b656b65152f629",
+        "textbook_title": "英语8年级上册",
+        "unit_id": null,
+        "unit_title": "H4G8 教材范围"
+      },
+      {
+        "alignment_id": "tcs_1ac7a64087f3326f:EN-H4G8-LA-013",
+        "confidence": 0.78,
+        "edition_id": "ed_e6f7135f2b385ccbb47a",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G8 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_1ac7a64087f3326f",
+        "textbook_title": "英语8年级下册",
+        "unit_id": null,
+        "unit_title": "H4G8 教材范围"
       }
     ],
     "EN-H4G8-LA-014": [
@@ -155608,6 +157096,38 @@
         "review_status": "machine_checked",
         "scope_id": "tcs_4db7656086d72cec",
         "textbook_title": "英语8年级上册",
+        "unit_id": null,
+        "unit_title": "H4G8 教材范围"
+      },
+      {
+        "alignment_id": "tcs_f2b656b65152f629:EN-H4G8-LA-014",
+        "confidence": 0.78,
+        "edition_id": "ed_a93a5178587dcb63a569",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G8 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_f2b656b65152f629",
+        "textbook_title": "英语8年级上册",
+        "unit_id": null,
+        "unit_title": "H4G8 教材范围"
+      },
+      {
+        "alignment_id": "tcs_1ac7a64087f3326f:EN-H4G8-LA-014",
+        "confidence": 0.78,
+        "edition_id": "ed_e6f7135f2b385ccbb47a",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G8 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_1ac7a64087f3326f",
+        "textbook_title": "英语8年级下册",
         "unit_id": null,
         "unit_title": "H4G8 教材范围"
       }
@@ -155644,6 +157164,38 @@
         "textbook_title": "英语8年级上册",
         "unit_id": null,
         "unit_title": "H4G8 教材范围"
+      },
+      {
+        "alignment_id": "tcs_f2b656b65152f629:EN-H4G8-LA-015",
+        "confidence": 0.78,
+        "edition_id": "ed_a93a5178587dcb63a569",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G8 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_f2b656b65152f629",
+        "textbook_title": "英语8年级上册",
+        "unit_id": null,
+        "unit_title": "H4G8 教材范围"
+      },
+      {
+        "alignment_id": "tcs_1ac7a64087f3326f:EN-H4G8-LA-015",
+        "confidence": 0.78,
+        "edition_id": "ed_e6f7135f2b385ccbb47a",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G8 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_1ac7a64087f3326f",
+        "textbook_title": "英语8年级下册",
+        "unit_id": null,
+        "unit_title": "H4G8 教材范围"
       }
     ],
     "EN-H4G8-LA-017": [
@@ -155676,6 +157228,38 @@
         "review_status": "machine_checked",
         "scope_id": "tcs_4db7656086d72cec",
         "textbook_title": "英语8年级上册",
+        "unit_id": null,
+        "unit_title": "H4G8 教材范围"
+      },
+      {
+        "alignment_id": "tcs_f2b656b65152f629:EN-H4G8-LA-017",
+        "confidence": 0.78,
+        "edition_id": "ed_a93a5178587dcb63a569",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G8 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_f2b656b65152f629",
+        "textbook_title": "英语8年级上册",
+        "unit_id": null,
+        "unit_title": "H4G8 教材范围"
+      },
+      {
+        "alignment_id": "tcs_1ac7a64087f3326f:EN-H4G8-LA-017",
+        "confidence": 0.78,
+        "edition_id": "ed_e6f7135f2b385ccbb47a",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G8 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_1ac7a64087f3326f",
+        "textbook_title": "英语8年级下册",
         "unit_id": null,
         "unit_title": "H4G8 教材范围"
       }
@@ -155712,6 +157296,38 @@
         "textbook_title": "英语8年级上册",
         "unit_id": null,
         "unit_title": "H4G8 教材范围"
+      },
+      {
+        "alignment_id": "tcs_f2b656b65152f629:EN-H4G8-LA-020",
+        "confidence": 0.78,
+        "edition_id": "ed_a93a5178587dcb63a569",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G8 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_f2b656b65152f629",
+        "textbook_title": "英语8年级上册",
+        "unit_id": null,
+        "unit_title": "H4G8 教材范围"
+      },
+      {
+        "alignment_id": "tcs_1ac7a64087f3326f:EN-H4G8-LA-020",
+        "confidence": 0.78,
+        "edition_id": "ed_e6f7135f2b385ccbb47a",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G8 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_1ac7a64087f3326f",
+        "textbook_title": "英语8年级下册",
+        "unit_id": null,
+        "unit_title": "H4G8 教材范围"
       }
     ],
     "EN-H4G8-LA-023": [
@@ -155744,6 +157360,38 @@
         "review_status": "machine_checked",
         "scope_id": "tcs_4db7656086d72cec",
         "textbook_title": "英语8年级上册",
+        "unit_id": null,
+        "unit_title": "H4G8 教材范围"
+      },
+      {
+        "alignment_id": "tcs_f2b656b65152f629:EN-H4G8-LA-023",
+        "confidence": 0.78,
+        "edition_id": "ed_a93a5178587dcb63a569",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G8 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_f2b656b65152f629",
+        "textbook_title": "英语8年级上册",
+        "unit_id": null,
+        "unit_title": "H4G8 教材范围"
+      },
+      {
+        "alignment_id": "tcs_1ac7a64087f3326f:EN-H4G8-LA-023",
+        "confidence": 0.78,
+        "edition_id": "ed_e6f7135f2b385ccbb47a",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G8 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_1ac7a64087f3326f",
+        "textbook_title": "英语8年级下册",
         "unit_id": null,
         "unit_title": "H4G8 教材范围"
       }
@@ -155780,6 +157428,38 @@
         "textbook_title": "英语8年级上册",
         "unit_id": null,
         "unit_title": "H4G8 教材范围"
+      },
+      {
+        "alignment_id": "tcs_f2b656b65152f629:EN-H4G8-LA-026",
+        "confidence": 0.78,
+        "edition_id": "ed_a93a5178587dcb63a569",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G8 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_f2b656b65152f629",
+        "textbook_title": "英语8年级上册",
+        "unit_id": null,
+        "unit_title": "H4G8 教材范围"
+      },
+      {
+        "alignment_id": "tcs_1ac7a64087f3326f:EN-H4G8-LA-026",
+        "confidence": 0.78,
+        "edition_id": "ed_e6f7135f2b385ccbb47a",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G8 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_1ac7a64087f3326f",
+        "textbook_title": "英语8年级下册",
+        "unit_id": null,
+        "unit_title": "H4G8 教材范围"
       }
     ],
     "EN-H4G8-SA-001": [
@@ -155812,6 +157492,38 @@
         "review_status": "machine_checked",
         "scope_id": "tcs_4db7656086d72cec",
         "textbook_title": "英语8年级上册",
+        "unit_id": null,
+        "unit_title": "H4G8 教材范围"
+      },
+      {
+        "alignment_id": "tcs_f2b656b65152f629:EN-H4G8-SA-001",
+        "confidence": 0.78,
+        "edition_id": "ed_a93a5178587dcb63a569",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G8 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_f2b656b65152f629",
+        "textbook_title": "英语8年级上册",
+        "unit_id": null,
+        "unit_title": "H4G8 教材范围"
+      },
+      {
+        "alignment_id": "tcs_1ac7a64087f3326f:EN-H4G8-SA-001",
+        "confidence": 0.78,
+        "edition_id": "ed_e6f7135f2b385ccbb47a",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G8 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_1ac7a64087f3326f",
+        "textbook_title": "英语8年级下册",
         "unit_id": null,
         "unit_title": "H4G8 教材范围"
       }
@@ -155848,6 +157560,38 @@
         "textbook_title": "英语8年级上册",
         "unit_id": null,
         "unit_title": "H4G8 教材范围"
+      },
+      {
+        "alignment_id": "tcs_f2b656b65152f629:EN-H4G8-SA-002",
+        "confidence": 0.78,
+        "edition_id": "ed_a93a5178587dcb63a569",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G8 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_f2b656b65152f629",
+        "textbook_title": "英语8年级上册",
+        "unit_id": null,
+        "unit_title": "H4G8 教材范围"
+      },
+      {
+        "alignment_id": "tcs_1ac7a64087f3326f:EN-H4G8-SA-002",
+        "confidence": 0.78,
+        "edition_id": "ed_e6f7135f2b385ccbb47a",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G8 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_1ac7a64087f3326f",
+        "textbook_title": "英语8年级下册",
+        "unit_id": null,
+        "unit_title": "H4G8 教材范围"
       }
     ],
     "EN-H4G8-SA-003": [
@@ -155880,6 +157624,38 @@
         "review_status": "machine_checked",
         "scope_id": "tcs_4db7656086d72cec",
         "textbook_title": "英语8年级上册",
+        "unit_id": null,
+        "unit_title": "H4G8 教材范围"
+      },
+      {
+        "alignment_id": "tcs_f2b656b65152f629:EN-H4G8-SA-003",
+        "confidence": 0.78,
+        "edition_id": "ed_a93a5178587dcb63a569",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G8 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_f2b656b65152f629",
+        "textbook_title": "英语8年级上册",
+        "unit_id": null,
+        "unit_title": "H4G8 教材范围"
+      },
+      {
+        "alignment_id": "tcs_1ac7a64087f3326f:EN-H4G8-SA-003",
+        "confidence": 0.78,
+        "edition_id": "ed_e6f7135f2b385ccbb47a",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G8 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_1ac7a64087f3326f",
+        "textbook_title": "英语8年级下册",
         "unit_id": null,
         "unit_title": "H4G8 教材范围"
       }
@@ -155916,6 +157692,38 @@
         "textbook_title": "英语8年级上册",
         "unit_id": null,
         "unit_title": "H4G8 教材范围"
+      },
+      {
+        "alignment_id": "tcs_f2b656b65152f629:EN-H4G8-SA-004",
+        "confidence": 0.78,
+        "edition_id": "ed_a93a5178587dcb63a569",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G8 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_f2b656b65152f629",
+        "textbook_title": "英语8年级上册",
+        "unit_id": null,
+        "unit_title": "H4G8 教材范围"
+      },
+      {
+        "alignment_id": "tcs_1ac7a64087f3326f:EN-H4G8-SA-004",
+        "confidence": 0.78,
+        "edition_id": "ed_e6f7135f2b385ccbb47a",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G8 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_1ac7a64087f3326f",
+        "textbook_title": "英语8年级下册",
+        "unit_id": null,
+        "unit_title": "H4G8 教材范围"
       }
     ],
     "EN-H4G8-SA-005": [
@@ -155948,6 +157756,38 @@
         "review_status": "machine_checked",
         "scope_id": "tcs_4db7656086d72cec",
         "textbook_title": "英语8年级上册",
+        "unit_id": null,
+        "unit_title": "H4G8 教材范围"
+      },
+      {
+        "alignment_id": "tcs_f2b656b65152f629:EN-H4G8-SA-005",
+        "confidence": 0.78,
+        "edition_id": "ed_a93a5178587dcb63a569",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G8 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_f2b656b65152f629",
+        "textbook_title": "英语8年级上册",
+        "unit_id": null,
+        "unit_title": "H4G8 教材范围"
+      },
+      {
+        "alignment_id": "tcs_1ac7a64087f3326f:EN-H4G8-SA-005",
+        "confidence": 0.78,
+        "edition_id": "ed_e6f7135f2b385ccbb47a",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G8 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_1ac7a64087f3326f",
+        "textbook_title": "英语8年级下册",
         "unit_id": null,
         "unit_title": "H4G8 教材范围"
       }
@@ -155984,6 +157824,38 @@
         "textbook_title": "英语8年级上册",
         "unit_id": null,
         "unit_title": "H4G8 教材范围"
+      },
+      {
+        "alignment_id": "tcs_f2b656b65152f629:EN-H4G8-SA-008",
+        "confidence": 0.78,
+        "edition_id": "ed_a93a5178587dcb63a569",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G8 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_f2b656b65152f629",
+        "textbook_title": "英语8年级上册",
+        "unit_id": null,
+        "unit_title": "H4G8 教材范围"
+      },
+      {
+        "alignment_id": "tcs_1ac7a64087f3326f:EN-H4G8-SA-008",
+        "confidence": 0.78,
+        "edition_id": "ed_e6f7135f2b385ccbb47a",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G8 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_1ac7a64087f3326f",
+        "textbook_title": "英语8年级下册",
+        "unit_id": null,
+        "unit_title": "H4G8 教材范围"
       }
     ],
     "EN-H4G8-SA-011": [
@@ -156016,6 +157888,38 @@
         "review_status": "machine_checked",
         "scope_id": "tcs_4db7656086d72cec",
         "textbook_title": "英语8年级上册",
+        "unit_id": null,
+        "unit_title": "H4G8 教材范围"
+      },
+      {
+        "alignment_id": "tcs_f2b656b65152f629:EN-H4G8-SA-011",
+        "confidence": 0.78,
+        "edition_id": "ed_a93a5178587dcb63a569",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G8 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_f2b656b65152f629",
+        "textbook_title": "英语8年级上册",
+        "unit_id": null,
+        "unit_title": "H4G8 教材范围"
+      },
+      {
+        "alignment_id": "tcs_1ac7a64087f3326f:EN-H4G8-SA-011",
+        "confidence": 0.78,
+        "edition_id": "ed_e6f7135f2b385ccbb47a",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G8 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_1ac7a64087f3326f",
+        "textbook_title": "英语8年级下册",
         "unit_id": null,
         "unit_title": "H4G8 教材范围"
       }
@@ -156052,6 +157956,38 @@
         "textbook_title": "英语8年级上册",
         "unit_id": null,
         "unit_title": "H4G8 教材范围"
+      },
+      {
+        "alignment_id": "tcs_f2b656b65152f629:EN-H4G8-TP-001",
+        "confidence": 0.78,
+        "edition_id": "ed_a93a5178587dcb63a569",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G8 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_f2b656b65152f629",
+        "textbook_title": "英语8年级上册",
+        "unit_id": null,
+        "unit_title": "H4G8 教材范围"
+      },
+      {
+        "alignment_id": "tcs_1ac7a64087f3326f:EN-H4G8-TP-001",
+        "confidence": 0.78,
+        "edition_id": "ed_e6f7135f2b385ccbb47a",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G8 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_1ac7a64087f3326f",
+        "textbook_title": "英语8年级下册",
+        "unit_id": null,
+        "unit_title": "H4G8 教材范围"
       }
     ],
     "EN-H4G8-TP-002": [
@@ -156084,6 +158020,38 @@
         "review_status": "machine_checked",
         "scope_id": "tcs_4db7656086d72cec",
         "textbook_title": "英语8年级上册",
+        "unit_id": null,
+        "unit_title": "H4G8 教材范围"
+      },
+      {
+        "alignment_id": "tcs_f2b656b65152f629:EN-H4G8-TP-002",
+        "confidence": 0.78,
+        "edition_id": "ed_a93a5178587dcb63a569",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G8 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_f2b656b65152f629",
+        "textbook_title": "英语8年级上册",
+        "unit_id": null,
+        "unit_title": "H4G8 教材范围"
+      },
+      {
+        "alignment_id": "tcs_1ac7a64087f3326f:EN-H4G8-TP-002",
+        "confidence": 0.78,
+        "edition_id": "ed_e6f7135f2b385ccbb47a",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G8 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_1ac7a64087f3326f",
+        "textbook_title": "英语8年级下册",
         "unit_id": null,
         "unit_title": "H4G8 教材范围"
       }
@@ -156120,6 +158088,38 @@
         "textbook_title": "英语8年级上册",
         "unit_id": null,
         "unit_title": "H4G8 教材范围"
+      },
+      {
+        "alignment_id": "tcs_f2b656b65152f629:EN-H4G8-TP-003",
+        "confidence": 0.78,
+        "edition_id": "ed_a93a5178587dcb63a569",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G8 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_f2b656b65152f629",
+        "textbook_title": "英语8年级上册",
+        "unit_id": null,
+        "unit_title": "H4G8 教材范围"
+      },
+      {
+        "alignment_id": "tcs_1ac7a64087f3326f:EN-H4G8-TP-003",
+        "confidence": 0.78,
+        "edition_id": "ed_e6f7135f2b385ccbb47a",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G8 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_1ac7a64087f3326f",
+        "textbook_title": "英语8年级下册",
+        "unit_id": null,
+        "unit_title": "H4G8 教材范围"
       }
     ],
     "EN-H4G8-TP-005": [
@@ -156152,6 +158152,38 @@
         "review_status": "machine_checked",
         "scope_id": "tcs_4db7656086d72cec",
         "textbook_title": "英语8年级上册",
+        "unit_id": null,
+        "unit_title": "H4G8 教材范围"
+      },
+      {
+        "alignment_id": "tcs_f2b656b65152f629:EN-H4G8-TP-005",
+        "confidence": 0.78,
+        "edition_id": "ed_a93a5178587dcb63a569",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G8 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_f2b656b65152f629",
+        "textbook_title": "英语8年级上册",
+        "unit_id": null,
+        "unit_title": "H4G8 教材范围"
+      },
+      {
+        "alignment_id": "tcs_1ac7a64087f3326f:EN-H4G8-TP-005",
+        "confidence": 0.78,
+        "edition_id": "ed_e6f7135f2b385ccbb47a",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G8 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_1ac7a64087f3326f",
+        "textbook_title": "英语8年级下册",
         "unit_id": null,
         "unit_title": "H4G8 教材范围"
       }
@@ -156188,6 +158220,38 @@
         "textbook_title": "英语8年级上册",
         "unit_id": null,
         "unit_title": "H4G8 教材范围"
+      },
+      {
+        "alignment_id": "tcs_f2b656b65152f629:EN-H4G8-TP-006",
+        "confidence": 0.78,
+        "edition_id": "ed_a93a5178587dcb63a569",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G8 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_f2b656b65152f629",
+        "textbook_title": "英语8年级上册",
+        "unit_id": null,
+        "unit_title": "H4G8 教材范围"
+      },
+      {
+        "alignment_id": "tcs_1ac7a64087f3326f:EN-H4G8-TP-006",
+        "confidence": 0.78,
+        "edition_id": "ed_e6f7135f2b385ccbb47a",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G8 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_1ac7a64087f3326f",
+        "textbook_title": "英语8年级下册",
+        "unit_id": null,
+        "unit_title": "H4G8 教材范围"
       }
     ],
     "EN-H4G8-TP-007": [
@@ -156220,6 +158284,38 @@
         "review_status": "machine_checked",
         "scope_id": "tcs_4db7656086d72cec",
         "textbook_title": "英语8年级上册",
+        "unit_id": null,
+        "unit_title": "H4G8 教材范围"
+      },
+      {
+        "alignment_id": "tcs_f2b656b65152f629:EN-H4G8-TP-007",
+        "confidence": 0.78,
+        "edition_id": "ed_a93a5178587dcb63a569",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G8 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_f2b656b65152f629",
+        "textbook_title": "英语8年级上册",
+        "unit_id": null,
+        "unit_title": "H4G8 教材范围"
+      },
+      {
+        "alignment_id": "tcs_1ac7a64087f3326f:EN-H4G8-TP-007",
+        "confidence": 0.78,
+        "edition_id": "ed_e6f7135f2b385ccbb47a",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G8 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_1ac7a64087f3326f",
+        "textbook_title": "英语8年级下册",
         "unit_id": null,
         "unit_title": "H4G8 教材范围"
       }
@@ -156256,6 +158352,38 @@
         "textbook_title": "英语8年级上册",
         "unit_id": null,
         "unit_title": "H4G8 教材范围"
+      },
+      {
+        "alignment_id": "tcs_f2b656b65152f629:EN-H4G8-TP-008",
+        "confidence": 0.78,
+        "edition_id": "ed_a93a5178587dcb63a569",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G8 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_f2b656b65152f629",
+        "textbook_title": "英语8年级上册",
+        "unit_id": null,
+        "unit_title": "H4G8 教材范围"
+      },
+      {
+        "alignment_id": "tcs_1ac7a64087f3326f:EN-H4G8-TP-008",
+        "confidence": 0.78,
+        "edition_id": "ed_e6f7135f2b385ccbb47a",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G8 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_1ac7a64087f3326f",
+        "textbook_title": "英语8年级下册",
+        "unit_id": null,
+        "unit_title": "H4G8 教材范围"
       }
     ],
     "EN-H4G8-TP-011": [
@@ -156290,9 +158418,57 @@
         "textbook_title": "英语8年级上册",
         "unit_id": null,
         "unit_title": "H4G8 教材范围"
+      },
+      {
+        "alignment_id": "tcs_f2b656b65152f629:EN-H4G8-TP-011",
+        "confidence": 0.78,
+        "edition_id": "ed_a93a5178587dcb63a569",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G8 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_f2b656b65152f629",
+        "textbook_title": "英语8年级上册",
+        "unit_id": null,
+        "unit_title": "H4G8 教材范围"
+      },
+      {
+        "alignment_id": "tcs_1ac7a64087f3326f:EN-H4G8-TP-011",
+        "confidence": 0.78,
+        "edition_id": "ed_e6f7135f2b385ccbb47a",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G8 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_1ac7a64087f3326f",
+        "textbook_title": "英语8年级下册",
+        "unit_id": null,
+        "unit_title": "H4G8 教材范围"
       }
     ],
     "EN-H4G9-CA-001": [
+      {
+        "alignment_id": "tcs_590ef4e23d4729bc:EN-H4G9-CA-001",
+        "confidence": 0.78,
+        "edition_id": "ed_339d3168060589726092",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G9 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_590ef4e23d4729bc",
+        "textbook_title": "英语9年级上册",
+        "unit_id": null,
+        "unit_title": "H4G9 教材范围"
+      },
       {
         "alignment_id": "tcs_54cfcfb15b205d2b:EN-H4G9-CA-001",
         "confidence": 0.78,
@@ -156328,6 +158504,22 @@
     ],
     "EN-H4G9-CA-002": [
       {
+        "alignment_id": "tcs_590ef4e23d4729bc:EN-H4G9-CA-002",
+        "confidence": 0.78,
+        "edition_id": "ed_339d3168060589726092",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G9 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_590ef4e23d4729bc",
+        "textbook_title": "英语9年级上册",
+        "unit_id": null,
+        "unit_title": "H4G9 教材范围"
+      },
+      {
         "alignment_id": "tcs_54cfcfb15b205d2b:EN-H4G9-CA-002",
         "confidence": 0.78,
         "edition_id": "ed_ca2005df136f696b98af",
@@ -156361,6 +158553,22 @@
       }
     ],
     "EN-H4G9-CA-003": [
+      {
+        "alignment_id": "tcs_590ef4e23d4729bc:EN-H4G9-CA-003",
+        "confidence": 0.78,
+        "edition_id": "ed_339d3168060589726092",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G9 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_590ef4e23d4729bc",
+        "textbook_title": "英语9年级上册",
+        "unit_id": null,
+        "unit_title": "H4G9 教材范围"
+      },
       {
         "alignment_id": "tcs_54cfcfb15b205d2b:EN-H4G9-CA-003",
         "confidence": 0.78,
@@ -156396,6 +158604,22 @@
     ],
     "EN-H4G9-CA-004": [
       {
+        "alignment_id": "tcs_590ef4e23d4729bc:EN-H4G9-CA-004",
+        "confidence": 0.78,
+        "edition_id": "ed_339d3168060589726092",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G9 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_590ef4e23d4729bc",
+        "textbook_title": "英语9年级上册",
+        "unit_id": null,
+        "unit_title": "H4G9 教材范围"
+      },
+      {
         "alignment_id": "tcs_54cfcfb15b205d2b:EN-H4G9-CA-004",
         "confidence": 0.78,
         "edition_id": "ed_ca2005df136f696b98af",
@@ -156429,6 +158653,22 @@
       }
     ],
     "EN-H4G9-CA-005": [
+      {
+        "alignment_id": "tcs_590ef4e23d4729bc:EN-H4G9-CA-005",
+        "confidence": 0.78,
+        "edition_id": "ed_339d3168060589726092",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G9 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_590ef4e23d4729bc",
+        "textbook_title": "英语9年级上册",
+        "unit_id": null,
+        "unit_title": "H4G9 教材范围"
+      },
       {
         "alignment_id": "tcs_54cfcfb15b205d2b:EN-H4G9-CA-005",
         "confidence": 0.78,
@@ -156464,6 +158704,22 @@
     ],
     "EN-H4G9-CA-006": [
       {
+        "alignment_id": "tcs_590ef4e23d4729bc:EN-H4G9-CA-006",
+        "confidence": 0.78,
+        "edition_id": "ed_339d3168060589726092",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G9 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_590ef4e23d4729bc",
+        "textbook_title": "英语9年级上册",
+        "unit_id": null,
+        "unit_title": "H4G9 教材范围"
+      },
+      {
         "alignment_id": "tcs_54cfcfb15b205d2b:EN-H4G9-CA-006",
         "confidence": 0.78,
         "edition_id": "ed_ca2005df136f696b98af",
@@ -156497,6 +158753,22 @@
       }
     ],
     "EN-H4G9-CA-007": [
+      {
+        "alignment_id": "tcs_590ef4e23d4729bc:EN-H4G9-CA-007",
+        "confidence": 0.78,
+        "edition_id": "ed_339d3168060589726092",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G9 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_590ef4e23d4729bc",
+        "textbook_title": "英语9年级上册",
+        "unit_id": null,
+        "unit_title": "H4G9 教材范围"
+      },
       {
         "alignment_id": "tcs_54cfcfb15b205d2b:EN-H4G9-CA-007",
         "confidence": 0.78,
@@ -156532,6 +158804,22 @@
     ],
     "EN-H4G9-CA-009": [
       {
+        "alignment_id": "tcs_590ef4e23d4729bc:EN-H4G9-CA-009",
+        "confidence": 0.78,
+        "edition_id": "ed_339d3168060589726092",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G9 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_590ef4e23d4729bc",
+        "textbook_title": "英语9年级上册",
+        "unit_id": null,
+        "unit_title": "H4G9 教材范围"
+      },
+      {
         "alignment_id": "tcs_54cfcfb15b205d2b:EN-H4G9-CA-009",
         "confidence": 0.78,
         "edition_id": "ed_ca2005df136f696b98af",
@@ -156565,6 +158853,22 @@
       }
     ],
     "EN-H4G9-CA-015": [
+      {
+        "alignment_id": "tcs_590ef4e23d4729bc:EN-H4G9-CA-015",
+        "confidence": 0.78,
+        "edition_id": "ed_339d3168060589726092",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G9 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_590ef4e23d4729bc",
+        "textbook_title": "英语9年级上册",
+        "unit_id": null,
+        "unit_title": "H4G9 教材范围"
+      },
       {
         "alignment_id": "tcs_54cfcfb15b205d2b:EN-H4G9-CA-015",
         "confidence": 0.78,
@@ -156600,6 +158904,22 @@
     ],
     "EN-H4G9-CA-021": [
       {
+        "alignment_id": "tcs_590ef4e23d4729bc:EN-H4G9-CA-021",
+        "confidence": 0.78,
+        "edition_id": "ed_339d3168060589726092",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G9 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_590ef4e23d4729bc",
+        "textbook_title": "英语9年级上册",
+        "unit_id": null,
+        "unit_title": "H4G9 教材范围"
+      },
+      {
         "alignment_id": "tcs_54cfcfb15b205d2b:EN-H4G9-CA-021",
         "confidence": 0.78,
         "edition_id": "ed_ca2005df136f696b98af",
@@ -156633,6 +158953,22 @@
       }
     ],
     "EN-H4G9-LA-001": [
+      {
+        "alignment_id": "tcs_590ef4e23d4729bc:EN-H4G9-LA-001",
+        "confidence": 0.78,
+        "edition_id": "ed_339d3168060589726092",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G9 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_590ef4e23d4729bc",
+        "textbook_title": "英语9年级上册",
+        "unit_id": null,
+        "unit_title": "H4G9 教材范围"
+      },
       {
         "alignment_id": "tcs_54cfcfb15b205d2b:EN-H4G9-LA-001",
         "confidence": 0.78,
@@ -156668,6 +159004,22 @@
     ],
     "EN-H4G9-LA-002": [
       {
+        "alignment_id": "tcs_590ef4e23d4729bc:EN-H4G9-LA-002",
+        "confidence": 0.78,
+        "edition_id": "ed_339d3168060589726092",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G9 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_590ef4e23d4729bc",
+        "textbook_title": "英语9年级上册",
+        "unit_id": null,
+        "unit_title": "H4G9 教材范围"
+      },
+      {
         "alignment_id": "tcs_54cfcfb15b205d2b:EN-H4G9-LA-002",
         "confidence": 0.78,
         "edition_id": "ed_ca2005df136f696b98af",
@@ -156701,6 +159053,22 @@
       }
     ],
     "EN-H4G9-LA-003": [
+      {
+        "alignment_id": "tcs_590ef4e23d4729bc:EN-H4G9-LA-003",
+        "confidence": 0.78,
+        "edition_id": "ed_339d3168060589726092",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G9 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_590ef4e23d4729bc",
+        "textbook_title": "英语9年级上册",
+        "unit_id": null,
+        "unit_title": "H4G9 教材范围"
+      },
       {
         "alignment_id": "tcs_54cfcfb15b205d2b:EN-H4G9-LA-003",
         "confidence": 0.78,
@@ -156736,6 +159104,22 @@
     ],
     "EN-H4G9-LA-004": [
       {
+        "alignment_id": "tcs_590ef4e23d4729bc:EN-H4G9-LA-004",
+        "confidence": 0.78,
+        "edition_id": "ed_339d3168060589726092",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G9 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_590ef4e23d4729bc",
+        "textbook_title": "英语9年级上册",
+        "unit_id": null,
+        "unit_title": "H4G9 教材范围"
+      },
+      {
         "alignment_id": "tcs_54cfcfb15b205d2b:EN-H4G9-LA-004",
         "confidence": 0.78,
         "edition_id": "ed_ca2005df136f696b98af",
@@ -156769,6 +159153,22 @@
       }
     ],
     "EN-H4G9-LA-005": [
+      {
+        "alignment_id": "tcs_590ef4e23d4729bc:EN-H4G9-LA-005",
+        "confidence": 0.78,
+        "edition_id": "ed_339d3168060589726092",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G9 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_590ef4e23d4729bc",
+        "textbook_title": "英语9年级上册",
+        "unit_id": null,
+        "unit_title": "H4G9 教材范围"
+      },
       {
         "alignment_id": "tcs_54cfcfb15b205d2b:EN-H4G9-LA-005",
         "confidence": 0.78,
@@ -156804,6 +159204,22 @@
     ],
     "EN-H4G9-LA-006": [
       {
+        "alignment_id": "tcs_590ef4e23d4729bc:EN-H4G9-LA-006",
+        "confidence": 0.78,
+        "edition_id": "ed_339d3168060589726092",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G9 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_590ef4e23d4729bc",
+        "textbook_title": "英语9年级上册",
+        "unit_id": null,
+        "unit_title": "H4G9 教材范围"
+      },
+      {
         "alignment_id": "tcs_54cfcfb15b205d2b:EN-H4G9-LA-006",
         "confidence": 0.78,
         "edition_id": "ed_ca2005df136f696b98af",
@@ -156837,6 +159253,22 @@
       }
     ],
     "EN-H4G9-LA-007": [
+      {
+        "alignment_id": "tcs_590ef4e23d4729bc:EN-H4G9-LA-007",
+        "confidence": 0.78,
+        "edition_id": "ed_339d3168060589726092",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G9 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_590ef4e23d4729bc",
+        "textbook_title": "英语9年级上册",
+        "unit_id": null,
+        "unit_title": "H4G9 教材范围"
+      },
       {
         "alignment_id": "tcs_54cfcfb15b205d2b:EN-H4G9-LA-007",
         "confidence": 0.78,
@@ -156872,6 +159304,22 @@
     ],
     "EN-H4G9-LA-008": [
       {
+        "alignment_id": "tcs_590ef4e23d4729bc:EN-H4G9-LA-008",
+        "confidence": 0.78,
+        "edition_id": "ed_339d3168060589726092",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G9 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_590ef4e23d4729bc",
+        "textbook_title": "英语9年级上册",
+        "unit_id": null,
+        "unit_title": "H4G9 教材范围"
+      },
+      {
         "alignment_id": "tcs_54cfcfb15b205d2b:EN-H4G9-LA-008",
         "confidence": 0.78,
         "edition_id": "ed_ca2005df136f696b98af",
@@ -156905,6 +159353,22 @@
       }
     ],
     "EN-H4G9-LA-009": [
+      {
+        "alignment_id": "tcs_590ef4e23d4729bc:EN-H4G9-LA-009",
+        "confidence": 0.78,
+        "edition_id": "ed_339d3168060589726092",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G9 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_590ef4e23d4729bc",
+        "textbook_title": "英语9年级上册",
+        "unit_id": null,
+        "unit_title": "H4G9 教材范围"
+      },
       {
         "alignment_id": "tcs_54cfcfb15b205d2b:EN-H4G9-LA-009",
         "confidence": 0.78,
@@ -156940,6 +159404,22 @@
     ],
     "EN-H4G9-LA-010": [
       {
+        "alignment_id": "tcs_590ef4e23d4729bc:EN-H4G9-LA-010",
+        "confidence": 0.78,
+        "edition_id": "ed_339d3168060589726092",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G9 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_590ef4e23d4729bc",
+        "textbook_title": "英语9年级上册",
+        "unit_id": null,
+        "unit_title": "H4G9 教材范围"
+      },
+      {
         "alignment_id": "tcs_54cfcfb15b205d2b:EN-H4G9-LA-010",
         "confidence": 0.78,
         "edition_id": "ed_ca2005df136f696b98af",
@@ -156973,6 +159453,22 @@
       }
     ],
     "EN-H4G9-LA-011": [
+      {
+        "alignment_id": "tcs_590ef4e23d4729bc:EN-H4G9-LA-011",
+        "confidence": 0.78,
+        "edition_id": "ed_339d3168060589726092",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G9 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_590ef4e23d4729bc",
+        "textbook_title": "英语9年级上册",
+        "unit_id": null,
+        "unit_title": "H4G9 教材范围"
+      },
       {
         "alignment_id": "tcs_54cfcfb15b205d2b:EN-H4G9-LA-011",
         "confidence": 0.78,
@@ -157008,6 +159504,22 @@
     ],
     "EN-H4G9-LA-012": [
       {
+        "alignment_id": "tcs_590ef4e23d4729bc:EN-H4G9-LA-012",
+        "confidence": 0.78,
+        "edition_id": "ed_339d3168060589726092",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G9 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_590ef4e23d4729bc",
+        "textbook_title": "英语9年级上册",
+        "unit_id": null,
+        "unit_title": "H4G9 教材范围"
+      },
+      {
         "alignment_id": "tcs_54cfcfb15b205d2b:EN-H4G9-LA-012",
         "confidence": 0.78,
         "edition_id": "ed_ca2005df136f696b98af",
@@ -157041,6 +159553,22 @@
       }
     ],
     "EN-H4G9-LA-013": [
+      {
+        "alignment_id": "tcs_590ef4e23d4729bc:EN-H4G9-LA-013",
+        "confidence": 0.78,
+        "edition_id": "ed_339d3168060589726092",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G9 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_590ef4e23d4729bc",
+        "textbook_title": "英语9年级上册",
+        "unit_id": null,
+        "unit_title": "H4G9 教材范围"
+      },
       {
         "alignment_id": "tcs_54cfcfb15b205d2b:EN-H4G9-LA-013",
         "confidence": 0.78,
@@ -157076,6 +159604,22 @@
     ],
     "EN-H4G9-LA-014": [
       {
+        "alignment_id": "tcs_590ef4e23d4729bc:EN-H4G9-LA-014",
+        "confidence": 0.78,
+        "edition_id": "ed_339d3168060589726092",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G9 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_590ef4e23d4729bc",
+        "textbook_title": "英语9年级上册",
+        "unit_id": null,
+        "unit_title": "H4G9 教材范围"
+      },
+      {
         "alignment_id": "tcs_54cfcfb15b205d2b:EN-H4G9-LA-014",
         "confidence": 0.78,
         "edition_id": "ed_ca2005df136f696b98af",
@@ -157109,6 +159653,22 @@
       }
     ],
     "EN-H4G9-LA-015": [
+      {
+        "alignment_id": "tcs_590ef4e23d4729bc:EN-H4G9-LA-015",
+        "confidence": 0.78,
+        "edition_id": "ed_339d3168060589726092",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G9 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_590ef4e23d4729bc",
+        "textbook_title": "英语9年级上册",
+        "unit_id": null,
+        "unit_title": "H4G9 教材范围"
+      },
       {
         "alignment_id": "tcs_54cfcfb15b205d2b:EN-H4G9-LA-015",
         "confidence": 0.78,
@@ -157144,6 +159704,22 @@
     ],
     "EN-H4G9-LA-018": [
       {
+        "alignment_id": "tcs_590ef4e23d4729bc:EN-H4G9-LA-018",
+        "confidence": 0.78,
+        "edition_id": "ed_339d3168060589726092",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G9 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_590ef4e23d4729bc",
+        "textbook_title": "英语9年级上册",
+        "unit_id": null,
+        "unit_title": "H4G9 教材范围"
+      },
+      {
         "alignment_id": "tcs_54cfcfb15b205d2b:EN-H4G9-LA-018",
         "confidence": 0.78,
         "edition_id": "ed_ca2005df136f696b98af",
@@ -157177,6 +159753,22 @@
       }
     ],
     "EN-H4G9-LA-021": [
+      {
+        "alignment_id": "tcs_590ef4e23d4729bc:EN-H4G9-LA-021",
+        "confidence": 0.78,
+        "edition_id": "ed_339d3168060589726092",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G9 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_590ef4e23d4729bc",
+        "textbook_title": "英语9年级上册",
+        "unit_id": null,
+        "unit_title": "H4G9 教材范围"
+      },
       {
         "alignment_id": "tcs_54cfcfb15b205d2b:EN-H4G9-LA-021",
         "confidence": 0.78,
@@ -157212,6 +159804,22 @@
     ],
     "EN-H4G9-LA-024": [
       {
+        "alignment_id": "tcs_590ef4e23d4729bc:EN-H4G9-LA-024",
+        "confidence": 0.78,
+        "edition_id": "ed_339d3168060589726092",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G9 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_590ef4e23d4729bc",
+        "textbook_title": "英语9年级上册",
+        "unit_id": null,
+        "unit_title": "H4G9 教材范围"
+      },
+      {
         "alignment_id": "tcs_54cfcfb15b205d2b:EN-H4G9-LA-024",
         "confidence": 0.78,
         "edition_id": "ed_ca2005df136f696b98af",
@@ -157245,6 +159853,22 @@
       }
     ],
     "EN-H4G9-LA-027": [
+      {
+        "alignment_id": "tcs_590ef4e23d4729bc:EN-H4G9-LA-027",
+        "confidence": 0.78,
+        "edition_id": "ed_339d3168060589726092",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G9 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_590ef4e23d4729bc",
+        "textbook_title": "英语9年级上册",
+        "unit_id": null,
+        "unit_title": "H4G9 教材范围"
+      },
       {
         "alignment_id": "tcs_54cfcfb15b205d2b:EN-H4G9-LA-027",
         "confidence": 0.78,
@@ -157280,6 +159904,22 @@
     ],
     "EN-H4G9-SA-001": [
       {
+        "alignment_id": "tcs_590ef4e23d4729bc:EN-H4G9-SA-001",
+        "confidence": 0.78,
+        "edition_id": "ed_339d3168060589726092",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G9 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_590ef4e23d4729bc",
+        "textbook_title": "英语9年级上册",
+        "unit_id": null,
+        "unit_title": "H4G9 教材范围"
+      },
+      {
         "alignment_id": "tcs_54cfcfb15b205d2b:EN-H4G9-SA-001",
         "confidence": 0.78,
         "edition_id": "ed_ca2005df136f696b98af",
@@ -157313,6 +159953,22 @@
       }
     ],
     "EN-H4G9-SA-002": [
+      {
+        "alignment_id": "tcs_590ef4e23d4729bc:EN-H4G9-SA-002",
+        "confidence": 0.78,
+        "edition_id": "ed_339d3168060589726092",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G9 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_590ef4e23d4729bc",
+        "textbook_title": "英语9年级上册",
+        "unit_id": null,
+        "unit_title": "H4G9 教材范围"
+      },
       {
         "alignment_id": "tcs_54cfcfb15b205d2b:EN-H4G9-SA-002",
         "confidence": 0.78,
@@ -157348,6 +160004,22 @@
     ],
     "EN-H4G9-SA-003": [
       {
+        "alignment_id": "tcs_590ef4e23d4729bc:EN-H4G9-SA-003",
+        "confidence": 0.78,
+        "edition_id": "ed_339d3168060589726092",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G9 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_590ef4e23d4729bc",
+        "textbook_title": "英语9年级上册",
+        "unit_id": null,
+        "unit_title": "H4G9 教材范围"
+      },
+      {
         "alignment_id": "tcs_54cfcfb15b205d2b:EN-H4G9-SA-003",
         "confidence": 0.78,
         "edition_id": "ed_ca2005df136f696b98af",
@@ -157381,6 +160053,22 @@
       }
     ],
     "EN-H4G9-SA-004": [
+      {
+        "alignment_id": "tcs_590ef4e23d4729bc:EN-H4G9-SA-004",
+        "confidence": 0.78,
+        "edition_id": "ed_339d3168060589726092",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G9 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_590ef4e23d4729bc",
+        "textbook_title": "英语9年级上册",
+        "unit_id": null,
+        "unit_title": "H4G9 教材范围"
+      },
       {
         "alignment_id": "tcs_54cfcfb15b205d2b:EN-H4G9-SA-004",
         "confidence": 0.78,
@@ -157416,6 +160104,22 @@
     ],
     "EN-H4G9-SA-006": [
       {
+        "alignment_id": "tcs_590ef4e23d4729bc:EN-H4G9-SA-006",
+        "confidence": 0.78,
+        "edition_id": "ed_339d3168060589726092",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G9 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_590ef4e23d4729bc",
+        "textbook_title": "英语9年级上册",
+        "unit_id": null,
+        "unit_title": "H4G9 教材范围"
+      },
+      {
         "alignment_id": "tcs_54cfcfb15b205d2b:EN-H4G9-SA-006",
         "confidence": 0.78,
         "edition_id": "ed_ca2005df136f696b98af",
@@ -157449,6 +160153,22 @@
       }
     ],
     "EN-H4G9-SA-009": [
+      {
+        "alignment_id": "tcs_590ef4e23d4729bc:EN-H4G9-SA-009",
+        "confidence": 0.78,
+        "edition_id": "ed_339d3168060589726092",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G9 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_590ef4e23d4729bc",
+        "textbook_title": "英语9年级上册",
+        "unit_id": null,
+        "unit_title": "H4G9 教材范围"
+      },
       {
         "alignment_id": "tcs_54cfcfb15b205d2b:EN-H4G9-SA-009",
         "confidence": 0.78,
@@ -157484,6 +160204,22 @@
     ],
     "EN-H4G9-SA-012": [
       {
+        "alignment_id": "tcs_590ef4e23d4729bc:EN-H4G9-SA-012",
+        "confidence": 0.78,
+        "edition_id": "ed_339d3168060589726092",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G9 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_590ef4e23d4729bc",
+        "textbook_title": "英语9年级上册",
+        "unit_id": null,
+        "unit_title": "H4G9 教材范围"
+      },
+      {
         "alignment_id": "tcs_54cfcfb15b205d2b:EN-H4G9-SA-012",
         "confidence": 0.78,
         "edition_id": "ed_ca2005df136f696b98af",
@@ -157517,6 +160253,22 @@
       }
     ],
     "EN-H4G9-TP-001": [
+      {
+        "alignment_id": "tcs_590ef4e23d4729bc:EN-H4G9-TP-001",
+        "confidence": 0.78,
+        "edition_id": "ed_339d3168060589726092",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G9 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_590ef4e23d4729bc",
+        "textbook_title": "英语9年级上册",
+        "unit_id": null,
+        "unit_title": "H4G9 教材范围"
+      },
       {
         "alignment_id": "tcs_54cfcfb15b205d2b:EN-H4G9-TP-001",
         "confidence": 0.78,
@@ -157552,6 +160304,22 @@
     ],
     "EN-H4G9-TP-002": [
       {
+        "alignment_id": "tcs_590ef4e23d4729bc:EN-H4G9-TP-002",
+        "confidence": 0.78,
+        "edition_id": "ed_339d3168060589726092",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G9 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_590ef4e23d4729bc",
+        "textbook_title": "英语9年级上册",
+        "unit_id": null,
+        "unit_title": "H4G9 教材范围"
+      },
+      {
         "alignment_id": "tcs_54cfcfb15b205d2b:EN-H4G9-TP-002",
         "confidence": 0.78,
         "edition_id": "ed_ca2005df136f696b98af",
@@ -157585,6 +160353,22 @@
       }
     ],
     "EN-H4G9-TP-003": [
+      {
+        "alignment_id": "tcs_590ef4e23d4729bc:EN-H4G9-TP-003",
+        "confidence": 0.78,
+        "edition_id": "ed_339d3168060589726092",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G9 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_590ef4e23d4729bc",
+        "textbook_title": "英语9年级上册",
+        "unit_id": null,
+        "unit_title": "H4G9 教材范围"
+      },
       {
         "alignment_id": "tcs_54cfcfb15b205d2b:EN-H4G9-TP-003",
         "confidence": 0.78,
@@ -157620,6 +160404,22 @@
     ],
     "EN-H4G9-TP-004": [
       {
+        "alignment_id": "tcs_590ef4e23d4729bc:EN-H4G9-TP-004",
+        "confidence": 0.78,
+        "edition_id": "ed_339d3168060589726092",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G9 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_590ef4e23d4729bc",
+        "textbook_title": "英语9年级上册",
+        "unit_id": null,
+        "unit_title": "H4G9 教材范围"
+      },
+      {
         "alignment_id": "tcs_54cfcfb15b205d2b:EN-H4G9-TP-004",
         "confidence": 0.78,
         "edition_id": "ed_ca2005df136f696b98af",
@@ -157653,6 +160453,22 @@
       }
     ],
     "EN-H4G9-TP-006": [
+      {
+        "alignment_id": "tcs_590ef4e23d4729bc:EN-H4G9-TP-006",
+        "confidence": 0.78,
+        "edition_id": "ed_339d3168060589726092",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G9 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_590ef4e23d4729bc",
+        "textbook_title": "英语9年级上册",
+        "unit_id": null,
+        "unit_title": "H4G9 教材范围"
+      },
       {
         "alignment_id": "tcs_54cfcfb15b205d2b:EN-H4G9-TP-006",
         "confidence": 0.78,
@@ -157688,6 +160504,22 @@
     ],
     "EN-H4G9-TP-009": [
       {
+        "alignment_id": "tcs_590ef4e23d4729bc:EN-H4G9-TP-009",
+        "confidence": 0.78,
+        "edition_id": "ed_339d3168060589726092",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G9 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_590ef4e23d4729bc",
+        "textbook_title": "英语9年级上册",
+        "unit_id": null,
+        "unit_title": "H4G9 教材范围"
+      },
+      {
         "alignment_id": "tcs_54cfcfb15b205d2b:EN-H4G9-TP-009",
         "confidence": 0.78,
         "edition_id": "ed_ca2005df136f696b98af",
@@ -157722,6 +160554,22 @@
     ],
     "EN-H4G9-TP-011": [
       {
+        "alignment_id": "tcs_590ef4e23d4729bc:EN-H4G9-TP-011",
+        "confidence": 0.78,
+        "edition_id": "ed_339d3168060589726092",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G9 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_590ef4e23d4729bc",
+        "textbook_title": "英语9年级上册",
+        "unit_id": null,
+        "unit_title": "H4G9 教材范围"
+      },
+      {
         "alignment_id": "tcs_54cfcfb15b205d2b:EN-H4G9-TP-011",
         "confidence": 0.78,
         "edition_id": "ed_ca2005df136f696b98af",
@@ -157755,6 +160603,22 @@
       }
     ],
     "EN-H4G9-TP-012": [
+      {
+        "alignment_id": "tcs_590ef4e23d4729bc:EN-H4G9-TP-012",
+        "confidence": 0.78,
+        "edition_id": "ed_339d3168060589726092",
+        "evidence_granularity": "textbook_grade_band_scope",
+        "evidence_role": "direct_textbook",
+        "pdf_page": null,
+        "printed_page": null,
+        "rationale": "该教材与 H4G9 课标处于同一学科和年级范围；具体单元证据单独列出。",
+        "relation_type": "curriculum_scope",
+        "review_status": "machine_checked",
+        "scope_id": "tcs_590ef4e23d4729bc",
+        "textbook_title": "英语9年级上册",
+        "unit_id": null,
+        "unit_title": "H4G9 教材范围"
+      },
       {
         "alignment_id": "tcs_54cfcfb15b205d2b:EN-H4G9-TP-012",
         "confidence": 0.78,

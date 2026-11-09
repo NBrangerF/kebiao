@@ -1,0 +1,14 @@
+{
+ "edition_id": "ed_339d3168060589726092",
+ "textbook_title": "英语9年级上册",
+ "platform_textbook_id": "1e7a0cde-8b5b-4587-8c35-af575bfb0a14",
+ "platform_title": "新教材-初中英语外研社版（主编：孙有中）九年级上册",
+ "match": {
+  "title_hits": 0,
+  "method": "book_text",
+  "score": 0.2,
+  "candidates": 2
+ },
+ "tree": [],
+ "lessons": []
+}
