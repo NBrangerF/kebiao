@@ -82,16 +82,276 @@
   ],
   "curriculum_alignment_summary": {
     "candidate_count": 0,
-    "disposition": "unit_aligned",
-    "evidence_note": "已有公开单元主题关系；仍需教材正文、练习或教师用书的页内证据，才能提升到可教学落实。",
+    "disposition": "page_aligned",
+    "evidence_note": "已有教材正文、任务或练习的页内证据；关系由机器自动生成并附带原文定位、证据哈希和置信度。",
     "gap_reason": null,
-    "highest_evidence_level": "L2_topic",
-    "page_evidence_count": 0,
-    "scope_count": 2,
-    "specific_count": 1,
+    "highest_evidence_level": "L3_page_evidence",
+    "page_evidence_count": 4,
+    "scope_count": 4,
+    "specific_count": 5,
     "unit_topic_candidate_count": 0
   },
   "curriculum_alignments": [
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_1746337cbfad4e14",
+      "alignment_type": "supports",
+      "confidence": 0.92,
+      "coverage": "partial",
+      "edition_id": "ed_ef4497f053950395a66d",
+      "evidence_basis": "textbook_page_span",
+      "evidence_gap": null,
+      "evidence_level": "L3_page_evidence",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_junior_grade_9_down",
+        "tes_7d88ed944aad504a",
+        "textbook-node:tcn_66dfbf9a8bb380bf",
+        "textbook-unit:tcu_eb8b1c3a6c86188d"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "会画二次函数的图象,发展几何直观",
+          "excerpt_hash": "2fd9fef75c0b44af7a0983925622af8237b78d8e8ca551ba15f87c42bb596733",
+          "pdf_page": 33,
+          "printed_page": null,
+          "span_id": "tes_7d88ed944aad504a"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_263d6b71f1128af1",
+        "lc_7ae225c3543f73b2",
+        "lc_9f43d9a623ddfa36"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_263d6b71f1128af1",
+          "label": "画二次函数图象"
+        },
+        {
+          "component_id": "lc_7ae225c3543f73b2",
+          "label": "准确说出二次函数与一元二次方程关系"
+        },
+        {
+          "component_id": "lc_9f43d9a623ddfa36",
+          "label": "通过实际问题分析体会二次函数意义"
+        }
+      ],
+      "level": "page",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_66dfbf9a8bb380bf",
+      "node_title": "会画二次函数的图象,发展几何直观",
+      "pdf_page": 33,
+      "printed_page": null,
+      "publication_status": "published",
+      "rationale": "教材学习目标“会画二次函数的图象,发展几何直观”与课标 MA-H4G9-AL-027 的可教学小能力“画二次函数图象、准确说出二次函数与一元二次方程关系、通过实际问题分析体会二次函数意义”形成页内证据匹配。",
+      "relation_type": "supports",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "textbook_grade": 9,
+      "textbook_subject": "数学",
+      "textbook_title": "数学9年级下册",
+      "textbook_volume": "下册",
+      "unit_id": "tcu_eb8b1c3a6c86188d",
+      "unit_title": "第二章 二次函数"
+    },
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_1b0356bf2601b83f",
+      "alignment_type": "supports",
+      "confidence": 0.86,
+      "coverage": "partial",
+      "edition_id": "ed_ef4497f053950395a66d",
+      "evidence_basis": "textbook_page_span",
+      "evidence_gap": null,
+      "evidence_level": "L3_page_evidence",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_junior_grade_9_down",
+        "tes_af988a775c48e01e",
+        "textbook-node:tcn_3be67c7974c830cd",
+        "textbook-unit:tcu_eb8b1c3a6c86188d"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "已知二次函数y=ax+bx+c图象上的三个点,可以确定这个二次函数",
+          "excerpt_hash": "3a8e9de5512fe09e79629b5d1af21fe494205bd9eb97766bfe35423504d42324",
+          "pdf_page": 49,
+          "printed_page": null,
+          "span_id": "tes_af988a775c48e01e"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_263d6b71f1128af1",
+        "lc_7ae225c3543f73b2",
+        "lc_9f43d9a623ddfa36"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_263d6b71f1128af1",
+          "label": "画二次函数图象"
+        },
+        {
+          "component_id": "lc_7ae225c3543f73b2",
+          "label": "准确说出二次函数与一元二次方程关系"
+        },
+        {
+          "component_id": "lc_9f43d9a623ddfa36",
+          "label": "通过实际问题分析体会二次函数意义"
+        }
+      ],
+      "level": "page",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_3be67c7974c830cd",
+      "node_title": "已知二次函数y=ax+bx+c图象上的三个点,可以确定这个二次函数",
+      "pdf_page": 49,
+      "printed_page": null,
+      "publication_status": "published",
+      "rationale": "教材学习目标“已知二次函数y=ax+bx+c图象上的三个点,可以确定这个二次函数”与课标 MA-H4G9-AL-027 的可教学小能力“画二次函数图象、准确说出二次函数与一元二次方程关系、通过实际问题分析体会二次函数意义”形成页内证据匹配。",
+      "relation_type": "supports",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "textbook_grade": 9,
+      "textbook_subject": "数学",
+      "textbook_title": "数学9年级下册",
+      "textbook_volume": "下册",
+      "unit_id": "tcu_eb8b1c3a6c86188d",
+      "unit_title": "第二章 二次函数"
+    },
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_2cf8139596bf1eba",
+      "alignment_type": "supports",
+      "confidence": 0.8768,
+      "coverage": "partial",
+      "edition_id": "ed_ef4497f053950395a66d",
+      "evidence_basis": "textbook_page_span",
+      "evidence_gap": null,
+      "evidence_level": "L3_page_evidence",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_junior_grade_9_down",
+        "tes_a48e183644d20b29",
+        "textbook-node:tcn_d201bf1cd94083b3",
+        "textbook-unit:tcu_eb8b1c3a6c86188d"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "探究二次函数的性质,进一步积累研究函数性质的经验",
+          "excerpt_hash": "817d8424a01a465187301a6f69b710acb2d50e91e6dd719d4ebf7d68be6163f0",
+          "pdf_page": 33,
+          "printed_page": null,
+          "span_id": "tes_a48e183644d20b29"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_263d6b71f1128af1",
+        "lc_7ae225c3543f73b2",
+        "lc_9f43d9a623ddfa36"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_263d6b71f1128af1",
+          "label": "画二次函数图象"
+        },
+        {
+          "component_id": "lc_7ae225c3543f73b2",
+          "label": "准确说出二次函数与一元二次方程关系"
+        },
+        {
+          "component_id": "lc_9f43d9a623ddfa36",
+          "label": "通过实际问题分析体会二次函数意义"
+        }
+      ],
+      "level": "page",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_d201bf1cd94083b3",
+      "node_title": "探究二次函数的性质,进一步积累研究函数性质的经验",
+      "pdf_page": 33,
+      "printed_page": null,
+      "publication_status": "published",
+      "rationale": "教材学习目标“探究二次函数的性质,进一步积累研究函数性质的经验”与课标 MA-H4G9-AL-027 的可教学小能力“画二次函数图象、准确说出二次函数与一元二次方程关系、通过实际问题分析体会二次函数意义”形成页内证据匹配。",
+      "relation_type": "supports",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "textbook_grade": 9,
+      "textbook_subject": "数学",
+      "textbook_title": "数学9年级下册",
+      "textbook_volume": "下册",
+      "unit_id": "tcu_eb8b1c3a6c86188d",
+      "unit_title": "第二章 二次函数"
+    },
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_312b9cdf91bae8c3",
+      "alignment_type": "supports",
+      "confidence": 0.86,
+      "coverage": "partial",
+      "edition_id": "ed_ef4497f053950395a66d",
+      "evidence_basis": "textbook_page_span",
+      "evidence_gap": null,
+      "evidence_level": "L3_page_evidence",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_junior_grade_9_down",
+        "tes_f7c84ad0c141ba96",
+        "textbook-node:tcn_2c1b59fe30a076a8",
+        "textbook-unit:tcu_eb8b1c3a6c86188d"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "探索变量之间的二次函数关系,体会其中的模型思想",
+          "excerpt_hash": "a0c611efe1319fce53e0d385de608e3cb8d9423c0a354a06649da1a4bb7aa112",
+          "pdf_page": 33,
+          "printed_page": null,
+          "span_id": "tes_f7c84ad0c141ba96"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_263d6b71f1128af1",
+        "lc_7ae225c3543f73b2",
+        "lc_9f43d9a623ddfa36"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_263d6b71f1128af1",
+          "label": "画二次函数图象"
+        },
+        {
+          "component_id": "lc_7ae225c3543f73b2",
+          "label": "准确说出二次函数与一元二次方程关系"
+        },
+        {
+          "component_id": "lc_9f43d9a623ddfa36",
+          "label": "通过实际问题分析体会二次函数意义"
+        }
+      ],
+      "level": "page",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_2c1b59fe30a076a8",
+      "node_title": "探索变量之间的二次函数关系,体会其中的模型思想",
+      "pdf_page": 33,
+      "printed_page": null,
+      "publication_status": "published",
+      "rationale": "教材学习目标“探索变量之间的二次函数关系,体会其中的模型思想”与课标 MA-H4G9-AL-027 的可教学小能力“画二次函数图象、准确说出二次函数与一元二次方程关系、通过实际问题分析体会二次函数意义”形成页内证据匹配。",
+      "relation_type": "supports",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "textbook_grade": 9,
+      "textbook_subject": "数学",
+      "textbook_title": "数学9年级下册",
+      "textbook_volume": "下册",
+      "unit_id": "tcu_eb8b1c3a6c86188d",
+      "unit_title": "第二章 二次函数"
+    },
     {
       "algorithm_version": "component-evidence-hybrid-v3",
       "alignment_id": "tca_fdef99a38441f561",
@@ -212,6 +472,68 @@
       "review_status": "machine_checked",
       "revision_status": "revision_unknown",
       "scope_id": "tcs_3e651d0e242caded",
+      "textbook_grade": 9,
+      "textbook_subject": "数学",
+      "textbook_title": "数学9年级下册",
+      "textbook_volume": "下册",
+      "unit_id": null,
+      "unit_title": ""
+    },
+    {
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "alignment_id": "ca_fd07fcc9a101c68e",
+      "alignment_type": "references",
+      "confidence": null,
+      "coverage": "scope_only",
+      "edition_id": "ed_40d19fde240347eaa591",
+      "evidence_basis": "subject_grade_scope",
+      "evidence_level": "L1_scope",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_junior_grade_9_up"
+      ],
+      "evidence_role": "direct_textbook",
+      "level": "scope",
+      "method": "subject_grade_scope_mapping",
+      "pdf_page": null,
+      "printed_page": null,
+      "publication_status": "published_scope",
+      "rationale": "教材与课标处于同学科、同学段的适用范围；此关系不证明某一单元直接教授该条标准。",
+      "relation_type": "curriculum_scope",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "scope_id": "tcs_e74e9fb9bfcc1148",
+      "textbook_grade": 9,
+      "textbook_subject": "数学",
+      "textbook_title": "数学9年级上册",
+      "textbook_volume": "上册",
+      "unit_id": null,
+      "unit_title": ""
+    },
+    {
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "alignment_id": "ca_557c9fe64e9cb967",
+      "alignment_type": "references",
+      "confidence": null,
+      "coverage": "scope_only",
+      "edition_id": "ed_ef4497f053950395a66d",
+      "evidence_basis": "subject_grade_scope",
+      "evidence_level": "L1_scope",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_junior_grade_9_down"
+      ],
+      "evidence_role": "direct_textbook",
+      "level": "scope",
+      "method": "subject_grade_scope_mapping",
+      "pdf_page": null,
+      "printed_page": null,
+      "publication_status": "published_scope",
+      "rationale": "教材与课标处于同学科、同学段的适用范围；此关系不证明某一单元直接教授该条标准。",
+      "relation_type": "curriculum_scope",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "scope_id": "tcs_8281375193798050",
       "textbook_grade": 9,
       "textbook_subject": "数学",
       "textbook_title": "数学9年级下册",

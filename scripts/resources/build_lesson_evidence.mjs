@@ -49,11 +49,12 @@ export function keysOf(title, parent = '') {
     return [...keys]
 }
 
-// 英语 lessons are named by unit and part: 「Unit 1 Part A」, 「Section B 2a—2e」
+// 英语 lessons are named by unit and part: 「Unit 1 Part A」, 「Section B 2a—2e」; 外研社版 names its parts
+// 「Unit 1 Let's be friends! (Get ready)」 (小学) and 「Unit 1 A new start (Understanding ideas)」 (初中)
 export function englishKey(title, parent = '') {
     const text = `${parent} ${title}`
     const unit = /starter/iu.test(text) ? null : text.match(/unit\s*(\d+)/iu)?.[1]
-    const part = text.match(/(part\s*[abc]|section\s*[ab]|recycle\s*\d|self\s*check|writing|reading)/iu)?.[1]
+    const part = text.match(/(part\s*[abc]|section\s*[ab]|recycle\s*\d|self\s*check|get\s*ready|start\s*up|speed\s*up|fuel\s*up|hit\s*it\s*big|wrap\s*up|starting\s*out|understanding\s*ideas|developing\s*ideas|presenting\s*ideas|reflection|writing|reading)/iu)?.[1]
     const words = ['', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten', 'eleven', 'twelve']
     return { unit: unit ? `unit${unit}` : null, unitWord: unit && words[Number(unit)] ? `unit${words[Number(unit)]}` : null, part: part ? squash(part) : null }
 }

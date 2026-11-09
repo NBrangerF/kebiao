@@ -81,7 +81,7 @@ export default function TextbookResourceReaderPage() {
     const book = useMemo(() => state.resource ? resourceAsReaderBook(state.resource) : null, [state.resource])
     if (state.loading) return <LoadingState message="正在建立支持资源阅读会话" />
     if (state.error) {
-        return <div className={`container ${styles.errorWrap}`}><ErrorState title="暂时无法阅读这份支持资源" message={state.error} /><p>资源目录仍可浏览；在线阅读需要文件已入库，且 X9 Pro 已连接或对象存储可用。</p><Link className="btn btn-secondary" to="/textbooks">返回教材馆</Link></div>
+        return <div className={`container ${styles.errorWrap}`}><ErrorState title="暂时无法阅读这份支持资源" message={state.error} /><p>这份资源暂时打不开，请稍后刷新再试；资源目录仍可浏览。</p><Link className="btn btn-secondary" to="/textbooks">返回教材馆</Link></div>
     }
 
     const requestedPage = Number(searchParams.get('page'))

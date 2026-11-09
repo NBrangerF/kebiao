@@ -71,7 +71,7 @@
     cursor: pointer;
 }
 
-.option[aria-selected='true'] { background: rgba(255, 255, 255, 0.07); }
+.option[aria-selected='true'] { background: rgba(255, 255, 255, 0.07); box-shadow: inset 2px 0 0 var(--kb-gold); }
 
 .option i {
     width: 8px;
@@ -93,7 +93,7 @@
 
 /* the hand-off to AI search */
 .ai { --c: var(--kb-gold); border-top: 1px solid var(--kb-line); border-radius: 0; }
-.ai:first-child, .empty + .ai { border-top: 0; border-radius: 0; }
+.ai:first-child { border-top: 0; border-radius: 0; }
 
 .meta {
     grid-column: 2;
@@ -103,6 +103,7 @@
 }
 
 .empty {
+    margin: 0;
     padding: 28px 18px;
     color: var(--kb-dim);
     text-align: center;

@@ -1,6 +1,6 @@
 // The text of each 国家平台 lesson's own pages in the textbook PDF, for the AI 备课 prompts (server-side data, not public).
 // A lesson runs from its pdf_page to the page before the next lesson starts, at most 3 pages; the text is the PDF's own
-// text layer (scanned pages have none), CJK spacing removed, cut at 1,800 characters.
+// text layer (a scanned page: its OCR text from the page sidecar), CJK spacing removed, cut at 1,800 characters.
 //   node scripts/resources/extract_lesson_text.mjs [library root] [edition_id …]
 // Reads data/textbooks/library-state (the generation production serves, so page numbers match the reader) and
 // public/data/textbooks/national-lessons; writes data/textbooks/lesson-text/<edition>.json.
@@ -76,9 +76,22 @@ for (const name of files) {
     const pages = await outline(edition)
     const startOfLesson = new Map(national.lessons.map(lesson => [lesson.id, startOf(lesson, pages)]))
     const starts = [...new Set([...startOfLesson.values(), ...pages.values()].filter(page => Number.isInteger(page) && page > 0))].sort((a, b) => a - b)
+    // a scanned page has no text layer: its OCR text from the page sidecar (Vision or Tesseract), when there is one
+    const ocr = new Map()
+    try {
+        for (const line of (await readFile(join(root, 'derived/textbook-content-v2', asset.sha256, 'pages.jsonl'), 'utf8')).split('\n').filter(Boolean)) {
+            const page = JSON.parse(line)
+            if (/vision|tesseract/u.test(page.extraction_method || '') && page.text) ocr.set(page.pdf_page, clean(page.text))
+        }
+    } catch { /* no sidecar */ }
+    let usedOcr = false
     const cache = new Map()
     const text = async number => {
-        if (!cache.has(number)) cache.set(number, number <= pdf.numPages ? await pageText(pdf, number) : '')
+        if (!cache.has(number)) {
+            let value = number <= pdf.numPages ? await pageText(pdf, number) : ''
+            if (value.replace(/\s/gu, '').length < 20 && ocr.get(number)) { value = ocr.get(number); usedOcr = true }
+            cache.set(number, value)
+        }
         return cache.get(number)
     }
     const out = { edition_id: edition, generation_id: current.generation_id, source: 'pdfjs_text_layer', lessons: {} }
@@ -95,6 +108,7 @@ for (const name of files) {
         lessons += 1
     }
     await pdf.destroy()
+    if (usedOcr) out.source = 'pdfjs_text_layer+ocr'
     await writeFile(join('data/textbooks/lesson-text', name), `${JSON.stringify(out)}\n`)
     books += 1
     console.log(`${edition} ${national.platform_title || ''}: ${Object.keys(out.lessons).length}/${national.lessons.length} lessons`)

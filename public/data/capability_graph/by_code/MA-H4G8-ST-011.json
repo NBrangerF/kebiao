@@ -120,16 +120,212 @@
   ],
   "curriculum_alignment_summary": {
     "candidate_count": 0,
-    "disposition": "scope_aligned_no_unit_evidence",
-    "evidence_note": "已关联适用教材范围，但尚无可靠单元级页内证据。",
+    "disposition": "page_aligned",
+    "evidence_note": "已有教材正文、任务或练习的页内证据；关系由机器自动生成并附带原文定位、证据哈希和置信度。",
     "gap_reason": null,
-    "highest_evidence_level": "L1_scope",
-    "page_evidence_count": 0,
-    "scope_count": 2,
-    "specific_count": 0,
+    "highest_evidence_level": "L3_page_evidence",
+    "page_evidence_count": 3,
+    "scope_count": 4,
+    "specific_count": 3,
     "unit_topic_candidate_count": 0
   },
   "curriculum_alignments": [
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_053f4dfe5b40f08f",
+      "alignment_type": "practices",
+      "confidence": 0.86,
+      "coverage": "partial",
+      "edition_id": "ed_b5476da69a964f1a7245",
+      "evidence_basis": "textbook_page_span",
+      "evidence_gap": null,
+      "evidence_level": "L3_page_evidence",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_junior_grade_8_down",
+        "tes_fec0bf8c9a1fc20b",
+        "textbook-node:tcn_c2612919cb602633",
+        "textbook-unit:tcu_36830457f416c754"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "观察图3-20,图(1)经过怎样的运动变化就可以与图(2)重合?观察图3-21,再试一试。你还能举出一些类似的例子吗?与同伴进行交流。",
+          "excerpt_hash": "8ae9643d88791212adeaeabd78bc3c2158c801b96c3bd9941dc7ed54c8cfa99e",
+          "pdf_page": 100,
+          "printed_page": null,
+          "span_id": "tes_fec0bf8c9a1fc20b"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_720309e4dc07bf0f"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_720309e4dc07bf0f",
+          "label": "根据结果作出简单判断和预测并进行交流"
+        }
+      ],
+      "level": "page",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_c2612919cb602633",
+      "node_title": "观察图3-20,图(1)经过怎样的运动变化就可以与图(2)重合?观察图3-21,再试一试。你还能举出一些类似的例子吗?与同伴进行交流。",
+      "pdf_page": 100,
+      "printed_page": null,
+      "publication_status": "published",
+      "rationale": "教材练习“观察图3-20,图(1)经过怎样的运动变化就可以与图(2)重合?观察图3-21,再试一试。你还能举出一些类似的例子吗?与同伴进行交流。”与课标 MA-H4G8-ST-011 的可教学小能力“根据结果作出简单判断和预测并进行交流”形成页内证据匹配。",
+      "relation_type": "practices",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "textbook_grade": 8,
+      "textbook_subject": "数学",
+      "textbook_title": "数学8年级下册",
+      "textbook_volume": "下册",
+      "unit_id": "tcu_36830457f416c754",
+      "unit_title": "第三章 图形的平移与旋转"
+    },
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_4f358d79c36d02fd",
+      "alignment_type": "practices",
+      "confidence": 0.86,
+      "coverage": "partial",
+      "edition_id": "ed_b5476da69a964f1a7245",
+      "evidence_basis": "textbook_page_span",
+      "evidence_gap": null,
+      "evidence_level": "L3_page_evidence",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_junior_grade_8_down",
+        "tes_6b60060f9bc9d77d",
+        "textbook-node:tcn_faeb7f47009c7ff0",
+        "textbook-unit:tcu_36830457f416c754"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "观察图3-25,这些图形有什么共同特征?你还能举出一些类似的图形吗?与同伴进行交流。",
+          "excerpt_hash": "e3edde6ec6a6f3555832b97419437fd397b1ba601894ead4b7b00175c93bcdb0",
+          "pdf_page": 101,
+          "printed_page": null,
+          "span_id": "tes_6b60060f9bc9d77d"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_720309e4dc07bf0f"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_720309e4dc07bf0f",
+          "label": "根据结果作出简单判断和预测并进行交流"
+        }
+      ],
+      "level": "page",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_faeb7f47009c7ff0",
+      "node_title": "观察图3-25,这些图形有什么共同特征?你还能举出一些类似的图形吗?与同伴进行交流。",
+      "pdf_page": 101,
+      "printed_page": null,
+      "publication_status": "published",
+      "rationale": "教材练习“观察图3-25,这些图形有什么共同特征?你还能举出一些类似的图形吗?与同伴进行交流。”与课标 MA-H4G8-ST-011 的可教学小能力“根据结果作出简单判断和预测并进行交流”形成页内证据匹配。",
+      "relation_type": "practices",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "textbook_grade": 8,
+      "textbook_subject": "数学",
+      "textbook_title": "数学8年级下册",
+      "textbook_volume": "下册",
+      "unit_id": "tcu_36830457f416c754",
+      "unit_title": "第三章 图形的平移与旋转"
+    },
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_35b9346a16c5ab57",
+      "alignment_type": "practices",
+      "confidence": 0.86,
+      "coverage": "partial",
+      "edition_id": "ed_b5476da69a964f1a7245",
+      "evidence_basis": "textbook_page_span",
+      "evidence_gap": null,
+      "evidence_level": "L3_page_evidence",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_junior_grade_8_down",
+        "tes_52f8908e5fa060e5",
+        "textbook-node:tcn_bf9c14cd0c739099",
+        "textbook-unit:tcu_db4b6f68ac12c2d5"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "观察图 1-6,L1与AABC的内角有什么关系?请证明你的结论,并与同伴进行交流。",
+          "excerpt_hash": "01817a3d8a2920ea8f5c7164cd08b7571a22bf442fe682a19ca7c7bbcccd5e9f",
+          "pdf_page": 11,
+          "printed_page": null,
+          "span_id": "tes_52f8908e5fa060e5"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_720309e4dc07bf0f"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_720309e4dc07bf0f",
+          "label": "根据结果作出简单判断和预测并进行交流"
+        }
+      ],
+      "level": "page",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_bf9c14cd0c739099",
+      "node_title": "观察图 1-6,L1与AABC的内角有什么关系?请证明你的结论,并与同伴进行交流。",
+      "pdf_page": 11,
+      "printed_page": null,
+      "publication_status": "published",
+      "rationale": "教材练习“观察图 1-6,L1与AABC的内角有什么关系?请证明你的结论,并与同伴进行交流。”与课标 MA-H4G8-ST-011 的可教学小能力“根据结果作出简单判断和预测并进行交流”形成页内证据匹配。",
+      "relation_type": "practices",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "textbook_grade": 8,
+      "textbook_subject": "数学",
+      "textbook_title": "数学8年级下册",
+      "textbook_volume": "下册",
+      "unit_id": "tcu_db4b6f68ac12c2d5",
+      "unit_title": "第一章 三角形的证明及其应用"
+    },
+    {
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "alignment_id": "ca_d02d130710c5a984",
+      "alignment_type": "references",
+      "confidence": null,
+      "coverage": "scope_only",
+      "edition_id": "ed_61803eb53474fb83201e",
+      "evidence_basis": "subject_grade_scope",
+      "evidence_level": "L1_scope",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_junior_grade_8_up"
+      ],
+      "evidence_role": "direct_textbook",
+      "level": "scope",
+      "method": "subject_grade_scope_mapping",
+      "pdf_page": null,
+      "printed_page": null,
+      "publication_status": "published_scope",
+      "rationale": "教材与课标处于同学科、同学段的适用范围；此关系不证明某一单元直接教授该条标准。",
+      "relation_type": "curriculum_scope",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "scope_id": "tcs_181d371b81dc4ec5",
+      "textbook_grade": 8,
+      "textbook_subject": "数学",
+      "textbook_title": "数学8年级上册",
+      "textbook_volume": "上册",
+      "unit_id": null,
+      "unit_title": ""
+    },
     {
       "algorithm_version": "full-alignment-scope-preserve-v2",
       "alignment_id": "ca_a0909f6ef24ae642",
@@ -158,6 +354,37 @@
       "textbook_subject": "数学",
       "textbook_title": "数学8年级上册",
       "textbook_volume": "上册",
+      "unit_id": null,
+      "unit_title": ""
+    },
+    {
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "alignment_id": "ca_ce7de146c0459a18",
+      "alignment_type": "references",
+      "confidence": null,
+      "coverage": "scope_only",
+      "edition_id": "ed_b5476da69a964f1a7245",
+      "evidence_basis": "subject_grade_scope",
+      "evidence_level": "L1_scope",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_junior_grade_8_down"
+      ],
+      "evidence_role": "direct_textbook",
+      "level": "scope",
+      "method": "subject_grade_scope_mapping",
+      "pdf_page": null,
+      "printed_page": null,
+      "publication_status": "published_scope",
+      "rationale": "教材与课标处于同学科、同学段的适用范围；此关系不证明某一单元直接教授该条标准。",
+      "relation_type": "curriculum_scope",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "scope_id": "tcs_f23d1c0f12e0c622",
+      "textbook_grade": 8,
+      "textbook_subject": "数学",
+      "textbook_title": "数学8年级下册",
+      "textbook_volume": "下册",
       "unit_id": null,
       "unit_title": ""
     },

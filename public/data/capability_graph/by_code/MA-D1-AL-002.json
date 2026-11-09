@@ -46,8 +46,8 @@
     "gap_reason": null,
     "highest_evidence_level": "L2_topic",
     "page_evidence_count": 0,
-    "scope_count": 4,
-    "specific_count": 2,
+    "scope_count": 8,
+    "specific_count": 4,
     "unit_topic_candidate_count": 0
   },
   "curriculum_alignments": [
@@ -160,6 +160,116 @@
       "textbook_volume": "上册",
       "unit_id": "tcu_c77461ce7c3201ef",
       "unit_title": "四 11～ 20的认识"
+    },
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_364e53fedd3ac1f6",
+      "alignment_type": "supports",
+      "confidence": 0.86,
+      "coverage": "partial",
+      "edition_id": "ed_d0c8c4ce5dab491c2e07",
+      "evidence_basis": "toc_title",
+      "evidence_gap": "当前证据来自目录标题与课标概念匹配，尚未保存教材正文或练习摘录；因此只能声明主题支持，不能声明完整教授。",
+      "evidence_level": "L2_topic",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_primary_grade_1_down",
+        "tes_d2742192c4554d01",
+        "textbook-node:tcn_c07107490caab575",
+        "textbook-unit:tcu_125e4225f37a58bd"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "20 以内数与加法",
+          "excerpt_hash": "76070e4fe27b4ac6634ad74350c5e3e22283fba4084eced0e36988bcb93f9dca",
+          "pdf_page": 6,
+          "printed_page": null,
+          "span_id": "tes_d2742192c4554d01"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_740023c392200212"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_740023c392200212",
+          "label": "熟练进行20以内加减乘除"
+        }
+      ],
+      "level": "unit",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_c07107490caab575",
+      "node_title": "20以内数与加法",
+      "pdf_page": 6,
+      "printed_page": null,
+      "publication_status": "published",
+      "rationale": "教材课文“20以内数与加法”与课标 MA-D1-AL-002 的可教学小能力“熟练进行20以内加减乘除”形成页内证据匹配。",
+      "relation_type": "supports",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "textbook_grade": 1,
+      "textbook_subject": "数学",
+      "textbook_title": "数学1年级下册",
+      "textbook_volume": "下册",
+      "unit_id": "tcu_125e4225f37a58bd",
+      "unit_title": "第一单元 20 以内数与加法"
+    },
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_9ba471daf6eb4206",
+      "alignment_type": "supports",
+      "confidence": 0.86,
+      "coverage": "partial",
+      "edition_id": "ed_d0c8c4ce5dab491c2e07",
+      "evidence_basis": "toc_title",
+      "evidence_gap": "当前证据来自目录标题与课标概念匹配，尚未保存教材正文或练习摘录；因此只能声明主题支持，不能声明完整教授。",
+      "evidence_level": "L2_topic",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_primary_grade_1_down",
+        "tes_c2ebb6d82ca2a46b",
+        "textbook-node:tcn_cc3d4ebcc00cf6b3",
+        "textbook-unit:tcu_97535acd62d71b7e"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "20 以内数与减法",
+          "excerpt_hash": "180064fe69f9923fa4b18d75df3c8c51bdd0883c6d97050efe832178bfc44439",
+          "pdf_page": 31,
+          "printed_page": null,
+          "span_id": "tes_c2ebb6d82ca2a46b"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_740023c392200212"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_740023c392200212",
+          "label": "熟练进行20以内加减乘除"
+        }
+      ],
+      "level": "unit",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_cc3d4ebcc00cf6b3",
+      "node_title": "20以内数与减法",
+      "pdf_page": 31,
+      "printed_page": null,
+      "publication_status": "published",
+      "rationale": "教材课文“20以内数与减法”与课标 MA-D1-AL-002 的可教学小能力“熟练进行20以内加减乘除”形成页内证据匹配。",
+      "relation_type": "supports",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "textbook_grade": 1,
+      "textbook_subject": "数学",
+      "textbook_title": "数学1年级下册",
+      "textbook_volume": "下册",
+      "unit_id": "tcu_97535acd62d71b7e",
+      "unit_title": "第三单元 20 以内数与减法"
     },
     {
       "algorithm_version": "full-alignment-scope-preserve-v2",
@@ -282,6 +392,130 @@
       "textbook_subject": "数学",
       "textbook_title": "数学2年级下册",
       "textbook_volume": "下册",
+      "unit_id": null,
+      "unit_title": ""
+    },
+    {
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "alignment_id": "ca_95ace209148f4e16",
+      "alignment_type": "references",
+      "confidence": null,
+      "coverage": "scope_only",
+      "edition_id": "ed_d0c8c4ce5dab491c2e07",
+      "evidence_basis": "subject_grade_scope",
+      "evidence_level": "L1_scope",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_primary_grade_1_down"
+      ],
+      "evidence_role": "direct_textbook",
+      "level": "scope",
+      "method": "subject_grade_scope_mapping",
+      "pdf_page": null,
+      "printed_page": null,
+      "publication_status": "published_scope",
+      "rationale": "教材与课标处于同学科、同学段的适用范围；此关系不证明某一单元直接教授该条标准。",
+      "relation_type": "curriculum_scope",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "scope_id": "tcs_bd014790a6ede55b",
+      "textbook_grade": 1,
+      "textbook_subject": "数学",
+      "textbook_title": "数学1年级下册",
+      "textbook_volume": "下册",
+      "unit_id": null,
+      "unit_title": ""
+    },
+    {
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "alignment_id": "ca_847e2b585a67681e",
+      "alignment_type": "references",
+      "confidence": null,
+      "coverage": "scope_only",
+      "edition_id": "ed_d6319d73983b0e7c363f",
+      "evidence_basis": "subject_grade_scope",
+      "evidence_level": "L1_scope",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_primary_grade_2_up"
+      ],
+      "evidence_role": "direct_textbook",
+      "level": "scope",
+      "method": "subject_grade_scope_mapping",
+      "pdf_page": null,
+      "printed_page": null,
+      "publication_status": "published_scope",
+      "rationale": "教材与课标处于同学科、同学段的适用范围；此关系不证明某一单元直接教授该条标准。",
+      "relation_type": "curriculum_scope",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "scope_id": "tcs_569e62659e9fc27f",
+      "textbook_grade": 2,
+      "textbook_subject": "数学",
+      "textbook_title": "数学2年级上册",
+      "textbook_volume": "上册",
+      "unit_id": null,
+      "unit_title": ""
+    },
+    {
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "alignment_id": "ca_6583969d92792730",
+      "alignment_type": "references",
+      "confidence": null,
+      "coverage": "scope_only",
+      "edition_id": "ed_ed1c52ac64d5471f35b8",
+      "evidence_basis": "subject_grade_scope",
+      "evidence_level": "L1_scope",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_primary_grade_2_down"
+      ],
+      "evidence_role": "direct_textbook",
+      "level": "scope",
+      "method": "subject_grade_scope_mapping",
+      "pdf_page": null,
+      "printed_page": null,
+      "publication_status": "published_scope",
+      "rationale": "教材与课标处于同学科、同学段的适用范围；此关系不证明某一单元直接教授该条标准。",
+      "relation_type": "curriculum_scope",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "scope_id": "tcs_f94e89f9651dff68",
+      "textbook_grade": 2,
+      "textbook_subject": "数学",
+      "textbook_title": "数学2年级下册",
+      "textbook_volume": "下册",
+      "unit_id": null,
+      "unit_title": ""
+    },
+    {
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "alignment_id": "ca_44aeaf66a742ee79",
+      "alignment_type": "references",
+      "confidence": null,
+      "coverage": "scope_only",
+      "edition_id": "ed_f98cd7fabeaea0d2803d",
+      "evidence_basis": "subject_grade_scope",
+      "evidence_level": "L1_scope",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_primary_grade_1_up"
+      ],
+      "evidence_role": "direct_textbook",
+      "level": "scope",
+      "method": "subject_grade_scope_mapping",
+      "pdf_page": null,
+      "printed_page": null,
+      "publication_status": "published_scope",
+      "rationale": "教材与课标处于同学科、同学段的适用范围；此关系不证明某一单元直接教授该条标准。",
+      "relation_type": "curriculum_scope",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "scope_id": "tcs_9adf37293183a38b",
+      "textbook_grade": 1,
+      "textbook_subject": "数学",
+      "textbook_title": "数学1年级上册",
+      "textbook_volume": "上册",
       "unit_id": null,
       "unit_title": ""
     }

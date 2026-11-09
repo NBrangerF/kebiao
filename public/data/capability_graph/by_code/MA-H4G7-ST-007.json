@@ -125,16 +125,71 @@
   ],
   "curriculum_alignment_summary": {
     "candidate_count": 0,
-    "disposition": "scope_aligned_no_unit_evidence",
-    "evidence_note": "已关联适用教材范围，但尚无可靠单元级页内证据。",
+    "disposition": "page_aligned",
+    "evidence_note": "已有教材正文、任务或练习的页内证据；关系由机器自动生成并附带原文定位、证据哈希和置信度。",
     "gap_reason": null,
-    "highest_evidence_level": "L1_scope",
-    "page_evidence_count": 0,
-    "scope_count": 2,
-    "specific_count": 0,
+    "highest_evidence_level": "L3_page_evidence",
+    "page_evidence_count": 1,
+    "scope_count": 4,
+    "specific_count": 1,
     "unit_topic_candidate_count": 0
   },
   "curriculum_alignments": [
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_a9e8b463c028b51c",
+      "alignment_type": "practices",
+      "confidence": 0.86,
+      "coverage": "partial",
+      "edition_id": "ed_4411f5525e37193a3680",
+      "evidence_basis": "textbook_page_span",
+      "evidence_gap": null,
+      "evidence_level": "L3_page_evidence",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_junior_grade_7_up",
+        "tes_521fcb96aba61f94",
+        "textbook-node:tcn_d1b73b591606d48e",
+        "textbook-unit:tcu_aaf445f8e43c7377"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "观察图2-12中的数据,如何简单地表示这些大数呢?",
+          "excerpt_hash": "e7b94601584d9b34fa4b85cbc6b7726405b5dfc5d14e4425ee9919a34a7478bf",
+          "pdf_page": 67,
+          "printed_page": null,
+          "span_id": "tes_521fcb96aba61f94"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_89f98ebf3b8497c7"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_89f98ebf3b8497c7",
+          "label": "综合运用统计与概率知识理解和解释现实问题中的数据与随机现象"
+        }
+      ],
+      "level": "page",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_d1b73b591606d48e",
+      "node_title": "观察图2-12中的数据,如何简单地表示这些大数呢?",
+      "pdf_page": 67,
+      "printed_page": null,
+      "publication_status": "published",
+      "rationale": "教材练习“观察图2-12中的数据,如何简单地表示这些大数呢?”与课标 MA-H4G7-ST-007 的可教学小能力“综合运用统计与概率知识理解和解释现实问题中的数据与随机现象”形成页内证据匹配。",
+      "relation_type": "practices",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "textbook_grade": 7,
+      "textbook_subject": "数学",
+      "textbook_title": "数学7年级上册",
+      "textbook_volume": "上册",
+      "unit_id": "tcu_aaf445f8e43c7377",
+      "unit_title": "第二章 有理数及其运算"
+    },
     {
       "algorithm_version": "full-alignment-scope-preserve-v2",
       "alignment_id": "ca_fb6d0fd0f51bd71d",
@@ -168,6 +223,37 @@
     },
     {
       "algorithm_version": "full-alignment-scope-preserve-v2",
+      "alignment_id": "ca_0cb927b872f10b95",
+      "alignment_type": "references",
+      "confidence": null,
+      "coverage": "scope_only",
+      "edition_id": "ed_4411f5525e37193a3680",
+      "evidence_basis": "subject_grade_scope",
+      "evidence_level": "L1_scope",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_junior_grade_7_up"
+      ],
+      "evidence_role": "direct_textbook",
+      "level": "scope",
+      "method": "subject_grade_scope_mapping",
+      "pdf_page": null,
+      "printed_page": null,
+      "publication_status": "published_scope",
+      "rationale": "教材与课标处于同学科、同学段的适用范围；此关系不证明某一单元直接教授该条标准。",
+      "relation_type": "curriculum_scope",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "scope_id": "tcs_82fda456943fe48e",
+      "textbook_grade": 7,
+      "textbook_subject": "数学",
+      "textbook_title": "数学7年级上册",
+      "textbook_volume": "上册",
+      "unit_id": null,
+      "unit_title": ""
+    },
+    {
+      "algorithm_version": "full-alignment-scope-preserve-v2",
       "alignment_id": "ca_a220ee407d1aa38d",
       "alignment_type": "references",
       "confidence": null,
@@ -190,6 +276,37 @@
       "review_status": "machine_checked",
       "revision_status": "current_confirmed",
       "scope_id": "tcs_05b1d5ed90d78b81",
+      "textbook_grade": 7,
+      "textbook_subject": "数学",
+      "textbook_title": "数学7年级下册",
+      "textbook_volume": "下册",
+      "unit_id": null,
+      "unit_title": ""
+    },
+    {
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "alignment_id": "ca_bf07a72e3183822d",
+      "alignment_type": "references",
+      "confidence": null,
+      "coverage": "scope_only",
+      "edition_id": "ed_c5c4b1ec810400e3a857",
+      "evidence_basis": "subject_grade_scope",
+      "evidence_level": "L1_scope",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_junior_grade_7_down"
+      ],
+      "evidence_role": "direct_textbook",
+      "level": "scope",
+      "method": "subject_grade_scope_mapping",
+      "pdf_page": null,
+      "printed_page": null,
+      "publication_status": "published_scope",
+      "rationale": "教材与课标处于同学科、同学段的适用范围；此关系不证明某一单元直接教授该条标准。",
+      "relation_type": "curriculum_scope",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "scope_id": "tcs_24f4da2ab6e786da",
       "textbook_grade": 7,
       "textbook_subject": "数学",
       "textbook_title": "数学7年级下册",

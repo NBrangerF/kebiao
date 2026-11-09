@@ -126,16 +126,102 @@
   ],
   "curriculum_alignment_summary": {
     "candidate_count": 0,
-    "disposition": "scope_aligned_no_unit_evidence",
-    "evidence_note": "已关联适用教材范围，但尚无可靠单元级页内证据。",
+    "disposition": "page_aligned",
+    "evidence_note": "已有教材正文、任务或练习的页内证据；关系由机器自动生成并附带原文定位、证据哈希和置信度。",
     "gap_reason": null,
-    "highest_evidence_level": "L1_scope",
-    "page_evidence_count": 0,
-    "scope_count": 2,
-    "specific_count": 0,
+    "highest_evidence_level": "L3_page_evidence",
+    "page_evidence_count": 1,
+    "scope_count": 4,
+    "specific_count": 1,
     "unit_topic_candidate_count": 0
   },
   "curriculum_alignments": [
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_46ced31f43ec3284",
+      "alignment_type": "supports",
+      "confidence": 0.86,
+      "coverage": "partial",
+      "edition_id": "ed_f77ec424ae7c3160d7be",
+      "evidence_basis": "textbook_page_span",
+      "evidence_gap": null,
+      "evidence_level": "L3_page_evidence",
+      "evidence_refs": [
+        "external_smartedu_2026_wy_english_junior_grade_7_down",
+        "tes_692394d6f9adfbd2",
+        "textbook-node:tcn_31a5d3035e64339c",
+        "textbook-unit:tcu_15ec71f428277220"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "在表达请求时,可以加上please;表达比较强烈的语气时,可以用感叹号。",
+          "excerpt_hash": "b6601ddfa7ed895386eccf0e113a4cb82f8b6016faf75c827c9573c9e1a8c6d1",
+          "pdf_page": 130,
+          "printed_page": null,
+          "span_id": "tes_692394d6f9adfbd2"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_a0d4cefabaadaf5a"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_a0d4cefabaadaf5a",
+          "label": "表达比较连贯"
+        }
+      ],
+      "level": "page",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_31a5d3035e64339c",
+      "node_title": "在表达请求时,可以加上please;表达比较强烈的语气时,可以用感叹号。",
+      "pdf_page": 130,
+      "printed_page": null,
+      "publication_status": "published",
+      "rationale": "教材学习目标“在表达请求时,可以加上please;表达比较强烈的语气时,可以用感叹号。”与课标 EN-H4G7-LA-008 的可教学小能力“表达比较连贯”形成页内证据匹配。",
+      "relation_type": "supports",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "textbook_grade": 7,
+      "textbook_subject": "英语",
+      "textbook_title": "英语7年级下册",
+      "textbook_volume": "下册",
+      "unit_id": "tcu_15ec71f428277220",
+      "unit_title": "Appendices"
+    },
+    {
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "alignment_id": "ca_bb92d878074e9359",
+      "alignment_type": "references",
+      "confidence": null,
+      "coverage": "scope_only",
+      "edition_id": "ed_2f2e0d52b4d66076d387",
+      "evidence_basis": "subject_grade_scope",
+      "evidence_level": "L1_scope",
+      "evidence_refs": [
+        "external_smartedu_2026_wy_english_junior_grade_7_up"
+      ],
+      "evidence_role": "direct_textbook",
+      "level": "scope",
+      "method": "subject_grade_scope_mapping",
+      "pdf_page": null,
+      "printed_page": null,
+      "publication_status": "published_scope",
+      "rationale": "教材与课标处于同学科、同学段的适用范围；此关系不证明某一单元直接教授该条标准。",
+      "relation_type": "curriculum_scope",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "scope_id": "tcs_f2da1edcf4c48c76",
+      "textbook_grade": 7,
+      "textbook_subject": "英语",
+      "textbook_title": "英语7年级上册",
+      "textbook_volume": "上册",
+      "unit_id": null,
+      "unit_title": ""
+    },
     {
       "algorithm_version": "full-alignment-scope-preserve-v2",
       "alignment_id": "ca_70fe9a77361cc181",
@@ -164,6 +250,37 @@
       "textbook_subject": "英语",
       "textbook_title": "英语7年级上册",
       "textbook_volume": "上册",
+      "unit_id": null,
+      "unit_title": ""
+    },
+    {
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "alignment_id": "ca_dd9c7e308d175cc7",
+      "alignment_type": "references",
+      "confidence": null,
+      "coverage": "scope_only",
+      "edition_id": "ed_f77ec424ae7c3160d7be",
+      "evidence_basis": "subject_grade_scope",
+      "evidence_level": "L1_scope",
+      "evidence_refs": [
+        "external_smartedu_2026_wy_english_junior_grade_7_down"
+      ],
+      "evidence_role": "direct_textbook",
+      "level": "scope",
+      "method": "subject_grade_scope_mapping",
+      "pdf_page": null,
+      "printed_page": null,
+      "publication_status": "published_scope",
+      "rationale": "教材与课标处于同学科、同学段的适用范围；此关系不证明某一单元直接教授该条标准。",
+      "relation_type": "curriculum_scope",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "scope_id": "tcs_0ea04f21f8b9f0b2",
+      "textbook_grade": 7,
+      "textbook_subject": "英语",
+      "textbook_title": "英语7年级下册",
+      "textbook_volume": "下册",
       "unit_id": null,
       "unit_title": ""
     },

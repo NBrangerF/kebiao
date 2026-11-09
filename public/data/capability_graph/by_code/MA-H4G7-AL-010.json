@@ -163,16 +163,71 @@
   ],
   "curriculum_alignment_summary": {
     "candidate_count": 0,
-    "disposition": "scope_aligned_no_unit_evidence",
-    "evidence_note": "已关联适用教材范围，但尚无可靠单元级页内证据。",
+    "disposition": "page_aligned",
+    "evidence_note": "已有教材正文、任务或练习的页内证据；关系由机器自动生成并附带原文定位、证据哈希和置信度。",
     "gap_reason": null,
-    "highest_evidence_level": "L1_scope",
-    "page_evidence_count": 0,
-    "scope_count": 2,
-    "specific_count": 0,
+    "highest_evidence_level": "L3_page_evidence",
+    "page_evidence_count": 1,
+    "scope_count": 4,
+    "specific_count": 1,
     "unit_topic_candidate_count": 0
   },
   "curriculum_alignments": [
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_8df493ef01a051bc",
+      "alignment_type": "practices",
+      "confidence": 0.92,
+      "coverage": "partial",
+      "edition_id": "ed_4411f5525e37193a3680",
+      "evidence_basis": "textbook_page_span",
+      "evidence_gap": null,
+      "evidence_level": "L3_page_evidence",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_junior_grade_7_up",
+        "tes_9ebebb651e728cd6",
+        "textbook-node:tcn_d9cf600f5d417e01",
+        "textbook-unit:tcu_54451e2d09e5274c"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "阅读 • 欣赏“代数”的由来“用字母表示数”是代数的基础。初等代数主要以引进符号和未知数为特",
+          "excerpt_hash": "d75f5a72e630f6a41c3434bbcd28db371e4f557eed4afb184a32928d844aec8f",
+          "pdf_page": 87,
+          "printed_page": null,
+          "span_id": "tes_9ebebb651e728cd6"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_d1dcef38896cd2be"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_d1dcef38896cd2be",
+          "label": "借助现实情境理解代数式和用字母表示数的意义"
+        }
+      ],
+      "level": "page",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_d9cf600f5d417e01",
+      "node_title": "阅读 • 欣赏“代数”的由来“用字母表示数”是代数的基础。初等代数主要以引进符号和未知数为特",
+      "pdf_page": 87,
+      "printed_page": null,
+      "publication_status": "published",
+      "rationale": "教材练习“阅读 • 欣赏“代数”的由来“用字母表示数”是代数的基础。初等代数主要以引进符号和未知数为特”与课标 MA-H4G7-AL-010 的可教学小能力“借助现实情境理解代数式和用字母表示数的意义”形成页内证据匹配。",
+      "relation_type": "practices",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "textbook_grade": 7,
+      "textbook_subject": "数学",
+      "textbook_title": "数学7年级上册",
+      "textbook_volume": "上册",
+      "unit_id": "tcu_54451e2d09e5274c",
+      "unit_title": "第三章 整式及其加减"
+    },
     {
       "algorithm_version": "full-alignment-scope-preserve-v2",
       "alignment_id": "ca_ae18578a333da3f0",
@@ -206,6 +261,37 @@
     },
     {
       "algorithm_version": "full-alignment-scope-preserve-v2",
+      "alignment_id": "ca_1061ef162c7d53ac",
+      "alignment_type": "references",
+      "confidence": null,
+      "coverage": "scope_only",
+      "edition_id": "ed_4411f5525e37193a3680",
+      "evidence_basis": "subject_grade_scope",
+      "evidence_level": "L1_scope",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_junior_grade_7_up"
+      ],
+      "evidence_role": "direct_textbook",
+      "level": "scope",
+      "method": "subject_grade_scope_mapping",
+      "pdf_page": null,
+      "printed_page": null,
+      "publication_status": "published_scope",
+      "rationale": "教材与课标处于同学科、同学段的适用范围；此关系不证明某一单元直接教授该条标准。",
+      "relation_type": "curriculum_scope",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "scope_id": "tcs_82fda456943fe48e",
+      "textbook_grade": 7,
+      "textbook_subject": "数学",
+      "textbook_title": "数学7年级上册",
+      "textbook_volume": "上册",
+      "unit_id": null,
+      "unit_title": ""
+    },
+    {
+      "algorithm_version": "full-alignment-scope-preserve-v2",
       "alignment_id": "ca_91bd0d91e9e2ccc5",
       "alignment_type": "references",
       "confidence": null,
@@ -228,6 +314,37 @@
       "review_status": "machine_checked",
       "revision_status": "current_confirmed",
       "scope_id": "tcs_05b1d5ed90d78b81",
+      "textbook_grade": 7,
+      "textbook_subject": "数学",
+      "textbook_title": "数学7年级下册",
+      "textbook_volume": "下册",
+      "unit_id": null,
+      "unit_title": ""
+    },
+    {
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "alignment_id": "ca_d26e8e8c6d777b30",
+      "alignment_type": "references",
+      "confidence": null,
+      "coverage": "scope_only",
+      "edition_id": "ed_c5c4b1ec810400e3a857",
+      "evidence_basis": "subject_grade_scope",
+      "evidence_level": "L1_scope",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_junior_grade_7_down"
+      ],
+      "evidence_role": "direct_textbook",
+      "level": "scope",
+      "method": "subject_grade_scope_mapping",
+      "pdf_page": null,
+      "printed_page": null,
+      "publication_status": "published_scope",
+      "rationale": "教材与课标处于同学科、同学段的适用范围；此关系不证明某一单元直接教授该条标准。",
+      "relation_type": "curriculum_scope",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "scope_id": "tcs_24f4da2ab6e786da",
       "textbook_grade": 7,
       "textbook_subject": "数学",
       "textbook_title": "数学7年级下册",

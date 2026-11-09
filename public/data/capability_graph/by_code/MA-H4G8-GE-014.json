@@ -47,12 +47,312 @@
     "evidence_note": "已有教材正文、任务或练习的页内证据；关系由机器自动生成并附带原文定位、证据哈希和置信度。",
     "gap_reason": null,
     "highest_evidence_level": "L3_page_evidence",
-    "page_evidence_count": 7,
-    "scope_count": 2,
-    "specific_count": 7,
+    "page_evidence_count": 12,
+    "scope_count": 4,
+    "specific_count": 12,
     "unit_topic_candidate_count": 0
   },
   "curriculum_alignments": [
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_2e7fc8560cc88531",
+      "alignment_type": "practices",
+      "confidence": 0.92,
+      "coverage": "partial",
+      "edition_id": "ed_b5476da69a964f1a7245",
+      "evidence_basis": "textbook_page_span",
+      "evidence_gap": null,
+      "evidence_level": "L3_page_evidence",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_junior_grade_8_down",
+        "tes_514fd447fb1440b3",
+        "textbook-node:tcn_70ac79be05dd395d",
+        "textbook-unit:tcu_dfd28e6cf1da210b"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "证明::四边形 ABCD是平行四边形,B:AB=CD(平行四边形的对边相等),",
+          "excerpt_hash": "0abc59465346af5ec5cc40665140cab76a2e9ede7f97bc06e022ef6279c89823",
+          "pdf_page": 161,
+          "printed_page": null,
+          "span_id": "tes_514fd447fb1440b3"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_2567607f6031d727",
+        "lc_bc9c4cfde56825f6"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_2567607f6031d727",
+          "label": "用自己的话解释平行四边形、矩形、菱形、正方形、梯形及其关系"
+        },
+        {
+          "component_id": "lc_bc9c4cfde56825f6",
+          "label": "探索并证明平行四边形、矩形、菱形的性质定理和判定定理"
+        }
+      ],
+      "level": "page",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_70ac79be05dd395d",
+      "node_title": "证明::四边形 ABCD是平行四边形,B:AB=CD(平行四边形的对边相等),",
+      "pdf_page": 161,
+      "printed_page": null,
+      "publication_status": "published",
+      "rationale": "教材练习“证明::四边形 ABCD是平行四边形,B:AB=CD(平行四边形的对边相等),”与课标 MA-H4G8-GE-014 的可教学小能力“用自己的话解释平行四边形、矩形、菱形、正方形、梯形及其关系、探索并证明平行四边形、矩形、菱形的性质定理和判定定理”形成页内证据匹配。",
+      "relation_type": "practices",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "textbook_grade": 8,
+      "textbook_subject": "数学",
+      "textbook_title": "数学8年级下册",
+      "textbook_volume": "下册",
+      "unit_id": "tcu_dfd28e6cf1da210b",
+      "unit_title": "第六章 平行四边形"
+    },
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_66d9bbe04fb8f5c7",
+      "alignment_type": "practices",
+      "confidence": 0.92,
+      "coverage": "partial",
+      "edition_id": "ed_b5476da69a964f1a7245",
+      "evidence_basis": "textbook_page_span",
+      "evidence_gap": null,
+      "evidence_level": "L3_page_evidence",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_junior_grade_8_down",
+        "tes_f60ba9800f6ef139",
+        "textbook-node:tcn_2682f64da204fefd",
+        "textbook-unit:tcu_dfd28e6cf1da210b"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "证明::四边形 ABCD是平行四边形,:AD//BC(平行四边形的定义)。",
+          "excerpt_hash": "836a7e94990cb1665e8e11cfccedf83b692176b925c6bb4c5811a4e368f46dd4",
+          "pdf_page": 171,
+          "printed_page": null,
+          "span_id": "tes_f60ba9800f6ef139"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_2567607f6031d727",
+        "lc_bc9c4cfde56825f6"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_2567607f6031d727",
+          "label": "用自己的话解释平行四边形、矩形、菱形、正方形、梯形及其关系"
+        },
+        {
+          "component_id": "lc_bc9c4cfde56825f6",
+          "label": "探索并证明平行四边形、矩形、菱形的性质定理和判定定理"
+        }
+      ],
+      "level": "page",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_2682f64da204fefd",
+      "node_title": "证明::四边形 ABCD是平行四边形,:AD//BC(平行四边形的定义)。",
+      "pdf_page": 171,
+      "printed_page": null,
+      "publication_status": "published",
+      "rationale": "教材练习“证明::四边形 ABCD是平行四边形,:AD//BC(平行四边形的定义)。”与课标 MA-H4G8-GE-014 的可教学小能力“用自己的话解释平行四边形、矩形、菱形、正方形、梯形及其关系、探索并证明平行四边形、矩形、菱形的性质定理和判定定理”形成页内证据匹配。",
+      "relation_type": "practices",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "textbook_grade": 8,
+      "textbook_subject": "数学",
+      "textbook_title": "数学8年级下册",
+      "textbook_volume": "下册",
+      "unit_id": "tcu_dfd28e6cf1da210b",
+      "unit_title": "第六章 平行四边形"
+    },
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_986c620a2f4df22f",
+      "alignment_type": "practices",
+      "confidence": 0.92,
+      "coverage": "partial",
+      "edition_id": "ed_b5476da69a964f1a7245",
+      "evidence_basis": "textbook_page_span",
+      "evidence_gap": null,
+      "evidence_level": "L3_page_evidence",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_junior_grade_8_down",
+        "tes_3d6529efc7c8c6f8",
+        "textbook-node:tcn_96797bd897504cc7",
+        "textbook-unit:tcu_dfd28e6cf1da210b"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "证明:四边形 ABCD是平行四边形,B:AB=CD(平行四边形的对边相等),",
+          "excerpt_hash": "6269b045e25cdf1c329966f216bad03af0d874e0c815ea4d33d4700bd9efc564",
+          "pdf_page": 160,
+          "printed_page": null,
+          "span_id": "tes_3d6529efc7c8c6f8"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_2567607f6031d727",
+        "lc_bc9c4cfde56825f6"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_2567607f6031d727",
+          "label": "用自己的话解释平行四边形、矩形、菱形、正方形、梯形及其关系"
+        },
+        {
+          "component_id": "lc_bc9c4cfde56825f6",
+          "label": "探索并证明平行四边形、矩形、菱形的性质定理和判定定理"
+        }
+      ],
+      "level": "page",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_96797bd897504cc7",
+      "node_title": "证明:四边形 ABCD是平行四边形,B:AB=CD(平行四边形的对边相等),",
+      "pdf_page": 160,
+      "printed_page": null,
+      "publication_status": "published",
+      "rationale": "教材练习“证明:四边形 ABCD是平行四边形,B:AB=CD(平行四边形的对边相等),”与课标 MA-H4G8-GE-014 的可教学小能力“用自己的话解释平行四边形、矩形、菱形、正方形、梯形及其关系、探索并证明平行四边形、矩形、菱形的性质定理和判定定理”形成页内证据匹配。",
+      "relation_type": "practices",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "textbook_grade": 8,
+      "textbook_subject": "数学",
+      "textbook_title": "数学8年级下册",
+      "textbook_volume": "下册",
+      "unit_id": "tcu_dfd28e6cf1da210b",
+      "unit_title": "第六章 平行四边形"
+    },
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_b3e1a1e7ffcd352c",
+      "alignment_type": "practices",
+      "confidence": 0.92,
+      "coverage": "partial",
+      "edition_id": "ed_b5476da69a964f1a7245",
+      "evidence_basis": "textbook_page_span",
+      "evidence_gap": null,
+      "evidence_level": "L3_page_evidence",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_junior_grade_8_down",
+        "tes_07ade077afb9c8b5",
+        "textbook-node:tcn_887e9114a8394fa0",
+        "textbook-unit:tcu_dfd28e6cf1da210b"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "证明::四边形 ABCD 是平行四边形,B:AD=CB(平行四边形的对边相等),",
+          "excerpt_hash": "ed8fe9ac4ca934d8ae5a6f6a7f9d3d5f507b0a1b871cf7f9755ce772d57e7131",
+          "pdf_page": 167,
+          "printed_page": null,
+          "span_id": "tes_07ade077afb9c8b5"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_2567607f6031d727",
+        "lc_bc9c4cfde56825f6"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_2567607f6031d727",
+          "label": "用自己的话解释平行四边形、矩形、菱形、正方形、梯形及其关系"
+        },
+        {
+          "component_id": "lc_bc9c4cfde56825f6",
+          "label": "探索并证明平行四边形、矩形、菱形的性质定理和判定定理"
+        }
+      ],
+      "level": "page",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_887e9114a8394fa0",
+      "node_title": "证明::四边形 ABCD 是平行四边形,B:AD=CB(平行四边形的对边相等),",
+      "pdf_page": 167,
+      "printed_page": null,
+      "publication_status": "published",
+      "rationale": "教材练习“证明::四边形 ABCD 是平行四边形,B:AD=CB(平行四边形的对边相等),”与课标 MA-H4G8-GE-014 的可教学小能力“用自己的话解释平行四边形、矩形、菱形、正方形、梯形及其关系、探索并证明平行四边形、矩形、菱形的性质定理和判定定理”形成页内证据匹配。",
+      "relation_type": "practices",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "textbook_grade": 8,
+      "textbook_subject": "数学",
+      "textbook_title": "数学8年级下册",
+      "textbook_volume": "下册",
+      "unit_id": "tcu_dfd28e6cf1da210b",
+      "unit_title": "第六章 平行四边形"
+    },
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_e8681d27081787b1",
+      "alignment_type": "practices",
+      "confidence": 0.92,
+      "coverage": "partial",
+      "edition_id": "ed_b5476da69a964f1a7245",
+      "evidence_basis": "textbook_page_span",
+      "evidence_gap": null,
+      "evidence_level": "L3_page_evidence",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_junior_grade_8_down",
+        "tes_5c6622dd9dec2a80",
+        "textbook-node:tcn_ec1e4d1b801f8dbc",
+        "textbook-unit:tcu_dfd28e6cf1da210b"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "证明::四边形 ABCD 是平行四边形,D:DO-B0(平行四边形的对角线互相平分),",
+          "excerpt_hash": "02e12ff21a170c34cebdfe75c3a67539fb61f66b89d6865e832ed195a29d370d",
+          "pdf_page": 162,
+          "printed_page": null,
+          "span_id": "tes_5c6622dd9dec2a80"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_2567607f6031d727",
+        "lc_bc9c4cfde56825f6"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_2567607f6031d727",
+          "label": "用自己的话解释平行四边形、矩形、菱形、正方形、梯形及其关系"
+        },
+        {
+          "component_id": "lc_bc9c4cfde56825f6",
+          "label": "探索并证明平行四边形、矩形、菱形的性质定理和判定定理"
+        }
+      ],
+      "level": "page",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_ec1e4d1b801f8dbc",
+      "node_title": "证明::四边形 ABCD 是平行四边形,D:DO-B0(平行四边形的对角线互相平分),",
+      "pdf_page": 162,
+      "printed_page": null,
+      "publication_status": "published",
+      "rationale": "教材练习“证明::四边形 ABCD 是平行四边形,D:DO-B0(平行四边形的对角线互相平分),”与课标 MA-H4G8-GE-014 的可教学小能力“用自己的话解释平行四边形、矩形、菱形、正方形、梯形及其关系、探索并证明平行四边形、矩形、菱形的性质定理和判定定理”形成页内证据匹配。",
+      "relation_type": "practices",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "textbook_grade": 8,
+      "textbook_subject": "数学",
+      "textbook_title": "数学8年级下册",
+      "textbook_volume": "下册",
+      "unit_id": "tcu_dfd28e6cf1da210b",
+      "unit_title": "第六章 平行四边形"
+    },
     {
       "algorithm_version": "component-evidence-hybrid-v3",
       "alignment_id": "tca_711ac5dcfa6a8715",
@@ -475,6 +775,37 @@
     },
     {
       "algorithm_version": "full-alignment-scope-preserve-v2",
+      "alignment_id": "ca_0c444303676519d6",
+      "alignment_type": "references",
+      "confidence": null,
+      "coverage": "scope_only",
+      "edition_id": "ed_61803eb53474fb83201e",
+      "evidence_basis": "subject_grade_scope",
+      "evidence_level": "L1_scope",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_junior_grade_8_up"
+      ],
+      "evidence_role": "direct_textbook",
+      "level": "scope",
+      "method": "subject_grade_scope_mapping",
+      "pdf_page": null,
+      "printed_page": null,
+      "publication_status": "published_scope",
+      "rationale": "教材与课标处于同学科、同学段的适用范围；此关系不证明某一单元直接教授该条标准。",
+      "relation_type": "curriculum_scope",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "scope_id": "tcs_181d371b81dc4ec5",
+      "textbook_grade": 8,
+      "textbook_subject": "数学",
+      "textbook_title": "数学8年级上册",
+      "textbook_volume": "上册",
+      "unit_id": null,
+      "unit_title": ""
+    },
+    {
+      "algorithm_version": "full-alignment-scope-preserve-v2",
       "alignment_id": "ca_9dad653a1c891025",
       "alignment_type": "references",
       "confidence": null,
@@ -501,6 +832,37 @@
       "textbook_subject": "数学",
       "textbook_title": "数学8年级上册",
       "textbook_volume": "上册",
+      "unit_id": null,
+      "unit_title": ""
+    },
+    {
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "alignment_id": "ca_91081a7aa45104de",
+      "alignment_type": "references",
+      "confidence": null,
+      "coverage": "scope_only",
+      "edition_id": "ed_b5476da69a964f1a7245",
+      "evidence_basis": "subject_grade_scope",
+      "evidence_level": "L1_scope",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_junior_grade_8_down"
+      ],
+      "evidence_role": "direct_textbook",
+      "level": "scope",
+      "method": "subject_grade_scope_mapping",
+      "pdf_page": null,
+      "printed_page": null,
+      "publication_status": "published_scope",
+      "rationale": "教材与课标处于同学科、同学段的适用范围；此关系不证明某一单元直接教授该条标准。",
+      "relation_type": "curriculum_scope",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "scope_id": "tcs_f23d1c0f12e0c622",
+      "textbook_grade": 8,
+      "textbook_subject": "数学",
+      "textbook_title": "数学8年级下册",
+      "textbook_volume": "下册",
       "unit_id": null,
       "unit_title": ""
     },

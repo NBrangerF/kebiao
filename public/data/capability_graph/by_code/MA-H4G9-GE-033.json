@@ -83,16 +83,181 @@
   ],
   "curriculum_alignment_summary": {
     "candidate_count": 0,
-    "disposition": "unit_aligned",
-    "evidence_note": "已有公开单元主题关系；仍需教材正文、练习或教师用书的页内证据，才能提升到可教学落实。",
+    "disposition": "page_aligned",
+    "evidence_note": "已有教材正文、任务或练习的页内证据；关系由机器自动生成并附带原文定位、证据哈希和置信度。",
     "gap_reason": null,
-    "highest_evidence_level": "L2_topic",
-    "page_evidence_count": 0,
-    "scope_count": 2,
-    "specific_count": 3,
+    "highest_evidence_level": "L3_page_evidence",
+    "page_evidence_count": 3,
+    "scope_count": 4,
+    "specific_count": 6,
     "unit_topic_candidate_count": 0
   },
   "curriculum_alignments": [
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_321388649a8913ec",
+      "alignment_type": "supports",
+      "confidence": 0.8768,
+      "coverage": "partial",
+      "edition_id": "ed_ef4497f053950395a66d",
+      "evidence_basis": "textbook_page_span",
+      "evidence_gap": null,
+      "evidence_level": "L3_page_evidence",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_junior_grade_9_down",
+        "tes_c1f7f64af1f1fc02",
+        "textbook-node:tcn_7b668cbf31136ea8",
+        "textbook-unit:tcu_d5730daaa3d909ad"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "学会用计算器解决一些三角函数计算问题",
+          "excerpt_hash": "8019f7d86d4f47177e8da7ad87544486ddb03f730eb5bf6d7802dafa17fd0ab0",
+          "pdf_page": 6,
+          "printed_page": null,
+          "span_id": "tes_c1f7f64af1f1fc02"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_3d98913c21b28619"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_3d98913c21b28619",
+          "label": "识别并说出锐角三角函数并会用相关知识解直角三角形和解决简单实际问题的关键特征"
+        }
+      ],
+      "level": "page",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_7b668cbf31136ea8",
+      "node_title": "学会用计算器解决一些三角函数计算问题",
+      "pdf_page": 6,
+      "printed_page": null,
+      "publication_status": "published",
+      "rationale": "教材学习目标“学会用计算器解决一些三角函数计算问题”与课标 MA-H4G9-GE-033 的可教学小能力“识别并说出锐角三角函数并会用相关知识解直角三角形和解决简单实际问题的关键特征”形成页内证据匹配。",
+      "relation_type": "supports",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "textbook_grade": 9,
+      "textbook_subject": "数学",
+      "textbook_title": "数学9年级下册",
+      "textbook_volume": "下册",
+      "unit_id": "tcu_d5730daaa3d909ad",
+      "unit_title": "第一章 直角三角形的边角关系"
+    },
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_353fbced9adc8e1d",
+      "alignment_type": "supports",
+      "confidence": 0.8768,
+      "coverage": "partial",
+      "edition_id": "ed_ef4497f053950395a66d",
+      "evidence_basis": "textbook_page_span",
+      "evidence_gap": null,
+      "evidence_level": "L3_page_evidence",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_junior_grade_9_down",
+        "tes_8e4ddea805dce714",
+        "textbook-node:tcn_87fcf87975da0438",
+        "textbook-unit:tcu_d5730daaa3d909ad"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "本书约定,如无特别说明,用计算器根据三角函数值求角度时,计算结果一般精确到]”.",
+          "excerpt_hash": "9c458c858f2394dd5f6b0d4b43d780829cbf5f8314948162ddc1bf67f266e530",
+          "pdf_page": 19,
+          "printed_page": null,
+          "span_id": "tes_8e4ddea805dce714"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_3d98913c21b28619"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_3d98913c21b28619",
+          "label": "识别并说出锐角三角函数并会用相关知识解直角三角形和解决简单实际问题的关键特征"
+        }
+      ],
+      "level": "page",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_87fcf87975da0438",
+      "node_title": "本书约定,如无特别说明,用计算器根据三角函数值求角度时,计算结果一般精确到]”.",
+      "pdf_page": 19,
+      "printed_page": null,
+      "publication_status": "published",
+      "rationale": "教材学习目标“本书约定,如无特别说明,用计算器根据三角函数值求角度时,计算结果一般精确到]”.”与课标 MA-H4G9-GE-033 的可教学小能力“识别并说出锐角三角函数并会用相关知识解直角三角形和解决简单实际问题的关键特征”形成页内证据匹配。",
+      "relation_type": "supports",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "textbook_grade": 9,
+      "textbook_subject": "数学",
+      "textbook_title": "数学9年级下册",
+      "textbook_volume": "下册",
+      "unit_id": "tcu_d5730daaa3d909ad",
+      "unit_title": "第一章 直角三角形的边角关系"
+    },
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_e2577ca9165eb3b1",
+      "alignment_type": "supports",
+      "confidence": 0.8768,
+      "coverage": "partial",
+      "edition_id": "ed_ef4497f053950395a66d",
+      "evidence_basis": "textbook_page_span",
+      "evidence_gap": null,
+      "evidence_level": "L3_page_evidence",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_junior_grade_9_down",
+        "tes_068a49f43733a25f",
+        "textbook-node:tcn_95f5701537d3bbdf",
+        "textbook-unit:tcu_d5730daaa3d909ad"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "用三角函数解决实际问题,发展应用意识",
+          "excerpt_hash": "f9b767f2194a3a2c736edc1bee53ad07727a2a6f2eb748603dc4a8386fd73fc1",
+          "pdf_page": 6,
+          "printed_page": null,
+          "span_id": "tes_068a49f43733a25f"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_3d98913c21b28619"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_3d98913c21b28619",
+          "label": "识别并说出锐角三角函数并会用相关知识解直角三角形和解决简单实际问题的关键特征"
+        }
+      ],
+      "level": "page",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_95f5701537d3bbdf",
+      "node_title": "用三角函数解决实际问题,发展应用意识",
+      "pdf_page": 6,
+      "printed_page": null,
+      "publication_status": "published",
+      "rationale": "教材学习目标“用三角函数解决实际问题,发展应用意识”与课标 MA-H4G9-GE-033 的可教学小能力“识别并说出锐角三角函数并会用相关知识解直角三角形和解决简单实际问题的关键特征”形成页内证据匹配。",
+      "relation_type": "supports",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "textbook_grade": 9,
+      "textbook_subject": "数学",
+      "textbook_title": "数学9年级下册",
+      "textbook_volume": "下册",
+      "unit_id": "tcu_d5730daaa3d909ad",
+      "unit_title": "第一章 直角三角形的边角关系"
+    },
     {
       "algorithm_version": "component-evidence-hybrid-v3",
       "alignment_id": "tca_1094dfe2adb13e94",
@@ -295,6 +460,68 @@
       "review_status": "machine_checked",
       "revision_status": "revision_unknown",
       "scope_id": "tcs_3e651d0e242caded",
+      "textbook_grade": 9,
+      "textbook_subject": "数学",
+      "textbook_title": "数学9年级下册",
+      "textbook_volume": "下册",
+      "unit_id": null,
+      "unit_title": ""
+    },
+    {
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "alignment_id": "ca_8790e8a95095ddea",
+      "alignment_type": "references",
+      "confidence": null,
+      "coverage": "scope_only",
+      "edition_id": "ed_40d19fde240347eaa591",
+      "evidence_basis": "subject_grade_scope",
+      "evidence_level": "L1_scope",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_junior_grade_9_up"
+      ],
+      "evidence_role": "direct_textbook",
+      "level": "scope",
+      "method": "subject_grade_scope_mapping",
+      "pdf_page": null,
+      "printed_page": null,
+      "publication_status": "published_scope",
+      "rationale": "教材与课标处于同学科、同学段的适用范围；此关系不证明某一单元直接教授该条标准。",
+      "relation_type": "curriculum_scope",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "scope_id": "tcs_e74e9fb9bfcc1148",
+      "textbook_grade": 9,
+      "textbook_subject": "数学",
+      "textbook_title": "数学9年级上册",
+      "textbook_volume": "上册",
+      "unit_id": null,
+      "unit_title": ""
+    },
+    {
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "alignment_id": "ca_0ea4b443ca72f424",
+      "alignment_type": "references",
+      "confidence": null,
+      "coverage": "scope_only",
+      "edition_id": "ed_ef4497f053950395a66d",
+      "evidence_basis": "subject_grade_scope",
+      "evidence_level": "L1_scope",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_junior_grade_9_down"
+      ],
+      "evidence_role": "direct_textbook",
+      "level": "scope",
+      "method": "subject_grade_scope_mapping",
+      "pdf_page": null,
+      "printed_page": null,
+      "publication_status": "published_scope",
+      "rationale": "教材与课标处于同学科、同学段的适用范围；此关系不证明某一单元直接教授该条标准。",
+      "relation_type": "curriculum_scope",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "scope_id": "tcs_8281375193798050",
       "textbook_grade": 9,
       "textbook_subject": "数学",
       "textbook_title": "数学9年级下册",

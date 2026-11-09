@@ -62,9 +62,14 @@ export function buildNationalLessons() {
     const inScope = (textbook, code) => !HISTORY_SCOPE[textbook] || HISTORY_SCOPE[textbook].includes(historyLevel.get(code))
     // 化学 repeats its 必做实验 under four standards (CH-S4-SI-06.5 and CH-S4-PR-08.5 read the same); one of each text is enough
     const pointText = new Map()
+    // 要点 placed in one grade from one edition's chapters (初中数学: 人教版), narrower than their standard's grades
+    const placed = new Set()
     for (const file of readdirSync(path.join(ROOT, 'data/v2/by_subject')).filter(name => name.endsWith('.json'))) {
         for (const standard of JSON.parse(readFileSync(path.join(ROOT, 'data/v2/by_subject', file), 'utf8')).standards) {
-            for (const item of standard.indicators || []) pointText.set(item.code, item.text)
+            for (const item of standard.indicators || []) {
+                pointText.set(item.code, item.text)
+                if (item.grades?.length && standard.grades?.length && item.grades.length < standard.grades.length) placed.add(item.code)
+            }
         }
     }
     const firstFour = points => {
@@ -124,7 +129,7 @@ export function buildNationalLessons() {
             if (!unitsByStandard.has(code)) unitsByStandard.set(code, new Map())
             const rows = unitsByStandard.get(code)
             const key = `${record.edition_id}|${unit}`
-            if (!rows.has(key)) rows.set(key, { edition: record.edition_id, textbook: record.textbook_title, unit, ids: [], viaAi })
+            if (!rows.has(key)) rows.set(key, { edition: record.edition_id, textbook: labelOf(record), unit, ids: [], viaAi })
             if (lesson.unit_id && !rows.get(key).ids.includes(lesson.unit_id)) rows.get(key).ids.push(lesson.unit_id)
         }
     }
@@ -137,6 +142,23 @@ export function buildNationalLessons() {
     }
     // the library's books with no 国家平台 lessons get a file of their 目录 lessons
     const library = JSON.parse(readFileSync(path.join(ROOT, 'public/data/textbooks/index.json'), 'utf8')).items
+    // 人教版 and 北师大版 数学5上 are both 「数学5年级上册」: where two books share a title, name each with its edition
+    const editionOf = new Map(library.map(book => [book.edition_id, book.edition_name]))
+    const bookOf = new Map(library.map(book => [book.edition_id, book]))
+    const family = name => String(name || '').replace(/（.*$/u, '')
+    // a volume two editions share (人教版 and 北师大版 数学7上): the second edition's grades come from its own lessons
+    const slotEditions = new Map()
+    for (const book of library) {
+        const slot = `${book.subject}|${book.grade}|${book.volume}`
+        slotEditions.set(slot, new Set([...(slotEditions.get(slot) || []), family(book.edition_name)]))
+    }
+    const ownPlacement = book => book && !family(book.edition_name).startsWith('人教') && slotEditions.get(`${book.subject}|${book.grade}|${book.volume}`)?.size > 1
+    // subject|edition family → 要点 → the grades its books teach it in (主要在教)
+    const taughtIn = new Map()
+    const outs = []
+    const titleCount = new Map()
+    for (const book of library) titleCount.set(book.title, (titleCount.get(book.title) || 0) + 1)
+    const labelOf = record => (titleCount.get(record.textbook_title) > 1 && editionOf.get(record.edition_id) ? `${record.textbook_title}（${editionOf.get(record.edition_id)}）` : record.textbook_title)
     const records = readdirSync(SOURCE).filter(name => name.startsWith('ed_')).map(file => JSON.parse(readFileSync(path.join(SOURCE, file), 'utf8')))
     for (const book of library) {
         if (!records.some(record => record.edition_id === book.edition_id)) records.push({ edition_id: book.edition_id, textbook_title: book.title, platform_title: null, platform_textbook_id: null, match: { title_hits: 0 }, tree: [], lessons: [], toc_only: true })
@@ -213,7 +235,7 @@ export function buildNationalLessons() {
             const key = `${unit}|${lessonKey(lesson.title)}`
             const title = lesson.title.replace(/[（(]?第[一二三四五六七八九十\d]+课时[）)]?/gu, '').trim()
             const seen = listed.get(key)
-            if (!seen) listed.set(key, [record.edition_id, record.textbook_title, unit, title, lesson.id, lesson.pdf_page, lesson.align])
+            if (!seen) listed.set(key, [record.edition_id, labelOf(record), unit, title, lesson.id, lesson.pdf_page, lesson.align])
             else if (title.length < seen[3].length) seen[3] = title
         }
         indexRows.push(...listed.values())
@@ -221,7 +243,7 @@ export function buildNationalLessons() {
             for (const [point, relation, quote, source, page] of lesson.align || []) {
                 bookPoints.get(record.edition_id)?.[relation].add(point)
                 if (!byPoint.has(point)) byPoint.set(point, [])
-                byPoint.get(point).push([record.edition_id, record.textbook_title, (lesson.chapters[0] || lesson.title).replace(/\s+/gu, ' '), lesson.id, lesson.title, relation, quote, source, page ?? null, lesson.unit_id])
+                byPoint.get(point).push([record.edition_id, labelOf(record), (lesson.chapters[0] || lesson.title).replace(/\s+/gu, ' '), lesson.id, lesson.title, relation, quote, source, page ?? null, lesson.unit_id])
             }
         }
         lessonTotal += lessons.length
@@ -234,14 +256,26 @@ export function buildNationalLessons() {
             tree: record.tree,
             lessons
         }
-        writeFileSync(path.join(OUT, `${record.edition_id}.json`), `${JSON.stringify(out)}\n`)
+        outs.push(out)
+        const owner = bookOf.get(record.edition_id)
+        if (owner) {
+            const key = `${owner.subject}|${family(owner.edition_name)}`
+            if (!taughtIn.has(key)) taughtIn.set(key, new Map())
+            for (const lesson of lessons) {
+                for (const [point, relation] of lesson.align || []) {
+                    if (relation !== 'T' || !placed.has(point)) continue
+                    const grades = taughtIn.get(key).get(point) || new Set()
+                    taughtIn.get(key).set(point, grades.add(owner.grade))
+                }
+            }
+        }
         const rows = (rowsByEdition.get(record.edition_id) || []).filter(row => Number.isInteger(row[3])).sort((a, b) => a[3] - b[3])
         for (const lesson of lessons) {
             const ai = aiOf.get(lesson.id) || []
             // 1 = AI 按单元判断 (课名), 2 = AI 逐课判断, with a quote from the lesson's own material
             const via = lesson.align?.length ? 2 : 1
             if (ai.length) {
-                linkLesson(ai, [record.edition_id, lesson.id, lesson.title, record.textbook_title, MATERIALS.filter(name => lesson.materials.includes(name)).map(name => MATERIALS.indexOf(name)), confidence === 'text' ? 1 : 0, via])
+                linkLesson(ai, [record.edition_id, lesson.id, lesson.title, labelOf(record), MATERIALS.filter(name => lesson.materials.includes(name)).map(name => MATERIALS.indexOf(name)), confidence === 'text' ? 1 : 0, via])
                 linkUnit(ai, lesson, record, via)
                 continue
             }
@@ -259,19 +293,33 @@ export function buildNationalLessons() {
                 if (row && (!next || lesson.pdf_page < next[3])) codes.push(...row[5])
             }
             if (codes.length) {
-                linkLesson(codes, [record.edition_id, lesson.id, lesson.title, record.textbook_title, MATERIALS.filter(name => lesson.materials.includes(name)).map(name => MATERIALS.indexOf(name)), confidence === 'text' ? 1 : 0, 0])
+                linkLesson(codes, [record.edition_id, lesson.id, lesson.title, labelOf(record), MATERIALS.filter(name => lesson.materials.includes(name)).map(name => MATERIALS.indexOf(name)), confidence === 'text' ? 1 : 0, 0])
                 linkUnit(codes, lesson, record, 0)
             }
         }
         index.editions[record.edition_id] = { platform_title: record.platform_title, lessons: lessons.length, toc_lessons: lessons.filter(item => item.toc).length, confidence, units_linked: lessons.filter(item => item.unit_id).length }
+    }
+    // each book's file; a second edition's books also carry the grades its own lessons teach each placed 要点 in, so
+    // its 对应表 measures 「本年级」 by its own chapters, not 人教版's
+    for (const out of outs) {
+        const owner = bookOf.get(out.edition_id)
+        const own = ownPlacement(owner) ? taughtIn.get(`${owner.subject}|${family(owner.edition_name)}`) : null
+        if (own?.size) out.edition_grades = Object.fromEntries([...own].sort(([a], [b]) => a.localeCompare(b)).map(([point, grades]) => [point, [...grades].sort((a, b) => a - b)]))
+        writeFileSync(path.join(OUT, `${out.edition_id}.json`), `${JSON.stringify(out)}\n`)
     }
     writeFileSync(path.join(OUT, 'index.json'), `${JSON.stringify(index)}\n`)
     // editions the library has no PDF of (fetch_platform_editions.mjs): their lessons and 要点, judged on the lesson
     // titles and the 教学设计 or 学习任务单; named with the edition, since the library's own book has the same name
     const platformDir = path.join(SOURCE, 'platform')
     const platformBooks = []
+    // a pilot edition whose real book is now in the library (北师大版 数学, 2026-11-08) gives way to it: old links
+    // to the pilot are sent to the book (platform_books.json `replaced`, vercel.json redirects)
+    const twinOf = new Map(library.map(book => [`${book.subject}|${family(book.edition_name)}|${book.grade}|${book.volume}`, book.edition_id]))
+    const replaced = {}
     for (const file of existsSync(platformDir) ? readdirSync(platformDir).filter(name => name.startsWith('pf_')).sort() : []) {
         const record = JSON.parse(readFileSync(path.join(platformDir, file), 'utf8'))
+        const twin = twinOf.get(`${record.subject}|${family(record.edition_name)}|${record.grade}|${record.volume}`)
+        if (twin) { replaced[record.edition_id] = twin; continue }
         const judged = lessonAlign[record.edition_id]
         if (!judged) continue
         const titles = new Map()
@@ -318,7 +366,7 @@ export function buildNationalLessons() {
     const SUBJECT_ORDER = ['语文', '数学', '英语', '道德与法治', '科学', '物理', '化学', '生物学', '历史', '地理', '音乐', '美术', '体育与健康']
     const VOLUME_ORDER = ['上册', '下册', '全一册']
     platformBooks.sort((a, b) => SUBJECT_ORDER.indexOf(a.subject) - SUBJECT_ORDER.indexOf(b.subject) || a.edition_name.localeCompare(b.edition_name, 'zh-Hans-CN') || a.grade - b.grade || VOLUME_ORDER.indexOf(a.volume) - VOLUME_ORDER.indexOf(b.volume))
-    writeFileSync(path.join(ROOT, 'public/data/textbooks/platform_books.json'), `${JSON.stringify({ note: '馆里没有原书 PDF 的版本：课目录来自国家中小学智慧教育平台，课标对应按课题、教学设计或学习任务单判断。', books: platformBooks })}\n`)
+    writeFileSync(path.join(ROOT, 'public/data/textbooks/platform_books.json'), `${JSON.stringify({ note: '馆里没有原书 PDF 的版本：课目录来自国家中小学智慧教育平台，课标对应按课题、教学设计或学习任务单判断。', books: platformBooks, replaced })}\n`)
     // per subject, so a standard page loads only its own subject; lessons with a video and a 教学设计 first
     const bySubject = {}
     for (const [code, list] of byStandard) {
@@ -327,8 +375,8 @@ export function buildNationalLessons() {
         // at most 3 from one textbook, so a standard shows lessons from several grades and editions
         const perBook = new Map()
         const kept = list.filter(item => {
-            perBook.set(item[3], (perBook.get(item[3]) || 0) + 1)
-            return perBook.get(item[3]) <= 3
+            perBook.set(item[0], (perBook.get(item[0]) || 0) + 1)
+            return perBook.get(item[0]) <= 3
         })
         ;(bySubject[prefix] ??= {})[code] = kept.slice(0, 8)
     }

@@ -47,9 +47,9 @@
     "evidence_note": "已有教材正文、任务或练习的页内证据；关系由机器自动生成并附带原文定位、证据哈希和置信度。",
     "gap_reason": null,
     "highest_evidence_level": "L3_page_evidence",
-    "page_evidence_count": 6,
-    "scope_count": 4,
-    "specific_count": 7,
+    "page_evidence_count": 9,
+    "scope_count": 8,
+    "specific_count": 10,
     "unit_topic_candidate_count": 0
   },
   "curriculum_alignments": [
@@ -385,6 +385,171 @@
     },
     {
       "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_c5018471c09d8cac",
+      "alignment_type": "supports",
+      "confidence": 0.8768,
+      "coverage": "partial",
+      "edition_id": "ed_b1800b5b9d4356b970d0",
+      "evidence_basis": "textbook_page_span",
+      "evidence_gap": null,
+      "evidence_level": "L3_page_evidence",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_primary_grade_6_down",
+        "tes_d9d88d06709da5dd",
+        "textbook-node:tcn_8beb31edb47cb65a",
+        "textbook-unit:tcu_9e76c67a2870cfd5"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "在大自然和日常生活中有很多变化的量。你还能找出一个量随着另一个量",
+          "excerpt_hash": "3b2887fb0ddc2009b3ff4bc2068f93c004069897c608d4da3a20d7374e1dc556",
+          "pdf_page": 43,
+          "printed_page": null,
+          "span_id": "tes_d9d88d06709da5dd"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_be5edf79492cfc20"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_be5edf79492cfc20",
+          "label": "找出一个自然数的所有因数，两个自然数的公因数和最大公因数"
+        }
+      ],
+      "level": "page",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_8beb31edb47cb65a",
+      "node_title": "在大自然和日常生活中有很多变化的量。你还能找出一个量随着另一个量",
+      "pdf_page": 43,
+      "printed_page": null,
+      "publication_status": "published",
+      "rationale": "教材学习目标“在大自然和日常生活中有很多变化的量。你还能找出一个量随着另一个量”与课标 MA-D3-AL-001 的可教学小能力“找出一个自然数的所有因数，两个自然数的公因数和最大公因数”形成页内证据匹配。",
+      "relation_type": "supports",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "textbook_grade": 6,
+      "textbook_subject": "数学",
+      "textbook_title": "数学6年级下册",
+      "textbook_volume": "下册",
+      "unit_id": "tcu_9e76c67a2870cfd5",
+      "unit_title": "四 正比例与反比例"
+    },
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_a8278e6dfe8a9666",
+      "alignment_type": "practices",
+      "confidence": 0.86,
+      "coverage": "partial",
+      "edition_id": "ed_ec7081b7432dd6fd4fe7",
+      "evidence_basis": "textbook_page_span",
+      "evidence_gap": null,
+      "evidence_level": "L3_page_evidence",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_primary_grade_5_up",
+        "tes_b1cd1ca745d3dbe1",
+        "textbook-node:tcn_4f2a59bd4303df40",
+        "textbook-unit:tcu_efc17d24a6be0265"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "根据上面的发现,在下面的数中分别找出 2,5 的倍数,并与同伴交流。",
+          "excerpt_hash": "ce50845d4ff7dfdc2ba6f008329178ee33f1f7de25d5f9d1957b4a60313641d8",
+          "pdf_page": 97,
+          "printed_page": "92",
+          "span_id": "tes_b1cd1ca745d3dbe1"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_67610087ba94dccf"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_67610087ba94dccf",
+          "label": "找出 2, 3, 5 的倍数"
+        }
+      ],
+      "level": "page",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_4f2a59bd4303df40",
+      "node_title": "根据上面的发现,在下面的数中分别找出 2,5 的倍数,并与同伴交流。",
+      "pdf_page": 97,
+      "printed_page": "92",
+      "publication_status": "published",
+      "rationale": "教材练习“根据上面的发现,在下面的数中分别找出 2,5 的倍数,并与同伴交流。”与课标 MA-D3-AL-001 的可教学小能力“找出 2, 3, 5 的倍数”形成页内证据匹配。",
+      "relation_type": "practices",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "textbook_grade": 5,
+      "textbook_subject": "数学",
+      "textbook_title": "数学5年级上册",
+      "textbook_volume": "上册",
+      "unit_id": "tcu_efc17d24a6be0265",
+      "unit_title": "第七单元 倍数与因数"
+    },
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_fdd7b69585ff2511",
+      "alignment_type": "practices",
+      "confidence": 0.86,
+      "coverage": "partial",
+      "edition_id": "ed_ec7081b7432dd6fd4fe7",
+      "evidence_basis": "textbook_page_span",
+      "evidence_gap": null,
+      "evidence_level": "L3_page_evidence",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_primary_grade_5_up",
+        "tes_6f1f31a1f460ecae",
+        "textbook-node:tcn_4e89a7ddea937a2f",
+        "textbook-unit:tcu_efc17d24a6be0265"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "判断时,要先想一想 2,5的倍数特征,再......练一练练一练练一练",
+          "excerpt_hash": "f427ea4f43112be50867d505285dd7ec4af3fd6ef962522c23ba92dc119125df",
+          "pdf_page": 97,
+          "printed_page": "92",
+          "span_id": "tes_6f1f31a1f460ecae"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_67610087ba94dccf"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_67610087ba94dccf",
+          "label": "找出 2, 3, 5 的倍数"
+        }
+      ],
+      "level": "page",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_4e89a7ddea937a2f",
+      "node_title": "判断时,要先想一想 2,5的倍数特征,再......练一练练一练练一练",
+      "pdf_page": 97,
+      "printed_page": "92",
+      "publication_status": "published",
+      "rationale": "教材练习“判断时,要先想一想 2,5的倍数特征,再......练一练练一练练一练”与课标 MA-D3-AL-001 的可教学小能力“找出 2, 3, 5 的倍数”形成页内证据匹配。",
+      "relation_type": "practices",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "textbook_grade": 5,
+      "textbook_subject": "数学",
+      "textbook_title": "数学5年级上册",
+      "textbook_volume": "上册",
+      "unit_id": "tcu_efc17d24a6be0265",
+      "unit_title": "第七单元 倍数与因数"
+    },
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
       "alignment_id": "tca_7521270303348eab",
       "alignment_type": "supports",
       "confidence": 0.86,
@@ -533,6 +698,37 @@
     },
     {
       "algorithm_version": "full-alignment-scope-preserve-v2",
+      "alignment_id": "ca_ce023a3f79ba5380",
+      "alignment_type": "references",
+      "confidence": null,
+      "coverage": "scope_only",
+      "edition_id": "ed_576cc2fce461f0e08cb2",
+      "evidence_basis": "subject_grade_scope",
+      "evidence_level": "L1_scope",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_primary_grade_5_down"
+      ],
+      "evidence_role": "direct_textbook",
+      "level": "scope",
+      "method": "subject_grade_scope_mapping",
+      "pdf_page": null,
+      "printed_page": null,
+      "publication_status": "published_scope",
+      "rationale": "教材与课标处于同学科、同学段的适用范围；此关系不证明某一单元直接教授该条标准。",
+      "relation_type": "curriculum_scope",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "scope_id": "tcs_4e566921b9cb64d3",
+      "textbook_grade": 5,
+      "textbook_subject": "数学",
+      "textbook_title": "数学5年级下册",
+      "textbook_volume": "下册",
+      "unit_id": null,
+      "unit_title": ""
+    },
+    {
+      "algorithm_version": "full-alignment-scope-preserve-v2",
       "alignment_id": "ca_27395537973050eb",
       "alignment_type": "references",
       "confidence": null,
@@ -555,6 +751,99 @@
       "review_status": "machine_checked",
       "revision_status": "current_confirmed",
       "scope_id": "tcs_e1c2312794f3e566",
+      "textbook_grade": 5,
+      "textbook_subject": "数学",
+      "textbook_title": "数学5年级上册",
+      "textbook_volume": "上册",
+      "unit_id": null,
+      "unit_title": ""
+    },
+    {
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "alignment_id": "ca_4f3dcd78271a79d8",
+      "alignment_type": "references",
+      "confidence": null,
+      "coverage": "scope_only",
+      "edition_id": "ed_b1800b5b9d4356b970d0",
+      "evidence_basis": "subject_grade_scope",
+      "evidence_level": "L1_scope",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_primary_grade_6_down"
+      ],
+      "evidence_role": "direct_textbook",
+      "level": "scope",
+      "method": "subject_grade_scope_mapping",
+      "pdf_page": null,
+      "printed_page": null,
+      "publication_status": "published_scope",
+      "rationale": "教材与课标处于同学科、同学段的适用范围；此关系不证明某一单元直接教授该条标准。",
+      "relation_type": "curriculum_scope",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "scope_id": "tcs_ee4eb223123317f3",
+      "textbook_grade": 6,
+      "textbook_subject": "数学",
+      "textbook_title": "数学6年级下册",
+      "textbook_volume": "下册",
+      "unit_id": null,
+      "unit_title": ""
+    },
+    {
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "alignment_id": "ca_820139f48140420a",
+      "alignment_type": "references",
+      "confidence": null,
+      "coverage": "scope_only",
+      "edition_id": "ed_c450559fa44fadf1df17",
+      "evidence_basis": "subject_grade_scope",
+      "evidence_level": "L1_scope",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_primary_grade_6_up"
+      ],
+      "evidence_role": "direct_textbook",
+      "level": "scope",
+      "method": "subject_grade_scope_mapping",
+      "pdf_page": null,
+      "printed_page": null,
+      "publication_status": "published_scope",
+      "rationale": "教材与课标处于同学科、同学段的适用范围；此关系不证明某一单元直接教授该条标准。",
+      "relation_type": "curriculum_scope",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "scope_id": "tcs_cbb6bc8a56e6cd94",
+      "textbook_grade": 6,
+      "textbook_subject": "数学",
+      "textbook_title": "数学6年级上册",
+      "textbook_volume": "上册",
+      "unit_id": null,
+      "unit_title": ""
+    },
+    {
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "alignment_id": "ca_c1341347f9970b2b",
+      "alignment_type": "references",
+      "confidence": null,
+      "coverage": "scope_only",
+      "edition_id": "ed_ec7081b7432dd6fd4fe7",
+      "evidence_basis": "subject_grade_scope",
+      "evidence_level": "L1_scope",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_primary_grade_5_up"
+      ],
+      "evidence_role": "direct_textbook",
+      "level": "scope",
+      "method": "subject_grade_scope_mapping",
+      "pdf_page": null,
+      "printed_page": null,
+      "publication_status": "published_scope",
+      "rationale": "教材与课标处于同学科、同学段的适用范围；此关系不证明某一单元直接教授该条标准。",
+      "relation_type": "curriculum_scope",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "scope_id": "tcs_e0716786d706e600",
       "textbook_grade": 5,
       "textbook_subject": "数学",
       "textbook_title": "数学5年级上册",

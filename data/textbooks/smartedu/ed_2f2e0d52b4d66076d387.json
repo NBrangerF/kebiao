@@ -1,0 +1,1366 @@
+{
+ "edition_id": "ed_2f2e0d52b4d66076d387",
+ "textbook_title": "英语7年级上册",
+ "platform_textbook_id": "784e6832-84da-4931-8204-d9c213e9a0ae",
+ "platform_title": "新教材-初中英语外研社版七年级上册",
+ "match": {
+  "title_hits": 41,
+  "method": "book_text",
+  "score": 1,
+  "candidates": 2
+ },
+ "tree": [
+  {
+   "id": "9686a7d2-8e53-43e7-abb3-9d0a0639fd55",
+   "title": "Starter Welcome to junior high!",
+   "children": [
+    {
+     "id": "5f3eb4ae-cc1a-4393-a146-643ab16f717e",
+     "title": "Get ready",
+     "children": []
+    },
+    {
+     "id": "aa0c7d67-d366-4426-abdd-0bdce5c0d015",
+     "title": "Know your school",
+     "children": []
+    },
+    {
+     "id": "ea8afd59-d07a-4c1a-b68d-8e6ea8249bed",
+     "title": "Get to know each other",
+     "children": []
+    },
+    {
+     "id": "6d077dce-cfa2-4016-a041-1a3c016170fc",
+     "title": "Make a wishing tree",
+     "children": []
+    }
+   ]
+  },
+  {
+   "id": "42afe2e7-7f4f-466c-bb1e-a83a15442394",
+   "title": "Unit 1 A new start",
+   "children": [
+    {
+     "id": "6acf450a-7058-408d-9117-8613b7eb0276",
+     "title": "Starting out",
+     "children": []
+    },
+    {
+     "id": "342c8d84-f3d8-4725-912d-0ee6c142cd44",
+     "title": "Understanding ideas",
+     "children": []
+    },
+    {
+     "id": "e895af9f-a590-41cb-b41a-f6c4c156a40b",
+     "title": "Developing ideas",
+     "children": []
+    },
+    {
+     "id": "682f8ac4-3ac2-4582-988d-810736431c83",
+     "title": "Presenting ideas",
+     "children": []
+    },
+    {
+     "id": "7d848639-be05-44bd-929a-8d7e9ae637e1",
+     "title": "Reflection",
+     "children": []
+    }
+   ]
+  },
+  {
+   "id": "d00e0fb8-f7ba-4a2e-bd46-fce52c763b37",
+   "title": "Unit 2 More than fun",
+   "children": [
+    {
+     "id": "8d86adaa-e786-4535-972b-10939abf847d",
+     "title": "Starting out",
+     "children": []
+    },
+    {
+     "id": "d61283e3-d728-4d5a-a915-a12a82cc5569",
+     "title": "Understanding ideas",
+     "children": []
+    },
+    {
+     "id": "f63fd9fb-c358-469c-b9a2-1e9c6bdeb278",
+     "title": "Developing ideas",
+     "children": []
+    },
+    {
+     "id": "d325af3f-2fc3-4fef-8f45-5cdbc538f697",
+     "title": "Presenting ideas",
+     "children": []
+    },
+    {
+     "id": "1e1e2de4-b3cf-4f49-83c7-cd83ef50875b",
+     "title": "Reflection",
+     "children": []
+    }
+   ]
+  },
+  {
+   "id": "eeffd350-143f-4d15-9e68-bb5c882af869",
+   "title": "Unit 3 Family ties",
+   "children": [
+    {
+     "id": "a7e8122a-c31e-4c7d-b8f6-4ff966f6325b",
+     "title": "Starting out",
+     "children": []
+    },
+    {
+     "id": "b642e00e-0533-448f-9b52-cb791fca7d54",
+     "title": "Understanding ideas",
+     "children": []
+    },
+    {
+     "id": "bff2c70d-d80c-4054-878b-c095824302cc",
+     "title": "Developing ideas",
+     "children": []
+    },
+    {
+     "id": "77ef7660-b007-499e-9244-27a713e6de12",
+     "title": "Presenting ideas",
+     "children": []
+    },
+    {
+     "id": "bc43be5f-0c62-4c57-a6df-43f43560d3d0",
+     "title": "Reflection",
+     "children": []
+    }
+   ]
+  },
+  {
+   "id": "f3424d58-7247-4a2b-932c-2ff73ffdf98d",
+   "title": "Unit 4 Time to celebrate",
+   "children": [
+    {
+     "id": "c1bff3ff-c9a5-40d1-9132-49a8ea718422",
+     "title": "Starting out",
+     "children": []
+    },
+    {
+     "id": "cace6921-8f50-45ac-990c-f53476012733",
+     "title": "Understanding ideas",
+     "children": []
+    },
+    {
+     "id": "9a32544c-0d52-4551-9cc4-fceaa66e6734",
+     "title": "Developing ideas",
+     "children": []
+    },
+    {
+     "id": "58ba0f42-70a2-4a4b-b03a-f241596431cd",
+     "title": "Presenting ideas",
+     "children": []
+    },
+    {
+     "id": "50c27f25-7c8d-4bff-83ea-d232ea768587",
+     "title": "Reflection",
+     "children": []
+    }
+   ]
+  },
+  {
+   "id": "5fd23bc8-8aee-4bbc-980a-fb463614b41f",
+   "title": "Unit 5 The power of plants",
+   "children": [
+    {
+     "id": "d7c4a1dc-029c-4083-bb65-6e02a4213e88",
+     "title": "Starting out",
+     "children": []
+    },
+    {
+     "id": "3de5b770-2f66-45e0-9f9d-4b2e48f20619",
+     "title": "Understanding ideas",
+     "children": []
+    },
+    {
+     "id": "169fdefb-10f2-4234-b44a-5778ad414cf0",
+     "title": "Developing ideas",
+     "children": []
+    },
+    {
+     "id": "c5a009ac-7965-4996-9476-f51ef51cee7d",
+     "title": "Presenting ideas",
+     "children": []
+    },
+    {
+     "id": "928aa27d-3690-4b7d-9c00-34e5baeff2aa",
+     "title": "Reflection",
+     "children": []
+    }
+   ]
+  },
+  {
+   "id": "481a6ea6-7350-4d63-a835-a2a4df84ad2d",
+   "title": "Unit 6 Fantastic friends",
+   "children": [
+    {
+     "id": "74eea977-378b-4297-a76e-4fb384d83847",
+     "title": "Starting out",
+     "children": []
+    },
+    {
+     "id": "e650a9cc-1663-4e6f-8d76-13dd98055f02",
+     "title": "Understanding ideas",
+     "children": []
+    },
+    {
+     "id": "0428e881-b207-4d5c-8689-c7ee8c446bb3",
+     "title": "Developing ideas",
+     "children": []
+    },
+    {
+     "id": "f1e0a1b7-0d8e-4128-930a-97487b16d71c",
+     "title": "Presenting ideas",
+     "children": []
+    },
+    {
+     "id": "fe83511a-23f6-4651-abd4-5ad5cbd464a9",
+     "title": "Reflection",
+     "children": []
+    }
+   ]
+  }
+ ],
+ "lessons": [
+  {
+   "id": "1e51793a-1391-5011-514e-3e9f90e49531",
+   "title": "Starter Welcome to junior high! (Get ready)",
+   "chapter_path": [
+    "9686a7d2-8e53-43e7-abb3-9d0a0639fd55",
+    "5f3eb4ae-cc1a-4393-a146-643ab16f717e"
+   ],
+   "pdf_page": null,
+   "materials": [
+    "视频课程",
+    "课件",
+    "教学设计",
+    "学习任务单",
+    "课后练习"
+   ],
+   "hours": 1
+  },
+  {
+   "id": "bbbf8fa4-e842-3369-c2c3-48ddd7c8c7f8",
+   "title": "Starter Welcome to junior high! (Know your school)",
+   "chapter_path": [
+    "9686a7d2-8e53-43e7-abb3-9d0a0639fd55",
+    "aa0c7d67-d366-4426-abdd-0bdce5c0d015"
+   ],
+   "pdf_page": null,
+   "materials": [
+    "视频课程",
+    "课件",
+    "教学设计",
+    "学习任务单",
+    "课后练习"
+   ],
+   "hours": 1
+  },
+  {
+   "id": "b66f6bba-353e-2f46-dc89-1a882307d77e",
+   "title": "Starter Welcome to junior high! (Introduce yourself)",
+   "chapter_path": [
+    "9686a7d2-8e53-43e7-abb3-9d0a0639fd55",
+    "ea8afd59-d07a-4c1a-b68d-8e6ea8249bed"
+   ],
+   "pdf_page": null,
+   "materials": [
+    "视频课程",
+    "课件",
+    "教学设计",
+    "学习任务单",
+    "课后练习"
+   ],
+   "hours": 1
+  },
+  {
+   "id": "fa4b4621-297d-3238-7348-d02f7ed50ced",
+   "title": "Starter Welcome to junior high! (Hold a party)",
+   "chapter_path": [
+    "9686a7d2-8e53-43e7-abb3-9d0a0639fd55",
+    "6d077dce-cfa2-4016-a041-1a3c016170fc"
+   ],
+   "pdf_page": null,
+   "materials": [
+    "视频课程",
+    "课件",
+    "教学设计",
+    "学习任务单",
+    "课后练习"
+   ],
+   "hours": 1
+  },
+  {
+   "id": "d5f9d8cf-8a0b-43f2-81da-b05f6606e86c",
+   "title": "Unit 1 A new start (Periold 1)",
+   "chapter_path": [
+    "42afe2e7-7f4f-466c-bb1e-a83a15442394",
+    "6acf450a-7058-408d-9117-8613b7eb0276"
+   ],
+   "pdf_page": null,
+   "materials": [
+    "视频课程",
+    "课件",
+    "教学设计",
+    "学习任务单",
+    "课后练习"
+   ],
+   "hours": 1
+  },
+  {
+   "id": "f71a22fb-a054-492b-3852-52ea430d7973",
+   "title": "Unit 1 A new start (Understanding ideas)",
+   "chapter_path": [
+    "42afe2e7-7f4f-466c-bb1e-a83a15442394",
+    "342c8d84-f3d8-4725-912d-0ee6c142cd44"
+   ],
+   "pdf_page": null,
+   "materials": [
+    "视频课程",
+    "课件",
+    "教学设计",
+    "学习任务单",
+    "课后练习"
+   ],
+   "hours": 1
+  },
+  {
+   "id": "392114d4-72ff-0fe0-1e79-67a6b600a629",
+   "title": "Unit 1 A new start (Developing ideas )",
+   "chapter_path": [
+    "42afe2e7-7f4f-466c-bb1e-a83a15442394",
+    "e895af9f-a590-41cb-b41a-f6c4c156a40b"
+   ],
+   "pdf_page": null,
+   "materials": [
+    "视频课程",
+    "课件",
+    "教学设计",
+    "学习任务单",
+    "课后练习"
+   ],
+   "hours": 1
+  },
+  {
+   "id": "81de3d51-a3c1-a5c4-caf4-5c0ea150e4bb",
+   "title": "Unit 1 A new start (Presenting ideas & Reflection)",
+   "chapter_path": [
+    "42afe2e7-7f4f-466c-bb1e-a83a15442394",
+    "682f8ac4-3ac2-4582-988d-810736431c83"
+   ],
+   "pdf_page": null,
+   "materials": [
+    "视频课程",
+    "课件",
+    "教学设计",
+    "学习任务单",
+    "课后练习"
+   ],
+   "hours": 1
+  },
+  {
+   "id": "ad6ae709-4a33-f851-2c16-c28af79382c8",
+   "title": "Unit 2 More than fun  Starting out & Understanding ideas 1",
+   "chapter_path": [
+    "d00e0fb8-f7ba-4a2e-bd46-fce52c763b37",
+    "8d86adaa-e786-4535-972b-10939abf847d"
+   ],
+   "pdf_page": null,
+   "materials": [
+    "视频课程",
+    "课件",
+    "教学设计",
+    "学习任务单",
+    "课后练习"
+   ],
+   "hours": 1
+  },
+  {
+   "id": "19593af7-7525-0c24-1ac4-39b3065657a6",
+   "title": "Unit 2 More than fun  Understanding ideas",
+   "chapter_path": [
+    "d00e0fb8-f7ba-4a2e-bd46-fce52c763b37",
+    "d61283e3-d728-4d5a-a915-a12a82cc5569"
+   ],
+   "pdf_page": null,
+   "materials": [
+    "视频课程",
+    "课件",
+    "教学设计",
+    "学习任务单",
+    "课后练习"
+   ],
+   "hours": 1
+  },
+  {
+   "id": "a48869a8-8676-a5d5-3564-85389bfad438",
+   "title": "Unit 2 More than fun  Developing ideas",
+   "chapter_path": [
+    "d00e0fb8-f7ba-4a2e-bd46-fce52c763b37",
+    "f63fd9fb-c358-469c-b9a2-1e9c6bdeb278"
+   ],
+   "pdf_page": null,
+   "materials": [
+    "视频课程",
+    "课件",
+    "教学设计",
+    "学习任务单",
+    "课后练习"
+   ],
+   "hours": 1
+  },
+  {
+   "id": "d93915fc-ec9d-199d-5bff-33cef1e43b06",
+   "title": "Unit 2 More than fun  Presenting ideas & Reflection",
+   "chapter_path": [
+    "d00e0fb8-f7ba-4a2e-bd46-fce52c763b37",
+    "1e1e2de4-b3cf-4f49-83c7-cd83ef50875b"
+   ],
+   "pdf_page": null,
+   "materials": [
+    "视频课程",
+    "课件",
+    "教学设计",
+    "学习任务单",
+    "课后练习"
+   ],
+   "hours": 1
+  },
+  {
+   "id": "0b71d74c-ff90-7055-4c19-a6c4f983fd4a",
+   "title": "Unit 3 Family ties  Starting out & Understanding ideas 1",
+   "chapter_path": [
+    "eeffd350-143f-4d15-9e68-bb5c882af869",
+    "a7e8122a-c31e-4c7d-b8f6-4ff966f6325b"
+   ],
+   "pdf_page": null,
+   "materials": [
+    "视频课程",
+    "课件",
+    "教学设计",
+    "学习任务单",
+    "课后练习"
+   ],
+   "hours": 1
+  },
+  {
+   "id": "350b9894-db9d-525e-330e-85a511667ac1",
+   "title": "Unit 3 Family ties  Understanding ideas",
+   "chapter_path": [
+    "eeffd350-143f-4d15-9e68-bb5c882af869",
+    "b642e00e-0533-448f-9b52-cb791fca7d54"
+   ],
+   "pdf_page": null,
+   "materials": [
+    "视频课程",
+    "课件",
+    "教学设计",
+    "学习任务单",
+    "课后练习"
+   ],
+   "hours": 1
+  },
+  {
+   "id": "ec82af13-32f4-f594-2409-def6bebd2cc3",
+   "title": "Unit 3 Family ties  Developing ideas",
+   "chapter_path": [
+    "eeffd350-143f-4d15-9e68-bb5c882af869",
+    "bff2c70d-d80c-4054-878b-c095824302cc"
+   ],
+   "pdf_page": null,
+   "materials": [
+    "视频课程",
+    "课件",
+    "教学设计",
+    "学习任务单",
+    "课后练习"
+   ],
+   "hours": 1
+  },
+  {
+   "id": "854bbedd-a1ca-4c41-97f5-5f115aac7f91",
+   "title": "Unit 3 Family ties (Presenting ideas & Reflection)",
+   "chapter_path": [
+    "eeffd350-143f-4d15-9e68-bb5c882af869",
+    "77ef7660-b007-499e-9244-27a713e6de12"
+   ],
+   "pdf_page": null,
+   "materials": [
+    "视频课程",
+    "课件",
+    "教学设计",
+    "学习任务单",
+    "课后练习"
+   ],
+   "hours": 1
+  },
+  {
+   "id": "a82255ad-3c81-711e-3691-412cfc3e806f",
+   "title": "Unit 4 Time to celebrate (Starting out & Understanding ideas 1)",
+   "chapter_path": [
+    "f3424d58-7247-4a2b-932c-2ff73ffdf98d",
+    "c1bff3ff-c9a5-40d1-9132-49a8ea718422"
+   ],
+   "pdf_page": null,
+   "materials": [
+    "视频课程",
+    "课件",
+    "教学设计",
+    "学习任务单",
+    "课后练习"
+   ],
+   "hours": 1
+  },
+  {
+   "id": "28405e21-3687-b7a5-fe08-9ddfd86fccaf",
+   "title": "Unit 4 Time to celebrate (Understanding ideas 2)",
+   "chapter_path": [
+    "f3424d58-7247-4a2b-932c-2ff73ffdf98d",
+    "cace6921-8f50-45ac-990c-f53476012733"
+   ],
+   "pdf_page": null,
+   "materials": [
+    "视频课程",
+    "课件",
+    "教学设计",
+    "学习任务单",
+    "课后练习"
+   ],
+   "hours": 1
+  },
+  {
+   "id": "97916a19-4767-7687-c334-9c6b77b12ff6",
+   "title": "Unit 4 Time to celebrate (Developing ideas 1)",
+   "chapter_path": [
+    "f3424d58-7247-4a2b-932c-2ff73ffdf98d",
+    "9a32544c-0d52-4551-9cc4-fceaa66e6734"
+   ],
+   "pdf_page": null,
+   "materials": [
+    "视频课程",
+    "课件",
+    "教学设计",
+    "学习任务单",
+    "课后练习"
+   ],
+   "hours": 1
+  },
+  {
+   "id": "5c8750dd-a54a-a892-3346-3416c2264861",
+   "title": "Unit 4 Time to celebrate (Developing ideas 2)",
+   "chapter_path": [
+    "f3424d58-7247-4a2b-932c-2ff73ffdf98d",
+    "9a32544c-0d52-4551-9cc4-fceaa66e6734"
+   ],
+   "pdf_page": null,
+   "materials": [
+    "视频课程",
+    "课件",
+    "教学设计",
+    "学习任务单",
+    "课后练习"
+   ],
+   "hours": 1
+  },
+  {
+   "id": "02b61194-b844-7543-708f-577348b3c358",
+   "title": "Unit 4 Time to celebrate (Developing ideas 3)",
+   "chapter_path": [
+    "f3424d58-7247-4a2b-932c-2ff73ffdf98d",
+    "9a32544c-0d52-4551-9cc4-fceaa66e6734"
+   ],
+   "pdf_page": null,
+   "materials": [
+    "视频课程",
+    "课件",
+    "教学设计",
+    "学习任务单",
+    "课后练习"
+   ],
+   "hours": 2
+  },
+  {
+   "id": "44152d9d-1f96-96f1-bfde-923842a4b6bd",
+   "title": "Unit 4 Time to celebrate (Presenting ideas & Reflection)",
+   "chapter_path": [
+    "f3424d58-7247-4a2b-932c-2ff73ffdf98d",
+    "50c27f25-7c8d-4bff-83ea-d232ea768587"
+   ],
+   "pdf_page": null,
+   "materials": [
+    "视频课程",
+    "课件",
+    "教学设计",
+    "学习任务单",
+    "课后练习"
+   ],
+   "hours": 1
+  },
+  {
+   "id": "1f010f50-5156-4b83-12cb-df1760894bc3",
+   "title": "Unit 6 Fantastic friends (Starting out & Understanding ideas 1)",
+   "chapter_path": [
+    "481a6ea6-7350-4d63-a835-a2a4df84ad2d",
+    "74eea977-378b-4297-a76e-4fb384d83847"
+   ],
+   "pdf_page": null,
+   "materials": [
+    "视频课程",
+    "课件",
+    "教学设计",
+    "学习任务单",
+    "课后练习"
+   ],
+   "hours": 1
+  },
+  {
+   "id": "4e55b506-adfc-6fd2-85fe-f7be3d00fa12",
+   "title": "Unit 6 Fantastic friends (Understanding ideas 2)",
+   "chapter_path": [
+    "481a6ea6-7350-4d63-a835-a2a4df84ad2d",
+    "e650a9cc-1663-4e6f-8d76-13dd98055f02"
+   ],
+   "pdf_page": null,
+   "materials": [
+    "视频课程",
+    "课件",
+    "教学设计",
+    "学习任务单",
+    "课后练习"
+   ],
+   "hours": 2
+  },
+  {
+   "id": "89cc3e56-0b27-1e31-7ada-1bf55999f1df",
+   "title": "Unit 6 Fantastic friends (Developing ideas 1)",
+   "chapter_path": [
+    "481a6ea6-7350-4d63-a835-a2a4df84ad2d",
+    "0428e881-b207-4d5c-8689-c7ee8c446bb3"
+   ],
+   "pdf_page": null,
+   "materials": [
+    "视频课程",
+    "课件",
+    "教学设计",
+    "学习任务单",
+    "课后练习"
+   ],
+   "hours": 1
+  },
+  {
+   "id": "0d463b01-0645-ddbc-e18b-312033e11875",
+   "title": "Unit 6 Fantastic friends (Developing ideas 2)",
+   "chapter_path": [
+    "481a6ea6-7350-4d63-a835-a2a4df84ad2d",
+    "0428e881-b207-4d5c-8689-c7ee8c446bb3"
+   ],
+   "pdf_page": null,
+   "materials": [
+    "视频课程",
+    "课件",
+    "教学设计",
+    "学习任务单",
+    "课后练习"
+   ],
+   "hours": 1
+  },
+  {
+   "id": "5cb5efaf-b4af-0f5d-0241-9b5f3a028a64",
+   "title": "Unit 6 Fantastic friends (Developing ideas 3)",
+   "chapter_path": [
+    "481a6ea6-7350-4d63-a835-a2a4df84ad2d",
+    "0428e881-b207-4d5c-8689-c7ee8c446bb3"
+   ],
+   "pdf_page": null,
+   "materials": [
+    "视频课程",
+    "课件",
+    "教学设计",
+    "学习任务单",
+    "课后练习"
+   ],
+   "hours": 2
+  },
+  {
+   "id": "734a7cc4-8764-b689-aba4-dc33e98e0fc4",
+   "title": "Unit 6 Fantastic friends (Presenting ideas & Reflection)",
+   "chapter_path": [
+    "481a6ea6-7350-4d63-a835-a2a4df84ad2d",
+    "f1e0a1b7-0d8e-4128-930a-97487b16d71c"
+   ],
+   "pdf_page": null,
+   "materials": [
+    "视频课程",
+    "课件",
+    "教学设计",
+    "学习任务单",
+    "课后练习"
+   ],
+   "hours": 1
+  },
+  {
+   "id": "efb3a868-312b-4d9b-d341-80b5f0068fa8",
+   "title": "Unit 5 The power of plants (Starting out & Understanding ideas 1)",
+   "chapter_path": [
+    "5fd23bc8-8aee-4bbc-980a-fb463614b41f",
+    "3de5b770-2f66-45e0-9f9d-4b2e48f20619"
+   ],
+   "pdf_page": null,
+   "materials": [
+    "视频课程",
+    "课件",
+    "教学设计",
+    "学习任务单",
+    "课后练习"
+   ],
+   "hours": 1
+  },
+  {
+   "id": "4dc9897f-cd95-9ade-cb18-6f024e13346c",
+   "title": "Unit 5 The power of plants (Understanding ideas 2)",
+   "chapter_path": [
+    "5fd23bc8-8aee-4bbc-980a-fb463614b41f",
+    "3de5b770-2f66-45e0-9f9d-4b2e48f20619"
+   ],
+   "pdf_page": null,
+   "materials": [
+    "视频课程",
+    "课件",
+    "教学设计",
+    "学习任务单",
+    "课后练习"
+   ],
+   "hours": 1
+  },
+  {
+   "id": "28b667cd-28a5-44b1-f18d-17ebd4107446",
+   "title": "Unit 5 The power of plants (Developing ideas 1)",
+   "chapter_path": [
+    "5fd23bc8-8aee-4bbc-980a-fb463614b41f",
+    "169fdefb-10f2-4234-b44a-5778ad414cf0"
+   ],
+   "pdf_page": null,
+   "materials": [
+    "视频课程",
+    "课件",
+    "教学设计",
+    "学习任务单",
+    "课后练习"
+   ],
+   "hours": 1
+  },
+  {
+   "id": "acd7ead5-3c1d-ea0c-1375-a36712ec6395",
+   "title": "Unit 5 The power of plants (Developing ideas 2)",
+   "chapter_path": [
+    "5fd23bc8-8aee-4bbc-980a-fb463614b41f",
+    "169fdefb-10f2-4234-b44a-5778ad414cf0"
+   ],
+   "pdf_page": null,
+   "materials": [
+    "视频课程",
+    "课件",
+    "教学设计",
+    "学习任务单",
+    "课后练习"
+   ],
+   "hours": 1
+  },
+  {
+   "id": "41f85595-0d1d-bf48-86bd-07cdc1ed2761",
+   "title": "Unit 5 The power of plants (Developing ideas 3)",
+   "chapter_path": [
+    "5fd23bc8-8aee-4bbc-980a-fb463614b41f",
+    "169fdefb-10f2-4234-b44a-5778ad414cf0"
+   ],
+   "pdf_page": null,
+   "materials": [
+    "视频课程",
+    "课件",
+    "教学设计",
+    "学习任务单",
+    "课后练习"
+   ],
+   "hours": 2
+  },
+  {
+   "id": "96d7bf90-ba94-335a-1ebf-447df19a92f8",
+   "title": "Unit 5 The power of plants (Presenting ideas & Reflection)",
+   "chapter_path": [
+    "5fd23bc8-8aee-4bbc-980a-fb463614b41f",
+    "928aa27d-3690-4b7d-9c00-34e5baeff2aa"
+   ],
+   "pdf_page": null,
+   "materials": [
+    "视频课程",
+    "课件",
+    "教学设计",
+    "学习任务单",
+    "课后练习"
+   ],
+   "hours": 1
+  },
+  {
+   "id": "b82cebc7-8c65-0504-3d69-4be16d511c15",
+   "title": "2 Read and complete. Then listen and check.",
+   "chapter_path": [
+    "9686a7d2-8e53-43e7-abb3-9d0a0639fd55"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "9ddbfe12-21c7-3ab1-90e6-db12d0099f5b",
+   "title": "3 Listen and complete the conversation with a/an or a number.",
+   "chapter_path": [
+    "9686a7d2-8e53-43e7-abb3-9d0a0639fd55"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "69de05a0-9a84-6dbd-6845-4a5bd0df0547",
+   "title": "10 Listen and choose.",
+   "chapter_path": [
+    "9686a7d2-8e53-43e7-abb3-9d0a0639fd55"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "e01e958c-6a05-9e46-c250-a7a2ad0a9d9b",
+   "title": "1 Read and complete.",
+   "chapter_path": [
+    "9686a7d2-8e53-43e7-abb3-9d0a0639fd55"
+   ],
+   "pdf_page": 8,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "f63ebfb2-b506-70cb-10d4-47ff760d3189",
+   "title": "1 Read and complete.",
+   "chapter_path": [
+    "9686a7d2-8e53-43e7-abb3-9d0a0639fd55"
+   ],
+   "pdf_page": 8,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "7eca64a5-cadf-e121-7cf2-ea461f2e7bb1",
+   "title": "4 Read and check your answers.",
+   "chapter_path": [
+    "9686a7d2-8e53-43e7-abb3-9d0a0639fd55"
+   ],
+   "pdf_page": 15,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "af427189-1bda-cc34-7715-288d464debea",
+   "title": "Words and expressions-Starter",
+   "chapter_path": [
+    "9686a7d2-8e53-43e7-abb3-9d0a0639fd55"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "b36aee68-952b-e53d-867b-a3dd55403357",
+   "title": "2 Read the passage. What does the writer do in his first lesson?",
+   "chapter_path": [
+    "42afe2e7-7f4f-466c-bb1e-a83a15442394"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "f0cf9096-98b7-9231-96d2-f46d16a97e38",
+   "title": "8 Work in pairs. Talk about a teacher you like.",
+   "chapter_path": [
+    "42afe2e7-7f4f-466c-bb1e-a83a15442394"
+   ],
+   "pdf_page": 25,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "a5f79092-1118-c902-d932-f71934d039bf",
+   "title": "1 Listen to the radio. What's the biggest problem for new students?",
+   "chapter_path": [
+    "42afe2e7-7f4f-466c-bb1e-a83a15442394"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "e407d379-ee5d-592a-544d-608e195bce06",
+   "title": "Phonetics in use",
+   "chapter_path": [
+    "42afe2e7-7f4f-466c-bb1e-a83a15442394"
+   ],
+   "pdf_page": 115,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "b45776d7-6085-e487-69ec-866d87f27547",
+   "title": "2 Listen again and complete the poster.",
+   "chapter_path": [
+    "42afe2e7-7f4f-466c-bb1e-a83a15442394"
+   ],
+   "pdf_page": 27,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "bdb3fa76-c200-f475-2709-7870c63d8af8",
+   "title": "3 Listen to the conversation and complete the table.",
+   "chapter_path": [
+    "42afe2e7-7f4f-466c-bb1e-a83a15442394"
+   ],
+   "pdf_page": 28,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "bb040882-41be-48a7-4d76-42ff01d2f941",
+   "title": "2 Read the passage and find out the meaning of the title.",
+   "chapter_path": [
+    "42afe2e7-7f4f-466c-bb1e-a83a15442394"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "8beae2b6-8bc9-6360-85d0-6fa834abe124",
+   "title": "Words and expressions-Unit 1",
+   "chapter_path": [
+    "42afe2e7-7f4f-466c-bb1e-a83a15442394"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "e86d2d66-d2cf-7476-e031-f0ec26253d6a",
+   "title": "2 Look at the title and the pictures. What is the passage about? Now read the passage and check your answer.",
+   "chapter_path": [
+    "d00e0fb8-f7ba-4a2e-bd46-fce52c763b37"
+   ],
+   "pdf_page": 38,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "91ccbdba-4f66-cdb7-c17a-762817d4f80f",
+   "title": "8 Work in pairs. Write about your hobby.",
+   "chapter_path": [
+    "d00e0fb8-f7ba-4a2e-bd46-fce52c763b37"
+   ],
+   "pdf_page": 41,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "2d5df21d-f470-a9fa-4995-f7195ac03b18",
+   "title": "1 Listen to the conversation. What does Wang Chen do?",
+   "chapter_path": [
+    "d00e0fb8-f7ba-4a2e-bd46-fce52c763b37"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "09226ca5-cc39-2f88-7661-9b3919606c3b",
+   "title": "Phonetics in use",
+   "chapter_path": [
+    "d00e0fb8-f7ba-4a2e-bd46-fce52c763b37"
+   ],
+   "pdf_page": 115,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "286f79b5-ed10-ca3b-9055-7a55d7d07146",
+   "title": "2 Listen again and order the pictures.",
+   "chapter_path": [
+    "d00e0fb8-f7ba-4a2e-bd46-fce52c763b37"
+   ],
+   "pdf_page": 43,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "d613db38-674c-bb25-07ef-eb8967d1f173",
+   "title": "3 Listen to the interview and complete the interviewer's notes.",
+   "chapter_path": [
+    "d00e0fb8-f7ba-4a2e-bd46-fce52c763b37"
+   ],
+   "pdf_page": 44,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "d1d432aa-8690-a273-01c2-88857114cebc",
+   "title": "2 Read the story. What happens to Emma's notebook?",
+   "chapter_path": [
+    "d00e0fb8-f7ba-4a2e-bd46-fce52c763b37"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "e55ee19f-a869-dfcf-653e-f592a457b1c2",
+   "title": "Words and expressions-Unit 2",
+   "chapter_path": [
+    "d00e0fb8-f7ba-4a2e-bd46-fce52c763b37"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "5a8e3498-5191-99ce-a461-791141638d76",
+   "title": "2 Read the film review. What is the father's love like according to the writer?",
+   "chapter_path": [
+    "eeffd350-143f-4d15-9e68-bb5c882af869"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "636da0bb-a34b-2829-261b-f0dc27376c64",
+   "title": "8 Draw and write about a loving family moment. Then share it with the class.",
+   "chapter_path": [
+    "eeffd350-143f-4d15-9e68-bb5c882af869"
+   ],
+   "pdf_page": 57,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "d93b1e96-36e5-e2e7-fc35-dd5703eacb1b",
+   "title": "1 Listen to the family hotline programme. What problem does Tina have with her mother?",
+   "chapter_path": [
+    "eeffd350-143f-4d15-9e68-bb5c882af869"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "6c84d298-74ff-e51f-9976-1c0f48ed85e5",
+   "title": "Phonetics in use",
+   "chapter_path": [
+    "eeffd350-143f-4d15-9e68-bb5c882af869"
+   ],
+   "pdf_page": 115,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "e215aa1f-ab27-2481-37c4-bddae8645c88",
+   "title": "2 Listen again and complete the chart.",
+   "chapter_path": [
+    "eeffd350-143f-4d15-9e68-bb5c882af869"
+   ],
+   "pdf_page": 59,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "42df60cb-fe94-acf4-b1a4-c915828a44bb",
+   "title": "3 Listen and complete the conversation.",
+   "chapter_path": [
+    "eeffd350-143f-4d15-9e68-bb5c882af869"
+   ],
+   "pdf_page": 60,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "a9973af7-e489-3fea-2eda-5394c0b69a64",
+   "title": "2 Look at the title and the pictures. What is the story about? Now read the story and check your answer.",
+   "chapter_path": [
+    "eeffd350-143f-4d15-9e68-bb5c882af869"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "899c5646-2bfd-540c-d3c3-67672c0bc082",
+   "title": "Words and expressions-Unit 3",
+   "chapter_path": [
+    "eeffd350-143f-4d15-9e68-bb5c882af869"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "3d43998d-09cd-f155-1d92-c585a3598b2c",
+   "title": "2 Read the passage. What does the writer do during the Spring Festival?",
+   "chapter_path": [
+    "f3424d58-7247-4a2b-932c-2ff73ffdf98d"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "9041a54a-04a6-8708-288e-7b5d593b2d88",
+   "title": "8 Work in pairs. Talk about your ways to celebrate a traditional festival.",
+   "chapter_path": [
+    "f3424d58-7247-4a2b-932c-2ff73ffdf98d"
+   ],
+   "pdf_page": 73,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "cb41fd60-c702-202d-d532-78c56a7b6e14",
+   "title": "1 Listen to the news. What problems does Christmas bring?",
+   "chapter_path": [
+    "f3424d58-7247-4a2b-932c-2ff73ffdf98d"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "c4824d52-7320-6dbd-61a6-7d7ef6ca4c64",
+   "title": "Phonetics in use",
+   "chapter_path": [
+    "f3424d58-7247-4a2b-932c-2ff73ffdf98d"
+   ],
+   "pdf_page": 115,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "b183a678-87b3-14a4-e7d8-be85a5ba1bbf",
+   "title": "2 Listen again and complete the poster. Then write F(fact) or O(opinion) in the boxes.",
+   "chapter_path": [
+    "f3424d58-7247-4a2b-932c-2ff73ffdf98d"
+   ],
+   "pdf_page": 75,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "556ba872-a58e-7305-086f-82edcf40534f",
+   "title": "3 Listen to the conversation and complete the ideas. Then match the ideas to the people.",
+   "chapter_path": [
+    "f3424d58-7247-4a2b-932c-2ff73ffdf98d"
+   ],
+   "pdf_page": 76,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "70e5bd52-ac3c-0631-6c0e-4fa6b0aaf51c",
+   "title": "2 Read the story and check your answers.",
+   "chapter_path": [
+    "f3424d58-7247-4a2b-932c-2ff73ffdf98d"
+   ],
+   "pdf_page": 78,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "413df310-0d8a-cc3f-7473-25e744c7bcf5",
+   "title": "Words and expressions-Unit 4",
+   "chapter_path": [
+    "f3424d58-7247-4a2b-932c-2ff73ffdf98d"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "f36139f3-3bbc-5653-004b-edd6918503c6",
+   "title": "2 Read the passage and check your answers.",
+   "chapter_path": [
+    "5fd23bc8-8aee-4bbc-980a-fb463614b41f"
+   ],
+   "pdf_page": 86,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "55650e21-d718-fbb5-4d6b-8dad6c7f4046",
+   "title": "8 Work in pairs. Discuss your plan for Planting Day.",
+   "chapter_path": [
+    "5fd23bc8-8aee-4bbc-980a-fb463614b41f"
+   ],
+   "pdf_page": 89,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "77693c9b-1ff3-bad0-7c45-e15a951d171e",
+   "title": "1 Listen to the opening of the vlog. What is Jason talking about?",
+   "chapter_path": [
+    "5fd23bc8-8aee-4bbc-980a-fb463614b41f"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "090dba70-004d-8a3c-a292-3c8da40e0b75",
+   "title": "Phonetics in use",
+   "chapter_path": [
+    "5fd23bc8-8aee-4bbc-980a-fb463614b41f"
+   ],
+   "pdf_page": 115,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "2cc6c33b-f230-bd40-a399-c3bc8a04bb1f",
+   "title": "2 Listen again and complete Jason's notes for the vlog.",
+   "chapter_path": [
+    "5fd23bc8-8aee-4bbc-980a-fb463614b41f"
+   ],
+   "pdf_page": 91,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "a0fcbb9a-becd-7942-a81c-35354eab56cd",
+   "title": "3 Listen to the conversation and complete the sentences.",
+   "chapter_path": [
+    "5fd23bc8-8aee-4bbc-980a-fb463614b41f"
+   ],
+   "pdf_page": 92,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "c0069983-c939-3696-577e-512bd8c4265a",
+   "title": "2 Read the passage. Find out the importance of tea to the Chinese and the Brits.",
+   "chapter_path": [
+    "5fd23bc8-8aee-4bbc-980a-fb463614b41f"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "53eb679f-4057-6bfb-19b2-50410f47b2c7",
+   "title": "Words and expressions-Unit 5",
+   "chapter_path": [
+    "5fd23bc8-8aee-4bbc-980a-fb463614b41f"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "b605702e-ab85-2e8f-56d2-8a5845b52ca2",
+   "title": "2 Read the blogs and find out the words Henry used.",
+   "chapter_path": [
+    "481a6ea6-7350-4d63-a835-a2a4df84ad2d"
+   ],
+   "pdf_page": 101,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "e2553843-1e95-29df-1660-21dabc5850ec",
+   "title": "1 Listen to the radio programme. What is it about?",
+   "chapter_path": [
+    "481a6ea6-7350-4d63-a835-a2a4df84ad2d"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "9617ffc8-d7bf-219e-7155-f50e7d2bb28d",
+   "title": "Phonetics in use",
+   "chapter_path": [
+    "481a6ea6-7350-4d63-a835-a2a4df84ad2d"
+   ],
+   "pdf_page": 115,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "d33828c2-f050-a593-e335-84d8dd53cd25",
+   "title": "2 Listen again and complete the webpage for Bingjie.",
+   "chapter_path": [
+    "481a6ea6-7350-4d63-a835-a2a4df84ad2d"
+   ],
+   "pdf_page": 107,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "123047fd-85fb-8dfd-02eb-b4cbea525379",
+   "title": "3 Listen to the interview and complete the notes.",
+   "chapter_path": [
+    "481a6ea6-7350-4d63-a835-a2a4df84ad2d"
+   ],
+   "pdf_page": 108,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "4871afd1-2ea8-0975-fd51-3227cfd6da76",
+   "title": "2 Read the passage. What happened to dodos?",
+   "chapter_path": [
+    "481a6ea6-7350-4d63-a835-a2a4df84ad2d"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "cbd88a87-45a5-f2ff-b8d8-34e3b19d28f4",
+   "title": "Words and expressions-Unit 6",
+   "chapter_path": [
+    "481a6ea6-7350-4d63-a835-a2a4df84ad2d"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "882428da-2eea-883f-0f36-959ffa3e5f24",
+   "title": "Proper nouns",
+   "chapter_path": [
+    "481a6ea6-7350-4d63-a835-a2a4df84ad2d"
+   ],
+   "pdf_page": 115,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "9264de27-433b-df2a-514b-a2d796f29f3c",
+   "title": "Pronunciation guide",
+   "chapter_path": [
+    "481a6ea6-7350-4d63-a835-a2a4df84ad2d"
+   ],
+   "pdf_page": 174,
+   "materials": [],
+   "hours": 1
+  }
+ ]
+}

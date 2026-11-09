@@ -76,8 +76,10 @@ export function pointIndex(subject) {
     return index
 }
 
-// the 要点 of the book's grade (a 历史 volume: its period only), with what this book's lessons do with each
-export function bookCoverage(units, subject, book) {
+// the 要点 of the book's grade (a 历史 volume: its period only), with what this book's lessons do with each.
+// editionGrades (a second edition of a volume, e.g. 北师大版 数学7上): 要点 → the grades this edition's own books teach
+// it in, used instead of the grade it was placed in from 人教版's chapters
+export function bookCoverage(units, subject, book, editionGrades = null) {
     const scope = HISTORY_SCOPE[String(book?.title || '').replace(/\s+/gu, '')]
     const standards = (subject?.standards || [])
         .filter(item => !book?.grade || !item.grades?.length || item.grades.includes(book.grade))
@@ -90,7 +92,7 @@ export function bookCoverage(units, subject, book) {
         }
     }
     // 初中 要点 carry the grade their textbook teaches them in: a 七年级 book is measured against 七年级's
-    const ofGrade = item => !book?.grade || !item.grades?.length || item.grades.includes(book.grade)
+    const ofGrade = item => !book?.grade || !item.grades?.length || (editionGrades?.[item.code] || item.grades).includes(book.grade)
     const groups = standards.map(standard => ({
         standard,
         points: (standard.indicators || []).filter(ofGrade).map(item => ({ code: item.code, text: item.text, state: taught.has(item.code) ? 'T' : touched.has(item.code) ? 'P' : null }))

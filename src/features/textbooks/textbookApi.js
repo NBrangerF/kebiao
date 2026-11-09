@@ -60,6 +60,7 @@ export function filterTextbooks(items, filters) {
         if (filters.subject && item.subject_slug !== filters.subject) return false
         if (filters.grade && item.grade !== Number(filters.grade)) return false
         if (filters.volume && item.volume !== filters.volume) return false
+        if (filters.edition && item.edition_name !== filters.edition) return false
         if (!query) return true
         return [item.title, item.subject, item.edition_name, item.grade_label, item.volume]
             .some(value => String(value).toLocaleLowerCase('zh-CN').includes(query))

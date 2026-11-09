@@ -119,16 +119,126 @@
   ],
   "curriculum_alignment_summary": {
     "candidate_count": 0,
-    "disposition": "scope_aligned_no_unit_evidence",
-    "evidence_note": "已关联适用教材范围，但尚无可靠单元级页内证据。",
+    "disposition": "page_aligned",
+    "evidence_note": "已有教材正文、任务或练习的页内证据；关系由机器自动生成并附带原文定位、证据哈希和置信度。",
     "gap_reason": null,
-    "highest_evidence_level": "L1_scope",
-    "page_evidence_count": 0,
-    "scope_count": 2,
-    "specific_count": 0,
+    "highest_evidence_level": "L3_page_evidence",
+    "page_evidence_count": 2,
+    "scope_count": 4,
+    "specific_count": 2,
     "unit_topic_candidate_count": 0
   },
   "curriculum_alignments": [
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_0e8a956ada249c70",
+      "alignment_type": "supports",
+      "confidence": 0.86,
+      "coverage": "partial",
+      "edition_id": "ed_4411f5525e37193a3680",
+      "evidence_basis": "textbook_page_span",
+      "evidence_gap": null,
+      "evidence_level": "L3_page_evidence",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_junior_grade_7_up",
+        "tes_55e2d6c37ae43884",
+        "textbook-node:tcn_268c0b29356d5aba",
+        "textbook-unit:tcu_3d59cc0e273a9065"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "在自己经历过的解决问题活动中,选择一个最有挑战性的问题,写出",
+          "excerpt_hash": "5b08f527be38f742536ed07bb3b670d9ca39734c1d4900481a8c98a67bb70c67",
+          "pdf_page": 208,
+          "printed_page": null,
+          "span_id": "tes_55e2d6c37ae43884"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_6e16f89fc0086b48"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_6e16f89fc0086b48",
+          "label": "准确说出解决问题方法的多样性"
+        }
+      ],
+      "level": "page",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_268c0b29356d5aba",
+      "node_title": "在自己经历过的解决问题活动中,选择一个最有挑战性的问题,写出",
+      "pdf_page": 208,
+      "printed_page": null,
+      "publication_status": "published",
+      "rationale": "教材学习目标“在自己经历过的解决问题活动中,选择一个最有挑战性的问题,写出”与课标 MA-H4G7-AL-005 的可教学小能力“准确说出解决问题方法的多样性”形成页内证据匹配。",
+      "relation_type": "supports",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "textbook_grade": 7,
+      "textbook_subject": "数学",
+      "textbook_title": "数学7年级上册",
+      "textbook_volume": "上册",
+      "unit_id": "tcu_3d59cc0e273a9065",
+      "unit_title": "综合与实践"
+    },
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_d608712d76b83917",
+      "alignment_type": "supports",
+      "confidence": 0.86,
+      "coverage": "partial",
+      "edition_id": "ed_c5c4b1ec810400e3a857",
+      "evidence_basis": "textbook_page_span",
+      "evidence_gap": null,
+      "evidence_level": "L3_page_evidence",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_junior_grade_7_down",
+        "tes_30ada597bafd6192",
+        "textbook-node:tcn_6337ab54321fd74b",
+        "textbook-unit:tcu_e9c16987ac16c084"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "在自己经历过的解决问题活动中,选择一个最有挑战性的问题,写出",
+          "excerpt_hash": "5b08f527be38f742536ed07bb3b670d9ca39734c1d4900481a8c98a67bb70c67",
+          "pdf_page": 180,
+          "printed_page": null,
+          "span_id": "tes_30ada597bafd6192"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_6e16f89fc0086b48"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_6e16f89fc0086b48",
+          "label": "准确说出解决问题方法的多样性"
+        }
+      ],
+      "level": "page",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_6337ab54321fd74b",
+      "node_title": "在自己经历过的解决问题活动中,选择一个最有挑战性的问题,写出",
+      "pdf_page": 180,
+      "printed_page": null,
+      "publication_status": "published",
+      "rationale": "教材学习目标“在自己经历过的解决问题活动中,选择一个最有挑战性的问题,写出”与课标 MA-H4G7-AL-005 的可教学小能力“准确说出解决问题方法的多样性”形成页内证据匹配。",
+      "relation_type": "supports",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "textbook_grade": 7,
+      "textbook_subject": "数学",
+      "textbook_title": "数学7年级下册",
+      "textbook_volume": "下册",
+      "unit_id": "tcu_e9c16987ac16c084",
+      "unit_title": "综合与实践"
+    },
     {
       "algorithm_version": "full-alignment-scope-preserve-v2",
       "alignment_id": "ca_3b9222286ac0272b",
@@ -162,6 +272,37 @@
     },
     {
       "algorithm_version": "full-alignment-scope-preserve-v2",
+      "alignment_id": "ca_0eec610c94c5d5da",
+      "alignment_type": "references",
+      "confidence": null,
+      "coverage": "scope_only",
+      "edition_id": "ed_4411f5525e37193a3680",
+      "evidence_basis": "subject_grade_scope",
+      "evidence_level": "L1_scope",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_junior_grade_7_up"
+      ],
+      "evidence_role": "direct_textbook",
+      "level": "scope",
+      "method": "subject_grade_scope_mapping",
+      "pdf_page": null,
+      "printed_page": null,
+      "publication_status": "published_scope",
+      "rationale": "教材与课标处于同学科、同学段的适用范围；此关系不证明某一单元直接教授该条标准。",
+      "relation_type": "curriculum_scope",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "scope_id": "tcs_82fda456943fe48e",
+      "textbook_grade": 7,
+      "textbook_subject": "数学",
+      "textbook_title": "数学7年级上册",
+      "textbook_volume": "上册",
+      "unit_id": null,
+      "unit_title": ""
+    },
+    {
+      "algorithm_version": "full-alignment-scope-preserve-v2",
       "alignment_id": "ca_0b7a29679e789e5c",
       "alignment_type": "references",
       "confidence": null,
@@ -184,6 +325,37 @@
       "review_status": "machine_checked",
       "revision_status": "current_confirmed",
       "scope_id": "tcs_05b1d5ed90d78b81",
+      "textbook_grade": 7,
+      "textbook_subject": "数学",
+      "textbook_title": "数学7年级下册",
+      "textbook_volume": "下册",
+      "unit_id": null,
+      "unit_title": ""
+    },
+    {
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "alignment_id": "ca_c6f899d07855ba61",
+      "alignment_type": "references",
+      "confidence": null,
+      "coverage": "scope_only",
+      "edition_id": "ed_c5c4b1ec810400e3a857",
+      "evidence_basis": "subject_grade_scope",
+      "evidence_level": "L1_scope",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_junior_grade_7_down"
+      ],
+      "evidence_role": "direct_textbook",
+      "level": "scope",
+      "method": "subject_grade_scope_mapping",
+      "pdf_page": null,
+      "printed_page": null,
+      "publication_status": "published_scope",
+      "rationale": "教材与课标处于同学科、同学段的适用范围；此关系不证明某一单元直接教授该条标准。",
+      "relation_type": "curriculum_scope",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "scope_id": "tcs_24f4da2ab6e786da",
       "textbook_grade": 7,
       "textbook_subject": "数学",
       "textbook_title": "数学7年级下册",

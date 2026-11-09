@@ -41,6 +41,17 @@ export function saveMyBook(patch) {
     window.dispatchEvent(new Event(EVENT))
 }
 
+/** 「人教版 PEP（三年级起点）」→ 人教, 「外研社版（孙有中）」→ 外研社: the publisher, short enough for the header. */
+export const publisherOf = name => String(name || '').replace(/（.*?）|\(.*?\)/gu, '').replace(/\s*PEP\b/u, '').replace(/版$/u, '').trim()
+
+/** Opening a book's page remembers it, except another publisher's book of the teacher's own subject: a 北师大版
+ *  teacher who follows a link into a 人教版 book keeps her book (换一本 and 设为我的书 change it on purpose). */
+export function viewMyBook(patch) {
+    const prev = readMyBook()
+    if (prev?.subject && prev.subject === patch?.subject && prev.edition_name && patch?.edition_name && publisherOf(prev.edition_name) !== publisherOf(patch.edition_name)) return
+    saveMyBook(patch)
+}
+
 function subscribe(onChange) {
     window.addEventListener(EVENT, onChange)
     window.addEventListener('storage', onChange)
@@ -57,7 +68,7 @@ export function describeBook(book) {
     return {
         ...book,
         short: [book.subject, grade].filter(Boolean).join(' '),
-        publisher: String(book.edition_name || '').replace(/版$/u, ''),
+        publisher: publisherOf(book.edition_name),
         href: book.edition.startsWith('pf_') ? `/textbooks/${book.edition}/standards` : `/textbooks/${book.edition}`,
         color: SPINE_COLORS[book.subject_slug] || 'var(--kb-gold)'
     }

@@ -68,11 +68,13 @@ export default function CommandPalette({ open, onClose, initialQuery = '' }) {
         else if (event.key === 'ArrowUp') { event.preventDefault(); setSel(s => (rows ? (s - 1 + rows) % rows : 0)) }
         else if (event.key === 'Enter') { event.preventDefault(); choose(sel) }
         else if (event.key === 'Escape') { event.preventDefault(); onClose() }
+        // the dialog is modal: Tab stays on the search box, so Esc and the arrows keep working
+        else if (event.key === 'Tab') { event.preventDefault(); inputRef.current?.focus() }
     }
 
     return (
         <div className={styles.scrim} onMouseDown={event => { if (event.target === event.currentTarget) onClose() }}>
-            <div className={styles.palette} role="dialog" aria-modal="true" aria-label="搜索课程标准" data-solid>
+            <div className={styles.palette} role="dialog" aria-modal="true" aria-label="搜索课程标准" data-solid onKeyDown={onKeyDown}>
                 <div className={styles.input}>
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7" /><path d="M20 20l-3.5-3.5" /></svg>
                     <label className="sr-only" htmlFor="kb-palette-q">搜索课程标准</label>
@@ -88,13 +90,13 @@ export default function CommandPalette({ open, onClose, initialQuery = '' }) {
                         aria-activedescendant={rows ? `kb-opt-${sel}` : undefined}
                         value={q}
                         onChange={event => { setQ(event.target.value); setSel(0) }}
-                        onKeyDown={onKeyDown}
                     />
                     <span className={styles.count}>{!K ? '载入中' : results == null ? `${K.N.toLocaleString('en-US')} 条` : `${results.length} 条`}</span>
                 </div>
+                {/* hints sit outside the listbox, which holds options only */}
+                {results == null ? <p className={styles.empty}>输入关键词</p> : null}
+                {results && !results.length ? <p className={styles.empty}>没有字面匹配</p> : null}
                 <ul ref={listRef} className={styles.results} id="kb-palette-list" role="listbox" aria-label="搜索结果">
-                    {results == null ? <li className={styles.empty}>输入关键词</li> : null}
-                    {results && !results.length ? <li className={styles.empty}>没有字面匹配</li> : null}
                     {K && shown.map((i, k) => {
                         const s = K.S[i]
                         return (

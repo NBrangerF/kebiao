@@ -127,9 +127,9 @@
     "evidence_note": "已有教材正文、任务或练习的页内证据；关系由机器自动生成并附带原文定位、证据哈希和置信度。",
     "gap_reason": null,
     "highest_evidence_level": "L3_page_evidence",
-    "page_evidence_count": 6,
-    "scope_count": 4,
-    "specific_count": 6,
+    "page_evidence_count": 17,
+    "scope_count": 8,
+    "specific_count": 17,
     "unit_topic_candidate_count": 0
   },
   "curriculum_alignments": [
@@ -360,6 +360,226 @@
     },
     {
       "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_1559658feb0c42e9",
+      "alignment_type": "supports",
+      "confidence": 0.86,
+      "coverage": "partial",
+      "edition_id": "ed_576cc2fce461f0e08cb2",
+      "evidence_basis": "textbook_page_span",
+      "evidence_gap": null,
+      "evidence_level": "L3_page_evidence",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_primary_grade_5_down",
+        "tes_1c88410896966a47",
+        "textbook-node:tcn_a8ba04f43a4bb3e7",
+        "textbook-unit:tcu_193d85a87abc4dd5"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "全班交流,剪出了几种不同形状的展开图?说一说,分别是如何得到的?",
+          "excerpt_hash": "eb286bb3d85668504629dc035b6837c7bc9650b6fd20cc90c54c0a59a2aed8c0",
+          "pdf_page": 18,
+          "printed_page": null,
+          "span_id": "tes_1c88410896966a47"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_2e275d23aa87be79"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_2e275d23aa87be79",
+          "label": "辨认这些图形的展开图"
+        }
+      ],
+      "level": "page",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_a8ba04f43a4bb3e7",
+      "node_title": "全班交流,剪出了几种不同形状的展开图?说一说,分别是如何得到的?",
+      "pdf_page": 18,
+      "printed_page": null,
+      "publication_status": "published",
+      "rationale": "教材学习目标“全班交流,剪出了几种不同形状的展开图?说一说,分别是如何得到的?”与课标 MA-D3-GE-003 的可教学小能力“辨认这些图形的展开图”形成页内证据匹配。",
+      "relation_type": "supports",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "textbook_grade": 5,
+      "textbook_subject": "数学",
+      "textbook_title": "数学5年级下册",
+      "textbook_volume": "下册",
+      "unit_id": "tcu_193d85a87abc4dd5",
+      "unit_title": "二 长方体（一）"
+    },
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_1ac672f5fdecaf7a",
+      "alignment_type": "supports",
+      "confidence": 0.86,
+      "coverage": "partial",
+      "edition_id": "ed_576cc2fce461f0e08cb2",
+      "evidence_basis": "textbook_page_span",
+      "evidence_gap": null,
+      "evidence_level": "L3_page_evidence",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_primary_grade_5_down",
+        "tes_45c5a68c33527c84",
+        "textbook-node:tcn_0ab94a6c15decadb",
+        "textbook-unit:tcu_193d85a87abc4dd5"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "请你找一个正方体的盒子剪一剪,把你得到的展开图画下来。",
+          "excerpt_hash": "9c30d2980516a0f20fcd34532afe978ac82d208ae6513b49d5dc86bd6fc499e1",
+          "pdf_page": 18,
+          "printed_page": null,
+          "span_id": "tes_45c5a68c33527c84"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_2e275d23aa87be79"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_2e275d23aa87be79",
+          "label": "辨认这些图形的展开图"
+        }
+      ],
+      "level": "page",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_0ab94a6c15decadb",
+      "node_title": "请你找一个正方体的盒子剪一剪,把你得到的展开图画下来。",
+      "pdf_page": 18,
+      "printed_page": null,
+      "publication_status": "published",
+      "rationale": "教材学习目标“请你找一个正方体的盒子剪一剪,把你得到的展开图画下来。”与课标 MA-D3-GE-003 的可教学小能力“辨认这些图形的展开图”形成页内证据匹配。",
+      "relation_type": "supports",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "textbook_grade": 5,
+      "textbook_subject": "数学",
+      "textbook_title": "数学5年级下册",
+      "textbook_volume": "下册",
+      "unit_id": "tcu_193d85a87abc4dd5",
+      "unit_title": "二 长方体（一）"
+    },
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_9d02e7ab8551d730",
+      "alignment_type": "supports",
+      "confidence": 0.86,
+      "coverage": "partial",
+      "edition_id": "ed_576cc2fce461f0e08cb2",
+      "evidence_basis": "textbook_page_span",
+      "evidence_gap": null,
+      "evidence_level": "L3_page_evidence",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_primary_grade_5_down",
+        "tes_501faf13af8a3852",
+        "textbook-node:tcn_d5d8f5d31c941dec",
+        "textbook-unit:tcu_193d85a87abc4dd5"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "下面是一个长方体和一个正方体的展开图,请分别说出与1号、2号、3号",
+          "excerpt_hash": "f8d6e62156b1a15048c02c11fdc96df65ee339e4685cbc1cc4dc974c4acee135",
+          "pdf_page": 18,
+          "printed_page": null,
+          "span_id": "tes_501faf13af8a3852"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_2e275d23aa87be79"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_2e275d23aa87be79",
+          "label": "辨认这些图形的展开图"
+        }
+      ],
+      "level": "page",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_d5d8f5d31c941dec",
+      "node_title": "下面是一个长方体和一个正方体的展开图,请分别说出与1号、2号、3号",
+      "pdf_page": 18,
+      "printed_page": null,
+      "publication_status": "published",
+      "rationale": "教材学习目标“下面是一个长方体和一个正方体的展开图,请分别说出与1号、2号、3号”与课标 MA-D3-GE-003 的可教学小能力“辨认这些图形的展开图”形成页内证据匹配。",
+      "relation_type": "supports",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "textbook_grade": 5,
+      "textbook_subject": "数学",
+      "textbook_title": "数学5年级下册",
+      "textbook_volume": "下册",
+      "unit_id": "tcu_193d85a87abc4dd5",
+      "unit_title": "二 长方体（一）"
+    },
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_86f2843928cb8f5f",
+      "alignment_type": "supports",
+      "confidence": 0.92,
+      "coverage": "partial",
+      "edition_id": "ed_576cc2fce461f0e08cb2",
+      "evidence_basis": "textbook_page_span",
+      "evidence_gap": null,
+      "evidence_level": "L3_page_evidence",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_primary_grade_5_down",
+        "tes_117bd746265b3630",
+        "textbook-node:tcn_d314e72066c5bd3c",
+        "textbook-unit:tcu_c53a1404a19bf907"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "先算一算下列图形的体积,再读一读,想一想。(单位:dm)",
+          "excerpt_hash": "fa4d69c0b03553e5cd3b93d536a22846a8452f4334c33a10529211ce1e1da3fe",
+          "pdf_page": 46,
+          "printed_page": null,
+          "span_id": "tes_117bd746265b3630"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_dcf10f8276336508"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_dcf10f8276336508",
+          "label": "计算这些图形的体积和表面积"
+        }
+      ],
+      "level": "page",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_d314e72066c5bd3c",
+      "node_title": "先算一算下列图形的体积,再读一读,想一想。(单位:dm)",
+      "pdf_page": 46,
+      "printed_page": null,
+      "publication_status": "published",
+      "rationale": "教材学习目标“先算一算下列图形的体积,再读一读,想一想。(单位:dm)”与课标 MA-D3-GE-003 的可教学小能力“计算这些图形的体积和表面积”形成页内证据匹配。",
+      "relation_type": "supports",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "textbook_grade": 5,
+      "textbook_subject": "数学",
+      "textbook_title": "数学5年级下册",
+      "textbook_volume": "下册",
+      "unit_id": "tcu_c53a1404a19bf907",
+      "unit_title": "四 长方体（二）"
+    },
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
       "alignment_id": "tca_b2b2fbda151c0260",
       "alignment_type": "practices",
       "confidence": 0.8409,
@@ -469,6 +689,391 @@
       "unit_title": "五 用字母表示数和数量关系"
     },
     {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_27a9cfc450f56209",
+      "alignment_type": "practices",
+      "confidence": 0.8593,
+      "coverage": "partial",
+      "edition_id": "ed_b1800b5b9d4356b970d0",
+      "evidence_basis": "textbook_page_span",
+      "evidence_gap": null,
+      "evidence_level": "L3_page_evidence",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_primary_grade_6_down",
+        "tes_c969e58a774bf585",
+        "textbook-node:tcn_c9f9b39b25514beb",
+        "textbook-unit:tcu_54aac8a5ac652966"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "想一想,怎样计算圆柱的体积呢?",
+          "excerpt_hash": "ae9fae07517e6fbff63f0035fec5762a8d137b7e4d50c1738274870ac135fd6a",
+          "pdf_page": 12,
+          "printed_page": null,
+          "span_id": "tes_c969e58a774bf585"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_3abdd76c24010dd9"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_3abdd76c24010dd9",
+          "label": "计算圆锥的体积"
+        }
+      ],
+      "level": "page",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_c9f9b39b25514beb",
+      "node_title": "想一想,怎样计算圆柱的体积呢?",
+      "pdf_page": 12,
+      "printed_page": null,
+      "publication_status": "published",
+      "rationale": "教材练习“想一想,怎样计算圆柱的体积呢?”与课标 MA-D3-GE-003 的可教学小能力“计算圆锥的体积”形成页内证据匹配。",
+      "relation_type": "practices",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "textbook_grade": 6,
+      "textbook_subject": "数学",
+      "textbook_title": "数学6年级下册",
+      "textbook_volume": "下册",
+      "unit_id": "tcu_54aac8a5ac652966",
+      "unit_title": "一 圆柱与圆锥"
+    },
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_799193d85964101d",
+      "alignment_type": "practices",
+      "confidence": 0.858,
+      "coverage": "partial",
+      "edition_id": "ed_b1800b5b9d4356b970d0",
+      "evidence_basis": "textbook_page_span",
+      "evidence_gap": null,
+      "evidence_level": "L3_page_evidence",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_primary_grade_6_down",
+        "tes_16edc86edb6c79a2",
+        "textbook-node:tcn_6d41328008556d10",
+        "textbook-unit:tcu_54aac8a5ac652966"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "计算出圆柱的体积。",
+          "excerpt_hash": "8e5b7875f29ba4a29b068c4e5b14de438606604de7b71a1e558ef51a66930c97",
+          "pdf_page": 12,
+          "printed_page": null,
+          "span_id": "tes_16edc86edb6c79a2"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_3abdd76c24010dd9"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_3abdd76c24010dd9",
+          "label": "计算圆锥的体积"
+        }
+      ],
+      "level": "page",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_6d41328008556d10",
+      "node_title": "计算出圆柱的体积。",
+      "pdf_page": 12,
+      "printed_page": null,
+      "publication_status": "published",
+      "rationale": "教材练习“计算出圆柱的体积。”与课标 MA-D3-GE-003 的可教学小能力“计算圆锥的体积”形成页内证据匹配。",
+      "relation_type": "practices",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "textbook_grade": 6,
+      "textbook_subject": "数学",
+      "textbook_title": "数学6年级下册",
+      "textbook_volume": "下册",
+      "unit_id": "tcu_54aac8a5ac652966",
+      "unit_title": "一 圆柱与圆锥"
+    },
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_943743ba4779a106",
+      "alignment_type": "supports",
+      "confidence": 0.92,
+      "coverage": "partial",
+      "edition_id": "ed_b1800b5b9d4356b970d0",
+      "evidence_basis": "textbook_page_span",
+      "evidence_gap": null,
+      "evidence_level": "L3_page_evidence",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_primary_grade_6_down",
+        "tes_c11790f41e6b730c",
+        "textbook-node:tcn_e35702c1a789665b",
+        "textbook-unit:tcu_54aac8a5ac652966"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "如果用V表示圆锥的体积,S表示底面积,h表示高,你能写出圆锥体积的",
+          "excerpt_hash": "a28f6dc3af70df4aaae8fbf629f1708e39200e1e34458a53242d758b2c71f71d",
+          "pdf_page": 15,
+          "printed_page": null,
+          "span_id": "tes_c11790f41e6b730c"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_3abdd76c24010dd9"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_3abdd76c24010dd9",
+          "label": "计算圆锥的体积"
+        }
+      ],
+      "level": "page",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_e35702c1a789665b",
+      "node_title": "如果用V表示圆锥的体积,S表示底面积,h表示高,你能写出圆锥体积的",
+      "pdf_page": 15,
+      "printed_page": null,
+      "publication_status": "published",
+      "rationale": "教材学习目标“如果用V表示圆锥的体积,S表示底面积,h表示高,你能写出圆锥体积的”与课标 MA-D3-GE-003 的可教学小能力“计算圆锥的体积”形成页内证据匹配。",
+      "relation_type": "supports",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "textbook_grade": 6,
+      "textbook_subject": "数学",
+      "textbook_title": "数学6年级下册",
+      "textbook_volume": "下册",
+      "unit_id": "tcu_54aac8a5ac652966",
+      "unit_title": "一 圆柱与圆锥"
+    },
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_fcec2354a04db56a",
+      "alignment_type": "supports",
+      "confidence": 0.8404,
+      "coverage": "partial",
+      "edition_id": "ed_b1800b5b9d4356b970d0",
+      "evidence_basis": "textbook_page_span",
+      "evidence_gap": null,
+      "evidence_level": "L3_page_evidence",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_primary_grade_6_down",
+        "tes_b015ca5707c28fe5",
+        "textbook-node:tcn_35da20824c874cbb",
+        "textbook-unit:tcu_54aac8a5ac652966"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "你能计算出 “至少需要用多大面积的纸板”吗?",
+          "excerpt_hash": "b413005223a6166fd2d67ce38ea64e46a7bcbb9192a269f58ab76f833ca83623",
+          "pdf_page": 9,
+          "printed_page": null,
+          "span_id": "tes_b015ca5707c28fe5"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_dcf10f8276336508"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_dcf10f8276336508",
+          "label": "计算这些图形的体积和表面积"
+        }
+      ],
+      "level": "page",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_35da20824c874cbb",
+      "node_title": "你能计算出 “至少需要用多大面积的纸板”吗?",
+      "pdf_page": 9,
+      "printed_page": null,
+      "publication_status": "published",
+      "rationale": "教材学习目标“你能计算出 “至少需要用多大面积的纸板”吗?”与课标 MA-D3-GE-003 的可教学小能力“计算这些图形的体积和表面积”形成页内证据匹配。",
+      "relation_type": "supports",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "textbook_grade": 6,
+      "textbook_subject": "数学",
+      "textbook_title": "数学6年级下册",
+      "textbook_volume": "下册",
+      "unit_id": "tcu_54aac8a5ac652966",
+      "unit_title": "一 圆柱与圆锥"
+    },
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_859607a16f4eb66a",
+      "alignment_type": "practices",
+      "confidence": 0.8487,
+      "coverage": "partial",
+      "edition_id": "ed_ec7081b7432dd6fd4fe7",
+      "evidence_basis": "textbook_page_span",
+      "evidence_gap": null,
+      "evidence_level": "L3_page_evidence",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_primary_grade_5_up",
+        "tes_4b223396f87303a1",
+        "textbook-node:tcn_a36ddcdcde29f10b",
+        "textbook-unit:tcu_3a4e923066334287"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "练一练练一练练一练1. 你会计算这块拼图的面积吗?想一想, 2. 想一想,算一算,填一填。",
+          "excerpt_hash": "2551bcbec34098433f43c8189a46f51cf974925eecac2de7e0ffec60f4952e14",
+          "pdf_page": 43,
+          "printed_page": "38",
+          "span_id": "tes_4b223396f87303a1"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_dcf10f8276336508"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_dcf10f8276336508",
+          "label": "计算这些图形的体积和表面积"
+        }
+      ],
+      "level": "page",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_a36ddcdcde29f10b",
+      "node_title": "练一练练一练练一练1. 你会计算这块拼图的面积吗?想一想, 2. 想一想,算一算,填一填。",
+      "pdf_page": 43,
+      "printed_page": "38",
+      "publication_status": "published",
+      "rationale": "教材练习“练一练练一练练一练1. 你会计算这块拼图的面积吗?想一想, 2. 想一想,算一算,填一填。”与课标 MA-D3-GE-003 的可教学小能力“计算这些图形的体积和表面积”形成页内证据匹配。",
+      "relation_type": "practices",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "textbook_grade": 5,
+      "textbook_subject": "数学",
+      "textbook_title": "数学5年级上册",
+      "textbook_volume": "上册",
+      "unit_id": "tcu_3a4e923066334287",
+      "unit_title": "第三单元 小数乘法"
+    },
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_395b255b416de0e6",
+      "alignment_type": "supports",
+      "confidence": 0.849,
+      "coverage": "partial",
+      "edition_id": "ed_ec7081b7432dd6fd4fe7",
+      "evidence_basis": "textbook_page_span",
+      "evidence_gap": null,
+      "evidence_level": "L3_page_evidence",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_primary_grade_5_up",
+        "tes_6f0e4d0855b50d8d",
+        "textbook-node:tcn_ac46092d60c516f1",
+        "textbook-unit:tcu_c925892e89e015c3"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "实地测量,收集相关数据并计算这块地面的面积。",
+          "excerpt_hash": "e86e4f404e718e33bf4bac4fc802aaca8b1e5681d3d5f003a51935316c6f6b38",
+          "pdf_page": 115,
+          "printed_page": "110",
+          "span_id": "tes_6f0e4d0855b50d8d"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_dcf10f8276336508"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_dcf10f8276336508",
+          "label": "计算这些图形的体积和表面积"
+        }
+      ],
+      "level": "page",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_ac46092d60c516f1",
+      "node_title": "实地测量,收集相关数据并计算这块地面的面积。",
+      "pdf_page": 115,
+      "printed_page": "110",
+      "publication_status": "published",
+      "rationale": "教材学习目标“实地测量,收集相关数据并计算这块地面的面积。”与课标 MA-D3-GE-003 的可教学小能力“计算这些图形的体积和表面积”形成页内证据匹配。",
+      "relation_type": "supports",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "textbook_grade": 5,
+      "textbook_subject": "数学",
+      "textbook_title": "数学5年级上册",
+      "textbook_volume": "上册",
+      "unit_id": "tcu_c925892e89e015c3",
+      "unit_title": "综合实践 多少落叶能铺满"
+    },
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_6f92b8290e92122a",
+      "alignment_type": "supports",
+      "confidence": 0.8403,
+      "coverage": "partial",
+      "edition_id": "ed_ec7081b7432dd6fd4fe7",
+      "evidence_basis": "textbook_page_span",
+      "evidence_gap": null,
+      "evidence_level": "L3_page_evidence",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_primary_grade_5_up",
+        "tes_c6fef08bccb79faf",
+        "textbook-node:tcn_a1b8ea8ca1707ba0",
+        "textbook-unit:tcu_c925892e89e015c3"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "小组合作,画出这块地面的草图,说一说计算面积需要测量哪些数据。",
+          "excerpt_hash": "fa8fd72234e6147c2c5ef5f9d91a3ae98401254ba6238f46e6e28e7bdba20176",
+          "pdf_page": 115,
+          "printed_page": "110",
+          "span_id": "tes_c6fef08bccb79faf"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_dcf10f8276336508"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_dcf10f8276336508",
+          "label": "计算这些图形的体积和表面积"
+        }
+      ],
+      "level": "page",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_a1b8ea8ca1707ba0",
+      "node_title": "小组合作,画出这块地面的草图,说一说计算面积需要测量哪些数据。",
+      "pdf_page": 115,
+      "printed_page": "110",
+      "publication_status": "published",
+      "rationale": "教材学习目标“小组合作,画出这块地面的草图,说一说计算面积需要测量哪些数据。”与课标 MA-D3-GE-003 的可教学小能力“计算这些图形的体积和表面积”形成页内证据匹配。",
+      "relation_type": "supports",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "textbook_grade": 5,
+      "textbook_subject": "数学",
+      "textbook_title": "数学5年级上册",
+      "textbook_volume": "上册",
+      "unit_id": "tcu_c925892e89e015c3",
+      "unit_title": "综合实践 多少落叶能铺满"
+    },
+    {
       "algorithm_version": "full-alignment-scope-preserve-v2",
       "alignment_id": "ca_07b90a4f60583b8b",
       "alignment_type": "references",
@@ -563,6 +1168,37 @@
     },
     {
       "algorithm_version": "full-alignment-scope-preserve-v2",
+      "alignment_id": "ca_3bb3fbfb6449b98f",
+      "alignment_type": "references",
+      "confidence": null,
+      "coverage": "scope_only",
+      "edition_id": "ed_576cc2fce461f0e08cb2",
+      "evidence_basis": "subject_grade_scope",
+      "evidence_level": "L1_scope",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_primary_grade_5_down"
+      ],
+      "evidence_role": "direct_textbook",
+      "level": "scope",
+      "method": "subject_grade_scope_mapping",
+      "pdf_page": null,
+      "printed_page": null,
+      "publication_status": "published_scope",
+      "rationale": "教材与课标处于同学科、同学段的适用范围；此关系不证明某一单元直接教授该条标准。",
+      "relation_type": "curriculum_scope",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "scope_id": "tcs_4e566921b9cb64d3",
+      "textbook_grade": 5,
+      "textbook_subject": "数学",
+      "textbook_title": "数学5年级下册",
+      "textbook_volume": "下册",
+      "unit_id": null,
+      "unit_title": ""
+    },
+    {
+      "algorithm_version": "full-alignment-scope-preserve-v2",
       "alignment_id": "ca_4420500086d8c0bd",
       "alignment_type": "references",
       "confidence": null,
@@ -585,6 +1221,99 @@
       "review_status": "machine_checked",
       "revision_status": "current_confirmed",
       "scope_id": "tcs_e1c2312794f3e566",
+      "textbook_grade": 5,
+      "textbook_subject": "数学",
+      "textbook_title": "数学5年级上册",
+      "textbook_volume": "上册",
+      "unit_id": null,
+      "unit_title": ""
+    },
+    {
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "alignment_id": "ca_a4d7bff65709eb1e",
+      "alignment_type": "references",
+      "confidence": null,
+      "coverage": "scope_only",
+      "edition_id": "ed_b1800b5b9d4356b970d0",
+      "evidence_basis": "subject_grade_scope",
+      "evidence_level": "L1_scope",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_primary_grade_6_down"
+      ],
+      "evidence_role": "direct_textbook",
+      "level": "scope",
+      "method": "subject_grade_scope_mapping",
+      "pdf_page": null,
+      "printed_page": null,
+      "publication_status": "published_scope",
+      "rationale": "教材与课标处于同学科、同学段的适用范围；此关系不证明某一单元直接教授该条标准。",
+      "relation_type": "curriculum_scope",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "scope_id": "tcs_ee4eb223123317f3",
+      "textbook_grade": 6,
+      "textbook_subject": "数学",
+      "textbook_title": "数学6年级下册",
+      "textbook_volume": "下册",
+      "unit_id": null,
+      "unit_title": ""
+    },
+    {
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "alignment_id": "ca_8b4989436730afe8",
+      "alignment_type": "references",
+      "confidence": null,
+      "coverage": "scope_only",
+      "edition_id": "ed_c450559fa44fadf1df17",
+      "evidence_basis": "subject_grade_scope",
+      "evidence_level": "L1_scope",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_primary_grade_6_up"
+      ],
+      "evidence_role": "direct_textbook",
+      "level": "scope",
+      "method": "subject_grade_scope_mapping",
+      "pdf_page": null,
+      "printed_page": null,
+      "publication_status": "published_scope",
+      "rationale": "教材与课标处于同学科、同学段的适用范围；此关系不证明某一单元直接教授该条标准。",
+      "relation_type": "curriculum_scope",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "scope_id": "tcs_cbb6bc8a56e6cd94",
+      "textbook_grade": 6,
+      "textbook_subject": "数学",
+      "textbook_title": "数学6年级上册",
+      "textbook_volume": "上册",
+      "unit_id": null,
+      "unit_title": ""
+    },
+    {
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "alignment_id": "ca_d6a73459140f8262",
+      "alignment_type": "references",
+      "confidence": null,
+      "coverage": "scope_only",
+      "edition_id": "ed_ec7081b7432dd6fd4fe7",
+      "evidence_basis": "subject_grade_scope",
+      "evidence_level": "L1_scope",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_primary_grade_5_up"
+      ],
+      "evidence_role": "direct_textbook",
+      "level": "scope",
+      "method": "subject_grade_scope_mapping",
+      "pdf_page": null,
+      "printed_page": null,
+      "publication_status": "published_scope",
+      "rationale": "教材与课标处于同学科、同学段的适用范围；此关系不证明某一单元直接教授该条标准。",
+      "relation_type": "curriculum_scope",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "scope_id": "tcs_e0716786d706e600",
       "textbook_grade": 5,
       "textbook_subject": "数学",
       "textbook_title": "数学5年级上册",

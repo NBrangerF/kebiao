@@ -2023,6 +2023,17 @@ test('the request log names the MCP tools and the app that called them, never th
     assert.deepEqual(events[2].mcp, { methods: ['tools/call'], tools: ['get_standard'], client: 'Cursor 2.0', user_agent: 'Cursor/2.0' })
 })
 
+test('search_standards keeps to the asked grade: 艺术 学段 are 1–2, 3–5, 6–7, 8–9', async () => {
+    const call = async (args: Record<string, unknown>) => (await json(await mcp({ jsonrpc: '2.0', id: 1, method: 'tools/call', params: { name: 'search_standards', arguments: args } }))).result.structuredContent
+    const five = await call({ query: '五年级 音乐 欣赏' })
+    assert.ok(five.results.length > 0)
+    for (const item of five.results) assert.ok(!item.code.startsWith('AR-S3'), item.code)
+    assert.ok(five.results.some((item: { code: string }) => item.code.startsWith('AR-S2')))
+    assert.match(five.understood, /5 年级/u)
+    const stage = await call({ query: '音乐 欣赏', stage: '七年级' })
+    for (const item of stage.results.filter((r: { code: string }) => r.code.startsWith('AR-'))) assert.ok(item.code.startsWith('AR-S3'), item.code)
+})
+
 test('find_textbook_chapter reads a lesson the way teachers name it', async () => {
     const words = ['数学', '语文', '物理', '英语', '体育']
     assert.deepEqual(parseLessonQuery('统编版 四年级上册 观潮', words), { publisher: '统编版', grade: 4, volume: '上册', subject: null, title: '观潮', label: '观潮' })
@@ -2032,6 +2043,8 @@ test('find_textbook_chapter reads a lesson the way teachers name it', async () =
     assert.equal(parseLessonQuery('体育比赛展风采', words).title, '体育比赛展风采')
     assert.equal(parseLessonQuery('分数的基本性质 数学 五下', words).grade, 5)
     assert.equal(parseLessonQuery('北师大 九上 浩瀚的宇宙', words).publisher, '北师大版')
+    assert.deepEqual(parseLessonQuery('外研版 七年级上册 Unit 1', words).publisher, '外研版')
+    assert.equal(parseLessonQuery('外研社 三上 Unit 2 My school', words).grade, 3)
     assert.equal(normTitle('第2节  光的反射'), '光的反射')
     assert.equal(normTitle('24 愚公移山'), '愚公移山')
     assert.equal(normTitle('100以内的加法'), '100以内的加法')

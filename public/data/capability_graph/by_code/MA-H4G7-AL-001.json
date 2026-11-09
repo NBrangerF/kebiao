@@ -120,9 +120,9 @@
     "evidence_note": "已有教材正文、任务或练习的页内证据；关系由机器自动生成并附带原文定位、证据哈希和置信度。",
     "gap_reason": null,
     "highest_evidence_level": "L3_page_evidence",
-    "page_evidence_count": 1,
-    "scope_count": 2,
-    "specific_count": 2,
+    "page_evidence_count": 3,
+    "scope_count": 4,
+    "specific_count": 4,
     "unit_topic_candidate_count": 0
   },
   "curriculum_alignments": [
@@ -180,6 +180,116 @@
       "textbook_volume": "上册",
       "unit_id": "tcu_c7588b7dc9a91933",
       "unit_title": "第三章 代数式"
+    },
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_60e1d23f6e3e201d",
+      "alignment_type": "supports",
+      "confidence": 0.86,
+      "coverage": "partial",
+      "edition_id": "ed_4411f5525e37193a3680",
+      "evidence_basis": "textbook_page_span",
+      "evidence_gap": null,
+      "evidence_level": "L3_page_evidence",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_junior_grade_7_up",
+        "tes_da2c164defbacc78",
+        "textbook-node:tcn_138c09b8741d0ad5",
+        "textbook-unit:tcu_54451e2d09e5274c"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "为什么要用字母或含有字母的式子表示数和数量关系?",
+          "excerpt_hash": "6ef5121306e3d39ef2313d20c59c85589eb780924928b438b1d644f35b7c48eb",
+          "pdf_page": 83,
+          "printed_page": null,
+          "span_id": "tes_da2c164defbacc78"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_d7eeb69fd313c8b5"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_d7eeb69fd313c8b5",
+          "label": "用代数式、方程、不等式、函数等描述现实问题中的数量关系和变化规律"
+        }
+      ],
+      "level": "page",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_138c09b8741d0ad5",
+      "node_title": "为什么要用字母或含有字母的式子表示数和数量关系?",
+      "pdf_page": 83,
+      "printed_page": null,
+      "publication_status": "published",
+      "rationale": "教材学习目标“为什么要用字母或含有字母的式子表示数和数量关系?”与课标 MA-H4G7-AL-001 的可教学小能力“用代数式、方程、不等式、函数等描述现实问题中的数量关系和变化规律”形成页内证据匹配。",
+      "relation_type": "supports",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "textbook_grade": 7,
+      "textbook_subject": "数学",
+      "textbook_title": "数学7年级上册",
+      "textbook_volume": "上册",
+      "unit_id": "tcu_54451e2d09e5274c",
+      "unit_title": "第三章 整式及其加减"
+    },
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_20a66747c85ef6e3",
+      "alignment_type": "practices",
+      "confidence": 0.86,
+      "coverage": "partial",
+      "edition_id": "ed_c5c4b1ec810400e3a857",
+      "evidence_basis": "textbook_page_span",
+      "evidence_gap": null,
+      "evidence_level": "L3_page_evidence",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_junior_grade_7_down",
+        "tes_2c6b75a9473f7125",
+        "textbook-node:tcn_6803ba5f180127c9",
+        "textbook-unit:tcu_e9c16987ac16c084"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "设计自己的运算程序,使运算结果不超过三位数且出现循环。",
+          "excerpt_hash": "d5eac9812b7ed0ea0b6ada065ca988352e9124edc08e9021fc19b95e3b637f8c",
+          "pdf_page": 176,
+          "printed_page": null,
+          "span_id": "tes_2c6b75a9473f7125"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_b38191e6b74ae155"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_b38191e6b74ae155",
+          "label": "解释运算结果意义"
+        }
+      ],
+      "level": "page",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_6803ba5f180127c9",
+      "node_title": "设计自己的运算程序,使运算结果不超过三位数且出现循环。",
+      "pdf_page": 176,
+      "printed_page": null,
+      "publication_status": "published",
+      "rationale": "教材练习“设计自己的运算程序,使运算结果不超过三位数且出现循环。”与课标 MA-H4G7-AL-001 的可教学小能力“解释运算结果意义”形成页内证据匹配。",
+      "relation_type": "practices",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "textbook_grade": 7,
+      "textbook_subject": "数学",
+      "textbook_title": "数学7年级下册",
+      "textbook_volume": "下册",
+      "unit_id": "tcu_e9c16987ac16c084",
+      "unit_title": "综合与实践"
     },
     {
       "algorithm_version": "component-evidence-hybrid-v3",
@@ -269,6 +379,37 @@
     },
     {
       "algorithm_version": "full-alignment-scope-preserve-v2",
+      "alignment_id": "ca_05b0db359e472cee",
+      "alignment_type": "references",
+      "confidence": null,
+      "coverage": "scope_only",
+      "edition_id": "ed_4411f5525e37193a3680",
+      "evidence_basis": "subject_grade_scope",
+      "evidence_level": "L1_scope",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_junior_grade_7_up"
+      ],
+      "evidence_role": "direct_textbook",
+      "level": "scope",
+      "method": "subject_grade_scope_mapping",
+      "pdf_page": null,
+      "printed_page": null,
+      "publication_status": "published_scope",
+      "rationale": "教材与课标处于同学科、同学段的适用范围；此关系不证明某一单元直接教授该条标准。",
+      "relation_type": "curriculum_scope",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "scope_id": "tcs_82fda456943fe48e",
+      "textbook_grade": 7,
+      "textbook_subject": "数学",
+      "textbook_title": "数学7年级上册",
+      "textbook_volume": "上册",
+      "unit_id": null,
+      "unit_title": ""
+    },
+    {
+      "algorithm_version": "full-alignment-scope-preserve-v2",
       "alignment_id": "ca_b0fa5abaf6efa3c1",
       "alignment_type": "references",
       "confidence": null,
@@ -291,6 +432,37 @@
       "review_status": "machine_checked",
       "revision_status": "current_confirmed",
       "scope_id": "tcs_05b1d5ed90d78b81",
+      "textbook_grade": 7,
+      "textbook_subject": "数学",
+      "textbook_title": "数学7年级下册",
+      "textbook_volume": "下册",
+      "unit_id": null,
+      "unit_title": ""
+    },
+    {
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "alignment_id": "ca_93533b15f5d6ad04",
+      "alignment_type": "references",
+      "confidence": null,
+      "coverage": "scope_only",
+      "edition_id": "ed_c5c4b1ec810400e3a857",
+      "evidence_basis": "subject_grade_scope",
+      "evidence_level": "L1_scope",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_junior_grade_7_down"
+      ],
+      "evidence_role": "direct_textbook",
+      "level": "scope",
+      "method": "subject_grade_scope_mapping",
+      "pdf_page": null,
+      "printed_page": null,
+      "publication_status": "published_scope",
+      "rationale": "教材与课标处于同学科、同学段的适用范围；此关系不证明某一单元直接教授该条标准。",
+      "relation_type": "curriculum_scope",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "scope_id": "tcs_24f4da2ab6e786da",
       "textbook_grade": 7,
       "textbook_subject": "数学",
       "textbook_title": "数学7年级下册",

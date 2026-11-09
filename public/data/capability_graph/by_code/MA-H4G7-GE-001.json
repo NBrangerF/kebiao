@@ -44,16 +44,126 @@
   ],
   "curriculum_alignment_summary": {
     "candidate_count": 0,
-    "disposition": "scope_aligned_no_unit_evidence",
-    "evidence_note": "已关联适用教材范围，但尚无可靠单元级页内证据。",
+    "disposition": "page_aligned",
+    "evidence_note": "已有教材正文、任务或练习的页内证据；关系由机器自动生成并附带原文定位、证据哈希和置信度。",
     "gap_reason": null,
-    "highest_evidence_level": "L1_scope",
-    "page_evidence_count": 0,
-    "scope_count": 2,
-    "specific_count": 0,
+    "highest_evidence_level": "L3_page_evidence",
+    "page_evidence_count": 2,
+    "scope_count": 4,
+    "specific_count": 2,
     "unit_topic_candidate_count": 0
   },
   "curriculum_alignments": [
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_0e8c0633a73389d7",
+      "alignment_type": "supports",
+      "confidence": 0.86,
+      "coverage": "partial",
+      "edition_id": "ed_4411f5525e37193a3680",
+      "evidence_basis": "textbook_page_span",
+      "evidence_gap": null,
+      "evidence_level": "L3_page_evidence",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_junior_grade_7_up",
+        "tes_469199b901382386",
+        "textbook-node:tcn_61073e3179b8b44e",
+        "textbook-unit:tcu_0ffbfcc2026a7aaf"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "本书今后的尺规作图,要求保留作图痕迹,不要求写作法。",
+          "excerpt_hash": "c3189b307085de43b533d2f563c77b62a5463b2d8d47935756eae354e6e8fd9e",
+          "pdf_page": 122,
+          "printed_page": null,
+          "span_id": "tes_469199b901382386"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_4b6de66e9d4d4e00"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_4b6de66e9d4d4e00",
+          "label": "借助尺规作图等直观操作理解平面图形性质与关系"
+        }
+      ],
+      "level": "page",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_61073e3179b8b44e",
+      "node_title": "本书今后的尺规作图,要求保留作图痕迹,不要求写作法。",
+      "pdf_page": 122,
+      "printed_page": null,
+      "publication_status": "published",
+      "rationale": "教材学习目标“本书今后的尺规作图,要求保留作图痕迹,不要求写作法。”与课标 MA-H4G7-GE-001 的可教学小能力“借助尺规作图等直观操作理解平面图形性质与关系”形成页内证据匹配。",
+      "relation_type": "supports",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "textbook_grade": 7,
+      "textbook_subject": "数学",
+      "textbook_title": "数学7年级上册",
+      "textbook_volume": "上册",
+      "unit_id": "tcu_0ffbfcc2026a7aaf",
+      "unit_title": "第四章 基本平面图形"
+    },
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_8ab9839a186aa448",
+      "alignment_type": "practices",
+      "confidence": 0.86,
+      "coverage": "partial",
+      "edition_id": "ed_4411f5525e37193a3680",
+      "evidence_basis": "textbook_page_span",
+      "evidence_gap": null,
+      "evidence_level": "L3_page_evidence",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_junior_grade_7_up",
+        "tes_f4a42142e1f9b13c",
+        "textbook-node:tcn_0ff8d8b53f31a7ae",
+        "textbook-unit:tcu_0ffbfcc2026a7aaf"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "观察图4-31,你能发现哪些熟悉的平面图形?与同伴进行交流。",
+          "excerpt_hash": "b09281555d95338e7748b2cbc4961716e64b9fe5a0339437d921b096cd199cef",
+          "pdf_page": 135,
+          "printed_page": null,
+          "span_id": "tes_f4a42142e1f9b13c"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_4b6de66e9d4d4e00"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_4b6de66e9d4d4e00",
+          "label": "借助尺规作图等直观操作理解平面图形性质与关系"
+        }
+      ],
+      "level": "page",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_0ff8d8b53f31a7ae",
+      "node_title": "观察图4-31,你能发现哪些熟悉的平面图形?与同伴进行交流。",
+      "pdf_page": 135,
+      "printed_page": null,
+      "publication_status": "published",
+      "rationale": "教材练习“观察图4-31,你能发现哪些熟悉的平面图形?与同伴进行交流。”与课标 MA-H4G7-GE-001 的可教学小能力“借助尺规作图等直观操作理解平面图形性质与关系”形成页内证据匹配。",
+      "relation_type": "practices",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "textbook_grade": 7,
+      "textbook_subject": "数学",
+      "textbook_title": "数学7年级上册",
+      "textbook_volume": "上册",
+      "unit_id": "tcu_0ffbfcc2026a7aaf",
+      "unit_title": "第四章 基本平面图形"
+    },
     {
       "algorithm_version": "full-alignment-scope-preserve-v2",
       "alignment_id": "ca_eb97da7cfbbabf6e",
@@ -87,6 +197,37 @@
     },
     {
       "algorithm_version": "full-alignment-scope-preserve-v2",
+      "alignment_id": "ca_a1d4229963eddc61",
+      "alignment_type": "references",
+      "confidence": null,
+      "coverage": "scope_only",
+      "edition_id": "ed_4411f5525e37193a3680",
+      "evidence_basis": "subject_grade_scope",
+      "evidence_level": "L1_scope",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_junior_grade_7_up"
+      ],
+      "evidence_role": "direct_textbook",
+      "level": "scope",
+      "method": "subject_grade_scope_mapping",
+      "pdf_page": null,
+      "printed_page": null,
+      "publication_status": "published_scope",
+      "rationale": "教材与课标处于同学科、同学段的适用范围；此关系不证明某一单元直接教授该条标准。",
+      "relation_type": "curriculum_scope",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "scope_id": "tcs_82fda456943fe48e",
+      "textbook_grade": 7,
+      "textbook_subject": "数学",
+      "textbook_title": "数学7年级上册",
+      "textbook_volume": "上册",
+      "unit_id": null,
+      "unit_title": ""
+    },
+    {
+      "algorithm_version": "full-alignment-scope-preserve-v2",
       "alignment_id": "ca_4f39abac567b30c1",
       "alignment_type": "references",
       "confidence": null,
@@ -109,6 +250,37 @@
       "review_status": "machine_checked",
       "revision_status": "current_confirmed",
       "scope_id": "tcs_05b1d5ed90d78b81",
+      "textbook_grade": 7,
+      "textbook_subject": "数学",
+      "textbook_title": "数学7年级下册",
+      "textbook_volume": "下册",
+      "unit_id": null,
+      "unit_title": ""
+    },
+    {
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "alignment_id": "ca_ae4020e9ce731a33",
+      "alignment_type": "references",
+      "confidence": null,
+      "coverage": "scope_only",
+      "edition_id": "ed_c5c4b1ec810400e3a857",
+      "evidence_basis": "subject_grade_scope",
+      "evidence_level": "L1_scope",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_junior_grade_7_down"
+      ],
+      "evidence_role": "direct_textbook",
+      "level": "scope",
+      "method": "subject_grade_scope_mapping",
+      "pdf_page": null,
+      "printed_page": null,
+      "publication_status": "published_scope",
+      "rationale": "教材与课标处于同学科、同学段的适用范围；此关系不证明某一单元直接教授该条标准。",
+      "relation_type": "curriculum_scope",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "scope_id": "tcs_24f4da2ab6e786da",
       "textbook_grade": 7,
       "textbook_subject": "数学",
       "textbook_title": "数学7年级下册",

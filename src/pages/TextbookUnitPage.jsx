@@ -1,11 +1,12 @@
 import { useEffect, useState } from 'react'
-import { Link, useParams } from 'react-router-dom'
+import { Link, useLocation, useParams } from 'react-router-dom'
 import { ArrowLeftIcon } from '@phosphor-icons/react/dist/csr/ArrowLeft'
 import { ArrowRightIcon } from '@phosphor-icons/react/dist/csr/ArrowRight'
 import { ArrowUpRightIcon } from '@phosphor-icons/react/dist/csr/ArrowUpRight'
 import { PageLoading, ErrorState, EmptyState } from '../components/StateComponents'
 import { textbookUnitMeta } from '../seo/pageMeta.js'
 import { usePageMeta } from '../seo/usePageMeta.js'
+import { getPrerenderSnapshot } from '../seo/prerenderSnapshot.js'
 import TextbookAlignmentCard from '../features/textbooks/TextbookAlignmentCard'
 import { loadTextbookDetail, loadTextbookUnit } from '../features/textbooks/textbookApi'
 
@@ -122,6 +123,7 @@ function PrepPanel({ unit, book, prep }) {
 
 export default function TextbookUnitPage() {
     const { unitId } = useParams()
+    const { pathname } = useLocation()
     const [unit, setUnit] = useState(null)
     const [book, setBook] = useState(null)
     const [prep, setPrep] = useState(null)
@@ -151,13 +153,14 @@ export default function TextbookUnitPage() {
             .catch(() => active && setPrep({ standards: [], national_lessons: [] }))
         return () => { active = false }
     }, [unitId])
-    if (error) return <ErrorState title="单元加载失败" message={error} />
+    // a crawler that may not call /api/ keeps the prerendered page rather than an error
+    if (error) return getPrerenderSnapshot(pathname) ? <PageLoading message="正在整理单元关联" /> : <ErrorState title="单元加载失败" message={error} />
     if (!unit || !book) return <PageLoading message="正在整理单元关联" />
     return (
         <div className={`container ${styles.page}`}>
-            <Link className={styles.back} to={`/textbooks/${unit.edition_id}`}><ArrowLeftIcon size={16} aria-hidden="true" /> 返回{unit.textbook_title}</Link>
+            <Link className={styles.back} to={`/textbooks/${unit.edition_id}`}><ArrowLeftIcon size={16} aria-hidden="true" /> 返回{book.edition_name}{unit.textbook_title}</Link>
             <header>
-                <span>{unit.subject} · {unit.grade}年级 · {unit.volume}</span>
+                <span>{book.edition_name} · {unit.subject} · {unit.grade}年级 · {unit.volume}</span>
                 <h1>{unit.title}</h1>
                 <p>{unit.printed_page ? `印刷页 ${unit.printed_page} · ` : ''}PDF {unit.pdf_page}{unit.end_pdf_page && unit.end_pdf_page !== unit.pdf_page ? `–${unit.end_pdf_page}` : ''}</p>
                 <Link className="btn btn-primary" to={`/textbooks/${unit.edition_id}/read?page=${unit.pdf_page}&node=${encodeURIComponent(unit.entry_id)}&panel=standards`}>打开原书与课标 <ArrowRightIcon size={16} aria-hidden="true" /></Link>

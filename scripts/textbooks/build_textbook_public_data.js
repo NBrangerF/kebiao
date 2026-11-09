@@ -614,6 +614,9 @@ function main() {
     || a.subject.localeCompare(b.subject, 'zh-CN')
     || a.grade - b.grade
     || a.volume.localeCompare(b.volume, 'zh-CN')
+    // two editions of one volume (人教版, 北师大版): a stable order, not the registry's
+    || String(a.edition_name).localeCompare(String(b.edition_name), 'zh-CN')
+    || a.edition_id.localeCompare(b.edition_id)
   )
 
   const manifest = {

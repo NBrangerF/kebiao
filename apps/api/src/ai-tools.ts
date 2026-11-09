@@ -121,7 +121,7 @@ const SOURCE_NOTE = '要点逐字取自《义务教育课程标准（2022年版2
 // The edition, grade, volume and subject become filters; what is left is the title.
 const PUBLISHERS: Array<[string, string]> = [
     ['人教版?|人民教育出版社|PEP', '人教版'], ['统编版?|部编版?', '统编版'], ['北师大?版?', '北师大版'], ['苏教版?', '苏教版'],
-    ['冀教版?', '冀教版'], ['青岛版?', '青岛版'], ['华东师大版?|华师大?版', '华东师大版'], ['教科版?', '教科版'], ['人美版?', '人美版'], ['人音版?', '人音版']
+    ['冀教版?', '冀教版'], ['青岛版?', '青岛版'], ['华东师大版?|华师大?版', '华东师大版'], ['外研社?版?|外语教学与研究出版社|FLTRP', '外研版'], ['教科版?', '教科版'], ['人美版?', '人美版'], ['人音版?', '人音版']
 ]
 export const publisherOf = (text: string) => PUBLISHERS.find(([pattern]) => new RegExp(pattern, 'iu').test(text))?.[1] || null
 const GRADE_CN = '一二三四五六七八九'
@@ -265,19 +265,33 @@ export const KEBIAO_TOOLS: KebiaoTool[] = [
             const query = str(args.query).slice(0, 500)
             if (query.length < 2) throw new ToolInputError('请给出至少两个字的检索内容。')
             const slug = await subjectSlug(args.subject, ctx, false)
-            const grade = gradeOf(args.stage)
+            // 「五年级 音乐 欣赏」: a grade in the words counts like the stage argument
+            const gradeWords = /([1-9一二三四五六七八九])\s*年级(?:上册|下册|上|下)?/u
+            const exact = gradeWords.test(str(args.stage)) ? gradeOf(args.stage) : gradeOf(query.match(gradeWords)?.[0])
+            const grade = gradeOf(args.stage) || exact
             const limit = Math.min(Math.max(Number(args.limit) || 5, 1), 10)
-            const response = await ctx.repository.smartSearchStandards({ query, ...(slug ? { subjects: [slug] } : {}), ...(grade ? { grade_bands: [BAND_OF_GRADE(grade)] } : {}), limit })
+            const response = await ctx.repository.smartSearchStandards({ query, ...(slug ? { subjects: [slug] } : {}), ...(grade ? { grade_bands: [BAND_OF_GRADE(grade)] } : {}), limit: exact ? 30 : limit })
+            // a 学段 band is not a grade: 艺术's 第三学段 is 6–7 年级, so 五年级 (band 5–6) must not bring it, and its
+            // 3–5 年级 standards must come; with a grade, every result has to include it
+            let hits = response.results
+            if (exact) {
+                const wider = await ctx.repository.smartSearchStandards({ query: query.replace(new RegExp(gradeWords.source, 'gu'), ' ').trim() || query, ...(slug ? { subjects: [slug] } : {}), limit: 30 })
+                const seen = new Set()
+                hits = [...response.results, ...wider.results].filter(r => !seen.has(r.code) && seen.add(r.code))
+            }
+            const understood = exact ? response.understanding_summary.replace(/(?:小学|初中)\s*\d–\d\s*年级/u, `${exact} 年级`) : response.understanding_summary
             const results = []
-            for (const r of response.results) {
+            for (const r of hits) {
+                if (results.length >= limit) break
                 const found = await ctx.v2.find(r.code)
                 if (!found) continue
+                if (exact && found.standard.grades?.length && !found.standard.grades.includes(exact)) continue
                 results.push({ ...briefStandard(found.standard, found.subject), matched_point: bestIndicator(found.standard, r.matched_concepts), match: r.match_strength === 'direct' ? '直接相关' : '相关' })
             }
             return {
-                data: { query, understood: response.understanding_summary, results },
+                data: { query, understood, results },
                 text: results.length
-                    ? [`检索「${query}」：${response.understanding_summary}`, ...results.map((r, k) => `${k + 1}. ${r.code} ${r.name}（${r.subject} · ${r.stage}）\n   标准：${r.statement}${r.matched_point ? `\n   命中要点 ${r.matched_point.code}：${r.matched_point.text}（${r.matched_point.page}）` : ''}\n   ${r.matched_point?.url || r.url}`), SOURCE_NOTE].join('\n')
+                    ? [`检索「${query}」：${understood}`, ...results.map((r, k) => `${k + 1}. ${r.code} ${r.name}（${r.subject} · ${r.stage}）\n   标准：${r.statement}${r.matched_point ? `\n   命中要点 ${r.matched_point.code}：${r.matched_point.text}（${r.matched_point.page}）` : ''}\n   ${r.matched_point?.url || r.url}`), SOURCE_NOTE].join('\n')
                     : `没有找到与「${query}」直接相关的课标条目；可以换个说法，或去掉学科、学段限制。`
             }
         }
@@ -379,7 +393,7 @@ export const KEBIAO_TOOLS: KebiaoTool[] = [
     {
         name: 'get_textbook_links',
         title: '标准对应的教材',
-        description: '从一条课标反查教材：查看一条标准或要点在哪些教材的哪一课教（人教版、统编版等）：AI 逐课读了教材原文判断，每条附这一课教材的原话和页码；没有逐课结果的，再列机器对齐的单元。都待核验。Textbook lessons and chapters for a standard.',
+        description: '从一条课标反查教材：查看一条标准或要点在哪些教材的哪一课教（人教版、统编版、北师大版、外研社版等）：AI 逐课读了教材原文判断，每条附这一课教材的原话和页码；没有逐课结果的，再列机器对齐的单元。都待核验。Textbook lessons and chapters for a standard.',
         inputSchema: {
             type: 'object',
             properties: { code: { type: 'string', description: '标准或要点编码' } },
@@ -441,7 +455,7 @@ export const KEBIAO_TOOLS: KebiaoTool[] = [
                 query: { type: 'string', description: '老师对这一课的说法，可以带版本和年级册次，例如「人教版 八年级上册 光的反射」；只写课题也可以' },
                 subject: { type: 'string', description: '学科，可选，例如「物理」' },
                 grade: { type: 'string', description: '年级，可选，例如「八年级」「8」' },
-                edition: { type: 'string', description: '教材版本，可选，例如「人教版」「统编版」「北师大版」' },
+                edition: { type: 'string', description: '教材版本，可选，例如「人教版」「统编版」「北师大版」「外研版」' },
                 volume: { type: 'string', description: '册次，可选：上册、下册、全一册' }
             },
             required: ['query'],

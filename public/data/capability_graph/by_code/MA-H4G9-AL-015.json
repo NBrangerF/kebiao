@@ -47,9 +47,9 @@
     "evidence_note": "已有教材正文、任务或练习的页内证据；关系由机器自动生成并附带原文定位、证据哈希和置信度。",
     "gap_reason": null,
     "highest_evidence_level": "L3_page_evidence",
-    "page_evidence_count": 2,
-    "scope_count": 2,
-    "specific_count": 4,
+    "page_evidence_count": 4,
+    "scope_count": 4,
+    "specific_count": 6,
     "unit_topic_candidate_count": 0
   },
   "curriculum_alignments": [
@@ -172,6 +172,126 @@
       "textbook_volume": "上册",
       "unit_id": "tcu_c596cf8ddcf54dad",
       "unit_title": "第二十六章 二次函数"
+    },
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_b00800f2c0fda2e7",
+      "alignment_type": "supports",
+      "confidence": 0.92,
+      "coverage": "partial",
+      "edition_id": "ed_ef4497f053950395a66d",
+      "evidence_basis": "textbook_page_span",
+      "evidence_gap": null,
+      "evidence_level": "L3_page_evidence",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_junior_grade_9_down",
+        "tes_d3cf9c37f8ad1ebf",
+        "textbook-node:tcn_61d32dc9e95eef15",
+        "textbook-unit:tcu_eb8b1c3a6c86188d"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "会利用二次函数的图象求一元二次方程的近似解,进一",
+          "excerpt_hash": "8a1be40b8733e3fe62367482a7098b123b867477fce129d0fdc893e416960128",
+          "pdf_page": 33,
+          "printed_page": null,
+          "span_id": "tes_d3cf9c37f8ad1ebf"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_32948e2d317e092b",
+        "lc_b7758a99c5ced065"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_32948e2d317e092b",
+          "label": "识别并说出一元二次方程根与系数关系的关键特征"
+        },
+        {
+          "component_id": "lc_b7758a99c5ced065",
+          "label": "解一元一次方程、可化为一元一次方程的分式方程、二元一次方程组和数字系数一元二次方程"
+        }
+      ],
+      "level": "page",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_61d32dc9e95eef15",
+      "node_title": "会利用二次函数的图象求一元二次方程的近似解,进一",
+      "pdf_page": 33,
+      "printed_page": null,
+      "publication_status": "published",
+      "rationale": "教材学习目标“会利用二次函数的图象求一元二次方程的近似解,进一”与课标 MA-H4G9-AL-015 的可教学小能力“识别并说出一元二次方程根与系数关系的关键特征、解一元一次方程、可化为一元一次方程的分式方程、二元一次方程组和数字系数一元二次方程”形成页内证据匹配。",
+      "relation_type": "supports",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "textbook_grade": 9,
+      "textbook_subject": "数学",
+      "textbook_title": "数学9年级下册",
+      "textbook_volume": "下册",
+      "unit_id": "tcu_eb8b1c3a6c86188d",
+      "unit_title": "第二章 二次函数"
+    },
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_cfdf5f12dc227bac",
+      "alignment_type": "supports",
+      "confidence": 0.92,
+      "coverage": "partial",
+      "edition_id": "ed_ef4497f053950395a66d",
+      "evidence_basis": "textbook_page_span",
+      "evidence_gap": null,
+      "evidence_level": "L3_page_evidence",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_junior_grade_9_down",
+        "tes_b1682fcbe939ed7f",
+        "textbook-node:tcn_fd4b92605e87945e",
+        "textbook-unit:tcu_eb8b1c3a6c86188d"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "本书规定:用图象法求一元二次方程的近似根时,结果只取到十分位。",
+          "excerpt_hash": "6864269d6bb1f0b84d551810520aaf7db89b624783d29c97541e879eadadcb71",
+          "pdf_page": 58,
+          "printed_page": null,
+          "span_id": "tes_b1682fcbe939ed7f"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_32948e2d317e092b",
+        "lc_b7758a99c5ced065"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_32948e2d317e092b",
+          "label": "识别并说出一元二次方程根与系数关系的关键特征"
+        },
+        {
+          "component_id": "lc_b7758a99c5ced065",
+          "label": "解一元一次方程、可化为一元一次方程的分式方程、二元一次方程组和数字系数一元二次方程"
+        }
+      ],
+      "level": "page",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_fd4b92605e87945e",
+      "node_title": "本书规定:用图象法求一元二次方程的近似根时,结果只取到十分位。",
+      "pdf_page": 58,
+      "printed_page": null,
+      "publication_status": "published",
+      "rationale": "教材学习目标“本书规定:用图象法求一元二次方程的近似根时,结果只取到十分位。”与课标 MA-H4G9-AL-015 的可教学小能力“识别并说出一元二次方程根与系数关系的关键特征、解一元一次方程、可化为一元一次方程的分式方程、二元一次方程组和数字系数一元二次方程”形成页内证据匹配。",
+      "relation_type": "supports",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "textbook_grade": 9,
+      "textbook_subject": "数学",
+      "textbook_title": "数学9年级下册",
+      "textbook_volume": "下册",
+      "unit_id": "tcu_eb8b1c3a6c86188d",
+      "unit_title": "第二章 二次函数"
     },
     {
       "algorithm_version": "component-evidence-hybrid-v3",
@@ -348,6 +468,68 @@
       "review_status": "machine_checked",
       "revision_status": "revision_unknown",
       "scope_id": "tcs_3e651d0e242caded",
+      "textbook_grade": 9,
+      "textbook_subject": "数学",
+      "textbook_title": "数学9年级下册",
+      "textbook_volume": "下册",
+      "unit_id": null,
+      "unit_title": ""
+    },
+    {
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "alignment_id": "ca_a349f9f1b54496cc",
+      "alignment_type": "references",
+      "confidence": null,
+      "coverage": "scope_only",
+      "edition_id": "ed_40d19fde240347eaa591",
+      "evidence_basis": "subject_grade_scope",
+      "evidence_level": "L1_scope",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_junior_grade_9_up"
+      ],
+      "evidence_role": "direct_textbook",
+      "level": "scope",
+      "method": "subject_grade_scope_mapping",
+      "pdf_page": null,
+      "printed_page": null,
+      "publication_status": "published_scope",
+      "rationale": "教材与课标处于同学科、同学段的适用范围；此关系不证明某一单元直接教授该条标准。",
+      "relation_type": "curriculum_scope",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "scope_id": "tcs_e74e9fb9bfcc1148",
+      "textbook_grade": 9,
+      "textbook_subject": "数学",
+      "textbook_title": "数学9年级上册",
+      "textbook_volume": "上册",
+      "unit_id": null,
+      "unit_title": ""
+    },
+    {
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "alignment_id": "ca_1a2752fbbaff15c6",
+      "alignment_type": "references",
+      "confidence": null,
+      "coverage": "scope_only",
+      "edition_id": "ed_ef4497f053950395a66d",
+      "evidence_basis": "subject_grade_scope",
+      "evidence_level": "L1_scope",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_junior_grade_9_down"
+      ],
+      "evidence_role": "direct_textbook",
+      "level": "scope",
+      "method": "subject_grade_scope_mapping",
+      "pdf_page": null,
+      "printed_page": null,
+      "publication_status": "published_scope",
+      "rationale": "教材与课标处于同学科、同学段的适用范围；此关系不证明某一单元直接教授该条标准。",
+      "relation_type": "curriculum_scope",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "scope_id": "tcs_8281375193798050",
       "textbook_grade": 9,
       "textbook_subject": "数学",
       "textbook_title": "数学9年级下册",

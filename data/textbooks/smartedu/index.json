@@ -1289,6 +1289,228 @@
    "title_hits": 49,
    "method": "book_text",
    "pages_found": 67
+  },
+  "ed_4411f5525e37193a3680": {
+   "status": "matched",
+   "platform_textbook_id": "c8be2fb3-2b56-4e44-864e-db7dad17ffcc",
+   "platform_title": "新教材-初中数学北师大版七年级上册",
+   "lessons": 42,
+   "title_hits": 34,
+   "method": "book_text",
+   "pages_found": 38
+  },
+  "ed_c5c4b1ec810400e3a857": {
+   "status": "matched",
+   "platform_textbook_id": "34bb0a77-74ad-4012-82d3-75f717084e98",
+   "platform_title": "新教材-初中数学北师大版七年级下册",
+   "lessons": 9,
+   "title_hits": 14,
+   "method": "book_text",
+   "pages_found": 8
+  },
+  "ed_61803eb53474fb83201e": {
+   "status": "matched",
+   "platform_textbook_id": "6ed35b18-e294-4f44-8e4f-5b122223a2ee",
+   "platform_title": "新教材-初中数学北师大版八年级上册",
+   "lessons": 15,
+   "title_hits": 20,
+   "method": "book_text",
+   "pages_found": 14
+  },
+  "ed_b5476da69a964f1a7245": {
+   "status": "matched",
+   "platform_textbook_id": "33403c34-be24-72d6-8ff0-63989de43ca3",
+   "platform_title": "初中数学北师大版八年级下册",
+   "lessons": 53,
+   "title_hits": 38,
+   "method": "book_text",
+   "pages_found": 16
+  },
+  "ed_40d19fde240347eaa591": {
+   "status": "not_found",
+   "candidates": [
+    "新教材-北师大版初中数学九年级上册目录",
+    "初中数学北师大版九年级上册"
+   ]
+  },
+  "ed_ef4497f053950395a66d": {
+   "status": "matched",
+   "platform_textbook_id": "835076b7-f13f-45b8-932f-13b313e86d73",
+   "platform_title": "初中数学北师大版九年级下册",
+   "lessons": 60,
+   "title_hits": 28,
+   "method": "book_text",
+   "pages_found": 23
+  },
+  "ed_2f2e0d52b4d66076d387": {
+   "status": "matched",
+   "platform_textbook_id": "784e6832-84da-4931-8204-d9c213e9a0ae",
+   "platform_title": "新教材-初中英语外研社版七年级上册",
+   "lessons": 90,
+   "title_hits": 41,
+   "method": "book_text",
+   "pages_found": 32
+  },
+  "ed_f77ec424ae7c3160d7be": {
+   "status": "matched",
+   "platform_textbook_id": "d0e29dec-f196-4e79-8222-f34c128c4c82",
+   "platform_title": "新教材-初中英语外研社版七年级下册",
+   "lessons": 85,
+   "title_hits": 36,
+   "method": "book_text",
+   "pages_found": 1
+  },
+  "ed_f98cd7fabeaea0d2803d": {
+   "status": "matched",
+   "platform_textbook_id": "968d4f7e-49f2-401a-a535-48f61891592b",
+   "platform_title": "新教材-小学数学北师大版一年级上册",
+   "lessons": 52,
+   "title_hits": 8,
+   "method": "book_text",
+   "pages_found": 10
+  },
+  "ed_d0c8c4ce5dab491c2e07": {
+   "status": "matched",
+   "platform_textbook_id": "f73c48e0-670f-4b56-869d-f9dafa0de55e",
+   "platform_title": "新教材-小学数学北师大版一年级下册",
+   "lessons": 33,
+   "title_hits": 33,
+   "method": "book_text",
+   "pages_found": 24
+  },
+  "ed_d6319d73983b0e7c363f": {
+   "status": "matched",
+   "platform_textbook_id": "b44c2fce-20e1-4117-9f63-6b18adf48cc1",
+   "platform_title": "新教材-小学数学北师大版二年级上册",
+   "lessons": 25,
+   "title_hits": 34,
+   "method": "book_text",
+   "pages_found": 25
+  },
+  "ed_ed1c52ac64d5471f35b8": {
+   "status": "not_found",
+   "candidates": [
+    "新教材-小学数学北师大版二年级下册",
+    "小学数学北师大版二年级下册"
+   ]
+  },
+  "ed_1ff36a7d6984de2292ee": {
+   "status": "matched",
+   "platform_textbook_id": "59d7236a-bf84-4610-816b-6551a2bf5478",
+   "platform_title": "新教材-小学数学北师大版三年级上册",
+   "lessons": 34,
+   "title_hits": 40,
+   "method": "book_text",
+   "pages_found": 32
+  },
+  "ed_e9b67fbb7a2f5b25129e": {
+   "status": "not_found",
+   "candidates": [
+    "小学数学北师大版三年级下册",
+    "新教材-小学数学北师大版三年级下册"
+   ]
+  },
+  "ed_d606965a5c7bfd83f238": {
+   "status": "not_found",
+   "candidates": [
+    "小学数学北师大版四年级上册",
+    "新教材-北师大版小学数学四年级上册目录"
+   ]
+  },
+  "ed_1a83ac0b357a32c7a13d": {
+   "status": "matched",
+   "platform_textbook_id": "29ffd018-8bd2-48cf-83ca-7c1172e9a10d",
+   "platform_title": "小学数学北师大版四年级下册",
+   "lessons": 51,
+   "title_hits": 38,
+   "method": "book_text",
+   "pages_found": 33
+  },
+  "ed_ec7081b7432dd6fd4fe7": {
+   "status": "not_found",
+   "candidates": [
+    "新教材-北师大版小学数学五年级上册目录",
+    "小学数学北师大版五年级上册"
+   ]
+  },
+  "ed_576cc2fce461f0e08cb2": {
+   "status": "matched",
+   "platform_textbook_id": "c6a1754b-c006-4520-b71e-4aa001a75441",
+   "platform_title": "小学数学北师大版五年级下册",
+   "lessons": 59,
+   "title_hits": 42,
+   "method": "book_text",
+   "pages_found": 41
+  },
+  "ed_c450559fa44fadf1df17": {
+   "status": "not_found",
+   "candidates": [
+    "小学数学北师大版六年级上册",
+    "新教材-北师大版小学数学六年级上册目录"
+   ]
+  },
+  "ed_b1800b5b9d4356b970d0": {
+   "status": "matched",
+   "platform_textbook_id": "923aa2f4-47a8-40cd-b5ab-b2601ad652b2",
+   "platform_title": "小学数学北师大版六年级下册",
+   "lessons": 54,
+   "title_hits": 37,
+   "method": "book_text",
+   "pages_found": 21
+  },
+  "ed_feed94bbdfcc9b33e561": {
+   "status": "matched",
+   "platform_textbook_id": "d3164e03-5ee8-429e-8e68-81e815c6a73b",
+   "platform_title": "新教材-小学英语外研社版（主编：孙有中）三年级上册",
+   "lessons": 106,
+   "title_hits": 49,
+   "method": "book_text",
+   "pages_found": 18
+  },
+  "ed_5d48bbfcb56c179fd695": {
+   "status": "matched",
+   "platform_textbook_id": "d3d83432-7f96-4617-860a-40c01555c34f",
+   "platform_title": "新教材-小学英语外研社版（主编：孙有中）三年级下册",
+   "lessons": 93,
+   "title_hits": 54,
+   "method": "book_text",
+   "pages_found": 8
+  },
+  "ed_9644040d6f6dfe8f6ebe": {
+   "status": "matched",
+   "platform_textbook_id": "415df9d8-893e-4b4d-83e4-bc2e34e92c40",
+   "platform_title": "新教材-小学英语外研社版（主编：孙有中）四年级上册",
+   "lessons": 86,
+   "title_hits": 52,
+   "method": "book_text",
+   "pages_found": 2
+  },
+  "ed_889bf0017a1cc9222ced": {
+   "status": "matched",
+   "platform_textbook_id": "7083258c-1eed-4573-83bb-b1c9fd90d793",
+   "platform_title": "新教材-小学英语外研社版（主编：孙有中）四年级下册",
+   "lessons": 83,
+   "title_hits": 54,
+   "method": "book_text",
+   "pages_found": 1
+  },
+  "ed_6a2024343d275699f22d": {
+   "status": "matched",
+   "platform_textbook_id": "ace20c46-53ed-4e9f-8317-99cf61b1438e",
+   "platform_title": "新教材-小学英语外研社版（主编：孙有中）五年级上册",
+   "lessons": 44,
+   "title_hits": 31,
+   "method": "book_text",
+   "pages_found": 4
+  },
+  "ed_0a82af2ca44e60586d90": {
+   "status": "not_found",
+   "candidates": [
+    "小学英语外研社版（一年级起点）（主编：陈琳）六年级上册",
+    "小学英语外研社版（三年级起点）（主编：桂诗春）六年级上册",
+    "小学英语外研社版（三年级起点）（主编：陈琳）六年级上册",
+    "小学英语外研社版（三年级起点）（主编：刘兆义）六年级上册"
+   ]
   }
  }
 }

@@ -9,7 +9,8 @@ import TextbookAlignmentCard from '../features/textbooks/TextbookAlignmentCard'
 import TextbookCover from '../features/textbooks/TextbookCover'
 import TextbookStatus from '../features/textbooks/TextbookStatus'
 import { loadTextbookDetail } from '../features/textbooks/textbookApi'
-import { bookFields, saveMyBook } from '../features/mybook/myBook.js'
+import { bookFields, saveMyBook, useMyBook, viewMyBook } from '../features/mybook/myBook.js'
+import { bookHref, loadAllBooks } from '../features/mybook/BookPicker.jsx'
 import { alignmentUnits, pointIndex, v2Slug } from '../features/textbooks/alignmentModel'
 import UnitMap from '../features/textbooks/UnitMap'
 import { loadChecksIndex } from '../features/checks/checksData.js'
@@ -87,8 +88,19 @@ export default function TextbookDetailPage() {
         setError('')
         loadTextbookDetail(editionId).then(setBook).catch(errorValue => setError(errorValue.message))
     }, [editionId])
-    // the book a teacher opens becomes 「我的书」 in the header
-    useEffect(() => { if (book) saveMyBook(bookFields(book)) }, [book])
+    // the book a teacher opens becomes 「我的书」 in the header (not another publisher's book of her own subject)
+    useEffect(() => { if (book) viewMyBook(bookFields(book)) }, [book])
+    const myBook = useMyBook()
+    // the same volume in the other editions: 人教版 and 北师大版 数学5上
+    const [siblings, setSiblings] = useState([])
+    useEffect(() => {
+        if (!book) return undefined
+        let active = true
+        loadAllBooks().then(books => {
+            if (active) setSiblings(books.filter(item => item.edition_id !== book.edition_id && item.subject === book.subject && item.grade === book.grade && item.volume === book.volume))
+        }).catch(() => {})
+        return () => { active = false }
+    }, [book])
     const checksHref = useChecksLink(book)
 
     // the 要点 the AI judged each unit to teach (国家平台 unit picks), keyed by kebiao unit
@@ -176,6 +188,12 @@ export default function TextbookDetailPage() {
                     <div className={styles.heroContent}>
                         <nav className={styles.eyebrow} aria-label="面包屑"><Link to="/textbooks">教材</Link> / {book.edition_name} · {book.stage_label} · {book.subject} · {book.volume}</nav>
                         <h1>{book.title}</h1>
+                        {siblings.length ? (
+                            <p className={styles.editions}>
+                                <span>{book.edition_name}</span>
+                                {siblings.map(item => <Link key={item.edition_id} to={bookHref(item)}>{item.edition_name}{item.platform_only ? '（只有课目录）' : ''}</Link>)}
+                            </p>
+                        ) : null}
                         {mapUnits.length ? (
                             <ul className={styles.figures}>
                                 <li><b>{mapUnits.length}</b><span>章</span></li>
@@ -188,6 +206,7 @@ export default function TextbookDetailPage() {
                             {platformUnits.length ? <Link className={styles.textLink} to={`/textbooks/${book.edition_id}/standards`}>课标对应表</Link> : null}
                             {checksHref ? <Link className={styles.textLink} to={checksHref}>课堂诊断题</Link> : null}
                             <Link className={styles.textLink} to={`/textbooks/${book.edition_id}/read`}>看原书</Link>
+                            {myBook && myBook.subject === book.subject && myBook.edition !== book.edition_id ? <button type="button" className={styles.textLink} onClick={() => saveMyBook(bookFields(book))}>设为我的书</button> : null}
                         </div>
                     </div>
                 </div>

@@ -258,6 +258,13 @@ writeFileSync(join(OUT, 'manifest.json'), `${JSON.stringify({
 // /llms.txt: what the site is and how an AI should use and cite it (https://llmstxt.org)
 const SITE = 'https://www.kebiao.org'
 const n = value => value.toLocaleString('en-US')
+// the library's books whose lessons were judged against the 课标 lesson by lesson
+const judgedBooks = (() => {
+    const file = 'data/textbooks/smartedu/lesson_alignment.json'
+    if (!existsSync(file) || !existsSync(BOOKS)) return 0
+    const editions = readJson(file).editions
+    return readJson(BOOKS).items.filter(book => Object.keys(editions[book.edition_id]?.lessons || {}).length).length
+})()
 writeFileSync('public/llms.txt', `# kebiao 课标
 
 > kebiao.org 是《义务教育课程标准（2022年版2025年修订）》的结构化索引：${totals.subjects} 门学科、${n(totals.standards)} 条标准、${n(totals.indicators)} 条要点。每条标准对应一个学段的一个内容单元；要点逐字取自课标原文并标明页码。免费、只读、无需登录。
@@ -287,7 +294,7 @@ ${subjects.map(s => `- [${s.subject}](${SITE}/subjects/${s.subject_slug}): ${s.s
 
 - [检索](${SITE}/smart-search?q=%E5%88%86%E6%95%B0%E7%9A%84%E5%A4%A7%E5%B0%8F): 用一句话找课标
 - [教材](${SITE}/textbooks): 统编版、人教版等教材的单元与课标对应
-- [教材与课标对应](${SITE}/textbooks): 135 册教材的国家平台同步课逐课对到课标要点（主要在教、也涉及），每条附这一课教材的原话和页码；每本书的对应表在 ${SITE}/textbooks/<edition_id>/standards ，API：/api/v1/textbooks/<edition_id>/alignment、/api/v1/standards/<编码>/lessons
+- [教材与课标对应](${SITE}/textbooks): ${judgedBooks} 册教材的国家平台同步课逐课对到课标要点（主要在教、也涉及），每条附这一课教材的原话和页码；每本书的对应表在 ${SITE}/textbooks/<edition_id>/standards ，API：/api/v1/textbooks/<edition_id>/alignment、/api/v1/standards/<编码>/lessons
 - [概念词典](${SITE}/concepts): 大概念、大单元、学习任务群、项目式学习、多维细目表、增值评价等 25 个概念，逐字引用修订版课标原文并标页码；14 门学科的骨架和课程理念
 - [跨学科主题库](${SITE}/interdisciplinary): 历史、地理、体育与健康课标给出的 37 个跨学科主题，以及其他学科写进内容要求的跨学科学习，标页码
 - [必做实验清单](${SITE}/experiments): 科学课标附录 4 的 126 项学生必做探究实践活动，物理、化学的学生必做实验，标页码
