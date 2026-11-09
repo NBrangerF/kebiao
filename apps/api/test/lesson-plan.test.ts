@@ -1005,6 +1005,13 @@ test('a later lesson with a long title still keeps its key terms out of this les
     assert.ok(flagged.includes('除法'), flagged.join(','))
 })
 
+test('a later lesson titled 「口语交际：我们与环境」 does not make 「我们」 a later-lesson term', () => {
+    const indicators = [{ code: LIMITED, text: '会比较', pages: [], standard_code: 'MA-S3-NA-01', standard_title: '', stage_label: '' }]
+    const unitLessons = [{ title: '观潮', current: true }, { title: '浪淘沙（其七）' }, { title: '口语交际：我们与环境' }]
+    const plain = frame({ objectives: [{ ...frame().objectives[0], text: '学生能读出「那条白线很快地向我们移来」并说出潮来时的景象' }] })
+    assert.ok(!checkPlan(plain, null, { indicators, standards: [], periodMinutes: 40, unitLessons }).some(item => item.kind === 'later_lesson'))
+})
+
 test('every stage names an objective, and a 试讲 is cut to 10 minutes', () => {
     const plan = frame()
     const process = cleanProcess({ stages: [{ name: '导入', minutes: 5, teacher: '出示问题', students: '思考', objective_ids: [] }, { name: '探究', minutes: 25, teacher: '组织', students: '折纸', objective_ids: ['O2'] }, { name: '小结', minutes: 10, teacher: '总结', students: '回顾', objective_ids: [] }], homework: [] }, plan)!

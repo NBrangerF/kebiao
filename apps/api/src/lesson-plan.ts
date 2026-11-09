@@ -271,6 +271,8 @@ function practiceAhead(practice: Practice, unitLessons: DraftInput['unitLessons'
 
 // the unit's lessons after this one whose titles are specific enough to spot in an objective (「通分」, not 「练习」)
 const GENERIC_LESSON = /…|整理|复习|练习|园地|口语交际|习作|Unit|Section|单元|活动|实践|阅读|综合|探究|拓展|总结|评价|回顾|^\d|^用|^认识|^解决|问题$/u
+// a title split at 与/的 can leave a pronoun (「口语交际：我们与环境」 → 我们), which every text uses
+const PRONOUN = /^(?:我|你|您|他|她|它|咱|大家|自己|人家)们?$/u
 function laterLessons(unitLessons: DraftInput['unitLessons']) {
     const list = unitLessons || []
     const at = list.findIndex(item => item.current)
@@ -282,7 +284,7 @@ function laterLessons(unitLessons: DraftInput['unitLessons']) {
         const parts = title.length <= 8 ? [title] : title.split(/[（）()、，,：:·\s]|及|和|与|的/u)
         for (const part of parts.map(item => item.replace(/[（）()\d~～—-]+$/u, '').trim())) {
             if ([...part].filter(char => /\p{Script=Han}/u.test(char)).length < 2 || part.length > 8) continue
-            if (own.includes(part) || GENERIC_LESSON.test(part)) continue
+            if (own.includes(part) || GENERIC_LESSON.test(part) || PRONOUN.test(part)) continue
             terms.add(part)
         }
     }
