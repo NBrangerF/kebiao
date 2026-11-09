@@ -366,7 +366,7 @@
         "external_smartedu_2026_math_primary_grade_4_up",
         "tes_fb3396b22e6983ef",
         "textbook-node:tcn_c97f13da4c1295ee",
-        "textbook-unit:tcu_fd268cb997039e88"
+        "textbook-unit:tcu_0e7eec2643c43008"
       ],
       "evidence_role": "direct_textbook",
       "evidence_spans": [
@@ -409,8 +409,8 @@
       "textbook_subject": "数学",
       "textbook_title": "数学4年级上册",
       "textbook_volume": "上册",
-      "unit_id": "tcu_fd268cb997039e88",
-      "unit_title": "1 大数的认识"
+      "unit_id": "tcu_0e7eec2643c43008",
+      "unit_title": "一 万以上数的认识"
     },
     {
       "algorithm_version": "component-evidence-hybrid-v3",

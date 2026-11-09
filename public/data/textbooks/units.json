@@ -142432,8 +142432,7 @@
             "textbook_unit"
           ],
           "matched_keywords": [
-            "万以上数的",
-            "大数"
+            "万以上数的"
           ],
           "modifier_conflicts": [],
           "node_id": "tcn_fd8419d5d780b938",
@@ -142815,8 +142814,8 @@
               "score": 0.88
             }
           ],
-          "unit_id": "tcu_fd268cb997039e88",
-          "unit_title": "1 大数的认识"
+          "unit_id": "tcu_0e7eec2643c43008",
+          "unit_title": "一 万以上数的认识"
         },
         {
           "algorithm_version": "component-evidence-hybrid-v3",
@@ -142921,8 +142920,8 @@
               "score": 0.76
             }
           ],
-          "unit_id": "tcu_fd268cb997039e88",
-          "unit_title": "1 大数的认识"
+          "unit_id": "tcu_0e7eec2643c43008",
+          "unit_title": "一 万以上数的认识"
         },
         {
           "algorithm_version": "component-evidence-hybrid-v3",
@@ -143017,53 +143016,32 @@
               "score": 0.76
             }
           ],
-          "unit_id": "tcu_fd268cb997039e88",
-          "unit_title": "1 大数的认识"
+          "unit_id": "tcu_0e7eec2643c43008",
+          "unit_title": "一 万以上数的认识"
         }
       ],
-      "confidence": 0.85,
+      "confidence": 0.95,
       "edition_id": "ed_dda80e43104244896faa",
       "end_pdf_page": 28,
-      "entry_id": "tcu_fd268cb997039e88",
+      "entry_id": "tcu_0e7eec2643c43008",
       "grade": 4,
       "kind": "unit",
       "level": 1,
       "parent_id": null,
-      "pdf_page": 7,
-      "printed_page": "2",
+      "pdf_page": 6,
+      "printed_page": "1",
       "related_resources": [],
       "review_status": "approved",
-      "source": "smartedu_sync_lessons",
+      "source": "printed_toc",
       "subject": "数学",
       "subject_slug": "math",
       "textbook_title": "数学4年级上册",
-      "title": "1 大数的认识",
+      "title": "一 万以上数的认识",
       "volume": "上册"
     },
     {
       "alignments": [],
-      "confidence": 0.85,
-      "edition_id": "ed_dda80e43104244896faa",
-      "end_pdf_page": 11,
-      "entry_id": "tcu_fd5f8745f1c8e74a",
-      "grade": 4,
-      "kind": "lesson",
-      "level": 2,
-      "parent_id": "tcu_fd268cb997039e88",
-      "pdf_page": 7,
-      "printed_page": "2",
-      "related_resources": [],
-      "review_status": "approved",
-      "source": "smartedu_sync_lessons",
-      "subject": "数学",
-      "subject_slug": "math",
-      "textbook_title": "数学4年级上册",
-      "title": "亿以内数的认识",
-      "volume": "上册"
-    },
-    {
-      "alignments": [],
-      "confidence": 0.85,
+      "confidence": 0.95,
       "edition_id": "ed_dda80e43104244896faa",
       "end_pdf_page": 32,
       "entry_id": "tcu_c0b64ca2b97a88ef",
@@ -143075,19 +143053,19 @@
       "printed_page": "24",
       "related_resources": [],
       "review_status": "approved",
-      "source": "smartedu_sync_lessons",
+      "source": "printed_toc",
       "subject": "数学",
       "subject_slug": "math",
       "textbook_title": "数学4年级上册",
-      "title": "★ 1亿有多大",
+      "title": "1亿有多大",
       "volume": "上册"
     },
     {
       "alignments": [],
-      "confidence": 0.85,
+      "confidence": 0.95,
       "edition_id": "ed_dda80e43104244896faa",
-      "end_pdf_page": 59,
-      "entry_id": "tcu_98e478dc59d54cf1",
+      "end_pdf_page": 43,
+      "entry_id": "tcu_0927bb4386d60d2c",
       "grade": 4,
       "kind": "unit",
       "level": 1,
@@ -143096,74 +143074,53 @@
       "printed_page": "28",
       "related_resources": [],
       "review_status": "approved",
-      "source": "smartedu_sync_lessons",
+      "source": "printed_toc",
       "subject": "数学",
       "subject_slug": "math",
       "textbook_title": "数学4年级上册",
-      "title": "3 角的度量",
+      "title": "二 角的度量",
       "volume": "上册"
     },
     {
       "alignments": [],
-      "confidence": 0.85,
+      "confidence": 0.95,
       "edition_id": "ed_dda80e43104244896faa",
-      "end_pdf_page": 37,
-      "entry_id": "tcu_c9a005e51687dd58",
+      "end_pdf_page": 62,
+      "entry_id": "tcu_9fe0779fbfc06de8",
       "grade": 4,
-      "kind": "lesson",
-      "level": 2,
-      "parent_id": "tcu_98e478dc59d54cf1",
-      "pdf_page": 33,
-      "printed_page": "28",
+      "kind": "unit",
+      "level": 1,
+      "parent_id": null,
+      "pdf_page": 44,
+      "printed_page": "39",
       "related_resources": [],
       "review_status": "approved",
-      "source": "smartedu_sync_lessons",
+      "source": "printed_toc",
       "subject": "数学",
       "subject_slug": "math",
       "textbook_title": "数学4年级上册",
-      "title": "角的度量",
+      "title": "三 多位数乘两位数",
       "volume": "上册"
     },
     {
       "alignments": [],
-      "confidence": 0.85,
+      "confidence": 0.95,
       "edition_id": "ed_dda80e43104244896faa",
       "end_pdf_page": 74,
-      "entry_id": "tcu_8bc271cacb090e2d",
+      "entry_id": "tcu_289d4e9af32ab9e6",
       "grade": 4,
       "kind": "unit",
       "level": 1,
       "parent_id": null,
-      "pdf_page": 60,
-      "printed_page": "55",
+      "pdf_page": 63,
+      "printed_page": "58",
       "related_resources": [],
       "review_status": "approved",
-      "source": "smartedu_sync_lessons",
+      "source": "printed_toc",
       "subject": "数学",
       "subject_slug": "math",
       "textbook_title": "数学4年级上册",
-      "title": "4 三位数乘两位数",
-      "volume": "上册"
-    },
-    {
-      "alignments": [],
-      "confidence": 0.85,
-      "edition_id": "ed_dda80e43104244896faa",
-      "end_pdf_page": 64,
-      "entry_id": "tcu_f2b4ca86955df3b8",
-      "grade": 4,
-      "kind": "lesson",
-      "level": 2,
-      "parent_id": "tcu_8bc271cacb090e2d",
-      "pdf_page": 60,
-      "printed_page": "55",
-      "related_resources": [],
-      "review_status": "approved",
-      "source": "smartedu_sync_lessons",
-      "subject": "数学",
-      "subject_slug": "math",
-      "textbook_title": "数学4年级上册",
-      "title": "速度、时间和路程",
+      "title": "四 加法模型和乘法模型",
       "volume": "上册"
     },
     {
@@ -143541,9 +143498,31 @@
               "score": 0.88
             }
           ],
-          "unit_id": "tcu_2b73fcd0406cfe63",
-          "unit_title": "5 平行四边形和梯形"
-        },
+          "unit_id": "tcu_8924cda0fe91094c",
+          "unit_title": "五 平行四边形和梯形"
+        }
+      ],
+      "confidence": 0.95,
+      "edition_id": "ed_dda80e43104244896faa",
+      "end_pdf_page": 92,
+      "entry_id": "tcu_8924cda0fe91094c",
+      "grade": 4,
+      "kind": "unit",
+      "level": 1,
+      "parent_id": null,
+      "pdf_page": 75,
+      "printed_page": "70",
+      "related_resources": [],
+      "review_status": "approved",
+      "source": "printed_toc",
+      "subject": "数学",
+      "subject_slug": "math",
+      "textbook_title": "数学4年级上册",
+      "title": "五 平行四边形和梯形",
+      "volume": "上册"
+    },
+    {
+      "alignments": [
         {
           "algorithm_version": "component-evidence-hybrid-v3",
           "alignment_id": "tca_1a54821c670db289",
@@ -143588,7 +143567,8 @@
           "longest_match_length": 5,
           "matched_fields": [
             "learning_components",
-            "standard_context"
+            "standard_context",
+            "textbook_unit"
           ],
           "matched_keywords": [
             "条形统计图"
@@ -143775,8 +143755,8 @@
               "score": 0.88
             }
           ],
-          "unit_id": "tcu_2b73fcd0406cfe63",
-          "unit_title": "5 平行四边形和梯形"
+          "unit_id": "tcu_07ea1c44be4fed34",
+          "unit_title": "六 条形统计图"
         },
         {
           "algorithm_version": "component-evidence-hybrid-v3",
@@ -143814,7 +143794,8 @@
           "longest_match_length": 5,
           "matched_fields": [
             "learning_components",
-            "standard_context"
+            "standard_context",
+            "textbook_unit"
           ],
           "matched_keywords": [
             "条形统计图",
@@ -143870,8 +143851,8 @@
               "score": 0.88
             }
           ],
-          "unit_id": "tcu_2b73fcd0406cfe63",
-          "unit_title": "5 平行四边形和梯形"
+          "unit_id": "tcu_07ea1c44be4fed34",
+          "unit_title": "六 条形统计图"
         },
         {
           "algorithm_version": "component-evidence-hybrid-v3",
@@ -143964,111 +143945,69 @@
               "score": 0.76
             }
           ],
-          "unit_id": "tcu_2b73fcd0406cfe63",
-          "unit_title": "5 平行四边形和梯形"
+          "unit_id": "tcu_07ea1c44be4fed34",
+          "unit_title": "六 条形统计图"
         }
       ],
-      "confidence": 0.85,
+      "confidence": 0.95,
       "edition_id": "ed_dda80e43104244896faa",
-      "end_pdf_page": 115,
-      "entry_id": "tcu_2b73fcd0406cfe63",
+      "end_pdf_page": 106,
+      "entry_id": "tcu_07ea1c44be4fed34",
       "grade": 4,
       "kind": "unit",
       "level": 1,
       "parent_id": null,
-      "pdf_page": 75,
-      "printed_page": "70",
+      "pdf_page": 93,
+      "printed_page": "88",
       "related_resources": [],
       "review_status": "approved",
-      "source": "smartedu_sync_lessons",
+      "source": "printed_toc",
       "subject": "数学",
       "subject_slug": "math",
       "textbook_title": "数学4年级上册",
-      "title": "5 平行四边形和梯形",
+      "title": "六 条形统计图",
       "volume": "上册"
     },
     {
       "alignments": [],
-      "confidence": 0.85,
+      "confidence": 0.95,
       "edition_id": "ed_dda80e43104244896faa",
-      "end_pdf_page": 93,
-      "entry_id": "tcu_7bf31c8e3f693c9d",
-      "grade": 4,
-      "kind": "lesson",
-      "level": 2,
-      "parent_id": "tcu_2b73fcd0406cfe63",
-      "pdf_page": 89,
-      "printed_page": "84",
-      "related_resources": [],
-      "review_status": "approved",
-      "source": "smartedu_sync_lessons",
-      "subject": "数学",
-      "subject_slug": "math",
-      "textbook_title": "数学4年级上册",
-      "title": "★神奇的默比乌斯带",
-      "volume": "上册"
-    },
-    {
-      "alignments": [],
-      "confidence": 0.85,
-      "edition_id": "ed_dda80e43104244896faa",
-      "end_pdf_page": 122,
-      "entry_id": "tcu_bb36a0dad2e15a69",
+      "end_pdf_page": 112,
+      "entry_id": "tcu_bbef2278750c4f29",
       "grade": 4,
       "kind": "unit",
       "level": 1,
       "parent_id": null,
-      "pdf_page": 116,
-      "printed_page": "111",
+      "pdf_page": 107,
+      "printed_page": "102",
       "related_resources": [],
       "review_status": "approved",
-      "source": "smartedu_sync_lessons",
+      "source": "printed_toc",
       "subject": "数学",
       "subject_slug": "math",
       "textbook_title": "数学4年级上册",
-      "title": "7 条形统计图",
+      "title": "寻找宝藏",
       "volume": "上册"
     },
     {
       "alignments": [],
-      "confidence": 0.85,
+      "confidence": 0.95,
       "edition_id": "ed_dda80e43104244896faa",
-      "end_pdf_page": 126,
-      "entry_id": "tcu_321a79b8a6a72db7",
+      "end_pdf_page": 127,
+      "entry_id": "tcu_dd4c5e17857f3033",
       "grade": 4,
       "kind": "unit",
       "level": 1,
       "parent_id": null,
-      "pdf_page": 123,
-      "printed_page": "118",
+      "pdf_page": 113,
+      "printed_page": "108",
       "related_resources": [],
       "review_status": "approved",
-      "source": "smartedu_sync_lessons",
+      "source": "printed_toc",
       "subject": "数学",
       "subject_slug": "math",
       "textbook_title": "数学4年级上册",
-      "title": "8 数学广角──优化",
-      "volume": "上册"
-    },
-    {
-      "alignments": [],
-      "confidence": 0.85,
-      "edition_id": "ed_dda80e43104244896faa",
-      "end_pdf_page": 126,
-      "entry_id": "tcu_8078d482acda52c7",
-      "grade": 4,
-      "kind": "lesson",
-      "level": 2,
-      "parent_id": "tcu_321a79b8a6a72db7",
-      "pdf_page": 123,
-      "printed_page": "118",
-      "related_resources": [],
-      "review_status": "approved",
-      "source": "smartedu_sync_lessons",
-      "subject": "数学",
-      "subject_slug": "math",
-      "textbook_title": "数学4年级上册",
-      "title": "沏茶问题",
+      "title": "七 复习与关联",
       "volume": "上册"
     },
     {

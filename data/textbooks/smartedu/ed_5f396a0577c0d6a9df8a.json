@@ -4,7 +4,7 @@
  "platform_textbook_id": "5088edca-5b47-4bf7-b654-fce735edff4d",
  "platform_title": "新教材-初中语文统编版九年级上册",
  "match": {
-  "title_hits": 6,
+  "title_hits": 10,
   "method": "book_text",
   "score": 1,
   "candidates": 2
@@ -46,6 +46,38 @@
       {
        "id": "ec54de8a-3772-4070-9f7e-69795d76aa70",
        "title": "6 我看",
+       "children": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "67fcc185-8a92-4edc-ae50-6c351172ac05",
+   "title": "第二单元",
+   "children": [
+    {
+     "id": "0afb9d56-afc9-4128-812c-ff0fc2d5ae1a",
+     "title": "阅读",
+     "children": [
+      {
+       "id": "76f1a72a-d697-484a-8883-6b4458e81a8a",
+       "title": "7 培养德智体美劳全面发展的社会主义建设者和接班人",
+       "children": []
+      },
+      {
+       "id": "23289e45-46d5-4497-91d1-8ad6cb2779da",
+       "title": "8 中国人失掉自信力了吗",
+       "children": []
+      },
+      {
+       "id": "42a9cfa7-edc0-4ff8-8053-a8821a664112",
+       "title": "9* 谈骨气",
+       "children": []
+      },
+      {
+       "id": "ce42d63b-18f3-40f4-ab9f-94dd132dfe96",
+       "title": "10* 创造宣言",
        "children": []
       }
      ]
@@ -146,6 +178,74 @@
     "637f9cd0-8334-4d19-9d30-68f66802f73b",
     "5b6107f8-2b59-4c4f-9e74-ff2599c1dcb6",
     "ec54de8a-3772-4070-9f7e-69795d76aa70"
+   ],
+   "pdf_page": null,
+   "materials": [
+    "课件",
+    "教学设计",
+    "学习任务单",
+    "课后练习"
+   ],
+   "hours": 1
+  },
+  {
+   "id": "aa0c2ca2-8060-08c0-0156-d430fece1dd9",
+   "title": "7 培养德智体美劳全面发展的社会主义建设者和接班人",
+   "chapter_path": [
+    "67fcc185-8a92-4edc-ae50-6c351172ac05",
+    "0afb9d56-afc9-4128-812c-ff0fc2d5ae1a",
+    "76f1a72a-d697-484a-8883-6b4458e81a8a"
+   ],
+   "pdf_page": 36,
+   "materials": [
+    "课件",
+    "教学设计",
+    "学习任务单",
+    "课后练习"
+   ],
+   "hours": 1
+  },
+  {
+   "id": "a3f40766-d74a-7abf-491c-796934070563",
+   "title": "8 中国人失掉自信力了吗",
+   "chapter_path": [
+    "67fcc185-8a92-4edc-ae50-6c351172ac05",
+    "0afb9d56-afc9-4128-812c-ff0fc2d5ae1a",
+    "23289e45-46d5-4497-91d1-8ad6cb2779da"
+   ],
+   "pdf_page": 37,
+   "materials": [
+    "课件",
+    "教学设计",
+    "学习任务单",
+    "课后练习"
+   ],
+   "hours": 1
+  },
+  {
+   "id": "53f86e10-a83a-5b05-5a85-1a100ba37b06",
+   "title": "9* 谈骨气",
+   "chapter_path": [
+    "67fcc185-8a92-4edc-ae50-6c351172ac05",
+    "0afb9d56-afc9-4128-812c-ff0fc2d5ae1a",
+    "42a9cfa7-edc0-4ff8-8053-a8821a664112"
+   ],
+   "pdf_page": null,
+   "materials": [
+    "课件",
+    "教学设计",
+    "学习任务单",
+    "课后练习"
+   ],
+   "hours": 1
+  },
+  {
+   "id": "09935925-dc2b-a402-7cdb-111e39e2903a",
+   "title": "10* 创造宣言",
+   "chapter_path": [
+    "67fcc185-8a92-4edc-ae50-6c351172ac05",
+    "0afb9d56-afc9-4128-812c-ff0fc2d5ae1a",
+    "ce42d63b-18f3-40f4-ab9f-94dd132dfe96"
    ],
    "pdf_page": null,
    "materials": [

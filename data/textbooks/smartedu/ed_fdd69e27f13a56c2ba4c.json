@@ -4,9 +4,9 @@
  "platform_textbook_id": "8ae7e58b-77b3-bac9-0178-004b71410002",
  "platform_title": "小学科学教科版四年级下册",
  "match": {
-  "title_hits": 0,
-  "method": "toc",
-  "score": 0,
+  "title_hits": 25,
+  "method": "book_text",
+  "score": 0.98,
   "candidates": 1
  },
  "tree": [
@@ -232,7 +232,7 @@
     "7e704f35-b25f-39b6-a001-60153209410d",
     "dc28145c-9a94-3682-8711-0c8e977c2a3b"
    ],
-   "pdf_page": null,
+   "pdf_page": 23,
    "materials": [
     "视频课程",
     "学习任务单",
@@ -247,7 +247,7 @@
     "7e704f35-b25f-39b6-a001-60153209410d",
     "05020f5f-a014-303b-85ed-69d2b0935a24"
    ],
-   "pdf_page": null,
+   "pdf_page": 22,
    "materials": [
     "视频课程",
     "学习任务单",
@@ -277,7 +277,7 @@
     "921ae4e4-4b78-3e51-b86d-6db14f574348",
     "9d55448d-9392-3c6f-a5dc-5a3a1695ea7c"
    ],
-   "pdf_page": null,
+   "pdf_page": 27,
    "materials": [
     "视频课程",
     "学习任务单",
@@ -292,7 +292,7 @@
     "921ae4e4-4b78-3e51-b86d-6db14f574348",
     "aaabf973-8c9b-350b-a30e-99c319d57a80"
    ],
-   "pdf_page": null,
+   "pdf_page": 30,
    "materials": [
     "视频课程",
     "学习任务单",
@@ -307,7 +307,7 @@
     "921ae4e4-4b78-3e51-b86d-6db14f574348",
     "74bfcb7c-a67d-30e5-9112-7f67b881bc2f"
    ],
-   "pdf_page": null,
+   "pdf_page": 35,
    "materials": [
     "视频课程",
     "学习任务单",
@@ -337,7 +337,7 @@
     "921ae4e4-4b78-3e51-b86d-6db14f574348",
     "02ee466b-67bb-37de-87c1-33fd6477016c"
    ],
-   "pdf_page": null,
+   "pdf_page": 36,
    "materials": [
     "视频课程",
     "学习任务单",
@@ -352,7 +352,7 @@
     "921ae4e4-4b78-3e51-b86d-6db14f574348",
     "451bebb8-b9c0-3142-8b6a-0a0b14b06d85"
    ],
-   "pdf_page": null,
+   "pdf_page": 38,
    "materials": [
     "视频课程",
     "学习任务单",
@@ -367,7 +367,7 @@
     "921ae4e4-4b78-3e51-b86d-6db14f574348",
     "966707fc-3348-381d-8766-5b2d6c665218"
    ],
-   "pdf_page": null,
+   "pdf_page": 35,
    "materials": [
     "视频课程",
     "学习任务单",
@@ -382,7 +382,7 @@
     "921ae4e4-4b78-3e51-b86d-6db14f574348",
     "f1aff354-e422-35f2-84db-45a724c44016"
    ],
-   "pdf_page": null,
+   "pdf_page": 45,
    "materials": [
     "视频课程",
     "学习任务单",
@@ -457,7 +457,7 @@
     "3b00c464-b38c-3e87-a712-5985b4362bd7",
     "1ff7f101-675b-3238-915a-6141f4357580"
    ],
-   "pdf_page": null,
+   "pdf_page": 58,
    "materials": [
     "视频课程",
     "学习任务单",

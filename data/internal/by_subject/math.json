@@ -1,5 +1,5 @@
 {
-  "capability_graph_build_id": "capability-graph-4f2588e6-4f44a9f16b-76fe5a312e",
+  "capability_graph_build_id": "capability-graph-4f2588e6-4f44a9f16b-e7392c96c0",
   "capability_graph_schema_version": "1.1.0",
   "columns": [
     "art_discipline",
@@ -6061,7 +6061,7 @@
             "external_smartedu_2026_math_primary_grade_4_up",
             "tes_ecf52a4776748a24",
             "textbook-node:tcn_8afd79878aeefa66",
-            "textbook-unit:tcu_fd268cb997039e88"
+            "textbook-unit:tcu_0e7eec2643c43008"
           ],
           "evidence_role": "direct_textbook",
           "evidence_spans": [
@@ -6099,8 +6099,8 @@
           "textbook_subject": "数学",
           "textbook_title": "数学4年级上册",
           "textbook_volume": "上册",
-          "unit_id": "tcu_fd268cb997039e88",
-          "unit_title": "1 大数的认识"
+          "unit_id": "tcu_0e7eec2643c43008",
+          "unit_title": "一 万以上数的认识"
         },
         {
           "algorithm_version": "component-evidence-hybrid-v3",
@@ -6116,7 +6116,7 @@
             "external_smartedu_2026_math_primary_grade_4_up",
             "tes_5f417231d07f1be4",
             "textbook-node:tcn_6a4dfedaac151899",
-            "textbook-unit:tcu_fd268cb997039e88"
+            "textbook-unit:tcu_0e7eec2643c43008"
           ],
           "evidence_role": "direct_textbook",
           "evidence_spans": [
@@ -6154,8 +6154,8 @@
           "textbook_subject": "数学",
           "textbook_title": "数学4年级上册",
           "textbook_volume": "上册",
-          "unit_id": "tcu_fd268cb997039e88",
-          "unit_title": "1 大数的认识"
+          "unit_id": "tcu_0e7eec2643c43008",
+          "unit_title": "一 万以上数的认识"
         },
         {
           "algorithm_version": "component-evidence-hybrid-v3",
@@ -6171,7 +6171,7 @@
             "external_smartedu_2026_math_primary_grade_4_up",
             "tes_f5b7f38c516efe4d",
             "textbook-node:tcn_55db472ba27bc3fb",
-            "textbook-unit:tcu_fd268cb997039e88"
+            "textbook-unit:tcu_0e7eec2643c43008"
           ],
           "evidence_role": "direct_textbook",
           "evidence_spans": [
@@ -6209,8 +6209,8 @@
           "textbook_subject": "数学",
           "textbook_title": "数学4年级上册",
           "textbook_volume": "上册",
-          "unit_id": "tcu_fd268cb997039e88",
-          "unit_title": "1 大数的认识"
+          "unit_id": "tcu_0e7eec2643c43008",
+          "unit_title": "一 万以上数的认识"
         },
         {
           "algorithm_version": "component-evidence-hybrid-v3",
@@ -6226,7 +6226,7 @@
             "external_smartedu_2026_math_primary_grade_4_up",
             "tes_1728f7e47a62439b",
             "textbook-node:tcn_fd8419d5d780b938",
-            "textbook-unit:tcu_fd268cb997039e88"
+            "textbook-unit:tcu_0e7eec2643c43008"
           ],
           "evidence_role": "direct_textbook",
           "evidence_spans": [
@@ -6264,8 +6264,8 @@
           "textbook_subject": "数学",
           "textbook_title": "数学4年级上册",
           "textbook_volume": "上册",
-          "unit_id": "tcu_fd268cb997039e88",
-          "unit_title": "1 大数的认识"
+          "unit_id": "tcu_0e7eec2643c43008",
+          "unit_title": "一 万以上数的认识"
         },
         {
           "algorithm_version": "component-evidence-hybrid-v3",
@@ -6281,7 +6281,7 @@
             "external_smartedu_2026_math_primary_grade_4_up",
             "tes_ae022493634b5e6c",
             "textbook-node:tcn_5c53965d0e3d6855",
-            "textbook-unit:tcu_fd268cb997039e88"
+            "textbook-unit:tcu_0e7eec2643c43008"
           ],
           "evidence_role": "direct_textbook",
           "evidence_spans": [
@@ -6319,8 +6319,8 @@
           "textbook_subject": "数学",
           "textbook_title": "数学4年级上册",
           "textbook_volume": "上册",
-          "unit_id": "tcu_fd268cb997039e88",
-          "unit_title": "1 大数的认识"
+          "unit_id": "tcu_0e7eec2643c43008",
+          "unit_title": "一 万以上数的认识"
         },
         {
           "algorithm_version": "component-evidence-hybrid-v3",
@@ -6336,7 +6336,7 @@
             "external_smartedu_2026_math_primary_grade_4_up",
             "tes_43551a90972e0a83",
             "textbook-node:tcn_9eae7626c19518f6",
-            "textbook-unit:tcu_fd268cb997039e88"
+            "textbook-unit:tcu_0e7eec2643c43008"
           ],
           "evidence_role": "direct_textbook",
           "evidence_spans": [
@@ -6374,8 +6374,8 @@
           "textbook_subject": "数学",
           "textbook_title": "数学4年级上册",
           "textbook_volume": "上册",
-          "unit_id": "tcu_fd268cb997039e88",
-          "unit_title": "1 大数的认识"
+          "unit_id": "tcu_0e7eec2643c43008",
+          "unit_title": "一 万以上数的认识"
         },
         {
           "algorithm_version": "component-evidence-hybrid-v3",
@@ -6391,7 +6391,7 @@
             "external_smartedu_2026_math_primary_grade_4_up",
             "tes_b45454f54f7539fb",
             "textbook-node:tcn_378ea7a2892a4331",
-            "textbook-unit:tcu_fd268cb997039e88"
+            "textbook-unit:tcu_0e7eec2643c43008"
           ],
           "evidence_role": "direct_textbook",
           "evidence_spans": [
@@ -6429,8 +6429,8 @@
           "textbook_subject": "数学",
           "textbook_title": "数学4年级上册",
           "textbook_volume": "上册",
-          "unit_id": "tcu_fd268cb997039e88",
-          "unit_title": "1 大数的认识"
+          "unit_id": "tcu_0e7eec2643c43008",
+          "unit_title": "一 万以上数的认识"
         },
         {
           "algorithm_version": "component-evidence-hybrid-v3",
@@ -6446,7 +6446,7 @@
             "external_smartedu_2026_math_primary_grade_4_up",
             "tes_1a127b046f4be2de",
             "textbook-node:tcn_c34c2d319f7e054e",
-            "textbook-unit:tcu_fd268cb997039e88"
+            "textbook-unit:tcu_0e7eec2643c43008"
           ],
           "evidence_role": "direct_textbook",
           "evidence_spans": [
@@ -6484,8 +6484,8 @@
           "textbook_subject": "数学",
           "textbook_title": "数学4年级上册",
           "textbook_volume": "上册",
-          "unit_id": "tcu_fd268cb997039e88",
-          "unit_title": "1 大数的认识"
+          "unit_id": "tcu_0e7eec2643c43008",
+          "unit_title": "一 万以上数的认识"
         },
         {
           "algorithm_version": "component-evidence-hybrid-v3",
@@ -6501,7 +6501,7 @@
             "external_smartedu_2026_math_primary_grade_4_up",
             "tes_3bf70e994d27d88b",
             "textbook-node:tcn_d6314bf2f7c05817",
-            "textbook-unit:tcu_fd268cb997039e88"
+            "textbook-unit:tcu_0e7eec2643c43008"
           ],
           "evidence_role": "direct_textbook",
           "evidence_spans": [
@@ -6539,8 +6539,8 @@
           "textbook_subject": "数学",
           "textbook_title": "数学4年级上册",
           "textbook_volume": "上册",
-          "unit_id": "tcu_fd268cb997039e88",
-          "unit_title": "1 大数的认识"
+          "unit_id": "tcu_0e7eec2643c43008",
+          "unit_title": "一 万以上数的认识"
         },
         {
           "algorithm_version": "component-evidence-hybrid-v3",
@@ -6556,7 +6556,7 @@
             "external_smartedu_2026_math_primary_grade_4_up",
             "tes_a2eaa827ff3af61e",
             "textbook-node:tcn_fbe2206d320042fd",
-            "textbook-unit:tcu_fd268cb997039e88"
+            "textbook-unit:tcu_0e7eec2643c43008"
           ],
           "evidence_role": "direct_textbook",
           "evidence_spans": [
@@ -6594,8 +6594,8 @@
           "textbook_subject": "数学",
           "textbook_title": "数学4年级上册",
           "textbook_volume": "上册",
-          "unit_id": "tcu_fd268cb997039e88",
-          "unit_title": "1 大数的认识"
+          "unit_id": "tcu_0e7eec2643c43008",
+          "unit_title": "一 万以上数的认识"
         },
         {
           "algorithm_version": "component-evidence-hybrid-v3",
@@ -6611,7 +6611,7 @@
             "external_smartedu_2026_math_primary_grade_4_up",
             "tes_94a989aa858f3321",
             "textbook-node:tcn_012ada14d4cb337e",
-            "textbook-unit:tcu_fd268cb997039e88"
+            "textbook-unit:tcu_0e7eec2643c43008"
           ],
           "evidence_role": "direct_textbook",
           "evidence_spans": [
@@ -6649,8 +6649,8 @@
           "textbook_subject": "数学",
           "textbook_title": "数学4年级上册",
           "textbook_volume": "上册",
-          "unit_id": "tcu_fd268cb997039e88",
-          "unit_title": "1 大数的认识"
+          "unit_id": "tcu_0e7eec2643c43008",
+          "unit_title": "一 万以上数的认识"
         },
         {
           "algorithm_version": "full-alignment-scope-preserve-v2",
@@ -7363,7 +7363,7 @@
             "external_smartedu_2026_math_primary_grade_4_up",
             "tes_8cce2ec1b4911c48",
             "textbook-node:tcn_be263a87a6e550ce",
-            "textbook-unit:tcu_fd268cb997039e88"
+            "textbook-unit:tcu_0e7eec2643c43008"
           ],
           "evidence_role": "direct_textbook",
           "evidence_spans": [
@@ -7401,8 +7401,8 @@
           "textbook_subject": "数学",
           "textbook_title": "数学4年级上册",
           "textbook_volume": "上册",
-          "unit_id": "tcu_fd268cb997039e88",
-          "unit_title": "1 大数的认识"
+          "unit_id": "tcu_0e7eec2643c43008",
+          "unit_title": "一 万以上数的认识"
         },
         {
           "algorithm_version": "component-evidence-hybrid-v3",
@@ -13822,7 +13822,7 @@
             "external_smartedu_2026_math_primary_grade_4_up",
             "tes_2ae659c0c78f032a",
             "textbook-node:tcn_b0d653b9e07df1b6",
-            "textbook-unit:tcu_2b73fcd0406cfe63"
+            "textbook-unit:tcu_8924cda0fe91094c"
           ],
           "evidence_role": "direct_textbook",
           "evidence_spans": [
@@ -13860,8 +13860,8 @@
           "textbook_subject": "数学",
           "textbook_title": "数学4年级上册",
           "textbook_volume": "上册",
-          "unit_id": "tcu_2b73fcd0406cfe63",
-          "unit_title": "5 平行四边形和梯形"
+          "unit_id": "tcu_8924cda0fe91094c",
+          "unit_title": "五 平行四边形和梯形"
         },
         {
           "algorithm_version": "component-evidence-hybrid-v3",
@@ -13877,7 +13877,7 @@
             "external_smartedu_2026_math_primary_grade_4_up",
             "tes_ae99c7ccc7228f33",
             "textbook-node:tcn_928ee58d6773606e",
-            "textbook-unit:tcu_2b73fcd0406cfe63"
+            "textbook-unit:tcu_8924cda0fe91094c"
           ],
           "evidence_role": "direct_textbook",
           "evidence_spans": [
@@ -13915,8 +13915,8 @@
           "textbook_subject": "数学",
           "textbook_title": "数学4年级上册",
           "textbook_volume": "上册",
-          "unit_id": "tcu_2b73fcd0406cfe63",
-          "unit_title": "5 平行四边形和梯形"
+          "unit_id": "tcu_8924cda0fe91094c",
+          "unit_title": "五 平行四边形和梯形"
         },
         {
           "algorithm_version": "component-evidence-hybrid-v3",
@@ -13932,7 +13932,7 @@
             "external_smartedu_2026_math_primary_grade_4_up",
             "tes_faa8f83713191407",
             "textbook-node:tcn_88126d20f6c08c3c",
-            "textbook-unit:tcu_2b73fcd0406cfe63"
+            "textbook-unit:tcu_8924cda0fe91094c"
           ],
           "evidence_role": "direct_textbook",
           "evidence_spans": [
@@ -13970,8 +13970,8 @@
           "textbook_subject": "数学",
           "textbook_title": "数学4年级上册",
           "textbook_volume": "上册",
-          "unit_id": "tcu_2b73fcd0406cfe63",
-          "unit_title": "5 平行四边形和梯形"
+          "unit_id": "tcu_8924cda0fe91094c",
+          "unit_title": "五 平行四边形和梯形"
         },
         {
           "algorithm_version": "component-evidence-hybrid-v3",
@@ -13987,7 +13987,7 @@
             "external_smartedu_2026_math_primary_grade_4_up",
             "tes_05cd903cd607f507",
             "textbook-node:tcn_3a2e8aa94d0dceb0",
-            "textbook-unit:tcu_2b73fcd0406cfe63"
+            "textbook-unit:tcu_8924cda0fe91094c"
           ],
           "evidence_role": "direct_textbook",
           "evidence_spans": [
@@ -14025,8 +14025,8 @@
           "textbook_subject": "数学",
           "textbook_title": "数学4年级上册",
           "textbook_volume": "上册",
-          "unit_id": "tcu_2b73fcd0406cfe63",
-          "unit_title": "5 平行四边形和梯形"
+          "unit_id": "tcu_8924cda0fe91094c",
+          "unit_title": "五 平行四边形和梯形"
         },
         {
           "algorithm_version": "component-evidence-hybrid-v3",
@@ -14042,7 +14042,7 @@
             "external_smartedu_2026_math_primary_grade_4_up",
             "tes_02ec27b5a8b5bc4c",
             "textbook-node:tcn_125b4a202666ae17",
-            "textbook-unit:tcu_2b73fcd0406cfe63"
+            "textbook-unit:tcu_8924cda0fe91094c"
           ],
           "evidence_role": "direct_textbook",
           "evidence_spans": [
@@ -14080,8 +14080,8 @@
           "textbook_subject": "数学",
           "textbook_title": "数学4年级上册",
           "textbook_volume": "上册",
-          "unit_id": "tcu_2b73fcd0406cfe63",
-          "unit_title": "5 平行四边形和梯形"
+          "unit_id": "tcu_8924cda0fe91094c",
+          "unit_title": "五 平行四边形和梯形"
         },
         {
           "algorithm_version": "component-evidence-hybrid-v3",
@@ -14097,7 +14097,7 @@
             "external_smartedu_2026_math_primary_grade_4_up",
             "tes_e27d7be5be8dda69",
             "textbook-node:tcn_bd8171c94228deff",
-            "textbook-unit:tcu_2b73fcd0406cfe63"
+            "textbook-unit:tcu_8924cda0fe91094c"
           ],
           "evidence_role": "direct_textbook",
           "evidence_spans": [
@@ -14135,8 +14135,8 @@
           "textbook_subject": "数学",
           "textbook_title": "数学4年级上册",
           "textbook_volume": "上册",
-          "unit_id": "tcu_2b73fcd0406cfe63",
-          "unit_title": "5 平行四边形和梯形"
+          "unit_id": "tcu_8924cda0fe91094c",
+          "unit_title": "五 平行四边形和梯形"
         },
         {
           "algorithm_version": "component-evidence-hybrid-v3",
@@ -14152,7 +14152,7 @@
             "external_smartedu_2026_math_primary_grade_4_up",
             "tes_d055158d496f51b7",
             "textbook-node:tcn_39a1cd969568613e",
-            "textbook-unit:tcu_2b73fcd0406cfe63"
+            "textbook-unit:tcu_8924cda0fe91094c"
           ],
           "evidence_role": "direct_textbook",
           "evidence_spans": [
@@ -14190,8 +14190,8 @@
           "textbook_subject": "数学",
           "textbook_title": "数学4年级上册",
           "textbook_volume": "上册",
-          "unit_id": "tcu_2b73fcd0406cfe63",
-          "unit_title": "5 平行四边形和梯形"
+          "unit_id": "tcu_8924cda0fe91094c",
+          "unit_title": "五 平行四边形和梯形"
         },
         {
           "algorithm_version": "component-evidence-hybrid-v3",
@@ -14207,7 +14207,7 @@
             "external_smartedu_2026_math_primary_grade_4_up",
             "tes_2f85dac48680ebaf",
             "textbook-node:tcn_2bf2763512eea220",
-            "textbook-unit:tcu_2b73fcd0406cfe63"
+            "textbook-unit:tcu_8924cda0fe91094c"
           ],
           "evidence_role": "direct_textbook",
           "evidence_spans": [
@@ -14245,8 +14245,8 @@
           "textbook_subject": "数学",
           "textbook_title": "数学4年级上册",
           "textbook_volume": "上册",
-          "unit_id": "tcu_2b73fcd0406cfe63",
-          "unit_title": "5 平行四边形和梯形"
+          "unit_id": "tcu_8924cda0fe91094c",
+          "unit_title": "五 平行四边形和梯形"
         },
         {
           "algorithm_version": "component-evidence-hybrid-v3",
@@ -14262,7 +14262,7 @@
             "external_smartedu_2026_math_primary_grade_4_up",
             "tes_985e04443b90c583",
             "textbook-node:tcn_7ee888483ed506bf",
-            "textbook-unit:tcu_2b73fcd0406cfe63"
+            "textbook-unit:tcu_8924cda0fe91094c"
           ],
           "evidence_role": "direct_textbook",
           "evidence_spans": [
@@ -14300,8 +14300,8 @@
           "textbook_subject": "数学",
           "textbook_title": "数学4年级上册",
           "textbook_volume": "上册",
-          "unit_id": "tcu_2b73fcd0406cfe63",
-          "unit_title": "5 平行四边形和梯形"
+          "unit_id": "tcu_8924cda0fe91094c",
+          "unit_title": "五 平行四边形和梯形"
         },
         {
           "algorithm_version": "full-alignment-scope-preserve-v2",
@@ -15130,7 +15130,7 @@
             "external_smartedu_2026_math_primary_grade_4_up",
             "tes_fb3396b22e6983ef",
             "textbook-node:tcn_c97f13da4c1295ee",
-            "textbook-unit:tcu_fd268cb997039e88"
+            "textbook-unit:tcu_0e7eec2643c43008"
           ],
           "evidence_role": "direct_textbook",
           "evidence_spans": [
@@ -15173,8 +15173,8 @@
           "textbook_subject": "数学",
           "textbook_title": "数学4年级上册",
           "textbook_volume": "上册",
-          "unit_id": "tcu_fd268cb997039e88",
-          "unit_title": "1 大数的认识"
+          "unit_id": "tcu_0e7eec2643c43008",
+          "unit_title": "一 万以上数的认识"
         },
         {
           "algorithm_version": "component-evidence-hybrid-v3",
@@ -18708,7 +18708,7 @@
             "external_smartedu_2026_math_primary_grade_4_up",
             "tes_ce4abd24ed465ff2",
             "textbook-node:tcn_73a936fbce44fbb1",
-            "textbook-unit:tcu_2b73fcd0406cfe63"
+            "textbook-unit:tcu_07ea1c44be4fed34"
           ],
           "evidence_role": "direct_textbook",
           "evidence_spans": [
@@ -18746,8 +18746,8 @@
           "textbook_subject": "数学",
           "textbook_title": "数学4年级上册",
           "textbook_volume": "上册",
-          "unit_id": "tcu_2b73fcd0406cfe63",
-          "unit_title": "5 平行四边形和梯形"
+          "unit_id": "tcu_07ea1c44be4fed34",
+          "unit_title": "六 条形统计图"
         },
         {
           "algorithm_version": "full-alignment-scope-preserve-v2",
@@ -19439,7 +19439,7 @@
             "external_smartedu_2026_math_primary_grade_4_up",
             "tes_e36b1e61552d5e57",
             "textbook-node:tcn_5c4ac782ef2b6d5b",
-            "textbook-unit:tcu_2b73fcd0406cfe63"
+            "textbook-unit:tcu_07ea1c44be4fed34"
           ],
           "evidence_role": "direct_textbook",
           "evidence_spans": [
@@ -19477,8 +19477,8 @@
           "textbook_subject": "数学",
           "textbook_title": "数学4年级上册",
           "textbook_volume": "上册",
-          "unit_id": "tcu_2b73fcd0406cfe63",
-          "unit_title": "5 平行四边形和梯形"
+          "unit_id": "tcu_07ea1c44be4fed34",
+          "unit_title": "六 条形统计图"
         },
         {
           "algorithm_version": "component-evidence-hybrid-v3",
@@ -19494,7 +19494,7 @@
             "external_smartedu_2026_math_primary_grade_4_up",
             "tes_1869ad33d19fffc2",
             "textbook-node:tcn_ef66c38de94f4e0c",
-            "textbook-unit:tcu_2b73fcd0406cfe63"
+            "textbook-unit:tcu_07ea1c44be4fed34"
           ],
           "evidence_role": "direct_textbook",
           "evidence_spans": [
@@ -19532,8 +19532,8 @@
           "textbook_subject": "数学",
           "textbook_title": "数学4年级上册",
           "textbook_volume": "上册",
-          "unit_id": "tcu_2b73fcd0406cfe63",
-          "unit_title": "5 平行四边形和梯形"
+          "unit_id": "tcu_07ea1c44be4fed34",
+          "unit_title": "六 条形统计图"
         },
         {
           "algorithm_version": "component-evidence-hybrid-v3",
@@ -19549,7 +19549,7 @@
             "external_smartedu_2026_math_primary_grade_4_up",
             "tes_5c449f83822ae8f0",
             "textbook-node:tcn_64903d20030c44df",
-            "textbook-unit:tcu_2b73fcd0406cfe63"
+            "textbook-unit:tcu_07ea1c44be4fed34"
           ],
           "evidence_role": "direct_textbook",
           "evidence_spans": [
@@ -19587,8 +19587,8 @@
           "textbook_subject": "数学",
           "textbook_title": "数学4年级上册",
           "textbook_volume": "上册",
-          "unit_id": "tcu_2b73fcd0406cfe63",
-          "unit_title": "5 平行四边形和梯形"
+          "unit_id": "tcu_07ea1c44be4fed34",
+          "unit_title": "六 条形统计图"
         },
         {
           "algorithm_version": "component-evidence-hybrid-v3",
@@ -19604,7 +19604,7 @@
             "external_smartedu_2026_math_primary_grade_4_up",
             "tes_ee30fb85d3a00256",
             "textbook-node:tcn_08d579e76175a306",
-            "textbook-unit:tcu_2b73fcd0406cfe63"
+            "textbook-unit:tcu_07ea1c44be4fed34"
           ],
           "evidence_role": "direct_textbook",
           "evidence_spans": [
@@ -19642,8 +19642,8 @@
           "textbook_subject": "数学",
           "textbook_title": "数学4年级上册",
           "textbook_volume": "上册",
-          "unit_id": "tcu_2b73fcd0406cfe63",
-          "unit_title": "5 平行四边形和梯形"
+          "unit_id": "tcu_07ea1c44be4fed34",
+          "unit_title": "六 条形统计图"
         },
         {
           "algorithm_version": "component-evidence-hybrid-v3",
@@ -19659,7 +19659,7 @@
             "external_smartedu_2026_math_primary_grade_4_up",
             "tes_b1cb0dd4282a5dc6",
             "textbook-node:tcn_cabbc9caf5de9314",
-            "textbook-unit:tcu_2b73fcd0406cfe63"
+            "textbook-unit:tcu_07ea1c44be4fed34"
           ],
           "evidence_role": "direct_textbook",
           "evidence_spans": [
@@ -19697,8 +19697,8 @@
           "textbook_subject": "数学",
           "textbook_title": "数学4年级上册",
           "textbook_volume": "上册",
-          "unit_id": "tcu_2b73fcd0406cfe63",
-          "unit_title": "5 平行四边形和梯形"
+          "unit_id": "tcu_07ea1c44be4fed34",
+          "unit_title": "六 条形统计图"
         },
         {
           "algorithm_version": "component-evidence-hybrid-v3",
@@ -19714,7 +19714,7 @@
             "external_smartedu_2026_math_primary_grade_4_up",
             "tes_bebd3fe65c1e1f50",
             "textbook-node:tcn_1b3c95e9ea1d0017",
-            "textbook-unit:tcu_2b73fcd0406cfe63"
+            "textbook-unit:tcu_07ea1c44be4fed34"
           ],
           "evidence_role": "direct_textbook",
           "evidence_spans": [
@@ -19752,8 +19752,8 @@
           "textbook_subject": "数学",
           "textbook_title": "数学4年级上册",
           "textbook_volume": "上册",
-          "unit_id": "tcu_2b73fcd0406cfe63",
-          "unit_title": "5 平行四边形和梯形"
+          "unit_id": "tcu_07ea1c44be4fed34",
+          "unit_title": "六 条形统计图"
         },
         {
           "algorithm_version": "full-alignment-scope-preserve-v2",

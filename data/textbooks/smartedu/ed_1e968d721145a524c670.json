@@ -4,9 +4,9 @@
  "platform_textbook_id": "fc56445a-c517-4dfb-8cba-7b299fa032b7",
  "platform_title": "初中数学人教版九年级下册",
  "match": {
-  "title_hits": 24,
+  "title_hits": 33,
   "method": "book_text",
-  "score": 0.29,
+  "score": 0.7,
   "candidates": 1
  },
  "tree": [
@@ -549,7 +549,7 @@
     "64281037-5fdd-3372-b88f-c8f35e602957",
     "c310a572-83bb-39da-8c48-fcc2f0d3cac5"
    ],
-   "pdf_page": null,
+   "pdf_page": 30,
    "materials": [
     "视频课程",
     "学习任务单",
@@ -565,7 +565,7 @@
     "3a40d3ab-45e7-37b0-b360-dba6362fdc82",
     "777dd92d-9a64-3ce5-9412-bcf21c4425aa"
    ],
-   "pdf_page": null,
+   "pdf_page": 35,
    "materials": [
     "视频课程",
     "学习任务单",
@@ -581,7 +581,7 @@
     "3a40d3ab-45e7-37b0-b360-dba6362fdc82",
     "702d5166-7f2d-3f74-b87c-c74676415980"
    ],
-   "pdf_page": null,
+   "pdf_page": 43,
    "materials": [
     "视频课程",
     "学习任务单",
@@ -645,7 +645,7 @@
     "a3dbcab3-d449-3253-af45-1f83ba30dbb3",
     "1e7ede54-c3d2-3442-936c-2286d5c446ad"
    ],
-   "pdf_page": null,
+   "pdf_page": 59,
    "materials": [
     "视频课程",
     "学习任务单",
@@ -725,7 +725,7 @@
     "b0ae2950-1e27-386e-97f3-b8915c2185a2",
     "2f0b0ef5-fa87-3271-a8b6-8474b88d2eb8"
    ],
-   "pdf_page": null,
+   "pdf_page": 78,
    "materials": [
     "视频课程",
     "学习任务单",
@@ -741,7 +741,7 @@
     "b0ae2950-1e27-386e-97f3-b8915c2185a2",
     "53f452e2-9fec-33bc-90cb-b35b8da0d8b4"
    ],
-   "pdf_page": null,
+   "pdf_page": 80,
    "materials": [
     "视频课程",
     "学习任务单",
@@ -789,7 +789,7 @@
     "cc1f8f4c-d4e9-3eb0-bcc5-71fa57dd2339",
     "0fd2fc59-1155-31e7-aa07-d4c253829b63"
    ],
-   "pdf_page": null,
+   "pdf_page": 92,
    "materials": [
     "视频课程",
     "课件",
@@ -982,7 +982,7 @@
     "c9b297cc-c199-3725-b0a4-6927d99d5a07",
     "7d4422d0-46fc-3a55-bbfd-7f570e0144ba"
    ],
-   "pdf_page": null,
+   "pdf_page": 84,
    "materials": [
     "视频课程",
     "课件",
@@ -998,7 +998,7 @@
     "c9b297cc-c199-3725-b0a4-6927d99d5a07",
     "48c35328-7989-3f0d-8fdc-cec6581038b1"
    ],
-   "pdf_page": null,
+   "pdf_page": 29,
    "materials": [
     "视频课程",
     "课件",
@@ -1062,7 +1062,7 @@
     "c9b297cc-c199-3725-b0a4-6927d99d5a07",
     "b15e6b53-d796-3a95-99ca-c10fe12fcaba"
    ],
-   "pdf_page": null,
+   "pdf_page": 66,
    "materials": [
     "视频课程",
     "课件",
@@ -1462,7 +1462,7 @@
     "70b47e2d-6348-3883-9bfa-2a99367d4688",
     "794d6c4d-2b75-30f3-a0ad-a9a6fc523a07"
    ],
-   "pdf_page": null,
+   "pdf_page": 25,
    "materials": [
     "课件",
     "教学设计",
@@ -1571,7 +1571,7 @@
     "64281037-5fdd-3372-b88f-c8f35e602957",
     "2c72f98e-04f6-3f2f-aac4-e1947081bef9"
    ],
-   "pdf_page": null,
+   "pdf_page": 25,
    "materials": [
     "学习任务单"
    ],
@@ -1584,7 +1584,7 @@
     "384d376d-438d-3720-bfb6-b20e240576db",
     "c622482b-72df-3562-aa26-f6f367eddbde"
    ],
-   "pdf_page": null,
+   "pdf_page": 111,
    "materials": [
     "学习任务单"
    ],
@@ -1597,7 +1597,7 @@
     "981b48b8-e385-3da6-8c1e-3b333af18e1f",
     "ede35f64-9f6d-360e-ac21-9a653aa51961"
    ],
-   "pdf_page": null,
+   "pdf_page": 25,
    "materials": [
     "学习任务单"
    ],
@@ -1634,7 +1634,7 @@
     "cc1f8f4c-d4e9-3eb0-bcc5-71fa57dd2339",
     "0fd2fc59-1155-31e7-aa07-d4c253829b63"
    ],
-   "pdf_page": null,
+   "pdf_page": 92,
    "materials": [],
    "hours": 1
   },
@@ -1787,7 +1787,7 @@
     "384d376d-438d-3720-bfb6-b20e240576db",
     "62f7a20f-f1a8-340d-a14f-579b783097bf"
    ],
-   "pdf_page": null,
+   "pdf_page": 25,
    "materials": [],
    "hours": 1
   },
@@ -2291,7 +2291,7 @@
     "64281037-5fdd-3372-b88f-c8f35e602957",
     "c310a572-83bb-39da-8c48-fcc2f0d3cac5"
    ],
-   "pdf_page": null,
+   "pdf_page": 30,
    "materials": [
     "课件"
    ],

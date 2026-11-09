@@ -4,9 +4,9 @@
  "platform_textbook_id": "3abca42e-732a-4897-88db-6944190a5bb2",
  "platform_title": "小学音乐人音版（主编：吴斌）五年级上册",
  "match": {
-  "title_hits": 0,
+  "title_hits": 2,
   "method": "book_text",
-  "score": 0.2,
+  "score": 0.56,
   "candidates": 5
  },
  "tree": [
@@ -233,7 +233,7 @@
     "5a3be785-b9ce-39fa-a836-8526c257e1bc",
     "1e61c2f7-db6b-36ca-b64d-f748f4a38ef7"
    ],
-   "pdf_page": null,
+   "pdf_page": 14,
    "materials": [
     "视频课程",
     "课件",
@@ -284,7 +284,7 @@
     "752f1087-21f1-3dfc-9b35-565285ce7a98",
     "b757391b-9212-3743-a8e1-af052e835e06"
    ],
-   "pdf_page": null,
+   "pdf_page": 15,
    "materials": [
     "视频课程",
     "课件",
@@ -301,7 +301,7 @@
     "752f1087-21f1-3dfc-9b35-565285ce7a98",
     "0eb55ccd-e385-3189-a513-4e8fa2b84447"
    ],
-   "pdf_page": null,
+   "pdf_page": 22,
    "materials": [
     "视频课程",
     "课件",
@@ -318,7 +318,7 @@
     "752f1087-21f1-3dfc-9b35-565285ce7a98",
     "72763363-a2ce-3d8b-a7b2-6aeb53aa2b5b"
    ],
-   "pdf_page": null,
+   "pdf_page": 17,
    "materials": [
     "视频课程",
     "课件",
@@ -335,7 +335,7 @@
     "752f1087-21f1-3dfc-9b35-565285ce7a98",
     "7c45e06b-8047-3d78-91e7-d98b96aa3806"
    ],
-   "pdf_page": null,
+   "pdf_page": 62,
    "materials": [
     "视频课程",
     "课件",
@@ -403,7 +403,7 @@
     "164a855e-14a7-3e20-905b-be39b1d1c2ad",
     "14681994-0351-3487-a2a6-80a040404547"
    ],
-   "pdf_page": null,
+   "pdf_page": 25,
    "materials": [
     "视频课程",
     "课件",
@@ -420,7 +420,7 @@
     "164a855e-14a7-3e20-905b-be39b1d1c2ad",
     "1629d190-34d2-33b7-b776-934703e62701"
    ],
-   "pdf_page": null,
+   "pdf_page": 27,
    "materials": [
     "视频课程",
     "课件",
@@ -471,7 +471,7 @@
     "595ae7e3-1538-3d6e-96a5-a325d85e4439",
     "3a062d9d-fd5f-3843-9c26-8a93844ab8b0"
    ],
-   "pdf_page": null,
+   "pdf_page": 72,
    "materials": [
     "视频课程",
     "课件",
@@ -488,7 +488,7 @@
     "595ae7e3-1538-3d6e-96a5-a325d85e4439",
     "12493c0c-2e7e-3c5b-93b5-cf1af5781a9c"
    ],
-   "pdf_page": null,
+   "pdf_page": 34,
    "materials": [
     "视频课程",
     "课件",
@@ -556,7 +556,7 @@
     "b1044fa5-a0d0-34fd-a31a-16e823d9b3e7",
     "d39323c1-d328-3010-8f1b-5e44a1f2c6a7"
    ],
-   "pdf_page": null,
+   "pdf_page": 43,
    "materials": [
     "视频课程",
     "课件",
@@ -658,7 +658,7 @@
     "7a2e33ba-dff7-3e0f-a54c-4b3cbe4f77f5",
     "a97af4ed-b59d-3d3f-a08a-efa8fb8e0e5d"
    ],
-   "pdf_page": null,
+   "pdf_page": 56,
    "materials": [
     "视频课程",
     "课件",
@@ -692,7 +692,7 @@
     "b1044fa5-a0d0-34fd-a31a-16e823d9b3e7",
     "3bce743d-cf45-3e85-b1f8-09edca4863c5"
    ],
-   "pdf_page": null,
+   "pdf_page": 63,
    "materials": [
     "视频课程",
     "课件",

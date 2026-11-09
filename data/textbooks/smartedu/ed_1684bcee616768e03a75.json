@@ -6,7 +6,7 @@
  "match": {
   "title_hits": 9,
   "method": "book_text",
-  "score": 0.38,
+  "score": 0.63,
   "candidates": 2
  },
  "tree": [

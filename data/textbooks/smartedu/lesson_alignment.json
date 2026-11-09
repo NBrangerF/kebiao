@@ -13370,6 +13370,139 @@
       ]
      ],
      "d": 0
+    },
+    "dad5f7ac-a512-94ff-e2cd-ec130833827f": {
+     "m": [
+      [
+       "MA-S3-GG-01.6",
+       "T",
+       "从上面看这3个组合体,看到的图形相同吗?从左面和前面看呢?",
+       "book",
+       7
+      ]
+     ],
+     "d": 0
+    },
+    "3bf899e6-3ba1-f9b2-be2e-bb09651bd965": {
+     "m": [
+      [
+       "MA-S3-GG-01.6",
+       "T",
+       "根据从不同角度观察的结果,可以还原简单组合体",
+       "book",
+       114
+      ],
+      [
+       "MA-S3-GG-02.4",
+       "T",
+       "画出图1向右平移4格后的图形。",
+       "book",
+       116
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_d9da72ee3a16708c": {
+     "m": [
+      [
+       "MA-S3-NA-01.5",
+       "T",
+       "先按照整数乘法算出积,再点小数点",
+       "book",
+       14
+      ],
+      [
+       "MA-S3-NA-01.4",
+       "P",
+       "买3个需要多少钱?",
+       "book",
+       12
+      ],
+      [
+       "MA-S3-NA-02.2",
+       "P",
+       "得数保留一位小数。",
+       "book",
+       15
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_177603806413d8df": {
+     "m": [
+      [
+       "MA-S3-NA-01.5",
+       "T",
+       "商的小数点要和被除数的小数点对齐",
+       "book",
+       30
+      ],
+      [
+       "MA-S3-NA-01.3",
+       "T",
+       "一个数的小数部分,从某一位起,一个数字或者几个数字依次不断重复出现,这样的小数叫作循环小数。",
+       "book",
+       32
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_94c5dfd4ebcd8d84": {
+     "m": [
+      [
+       "MA-S3-NA-02.3",
+       "T",
+       "爸爸的年龄 = 小红的年龄 +25",
+       "book",
+       60
+      ],
+      [
+       "MA-S3-NA-02.1",
+       "P",
+       "a=b−25=57−25=32",
+       "book",
+       61
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_a44a14510daf627e": {
+     "m": [
+      [
+       "MA-S3-SP-02.1",
+       "T",
+       "掷一枚硬币,虽然它一定会落下来,我们却无法预测它落下后是正面朝上还是反面朝上, 这两种情况都有可能发生。",
+       "book",
+       103
+      ],
+      [
+       "MA-S3-SP-02.2",
+       "P",
+       "根据试验数据进行推测",
+       "book",
+       106
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_3b1fe896b58e7f77": {
+     "m": [
+      [
+       "MA-S3-GG-01.2",
+       "T",
+       "平行四边形的面积计算公式可以写成: S=ah",
+       "book",
+       79
+      ],
+      [
+       "MA-S3-GG-01.5",
+       "P",
+       "1公顷 =10000平方米",
+       "book",
+       80
+      ]
+     ],
+     "d": 0
     }
    }
   },
@@ -16007,6 +16140,1957 @@
        "Recycle 2",
        "title",
        null
+      ]
+     ],
+     "d": 0
+    },
+    "5e7b70d5-8b90-b4e2-3de4-ef4dce5b755d": {
+     "m": [
+      [
+       "EN-S1-TH-01.11",
+       "P",
+       "How do we make friends?",
+       "book",
+       7
+      ]
+     ],
+     "d": 0
+    },
+    "c145317f-052f-21b3-6be1-a1c150bdf4e6": {
+     "m": [
+      [
+       "EN-S1-LK-01.15",
+       "T",
+       "Hello! What's your name?",
+       "book",
+       8
+      ],
+      [
+       "EN-S1-LS-01.11",
+       "P",
+       "Nice to meet you.",
+       "book",
+       8
+      ]
+     ],
+     "d": 0
+    },
+    "2c69ac99-a674-10e4-6ff3-87510a34298f": {
+     "m": [
+      [
+       "EN-S1-LS-01.9",
+       "T",
+       "Nice to meet you!",
+       "book",
+       8
+      ]
+     ],
+     "d": 0
+    },
+    "01b09a60-be5f-fad6-5097-f771311661fc": {
+     "m": [
+      [
+       "EN-S1-LK-01.15",
+       "T",
+       "Hello! My name",
+       "book",
+       9
+      ]
+     ],
+     "d": 0
+    },
+    "628092a4-c250-ec80-f9e6-923d4a74b63e": {
+     "m": [
+      [
+       "EN-S1-LS-01.1",
+       "T",
+       "Wave your hand.",
+       "book",
+       10
+      ],
+      [
+       "EN-S1-LK-01.6",
+       "P",
+       "eye ear mouth hand arm",
+       "book",
+       10
+      ]
+     ],
+     "d": 0
+    },
+    "6000b559-9562-9e73-d1f5-1acc23d37236": {
+     "m": [
+      [
+       "EN-S1-LC-01.2",
+       "T",
+       "Listen, repeat and chant.",
+       "title",
+       null
+      ]
+     ],
+     "d": 0
+    },
+    "ac742c26-f48e-9c59-abb7-bec86acd0379": {
+     "m": [
+      [
+       "EN-S1-LC-01.3",
+       "T",
+       "Listen and chant Am I a good friend?",
+       "book",
+       13
+      ],
+      [
+       "EN-S1-LS-01.8",
+       "T",
+       "I listen and say \"Hi!\"",
+       "book",
+       13
+      ]
+     ],
+     "d": 0
+    },
+    "c3981f12-2b64-6636-e874-976f7550982a": {
+     "m": [
+      [
+       "EN-S1-LS-01.10",
+       "T",
+       "I say \"Hi!\"I say \"Hi!\"",
+       "book",
+       14
+      ],
+      [
+       "EN-S1-LK-01.6",
+       "P",
+       "Circle the words you read in the poster.",
+       "book",
+       14
+      ]
+     ],
+     "d": 0
+    },
+    "b7bc0eca-cead-6617-7197-76f50b728d31": {
+     "m": [
+      [
+       "EN-S1-CA-02.2",
+       "T",
+       "How can John make friends at school?",
+       "book",
+       15
+      ],
+      [
+       "EN-S1-LK-01.6",
+       "T",
+       "My mouth!",
+       "book",
+       18
+      ]
+     ],
+     "d": 0
+    },
+    "abb60db7-7aca-b9ce-2f10-4f8bfa44c69e": {
+     "m": [
+      [
+       "EN-S1-LS-01.8",
+       "T",
+       "I say \"Hi!\"",
+       "book",
+       15
+      ],
+      [
+       "EN-S1-TH-01.11",
+       "P",
+       "Friends listen. Friends help and share",
+       "book",
+       16
+      ],
+      [
+       "EN-S1-LK-01.1",
+       "P",
+       "I can read, write and say Aa, Bb, Cc and Dd.",
+       "book",
+       16
+      ]
+     ],
+     "d": 0
+    },
+    "3cfb6334-8e84-4b74-f1e6-c6a84c9705eb": {
+     "m": [
+      [
+       "EN-S1-LS-01.11",
+       "T",
+       "Who is in your family?",
+       "book",
+       20
+      ],
+      [
+       "EN-S1-LS-01.9",
+       "P",
+       "We are a family, A happy family, We're a family",
+       "book",
+       20
+      ]
+     ],
+     "d": 0
+    },
+    "b398e31a-af80-d66c-edc0-8513fde2aa97": {
+     "m": [
+      [
+       "EN-S1-LS-01.9",
+       "T",
+       "Listen and chant",
+       "title",
+       null
+      ]
+     ],
+     "d": 0
+    },
+    "df90c458-068d-943d-7767-81198bbbb3ff": {
+     "m": [
+      [
+       "EN-S1-LS-01.9",
+       "T",
+       "My father, my mother, My sister and me!",
+       "book",
+       20
+      ]
+     ],
+     "d": 0
+    },
+    "c4c949fb-1971-f1a1-cd91-13df7834392e": {
+     "m": [
+      [
+       "EN-S1-LS-01.11",
+       "T",
+       "This is my mum.",
+       "book",
+       22
+      ],
+      [
+       "EN-S1-TX-01.1",
+       "P",
+       "Listen, sing and play",
+       "book",
+       21
+      ],
+      [
+       "EN-S1-LK-01.6",
+       "P",
+       "Look! This is my family.",
+       "book",
+       22
+      ]
+     ],
+     "d": 0
+    },
+    "f7f5cde6-56e9-85f2-5ea8-16a2835839bc": {
+     "m": [
+      [
+       "EN-S1-LS-01.11",
+       "T",
+       "This is my mum.",
+       "book",
+       22
+      ],
+      [
+       "EN-S1-TX-01.1",
+       "P",
+       "Listen, sing and play",
+       "book",
+       21
+      ],
+      [
+       "EN-S1-LK-01.6",
+       "P",
+       "Look! This is my family.",
+       "book",
+       22
+      ]
+     ],
+     "d": 0
+    },
+    "652f1983-d977-1e30-2fff-f28a0c32e3b3": {
+     "m": [
+      [
+       "EN-S1-LS-01.11",
+       "T",
+       "This is my mum.",
+       "book",
+       22
+      ],
+      [
+       "EN-S1-TX-01.1",
+       "P",
+       "Listen and chant",
+       "book",
+       22
+      ],
+      [
+       "EN-S1-LK-01.6",
+       "P",
+       "Look! This is my family.",
+       "book",
+       22
+      ]
+     ],
+     "d": 0
+    },
+    "c75d2772-c8cb-90fd-c94c-02fe94b08549": {
+     "m": [
+      [
+       "EN-S1-LC-01.3",
+       "T",
+       "Listen, sing and play",
+       "book",
+       21
+      ],
+      [
+       "EN-S1-LS-01.11",
+       "P",
+       "This is my family.",
+       "book",
+       22
+      ]
+     ],
+     "d": 0
+    },
+    "48ce2e2d-7e1c-4600-fa91-4c597b8acc4b": {
+     "m": [
+      [
+       "EN-S1-LK-01.2",
+       "T",
+       "Listen and circle the first sound.",
+       "title",
+       null
+      ],
+      [
+       "EN-S1-LK-01.6",
+       "P",
+       "This is my family.",
+       "book",
+       22
+      ]
+     ],
+     "d": 0
+    },
+    "48af6647-ada6-bc3f-4209-a09f1e8ad681": {
+     "m": [
+      [
+       "EN-S1-LK-01.3",
+       "T",
+       "Listen and circle the first sound.",
+       "book",
+       23
+      ],
+      [
+       "EN-S1-LK-01.6",
+       "P",
+       "egg nest fish beef",
+       "book",
+       23
+      ]
+     ],
+     "d": 0
+    },
+    "0cd7c609-0fca-10f4-55c0-37e6bbb642c6": {
+     "m": [
+      [
+       "EN-S1-LS-01.11",
+       "T",
+       "I can introduce my family to others.",
+       "book",
+       28
+      ],
+      [
+       "EN-S1-TX-01.4",
+       "T",
+       "Make your family tree.",
+       "book",
+       28
+      ],
+      [
+       "EN-S1-LK-01.6",
+       "P",
+       "Complete the family tree.",
+       "book",
+       27
+      ],
+      [
+       "EN-S1-TH-01.5",
+       "P",
+       "This is my family.",
+       "book",
+       28
+      ]
+     ],
+     "d": 1,
+     "r": [
+      [
+       "EN-S1-LK-01.18",
+       "unknown_point",
+       "I can read, write and say Ee, Ff, Gg and Hh."
+      ]
+     ]
+    },
+    "5d0ac2c3-ab0c-bcf6-03dc-6bbce2d8899f": {
+     "m": [
+      [
+       "EN-S1-LS-01.11",
+       "T",
+       "I can introduce my family to others.",
+       "book",
+       28
+      ],
+      [
+       "EN-S1-TX-01.4",
+       "T",
+       "Make your family tree.",
+       "book",
+       28
+      ],
+      [
+       "EN-S1-LK-01.6",
+       "P",
+       "Complete the family tree.",
+       "book",
+       27
+      ],
+      [
+       "EN-S1-TH-01.5",
+       "P",
+       "This is my family.",
+       "book",
+       28
+      ]
+     ],
+     "d": 1,
+     "r": [
+      [
+       "EN-S1-LK-01.18",
+       "unknown_point",
+       "I can read, write and say Ee, Ff, Gg and Hh."
+      ]
+     ]
+    },
+    "afa13eb5-2bf1-da6e-5167-26c566f5f27a": {
+     "m": [
+      [
+       "EN-S1-LS-01.11",
+       "T",
+       "I can introduce my family to others.",
+       "book",
+       28
+      ],
+      [
+       "EN-S1-TX-01.4",
+       "T",
+       "Make your family tree.",
+       "book",
+       28
+      ],
+      [
+       "EN-S1-LK-01.6",
+       "P",
+       "Complete the family tree.",
+       "book",
+       27
+      ],
+      [
+       "EN-S1-TH-01.5",
+       "P",
+       "This is my family.",
+       "book",
+       28
+      ]
+     ],
+     "d": 1,
+     "r": [
+      [
+       "EN-S1-LK-01.18",
+       "unknown_point",
+       "I can read, write and say Ee, Ff, Gg and Hh."
+      ]
+     ]
+    },
+    "65a03c73-987b-f446-ae42-771cc2e862fe": {
+     "m": [
+      [
+       "EN-S1-LS-01.11",
+       "T",
+       "I can introduce my family to others.",
+       "book",
+       28
+      ],
+      [
+       "EN-S1-TX-01.4",
+       "T",
+       "Share your family tree in class.",
+       "book",
+       28
+      ],
+      [
+       "EN-S1-LK-01.6",
+       "P",
+       "Complete the family tree.",
+       "book",
+       27
+      ],
+      [
+       "EN-S1-TH-01.5",
+       "P",
+       "This is my family.",
+       "book",
+       28
+      ]
+     ],
+     "d": 1,
+     "r": [
+      [
+       "EN-S1-LK-01.18",
+       "unknown_point",
+       "I can read, write and say Ee, Ff, Gg and Hh."
+      ]
+     ]
+    },
+    "63851263-4f69-9b44-f61b-cf4848f92d08": {
+     "m": [
+      [
+       "EN-S1-LS-01.11",
+       "T",
+       "Do you have a pet?",
+       "book",
+       33
+      ],
+      [
+       "EN-S1-LK-01.6",
+       "P",
+       "I like fish.",
+       "book",
+       34
+      ],
+      [
+       "EN-S1-LS-01.15",
+       "P",
+       "I like my dog.",
+       "book",
+       34
+      ]
+     ],
+     "d": 0
+    },
+    "56bc3733-68e0-d2e7-24aa-f8d3133f3024": {
+     "m": [
+      [
+       "EN-S1-LS-01.1",
+       "T",
+       "Run, run, run like a dog.",
+       "book",
+       34
+      ],
+      [
+       "EN-S1-LK-01.6",
+       "P",
+       "I like cats.",
+       "book",
+       34
+      ],
+      [
+       "EN-S1-LS-01.15",
+       "P",
+       "Swim, swim, swim like a fish.",
+       "book",
+       34
+      ]
+     ],
+     "d": 0
+    },
+    "c044d3f1-aaf6-418b-3055-e13c8d3658c5": {
+     "m": [
+      [
+       "EN-S1-LC-01.2",
+       "T",
+       "Run, run, run like a dog.",
+       "book",
+       34
+      ],
+      [
+       "EN-S1-LK-01.6",
+       "P",
+       "I like fish.",
+       "book",
+       34
+      ]
+     ],
+     "d": 0
+    },
+    "d40d5d4c-d55d-0e24-4439-ca4913199157": {
+     "m": [
+      [
+       "EN-S1-LS-01.12",
+       "T",
+       "I like cats.",
+       "book",
+       34
+      ],
+      [
+       "EN-S1-LK-01.15",
+       "P",
+       "Good morning, Mike!",
+       "book",
+       33
+      ]
+     ],
+     "d": 0
+    },
+    "d18794b7-d57c-6316-c24d-5be733ebeef9": {
+     "m": [
+      [
+       "EN-S1-LK-01.2",
+       "T",
+       "Listen and circle the first sound.",
+       "book",
+       35
+      ],
+      [
+       "EN-S1-LK-01.7",
+       "P",
+       "Listen, repeat and chant.",
+       "book",
+       35
+      ]
+     ],
+     "d": 0
+    },
+    "efb04a62-cb55-101d-98a1-5e93029e0b26": {
+     "m": [
+      [
+       "EN-S1-LS-01.15",
+       "T",
+       "The elephant is big!",
+       "book",
+       38
+      ],
+      [
+       "EN-S1-LK-01.9",
+       "P",
+       "What's this? It's an elephant.",
+       "book",
+       36
+      ],
+      [
+       "EN-S1-TQ-01.1",
+       "P",
+       "group all of the animals with big, small, tall or fast",
+       "book",
+       38
+      ]
+     ],
+     "d": 0
+    },
+    "0aa402cc-3588-0618-2616-be8e1903fa57": {
+     "m": [
+      [
+       "EN-S1-LK-01.7",
+       "T",
+       "What's this? It's an elephant.",
+       "book",
+       36
+      ],
+      [
+       "EN-S1-LS-01.15",
+       "P",
+       "It's a panda. It's a monkey.",
+       "book",
+       37
+      ]
+     ],
+     "d": 0
+    },
+    "1e5db276-21f8-7d0d-894d-58b83552b043": {
+     "m": [
+      [
+       "EN-S1-LK-01.9",
+       "T",
+       "The giraffe is tall!",
+       "book",
+       38
+      ],
+      [
+       "EN-S1-LK-01.6",
+       "P",
+       "Circle the animals you see in the pictures.",
+       "book",
+       38
+      ]
+     ],
+     "d": 0
+    },
+    "ed97368f-16ca-af9e-a3f0-8f926c72f942": {
+     "m": [
+      [
+       "EN-S1-LS-01.15",
+       "T",
+       "This is my book. This is a monkey.",
+       "book",
+       40
+      ],
+      [
+       "EN-S1-TQ-02.1",
+       "P",
+       "Think and group them.",
+       "book",
+       39
+      ]
+     ],
+     "d": 0
+    },
+    "6568399a-7f29-62d5-4271-7e0579bbca86": {
+     "m": [
+      [
+       "EN-S1-LS-01.15",
+       "T",
+       "This is my book. This is a monkey.",
+       "book",
+       40
+      ],
+      [
+       "EN-S1-LK-01.6",
+       "P",
+       "Think and group them.",
+       "book",
+       39
+      ],
+      [
+       "EN-S1-LS-01.18",
+       "P",
+       "I can read, write and say Ii, Jj, Kk and Ll.",
+       "book",
+       40
+      ],
+      [
+       "EN-S1-LS-01.16",
+       "P",
+       "Make your animal picture book.",
+       "book",
+       40
+      ]
+     ],
+     "d": 0
+    },
+    "602d97f4-c6e9-f267-9ff9-2cea1a4e7578": {
+     "m": [
+      [
+       "EN-S1-LK-01.1",
+       "T",
+       "I can read, write and say Ii, Jj, Kk and Ll.",
+       "book",
+       40
+      ],
+      [
+       "EN-S1-LS-01.15",
+       "P",
+       "I can tell others about my pets.",
+       "book",
+       40
+      ],
+      [
+       "EN-S1-LK-01.6",
+       "P",
+       "Think and group them.",
+       "book",
+       39
+      ]
+     ],
+     "d": 0
+    },
+    "c93b83e7-7e7b-5d88-1828-01501d0e5173": {
+     "m": [
+      [
+       "EN-S1-LS-01.12",
+       "T",
+       "talking about fruit we like",
+       "book",
+       43
+      ],
+      [
+       "EN-S1-LK-01.6",
+       "T",
+       "Fruit; things to help",
+       "book",
+       43
+      ]
+     ],
+     "d": 0
+    },
+    "7c70c5ab-2f00-03b4-6cb2-b34cb3c378da": {
+     "m": [
+      [
+       "EN-S1-LC-01.3",
+       "T",
+       "I like fruit. I like fruit.",
+       "book",
+       44
+      ]
+     ],
+     "d": 0
+    },
+    "fa07df5e-0e15-4b4b-98bb-b5e5f4a98e0a": {
+     "m": [
+      [
+       "EN-S1-LS-01.9",
+       "T",
+       "Let’s sing Plants and us",
+       "book",
+       44
+      ]
+     ],
+     "d": 0
+    },
+    "a573f49c-ab17-8e56-8695-be096848ad2c": {
+     "m": [
+      [
+       "EN-S1-LS-01.12",
+       "T",
+       "Do you like apples? Yes, I do.",
+       "book",
+       45
+      ],
+      [
+       "EN-S1-LC-01.4",
+       "P",
+       "I like the fresh air.",
+       "book",
+       45
+      ]
+     ],
+     "d": 0
+    },
+    "a6d30e58-5853-7fc5-214f-fd368db56e53": {
+     "m": [
+      [
+       "EN-S1-TX-01.1",
+       "T",
+       "Apples and oranges make you strong.",
+       "book",
+       46
+      ],
+      [
+       "EN-S1-LC-01.3",
+       "P",
+       "Listen and chant",
+       "book",
+       46
+      ]
+     ],
+     "d": 0
+    },
+    "a065e1d1-14a7-a2c3-b64b-5fc2ca252569": {
+     "m": [
+      [
+       "EN-S1-LC-02.1",
+       "T",
+       "Listen, repeat and chant.",
+       "title",
+       null
+      ],
+      [
+       "EN-S1-LK-01.4",
+       "P",
+       "Grapes are small. Bananas are long.",
+       "book",
+       46
+      ]
+     ],
+     "d": 0
+    },
+    "1672f8c8-5df2-816b-5587-1dd65914b8e3": {
+     "m": [
+      [
+       "EN-S1-LS-01.12",
+       "T",
+       "Do you like apples? Yes, I do.",
+       "book",
+       45
+      ],
+      [
+       "EN-S1-LK-01.6",
+       "P",
+       "bananas grapes oranges apples",
+       "book",
+       46
+      ],
+      [
+       "EN-S1-TH-01.19",
+       "P",
+       "Trees grow and give us things:",
+       "book",
+       46
+      ]
+     ],
+     "d": 0
+    },
+    "0a89aaa0-446a-35d3-7841-940f673a64fb": {
+     "m": [
+      [
+       "EN-S1-LK-01.2",
+       "T",
+       "Listen and circle the first sound.",
+       "book",
+       47
+      ],
+      [
+       "EN-S1-LK-01.1",
+       "P",
+       "map mum new fan orange fox pen cup",
+       "book",
+       47
+      ],
+      [
+       "EN-S1-LC-01.3",
+       "P",
+       "Listen, repeat and chant.",
+       "book",
+       47
+      ]
+     ],
+     "d": 0
+    },
+    "0a718795-0d48-efea-3eaa-236428237076": {
+     "m": [
+      [
+       "EN-S1-TH-01.19",
+       "T",
+       "Plants need air, water and sun.",
+       "book",
+       49
+      ],
+      [
+       "EN-S1-LS-01.16",
+       "P",
+       "Then talk about a plant.",
+       "book",
+       50
+      ],
+      [
+       "EN-S1-LK-01.6",
+       "P",
+       "air sun water flowers grass Plants need air, water and sun.",
+       "book",
+       50
+      ]
+     ],
+     "d": 0
+    },
+    "b7bb9906-c4c7-e0ba-6ec8-6d85b4c1f790": {
+     "m": [
+      [
+       "EN-S1-LS-01.10",
+       "T",
+       "Listen and chant",
+       "book",
+       49
+      ],
+      [
+       "EN-S1-LK-01.6",
+       "T",
+       "Air, water and sun.",
+       "book",
+       49
+      ]
+     ],
+     "d": 0
+    },
+    "2629cd25-c8cc-8b38-364b-f9d8c92ecfb3": {
+     "m": [
+      [
+       "EN-S1-LS-01.16",
+       "T",
+       "Plants need air, water and sun.",
+       "book",
+       49
+      ]
+     ],
+     "d": 0
+    },
+    "c4196674-3e61-30c9-8dc7-e2d9813b4bc8": {
+     "m": [
+      [
+       "EN-S1-LS-01.16",
+       "T",
+       "This is my garden.",
+       "book",
+       52
+      ],
+      [
+       "EN-S1-LA-03.1",
+       "P",
+       "Talk in your group.",
+       "book",
+       51
+      ]
+     ],
+     "d": 0
+    },
+    "f3db6084-4e95-90e8-79ef-d6c278023d3c": {
+     "m": [
+      [
+       "EN-S1-LS-01.16",
+       "T",
+       "The apple trees need air, water and sun.",
+       "book",
+       52
+      ],
+      [
+       "EN-S1-LC-03.1",
+       "P",
+       "I can ask about fruit and say the fruit I like.",
+       "book",
+       52
+      ],
+      [
+       "EN-S1-TX-01.3",
+       "P",
+       "I am an apple tree.",
+       "book",
+       53
+      ]
+     ],
+     "d": 1,
+     "r": [
+      [
+       "EN-S1-LK-01.18",
+       "unknown_point",
+       "I can read, write and say Mm, Nn, Oo and Pp."
+      ]
+     ]
+    },
+    "2c1fabdc-17e5-7a80-8fd4-df1979ac0da5": {
+     "m": [
+      [
+       "EN-S1-LS-01.16",
+       "P",
+       "The apple trees need air, water and sun.",
+       "book",
+       52
+      ],
+      [
+       "EN-S1-LC-03.1",
+       "P",
+       "I can ask about fruit and say the fruit I like.",
+       "book",
+       52
+      ]
+     ],
+     "d": 1,
+     "r": [
+      [
+       "EN-S1-LK-01.18",
+       "unknown_point",
+       "I can read, write and say Mm, Nn, Oo and Pp."
+      ]
+     ]
+    },
+    "94e86bb7-6d0a-85bd-ff07-ad453f7cacbc": {
+     "m": [
+      [
+       "EN-S1-LS-01.12",
+       "T",
+       "Talking about colours; talking Colours Qq-Uu learning about ",
+       "book",
+       55
+      ],
+      [
+       "EN-S1-LK-01.6",
+       "T",
+       "Talking about colours; talking Colours Qq-Uu learning about ",
+       "book",
+       55
+      ]
+     ],
+     "d": 0
+    },
+    "fd685edc-d00c-3c82-2692-7c8265115695": {
+     "m": [
+      [
+       "EN-S1-TX-01.1",
+       "T",
+       "The sun is orange. The sun is orange.",
+       "book",
+       56
+      ],
+      [
+       "EN-S1-LS-01.12",
+       "P",
+       "What colours do you like?",
+       "book",
+       56
+      ]
+     ],
+     "d": 0
+    },
+    "d8f65323-436f-98a0-54b0-aec4956c5862": {
+     "m": [
+      [
+       "EN-S1-TX-01.1",
+       "T",
+       "Listen and sing Let’s sing Colour song",
+       "book",
+       56
+      ],
+      [
+       "EN-S1-LK-01.6",
+       "P",
+       "What colours do you see?",
+       "book",
+       56
+      ]
+     ],
+     "d": 0
+    },
+    "20ab570c-b8dd-f19c-68f1-53e2d69c5fd2": {
+     "m": [
+      [
+       "EN-S1-LS-01.12",
+       "T",
+       "I like yellow, red and blue.",
+       "book",
+       64
+      ],
+      [
+       "EN-S1-LK-01.6",
+       "P",
+       "Bananas are yellow.",
+       "book",
+       64
+      ],
+      [
+       "EN-S1-LK-01.1",
+       "P",
+       "I can read, write and say Qq, Rr, Ss, Tt and Uu.",
+       "book",
+       64
+      ]
+     ],
+     "d": 0
+    },
+    "f9fb0f25-4422-5928-eef8-096f400e5110": {
+     "m": [
+      [
+       "EN-S1-LK-01.11",
+       "T",
+       "What colour is it? It's green.",
+       "book",
+       63
+      ],
+      [
+       "EN-S1-LK-01.6",
+       "P",
+       "Which colours match the things?",
+       "book",
+       63
+      ],
+      [
+       "EN-S1-LS-01.12",
+       "P",
+       "I like yellow, red and blue.",
+       "book",
+       64
+      ]
+     ],
+     "d": 0
+    },
+    "48a11300-23ab-c8c3-4512-a745233f10d8": {
+     "m": [
+      [
+       "EN-S1-LS-01.11",
+       "T",
+       "How old are you? I'm five years old.",
+       "book",
+       69
+      ],
+      [
+       "EN-S1-LK-01.6",
+       "P",
+       "Binbin, this is my brother, Sam.",
+       "book",
+       69
+      ]
+     ],
+     "d": 0
+    },
+    "e0740412-7380-bfaa-8915-2638b0a06ab5": {
+     "m": [
+      [
+       "EN-S1-LS-01.9",
+       "T",
+       "Jump! Jump! Jump! One, two, three!",
+       "book",
+       70
+      ],
+      [
+       "EN-S1-LK-01.6",
+       "P",
+       "Four and five! Four and five!",
+       "book",
+       70
+      ]
+     ],
+     "d": 0
+    },
+    "53e7802e-e022-524c-37c8-db39af4c4023": {
+     "m": [
+      [
+       "EN-S1-LC-01.2",
+       "T",
+       "Listen, repeat and chant.",
+       "title",
+       null
+      ],
+      [
+       "EN-S1-LC-01.3",
+       "P",
+       "Listen and chant",
+       "book",
+       70
+      ]
+     ],
+     "d": 0
+    },
+    "0c5a9f1c-e03e-9f21-1981-494f424df755": {
+     "m": [
+      [
+       "EN-S1-TX-01.2",
+       "T",
+       "How many apples? Two.",
+       "book",
+       72
+      ]
+     ],
+     "d": 0
+    },
+    "b49d7f87-d4aa-8cde-be72-2c9abbdda3de": {
+     "m": [
+      [
+       "EN-S1-LC-01.3",
+       "T",
+       "One head, two legs, ten toes.",
+       "book",
+       73
+      ]
+     ],
+     "d": 0
+    },
+    "abb6126a-dfc0-4d8c-a4bf-417cf632ac20": {
+     "m": [
+      [
+       "EN-S1-LS-01.3",
+       "T",
+       "Circle the numbers you read in the text.",
+       "book",
+       74
+      ]
+     ],
+     "d": 0
+    },
+    "70ebd215-29fa-d71a-7df0-d3b5efb361e3": {
+     "m": [
+      [
+       "EN-S1-LS-01.11",
+       "T",
+       "I can ask about age and number.",
+       "book",
+       76
+      ],
+      [
+       "EN-S1-LK-01.7",
+       "T",
+       "I can count things with the numbers 1 to 10.",
+       "book",
+       76
+      ]
+     ],
+     "d": 0
+    },
+    "72aec1b9-28b7-7781-8e50-ced5c5fe8f39": {
+     "m": [
+      [
+       "EN-S1-LS-01.11",
+       "T",
+       "I can ask about age and number.",
+       "book",
+       76
+      ],
+      [
+       "EN-S1-LK-01.7",
+       "T",
+       "I can count things with the numbers 1 to 10.",
+       "book",
+       76
+      ]
+     ],
+     "d": 0
+    },
+    "2bd8d762-7c24-c37a-63ac-d3e5ba269ddc": {
+     "m": [
+      [
+       "EN-S1-LS-01.11",
+       "T",
+       "I can ask about age and number.",
+       "book",
+       76
+      ],
+      [
+       "EN-S1-LK-01.7",
+       "T",
+       "I can count things with the numbers 1 to 10.",
+       "book",
+       76
+      ]
+     ],
+     "d": 0
+    },
+    "ec818ee0-d48d-f17c-ffba-24202236ef20": {
+     "m": [
+      [
+       "EN-S1-LK-01.15",
+       "T",
+       "Say \"Hello!\" or say \"Hi!\"",
+       "book",
+       81
+      ],
+      [
+       "EN-S1-LS-01.10",
+       "T",
+       "Read aloud.",
+       "book",
+       79
+      ]
+     ],
+     "d": 0
+    },
+    "c340f289-7700-82c8-2395-998eddb3474f": {
+     "m": [
+      [
+       "EN-S1-LC-02.1",
+       "T",
+       "Listen and tick.",
+       "book",
+       79
+      ],
+      [
+       "EN-S1-LK-01.15",
+       "P",
+       "Nice to meet you too.",
+       "book",
+       79
+      ]
+     ],
+     "d": 0
+    },
+    "7981bcdc-2877-c439-1a5e-ee4b9d2bbd2d": {
+     "m": [
+      [
+       "EN-S1-LS-01.10",
+       "T",
+       "Read aloud.",
+       "book",
+       79
+      ],
+      [
+       "EN-S1-LK-01.15",
+       "P",
+       "This is for you.",
+       "book",
+       79
+      ]
+     ],
+     "d": 0
+    },
+    "d0f3dbdb-3844-8b10-5667-1e542c9a70c3": {
+     "m": [
+      [
+       "EN-S1-LK-01.15",
+       "T",
+       "Say \"Hello!\" or say \"Hi!\" Wave your hands and look in the ey",
+       "book",
+       81
+      ],
+      [
+       "EN-S1-LS-01.12",
+       "P",
+       "Do you like bananas, Binbin?",
+       "book",
+       80
+      ]
+     ],
+     "d": 0
+    },
+    "9fec3e6d-e3e2-463d-28ae-a76e315cd907": {
+     "m": [
+      [
+       "EN-S1-CA-02.4",
+       "T",
+       "Be a good guest. Be polite!",
+       "book",
+       81
+      ],
+      [
+       "EN-S1-LK-01.15",
+       "P",
+       "Say \"Hello!\" or say \"Hi!\" Wave your hands and look in the ey",
+       "book",
+       81
+      ]
+     ],
+     "d": 0
+    },
+    "4e2d9f7c-68e7-1810-fc32-6480690309a7": {
+     "m": [
+      [
+       "EN-S1-CA-02.4",
+       "T",
+       "Say \"Thank you!\"",
+       "book",
+       82
+      ],
+      [
+       "EN-S1-LS-01.9",
+       "P",
+       "Fill in the blanks and sing a song.",
+       "book",
+       82
+      ]
+     ],
+     "d": 0
+    },
+    "ef59c1be-c3b8-0729-5b33-a4f6c6439406": {
+     "m": [
+      [
+       "EN-S1-LK-01.6",
+       "T",
+       "Words in each unit Unit 1",
+       "title",
+       null
+      ],
+      [
+       "EN-S1-LK-01.7",
+       "T",
+       "Words in each unit Unit 1",
+       "title",
+       null
+      ]
+     ],
+     "d": 0
+    },
+    "983c0194-a36c-d26e-285d-b971a416d9e7": {
+     "m": [
+      [
+       "EN-S1-LK-01.6",
+       "T",
+       "Words in each unit Unit 2",
+       "title",
+       null
+      ],
+      [
+       "EN-S1-LK-01.7",
+       "T",
+       "Words in each unit Unit 2",
+       "title",
+       null
+      ]
+     ],
+     "d": 0
+    },
+    "0f15e790-9878-128d-9441-037c23bc00ff": {
+     "m": [
+      [
+       "EN-S1-LK-01.6",
+       "T",
+       "Words in each unit Unit 3",
+       "title",
+       null
+      ],
+      [
+       "EN-S1-LK-01.7",
+       "T",
+       "Words in each unit Unit 3",
+       "title",
+       null
+      ]
+     ],
+     "d": 0
+    },
+    "69dec76d-9a4f-a1b2-d43d-ade0545d27a3": {
+     "m": [
+      [
+       "EN-S1-LK-01.8",
+       "T",
+       "Words in each unit Unit 4",
+       "title",
+       null
+      ],
+      [
+       "EN-S1-LC-01.3",
+       "P",
+       "Words in each unit Unit 4",
+       "title",
+       null
+      ]
+     ],
+     "d": 0
+    },
+    "17d7e58e-805c-3275-2883-a82d9dfe6344": {
+     "m": [
+      [
+       "EN-S1-LK-01.8",
+       "T",
+       "Words in each unit Unit 5",
+       "title",
+       null
+      ],
+      [
+       "EN-S1-LC-01.3",
+       "P",
+       "Words in each unit Unit 5",
+       "title",
+       null
+      ]
+     ],
+     "d": 0
+    },
+    "aaba9c81-da04-cd43-ca07-11892f70122a": {
+     "m": [
+      [
+       "EN-S1-LK-01.8",
+       "T",
+       "Words in each unit Unit 6",
+       "title",
+       null
+      ],
+      [
+       "EN-S1-LC-01.3",
+       "P",
+       "Words in each unit Unit 6",
+       "title",
+       null
+      ]
+     ],
+     "d": 0
+    },
+    "9a9c167a-00e3-6660-719e-739a709231b8": {
+     "m": [
+      [
+       "EN-S1-LK-01.1",
+       "T",
+       "The alphabet",
+       "book",
+       96
+      ],
+      [
+       "EN-S1-LK-01.2",
+       "P",
+       "The alphabet",
+       "book",
+       96
+      ]
+     ],
+     "d": 0
+    },
+    "0cd397a4-d9d1-a747-15b8-b500c2905dca": {
+     "m": [
+      [
+       "EN-S1-LK-01.15",
+       "T",
+       "Hello! My name",
+       "book",
+       9
+      ],
+      [
+       "EN-S1-LC-01.3",
+       "P",
+       "Listen and do",
+       "book",
+       10
+      ]
+     ],
+     "d": 0
+    },
+    "29b581af-0f4d-845a-93ce-446cb62f6eb5": {
+     "m": [
+      [
+       "EN-S1-LK-01.2",
+       "T",
+       "Listen and circle the first sound.",
+       "book",
+       11
+      ],
+      [
+       "EN-S1-LK-01.3",
+       "P",
+       "Listen, repeat and chant.",
+       "book",
+       11
+      ]
+     ],
+     "d": 0
+    },
+    "bd04ea4a-d8a9-261c-d459-3e94618e90a4": {
+     "m": [
+      [
+       "EN-S1-TH-01.11",
+       "T",
+       "I listen. I help. I share.",
+       "book",
+       13
+      ],
+      [
+       "EN-S1-LS-01.16",
+       "P",
+       "Circle the words you read in the poster.",
+       "book",
+       14
+      ]
+     ],
+     "d": 0
+    },
+    "14a7fcc9-e67a-113e-4019-90f60c6e81a6": {
+     "m": [
+      [
+       "EN-S1-LS-01.11",
+       "T",
+       "Is this your brother? No, it's my cousin.",
+       "book",
+       24
+      ]
+     ],
+     "d": 0
+    },
+    "be1d2dc8-481c-8a58-9484-bb2c32db9c56": {
+     "m": [
+      [
+       "EN-S1-TX-01.1",
+       "T",
+       "I have an uncle. I have an aunt. I have two cousins too.",
+       "book",
+       25
+      ]
+     ],
+     "d": 0
+    },
+    "604d3ca2-fb80-9486-7287-333b85032a4a": {
+     "m": [
+      [
+       "EN-S1-LK-01.9",
+       "T",
+       "This is my mum. This is my And this is my dad.",
+       "book",
+       26
+      ]
+     ],
+     "d": 0
+    },
+    "789b326e-f5c7-f687-0f51-534a50a7f3db": {
+     "m": [
+      [
+       "EN-S1-TH-01.20",
+       "P",
+       "How are animals different? How are animals different?",
+       "book",
+       31
+      ]
+     ],
+     "d": 0
+    },
+    "6bc1299b-9aac-d711-502b-99f7c25c812f": {
+     "m": [
+      [
+       "EN-S1-TX-01.1",
+       "T",
+       "So many animals, So many animals,Big, tall and small.",
+       "book",
+       32
+      ],
+      [
+       "EN-S1-LS-01.12",
+       "P",
+       "We love them all. We love them all.",
+       "book",
+       32
+      ],
+      [
+       "EN-S1-TH-01.20",
+       "P",
+       "Pets and wild animals, Pets and wild animals,",
+       "book",
+       32
+      ]
+     ],
+     "d": 0
+    },
+    "9dce912b-7e88-2e25-372d-dcb9dc19d76e": {
+     "m": [
+      [
+       "EN-S1-TX-01.1",
+       "T",
+       "So many animals, So many animals,Big, tall and small.",
+       "book",
+       32
+      ],
+      [
+       "EN-S1-LS-01.12",
+       "P",
+       "We love them all. We love them all.",
+       "book",
+       32
+      ],
+      [
+       "EN-S1-TH-01.20",
+       "P",
+       "Pets and wild animals, Pets and wild animals,",
+       "book",
+       32
+      ]
+     ],
+     "d": 0
+    },
+    "5cfb4dd1-c1f3-d961-652b-11ff791c9778": {
+     "m": [
+      [
+       "EN-S1-LS-01.16",
+       "T",
+       "What colour is it? It's green.",
+       "book",
+       57
+      ],
+      [
+       "EN-S1-LK-01.6",
+       "P",
+       "Look! Red and blue make purple.",
+       "book",
+       57
+      ],
+      [
+       "EN-S1-LK-01.7",
+       "P",
+       "What colours do you see?",
+       "book",
+       56
+      ]
+     ],
+     "d": 0
+    },
+    "77bf8717-87e4-08c6-a697-3836eed20643": {
+     "m": [
+      [
+       "EN-S1-LC-02.1",
+       "T",
+       "a yellow duck a brown bear a purple flower green grass blue ",
+       "book",
+       58
+      ],
+      [
+       "EN-S1-LS-01.9",
+       "P",
+       "Listen and chant I see colours here and there.",
+       "book",
+       58
+      ]
+     ],
+     "d": 0
+    },
+    "72aefdcc-c608-420b-5b05-8bb10538f85b": {
+     "m": [
+      [
+       "EN-S1-LC-01.2",
+       "T",
+       "Listen and repeat and chant.",
+       "book",
+       58
+      ],
+      [
+       "EN-S1-LK-01.4",
+       "P",
+       "I see colours here and there.",
+       "book",
+       58
+      ]
+     ],
+     "d": 0
+    },
+    "46224a21-b60f-fcc2-5add-785aa97c2489": {
+     "m": [
+      [
+       "EN-S1-LS-01.10",
+       "T",
+       "I see colours here and there.",
+       "book",
+       58
+      ],
+      [
+       "EN-S1-LK-01.6",
+       "P",
+       "Purple flowers, green grass and blue sea.",
+       "book",
+       58
+      ]
+     ],
+     "d": 0
+    },
+    "86e6b30b-d8cd-9ff2-c70f-781e0caef8cc": {
+     "m": [
+      [
+       "EN-S1-LK-01.3",
+       "T",
+       "Listen and circle the first sound.",
+       "book",
+       59
+      ],
+      [
+       "EN-S1-LK-01.1",
+       "P",
+       "Write and say.",
+       "book",
+       59
+      ]
+     ],
+     "d": 0
+    },
+    "76f5d7f8-075a-6404-8266-c4e9b36aa25f": {
+     "m": [
+      [
+       "EN-S1-LS-01.12",
+       "T",
+       "What colours do you like? I like red and pink.",
+       "book",
+       60
+      ],
+      [
+       "EN-S1-TX-01.1",
+       "P",
+       "Black, black, sit down.",
+       "book",
+       61
+      ]
+     ],
+     "d": 0
+    },
+    "436a3094-685e-8099-c754-bf281c54be7a": {
+     "m": [
+      [
+       "EN-S1-LS-01.1",
+       "T",
+       "Black, black, sit down.",
+       "book",
+       61
+      ],
+      [
+       "EN-S1-LK-01.6",
+       "T",
+       "Circle the colours you see in the pictures.",
+       "book",
+       62
+      ]
+     ],
+     "d": 0
+    },
+    "bf97d7d9-55a4-f2ac-9c72-aea9ea7a5d09": {
+     "m": [
+      [
+       "EN-S1-LK-01.9",
+       "T",
+       "It's red. Red",
+       "book",
+       62
+      ]
+     ],
+     "d": 0
+    },
+    "c86101f5-a72b-209a-13ca-dadfb3ed3149": {
+     "m": [
+      [
+       "EN-S1-LS-01.16",
+       "T",
+       "This is my book. I like yellow, red and blue.",
+       "book",
+       64
+      ]
+     ],
+     "d": 0
+    },
+    "32f02caf-3089-5588-b718-cf30de5f199b": {
+     "m": [
+      [
+       "EN-S1-LK-01.6",
+       "P",
+       "Why are numbers important?",
+       "book",
+       67
+      ]
+     ],
+     "d": 0
+    },
+    "648af1a9-9913-5b9e-f4fa-e11c471a61e3": {
+     "m": [
+      [
+       "EN-S1-TX-01.1",
+       "T",
+       "One boy, two boys, Three boys, four!",
+       "book",
+       68
+      ]
+     ],
+     "d": 0
+    },
+    "764f8a2a-1456-4a37-8f1a-eae6261ab9a8": {
+     "m": [
+      [
+       "EN-S1-TX-01.1",
+       "T",
+       "Five boys, six boys, Seven boys, more!",
+       "book",
+       68
+      ]
+     ],
+     "d": 0
+    },
+    "53c32115-753d-8626-37bd-a023c0fff8e3": {
+     "m": [
+      [
+       "EN-S1-LK-01.2",
+       "T",
+       "Listen and circle the first sound.",
+       "title",
+       null
+      ]
+     ],
+     "d": 0
+    },
+    "a198e2fa-39f6-ee30-57bb-2d612e140030": {
+     "m": [
+      [
+       "EN-S1-LK-01.2",
+       "T",
+       "Listen and circle the last sound.",
+       "title",
+       null
+      ]
+     ],
+     "d": 0
+    },
+    "0f35a00d-6b47-81d0-8109-e972f0324b99": {
+     "m": [
+      [
+       "EN-S1-LK-01.2",
+       "T",
+       "Letters and sounds Listen, repeat and chant.",
+       "book",
+       71
+      ],
+      [
+       "EN-S1-LC-01.3",
+       "T",
+       "Listen, repeat and chant.",
+       "book",
+       71
       ]
      ],
      "d": 0
@@ -35061,6 +37145,282 @@
       ]
      ],
      "d": 0
+    },
+    "00a39d45-b656-901f-ade9-af954caa03b6": {
+     "m": [
+      [
+       "MA-S4-NA-04.5",
+       "T",
+       "像上面那样,通过配成完全平方形式来解一元二次方程的方法,叫作配方法.",
+       "book",
+       14
+      ],
+      [
+       "MA-S4-NA-02.4",
+       "P",
+       "根据平方根的意义",
+       "book",
+       12
+      ]
+     ],
+     "d": 0
+    },
+    "c512c565-0449-e186-bbbc-85e7a1b2e457": {
+     "m": [
+      [
+       "MA-S4-NA-04.7",
+       "T",
+       "如果一元二次方程ax2+bx+c=0的两个根为x 1 和x2,那么 ax2+bx+c=a(x-x)(x-x)",
+       "book",
+       23
+      ],
+      [
+       "MA-S4-NA-04.6",
+       "P",
+       "当Δ≥0时,方程ax2+bx+c=0(a≠0) -b±槡b2-4ac 的根可由系数a,b,c确定.",
+       "book",
+       22
+      ]
+     ],
+     "d": 0
+    },
+    "6834a919-184a-9335-849c-7c62fef08769": {
+     "m": [
+      [
+       "MA-S4-NA-04.1",
+       "T",
+       "一元二次方程也是刻画某些问题中等量关系的数学模型",
+       "book",
+       27
+      ],
+      [
+       "MA-S4-IP-01.1",
+       "P",
+       "运用一元二次方程可以解决很多问题.",
+       "book",
+       27
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_341ef851f3e7d109": {
+     "m": [
+      [
+       "MA-S4-NA-08.3",
+       "T",
+       "最大高度问题转化为求二次函数的最大值问题",
+       "book",
+       58
+      ],
+      [
+       "MA-S4-NA-08.1",
+       "T",
+       "变量之间的关系可以用二次函数来刻画",
+       "book",
+       58
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_ec44c93b53ac2d7c": {
+     "m": [
+      [
+       "MA-S4-GG-08.1",
+       "T",
+       "把一个平面图形绕着平面内某一点O转动一个角度,叫作图形的旋转",
+       "book",
+       99
+      ]
+     ],
+     "d": 1,
+     "r": [
+      [
+       "MA-S4-GG-08.1",
+       "repeat",
+       "对应点到旋转中心的距离相等;对应点与旋转中心所连线段所成的角相等"
+      ]
+     ]
+    },
+    "tcu_c2c2d42d645dd835": {
+     "m": [
+      [
+       "MA-S4-GG-08.2",
+       "T",
+       "一个图案旋转后与另一个图案重合",
+       "book",
+       106
+      ]
+     ],
+     "d": 1,
+     "r": [
+      [
+       "MA-S4-GG-08.2",
+       "repeat",
+       "点O是线段AA′的中点"
+      ]
+     ]
+    },
+    "tcu_3c3098bfac57ceb3": {
+     "m": [
+      [
+       "MA-S4-GG-05.1",
+       "T",
+       "点在圆外,点在圆上,点在圆内",
+       "book",
+       122
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_944fc0ffc59190bf": {
+     "m": [
+      [
+       "MA-S4-GG-05.2",
+       "T",
+       "垂径定理: 垂直于弦的直径平分弦,并且平分弦所对的两条弧.",
+       "book",
+       131
+      ],
+      [
+       "MA-S4-GG-07.1",
+       "P",
+       "圆是轴对称图形,任何一条直径所在直线都是圆的对称轴.",
+       "book",
+       130
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_a820d43f028cee5f": {
+     "m": [
+      [
+       "MA-S4-GG-05.9",
+       "T",
+       "n°的圆心角所对的弧长为 l=nπR",
+       "book",
+       141
+      ]
+     ],
+     "d": 0
+    },
+    "16078da5-49d3-f7a8-1d75-99e8592d896d": {
+     "m": [
+      [
+       "MA-S4-NA-04.1",
+       "T",
+       "一元二次方程的一般形式是 ax2+bx+c=0(a≠0)",
+       "book",
+       10
+      ],
+      [
+       "MA-S4-NA-03.1",
+       "P",
+       "只含有一个未知数x,x的最高次数是2",
+       "book",
+       9
+      ]
+     ],
+     "d": 0
+    },
+    "c5237a2c-1caf-b905-575a-7f78fe85cd3f": {
+     "m": [
+      [
+       "MA-S4-NA-04.5",
+       "T",
+       "叫作配方法",
+       "book",
+       14
+      ]
+     ],
+     "d": 0
+    },
+    "9952f826-09e1-c945-ee47-658c647cfb4f": {
+     "m": [
+      [
+       "MA-S4-NA-04.5",
+       "T",
+       "25.2.2 公式法",
+       "title",
+       null
+      ]
+     ],
+     "d": 0
+    },
+    "e745c5cd-93d5-22a7-0ade-702d91bcaa1f": {
+     "m": [
+      [
+       "MA-S4-NA-04.5",
+       "P",
+       "小结",
+       "title",
+       null
+      ],
+      [
+       "MA-S4-NA-04.6",
+       "P",
+       "小结",
+       "title",
+       null
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_a822be989c9c4589": {
+     "m": [
+      [
+       "MA-S4-NA-08.1",
+       "T",
+       "y是x的函数",
+       "book",
+       37
+      ],
+      [
+       "MA-S4-NA-03.2",
+       "P",
+       "它们之间的关系可以表示为y=x(20-x)",
+       "book",
+       37
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_a1a4c60f12dfdf1e": {
+     "m": [
+      [
+       "MA-S4-NA-08.2",
+       "T",
+       "当a>0时,抛物线y=ax2的开口向上",
+       "book",
+       42
+      ],
+      [
+       "MA-S4-NA-06.2",
+       "P",
+       "数形结合, 即解析式与图象结合是重要的研究方法",
+       "book",
+       40
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_fffed0307b5ba218": {
+     "m": [
+      [
+       "MA-S4-NA-08.4",
+       "T",
+       "二次函数与一元二次方程的联系",
+       "book",
+       53
+      ],
+      [
+       "MA-S4-NA-04.6",
+       "P",
+       "二次函数的图象与x轴的公共点的情况有三种",
+       "book",
+       53
+      ]
+     ],
+     "d": 0
     }
    }
   },
@@ -39206,6 +41566,160 @@
        "满意度指满意人数占总人数的百分比",
        "book",
        115
+      ]
+     ],
+     "d": 0
+    },
+    "e3a6c804-0c65-d437-2296-ace406c02e93": {
+     "m": [
+      [
+       "MA-S3-GG-02.2",
+       "T",
+       "他的位置可以用一个有序数对(2,3)表示。",
+       "book",
+       6
+      ],
+      [
+       "MA-S3-GG-02.4",
+       "P",
+       "再分别画出三角形向右和向上各平移5个单位后的图形。",
+       "book",
+       9
+      ]
+     ],
+     "d": 0
+    },
+    "3ec5ccc9-876f-0b9e-5af6-a186fc822b6b": {
+     "m": [
+      [
+       "MA-S3-GG-02.1",
+       "T",
+       "还需要知道物体相对于参照点的距离和方向。",
+       "book",
+       10
+      ],
+      [
+       "MA-S3-GG-02.3",
+       "P",
+       "上图中用1 cm表示500 m",
+       "book",
+       10
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_585a8cc79d4d7db4": {
+     "m": [
+      [
+       "MA-S3-NA-01.5",
+       "T",
+       "分数乘法,用分子相乘的积作分子,用分母相乘的积作分母。",
+       "book",
+       23
+      ],
+      [
+       "MA-S3-NA-01.4",
+       "P",
+       "一袋面包重 kg,3袋重多少千克?",
+       "book",
+       21
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_2652cc9dd293cb81": {
+     "m": [
+      [
+       "MA-S3-NA-01.5",
+       "T",
+       "分数除以整数,等于乘这个整数的倒数。",
+       "book",
+       38
+      ],
+      [
+       "MA-S3-NA-01.4",
+       "P",
+       "学校种植社团管理着一块公顷的蔬菜种植基地。",
+       "book",
+       38
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_c2ae016615d1287c": {
+     "m": [
+      [
+       "MA-S3-GG-01.3",
+       "T",
+       "半径:连接圆心和圆上任意一点的线段,通常用字母r表示",
+       "book",
+       54
+      ],
+      [
+       "MA-S3-GG-02.5",
+       "P",
+       "根据对称轴画出轴对称图形的另外一半。",
+       "book",
+       57
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_6da88f707eca954f": {
+     "m": [
+      [
+       "MA-S3-SP-01.2",
+       "T",
+       "百分数表示一个数是另一个数的百分之多少",
+       "book",
+       85
+      ],
+      [
+       "MA-S3-NA-01.3",
+       "T",
+       "小数化成百分数,可以把小数点向右移动两位",
+       "book",
+       86
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_28ff3b347df03c30": {
+     "m": [
+      [
+       "MA-S3-NA-01.5",
+       "T",
+       "分数乘、除法",
+       "book",
+       111
+      ],
+      [
+       "MA-S3-GG-01.3",
+       "T",
+       "圆的周长和面积",
+       "book",
+       113
+      ],
+      [
+       "MA-S3-NA-01.3",
+       "P",
+       "整数可以看成分母是1",
+       "book",
+       112
+      ],
+      [
+       "MA-S3-GG-02.2",
+       "P",
+       "用有序数对表示物体的位置",
+       "book",
+       113
+      ],
+      [
+       "MA-S3-SP-01.1",
+       "P",
+       "百分数和平均数都是刻画和表达数据的统计量",
+       "book",
+       114
       ]
      ],
      "d": 0
@@ -45906,6 +48420,82 @@
       ]
      ],
      "d": 0
+    },
+    "09935925-dc2b-a402-7cdb-111e39e2903a": {
+     "m": [
+      [
+       "CN-S4-RA-02.1",
+       "T",
+       "陶行知创造主未完成之工作,让我们接过来,继续创造。",
+       "book",
+       43
+      ],
+      [
+       "CN-S4-RA-04.1",
+       "P",
+       "我们是要在平凡上造出不平凡,在单调上造出不单调。",
+       "book",
+       44
+      ],
+      [
+       "CN-S4-RA-03.1",
+       "P",
+       "有人说:环境太平凡了,不能创造。",
+       "book",
+       43
+      ]
+     ],
+     "d": 0
+    },
+    "aa0c2ca2-8060-08c0-0156-d430fece1dd9": {
+     "m": [
+      [
+       "CN-S4-TG-06.4",
+       "T",
+       "如何不负韶华,奋发图强,勇于拼搏,努力成长为德智体美劳全面发展的社会主义建设者和接班人?",
+       "book",
+       36
+      ]
+     ],
+     "d": 0
+    },
+    "a3f40766-d74a-7abf-491c-796934070563": {
+     "m": [
+      [
+       "CN-S4-RA-05.1",
+       "T",
+       "本文是一篇驳论文。",
+       "book",
+       37
+      ],
+      [
+       "CN-S4-RA-02.1",
+       "P",
+       "阅读时,搜集相关背景资料",
+       "book",
+       37
+      ]
+     ],
+     "d": 0
+    },
+    "53f86e10-a83a-5b05-5a85-1a100ba37b06": {
+     "m": [
+      [
+       "CN-S4-TG-03.1",
+       "T",
+       "我们中国人是有骨气的。",
+       "book",
+       40
+      ],
+      [
+       "CN-S4-RA-04.1",
+       "P",
+       "表现了中国人民的骨气。",
+       "book",
+       41
+      ]
+     ],
+     "d": 0
     }
    }
   },
@@ -47328,6 +49918,909 @@
        "能用上表示动作的词语把做家务的过程写清楚。",
        "design",
        null
+      ]
+     ],
+     "d": 0
+    },
+    "06197810-967b-fa4f-1983-a1fe003449b0": {
+     "m": [
+      [
+       "CN-S2-RA-01.1",
+       "T",
+       "有感情地朗读课文。背诵第 3~4 自然段。",
+       "book",
+       9
+      ],
+      [
+       "CN-S2-RA-03.1",
+       "P",
+       "说说课文是按照什么顺序描写钱塘江大潮的",
+       "book",
+       9
+      ],
+      [
+       "CN-S2-RA-06.1",
+       "P",
+       "从课文中找出与诗的内容相关的句子,再抄写下来。",
+       "book",
+       9
+      ]
+     ],
+     "d": 0
+    },
+    "d80c864f-b758-c862-32ea-d6fe0a655a60": {
+     "m": [
+      [
+       "CN-S2-RA-01.1",
+       "T",
+       "有感情地朗读课文。说说你的脑海中浮现出怎样的画面。",
+       "book",
+       11
+      ],
+      [
+       "CN-S2-EC-04.1",
+       "P",
+       "小练笔你也看过夜晚的星空吧?试着写写你当时的所见所想。",
+       "book",
+       11
+      ]
+     ],
+     "d": 0
+    },
+    "e4b10e36-f09e-60d6-b5b6-c2dc0f32e62f": {
+     "m": [
+      [
+       "CN-S2-RA-04.2",
+       "T",
+       "反复朗读下面两首诗,说说诗中描绘了哪些景物",
+       "book",
+       12
+      ],
+      [
+       "CN-S2-RA-01.1",
+       "P",
+       "反复朗读下面两首诗",
+       "book",
+       12
+      ]
+     ],
+     "d": 0
+    },
+    "8a926d5a-441b-eea3-8036-7f44b3096bbd": {
+     "m": [
+      [
+       "CN-S2-RA-04.1",
+       "T",
+       "读课文,认真思考,看看你能提出什么问题。",
+       "book",
+       19
+      ],
+      [
+       "CN-S2-RA-03.3",
+       "P",
+       "读课文,认真思考,看看你能提出什么问题。",
+       "book",
+       19
+      ]
+     ],
+     "d": 0
+    },
+    "26687d8b-79b3-0662-dc2f-66913eb15bff": {
+     "m": [
+      [
+       "CN-S2-IN-03.1",
+       "T",
+       "你阅读时提出了哪些问题呢?写下来,和同学交流。",
+       "book",
+       24
+      ],
+      [
+       "CN-S2-TG-04.1",
+       "P",
+       "现代飞机上安装了雷达",
+       "book",
+       26
+      ]
+     ],
+     "d": 0
+    },
+    "d3fb4395-68df-ca87-90d1-24817dab51d9": {
+     "m": [
+      [
+       "CN-S2-RA-04.1",
+       "T",
+       "这个故事想告诉我们什么呢?",
+       "book",
+       31
+      ],
+      [
+       "CN-S2-RA-03.3",
+       "P",
+       "读课文,写下你的问题,和同学交流。",
+       "book",
+       28
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_7d22d5e64750b60d": {
+     "m": [
+      [
+       "CN-S2-EC-02.1",
+       "T",
+       "围绕话题发表看法,不跑题。",
+       "book",
+       14
+      ],
+      [
+       "CN-S2-EC-01.1",
+       "P",
+       "围绕下面的话题和同学交流。",
+       "book",
+       14
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_f067430d6426006e": {
+     "m": [
+      [
+       "CN-S2-EC-04.1",
+       "T",
+       "写出推荐的理由,吸引大家去看看。",
+       "book",
+       15
+      ],
+      [
+       "CN-S2-EC-05.1",
+       "P",
+       "再读给同学听,请他们提出修改建议。",
+       "book",
+       15
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_a322a996080a476c": {
+     "m": [
+      [
+       "CN-S2-RA-02.1",
+       "T",
+       "读一读,体会每组两个句子的表达效果有什么不同。",
+       "book",
+       16
+      ],
+      [
+       "CN-S2-RA-01.1",
+       "P",
+       "我能根据文章中的描写想象画面。",
+       "book",
+       16
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_115a09d10d76b4ba": {
+     "m": [
+      [
+       "CN-S2-EC-04.1",
+       "T",
+       "可以选择一个家人来写",
+       "book",
+       35
+      ],
+      [
+       "CN-S2-EC-01.1",
+       "T",
+       "写好了读给同桌听,看看有没有不通顺的句子。回家读给家人听,请他们评评写得像不像。",
+       "book",
+       35
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_d2907f1092702fce": {
+     "m": [
+      [
+       "CN-S2-IN-03.1",
+       "P",
+       "学了本单元,你有哪些体会?",
+       "book",
+       36
+      ],
+      [
+       "CN-S2-IN-01.1",
+       "P",
+       "纲揍锈沫综氧账矿俱",
+       "book",
+       36
+      ],
+      [
+       "CN-S2-RA-02.1",
+       "P",
+       "那条狗高兴、紧张、发怒的时候都叫。",
+       "book",
+       37
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_6010edeb57fc743c": {
+     "m": [
+      [
+       "CN-S2-RA-04.2",
+       "T",
+       "有感情地朗读课文。背诵课文。",
+       "book",
+       40
+      ],
+      [
+       "CN-S2-RA-02.1",
+       "P",
+       "说说你对下列诗句的理解。",
+       "book",
+       40
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_ec28a75c8ef682fd": {
+     "m": [
+      [
+       "CN-S2-EC-04.1",
+       "T",
+       "要写好观察日记,必须仔细地观察事物并做好观察记录。",
+       "book",
+       43
+      ],
+      [
+       "CN-S2-RA-03.1",
+       "P",
+       "说说从哪些地方可以看出作者观察得特别仔细。",
+       "book",
+       43
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_fd009f216c051378": {
+     "m": [
+      [
+       "CN-S2-RA-03.1",
+       "T",
+       "默读课文,说说课文围绕蟋蟀的住宅讲了哪两方面的内容",
+       "book",
+       46
+      ],
+      [
+       "CN-S2-RA-04.1",
+       "P",
+       "用自己的话介绍蟋蟀住宅的修建过程",
+       "book",
+       46
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_583e459fd30b88c2": {
+     "m": [
+      [
+       "CN-S2-EC-01.1",
+       "T",
+       "分小组对班里同学的视力情况和影响视力的原因进行分析",
+       "book",
+       48
+      ],
+      [
+       "CN-S2-EC-02.1",
+       "P",
+       "小组讨论时,注意说话的音量,避免干扰其他小组。",
+       "book",
+       48
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_3093449be49ae769": {
+     "m": [
+      [
+       "CN-S2-EC-04.1",
+       "T",
+       "观察日记,主要记录观察对象的变化",
+       "book",
+       49
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_b93f7fcfbd03385a": {
+     "m": [
+      [
+       "CN-S2-RA-02.1",
+       "P",
+       "读下面两组句子,注意加点的词语,体会每组句子意思的不同。",
+       "book",
+       51
+      ],
+      [
+       "CN-S2-TG-01.3",
+       "P",
+       "日积月累 ◎ 立了秋,把扇丢。",
+       "book",
+       51
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_e11818d7fae6c67e": {
+     "m": [
+      [
+       "CN-S2-RA-04.1",
+       "T",
+       "按故事的发展顺序,说说盘古开天地的过程。",
+       "book",
+       53
+      ],
+      [
+       "CN-S2-RA-01.1",
+       "P",
+       "读一读,边读边想象画面,再说一说你心目中的盘古是什么样的。",
+       "book",
+       54
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_048f5ed366174347": {
+     "m": [
+      [
+       "CN-S2-RA-04.1",
+       "T",
+       "结合注释,用自己的话讲讲精卫填海的故事。",
+       "book",
+       55
+      ],
+      [
+       "CN-S2-RA-01.1",
+       "P",
+       "正确、流利地朗读课文。背诵课文。",
+       "book",
+       55
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_f2b5d4892193893e": {
+     "m": [
+      [
+       "CN-S2-RA-04.1",
+       "T",
+       "按照起因、经过、结果的顺序,复述这个故事。",
+       "book",
+       58
+      ],
+      [
+       "CN-S2-RA-01.1",
+       "P",
+       "朗读课文,注意读好故事中人物的名字。",
+       "book",
+       58
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_62d2ce31bba2998c": {
+     "m": [
+      [
+       "CN-S2-RA-04.1",
+       "T",
+       "说说故事的起因、经过和结果。",
+       "book",
+       59
+      ],
+      [
+       "CN-S2-RA-01.2",
+       "P",
+       "默读课文",
+       "book",
+       59
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_5d8a539b12e425e4": {
+     "m": [
+      [
+       "CN-S2-EC-04.1",
+       "T",
+       "把自己的想法和小组同学说一说,再写下来。",
+       "book",
+       61
+      ],
+      [
+       "CN-S2-EC-05.1",
+       "P",
+       "听听同学的意见,认真修改",
+       "book",
+       61
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_aecb828fcf0acabb": {
+     "m": [
+      [
+       "CN-S2-RA-02.3",
+       "T",
+       "体会省略号的作用。",
+       "book",
+       63
+      ],
+      [
+       "CN-S2-RA-04.2",
+       "P",
+       "嫦娥 [ 唐 ] 李商隐",
+       "book",
+       63
+      ],
+      [
+       "CN-S2-RA-02.1",
+       "P",
+       "读一读,说说这些词语让你想到了哪些人物或故事。",
+       "book",
+       63
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_04e497b18b5b7b65": {
+     "m": [
+      [
+       "CN-S2-RA-04.1",
+       "T",
+       "读后可以与他人交流自己的阅读感受。",
+       "book",
+       65
+      ],
+      [
+       "CN-S2-RA-03.1",
+       "P",
+       "让我们阅读更多的中国神话,感受神话永恒的魅力。",
+       "book",
+       65
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_8590c8a9f6d180da": {
+     "m": [
+      [
+       "CN-S2-RA-01.1",
+       "T",
+       "朗读课文。",
+       "book",
+       69
+      ],
+      [
+       "CN-S2-RA-03.1",
+       "T",
+       "说说课文围绕麻雀写了一件什么事",
+       "book",
+       69
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_a193955b35c6405c": {
+     "m": [
+      [
+       "CN-S2-RA-03.1",
+       "T",
+       "课文写了一件什么事?是按照什么顺序写的?",
+       "book",
+       71
+      ],
+      [
+       "CN-S2-EC-04.1",
+       "P",
+       "要把事情的起因、经过、结果写清楚。",
+       "book",
+       72
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_a5c41752315de90c": {
+     "m": [
+      [
+       "CN-S2-EC-04.1",
+       "T",
+       "选一件你印象深的事,按一定的顺序把这件事写清楚。",
+       "book",
+       73
+      ],
+      [
+       "CN-S2-EC-05.1",
+       "T",
+       "写完后,读给同学听,请同学说说这件事是否写清楚了,再参考同学的建议修改。",
+       "book",
+       73
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_984087762e016b0b": {
+     "m": [
+      [
+       "CN-S2-EC-03.1",
+       "T",
+       "撰写一份讲解词。先自己试着讲一讲,然后讲给大家听。",
+       "book",
+       87
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_fb2c3d3a974c012a": {
+     "m": [
+      [
+       "CN-S2-EC-04.1",
+       "T",
+       "将整理后的资料用自己的话写下来",
+       "book",
+       88
+      ],
+      [
+       "CN-S2-EC-05.1",
+       "P",
+       "互相评一评介绍得是否清楚,再参考同学的意见修改完善,重新誊写一遍。",
+       "book",
+       88
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_d98b2dbfb36fc968": {
+     "m": [
+      [
+       "CN-S2-RA-03.1",
+       "T",
+       "借助关键语句,我们可以更好地把握文章的主要内容。",
+       "book",
+       89
+      ],
+      [
+       "CN-S2-LW-02.2",
+       "P",
+       "抄写下面的词语,注意加点的字不要写错。",
+       "book",
+       90
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_37f00b396797e223": {
+     "m": [
+      [
+       "CN-S2-RA-04.1",
+       "T",
+       "我记住金奎叔的话,从此不再怕鹅了。",
+       "book",
+       96
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_468ee75da0c214ee": {
+     "m": [
+      [
+       "CN-S2-RA-04.1",
+       "T",
+       "我总算一直演到了躺下来死掉。",
+       "book",
+       101
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_c2257366f608e722": {
+     "m": [
+      [
+       "CN-S2-RA-03.1",
+       "T",
+       "人不可貌相,海水不可斗量",
+       "book",
+       103
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_71cb124073c75dbf": {
+     "m": [
+      [
+       "CN-S2-RA-01.1",
+       "T",
+       "正确、流利地朗读课文。",
+       "book",
+       107
+      ],
+      [
+       "CN-S2-RA-04.1",
+       "T",
+       "结合注释,用自己的话讲讲这个故事。",
+       "book",
+       107
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_71ef7923ebc326bf": {
+     "m": [
+      [
+       "CN-S2-EC-01.1",
+       "T",
+       "选择合适的方式进行安慰。",
+       "book",
+       108
+      ],
+      [
+       "CN-S2-EC-03.3",
+       "P",
+       "语气要诚恳,态度要真诚。",
+       "book",
+       108
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_cbdf01a63f5291fb": {
+     "m": [
+      [
+       "CN-S2-EC-04.1",
+       "T",
+       "选一件令你心儿怦怦跳的事情写下来,",
+       "book",
+       109
+      ],
+      [
+       "CN-S2-EC-05.1",
+       "T",
+       "写完后先修改,再誊写清楚。",
+       "book",
+       109
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_977fe4c6eae450ef": {
+     "m": [
+      [
+       "CN-S2-RA-03.2",
+       "T",
+       "边阅读边作批注是很好的阅读习惯。",
+       "book",
+       110
+      ],
+      [
+       "CN-S2-RA-02.1",
+       "P",
+       "你知道下面词语的意思吗?说说你会在什么情况下使用它们。",
+       "book",
+       111
+      ],
+      [
+       "CN-S2-TG-01.3",
+       "P",
+       "日积月累 ◎ 尺有所短,寸有所长。",
+       "book",
+       111
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_6560beb4a4b22063": {
+     "m": [
+      [
+       "CN-S2-RA-04.2",
+       "T",
+       "有感情地朗读课文。背诵课文。",
+       "book",
+       123
+      ],
+      [
+       "CN-S2-RA-01.1",
+       "T",
+       "有感情地朗读课文。背诵课文。",
+       "book",
+       123
+      ],
+      [
+       "CN-S2-RA-02.1",
+       "P",
+       "结合注释,说说下列诗句的意思",
+       "book",
+       123
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_e46325b26d288c14": {
+     "m": [
+      [
+       "CN-S2-TG-02.1",
+       "T",
+       "请给你的亲友或者其他人写一封信",
+       "book",
+       124
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_2c00ea811d9e2523": {
+     "m": [
+      [
+       "CN-S2-RA-03.1",
+       "T",
+       "读懂一篇文章,把握主要内容,你用过哪些方法?",
+       "book",
+       125
+      ],
+      [
+       "CN-S2-RA-02.1",
+       "P",
+       "词句段运用读一读,想想这些词语可以用来形容哪些人。",
+       "book",
+       125
+      ]
+     ],
+     "d": 0
+    },
+    "81d975ec-c97d-65a0-7eec-f78c7d656ccf": {
+     "m": [
+      [
+       "CN-S2-RA-03.3",
+       "T",
+       "提出自己的问题,再试着把问题分分类。",
+       "book",
+       33
+      ],
+      [
+       "CN-S2-RA-01.2",
+       "T",
+       "田忌赛马默读课文,提出自己的问题",
+       "book",
+       33
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_48e9688e30cecd0d": {
+     "m": [
+      [
+       "CN-S2-RA-04.1",
+       "T",
+       "课文写了一件什么事?是怎么把这件事写清楚的?",
+       "book",
+       75
+      ],
+      [
+       "CN-S2-RA-03.1",
+       "P",
+       "课文写了一件什么事?",
+       "book",
+       75
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_9ce2ad8432482ae4": {
+     "m": [
+      [
+       "CN-S2-RA-04.1",
+       "T",
+       "我们的友谊从此破裂了。",
+       "book",
+       76
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_f2bfee5a5d25da97": {
+     "m": [
+      [
+       "CN-S2-RA-03.1",
+       "T",
+       "朗读课文。说说从课文的哪些地方可以看出长城“在世界历史上是一个伟大的奇迹”。",
+       "book",
+       80
+      ],
+      [
+       "CN-S2-TG-02.1",
+       "P",
+       "开展了解中国的世界文化遗产活动,感受我国劳动人民的勤劳和智慧。",
+       "book",
+       81
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_2e00c9daf2916388": {
+     "m": [
+      [
+       "CN-S2-RA-03.1",
+       "T",
+       "朗读课文。想想作者是按怎样的顺序游览的",
+       "book",
+       84
+      ],
+      [
+       "CN-S2-TG-02.1",
+       "P",
+       "颐和园被列入《世界遗产名录》",
+       "book",
+       84
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_9320a126804ceb8b": {
+     "m": [
+      [
+       "CN-S2-RA-03.1",
+       "T",
+       "默读课文,说一说:课文是从哪些方面介绍秦兵马俑的?",
+       "book",
+       85
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_358d3bdb0cf267b0": {
+     "m": [
+      [
+       "CN-S2-RA-03.1",
+       "T",
+       "用自己的话说课文的主要内容。",
+       "book",
+       113
+      ],
+      [
+       "CN-S2-TG-03.1",
+       "P",
+       "结合课文内容,联系新时代以来中国的伟大发展成就,说说你对 “我将无我,不负人民”的理解。",
+       "book",
+       114
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_725c00933cfc9bce": {
+     "m": [
+      [
+       "CN-S2-EC-04.1",
+       "T",
+       "小练笔如果有人问你为什么而读书,你的回答是什么?想一想,写下来,注意写清楚理由。",
+       "book",
+       117
+      ],
+      [
+       "CN-S2-TG-03.1",
+       "P",
+       "读课文,想想课文讲了哪几件事,再连起来说说课文的主要内容。",
+       "book",
+       117
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_64dde453eab405ee": {
+     "m": [
+      [
+       "CN-S2-RA-04.2",
+       "T",
+       "有感情地朗读这首诗。",
+       "book",
+       120
       ]
      ],
      "d": 0
@@ -55272,6 +58765,1850 @@
       ]
      ],
      "d": 0
+    },
+    "120d6d2c-5a90-1331-ec44-3a814b1b9b0f": {
+     "m": [
+      [
+       "EN-S1-LK-01.3",
+       "T",
+       "Let's spell Listen, repeat and chant.",
+       "book",
+       11
+      ],
+      [
+       "EN-S1-LC-01.3",
+       "P",
+       "Listen, repeat and chant.",
+       "book",
+       11
+      ]
+     ],
+     "d": 0
+    },
+    "bd2b8e82-a85a-0cd0-63c2-4fcba448b110": {
+     "m": [
+      [
+       "EN-S1-LK-01.15",
+       "T",
+       "Say \"Hello!\" and be nice.",
+       "book",
+       8
+      ],
+      [
+       "EN-S1-LC-01.4",
+       "P",
+       "Where are you from?",
+       "book",
+       8
+      ]
+     ],
+     "d": 0
+    },
+    "12aaf513-d242-9a27-0253-ecd55fbc16fd": {
+     "m": [
+      [
+       "EN-S1-LC-03.1",
+       "T",
+       "Hi! I'm Zhang Peng. My name's Amy Green.",
+       "book",
+       9
+      ],
+      [
+       "EN-S1-LS-01.11",
+       "P",
+       "Where are you from?",
+       "book",
+       9
+      ]
+     ],
+     "d": 0
+    },
+    "a29fa38f-f762-a628-d306-e3d3f278e002": {
+     "m": [
+      [
+       "EN-S1-LK-01.3",
+       "T",
+       "Let’s spell Listen, repeat and chant.",
+       "book",
+       11
+      ],
+      [
+       "EN-S1-LS-01.11",
+       "P",
+       "What's your name? Where are you from?",
+       "book",
+       9
+      ],
+      [
+       "EN-S1-LK-01.15",
+       "P",
+       "Hi! I'm Zhang Peng.",
+       "book",
+       9
+      ]
+     ],
+     "d": 0
+    },
+    "78516307-ceb7-8fc4-bd0b-3c25ec6088ae": {
+     "m": [
+      [
+       "EN-S1-CA-02.2",
+       "T",
+       "I can greet new people and politely offer help.",
+       "book",
+       16
+      ],
+      [
+       "EN-S1-LS-01.11",
+       "P",
+       "I can say the name of different countries.",
+       "book",
+       16
+      ],
+      [
+       "EN-S1-LK-01.15",
+       "P",
+       "Hi! I'm John. Where are you from?",
+       "book",
+       15
+      ]
+     ],
+     "d": 0
+    },
+    "116814bf-e8bb-3a2a-7faa-e6c29e4db407": {
+     "m": [
+      [
+       "EN-S1-CA-02.2",
+       "T",
+       "Say hello and be nice.",
+       "book",
+       8
+      ],
+      [
+       "EN-S1-LS-01.11",
+       "P",
+       "What's your name? Where are you from?",
+       "book",
+       9
+      ],
+      [
+       "EN-S1-LC-01.4",
+       "P",
+       "Where are you from?",
+       "book",
+       8
+      ]
+     ],
+     "d": 0
+    },
+    "e7212586-373c-acd0-bc09-21551088ce85": {
+     "m": [
+      [
+       "EN-S1-LS-01.12",
+       "T",
+       "I love my rabbit.",
+       "book",
+       22
+      ],
+      [
+       "EN-S1-LK-01.6",
+       "P",
+       "long fat thin slow short",
+       "book",
+       22
+      ]
+     ],
+     "d": 0
+    },
+    "02683e88-b443-0e4b-ea73-71441634a280": {
+     "m": [
+      [
+       "EN-S1-LS-01.12",
+       "T",
+       "You are happy. You are happy,",
+       "book",
+       20
+      ]
+     ],
+     "d": 0
+    },
+    "bd1577b3-b200-162e-dd64-c9cc547b84c1": {
+     "m": [
+      [
+       "EN-S1-LS-01.16",
+       "T",
+       "It has a long body and short legs.",
+       "book",
+       21
+      ],
+      [
+       "EN-S1-LK-01.6",
+       "P",
+       "long fat thin slow short",
+       "book",
+       22
+      ]
+     ],
+     "d": 0
+    },
+    "d89ad26c-b7c7-0c45-82fe-08a9689e6e8b": {
+     "m": [
+      [
+       "EN-S1-LS-01.1",
+       "T",
+       "Read your book.",
+       "book",
+       34
+      ]
+     ],
+     "d": 0
+    },
+    "a246f2e5-1210-8f91-df1c-b1074d0659f2": {
+     "m": [
+      [
+       "EN-S1-LC-01.3",
+       "T",
+       "Listen, repeat and chant.",
+       "book",
+       35
+      ]
+     ],
+     "d": 0
+    },
+    "e7ccbd0d-cd7f-6d52-f003-23deaa44939c": {
+     "m": [
+      [
+       "EN-S1-LS-01.3",
+       "T",
+       "Read, listen and tick.",
+       "book",
+       35
+      ]
+     ],
+     "d": 0
+    },
+    "798eae08-5d9e-97db-ed5e-5c18820e7c5f": {
+     "m": [
+      [
+       "EN-S1-LK-01.3",
+       "T",
+       "i-e Let's make a kite.",
+       "book",
+       35
+      ],
+      [
+       "EN-S1-LS-01.18",
+       "T",
+       "Write on your paper.",
+       "book",
+       34
+      ]
+     ],
+     "d": 0
+    },
+    "2954cc70-11bc-f45d-b0df-eb45bd4b5143": {
+     "m": [
+      [
+       "EN-S1-LC-03.1",
+       "T",
+       "This is my sense book.",
+       "book",
+       40
+      ],
+      [
+       "EN-S1-LS-01.16",
+       "T",
+       "I see teachers and students.",
+       "book",
+       40
+      ]
+     ],
+     "d": 0
+    },
+    "ed9b9a55-1282-8861-c4f7-03b345e96688": {
+     "m": [
+      [
+       "EN-S1-LS-01.1",
+       "T",
+       "Read your book. Write on your paper.",
+       "book",
+       34
+      ],
+      [
+       "EN-S1-LK-01.7",
+       "P",
+       "bag book pencil paper pen ruler",
+       "book",
+       34
+      ]
+     ],
+     "d": 0
+    },
+    "285f2713-948f-5c38-c285-405d8629769a": {
+     "m": [
+      [
+       "EN-S1-LS-01.16",
+       "T",
+       "I smell with my nose.",
+       "book",
+       38
+      ],
+      [
+       "EN-S1-LK-01.3",
+       "P",
+       "i-e Let's make a kite.",
+       "book",
+       35
+      ],
+      [
+       "EN-S1-LK-01.6",
+       "P",
+       "See some fruit, Touch and feel.",
+       "book",
+       37
+      ]
+     ],
+     "d": 0
+    },
+    "d982053a-8606-f131-5b7a-86982f226b6f": {
+     "m": [
+      [
+       "EN-S1-LS-01.16",
+       "T",
+       "This is my sense book. I see ...",
+       "book",
+       40
+      ],
+      [
+       "EN-S1-LA-03.1",
+       "P",
+       "Share your book in class.",
+       "book",
+       40
+      ]
+     ],
+     "d": 1,
+     "r": [
+      [
+       "EN-S1-LS-01.8",
+       "quote_not_found",
+       "Can I use your , please?"
+      ]
+     ]
+    },
+    "753c73f8-0ef1-cf6b-557d-887391a91658": {
+     "m": [
+      [
+       "EN-S1-LS-01.1",
+       "T",
+       "Eat your egg. Eat, eat, eat!",
+       "book",
+       46
+      ],
+      [
+       "EN-S1-LK-01.6",
+       "P",
+       "What food do you see in the picture?",
+       "book",
+       44
+      ]
+     ],
+     "d": 0
+    },
+    "e4785489-a100-2e6a-2d3f-361f446b66ae": {
+     "m": [
+      [
+       "EN-S1-LS-01.12",
+       "T",
+       "I love healthy food.",
+       "book",
+       44
+      ],
+      [
+       "EN-S1-LK-01.4",
+       "P",
+       "o-e Joe Jones eats at home.",
+       "book",
+       47
+      ]
+     ],
+     "d": 0
+    },
+    "51d2f67d-0d75-e071-f44b-aa4e81dc915f": {
+     "m": [
+      [
+       "EN-S1-LS-01.3",
+       "T",
+       "Read, listen and circle.",
+       "book",
+       47
+      ],
+      [
+       "EN-S1-TH-01.7",
+       "P",
+       "Healthy food!",
+       "book",
+       43
+      ]
+     ],
+     "d": 0
+    },
+    "a29d49f7-58df-21db-0f22-97f9dfe19846": {
+     "m": [
+      [
+       "EN-S1-LC-01.4",
+       "T",
+       "I love vegetables and fruit.",
+       "book",
+       44
+      ],
+      [
+       "EN-S1-LK-01.15",
+       "T",
+       "I'd like some milk and bread.",
+       "book",
+       46
+      ]
+     ],
+     "d": 0
+    },
+    "59fb1b6a-dc56-b686-bd92-d25ef5fabe55": {
+     "m": [
+      [
+       "EN-S1-LC-03.1",
+       "T",
+       "Would you like some rice?",
+       "book",
+       48
+      ],
+      [
+       "EN-S1-TH-01.7",
+       "P",
+       "This is my healthy plate.",
+       "book",
+       49
+      ],
+      [
+       "EN-S1-LK-01.6",
+       "P",
+       "rice soup fruit meat vegetables",
+       "book",
+       49
+      ]
+     ],
+     "d": 0
+    },
+    "ab26b925-632c-4e5d-7c2b-b0efca7be3bb": {
+     "m": [
+      [
+       "EN-S1-LK-01.3",
+       "T",
+       "o-e Joe Jones eats at home.",
+       "book",
+       47
+      ],
+      [
+       "EN-S1-LC-01.2",
+       "P",
+       "Listen, repeat and chant.",
+       "book",
+       47
+      ]
+     ],
+     "d": 0
+    },
+    "f1560e5f-cd48-09b7-c9ab-dc0e7707f0e3": {
+     "m": [
+      [
+       "EN-S1-LS-01.12",
+       "T",
+       "I love vegetables.",
+       "book",
+       48
+      ],
+      [
+       "EN-S1-LK-01.3",
+       "T",
+       "Let’s spell Listen, repeat and chant.",
+       "book",
+       47
+      ]
+     ],
+     "d": 0
+    },
+    "c0d54001-2ae4-d865-9265-9efe712fe76b": {
+     "m": [
+      [
+       "EN-S1-TX-01.6",
+       "T",
+       "I can read a menu and order food.",
+       "book",
+       52
+      ]
+     ],
+     "d": 0
+    },
+    "027017a6-aa26-5608-04af-abcc42cd17d8": {
+     "m": [
+      [
+       "EN-S1-TX-01.2",
+       "T",
+       "What would you like to eat, Zoom?",
+       "book",
+       53
+      ]
+     ],
+     "d": 0
+    },
+    "e6b382f9-0227-8442-044f-5a7f52a7c246": {
+     "m": [
+      [
+       "EN-S1-TX-01.2",
+       "T",
+       "What would you like to eat, Zoom?",
+       "book",
+       53
+      ]
+     ],
+     "d": 0
+    },
+    "ae12aab4-3af2-a6b6-1bdc-46e4b0a69ba3": {
+     "m": [
+      [
+       "EN-S1-LS-01.16",
+       "T",
+       "I have a ball. I have a doll.",
+       "book",
+       58
+      ],
+      [
+       "EN-S1-LK-01.3",
+       "P",
+       "u-e One cute cat uses two old balls.",
+       "book",
+       59
+      ]
+     ],
+     "d": 0
+    },
+    "588bd8a1-52e9-2b04-66f8-bcfc965210a0": {
+     "m": [
+      [
+       "EN-S1-LS-01.11",
+       "T",
+       "What toys do you have?",
+       "book",
+       56
+      ]
+     ],
+     "d": 0
+    },
+    "60cc4344-a282-efcb-9d83-bda99541950a": {
+     "m": [
+      [
+       "EN-S1-LS-01.11",
+       "T",
+       "Do you have old things? Yes, I do.",
+       "book",
+       57
+      ],
+      [
+       "EN-S1-LK-01.3",
+       "P",
+       "u-e One cute cat uses two old balls.",
+       "book",
+       59
+      ]
+     ],
+     "d": 0
+    },
+    "32dd50d2-6e76-59bb-9c54-32f4867fcde9": {
+     "m": [
+      [
+       "EN-S1-LK-01.6",
+       "T",
+       "Let's learn doll ball boat",
+       "book",
+       58
+      ],
+      [
+       "EN-S1-LC-01.4",
+       "T",
+       "I have dolls. I have balls.",
+       "book",
+       56
+      ]
+     ],
+     "d": 0
+    },
+    "01fb917c-3822-9488-fd6d-4d849d6ec923": {
+     "m": [
+      [
+       "EN-S1-LS-01.16",
+       "T",
+       "Where is my map? It's under the box.",
+       "book",
+       61
+      ]
+     ],
+     "d": 0
+    },
+    "1a72156a-0d80-de48-46ca-f78c5f7b2184": {
+     "m": [
+      [
+       "EN-S1-LK-01.6",
+       "P",
+       "Put your old dolls on the shelf.",
+       "book",
+       55
+      ]
+     ],
+     "d": 1,
+     "r": [
+      [
+       "EN-S1-LS-01.1",
+       "quote_not_found",
+       "Put your old map on the wall."
+      ]
+     ]
+    },
+    "807c9a5c-2180-0604-7932-0b749aaf4f98": {
+     "m": [
+      [
+       "EN-S1-LK-01.3",
+       "T",
+       "Listen, repeat and chant. u-e",
+       "book",
+       59
+      ],
+      [
+       "EN-S1-LS-01.10",
+       "T",
+       "Listen, repeat and chant.",
+       "book",
+       59
+      ]
+     ],
+     "d": 0
+    },
+    "5523cdb7-527a-4bb2-254d-60f065fa13f3": {
+     "m": [
+      [
+       "EN-S1-TX-01.4",
+       "T",
+       "What's this? It's a fish.",
+       "book",
+       64
+      ],
+      [
+       "EN-S1-ST-01.9",
+       "P",
+       "Sort them.",
+       "book",
+       63
+      ]
+     ],
+     "d": 0
+    },
+    "6e60cd05-c002-055e-76eb-8ad3a76389ea": {
+     "m": [
+      [
+       "EN-S1-LS-01.11",
+       "T",
+       "Do you have old things?",
+       "book",
+       57
+      ],
+      [
+       "EN-S1-LK-01.7",
+       "P",
+       "Let's learn doll ball boat",
+       "book",
+       58
+      ]
+     ],
+     "d": 0
+    },
+    "e9e3a9bc-8950-db26-b06b-03e29a52cef1": {
+     "m": [
+      [
+       "EN-S1-LS-01.10",
+       "T",
+       "Numbers go up. Numbers go down.",
+       "book",
+       68
+      ]
+     ],
+     "d": 0
+    },
+    "bed98244-7964-abba-0c91-64c9268229c6": {
+     "m": [
+      [
+       "EN-S1-LS-01.10",
+       "T",
+       "Listen and repeat. Then read the story aloud.",
+       "book",
+       71
+      ]
+     ],
+     "d": 0
+    },
+    "f4e3aac9-16ab-b2c5-24b3-86d78dbf068f": {
+     "m": [
+      [
+       "EN-S1-LS-01.3",
+       "T",
+       "Read, listen and tick",
+       "book",
+       71
+      ],
+      [
+       "EN-S1-LS-01.10",
+       "P",
+       "Listen and chant",
+       "book",
+       68
+      ]
+     ],
+     "d": 0
+    },
+    "e3af0f0c-1909-88cb-57a4-faaa8e035822": {
+     "m": [
+      [
+       "EN-S1-LS-01.10",
+       "T",
+       "Let's all count.",
+       "book",
+       68
+      ],
+      [
+       "EN-S1-LK-01.8",
+       "P",
+       "We have fifteen books.",
+       "book",
+       69
+      ]
+     ],
+     "d": 0
+    },
+    "9a45bb27-9366-cb78-4a18-2df1b15052e7": {
+     "m": [
+      [
+       "EN-S1-LS-01.3",
+       "P",
+       "How many books",
+       "book",
+       69
+      ]
+     ],
+     "d": 0
+    },
+    "62e1eaf2-dd22-3cab-4f65-24efba0b9c89": {
+     "m": [
+      [
+       "EN-S1-LK-01.7",
+       "T",
+       "How many green apples do you see?",
+       "book",
+       68
+      ]
+     ],
+     "d": 0
+    },
+    "22795ff0-761e-1282-6217-08f24da3cb07": {
+     "m": [
+      [
+       "EN-S1-TH-01.1",
+       "P",
+       "How do numbers help us make decisions?",
+       "title",
+       null
+      ]
+     ],
+     "d": 0
+    },
+    "47613f39-e867-0f9d-6716-547af8475fb9": {
+     "m": [],
+     "d": 0
+    },
+    "47165761-17d1-112f-4825-e40c27cd2066": {
+     "m": [
+      [
+       "EN-S1-LK-01.11",
+       "T",
+       "How many books do we have? We have fifteen books.",
+       "book",
+       69
+      ],
+      [
+       "EN-S1-LK-01.6",
+       "P",
+       "How many green apples do you see?",
+       "book",
+       68
+      ]
+     ],
+     "d": 0
+    },
+    "5fa49dda-2db7-c53c-180a-9ff61f3342cf": {
+     "m": [
+      [
+       "EN-S1-LC-01.3",
+       "T",
+       "Revision Going to a school fair Read aloud.",
+       "book",
+       79
+      ],
+      [
+       "EN-S1-LS-01.11",
+       "P",
+       "Hi! I'm Li Ming. My name is Amy Green. I'm from the UK.",
+       "book",
+       80
+      ],
+      [
+       "EN-S1-LK-01.15",
+       "P",
+       "Hi! I'm Li Ming. My name is Amy Green. I'm from the UK.",
+       "book",
+       80
+      ]
+     ],
+     "d": 0
+    },
+    "28be3f76-ece8-636f-3684-7ebdf0c02993": {
+     "m": [
+      [
+       "EN-S1-LC-02.1",
+       "T",
+       "Listen, tick or cross.",
+       "book",
+       79
+      ],
+      [
+       "EN-S1-LK-01.6",
+       "P",
+       "Cross out the words that don’t belong.",
+       "book",
+       79
+      ]
+     ],
+     "d": 0
+    },
+    "8278b470-c939-0abc-f157-f7590b94beb6": {
+     "m": [
+      [
+       "EN-S1-LS-01.18",
+       "T",
+       "Read, write and say.",
+       "book",
+       81
+      ],
+      [
+       "EN-S1-LK-01.8",
+       "P",
+       "How much is this pencil box?",
+       "book",
+       81
+      ]
+     ],
+     "d": 0
+    },
+    "c619e1c6-f934-5db4-7f86-da0f802d7755": {
+     "m": [
+      [
+       "EN-S1-TX-01.1",
+       "T",
+       "Revision Listen and chant",
+       "title",
+       null
+      ],
+      [
+       "EN-S1-LS-01.10",
+       "T",
+       "Revision Listen and chant",
+       "title",
+       null
+      ]
+     ],
+     "d": 0
+    },
+    "1f310058-a9d7-0f92-589a-f9afc3c103b7": {
+     "m": [
+      [
+       "EN-S1-LK-01.8",
+       "T",
+       "Appendix 2 Words in each unit Unit 1",
+       "title",
+       null
+      ]
+     ],
+     "d": 0
+    },
+    "917c88b3-b235-ec19-9ab2-5dfbc6cdde72": {
+     "m": [
+      [
+       "EN-S1-LK-01.8",
+       "T",
+       "Appendix 2 Words in each unit Unit 2",
+       "title",
+       null
+      ]
+     ],
+     "d": 0
+    },
+    "a0114d91-6456-edc0-01d4-db3df8bf5e68": {
+     "m": [
+      [
+       "EN-S1-LK-01.8",
+       "T",
+       "Appendix 2 Words in each unit Unit 3",
+       "title",
+       null
+      ],
+      [
+       "EN-S1-LS-01.18",
+       "T",
+       "Appendix 2 Words in each unit Unit 3",
+       "title",
+       null
+      ]
+     ],
+     "d": 0
+    },
+    "7f05ea30-db7d-1217-5b34-184882e10b0a": {
+     "m": [
+      [
+       "EN-S1-LK-01.8",
+       "T",
+       "Appendix 2 Words in each unit Unit 4",
+       "title",
+       null
+      ],
+      [
+       "EN-S1-LS-01.18",
+       "T",
+       "Appendix 2 Words in each unit Unit 4",
+       "title",
+       null
+      ]
+     ],
+     "d": 0
+    },
+    "21a4b60e-d46b-ed38-e763-a28c71849bf6": {
+     "m": [
+      [
+       "EN-S1-LK-01.8",
+       "T",
+       "Appendix 2 Words in each unit Unit 5",
+       "title",
+       null
+      ],
+      [
+       "EN-S1-LS-01.18",
+       "T",
+       "Appendix 2 Words in each unit Unit 5",
+       "title",
+       null
+      ]
+     ],
+     "d": 0
+    },
+    "b0f82547-5701-e350-5947-599d6b135be0": {
+     "m": [
+      [
+       "EN-S1-LK-01.4",
+       "T",
+       "Appendix 5 Pronunciation",
+       "title",
+       null
+      ],
+      [
+       "EN-S1-LC-01.3",
+       "P",
+       "listen and check.",
+       "title",
+       null
+      ]
+     ],
+     "d": 0
+    },
+    "a06a8e21-02c7-fd4d-9eba-e719e5ba4885": {
+     "m": [
+      [
+       "EN-S1-LK-01.15",
+       "T",
+       "Say \"Hello!\" and be nice.",
+       "book",
+       8
+      ]
+     ],
+     "d": 0
+    },
+    "eb772bb0-09c9-9127-112d-cde24ce1d4ed": {
+     "m": [
+      [
+       "EN-S1-LC-01.2",
+       "T",
+       "Listen, repeat and chant.",
+       "book",
+       11
+      ]
+     ],
+     "d": 0
+    },
+    "255c7917-c8e9-245b-e2ba-efd572384c36": {
+     "m": [
+      [
+       "EN-S1-LS-01.3",
+       "T",
+       "Read, listen and circle.",
+       "book",
+       11
+      ],
+      [
+       "EN-S1-LK-01.15",
+       "P",
+       "What's your name?",
+       "book",
+       9
+      ]
+     ],
+     "d": 0
+    },
+    "a510a4d6-7abe-8114-df15-e6cfbea07938": {
+     "m": [
+      [
+       "EN-S1-LS-01.11",
+       "T",
+       "Hi! I'm Zhang Peng. My name's Amy Green.",
+       "book",
+       9
+      ]
+     ],
+     "d": 0
+    },
+    "86da7c99-3720-baf5-76fd-9acb534afbf1": {
+     "m": [
+      [
+       "EN-S1-LK-01.15",
+       "T",
+       "Let me help. Thank you. After you! You're welcome.",
+       "book",
+       12
+      ]
+     ],
+     "d": 0
+    },
+    "9d876601-106a-77c1-3303-5f60b72b1b68": {
+     "m": [
+      [
+       "EN-S1-LK-01.3",
+       "T",
+       "a-e My name is Jake.",
+       "book",
+       11
+      ]
+     ],
+     "d": 0
+    },
+    "b96b1baf-3b1b-3763-d31e-239cf58ec028": {
+     "m": [
+      [
+       "EN-S1-CA-02.4",
+       "T",
+       "Let me help. Thank you. After you! You're welcome.",
+       "book",
+       12
+      ],
+      [
+       "EN-S1-TX-01.4",
+       "P",
+       "Who's that girl? That's our new neighbour, Amy.",
+       "book",
+       12
+      ]
+     ],
+     "d": 0
+    },
+    "d27f818c-c642-59d5-2936-a8cf0963f3ec": {
+     "m": [
+      [
+       "EN-S1-LS-01.11",
+       "T",
+       "Where are you from? I'm from Henan, China.",
+       "book",
+       15
+      ],
+      [
+       "EN-S1-CA-02.4",
+       "P",
+       "After you. Yes. Thank you.",
+       "book",
+       15
+      ],
+      [
+       "EN-S1-CK-01.2",
+       "P",
+       "China UK Canada USA",
+       "book",
+       15
+      ]
+     ],
+     "d": 0
+    },
+    "07930485-3ba5-32ed-e566-103ac75a1518": {
+     "m": [
+      [
+       "EN-S1-LC-01.3",
+       "T",
+       "You are happy. You are happy,Jump and dance. Jump and dance.",
+       "book",
+       20
+      ]
+     ],
+     "d": 0
+    },
+    "7cc8f7eb-90bd-b31e-f6f9-1b28fca2431b": {
+     "m": [
+      [
+       "EN-S1-LC-01.2",
+       "T",
+       "Listen, repeat and chant.",
+       "book",
+       23
+      ]
+     ],
+     "d": 0
+    },
+    "b145cc6c-5249-1fc5-5abd-33a7ad4b7e13": {
+     "m": [
+      [
+       "EN-S1-LS-01.3",
+       "T",
+       "Read, listen and number.",
+       "book",
+       23
+      ]
+     ],
+     "d": 0
+    },
+    "c2fdeb5a-3f77-68ab-40a8-aeae54a8cbe5": {
+     "m": [
+      [
+       "EN-S1-LK-01.6",
+       "T",
+       "long fat thin slow short",
+       "book",
+       22
+      ],
+      [
+       "EN-S1-LK-01.3",
+       "P",
+       "-e He likes to run.",
+       "book",
+       23
+      ]
+     ],
+     "d": 0
+    },
+    "b88900dc-bf52-1cde-33cf-248b38c0b4d8": {
+     "m": [
+      [
+       "EN-S1-LS-01.12",
+       "T",
+       "Make a card. Draw a picture.",
+       "book",
+       25
+      ]
+     ],
+     "d": 0
+    },
+    "2cb0c022-334c-e49b-4233-ad998bf55ea2": {
+     "m": [
+      [
+       "EN-S1-LS-01.9",
+       "T",
+       "You are happy. You are happy,Jump and dance.",
+       "book",
+       20
+      ]
+     ],
+     "d": 0
+    },
+    "bf51d25c-cb5c-4013-fc8d-96d3b89bf848": {
+     "m": [
+      [
+       "EN-S1-LK-01.3",
+       "T",
+       "Listen, repeat and chant. -e He likes to run.",
+       "book",
+       23
+      ],
+      [
+       "EN-S1-LK-01.6",
+       "P",
+       "long fat thin slow short",
+       "book",
+       22
+      ],
+      [
+       "EN-S1-LS-01.10",
+       "P",
+       "Listen and chant",
+       "book",
+       20
+      ]
+     ],
+     "d": 0
+    },
+    "8e6f59d4-3cae-3d67-d7ba-93cad3f5be8c": {
+     "m": [
+      [
+       "EN-S1-LC-03.1",
+       "T",
+       "Do you have a pet? Yes, I have a dog.",
+       "book",
+       27
+      ],
+      [
+       "EN-S1-LS-01.16",
+       "P",
+       "Use activity 2 to help make your mind map.",
+       "book",
+       28
+      ],
+      [
+       "EN-S1-LA-03.1",
+       "P",
+       "Choose some words and talk in pairs.",
+       "book",
+       27
+      ]
+     ],
+     "d": 0
+    },
+    "2ecace19-b31b-e543-7aee-5bc2f97d3d95": {
+     "m": [
+      [
+       "EN-S1-LK-01.11",
+       "T",
+       "Your dog is cute. It has a long body and short legs.",
+       "book",
+       21
+      ],
+      [
+       "EN-S1-LS-01.16",
+       "P",
+       "It's orange. It has a long tail and big ears.",
+       "book",
+       21
+      ],
+      [
+       "EN-S1-LC-01.4",
+       "P",
+       "Do you like dogs? Yes, I do. Dogs are friendly.",
+       "book",
+       21
+      ]
+     ],
+     "d": 0
+    },
+    "fa742dbe-59e7-c987-2493-0721f287c023": {
+     "m": [
+      [
+       "EN-S1-LS-01.12",
+       "T",
+       "We express ourselves in many ways.",
+       "book",
+       26
+      ],
+      [
+       "EN-S1-LC-01.4",
+       "T",
+       "I often make a card for my dad.",
+       "book",
+       26
+      ]
+     ],
+     "d": 0
+    },
+    "9e2f9b18-777d-0a71-a192-46955934ed1d": {
+     "m": [
+      [
+       "EN-S1-TX-01.1",
+       "T",
+       "Unit 3 Listen and chant",
+       "title",
+       null
+      ],
+      [
+       "EN-S1-LS-01.9",
+       "T",
+       "Unit 3 Listen and chant",
+       "title",
+       null
+      ]
+     ],
+     "d": 0
+    },
+    "821b3359-df08-6d47-710e-76a8f55c1a94": {
+     "m": [
+      [
+       "EN-S1-TX-01.1",
+       "T",
+       "I hear with my ears.I hear with my ears.",
+       "book",
+       32
+      ],
+      [
+       "EN-S1-LK-01.6",
+       "P",
+       "I use rulers and crayons.",
+       "book",
+       32
+      ]
+     ],
+     "d": 0
+    },
+    "f530e226-b73d-4f43-e901-c466818277cb": {
+     "m": [
+      [
+       "EN-S1-CA-02.3",
+       "T",
+       "Excuse me. Can I use your eraser, please?",
+       "book",
+       33
+      ],
+      [
+       "EN-S1-LK-01.3",
+       "T",
+       "Let's spell Listen, repeat and chant. i-e",
+       "book",
+       35
+      ]
+     ],
+     "d": 0
+    },
+    "053a8883-4257-bf5f-9fc3-09846502cf26": {
+     "m": [
+      [
+       "EN-S1-LK-01.7",
+       "T",
+       "I use rulers and crayons.",
+       "book",
+       32
+      ],
+      [
+       "EN-S1-LS-01.10",
+       "P",
+       "Let's chant",
+       "book",
+       32
+      ]
+     ],
+     "d": 0
+    },
+    "a2694292-4019-c761-c52e-44236831925e": {
+     "m": [
+      [
+       "EN-S1-LK-01.6",
+       "T",
+       "I smell with my nose.",
+       "book",
+       38
+      ],
+      [
+       "EN-S1-LS-01.16",
+       "P",
+       "What helps you learn?",
+       "book",
+       38
+      ]
+     ],
+     "d": 0
+    },
+    "7140a5e1-b32a-1829-5932-2f200eacbd6c": {
+     "m": [
+      [
+       "EN-S1-LS-01.1",
+       "T",
+       "Read your book. Write on your paper.",
+       "book",
+       34
+      ],
+      [
+       "EN-S1-LK-01.7",
+       "P",
+       "I use rulers and crayons.",
+       "book",
+       32
+      ]
+     ],
+     "d": 0
+    },
+    "3854201e-20c4-7b27-712b-d2f860fd8c22": {
+     "m": [
+      [
+       "EN-S1-TH-01.7",
+       "T",
+       "This is my healthy plate.",
+       "book",
+       49
+      ],
+      [
+       "EN-S1-LS-01.10",
+       "T",
+       "Listen and chant",
+       "book",
+       49
+      ],
+      [
+       "EN-S1-LK-01.8",
+       "P",
+       "Read and write",
+       "book",
+       50
+      ],
+      [
+       "EN-S1-LS-01.18",
+       "P",
+       "I can read and spell words with \"o-e\".",
+       "book",
+       52
+      ]
+     ],
+     "d": 0
+    },
+    "ddfd1aa2-5e9f-d012-211e-3906d53ab041": {
+     "m": [
+      [
+       "EN-S1-TX-01.1",
+       "T",
+       "Let's sing",
+       "book",
+       44
+      ],
+      [
+       "EN-S1-LK-01.7",
+       "T",
+       "What food do you see in the picture?",
+       "book",
+       44
+      ],
+      [
+       "EN-S1-LK-01.10",
+       "P",
+       "o-e Joe Jones eats at home.",
+       "book",
+       47
+      ],
+      [
+       "EN-S1-LS-01.11",
+       "P",
+       "I'd like some bread and eggs, please.",
+       "book",
+       45
+      ]
+     ],
+     "d": 0
+    },
+    "55104fd7-8ba6-5f86-7b88-0e469ebcbe6f": {
+     "m": [
+      [
+       "EN-S1-LS-01.16",
+       "T",
+       "Do you have old things? Yes, I do.",
+       "book",
+       57
+      ],
+      [
+       "EN-S1-TQ-01.1",
+       "P",
+       "Wow! So many toys!",
+       "book",
+       57
+      ],
+      [
+       "EN-S1-TH-01.1",
+       "P",
+       "Do you have any old school things?",
+       "book",
+       57
+      ]
+     ],
+     "d": 0
+    },
+    "44ec7f53-3bd8-9b0d-d27e-94a538e7e3d2": {
+     "m": [
+      [
+       "EN-S1-LK-01.3",
+       "T",
+       "o-e Joe Jones eats at home.",
+       "book",
+       47
+      ]
+     ],
+     "d": 0
+    },
+    "05f2c25a-f478-d6eb-ae07-4b037a82c466": {
+     "m": [
+      [
+       "EN-S1-TH-01.7",
+       "T",
+       "Plan your healthy plates for a day.",
+       "book",
+       52
+      ],
+      [
+       "EN-S1-LS-01.2",
+       "P",
+       "I can read a menu and order food.",
+       "book",
+       52
+      ],
+      [
+       "EN-S1-LS-01.12",
+       "P",
+       "This is my healthy plate for breakfast.",
+       "book",
+       52
+      ]
+     ],
+     "d": 0
+    },
+    "9dce7c03-533b-c075-f1af-a5314e5c0a61": {
+     "m": [
+      [
+       "EN-S1-LC-03.1",
+       "T",
+       "I'd like some bread and eggs, please.",
+       "book",
+       45
+      ],
+      [
+       "EN-S1-LK-01.7",
+       "T",
+       "What food do you see in the picture?",
+       "book",
+       44
+      ]
+     ],
+     "d": 0
+    },
+    "5f4be58e-07a5-4ec3-3657-5d989427361c": {
+     "m": [
+      [
+       "EN-S1-LC-01.3",
+       "T",
+       "Listen and chant I have dolls.",
+       "book",
+       56
+      ],
+      [
+       "EN-S1-LK-01.6",
+       "T",
+       "Let’s learn doll ball boat",
+       "book",
+       58
+      ]
+     ],
+     "d": 0
+    },
+    "c5e8aafb-85a7-705c-1049-f6eb102773ba": {
+     "m": [
+      [
+       "EN-S1-LC-02.1",
+       "T",
+       "Listen and chant I have a ball.",
+       "book",
+       56
+      ],
+      [
+       "EN-S1-LK-01.6",
+       "T",
+       "Let’s learn doll ball boat",
+       "book",
+       58
+      ]
+     ],
+     "d": 0
+    },
+    "a7483c4d-b455-1a2d-1d54-e0d38e690e3e": {
+     "m": [
+      [
+       "EN-S1-LK-01.7",
+       "T",
+       "Let’s learn doll ball boat",
+       "book",
+       58
+      ]
+     ],
+     "d": 0
+    },
+    "fb0eee49-43be-f428-f0ff-b93b9d6c9c8f": {
+     "m": [
+      [
+       "EN-S1-LK-01.3",
+       "T",
+       "Listen, repeat and chant. u-e One cute cat uses two old ball",
+       "book",
+       59
+      ],
+      [
+       "EN-S1-LS-01.16",
+       "T",
+       "Mum, where is my animal book?",
+       "book",
+       60
+      ]
+     ],
+     "d": 0
+    },
+    "bf53afc6-df8a-a5a4-7b0b-0d1478de97f4": {
+     "m": [
+      [
+       "EN-S1-LS-01.16",
+       "T",
+       "What's this? It's a fish. What are these? They're boats.",
+       "book",
+       64
+      ],
+      [
+       "EN-S1-LA-03.1",
+       "P",
+       "Share your work in class.",
+       "book",
+       64
+      ]
+     ],
+     "d": 0
+    },
+    "1e5f781a-b915-7b1c-0296-ec39b24deb39": {
+     "m": [
+      [
+       "EN-S1-TX-01.4",
+       "T",
+       "What's this? It's a fish. What are these? They're boats.",
+       "book",
+       64
+      ],
+      [
+       "EN-S1-LK-01.3",
+       "P",
+       "I can read and spell words with \"u-e\".",
+       "book",
+       64
+      ]
+     ],
+     "d": 0
+    },
+    "4e25d3a4-525c-10ef-8777-e6ed3555cde0": {
+     "m": [
+      [
+       "EN-S1-LS-01.11",
+       "T",
+       "I can talk about old things I have.",
+       "book",
+       64
+      ],
+      [
+       "EN-S1-LK-01.6",
+       "P",
+       "Do you have old things at home? Yes, I have ...",
+       "book",
+       63
+      ],
+      [
+       "EN-S1-LS-01.18",
+       "P",
+       "I can read and spell words with \"u-e\".",
+       "book",
+       64
+      ]
+     ],
+     "d": 0
+    },
+    "71656370-ee33-e128-7c6a-11be3757601b": {
+     "m": [
+      [
+       "EN-S1-LS-01.16",
+       "T",
+       "How many books do we have? We have fifteen books.",
+       "book",
+       69
+      ],
+      [
+       "EN-S1-LK-01.8",
+       "P",
+       "Let’s spell",
+       "book",
+       71
+      ]
+     ],
+     "d": 0
+    },
+    "03cd2d47-091e-ea9e-370d-7c8a3584f4f5": {
+     "m": [
+      [
+       "EN-S1-LS-01.16",
+       "T",
+       "How many books do we have? We have fifteen books.",
+       "book",
+       69
+      ]
+     ],
+     "d": 0
+    },
+    "2bde49ea-9fb8-fc93-7ddf-acce49e5349a": {
+     "m": [
+      [
+       "EN-S1-LS-01.3",
+       "T",
+       "How many apples do we need? We need fifteen.",
+       "book",
+       69
+      ],
+      [
+       "EN-S1-LK-01.6",
+       "P",
+       "How many boxes do we need? We need three boxes.",
+       "book",
+       69
+      ]
+     ],
+     "d": 0
+    },
+    "6360999d-6f45-fca3-3693-0a14f0967402": {
+     "m": [
+      [
+       "EN-S1-LC-03.1",
+       "T",
+       "How many books do we have? We have fifteen books.",
+       "book",
+       69
+      ]
+     ],
+     "d": 0
+    },
+    "7fb25a8b-cfde-e88a-2aba-d3debdac8067": {
+     "m": [
+      [
+       "EN-S1-TX-01.1",
+       "T",
+       "Numbers go up. Numbers go down.",
+       "book",
+       68
+      ]
+     ],
+     "d": 0
+    },
+    "5995c7b9-5ba9-13d1-b3e7-e965bf072bb8": {
+     "m": [
+      [
+       "EN-S1-LK-01.6",
+       "T",
+       "Appendix 2 Words in each unit Unit 6",
+       "title",
+       null
+      ],
+      [
+       "EN-S1-LK-01.7",
+       "T",
+       "Appendix 2 Words in each unit Unit 6",
+       "title",
+       null
+      ]
+     ],
+     "d": 0
+    },
+    "52447b3b-f3fd-eaa7-198b-c4405185a78a": {
+     "m": [
+      [
+       "EN-S1-LK-01.4",
+       "T",
+       "Appendix 5 Pronunciation 单词重音",
+       "title",
+       null
+      ],
+      [
+       "EN-S1-LC-01.2",
+       "T",
+       "Appendix 5 Pronunciation 单词重音",
+       "title",
+       null
+      ]
+     ],
+     "d": 0
+    },
+    "fe0df770-6a7f-8e96-212b-dc39c22aa44f": {
+     "m": [
+      [
+       "EN-S1-LC-02.1",
+       "T",
+       "Appendix 5 Pronunciation Listen and circle",
+       "title",
+       null
+      ],
+      [
+       "EN-S1-LS-01.3",
+       "T",
+       "Appendix 5 Pronunciation Listen and circle",
+       "title",
+       null
+      ]
+     ],
+     "d": 0
+    },
+    "cd014bcc-adea-594e-0172-4a21dfbe9c74": {
+     "m": [
+      [
+       "EN-S1-LC-01.3",
+       "T",
+       "Appendix 5 Pronunciation Read, listen and group",
+       "title",
+       null
+      ],
+      [
+       "EN-S1-LK-01.4",
+       "P",
+       "Appendix 5 Pronunciation Read, listen and group",
+       "title",
+       null
+      ]
+     ],
+     "d": 0
+    },
+    "2e857476-b60c-8380-b4db-5e92dbde4812": {
+     "m": [
+      [
+       "EN-S1-LK-01.4",
+       "T",
+       "Appendix 5 Pronunciation 语调",
+       "title",
+       null
+      ]
+     ],
+     "d": 0
+    },
+    "1290bf8a-75b9-d0fd-a49a-5e267ab6785f": {
+     "m": [
+      [
+       "EN-S1-LC-01.3",
+       "T",
+       "Listen and read aloud. Notice the intonation.",
+       "title",
+       null
+      ],
+      [
+       "EN-S1-LK-01.4",
+       "P",
+       "Listen and read aloud. Notice the intonation.",
+       "title",
+       null
+      ]
+     ],
+     "d": 0
     }
    }
   },
@@ -57947,6 +63284,184 @@
        "能主动、大方地编创动作，泰势优美、自然，表演效呆好。",
        "book",
        67
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_5a5f51e69c973a0a": {
+     "m": [
+      [
+       "AR-S2-MU-01.5",
+       "T",
+       "哼唱第国段主题，说一说是由什么乐器演奏的？",
+       "book",
+       16
+      ],
+      [
+       "AR-S2-MU-01.1",
+       "P",
+       "结尾音乐与哪一段音乐相似，在速度和情绪上有什么变化？",
+       "book",
+       16
+      ],
+      [
+       "AR-S2-MU-01.2",
+       "P",
+       "哼唱第国段主题，说一说是由什么乐器演奏的？",
+       "book",
+       16
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_53fbcce080fc42e3": {
+     "m": [
+      [
+       "AR-S2-MU-01.4",
+       "T",
+       "找出歌曲《巴塘连北京》中的切分音。",
+       "book",
+       17
+      ],
+      [
+       "AR-S2-MU-04.1",
+       "P",
+       "试着用藏族舞蹈动作边唱边跳。",
+       "book",
+       17
+      ],
+      [
+       "AR-S2-MU-01.7",
+       "P",
+       "藏族民歌",
+       "book",
+       17
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_b37950ec05b7b720": {
+     "m": [
+      [
+       "AR-S2-MU-01.7",
+       "T",
+       "这首歌曲的旋律具有我国哪一个地区的风格？",
+       "book",
+       18
+      ],
+      [
+       "AR-S2-MU-01.2",
+       "P",
+       "女中音的音色有什么特点？",
+       "book",
+       18
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_994eebe8fa2abc26": {
+     "m": [
+      [
+       "AR-S2-MU-01.7",
+       "T",
+       "要学那泰山顶上一青松",
+       "book",
+       37
+      ],
+      [
+       "AR-S2-MU-03.2",
+       "P",
+       "分组合作，一组演奏以下锣鼓经",
+       "book",
+       38
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_69368a90587735a6": {
+     "m": [
+      [
+       "AR-S2-MU-02.1",
+       "T",
+       "学一段地方戏曲唱给全班同学听。",
+       "book",
+       40
+      ],
+      [
+       "AR-S2-MU-01.7",
+       "P",
+       "你还会唱哪些京歌？",
+       "book",
+       40
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_b9477b1b4406e83d": {
+     "m": [
+      [
+       "AR-S2-MU-01.4",
+       "T",
+       "第工囚段旋律是同一个速度吗？",
+       "book",
+       41
+      ],
+      [
+       "AR-S2-MU-01.5",
+       "P",
+       "说一说这一片段和《京调》 旋律有什么关系。",
+       "book",
+       41
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_67f21ba8e2e6135e": {
+     "m": [
+      [
+       "AR-S2-MU-01.7",
+       "T",
+       "生旦净丑角色全，唱念做打不简单，五色的...油彩脸上画，锣鼓响要开演；",
+       "book",
+       43
+      ],
+      [
+       "AR-S2-MU-02.1",
+       "T",
+       "模唱歌曲的旋律，唱出京剧的韵味。",
+       "book",
+       44
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_9448f4131bbde887": {
+     "m": [
+      [
+       "AR-S2-MU-02.1",
+       "T",
+       "为歌曲选择合适的打击乐器伴奏，边唱边做情景表演。",
+       "book",
+       20
+      ],
+      [
+       "AR-S2-MU-01.4",
+       "T",
+       "找出歌曲中的两种切分音，并唱一唱。",
+       "book",
+       20
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_2885b915a3fe1b20": {
+     "m": [
+      [
+       "AR-S2-MU-03.2",
+       "T",
+       "学吹竖笛",
+       "book",
+       22
       ]
      ],
      "d": 0
@@ -77380,6 +82895,219 @@
       ]
      ],
      "d": 0
+    },
+    "6106c965-51d7-6184-35db-796b0c291439": {
+     "m": [
+      [
+       "EN-S2-LC-02.4",
+       "T",
+       "Talk about him/her.",
+       "book",
+       8
+      ],
+      [
+       "EN-S2-LC-01.3",
+       "P",
+       "What's he like?",
+       "book",
+       9
+      ],
+      [
+       "EN-S2-LK-01.7",
+       "P",
+       "She's lovely. She is also clever.",
+       "book",
+       7
+      ]
+     ],
+     "d": 0
+    },
+    "c31e00f5-342a-12f6-6302-ca1e8255fd56": {
+     "m": [
+      [
+       "EN-S2-LK-01.7",
+       "T",
+       "I can make a robot.",
+       "book",
+       12
+      ],
+      [
+       "EN-S2-LK-01.1",
+       "P",
+       "Listen, repeat and chant.",
+       "book",
+       11
+      ]
+     ],
+     "d": 0
+    },
+    "4e0cdecf-3e0e-203d-9a19-9d26fff983b9": {
+     "m": [
+      [
+       "EN-S2-LS-01.14",
+       "T",
+       "You look sad. What's the matter?",
+       "book",
+       21
+      ],
+      [
+       "EN-S2-LC-02.3",
+       "P",
+       "How do we express our feelings?",
+       "book",
+       21
+      ]
+     ],
+     "d": 0
+    },
+    "25e8f35f-332a-3b08-99f8-6709fe7110f0": {
+     "m": [
+      [
+       "EN-S2-LC-03.1",
+       "T",
+       "It's important to listen to each other.",
+       "book",
+       24
+      ],
+      [
+       "EN-S2-LA-03.1",
+       "P",
+       "Let's do both projects!",
+       "book",
+       24
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_8643b470c7cd2799": {
+     "m": [
+      [
+       "EN-S2-LK-01.7",
+       "T",
+       "What do you do every week?",
+       "book",
+       32
+      ],
+      [
+       "EN-S2-LS-01.2",
+       "P",
+       "What are the children doing in the pictures?",
+       "book",
+       32
+      ],
+      [
+       "EN-S2-LS-01.14",
+       "P",
+       "What's your favourite subject? It's ...",
+       "book",
+       33
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_8dc9e7598a93bca9": {
+     "m": [
+      [
+       "EN-S2-LK-01.7",
+       "T",
+       "Eat healthy food.",
+       "book",
+       45
+      ],
+      [
+       "EN-S2-LS-01.14",
+       "T",
+       "What healthy habits do you have?",
+       "book",
+       46
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_f6e900c381a8dc90": {
+     "m": [
+      [
+       "EN-S2-LC-03.1",
+       "T",
+       "What would you like to eat? I'd like ...",
+       "book",
+       57
+      ],
+      [
+       "EN-S2-LK-01.6",
+       "P",
+       "I'd like a hamburger and some ice cream.",
+       "book",
+       58
+      ],
+      [
+       "EN-S2-LK-01.1",
+       "P",
+       "Look! Look! I can cook! Look at my cool cookbook.",
+       "book",
+       59
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_df71699679309c91": {
+     "m": [
+      [
+       "EN-S2-LK-01.7",
+       "T",
+       "There is a big forest in the park.\nThere is a long river in ",
+       "book",
+       70
+      ],
+      [
+       "EN-S2-TH-01.20",
+       "P",
+       "Why should we respect nature?",
+       "book",
+       67
+      ],
+      [
+       "EN-S2-LC-01.4",
+       "P",
+       "Mike's family are in a nature park.",
+       "book",
+       69
+      ],
+      [
+       "EN-S2-LS-01.4",
+       "P",
+       "Think of a place that you want to visit.",
+       "book",
+       68
+      ]
+     ],
+     "d": 0
+    },
+    "a8c1cd77-7958-7f78-7526-d45e0db984aa": {
+     "m": [
+      [
+       "EN-S2-LC-02.3",
+       "T",
+       "How are the children feeling？Listen, number and write.",
+       "title",
+       null
+      ],
+      [
+       "EN-S2-LC-02.1",
+       "P",
+       "How are the children feeling？Listen, number and write.",
+       "title",
+       null
+      ],
+      [
+       "EN-S2-LS-01.12",
+       "P",
+       "How are the children feeling？Listen, number and write.",
+       "title",
+       null
+      ]
+     ],
+     "d": 0
     }
    }
   },
@@ -79463,6 +85191,82 @@
       ]
      ],
      "d": 0
+    },
+    "65a613c3-09c4-71cb-044e-8ffd3937da41": {
+     "m": [
+      [
+       "CN-S3-RA-01.2",
+       "T",
+       "用较快的速度默读课文,记下所用的时间。",
+       "book",
+       19
+      ],
+      [
+       "CN-S3-RA-04.1",
+       "T",
+       "在广阔平原的地底下,挖了不计其数的地道",
+       "book",
+       19
+      ]
+     ],
+     "d": 0
+    },
+    "430e2a71-553e-bb0e-3cab-db5a245ad84a": {
+     "m": [
+      [
+       "CN-S3-RA-01.2",
+       "T",
+       "用较快的速度默读课文,记下所用的时间。",
+       "book",
+       22
+      ],
+      [
+       "CN-S3-RA-04.1",
+       "T",
+       "这就是“完璧归赵”的故事。",
+       "book",
+       23
+      ]
+     ],
+     "d": 0
+    },
+    "6d1e3e94-d7ac-827b-4962-01b8ef498fc8": {
+     "m": [
+      [
+       "CN-S3-RA-01.2",
+       "T",
+       "借助关键语句,用较快的速度默读课文,记下所用的时间。",
+       "book",
+       27
+      ],
+      [
+       "CN-S3-RA-05.1",
+       "T",
+       "光的速度是惊人的,大约是 30 万千米每秒",
+       "book",
+       28
+      ]
+     ],
+     "d": 0
+    },
+    "d22a4d78-97ba-93a5-165d-f7f971359da0": {
+     "m": [
+      [
+       "CN-S3-RA-01.2",
+       "T",
+       "带着问题,用较快的速度默读课文,记下所用的时间。",
+       "book",
+       30
+      ],
+      [
+       "CN-S3-RA-04.1",
+       "P",
+       "震荡可怕极了。一刹那间,男人、女人、小孩,所有的人都奔",
+       "book",
+       31
+      ]
+     ],
+     "d": 0
     }
    }
   },
@@ -80895,6 +86699,924 @@
       ]
      ],
      "d": 0
+    },
+    "afa295a3-a5f6-b6e4-bdcb-18cefb4541a3": {
+     "m": [
+      [
+       "CN-S3-RA-01.1",
+       "T",
+       "朗读课文,想象草原迷人的景色,读出自己的感受。",
+       "book",
+       9
+      ],
+      [
+       "CN-S3-RA-04.1",
+       "T",
+       "读出自己的感受。",
+       "book",
+       9
+      ],
+      [
+       "CN-S3-EC-03.1",
+       "P",
+       "小练笔生活中你也有过与人相聚、惜别的经历吧?回忆当时的情景,写下来,注意融入自己的感受。",
+       "book",
+       9
+      ]
+     ],
+     "d": 0
+    },
+    "f2c180e2-c5b9-6a6a-d8ff-be833ce939bd": {
+     "m": [
+      [
+       "CN-S3-RA-02.1",
+       "T",
+       "读下面的句子,联系上下文回答括号里的问题。",
+       "book",
+       11
+      ],
+      [
+       "CN-S3-RA-01.1",
+       "T",
+       "朗读课文。",
+       "book",
+       11
+      ],
+      [
+       "CN-S3-RA-04.1",
+       "P",
+       "丁香结引发了作者对人生怎样的思考?结合生活实际,谈谈你的理解。",
+       "book",
+       12
+      ]
+     ],
+     "d": 0
+    },
+    "00414fea-ff36-ad91-09a6-686b1eae10d4": {
+     "m": [
+      [
+       "CN-S3-RA-01.1",
+       "T",
+       "有感情地朗读课文。",
+       "book",
+       14
+      ],
+      [
+       "CN-S3-RA-07.1",
+       "T",
+       "背诵课文。默写《六月二十七日望湖楼醉书》《西江月·夜行黄沙道中》。",
+       "book",
+       14
+      ],
+      [
+       "CN-S3-RA-03.1",
+       "P",
+       "《六月二十七日望湖楼醉书》每一句诗都是一幅画,说说你想到的画面。",
+       "book",
+       14
+      ]
+     ],
+     "d": 0
+    },
+    "0ef78d1e-c9e2-2adf-9294-e01cd88e6c6a": {
+     "m": [
+      [
+       "CN-S3-RA-01.1",
+       "T",
+       "朗读课文,试着读出磅礴的气势。",
+       "book",
+       20
+      ],
+      [
+       "CN-S3-RA-04.2",
+       "T",
+       "读一读,说说诗句的意思和表达的情感。",
+       "book",
+       20
+      ]
+     ],
+     "d": 0
+    },
+    "3f08b2f4-c201-a6bc-29da-2e58e507108e": {
+     "m": [
+      [
+       "CN-S3-RA-04.1",
+       "T",
+       "根据课文内容填一填,再简要复述课文。",
+       "book",
+       23
+      ],
+      [
+       "CN-S3-RA-01.1",
+       "P",
+       "朗读课文。",
+       "book",
+       23
+      ],
+      [
+       "CN-S3-RA-03.1",
+       "P",
+       "体会五位壮士的英雄气概。",
+       "book",
+       23
+      ]
+     ],
+     "d": 0
+    },
+    "86a7a5e2-33fe-5d00-86b3-22f69b0b33c2": {
+     "m": [
+      [
+       "CN-S3-RA-03.1",
+       "T",
+       "早上六点钟，就有群众的队伍入场了。",
+       "book",
+       24
+      ],
+      [
+       "CN-S3-RA-05.1",
+       "P",
+       "升国旗的时候,礼炮响起来。",
+       "book",
+       24
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_5e1c91f79b576939": {
+     "m": [
+      [
+       "CN-S3-EC-04.1",
+       "T",
+       "发挥想象,把你“变形”后看到的景物、发生的事情等写下来",
+       "book",
+       15
+      ],
+      [
+       "CN-S3-EC-05.1",
+       "P",
+       "和同学交换习作,看看他们对你的“世界” 是不是感兴趣,再参考他们的意见修改自己的习作。",
+       "book",
+       15
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_82e6140cdae38778": {
+     "m": [
+      [
+       "CN-S3-RA-01.1",
+       "T",
+       "从本单元课文或其他描绘自然的诗文中,选择一篇朗读,读出对自然的情感。",
+       "book",
+       16
+      ],
+      [
+       "CN-S3-RA-02.1",
+       "P",
+       "运用学过的方法朗读下面的句子,再说说这样写有什么好处",
+       "book",
+       16
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_7d767ac08cd15bc6": {
+     "m": [
+      [
+       "CN-S3-EC-04.1",
+       "T",
+       "结合自己的生活体验,完成这次习作.",
+       "book",
+       51
+      ],
+      [
+       "CN-S3-EC-02.2",
+       "P",
+       "开展一次“共享美好生活”主题班会",
+       "book",
+       51
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_e124bd0f6d862ece": {
+     "m": [
+      [
+       "CN-S3-RA-01.3",
+       "T",
+       "要根据阅读目的选择合适的材料.",
+       "book",
+       52
+      ],
+      [
+       "CN-S3-RA-05.2",
+       "P",
+       "根据目的查找资料、筛选信息,并将需要的资料摘录下来.",
+       "book",
+       52
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_1ef96e045a4a685d": {
+     "m": [
+      [
+       "CN-S3-RA-04.1",
+       "T",
+       "海浪拍击着海岸",
+       "book",
+       58
+      ],
+      [
+       "CN-S3-RA-03.1",
+       "P",
+       "桑娜沉思:丈夫不顾惜身体",
+       "book",
+       58
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_bb590709992be75d": {
+     "m": [
+      [
+       "CN-S3-RA-03.1",
+       "T",
+       "找出描写人物对话和心理的句子读一读",
+       "book",
+       63
+      ],
+      [
+       "CN-S3-RA-04.1",
+       "P",
+       "老班长快四十岁了,个子挺高",
+       "book",
+       63
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_e64f89794400e123": {
+     "m": [
+      [
+       "CN-S3-EC-02.1",
+       "T",
+       "先说想法,再讲具体理由。",
+       "book",
+       68
+      ],
+      [
+       "CN-S3-EC-02.2",
+       "P",
+       "小组分角色扮演,模拟与老师交流的过程。",
+       "book",
+       68
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_56d9c4dcbc2e9e15": {
+     "m": [
+      [
+       "CN-S3-RA-03.1",
+       "T",
+       "课文写了郝副营长的什么事?突出了他怎样的精神品质? 联系课文题目说一说:郝副营长书上插图中的灯光、战场上微弱的火光, 和",
+       "book",
+       77
+      ],
+      [
+       "CN-S3-RA-04.1",
+       "P",
+       "这位年轻的战友为了让孩子们能够在电灯底下学习,不惜牺牲自己的生命",
+       "book",
+       77
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_b7c9facad05d3405": {
+     "m": [
+      [
+       "CN-S3-EC-04.2",
+       "T",
+       "注意围绕中心意思,选择合适的材料来写。 写之前,可以拟个提纲,看看选择的材料是不是能够表达中心意思,想想哪部分内容应该具",
+       "book",
+       82
+      ],
+      [
+       "CN-S3-EC-05.1",
+       "P",
+       "写完后,请同学读读,看看他能不能体会到你写的中心意思。",
+       "book",
+       82
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_de0f5847f6dea200": {
+     "m": [
+      [
+       "CN-S3-RA-04.1",
+       "P",
+       "爸爸是一个工厂的计划科科长,擅长订计划。",
+       "book",
+       83
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_a02f483a1406b6c1": {
+     "m": [
+      [
+       "CN-S3-RA-05.1",
+       "T",
+       "默读课文,结合关键语句,说说课文讲了哪几个方面的内容。",
+       "book",
+       88
+      ],
+      [
+       "CN-S3-IN-03.1",
+       "P",
+       "选择感兴趣的内容开展调查",
+       "book",
+       88
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_382ddb175d20d45e": {
+     "m": [
+      [
+       "CN-S3-RA-04.1",
+       "T",
+       "默读课文,说说文中的老人创造了怎样的奇迹,是在什么样的条件下创造的。",
+       "book",
+       89
+      ],
+      [
+       "CN-S3-TG-03.2",
+       "P",
+       "他已经将自己的生命转化为另一种东西。",
+       "book",
+       90
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_3687ea8192b0d75e": {
+     "m": [
+      [
+       "CN-S3-RA-04.2",
+       "T",
+       "朗读课文,读出诗歌的韵味,体会三黑是怎样看待土地的。",
+       "book",
+       91
+      ],
+      [
+       "CN-S3-TG-03.2",
+       "P",
+       "读了这篇课文和“阅读链接”,你对脚下的土地有了什么新的感受?",
+       "book",
+       91
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_fa80f9c7f9310b78": {
+     "m": [
+      [
+       "CN-S3-RA-01.1",
+       "T",
+       "正确、流利地朗读课文。背诵课文。",
+       "book",
+       104
+      ],
+      [
+       "CN-S3-RA-02.1",
+       "P",
+       "联系上下文,说说下面句子中加点字的意思。",
+       "book",
+       104
+      ],
+      [
+       "CN-S3-RA-04.1",
+       "P",
+       "结合课文题目,借助注释说说故事的内容。",
+       "book",
+       104
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_26afeac72189302e": {
+     "m": [
+      [
+       "CN-S3-RA-04.1",
+       "T",
+       "默读课文,运用学过的方法把握课文的主要内容",
+       "book",
+       107
+      ],
+      [
+       "CN-S3-RA-02.1",
+       "P",
+       "读下面的句子,联系上下文,说说“我”是一个怎样的孩子。",
+       "book",
+       107
+      ],
+      [
+       "CN-S3-RA-03.1",
+       "P",
+       "再和同学交流。",
+       "book",
+       107
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_f1486596db51d687": {
+     "m": [
+      [
+       "CN-S3-RA-03.1",
+       "T",
+       "快速默读课文,想想故事的主要内容。",
+       "book",
+       108
+      ],
+      [
+       "CN-S3-RA-04.1",
+       "P",
+       "说说在作者的想象中, 未来是怎样学习的,和今天有什么不同。",
+       "book",
+       108
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_bfb8223c04325691": {
+     "m": [
+      [
+       "CN-S3-RA-04.1",
+       "T",
+       "阿!闰土的心里有无穷无尽的希奇的事",
+       "book",
+       117
+      ],
+      [
+       "CN-S3-RA-02.1",
+       "P",
+       "本文有的用字与现在不同",
+       "book",
+       115
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_473bd081c4c11ee1": {
+     "m": [
+      [
+       "CN-S3-RA-03.1",
+       "T",
+       "我真爱这一篇好的故事",
+       "book",
+       120
+      ],
+      [
+       "CN-S3-RA-02.1",
+       "P",
+       "初读课文时,遇到难懂的词语可以先跳过去。",
+       "book",
+       121
+      ],
+      [
+       "CN-S3-RA-03.2",
+       "P",
+       "你怎样理解这故事的美丽、幽雅、有趣?",
+       "book",
+       121
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_c50d469032be4bf5": {
+     "m": [
+      [
+       "CN-S3-RA-04.1",
+       "T",
+       "伯父去世了,他的遗体躺在万国殡仪馆的礼堂里",
+       "book",
+       122
+      ],
+      [
+       "CN-S3-RA-03.2",
+       "P",
+       "用较快的速度默读课文,想想课文写了关于鲁迅的哪几件事",
+       "book",
+       122
+      ]
+     ],
+     "d": 0
+    },
+    "25438850-9cba-1dc6-50ee-8c93124dc82f": {
+     "m": [
+      [
+       "CN-S3-RA-04.1",
+       "T",
+       "按照事情发展的顺序,说说课文的主要内容。",
+       "book",
+       31
+      ],
+      [
+       "CN-S3-RA-01.2",
+       "P",
+       "默读课文。按照事情发展的顺序,说说课文的主要内容。",
+       "book",
+       31
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_3e8701b2f06ddedb": {
+     "m": [
+      [
+       "CN-S3-EC-02.3",
+       "T",
+       "在班里开展一次演讲活动。",
+       "book",
+       32
+      ],
+      [
+       "CN-S3-EC-02.1",
+       "P",
+       "观点要鲜明。",
+       "book",
+       32
+      ],
+      [
+       "CN-S3-EC-01.2",
+       "P",
+       "注意语气、语调,姿态大方。",
+       "book",
+       32
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_4643b89f7bb2c76c": {
+     "m": [
+      [
+       "CN-S3-EC-04.1",
+       "T",
+       "选一次活动写下来,和同学分享你的经历。",
+       "book",
+       33
+      ],
+      [
+       "CN-S3-EC-05.1",
+       "P",
+       "再和同学交换习作,互相检查",
+       "book",
+       33
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_75ae02ea763a1a78": {
+     "m": [
+      [
+       "CN-S3-RA-02.2",
+       "T",
+       "读句子,体会分号的用法",
+       "book",
+       34
+      ],
+      [
+       "CN-S3-RA-04.1",
+       "P",
+       "把本单元课文题目按事件发生的先后顺序填在时间轴上",
+       "book",
+       34
+      ],
+      [
+       "CN-S3-LW-02.2",
+       "P",
+       "在班里举办一次硬笔书写作品展览。",
+       "book",
+       35
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_f06dfe0563ecfdae": {
+     "m": [
+      [
+       "CN-S3-RA-04.1",
+       "T",
+       "体会传统玩具给人们带来的乐趣。",
+       "book",
+       37
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_3e80342f8d40cb69": {
+     "m": [
+      [
+       "CN-S3-RA-05.1",
+       "T",
+       "这一段提示火星上有可能存在生命",
+       "book",
+       42
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_905616d5ba94c6b8": {
+     "m": [
+      [
+       "CN-S3-RA-05.1",
+       "T",
+       "为家人计划故宫一日游,画一张故宫参观路线图。",
+       "book",
+       45
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_b02b5674a27ff10b": {
+     "m": [
+      [
+       "CN-S3-EC-04.1",
+       "T",
+       "展开丰富的想象,创编故事。",
+       "book",
+       69
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_367af70db8855e56": {
+     "m": [
+      [
+       "CN-S3-RA-04.1",
+       "T",
+       "和同学交流你从中感受到的人格魅力",
+       "book",
+       70
+      ],
+      [
+       "CN-S3-RA-03.2",
+       "P",
+       "再和同学合作,丰富下面的思维导图。",
+       "book",
+       70
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_d92d68505f66c5ed": {
+     "m": [
+      [
+       "CN-S3-TG-02.1",
+       "T",
+       "和同学交流你的收获。",
+       "book",
+       73
+      ],
+      [
+       "CN-S3-RA-04.1",
+       "P",
+       "《童年》以孩子的视角来讲述故事",
+       "book",
+       73
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_d2a2ce8641ffdb7f": {
+     "m": [
+      [
+       "CN-S3-RA-04.1",
+       "T",
+       "这喷泉,这杏花,给旅客们带来了温暖的春意。",
+       "book",
+       85
+      ],
+      [
+       "CN-S3-RA-02.1",
+       "P",
+       "“精心设计” 体现在哪里?",
+       "book",
+       84
+      ],
+      [
+       "CN-S3-RA-03.1",
+       "P",
+       "是怎样一步一步表达出来的?",
+       "book",
+       85
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_6cf53ad491a7a451": {
+     "m": [
+      [
+       "CN-S3-RA-01.1",
+       "T",
+       "有感情地朗读课文。背诵课文。默写《江南春》。",
+       "book",
+       97
+      ],
+      [
+       "CN-S3-RA-04.2",
+       "P",
+       "读读前两首诗,说说你体会到了景物怎样的特点",
+       "book",
+       97
+      ],
+      [
+       "CN-S3-RA-07.1",
+       "P",
+       "背诵课文。",
+       "book",
+       97
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_808b0e242adb120e": {
+     "m": [
+      [
+       "CN-S3-EC-02.2",
+       "T",
+       "分小组,选择一则材料进行讨论。",
+       "book",
+       98
+      ],
+      [
+       "CN-S3-EC-01.2",
+       "P",
+       "尊重不同意见,讨论问题时态度要平和,以理服人。",
+       "book",
+       98
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_26e72a963d64c04f": {
+     "m": [
+      [
+       "CN-S3-EC-04.3",
+       "T",
+       "仿照上面的例子,结合你前期的调查写一份倡议书。",
+       "book",
+       99
+      ],
+      [
+       "CN-S3-IN-03.1",
+       "P",
+       "结合你前期的调查写一份倡议书。",
+       "book",
+       99
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_7c0834561afea7ff": {
+     "m": [
+      [
+       "CN-S3-RA-05.2",
+       "T",
+       "怎样乘车最合适?",
+       "book",
+       101
+      ],
+      [
+       "CN-S3-RA-04.2",
+       "T",
+       "梳理、总结理解古诗词的方法。",
+       "book",
+       100
+      ],
+      [
+       "CN-S3-RA-05.1",
+       "P",
+       "塑料污染是全球性问题。",
+       "book",
+       100
+      ],
+      [
+       "CN-S3-TG-01.3",
+       "P",
+       "我们已经学习、积累了许多古诗词。",
+       "book",
+       100
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_d21ca5cf74042477": {
+     "m": [
+      [
+       "CN-S3-EC-04.1",
+       "T",
+       "让我们写一个科幻故事,将头脑中的想象记录下来。",
+       "book",
+       111
+      ],
+      [
+       "CN-S3-EC-02.2",
+       "P",
+       "和同学交流,看看谁写的科幻故事奇特而又令人信服。",
+       "book",
+       111
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_b2cfeec5d710fbd9": {
+     "m": [
+      [
+       "CN-S3-EC-04.1",
+       "P",
+       "围绕文章题目补充相关信息写事的文章要理清事情的起因、经过",
+       "book",
+       112
+      ],
+      [
+       "CN-S3-RA-03.1",
+       "P",
+       "理清事情的起因、经过",
+       "book",
+       112
+      ],
+      [
+       "CN-S3-TG-01.1",
+       "P",
+       "日积月累五行",
+       "book",
+       113
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_c5be48df13fb2abf": {
+     "m": [
+      [
+       "CN-S3-RA-01.1",
+       "T",
+       "有感情地读一读",
+       "book",
+       126
+      ],
+      [
+       "CN-S3-RA-04.2",
+       "P",
+       "有的人活着, 他已经死了; 有的人死了, 他还活着。",
+       "book",
+       126
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_0f1fecfb5de2d39a": {
+     "m": [
+      [
+       "CN-S3-EC-04.1",
+       "T",
+       "以家风为主题,选择有代表性的事例写下来。",
+       "book",
+       128
+      ],
+      [
+       "CN-S3-EC-03.1",
+       "P",
+       "可以和家人交流一下",
+       "book",
+       128
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_43bc344e5a31571e": {
+     "m": [
+      [
+       "CN-S3-IN-03.1",
+       "T",
+       "结合查找的资料,参考示例做一张人物卡片,展示你对鲁迅的了解。",
+       "book",
+       129
+      ],
+      [
+       "CN-S3-RA-01.3",
+       "P",
+       "你想进一步了解哪位作家?要加深对他的了解,还需要阅读哪方面的资料?",
+       "book",
+       129
+      ]
+     ],
+     "d": 0
     }
    }
   },
@@ -81183,6 +87905,25 @@
        "1952—2022年我国化石能源消费量的变化图",
        "design",
        null
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_340b5eebf4f661e9": {
+     "m": [
+      [
+       "GE-S4-RE-04.7",
+       "T",
+       "土地孕育了地球上的万物,是人类的衣食之源和生活、生产的空间",
+       "book",
+       63
+      ],
+      [
+       "GE-S4-TP-03.2",
+       "T",
+       "收集、分析家乡土地利用数据",
+       "book",
+       65
       ]
      ],
      "d": 0
@@ -84264,6 +91005,397 @@
        "改写、省略",
        "title",
        null
+      ]
+     ],
+     "d": 0
+    },
+    "d524afad-0049-30a0-3c5e-7ed8226cf057": {
+     "m": [
+      [
+       "MA-S2-NA-01.1",
+       "P",
+       "整理和复习",
+       "title",
+       null
+      ]
+     ],
+     "d": 0
+    },
+    "ca6722c4-3b99-7908-ecf6-cb65e6d36837": {
+     "m": [
+      [
+       "MA-S2-NA-01.1",
+       "T",
+       "1亿张纸有多高",
+       "book",
+       29
+      ],
+      [
+       "MA-S2-GG-01.5",
+       "P",
+       "100张纸厚1 cm",
+       "book",
+       30
+      ],
+      [
+       "MA-S2-NA-02.1",
+       "P",
+       "1亿粒大米有多重?",
+       "book",
+       30
+      ]
+     ],
+     "d": 0
+    },
+    "39cf5508-15ac-e049-b09f-e0b61431a4f0": {
+     "m": [
+      [
+       "MA-S2-NA-01.1",
+       "T",
+       "1亿张纸有多高",
+       "book",
+       29
+      ],
+      [
+       "MA-S2-GG-01.5",
+       "P",
+       "100张纸厚1 cm",
+       "book",
+       30
+      ],
+      [
+       "MA-S2-NA-02.1",
+       "P",
+       "1亿粒大米有多重?",
+       "book",
+       30
+      ]
+     ],
+     "d": 0
+    },
+    "5ced60c0-f618-945c-8a42-15a8d5a27851": {
+     "m": [
+      [
+       "MA-S2-GG-01.2",
+       "T",
+       "画角",
+       "title",
+       null
+      ]
+     ],
+     "d": 0
+    },
+    "e67eb673-473b-8bf7-d6d4-acc8e17ecc63": {
+     "m": [
+      [
+       "MA-S2-GG-01.2",
+       "P",
+       "度量单位:1° 0°<锐角<90°",
+       "book",
+       41
+      ],
+      [
+       "MA-S2-GG-02.1",
+       "P",
+       "我从旋转的角度重新认识了角,知道了角可以分为锐角、直角......",
+       "book",
+       41
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_f2b4ca86955df3b8": {
+     "m": [
+      [
+       "MA-S2-NA-01.2",
+       "T",
+       "多位数乘两位数",
+       "book",
+       60
+      ],
+      [
+       "MA-S2-NA-02.1",
+       "P",
+       "要结合实际问题来确定用估算解决问题",
+       "book",
+       60
+      ],
+      [
+       "MA-S2-NA-01.5",
+       "P",
+       "我发现不管几位数乘几位数,都是用其中一个乘数的每一位数和另一个乘数分别相乘,再把积相加。",
+       "book",
+       60
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_7bf31c8e3f693c9d": {
+     "m": [],
+     "d": 0
+    },
+    "tcu_bb36a0dad2e15a69": {
+     "m": [
+      [
+       "MA-S2-SP-01.2",
+       "T",
+       "用条形统计图表示数据",
+       "book",
+       116
+      ],
+      [
+       "MA-S2-SP-01.1",
+       "P",
+       "数据的收集、整理与表达",
+       "book",
+       116
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_8078d482acda52c7": {
+     "m": [
+      [
+       "MA-S2-NA-02.2",
+       "T",
+       "按顺序列表试试,看看你能发现什么规律。",
+       "book",
+       124
+      ],
+      [
+       "MA-S2-NA-02.3",
+       "P",
+       "(3) 这时脚的总数与头的总数之差47−35=12,就是兔的只数。",
+       "book",
+       124
+      ]
+     ],
+     "d": 0
+    },
+    "f51f1082-f9fc-e266-ddc0-a0209d3faf69": {
+     "m": [
+      [
+       "MA-S2-NA-01.1",
+       "T",
+       "先读万级,再读个级。",
+       "book",
+       9
+      ]
+     ],
+     "d": 0
+    },
+    "b693ecfb-2b33-d406-a089-ea6321b6f2a8": {
+     "m": [],
+     "d": 1,
+     "r": [
+      [
+       "MA-S2-NA-01.1",
+       "quote_not_found",
+       "写出下面各数。"
+      ]
+     ]
+    },
+    "a219ed82-a73e-e76b-edde-2040d3fa1cfc": {
+     "m": [
+      [
+       "MA-S2-NA-01.1",
+       "T",
+       "叫作十进制计数法。",
+       "book",
+       15
+      ]
+     ],
+     "d": 0
+    },
+    "333dd72a-7eaa-a086-3ff3-e709ffab91a3": {
+     "m": [
+      [
+       "MA-S2-NA-01.1",
+       "T",
+       "从一亿开始,还可以继续数下去",
+       "book",
+       15
+      ]
+     ],
+     "d": 0
+    },
+    "1484f6a2-b2d5-a314-beb9-47667f7710e4": {
+     "m": [
+      [
+       "MA-S2-NA-01.1",
+       "T",
+       "位数多的数就大。",
+       "book",
+       20
+      ]
+     ],
+     "d": 0
+    },
+    "ab55074c-4ee7-55ab-d556-8baa1b26d52f": {
+     "m": [
+      [
+       "MA-S2-NA-01.1",
+       "T",
+       "把整万或整亿的数改写成用“万” 或“亿”作单位的数。",
+       "book",
+       21
+      ]
+     ],
+     "d": 0
+    },
+    "dc0ecb4c-3f6c-9510-2c45-346a12fe5204": {
+     "m": [
+      [
+       "MA-S2-GG-01.1",
+       "T",
+       "从一个点引出两条射线得到的图形是角",
+       "book",
+       33
+      ],
+      [
+       "MA-S2-GG-01.2",
+       "T",
+       "一条射线绕它的端点旋转不到周,形成钝角。",
+       "book",
+       33
+      ]
+     ],
+     "d": 0
+    },
+    "e7f8fa86-fc85-37fc-c81b-817fff4d1aaa": {
+     "m": [
+      [
+       "MA-S2-GG-01.2",
+       "T",
+       "要准确测量一个角的大小,应该用一个合适的角作单位来量。",
+       "book",
+       35
+      ]
+     ],
+     "d": 0
+    },
+    "a450b4e7-511a-46cb-bd21-6a63c4a00428": {
+     "m": [
+      [
+       "MA-S2-GG-01.2",
+       "T",
+       "量角",
+       "title",
+       null
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_9fe0779fbfc06de8": {
+     "m": [
+      [
+       "MA-S2-NA-01.2",
+       "T",
+       "可以用个位上的3和十位上的1, 分别和12相乘。",
+       "book",
+       48
+      ],
+      [
+       "MA-S2-NA-02.1",
+       "P",
+       "每筐有16盒草莓。3 筐有多少盒草莓?",
+       "book",
+       44
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_289d4e9af32ab9e6": {
+     "m": [
+      [
+       "MA-S2-NA-01.4",
+       "T",
+       "分量 = 总量 − 分量",
+       "book",
+       63
+      ],
+      [
+       "MA-S2-NA-02.2",
+       "P",
+       "总量 = 分量 + 分量",
+       "book",
+       63
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_8924cda0fe91094c": {
+     "m": [
+      [
+       "MA-S2-GG-01.1",
+       "T",
+       "在同一个平面内不相交的两条直线叫作平行线",
+       "book",
+       76
+      ],
+      [
+       "MA-S2-GG-01.2",
+       "T",
+       "两条直线相交成直角,就说这两条直线互相垂直。",
+       "book",
+       76
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_07ea1c44be4fed34": {
+     "m": [
+      [
+       "MA-S2-SP-01.2",
+       "T",
+       "把上面统计的数据用条形统计图表示出来。",
+       "book",
+       94
+      ],
+      [
+       "MA-S2-SP-01.1",
+       "P",
+       "做一做统计本班同学出生的月份。",
+       "book",
+       94
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_bbef2278750c4f29": {
+     "m": [
+      [
+       "MA-S2-IP-01.3",
+       "T",
+       "请你拿着指南针和藏宝图,看看学校东北、西北、东南、西南四个方向上都有哪些建筑。",
+       "book",
+       109
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_dd4c5e17857f3033": {
+     "m": [
+      [
+       "MA-S2-NA-01.1",
+       "P",
+       "本学期我们认识了更大的数",
+       "book",
+       113
+      ],
+      [
+       "MA-S2-NA-02.1",
+       "P",
+       "总量 = 分量 + 分量",
+       "book",
+       113
+      ],
+      [
+       "MA-S2-GG-01.2",
+       "P",
+       "锐角<直角<钝角<平角<周角",
+       "book",
+       115
       ]
      ],
      "d": 0
@@ -140268,6 +147400,75 @@
       ]
      ],
      "d": 0
+    },
+    "e2cb507a-3f87-b027-e1f8-dd6230a783f4": {
+     "m": [
+      [
+       "EN-S2-LC-02.1",
+       "T",
+       "Zhang Peng: It was great! I climbed the Great Wall.",
+       "book",
+       9
+      ],
+      [
+       "EN-S2-LK-01.10",
+       "T",
+       "Zhang Peng: It was great! I climbed the Great Wall.",
+       "book",
+       9
+      ]
+     ],
+     "d": 0
+    },
+    "ae83a870-b92a-4053-803e-e7012afe5f81": {
+     "m": [
+      [
+       "EN-S2-LS-01.14",
+       "T",
+       "The trip to ... was special because ...",
+       "book",
+       11
+      ]
+     ],
+     "d": 0
+    },
+    "3c0d150d-bf01-cca3-1340-fe3b2be6b5d7": {
+     "m": [
+      [
+       "EN-S2-LC-02.1",
+       "T",
+       "What did Binbin do at the Mid-Autumn Festival?",
+       "book",
+       21
+      ],
+      [
+       "EN-S2-LK-01.10",
+       "P",
+       "Did you eat mooncakes?",
+       "book",
+       21
+      ]
+     ],
+     "d": 0
+    },
+    "cab48052-d03f-11e5-f5a9-452b04c676ca": {
+     "m": [
+      [
+       "EN-S2-LC-02.1",
+       "T",
+       "What did Binbin do last weekend?",
+       "book",
+       23
+      ],
+      [
+       "EN-S2-LS-01.12",
+       "P",
+       "What did you like about it?",
+       "book",
+       23
+      ]
+     ],
+     "d": 0
     }
    }
   },
@@ -148404,6 +155605,189 @@
        "主动参与，积极创造，愉快合作",
        "book",
        68
+      ]
+     ],
+     "d": 0
+    },
+    "31c1a4a9-54b0-43fe-4f58-53a27e5f732f": {
+     "m": [
+      [
+       "AR-S2-MU-01.3",
+       "T",
+       "聆听 小步舞曲",
+       "title",
+       null
+      ],
+      [
+       "AR-S2-MU-01.4",
+       "P",
+       "重音记号＞",
+       "book",
+       3
+      ]
+     ],
+     "d": 0
+    },
+    "f0383174-f79e-575c-9c3e-f8bfee2a2e7c": {
+     "m": [
+      [
+       "AR-S2-MU-02.1",
+       "T",
+       "演唱 土风舞",
+       "title",
+       null
+      ]
+     ],
+     "d": 0
+    },
+    "29cba828-565f-9568-5dbc-bb7527938b22": {
+     "m": [
+      [
+       "AR-S2-MU-01.7",
+       "T",
+       "聆听 水乡船歌",
+       "title",
+       null
+      ],
+      [
+       "AR-S2-MU-01.2",
+       "P",
+       "单簧管大管圆号定音鼓",
+       "book",
+       4
+      ]
+     ],
+     "d": 0
+    },
+    "0b317686-ce8e-b41b-1cd8-ca0dad80c760": {
+     "m": [
+      [
+       "AR-S2-MU-01.1",
+       "T",
+       "聆听 森林的歌声",
+       "title",
+       null
+      ]
+     ],
+     "d": 0
+    },
+    "7b3897b8-088e-875b-b23e-b65bd6b5ce5f": {
+     "m": [
+      [
+       "AR-S2-MU-02.1",
+       "T",
+       "演唱 小溪流水响叮咚",
+       "title",
+       null
+      ]
+     ],
+     "d": 0
+    },
+    "11354073-b1fd-a245-4676-5e4af8e51c24": {
+     "m": [
+      [
+       "AR-S2-MU-01.1",
+       "T",
+       "摇篮曲贺蝚汀曲",
+       "book",
+       5
+      ],
+      [
+       "AR-S2-MU-01.4",
+       "P",
+       "摇篮曲贺蝚汀曲",
+       "book",
+       5
+      ],
+      [
+       "AR-S2-MU-01.3",
+       "P",
+       "摇篮曲贺蝚汀曲",
+       "book",
+       5
+      ]
+     ],
+     "d": 0
+    },
+    "9cc1d12c-e480-58bf-f836-090c477f3602": {
+     "m": [
+      [
+       "AR-S2-MU-01.5",
+       "T",
+       "乐曲的主题出现了几次？",
+       "book",
+       9
+      ],
+      [
+       "AR-S2-MU-01.3",
+       "P",
+       "请你随着音乐用手轻轻地拍击。",
+       "book",
+       8
+      ],
+      [
+       "AR-S2-MU-01.4",
+       "P",
+       "听到速度变快时随音乐划圈。",
+       "book",
+       9
+      ]
+     ],
+     "d": 0
+    },
+    "e334fcd8-73f1-c96f-fd32-1f489ab83fab": {
+     "m": [
+      [
+       "AR-S2-MU-01.5",
+       "T",
+       "乐曲的主题出现了几次？",
+       "book",
+       9
+      ],
+      [
+       "AR-S2-MU-01.3",
+       "P",
+       "请你随着音乐用手轻轻地拍击。",
+       "book",
+       8
+      ],
+      [
+       "AR-S2-MU-01.4",
+       "P",
+       "听到速度变快时随音乐划圈。",
+       "book",
+       9
+      ]
+     ],
+     "d": 0
+    },
+    "1949f531-4a56-063a-0c9a-7a7a47e33462": {
+     "m": [
+      [
+       "AR-S2-MU-01.2",
+       "T",
+       "单簧管大管圆号定音鼓",
+       "book",
+       4
+      ],
+      [
+       "AR-S2-MU-01.5",
+       "P",
+       "彼得与狼",
+       "book",
+       4
+      ]
+     ],
+     "d": 0
+    },
+    "e9072546-4b3c-7997-3cf3-f319ab909f8c": {
+     "m": [
+      [
+       "AR-S2-MU-02.1",
+       "T",
+       "白桦林好地方",
+       "book",
+       4
       ]
      ],
      "d": 0

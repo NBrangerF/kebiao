@@ -1,0 +1,112 @@
+{
+ "edition_id": "ed_4fea6fca40d21be4914c",
+ "textbook_title": "英语6年级上册",
+ "platform_textbook_id": "291dc803-4454-4374-8f31-29d7755efcd2",
+ "platform_title": "新教材-小学英语人教版（PEP）（三年级起点）（主编：吴欣）六年级上册",
+ "match": {
+  "title_hits": 2,
+  "method": "book_text",
+  "score": 0.87,
+  "candidates": 5
+ },
+ "tree": [
+  {
+   "id": "c0fd04e4-328d-404d-8692-7d6a64886033",
+   "title": "Unit 1 Amazing places",
+   "children": [
+    {
+     "id": "7a5f1bf5-9f09-48ac-af11-ecace3030992",
+     "title": "Part A What famous places do you know?",
+     "children": []
+    },
+    {
+     "id": "574aecd1-65a9-488c-927b-4d71f7baa7cb",
+     "title": "Part B What makes a trip special?",
+     "children": []
+    }
+   ]
+  },
+  {
+   "id": "c11d209a-6d1c-4c6e-9a5e-c965b617d51e",
+   "title": "Unit 2 Getting together",
+   "children": [
+    {
+     "id": "4362b2f1-dc4d-4ef0-b750-803a6ee2e6b0",
+     "title": "Part A How can festivals bring us together?",
+     "children": []
+    },
+    {
+     "id": "2e0b4beb-bc0f-42e4-901a-b1f92f41ed10",
+     "title": "Part B How can big events bring us together?",
+     "children": []
+    }
+   ]
+  }
+ ],
+ "lessons": [
+  {
+   "id": "e2cb507a-3f87-b027-e1f8-dd6230a783f4",
+   "title": "Part A What famous places do you know?",
+   "chapter_path": [
+    "c0fd04e4-328d-404d-8692-7d6a64886033",
+    "7a5f1bf5-9f09-48ac-af11-ecace3030992"
+   ],
+   "pdf_page": null,
+   "materials": [
+    "课件",
+    "教学设计",
+    "学习任务单",
+    "课后练习"
+   ],
+   "hours": 1
+  },
+  {
+   "id": "ae83a870-b92a-4053-803e-e7012afe5f81",
+   "title": "Part B What makes a trip special?",
+   "chapter_path": [
+    "c0fd04e4-328d-404d-8692-7d6a64886033",
+    "574aecd1-65a9-488c-927b-4d71f7baa7cb"
+   ],
+   "pdf_page": null,
+   "materials": [
+    "课件",
+    "教学设计",
+    "学习任务单",
+    "课后练习"
+   ],
+   "hours": 1
+  },
+  {
+   "id": "3c0d150d-bf01-cca3-1340-fe3b2be6b5d7",
+   "title": "Part A How can festivals bring us together?",
+   "chapter_path": [
+    "c11d209a-6d1c-4c6e-9a5e-c965b617d51e",
+    "4362b2f1-dc4d-4ef0-b750-803a6ee2e6b0"
+   ],
+   "pdf_page": null,
+   "materials": [
+    "课件",
+    "教学设计",
+    "学习任务单",
+    "课后练习"
+   ],
+   "hours": 1
+  },
+  {
+   "id": "cab48052-d03f-11e5-f5a9-452b04c676ca",
+   "title": "Part B How can big events bring us together?",
+   "chapter_path": [
+    "c11d209a-6d1c-4c6e-9a5e-c965b617d51e",
+    "2e0b4beb-bc0f-42e4-901a-b1f92f41ed10"
+   ],
+   "pdf_page": null,
+   "materials": [
+    "课件",
+    "教学设计",
+    "学习任务单",
+    "课后练习"
+   ],
+   "hours": 1
+  }
+ ]
+}

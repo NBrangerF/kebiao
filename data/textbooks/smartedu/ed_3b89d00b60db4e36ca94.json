@@ -4,9 +4,9 @@
  "platform_textbook_id": "92cc5e41-5cd1-4e1f-a765-59beb4859e72",
  "platform_title": "初中音乐人音版（主编：吴斌）九年级下册",
  "match": {
-  "title_hits": 0,
+  "title_hits": 5,
   "method": "book_text",
-  "score": 0.2,
+  "score": 0.77,
   "candidates": 3
  },
  "tree": [
@@ -192,7 +192,7 @@
     "ec1f1599-0bb3-3dcf-a444-a521a7717700",
     "f95198ad-b4a2-3bfc-ada4-21685bd3f5ef"
    ],
-   "pdf_page": null,
+   "pdf_page": 16,
    "materials": [
     "视频课程",
     "课件",
@@ -210,7 +210,7 @@
     "ec1f1599-0bb3-3dcf-a444-a521a7717700",
     "2bea0944-71a8-36e9-a2d2-bc9f535ebbce"
    ],
-   "pdf_page": null,
+   "pdf_page": 10,
    "materials": [
     "视频课程",
     "课件",
@@ -228,7 +228,7 @@
     "27ead660-e0c6-30ec-ad61-2731939fa1b9",
     "19039850-a97f-3ff4-9ca3-9d40f625be0e"
    ],
-   "pdf_page": null,
+   "pdf_page": 70,
    "materials": [
     "视频课程",
     "课件",
@@ -264,7 +264,7 @@
     "bfadf927-46b0-3c8f-9f93-2a25587c8335",
     "d5a36cbc-9933-3dd2-9f33-a148311f448c"
    ],
-   "pdf_page": null,
+   "pdf_page": 17,
    "materials": [
     "视频课程",
     "课件",
@@ -318,7 +318,7 @@
     "5a479791-3513-3040-8a0d-df30e79ace08",
     "4b7fdbc8-7dd0-3d7c-a084-a482c0e10ad5"
    ],
-   "pdf_page": null,
+   "pdf_page": 45,
    "materials": [
     "视频课程",
     "课件",
@@ -336,7 +336,7 @@
     "dc806f5c-99e5-3425-b708-5803166364d4",
     "0eb83121-b0b0-3908-bfd9-4eed3e94c132"
    ],
-   "pdf_page": null,
+   "pdf_page": 42,
    "materials": [
     "视频课程",
     "课件",
@@ -436,7 +436,7 @@
     "e9e9cba3-d88b-3d4c-acf7-00cf2d480e4b",
     "063427cd-240d-39a1-9805-e8eaed1300c5"
    ],
-   "pdf_page": null,
+   "pdf_page": 11,
    "materials": [
     "课件",
     "教学设计",

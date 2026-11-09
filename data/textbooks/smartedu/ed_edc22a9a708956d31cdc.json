@@ -1,0 +1,258 @@
+{
+ "edition_id": "ed_edc22a9a708956d31cdc",
+ "textbook_title": "音乐4年级下册",
+ "platform_textbook_id": "c2c4d501-308f-56ba-d768-4f0fa22e74cc",
+ "platform_title": "小学音乐人音版（主编：吴斌）四年级下册",
+ "match": {
+  "title_hits": 4,
+  "method": "book_text",
+  "score": 0.84,
+  "candidates": 3
+ },
+ "tree": [
+  {
+   "id": "5fdc25d9-6ca7-3819-8b1e-faa24559b4b6",
+   "title": "第1课 跳起来",
+   "children": [
+    {
+     "id": "e4a4bac4-94fb-3eef-b7d4-39200bc12bf4",
+     "title": "聆听 小步舞曲",
+     "children": []
+    },
+    {
+     "id": "40a3d4b8-a779-3fd2-aced-a1974b1aaeef",
+     "title": "演唱 土风舞",
+     "children": []
+    }
+   ]
+  },
+  {
+   "id": "df775124-fa9a-38c0-9250-c1624c5d6735",
+   "title": "第3课 水乡",
+   "children": [
+    {
+     "id": "cb26926d-12e0-359d-b216-0fd4d7ac0260",
+     "title": "聆听 水乡船歌",
+     "children": []
+    }
+   ]
+  },
+  {
+   "id": "6fd79a52-0e85-321d-8f78-71e9b3e807a7",
+   "title": "第4课 童年的音乐",
+   "children": [
+    {
+     "id": "cd760b50-fa09-3f5c-b620-c72d96188011",
+     "title": "聆听 彼得与狼",
+     "children": []
+    },
+    {
+     "id": "c53aea91-56f3-3709-8f14-9f3d52903d6c",
+     "title": "演唱 白桦林好地方",
+     "children": []
+    }
+   ]
+  },
+  {
+   "id": "3ad51d33-2fa3-343e-81a1-512a94d764e0",
+   "title": "第5课 风景如画",
+   "children": [
+    {
+     "id": "d28cd308-b6bf-3df2-8a37-7cd65d119994",
+     "title": "聆听 森林的歌声",
+     "children": []
+    },
+    {
+     "id": "7dfc0f9d-398a-312f-8d0a-6af6628c52ca",
+     "title": "演唱 小溪流水响叮咚",
+     "children": []
+    }
+   ]
+  },
+  {
+   "id": "912a6b3a-f748-3290-b258-4d01974a8d6c",
+   "title": "第6课 摇篮曲",
+   "children": [
+    {
+     "id": "1d599861-11d9-3d0d-99d3-209f115cd84b",
+     "title": "聆听 摇篮曲（贺绿汀曲）",
+     "children": []
+    }
+   ]
+  },
+  {
+   "id": "40649342-d849-311a-a678-b1be2e3d87cc",
+   "title": "第7课 回声",
+   "children": [
+    {
+     "id": "bd89f39c-ae0d-374e-a225-fa2bce7b00e4",
+     "title": "聆听 羊肠小道",
+     "children": []
+    }
+   ]
+  },
+  {
+   "id": "009cff9e-9c30-3a7e-87dc-bc0c4bfb94e1",
+   "title": "第8课 向往",
+   "children": [
+    {
+     "id": "f0bccfdb-59a9-3a1c-a597-ccb45a1d7e5c",
+     "title": "聆听 火车托卡塔",
+     "children": []
+    }
+   ]
+  }
+ ],
+ "lessons": [
+  {
+   "id": "e9072546-4b3c-7997-3cf3-f319ab909f8c",
+   "title": "演唱 白桦林好地方",
+   "chapter_path": [
+    "6fd79a52-0e85-321d-8f78-71e9b3e807a7",
+    "c53aea91-56f3-3709-8f14-9f3d52903d6c"
+   ],
+   "pdf_page": null,
+   "materials": [
+    "课件",
+    "教学设计",
+    "学习任务单"
+   ],
+   "hours": 1
+  },
+  {
+   "id": "29cba828-565f-9568-5dbc-bb7527938b22",
+   "title": "聆听 水乡船歌",
+   "chapter_path": [
+    "df775124-fa9a-38c0-9250-c1624c5d6735",
+    "cb26926d-12e0-359d-b216-0fd4d7ac0260"
+   ],
+   "pdf_page": null,
+   "materials": [
+    "课件",
+    "教学设计",
+    "学习任务单"
+   ],
+   "hours": 1
+  },
+  {
+   "id": "31c1a4a9-54b0-43fe-4f58-53a27e5f732f",
+   "title": "聆听 小步舞曲",
+   "chapter_path": [
+    "5fdc25d9-6ca7-3819-8b1e-faa24559b4b6",
+    "e4a4bac4-94fb-3eef-b7d4-39200bc12bf4"
+   ],
+   "pdf_page": null,
+   "materials": [
+    "课件",
+    "教学设计",
+    "学习任务单"
+   ],
+   "hours": 1
+  },
+  {
+   "id": "f0383174-f79e-575c-9c3e-f8bfee2a2e7c",
+   "title": "演唱 土风舞",
+   "chapter_path": [
+    "5fdc25d9-6ca7-3819-8b1e-faa24559b4b6",
+    "40a3d4b8-a779-3fd2-aced-a1974b1aaeef"
+   ],
+   "pdf_page": null,
+   "materials": [
+    "课件",
+    "教学设计",
+    "学习任务单"
+   ],
+   "hours": 1
+  },
+  {
+   "id": "0b317686-ce8e-b41b-1cd8-ca0dad80c760",
+   "title": "聆听 森林的歌声",
+   "chapter_path": [
+    "3ad51d33-2fa3-343e-81a1-512a94d764e0",
+    "d28cd308-b6bf-3df2-8a37-7cd65d119994"
+   ],
+   "pdf_page": null,
+   "materials": [
+    "课件",
+    "教学设计",
+    "学习任务单"
+   ],
+   "hours": 1
+  },
+  {
+   "id": "9cc1d12c-e480-58bf-f836-090c477f3602",
+   "title": "聆听 羊肠小道",
+   "chapter_path": [
+    "40649342-d849-311a-a678-b1be2e3d87cc",
+    "bd89f39c-ae0d-374e-a225-fa2bce7b00e4"
+   ],
+   "pdf_page": null,
+   "materials": [
+    "课件",
+    "教学设计",
+    "学习任务单"
+   ],
+   "hours": 1
+  },
+  {
+   "id": "e334fcd8-73f1-c96f-fd32-1f489ab83fab",
+   "title": "聆听 火车托卡塔",
+   "chapter_path": [
+    "009cff9e-9c30-3a7e-87dc-bc0c4bfb94e1",
+    "f0bccfdb-59a9-3a1c-a597-ccb45a1d7e5c"
+   ],
+   "pdf_page": null,
+   "materials": [
+    "课件",
+    "教学设计",
+    "学习任务单"
+   ],
+   "hours": 1
+  },
+  {
+   "id": "11354073-b1fd-a245-4676-5e4af8e51c24",
+   "title": "聆听 摇篮曲（贺绿汀曲）",
+   "chapter_path": [
+    "912a6b3a-f748-3290-b258-4d01974a8d6c",
+    "1d599861-11d9-3d0d-99d3-209f115cd84b"
+   ],
+   "pdf_page": null,
+   "materials": [
+    "课件",
+    "教学设计",
+    "学习任务单"
+   ],
+   "hours": 1
+  },
+  {
+   "id": "1949f531-4a56-063a-0c9a-7a7a47e33462",
+   "title": "聆听 彼得与狼",
+   "chapter_path": [
+    "6fd79a52-0e85-321d-8f78-71e9b3e807a7",
+    "cd760b50-fa09-3f5c-b620-c72d96188011"
+   ],
+   "pdf_page": null,
+   "materials": [
+    "课件",
+    "教学设计",
+    "学习任务单"
+   ],
+   "hours": 1
+  },
+  {
+   "id": "7b3897b8-088e-875b-b23e-b65bd6b5ce5f",
+   "title": "演唱 小溪流水响叮咚",
+   "chapter_path": [
+    "3ad51d33-2fa3-343e-81a1-512a94d764e0",
+    "7dfc0f9d-398a-312f-8d0a-6af6628c52ca"
+   ],
+   "pdf_page": null,
+   "materials": [
+    "课件",
+    "教学设计",
+    "学习任务单"
+   ],
+   "hours": 1
+  }
+ ]
+}

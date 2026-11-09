@@ -123,7 +123,7 @@
         "external_smartedu_2026_math_primary_grade_4_up",
         "tes_ce4abd24ed465ff2",
         "textbook-node:tcn_73a936fbce44fbb1",
-        "textbook-unit:tcu_2b73fcd0406cfe63"
+        "textbook-unit:tcu_07ea1c44be4fed34"
       ],
       "evidence_role": "direct_textbook",
       "evidence_spans": [
@@ -161,8 +161,8 @@
       "textbook_subject": "数学",
       "textbook_title": "数学4年级上册",
       "textbook_volume": "上册",
-      "unit_id": "tcu_2b73fcd0406cfe63",
-      "unit_title": "5 平行四边形和梯形"
+      "unit_id": "tcu_07ea1c44be4fed34",
+      "unit_title": "六 条形统计图"
     },
     {
       "algorithm_version": "full-alignment-scope-preserve-v2",

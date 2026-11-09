@@ -4,7 +4,7 @@
  "platform_textbook_id": "ca93ec1e-9d0d-4df7-8da0-eaa8e1cbf7e3",
  "platform_title": "新教材-初中地理人教版八年级上册",
  "match": {
-  "title_hits": 15,
+  "title_hits": 14,
   "method": "book_text",
   "score": 1,
   "candidates": 2
@@ -61,11 +61,6 @@
    "id": "849174b6-b06e-443c-b3fe-3b3d5effdfc9",
    "title": "第三章 中国的自然资源",
    "children": [
-    {
-     "id": "de439938-36d3-462d-88fa-454c2ebb6ebb",
-     "title": "第一节 土地资源",
-     "children": []
-    },
     {
      "id": "bba912d6-c5b9-4c02-bcea-966af5dd44d7",
      "title": "第二节 水资源",
@@ -220,23 +215,6 @@
     "9c595f2e-94c6-46d4-854c-70415170e2ef"
    ],
    "pdf_page": 47,
-   "materials": [
-    "视频课程",
-    "课件",
-    "教学设计",
-    "学习任务单",
-    "课后练习"
-   ],
-   "hours": 1
-  },
-  {
-   "id": "4ccc3ecf-9f4d-d8d2-b1ff-e193789213a3",
-   "title": "第一节 土地资源",
-   "chapter_path": [
-    "849174b6-b06e-443c-b3fe-3b3d5effdfc9",
-    "de439938-36d3-462d-88fa-454c2ebb6ebb"
-   ],
-   "pdf_page": 62,
    "materials": [
     "视频课程",
     "课件",

@@ -4,9 +4,9 @@
  "platform_textbook_id": "9c4e905f-2201-474e-99fc-36406ac9f495",
  "platform_title": "小学音乐人音版（主编：吴斌）四年级上册",
  "match": {
-  "title_hits": 0,
+  "title_hits": 6,
   "method": "book_text",
-  "score": 0.2,
+  "score": 0.77,
   "candidates": 5
  },
  "tree": [
@@ -358,7 +358,7 @@
     "2799d6e9-96cf-3883-8a5c-30ecd0836ed1",
     "1cdb1c06-22d9-3f8a-8882-d39e3915128c"
    ],
-   "pdf_page": null,
+   "pdf_page": 16,
    "materials": [
     "视频课程",
     "课件",
@@ -426,7 +426,7 @@
     "dac9f12a-fa38-3aa6-bbe4-7baebc645ffc",
     "580c942f-7cb9-3d37-b552-7eb5136da891"
    ],
-   "pdf_page": null,
+   "pdf_page": 23,
    "materials": [
     "视频课程",
     "课件",
@@ -579,7 +579,7 @@
     "3f3f6eae-64d0-3c09-b0e8-bf9b518d6753",
     "fc203bd7-ce4f-3e84-9c68-8f251bff6034"
    ],
-   "pdf_page": null,
+   "pdf_page": 45,
    "materials": [
     "视频课程",
     "课件",
@@ -596,7 +596,7 @@
     "3f3f6eae-64d0-3c09-b0e8-bf9b518d6753",
     "cd9540a0-9a40-3386-8350-b7ec78111dd1"
    ],
-   "pdf_page": null,
+   "pdf_page": 39,
    "materials": [
     "视频课程",
     "课件",
@@ -715,7 +715,7 @@
     "4e9d50f5-b257-32c2-a0fb-a0c4490ab6ea",
     "8e8798da-7166-30cc-bdf0-35e2e480f69c"
    ],
-   "pdf_page": null,
+   "pdf_page": 60,
    "materials": [
     "视频课程",
     "课件",
@@ -732,7 +732,7 @@
     "4e9d50f5-b257-32c2-a0fb-a0c4490ab6ea",
     "efa7c501-4ab4-3aa3-9b9e-c8d3048c0a7e"
    ],
-   "pdf_page": null,
+   "pdf_page": 56,
    "materials": [
     "视频课程",
     "课件",

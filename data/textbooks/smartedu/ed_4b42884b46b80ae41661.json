@@ -4,9 +4,9 @@
  "platform_textbook_id": "f444c9aa-81f7-9096-7170-40ef09c6558f",
  "platform_title": "小学音乐人音版（主编：吴斌）六年级下册",
  "match": {
-  "title_hits": 0,
+  "title_hits": 3,
   "method": "book_text",
-  "score": 0.2,
+  "score": 0.95,
   "candidates": 3
  },
  "tree": [

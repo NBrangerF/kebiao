@@ -39795,8 +39795,7 @@
           "textbook_unit"
         ],
         "matched_keywords": [
-          "万以上数的",
-          "大数"
+          "万以上数的"
         ],
         "node_id": "tcn_fd8419d5d780b938",
         "node_ids": [
@@ -40176,8 +40175,8 @@
           }
         ],
         "textbook_title": "数学4年级上册",
-        "unit_id": "tcu_fd268cb997039e88",
-        "unit_title": "1 大数的认识"
+        "unit_id": "tcu_0e7eec2643c43008",
+        "unit_title": "一 万以上数的认识"
       }
     ],
     "MA-D2-AL-002": [
@@ -40410,8 +40409,8 @@
           }
         ],
         "textbook_title": "数学4年级上册",
-        "unit_id": "tcu_fd268cb997039e88",
-        "unit_title": "1 大数的认识"
+        "unit_id": "tcu_0e7eec2643c43008",
+        "unit_title": "一 万以上数的认识"
       },
       {
         "algorithm_version": "component-evidence-hybrid-v3",
@@ -42421,8 +42420,8 @@
           }
         ],
         "textbook_title": "数学4年级上册",
-        "unit_id": "tcu_2b73fcd0406cfe63",
-        "unit_title": "5 平行四边形和梯形"
+        "unit_id": "tcu_8924cda0fe91094c",
+        "unit_title": "五 平行四边形和梯形"
       },
       {
         "algorithm_version": "component-evidence-hybrid-v3",
@@ -43252,8 +43251,8 @@
           }
         ],
         "textbook_title": "数学4年级上册",
-        "unit_id": "tcu_fd268cb997039e88",
-        "unit_title": "1 大数的认识"
+        "unit_id": "tcu_0e7eec2643c43008",
+        "unit_title": "一 万以上数的认识"
       }
     ],
     "MA-D2-GE-006": [
@@ -45642,8 +45641,8 @@
           }
         ],
         "textbook_title": "数学4年级上册",
-        "unit_id": "tcu_2b73fcd0406cfe63",
-        "unit_title": "5 平行四边形和梯形"
+        "unit_id": "tcu_07ea1c44be4fed34",
+        "unit_title": "六 条形统计图"
       }
     ],
     "MA-D2-ST-002": [
@@ -46168,7 +46167,8 @@
         ],
         "matched_fields": [
           "learning_components",
-          "standard_context"
+          "standard_context",
+          "textbook_unit"
         ],
         "matched_keywords": [
           "条形统计图"
@@ -46353,8 +46353,8 @@
           }
         ],
         "textbook_title": "数学4年级上册",
-        "unit_id": "tcu_2b73fcd0406cfe63",
-        "unit_title": "5 平行四边形和梯形"
+        "unit_id": "tcu_07ea1c44be4fed34",
+        "unit_title": "六 条形统计图"
       },
       {
         "algorithm_version": "component-evidence-hybrid-v3",
@@ -46415,7 +46415,8 @@
         ],
         "matched_fields": [
           "learning_components",
-          "standard_context"
+          "standard_context",
+          "textbook_unit"
         ],
         "matched_keywords": [
           "条形统计图",
@@ -46469,8 +46470,8 @@
           }
         ],
         "textbook_title": "数学4年级上册",
-        "unit_id": "tcu_2b73fcd0406cfe63",
-        "unit_title": "5 平行四边形和梯形"
+        "unit_id": "tcu_07ea1c44be4fed34",
+        "unit_title": "六 条形统计图"
       }
     ],
     "MA-D3-AL-001": [

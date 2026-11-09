@@ -271,7 +271,7 @@
         "external_smartedu_2026_math_primary_grade_4_up",
         "tes_e36b1e61552d5e57",
         "textbook-node:tcn_5c4ac782ef2b6d5b",
-        "textbook-unit:tcu_2b73fcd0406cfe63"
+        "textbook-unit:tcu_07ea1c44be4fed34"
       ],
       "evidence_role": "direct_textbook",
       "evidence_spans": [
@@ -309,8 +309,8 @@
       "textbook_subject": "数学",
       "textbook_title": "数学4年级上册",
       "textbook_volume": "上册",
-      "unit_id": "tcu_2b73fcd0406cfe63",
-      "unit_title": "5 平行四边形和梯形"
+      "unit_id": "tcu_07ea1c44be4fed34",
+      "unit_title": "六 条形统计图"
     },
     {
       "algorithm_version": "component-evidence-hybrid-v3",
@@ -326,7 +326,7 @@
         "external_smartedu_2026_math_primary_grade_4_up",
         "tes_1869ad33d19fffc2",
         "textbook-node:tcn_ef66c38de94f4e0c",
-        "textbook-unit:tcu_2b73fcd0406cfe63"
+        "textbook-unit:tcu_07ea1c44be4fed34"
       ],
       "evidence_role": "direct_textbook",
       "evidence_spans": [
@@ -364,8 +364,8 @@
       "textbook_subject": "数学",
       "textbook_title": "数学4年级上册",
       "textbook_volume": "上册",
-      "unit_id": "tcu_2b73fcd0406cfe63",
-      "unit_title": "5 平行四边形和梯形"
+      "unit_id": "tcu_07ea1c44be4fed34",
+      "unit_title": "六 条形统计图"
     },
     {
       "algorithm_version": "component-evidence-hybrid-v3",
@@ -381,7 +381,7 @@
         "external_smartedu_2026_math_primary_grade_4_up",
         "tes_5c449f83822ae8f0",
         "textbook-node:tcn_64903d20030c44df",
-        "textbook-unit:tcu_2b73fcd0406cfe63"
+        "textbook-unit:tcu_07ea1c44be4fed34"
       ],
       "evidence_role": "direct_textbook",
       "evidence_spans": [
@@ -419,8 +419,8 @@
       "textbook_subject": "数学",
       "textbook_title": "数学4年级上册",
       "textbook_volume": "上册",
-      "unit_id": "tcu_2b73fcd0406cfe63",
-      "unit_title": "5 平行四边形和梯形"
+      "unit_id": "tcu_07ea1c44be4fed34",
+      "unit_title": "六 条形统计图"
     },
     {
       "algorithm_version": "component-evidence-hybrid-v3",
@@ -436,7 +436,7 @@
         "external_smartedu_2026_math_primary_grade_4_up",
         "tes_ee30fb85d3a00256",
         "textbook-node:tcn_08d579e76175a306",
-        "textbook-unit:tcu_2b73fcd0406cfe63"
+        "textbook-unit:tcu_07ea1c44be4fed34"
       ],
       "evidence_role": "direct_textbook",
       "evidence_spans": [
@@ -474,8 +474,8 @@
       "textbook_subject": "数学",
       "textbook_title": "数学4年级上册",
       "textbook_volume": "上册",
-      "unit_id": "tcu_2b73fcd0406cfe63",
-      "unit_title": "5 平行四边形和梯形"
+      "unit_id": "tcu_07ea1c44be4fed34",
+      "unit_title": "六 条形统计图"
     },
     {
       "algorithm_version": "component-evidence-hybrid-v3",
@@ -491,7 +491,7 @@
         "external_smartedu_2026_math_primary_grade_4_up",
         "tes_b1cb0dd4282a5dc6",
         "textbook-node:tcn_cabbc9caf5de9314",
-        "textbook-unit:tcu_2b73fcd0406cfe63"
+        "textbook-unit:tcu_07ea1c44be4fed34"
       ],
       "evidence_role": "direct_textbook",
       "evidence_spans": [
@@ -529,8 +529,8 @@
       "textbook_subject": "数学",
       "textbook_title": "数学4年级上册",
       "textbook_volume": "上册",
-      "unit_id": "tcu_2b73fcd0406cfe63",
-      "unit_title": "5 平行四边形和梯形"
+      "unit_id": "tcu_07ea1c44be4fed34",
+      "unit_title": "六 条形统计图"
     },
     {
       "algorithm_version": "component-evidence-hybrid-v3",
@@ -546,7 +546,7 @@
         "external_smartedu_2026_math_primary_grade_4_up",
         "tes_bebd3fe65c1e1f50",
         "textbook-node:tcn_1b3c95e9ea1d0017",
-        "textbook-unit:tcu_2b73fcd0406cfe63"
+        "textbook-unit:tcu_07ea1c44be4fed34"
       ],
       "evidence_role": "direct_textbook",
       "evidence_spans": [
@@ -584,8 +584,8 @@
       "textbook_subject": "数学",
       "textbook_title": "数学4年级上册",
       "textbook_volume": "上册",
-      "unit_id": "tcu_2b73fcd0406cfe63",
-      "unit_title": "5 平行四边形和梯形"
+      "unit_id": "tcu_07ea1c44be4fed34",
+      "unit_title": "六 条形统计图"
     },
     {
       "algorithm_version": "full-alignment-scope-preserve-v2",

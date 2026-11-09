@@ -1,211 +1,383 @@
 {
  "edition_id": "ed_97b9c1a173bf9c3f5fea",
  "textbook_title": "英语3年级上册",
- "platform_textbook_id": "0f1d3cc3-831f-43a5-e742-03c7a4ffdf8d",
- "platform_title": "小学英语人教版（PEP）（三年级起点）（主编：吴欣）三年级上册",
+ "platform_textbook_id": "8dabed50-6eed-40dd-8bea-c70f0718114d",
+ "platform_title": "新教材-小学英语人教版（PEP）（主编：吴欣）三年级上册",
  "match": {
-  "title_hits": 4,
+  "title_hits": 6,
   "method": "book_text",
-  "score": 0.7,
+  "score": 0.52,
   "candidates": 5
  },
  "tree": [
   {
-   "id": "cb84b70f-6fef-3eab-bc0a-56280890411c",
-   "title": "Unit 1 Hello!",
+   "id": "3303d577-1af6-4e38-8757-b1952f36a21e",
+   "title": "Unit 1 Making friends",
    "children": [
     {
-     "id": "dad646ee-5ec4-3929-b13b-96e34a250e99",
-     "title": "A",
+     "id": "f1ecd99d-f0c6-4f95-987b-9cead812e700",
+     "title": "part A How do we greet friends?",
      "children": []
     },
     {
-     "id": "163a71c3-80bc-3a98-9089-cbf8812d3717",
-     "title": "B",
+     "id": "9bbae21c-7f1b-480b-ac48-1defa46ebbe2",
+     "title": "part B How can we be a good friend?",
      "children": []
     },
     {
-     "id": "6291b86d-21f9-3e00-aa8f-2f0c7e698738",
-     "title": "C",
+     "id": "ac989d80-1fe3-47d6-b5af-db6e58335ff2",
+     "title": "part C (optional)",
      "children": []
     }
    ]
   },
   {
-   "id": "2a0879dc-2d98-3873-a116-4a3bf2ec3a5b",
-   "title": "Unit 2 Colours!",
+   "id": "4bc28d8d-5ad6-47b4-8633-55755c6607b9",
+   "title": "Unit 2 Different families",
    "children": [
     {
-     "id": "6346c129-9d98-36e5-95b8-ee97164532b0",
-     "title": "A",
+     "id": "483ea5b7-3b16-40a0-bfc1-5aa14139627a",
+     "title": "part A Who lives with you?",
      "children": []
     },
     {
-     "id": "d1c2a0a1-0cb9-3f90-91aa-1fe416ff3012",
-     "title": "B",
+     "id": "6a30821d-eab9-4409-8a96-e6e02f7ccde5",
+     "title": "part B How are families different?",
      "children": []
     },
     {
-     "id": "98535b63-7abf-3fe4-9a30-6a935b33bd22",
-     "title": "C",
+     "id": "e52bed62-3bba-4794-859e-fdd434b688af",
+     "title": "part C (optional)",
+     "children": []
+    },
+    {
+     "id": "4afa66b5-278c-4d18-b509-30eeec583ae4",
+     "title": "Grammar",
      "children": []
     }
    ]
   },
   {
-   "id": "01c696f4-4e83-3980-830b-9949e9a2a933",
-   "title": "Unit 3 Look at me!",
+   "id": "364d6309-c2af-4d27-8918-ecf6b834e891",
+   "title": "Unit 3 Amazing animals",
    "children": [
     {
-     "id": "62e806bc-79ee-328c-8aa5-07cfe3ad8629",
-     "title": "A",
+     "id": "1ee65a28-b8ac-4e3d-946b-83b3773d28c2",
+     "title": "part A What pets do you know?",
      "children": []
     },
     {
-     "id": "b1d2e11e-1d7d-34c6-b6a3-b18856a65221",
-     "title": "B",
+     "id": "50d65071-9db3-4759-9eb4-14e0417c0b96",
+     "title": "part B What wild animals do you know?",
      "children": []
     },
     {
-     "id": "ca2c5236-5ae0-3b42-bf25-b48507d366cf",
-     "title": "C",
+     "id": "e2637cf0-50f0-420f-a285-3d10c2476db1",
+     "title": "part C (optional)",
+     "children": []
+    },
+    {
+     "id": "a52c1235-a850-40b8-8447-1cd44c024cce",
+     "title": "Grammar",
      "children": []
     }
    ]
   },
   {
-   "id": "8c6f3e53-b5d3-36ad-b799-efe081a039ed",
-   "title": "Recycle 1",
-   "children": []
-  },
-  {
-   "id": "bea48e7e-4e3d-3cb6-a618-e7d83a2481b1",
-   "title": "Unit 4 We love animals",
+   "id": "a7603681-2c47-4463-b434-05258d8ce517",
+   "title": "Unit 4 Plants around us",
    "children": [
     {
-     "id": "4af59adb-7ab5-3be4-b075-fe6ad019d1d5",
-     "title": "A",
+     "id": "dc2d679b-88da-45df-8d07-f0623c604334",
+     "title": "part A What do we get from plants?",
      "children": []
     },
     {
-     "id": "3fa2c6b1-12c9-3f66-830b-1a06b55641a9",
-     "title": "B",
+     "id": "a82c686a-fca2-45ff-9595-342ecfa3233f",
+     "title": "part B How can we help plants?",
      "children": []
     },
     {
-     "id": "3d038b6a-c11f-3620-b495-ade44f9eaa26",
-     "title": "C",
+     "id": "ef888a39-25b4-459a-811d-af78e21d7769",
+     "title": "part C (optional)",
+     "children": []
+    },
+    {
+     "id": "0640d6ef-6907-49d8-8e3e-1188a45c9127",
+     "title": "Grammar",
      "children": []
     }
    ]
   },
   {
-   "id": "456cb378-594b-389d-b1d3-d00e1ad29a17",
-   "title": "Unit 5 Let's eat !",
+   "id": "21a66b09-d4fa-40bc-af0f-86d389f4fa7a",
+   "title": "Unit 5 The colourful world",
    "children": [
     {
-     "id": "f28903d0-c33e-3151-bd9b-7f43758467f7",
-     "title": "A",
+     "id": "6e6929d8-1bd0-4092-81b5-3635c882c36a",
+     "title": "part A What colours do you see?",
      "children": []
     },
     {
-     "id": "57a052a2-ae9c-379d-91d5-b28d7ee92abf",
-     "title": "B",
+     "id": "27af2bac-da97-40e4-b3c4-804043bc54c5",
+     "title": "part B How do colours help us?",
      "children": []
     },
     {
-     "id": "a865a5a6-18de-38a0-8697-0c8d2dab75f3",
-     "title": "C",
+     "id": "4479159f-4d33-4ddb-b5f0-e20b86b8791d",
+     "title": "part C (optional)",
+     "children": []
+    },
+    {
+     "id": "28d1d443-9e95-46e5-a1e8-b652f504090e",
+     "title": "Grammar",
      "children": []
     }
    ]
   },
   {
-   "id": "f803e895-0a9e-35ec-9dca-86391dd2db50",
-   "title": "Unit 6 Happy birthday!",
+   "id": "ba915a7c-6258-4a2b-a94b-cbe205b81d2c",
+   "title": "Unit 6 Useful numbers",
    "children": [
     {
-     "id": "6aa197cc-66bf-35e3-9957-acdc353165bf",
-     "title": "A",
+     "id": "b7c4e7d0-e2d3-458e-982c-8f48a3e56f06",
+     "title": "part A When do we use numbers?",
      "children": []
     },
     {
-     "id": "17c988fb-b858-32e0-90c2-1c06a15dddba",
-     "title": "B",
+     "id": "b14acfa1-888a-4121-bb3d-522ad9535938",
+     "title": "part B How useful are numbers?",
      "children": []
     },
     {
-     "id": "e68ea565-b5b5-39b3-a8d2-952413bddb5c",
-     "title": "C",
+     "id": "74172f1b-1d16-4136-a7c6-f09abb7bdf3a",
+     "title": "part C (optional)",
+     "children": []
+    },
+    {
+     "id": "f932b697-fc8e-41c2-b5c5-b19cf767defc",
+     "title": "Grammar",
      "children": []
     }
    ]
   },
   {
-   "id": "039f134f-1193-3bb1-a065-570790ac544f",
-   "title": "Recycle 2",
+   "id": "f25e4218-9db0-4531-bf2c-016ca74a55dc",
+   "title": "Revision Being a good guest",
    "children": []
   }
  ],
  "lessons": [
   {
-   "id": "8ae7e494-7c77-77d8-017c-79e13ae308b7",
-   "title": "B",
+   "id": "5e7b70d5-8b90-b4e2-3de4-ef4dce5b755d",
+   "title": "Unit 1 Making friends Part A",
    "chapter_path": [
-    "cb84b70f-6fef-3eab-bc0a-56280890411c",
-    "163a71c3-80bc-3a98-9089-cbf8812d3717"
+    "3303d577-1af6-4e38-8757-b1952f36a21e",
+    "f1ecd99d-f0c6-4f95-987b-9cead812e700"
    ],
    "pdf_page": null,
    "materials": [
-    "学习任务单"
+    "视频课程",
+    "课件",
+    "教学设计",
+    "学习任务单",
+    "课后练习"
    ],
    "hours": 1
   },
   {
-   "id": "8ae7e4a1-7c7b-5b4c-017c-7c1863990044",
-   "title": "A",
+   "id": "29b581af-0f4d-845a-93ce-446cb62f6eb5",
+   "title": "Unit 1 Making friends Part B",
    "chapter_path": [
-    "2a0879dc-2d98-3873-a116-4a3bf2ec3a5b",
-    "6346c129-9d98-36e5-95b8-ee97164532b0"
+    "3303d577-1af6-4e38-8757-b1952f36a21e",
+    "9bbae21c-7f1b-480b-ac48-1defa46ebbe2"
    ],
    "pdf_page": null,
    "materials": [
-    "学习任务单"
+    "视频课程",
+    "课件",
+    "教学设计",
+    "学习任务单",
+    "课后练习"
    ],
    "hours": 1
   },
   {
-   "id": "8ae7e4a8-7c77-78ea-017c-783b72bc0257",
-   "title": "B",
+   "id": "3cfb6334-8e84-4b74-f1e6-c6a84c9705eb",
+   "title": "Unit 2 Different families Part A",
    "chapter_path": [
-    "2a0879dc-2d98-3873-a116-4a3bf2ec3a5b",
-    "d1c2a0a1-0cb9-3f90-91aa-1fe416ff3012"
+    "4bc28d8d-5ad6-47b4-8633-55755c6607b9",
+    "483ea5b7-3b16-40a0-bfc1-5aa14139627a"
    ],
    "pdf_page": null,
    "materials": [
-    "学习任务单"
+    "视频课程",
+    "课件",
+    "教学设计",
+    "学习任务单",
+    "课后练习"
    ],
    "hours": 1
   },
   {
-   "id": "8ae7e4ae-7c47-daa9-017c-4afb5c57026e",
-   "title": "A",
+   "id": "48af6647-ada6-bc3f-4209-a09f1e8ad681",
+   "title": "Unit 2 Different families Part B",
    "chapter_path": [
-    "f803e895-0a9e-35ec-9dca-86391dd2db50",
-    "6aa197cc-66bf-35e3-9957-acdc353165bf"
+    "4bc28d8d-5ad6-47b4-8633-55755c6607b9",
+    "6a30821d-eab9-4409-8a96-e6e02f7ccde5"
    ],
    "pdf_page": null,
    "materials": [
-    "学习任务单"
+    "视频课程",
+    "课件",
+    "教学设计",
+    "学习任务单",
+    "课后练习"
    ],
-   "hours": 3
+   "hours": 1
   },
   {
-   "id": "c63ba0b1-6ae0-b2c3-ecb7-2be787310e29",
-   "title": "C",
+   "id": "789b326e-f5c7-f687-0f51-534a50a7f3db",
+   "title": "Unit 3 Our animal friends Part A",
    "chapter_path": [
-    "f803e895-0a9e-35ec-9dca-86391dd2db50",
-    "e68ea565-b5b5-39b3-a8d2-952413bddb5c"
+    "364d6309-c2af-4d27-8918-ecf6b834e891",
+    "1ee65a28-b8ac-4e3d-946b-83b3773d28c2"
+   ],
+   "pdf_page": null,
+   "materials": [
+    "视频课程",
+    "课件",
+    "教学设计",
+    "学习任务单",
+    "课后练习"
+   ],
+   "hours": 1
+  },
+  {
+   "id": "d18794b7-d57c-6316-c24d-5be733ebeef9",
+   "title": "Unit 3 Our animal friends Part B",
+   "chapter_path": [
+    "364d6309-c2af-4d27-8918-ecf6b834e891",
+    "50d65071-9db3-4759-9eb4-14e0417c0b96"
+   ],
+   "pdf_page": null,
+   "materials": [
+    "视频课程",
+    "课件",
+    "教学设计",
+    "学习任务单",
+    "课后练习"
+   ],
+   "hours": 1
+  },
+  {
+   "id": "c93b83e7-7e7b-5d88-1828-01501d0e5173",
+   "title": "Unit 4 Plants around us Part A",
+   "chapter_path": [
+    "a7603681-2c47-4463-b434-05258d8ce517",
+    "dc2d679b-88da-45df-8d07-f0623c604334"
+   ],
+   "pdf_page": null,
+   "materials": [
+    "视频课程",
+    "课件",
+    "教学设计",
+    "学习任务单",
+    "课后练习"
+   ],
+   "hours": 1
+  },
+  {
+   "id": "0a89aaa0-446a-35d3-7841-940f673a64fb",
+   "title": "Unit 4 Plants around us Part B",
+   "chapter_path": [
+    "a7603681-2c47-4463-b434-05258d8ce517",
+    "a82c686a-fca2-45ff-9595-342ecfa3233f"
+   ],
+   "pdf_page": null,
+   "materials": [
+    "视频课程",
+    "课件",
+    "教学设计",
+    "学习任务单",
+    "课后练习"
+   ],
+   "hours": 1
+  },
+  {
+   "id": "94e86bb7-6d0a-85bd-ff07-ad453f7cacbc",
+   "title": "Unit 5 The colourful world Part A",
+   "chapter_path": [
+    "21a66b09-d4fa-40bc-af0f-86d389f4fa7a",
+    "6e6929d8-1bd0-4092-81b5-3635c882c36a"
+   ],
+   "pdf_page": null,
+   "materials": [
+    "视频课程",
+    "课件",
+    "教学设计",
+    "学习任务单",
+    "课后练习"
+   ],
+   "hours": 1
+  },
+  {
+   "id": "86e6b30b-d8cd-9ff2-c70f-781e0caef8cc",
+   "title": "Unit 5 The colourful world Part B",
+   "chapter_path": [
+    "21a66b09-d4fa-40bc-af0f-86d389f4fa7a",
+    "27af2bac-da97-40e4-b3c4-804043bc54c5"
+   ],
+   "pdf_page": null,
+   "materials": [
+    "视频课程",
+    "课件",
+    "教学设计",
+    "学习任务单",
+    "课后练习"
+   ],
+   "hours": 1
+  },
+  {
+   "id": "32f02caf-3089-5588-b718-cf30de5f199b",
+   "title": "Unit 6 Useful numbers Part A",
+   "chapter_path": [
+    "ba915a7c-6258-4a2b-a94b-cbe205b81d2c",
+    "b7c4e7d0-e2d3-458e-982c-8f48a3e56f06"
+   ],
+   "pdf_page": null,
+   "materials": [
+    "视频课程",
+    "课件",
+    "教学设计",
+    "学习任务单",
+    "课后练习"
+   ],
+   "hours": 1
+  },
+  {
+   "id": "0f35a00d-6b47-81d0-8109-e972f0324b99",
+   "title": "Unit 6 Useful numbers Part B",
+   "chapter_path": [
+    "ba915a7c-6258-4a2b-a94b-cbe205b81d2c",
+    "b14acfa1-888a-4121-bb3d-522ad9535938"
+   ],
+   "pdf_page": null,
+   "materials": [
+    "视频课程",
+    "课件",
+    "教学设计",
+    "学习任务单",
+    "课后练习"
+   ],
+   "hours": 1
+  },
+  {
+   "id": "f9fb0f25-4422-5928-eef8-096f400e5110",
+   "title": "Grammar",
+   "chapter_path": [
+    "21a66b09-d4fa-40bc-af0f-86d389f4fa7a",
+    "28d1d443-9e95-46e5-a1e8-b652f504090e"
    ],
    "pdf_page": null,
    "materials": [
@@ -216,11 +388,11 @@
    "hours": 1
   },
   {
-   "id": "efe5465c-4a66-151a-cfb7-d8f4b01b8573",
-   "title": "A",
+   "id": "2c1fabdc-17e5-7a80-8fd4-df1979ac0da5",
+   "title": "Grammar",
    "chapter_path": [
-    "cb84b70f-6fef-3eab-bc0a-56280890411c",
-    "dad646ee-5ec4-3929-b13b-96e34a250e99"
+    "a7603681-2c47-4463-b434-05258d8ce517",
+    "0640d6ef-6907-49d8-8e3e-1188a45c9127"
    ],
    "pdf_page": null,
    "materials": [
@@ -231,11 +403,11 @@
    "hours": 1
   },
   {
-   "id": "ec8f7083-db13-33ce-dc4e-bb871d90fde1",
-   "title": " Unit6 Happy birthday!（B）人教（PEP）2011课标版三年级起点（吴欣主编）三年级上册",
+   "id": "602d97f4-c6e9-f267-9ff9-2cea1a4e7578",
+   "title": "Grammar",
    "chapter_path": [
-    "f803e895-0a9e-35ec-9dca-86391dd2db50",
-    "17c988fb-b858-32e0-90c2-1c06a15dddba"
+    "364d6309-c2af-4d27-8918-ecf6b834e891",
+    "a52c1235-a850-40b8-8447-1cd44c024cce"
    ],
    "pdf_page": null,
    "materials": [
@@ -246,10 +418,25 @@
    "hours": 1
   },
   {
-   "id": "33bf4358-0bdc-984b-8259-08543e2ea50b",
-   "title": "Recycle 1",
+   "id": "ec818ee0-d48d-f17c-ffba-24202236ef20",
+   "title": "Revision Being a good guest",
    "chapter_path": [
-    "8c6f3e53-b5d3-36ad-b799-efe081a039ed"
+    "f25e4218-9db0-4531-bf2c-016ca74a55dc"
+   ],
+   "pdf_page": 79,
+   "materials": [
+    "课件",
+    "教学设计",
+    "学习任务单"
+   ],
+   "hours": 1
+  },
+  {
+   "id": "ed97368f-16ca-af9e-a3f0-8f926c72f942",
+   "title": "part C (optional)",
+   "chapter_path": [
+    "364d6309-c2af-4d27-8918-ecf6b834e891",
+    "e2637cf0-50f0-420f-a285-3d10c2476db1"
    ],
    "pdf_page": null,
    "materials": [
@@ -260,10 +447,11 @@
    "hours": 1
   },
   {
-   "id": "e1a84384-72a4-b0da-8833-32ff2baa704a",
-   "title": "Recycle 2",
+   "id": "c4196674-3e61-30c9-8dc7-e2d9813b4bc8",
+   "title": "part C (optional)",
    "chapter_path": [
-    "039f134f-1193-3bb1-a065-570790ac544f"
+    "a7603681-2c47-4463-b434-05258d8ce517",
+    "ef888a39-25b4-459a-811d-af78e21d7769"
    ],
    "pdf_page": null,
    "materials": [
@@ -274,155 +462,911 @@
    "hours": 1
   },
   {
-   "id": "8ae7e4ab-7c3d-8db9-017c-414552ac01d0",
-   "title": "C",
+   "id": "70ebd215-29fa-d71a-7df0-d3b5efb361e3",
+   "title": "part C (optional)",
    "chapter_path": [
-    "cb84b70f-6fef-3eab-bc0a-56280890411c",
-    "6291b86d-21f9-3e00-aa8f-2f0c7e698738"
+    "ba915a7c-6258-4a2b-a94b-cbe205b81d2c",
+    "74172f1b-1d16-4136-a7c6-f09abb7bdf3a"
    ],
    "pdf_page": null,
    "materials": [
+    "课件",
+    "教学设计",
     "学习任务单"
    ],
    "hours": 1
   },
   {
-   "id": "8ae7e4ad-7c71-0e6c-017c-723edd500135",
-   "title": "A",
+   "id": "c86101f5-a72b-209a-13ca-dadfb3ed3149",
+   "title": "part C (optional)",
    "chapter_path": [
-    "01c696f4-4e83-3980-830b-9949e9a2a933",
-    "62e806bc-79ee-328c-8aa5-07cfe3ad8629"
+    "21a66b09-d4fa-40bc-af0f-86d389f4fa7a",
+    "4479159f-4d33-4ddb-b5f0-e20b86b8791d"
    ],
    "pdf_page": null,
    "materials": [
+    "课件",
+    "教学设计",
     "学习任务单"
    ],
    "hours": 1
   },
   {
-   "id": "8ae7e4ab-7c7b-5b55-017c-7dc4b96305cf",
-   "title": "B",
+   "id": "65a03c73-987b-f446-ae42-771cc2e862fe",
+   "title": "Grammar",
    "chapter_path": [
-    "01c696f4-4e83-3980-830b-9949e9a2a933",
-    "b1d2e11e-1d7d-34c6-b6a3-b18856a65221"
+    "4bc28d8d-5ad6-47b4-8633-55755c6607b9",
+    "4afa66b5-278c-4d18-b509-30eeec583ae4"
    ],
    "pdf_page": null,
    "materials": [
+    "课件",
+    "教学设计",
     "学习任务单"
    ],
    "hours": 1
   },
   {
-   "id": "8ae7e49f-7cae-dbfd-017c-b16ca905011a",
-   "title": "C",
+   "id": "0cd7c609-0fca-10f4-55c0-37e6bbb642c6",
+   "title": "part C (optional)",
    "chapter_path": [
-    "01c696f4-4e83-3980-830b-9949e9a2a933",
-    "ca2c5236-5ae0-3b42-bf25-b48507d366cf"
+    "4bc28d8d-5ad6-47b4-8633-55755c6607b9",
+    "e52bed62-3bba-4794-859e-fdd434b688af"
    ],
    "pdf_page": null,
    "materials": [
+    "课件",
+    "教学设计",
     "学习任务单"
    ],
    "hours": 1
   },
   {
-   "id": "8ae7e4ad-7c26-21a9-017c-27bc1955024e",
-   "title": "C",
+   "id": "b7bc0eca-cead-6617-7197-76f50b728d31",
+   "title": "Making friends part C (optional)",
    "chapter_path": [
-    "01c696f4-4e83-3980-830b-9949e9a2a933",
-    "ca2c5236-5ae0-3b42-bf25-b48507d366cf"
+    "3303d577-1af6-4e38-8757-b1952f36a21e",
+    "ac989d80-1fe3-47d6-b5af-db6e58335ff2"
+   ],
+   "pdf_page": null,
+   "materials": [
+    "课件",
+    "教学设计",
+    "学习任务单"
+   ],
+   "hours": 1
+  },
+  {
+   "id": "5d0ac2c3-ab0c-bcf6-03dc-6bbce2d8899f",
+   "title": "part C (optional)",
+   "chapter_path": [
+    "4bc28d8d-5ad6-47b4-8633-55755c6607b9",
+    "e52bed62-3bba-4794-859e-fdd434b688af"
+   ],
+   "pdf_page": null,
+   "materials": [
+    "课件",
+    "教学设计",
+    "学习任务单"
+   ],
+   "hours": 1
+  },
+  {
+   "id": "2bd8d762-7c24-c37a-63ac-d3e5ba269ddc",
+   "title": "Grammar",
+   "chapter_path": [
+    "ba915a7c-6258-4a2b-a94b-cbe205b81d2c",
+    "f932b697-fc8e-41c2-b5c5-b19cf767defc"
+   ],
+   "pdf_page": null,
+   "materials": [
+    "课件",
+    "教学设计",
+    "学习任务单",
+    "课后练习"
+   ],
+   "hours": 1
+  },
+  {
+   "id": "c145317f-052f-21b3-6be1-a1c150bdf4e6",
+   "title": "Unit 1 Listen and chant",
+   "chapter_path": [
+    "3303d577-1af6-4e38-8757-b1952f36a21e",
+    "f1ecd99d-f0c6-4f95-987b-9cead812e700"
+   ],
+   "pdf_page": 8,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "2c69ac99-a674-10e4-6ff3-87510a34298f",
+   "title": "Unit 1 Listen and sing",
+   "chapter_path": [
+    "3303d577-1af6-4e38-8757-b1952f36a21e",
+    "f1ecd99d-f0c6-4f95-987b-9cead812e700"
+   ],
+   "pdf_page": 68,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "01b09a60-be5f-fad6-5097-f771311661fc",
+   "title": "Unit 1 A Let’s talk",
+   "chapter_path": [
+    "3303d577-1af6-4e38-8757-b1952f36a21e",
+    "f1ecd99d-f0c6-4f95-987b-9cead812e700"
+   ],
+   "pdf_page": 9,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "628092a4-c250-ec80-f9e6-923d4a74b63e",
+   "title": "Unit 1 A Listen and do",
+   "chapter_path": [
+    "3303d577-1af6-4e38-8757-b1952f36a21e",
+    "f1ecd99d-f0c6-4f95-987b-9cead812e700"
    ],
    "pdf_page": null,
    "materials": [],
    "hours": 1
   },
   {
-   "id": "8ae7e493-7c8a-dc77-017c-8e1cd254056e",
-   "title": "A",
+   "id": "6000b559-9562-9e73-d1f5-1acc23d37236",
+   "title": "Unit 1 A Listen, repeat and chant.",
    "chapter_path": [
-    "bea48e7e-4e3d-3cb6-a618-e7d83a2481b1",
-    "4af59adb-7ab5-3be4-b075-fe6ad019d1d5"
-   ],
-   "pdf_page": null,
-   "materials": [
-    "学习任务单"
-   ],
-   "hours": 1
-  },
-  {
-   "id": "8ae7e4ae-7c5d-a219-017c-60a6e3db0898",
-   "title": "B",
-   "chapter_path": [
-    "bea48e7e-4e3d-3cb6-a618-e7d83a2481b1",
-    "3fa2c6b1-12c9-3f66-830b-1a06b55641a9"
-   ],
-   "pdf_page": null,
-   "materials": [
-    "学习任务单"
-   ],
-   "hours": 1
-  },
-  {
-   "id": "8ae7e4ab-7c5c-748a-017c-629885d20aa8",
-   "title": "C",
-   "chapter_path": [
-    "bea48e7e-4e3d-3cb6-a618-e7d83a2481b1",
-    "3d038b6a-c11f-3620-b495-ade44f9eaa26"
-   ],
-   "pdf_page": null,
-   "materials": [
-    "学习任务单"
-   ],
-   "hours": 1
-  },
-  {
-   "id": "8ae7e4b4-7c7b-5b5d-017c-7ed9b8bb0793",
-   "title": "A",
-   "chapter_path": [
-    "456cb378-594b-389d-b1d3-d00e1ad29a17",
-    "f28903d0-c33e-3151-bd9b-7f43758467f7"
+    "3303d577-1af6-4e38-8757-b1952f36a21e",
+    "f1ecd99d-f0c6-4f95-987b-9cead812e700"
    ],
    "pdf_page": null,
    "materials": [],
    "hours": 1
   },
   {
-   "id": "8ae7e491-7c77-7746-017c-7972cc4a0526",
-   "title": "C",
+   "id": "0cd397a4-d9d1-a747-15b8-b500c2905dca",
+   "title": "Unit 1 A Listen and circle the first sound.",
    "chapter_path": [
-    "456cb378-594b-389d-b1d3-d00e1ad29a17",
-    "a865a5a6-18de-38a0-8697-0c8d2dab75f3"
+    "3303d577-1af6-4e38-8757-b1952f36a21e",
+    "f1ecd99d-f0c6-4f95-987b-9cead812e700"
    ],
    "pdf_page": null,
-   "materials": [
-    "学习任务单"
-   ],
+   "materials": [],
    "hours": 1
   },
   {
-   "id": "8ae7e4a7-8422-f894-0184-232417230012",
-   "title": "C",
+   "id": "bd04ea4a-d8a9-261c-d459-3e94618e90a4",
+   "title": "Unit 1 B Let's talk",
    "chapter_path": [
-    "2a0879dc-2d98-3873-a116-4a3bf2ec3a5b",
-    "98535b63-7abf-3fe4-9a30-6a935b33bd22"
+    "3303d577-1af6-4e38-8757-b1952f36a21e",
+    "9bbae21c-7f1b-480b-ac48-1defa46ebbe2"
    ],
    "pdf_page": null,
-   "materials": [
-    "学习任务单"
-   ],
+   "materials": [],
    "hours": 1
   },
   {
-   "id": "8ae7e495-83ef-1dc4-0183-f3d28be20de0",
-   "title": "B",
+   "id": "ac742c26-f48e-9c59-abb7-bec86acd0379",
+   "title": "Unit 1 B Listen and chant",
    "chapter_path": [
-    "456cb378-594b-389d-b1d3-d00e1ad29a17",
-    "57a052a2-ae9c-379d-91d5-b28d7ee92abf"
+    "3303d577-1af6-4e38-8757-b1952f36a21e",
+    "9bbae21c-7f1b-480b-ac48-1defa46ebbe2"
    ],
    "pdf_page": null,
-   "materials": [
-    "学习任务单"
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "c3981f12-2b64-6636-e874-976f7550982a",
+   "title": "Unit 1 B Start to read",
+   "chapter_path": [
+    "3303d577-1af6-4e38-8757-b1952f36a21e",
+    "9bbae21c-7f1b-480b-ac48-1defa46ebbe2"
    ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "abb60db7-7aca-b9ce-2f10-4f8bfa44c69e",
+   "title": "Unit 1 C Project",
+   "chapter_path": [
+    "3303d577-1af6-4e38-8757-b1952f36a21e",
+    "ac989d80-1fe3-47d6-b5af-db6e58335ff2"
+   ],
+   "pdf_page": 15,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "b398e31a-af80-d66c-edc0-8513fde2aa97",
+   "title": "Unit 2 Listen and chant",
+   "chapter_path": [
+    "4bc28d8d-5ad6-47b4-8633-55755c6607b9",
+    "483ea5b7-3b16-40a0-bfc1-5aa14139627a"
+   ],
+   "pdf_page": 8,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "df90c458-068d-943d-7767-81198bbbb3ff",
+   "title": "Unit 2 Listen and sing",
+   "chapter_path": [
+    "4bc28d8d-5ad6-47b4-8633-55755c6607b9",
+    "483ea5b7-3b16-40a0-bfc1-5aa14139627a"
+   ],
+   "pdf_page": 68,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "c4c949fb-1971-f1a1-cd91-13df7834392e",
+   "title": "Unit 2 A Let’s talk",
+   "chapter_path": [
+    "4bc28d8d-5ad6-47b4-8633-55755c6607b9",
+    "483ea5b7-3b16-40a0-bfc1-5aa14139627a"
+   ],
+   "pdf_page": 9,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "f7f5cde6-56e9-85f2-5ea8-16a2835839bc",
+   "title": "Unit 2 A Listen, sing and play",
+   "chapter_path": [
+    "4bc28d8d-5ad6-47b4-8633-55755c6607b9",
+    "483ea5b7-3b16-40a0-bfc1-5aa14139627a"
+   ],
+   "pdf_page": 21,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "652f1983-d977-1e30-2fff-f28a0c32e3b3",
+   "title": "Unit 2 A Listen and chant",
+   "chapter_path": [
+    "4bc28d8d-5ad6-47b4-8633-55755c6607b9",
+    "483ea5b7-3b16-40a0-bfc1-5aa14139627a"
+   ],
+   "pdf_page": 58,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "c75d2772-c8cb-90fd-c94c-02fe94b08549",
+   "title": "Unit 2 A Listen, repeat and chant.",
+   "chapter_path": [
+    "4bc28d8d-5ad6-47b4-8633-55755c6607b9",
+    "483ea5b7-3b16-40a0-bfc1-5aa14139627a"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "48ce2e2d-7e1c-4600-fa91-4c597b8acc4b",
+   "title": "Unit 2 A Listen and circle the first sound.",
+   "chapter_path": [
+    "4bc28d8d-5ad6-47b4-8633-55755c6607b9",
+    "483ea5b7-3b16-40a0-bfc1-5aa14139627a"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "14a7fcc9-e67a-113e-4019-90f60c6e81a6",
+   "title": "Unit 2 B Let's talk",
+   "chapter_path": [
+    "4bc28d8d-5ad6-47b4-8633-55755c6607b9",
+    "6a30821d-eab9-4409-8a96-e6e02f7ccde5"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "be1d2dc8-481c-8a58-9484-bb2c32db9c56",
+   "title": "Unit 2 B Listen and chant",
+   "chapter_path": [
+    "4bc28d8d-5ad6-47b4-8633-55755c6607b9",
+    "6a30821d-eab9-4409-8a96-e6e02f7ccde5"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "604d3ca2-fb80-9486-7287-333b85032a4a",
+   "title": "Unit 2 B Start to read",
+   "chapter_path": [
+    "4bc28d8d-5ad6-47b4-8633-55755c6607b9",
+    "6a30821d-eab9-4409-8a96-e6e02f7ccde5"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "afa13eb5-2bf1-da6e-5167-26c566f5f27a",
+   "title": "Unit 2 C Project",
+   "chapter_path": [
+    "4bc28d8d-5ad6-47b4-8633-55755c6607b9",
+    "e52bed62-3bba-4794-859e-fdd434b688af"
+   ],
+   "pdf_page": 15,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "6bc1299b-9aac-d711-502b-99f7c25c812f",
+   "title": "Unit 3 Listen and chant",
+   "chapter_path": [
+    "364d6309-c2af-4d27-8918-ecf6b834e891",
+    "1ee65a28-b8ac-4e3d-946b-83b3773d28c2"
+   ],
+   "pdf_page": 8,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "9dce912b-7e88-2e25-372d-dcb9dc19d76e",
+   "title": "Unit 3 Listen and sing",
+   "chapter_path": [
+    "364d6309-c2af-4d27-8918-ecf6b834e891",
+    "1ee65a28-b8ac-4e3d-946b-83b3773d28c2"
+   ],
+   "pdf_page": 68,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "63851263-4f69-9b44-f61b-cf4848f92d08",
+   "title": "Unit 3 A Let’s talk",
+   "chapter_path": [
+    "364d6309-c2af-4d27-8918-ecf6b834e891",
+    "1ee65a28-b8ac-4e3d-946b-83b3773d28c2"
+   ],
+   "pdf_page": 9,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "56bc3733-68e0-d2e7-24aa-f8d3133f3024",
+   "title": "Unit 3 A Listen and do",
+   "chapter_path": [
+    "364d6309-c2af-4d27-8918-ecf6b834e891",
+    "1ee65a28-b8ac-4e3d-946b-83b3773d28c2"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "c044d3f1-aaf6-418b-3055-e13c8d3658c5",
+   "title": "Unit 3 A Listen, repeat and chant.",
+   "chapter_path": [
+    "364d6309-c2af-4d27-8918-ecf6b834e891",
+    "1ee65a28-b8ac-4e3d-946b-83b3773d28c2"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "d40d5d4c-d55d-0e24-4439-ca4913199157",
+   "title": "Unit 3 A Listen and circle the first sound.",
+   "chapter_path": [
+    "364d6309-c2af-4d27-8918-ecf6b834e891",
+    "1ee65a28-b8ac-4e3d-946b-83b3773d28c2"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "efb04a62-cb55-101d-98a1-5e93029e0b26",
+   "title": "Unit 3 B Let's talk",
+   "chapter_path": [
+    "364d6309-c2af-4d27-8918-ecf6b834e891",
+    "50d65071-9db3-4759-9eb4-14e0417c0b96"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "0aa402cc-3588-0618-2616-be8e1903fa57",
+   "title": "Unit 3 B Listen and chant",
+   "chapter_path": [
+    "364d6309-c2af-4d27-8918-ecf6b834e891",
+    "50d65071-9db3-4759-9eb4-14e0417c0b96"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "1e5db276-21f8-7d0d-894d-58b83552b043",
+   "title": "Unit 3 B Start to read",
+   "chapter_path": [
+    "364d6309-c2af-4d27-8918-ecf6b834e891",
+    "50d65071-9db3-4759-9eb4-14e0417c0b96"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "6568399a-7f29-62d5-4271-7e0579bbca86",
+   "title": "Unit 3 C Project",
+   "chapter_path": [
+    "364d6309-c2af-4d27-8918-ecf6b834e891",
+    "e2637cf0-50f0-420f-a285-3d10c2476db1"
+   ],
+   "pdf_page": 15,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "7c70c5ab-2f00-03b4-6cb2-b34cb3c378da",
+   "title": "Unit 4 Listen and chant",
+   "chapter_path": [
+    "a7603681-2c47-4463-b434-05258d8ce517",
+    "dc2d679b-88da-45df-8d07-f0623c604334"
+   ],
+   "pdf_page": 8,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "fa07df5e-0e15-4b4b-98bb-b5e5f4a98e0a",
+   "title": "Unit 4 Listen and sing",
+   "chapter_path": [
+    "a7603681-2c47-4463-b434-05258d8ce517",
+    "dc2d679b-88da-45df-8d07-f0623c604334"
+   ],
+   "pdf_page": 68,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "a573f49c-ab17-8e56-8695-be096848ad2c",
+   "title": "Unit 4 A Let’s talk",
+   "chapter_path": [
+    "a7603681-2c47-4463-b434-05258d8ce517",
+    "dc2d679b-88da-45df-8d07-f0623c604334"
+   ],
+   "pdf_page": 9,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "a6d30e58-5853-7fc5-214f-fd368db56e53",
+   "title": "Unit 4 A Listen and chant",
+   "chapter_path": [
+    "a7603681-2c47-4463-b434-05258d8ce517",
+    "dc2d679b-88da-45df-8d07-f0623c604334"
+   ],
+   "pdf_page": 58,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "a065e1d1-14a7-a2c3-b64b-5fc2ca252569",
+   "title": "Unit 4 A Listen, repeat and chant.",
+   "chapter_path": [
+    "a7603681-2c47-4463-b434-05258d8ce517",
+    "dc2d679b-88da-45df-8d07-f0623c604334"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "1672f8c8-5df2-816b-5587-1dd65914b8e3",
+   "title": "Unit 4 A Listen and circle the first sound.",
+   "chapter_path": [
+    "a7603681-2c47-4463-b434-05258d8ce517",
+    "dc2d679b-88da-45df-8d07-f0623c604334"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "0a718795-0d48-efea-3eaa-236428237076",
+   "title": "Unit 4 B Let's talk",
+   "chapter_path": [
+    "a7603681-2c47-4463-b434-05258d8ce517",
+    "a82c686a-fca2-45ff-9595-342ecfa3233f"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "b7bb9906-c4c7-e0ba-6ec8-6d85b4c1f790",
+   "title": "Unit 4 B Listen and chant",
+   "chapter_path": [
+    "a7603681-2c47-4463-b434-05258d8ce517",
+    "a82c686a-fca2-45ff-9595-342ecfa3233f"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "2629cd25-c8cc-8b38-364b-f9d8c92ecfb3",
+   "title": "Unit 4 B Start to read",
+   "chapter_path": [
+    "a7603681-2c47-4463-b434-05258d8ce517",
+    "a82c686a-fca2-45ff-9595-342ecfa3233f"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "f3db6084-4e95-90e8-79ef-d6c278023d3c",
+   "title": "Unit 4 C Project",
+   "chapter_path": [
+    "a7603681-2c47-4463-b434-05258d8ce517",
+    "ef888a39-25b4-459a-811d-af78e21d7769"
+   ],
+   "pdf_page": 15,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "fd685edc-d00c-3c82-2692-7c8265115695",
+   "title": "Unit 5 Listen and chant",
+   "chapter_path": [
+    "21a66b09-d4fa-40bc-af0f-86d389f4fa7a",
+    "6e6929d8-1bd0-4092-81b5-3635c882c36a"
+   ],
+   "pdf_page": 8,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "d8f65323-436f-98a0-54b0-aec4956c5862",
+   "title": "Unit 5 Listen and sing",
+   "chapter_path": [
+    "21a66b09-d4fa-40bc-af0f-86d389f4fa7a",
+    "6e6929d8-1bd0-4092-81b5-3635c882c36a"
+   ],
+   "pdf_page": 68,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "5cfb4dd1-c1f3-d961-652b-11ff791c9778",
+   "title": "Unit 5 A Let’s talk",
+   "chapter_path": [
+    "21a66b09-d4fa-40bc-af0f-86d389f4fa7a",
+    "6e6929d8-1bd0-4092-81b5-3635c882c36a"
+   ],
+   "pdf_page": 9,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "77bf8717-87e4-08c6-a697-3836eed20643",
+   "title": "Unit 5 A Listen and chant",
+   "chapter_path": [
+    "21a66b09-d4fa-40bc-af0f-86d389f4fa7a",
+    "6e6929d8-1bd0-4092-81b5-3635c882c36a"
+   ],
+   "pdf_page": 58,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "72aefdcc-c608-420b-5b05-8bb10538f85b",
+   "title": "Unit 5 A Listen, repeat and chant.",
+   "chapter_path": [
+    "21a66b09-d4fa-40bc-af0f-86d389f4fa7a",
+    "6e6929d8-1bd0-4092-81b5-3635c882c36a"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "46224a21-b60f-fcc2-5add-785aa97c2489",
+   "title": "Unit 5 A Listen and circle the first sound.",
+   "chapter_path": [
+    "21a66b09-d4fa-40bc-af0f-86d389f4fa7a",
+    "6e6929d8-1bd0-4092-81b5-3635c882c36a"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "76f5d7f8-075a-6404-8266-c4e9b36aa25f",
+   "title": "Unit 5 B Let's talk",
+   "chapter_path": [
+    "21a66b09-d4fa-40bc-af0f-86d389f4fa7a",
+    "27af2bac-da97-40e4-b3c4-804043bc54c5"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "436a3094-685e-8099-c754-bf281c54be7a",
+   "title": "Unit 5 B Listen and do",
+   "chapter_path": [
+    "21a66b09-d4fa-40bc-af0f-86d389f4fa7a",
+    "27af2bac-da97-40e4-b3c4-804043bc54c5"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "bf97d7d9-55a4-f2ac-9c72-aea9ea7a5d09",
+   "title": "Unit 5 B Start to read",
+   "chapter_path": [
+    "21a66b09-d4fa-40bc-af0f-86d389f4fa7a",
+    "27af2bac-da97-40e4-b3c4-804043bc54c5"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "20ab570c-b8dd-f19c-68f1-53e2d69c5fd2",
+   "title": "Unit 5 C Project",
+   "chapter_path": [
+    "21a66b09-d4fa-40bc-af0f-86d389f4fa7a",
+    "4479159f-4d33-4ddb-b5f0-e20b86b8791d"
+   ],
+   "pdf_page": 15,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "648af1a9-9913-5b9e-f4fa-e11c471a61e3",
+   "title": "Unit 6 Listen and chant",
+   "chapter_path": [
+    "ba915a7c-6258-4a2b-a94b-cbe205b81d2c",
+    "b7c4e7d0-e2d3-458e-982c-8f48a3e56f06"
+   ],
+   "pdf_page": 8,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "764f8a2a-1456-4a37-8f1a-eae6261ab9a8",
+   "title": "Unit 6 Listen and sing",
+   "chapter_path": [
+    "ba915a7c-6258-4a2b-a94b-cbe205b81d2c",
+    "b7c4e7d0-e2d3-458e-982c-8f48a3e56f06"
+   ],
+   "pdf_page": 68,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "48a11300-23ab-c8c3-4512-a745233f10d8",
+   "title": "Unit 6 A Let’s talk",
+   "chapter_path": [
+    "ba915a7c-6258-4a2b-a94b-cbe205b81d2c",
+    "b7c4e7d0-e2d3-458e-982c-8f48a3e56f06"
+   ],
+   "pdf_page": 9,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "e0740412-7380-bfaa-8915-2638b0a06ab5",
+   "title": "Unit 6 A Listen and chant",
+   "chapter_path": [
+    "ba915a7c-6258-4a2b-a94b-cbe205b81d2c",
+    "b7c4e7d0-e2d3-458e-982c-8f48a3e56f06"
+   ],
+   "pdf_page": 58,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "53e7802e-e022-524c-37c8-db39af4c4023",
+   "title": "Unit 6 A Listen, repeat and chant.",
+   "chapter_path": [
+    "ba915a7c-6258-4a2b-a94b-cbe205b81d2c",
+    "b7c4e7d0-e2d3-458e-982c-8f48a3e56f06"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "53c32115-753d-8626-37bd-a023c0fff8e3",
+   "title": "Unit 6 A Listen and circle the first sound.",
+   "chapter_path": [
+    "ba915a7c-6258-4a2b-a94b-cbe205b81d2c",
+    "b7c4e7d0-e2d3-458e-982c-8f48a3e56f06"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "a198e2fa-39f6-ee30-57bb-2d612e140030",
+   "title": "Unit 6 A Listen and circle the last sound.",
+   "chapter_path": [
+    "ba915a7c-6258-4a2b-a94b-cbe205b81d2c",
+    "b7c4e7d0-e2d3-458e-982c-8f48a3e56f06"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "0c5a9f1c-e03e-9f21-1981-494f424df755",
+   "title": "Unit 6 B Let's talk",
+   "chapter_path": [
+    "ba915a7c-6258-4a2b-a94b-cbe205b81d2c",
+    "b14acfa1-888a-4121-bb3d-522ad9535938"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "b49d7f87-d4aa-8cde-be72-2c9abbdda3de",
+   "title": "Unit 6 B Listen and chant",
+   "chapter_path": [
+    "ba915a7c-6258-4a2b-a94b-cbe205b81d2c",
+    "b14acfa1-888a-4121-bb3d-522ad9535938"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "abb6126a-dfc0-4d8c-a4bf-417cf632ac20",
+   "title": "Unit 6 B Start to read",
+   "chapter_path": [
+    "ba915a7c-6258-4a2b-a94b-cbe205b81d2c",
+    "b14acfa1-888a-4121-bb3d-522ad9535938"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "72aec1b9-28b7-7781-8e50-ced5c5fe8f39",
+   "title": "Unit 6 C Project",
+   "chapter_path": [
+    "ba915a7c-6258-4a2b-a94b-cbe205b81d2c",
+    "74172f1b-1d16-4136-a7c6-f09abb7bdf3a"
+   ],
+   "pdf_page": 15,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "c340f289-7700-82c8-2395-998eddb3474f",
+   "title": "Revision Listen and tick.",
+   "chapter_path": [
+    "f25e4218-9db0-4531-bf2c-016ca74a55dc"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "7981bcdc-2877-c439-1a5e-ee4b9d2bbd2d",
+   "title": "Revision Read aloud.",
+   "chapter_path": [
+    "f25e4218-9db0-4531-bf2c-016ca74a55dc"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "d0f3dbdb-3844-8b10-5667-1e542c9a70c3",
+   "title": "Revision Read and talk.",
+   "chapter_path": [
+    "f25e4218-9db0-4531-bf2c-016ca74a55dc"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "9fec3e6d-e3e2-463d-28ae-a76e315cd907",
+   "title": "Revision Listen and chant.",
+   "chapter_path": [
+    "f25e4218-9db0-4531-bf2c-016ca74a55dc"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "4e2d9f7c-68e7-1810-fc32-6480690309a7",
+   "title": "Revision Fill in the blanks and sing a song.",
+   "chapter_path": [
+    "f25e4218-9db0-4531-bf2c-016ca74a55dc"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "ef59c1be-c3b8-0729-5b33-a4f6c6439406",
+   "title": "Words in each unit Unit 1",
+   "chapter_path": [
+    "f25e4218-9db0-4531-bf2c-016ca74a55dc"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "983c0194-a36c-d26e-285d-b971a416d9e7",
+   "title": "Words in each unit Unit 2",
+   "chapter_path": [
+    "f25e4218-9db0-4531-bf2c-016ca74a55dc"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "0f15e790-9878-128d-9441-037c23bc00ff",
+   "title": "Words in each unit Unit 3",
+   "chapter_path": [
+    "f25e4218-9db0-4531-bf2c-016ca74a55dc"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "69dec76d-9a4f-a1b2-d43d-ade0545d27a3",
+   "title": "Words in each unit Unit 4",
+   "chapter_path": [
+    "f25e4218-9db0-4531-bf2c-016ca74a55dc"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "17d7e58e-805c-3275-2883-a82d9dfe6344",
+   "title": "Words in each unit Unit 5",
+   "chapter_path": [
+    "f25e4218-9db0-4531-bf2c-016ca74a55dc"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "aaba9c81-da04-cd43-ca07-11892f70122a",
+   "title": "Words in each unit Unit 6",
+   "chapter_path": [
+    "f25e4218-9db0-4531-bf2c-016ca74a55dc"
+   ],
+   "pdf_page": null,
+   "materials": [],
+   "hours": 1
+  },
+  {
+   "id": "9a9c167a-00e3-6660-719e-739a709231b8",
+   "title": "The alphabet",
+   "chapter_path": [
+    "f25e4218-9db0-4531-bf2c-016ca74a55dc"
+   ],
+   "pdf_page": 96,
+   "materials": [],
    "hours": 1
   }
  ]

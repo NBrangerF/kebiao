@@ -4,7 +4,7 @@
  "platform_textbook_id": "fb0308d9-2e7f-480b-8723-f48852bb2f28",
  "platform_title": "新教材-小学语文统编版五年级上册",
  "match": {
-  "title_hits": 5,
+  "title_hits": 9,
   "method": "book_text",
   "score": 1,
   "candidates": 2
@@ -42,6 +42,38 @@
       {
        "id": "10552440-56f8-44a6-b151-465da56c65b6",
        "title": "制定班级公约",
+       "children": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c567d731-e919-4f40-8c3c-b9f678aaa257",
+   "title": "第二单元",
+   "children": [
+    {
+     "id": "d7541c40-4963-461e-94b7-957ae91485f4",
+     "title": "阅读",
+     "children": [
+      {
+       "id": "8bd86510-0991-475f-b48d-5b075246cb3b",
+       "title": "4 冀中的地道战",
+       "children": []
+      },
+      {
+       "id": "5831bbab-e393-4dc0-a232-065ff585b020",
+       "title": "5 将相和",
+       "children": []
+      },
+      {
+       "id": "0f3615c8-5e14-4ce8-99df-f64182b5ae82",
+       "title": "6 什么比猎豹的速度更快",
+       "children": []
+      },
+      {
+       "id": "279c1f4b-2cd0-4362-afc0-16851cc1ac97",
+       "title": "7 “诺曼底号”遇难记",
        "children": []
       }
      ]
@@ -110,6 +142,74 @@
     "10552440-56f8-44a6-b151-465da56c65b6"
    ],
    "pdf_page": 14,
+   "materials": [
+    "课件",
+    "教学设计",
+    "学习任务单",
+    "课后练习"
+   ],
+   "hours": 1
+  },
+  {
+   "id": "65a613c3-09c4-71cb-044e-8ffd3937da41",
+   "title": "4 冀中的地道战",
+   "chapter_path": [
+    "c567d731-e919-4f40-8c3c-b9f678aaa257",
+    "d7541c40-4963-461e-94b7-957ae91485f4",
+    "8bd86510-0991-475f-b48d-5b075246cb3b"
+   ],
+   "pdf_page": 19,
+   "materials": [
+    "课件",
+    "教学设计",
+    "学习任务单",
+    "课后练习"
+   ],
+   "hours": 1
+  },
+  {
+   "id": "430e2a71-553e-bb0e-3cab-db5a245ad84a",
+   "title": "5 将相和",
+   "chapter_path": [
+    "c567d731-e919-4f40-8c3c-b9f678aaa257",
+    "d7541c40-4963-461e-94b7-957ae91485f4",
+    "5831bbab-e393-4dc0-a232-065ff585b020"
+   ],
+   "pdf_page": 22,
+   "materials": [
+    "课件",
+    "教学设计",
+    "学习任务单",
+    "课后练习"
+   ],
+   "hours": 1
+  },
+  {
+   "id": "6d1e3e94-d7ac-827b-4962-01b8ef498fc8",
+   "title": "6 什么比猎豹的速度更快",
+   "chapter_path": [
+    "c567d731-e919-4f40-8c3c-b9f678aaa257",
+    "d7541c40-4963-461e-94b7-957ae91485f4",
+    "0f3615c8-5e14-4ce8-99df-f64182b5ae82"
+   ],
+   "pdf_page": 27,
+   "materials": [
+    "课件",
+    "教学设计",
+    "学习任务单",
+    "课后练习"
+   ],
+   "hours": 1
+  },
+  {
+   "id": "d22a4d78-97ba-93a5-165d-f7f971359da0",
+   "title": "7 “诺曼底号”遇难记",
+   "chapter_path": [
+    "c567d731-e919-4f40-8c3c-b9f678aaa257",
+    "d7541c40-4963-461e-94b7-957ae91485f4",
+    "279c1f4b-2cd0-4362-afc0-16851cc1ac97"
+   ],
+   "pdf_page": 30,
    "materials": [
     "课件",
     "教学设计",

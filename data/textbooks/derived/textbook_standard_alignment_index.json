@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-09T02:40:02.495Z",
+  "generated_at": "2026-11-09T03:47:32.054Z",
   "source_generation_id": "gen-20261108053426-067549b650",
   "algorithm_version": "full-alignment-scope-preserve-v2",
   "pipeline_versions": [
@@ -38,10 +38,10 @@
       "unit_aligned": 108,
       "scope_aligned_unit_review_needed": 62
     },
-    "toc_units": 4709,
+    "toc_units": 4706,
     "units_by_status": {
-      "no_reliable_match": 4352,
-      "aligned": 357
+      "no_reliable_match": 4348,
+      "aligned": 358
     },
     "standards": 2025,
     "standards_by_status": {
@@ -3000,8 +3000,8 @@
       "subject_slug": "math",
       "grade": 4,
       "grade_band": "H2",
-      "toc_unit_count": 12,
-      "processed_unit_scope_count": 12,
+      "toc_unit_count": 9,
+      "processed_unit_scope_count": 9,
       "published_specific_match_count": 29,
       "candidate_specific_match_count": 0,
       "scope_standard_count": 19,
@@ -43229,8 +43229,8 @@
     },
     {
       "edition_id": "ed_dda80e43104244896faa",
-      "unit_id": "tcu_fd268cb997039e88",
-      "unit_title": "1 大数的认识",
+      "unit_id": "tcu_0e7eec2643c43008",
+      "unit_title": "一 万以上数的认识",
       "standard_subject_slug": "math",
       "grade_band": "H2",
       "status": "aligned",
@@ -43239,18 +43239,8 @@
     },
     {
       "edition_id": "ed_dda80e43104244896faa",
-      "unit_id": "tcu_fd5f8745f1c8e74a",
-      "unit_title": "亿以内数的认识",
-      "standard_subject_slug": "math",
-      "grade_band": "H2",
-      "status": "no_reliable_match",
-      "match_count": 0,
-      "published_match_count": 0
-    },
-    {
-      "edition_id": "ed_dda80e43104244896faa",
       "unit_id": "tcu_c0b64ca2b97a88ef",
-      "unit_title": "★ 1亿有多大",
+      "unit_title": "1亿有多大",
       "standard_subject_slug": "math",
       "grade_band": "H2",
       "status": "no_reliable_match",
@@ -43259,8 +43249,8 @@
     },
     {
       "edition_id": "ed_dda80e43104244896faa",
-      "unit_id": "tcu_98e478dc59d54cf1",
-      "unit_title": "3 角的度量",
+      "unit_id": "tcu_0927bb4386d60d2c",
+      "unit_title": "二 角的度量",
       "standard_subject_slug": "math",
       "grade_band": "H2",
       "status": "no_reliable_match",
@@ -43269,8 +43259,8 @@
     },
     {
       "edition_id": "ed_dda80e43104244896faa",
-      "unit_id": "tcu_c9a005e51687dd58",
-      "unit_title": "角的度量",
+      "unit_id": "tcu_9fe0779fbfc06de8",
+      "unit_title": "三 多位数乘两位数",
       "standard_subject_slug": "math",
       "grade_band": "H2",
       "status": "no_reliable_match",
@@ -43279,8 +43269,8 @@
     },
     {
       "edition_id": "ed_dda80e43104244896faa",
-      "unit_id": "tcu_8bc271cacb090e2d",
-      "unit_title": "4 三位数乘两位数",
+      "unit_id": "tcu_289d4e9af32ab9e6",
+      "unit_title": "四 加法模型和乘法模型",
       "standard_subject_slug": "math",
       "grade_band": "H2",
       "status": "no_reliable_match",
@@ -43289,28 +43279,28 @@
     },
     {
       "edition_id": "ed_dda80e43104244896faa",
-      "unit_id": "tcu_f2b4ca86955df3b8",
-      "unit_title": "速度、时间和路程",
-      "standard_subject_slug": "math",
-      "grade_band": "H2",
-      "status": "no_reliable_match",
-      "match_count": 0,
-      "published_match_count": 0
-    },
-    {
-      "edition_id": "ed_dda80e43104244896faa",
-      "unit_id": "tcu_2b73fcd0406cfe63",
-      "unit_title": "5 平行四边形和梯形",
+      "unit_id": "tcu_8924cda0fe91094c",
+      "unit_title": "五 平行四边形和梯形",
       "standard_subject_slug": "math",
       "grade_band": "H2",
       "status": "aligned",
-      "match_count": 16,
-      "published_match_count": 16
+      "match_count": 9,
+      "published_match_count": 9
     },
     {
       "edition_id": "ed_dda80e43104244896faa",
-      "unit_id": "tcu_7bf31c8e3f693c9d",
-      "unit_title": "★神奇的默比乌斯带",
+      "unit_id": "tcu_07ea1c44be4fed34",
+      "unit_title": "六 条形统计图",
+      "standard_subject_slug": "math",
+      "grade_band": "H2",
+      "status": "aligned",
+      "match_count": 7,
+      "published_match_count": 7
+    },
+    {
+      "edition_id": "ed_dda80e43104244896faa",
+      "unit_id": "tcu_bbef2278750c4f29",
+      "unit_title": "寻找宝藏",
       "standard_subject_slug": "math",
       "grade_band": "H2",
       "status": "no_reliable_match",
@@ -43319,28 +43309,8 @@
     },
     {
       "edition_id": "ed_dda80e43104244896faa",
-      "unit_id": "tcu_bb36a0dad2e15a69",
-      "unit_title": "7 条形统计图",
-      "standard_subject_slug": "math",
-      "grade_band": "H2",
-      "status": "no_reliable_match",
-      "match_count": 0,
-      "published_match_count": 0
-    },
-    {
-      "edition_id": "ed_dda80e43104244896faa",
-      "unit_id": "tcu_321a79b8a6a72db7",
-      "unit_title": "8 数学广角──优化",
-      "standard_subject_slug": "math",
-      "grade_band": "H2",
-      "status": "no_reliable_match",
-      "match_count": 0,
-      "published_match_count": 0
-    },
-    {
-      "edition_id": "ed_dda80e43104244896faa",
-      "unit_id": "tcu_8078d482acda52c7",
-      "unit_title": "沏茶问题",
+      "unit_id": "tcu_dd4c5e17857f3033",
+      "unit_title": "七 复习与关联",
       "standard_subject_slug": "math",
       "grade_band": "H2",
       "status": "no_reliable_match",
@@ -116731,573 +116701,6 @@
     },
     {
       "algorithm_version": "component-evidence-hybrid-v3",
-      "alignment_id": "tca_07f4c3abc5d02fc5",
-      "alignment_method": "component_evidence_hybrid",
-      "asset_sha256": "b8c56400784534fc89ab2b7c6835d7ade229d158d88f13302c28b2c6c5b3b7e2",
-      "confidence": 0.92,
-      "content_node_kind": "lesson",
-      "content_node_title": "74平行四边形和梯形",
-      "edition_id": "ed_dda80e43104244896faa",
-      "end_pdf_page": 80,
-      "evidence_excerpt": "74 平行四边形和梯形",
-      "evidence_excerpt_hash": "e87d3818b952624f21a27d71f2b521d3cf57efe6e5de0412400ea827c9f7a64e",
-      "evidence_granularity": "topic_heading",
-      "evidence_id": "external_smartedu_2026_math_primary_grade_4_up",
-      "evidence_level": "L2",
-      "evidence_level_detail": "L2_topic",
-      "evidence_role": "direct_textbook",
-      "evidence_span_ids": [
-        "tes_2ae659c0c78f032a"
-      ],
-      "grade_band": "H2",
-      "learning_component_ids": [
-        "lc_2c57372dca985e06"
-      ],
-      "learning_components": [
-        {
-          "component_id": "lc_2c57372dca985e06",
-          "label": "说出长方形、正方形、平行四边形、梯形的特征"
-        }
-      ],
-      "longest_match_length": 5,
-      "matched_fields": [
-        "learning_components",
-        "standard_context",
-        "textbook_unit"
-      ],
-      "matched_keywords": [
-        "平行四边形",
-        "梯形"
-      ],
-      "modifier_conflicts": [],
-      "node_id": "tcn_b0d653b9e07df1b6",
-      "pdf_page": 79,
-      "printed_page": "74",
-      "provenance": "machine_generated",
-      "publication_status": "published",
-      "rationale": "教材课文“74平行四边形和梯形”与课标 MA-D2-GE-004 的可教学小能力“说出长方形、正方形、平行四边形、梯形的特征”形成页内证据匹配。",
-      "relation_type": "supports",
-      "review_status": "machine_checked",
-      "score": 0.88,
-      "standard_code": "MA-D2-GE-004",
-      "standard_subdomain": "图形的认识与测量",
-      "standard_text": "能说出长方形、正方形、平行四边形、梯形的特征；能说出图形之间的共性与区别。形成空间观念和初步的几何直观。",
-      "standard_title": "说出长方形、正方形、平行四边形、梯形的特征",
-      "subject_slug": "math",
-      "topic_anchor_keywords": [
-        "平行四边形",
-        "梯形"
-      ],
-      "topic_anchor_score": 0.88,
-      "unit_id": "tcu_2b73fcd0406cfe63",
-      "unit_title": "5 平行四边形和梯形"
-    },
-    {
-      "algorithm_version": "component-evidence-hybrid-v3",
-      "alignment_id": "tca_2f6b9f498e1eb212",
-      "alignment_method": "component_evidence_hybrid",
-      "asset_sha256": "b8c56400784534fc89ab2b7c6835d7ade229d158d88f13302c28b2c6c5b3b7e2",
-      "confidence": 0.92,
-      "content_node_kind": "lesson",
-      "content_node_title": "80平行四边形和梯形",
-      "edition_id": "ed_dda80e43104244896faa",
-      "end_pdf_page": 86,
-      "evidence_excerpt": "80 平行四边形和梯形",
-      "evidence_excerpt_hash": "ed66ab5b19f2444d2a41a84096705c2d9db8662f48292ecac8f46efb57321efc",
-      "evidence_granularity": "topic_heading",
-      "evidence_id": "external_smartedu_2026_math_primary_grade_4_up",
-      "evidence_level": "L2",
-      "evidence_level_detail": "L2_topic",
-      "evidence_role": "direct_textbook",
-      "evidence_span_ids": [
-        "tes_ae99c7ccc7228f33"
-      ],
-      "grade_band": "H2",
-      "learning_component_ids": [
-        "lc_2c57372dca985e06"
-      ],
-      "learning_components": [
-        {
-          "component_id": "lc_2c57372dca985e06",
-          "label": "说出长方形、正方形、平行四边形、梯形的特征"
-        }
-      ],
-      "longest_match_length": 5,
-      "matched_fields": [
-        "learning_components",
-        "standard_context",
-        "textbook_unit"
-      ],
-      "matched_keywords": [
-        "平行四边形",
-        "梯形"
-      ],
-      "modifier_conflicts": [],
-      "node_id": "tcn_928ee58d6773606e",
-      "pdf_page": 85,
-      "printed_page": "80",
-      "provenance": "machine_generated",
-      "publication_status": "published",
-      "rationale": "教材课文“80平行四边形和梯形”与课标 MA-D2-GE-004 的可教学小能力“说出长方形、正方形、平行四边形、梯形的特征”形成页内证据匹配。",
-      "relation_type": "supports",
-      "review_status": "machine_checked",
-      "score": 0.88,
-      "standard_code": "MA-D2-GE-004",
-      "standard_subdomain": "图形的认识与测量",
-      "standard_text": "能说出长方形、正方形、平行四边形、梯形的特征；能说出图形之间的共性与区别。形成空间观念和初步的几何直观。",
-      "standard_title": "说出长方形、正方形、平行四边形、梯形的特征",
-      "subject_slug": "math",
-      "topic_anchor_keywords": [
-        "平行四边形",
-        "梯形"
-      ],
-      "topic_anchor_score": 0.88,
-      "unit_id": "tcu_2b73fcd0406cfe63",
-      "unit_title": "5 平行四边形和梯形"
-    },
-    {
-      "algorithm_version": "component-evidence-hybrid-v3",
-      "alignment_id": "tca_329b25cb51e0c600",
-      "alignment_method": "component_evidence_hybrid",
-      "asset_sha256": "b8c56400784534fc89ab2b7c6835d7ade229d158d88f13302c28b2c6c5b3b7e2",
-      "confidence": 0.92,
-      "content_node_kind": "lesson",
-      "content_node_title": "84平行四边形和梯形",
-      "edition_id": "ed_dda80e43104244896faa",
-      "end_pdf_page": 90,
-      "evidence_excerpt": "84 平行四边形和梯形",
-      "evidence_excerpt_hash": "8fbbe678acd4296fac825cb118bb3c4024dfffb7e867bec7a7d41f094296df3e",
-      "evidence_granularity": "topic_heading",
-      "evidence_id": "external_smartedu_2026_math_primary_grade_4_up",
-      "evidence_level": "L2",
-      "evidence_level_detail": "L2_topic",
-      "evidence_role": "direct_textbook",
-      "evidence_span_ids": [
-        "tes_faa8f83713191407"
-      ],
-      "grade_band": "H2",
-      "learning_component_ids": [
-        "lc_2c57372dca985e06"
-      ],
-      "learning_components": [
-        {
-          "component_id": "lc_2c57372dca985e06",
-          "label": "说出长方形、正方形、平行四边形、梯形的特征"
-        }
-      ],
-      "longest_match_length": 5,
-      "matched_fields": [
-        "learning_components",
-        "standard_context",
-        "textbook_unit"
-      ],
-      "matched_keywords": [
-        "平行四边形",
-        "梯形"
-      ],
-      "modifier_conflicts": [],
-      "node_id": "tcn_88126d20f6c08c3c",
-      "pdf_page": 89,
-      "printed_page": "84",
-      "provenance": "machine_generated",
-      "publication_status": "published",
-      "rationale": "教材课文“84平行四边形和梯形”与课标 MA-D2-GE-004 的可教学小能力“说出长方形、正方形、平行四边形、梯形的特征”形成页内证据匹配。",
-      "relation_type": "supports",
-      "review_status": "machine_checked",
-      "score": 0.88,
-      "standard_code": "MA-D2-GE-004",
-      "standard_subdomain": "图形的认识与测量",
-      "standard_text": "能说出长方形、正方形、平行四边形、梯形的特征；能说出图形之间的共性与区别。形成空间观念和初步的几何直观。",
-      "standard_title": "说出长方形、正方形、平行四边形、梯形的特征",
-      "subject_slug": "math",
-      "topic_anchor_keywords": [
-        "平行四边形",
-        "梯形"
-      ],
-      "topic_anchor_score": 0.88,
-      "unit_id": "tcu_2b73fcd0406cfe63",
-      "unit_title": "5 平行四边形和梯形"
-    },
-    {
-      "algorithm_version": "component-evidence-hybrid-v3",
-      "alignment_id": "tca_3a184821ee386cd6",
-      "alignment_method": "component_evidence_hybrid",
-      "asset_sha256": "b8c56400784534fc89ab2b7c6835d7ade229d158d88f13302c28b2c6c5b3b7e2",
-      "confidence": 0.92,
-      "content_node_kind": "lesson",
-      "content_node_title": "86平行四边形和梯形",
-      "edition_id": "ed_dda80e43104244896faa",
-      "end_pdf_page": 92,
-      "evidence_excerpt": "86 平行四边形和梯形",
-      "evidence_excerpt_hash": "d0fd186c04bda98c5ca8e13e52952fb043e027aa70eab124eef7256a2720541e",
-      "evidence_granularity": "topic_heading",
-      "evidence_id": "external_smartedu_2026_math_primary_grade_4_up",
-      "evidence_level": "L2",
-      "evidence_level_detail": "L2_topic",
-      "evidence_role": "direct_textbook",
-      "evidence_span_ids": [
-        "tes_05cd903cd607f507"
-      ],
-      "grade_band": "H2",
-      "learning_component_ids": [
-        "lc_2c57372dca985e06"
-      ],
-      "learning_components": [
-        {
-          "component_id": "lc_2c57372dca985e06",
-          "label": "说出长方形、正方形、平行四边形、梯形的特征"
-        }
-      ],
-      "longest_match_length": 5,
-      "matched_fields": [
-        "learning_components",
-        "standard_context",
-        "textbook_unit"
-      ],
-      "matched_keywords": [
-        "平行四边形",
-        "梯形"
-      ],
-      "modifier_conflicts": [],
-      "node_id": "tcn_3a2e8aa94d0dceb0",
-      "pdf_page": 91,
-      "printed_page": "86",
-      "provenance": "machine_generated",
-      "publication_status": "published",
-      "rationale": "教材课文“86平行四边形和梯形”与课标 MA-D2-GE-004 的可教学小能力“说出长方形、正方形、平行四边形、梯形的特征”形成页内证据匹配。",
-      "relation_type": "supports",
-      "review_status": "machine_checked",
-      "score": 0.88,
-      "standard_code": "MA-D2-GE-004",
-      "standard_subdomain": "图形的认识与测量",
-      "standard_text": "能说出长方形、正方形、平行四边形、梯形的特征；能说出图形之间的共性与区别。形成空间观念和初步的几何直观。",
-      "standard_title": "说出长方形、正方形、平行四边形、梯形的特征",
-      "subject_slug": "math",
-      "topic_anchor_keywords": [
-        "平行四边形",
-        "梯形"
-      ],
-      "topic_anchor_score": 0.88,
-      "unit_id": "tcu_2b73fcd0406cfe63",
-      "unit_title": "5 平行四边形和梯形"
-    },
-    {
-      "algorithm_version": "component-evidence-hybrid-v3",
-      "alignment_id": "tca_40e7f9cfd9670f59",
-      "alignment_method": "component_evidence_hybrid",
-      "asset_sha256": "b8c56400784534fc89ab2b7c6835d7ade229d158d88f13302c28b2c6c5b3b7e2",
-      "confidence": 0.92,
-      "content_node_kind": "lesson",
-      "content_node_title": "70平行四边形和梯形",
-      "edition_id": "ed_dda80e43104244896faa",
-      "end_pdf_page": 76,
-      "evidence_excerpt": "70 平行四边形和梯形",
-      "evidence_excerpt_hash": "bf03237bfd26f77bbd43985897fb7f72aff53d8ef4acbd05d2327e100315ad2c",
-      "evidence_granularity": "topic_heading",
-      "evidence_id": "external_smartedu_2026_math_primary_grade_4_up",
-      "evidence_level": "L2",
-      "evidence_level_detail": "L2_topic",
-      "evidence_role": "direct_textbook",
-      "evidence_span_ids": [
-        "tes_02ec27b5a8b5bc4c"
-      ],
-      "grade_band": "H2",
-      "learning_component_ids": [
-        "lc_2c57372dca985e06"
-      ],
-      "learning_components": [
-        {
-          "component_id": "lc_2c57372dca985e06",
-          "label": "说出长方形、正方形、平行四边形、梯形的特征"
-        }
-      ],
-      "longest_match_length": 5,
-      "matched_fields": [
-        "learning_components",
-        "standard_context",
-        "textbook_unit"
-      ],
-      "matched_keywords": [
-        "平行四边形",
-        "梯形"
-      ],
-      "modifier_conflicts": [],
-      "node_id": "tcn_125b4a202666ae17",
-      "pdf_page": 75,
-      "printed_page": "70",
-      "provenance": "machine_generated",
-      "publication_status": "published",
-      "rationale": "教材课文“70平行四边形和梯形”与课标 MA-D2-GE-004 的可教学小能力“说出长方形、正方形、平行四边形、梯形的特征”形成页内证据匹配。",
-      "relation_type": "supports",
-      "review_status": "machine_checked",
-      "score": 0.88,
-      "standard_code": "MA-D2-GE-004",
-      "standard_subdomain": "图形的认识与测量",
-      "standard_text": "能说出长方形、正方形、平行四边形、梯形的特征；能说出图形之间的共性与区别。形成空间观念和初步的几何直观。",
-      "standard_title": "说出长方形、正方形、平行四边形、梯形的特征",
-      "subject_slug": "math",
-      "topic_anchor_keywords": [
-        "平行四边形",
-        "梯形"
-      ],
-      "topic_anchor_score": 0.88,
-      "unit_id": "tcu_2b73fcd0406cfe63",
-      "unit_title": "5 平行四边形和梯形"
-    },
-    {
-      "algorithm_version": "component-evidence-hybrid-v3",
-      "alignment_id": "tca_7bd4254e1550b0f4",
-      "alignment_method": "component_evidence_hybrid",
-      "asset_sha256": "b8c56400784534fc89ab2b7c6835d7ade229d158d88f13302c28b2c6c5b3b7e2",
-      "confidence": 0.92,
-      "content_node_kind": "lesson",
-      "content_node_title": "72平行四边形和梯形",
-      "edition_id": "ed_dda80e43104244896faa",
-      "end_pdf_page": 78,
-      "evidence_excerpt": "72 平行四边形和梯形",
-      "evidence_excerpt_hash": "c908f43c3f139cd425cdca9c7f11fe4ca6249c0a81e493cd19d188b72c16f1d7",
-      "evidence_granularity": "topic_heading",
-      "evidence_id": "external_smartedu_2026_math_primary_grade_4_up",
-      "evidence_level": "L2",
-      "evidence_level_detail": "L2_topic",
-      "evidence_role": "direct_textbook",
-      "evidence_span_ids": [
-        "tes_e27d7be5be8dda69"
-      ],
-      "grade_band": "H2",
-      "learning_component_ids": [
-        "lc_2c57372dca985e06"
-      ],
-      "learning_components": [
-        {
-          "component_id": "lc_2c57372dca985e06",
-          "label": "说出长方形、正方形、平行四边形、梯形的特征"
-        }
-      ],
-      "longest_match_length": 5,
-      "matched_fields": [
-        "learning_components",
-        "standard_context",
-        "textbook_unit"
-      ],
-      "matched_keywords": [
-        "平行四边形",
-        "梯形"
-      ],
-      "modifier_conflicts": [],
-      "node_id": "tcn_bd8171c94228deff",
-      "pdf_page": 77,
-      "printed_page": "72",
-      "provenance": "machine_generated",
-      "publication_status": "published",
-      "rationale": "教材课文“72平行四边形和梯形”与课标 MA-D2-GE-004 的可教学小能力“说出长方形、正方形、平行四边形、梯形的特征”形成页内证据匹配。",
-      "relation_type": "supports",
-      "review_status": "machine_checked",
-      "score": 0.88,
-      "standard_code": "MA-D2-GE-004",
-      "standard_subdomain": "图形的认识与测量",
-      "standard_text": "能说出长方形、正方形、平行四边形、梯形的特征；能说出图形之间的共性与区别。形成空间观念和初步的几何直观。",
-      "standard_title": "说出长方形、正方形、平行四边形、梯形的特征",
-      "subject_slug": "math",
-      "topic_anchor_keywords": [
-        "平行四边形",
-        "梯形"
-      ],
-      "topic_anchor_score": 0.88,
-      "unit_id": "tcu_2b73fcd0406cfe63",
-      "unit_title": "5 平行四边形和梯形"
-    },
-    {
-      "algorithm_version": "component-evidence-hybrid-v3",
-      "alignment_id": "tca_9fde38cafeaf02c1",
-      "alignment_method": "component_evidence_hybrid",
-      "asset_sha256": "b8c56400784534fc89ab2b7c6835d7ade229d158d88f13302c28b2c6c5b3b7e2",
-      "confidence": 0.92,
-      "content_node_kind": "lesson",
-      "content_node_title": "78平行四边形和梯形",
-      "edition_id": "ed_dda80e43104244896faa",
-      "end_pdf_page": 84,
-      "evidence_excerpt": "78 平行四边形和梯形",
-      "evidence_excerpt_hash": "4ef2617df104fdbfa0a636adab96c1520028acc577349b671092288800e4849c",
-      "evidence_granularity": "topic_heading",
-      "evidence_id": "external_smartedu_2026_math_primary_grade_4_up",
-      "evidence_level": "L2",
-      "evidence_level_detail": "L2_topic",
-      "evidence_role": "direct_textbook",
-      "evidence_span_ids": [
-        "tes_d055158d496f51b7"
-      ],
-      "grade_band": "H2",
-      "learning_component_ids": [
-        "lc_2c57372dca985e06"
-      ],
-      "learning_components": [
-        {
-          "component_id": "lc_2c57372dca985e06",
-          "label": "说出长方形、正方形、平行四边形、梯形的特征"
-        }
-      ],
-      "longest_match_length": 5,
-      "matched_fields": [
-        "learning_components",
-        "standard_context",
-        "textbook_unit"
-      ],
-      "matched_keywords": [
-        "平行四边形",
-        "梯形"
-      ],
-      "modifier_conflicts": [],
-      "node_id": "tcn_39a1cd969568613e",
-      "pdf_page": 83,
-      "printed_page": "78",
-      "provenance": "machine_generated",
-      "publication_status": "published",
-      "rationale": "教材课文“78平行四边形和梯形”与课标 MA-D2-GE-004 的可教学小能力“说出长方形、正方形、平行四边形、梯形的特征”形成页内证据匹配。",
-      "relation_type": "supports",
-      "review_status": "machine_checked",
-      "score": 0.88,
-      "standard_code": "MA-D2-GE-004",
-      "standard_subdomain": "图形的认识与测量",
-      "standard_text": "能说出长方形、正方形、平行四边形、梯形的特征；能说出图形之间的共性与区别。形成空间观念和初步的几何直观。",
-      "standard_title": "说出长方形、正方形、平行四边形、梯形的特征",
-      "subject_slug": "math",
-      "topic_anchor_keywords": [
-        "平行四边形",
-        "梯形"
-      ],
-      "topic_anchor_score": 0.88,
-      "unit_id": "tcu_2b73fcd0406cfe63",
-      "unit_title": "5 平行四边形和梯形"
-    },
-    {
-      "algorithm_version": "component-evidence-hybrid-v3",
-      "alignment_id": "tca_a8e52720b83fb551",
-      "alignment_method": "component_evidence_hybrid",
-      "asset_sha256": "b8c56400784534fc89ab2b7c6835d7ade229d158d88f13302c28b2c6c5b3b7e2",
-      "confidence": 0.92,
-      "content_node_kind": "lesson",
-      "content_node_title": "76平行四边形和梯形",
-      "edition_id": "ed_dda80e43104244896faa",
-      "end_pdf_page": 82,
-      "evidence_excerpt": "76 平行四边形和梯形",
-      "evidence_excerpt_hash": "c45c6acce541db9536eca0ac0658e538711e8ef7954db5cb10d04bfb1eb003ec",
-      "evidence_granularity": "topic_heading",
-      "evidence_id": "external_smartedu_2026_math_primary_grade_4_up",
-      "evidence_level": "L2",
-      "evidence_level_detail": "L2_topic",
-      "evidence_role": "direct_textbook",
-      "evidence_span_ids": [
-        "tes_2f85dac48680ebaf"
-      ],
-      "grade_band": "H2",
-      "learning_component_ids": [
-        "lc_2c57372dca985e06"
-      ],
-      "learning_components": [
-        {
-          "component_id": "lc_2c57372dca985e06",
-          "label": "说出长方形、正方形、平行四边形、梯形的特征"
-        }
-      ],
-      "longest_match_length": 5,
-      "matched_fields": [
-        "learning_components",
-        "standard_context",
-        "textbook_unit"
-      ],
-      "matched_keywords": [
-        "平行四边形",
-        "梯形"
-      ],
-      "modifier_conflicts": [],
-      "node_id": "tcn_2bf2763512eea220",
-      "pdf_page": 81,
-      "printed_page": "76",
-      "provenance": "machine_generated",
-      "publication_status": "published",
-      "rationale": "教材课文“76平行四边形和梯形”与课标 MA-D2-GE-004 的可教学小能力“说出长方形、正方形、平行四边形、梯形的特征”形成页内证据匹配。",
-      "relation_type": "supports",
-      "review_status": "machine_checked",
-      "score": 0.88,
-      "standard_code": "MA-D2-GE-004",
-      "standard_subdomain": "图形的认识与测量",
-      "standard_text": "能说出长方形、正方形、平行四边形、梯形的特征；能说出图形之间的共性与区别。形成空间观念和初步的几何直观。",
-      "standard_title": "说出长方形、正方形、平行四边形、梯形的特征",
-      "subject_slug": "math",
-      "topic_anchor_keywords": [
-        "平行四边形",
-        "梯形"
-      ],
-      "topic_anchor_score": 0.88,
-      "unit_id": "tcu_2b73fcd0406cfe63",
-      "unit_title": "5 平行四边形和梯形"
-    },
-    {
-      "algorithm_version": "component-evidence-hybrid-v3",
-      "alignment_id": "tca_d93ef9aa1695813e",
-      "alignment_method": "component_evidence_hybrid",
-      "asset_sha256": "b8c56400784534fc89ab2b7c6835d7ade229d158d88f13302c28b2c6c5b3b7e2",
-      "confidence": 0.92,
-      "content_node_kind": "lesson",
-      "content_node_title": "82平行四边形和梯形",
-      "edition_id": "ed_dda80e43104244896faa",
-      "end_pdf_page": 88,
-      "evidence_excerpt": "82 平行四边形和梯形",
-      "evidence_excerpt_hash": "bb7613c1fb7d265f83bdc4e7f1144ea2e337048a502ba158cdcd539831795172",
-      "evidence_granularity": "topic_heading",
-      "evidence_id": "external_smartedu_2026_math_primary_grade_4_up",
-      "evidence_level": "L2",
-      "evidence_level_detail": "L2_topic",
-      "evidence_role": "direct_textbook",
-      "evidence_span_ids": [
-        "tes_985e04443b90c583"
-      ],
-      "grade_band": "H2",
-      "learning_component_ids": [
-        "lc_2c57372dca985e06"
-      ],
-      "learning_components": [
-        {
-          "component_id": "lc_2c57372dca985e06",
-          "label": "说出长方形、正方形、平行四边形、梯形的特征"
-        }
-      ],
-      "longest_match_length": 5,
-      "matched_fields": [
-        "learning_components",
-        "standard_context",
-        "textbook_unit"
-      ],
-      "matched_keywords": [
-        "平行四边形",
-        "梯形"
-      ],
-      "modifier_conflicts": [],
-      "node_id": "tcn_7ee888483ed506bf",
-      "pdf_page": 87,
-      "printed_page": "82",
-      "provenance": "machine_generated",
-      "publication_status": "published",
-      "rationale": "教材课文“82平行四边形和梯形”与课标 MA-D2-GE-004 的可教学小能力“说出长方形、正方形、平行四边形、梯形的特征”形成页内证据匹配。",
-      "relation_type": "supports",
-      "review_status": "machine_checked",
-      "score": 0.88,
-      "standard_code": "MA-D2-GE-004",
-      "standard_subdomain": "图形的认识与测量",
-      "standard_text": "能说出长方形、正方形、平行四边形、梯形的特征；能说出图形之间的共性与区别。形成空间观念和初步的几何直观。",
-      "standard_title": "说出长方形、正方形、平行四边形、梯形的特征",
-      "subject_slug": "math",
-      "topic_anchor_keywords": [
-        "平行四边形",
-        "梯形"
-      ],
-      "topic_anchor_score": 0.88,
-      "unit_id": "tcu_2b73fcd0406cfe63",
-      "unit_title": "5 平行四边形和梯形"
-    },
-    {
-      "algorithm_version": "component-evidence-hybrid-v3",
       "alignment_id": "tca_31d8e95cbaeda5c5",
       "alignment_method": "component_evidence_hybrid",
       "asset_sha256": "b8c56400784534fc89ab2b7c6835d7ade229d158d88f13302c28b2c6c5b3b7e2",
@@ -117353,8 +116756,8 @@
         "中的数据"
       ],
       "topic_anchor_score": 0.76,
-      "unit_id": "tcu_2b73fcd0406cfe63",
-      "unit_title": "5 平行四边形和梯形"
+      "unit_id": "tcu_07ea1c44be4fed34",
+      "unit_title": "六 条形统计图"
     },
     {
       "algorithm_version": "component-evidence-hybrid-v3",
@@ -117389,7 +116792,8 @@
       "longest_match_length": 5,
       "matched_fields": [
         "learning_components",
-        "standard_context"
+        "standard_context",
+        "textbook_unit"
       ],
       "matched_keywords": [
         "条形统计图"
@@ -117413,8 +116817,8 @@
         "条形统计图"
       ],
       "topic_anchor_score": 0.88,
-      "unit_id": "tcu_2b73fcd0406cfe63",
-      "unit_title": "5 平行四边形和梯形"
+      "unit_id": "tcu_07ea1c44be4fed34",
+      "unit_title": "六 条形统计图"
     },
     {
       "algorithm_version": "component-evidence-hybrid-v3",
@@ -117449,7 +116853,8 @@
       "longest_match_length": 5,
       "matched_fields": [
         "learning_components",
-        "standard_context"
+        "standard_context",
+        "textbook_unit"
       ],
       "matched_keywords": [
         "条形统计图"
@@ -117473,8 +116878,8 @@
         "条形统计图"
       ],
       "topic_anchor_score": 0.88,
-      "unit_id": "tcu_2b73fcd0406cfe63",
-      "unit_title": "5 平行四边形和梯形"
+      "unit_id": "tcu_07ea1c44be4fed34",
+      "unit_title": "六 条形统计图"
     },
     {
       "algorithm_version": "component-evidence-hybrid-v3",
@@ -117509,7 +116914,8 @@
       "longest_match_length": 5,
       "matched_fields": [
         "learning_components",
-        "standard_context"
+        "standard_context",
+        "textbook_unit"
       ],
       "matched_keywords": [
         "条形统计图",
@@ -117534,8 +116940,8 @@
         "条形统计图"
       ],
       "topic_anchor_score": 0.88,
-      "unit_id": "tcu_2b73fcd0406cfe63",
-      "unit_title": "5 平行四边形和梯形"
+      "unit_id": "tcu_07ea1c44be4fed34",
+      "unit_title": "六 条形统计图"
     },
     {
       "algorithm_version": "component-evidence-hybrid-v3",
@@ -117570,7 +116976,8 @@
       "longest_match_length": 5,
       "matched_fields": [
         "learning_components",
-        "standard_context"
+        "standard_context",
+        "textbook_unit"
       ],
       "matched_keywords": [
         "条形统计图"
@@ -117594,8 +117001,8 @@
         "条形统计图"
       ],
       "topic_anchor_score": 0.88,
-      "unit_id": "tcu_2b73fcd0406cfe63",
-      "unit_title": "5 平行四边形和梯形"
+      "unit_id": "tcu_07ea1c44be4fed34",
+      "unit_title": "六 条形统计图"
     },
     {
       "algorithm_version": "component-evidence-hybrid-v3",
@@ -117630,7 +117037,8 @@
       "longest_match_length": 5,
       "matched_fields": [
         "learning_components",
-        "standard_context"
+        "standard_context",
+        "textbook_unit"
       ],
       "matched_keywords": [
         "条形统计图"
@@ -117654,8 +117062,8 @@
         "条形统计图"
       ],
       "topic_anchor_score": 0.88,
-      "unit_id": "tcu_2b73fcd0406cfe63",
-      "unit_title": "5 平行四边形和梯形"
+      "unit_id": "tcu_07ea1c44be4fed34",
+      "unit_title": "六 条形统计图"
     },
     {
       "algorithm_version": "component-evidence-hybrid-v3",
@@ -117690,7 +117098,8 @@
       "longest_match_length": 5,
       "matched_fields": [
         "learning_components",
-        "standard_context"
+        "standard_context",
+        "textbook_unit"
       ],
       "matched_keywords": [
         "条形统计图"
@@ -117714,8 +117123,8 @@
         "条形统计图"
       ],
       "topic_anchor_score": 0.88,
-      "unit_id": "tcu_2b73fcd0406cfe63",
-      "unit_title": "5 平行四边形和梯形"
+      "unit_id": "tcu_07ea1c44be4fed34",
+      "unit_title": "六 条形统计图"
     },
     {
       "algorithm_version": "component-evidence-hybrid-v3",
@@ -117754,8 +117163,7 @@
         "textbook_unit"
       ],
       "matched_keywords": [
-        "万以上数的",
-        "大数"
+        "万以上数的"
       ],
       "modifier_conflicts": [],
       "node_id": "tcn_8afd79878aeefa66",
@@ -117773,12 +117181,11 @@
       "standard_title": "能结合具体实例解释万以上数的含义",
       "subject_slug": "math",
       "topic_anchor_keywords": [
-        "万以上数的",
-        "大数"
+        "万以上数的"
       ],
       "topic_anchor_score": 0.88,
-      "unit_id": "tcu_fd268cb997039e88",
-      "unit_title": "1 大数的认识"
+      "unit_id": "tcu_0e7eec2643c43008",
+      "unit_title": "一 万以上数的认识"
     },
     {
       "algorithm_version": "component-evidence-hybrid-v3",
@@ -117817,8 +117224,7 @@
         "textbook_unit"
       ],
       "matched_keywords": [
-        "万以上数的",
-        "大数"
+        "万以上数的"
       ],
       "modifier_conflicts": [],
       "node_id": "tcn_6a4dfedaac151899",
@@ -117836,12 +117242,11 @@
       "standard_title": "能结合具体实例解释万以上数的含义",
       "subject_slug": "math",
       "topic_anchor_keywords": [
-        "万以上数的",
-        "大数"
+        "万以上数的"
       ],
       "topic_anchor_score": 0.88,
-      "unit_id": "tcu_fd268cb997039e88",
-      "unit_title": "1 大数的认识"
+      "unit_id": "tcu_0e7eec2643c43008",
+      "unit_title": "一 万以上数的认识"
     },
     {
       "algorithm_version": "component-evidence-hybrid-v3",
@@ -117880,8 +117285,7 @@
         "textbook_unit"
       ],
       "matched_keywords": [
-        "万以上数的",
-        "大数"
+        "万以上数的"
       ],
       "modifier_conflicts": [],
       "node_id": "tcn_55db472ba27bc3fb",
@@ -117899,12 +117303,11 @@
       "standard_title": "能结合具体实例解释万以上数的含义",
       "subject_slug": "math",
       "topic_anchor_keywords": [
-        "万以上数的",
-        "大数"
+        "万以上数的"
       ],
       "topic_anchor_score": 0.88,
-      "unit_id": "tcu_fd268cb997039e88",
-      "unit_title": "1 大数的认识"
+      "unit_id": "tcu_0e7eec2643c43008",
+      "unit_title": "一 万以上数的认识"
     },
     {
       "algorithm_version": "component-evidence-hybrid-v3",
@@ -117943,8 +117346,7 @@
         "textbook_unit"
       ],
       "matched_keywords": [
-        "万以上数的",
-        "大数"
+        "万以上数的"
       ],
       "modifier_conflicts": [],
       "node_id": "tcn_fd8419d5d780b938",
@@ -117962,12 +117364,11 @@
       "standard_title": "能结合具体实例解释万以上数的含义",
       "subject_slug": "math",
       "topic_anchor_keywords": [
-        "万以上数的",
-        "大数"
+        "万以上数的"
       ],
       "topic_anchor_score": 0.88,
-      "unit_id": "tcu_fd268cb997039e88",
-      "unit_title": "1 大数的认识"
+      "unit_id": "tcu_0e7eec2643c43008",
+      "unit_title": "一 万以上数的认识"
     },
     {
       "algorithm_version": "component-evidence-hybrid-v3",
@@ -118006,8 +117407,7 @@
         "textbook_unit"
       ],
       "matched_keywords": [
-        "万以上数的",
-        "大数"
+        "万以上数的"
       ],
       "modifier_conflicts": [],
       "node_id": "tcn_5c53965d0e3d6855",
@@ -118025,12 +117425,11 @@
       "standard_title": "能结合具体实例解释万以上数的含义",
       "subject_slug": "math",
       "topic_anchor_keywords": [
-        "万以上数的",
-        "大数"
+        "万以上数的"
       ],
       "topic_anchor_score": 0.88,
-      "unit_id": "tcu_fd268cb997039e88",
-      "unit_title": "1 大数的认识"
+      "unit_id": "tcu_0e7eec2643c43008",
+      "unit_title": "一 万以上数的认识"
     },
     {
       "algorithm_version": "component-evidence-hybrid-v3",
@@ -118069,8 +117468,7 @@
         "textbook_unit"
       ],
       "matched_keywords": [
-        "万以上数的",
-        "大数"
+        "万以上数的"
       ],
       "modifier_conflicts": [],
       "node_id": "tcn_9eae7626c19518f6",
@@ -118088,12 +117486,11 @@
       "standard_title": "能结合具体实例解释万以上数的含义",
       "subject_slug": "math",
       "topic_anchor_keywords": [
-        "万以上数的",
-        "大数"
+        "万以上数的"
       ],
       "topic_anchor_score": 0.88,
-      "unit_id": "tcu_fd268cb997039e88",
-      "unit_title": "1 大数的认识"
+      "unit_id": "tcu_0e7eec2643c43008",
+      "unit_title": "一 万以上数的认识"
     },
     {
       "algorithm_version": "component-evidence-hybrid-v3",
@@ -118132,8 +117529,7 @@
         "textbook_unit"
       ],
       "matched_keywords": [
-        "万以上数的",
-        "大数"
+        "万以上数的"
       ],
       "modifier_conflicts": [],
       "node_id": "tcn_378ea7a2892a4331",
@@ -118151,12 +117547,11 @@
       "standard_title": "能结合具体实例解释万以上数的含义",
       "subject_slug": "math",
       "topic_anchor_keywords": [
-        "万以上数的",
-        "大数"
+        "万以上数的"
       ],
       "topic_anchor_score": 0.88,
-      "unit_id": "tcu_fd268cb997039e88",
-      "unit_title": "1 大数的认识"
+      "unit_id": "tcu_0e7eec2643c43008",
+      "unit_title": "一 万以上数的认识"
     },
     {
       "algorithm_version": "component-evidence-hybrid-v3",
@@ -118195,8 +117590,7 @@
         "textbook_unit"
       ],
       "matched_keywords": [
-        "万以上数的",
-        "大数"
+        "万以上数的"
       ],
       "modifier_conflicts": [],
       "node_id": "tcn_c34c2d319f7e054e",
@@ -118214,12 +117608,11 @@
       "standard_title": "能结合具体实例解释万以上数的含义",
       "subject_slug": "math",
       "topic_anchor_keywords": [
-        "万以上数的",
-        "大数"
+        "万以上数的"
       ],
       "topic_anchor_score": 0.88,
-      "unit_id": "tcu_fd268cb997039e88",
-      "unit_title": "1 大数的认识"
+      "unit_id": "tcu_0e7eec2643c43008",
+      "unit_title": "一 万以上数的认识"
     },
     {
       "algorithm_version": "component-evidence-hybrid-v3",
@@ -118258,8 +117651,7 @@
         "textbook_unit"
       ],
       "matched_keywords": [
-        "万以上数的",
-        "大数"
+        "万以上数的"
       ],
       "modifier_conflicts": [],
       "node_id": "tcn_d6314bf2f7c05817",
@@ -118277,12 +117669,11 @@
       "standard_title": "能结合具体实例解释万以上数的含义",
       "subject_slug": "math",
       "topic_anchor_keywords": [
-        "万以上数的",
-        "大数"
+        "万以上数的"
       ],
       "topic_anchor_score": 0.88,
-      "unit_id": "tcu_fd268cb997039e88",
-      "unit_title": "1 大数的认识"
+      "unit_id": "tcu_0e7eec2643c43008",
+      "unit_title": "一 万以上数的认识"
     },
     {
       "algorithm_version": "component-evidence-hybrid-v3",
@@ -118321,8 +117712,7 @@
         "textbook_unit"
       ],
       "matched_keywords": [
-        "万以上数的",
-        "大数"
+        "万以上数的"
       ],
       "modifier_conflicts": [],
       "node_id": "tcn_fbe2206d320042fd",
@@ -118340,12 +117730,11 @@
       "standard_title": "能结合具体实例解释万以上数的含义",
       "subject_slug": "math",
       "topic_anchor_keywords": [
-        "万以上数的",
-        "大数"
+        "万以上数的"
       ],
       "topic_anchor_score": 0.88,
-      "unit_id": "tcu_fd268cb997039e88",
-      "unit_title": "1 大数的认识"
+      "unit_id": "tcu_0e7eec2643c43008",
+      "unit_title": "一 万以上数的认识"
     },
     {
       "algorithm_version": "component-evidence-hybrid-v3",
@@ -118384,8 +117773,7 @@
         "textbook_unit"
       ],
       "matched_keywords": [
-        "万以上数的",
-        "大数"
+        "万以上数的"
       ],
       "modifier_conflicts": [],
       "node_id": "tcn_012ada14d4cb337e",
@@ -118403,12 +117791,11 @@
       "standard_title": "能结合具体实例解释万以上数的含义",
       "subject_slug": "math",
       "topic_anchor_keywords": [
-        "万以上数的",
-        "大数"
+        "万以上数的"
       ],
       "topic_anchor_score": 0.88,
-      "unit_id": "tcu_fd268cb997039e88",
-      "unit_title": "1 大数的认识"
+      "unit_id": "tcu_0e7eec2643c43008",
+      "unit_title": "一 万以上数的认识"
     },
     {
       "algorithm_version": "component-evidence-hybrid-v3",
@@ -118469,8 +117856,8 @@
         "数的大小"
       ],
       "topic_anchor_score": 0.76,
-      "unit_id": "tcu_fd268cb997039e88",
-      "unit_title": "1 大数的认识"
+      "unit_id": "tcu_0e7eec2643c43008",
+      "unit_title": "一 万以上数的认识"
     },
     {
       "algorithm_version": "component-evidence-hybrid-v3",
@@ -118537,8 +117924,575 @@
         "的认识"
       ],
       "topic_anchor_score": 0.76,
-      "unit_id": "tcu_fd268cb997039e88",
-      "unit_title": "1 大数的认识"
+      "unit_id": "tcu_0e7eec2643c43008",
+      "unit_title": "一 万以上数的认识"
+    },
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_07f4c3abc5d02fc5",
+      "alignment_method": "component_evidence_hybrid",
+      "asset_sha256": "b8c56400784534fc89ab2b7c6835d7ade229d158d88f13302c28b2c6c5b3b7e2",
+      "confidence": 0.92,
+      "content_node_kind": "lesson",
+      "content_node_title": "74平行四边形和梯形",
+      "edition_id": "ed_dda80e43104244896faa",
+      "end_pdf_page": 80,
+      "evidence_excerpt": "74 平行四边形和梯形",
+      "evidence_excerpt_hash": "e87d3818b952624f21a27d71f2b521d3cf57efe6e5de0412400ea827c9f7a64e",
+      "evidence_granularity": "topic_heading",
+      "evidence_id": "external_smartedu_2026_math_primary_grade_4_up",
+      "evidence_level": "L2",
+      "evidence_level_detail": "L2_topic",
+      "evidence_role": "direct_textbook",
+      "evidence_span_ids": [
+        "tes_2ae659c0c78f032a"
+      ],
+      "grade_band": "H2",
+      "learning_component_ids": [
+        "lc_2c57372dca985e06"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_2c57372dca985e06",
+          "label": "说出长方形、正方形、平行四边形、梯形的特征"
+        }
+      ],
+      "longest_match_length": 5,
+      "matched_fields": [
+        "learning_components",
+        "standard_context",
+        "textbook_unit"
+      ],
+      "matched_keywords": [
+        "平行四边形",
+        "梯形"
+      ],
+      "modifier_conflicts": [],
+      "node_id": "tcn_b0d653b9e07df1b6",
+      "pdf_page": 79,
+      "printed_page": "74",
+      "provenance": "machine_generated",
+      "publication_status": "published",
+      "rationale": "教材课文“74平行四边形和梯形”与课标 MA-D2-GE-004 的可教学小能力“说出长方形、正方形、平行四边形、梯形的特征”形成页内证据匹配。",
+      "relation_type": "supports",
+      "review_status": "machine_checked",
+      "score": 0.88,
+      "standard_code": "MA-D2-GE-004",
+      "standard_subdomain": "图形的认识与测量",
+      "standard_text": "能说出长方形、正方形、平行四边形、梯形的特征；能说出图形之间的共性与区别。形成空间观念和初步的几何直观。",
+      "standard_title": "说出长方形、正方形、平行四边形、梯形的特征",
+      "subject_slug": "math",
+      "topic_anchor_keywords": [
+        "平行四边形",
+        "梯形"
+      ],
+      "topic_anchor_score": 0.88,
+      "unit_id": "tcu_8924cda0fe91094c",
+      "unit_title": "五 平行四边形和梯形"
+    },
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_2f6b9f498e1eb212",
+      "alignment_method": "component_evidence_hybrid",
+      "asset_sha256": "b8c56400784534fc89ab2b7c6835d7ade229d158d88f13302c28b2c6c5b3b7e2",
+      "confidence": 0.92,
+      "content_node_kind": "lesson",
+      "content_node_title": "80平行四边形和梯形",
+      "edition_id": "ed_dda80e43104244896faa",
+      "end_pdf_page": 86,
+      "evidence_excerpt": "80 平行四边形和梯形",
+      "evidence_excerpt_hash": "ed66ab5b19f2444d2a41a84096705c2d9db8662f48292ecac8f46efb57321efc",
+      "evidence_granularity": "topic_heading",
+      "evidence_id": "external_smartedu_2026_math_primary_grade_4_up",
+      "evidence_level": "L2",
+      "evidence_level_detail": "L2_topic",
+      "evidence_role": "direct_textbook",
+      "evidence_span_ids": [
+        "tes_ae99c7ccc7228f33"
+      ],
+      "grade_band": "H2",
+      "learning_component_ids": [
+        "lc_2c57372dca985e06"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_2c57372dca985e06",
+          "label": "说出长方形、正方形、平行四边形、梯形的特征"
+        }
+      ],
+      "longest_match_length": 5,
+      "matched_fields": [
+        "learning_components",
+        "standard_context",
+        "textbook_unit"
+      ],
+      "matched_keywords": [
+        "平行四边形",
+        "梯形"
+      ],
+      "modifier_conflicts": [],
+      "node_id": "tcn_928ee58d6773606e",
+      "pdf_page": 85,
+      "printed_page": "80",
+      "provenance": "machine_generated",
+      "publication_status": "published",
+      "rationale": "教材课文“80平行四边形和梯形”与课标 MA-D2-GE-004 的可教学小能力“说出长方形、正方形、平行四边形、梯形的特征”形成页内证据匹配。",
+      "relation_type": "supports",
+      "review_status": "machine_checked",
+      "score": 0.88,
+      "standard_code": "MA-D2-GE-004",
+      "standard_subdomain": "图形的认识与测量",
+      "standard_text": "能说出长方形、正方形、平行四边形、梯形的特征；能说出图形之间的共性与区别。形成空间观念和初步的几何直观。",
+      "standard_title": "说出长方形、正方形、平行四边形、梯形的特征",
+      "subject_slug": "math",
+      "topic_anchor_keywords": [
+        "平行四边形",
+        "梯形"
+      ],
+      "topic_anchor_score": 0.88,
+      "unit_id": "tcu_8924cda0fe91094c",
+      "unit_title": "五 平行四边形和梯形"
+    },
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_329b25cb51e0c600",
+      "alignment_method": "component_evidence_hybrid",
+      "asset_sha256": "b8c56400784534fc89ab2b7c6835d7ade229d158d88f13302c28b2c6c5b3b7e2",
+      "confidence": 0.92,
+      "content_node_kind": "lesson",
+      "content_node_title": "84平行四边形和梯形",
+      "edition_id": "ed_dda80e43104244896faa",
+      "end_pdf_page": 90,
+      "evidence_excerpt": "84 平行四边形和梯形",
+      "evidence_excerpt_hash": "8fbbe678acd4296fac825cb118bb3c4024dfffb7e867bec7a7d41f094296df3e",
+      "evidence_granularity": "topic_heading",
+      "evidence_id": "external_smartedu_2026_math_primary_grade_4_up",
+      "evidence_level": "L2",
+      "evidence_level_detail": "L2_topic",
+      "evidence_role": "direct_textbook",
+      "evidence_span_ids": [
+        "tes_faa8f83713191407"
+      ],
+      "grade_band": "H2",
+      "learning_component_ids": [
+        "lc_2c57372dca985e06"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_2c57372dca985e06",
+          "label": "说出长方形、正方形、平行四边形、梯形的特征"
+        }
+      ],
+      "longest_match_length": 5,
+      "matched_fields": [
+        "learning_components",
+        "standard_context",
+        "textbook_unit"
+      ],
+      "matched_keywords": [
+        "平行四边形",
+        "梯形"
+      ],
+      "modifier_conflicts": [],
+      "node_id": "tcn_88126d20f6c08c3c",
+      "pdf_page": 89,
+      "printed_page": "84",
+      "provenance": "machine_generated",
+      "publication_status": "published",
+      "rationale": "教材课文“84平行四边形和梯形”与课标 MA-D2-GE-004 的可教学小能力“说出长方形、正方形、平行四边形、梯形的特征”形成页内证据匹配。",
+      "relation_type": "supports",
+      "review_status": "machine_checked",
+      "score": 0.88,
+      "standard_code": "MA-D2-GE-004",
+      "standard_subdomain": "图形的认识与测量",
+      "standard_text": "能说出长方形、正方形、平行四边形、梯形的特征；能说出图形之间的共性与区别。形成空间观念和初步的几何直观。",
+      "standard_title": "说出长方形、正方形、平行四边形、梯形的特征",
+      "subject_slug": "math",
+      "topic_anchor_keywords": [
+        "平行四边形",
+        "梯形"
+      ],
+      "topic_anchor_score": 0.88,
+      "unit_id": "tcu_8924cda0fe91094c",
+      "unit_title": "五 平行四边形和梯形"
+    },
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_3a184821ee386cd6",
+      "alignment_method": "component_evidence_hybrid",
+      "asset_sha256": "b8c56400784534fc89ab2b7c6835d7ade229d158d88f13302c28b2c6c5b3b7e2",
+      "confidence": 0.92,
+      "content_node_kind": "lesson",
+      "content_node_title": "86平行四边形和梯形",
+      "edition_id": "ed_dda80e43104244896faa",
+      "end_pdf_page": 92,
+      "evidence_excerpt": "86 平行四边形和梯形",
+      "evidence_excerpt_hash": "d0fd186c04bda98c5ca8e13e52952fb043e027aa70eab124eef7256a2720541e",
+      "evidence_granularity": "topic_heading",
+      "evidence_id": "external_smartedu_2026_math_primary_grade_4_up",
+      "evidence_level": "L2",
+      "evidence_level_detail": "L2_topic",
+      "evidence_role": "direct_textbook",
+      "evidence_span_ids": [
+        "tes_05cd903cd607f507"
+      ],
+      "grade_band": "H2",
+      "learning_component_ids": [
+        "lc_2c57372dca985e06"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_2c57372dca985e06",
+          "label": "说出长方形、正方形、平行四边形、梯形的特征"
+        }
+      ],
+      "longest_match_length": 5,
+      "matched_fields": [
+        "learning_components",
+        "standard_context",
+        "textbook_unit"
+      ],
+      "matched_keywords": [
+        "平行四边形",
+        "梯形"
+      ],
+      "modifier_conflicts": [],
+      "node_id": "tcn_3a2e8aa94d0dceb0",
+      "pdf_page": 91,
+      "printed_page": "86",
+      "provenance": "machine_generated",
+      "publication_status": "published",
+      "rationale": "教材课文“86平行四边形和梯形”与课标 MA-D2-GE-004 的可教学小能力“说出长方形、正方形、平行四边形、梯形的特征”形成页内证据匹配。",
+      "relation_type": "supports",
+      "review_status": "machine_checked",
+      "score": 0.88,
+      "standard_code": "MA-D2-GE-004",
+      "standard_subdomain": "图形的认识与测量",
+      "standard_text": "能说出长方形、正方形、平行四边形、梯形的特征；能说出图形之间的共性与区别。形成空间观念和初步的几何直观。",
+      "standard_title": "说出长方形、正方形、平行四边形、梯形的特征",
+      "subject_slug": "math",
+      "topic_anchor_keywords": [
+        "平行四边形",
+        "梯形"
+      ],
+      "topic_anchor_score": 0.88,
+      "unit_id": "tcu_8924cda0fe91094c",
+      "unit_title": "五 平行四边形和梯形"
+    },
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_40e7f9cfd9670f59",
+      "alignment_method": "component_evidence_hybrid",
+      "asset_sha256": "b8c56400784534fc89ab2b7c6835d7ade229d158d88f13302c28b2c6c5b3b7e2",
+      "confidence": 0.92,
+      "content_node_kind": "lesson",
+      "content_node_title": "70平行四边形和梯形",
+      "edition_id": "ed_dda80e43104244896faa",
+      "end_pdf_page": 76,
+      "evidence_excerpt": "70 平行四边形和梯形",
+      "evidence_excerpt_hash": "bf03237bfd26f77bbd43985897fb7f72aff53d8ef4acbd05d2327e100315ad2c",
+      "evidence_granularity": "topic_heading",
+      "evidence_id": "external_smartedu_2026_math_primary_grade_4_up",
+      "evidence_level": "L2",
+      "evidence_level_detail": "L2_topic",
+      "evidence_role": "direct_textbook",
+      "evidence_span_ids": [
+        "tes_02ec27b5a8b5bc4c"
+      ],
+      "grade_band": "H2",
+      "learning_component_ids": [
+        "lc_2c57372dca985e06"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_2c57372dca985e06",
+          "label": "说出长方形、正方形、平行四边形、梯形的特征"
+        }
+      ],
+      "longest_match_length": 5,
+      "matched_fields": [
+        "learning_components",
+        "standard_context",
+        "textbook_unit"
+      ],
+      "matched_keywords": [
+        "平行四边形",
+        "梯形"
+      ],
+      "modifier_conflicts": [],
+      "node_id": "tcn_125b4a202666ae17",
+      "pdf_page": 75,
+      "printed_page": "70",
+      "provenance": "machine_generated",
+      "publication_status": "published",
+      "rationale": "教材课文“70平行四边形和梯形”与课标 MA-D2-GE-004 的可教学小能力“说出长方形、正方形、平行四边形、梯形的特征”形成页内证据匹配。",
+      "relation_type": "supports",
+      "review_status": "machine_checked",
+      "score": 0.88,
+      "standard_code": "MA-D2-GE-004",
+      "standard_subdomain": "图形的认识与测量",
+      "standard_text": "能说出长方形、正方形、平行四边形、梯形的特征；能说出图形之间的共性与区别。形成空间观念和初步的几何直观。",
+      "standard_title": "说出长方形、正方形、平行四边形、梯形的特征",
+      "subject_slug": "math",
+      "topic_anchor_keywords": [
+        "平行四边形",
+        "梯形"
+      ],
+      "topic_anchor_score": 0.88,
+      "unit_id": "tcu_8924cda0fe91094c",
+      "unit_title": "五 平行四边形和梯形"
+    },
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_7bd4254e1550b0f4",
+      "alignment_method": "component_evidence_hybrid",
+      "asset_sha256": "b8c56400784534fc89ab2b7c6835d7ade229d158d88f13302c28b2c6c5b3b7e2",
+      "confidence": 0.92,
+      "content_node_kind": "lesson",
+      "content_node_title": "72平行四边形和梯形",
+      "edition_id": "ed_dda80e43104244896faa",
+      "end_pdf_page": 78,
+      "evidence_excerpt": "72 平行四边形和梯形",
+      "evidence_excerpt_hash": "c908f43c3f139cd425cdca9c7f11fe4ca6249c0a81e493cd19d188b72c16f1d7",
+      "evidence_granularity": "topic_heading",
+      "evidence_id": "external_smartedu_2026_math_primary_grade_4_up",
+      "evidence_level": "L2",
+      "evidence_level_detail": "L2_topic",
+      "evidence_role": "direct_textbook",
+      "evidence_span_ids": [
+        "tes_e27d7be5be8dda69"
+      ],
+      "grade_band": "H2",
+      "learning_component_ids": [
+        "lc_2c57372dca985e06"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_2c57372dca985e06",
+          "label": "说出长方形、正方形、平行四边形、梯形的特征"
+        }
+      ],
+      "longest_match_length": 5,
+      "matched_fields": [
+        "learning_components",
+        "standard_context",
+        "textbook_unit"
+      ],
+      "matched_keywords": [
+        "平行四边形",
+        "梯形"
+      ],
+      "modifier_conflicts": [],
+      "node_id": "tcn_bd8171c94228deff",
+      "pdf_page": 77,
+      "printed_page": "72",
+      "provenance": "machine_generated",
+      "publication_status": "published",
+      "rationale": "教材课文“72平行四边形和梯形”与课标 MA-D2-GE-004 的可教学小能力“说出长方形、正方形、平行四边形、梯形的特征”形成页内证据匹配。",
+      "relation_type": "supports",
+      "review_status": "machine_checked",
+      "score": 0.88,
+      "standard_code": "MA-D2-GE-004",
+      "standard_subdomain": "图形的认识与测量",
+      "standard_text": "能说出长方形、正方形、平行四边形、梯形的特征；能说出图形之间的共性与区别。形成空间观念和初步的几何直观。",
+      "standard_title": "说出长方形、正方形、平行四边形、梯形的特征",
+      "subject_slug": "math",
+      "topic_anchor_keywords": [
+        "平行四边形",
+        "梯形"
+      ],
+      "topic_anchor_score": 0.88,
+      "unit_id": "tcu_8924cda0fe91094c",
+      "unit_title": "五 平行四边形和梯形"
+    },
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_9fde38cafeaf02c1",
+      "alignment_method": "component_evidence_hybrid",
+      "asset_sha256": "b8c56400784534fc89ab2b7c6835d7ade229d158d88f13302c28b2c6c5b3b7e2",
+      "confidence": 0.92,
+      "content_node_kind": "lesson",
+      "content_node_title": "78平行四边形和梯形",
+      "edition_id": "ed_dda80e43104244896faa",
+      "end_pdf_page": 84,
+      "evidence_excerpt": "78 平行四边形和梯形",
+      "evidence_excerpt_hash": "4ef2617df104fdbfa0a636adab96c1520028acc577349b671092288800e4849c",
+      "evidence_granularity": "topic_heading",
+      "evidence_id": "external_smartedu_2026_math_primary_grade_4_up",
+      "evidence_level": "L2",
+      "evidence_level_detail": "L2_topic",
+      "evidence_role": "direct_textbook",
+      "evidence_span_ids": [
+        "tes_d055158d496f51b7"
+      ],
+      "grade_band": "H2",
+      "learning_component_ids": [
+        "lc_2c57372dca985e06"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_2c57372dca985e06",
+          "label": "说出长方形、正方形、平行四边形、梯形的特征"
+        }
+      ],
+      "longest_match_length": 5,
+      "matched_fields": [
+        "learning_components",
+        "standard_context",
+        "textbook_unit"
+      ],
+      "matched_keywords": [
+        "平行四边形",
+        "梯形"
+      ],
+      "modifier_conflicts": [],
+      "node_id": "tcn_39a1cd969568613e",
+      "pdf_page": 83,
+      "printed_page": "78",
+      "provenance": "machine_generated",
+      "publication_status": "published",
+      "rationale": "教材课文“78平行四边形和梯形”与课标 MA-D2-GE-004 的可教学小能力“说出长方形、正方形、平行四边形、梯形的特征”形成页内证据匹配。",
+      "relation_type": "supports",
+      "review_status": "machine_checked",
+      "score": 0.88,
+      "standard_code": "MA-D2-GE-004",
+      "standard_subdomain": "图形的认识与测量",
+      "standard_text": "能说出长方形、正方形、平行四边形、梯形的特征；能说出图形之间的共性与区别。形成空间观念和初步的几何直观。",
+      "standard_title": "说出长方形、正方形、平行四边形、梯形的特征",
+      "subject_slug": "math",
+      "topic_anchor_keywords": [
+        "平行四边形",
+        "梯形"
+      ],
+      "topic_anchor_score": 0.88,
+      "unit_id": "tcu_8924cda0fe91094c",
+      "unit_title": "五 平行四边形和梯形"
+    },
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_a8e52720b83fb551",
+      "alignment_method": "component_evidence_hybrid",
+      "asset_sha256": "b8c56400784534fc89ab2b7c6835d7ade229d158d88f13302c28b2c6c5b3b7e2",
+      "confidence": 0.92,
+      "content_node_kind": "lesson",
+      "content_node_title": "76平行四边形和梯形",
+      "edition_id": "ed_dda80e43104244896faa",
+      "end_pdf_page": 82,
+      "evidence_excerpt": "76 平行四边形和梯形",
+      "evidence_excerpt_hash": "c45c6acce541db9536eca0ac0658e538711e8ef7954db5cb10d04bfb1eb003ec",
+      "evidence_granularity": "topic_heading",
+      "evidence_id": "external_smartedu_2026_math_primary_grade_4_up",
+      "evidence_level": "L2",
+      "evidence_level_detail": "L2_topic",
+      "evidence_role": "direct_textbook",
+      "evidence_span_ids": [
+        "tes_2f85dac48680ebaf"
+      ],
+      "grade_band": "H2",
+      "learning_component_ids": [
+        "lc_2c57372dca985e06"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_2c57372dca985e06",
+          "label": "说出长方形、正方形、平行四边形、梯形的特征"
+        }
+      ],
+      "longest_match_length": 5,
+      "matched_fields": [
+        "learning_components",
+        "standard_context",
+        "textbook_unit"
+      ],
+      "matched_keywords": [
+        "平行四边形",
+        "梯形"
+      ],
+      "modifier_conflicts": [],
+      "node_id": "tcn_2bf2763512eea220",
+      "pdf_page": 81,
+      "printed_page": "76",
+      "provenance": "machine_generated",
+      "publication_status": "published",
+      "rationale": "教材课文“76平行四边形和梯形”与课标 MA-D2-GE-004 的可教学小能力“说出长方形、正方形、平行四边形、梯形的特征”形成页内证据匹配。",
+      "relation_type": "supports",
+      "review_status": "machine_checked",
+      "score": 0.88,
+      "standard_code": "MA-D2-GE-004",
+      "standard_subdomain": "图形的认识与测量",
+      "standard_text": "能说出长方形、正方形、平行四边形、梯形的特征；能说出图形之间的共性与区别。形成空间观念和初步的几何直观。",
+      "standard_title": "说出长方形、正方形、平行四边形、梯形的特征",
+      "subject_slug": "math",
+      "topic_anchor_keywords": [
+        "平行四边形",
+        "梯形"
+      ],
+      "topic_anchor_score": 0.88,
+      "unit_id": "tcu_8924cda0fe91094c",
+      "unit_title": "五 平行四边形和梯形"
+    },
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_d93ef9aa1695813e",
+      "alignment_method": "component_evidence_hybrid",
+      "asset_sha256": "b8c56400784534fc89ab2b7c6835d7ade229d158d88f13302c28b2c6c5b3b7e2",
+      "confidence": 0.92,
+      "content_node_kind": "lesson",
+      "content_node_title": "82平行四边形和梯形",
+      "edition_id": "ed_dda80e43104244896faa",
+      "end_pdf_page": 88,
+      "evidence_excerpt": "82 平行四边形和梯形",
+      "evidence_excerpt_hash": "bb7613c1fb7d265f83bdc4e7f1144ea2e337048a502ba158cdcd539831795172",
+      "evidence_granularity": "topic_heading",
+      "evidence_id": "external_smartedu_2026_math_primary_grade_4_up",
+      "evidence_level": "L2",
+      "evidence_level_detail": "L2_topic",
+      "evidence_role": "direct_textbook",
+      "evidence_span_ids": [
+        "tes_985e04443b90c583"
+      ],
+      "grade_band": "H2",
+      "learning_component_ids": [
+        "lc_2c57372dca985e06"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_2c57372dca985e06",
+          "label": "说出长方形、正方形、平行四边形、梯形的特征"
+        }
+      ],
+      "longest_match_length": 5,
+      "matched_fields": [
+        "learning_components",
+        "standard_context",
+        "textbook_unit"
+      ],
+      "matched_keywords": [
+        "平行四边形",
+        "梯形"
+      ],
+      "modifier_conflicts": [],
+      "node_id": "tcn_7ee888483ed506bf",
+      "pdf_page": 87,
+      "printed_page": "82",
+      "provenance": "machine_generated",
+      "publication_status": "published",
+      "rationale": "教材课文“82平行四边形和梯形”与课标 MA-D2-GE-004 的可教学小能力“说出长方形、正方形、平行四边形、梯形的特征”形成页内证据匹配。",
+      "relation_type": "supports",
+      "review_status": "machine_checked",
+      "score": 0.88,
+      "standard_code": "MA-D2-GE-004",
+      "standard_subdomain": "图形的认识与测量",
+      "standard_text": "能说出长方形、正方形、平行四边形、梯形的特征；能说出图形之间的共性与区别。形成空间观念和初步的几何直观。",
+      "standard_title": "说出长方形、正方形、平行四边形、梯形的特征",
+      "subject_slug": "math",
+      "topic_anchor_keywords": [
+        "平行四边形",
+        "梯形"
+      ],
+      "topic_anchor_score": 0.88,
+      "unit_id": "tcu_8924cda0fe91094c",
+      "unit_title": "五 平行四边形和梯形"
     },
     {
       "algorithm_version": "component-evidence-hybrid-v3",
