@@ -90,7 +90,7 @@
       "ladder": [
         {"q": "补全：I like this coat. ____ warm.", "a": "It's"},
         {"q": "补全：Look at these shirts. ____ nice.", "a": "They're"},
-        {"q": "— Whose socks are these? — 是 Sarah 的。用英语回答。", "a": "They're Sarah's."}
+        {"q": "— Whose gloves are these? — 是 Amy 的。用英语回答。", "a": "They're Amy's."}
       ]
     },
     {
@@ -131,7 +131,7 @@
       "ladder": [
         {"q": "用括号里的词填空：It's ____ (wind) today.", "a": "windy"},
         {"q": "用括号里的词填空：It's ____ (cloud) in Shanghai.", "a": "cloudy"},
-        {"q": "— What's the weather like in Harbin? — ____（下雪）", "a": "It's snowy.（或 It's snowing.）"}
+        {"q": "— What's the weather like today? — ____（下雪）", "a": "It's snowy.（或 It's snowing.）"}
       ]
     },
     {
@@ -142,17 +142,17 @@
       "lessons": ["How can we help our family"],
       "points": ["EN-S1-LK-01.11", "EN-S1-TH-01.5"],
       "topic": "can 后面用原形",
-      "stem": "Mike 说：I can cook dinner. 用 he 介绍他：He ____ dinner.",
+      "stem": "Mike 说：I can cook for my grandma. 用 he 介绍他：He ____ for his grandma.",
       "options": ["can cook", "can cooks", "cans cook"],
       "answer": 0,
       "wrong": {"1": "modal-plus-s", "2": "s-added-to-can"},
-      "right": ["can 后面的动词用原形，主语换成 he 也不变：", "He can cook dinner."],
-      "typical": ["主语是 he，动词就加 s：", "He can cooks dinner."],
+      "right": ["can 后面的动词用原形，主语换成 he 也不变：", "He can cook for his grandma."],
+      "typical": ["主语是 he，动词就加 s：", "He can cooks for his grandma."],
       "typical_error": "modal-plus-s",
       "ladder": [
-        {"q": "补全：She can ____ (wash) the dishes.", "a": "wash"},
+        {"q": "补全：She can ____ (make) a gift for Mum.", "a": "make"},
         {"q": "改错：My brother can looks after the baby.", "a": "My brother can look after the baby."},
-        {"q": "用英语说：他会扫地，也会照顾妹妹。", "a": "He can sweep the floor. He can look after his sister too."}
+        {"q": "用英语说：她会做饭，也会照顾弟弟。", "a": "She can cook. She can look after her brother too."}
       ]
     },
     {
@@ -171,7 +171,7 @@
       "ladder": [
         {"q": "补全：____ ____ a shop in my community.（有）", "a": "There is"},
         {"q": "改错：There has a bus stop near my home.", "a": "There is a bus stop near my home."},
-        {"q": "用英语说：我们社区有一家商店，还有一个公共汽车站。", "a": "There is a shop. There is also a bus stop."}
+        {"q": "用英语说：我们社区有一家商店，还有一个公共汽车站。", "a": "There is a shop in our community. There is also a bus stop."}
       ]
     },
     {
@@ -192,7 +192,7 @@
       "ladder": [
         {"q": "补全：There ____ a gym in my community.", "a": "is"},
         {"q": "补全：There ____ three shops near my home.", "a": "are"},
-        {"q": "用英语说：商店里有很多衣服。", "a": "There are many clothes in the shop."}
+        {"q": "用英语说：商店里有很多铅笔。", "a": "There are many pencils in the shop."}
       ]
     },
     {
@@ -203,7 +203,7 @@
       "lessons": ["How can young people help their community"],
       "points": ["EN-S1-LK-01.10", "EN-S1-LS-01.16"],
       "topic": "正在做：is + -ing",
-      "stem": "看图：在养老院里，Mike 正在扫地。Look! Mike ____ the floor.",
+      "stem": "在养老院里，Mike 正在扫地。Look! Mike ____ the floor.",
       "options": ["sweeping", "sweeps", "is sweeping", "is sweep"],
       "answer": 2,
       "wrong": {"0": "progressive-be-drop", "1": "simple-for-progressive", "3": "progressive-bare-verb"},
@@ -234,7 +234,7 @@
       "ladder": [
         {"q": "补全：It's rainy. We ____ play outside.（不能）", "a": "can't"},
         {"q": "改错：It's windy. We can't to play basketball.", "a": "It's windy. We can't play basketball."},
-        {"q": "用英语说：下雨了，我们不能出去，但可以在家画画。", "a": "It's rainy. We can't go out. But we can draw at home."}
+        {"q": "用英语说：下雨了，我们不能出去，但可以在家画画。", "a": "It's rainy（或 It's raining）. We can't go out. But we can draw at home."}
       ]
     },
     {

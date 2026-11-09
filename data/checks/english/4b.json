@@ -17,6 +17,7 @@
     {"id": "am-pm-swapped-4b", "name": "把 a.m. 和 p.m. 记反", "why": "两个缩写只差一个字母，字面上看不出哪个是上午；同一个钟点又可以是上午也可以是晚上。", "move": "钟面分两半：中午 12 点以前吃 breakfast 写 a.m.，以后吃 dinner 写 p.m.；读一个时间，全班先说该吃哪一顿。"},
     {"id": "oclock-with-minutes-4b", "name": "有分钟也加 o'clock", "why": "先学了 It's 6 o'clock，就以为说几点都要带上 o'clock。", "move": "对照写两栏：6:00 → 6 o'clock，6:20 → 6:20，问：o'clock 只跟哪一栏？"},
     {"id": "they-verb-s-4b", "name": "主语是 they 也给动词加 s", "why": "听过 She likes ...、Chen Jie waters ... 这种动词带 s 的句子，就以为说别人做的事动词都加 s。", "move": "换主语说同一件事：A farmer feeds chickens. / Farmers feed chickens. 让学生找：主语是几个人时动词有没有 s？"},
+    {"id": "be-before-modal-4b", "name": "can、have to 前多加 be", "why": "把 am、is、are 当成每句话都要有的“是”，句子里已经有 can、have to 了还加上。", "move": "圈出句子里的 can 或 have to，问：已经有它了，还要 am、are 吗？读一读 I can ...、You have to ...。"},
     {"id": "would-like-as-can-4b", "name": "当成 Can you 来答", "why": "只看到问句里的 you，就用 No, I can't. 回答。", "move": "把 Would you like a spoon? 和 Can you use a spoon? 写在一起，让学生说出两句各在问什么。"}
   ],
   "items": [
@@ -28,15 +29,15 @@
       "lessons": ["What are your class rules", "Class rules"],
       "points": ["EN-S1-TH-01.8", "EN-S1-LK-01.9"],
       "topic": "Don't 后面要有 be",
-      "stem": "Amy 给班级做了一块规则牌，你同意这样写吗？",
-      "work": ["Don't late for class!"],
+      "stem": "班级要去春游，Amy 写了一条提醒，你同意这样写吗？",
+      "work": ["Don't late for the school bus!"],
       "answer": false,
       "wrong": {"agree": "dont-with-adjective"},
-      "right": ["late 不是动作，Don't 后面要先加 be：", "Don't be late for class!"],
+      "right": ["late 不是动作，Don't 后面要先加 be：", "Don't be late for the school bus!"],
       "ladder": [
-        {"q": "补全班规：Don't ____ in class.（吃东西）", "a": "eat"},
-        {"q": "补全班规：Don't ____ late.", "a": "be"},
-        {"q": "写两条班规：别在教室里跑；对人友好（nice）。", "a": "Don't run in the classroom. Please be nice."}
+        {"q": "补全规则：Don't ____ in the library.（吃东西）", "a": "eat"},
+        {"q": "补全：Please ____ nice to others.", "a": "be"},
+        {"q": "用英语写两条春游提醒：别在公园里跑；要安静（quiet）。", "a": "Don't run in the park. Please be quiet."}
       ]
     },
     {
@@ -47,16 +48,16 @@
       "lessons": ["Why do we follow class rules", "Class rules"],
       "points": ["EN-S1-LK-01.9", "EN-S1-TH-01.9"],
       "topic": "can 后面用动词原形",
-      "stem": "今天你值日。你想说“我能扫地”，选出正确的一句。",
-      "options": ["I'm can sweep the floor.", "I can to sweep the floor.", "I can sweeping the floor.", "I can sweep the floor."],
+      "stem": "今天你值日。你想说“我能关门”，选出正确的一句。",
+      "options": ["I'm can close the door.", "I can to close the door.", "I can closing the door.", "I can close the door."],
       "answer": 3,
-      "wrong": {"0": "be-plus-verb", "1": "can-to-verb", "2": "modal-plus-ing"},
-      "right": ["can 后面直接跟动词原形，前面不加 am，后面不加 to、-ing：", "I can sweep the floor."],
-      "typical": ["听过 He's sweeping the floor.，就照着说：", "I can sweeping the floor."],
+      "wrong": {"0": "be-before-modal-4b", "1": "can-to-verb", "2": "modal-plus-ing"},
+      "right": ["can 后面直接跟动词原形，前面不加 am，后面不加 to、-ing：", "I can close the door."],
+      "typical": ["听过 He's closing the door.，就照着说：", "I can closing the door."],
       "typical_error": "modal-plus-ing",
       "ladder": [
-        {"q": "选词补全：I can ____ the blackboard.（clean / cleaning）", "a": "clean"},
-        {"q": "改错：I can to close the windows.", "a": "I can close the windows."},
+        {"q": "选词补全：I can ____ my desk.（clean / cleaning）", "a": "clean"},
+        {"q": "改错：I can to turn off the lights.", "a": "I can turn off the lights."},
         {"q": "用 I can 说两件你值日能做的事。", "a": "I can turn off the fans. I can clean the desks.（合理即可）"}
       ]
     },
@@ -71,12 +72,12 @@
       "stem": "妈妈说：吃饭前你得先洗手。选出正确的一句。",
       "options": ["You have wash your hands first.", "You are have to wash your hands first.", "You have to wash your hands first."],
       "answer": 2,
-      "wrong": {"0": "have-to-no-to-4b", "1": "be-plus-verb"},
+      "wrong": {"0": "have-to-no-to-4b", "1": "be-before-modal-4b"},
       "right": ["“得、必须”是 have to，后面跟动作：", "You have to wash your hands first."],
       "typical": ["你 = You，得 = have，洗手 = wash your hands：", "You have wash your hands first."],
       "typical_error": "have-to-no-to-4b",
       "ladder": [
-        {"q": "补全：You have ____ go to bed now.（得睡觉了）", "a": "to"},
+        {"q": "补全：You have ____ clean your desk.（得）", "a": "to"},
         {"q": "改错：You have tidy your room.", "a": "You have to tidy your room."},
         {"q": "用 You have to 说一条你家的家规。", "a": "You have to use kind words.（合理即可）"}
       ]
@@ -97,9 +98,9 @@
       "typical": ["问句里有 is，就先答 Yes：", "Yes, she's in the study."],
       "typical_error": "wh-yes-no",
       "ladder": [
-        {"q": "— Where is Dad?　— ____ in the bedroom.", "a": "He's"},
-        {"q": "— Where is your sister?　— ____ in the bathroom.", "a": "She's"},
-        {"q": "用英语问“John 在哪儿？”，再答“他在客厅”。", "a": "Where is John? He's in the living room."}
+        {"q": "— Where is Grandpa?　— ____ in the kitchen.", "a": "He's"},
+        {"q": "— Where is your sister?　— ____ in the living room.", "a": "She's"},
+        {"q": "用英语问“Mike 在哪儿？”，再答“他在卧室”。", "a": "Where is Mike? He's in the bedroom."}
       ]
     },
     {
@@ -131,7 +132,7 @@
       "lessons": ["Time for school Part B", "Time for school"],
       "points": ["EN-S1-LS-01.13", "EN-S1-LK-01.9"],
       "topic": "It's time to / for",
-      "stem": "下午 5 点，该回家了。选出正确的一句。",
+      "stem": "Mike 在同学家玩，妈妈打电话说：6 点了，该回家了。选出妈妈说的话。",
       "options": ["It's time for go home.", "It's time to go home.", "It's time to go to home."],
       "answer": 1,
       "wrong": {"0": "time-for-verb", "2": "to-before-home-there"},
@@ -139,9 +140,9 @@
       "typical": ["It's time for lunch 能说，", "就说：It's time for go home."],
       "typical_error": "time-for-verb",
       "ladder": [
-        {"q": "补全：It's 12 o'clock. It's time ____ lunch.", "a": "for"},
-        {"q": "补全：It's 7 o'clock. It's time to ____ up.", "a": "get"},
-        {"q": "晚上 9 点了，用英语说“该睡觉了”。", "a": "It's time to go to bed.（或 It's time for bed.）"}
+        {"q": "补全：It's 10:30. It's time ____ art class.", "a": "for"},
+        {"q": "补全：It's 7:40. It's time ____ go to school.", "a": "to"},
+        {"q": "晚上 8 点 50 分了，用英语说“该睡觉了”。", "a": "It's time to go to bed.（或 It's time for bed.）"}
       ]
     },
     {
@@ -179,7 +180,7 @@
       "typical": ["cows 是复数，复数就用 these：", "Look at these cows over there!"],
       "typical_error": "demonstrative-distance",
       "ladder": [
-        {"q": "（手里拿着几根胡萝卜）补全：____ are carrots.", "a": "These"},
+        {"q": "（手里拿着几个西红柿）补全：____ are tomatoes.", "a": "These"},
         {"q": "（指着远处的一匹马）补全：What's ____ ?", "a": "that"},
         {"q": "（指着远处的几只鸡）用英语问一问，再答一答。", "a": "What are those? They're chickens."}
       ]
@@ -200,7 +201,7 @@
       "typical": ["“一条短裤”是一件，", "This shorts is Mike's."],
       "typical_error": "pair-noun-singular",
       "ladder": [
-        {"q": "补全：____ shoes are nice.（这双）", "a": "These"},
+        {"q": "补全：____ trousers are nice.（这条）", "a": "These"},
         {"q": "补全：Those socks ____ yours.", "a": "are"},
         {"q": "用英语问：那条短裤是谁的？", "a": "Whose shorts are those?"}
       ]
@@ -223,7 +224,7 @@
       "ladder": [
         {"q": "补全：How much ____ this skirt?", "a": "is"},
         {"q": "补全：— How much are the socks? — ____ 10 yuan.", "a": "They're"},
-        {"q": "用英语问这件夹克多少钱。", "a": "How much is this jacket?"}
+        {"q": "用英语问这顶帽子多少钱。", "a": "How much is this hat?"}
       ]
     },
     {
@@ -234,17 +235,17 @@
       "lessons": ["How should we eat"],
       "points": ["EN-S1-LK-01.16", "EN-S1-LS-01.12"],
       "topic": "客气地说不要",
-      "stem": "— Would you like a spoon? — ____（不用，我会用筷子）",
-      "options": ["No, I don't. I can use chopsticks.", "No, thank you. I can use chopsticks.", "No, I can't. I can use chopsticks."],
+      "stem": "— Would you like a fork? — ____（不用了，谢谢，我有勺子）",
+      "options": ["No, I don't. I have a spoon.", "No, thank you. I have a spoon.", "No, I can't. I have a spoon."],
       "answer": 1,
       "wrong": {"0": "would-like-as-like", "2": "would-like-as-can-4b"},
-      "right": ["Would you like ...? 是客气地问“要不要”，", "不要就说 No, thank you.，再说为什么。"],
+      "right": ["Would you like ...? 是客气地问“要不要”，", "不要就说 No, thank you.，再说为什么：No, thank you. I have a spoon."],
       "typical": ["和 Do you like ...? 一样答：", "No, I don't."],
       "typical_error": "would-like-as-like",
       "ladder": [
         {"q": "— Would you like some fish? 你想要，回答。", "a": "Yes, please."},
         {"q": "— Do you like fish? 你不喜欢，回答。", "a": "No, I don't."},
-        {"q": "想请同桌把盐递给你，用 Can you please ...? 说一句。", "a": "Can you please pass me the salt?"}
+        {"q": "— Would you like some milk? 你不想要，有礼貌地回答。", "a": "No, thank you."}
       ]
     },
     {

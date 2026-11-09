@@ -17,13 +17,12 @@
     {"id": "shorts-as-one-item", "name": "把 shorts 当成一件用单数", "why": "汉语说“一条短裤”，就以为 shorts 是单数。", "move": "指出 shorts、trousers、socks 词尾都有 s，问：后面用 is 还是 are？"},
     {"id": "ordinal-just-add-th", "name": "序数词直接在词尾加 th", "why": "只记住“加 th”，没记住 nine、twelve 等要先改拼写。", "move": "板书特殊变化：nine → ninth（去 e），twelve → twelfth（ve 变 f），five → fifth。"},
     {"id": "in-for-day-afternoon", "name": "看到 afternoon 就用 in", "why": "背熟了 in the afternoon，没注意具体某一天的下午用 on。", "move": "对比：in the afternoon / on Friday afternoon，问：有没有说具体哪一天？"},
-    {"id": "spell-heard-as-name-7a", "name": "听到 your name 就报出名字", "why": "只听懂了句尾熟悉的 your name，没注意 spell 是“拼写”。", "move": "把 spell 写在黑板上读成“拼”，请一位学生把自己的英文名一个字母一个字母地拼出来。"},
+    {"id": "spell-heard-as-name-7a", "name": "听到 name 就报出名字", "why": "只听懂了句尾熟悉的 your name、his name，没注意 spell 是“拼写”。", "move": "把 spell 写在黑板上读成“拼”，请一位学生把自己的英文名一个字母一个字母地拼出来。"},
     {"id": "be-follows-nearest-i-7a", "name": "看到紧挨着的 I 就用 am", "why": "只记住“I 后面用 am”，没看出主语是“我的朋友和我”两个人。", "move": "用手圈出整个主语 My friend and I，问：几个人？两个人就是 we，we 后面用什么？"},
     {"id": "first-noun-decides-be-7a", "name": "只看 my friend 就用 is", "why": "主语开头的 my friend 是一个人，就按单数配了 is，没看后面还有 and I。", "move": "把主语换成代词再说：My friend and I = We，We ____ 13. 学生自己就会说 are。"},
     {"id": "across-from-as-next-to-7a", "name": "以为 across from 是旁边", "why": "across from 和 next to 都表示两处离得近，没分清是并排还是面对面。", "move": "请两位同学隔着过道面对面站：这是 across from；再并肩站：这是 next to。"},
     {"id": "across-as-go-through-7a", "name": "以为 across from 是穿过", "why": "先学过 go across the road（穿过马路），一看到 across 就想到“穿过”。", "move": "问：句子里有人在走路吗？没有，across from 说的是一个固定的位置——“在……对面”。"},
-    {"id": "and-for-any-link-7a", "name": "两句话一连就用 and", "why": "and 学得最早，以为连接两句话都用它，没看前后意思是顺着还是相反。", "move": "先让学生判断前后两句是“顺着说”还是“转过来说”：难→很喜欢，是转过来，用 but。"},
-    {"id": "because-without-reason-7a", "name": "没看哪句是原因就用 because", "why": "说惯了 I like ... because ...，一见到 like 就套用 because。", "move": "把两半句拆开问：“我很喜欢它”是“科学难”的原因吗？不是原因，就不能用 because。"},
+    {"id": "because-without-reason-7a", "name": "没看哪句是原因就用 because", "why": "说惯了 I like ... because ...，一见到 like 就套用 because，没看前后是不是因果。", "move": "把两半句拆开问：“我很喜欢音乐课”是“唱歌不好”的原因吗？不是原因，就不能用 because。"},
     {"id": "subject-pronoun-as-object-7a", "name": "动词后面的“我们”还用 we", "why": "汉语“我们”放在哪都一样，没想到放在 lets 后面要用宾格 us。", "move": "板书两列 I—me，we—us，he—him，she—her，问：lets 后面这个词跟在动词后，用哪一列？"},
     {"id": "at-plus-base-verb-7a", "name": "介词 at 后直接用动词原形", "why": "汉语“擅长做饭”里“做”不变形，就把 cook 原样放在 at 后面。", "move": "板书 good at English / good at cooking，问：at 后面放的是名词，动词怎样才能像名词？加 -ing。"},
     {"id": "good-at-to-do-7a", "name": "以为“擅长做”要接 to do", "why": "学过 want to do、like to do，就以为两个动作之间都加 to。", "move": "对比 want to make / good at making，问：前面是 at 还是动词？at 是介词，后面接 -ing。"},
@@ -40,16 +39,16 @@
       "lessons": ["How do you greet people", "Starter Unit 1 Pronunciation"],
       "points": ["EN-S3-LK-01.5", "EN-S3-LK-01.14"],
       "topic": "字母前用 a 还是 an",
-      "stem": "字母前用 a 还是 an？依次填空：____ F，____ U，____ H",
+      "stem": "字母前用 a 还是 an？依次填空：____ F，____ U，____ M",
       "answer": "an, a, an",
       "wrong": {"a, an, a": "a-an-by-spelling"},
-      "right": ["看第一个音，不看字母：F /ef/、H /eɪtʃ/ 以元音开头，用 an；", "U /juː/ 以辅音 /j/ 开头，用 a。"],
-      "typical": ["F、H 不是元音字母，用 a；U 是元音字母，用 an", "a F，an U，a H"],
+      "right": ["看第一个音，不看字母：F /ef/、M /em/ 以元音开头，用 an；", "U /juː/ 以辅音 /j/ 开头，用 a。"],
+      "typical": ["F、M 不是元音字母，用 a；U 是元音字母，用 an", "a F，an U，a M"],
       "typical_error": "a-an-by-spelling",
       "ladder": [
         {"q": "填 a 或 an：____ orange，____ ruler", "a": "an orange，a ruler"},
         {"q": "填 a 或 an：____ L，____ Q，____ S", "a": "an L，a Q，an S"},
-        {"q": "填 a 或 an：____ hour，____ UFO", "a": "an hour，a UFO"}
+        {"q": "填 a 或 an：____ egg，____ X，____ Y", "a": "an egg，an X，a Y"}
       ]
     },
     {
@@ -60,7 +59,7 @@
       "lessons": ["How do we get to know each other"],
       "points": ["EN-S3-LK-01.14"],
       "topic": "人称代词与物主代词",
-      "stem": "This is my friend. ____ name is Mike.",
+      "stem": "This boy is my new classmate. ____ name is Mike.",
       "options": ["His", "He", "He's"],
       "answer": 0,
       "wrong": {"1": "he-before-noun", "2": "hes-for-his"},
@@ -123,11 +122,11 @@
       "lessons": ["What is your family like"],
       "points": ["EN-S3-LC-02.5", "EN-S3-LK-01.13"],
       "topic": "三单句改一般疑问句",
-      "stem": "小明把 He has a soccer ball. 改成一般疑问句。他从第几步开始错？",
-      "work": ["句中没有 be 动词，要借助助动词 do", "主语 he 是三单，用 Does，放在句首", "has 照抄：Does he has a soccer ball?", "回答：Yes, he does. / No, he doesn't."],
+      "stem": "小明把 He has a basketball. 改成一般疑问句。他从第几步开始错？",
+      "work": ["句中没有 be 动词，要借助助动词 do", "主语 he 是三单，用 Does，放在句首", "has 照抄：Does he has a basketball?", "回答：Yes, he does. / No, he doesn't."],
       "answer": 2,
       "error": "does-then-third-person",
-      "right": ["用了 Does，后面的动词还原成原形：has → have。", "Does he have a soccer ball?"],
+      "right": ["用了 Does，后面的动词还原成原形：has → have。", "Does he have a basketball?"],
       "ladder": [
         {"q": "____ your sister ____ (have) a tennis ball?", "a": "Does；have"},
         {"q": "改成一般疑问句：Jim likes bananas.", "a": "Does Jim like bananas?"},
@@ -151,7 +150,7 @@
       "typical_error": "shorts-as-one-item",
       "ladder": [
         {"q": "How much ____ (be) the green sweater?", "a": "is"},
-        {"q": "—How much are the socks? —____ two dollars.", "a": "They're"},
+        {"q": "—How much are the socks? —____ 20 yuan.", "a": "They're"},
         {"q": "How much ____ (be) this pair of trousers?", "a": "is（主语是 pair）"}
       ]
     },
@@ -184,14 +183,14 @@
       "points": ["EN-S3-LC-01.4"],
       "topic": "时间介词 in 与 on",
       "stem": "小红说下面这句话写得对。你同意吗？",
-      "work": ["We have P.E. on Friday afternoon."],
+      "work": ["We have PE on Friday afternoon."],
       "answer": true,
       "wrong": {"disagree": "in-for-day-afternoon"},
       "right": ["说具体某一天的上午、下午、晚上用 on，", "on Friday afternoon 没错，小红说得对。"],
       "ladder": [
         {"q": "We have music ____ Monday.", "a": "on"},
         {"q": "I do my homework ____ the evening.", "a": "in"},
-        {"q": "The school trip is ____ the morning of May 2nd.", "a": "on"}
+        {"q": "We have a party ____ the evening of 31st December.", "a": "on"}
       ]
     },
     {
@@ -229,9 +228,9 @@
       "typical": ["“是长头发”，“是”就是 is：", "She is long hair."],
       "typical_error": "is-long-hair",
       "ladder": [
-        {"q": "My brother ____ short curly hair.", "a": "has"},
+        {"q": "My brother ____ short black hair.", "a": "has"},
         {"q": "My father ____ tall and he ____ a big nose.", "a": "is；has"},
-        {"q": "—What does she look like? —She's thin and ____ (wear) glasses.", "a": "wears"}
+        {"q": "用英语说：我妈妈个子高，留着长长的黑头发。", "a": "My mother is tall and has long black hair."}
       ]
     },
     {
@@ -249,8 +248,8 @@
       "right": ["说“某处有某物”用 there be，不用 have/has：", "There is a park near my home."],
       "ladder": [
         {"q": "____ ____ a bank on Green Street.", "a": "There is"},
-        {"q": "—____ ____ any restaurants near here? —Yes, there are.", "a": "Are there"},
-        {"q": "My town ____ (have) two big parks.", "a": "has（主语是 my town）"}
+        {"q": "—____ ____ any shops near here? —Yes, there are.", "a": "Are there"},
+        {"q": "Our school ____ (have) a big library.", "a": "has（主语是 our school）"}
       ]
     },
     {
@@ -282,10 +281,10 @@
       "lessons": ["How do you spend your school day"],
       "points": ["EN-S3-LK-01.13"],
       "topic": "说别人的日常活动",
-      "stem": "用括号里的词填空：Tom usually ____ (go) to school at 7:30 and ____ (watch) TV after dinner.",
+      "stem": "用括号里的词填空：Wang Hao usually ____ (go) to school at 7:20 and ____ (watch) TV after dinner.",
       "answer": "goes, watches",
       "wrong": {"go, watch": "he-she-verb-no-s", "gos, watchs": "verb-es-as-s"},
-      "right": ["主语 Tom 是三单，动词要变；", "以 o、ch 结尾的加 es：goes，watches。"],
+      "right": ["主语 Wang Hao 是三单，动词要变；", "以 o、ch 结尾的加 es：goes，watches。"],
       "typical": ["“他去上学”和“我去上学”一样，不用变：go，watch"],
       "typical_error": "he-she-verb-no-s",
       "ladder": [
@@ -302,15 +301,15 @@
       "lessons": ["How do you start a conversation"],
       "points": ["EN-S3-LC-01.3", "EN-S3-LS-01.1"],
       "topic": "回答“你的名字怎么拼”",
-      "stem": "你叫 Lucy。新同学问：How do you spell your name? 你怎么回答？",
-      "options": ["L-U-C-Y, Lucy.", "My name is Lucy.", "Yes, I do."],
+      "stem": "你的同桌叫 Bill。新同学指着他问：How do you spell his name? 你怎么回答？",
+      "options": ["B-I-L-L, Bill.", "His name is Bill.", "Yes, he does."],
       "answer": 0,
       "wrong": {"1": "spell-heard-as-name-7a", "2": "wh-yes-no"},
-      "right": ["How do you spell ...? 问的是“怎么拼写”，", "要一个字母一个字母地拼出来：L-U-C-Y, Lucy."],
-      "typical": ["听到 your name，就回答名字：", "My name is Lucy."],
+      "right": ["How do you spell ...? 问的是“怎么拼写”，", "要一个字母一个字母地拼出来：B-I-L-L, Bill."],
+      "typical": ["听到 his name，就回答名字：", "His name is Bill."],
       "typical_error": "spell-heard-as-name-7a",
       "ladder": [
-        {"q": "给问句选答语：What's your name?　A. P-E-T-E-R.　B. I'm Peter.", "a": "B"},
+        {"q": "给问句选答语：What's his name?　A. T-O-M.　B. His name is Tom.", "a": "B"},
         {"q": "—How do you spell \"Lily\"? —____", "a": "L-I-L-Y, Lily."},
         {"q": "补全问句：—____ ____ ____ ____ your name? —G-R-E-E-N, Green.", "a": "How do you spell"}
       ]
@@ -322,16 +321,16 @@
       "lesson": "Section A What is fun in a yard?",
       "lessons": ["What is fun in a yard", "Starter Unit 3 Pronunciation"],
       "points": ["EN-S3-LK-01.5", "EN-S3-LC-02.3"],
-      "topic": "not 和 note 里的 o",
+      "topic": "hop 和 hope 里的 o",
       "stem": "小明这样说，你同意吗？",
-      "work": ["note 和 not 里都有字母 o，", "所以 o 都读字母 O 的名字 /əʊ/。"],
+      "work": ["hope 和 hop 里都有字母 o，", "所以 o 都读字母 O 的名字。"],
       "answer": false,
       "wrong": {"agree": "one-letter-one-sound"},
-      "right": ["not 里 o 后面只跟一个辅音、没有 e，o 读短音 /ɒ/；", "note 词尾有不发音的 e，o 才读字母 O 的名字 /əʊ/。"],
+      "right": ["hop 里 o 后面只有一个辅音、没有 e，读短音，和 hot 里的 o 一样；", "hope 词尾有不发音的 e，o 才读字母 O 的名字。"],
       "ladder": [
-        {"q": "圈出 o 读 /ɒ/ 的词：box　joke　hot　home", "a": "box　hot"},
+        {"q": "圈出 o 和 hot 里的 o 读音一样的词：box　joke　dog　home", "a": "box　dog"},
         {"q": "哪个词里的 i 和 big 里的 i 读音一样：nine　six　like", "a": "six"},
-        {"q": "用拼读规则读生词 hop 和 hope：o 各读什么？", "a": "hop 读 /ɒ/，hope 读 /əʊ/"}
+        {"q": "用拼读规则读生词 rob 和 robe：o 各像 hot 还是 home 里的？", "a": "rob 像 hot，robe 像 home"}
       ]
     },
     {
@@ -392,29 +391,27 @@
       "typical_error": "across-as-go-through-7a",
       "ladder": [
         {"q": "填 next to 或 across from：我和 Li Ming 并排坐。I sit ____ Li Ming.", "a": "next to"},
-        {"q": "体育馆在礼堂对面。The gym is ____ the school hall.", "a": "across from"},
+        {"q": "体育馆在美术楼对面。The gym is ____ the art building.", "a": "across from"},
         {"q": "用英语说：图书馆在体育馆和食堂之间。", "a": "The library is between the gym and the dining hall."}
       ]
     },
     {
       "id": "en-7a-21",
-      "type": "choice",
+      "type": "judge",
       "unit": "Unit 4 My Favourite Subject",
       "lesson": "Section A Why do you like this subject?",
       "lessons": ["Why do you like this subject"],
       "points": ["EN-S3-LC-02.7", "EN-S3-LS-01.69"],
-      "topic": "and、but、because 怎么选",
-      "stem": "Science is hard for me, ____ I like it a lot.",
-      "options": ["and", "but", "because"],
-      "answer": 1,
-      "wrong": {"0": "and-for-any-link-7a", "2": "because-without-reason-7a"},
-      "right": ["“难”和“很喜欢”意思相反，", "表示转折用 but：Science is hard for me, but I like it a lot."],
-      "typical": ["两句话连起来用 and：", "Science is hard for me, and I like it a lot."],
-      "typical_error": "and-for-any-link-7a",
+      "topic": "but 和 because 怎么选",
+      "stem": "小明想说“我唱歌不好，可我很喜欢音乐课”。他这样写，你同意吗？",
+      "work": ["I can't sing well, because I really like music class."],
+      "answer": false,
+      "wrong": {"agree": "because-without-reason-7a"},
+      "right": ["“很喜欢音乐课”不是“唱歌不好”的原因，前后意思相反，", "要用 but：I can't sing well, but I really like music class."],
       "ladder": [
-        {"q": "I like PE ____ it's exciting.", "a": "because"},
-        {"q": "I want to play, ____ I have a lot of homework.", "a": "but"},
-        {"q": "I have PE ____ IT on Friday. I like IT ____ it's fun, ____ PE is my favourite.", "a": "and；because；but"}
+        {"q": "填 but 或 because：I like PE ____ it's exciting.", "a": "because"},
+        {"q": "填 but 或 because：I want to play, ____ I have a lot of homework.", "a": "but"},
+        {"q": "填 but 或 because：History is hard for me, ____ I like it ____ it's interesting.", "a": "but；because"}
       ]
     },
     {
@@ -446,12 +443,12 @@
       "lessons": ["What can you learn in a school club"],
       "points": ["EN-S3-LK-01.14", "EN-S3-LK-01.15"],
       "topic": "good at 后面的动词",
-      "stem": "Mia 想加入烹饪社，她写道：I'm good at ____ dumplings.",
+      "stem": "Mia 想加入烹饪社，她写道：I'm good at ____ noodles.",
       "options": ["make", "to make", "making"],
       "answer": 2,
       "wrong": {"0": "at-plus-base-verb-7a", "1": "good-at-to-do-7a"},
-      "right": ["at 是介词，后面接名词或动词 -ing：", "I'm good at making dumplings."],
-      "typical": ["“擅长包饺子”，包就是 make：", "I'm good at make dumplings."],
+      "right": ["at 是介词，后面接名词或动词 -ing：", "I'm good at making noodles."],
+      "typical": ["“擅长做面条”，做就是 make：", "I'm good at make noodles."],
       "typical_error": "at-plus-base-verb-7a",
       "ladder": [
         {"q": "She is good at ____ (swim).", "a": "swimming"},
@@ -467,17 +464,17 @@
       "lessons": ["How different are people's daily routines"],
       "points": ["EN-S3-LK-01.10", "EN-S3-LS-01.8"],
       "topic": "用 past 和 to 说时间",
-      "stem": "Timo 的下午课 2:15 结束。2:15 用英语怎么说？",
-      "options": ["a quarter to two", "a quarter past two", "two past a quarter"],
+      "stem": "Lin Tao 每天 4:15 去打篮球。4:15 用英语怎么说？",
+      "options": ["a quarter to four", "a quarter past four", "four past a quarter"],
       "answer": 1,
       "wrong": {"0": "past-to-swapped-7a", "2": "clock-chinese-order-7a"},
-      "right": ["英语先说分钟，再说钟点：15 分钟是 a quarter；", "刚过 2 点用 past：a quarter past two（也可说 two fifteen）。"],
-      "typical": ["“两点过一刻”，先说两点：", "two past a quarter"],
+      "right": ["英语先说分钟，再说钟点：15 分钟是 a quarter；", "刚过 4 点用 past：a quarter past four（也可说 four fifteen）。"],
+      "typical": ["“四点过一刻”，先说四点：", "four past a quarter"],
       "typical_error": "clock-chinese-order-7a",
       "ladder": [
         {"q": "用 past 说 6:30", "a": "half past six"},
         {"q": "用 to 说 4:45", "a": "a quarter to five"},
-        {"q": "Timo 7:40 起床，用 to 说这个时间", "a": "twenty to eight"}
+        {"q": "Lin Tao 8:40 上床睡觉，用 to 说这个时间", "a": "twenty to nine"}
       ]
     },
     {
@@ -488,11 +485,11 @@
       "lessons": ["How do you make your birthday meaningful"],
       "points": ["EN-S3-LK-01.15", "EN-S3-LS-01.21"],
       "topic": "日期前用 on 还是 in",
-      "stem": "小红在回帖里写了这句话，她说写得对。你同意吗？",
-      "work": ["My birthday is on 9th October."],
+      "stem": "小红写了这句话，她说写得对。你同意吗？",
+      "work": ["We plant trees on 12th March every year."],
       "answer": true,
       "wrong": {"disagree": "in-for-full-date-7a"},
-      "right": ["说到具体的某一天用 on：on 9th October；", "只说月份才用 in：in October。所以小红写得对。"],
+      "right": ["说到具体的某一天用 on：on 12th March；", "只说月份才用 in：in March。所以小红写得对。"],
       "ladder": [
         {"q": "My birthday is ____ May.", "a": "in"},
         {"q": "Teachers' Day is ____ 10th September.", "a": "on"},

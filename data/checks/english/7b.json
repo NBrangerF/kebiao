@@ -21,10 +21,10 @@
     {"id": "irregular-verb-plus-ed", "name": "不规则动词也加 -ed", "why": "把规则动词加 -ed 的办法用到了所有动词上。", "move": "列出本单元的不规则动词，两人一组互考：go — went，buy — bought。"},
     {"id": "past-event-base-verb", "name": "过去的事用了动词原形", "why": "汉语靠“上周末”这样的词表示过去，动词本身不变。", "move": "圈出 last weekend、yesterday，问：这事什么时候发生的？动词要不要变？"},
     {"id": "is-like-as-looks-7b", "name": "把问性格的 like 当成问长相", "why": "What is it like? 和 What does it look like? 都有 like，只差一个 look。", "move": "把两个问题并排写，圈出 look：有 look 问长相（huge、large ears），没有 look 问性格（kind、playful）。"},
-    {"id": "has-to-verb-s-7b", "name": "has to 后的动词也加了 s", "why": "看到主语是三单，has 变了，后面的动词又变一次。", "move": "把 has to 换成 can 读一读：Alice can finish…，to 后面的动词永远用原形。"},
+    {"id": "has-to-verb-s-7b", "name": "has to 后的动词也加了 s", "why": "看到主语是三单，has 变了，后面的动词又变一次。", "move": "把 has to 换成 can 读一读：Mia can walk…，can 和 to 后面的动词都用原形。"},
     {"id": "must-plus-to-7b", "name": "must 后面多加了 to", "why": "must 和 have to 意思相近，把 have to 的 to 带到了 must 后面。", "move": "对比 have to finish / must finish，问：哪个本身带 to？must 后直接跟动词原形。"},
     {"id": "our-without-noun-7b", "name": "后面没名词还用 our", "why": "our 和 ours 都译成“我们的”，没注意 our 后面必须跟名词。", "move": "追问：our 什么？名词省掉了就用 ours，ours = our team。"},
-    {"id": "us-for-ours-7b", "name": "把 us 当成“我们的”", "why": "us 和 ours 读音相近，又都和“我们”有关。", "move": "让学生把 us 放回句子读：I think us is the best，us 是“我们”还是“我们的”？"},
+    {"id": "us-for-ours-7b", "name": "把 us 当成“我们的”", "why": "us 和 ours 读音相近，又都和“我们”有关。", "move": "让学生把 us 放回句子读：This ball is us，us 是“我们”还是“我们的”？"},
     {"id": "apostrophe-pronoun-7b", "name": "给物主代词加了 's", "why": "Tom's 表示“汤姆的”，就以为 our 加 's 也表示“我们的”。", "move": "板书 Tom's 和 ours、yours、hers、theirs：物主代词本身就是“……的”，从不加撇号。"},
     {"id": "too-much-countable-7b", "name": "可数名词复数前用了 too much", "why": "“太多”都说成 too much，没看后面的名词能不能数。", "move": "先问名词能不能一个一个数：cookies 有 s，能数，用 too many；sugar 不能数，用 too much。"},
     {"id": "people-singular-7b", "name": "把 people 当成单数", "why": "people 词尾没有 s，看着像一个人。", "move": "问：people 是一个人还是很多人？对比 a person / two people，people 后面用 are。"},
@@ -51,7 +51,7 @@
       "ladder": [
         {"q": "In Harbin, it often ____ (snow) in winter.", "a": "snows"},
         {"q": "Look! It ____ (snow) outside now.", "a": "is snowing"},
-        {"q": "My dad usually ____ (drive) to work, but now he ____ (ride) a bike.", "a": "drives；is riding"}
+        {"q": "My dad usually ____ (drive) to work. Look! He ____ (ride) a bike today.", "a": "drives；is riding"}
       ]
     },
     {
@@ -62,11 +62,11 @@
       "lessons": ["What rules do we follow"],
       "points": ["EN-S3-LK-01.13"],
       "topic": "否定祈使句",
-      "stem": "小明给班级写了一条规则。你同意这样写吗？",
-      "work": ["Don't late for class."],
+      "stem": "小明给春游写了一条提醒。你同意这样写吗？",
+      "work": ["Don't late for the football game."],
       "answer": false,
       "wrong": {"agree": "dont-with-adjective"},
-      "right": ["late 是形容词，不能直接跟在 Don't 后面，", "要加 be：Don't be late for class."],
+      "right": ["late 是形容词，不能直接跟在 Don't 后面，", "要加 be：Don't be late for the school bus."],
       "ladder": [
         {"q": "Don't ____ (run) on the stairs.", "a": "run"},
         {"q": "Don't ____ noisy in the library.", "a": "be"},
@@ -102,12 +102,12 @@
       "lessons": ["What are you doing right now"],
       "points": ["EN-S3-LK-01.14"],
       "topic": "动词 sing 的形式",
-      "stem": "Listen! Mary ____ in her room.",
+      "stem": "Listen! Grandpa ____ in the garden.",
       "options": ["sings", "is singing", "singing", "is sing"],
       "answer": 1,
       "wrong": {"0": "simple-for-progressive", "2": "progressive-no-be", "3": "progressive-no-ing"},
-      "right": ["Listen! 提示事情正在发生，用现在进行时：", "am/is/are + 动词-ing：Mary is singing."],
-      "typical": ["“她在唱歌”，没有“是”：", "Mary singing in her room."],
+      "right": ["Listen! 提示事情正在发生，用现在进行时：", "am/is/are + 动词-ing：Grandpa is singing."],
+      "typical": ["“他在唱歌”，没有“是”：", "Grandpa singing in the garden."],
       "typical_error": "progressive-no-be",
       "ladder": [
         {"q": "Look! The boys ____ (play) soccer.", "a": "are playing"},
@@ -162,17 +162,17 @@
       "lesson": "Section A What are your favourite stories?",
       "lessons": ["What are your favourite stories"],
       "points": ["EN-S3-LK-01.15"],
-      "topic": "说上周末做的事",
-      "stem": "用括号里的词填空：Last weekend I ____ (go) to the beach and ____ (buy) a hat.",
+      "topic": "故事里的不规则过去式",
+      "stem": "用括号里的词填空：Once upon a time, a farmer ____ (go) to the market and ____ (buy) a cow.",
       "answer": "went, bought",
       "wrong": {"goed, buyed": "irregular-verb-plus-ed", "go, buy": "past-event-base-verb"},
-      "right": ["last weekend 说的是过去，用一般过去时；", "go、buy 是不规则动词：went，bought。"],
+      "right": ["讲故事说的是过去的事，用一般过去时；", "go、buy 是不规则动词：went，bought。"],
       "typical": ["过去式就是加 -ed：goed，buyed"],
       "typical_error": "irregular-verb-plus-ed",
       "ladder": [
-        {"q": "I ____ (do) my homework last night.", "a": "did"},
-        {"q": "We ____ (see) a movie and ____ (eat) pizza last night.", "a": "saw；ate"},
-        {"q": "Yesterday they ____ (take) a bus and ____ (get) home at six.", "a": "took；got"}
+        {"q": "Long ago, an old man ____ (tell) the children a story.", "a": "told"},
+        {"q": "The king ____ (give) the boy a horse, and the boy ____ (feel) happy.", "a": "gave；felt"},
+        {"q": "The fox ____ (run) away, and the rabbit ____ (find) its way home.", "a": "ran；found"}
       ]
     },
     {
@@ -183,12 +183,12 @@
       "lessons": ["How often do you do sport or exercise"],
       "points": ["EN-S3-LK-01.14"],
       "topic": "my、me 还是 mine",
-      "stem": "—Is this your ruler? —Yes, it's ____.",
+      "stem": "—Whose water bottle is this? —It's ____. Thanks!",
       "options": ["my", "me", "mine"],
       "answer": 2,
       "wrong": {"0": "my-without-noun", "1": "me-for-mine"},
-      "right": ["空后面没有名词，要用名词性物主代词：", "mine = my ruler。Yes, it's mine."],
-      "typical": ["“我的”就是 my：", "Yes, it's my."],
+      "right": ["空后面没有名词，要用名词性物主代词：", "mine = my water bottle。It's mine."],
+      "typical": ["“我的”就是 my：", "It's my. Thanks!"],
       "typical_error": "my-without-noun",
       "ladder": [
         {"q": "This pencil isn't ____ (I). It's Tom's.", "a": "mine"},
@@ -225,17 +225,17 @@
       "lessons": ["What do we like to eat"],
       "points": ["EN-S3-LK-01.14"],
       "topic": "说喜欢的食物",
-      "stem": "“我喜欢香蕉和面包。”哪句对？",
-      "options": ["I like bananas and bread.", "I like banana and bread.", "I like bananas and breads."],
+      "stem": "“我喜欢饼干和牛奶。”哪句对？",
+      "options": ["I like cookies and milk.", "I like cookie and milk.", "I like cookies and milks."],
       "answer": 0,
       "wrong": {"1": "like-singular-countable", "2": "uncountable-noun-plus-s"},
-      "right": ["泛指一类可数的东西用复数：bananas；", "bread 不可数，不加 s。"],
-      "typical": ["喜欢的东西都加 s：", "I like bananas and breads."],
+      "right": ["泛指一类可数的东西用复数：cookies；", "milk 不可数，不加 s。"],
+      "typical": ["喜欢的东西都加 s：", "I like cookies and milks."],
       "typical_error": "uncountable-noun-plus-s",
       "ladder": [
-        {"q": "Do you like ____ (apple)?", "a": "apples"},
+        {"q": "Do you like ____ (sandwich)?", "a": "sandwiches"},
         {"q": "I have some ____ (milk) for breakfast.", "a": "milk"},
-        {"q": "My brother likes ____ (strawberry) and ____ (rice).", "a": "strawberries；rice"}
+        {"q": "My brother likes ____ (dumpling) and ____ (rice).", "a": "dumplings；rice"}
       ]
     },
     {
@@ -254,7 +254,7 @@
       "typical": ["“在”就是 in：", "It's in the second floor."],
       "typical_error": "zai-always-in",
       "ladder": [
-        {"q": "补全：Flat 101 is on the ____ floor.（一楼）", "a": "first"},
+        {"q": "补全：Flat 302 is on the ____ floor.（三楼）", "a": "third"},
         {"q": "补全：My grandparents live ____ the third floor.", "a": "on"},
         {"q": "用英语说：我们住在五楼。", "a": "We live on the fifth floor."}
       ]
@@ -268,11 +268,11 @@
       "points": ["EN-S3-LK-01.8", "EN-S3-LS-01.8"],
       "topic": "What is it like 问什么",
       "stem": "动物帖子提纲里有 What does it look like? 和 What is it like?。哪一句该写在 What is it like? 下面？",
-      "options": ["It's huge and has large ears.", "It's kind and playful.", "It likes water and grass."],
+      "options": ["It's small and has a long tail.", "It's gentle and friendly.", "It likes fruit and leaves."],
       "answer": 1,
       "wrong": {"0": "is-like-as-looks-7b", "2": "like-as-verb"},
-      "right": ["What is it like? 问性格、脾气：kind、playful；", "问长相要说 What does it look like? 答 huge、large ears。"],
-      "typical": ["What is it like? 里有 like，就写长相：", "It's huge and has large ears."],
+      "right": ["What is it like? 问性格、脾气：gentle、friendly；", "问长相要说 What does it look like? 答 small、a long tail。"],
+      "typical": ["What is it like? 里有 like，就写长相：", "It's small and has a long tail."],
       "typical_error": "is-like-as-looks-7b",
       "ladder": [
         {"q": "What does it look like? 问的是长相还是性格？", "a": "长相"},
@@ -288,12 +288,12 @@
       "lessons": ["How can rules help us"],
       "points": ["EN-S3-LK-01.14"],
       "topic": "三单主语的 have to",
-      "stem": "“每天早上，Alice 必须先遛狗。”Every morning, Alice ____ the dog first.",
+      "stem": "“每天早上，Mia 必须先遛狗。”Every morning, Mia ____ the dog first.",
       "options": ["have to walk", "has to walks", "must to walk", "has to walk"],
       "answer": 3,
       "wrong": {"0": "has-for-third", "1": "has-to-verb-s-7b", "2": "must-plus-to-7b"},
-      "right": ["主语 Alice 是三单，用 has to；", "to 后面的动词用原形：has to walk。"],
-      "typical": ["Alice 是三单，两个词都变：", "Alice has to walks the dog first."],
+      "right": ["主语 Mia 是三单，用 has to；", "to 后面的动词用原形：has to walk。"],
+      "typical": ["Mia 是三单，两个词都变：", "Mia has to walks the dog first."],
       "typical_error": "has-to-verb-s-7b",
       "ladder": [
         {"q": "We ____ (必须) wear the school uniform.", "a": "have to（或 must）"},
@@ -309,17 +309,17 @@
       "lessons": ["How is exercise good for us"],
       "points": ["EN-S3-LK-01.14"],
       "topic": "说“我们的”：ours",
-      "stem": "—Their team plays well. —Yes, but ____ is strong too!（我们的队）",
+      "stem": "—Whose basketball is this? —It's ____. Ken and I play with it every day.（我们的）",
       "options": ["our", "us", "our's", "ours"],
       "answer": 3,
       "wrong": {"0": "our-without-noun-7b", "1": "us-for-ours-7b", "2": "apostrophe-pronoun-7b"},
-      "right": ["空后面没有名词，用名词性物主代词：", "ours = our team。…but ours is strong too!"],
-      "typical": ["“我们的”就是 our：", "…but our is strong too!"],
+      "right": ["空后面没有名词，用名词性物主代词：", "ours = our basketball。It's ours."],
+      "typical": ["“我们的”就是 our：", "It's our."],
       "typical_error": "our-without-noun-7b",
       "ladder": [
-        {"q": "—Is this your bat? —Yes, it's ____.（我的）", "a": "mine"},
+        {"q": "—Whose jump rope is this? —It's ____.（我的）", "a": "mine"},
         {"q": "Their skateboards are new, but ____ are old.（我们的）", "a": "ours"},
-        {"q": "改错：This app isn't Jenny's. Her's is blue.", "a": "Her's → Hers"}
+        {"q": "改错：This cap isn't Mary's. Her's is blue.", "a": "Her's → Hers"}
       ]
     },
     {
@@ -337,7 +337,7 @@
       "right": ["cookies 是可数名词复数，要用 too many：Tom eats too many cookies.", "too much 用在不可数名词前：too much sugar。"],
       "ladder": [
         {"q": "Don't eat too ____ hamburgers.", "a": "many"},
-        {"q": "Fast food often has too ____ salt.", "a": "much"},
+        {"q": "This soup has too ____ salt.", "a": "much"},
         {"q": "改错：I drink too many juice and eat too much eggs.", "a": "many juice → much juice；much eggs → many eggs"}
       ]
     },
@@ -349,16 +349,16 @@
       "lessons": ["How do we share our lives with others"],
       "points": ["EN-S3-LK-01.13", "EN-S3-LK-01.14"],
       "topic": "people 后面用 are",
-      "stem": "It's rush hour in New York. Look! Many people ____ for the subway now.",
+      "stem": "It's eight in the morning. Look! Many people ____ for the bus now.",
       "options": ["is waiting", "are waiting", "wait", "are wait"],
       "answer": 1,
       "wrong": {"0": "people-singular-7b", "2": "simple-for-progressive", "3": "progressive-no-ing"},
       "right": ["people 是复数，be 动词用 are；", "Look! 和 now 说此刻，用 are waiting。"],
-      "typical": ["people 没有 s，当成一个人：", "Many people is waiting for the subway."],
+      "typical": ["people 没有 s，当成一个人：", "Many people is waiting for the bus."],
       "typical_error": "people-singular-7b",
       "ladder": [
         {"q": "The children ____ (play) in the park now.", "a": "are playing"},
-        {"q": "Look! Some people ____ (eat) hot pot.", "a": "are eating"},
+        {"q": "Look! Some people ____ (fly) kites.", "a": "are flying"},
         {"q": "改错：Look! The people is dancing in the square.", "a": "is → are"}
       ]
     },
@@ -370,11 +370,11 @@
       "lessons": ["How do we feel about the weather"],
       "points": ["EN-S3-LK-01.19", "EN-S3-LC-02.7"],
       "topic": "although 不再配 but",
-      "stem": "爬山时 Helen 发帖写了这句。有人说这句写得对，你同意吗？",
-      "work": ["Although it's foggy, we're still enjoying the climb."],
+      "stem": "在海边 Lily 发帖写了这句。有人说这句写得对，你同意吗？",
+      "work": ["Although it's windy, we're still having fun on the beach."],
       "answer": true,
       "wrong": {"disagree": "although-with-but"},
-      "right": ["although 已经表示“虽然”，后面不能再加 but；", "这句写得对。也可以说：It's foggy, but we're still …"],
+      "right": ["although 已经表示“虽然”，后面不能再加 but；", "这句写得对。也可以说：It's windy, but we're still …"],
       "ladder": [
         {"q": "用 although 连接：It's raining. We're still playing.", "a": "Although it's raining, we're still playing."},
         {"q": "用 but 改写：Although I'm tired, I feel happy.", "a": "I'm tired, but I feel happy."},
@@ -389,16 +389,16 @@
       "lessons": ["What did you learn on that special day"],
       "points": ["EN-S3-LK-01.14", "EN-S3-LS-01.21"],
       "topic": "日记里的过去式",
-      "stem": "填空：Yesterday the farmer ____ (teach) us how to ____ (water) the plants.",
-      "answer": "taught, water",
-      "wrong": {"teached, water": "irregular-verb-plus-ed", "taught, watered": "past-after-to-7b", "teach, water": "past-event-base-verb"},
-      "right": ["yesterday 说过去：teach 是不规则动词，过去式 taught；", "how to 后面用动词原形：to water。"],
-      "typical": ["昨天的事，动词全改成过去式：", "taught us how to watered the plants"],
+      "stem": "填空：Yesterday my grandma ____ (teach) me how to ____ (make) dumplings.",
+      "answer": "taught, make",
+      "wrong": {"teached, make": "irregular-verb-plus-ed", "taught, made": "past-after-to-7b", "teach, make": "past-event-base-verb"},
+      "right": ["yesterday 说过去：teach 是不规则动词，过去式 taught；", "how to 后面用动词原形：to make。"],
+      "typical": ["昨天的事，动词全改成过去式：", "taught me how to made dumplings"],
       "typical_error": "past-after-to-7b",
       "ladder": [
-        {"q": "Last week we ____ (go) to a farm.", "a": "went"},
-        {"q": "We wanted to ____ (pick) some strawberries.", "a": "pick"},
-        {"q": "The farmer ____ (show) us how to ____ (cut) the leaves.", "a": "showed；cut"}
+        {"q": "Last Sunday we ____ (go) to a tea garden.", "a": "went"},
+        {"q": "We wanted to ____ (buy) some tea for Grandpa.", "a": "buy"},
+        {"q": "Our teacher ____ (show) us how to ____ (plant) a tree.", "a": "showed；plant"}
       ]
     },
     {
@@ -409,15 +409,15 @@
       "lessons": ["What can stories teach us"],
       "points": ["EN-S3-LS-01.33", "EN-S3-LS-01.11"],
       "topic": "丑小鸭到底是什么",
-      "stem": "读完 The Ugly Duckling，同学们争论他到底是什么鸟。哪个说法最站得住？",
-      "options": ["A swan. He saw himself in the lake.", "A duck. He swam as well as the ducks.", "A duck. Mother Duck said so."],
+      "stem": "Mike 只读了 The Ugly Duckling 的前一半，就说：“He's a duck.” 读完全文，哪个回应最站得住？",
+      "options": ["No. At the lake, he saw he was a swan.", "Yes. He swam as well as the ducks.", "Yes. Mother Duck said so."],
       "answer": 0,
       "wrong": {"1": "one-similarity-7b", "2": "trust-character-words-7b"},
       "right": ["结尾他在湖水里看见：自己是一只白天鹅；", "会游泳、鸭妈妈的话，都证明不了他是鸭子。"],
       "typical": ["鸭妈妈说 He's still a duck，", "所以他就是鸭子。"],
       "typical_error": "trust-character-words-7b",
       "ladder": [
-        {"q": "What colour was the ugly duckling at first?", "a": "Grey."},
+        {"q": "Who said, “He's still a duck like us!”?", "a": "Mother Duck."},
         {"q": "The other birds thought he was ugly. Were they right?", "a": "No. He was a beautiful swan."},
         {"q": "He swam well. Does that prove he was a duck? Why?", "a": "No. Swans swim well too."}
       ]

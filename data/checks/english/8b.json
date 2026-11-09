@@ -21,7 +21,7 @@
     {"id": "unless-plus-not", "name": "unless 后面又加了 not", "why": "把 unless 记成“除非”，又照着“如果不”加了 not，成了双重否定。", "move": "板书 unless = if … not，问：unless 里已经有“不”了，还要再加 not 吗？换成 if you don't hurry 对照读。"},
     {"id": "yet-as-already", "name": "把 yet 当成“已经”", "why": "词表里 yet 也注了“已经”，就以为它和 already 能随便换。", "move": "先看句子是肯定还是否定、疑问：肯定句用 already，否定句和疑问句用 yet，全班各读一句。"},
     {"id": "already-in-negative", "name": "否定句里也用 already", "why": "already 和现在完成时一起学的，就以为完成时里都放 already，没注意否定句要换成 yet。", "move": "问：给老师看了没有？没有——还没发生的事说 haven't … yet，already 只说已经发生的事。"},
-    {"id": "nondurative-with-duration", "name": "瞬间动词配了一段时间", "why": "汉语“加入两年了”“来了三年了”里的动词都能接时间，就说成 has become、has come。", "move": "问：“成为”会员要多久？一瞬间。要说持续两年，换成能持续的 be：has been a member。"},
+    {"id": "nondurative-with-duration", "name": "瞬间动词配了一段时间", "why": "汉语“加入两年了”“来了三年了”里的动词都能接时间，就说成 has joined、has come。", "move": "问：“加入”乐队要多久？一瞬间。要说持续两年，换成能持续的 be：has been in the band。"},
     {"id": "present-for-duration", "name": "持续到现在的事用了一般现在时", "why": "汉语“是会员两年了”动词不变，觉得现在还在当，就用了 is。", "move": "画时间轴：从两年前连到现在，问：只说现在，还是连着过去？连着过去用 has/have done。"},
     {"id": "opinion-needs-keyword-8b", "name": "没有 think 就当成事实", "why": "只记住了“找 think、believe 等关键词”，以为没有这些词、说得很肯定的句子就是事实。", "move": "问：这句话能查证吗？换个人会不会有不同说法？“最放松”因人而异，就是观点，哪怕没有 think。"},
     {"id": "suffix-ignored-8b", "name": "只认词根，没看后缀 -less", "why": "认出了 pain 是“疼痛”，就以为整个词说的还是“痛”。", "move": "把词拆开写：pain + less，问 -less 是什么意思（without），再合起来说 painless = without pain。"},
@@ -57,7 +57,7 @@
       "ladder": [
         {"q": "I got up early ____ (catch) the first bus.", "a": "to catch"},
         {"q": "填 to 或 for：Tom went to the shop ____ some milk and then went home ____ cook dinner.", "a": "for；to"},
-        {"q": "用不定式说明目的：我存钱是为了买一把吉他。", "a": "I save money to buy a guitar."}
+        {"q": "用不定式说明目的：我存钱是为了买一把吉他。", "a": "I save money to buy a guitar.（或 I'm saving money to …）"}
       ]
     },
     {
@@ -93,7 +93,7 @@
       "wrong": {"disagree": "opinion-needs-keyword-8b"},
       "right": ["事实能查证；观点是看法，可能对也可能不对。", "这句没有 think，但“最放松”因人而异，所以是观点。"],
       "ladder": [
-        {"q": "写 F（事实）或 O（观点）：Amy has collected 50 stamps.", "a": "F"},
+        {"q": "写 F（事实）或 O（观点）：Amy has 50 stamps.", "a": "F"},
         {"q": "写 F 或 O：① Collecting stamps is boring. ② Amy keeps her stamps in a blue box.", "a": "① O ② F"},
         {"q": "不用 think、believe，写一句关于集邮的观点。", "a": "如 Collecting stamps is the best hobby.（是看法即可）"}
       ]
@@ -153,7 +153,7 @@
       "error": "although-with-but",
       "right": ["although 和 but 只能用一个：", "Although Lucy failed the test, she didn't give up."],
       "ladder": [
-        {"q": "用 but 改写：Although it was late, Dad was still working.", "a": "It was late, but Dad was still working."},
+        {"q": "用 but 改写：Although it was cold, Tom didn't wear a coat.", "a": "It was cold, but Tom didn't wear a coat."},
         {"q": "改错：Although Tom was tired, but he finished his homework.", "a": "去掉 but（或去掉 Although）"},
         {"q": "用 although 说一句：虽然这本书很长，我还是一天就读完了。", "a": "Although the book was long, I finished it in a day."}
       ]
@@ -196,7 +196,7 @@
       "typical_error": "idiom-literal-8b",
       "ladder": [
         {"q": "哪个和 feel blue 意思相反：in high spirits / in low spirits？", "a": "in high spirits"},
-        {"q": "Mum asked Lily, “Why the long face?” 妈妈在问什么？", "a": "你为什么不高兴？"},
+        {"q": "Lily had a long face after the test. 她当时心情怎样？", "a": "不高兴（难过）"},
         {"q": "选习语填空（a heavy heart / on top of the world）：She won first prize and felt ____.", "a": "on top of the world"}
       ]
     },
@@ -229,14 +229,14 @@
       "lessons": ["Why do we explore nature"],
       "points": ["EN-S3-LK-01.13", "EN-S3-LK-01.10"],
       "topic": "How 后面接哪个形容词",
-      "stem": "填两个词：—____ ____ is Lake Baikal? —It's about 1,620 metres deep.",
+      "stem": "填两个词：—____ ____ is the river here? —It's about 3 metres deep.",
       "answer": "How deep",
       "wrong": {"How long": "how-long-any-length-8b", "How much": "how-much-for-numbers-8b"},
       "right": ["答语说的是 deep（深），问“多深”就用 How deep；", "How 后面的形容词要和答语里的形容词对上。"],
-      "typical": ["问多少米就用 How long：", "How long is Lake Baikal?"],
+      "typical": ["问多少米就用 How long：", "How long is the river here?"],
       "typical_error": "how-long-any-length-8b",
       "ladder": [
-        {"q": "—____ ____ is the tree? —It's about 20 metres tall.", "a": "How tall"},
+        {"q": "—____ ____ is your grandpa? —He's 70 years old.", "a": "How old"},
         {"q": "—____ ____ is the nearest hospital? —About 3 kilometres away.", "a": "How far"},
         {"q": "—____ ____ will the bus come? —In ten minutes.", "a": "How soon"}
       ]
@@ -310,17 +310,17 @@
       "lessons": ["How different are our cultures"],
       "points": ["EN-S3-LK-01.8", "EN-S3-LK-01.9"],
       "topic": "-ing 还是 -ed 形容词",
-      "stem": "At a French friend's home, Zhou Lin got a kiss on the cheek. It was ____ to her, and she felt a little ____.",
+      "stem": "In class, Ben called his teacher “Mum” by mistake. It was ____ to everyone, and Ben felt a little ____.",
       "options": ["surprising; embarrassed", "surprised; embarrassed", "surprising; embarrassing", "surprised; embarrassing"],
       "answer": 0,
       "wrong": {"1": "ed-for-thing", "2": "ing-for-feeling", "3": "ing-ed-swapped"},
-      "right": ["“这件事让人惊讶”用 -ing：It was surprising；", "“她感到尴尬”用 -ed：she felt a little embarrassed。"],
-      "typical": ["“尴尬的”就是 embarrassing，说人说事都一样：", "she felt a little embarrassing."],
+      "right": ["“这件事让人惊讶”用 -ing：It was surprising；", "“Ben 感到尴尬”用 -ed：Ben felt a little embarrassed。"],
+      "typical": ["“尴尬的”就是 embarrassing，说人说事都一样：", "Ben felt a little embarrassing."],
       "typical_error": "ing-for-feeling",
       "ladder": [
         {"q": "The story was so ____ (bore) that I fell asleep.", "a": "boring"},
         {"q": "We were ____ (excite) when we heard the news.", "a": "excited"},
-        {"q": "The rules were ____ (confuse), so all the new students felt ____ (confuse).", "a": "confusing；confused"}
+        {"q": "The maths problem was so ____ (confuse) that I felt ____ (confuse).", "a": "confusing；confused"}
       ]
     },
     {
@@ -350,14 +350,14 @@
       "lessons": ["How do we show respect to other cultures"],
       "points": ["EN-S3-LK-01.9", "EN-S3-CA-02.3"],
       "topic": "否定前缀 un- 还是 im-",
-      "stem": "加前缀写出反义词：In France, it's ____ (polite) to ask a new friend how old they are.",
+      "stem": "加前缀写出反义词：It's ____ (polite) to look at your phone while a friend is talking to you.",
       "answer": "impolite",
       "wrong": {"unpolite": "un-for-all-negatives-8b", "inpolite": "in-before-p-8b"},
       "right": ["polite 的反义词是 impolite；", "p 开头的词常用 im-：impossible、improper、impatient。"],
       "typical": ["反义词都加 un-：", "unpolite"],
       "typical_error": "un-for-all-negatives-8b",
       "ladder": [
-        {"q": "写反义词：possible → ____", "a": "impossible"},
+        {"q": "It's ____ (possible) to read 100 books in one week.", "a": "impossible"},
         {"q": "Jeans are too ____ (formal) for a wedding.", "a": "informal"},
         {"q": "My brother never waits for anyone. He is so ____ (patient).", "a": "impatient"}
       ]
@@ -391,7 +391,7 @@
       "lessons": ["What can we learn from great books"],
       "points": ["EN-S3-LK-01.16", "EN-S3-LS-01.29"],
       "topic": "故事山：找出高潮",
-      "stem": "Lily 的故事按顺序有三件事。画故事山（plot）时，哪件事是高潮（climax）？",
+      "stem": "Lily 的故事按顺序有三件事。画故事山（story mountain）时，哪件事是高潮（climax）？",
       "options": ["Lily's cat runs away one rainy night.", "Lily finds her cat under a car.", "Lily and her cat sleep safely at home."],
       "answer": 1,
       "wrong": {"0": "climax-as-surprise-8b", "2": "climax-as-ending-8b"},
@@ -412,16 +412,16 @@
       "lessons": ["What can we do to help"],
       "points": ["EN-S3-LK-01.14", "EN-S3-LK-01.15"],
       "topic": "瞬间动词配一段时间",
-      "stem": "“林慧加入学校读书社已经两年了。”Lin Hui ____ a member of the school reading club for two years.",
-      "options": ["is", "has been", "has become"],
+      "stem": "“林慧加入学校乐队已经两年了。”Lin Hui ____ the school band for two years.",
+      "options": ["is in", "has been in", "has joined"],
       "answer": 1,
       "wrong": {"0": "present-for-duration", "2": "nondurative-with-duration"},
-      "right": ["“加入”是一下子的动作，become 不能和 for two years 连用；", "说“是会员两年了”，用能持续的 be：has been a member。"],
-      "typical": ["“加入两年了”就是 has become：", "Lin Hui has become a member for two years."],
+      "right": ["“加入”是一下子的动作，join 不能和 for two years 连用；", "说“在乐队两年了”，用能持续的 be in：has been in the band。"],
+      "typical": ["“加入两年了”就是 has joined：", "Lin Hui has joined the school band for two years."],
       "typical_error": "nondurative-with-duration",
       "ladder": [
         {"q": "Tom bought this camera two years ago. → Tom has ____ this camera for two years.", "a": "had"},
-        {"q": "改错：Mr Li has come to our school for three years.", "a": "has come to → has been at"},
+        {"q": "改错：Mr Li has come to our school for three years.", "a": "has come to → has been at（或 has been in / has worked at）"},
         {"q": "Uncle Wang left Beijing three years ago. → Uncle Wang has ____ ____ from Beijing for three years.", "a": "been away"}
       ]
     },

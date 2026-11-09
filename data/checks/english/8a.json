@@ -8,8 +8,8 @@
     {"id": "than-with-base-form", "name": "有 than 却用了原级", "why": "汉语“比”字句里形容词不变：她比姐姐外向。", "move": "圈出 than，问：两个人在比较，后面的形容词或副词要不要变成比较级？"},
     {"id": "long-adjective-er", "name": "多音节形容词也加 -er", "why": "把短词加 -er 的规则用到了长词上。", "move": "拍手数音节：out-go-ing 三个音节，要在前面加 more。"},
     {"id": "more-plus-er", "name": "more 和 -er 一起用", "why": "记住了 more 表示“更”，又习惯性加了 -er。", "move": "规则：比较级只变一次，要么加 -er，要么前面加 more。"},
-    {"id": "most-with-short-adjective", "name": "单音节词也用 most", "why": "记住了 the most popular，就以为最高级都加 most。", "move": "数音节：cheap 只有一个音节，直接加 -est。"},
-    {"id": "superlative-without-the", "name": "最高级前漏了 the", "why": "汉语没有冠词，“城里最便宜的影院”前面不用加词。", "move": "规则：最高级修饰名词时前面加 the；圈出 in our town，提示这是在一个范围里比。"},
+    {"id": "most-with-short-adjective", "name": "单音节词也用 most", "why": "记住了 the most popular，就以为最高级都加 most。", "move": "数音节：tall 只有一个音节，直接加 -est。"},
+    {"id": "superlative-without-the", "name": "最高级前漏了 the", "why": "汉语没有冠词，“城里最高的树”前面不用加词。", "move": "规则：最高级修饰名词时前面加 the；圈出 in our town，提示这是在一个范围里比。"},
     {"id": "most-plus-est", "name": "most 和 -est 一起用", "why": "记住了 most 表示“最”，又习惯性加了 -est。", "move": "规则：最高级只变一次，要么加 -est，要么前面加 most。"},
     {"id": "enjoy-to-do", "name": "enjoy 后接了 to do", "why": "受 want to do、plan to do 影响，以为都接 to do。", "move": "列两栏：plan、want、hope、expect + to do；enjoy + doing，让学生把 enjoy 放进对的一栏。"},
     {"id": "plan-doing", "name": "plan 后接了 doing", "why": "受 enjoy doing、like watching 影响，以为都接 -ing。", "move": "用同一张两栏表，让学生把 plan 放进对的一栏，再各造一句。"},
@@ -24,15 +24,15 @@
     {"id": "will-in-if-clause", "name": "if 从句也用了 will", "why": "条件说的是将来的事，就在 if 句里也用 will。", "move": "讲“主将从现”：划出 if 句和主句，分别标出时态再检查。"},
     {"id": "so-before-noun-8a", "name": "名词短语前也用 so", "why": "两个词都译成“这么、如此”，以为可以随便换。", "move": "看空后面：只有形容词（funny）用 so；有 a + 形容词 + 名词（a great evening）用 such。"},
     {"id": "such-before-adjective-8a", "name": "单个形容词前也用 such", "why": "记住了 such a good experience，以为“这么”都用 such。", "move": "让学生圈出空后面的词，问：后面有名词吗？没有名词就用 so。"},
-    {"id": "could-i-for-request-8a", "name": "请别人做事说成 Could I", "why": "Can I…? 用得多，没分清“我可以……吗”和“你能……吗”。", "move": "追问：灯由谁来开？要别人做用 Could you…?，问自己能不能做用 Could I…?"},
+    {"id": "could-i-for-request-8a", "name": "请别人做事说成 Could I", "why": "Can I…? 用得多，没分清“我可以……吗”和“你能……吗”。", "move": "追问：窗由谁来关？要别人做用 Could you…?，问自己能不能做用 Could I…?"},
     {"id": "imperative-as-request-8a", "name": "请人帮忙直接用祈使句", "why": "汉语“开一下灯”靠语气显得客气，以为英语祈使句也一样。", "move": "两种说法各读一遍，问：同学听了哪句更愿意帮忙？求人用 Could you…, please?"},
-    {"id": "could-plus-past-8a", "name": "could 后的动词用了过去式", "why": "知道 could 是 can 的过去式，以为后面的动词也要变过去式。", "move": "规则：can、could 后都用动词原形；把 turned 划掉换成 turn，全班读一遍。"},
+    {"id": "could-plus-past-8a", "name": "could 后的动词用了过去式", "why": "知道 could 是 can 的过去式，以为后面的动词也要变过去式。", "move": "规则：can、could 后都用动词原形；把 closed 划掉换成 close，全班读一遍。"},
     {"id": "pronoun-after-particle-8a", "name": "代词宾语放到 up/out 后面", "why": "记住了 take out the rubbish 这个整体，把名词换成 it 时也照原样放在最后。", "move": "板书 take out the rubbish = take the rubbish out = take it out，划掉 take out it，问：代词只能放在哪？"},
     {"id": "object-pronoun-drop-8a", "name": "照汉语漏掉了宾语 it", "why": "汉语说“我这就拿出去”，不用说出“它”。", "move": "追问：take out 什么？把 the rubbish 换成 it，再问 it 该放在哪。"},
     {"id": "less-as-more-8a", "name": "把 less…than 当成“更”", "why": "比较级都译成“更”，看到形容词加 than 就忽略了 less。", "move": "在黑板上画一条“外向”的线，把 Mia 和姐姐标上去；再换成 not as outgoing as 说一遍。"},
     {"id": "adjective-as-noun-8a", "name": "名词的位置直接用了形容词", "why": "汉语“重要”“重要性”常混用，没注意 the ____ of 中间要填名词。", "move": "圈出 the 和 of，问：夹在中间的是什么词性？再说出 important 的名词形式。"},
     {"id": "ness-for-all-8a", "name": "形容词变名词都加 -ness", "why": "记住了 kind → kindness，就以为都加 -ness。", "move": "列 -ance、-(t)ion、-ness、-ity 四栏，让学生把 important、connect、kind、popular 的名词放进去读一读。"},
-    {"id": "measure-noun-no-s-8a", "name": "量词短语里瓶、杯没变复数", "why": "汉语“三瓶”的“瓶”不变，就照搬成 three bottle。", "move": "问：bottle 能数吗？三个瓶子怎么写？复数加在量词上，milk 不动。"},
+    {"id": "measure-noun-no-s-8a", "name": "量词短语里瓶、杯没变复数", "why": "汉语“三瓶”的“瓶”不变，就照搬成 three bottle。", "move": "问：bottle 能数吗？三个瓶子怎么写？复数加在量词上，water、milk 不动。"},
     {"id": "hardly-as-hard-8a", "name": "把 hardly 当成“努力地”", "why": "hard 加 -ly 像是副词，就以为 hardly 是“努力地”。", "move": "对比两句：He works hard.（努力地干）He hardly works.（几乎不干），问意思差在哪。"},
     {"id": "hardly-not-negative-8a", "name": "没看出 hardly 表示否定", "why": "句子里没有 not，又看到 ever，就当成“一直”。", "move": "把 hardly ever 换成 almost never 读一遍，问：never 是“总是”还是“从不”？"},
     {"id": "less-with-countable-8a", "name": "可数名词复数前用了 less", "why": "汉语“更少”只有一个说法，以为 less 什么名词都能配。", "move": "问：cars 能数吗？能数的用 fewer（对应 many），不能数的用 less（对应 much）。"},
@@ -92,17 +92,17 @@
       "lessons": ["What can plants and animals do"],
       "points": ["EN-S3-LK-01.14"],
       "topic": "形容词的最高级",
-      "stem": "This is ____ movie theater in our town.",
-      "options": ["the cheapest", "the most cheap", "cheapest", "the most cheapest"],
+      "stem": "That is ____ tree in our town.",
+      "options": ["the tallest", "the most tall", "tallest", "the most tallest"],
       "answer": 0,
       "wrong": {"1": "most-with-short-adjective", "2": "superlative-without-the", "3": "most-plus-est"},
-      "right": ["cheap 是单音节词，最高级加 -est；", "最高级修饰名词，前面要加 the：the cheapest。"],
-      "typical": ["最高级就是在前面加 the most：", "the most cheap movie theater"],
+      "right": ["tall 是单音节词，最高级加 -est；", "最高级修饰名词，前面要加 the：the tallest。"],
+      "typical": ["最高级就是在前面加 the most：", "the most tall tree"],
       "typical_error": "most-with-short-adjective",
       "ladder": [
         {"q": "This is ____ (big) shop in our town.", "a": "the biggest"},
-        {"q": "Which is ____ (good) movie theater near here?", "a": "the best"},
-        {"q": "Of all the students, Mike is ____ (funny).", "a": "the funniest"}
+        {"q": "Which is ____ (good) place to see birds near here?", "a": "the best"},
+        {"q": "Mike is ____ (funny) student in our class.", "a": "the funniest"}
       ]
     },
     {
@@ -155,12 +155,12 @@
       "lessons": ["What are your predictions about the future"],
       "points": ["EN-S3-LK-01.14"],
       "topic": "预测将来：会有……",
-      "stem": "“将来会有更多的机器人。”哪句对？",
-      "options": ["There will be more robots.", "There will have more robots.", "There will are more robots."],
+      "stem": "“下周会有一场音乐会。”哪句对？",
+      "options": ["There will be a concert next week.", "There will have a concert next week.", "There will is a concert next week."],
       "answer": 0,
       "wrong": {"1": "there-will-have", "2": "will-is-are"},
-      "right": ["there be 的将来时是 there will be，", "will 后用原形 be：There will be more robots."],
-      "typical": ["“会有”就是 will have：", "There will have more robots."],
+      "right": ["there be 的将来时是 there will be，", "will 后用原形 be：There will be a concert next week."],
+      "typical": ["“会有”就是 will have：", "There will have a concert next week."],
       "typical_error": "there-will-have",
       "ladder": [
         {"q": "There ____ ____ a test tomorrow.", "a": "will be"},
@@ -176,17 +176,17 @@
       "lessons": ["How do we make food"],
       "points": ["EN-S3-LK-01.14"],
       "topic": "how many 与 how much",
-      "stem": "____ bananas and ____ milk do we need?",
-      "options": ["How much; how much", "How many; how many", "How many; how much"],
+      "stem": "Mum, ____ bananas should I buy? And ____ milk?",
+      "options": ["how much; how much", "how many; how many", "how many; how much"],
       "answer": 2,
       "wrong": {"0": "how-much-with-countable", "1": "how-many-with-uncountable"},
       "right": ["bananas 可数，用 how many；", "milk 不可数，用 how much。"],
-      "typical": ["牛奶也能一杯一杯地数：", "How many bananas and how many milk…?"],
+      "typical": ["牛奶也能一杯一杯地数：", "how many bananas…? And how many milk?"],
       "typical_error": "how-many-with-uncountable",
       "ladder": [
-        {"q": "____ yogurt do we need?", "a": "How much"},
+        {"q": "____ yogurt is there in the fridge?", "a": "How much"},
         {"q": "____ apples do you want?", "a": "How many"},
-        {"q": "____ cups of milk do we need?", "a": "How many（cups 可数）"}
+        {"q": "____ cups of milk did you drink today?", "a": "How many（cups 可数）"}
       ]
     },
     {
@@ -198,7 +198,7 @@
       "points": ["EN-S3-LK-01.20"],
       "topic": "接受朋友的邀请",
       "stem": "朋友邀请小明，小明这样回答。你同意吗？",
-      "work": ["—Can you come to my birthday party this Friday?", "—Sure, I'd love."],
+      "work": ["—Can you come to the school concert with me tonight?", "—Sure, I'd love."],
       "answer": false,
       "wrong": {"agree": "id-love-no-to"},
       "right": ["I'd love to. 是 I'd love to come. 的省略，", "to 不能省：Sure, I'd love to."],
@@ -235,12 +235,12 @@
       "lessons": ["What can we learn from holiday experiences"],
       "points": ["EN-S3-LK-01.13", "EN-S3-LC-01.4"],
       "topic": "so 与 such 怎么选",
-      "stem": "The film was ____ funny that we laughed all the way home. It was ____ a great evening!",
-      "options": ["so; so", "so; such", "such; such"],
+      "stem": "It was ____ a long trip that we slept on the bus. But the beach was ____ beautiful!",
+      "options": ["so; so", "such; so", "such; such"],
       "answer": 1,
       "wrong": {"0": "so-before-noun-8a", "2": "such-before-adjective-8a"},
-      "right": ["funny 是形容词，前面用 so：so funny that…", "a great evening 是名词短语，前面用 such：such a great evening。"],
-      "typical": ["两个“这么”都用 so：", "It was so a great evening!"],
+      "right": ["a long trip 是名词短语，前面用 such：such a long trip that…", "beautiful 是形容词，前面用 so：so beautiful。"],
+      "typical": ["两个“这么”都用 so：", "It was so a long trip that we slept on the bus."],
       "typical_error": "so-before-noun-8a",
       "ladder": [
         {"q": "填 so 或 such：The soup is ____ hot that I can't eat it.", "a": "so"},
@@ -256,17 +256,17 @@
       "lessons": ["What can you do for your home"],
       "points": ["EN-S3-LK-01.20", "EN-S3-LK-01.21"],
       "topic": "有礼貌地请别人帮忙",
-      "stem": "你两手抱着书，想请同学帮你把灯打开。哪句说得最得体？",
-      "options": ["Could I turn on the light, please?", "Turn on the light.", "Could you please turned on the light?", "Could you turn on the light, please?"],
+      "stem": "你感冒了躺在床上，想请妈妈帮你关上窗户。哪句说得最得体？",
+      "options": ["Could I close the window, please?", "Close the window.", "Could you please closed the window?", "Could you close the window, please?"],
       "answer": 3,
       "wrong": {"0": "could-i-for-request-8a", "1": "imperative-as-request-8a", "2": "could-plus-past-8a"},
-      "right": ["请别人帮你做事，用 Could you + 动词原形…?", "Could you turn on the light, please?"],
-      "typical": ["想让灯亮，就问“能开灯吗”：", "Could I turn on the light, please?"],
+      "right": ["请别人帮你做事，用 Could you + 动词原形…?", "Could you close the window, please?"],
+      "typical": ["想让窗关上，就问“能关窗吗”：", "Could I close the window, please?"],
       "typical_error": "could-i-for-request-8a",
       "ladder": [
-        {"q": "填 I 或 you：Could ____ please sweep the floor?（请妈妈扫地）", "a": "you"},
-        {"q": "填 I 或 you：Can ____ use your phone?（问朋友能不能借手机用）", "a": "I"},
-        {"q": "想请哥哥擦窗户，改写这句：Could I clean the windows?", "a": "Could you clean the windows, please?"}
+        {"q": "填 I 或 you：Could ____ please feed the cat?（请姐姐喂猫）", "a": "you"},
+        {"q": "填 I 或 you：Can ____ sit here?（问同学自己能不能坐这儿）", "a": "I"},
+        {"q": "想请哥哥帮你修自行车，改写这句：Could I fix the bike?", "a": "Could you fix the bike, please?"}
       ]
     },
     {
@@ -287,7 +287,7 @@
       "ladder": [
         {"q": "用 it 改写：Please clean up the kitchen. → Please ____.", "a": "clean it up"},
         {"q": "用 them 改写：Can you hang up the photos? → Can you ____?", "a": "hang them up"},
-        {"q": "—My books are all over the desk. —OK, I'll ____ (pack up) now.", "a": "pack them up"}
+        {"q": "—Your books are all over the floor. —Sorry, I'll ____ (pick up) now.", "a": "pick them up"}
       ]
     },
     {
@@ -317,12 +317,12 @@
       "lessons": ["How are plants and animals connected with us"],
       "points": ["EN-S3-LK-01.9", "EN-S3-LK-01.8"],
       "topic": "加后缀把词变成名词",
-      "stem": "用 important 的名词形式填空：Bees show us the ____ of small animals.",
+      "stem": "用 important 的名词形式填空：Our teacher told us about the ____ of sleep.",
       "options": ["importance", "important", "importantness"],
       "answer": 0,
       "wrong": {"1": "adjective-as-noun-8a", "2": "ness-for-all-8a"},
       "right": ["the ____ of 中间要填名词；", "important 的名词是 importance（-ant 变 -ance）。"],
-      "typical": ["形容词变名词就加 -ness：", "the importantness of small animals"],
+      "typical": ["形容词变名词就加 -ness：", "the importantness of sleep"],
       "typical_error": "ness-for-all-8a",
       "ladder": [
         {"q": "写出名词：dark → ____", "a": "darkness"},
@@ -338,16 +338,16 @@
       "lessons": ["What does cooking give us"],
       "points": ["EN-S3-LC-01.4", "EN-S3-LK-01.8"],
       "topic": "量词短语的复数",
-      "stem": "用英语写在纸上：三瓶牛奶",
-      "answer": "three bottles of milk",
-      "wrong": {"three bottle of milk": "measure-noun-no-s-8a", "three bottles of milks": "uncountable-noun-plus-s"},
-      "right": ["milk 不可数，复数加在量词 bottle 上：", "three bottles of milk"],
-      "typical": ["汉语“三瓶”的“瓶”不变，英语照搬：", "three bottle of milk"],
+      "stem": "用英语写在纸上：四瓶水",
+      "answer": "four bottles of water",
+      "wrong": {"four bottle of water": "measure-noun-no-s-8a", "four bottles of waters": "uncountable-noun-plus-s"},
+      "right": ["water 不可数，复数加在量词 bottle 上：", "four bottles of water"],
+      "typical": ["汉语“四瓶”的“瓶”不变，英语照搬：", "four bottle of water"],
       "typical_error": "measure-noun-no-s-8a",
       "ladder": [
-        {"q": "用英语写：两碗米饭", "a": "two bowls of rice"},
-        {"q": "用英语写：五片面包", "a": "five slices of bread"},
-        {"q": "We need ____（三袋面粉）and ____（两勺糖）.", "a": "three bags of flour；two spoons of sugar"}
+        {"q": "用英语写：两碗汤", "a": "two bowls of soup"},
+        {"q": "用英语写：三杯咖啡", "a": "three cups of coffee"},
+        {"q": "We need ____（两袋米）and ____（三勺盐）.", "a": "two bags of rice；three spoons of salt"}
       ]
     },
     {
@@ -389,7 +389,7 @@
       "ladder": [
         {"q": "填 fewer 或 less：I want to eat ____ sugar.", "a": "less"},
         {"q": "填 fewer 或 less：There are ____ students in Class 2 than in Class 1.", "a": "fewer"},
-        {"q": "We should drink ____ sugary drinks and eat ____ fast food.", "a": "fewer；less"}
+        {"q": "We should drink ____ sweet drinks and eat ____ fast food.", "a": "fewer；less"}
       ]
     },
     {

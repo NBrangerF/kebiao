@@ -38,9 +38,10 @@
     {"id": "his-for-him-5b", "name": "把 him 说成 his", "why": "his、him 都是 hi 开头，只差最后一个字母，就记混了。", "move": "问：his 后面通常跟着东西（his dog）；with 后面只是这个人，用哪个？"},
     {"id": "be-q-do-answer-5b", "name": "用 do 回答 be 动词问句", "why": "Do you…? — Yes, I do. 说惯了，见到 you 的问句就答 do。", "move": "先圈出问句开头的词，用它回答：Are you…? — Yes, I am. Do you…? — Yes, I do."},
     {"id": "ing-no-double-5b", "name": "该双写的末尾字母没双写", "why": "只记住“直接加 -ing”，不知道 run、swim 这样的短词要先双写末尾字母。", "move": "圈出 run、swim、sit 的“辅音 + 一个元音 + 辅音”，先双写最后一个字母再加 -ing。"},
-    {"id": "like-tiger-actor-5b", "name": "把 like 后的动物当成做动作的", "why": "没看懂 like a tiger 是“像老虎一样”，就以为在跑的是老虎。", "move": "问：I'm running 里谁在跑？like a tiger 只是说他跑得像什么。"},
+    {"id": "like-tiger-actor-5b", "name": "把 like 后的动物当成做动作的", "why": "没看懂 like a rabbit 是“像兔子一样”，就以为在做动作的是那只动物。", "move": "问：I'm jumping 里谁在跳？like a rabbit 只是说跳得像什么。"},
+    {"id": "like-as-verb-5b", "name": "把“像”的 like 当成“喜欢”", "why": "like 最先学的是“喜欢”，没认出跟在动作后面的 like a rabbit 是“像兔子一样”。", "move": "把 like 换成“喜欢”读一遍：“我在跳喜欢兔子”通不通？不通，这里的 like 就是“像”。"},
     {"id": "wh-h-drop-5b", "name": "wh 漏写了 h", "why": "when 里的 h 不发音，只听到 w 的音，就写成 wen。", "move": "把 what、where、when、whose 排成一列，找共同的开头 wh：“什么时候”也是这一家。"},
-    {"id": "quiet-for-quietly-5b", "name": "动作后用了 quiet", "why": "汉语“安静”“安静地”差不多，quiet 先学过，就直接放在 talk 后面。", "move": "问：说的是“人怎样”还是“做得怎样”？说动作怎样用 quietly：talk quietly，work quietly。"},
+    {"id": "imperative-ing-5b", "name": "提醒别人时动词加了 -ing", "why": "刚学了 eating、reading 这些“正在做”的说法，又见过 No eating! 这样的牌子，就以为提醒别人也要用 -ing。", "move": "对比：Talk quietly.（请你这样做）/ He is talking quietly.（他正在这样做）。提醒别人做什么，用动词原形开头。"},
     {"id": "ly-after-be-5b", "name": "be 后面也用了 -ly", "why": "刚学会 quietly，觉得加了 -ly 才是“安静”，见到“安静”就用。", "move": "对比 Be quiet!（人要安静）和 Talk quietly.（说话的样子），问：前面是 be 还是一个动作？"},
     {"id": "right-as-correct-5b", "name": "只知道 right 是“正确”", "why": "right 先学的是“对的”，没想到它还有“右边”的意思。", "move": "让学生举起右手说 right hand，再读 Keep to the right.，问：保持正确，还是靠右？"},
     {"id": "keep-right-as-turn-5b", "name": "把靠右走当成向右转", "why": "只抓住了 right（右），没看懂 keep 是“一直保持”。", "move": "请两排学生在过道里走一走：靠右走是一直待在右边，不是拐弯。"}
@@ -54,17 +55,17 @@
       "lessons": ["My day", "Part A"],
       "points": ["EN-S2-LS-01.12", "EN-S2-LC-01.3"],
       "topic": "When 问句怎么答",
-      "stem": "— When do you usually eat dinner? — ____",
-      "options": ["At home with my family.", "Yes, I usually eat dinner.", "Usually at 7 o'clock."],
+      "stem": "— When do you usually eat lunch? — ____",
+      "options": ["At school with my friends.", "Yes, I usually eat lunch.", "Usually at 12 o'clock."],
       "answer": 2,
       "wrong": {"0": "wh-word-mixup", "1": "wh-yes-no"},
-      "right": ["When 问“什么时候”，要答出时间：", "Usually at 7 o'clock.（钟点前用 at）"],
-      "typical": ["听到 eat dinner 就答在哪儿吃：", "At home with my family."],
+      "right": ["When 问“什么时候”，要答出时间：", "Usually at 12 o'clock.（钟点前用 at）"],
+      "typical": ["听到 eat lunch 就答在哪儿吃：", "At school with my friends."],
       "typical_error": "wh-word-mixup",
       "ladder": [
-        {"q": "— When do you get up? — ____（6:30）", "a": "At 6:30.（I get up at 6:30.）"},
-        {"q": "给答句提问：I go to bed at 9:30.", "a": "When do you go to bed?"},
-        {"q": "用英语问 Pedro：你们在西班牙几点吃午饭？", "a": "When do you eat lunch in Spain?"}
+        {"q": "— When do you play sports? — ____（4:30）", "a": "At 4:30.（或 I play sports at 4:30.）"},
+        {"q": "给答句提问：I eat breakfast at 7:10.", "a": "When do you eat breakfast?"},
+        {"q": "用英语问妈妈：你通常几点吃晚饭？", "a": "When do you usually eat dinner?（不说 usually 也对）"}
       ]
     },
     {
@@ -85,7 +86,7 @@
       "ladder": [
         {"q": "补全：I go to bed ____ 9:00.", "a": "at"},
         {"q": "补全：I do my homework ____ the evening.", "a": "in"},
-        {"q": "用英语回答：When do you get up?（6:30）", "a": "I get up at 6:30."}
+        {"q": "用英语回答：When do you get up?（6:30）", "a": "I get up at 6:30.（或 At 6:30.）"}
       ]
     },
     {
@@ -118,14 +119,14 @@
       "points": ["EN-S2-LS-01.12", "EN-S2-LK-01.9"],
       "topic": "说说周末常做的事",
       "stem": "— What do you do on the weekend? — ____",
-      "options": ["I often play ping-pong.", "Yes, I often play ping-pong.", "I'm often play ping-pong."],
+      "options": ["I often play football.", "Yes, I often play football.", "I'm often play football."],
       "answer": 0,
       "wrong": {"1": "wh-yes-no", "2": "be-plus-verb"},
-      "right": ["What 问做什么，不用 Yes / No 回答；", "I often + 动词原形：I often play ping-pong."],
-      "typical": ["“我经常是打乒乓球”：", "I'm often play ping-pong."],
+      "right": ["What 问做什么，不用 Yes / No 回答；", "I often + 动词原形：I often play football."],
+      "typical": ["“我经常是踢足球”：", "I'm often play football."],
       "typical_error": "be-plus-verb",
       "ladder": [
-        {"q": "补全：I ____ go shopping with my mum.（经常）", "a": "often"},
+        {"q": "补全：I ____ play sports with my dad.（经常）", "a": "often"},
         {"q": "改错：I'm usually wash my clothes on Sundays.", "a": "I usually wash my clothes on Sundays."},
         {"q": "用英语回答：What do you do on the weekend?（说两件事）", "a": "如：I often watch TV. Sometimes I cook."}
       ]
@@ -138,8 +139,8 @@
       "lessons": ["My day", "Part B"],
       "points": ["EN-S2-LK-01.7", "EN-S2-LS-01.14"],
       "topic": "go shopping 的说法",
-      "stem": "“周末我常和妈妈去购物。”哪句对？",
-      "options": ["I often go to shopping with my mum.", "I often go shop with my mum.", "I often go shopping with my mum."],
+      "stem": "“我常和姐姐去购物。”哪句对？",
+      "options": ["I often go to shopping with my sister.", "I often go shop with my sister.", "I often go shopping with my sister."],
       "answer": 2,
       "wrong": {"0": "go-to-activity-5b", "1": "serial-verb"},
       "right": ["“去购物”是固定说法 go shopping，", "go 后面直接跟 -ing 形式，不加 to。"],
@@ -165,9 +166,9 @@
       "wrong": {"agree": "friday-name-as-day-5b"},
       "right": ["信里说 His name is Friday.——Friday 是朋友的名字。", "名字和星期首字母都大写，要看上下文。"],
       "ladder": [
-        {"q": "Friday likes swimming. 这里的 Friday 是谁？", "a": "Robinson 的朋友"},
+        {"q": "Friday likes swimming. 这里的 Friday 是一个人还是一天？", "a": "一个人（Robinson 的朋友）"},
         {"q": "I play with Friday on Fridays. 哪个是人，哪个是日子？", "a": "with Friday 是人，on Fridays 是日子"},
-        {"q": "My dog's name is Sunday. I walk Sunday every day. 第二个 Sunday 指什么？", "a": "那只狗"}
+        {"q": "My dog's name is Sunday. I play with Sunday every day. 第二个 Sunday 指什么？", "a": "那只狗"}
       ]
     },
     {
@@ -186,7 +187,7 @@
       "typical": ["照“最喜欢冬天”的顺序：", "I best like winter."],
       "typical_error": "best-chinese-order-5b",
       "ladder": [
-        {"q": "连词成句：best / I / spring / like", "a": "I like spring best."},
+        {"q": "连词成句：best / we / summer / like", "a": "We like summer best."},
         {"q": "改错：I like best summer.", "a": "I like summer best."},
         {"q": "用英语问同学最喜欢哪个季节，再写出你的回答。", "a": "Which season do you like best? I like … best."}
       ]
@@ -199,17 +200,17 @@
       "lessons": ["My favourite season", "Part A"],
       "points": ["EN-S2-LK-01.11", "EN-S2-TH-01.4"],
       "topic": "can 和季节前的 in",
-      "stem": "“夏天我每天都能去游泳。”哪句对？",
-      "options": ["I can going swimming every day in summer.", "I can go swimming every day in summer.", "I can go swimming every day on summer."],
+      "stem": "“夏天我能和朋友们去游泳。”哪句对？",
+      "options": ["I can swimming with my friends in summer.", "I can go swimming with my friends in summer.", "I can go swimming with my friends on summer."],
       "answer": 1,
       "wrong": {"0": "modal-plus-ing", "2": "season-on-5b"},
       "right": ["can 后面用动词原形：can go swimming；", "季节前用 in：in summer。"],
-      "typical": ["说时间都用 on：", "every day on summer"],
+      "typical": ["说时间都用 on：", "with my friends on summer"],
       "typical_error": "season-on-5b",
       "ladder": [
         {"q": "补全：It's cold ____ winter.", "a": "in"},
-        {"q": "补全：I can ____ (make) a snowman in winter.", "a": "make"},
-        {"q": "用英语说：春天我能放风筝。", "a": "I can fly kites in spring."}
+        {"q": "补全：I can ____ (swim) in summer.", "a": "swim"},
+        {"q": "用英语说：春天我能放风筝。", "a": "I can fly kites in spring.（或 fly a kite）"}
       ]
     },
     {
@@ -220,14 +221,14 @@
       "lessons": ["My favourite season", "Part A"],
       "points": ["EN-S2-LK-01.1", "EN-S2-ST-01.9"],
       "topic": "找出含 br 的词",
-      "stem": "brown, library, grapes, umbrella, brother 里有几个词含 br？",
+      "stem": "bread, library, grass, umbrella, breakfast 里有几个词含 br？",
       "answer": "4",
       "wrong": {"2": "blend-only-at-start-5b"},
-      "right": ["brown、brother 的 br 在词首；", "library、umbrella 的 br 在词中，也算：共 4 个。"],
-      "typical": ["只看开头：brown、brother", "一共 2 个"],
+      "right": ["bread、breakfast 的 br 在词首；", "library、umbrella 的 br 在词中，也算：共 4 个。"],
+      "typical": ["只看开头：bread、breakfast", "一共 2 个"],
       "typical_error": "blend-only-at-start-5b",
       "ladder": [
-        {"q": "圈出含 gr 的词：green, girl, grow, angry", "a": "green, grow, angry"},
+        {"q": "圈出含 gr 的词：green, girl, grow, hungry", "a": "green, grow, hungry"},
         {"q": "补全单词：um____ella（雨伞）　li____ary（图书馆）", "a": "br，br"},
         {"q": "写出两个 br 在词中间的单词。", "a": "如：library, umbrella"}
       ]
@@ -291,8 +292,8 @@
       "typical_error": "fall-only-drop-5b",
       "ladder": [
         {"q": "I like fall best. 这里的 fall 是什么意思？", "a": "秋天"},
-        {"q": "Look! The leaves fall from the tree. 这里的 fall 呢？", "a": "落下"},
-        {"q": "用 fall 的两个意思各说一句英语。", "a": "如：Snow falls in winter. / I love fall."}
+        {"q": "In autumn, the leaves fall from the trees. 这里的 fall 呢？", "a": "落下"},
+        {"q": "用 fall 的两个意思各说一句英语。", "a": "如：Leaves fall in autumn. / I love fall."}
       ]
     },
     {
@@ -303,16 +304,16 @@
       "lessons": ["My school calendar", "Part A"],
       "points": ["EN-S2-LS-01.19", "EN-S2-LK-01.11"],
       "topic": "月份的写法和介词",
-      "stem": "学校的郊游在五月。选出完全正确的一句。",
-      "options": ["The school trip is in may.", "The school trip is in May.", "The school trip is on May."],
+      "stem": "歌唱比赛在十一月。选出完全正确的一句。",
+      "options": ["The singing contest is in november.", "The singing contest is in November.", "The singing contest is on November."],
       "answer": 1,
       "wrong": {"0": "month-lowercase", "2": "month-on"},
-      "right": ["月份的首字母大写：May；", "只说月份用 in：in May。"],
-      "typical": ["句首大写了就行：", "The school trip is in may."],
+      "right": ["月份的首字母大写：November；", "只说月份用 in：in November。"],
+      "typical": ["句首大写了就行：", "The singing contest is in november."],
       "typical_error": "month-lowercase",
       "ladder": [
-        {"q": "改正书写：the english party is in april.", "a": "The English party is in April."},
-        {"q": "补全：Tree Planting Day is ____ March 12th.", "a": "on"},
+        {"q": "改正书写：the chinese test is in june.", "a": "The Chinese test is in June."},
+        {"q": "补全：My birthday is ____ August.", "a": "in"},
         {"q": "用英语回答：When is Children's Day?", "a": "It's in June.（也可以说 It's on June 1st.）"}
       ]
     },
@@ -324,17 +325,17 @@
       "lessons": ["My school calendar", "Part A"],
       "points": ["EN-S2-LK-01.7", "EN-S2-CK-01.2"],
       "topic": "月份的名字",
-      "stem": "— When is Tree Planting Day? — ____（3 月）",
+      "stem": "— When is the Chinese test? — ____（3 月）",
       "options": ["It's in three month.", "It's in March.", "It's in May."],
       "answer": 1,
       "wrong": {"0": "month-by-number-5b", "2": "march-may-mixup-5b"},
-      "right": ["英语每个月都有自己的名字：3 月是 March；", "Tree Planting Day 在 3 月：It's in March."],
+      "right": ["英语每个月都有自己的名字：3 月是 March；", "语文考试在 3 月：It's in March."],
       "typical": ["“三月”就是“三 + 月”：", "It's in three month."],
       "typical_error": "month-by-number-5b",
       "ladder": [
         {"q": "写出月份：1 月 ____　5 月 ____", "a": "January　May"},
         {"q": "补全：Children's Day is in ____ .（6 月）", "a": "June"},
-        {"q": "用英语回答：When is Mother's Day?", "a": "It's in May."}
+        {"q": "用英语回答：When is your birthday?（只说月份）", "a": "如：It's in May."}
       ]
     },
     {
@@ -365,17 +366,17 @@
       "lessons": ["My school calendar", "Part B"],
       "points": ["EN-S2-LK-01.10", "EN-S2-LK-01.11"],
       "topic": "will 后面接什么",
-      "stem": "— What will you do for your teacher on Teachers’ Day? — ____",
-      "options": ["I'll making a card.", "I'm make a card.", "I'll make a card.", "I will to make a card."],
+      "stem": "— What will you do on your birthday? — ____",
+      "options": ["I'll playing games with my friends.", "I'm play games with my friends.", "I'll play games with my friends.", "I will to play games with my friends."],
       "answer": 2,
       "wrong": {"0": "modal-plus-ing", "1": "be-plus-verb", "3": "will-plus-to-5b"},
-      "right": ["will 后面跟动词原形：I'll make a card.", "I'll = I will，说“将要做”的事。"],
-      "typical": ["学过 want to，就加 to：", "I will to make a card."],
+      "right": ["will 后面跟动词原形：I'll play games.", "I'll = I will，说“将要做”的事。"],
+      "typical": ["学过 want to，就加 to：", "I will to play games."],
       "typical_error": "will-plus-to-5b",
       "ladder": [
         {"q": "补全：I’ll ____ (sing) a song for her.", "a": "sing"},
-        {"q": "改错：I will cooking for my mother.", "a": "I will cook for my mother."},
-        {"q": "用英语说：我将给老师画一幅画。", "a": "I’ll draw a picture for my teacher."}
+        {"q": "改错：I will cooking noodles for my grandma.", "a": "I will cook noodles for my grandma."},
+        {"q": "用英语说：我将给老师画一幅画。", "a": "I’ll draw a picture for my teacher.（或 I will …）"}
       ]
     },
     {
@@ -393,8 +394,8 @@
       "right": ["中秋节按农历算（八月十五），每年的公历日期不同，", "所以说 usually in September or October。"],
       "ladder": [
         {"q": "Spring Festival 每年都在同一天吗？", "a": "不是：按农历算，在 January 或 February"},
-        {"q": "China’s National Day 每年都在 October 1st 吗？", "a": "是：按公历算，日子固定"},
-        {"q": "用英语回答：When is Mid-Autumn Day?", "a": "It's usually in September or October."}
+        {"q": "国庆节每年都在 10 月 1 日吗？", "a": "是：按公历算，日子固定"},
+        {"q": "用英语回答：When is Spring Festival?", "a": "It's usually in January or February."}
       ]
     },
     {
@@ -414,7 +415,7 @@
       "typical_error": "rsvp-date-as-event-5b",
       "ladder": [
         {"q": "RSVP: by April 20th. 是什么意思？", "a": "4 月 20 日前回复来不来"},
-        {"q": "Sports Meet｜WHEN: Oct. 15th｜RSVP: by Oct. 8th. When is the sports meet?", "a": "On October 15th."},
+        {"q": "Sports Meet｜WHEN: Oct. 15th｜RSVP: by Oct. 8th. When is the sports meet?", "a": "On October 15th.（或 It's on October 15th.）"},
         {"q": "给你的生日聚会写一行 WHEN 和一行 RSVP。", "a": "如：WHEN: July 2nd　RSVP: by June 25th"}
       ]
     },
@@ -497,7 +498,7 @@
       "ladder": [
         {"q": "— When is your birthday? — ____ birthday is on June 2nd.", "a": "My"},
         {"q": "— When is your mother's birthday? — ____ birthday is on May 9th.", "a": "Her"},
-        {"q": "问 Amy 的生日，再替她回答（2 月 14 日）。", "a": "When is your birthday? My birthday is on February 14th."}
+        {"q": "替 Amy 回答：When is your birthday?（2 月 14 日）", "a": "My birthday is on February 14th.（或 It's on …）"}
       ]
     },
     {
@@ -528,8 +529,8 @@
       "lessons": ["When is the art show", "Part B"],
       "points": ["EN-S2-TX-01.2", "EN-S2-LK-01.7"],
       "topic": "日记里的日期怎么读",
-      "stem": "Sarah 的日记写着 April 26th。怎么读？",
-      "options": ["April twenty-sixth", "April twenty-six", "April twentieth-sixth"],
+      "stem": "日记上写着 June 26th。怎么读？",
+      "options": ["June twenty-sixth", "June twenty-six", "June twentieth-sixth"],
       "answer": 0,
       "wrong": {"1": "cardinal-for-ordinal", "2": "compound-ordinal-both-5b"},
       "right": ["日期读序数词：26th = twenty-sixth；", "两位数只变最后一个词：twenty 不变，six → sixth。"],
@@ -549,17 +550,17 @@
       "lessons": ["Whose dog is it", "Part A"],
       "points": ["EN-S2-LK-01.9", "EN-S2-LC-01.2"],
       "topic": "“他的”用 his",
-      "stem": "— Whose kite is it? — It’s Zhang Peng’s. It’s ____ .",
+      "stem": "— Whose kite is it? — It’s my brother’s. It’s ____ .",
       "options": ["his", "he's", "him", "hers"],
       "answer": 0,
       "wrong": {"1": "hes-for-his", "2": "him-for-his-5b", "3": "he-she-mixup"},
-      "right": ["Zhang Peng 是男孩，“他的”用 his；", "It’s Zhang Peng’s. = It’s his."],
+      "right": ["brother 是男孩，“他的”用 his；", "It’s my brother’s. = It’s his."],
       "typical": ["听起来一样就写 he's：", "It's he's."],
       "typical_error": "hes-for-his",
       "ladder": [
-        {"q": "补全：It's Amy's book. It's ____ .", "a": "hers"},
+        {"q": "补全：It's Chen Jie's ruler. It's ____ .", "a": "hers"},
         {"q": "补全：These are Wu Binbin’s pictures. They’re ____ .", "a": "his"},
-        {"q": "用英语说：那幅画是陈洁的，是她的。", "a": "That picture is Chen Jie's. It's hers."}
+        {"q": "用英语说：那只风筝是我妹妹的，是她的。", "a": "That kite is my sister's. It's hers."}
       ]
     },
     {
@@ -570,11 +571,11 @@
       "lessons": ["Whose dog is it", "Part A"],
       "points": ["EN-S2-LK-01.9", "EN-S2-LC-01.2"],
       "topic": "my 还是 mine",
-      "stem": "— Whose dog is it? — It's ____ .（我的）",
+      "stem": "— Whose ruler is this? — It's ____ .（我的）",
       "options": ["mine", "my", "me"],
       "answer": 0,
       "wrong": {"1": "mine-my", "2": "me-as-mine"},
-      "right": ["“我的”后面没有名词时用 mine：It's mine.", "也可以说 It's my dog.，my 后面要跟名词。"],
+      "right": ["“我的”后面没有名词时用 mine：It's mine.", "也可以说 It's my ruler.，my 后面要跟名词。"],
       "typical": ["“我的”就是 my：", "It's my."],
       "typical_error": "mine-my",
       "ladder": [
@@ -612,7 +613,7 @@
       "lessons": ["Whose dog is it", "Part B"],
       "points": ["EN-S2-LK-01.9", "EN-S2-LK-01.16"],
       "topic": "with 后面用 him",
-      "stem": "小狗 Fido 是男孩（he）：I often go for a walk with ____ .",
+      "stem": "小狗 Fido 是公的，用 he 称它：I often go for a walk with ____ .",
       "options": ["him", "he", "his"],
       "answer": 0,
       "wrong": {"1": "object-he-5b", "2": "his-for-him-5b"},
@@ -633,7 +634,7 @@
       "lessons": ["Whose dog is it", "Part B"],
       "points": ["EN-S2-LK-01.7", "EN-S1-LK-01.10"],
       "topic": "-ing 形式的拼写",
-      "stem": "Mike is ____ in the park.（run）写出正确形式。",
+      "stem": "My little brother is ____ in the playground.（run）写出正确形式。",
       "answer": "running",
       "wrong": {"runing": "ing-no-double-5b", "run": "progressive-bare-verb"},
       "right": ["run 是“辅音 + 一个元音 + 辅音”的短词，", "先双写 n 再加 -ing：running。"],
@@ -653,15 +654,15 @@
       "lessons": ["Whose dog is it", "Part B"],
       "points": ["EN-S2-LS-01.3", "EN-S2-LK-01.6"],
       "topic": "like 是“像”",
-      "stem": "Robin 在动物园说：I’m jumping like a rabbit. 意思是：",
-      "options": ["Robin 喜欢跳，也喜欢兔子。", "Robin 像兔子一样跳。", "兔子正在跳。"],
+      "stem": "Amy 在草地上说：I’m jumping like a rabbit. 意思是：",
+      "options": ["Amy 喜欢跳，也喜欢兔子。", "Amy 像兔子一样跳。", "兔子正在跳。"],
       "answer": 1,
-      "wrong": {"0": "like-as-verb", "2": "like-tiger-actor-5b"},
-      "right": ["这里的 like 是“像……一样”，不是“喜欢”；", "I’m jumping：跳的是 Robin 自己。"],
-      "typical": ["like 就是“喜欢”：", "Robin 喜欢跳，也喜欢兔子。"],
-      "typical_error": "like-as-verb",
+      "wrong": {"0": "like-as-verb-5b", "2": "like-tiger-actor-5b"},
+      "right": ["这里的 like 是“像……一样”，不是“喜欢”；", "I’m jumping：跳的是 Amy 自己。"],
+      "typical": ["like 就是“喜欢”：", "Amy 喜欢跳，也喜欢兔子。"],
+      "typical_error": "like-as-verb-5b",
       "ladder": [
-        {"q": "I’m sleeping like a cat. 谁在睡？", "a": "我（Robin）"},
+        {"q": "I’m sleeping like a cat. 谁在睡？", "a": "说这句话的人（I）"},
         {"q": "I’m singing like a bird. 是什么意思？", "a": "我像小鸟一样唱歌。"},
         {"q": "用英语说：我像熊猫一样吃东西。", "a": "I’m eating like a panda."}
       ]
@@ -703,7 +704,7 @@
       "ladder": [
         {"q": "补全：Listen! Amy ____ (sing).", "a": "is singing"},
         {"q": "补全：— What are they doing? — They ____ (read) books.", "a": "are reading"},
-        {"q": "用英语说：我们正在安静地写作业。", "a": "We're doing our homework quietly."}
+        {"q": "用英语说：我们正在看书。", "a": "We're reading books.（或 We are reading books.）"}
       ]
     },
     {
@@ -734,17 +735,17 @@
       "lessons": ["Work quietly", "Part B"],
       "points": ["EN-S2-LK-01.7", "EN-S2-LK-01.16"],
       "topic": "talk quietly",
-      "stem": "在图书馆里，提醒同学小声说话：",
-      "options": ["Talk quietly, please.", "Talk quiet, please.", "Be quietly, please."],
-      "answer": 0,
-      "wrong": {"1": "quiet-for-quietly-5b", "2": "ly-after-be-5b"},
-      "right": ["说话的样子用 quietly：Talk quietly.", "要说“人要安静”才用 quiet：Be quiet!"],
-      "typical": ["“安静”就是 quiet：", "Talk quiet, please."],
-      "typical_error": "quiet-for-quietly-5b",
+      "stem": "宝宝在睡觉，提醒客人说话小声点：",
+      "options": ["Talking quietly, please.", "Talk quietly, please.", "Be quietly, please."],
+      "answer": 1,
+      "wrong": {"0": "imperative-ing-5b", "2": "ly-after-be-5b"},
+      "right": ["提醒别人做什么，用动词原形开头：Talk quietly.", "说话的样子用 quietly；要说“人要安静”才用 quiet：Be quiet!"],
+      "typical": ["见过 No eating! 的牌子，也加 -ing：", "Talking quietly, please."],
+      "typical_error": "imperative-ing-5b",
       "ladder": [
         {"q": "补全：Shh! Work ____ , please.（quiet）", "a": "quietly"},
-        {"q": "补全：Be ____ ! The baby is sleeping.（quiet）", "a": "quiet"},
-        {"q": "用英语说：请在教室里安静地读书。", "a": "Please read quietly in the classroom."}
+        {"q": "补全：Be ____ , please! The film is starting.（quiet）", "a": "quiet"},
+        {"q": "用 Please 开头说：请在教室里安静地读书。", "a": "Please read quietly in the classroom."}
       ]
     },
     {
@@ -776,7 +777,7 @@
       "lessons": ["Work quietly", "Part B"],
       "points": ["EN-S2-LK-01.9", "EN-S2-LS-01.12"],
       "topic": "Are you …? 怎么答",
-      "stem": "— Are you drawing a picture? — ____",
+      "stem": "— Are you reading a book? — ____",
       "options": ["Yes, I'm.", "Yes, I do.", "Yes, you are.", "Yes, I am."],
       "answer": 3,
       "wrong": {"0": "short-answer-contraction", "1": "be-q-do-answer-5b", "2": "person-not-switched"},
@@ -784,9 +785,9 @@
       "typical": ["I am 可以缩成 I'm：", "Yes, I'm."],
       "typical_error": "short-answer-contraction",
       "ladder": [
-        {"q": "— Are you cooking rice? — No, ____ .", "a": "I'm not"},
-        {"q": "— Is Robin doing kung fu? — Yes, ____ .", "a": "he is"},
-        {"q": "— Are they making sushi? — Yes, ____ .", "a": "they are"}
+        {"q": "— Are you watching TV? — No, ____ .", "a": "I'm not（或 I am not）"},
+        {"q": "— Is your brother doing his homework? — Yes, ____ .", "a": "he is"},
+        {"q": "— Are the children playing football? — Yes, ____ .", "a": "they are"}
       ]
     }
   ]
