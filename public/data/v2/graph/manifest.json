@@ -19,7 +19,7 @@
       "standards": 43,
       "lanes": 9,
       "taught": 205,
-      "edges": 235
+      "edges": 244
     },
     {
       "slug": "english",
@@ -79,7 +79,7 @@
       "standards": 18,
       "lanes": 5,
       "taught": 72,
-      "edges": 70
+      "edges": 75
     },
     {
       "slug": "chemistry",
@@ -89,7 +89,7 @@
       "standards": 33,
       "lanes": 5,
       "taught": 70,
-      "edges": 75
+      "edges": 82
     },
     {
       "slug": "biology",
@@ -99,7 +99,7 @@
       "standards": 25,
       "lanes": 7,
       "taught": 80,
-      "edges": 82
+      "edges": 81
     },
     {
       "slug": "it",
@@ -143,9 +143,9 @@
     }
   ],
   "prerequisites": {
-    "judged": 889,
-    "kept": 889,
-    "dropped": 0,
+    "judged": 910,
+    "kept": 909,
+    "dropped": 1,
     "audit": {
       "checked": 60,
       "right": 51,

@@ -3284,9 +3284,10 @@
       "status": "verified"
      },
      "grades": [
-      7
+      7,
+      8
      ],
-     "grade_basis": "七年级下册 走进法治天地",
+     "grade_basis": "七年级下册 走进法治天地；八年级上册 第一单元 走进社会生活",
      "legacy_codes": [
       "ML-H4G7-LAW-037",
       "ML-H4G7-LAW-003",
@@ -3499,9 +3500,9 @@
       "status": "verified"
      },
      "grades": [
-      9
+      7
      ],
-     "grade_basis": "九年级上册 文明与家园",
+     "grade_basis": "七年级下册 第三单元 传承中华优秀传统文化",
      "legacy_codes": [
       "ML-H4G7-TCR-007",
       "ML-H4G8-TCR-008",
@@ -3523,9 +3524,9 @@
       "status": "verified"
      },
      "grades": [
-      9
+      7
      ],
-     "grade_basis": "九年级上册 文明与家园",
+     "grade_basis": "七年级下册 第三单元 传承中华优秀传统文化",
      "legacy_codes": [
       "ML-H4G7-TCR-010",
       "ML-H4G8-TCR-011",

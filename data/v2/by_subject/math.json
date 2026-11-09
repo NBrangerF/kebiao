@@ -5318,9 +5318,9 @@
       "status": "verified"
      },
      "grades": [
-      7
+      9
      ],
-     "grade_basis": "七年级下册 平移",
+     "grade_basis": "九年级上册 第二十八章 旋转",
      "legacy_codes": [],
      "examples": []
     }
@@ -5837,9 +5837,9 @@
       ]
      },
      "grades": [
-      7
+      8
      ],
-     "grade_basis": "七年级下册 坐标方法的简单应用",
+     "grade_basis": "八年级上册 第十五章 轴对称",
      "legacy_codes": [
       "MA-H4G7-GE-040"
      ],
@@ -5899,9 +5899,9 @@
       "status": "verified"
      },
      "grades": [
-      7
+      9
      ],
-     "grade_basis": "七年级下册 坐标方法的简单应用",
+     "grade_basis": "九年级下册 第二十七章 相似",
      "legacy_codes": [
       "MA-H4G8-GE-041",
       "MA-H4G9-GE-042"

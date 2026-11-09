@@ -6,19 +6,6 @@
    {
     "edition_id": "ed_913b2b9b81e81dabcf0a",
     "textbook_title": "人教版生物学7年级上册",
-    "entry_id": "tcu_f4660ff795f05de6",
-    "unit_id": "tcu_f4660ff795f05de6",
-    "title": "第二单元 生物体的结构层次",
-    "level": 1,
-    "printed_page": 35,
-    "pdf_page": 42,
-    "indicator": null,
-    "method": "grade_basis",
-    "score": 1
-   },
-   {
-    "edition_id": "ed_913b2b9b81e81dabcf0a",
-    "textbook_title": "人教版生物学7年级上册",
     "entry_id": "toc_ed_913b2b9b81e81dabcf0a_43_第一章",
     "unit_id": null,
     "title": "第一章 细胞是生命活动的基本单位",
@@ -32,8 +19,8 @@
    {
     "edition_id": "ed_913b2b9b81e81dabcf0a",
     "textbook_title": "人教版生物学7年级上册",
-    "entry_id": "toc_ed_913b2b9b81e81dabcf0a_49_第二节",
-    "unit_id": null,
+    "entry_id": "tcu_a7a4a6d7ed7e720d",
+    "unit_id": "tcu_a7a4a6d7ed7e720d",
     "title": "第二节 植物细胞",
     "level": 2,
     "printed_page": 42,
@@ -45,8 +32,8 @@
    {
     "edition_id": "ed_913b2b9b81e81dabcf0a",
     "textbook_title": "人教版生物学7年级上册",
-    "entry_id": "toc_ed_913b2b9b81e81dabcf0a_53_第三节",
-    "unit_id": null,
+    "entry_id": "tcu_6eb15d0f384f427a",
+    "unit_id": "tcu_6eb15d0f384f427a",
     "title": "第三节 动物细胞",
     "level": 2,
     "printed_page": 46,
@@ -73,15 +60,15 @@
    {
     "edition_id": "ed_913b2b9b81e81dabcf0a",
     "textbook_title": "人教版生物学7年级上册",
-    "entry_id": "tcu_f4660ff795f05de6",
-    "unit_id": "tcu_f4660ff795f05de6",
+    "entry_id": "toc_ed_913b2b9b81e81dabcf0a_42_第二单元",
+    "unit_id": null,
     "title": "第二单元 生物体的结构层次",
     "level": 1,
     "printed_page": 35,
     "pdf_page": 42,
     "indicator": "BI-S4-ST-02.2",
-    "method": "grade_basis",
-    "score": 1
+    "method": "toc_title",
+    "score": 0.88
    },
    {
     "edition_id": "ed_913b2b9b81e81dabcf0a",
@@ -112,51 +99,25 @@
   ],
   "BI-S4-DI-01": [
    {
-    "edition_id": "ed_0f6edf1eb52b44920973",
-    "textbook_title": "人教版生物学8年级上册",
-    "entry_id": "tcu_76cf9a6442334f56",
-    "unit_id": "tcu_76cf9a6442334f56",
-    "title": "第五单元 生物圈中的其他生物",
-    "level": 1,
-    "printed_page": null,
-    "pdf_page": 7,
-    "indicator": null,
-    "method": "grade_basis",
-    "score": 1
-   },
-   {
-    "edition_id": "ed_0f6edf1eb52b44920973",
-    "textbook_title": "人教版生物学8年级上册",
-    "entry_id": "tcu_b5e36b116d910e47",
-    "unit_id": "tcu_b5e36b116d910e47",
-    "title": "第六单元 生物的多样性及其保护",
-    "level": 1,
-    "printed_page": null,
-    "pdf_page": 101,
-    "indicator": null,
-    "method": "grade_basis",
-    "score": 1
-   },
-   {
-    "edition_id": "ed_0f6edf1eb52b44920973",
-    "textbook_title": "人教版生物学8年级上册",
-    "entry_id": "toc_ed_0f6edf1eb52b44920973_101_第一章",
-    "unit_id": null,
-    "title": "第一章 根据生物的特征进行分类",
-    "level": 1,
-    "printed_page": 96,
-    "pdf_page": 101,
+    "edition_id": "ed_913b2b9b81e81dabcf0a",
+    "textbook_title": "人教版生物学7年级上册",
+    "entry_id": "tcu_93c336dc5572342f",
+    "unit_id": "tcu_93c336dc5572342f",
+    "title": "第一节 生物的特征",
+    "level": 2,
+    "printed_page": 3,
+    "pdf_page": 10,
     "indicator": null,
     "method": "toc_title",
-    "score": 0.8
+    "score": 1
    }
   ],
   "BI-S4-DI-02": [
    {
     "edition_id": "ed_0f6edf1eb52b44920973",
     "textbook_title": "人教版生物学8年级上册",
-    "entry_id": "tcu_76cf9a6442334f56",
-    "unit_id": "tcu_76cf9a6442334f56",
+    "entry_id": "toc_ed_0f6edf1eb52b44920973_7_第五单元",
+    "unit_id": null,
     "title": "第五单元 生物圈中的其他生物",
     "level": 1,
     "printed_page": null,
@@ -168,8 +129,8 @@
    {
     "edition_id": "ed_0f6edf1eb52b44920973",
     "textbook_title": "人教版生物学8年级上册",
-    "entry_id": "tcu_c8ce6e0bbdb60b4a",
-    "unit_id": "tcu_c8ce6e0bbdb60b4a",
+    "entry_id": "toc_ed_0f6edf1eb52b44920973_7_第一章",
+    "unit_id": null,
     "title": "第一章 动物的主要类群",
     "level": 1,
     "printed_page": 2,
@@ -181,94 +142,55 @@
    {
     "edition_id": "ed_0f6edf1eb52b44920973",
     "textbook_title": "人教版生物学8年级上册",
-    "entry_id": "tcu_b5e36b116d910e47",
-    "unit_id": "tcu_b5e36b116d910e47",
+    "entry_id": "toc_ed_0f6edf1eb52b44920973_101_第六单元",
+    "unit_id": null,
     "title": "第六单元 生物的多样性及其保护",
     "level": 1,
     "printed_page": null,
     "pdf_page": 101,
     "indicator": null,
     "method": "grade_basis",
+    "score": 1
+   },
+   {
+    "edition_id": "ed_913b2b9b81e81dabcf0a",
+    "textbook_title": "人教版生物学7年级上册",
+    "entry_id": "tcu_93c336dc5572342f",
+    "unit_id": "tcu_93c336dc5572342f",
+    "title": "第一节 生物的特征",
+    "level": 2,
+    "printed_page": 3,
+    "pdf_page": 10,
+    "indicator": null,
+    "method": "toc_title",
+    "score": 0.75
+   },
+   {
+    "edition_id": "ed_913b2b9b81e81dabcf0a",
+    "textbook_title": "人教版生物学7年级上册",
+    "entry_id": "tcu_e845add37f2950e9",
+    "unit_id": "tcu_e845add37f2950e9",
+    "title": "第二节 种子植物",
+    "level": 2,
+    "printed_page": 79,
+    "pdf_page": 86,
+    "indicator": "BI-S4-DI-02.2",
+    "method": "toc_title",
     "score": 1
    }
   ],
   "BI-S4-DI-03": [
    {
-    "edition_id": "ed_0f6edf1eb52b44920973",
-    "textbook_title": "人教版生物学8年级上册",
-    "entry_id": "tcu_76cf9a6442334f56",
-    "unit_id": "tcu_76cf9a6442334f56",
-    "title": "第五单元 生物圈中的其他生物",
-    "level": 1,
-    "printed_page": null,
-    "pdf_page": 7,
-    "indicator": null,
-    "method": "grade_basis",
-    "score": 1
-   },
-   {
-    "edition_id": "ed_0f6edf1eb52b44920973",
-    "textbook_title": "人教版生物学8年级上册",
-    "entry_id": "tcu_1dd4c73ce582842a",
-    "unit_id": "tcu_1dd4c73ce582842a",
-    "title": "第四章 细菌和真菌",
-    "level": 1,
-    "printed_page": 66,
-    "pdf_page": 71,
-    "indicator": null,
-    "method": "toc_title",
-    "score": 1
-   },
-   {
-    "edition_id": "ed_0f6edf1eb52b44920973",
-    "textbook_title": "人教版生物学8年级上册",
-    "entry_id": "toc_ed_0f6edf1eb52b44920973_76_第二节",
+    "edition_id": "ed_913b2b9b81e81dabcf0a",
+    "textbook_title": "人教版生物学7年级上册",
+    "entry_id": "toc_ed_913b2b9b81e81dabcf0a_73_第四节",
     "unit_id": null,
-    "title": "第二节 细菌",
+    "title": "第四节 单细胞生物",
     "level": 2,
-    "printed_page": 71,
-    "pdf_page": 76,
+    "printed_page": 66,
+    "pdf_page": 73,
     "indicator": "BI-S4-DI-03.2",
     "method": "toc_title",
-    "score": 1
-   },
-   {
-    "edition_id": "ed_0f6edf1eb52b44920973",
-    "textbook_title": "人教版生物学8年级上册",
-    "entry_id": "toc_ed_0f6edf1eb52b44920973_80_第三节",
-    "unit_id": null,
-    "title": "第三节 真菌",
-    "level": 2,
-    "printed_page": 75,
-    "pdf_page": 80,
-    "indicator": "BI-S4-DI-03.3",
-    "method": "toc_title",
-    "score": 1
-   },
-   {
-    "edition_id": "ed_0f6edf1eb52b44920973",
-    "textbook_title": "人教版生物学8年级上册",
-    "entry_id": "tcu_6aa2318282087423",
-    "unit_id": "tcu_6aa2318282087423",
-    "title": "第五章 病毒",
-    "level": 1,
-    "printed_page": 89,
-    "pdf_page": 94,
-    "indicator": "BI-S4-DI-03.1",
-    "method": "toc_title",
-    "score": 1
-   },
-   {
-    "edition_id": "ed_0f6edf1eb52b44920973",
-    "textbook_title": "人教版生物学8年级上册",
-    "entry_id": "tcu_b5e36b116d910e47",
-    "unit_id": "tcu_b5e36b116d910e47",
-    "title": "第六单元 生物的多样性及其保护",
-    "level": 1,
-    "printed_page": null,
-    "pdf_page": 101,
-    "indicator": null,
-    "method": "grade_basis",
     "score": 1
    }
   ],
@@ -276,8 +198,8 @@
    {
     "edition_id": "ed_0f6edf1eb52b44920973",
     "textbook_title": "人教版生物学8年级上册",
-    "entry_id": "tcu_76cf9a6442334f56",
-    "unit_id": "tcu_76cf9a6442334f56",
+    "entry_id": "toc_ed_0f6edf1eb52b44920973_7_第五单元",
+    "unit_id": null,
     "title": "第五单元 生物圈中的其他生物",
     "level": 1,
     "printed_page": null,
@@ -289,8 +211,8 @@
    {
     "edition_id": "ed_0f6edf1eb52b44920973",
     "textbook_title": "人教版生物学8年级上册",
-    "entry_id": "tcu_b5e36b116d910e47",
-    "unit_id": "tcu_b5e36b116d910e47",
+    "entry_id": "toc_ed_0f6edf1eb52b44920973_101_第六单元",
+    "unit_id": null,
     "title": "第六单元 生物的多样性及其保护",
     "level": 1,
     "printed_page": null,
@@ -311,14 +233,27 @@
     "indicator": null,
     "method": "toc_title",
     "score": 1
+   },
+   {
+    "edition_id": "ed_c8cec7bb4ee4d9a29577",
+    "textbook_title": "人教版生物学8年级下册",
+    "entry_id": "tcu_f3b79d5a6c5b8669",
+    "unit_id": "tcu_f3b79d5a6c5b8669",
+    "title": "第六单元 生命的延续和发展",
+    "level": 1,
+    "printed_page": "1",
+    "pdf_page": 6,
+    "indicator": null,
+    "method": "grade_basis",
+    "score": 1
    }
   ],
   "BI-S4-EN-01": [
    {
     "edition_id": "ed_913b2b9b81e81dabcf0a",
     "textbook_title": "人教版生物学7年级上册",
-    "entry_id": "tcu_e1613fa96a1a1335",
-    "unit_id": "tcu_e1613fa96a1a1335",
+    "entry_id": "tcu_11c1e3f325fb8a9e",
+    "unit_id": "tcu_11c1e3f325fb8a9e",
     "title": "第一单元 生物和生物圈",
     "level": 1,
     "printed_page": 1,
@@ -330,8 +265,8 @@
    {
     "edition_id": "ed_913b2b9b81e81dabcf0a",
     "textbook_title": "人教版生物学7年级上册",
-    "entry_id": "toc_ed_913b2b9b81e81dabcf0a_33_第三节",
-    "unit_id": null,
+    "entry_id": "tcu_3569d7f0b2121be7",
+    "unit_id": "tcu_3569d7f0b2121be7",
     "title": "第三节 生物圈是最大的生态系统",
     "level": 2,
     "printed_page": 26,
@@ -343,25 +278,38 @@
   ],
   "BI-S4-EN-02": [
    {
-    "edition_id": "ed_913b2b9b81e81dabcf0a",
-    "textbook_title": "人教版生物学7年级上册",
-    "entry_id": "tcu_e1613fa96a1a1335",
-    "unit_id": "tcu_e1613fa96a1a1335",
-    "title": "第一单元 生物和生物圈",
-    "level": 1,
-    "printed_page": 1,
-    "pdf_page": 8,
+    "edition_id": "ed_0f6edf1eb52b44920973",
+    "textbook_title": "人教版生物学8年级上册",
+    "entry_id": null,
+    "unit_id": null,
+    "title": null,
+    "level": 0,
+    "printed_page": null,
+    "pdf_page": null,
     "indicator": null,
-    "method": "grade_basis",
+    "method": "grade_basis_volume",
     "score": 1
    }
   ],
   "BI-S4-PL-01": [
    {
+    "edition_id": "ed_21164b69894834d04f84",
+    "textbook_title": "人教版生物学7年级下册",
+    "entry_id": "tcu_a2cdc2342eee9aae",
+    "unit_id": "tcu_a2cdc2342eee9aae",
+    "title": "第三单元 植物的生活",
+    "level": 1,
+    "printed_page": "1",
+    "pdf_page": 6,
+    "indicator": null,
+    "method": "grade_basis",
+    "score": 1
+   },
+   {
     "edition_id": "ed_913b2b9b81e81dabcf0a",
     "textbook_title": "人教版生物学7年级上册",
-    "entry_id": "toc_ed_913b2b9b81e81dabcf0a_57_第四节",
-    "unit_id": null,
+    "entry_id": "tcu_a90ea747ac720515",
+    "unit_id": "tcu_a90ea747ac720515",
     "title": "第四节 细胞的生活",
     "level": 2,
     "printed_page": 50,
@@ -373,8 +321,8 @@
    {
     "edition_id": "ed_913b2b9b81e81dabcf0a",
     "textbook_title": "人教版生物学7年级上册",
-    "entry_id": "tcu_c593cf9908d56ea9",
-    "unit_id": "tcu_c593cf9908d56ea9",
+    "entry_id": "toc_ed_913b2b9b81e81dabcf0a_78_第三单元",
+    "unit_id": null,
     "title": "第三单元 生物圈中的绿色植物",
     "level": 1,
     "printed_page": 71,
@@ -382,14 +330,66 @@
     "indicator": null,
     "method": "grade_basis",
     "score": 1
+   },
+   {
+    "edition_id": "ed_c8cec7bb4ee4d9a29577",
+    "textbook_title": "人教版生物学8年级下册",
+    "entry_id": "tcu_f3b79d5a6c5b8669",
+    "unit_id": "tcu_f3b79d5a6c5b8669",
+    "title": "第六单元 生命的延续和发展",
+    "level": 1,
+    "printed_page": "1",
+    "pdf_page": 6,
+    "indicator": null,
+    "method": "grade_basis",
+    "score": 1
+   },
+   {
+    "edition_id": "ed_c8cec7bb4ee4d9a29577",
+    "textbook_title": "人教版生物学8年级下册",
+    "entry_id": "tcu_7753663dd3d00030",
+    "unit_id": "tcu_7753663dd3d00030",
+    "title": "第一节 无性生殖",
+    "level": 3,
+    "printed_page": "2",
+    "pdf_page": 7,
+    "indicator": "BI-S4-PL-01.6",
+    "method": "toc_title",
+    "score": 1
+   },
+   {
+    "edition_id": "ed_c8cec7bb4ee4d9a29577",
+    "textbook_title": "人教版生物学8年级下册",
+    "entry_id": "tcu_1bf77559f0c6f71c",
+    "unit_id": "tcu_1bf77559f0c6f71c",
+    "title": "第一章 生物的生殖",
+    "level": 2,
+    "printed_page": "2",
+    "pdf_page": 7,
+    "indicator": null,
+    "method": "toc_title",
+    "score": 0.75
    }
   ],
   "BI-S4-PL-02": [
    {
+    "edition_id": "ed_21164b69894834d04f84",
+    "textbook_title": "人教版生物学7年级下册",
+    "entry_id": "tcu_a2cdc2342eee9aae",
+    "unit_id": "tcu_a2cdc2342eee9aae",
+    "title": "第三单元 植物的生活",
+    "level": 1,
+    "printed_page": "1",
+    "pdf_page": 6,
+    "indicator": null,
+    "method": "grade_basis",
+    "score": 1
+   },
+   {
     "edition_id": "ed_913b2b9b81e81dabcf0a",
     "textbook_title": "人教版生物学7年级上册",
-    "entry_id": "tcu_c593cf9908d56ea9",
-    "unit_id": "tcu_c593cf9908d56ea9",
+    "entry_id": "toc_ed_913b2b9b81e81dabcf0a_78_第三单元",
+    "unit_id": null,
     "title": "第三单元 生物圈中的绿色植物",
     "level": 1,
     "printed_page": 71,
@@ -401,16 +401,356 @@
   ],
   "BI-S4-PL-03": [
    {
+    "edition_id": "ed_21164b69894834d04f84",
+    "textbook_title": "人教版生物学7年级下册",
+    "entry_id": "tcu_a2cdc2342eee9aae",
+    "unit_id": "tcu_a2cdc2342eee9aae",
+    "title": "第三单元 植物的生活",
+    "level": 1,
+    "printed_page": "1",
+    "pdf_page": 6,
+    "indicator": null,
+    "method": "grade_basis",
+    "score": 1
+   },
+   {
+    "edition_id": "ed_21164b69894834d04f84",
+    "textbook_title": "人教版生物学7年级下册",
+    "entry_id": "tcu_e3e48ed3f1dc7129",
+    "unit_id": "tcu_e3e48ed3f1dc7129",
+    "title": "第二节 光合作用",
+    "level": 3,
+    "printed_page": "29",
+    "pdf_page": 34,
+    "indicator": "BI-S4-PL-03.3",
+    "method": "toc_title",
+    "score": 1
+   },
+   {
+    "edition_id": "ed_21164b69894834d04f84",
+    "textbook_title": "人教版生物学7年级下册",
+    "entry_id": "tcu_52a16fda4c1b4f3f",
+    "unit_id": "tcu_52a16fda4c1b4f3f",
+    "title": "第三节 呼吸作用",
+    "level": 3,
+    "printed_page": "38",
+    "pdf_page": 43,
+    "indicator": "BI-S4-PL-03.3",
+    "method": "toc_title",
+    "score": 1
+   },
+   {
     "edition_id": "ed_913b2b9b81e81dabcf0a",
     "textbook_title": "人教版生物学7年级上册",
-    "entry_id": "tcu_c593cf9908d56ea9",
-    "unit_id": "tcu_c593cf9908d56ea9",
+    "entry_id": "toc_ed_913b2b9b81e81dabcf0a_78_第三单元",
+    "unit_id": null,
     "title": "第三单元 生物圈中的绿色植物",
     "level": 1,
     "printed_page": 71,
     "pdf_page": 78,
     "indicator": "BI-S4-PL-03.4",
     "method": "grade_basis",
+    "score": 1
+   }
+  ],
+  "BI-S4-HU-01": [
+   {
+    "edition_id": "ed_21164b69894834d04f84",
+    "textbook_title": "人教版生物学7年级下册",
+    "entry_id": "tcu_ee8df48ebb627e7d",
+    "unit_id": "tcu_ee8df48ebb627e7d",
+    "title": "第四单元 人体生理与健康（一）",
+    "level": 1,
+    "printed_page": "56",
+    "pdf_page": 61,
+    "indicator": null,
+    "method": "grade_basis",
+    "score": 1
+   },
+   {
+    "edition_id": "ed_21164b69894834d04f84",
+    "textbook_title": "人教版生物学7年级下册",
+    "entry_id": "tcu_18360b487046c109",
+    "unit_id": "tcu_18360b487046c109",
+    "title": "第二章 人体的营养",
+    "level": 2,
+    "printed_page": "70",
+    "pdf_page": 75,
+    "indicator": "BI-S4-HU-01.1",
+    "method": "toc_title",
+    "score": 0.75
+   }
+  ],
+  "BI-S4-HU-02": [
+   {
+    "edition_id": "ed_21164b69894834d04f84",
+    "textbook_title": "人教版生物学7年级下册",
+    "entry_id": "tcu_ee8df48ebb627e7d",
+    "unit_id": "tcu_ee8df48ebb627e7d",
+    "title": "第四单元 人体生理与健康（一）",
+    "level": 1,
+    "printed_page": "56",
+    "pdf_page": 61,
+    "indicator": null,
+    "method": "grade_basis",
+    "score": 1
+   }
+  ],
+  "BI-S4-HU-03": [
+   {
+    "edition_id": "ed_21164b69894834d04f84",
+    "textbook_title": "人教版生物学7年级下册",
+    "entry_id": "tcu_ee8df48ebb627e7d",
+    "unit_id": "tcu_ee8df48ebb627e7d",
+    "title": "第四单元 人体生理与健康（一）",
+    "level": 1,
+    "printed_page": "56",
+    "pdf_page": 61,
+    "indicator": null,
+    "method": "grade_basis",
+    "score": 1
+   }
+  ],
+  "BI-S4-HU-04": [
+   {
+    "edition_id": "ed_21164b69894834d04f84",
+    "textbook_title": "人教版生物学7年级下册",
+    "entry_id": "tcu_ee8df48ebb627e7d",
+    "unit_id": "tcu_ee8df48ebb627e7d",
+    "title": "第四单元 人体生理与健康（一）",
+    "level": 1,
+    "printed_page": "56",
+    "pdf_page": 61,
+    "indicator": null,
+    "method": "grade_basis",
+    "score": 1
+   }
+  ],
+  "BI-S4-HU-05": [
+   {
+    "edition_id": "ed_21164b69894834d04f84",
+    "textbook_title": "人教版生物学7年级下册",
+    "entry_id": "tcu_ee8df48ebb627e7d",
+    "unit_id": "tcu_ee8df48ebb627e7d",
+    "title": "第四单元 人体生理与健康（一）",
+    "level": 1,
+    "printed_page": "56",
+    "pdf_page": 61,
+    "indicator": null,
+    "method": "grade_basis",
+    "score": 1
+   },
+   {
+    "edition_id": "ed_21164b69894834d04f84",
+    "textbook_title": "人教版生物学7年级下册",
+    "entry_id": "tcu_3a3e97e9e501a6a3",
+    "unit_id": "tcu_3a3e97e9e501a6a3",
+    "title": "第二节 青春期",
+    "level": 3,
+    "printed_page": "64",
+    "pdf_page": 69,
+    "indicator": "BI-S4-HU-05.7",
+    "method": "toc_title",
+    "score": 1
+   }
+  ],
+  "BI-S4-HU-06": [
+   {
+    "edition_id": "ed_0f6edf1eb52b44920973",
+    "textbook_title": "人教版生物学8年级上册",
+    "entry_id": null,
+    "unit_id": null,
+    "title": null,
+    "level": 0,
+    "printed_page": null,
+    "pdf_page": null,
+    "indicator": null,
+    "method": "grade_basis_volume",
+    "score": 1
+   }
+  ],
+  "BI-S4-HU-07": [
+   {
+    "edition_id": "ed_0f6edf1eb52b44920973",
+    "textbook_title": "人教版生物学8年级上册",
+    "entry_id": null,
+    "unit_id": null,
+    "title": null,
+    "level": 0,
+    "printed_page": null,
+    "pdf_page": null,
+    "indicator": null,
+    "method": "grade_basis_volume",
+    "score": 1
+   }
+  ],
+  "BI-S4-GE-01": [
+   {
+    "edition_id": "ed_21164b69894834d04f84",
+    "textbook_title": "人教版生物学7年级下册",
+    "entry_id": null,
+    "unit_id": null,
+    "title": null,
+    "level": 0,
+    "printed_page": null,
+    "pdf_page": null,
+    "indicator": null,
+    "method": "grade_basis_volume",
+    "score": 1
+   }
+  ],
+  "BI-S4-GE-02": [
+   {
+    "edition_id": "ed_c8cec7bb4ee4d9a29577",
+    "textbook_title": "人教版生物学8年级下册",
+    "entry_id": "tcu_f3b79d5a6c5b8669",
+    "unit_id": "tcu_f3b79d5a6c5b8669",
+    "title": "第六单元 生命的延续和发展",
+    "level": 1,
+    "printed_page": "1",
+    "pdf_page": 6,
+    "indicator": null,
+    "method": "grade_basis",
+    "score": 1
+   },
+   {
+    "edition_id": "ed_c8cec7bb4ee4d9a29577",
+    "textbook_title": "人教版生物学8年级下册",
+    "entry_id": "tcu_124f76f78e494601",
+    "unit_id": "tcu_124f76f78e494601",
+    "title": "第四节 人的性别决定",
+    "level": 3,
+    "printed_page": "38",
+    "pdf_page": 43,
+    "indicator": "BI-S4-GE-02.3",
+    "method": "toc_title",
+    "score": 0.8
+   },
+   {
+    "edition_id": "ed_c8cec7bb4ee4d9a29577",
+    "textbook_title": "人教版生物学8年级下册",
+    "entry_id": "tcu_e6a4b7744e43e0d6",
+    "unit_id": "tcu_e6a4b7744e43e0d6",
+    "title": "第五节 生物的变异",
+    "level": 3,
+    "printed_page": "43",
+    "pdf_page": 48,
+    "indicator": "BI-S4-GE-02.4",
+    "method": "toc_title",
+    "score": 0.75
+   }
+  ],
+  "BI-S4-GE-03": [
+   {
+    "edition_id": "ed_c8cec7bb4ee4d9a29577",
+    "textbook_title": "人教版生物学8年级下册",
+    "entry_id": "tcu_f3b79d5a6c5b8669",
+    "unit_id": "tcu_f3b79d5a6c5b8669",
+    "title": "第六单元 生命的延续和发展",
+    "level": 1,
+    "printed_page": "1",
+    "pdf_page": 6,
+    "indicator": null,
+    "method": "grade_basis",
+    "score": 1
+   }
+  ],
+  "BI-S4-GE-04": [
+   {
+    "edition_id": "ed_c8cec7bb4ee4d9a29577",
+    "textbook_title": "人教版生物学8年级下册",
+    "entry_id": "tcu_f3b79d5a6c5b8669",
+    "unit_id": "tcu_f3b79d5a6c5b8669",
+    "title": "第六单元 生命的延续和发展",
+    "level": 1,
+    "printed_page": "1",
+    "pdf_page": 6,
+    "indicator": null,
+    "method": "grade_basis",
+    "score": 1
+   },
+   {
+    "edition_id": "ed_c8cec7bb4ee4d9a29577",
+    "textbook_title": "人教版生物学8年级下册",
+    "entry_id": "tcu_1bf77559f0c6f71c",
+    "unit_id": "tcu_1bf77559f0c6f71c",
+    "title": "第一章 生物的生殖",
+    "level": 2,
+    "printed_page": "2",
+    "pdf_page": 7,
+    "indicator": "BI-S4-GE-04.1",
+    "method": "toc_title",
+    "score": 0.75
+   },
+   {
+    "edition_id": "ed_c8cec7bb4ee4d9a29577",
+    "textbook_title": "人教版生物学8年级下册",
+    "entry_id": "tcu_e6a4b7744e43e0d6",
+    "unit_id": "tcu_e6a4b7744e43e0d6",
+    "title": "第五节 生物的变异",
+    "level": 3,
+    "printed_page": "43",
+    "pdf_page": 48,
+    "indicator": "BI-S4-GE-04.1",
+    "method": "toc_title",
+    "score": 0.75
+   },
+   {
+    "edition_id": "ed_c8cec7bb4ee4d9a29577",
+    "textbook_title": "人教版生物学8年级下册",
+    "entry_id": "tcu_0f0e59b83111644d",
+    "unit_id": "tcu_0f0e59b83111644d",
+    "title": "第三章 生物的进化",
+    "level": 2,
+    "printed_page": "51",
+    "pdf_page": 56,
+    "indicator": "BI-S4-GE-04.1",
+    "method": "toc_title",
+    "score": 1
+   }
+  ],
+  "BI-S4-XP-01": [
+   {
+    "edition_id": "ed_0f6edf1eb52b44920973",
+    "textbook_title": "人教版生物学8年级上册",
+    "entry_id": null,
+    "unit_id": null,
+    "title": null,
+    "level": 0,
+    "printed_page": null,
+    "pdf_page": null,
+    "indicator": null,
+    "method": "grade_basis_volume",
+    "score": 1
+   }
+  ],
+  "BI-S4-XP-02": [
+   {
+    "edition_id": "ed_21164b69894834d04f84",
+    "textbook_title": "人教版生物学7年级下册",
+    "entry_id": "tcu_a2cdc2342eee9aae",
+    "unit_id": "tcu_a2cdc2342eee9aae",
+    "title": "第三单元 植物的生活",
+    "level": 1,
+    "printed_page": "1",
+    "pdf_page": 6,
+    "indicator": null,
+    "method": "grade_basis",
+    "score": 1
+   }
+  ],
+  "BI-S4-XP-03": [
+   {
+    "edition_id": "ed_913b2b9b81e81dabcf0a",
+    "textbook_title": "人教版生物学7年级上册",
+    "entry_id": null,
+    "unit_id": null,
+    "title": null,
+    "level": 0,
+    "printed_page": null,
+    "pdf_page": null,
+    "indicator": null,
+    "method": "grade_basis_volume",
     "score": 1
    }
   ]
