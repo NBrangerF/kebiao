@@ -135,7 +135,8 @@ export function publicCheck(item: CheckItem, bank: CheckBank) {
         grade: item.grade,
         grades: item.grades,
         term: item.term,
-        textbook_unit: book?.edition === '课标' ? `${book.label} · ${item.unit}` : `${book?.edition || ''} ${book?.short || item.book} ${item.unit}`.trim(),
+        // a second edition's short key carries its publisher (北师大5上); the edition is already named in front
+        textbook_unit: book?.edition === '课标' ? `${book.label} · ${item.unit}` : `${book?.edition || ''} ${(book?.short || item.book).replace(/^\D+(?=\d)/u, '')} ${item.unit}`.trim(),
         textbook_lesson: item.lesson,
         points: item.points,
         topic: item.topic,
