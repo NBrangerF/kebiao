@@ -67,7 +67,7 @@
         "external_smartedu_2026_bsd_math_primary_grade_6_up",
         "tes_1b3d89987cf38cbb",
         "textbook-node:tcn_a7619330d2218156",
-        "textbook-unit:tcu_65896354770aa4bd"
+        "textbook-unit:tcu_4b89433a2b986f80"
       ],
       "evidence_role": "direct_textbook",
       "evidence_spans": [
@@ -105,8 +105,8 @@
       "textbook_subject": "数学",
       "textbook_title": "数学6年级上册",
       "textbook_volume": "上册",
-      "unit_id": "tcu_65896354770aa4bd",
-      "unit_title": "第一单元 分数除法"
+      "unit_id": "tcu_4b89433a2b986f80",
+      "unit_title": "第二单元 圆"
     },
     {
       "algorithm_version": "full-alignment-scope-preserve-v2",

@@ -308,13 +308,11 @@
    "pages_found": 22
   },
   "ed_b5476da69a964f1a7245": {
-   "status": "matched",
-   "platform_textbook_id": "33403c34-be24-72d6-8ff0-63989de43ca3",
-   "platform_title": "初中数学北师大版八年级下册",
-   "lessons": 53,
-   "title_hits": 38,
-   "method": "book_text",
-   "pages_found": 16
+   "status": "not_found",
+   "note": "平台课目录是旧印次（三角形的证明、一元一次不等式与一元一次不等式组、中心对称…），馆藏是新印次（三角形的证明及其应用、不等式与不等式组，6 章）：本册课目录取自书上印的目录。",
+   "candidates": [
+    "初中数学北师大版八年级下册"
+   ]
   },
   "ed_f8159854e52a9dd85942": {
    "status": "matched",
@@ -1296,13 +1294,11 @@
    "pages_found": 18
   },
   "ed_bd2c45b5e8fc08bf234e": {
-   "status": "matched",
-   "platform_textbook_id": "cb26c613-b227-41c1-bd10-1e2022e46387",
-   "platform_title": "新教材-小学英语人教版（PEP）（主编：吴欣）三年级下册",
-   "lessons": 103,
-   "title_hits": 7,
-   "method": "book_text",
-   "pages_found": 24
+   "status": "not_found",
+   "note": "平台「新教材」三年级下册的课名（Expressing yourself、Old toys…）与馆藏印次（My words and actions、Old things…）不同：本册课目录取自书上印的各 Part 标题。",
+   "candidates": [
+    "新教材-小学英语人教版（PEP）（主编：吴欣）三年级下册"
+   ]
   },
   "ed_5d48bbfcb56c179fd695": {
    "status": "matched",

@@ -149,226 +149,6 @@
     },
     {
       "algorithm_version": "component-evidence-hybrid-v3",
-      "alignment_id": "tca_07f4c3abc5d02fc5",
-      "alignment_type": "supports",
-      "confidence": 0.92,
-      "coverage": "partial",
-      "edition_id": "ed_dda80e43104244896faa",
-      "evidence_basis": "toc_title",
-      "evidence_gap": "当前证据来自目录标题与课标概念匹配，尚未保存教材正文或练习摘录；因此只能声明主题支持，不能声明完整教授。",
-      "evidence_level": "L2_topic",
-      "evidence_refs": [
-        "external_smartedu_2026_math_primary_grade_4_up",
-        "tes_2ae659c0c78f032a",
-        "textbook-node:tcn_b0d653b9e07df1b6",
-        "textbook-unit:tcu_8924cda0fe91094c"
-      ],
-      "evidence_role": "direct_textbook",
-      "evidence_spans": [
-        {
-          "evidence_role": "direct_textbook",
-          "excerpt": "74 平行四边形和梯形",
-          "excerpt_hash": "e87d3818b952624f21a27d71f2b521d3cf57efe6e5de0412400ea827c9f7a64e",
-          "pdf_page": 79,
-          "printed_page": "74",
-          "span_id": "tes_2ae659c0c78f032a"
-        }
-      ],
-      "learning_component_ids": [
-        "lc_2c57372dca985e06"
-      ],
-      "learning_components": [
-        {
-          "component_id": "lc_2c57372dca985e06",
-          "label": "说出长方形、正方形、平行四边形、梯形的特征"
-        }
-      ],
-      "level": "unit",
-      "method": "component_evidence_hybrid",
-      "node_id": "tcn_b0d653b9e07df1b6",
-      "node_title": "74平行四边形和梯形",
-      "pdf_page": 79,
-      "printed_page": "74",
-      "publication_status": "published",
-      "rationale": "教材课文“74平行四边形和梯形”与课标 MA-D2-GE-004 的可教学小能力“说出长方形、正方形、平行四边形、梯形的特征”形成页内证据匹配。",
-      "relation_type": "supports",
-      "resource_type": "student_textbook",
-      "review_status": "machine_checked",
-      "revision_status": "current_confirmed",
-      "textbook_grade": 4,
-      "textbook_subject": "数学",
-      "textbook_title": "数学4年级上册",
-      "textbook_volume": "上册",
-      "unit_id": "tcu_8924cda0fe91094c",
-      "unit_title": "五 平行四边形和梯形"
-    },
-    {
-      "algorithm_version": "component-evidence-hybrid-v3",
-      "alignment_id": "tca_2f6b9f498e1eb212",
-      "alignment_type": "supports",
-      "confidence": 0.92,
-      "coverage": "partial",
-      "edition_id": "ed_dda80e43104244896faa",
-      "evidence_basis": "toc_title",
-      "evidence_gap": "当前证据来自目录标题与课标概念匹配，尚未保存教材正文或练习摘录；因此只能声明主题支持，不能声明完整教授。",
-      "evidence_level": "L2_topic",
-      "evidence_refs": [
-        "external_smartedu_2026_math_primary_grade_4_up",
-        "tes_ae99c7ccc7228f33",
-        "textbook-node:tcn_928ee58d6773606e",
-        "textbook-unit:tcu_8924cda0fe91094c"
-      ],
-      "evidence_role": "direct_textbook",
-      "evidence_spans": [
-        {
-          "evidence_role": "direct_textbook",
-          "excerpt": "80 平行四边形和梯形",
-          "excerpt_hash": "ed66ab5b19f2444d2a41a84096705c2d9db8662f48292ecac8f46efb57321efc",
-          "pdf_page": 85,
-          "printed_page": "80",
-          "span_id": "tes_ae99c7ccc7228f33"
-        }
-      ],
-      "learning_component_ids": [
-        "lc_2c57372dca985e06"
-      ],
-      "learning_components": [
-        {
-          "component_id": "lc_2c57372dca985e06",
-          "label": "说出长方形、正方形、平行四边形、梯形的特征"
-        }
-      ],
-      "level": "unit",
-      "method": "component_evidence_hybrid",
-      "node_id": "tcn_928ee58d6773606e",
-      "node_title": "80平行四边形和梯形",
-      "pdf_page": 85,
-      "printed_page": "80",
-      "publication_status": "published",
-      "rationale": "教材课文“80平行四边形和梯形”与课标 MA-D2-GE-004 的可教学小能力“说出长方形、正方形、平行四边形、梯形的特征”形成页内证据匹配。",
-      "relation_type": "supports",
-      "resource_type": "student_textbook",
-      "review_status": "machine_checked",
-      "revision_status": "current_confirmed",
-      "textbook_grade": 4,
-      "textbook_subject": "数学",
-      "textbook_title": "数学4年级上册",
-      "textbook_volume": "上册",
-      "unit_id": "tcu_8924cda0fe91094c",
-      "unit_title": "五 平行四边形和梯形"
-    },
-    {
-      "algorithm_version": "component-evidence-hybrid-v3",
-      "alignment_id": "tca_329b25cb51e0c600",
-      "alignment_type": "supports",
-      "confidence": 0.92,
-      "coverage": "partial",
-      "edition_id": "ed_dda80e43104244896faa",
-      "evidence_basis": "toc_title",
-      "evidence_gap": "当前证据来自目录标题与课标概念匹配，尚未保存教材正文或练习摘录；因此只能声明主题支持，不能声明完整教授。",
-      "evidence_level": "L2_topic",
-      "evidence_refs": [
-        "external_smartedu_2026_math_primary_grade_4_up",
-        "tes_faa8f83713191407",
-        "textbook-node:tcn_88126d20f6c08c3c",
-        "textbook-unit:tcu_8924cda0fe91094c"
-      ],
-      "evidence_role": "direct_textbook",
-      "evidence_spans": [
-        {
-          "evidence_role": "direct_textbook",
-          "excerpt": "84 平行四边形和梯形",
-          "excerpt_hash": "8fbbe678acd4296fac825cb118bb3c4024dfffb7e867bec7a7d41f094296df3e",
-          "pdf_page": 89,
-          "printed_page": "84",
-          "span_id": "tes_faa8f83713191407"
-        }
-      ],
-      "learning_component_ids": [
-        "lc_2c57372dca985e06"
-      ],
-      "learning_components": [
-        {
-          "component_id": "lc_2c57372dca985e06",
-          "label": "说出长方形、正方形、平行四边形、梯形的特征"
-        }
-      ],
-      "level": "unit",
-      "method": "component_evidence_hybrid",
-      "node_id": "tcn_88126d20f6c08c3c",
-      "node_title": "84平行四边形和梯形",
-      "pdf_page": 89,
-      "printed_page": "84",
-      "publication_status": "published",
-      "rationale": "教材课文“84平行四边形和梯形”与课标 MA-D2-GE-004 的可教学小能力“说出长方形、正方形、平行四边形、梯形的特征”形成页内证据匹配。",
-      "relation_type": "supports",
-      "resource_type": "student_textbook",
-      "review_status": "machine_checked",
-      "revision_status": "current_confirmed",
-      "textbook_grade": 4,
-      "textbook_subject": "数学",
-      "textbook_title": "数学4年级上册",
-      "textbook_volume": "上册",
-      "unit_id": "tcu_8924cda0fe91094c",
-      "unit_title": "五 平行四边形和梯形"
-    },
-    {
-      "algorithm_version": "component-evidence-hybrid-v3",
-      "alignment_id": "tca_3a184821ee386cd6",
-      "alignment_type": "supports",
-      "confidence": 0.92,
-      "coverage": "partial",
-      "edition_id": "ed_dda80e43104244896faa",
-      "evidence_basis": "toc_title",
-      "evidence_gap": "当前证据来自目录标题与课标概念匹配，尚未保存教材正文或练习摘录；因此只能声明主题支持，不能声明完整教授。",
-      "evidence_level": "L2_topic",
-      "evidence_refs": [
-        "external_smartedu_2026_math_primary_grade_4_up",
-        "tes_05cd903cd607f507",
-        "textbook-node:tcn_3a2e8aa94d0dceb0",
-        "textbook-unit:tcu_8924cda0fe91094c"
-      ],
-      "evidence_role": "direct_textbook",
-      "evidence_spans": [
-        {
-          "evidence_role": "direct_textbook",
-          "excerpt": "86 平行四边形和梯形",
-          "excerpt_hash": "d0fd186c04bda98c5ca8e13e52952fb043e027aa70eab124eef7256a2720541e",
-          "pdf_page": 91,
-          "printed_page": "86",
-          "span_id": "tes_05cd903cd607f507"
-        }
-      ],
-      "learning_component_ids": [
-        "lc_2c57372dca985e06"
-      ],
-      "learning_components": [
-        {
-          "component_id": "lc_2c57372dca985e06",
-          "label": "说出长方形、正方形、平行四边形、梯形的特征"
-        }
-      ],
-      "level": "unit",
-      "method": "component_evidence_hybrid",
-      "node_id": "tcn_3a2e8aa94d0dceb0",
-      "node_title": "86平行四边形和梯形",
-      "pdf_page": 91,
-      "printed_page": "86",
-      "publication_status": "published",
-      "rationale": "教材课文“86平行四边形和梯形”与课标 MA-D2-GE-004 的可教学小能力“说出长方形、正方形、平行四边形、梯形的特征”形成页内证据匹配。",
-      "relation_type": "supports",
-      "resource_type": "student_textbook",
-      "review_status": "machine_checked",
-      "revision_status": "current_confirmed",
-      "textbook_grade": 4,
-      "textbook_subject": "数学",
-      "textbook_title": "数学4年级上册",
-      "textbook_volume": "上册",
-      "unit_id": "tcu_8924cda0fe91094c",
-      "unit_title": "五 平行四边形和梯形"
-    },
-    {
-      "algorithm_version": "component-evidence-hybrid-v3",
       "alignment_id": "tca_40e7f9cfd9670f59",
       "alignment_type": "supports",
       "confidence": 0.92,
@@ -479,7 +259,7 @@
     },
     {
       "algorithm_version": "component-evidence-hybrid-v3",
-      "alignment_id": "tca_9fde38cafeaf02c1",
+      "alignment_id": "tca_07f4c3abc5d02fc5",
       "alignment_type": "supports",
       "confidence": 0.92,
       "coverage": "partial",
@@ -489,19 +269,19 @@
       "evidence_level": "L2_topic",
       "evidence_refs": [
         "external_smartedu_2026_math_primary_grade_4_up",
-        "tes_d055158d496f51b7",
-        "textbook-node:tcn_39a1cd969568613e",
+        "tes_2ae659c0c78f032a",
+        "textbook-node:tcn_b0d653b9e07df1b6",
         "textbook-unit:tcu_8924cda0fe91094c"
       ],
       "evidence_role": "direct_textbook",
       "evidence_spans": [
         {
           "evidence_role": "direct_textbook",
-          "excerpt": "78 平行四边形和梯形",
-          "excerpt_hash": "4ef2617df104fdbfa0a636adab96c1520028acc577349b671092288800e4849c",
-          "pdf_page": 83,
-          "printed_page": "78",
-          "span_id": "tes_d055158d496f51b7"
+          "excerpt": "74 平行四边形和梯形",
+          "excerpt_hash": "e87d3818b952624f21a27d71f2b521d3cf57efe6e5de0412400ea827c9f7a64e",
+          "pdf_page": 79,
+          "printed_page": "74",
+          "span_id": "tes_2ae659c0c78f032a"
         }
       ],
       "learning_component_ids": [
@@ -515,12 +295,12 @@
       ],
       "level": "unit",
       "method": "component_evidence_hybrid",
-      "node_id": "tcn_39a1cd969568613e",
-      "node_title": "78平行四边形和梯形",
-      "pdf_page": 83,
-      "printed_page": "78",
+      "node_id": "tcn_b0d653b9e07df1b6",
+      "node_title": "74平行四边形和梯形",
+      "pdf_page": 79,
+      "printed_page": "74",
       "publication_status": "published",
-      "rationale": "教材课文“78平行四边形和梯形”与课标 MA-D2-GE-004 的可教学小能力“说出长方形、正方形、平行四边形、梯形的特征”形成页内证据匹配。",
+      "rationale": "教材课文“74平行四边形和梯形”与课标 MA-D2-GE-004 的可教学小能力“说出长方形、正方形、平行四边形、梯形的特征”形成页内证据匹配。",
       "relation_type": "supports",
       "resource_type": "student_textbook",
       "review_status": "machine_checked",
@@ -589,6 +369,116 @@
     },
     {
       "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_9fde38cafeaf02c1",
+      "alignment_type": "supports",
+      "confidence": 0.92,
+      "coverage": "partial",
+      "edition_id": "ed_dda80e43104244896faa",
+      "evidence_basis": "toc_title",
+      "evidence_gap": "当前证据来自目录标题与课标概念匹配，尚未保存教材正文或练习摘录；因此只能声明主题支持，不能声明完整教授。",
+      "evidence_level": "L2_topic",
+      "evidence_refs": [
+        "external_smartedu_2026_math_primary_grade_4_up",
+        "tes_d055158d496f51b7",
+        "textbook-node:tcn_39a1cd969568613e",
+        "textbook-unit:tcu_8924cda0fe91094c"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "78 平行四边形和梯形",
+          "excerpt_hash": "4ef2617df104fdbfa0a636adab96c1520028acc577349b671092288800e4849c",
+          "pdf_page": 83,
+          "printed_page": "78",
+          "span_id": "tes_d055158d496f51b7"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_2c57372dca985e06"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_2c57372dca985e06",
+          "label": "说出长方形、正方形、平行四边形、梯形的特征"
+        }
+      ],
+      "level": "unit",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_39a1cd969568613e",
+      "node_title": "78平行四边形和梯形",
+      "pdf_page": 83,
+      "printed_page": "78",
+      "publication_status": "published",
+      "rationale": "教材课文“78平行四边形和梯形”与课标 MA-D2-GE-004 的可教学小能力“说出长方形、正方形、平行四边形、梯形的特征”形成页内证据匹配。",
+      "relation_type": "supports",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "textbook_grade": 4,
+      "textbook_subject": "数学",
+      "textbook_title": "数学4年级上册",
+      "textbook_volume": "上册",
+      "unit_id": "tcu_8924cda0fe91094c",
+      "unit_title": "五 平行四边形和梯形"
+    },
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_2f6b9f498e1eb212",
+      "alignment_type": "supports",
+      "confidence": 0.92,
+      "coverage": "partial",
+      "edition_id": "ed_dda80e43104244896faa",
+      "evidence_basis": "toc_title",
+      "evidence_gap": "当前证据来自目录标题与课标概念匹配，尚未保存教材正文或练习摘录；因此只能声明主题支持，不能声明完整教授。",
+      "evidence_level": "L2_topic",
+      "evidence_refs": [
+        "external_smartedu_2026_math_primary_grade_4_up",
+        "tes_ae99c7ccc7228f33",
+        "textbook-node:tcn_928ee58d6773606e",
+        "textbook-unit:tcu_8924cda0fe91094c"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "80 平行四边形和梯形",
+          "excerpt_hash": "ed66ab5b19f2444d2a41a84096705c2d9db8662f48292ecac8f46efb57321efc",
+          "pdf_page": 85,
+          "printed_page": "80",
+          "span_id": "tes_ae99c7ccc7228f33"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_2c57372dca985e06"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_2c57372dca985e06",
+          "label": "说出长方形、正方形、平行四边形、梯形的特征"
+        }
+      ],
+      "level": "unit",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_928ee58d6773606e",
+      "node_title": "80平行四边形和梯形",
+      "pdf_page": 85,
+      "printed_page": "80",
+      "publication_status": "published",
+      "rationale": "教材课文“80平行四边形和梯形”与课标 MA-D2-GE-004 的可教学小能力“说出长方形、正方形、平行四边形、梯形的特征”形成页内证据匹配。",
+      "relation_type": "supports",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "textbook_grade": 4,
+      "textbook_subject": "数学",
+      "textbook_title": "数学4年级上册",
+      "textbook_volume": "上册",
+      "unit_id": "tcu_8924cda0fe91094c",
+      "unit_title": "五 平行四边形和梯形"
+    },
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
       "alignment_id": "tca_d93ef9aa1695813e",
       "alignment_type": "supports",
       "confidence": 0.92,
@@ -631,6 +521,116 @@
       "printed_page": "82",
       "publication_status": "published",
       "rationale": "教材课文“82平行四边形和梯形”与课标 MA-D2-GE-004 的可教学小能力“说出长方形、正方形、平行四边形、梯形的特征”形成页内证据匹配。",
+      "relation_type": "supports",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "textbook_grade": 4,
+      "textbook_subject": "数学",
+      "textbook_title": "数学4年级上册",
+      "textbook_volume": "上册",
+      "unit_id": "tcu_8924cda0fe91094c",
+      "unit_title": "五 平行四边形和梯形"
+    },
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_329b25cb51e0c600",
+      "alignment_type": "supports",
+      "confidence": 0.92,
+      "coverage": "partial",
+      "edition_id": "ed_dda80e43104244896faa",
+      "evidence_basis": "toc_title",
+      "evidence_gap": "当前证据来自目录标题与课标概念匹配，尚未保存教材正文或练习摘录；因此只能声明主题支持，不能声明完整教授。",
+      "evidence_level": "L2_topic",
+      "evidence_refs": [
+        "external_smartedu_2026_math_primary_grade_4_up",
+        "tes_faa8f83713191407",
+        "textbook-node:tcn_88126d20f6c08c3c",
+        "textbook-unit:tcu_8924cda0fe91094c"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "84 平行四边形和梯形",
+          "excerpt_hash": "8fbbe678acd4296fac825cb118bb3c4024dfffb7e867bec7a7d41f094296df3e",
+          "pdf_page": 89,
+          "printed_page": "84",
+          "span_id": "tes_faa8f83713191407"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_2c57372dca985e06"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_2c57372dca985e06",
+          "label": "说出长方形、正方形、平行四边形、梯形的特征"
+        }
+      ],
+      "level": "unit",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_88126d20f6c08c3c",
+      "node_title": "84平行四边形和梯形",
+      "pdf_page": 89,
+      "printed_page": "84",
+      "publication_status": "published",
+      "rationale": "教材课文“84平行四边形和梯形”与课标 MA-D2-GE-004 的可教学小能力“说出长方形、正方形、平行四边形、梯形的特征”形成页内证据匹配。",
+      "relation_type": "supports",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "textbook_grade": 4,
+      "textbook_subject": "数学",
+      "textbook_title": "数学4年级上册",
+      "textbook_volume": "上册",
+      "unit_id": "tcu_8924cda0fe91094c",
+      "unit_title": "五 平行四边形和梯形"
+    },
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_3a184821ee386cd6",
+      "alignment_type": "supports",
+      "confidence": 0.92,
+      "coverage": "partial",
+      "edition_id": "ed_dda80e43104244896faa",
+      "evidence_basis": "toc_title",
+      "evidence_gap": "当前证据来自目录标题与课标概念匹配，尚未保存教材正文或练习摘录；因此只能声明主题支持，不能声明完整教授。",
+      "evidence_level": "L2_topic",
+      "evidence_refs": [
+        "external_smartedu_2026_math_primary_grade_4_up",
+        "tes_05cd903cd607f507",
+        "textbook-node:tcn_3a2e8aa94d0dceb0",
+        "textbook-unit:tcu_8924cda0fe91094c"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "86 平行四边形和梯形",
+          "excerpt_hash": "d0fd186c04bda98c5ca8e13e52952fb043e027aa70eab124eef7256a2720541e",
+          "pdf_page": 91,
+          "printed_page": "86",
+          "span_id": "tes_05cd903cd607f507"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_2c57372dca985e06"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_2c57372dca985e06",
+          "label": "说出长方形、正方形、平行四边形、梯形的特征"
+        }
+      ],
+      "level": "unit",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_3a2e8aa94d0dceb0",
+      "node_title": "86平行四边形和梯形",
+      "pdf_page": 91,
+      "printed_page": "86",
+      "publication_status": "published",
+      "rationale": "教材课文“86平行四边形和梯形”与课标 MA-D2-GE-004 的可教学小能力“说出长方形、正方形、平行四边形、梯形的特征”形成页内证据匹配。",
       "relation_type": "supports",
       "resource_type": "student_textbook",
       "review_status": "machine_checked",

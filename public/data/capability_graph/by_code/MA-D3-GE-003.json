@@ -690,6 +690,61 @@
     },
     {
       "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_fcec2354a04db56a",
+      "alignment_type": "supports",
+      "confidence": 0.8404,
+      "coverage": "partial",
+      "edition_id": "ed_b1800b5b9d4356b970d0",
+      "evidence_basis": "textbook_page_span",
+      "evidence_gap": null,
+      "evidence_level": "L3_page_evidence",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_primary_grade_6_down",
+        "tes_b015ca5707c28fe5",
+        "textbook-node:tcn_35da20824c874cbb",
+        "textbook-unit:tcu_54aac8a5ac652966"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "你能计算出 “至少需要用多大面积的纸板”吗?",
+          "excerpt_hash": "b413005223a6166fd2d67ce38ea64e46a7bcbb9192a269f58ab76f833ca83623",
+          "pdf_page": 9,
+          "printed_page": null,
+          "span_id": "tes_b015ca5707c28fe5"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_dcf10f8276336508"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_dcf10f8276336508",
+          "label": "计算这些图形的体积和表面积"
+        }
+      ],
+      "level": "page",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_35da20824c874cbb",
+      "node_title": "你能计算出 “至少需要用多大面积的纸板”吗?",
+      "pdf_page": 9,
+      "printed_page": null,
+      "publication_status": "published",
+      "rationale": "教材学习目标“你能计算出 “至少需要用多大面积的纸板”吗?”与课标 MA-D3-GE-003 的可教学小能力“计算这些图形的体积和表面积”形成页内证据匹配。",
+      "relation_type": "supports",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "textbook_grade": 6,
+      "textbook_subject": "数学",
+      "textbook_title": "数学6年级下册",
+      "textbook_volume": "下册",
+      "unit_id": "tcu_54aac8a5ac652966",
+      "unit_title": "一 圆柱与圆锥"
+    },
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
       "alignment_id": "tca_27a9cfc450f56209",
       "alignment_type": "practices",
       "confidence": 0.8593,
@@ -842,61 +897,6 @@
       "printed_page": null,
       "publication_status": "published",
       "rationale": "教材学习目标“如果用V表示圆锥的体积,S表示底面积,h表示高,你能写出圆锥体积的”与课标 MA-D3-GE-003 的可教学小能力“计算圆锥的体积”形成页内证据匹配。",
-      "relation_type": "supports",
-      "resource_type": "student_textbook",
-      "review_status": "machine_checked",
-      "revision_status": "current_confirmed",
-      "textbook_grade": 6,
-      "textbook_subject": "数学",
-      "textbook_title": "数学6年级下册",
-      "textbook_volume": "下册",
-      "unit_id": "tcu_54aac8a5ac652966",
-      "unit_title": "一 圆柱与圆锥"
-    },
-    {
-      "algorithm_version": "component-evidence-hybrid-v3",
-      "alignment_id": "tca_fcec2354a04db56a",
-      "alignment_type": "supports",
-      "confidence": 0.8404,
-      "coverage": "partial",
-      "edition_id": "ed_b1800b5b9d4356b970d0",
-      "evidence_basis": "textbook_page_span",
-      "evidence_gap": null,
-      "evidence_level": "L3_page_evidence",
-      "evidence_refs": [
-        "external_smartedu_2026_bsd_math_primary_grade_6_down",
-        "tes_b015ca5707c28fe5",
-        "textbook-node:tcn_35da20824c874cbb",
-        "textbook-unit:tcu_54aac8a5ac652966"
-      ],
-      "evidence_role": "direct_textbook",
-      "evidence_spans": [
-        {
-          "evidence_role": "direct_textbook",
-          "excerpt": "你能计算出 “至少需要用多大面积的纸板”吗?",
-          "excerpt_hash": "b413005223a6166fd2d67ce38ea64e46a7bcbb9192a269f58ab76f833ca83623",
-          "pdf_page": 9,
-          "printed_page": null,
-          "span_id": "tes_b015ca5707c28fe5"
-        }
-      ],
-      "learning_component_ids": [
-        "lc_dcf10f8276336508"
-      ],
-      "learning_components": [
-        {
-          "component_id": "lc_dcf10f8276336508",
-          "label": "计算这些图形的体积和表面积"
-        }
-      ],
-      "level": "page",
-      "method": "component_evidence_hybrid",
-      "node_id": "tcn_35da20824c874cbb",
-      "node_title": "你能计算出 “至少需要用多大面积的纸板”吗?",
-      "pdf_page": 9,
-      "printed_page": null,
-      "publication_status": "published",
-      "rationale": "教材学习目标“你能计算出 “至少需要用多大面积的纸板”吗?”与课标 MA-D3-GE-003 的可教学小能力“计算这些图形的体积和表面积”形成页内证据匹配。",
       "relation_type": "supports",
       "resource_type": "student_textbook",
       "review_status": "machine_checked",

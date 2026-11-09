@@ -12,11 +12,10 @@ import path from 'node:path'
 import { fileURLToPath, pathToFileURL } from 'node:url'
 import { verifyLine } from './rational.mjs'
 import { bracesBalanced, plainMath } from '../../src/features/checks/mathText.js'
-import { CHECK_SUBJECTS, bookOf } from '../../src/features/checks/subjects.js'
+import { CHECK_SUBJECTS, bookKeyOf, bookOf } from '../../src/features/checks/subjects.js'
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..')
 const TYPES = ['choice', 'judge', 'step', 'write']
-const TERM_OF_VOLUME = { 上册: '上', 下册: '下', 全一册: '全' }
 const TERM_ORDER = { 上: 0, 下: 1, 全: 2 }
 // Projector limits, in widths of a Chinese character (a Latin letter, digit or space counts about half).
 // Longer lines stop fitting at the size a back row can read.
@@ -38,7 +37,7 @@ export function libraryBooks(subject) {
     const books = new Map()
     for (const book of readJson('public/data/textbooks/index.json').items) {
         if (book.subject_slug !== subject.slug || !(subject.editions || []).includes(book.edition_name)) continue
-        const key = `${book.grade}${TERM_OF_VOLUME[book.volume] || ''}`
+        const key = bookKeyOf(subject, { grade: book.grade, volume: book.volume, edition: book.edition_name })
         const entry = { edition_id: book.edition_id, edition: book.edition_name, units: null, titles: [], lessons: [] }
         let tree = null
         const file = path.join(ROOT, `public/data/textbooks/national-lessons/${book.edition_id}.json`)

@@ -9,8 +9,33 @@
     {"id": "used-to-past-verb", "name": "used to 后用了过去式", "why": "used 已经是过去式，就以为后面的动词也要变。", "move": "提醒：to 后面用动词原形，“过去”已经由 used 表示了。"},
     {"id": "since-for-period", "name": "把 since 用在一段时间前", "why": "把 since 记成“……以来”，“50 年来”就说成 since 50 years，没分清 since 接时间点、for 接一段时间。", "move": "画时间轴：since 后面是轴上的一个点（since 1976、since I was a child），for 后面是一段长度（for 50 years），让学生把例子放上去。"},
     {"id": "used-to-still-now-9a", "name": "以为 used to 指现在还这样", "why": "把 used to 只记成“常常”，没注意它说的是过去，暗含“现在不这样了”。", "move": "画一条时间轴，used to 只画在过去一段，问：现在那一段还有吗？"},
-    {"id": "used-to-accustomed-9a", "name": "把 used to 读成“习惯于”", "why": "和刚学过的 be used to（习惯于）混在一起，没看前面有没有 be。", "move": "把 used to have 和 are used to having 并排写，圈出 be，问：哪句有 be？"},
-    {"id": "used-to-be-used-for-9a", "name": "把 used to 读成“被用来”", "why": "看到 used 就想到 use（用），把整句理解成“某物被用来……”。", "move": "问：句子里是谁“被用”了吗？把 used to 换成“以前”读一遍，看通不通。"}
+    {"id": "used-to-accustomed-9a", "name": "把 used to 读成“习惯于”", "why": "词典里 used to 和“习惯”挨在一起，就把 used to 也读成“习惯了”。", "move": "把 used to 换成“以前常常”读一遍，再问：句子说的是“以前怎样”，还是“已经习惯了”？"},
+    {"id": "used-to-be-used-for-9a", "name": "把 used to 读成“被用来”", "why": "看到 used 就想到 use（用），把整句理解成“某物被用来……”。", "move": "问：句子里是谁“被用”了吗？把 used to 换成“以前”读一遍，看通不通。"},
+    {"id": "for-with-quality-adj-9a", "name": "夸人的品质也用了 for", "why": "记住了 It is important for us to …，就以为 It is … 后面的人都用 for。", "move": "问：brave 说的是这件事，还是他这个人？能说 He was brave，就是夸人的品质，用 of；说事情难不难、重不重要才用 for。"},
+    {"id": "to-for-to-sb-9a", "name": "把“对他来说”说成 to him", "why": "照汉语“对他来说”逐字翻，用了 to。", "move": "把 It was difficult for him … 和 It was brave of him … 写在黑板上，问：哪句里有 to him？这个句型里只用 of 或 for。"},
+    {"id": "subject-word-for-person-9a", "name": "说人却用了学科名", "why": "汉语“历史学家”里有“历史”二字，就以为 history 也能指人。", "move": "问：空里要的是一个人还是一门学科？指人的词要加后缀：history → historian，science → scientist。"},
+    {"id": "ist-for-all-9a", "name": "学科变“人”都加 -ist", "why": "刚记住 scientist、chemist，就以为每个学科都加 -ist。", "move": "画三栏：-ist（scientist、chemist、physicist）、-ian（historian）、-er（researcher），让学生把新词放进对应一栏。"},
+    {"id": "that-for-yes-no-9a", "name": "转述一般疑问句用了 that", "why": "以为宾语从句都用 that 引导，没注意原句是在问“是不是”。", "move": "问：Tom 是在说一件事，还是在问“是不是”？问“是不是”用 if / whether，说一件事才用 that。"},
+    {"id": "clause-question-order-9a", "name": "宾语从句还用疑问语序", "why": "把原来的问句原样搬进句子里，do、does 和倒装都留着。", "move": "把从句单独圈出来读：从句要用陈述句的语序，主语在前，去掉 do / does。"},
+    {"id": "the-more-no-the-9a", "name": "“越……越……”漏了 the", "why": "照汉语“越读越好”逐词翻，两个半句前都没加 the。", "move": "把句型写成框架：The + 比较级 …, the + 比较级 …，让学生先在两处 the 下画线，再填词。"},
+    {"id": "drop-does-keep-base-9a", "name": "去掉 does 忘了给动词加 -s", "why": "知道从句里不用 does，却没想到 does 表示的三单要落到动词上。", "move": "把 does … start 和 starts 并排写，问：does 去哪了？它的 -s 跑到 start 后面去了。"},
+    {"id": "verb-for-adjective-9a", "name": "形容词的位置填了动词原形", "why": "只认得 forget 是“忘记”，没看 is getting 后面要的是形容词。", "move": "圈出 is getting，问：后面要一个说“怎么样”的词，是动词还是形容词？forget 加 -ful 才是形容词。"},
+    {"id": "participle-for-trait-9a", "name": "把 forgotten 当成“健忘”", "why": "知道过去分词能当形容词用，就以为 forgotten 是“爱忘事的”。", "move": "对比：a forgotten book（被忘掉的书）/ a forgetful boy（爱忘事的男孩），问：是爷爷被别人忘了，还是爷爷总忘事？"},
+    {"id": "passive-no-be-9a", "name": "被动语态漏了 be", "why": "汉语里常不说“被”，就只把动词变了形，漏了 be。", "move": "问：主语自己会做这个动作吗？不会，就是“被”做，要 be + 过去分词：先找 be，再找过去分词。"},
+    {"id": "passive-tense-ignored-9a", "name": "被动语态的 be 没跟着时间变", "why": "记住了被动语态是 is + 过去分词，没看句子里的时间词。", "move": "圈出时间词（last year、next month），问：什么时候的事？be 跟着变：was / were、will be。"},
+    {"id": "passive-base-verb-9a", "name": "被动语态 be 后用了动词原形", "why": "记住了 be 表示被动、表示时间，就以为后面的动词不用再变。", "move": "把 build–built–built、send–sent–sent 写出来，问：被动语态 be 后面用第几个？"},
+    {"id": "person-noun-for-thing-9a", "name": "把发明物说成了发明者", "why": "看到 invent 的名词就想到 inventor，没分清 -or 指人、-ion 指东西或事。", "move": "问：造纸术是一个人吗？-or / -er 指做事的人，-ion 指做出来的东西或这件事。"},
+    {"id": "verb-for-noun-9a", "name": "名词的位置用了动词", "why": "汉语“发明”既是动词又是名词，就直接用了 invent。", "move": "圈出 the greatest，问：后面要一个“东西”还是一个“动作”？invent 加 -ion 才是名词。"},
+    {"id": "active-for-passive-9a", "name": "主语是承受者却用了主动", "why": "只看到“将来”就用了 will do，没想主语是“被”做的那一方。", "move": "问：卫星自己会送东西吗？它是被送上天的，所以要 will be + 过去分词。"},
+    {"id": "in-case-as-if-9a", "name": "把 in case 当成 if", "why": "in case 和 if 后面都接一件可能发生的事，就以为意思一样。", "move": "问：带水是在口渴之前还是之后？in case 是先做好准备，以防万一；if 是那件事发生了才去做。"},
+    {"id": "in-case-as-because-9a", "name": "把 in case 当成“因为”", "why": "看到 case（情况）就想成“由于这种情况”，把可能发生的事当成了已经发生的原因。", "move": "问：现在已经口渴了吗？还没有，只是可能会渴，所以 in case 说的是“以防”。"},
+    {"id": "which-for-people-9a", "name": "指人的先行词用了 which", "why": "记住了 which 能引导定语从句，没看前面的先行词是人还是物。", "move": "圈出从句前的名词 the musician，问：人还是物？人用 who / that，物用 which / that。"},
+    {"id": "what-as-relative-9a", "name": "定语从句用 what 引导", "why": "觉得“弹钢琴的那位”是在说“什么样的”，就用了 what。", "move": "提醒：what 前面不接名词；前面有 the musician 这样的名词，从句用 who / which / that。"},
+    {"id": "phrasal-verb-literal-9a", "name": "按字面意思理解动词短语", "why": "认识 look、down、catch 这些词，就把短语逐词拼起来理解。", "move": "问：照字面理解，放回句子里说得通吗？动词短语要整体记：look down on = 瞧不起，catch up with = 追上。"},
+    {"id": "look-up-down-swapped-9a", "name": "把瞧不起和敬佩弄反", "why": "两个短语都在说对别人的态度，只记住了 look，没分清上和下。", "move": "画一高一低两个人：仰头看是 look up to（敬佩），往下看是 look down on（瞧不起）。"},
+    {"id": "everyone-plural-9a", "name": "everyone 后面用了复数动词", "why": "everyone 意思是“大家”，想到很多人，就用了 are。", "move": "把 everyone 拆成 every + one，问：one 是几个？everyone、everybody、each 作主语，动词用单数。"},
+    {"id": "verb-nearest-noun-9a", "name": "谓语只看紧挨着的名词", "why": "只看到动词前面的 Jim 是一个人，就用了 is。", "move": "圈出整个主语 Both Tom and Jim，问：一共几个人？两个人用 are。"},
+    {"id": "catch-up-as-pass-9a", "name": "把“追上”当成“超过”", "why": "比赛里追上的人常常接着超过对方，就把“追上”和“超过”当成一回事。", "move": "画两个小人：追到并排是 catch up with，跑到前面才是“超过”。问：句子说他跑到前面了吗？"}
   ],
   "items": [
     {
@@ -21,7 +46,7 @@
       "lessons": ["What changes have taken place around you"],
       "points": ["EN-S3-LK-01.14"],
       "topic": "说家乡的变化",
-      "stem": "Great changes ____ in my hometown since 2015.",
+      "stem": "Big changes ____ in our village since 2015.",
       "options": ["have taken place", "took place", "have been taken place", "has taken place"],
       "answer": 0,
       "wrong": {"1": "since-with-past-tense", "2": "take-place-passive", "3": "has-with-plural-subject"},
@@ -100,7 +125,7 @@
       "unit": "Unit 1 The Changing World",
       "lesson": "Section B How do changes influence us?",
       "lessons": ["How do changes influence us"],
-      "points": ["EN-S3-LK-01.8", "EN-S3-LS-01.29"],
+      "points": ["EN-S3-LK-01.8", "EN-S3-LS-01.29", "EN-S3-TX-01.5"],
       "topic": "读懂 used to 的意思",
       "stem": "读句子：My town used to have only one small shop. 这句话的意思是：",
       "options": ["镇上一直到今天都只有一家小商店", "镇上的人早就习惯那家小商店了", "镇上把那家小商店用来干别的", "过去只有一家小商店，现在不同了"],
@@ -111,7 +136,7 @@
       "typical_error": "used-to-still-now-9a",
       "ladder": [
         {"q": "There used to be a river here. 现在这里还有河吗？", "a": "没有了（以前有，现在没有）"},
-        {"q": "哪句说“现在习惯早起”？A. I used to get up early. B. I am used to getting up early.", "a": "B"},
+        {"q": "哪句说“现在每天早起”？A. I used to get up early. B. I get up early every day.", "a": "B"},
         {"q": "用 used to 和 now 写两句：以前骑车上学，现在坐公交。", "a": "I used to ride a bike to school. Now I take a bus."}
       ]
     },
@@ -132,6 +157,298 @@
         {"q": "My family ____ (live) in this flat since 2020.", "a": "has lived"},
         {"q": "We ____ (move) to a bigger flat last year.", "a": "moved"},
         {"q": "改错：Since I came to this school, I joined two clubs.", "a": "joined → have joined"}
+      ]
+    },
+    {
+      "id": "en-9a-07",
+      "type": "choice",
+      "unit": "Unit 2 Inspiring People",
+      "lesson": "Section A Who do we admire?",
+      "lessons": ["Who do we admire"],
+      "points": ["EN-S3-LK-01.15", "EN-S3-TH-01.20"],
+      "topic": "夸人用 of 还是 for",
+      "stem": "It was very brave ____ him to travel so far.",
+      "options": ["of", "for", "to"],
+      "answer": 0,
+      "wrong": {"1": "for-with-quality-adj-9a", "2": "to-for-to-sb-9a"},
+      "right": ["brave 说的是他这个人勇敢（He was brave.），", "夸人的品质用 of：It was very brave of him to …"],
+      "typical": ["It is important for us to …，所以也用 for：", "It was very brave for him to travel so far."],
+      "typical_error": "for-with-quality-adj-9a",
+      "ladder": [
+        {"q": "填 of 或 for：It's very kind ____ you to help me.", "a": "of"},
+        {"q": "填 of 或 for：It is difficult ____ us to finish the work in a day.", "a": "for"},
+        {"q": "用 It was … of … to … 改写：Tom helped the old man. (nice)", "a": "It was nice of Tom to help the old man."}
+      ]
+    },
+    {
+      "id": "en-9a-08",
+      "type": "write",
+      "unit": "Unit 2 Inspiring People",
+      "lesson": "Section B What makes people admirable?",
+      "lessons": ["What makes people admirable"],
+      "points": ["EN-S3-LK-01.9"],
+      "topic": "学科变成人：加后缀",
+      "stem": "用括号里词的正确形式填空：Mr Li writes books about the Tang Dynasty. He is a ____ (history).",
+      "answer": "historian",
+      "wrong": {"history": "subject-word-for-person-9a", "historist": "ist-for-all-9a"},
+      "right": ["指人的词要加后缀：history 变成 historian（历史学家）。", "He is a historian."],
+      "typical": ["science → scientist，所以 history → historist"],
+      "typical_error": "ist-for-all-9a",
+      "ladder": [
+        {"q": "写出指人的词：science → ____", "a": "scientist"},
+        {"q": "用所给词的正确形式填空：Einstein was a great ____ (physics).", "a": "physicist"},
+        {"q": "用所给词的正确形式填空：Many ____ (research) are studying seeds.", "a": "researchers"}
+      ]
+    },
+    {
+      "id": "en-9a-09",
+      "type": "choice",
+      "unit": "Unit 3 Smart Learning",
+      "lesson": "Section A How do we learn?",
+      "lessons": ["How do we learn"],
+      "points": ["EN-S3-LK-01.15"],
+      "topic": "转述“是不是”的问题",
+      "stem": "Tom 问你：Do you like maths? 你转述给同桌：Tom wants to know ____.",
+      "options": ["that I like maths", "if do I like maths", "if I like maths"],
+      "answer": 2,
+      "wrong": {"0": "that-for-yes-no-9a", "1": "clause-question-order-9a"},
+      "right": ["原句问的是“是不是”，用 if / whether 引导；", "从句用陈述语序：Tom wants to know if I like maths."],
+      "typical": ["宾语从句用 that 引导：", "Tom wants to know that I like maths."],
+      "typical_error": "that-for-yes-no-9a",
+      "ladder": [
+        {"q": "填 that 或 if：I think ____ reading is fun.", "a": "that"},
+        {"q": "填 that 或 if：Mum asks ____ I have finished my homework.", "a": "if（或 whether）"},
+        {"q": "合成一句：Is the library open today? I don't know.", "a": "I don't know if the library is open today."}
+      ]
+    },
+    {
+      "id": "en-9a-10",
+      "type": "choice",
+      "unit": "Unit 3 Smart Learning",
+      "lesson": "Section B How can we get better at learning?",
+      "lessons": ["How can we get better at learning"],
+      "points": ["EN-S3-LK-01.14"],
+      "topic": "越……越……怎么说",
+      "stem": "“我们笑得越多，就越开心。”英语怎么说？",
+      "options": ["More we laugh, happier we are.", "The more we laugh, the happier we are.", "The more we laugh, the more happier we are."],
+      "answer": 1,
+      "wrong": {"0": "the-more-no-the-9a", "2": "more-plus-er"},
+      "right": ["“越……越……”用 The + 比较级 …, the + 比较级 …；", "happier 已经是比较级，前面不再加 more。"],
+      "typical": ["照汉语逐词翻：", "More we laugh, happier we are."],
+      "typical_error": "the-more-no-the-9a",
+      "ladder": [
+        {"q": "补全：The more you read, the ____ (fast) you can read.", "a": "faster"},
+        {"q": "翻译：我们练习得越多，就变得越自信。", "a": "The more we practise, the more confident we become."},
+        {"q": "改错：The more you review, the more better you remember.", "a": "the more better → the better"}
+      ]
+    },
+    {
+      "id": "en-9a-11",
+      "type": "choice",
+      "unit": "Unit 4 Our Memory",
+      "lesson": "Section A What do we remember?",
+      "lessons": ["What do we remember"],
+      "points": ["EN-S3-LK-01.14", "EN-S3-LK-01.15"],
+      "topic": "宾语从句的语序",
+      "stem": "把问题放进句子里：When does the lecture start? → I can't remember ____.",
+      "options": ["when the lecture starts", "when does the lecture start", "when the lecture start"],
+      "answer": 0,
+      "wrong": {"1": "clause-question-order-9a", "2": "drop-does-keep-base-9a"},
+      "right": ["宾语从句用陈述语序，去掉 does；", "主语 the lecture 是三单，动词加 -s：when the lecture starts。"],
+      "typical": ["问句原样放进去：", "I can't remember when does the lecture start."],
+      "typical_error": "clause-question-order-9a",
+      "ladder": [
+        {"q": "合成一句：Where is the library? Can you tell me?", "a": "Can you tell me where the library is?"},
+        {"q": "合成一句：What does Tom need? I don't know.", "a": "I don't know what Tom needs."},
+        {"q": "改错：I wonder why did she leave so early.", "a": "why did she leave → why she left"}
+      ]
+    },
+    {
+      "id": "en-9a-12",
+      "type": "write",
+      "unit": "Unit 4 Our Memory",
+      "lesson": "Section B How can we improve our memory?",
+      "lessons": ["How can we improve our memory"],
+      "points": ["EN-S3-LK-01.9"],
+      "topic": "加后缀变成形容词",
+      "stem": "用括号里词的正确形式填空：Grandpa is getting ____ (forget). He often can't find his glasses.",
+      "answer": "forgetful",
+      "wrong": {"forget": "verb-for-adjective-9a", "forgotten": "participle-for-trait-9a"},
+      "right": ["is getting 后面要形容词，说爷爷“怎么样”；", "forget + -ful = forgetful（健忘的）。"],
+      "typical": ["forget 就是“忘”：Grandpa is getting forget."],
+      "typical_error": "verb-for-adjective-9a",
+      "ladder": [
+        {"q": "写出形容词：help → ____", "a": "helpful"},
+        {"q": "用所给词的正确形式填空：Mind maps are an ____ (effect) way to review.", "a": "effective"},
+        {"q": "用所给词的正确形式填空：Be an ____ (act) learner.", "a": "active"}
+      ]
+    },
+    {
+      "id": "en-9a-13",
+      "type": "choice",
+      "unit": "Unit 5 Power of Ideas",
+      "lesson": "Section A What changes can inventions bring to our lives?",
+      "lessons": ["What changes can inventions bring to our lives"],
+      "points": ["EN-S3-LK-01.15", "EN-S3-TH-01.24"],
+      "topic": "过去的被动语态",
+      "stem": "The new science museum in our town ____ last year.",
+      "options": ["built", "is built", "was built", "was build"],
+      "answer": 2,
+      "wrong": {"0": "passive-no-be-9a", "1": "passive-tense-ignored-9a", "3": "passive-base-verb-9a"},
+      "right": ["博物馆是“被建”的，用被动语态 be + 过去分词；", "last year 是过去，be 用 was：was built。"],
+      "typical": ["博物馆是去年建的，用过去式就行：", "The new science museum built last year."],
+      "typical_error": "passive-no-be-9a",
+      "ladder": [
+        {"q": "用所给词的正确形式填空：This bridge ____ (build) in 2020.", "a": "was built"},
+        {"q": "用所给词的正确形式填空：These toys ____ (make) by a 3D printer last week.", "a": "were made"},
+        {"q": "改成被动语态：Students planted these trees last spring.", "a": "These trees were planted by students last spring."}
+      ]
+    },
+    {
+      "id": "en-9a-14",
+      "type": "choice",
+      "unit": "Unit 5 Power of Ideas",
+      "lesson": "Section B How do we turn ideas into reality?",
+      "lessons": ["How do we turn ideas into reality"],
+      "points": ["EN-S3-LK-01.9", "EN-S3-LK-01.8"],
+      "topic": "发明物还是发明者",
+      "stem": "Papermaking is one of the greatest ____ in history.",
+      "options": ["inventors", "inventions", "invents"],
+      "answer": 1,
+      "wrong": {"0": "person-noun-for-thing-9a", "2": "verb-for-noun-9a"},
+      "right": ["one of the greatest 后面要复数名词；", "造纸术是一项发明，不是发明者：inventions。"],
+      "typical": ["invent 的名词是 inventor：", "one of the greatest inventors"],
+      "typical_error": "person-noun-for-thing-9a",
+      "ladder": [
+        {"q": "写出名词：create → ____", "a": "creation"},
+        {"q": "写出指人的名词：invent → ____", "a": "inventor"},
+        {"q": "用所给词的正确形式填空：My brother has a big stamp ____ (collect).", "a": "collection"}
+      ]
+    },
+    {
+      "id": "en-9a-15",
+      "type": "choice",
+      "unit": "Unit 6 Beyond Earth",
+      "lesson": "Section A Why do we explore space?",
+      "lessons": ["Why do we explore space"],
+      "points": ["EN-S3-LK-01.15", "EN-S3-TH-01.29"],
+      "topic": "将来的被动语态",
+      "stem": "A new satellite ____ into space next month.",
+      "options": ["will send", "will be sent", "will sent", "will be send"],
+      "answer": 1,
+      "wrong": {"0": "active-for-passive-9a", "2": "passive-no-be-9a", "3": "passive-base-verb-9a"},
+      "right": ["卫星是“被送”上天的，用被动语态；", "next month 是将来：will be + 过去分词 sent。"],
+      "typical": ["将来的事用 will do：", "A new satellite will send into space next month."],
+      "typical_error": "active-for-passive-9a",
+      "ladder": [
+        {"q": "用所给词的正确形式填空：More trees ____ (plant) here next spring.", "a": "will be planted"},
+        {"q": "改成被动语态：They will build a new hospital next year.", "a": "A new hospital will be built next year."},
+        {"q": "改错：The new space station will finished in two years.", "a": "will finished → will be finished"}
+      ]
+    },
+    {
+      "id": "en-9a-16",
+      "type": "choice",
+      "unit": "Unit 6 Beyond Earth",
+      "lesson": "Section B How far can we go into space?",
+      "lessons": ["How far can we go into space"],
+      "points": ["EN-S3-LK-01.7", "EN-S3-LK-01.8"],
+      "topic": "in case 是什么意思",
+      "stem": "读句子：Take some water in case you get thirsty on the trip. 意思是：",
+      "options": ["先带上水，以防路上口渴", "如果路上口渴了，再去拿水", "因为路上口渴，所以带上水"],
+      "answer": 0,
+      "wrong": {"1": "in-case-as-if-9a", "2": "in-case-as-because-9a"},
+      "right": ["in case + 一件可能发生的事：先做准备，以防万一；", "现在还没口渴，带水是防着路上会渴。"],
+      "typical": ["in case 就是 if：如果路上口渴了，再去拿水"],
+      "typical_error": "in-case-as-if-9a",
+      "ladder": [
+        {"q": "in case 的意思是：A. 以防 B. 因为", "a": "A"},
+        {"q": "翻译：带上外套，以防天变冷。", "a": "Take a coat in case it gets cold."},
+        {"q": "用 in case 连成一句：Leave early. The roads may be busy.", "a": "Leave early in case the roads are busy."}
+      ]
+    },
+    {
+      "id": "en-9a-17",
+      "type": "choice",
+      "unit": "Unit 7 Feel the Rhythm",
+      "lesson": "Section A What do you like about music?",
+      "lessons": ["What do you like about music"],
+      "points": ["EN-S3-LK-01.15", "EN-S3-TH-01.16"],
+      "topic": "定语从句：人用 who",
+      "stem": "I want to meet the musician ____ played the piano at our concert.",
+      "options": ["which", "what", "who"],
+      "answer": 2,
+      "wrong": {"0": "which-for-people-9a", "1": "what-as-relative-9a"},
+      "right": ["先行词 the musician 是人，用 who（也可以用 that）；", "… the musician who played the piano at our concert."],
+      "typical": ["which 引导定语从句：", "… the musician which played the piano at our concert."],
+      "typical_error": "which-for-people-9a",
+      "ladder": [
+        {"q": "填 who 或 which：I like music ____ makes me happy.", "a": "which（或 that）"},
+        {"q": "填 who 或 which：The girl ____ plays the pipa is my sister.", "a": "who（或 that）"},
+        {"q": "合成一句：I have a friend. He can play the violin.", "a": "I have a friend who can play the violin."}
+      ]
+    },
+    {
+      "id": "en-9a-18",
+      "type": "choice",
+      "unit": "Unit 7 Feel the Rhythm",
+      "lesson": "Section B What is the power of music?",
+      "lessons": ["What is the power of music"],
+      "points": ["EN-S3-LK-01.7", "EN-S3-LK-01.8"],
+      "topic": "look down on 的意思",
+      "stem": "读句子：Lily sings the best in our class, but she never looks down on others. 意思是：",
+      "options": ["莉莉从不低头看别人", "莉莉从不瞧不起别人", "莉莉从不敬佩别人"],
+      "answer": 1,
+      "wrong": {"0": "phrasal-verb-literal-9a", "2": "look-up-down-swapped-9a"},
+      "right": ["look down on 是一个整体：瞧不起、看不起；", "莉莉唱得最好，却从不瞧不起别人。"],
+      "typical": ["look 是看，down 是向下：莉莉从不低头看别人"],
+      "typical_error": "phrasal-verb-literal-9a",
+      "ladder": [
+        {"q": "look up to 的意思是：A. 敬佩 B. 瞧不起", "a": "A"},
+        {"q": "翻译：不要瞧不起别人。", "a": "Don't look down on others."},
+        {"q": "填 look up to 或 look down on：Many students ____ Yuan Longping.", "a": "look up to"}
+      ]
+    },
+    {
+      "id": "en-9a-19",
+      "type": "choice",
+      "unit": "Unit 8 More than a Game",
+      "lesson": "Section A Why do we like sports events?",
+      "lessons": ["Why do we like sports events"],
+      "points": ["EN-S3-LK-01.13", "EN-S3-TH-01.17"],
+      "topic": "主谓一致",
+      "stem": "选出主谓一致正确的一句：",
+      "options": ["Everyone in our class are ready.", "Both Tom and Jim is fast.", "Each team has four runners."],
+      "answer": 2,
+      "wrong": {"0": "everyone-plural-9a", "1": "verb-nearest-noun-9a"},
+      "right": ["each team 作主语看作单数，用 has；", "Everyone 后用 is；Both Tom and Jim 是两个人，用 are。"],
+      "typical": ["“大家”是很多人，用 are：", "Everyone in our class are ready."],
+      "typical_error": "everyone-plural-9a",
+      "ladder": [
+        {"q": "填 is 或 are：Everybody in my family ____ a football fan.", "a": "is"},
+        {"q": "填 is 或 are：Both my brother and I ____ in the school team.", "a": "are"},
+        {"q": "用所给词的正确形式填空：Each player ____ (have) a number on the shirt.", "a": "has"}
+      ]
+    },
+    {
+      "id": "en-9a-20",
+      "type": "choice",
+      "unit": "Unit 8 More than a Game",
+      "lesson": "Section B How does sport bring us together?",
+      "lessons": ["How does sport bring us together"],
+      "points": ["EN-S3-LK-01.7", "EN-S3-LK-01.8"],
+      "topic": "catch up with 的意思",
+      "stem": "读句子：Li Lei ran faster and caught up with Tom in the last 20 metres. 意思是：",
+      "options": ["李雷在最后 20 米伸手抓住了汤姆", "李雷在最后 20 米追上了汤姆", "李雷在最后 20 米超过了汤姆"],
+      "answer": 1,
+      "wrong": {"0": "phrasal-verb-literal-9a", "2": "catch-up-as-pass-9a"},
+      "right": ["catch up with sb：从后面追上某人，跟他并排；", "句子只说追上了，没说跑到了汤姆前面。"],
+      "typical": ["catch 是抓：李雷在最后 20 米伸手抓住了汤姆"],
+      "typical_error": "phrasal-verb-literal-9a",
+      "ladder": [
+        {"q": "catch up with 的意思是：A. 追上 B. 抓住", "a": "A"},
+        {"q": "翻译：跑快点，我们就能追上他们。", "a": "Run faster, and we can catch up with them."},
+        {"q": "填 catch up with 或 sign up for：Tom fell behind, but he soon ____ the others.", "a": "caught up with"}
       ]
     }
   ]

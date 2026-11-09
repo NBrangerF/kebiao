@@ -295,66 +295,6 @@
     },
     {
       "algorithm_version": "component-evidence-hybrid-v3",
-      "alignment_id": "tca_5fbd2aefd8e047a4",
-      "alignment_type": "supports",
-      "confidence": 0.92,
-      "coverage": "partial",
-      "edition_id": "ed_026e3aaeacf415f2782d",
-      "evidence_basis": "toc_title",
-      "evidence_gap": "当前证据来自目录标题与课标概念匹配，尚未保存教材正文或练习摘录；因此只能声明主题支持，不能声明完整教授。",
-      "evidence_level": "L2_topic",
-      "evidence_refs": [
-        "external_smartedu_2026_math_junior_grade_9_up",
-        "tes_b6572d86bbf837fd",
-        "textbook-node:tcn_4c4bcfdb993da0a0",
-        "textbook-unit:tcu_87b2c6b9fbf08409"
-      ],
-      "evidence_role": "direct_textbook",
-      "evidence_spans": [
-        {
-          "evidence_role": "direct_textbook",
-          "excerpt": "2 为利用一元二次方程求",
-          "excerpt_hash": "f1a2a4b778915254bae9087da2a7d66873ad692e42786d8d15e9242d1d719ce2",
-          "pdf_page": 25,
-          "printed_page": "18",
-          "span_id": "tes_b6572d86bbf837fd"
-        }
-      ],
-      "learning_component_ids": [
-        "lc_32948e2d317e092b",
-        "lc_b7758a99c5ced065"
-      ],
-      "learning_components": [
-        {
-          "component_id": "lc_32948e2d317e092b",
-          "label": "识别并说出一元二次方程根与系数关系的关键特征"
-        },
-        {
-          "component_id": "lc_b7758a99c5ced065",
-          "label": "解一元一次方程、可化为一元一次方程的分式方程、二元一次方程组和数字系数一元二次方程"
-        }
-      ],
-      "level": "unit",
-      "method": "component_evidence_hybrid",
-      "node_id": "tcn_4c4bcfdb993da0a0",
-      "node_title": "2为利用一元二次方程求",
-      "pdf_page": 25,
-      "printed_page": "18",
-      "publication_status": "published",
-      "rationale": "教材课文“2为利用一元二次方程求”与课标 MA-H4G9-AL-015 的可教学小能力“识别并说出一元二次方程根与系数关系的关键特征、解一元一次方程、可化为一元一次方程的分式方程、二元一次方程组和数字系数一元二次方程”形成页内证据匹配。",
-      "relation_type": "supports",
-      "resource_type": "student_textbook",
-      "review_status": "machine_checked",
-      "revision_status": "current_confirmed",
-      "textbook_grade": 9,
-      "textbook_subject": "数学",
-      "textbook_title": "数学9年级上册",
-      "textbook_volume": "上册",
-      "unit_id": "tcu_87b2c6b9fbf08409",
-      "unit_title": "第二十五章 一元二次方程"
-    },
-    {
-      "algorithm_version": "component-evidence-hybrid-v3",
       "alignment_id": "tca_c0ad4eeee78882a9",
       "alignment_type": "supports",
       "confidence": 0.92,
@@ -402,6 +342,66 @@
       "printed_page": "2",
       "publication_status": "published",
       "rationale": "教材课文“2第二十五章一元二次方程”与课标 MA-H4G9-AL-015 的可教学小能力“识别并说出一元二次方程根与系数关系的关键特征、解一元一次方程、可化为一元一次方程的分式方程、二元一次方程组和数字系数一元二次方程”形成页内证据匹配。",
+      "relation_type": "supports",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "textbook_grade": 9,
+      "textbook_subject": "数学",
+      "textbook_title": "数学9年级上册",
+      "textbook_volume": "上册",
+      "unit_id": "tcu_87b2c6b9fbf08409",
+      "unit_title": "第二十五章 一元二次方程"
+    },
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_5fbd2aefd8e047a4",
+      "alignment_type": "supports",
+      "confidence": 0.92,
+      "coverage": "partial",
+      "edition_id": "ed_026e3aaeacf415f2782d",
+      "evidence_basis": "toc_title",
+      "evidence_gap": "当前证据来自目录标题与课标概念匹配，尚未保存教材正文或练习摘录；因此只能声明主题支持，不能声明完整教授。",
+      "evidence_level": "L2_topic",
+      "evidence_refs": [
+        "external_smartedu_2026_math_junior_grade_9_up",
+        "tes_b6572d86bbf837fd",
+        "textbook-node:tcn_4c4bcfdb993da0a0",
+        "textbook-unit:tcu_87b2c6b9fbf08409"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "2 为利用一元二次方程求",
+          "excerpt_hash": "f1a2a4b778915254bae9087da2a7d66873ad692e42786d8d15e9242d1d719ce2",
+          "pdf_page": 25,
+          "printed_page": "18",
+          "span_id": "tes_b6572d86bbf837fd"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_32948e2d317e092b",
+        "lc_b7758a99c5ced065"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_32948e2d317e092b",
+          "label": "识别并说出一元二次方程根与系数关系的关键特征"
+        },
+        {
+          "component_id": "lc_b7758a99c5ced065",
+          "label": "解一元一次方程、可化为一元一次方程的分式方程、二元一次方程组和数字系数一元二次方程"
+        }
+      ],
+      "level": "unit",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_4c4bcfdb993da0a0",
+      "node_title": "2为利用一元二次方程求",
+      "pdf_page": 25,
+      "printed_page": "18",
+      "publication_status": "published",
+      "rationale": "教材课文“2为利用一元二次方程求”与课标 MA-H4G9-AL-015 的可教学小能力“识别并说出一元二次方程根与系数关系的关键特征、解一元一次方程、可化为一元一次方程的分式方程、二元一次方程组和数字系数一元二次方程”形成页内证据匹配。",
       "relation_type": "supports",
       "resource_type": "student_textbook",
       "review_status": "machine_checked",

@@ -2,6 +2,8 @@
 // Shared by the bank checks (scripts/checks/bank.mjs) and the pages.
 //   markup 'math': {a/b} fractions, x^2, H_2O, √, =[点燃]= (see mathText.js); 'plain': text as written
 //   editions: questions follow the units of these textbook editions in the library, one file per volume
+//   editionTags: an edition that shares grades with the first one gets its own files and book keys:
+//   北师大版 五上 is data/checks/math/bsd-5a.json, ids ma-bsd-5a-NN, book key 北师大5上
 //   bands: no usable textbook in the library (or editions vary by region), so questions are filed by 学段
 //   and grouped by the 课标's 学习任务/任务群/模块; 艺术 uses its own 学段 (1-2, 3-5, 6-7, 8-9)
 const STAGES = ['1-2', '3-4', '5-6', '7-9']
@@ -9,8 +11,8 @@ const ARTS_STAGES = ['1-2', '3-5', '6-7', '8-9']
 
 export const CHECK_SUBJECTS = [
     { slug: 'chinese', name: '语文', code: 'cn', v2: 'chinese', editions: ['统编版'], markup: 'plain' },
-    { slug: 'math', name: '数学', code: 'ma', v2: 'math', editions: ['人教版'], markup: 'math', sums: true },
-    { slug: 'english', name: '英语', code: 'en', v2: 'english', editions: ['人教版 PEP（三年级起点）', '人教版'], markup: 'plain' },
+    { slug: 'math', name: '数学', code: 'ma', v2: 'math', editions: ['人教版', '北师大版'], editionTags: { 北师大版: { stem: 'bsd', short: '北师大' } }, markup: 'math', sums: true },
+    { slug: 'english', name: '英语', code: 'en', v2: 'english', editions: ['人教版 PEP（三年级起点）', '人教版', '外研社版（孙有中）'], editionTags: { '外研社版（孙有中）': { stem: 'wy', short: '外研' } }, markup: 'plain' },
     { slug: 'morality_law', name: '道德与法治', code: 'ml', v2: 'morality_law', editions: ['统编版'], markup: 'plain' },
     { slug: 'history', name: '历史', code: 'hi', v2: 'history', editions: ['统编版'], markup: 'plain' },
     { slug: 'geography', name: '地理', code: 'ge', v2: 'geography', editions: ['人教版'], markup: 'math' },
@@ -40,6 +42,19 @@ export const bandOfGrade = (subject, grade) => (subject?.bands || []).find(band 
 
 const GRADE_NAME = ['', '一', '二', '三', '四', '五', '六', '七', '八', '九']
 const TERM_STEM = { 上: 'a', 下: 'b', 全: '' }
+const TERM_OF_VOLUME = { 上册: '上', 下册: '下', 全一册: '全' }
+
+/** The tag of an edition with its own files (北师大版 → { stem: 'bsd', short: '北师大' }), or null for a subject's main editions. */
+export const editionTagOf = (subject, edition) => subject?.editionTags?.[edition] || null
+
+/** A library volume's book key in a subject's bank: 5上, 北师大5上, or the 学段 for subjects filed by 学段. '' when the bank doesn't cover it. */
+export function bookKeyOf(subject, { grade, volume = '', term = '', edition = '' } = {}) {
+    if (!subject || !grade) return ''
+    if (subject.bands) return bandOfGrade(subject, grade) || ''
+    if (edition && !subject.editions.includes(edition)) return ''
+    const tag = editionTagOf(subject, edition)
+    return `${tag?.short || ''}${grade}${TERM_OF_VOLUME[volume] || TERM_OF_VOLUME[term] || term}`
+}
 
 /**
  * A question file's book: { grade, term } for a textbook volume (term 上/下/全), or { band } for a 学段.
@@ -53,13 +68,16 @@ export function bookOf(meta = {}) {
     }
     const grade = Number(meta.grade)
     const term = meta.term
+    const tag = editionTagOf(subjectByName(meta.subject), meta.edition)
+    // label names the volume only; the page and the API say the edition next to it
+    const volume = term === '全' ? `${GRADE_NAME[grade]}年级全一册` : `${GRADE_NAME[grade]}年级${term}册`
     return {
-        key: `${grade}${term}`,
-        stem: `${grade}${TERM_STEM[term] ?? ''}`,
+        key: `${tag?.short || ''}${grade}${term}`,
+        stem: `${tag ? `${tag.stem}-` : ''}${grade}${TERM_STEM[term] ?? ''}`,
         grade,
         grades: [grade],
         term,
-        label: term === '全' ? `${GRADE_NAME[grade]}年级全一册` : `${GRADE_NAME[grade]}年级${term}册`,
-        short: `${grade}${term}`
+        label: volume,
+        short: `${tag?.short || ''}${grade}${term}`
     }
 }

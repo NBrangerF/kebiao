@@ -14,15 +14,87 @@
     {"id": "have-short-answer-3b", "name": "Do 问句答成 I have", "why": "汉语“你有……吗？”答“有”，就照着说 Yes, I have.，没注意问句是 Do 开头的。", "move": "圈出问句第一个词 Do，先答 Yes, I do. / No, I don't.，再用 I have ... 说出有什么。"},
     {"id": "can-request-as-ability-3b", "name": "把借东西的请求当成问能力", "why": "学过 can 是“能”，听到 Can I ...? 就答 Yes, I can.，没听出对方是在向自己借东西。", "move": "演一演：同桌伸手说 Can I use your ruler? 你要做的是把尺子递过去，边递边说 Sure. Here you are."},
     {"id": "bread-countable-3b", "name": "把 bread 当成能数的东西", "why": "汉语说“一个面包”“两个面包”，就照着说 a bread、breads。", "move": "对比：an egg、two eggs 能数；some bread、some milk 不能数，不加 a，也不加 s。"},
-    {"id": "would-like-answer-do-3b", "name": "问“想不想要”也答 I do", "why": "两句都有 like，就把 Do you like 的答法 Yes, I do. 套过来。", "move": "演点餐：老师端着“汤”问 Would you like some soup? 想要就伸手接过说 Yes, please.，不要就摆手说 No, thank you."}
+    {"id": "would-like-answer-do-3b", "name": "问“想不想要”也答 I do", "why": "两句都有 like，就把 Do you like 的答法 Yes, I do. 套过来。", "move": "演点餐：老师端着“汤”问 Would you like some soup? 想要就伸手接过说 Yes, please.，不要就摆手说 No, thank you."},
+    {"id": "silent-e-pronounced-3b", "name": "把词尾不发音的 e 读出来", "why": "汉语拼音里的 e 都要读，就把 hate、home 末尾的 e 也读成一个音。", "move": "拍手数音节：hate、home 都只拍一下；末尾的 e 只管让前面的元音读字母名，自己不出声。"},
+    {"id": "final-e-always-silent-3b", "name": "以为词尾的 e 都不发音", "why": "刚学过 cake、name 末尾的 e 不发音，就以为 he、she 末尾的 e 也不读。", "move": "看词里还有没有别的元音字母：he、she、we 里只有一个 e，它就要读出来，读字母 E 的名字。"},
+    {"id": "detail-as-main-idea-3b", "name": "把一句细节当成主要意思", "why": "只记住了自己熟悉的一句，没把几句话放在一起看。", "move": "先让学生说出每句各讲了一种什么做法，再问：这几种做法合起来在说什么？"},
+    {"id": "add-outside-info-3b", "name": "把文中没说的当成文中的意思", "why": "凭自己的经历补上了“每天”“经常”这样的话，没回到原文找根据。", "move": "追问：原文哪个词说到了“每天”？请指出来；指不出来，这个选项就不对。"},
+    {"id": "with-phrase-before-verb-3b", "name": "照汉语把“用……”放在动词前", "why": "汉语说“我用鼻子闻”，“用鼻子”在“闻”前面，就照着说成 I with my nose smell.", "move": "英语先说做什么，再说用什么：I smell / with my nose；连读 I see with my eyes. I hear with my ears."},
+    {"id": "with-dropped-3b", "name": "漏掉了表示“用”的 with", "why": "“用鼻子闻”的“用”没有说出来，句子就成了“闻我的鼻子”。", "move": "做动作：指着自己的鼻子闻一闻，问这是 I smell my nose 吗？再用鼻子去闻花，说 I smell with my nose."},
+    {"id": "but-ignored-3b", "name": "只读了 but 前面的半句", "why": "读到“果汁好喝”就有了答案，没往 but 后面看。", "move": "用手盖住 but 前面，只读后半句：but don't drink too much 是在提醒什么？"},
+    {"id": "too-much-dropped-3b", "name": "把“别喝太多”读成“别喝”", "why": "看到 don't 就以为是不让喝，漏看了 too much。", "move": "对比：Don't drink.（别喝）/ Don't drink too much.（别喝太多），问哪一句还可以喝一点。"},
+    {"id": "they-as-object-3b", "name": "动词后面的“它们”还用 they", "why": "they 学得最早，以为“它们”都说 they，放在 put 后面也不变。", "move": "把 they 和 them 写成一对：They are old. / I put them in a box. 动作词后面用 them。"},
+    {"id": "each-as-total-3b", "name": "把一个的价钱当成总价", "why": "看到 It's two yuan 就当成要付的钱，没注意问的是 each（每一个）。", "move": "画 6 支铅笔，每支下面写 2 元，全班一起数：2、4、6、8、10、12。"},
+    {"id": "count-as-price-3b", "name": "把买的个数当成付的钱", "why": "题里有两个数，没分清哪个是买了几个、哪个是钱数。", "move": "给每个数配上单位：6 pencils、two yuan，再问：要付的是几元？"}
   ],
   "items": [
+    {
+      "id": "en-3b-13",
+      "type": "choice",
+      "unit": "Unit 1 Meeting new people",
+      "lesson": "part A How do we greet new people?",
+      "lessons": ["Part A", "greet new people"],
+      "points": ["EN-S1-LS-01.11", "EN-S1-LC-01.4"],
+      "topic": "回答 Where are you from",
+      "stem": "Amy 问新同学李明：Where are you from? 李明来自北京，他怎么回答？",
+      "options": ["I'm Li Ming.", "Yes, I am.", "I from Beijing, China.", "I'm from Beijing, China."],
+      "answer": 3,
+      "wrong": {"0": "wh-word-mixup", "1": "wh-yes-no", "2": "be-drop"},
+      "right": ["where 问“哪里”，要说出地方：I'm from ...", "I'm 就是 I am，“来自”说 am from，am 不能少。"],
+      "typical": ["“我来自北京”照着说：", "I from Beijing, China."],
+      "typical_error": "be-drop",
+      "ladder": [
+        {"q": "补全：— Where are you from? — I'm ____ the UK.", "a": "from"},
+        {"q": "Amy 来自英国。替她回答：Where are you from?", "a": "I'm from the UK."},
+        {"q": "用英语问新同学是哪里人，再说说你自己来自哪里。", "a": "Where are you from? I'm from ..., China."}
+      ]
+    },
+    {
+      "id": "en-3b-14",
+      "type": "choice",
+      "unit": "Unit 1 Meeting new people",
+      "lesson": "part A How do we greet new people?",
+      "lessons": ["Part A", "greet new people", "Let's spell"],
+      "points": ["EN-S1-LK-01.3", "EN-S1-LK-01.2"],
+      "topic": "a-e 的词怎么读",
+      "stem": "game 的末尾有一个 e。game 该怎么读？",
+      "options": ["e 不发音，a 读 cat 里的音", "e 不发音，a 读 cake 里的音", "a 读 cake 里的音，e 也读出来"],
+      "answer": 1,
+      "wrong": {"0": "magic-e-ignored", "2": "silent-e-pronounced-3b"},
+      "right": ["a-e：末尾的 e 不发音，它让前面的 a 读字母 A 的名字。", "cat—cake 比一比，game、name、make 里的 a 也这样读。"],
+      "typical": ["e 不发音，就当它没用：", "game 里的 a 读成 cat 里的音。"],
+      "typical_error": "magic-e-ignored",
+      "ladder": [
+        {"q": "cat 和 cake，哪个词里的 a 和 name 里的 a 读音一样？", "a": "cake"},
+        {"q": "圈出 a-e 的词：name、dad、make、bag", "a": "name、make"},
+        {"q": "补全单词并读一读：c_k_（蛋糕）", "a": "cake（填 a、e）"}
+      ]
+    },
+    {
+      "id": "en-3b-02",
+      "type": "judge",
+      "unit": "Unit 1 Meeting new people",
+      "lesson": "part B How can we be polite?",
+      "lessons": ["Part B", "polite"],
+      "points": ["EN-S1-LK-01.16", "EN-S1-CA-02.4"],
+      "topic": "别人帮忙时怎么回应",
+      "stem": "同学说要帮你搬书，你这样回答。同意吗？",
+      "work": ["— Let me help.", "— You're welcome."],
+      "answer": false,
+      "wrong": {"agree": "thanks-welcome-swap"},
+      "right": ["别人帮你，你要道谢：Thank you.", "你说了 Thank you，对方才回 You're welcome."],
+      "ladder": [
+        {"q": "你帮同学捡起铅笔，同学说 Thank you. 你回答什么？", "a": "You're welcome."},
+        {"q": "新邻居说 Let me help. 帮你开门，你说什么？", "a": "Thank you."},
+        {"q": "你想帮老师拿书：先说一句，老师道谢后你再说一句。", "a": "Let me help. — You're welcome."}
+      ]
+    },
     {
       "id": "en-3b-01",
       "type": "choice",
       "unit": "Unit 1 Meeting new people",
-      "lesson": "Part A How do we greet new people?",
-      "lessons": ["Part A", "greet new people"],
+      "lesson": "part B How can we be polite?",
+      "lessons": ["Part B", "polite", "Read and write"],
       "points": ["EN-S1-LK-01.11", "EN-S1-LS-01.14"],
       "topic": "介绍新同学",
       "stem": "向老师介绍新同学 Amy（女孩），选出正确的一句。",
@@ -39,29 +111,10 @@
       ]
     },
     {
-      "id": "en-3b-02",
-      "type": "judge",
-      "unit": "Unit 1 Meeting new people",
-      "lesson": "Part B How can we be polite?",
-      "lessons": ["Part B", "polite"],
-      "points": ["EN-S1-LK-01.16", "EN-S1-CA-02.4"],
-      "topic": "别人帮忙时怎么回应",
-      "stem": "同学说要帮你搬书，你这样回答。同意吗？",
-      "work": ["— Let me help.", "— You're welcome."],
-      "answer": false,
-      "wrong": {"agree": "thanks-welcome-swap"},
-      "right": ["别人帮你，你要道谢：Thank you.", "你说了 Thank you，对方才回 You're welcome."],
-      "ladder": [
-        {"q": "你帮同学捡起铅笔，同学说 Thank you. 你回答什么？", "a": "You're welcome."},
-        {"q": "新邻居说 Let me help. 帮你开门，你说什么？", "a": "Thank you."},
-        {"q": "你想帮老师拿书：先说一句，老师道谢后你再说一句。", "a": "Let me help. — You're welcome."}
-      ]
-    },
-    {
       "id": "en-3b-03",
       "type": "choice",
       "unit": "Unit 2 My words and actions",
-      "lesson": "Part A How do we describe things?",
+      "lesson": "part A How do we describe things?",
       "lessons": ["Part A", "describe things"],
       "points": ["EN-S1-LS-01.15", "EN-S1-LK-01.11"],
       "topic": "用 It has 描述动物",
@@ -79,11 +132,32 @@
       ]
     },
     {
+      "id": "en-3b-15",
+      "type": "choice",
+      "unit": "Unit 2 My words and actions",
+      "lesson": "part A How do we describe things?",
+      "lessons": ["Part A", "describe things", "Let's spell"],
+      "points": ["EN-S1-LK-01.3", "EN-S1-LK-01.2"],
+      "topic": "she 里的 e 怎么读",
+      "stem": "she、he、we 末尾都是 e。she 里的 e 怎么读？",
+      "options": ["读字母 E 的名字", "和 leg 里的 e 一样", "不发音，只读 sh"],
+      "answer": 0,
+      "wrong": {"1": "one-letter-one-sound", "2": "final-e-always-silent-3b"},
+      "right": ["he、she、me、we、be 里只有一个元音字母 e，", "它在词尾要读出来，读字母 E 的名字。"],
+      "typical": ["刚学过 cake 末尾的 e 不发音，", "就把 she 只读成 sh。"],
+      "typical_error": "final-e-always-silent-3b",
+      "ladder": [
+        {"q": "he 和 leg，哪个词里的 e 和 me 里的 e 读音一样？", "a": "he"},
+        {"q": "圈出 e 读字母 E 名字的词：we、bed、be、red", "a": "we、be"},
+        {"q": "补全并读一读：H_ is my friend.", "a": "He（填 e）"}
+      ]
+    },
+    {
       "id": "en-3b-05",
       "type": "choice",
       "unit": "Unit 2 My words and actions",
-      "lesson": "Part B How do we show our feelings?",
-      "lessons": ["Part B", "show our feelings"],
+      "lesson": "part B How do we show our feelings?",
+      "lessons": ["Part B", "feelings"],
       "points": ["EN-S1-LK-01.9", "EN-S1-LS-01.12"],
       "topic": "回答 Do you often",
       "stem": "— Do you often make cards for your mum? — ____（不常）",
@@ -100,10 +174,31 @@
       ]
     },
     {
+      "id": "en-3b-16",
+      "type": "choice",
+      "unit": "Unit 2 My words and actions",
+      "lesson": "part B How do we show our feelings?",
+      "lessons": ["Part B", "feelings", "Read and write"],
+      "points": ["EN-S1-LC-01.6", "EN-S1-TH-01.4"],
+      "topic": "几句话合起来说什么",
+      "stem": "读一读：I make a card for Mum. I sing a song for Dad. I draw a picture for Grandma. 这几句话合起来在说什么？",
+      "options": ["我给爸爸唱歌", "我怎样向家人表达爱", "我每天给家人做卡片"],
+      "answer": 1,
+      "wrong": {"0": "detail-as-main-idea-3b", "2": "add-outside-info-3b"},
+      "right": ["三句各说一种做法：做卡片、唱歌、画画，", "都是为家人做的，合起来说：我怎样向家人表达爱。"],
+      "typical": ["只记住了熟悉的一句 I sing a song for Dad.，", "就选“我给爸爸唱歌”。"],
+      "typical_error": "detail-as-main-idea-3b",
+      "ladder": [
+        {"q": "I draw a picture for Mum. 说的是一种什么做法？", "a": "给妈妈画画"},
+        {"q": "读：I sing for Mum. I dance for Mum. 这两句里说到“每天”了吗？", "a": "没有"},
+        {"q": "读：I sing for Dad. I make a gift for Mum. 给这两句起个中文标题。", "a": "我怎样向家人表达爱（意思对即可）"}
+      ]
+    },
+    {
       "id": "en-3b-07",
       "type": "choice",
       "unit": "Unit 3 Tools and senses for learning",
-      "lesson": "Part A What tools do we need to learn?",
+      "lesson": "part A What tools do we need to learn?",
       "lessons": ["Part A", "tools"],
       "points": ["EN-S1-LC-01.5", "EN-S1-TH-01.6"],
       "topic": "回应借东西的请求",
@@ -121,19 +216,38 @@
       ]
     },
     {
+      "id": "en-3b-17",
+      "type": "judge",
+      "unit": "Unit 3 Tools and senses for learning",
+      "lesson": "part A What tools do we need to learn?",
+      "lessons": ["Part A", "tools", "Let's spell"],
+      "points": ["EN-S1-LK-01.3", "EN-S1-LK-01.2"],
+      "topic": "i-e 的词怎么读",
+      "stem": "Mike 说了下面的话。同意吗？",
+      "work": ["five、nine、kite 里的 i 读音一样，", "都读字母 I 的名字。"],
+      "answer": true,
+      "wrong": {"disagree": "magic-e-ignored"},
+      "right": ["三个词都是 i-e：末尾的 e 不发音，", "它让 i 读字母 I 的名字，和 big、sit 里的 i 不同。"],
+      "ladder": [
+        {"q": "big 和 bike，哪个词里的 i 和 five 里的 i 读音一样？", "a": "bike"},
+        {"q": "圈出 i 读字母 I 名字的词：sit、nine、lip、nice", "a": "nine、nice"},
+        {"q": "补全单词并读一读：f_v_（五）", "a": "five（填 i、e）"}
+      ]
+    },
+    {
       "id": "en-3b-08",
       "type": "choice",
       "unit": "Unit 3 Tools and senses for learning",
-      "lesson": "Part B How do our senses help us learn?",
+      "lesson": "part B How do our senses help us learn?",
       "lessons": ["Part B", "senses"],
-      "points": ["EN-S1-LK-01.9", "EN-S1-LK-01.11"],
+      "points": ["EN-S1-LS-01.16", "EN-S1-LK-01.11"],
       "topic": "回答 What are these",
-      "stem": "— What are these?（指着一串葡萄）— ____",
-      "options": ["They're grapes.", "It's a grape.", "They're grape."],
+      "stem": "— What are these?（指着桌上的几根香蕉）— ____",
+      "options": ["They're bananas.", "It's a banana.", "They're banana."],
       "answer": 0,
       "wrong": {"1": "plural-as-it", "2": "plural-s-drop"},
-      "right": ["these 问的是好几个，回答用 they：They're ...", "好几颗葡萄，grape 要加 s：grapes。"],
-      "typical": ["只看着其中一颗：", "It's a grape."],
+      "right": ["these 问的是好几个，回答用 they：They're ...", "好几根香蕉，banana 要加 s：bananas。"],
+      "typical": ["只看着其中一根：", "It's a banana."],
       "typical_error": "plural-as-it",
       "ladder": [
         {"q": "补全：— What's this? — ____ a pencil.", "a": "It's"},
@@ -142,12 +256,33 @@
       ]
     },
     {
+      "id": "en-3b-18",
+      "type": "choice",
+      "unit": "Unit 3 Tools and senses for learning",
+      "lesson": "part B How do our senses help us learn?",
+      "lessons": ["Part B", "senses", "Read and write"],
+      "points": ["EN-S1-LC-03.2", "EN-S1-LK-01.11"],
+      "topic": "“用……做”怎么说",
+      "stem": "用英语说“我用手摸”，选出正确的一句。",
+      "options": ["I with my hands touch.", "I touch my hands.", "I touch with my hands."],
+      "answer": 2,
+      "wrong": {"0": "with-phrase-before-verb-3b", "1": "with-dropped-3b"},
+      "right": ["先说做什么，再说用什么：I touch + with my hands.", "with 就是“用”，不能少。"],
+      "typical": ["照汉语“用手摸”的顺序：", "I with my hands touch."],
+      "typical_error": "with-phrase-before-verb-3b",
+      "ladder": [
+        {"q": "补全：I hear ____ my ears.", "a": "with"},
+        {"q": "连词成句：see / I / my eyes / with", "a": "I see with my eyes."},
+        {"q": "用英语说：我用舌头尝。", "a": "I taste with my tongue."}
+      ]
+    },
+    {
       "id": "en-3b-09",
       "type": "choice",
       "unit": "Unit 4 Healthy food",
-      "lesson": "Part A What do we eat?",
+      "lesson": "part A What do we eat?",
       "lessons": ["Part A", "eat"],
-      "points": ["EN-S1-LS-01.12", "EN-S1-TH-01.7"],
+      "points": ["EN-S1-LS-01.12", "EN-S1-LC-03.1"],
       "topic": "点早饭 I'd like some",
       "stem": "在餐厅点早饭，你想要一些面包和两个鸡蛋，对服务员说哪一句？",
       "options": ["I like bread and two eggs.", "I'd like some breads and two eggs.", "I'd like some bread and two egg.", "I'd like some bread and two eggs."],
@@ -163,10 +298,31 @@
       ]
     },
     {
+      "id": "en-3b-19",
+      "type": "choice",
+      "unit": "Unit 4 Healthy food",
+      "lesson": "part A What do we eat?",
+      "lessons": ["Part A", "What do we eat", "Let's spell"],
+      "points": ["EN-S1-LK-01.3", "EN-S1-LK-01.2"],
+      "topic": "o-e 的词怎么读",
+      "stem": "home 的末尾有一个 e。home 该怎么读？",
+      "options": ["o 读字母 O 的名字，e 不发音", "o 读 hot 里的音，e 不发音", "o 读字母 O 的名字，e 也读出来"],
+      "answer": 0,
+      "wrong": {"1": "magic-e-ignored", "2": "silent-e-pronounced-3b"},
+      "right": ["o-e：末尾的 e 不发音，它让 o 读字母 O 的名字。", "home、nose、Jones 都这样读；hot、box 里没有 e，o 读短音。"],
+      "typical": ["末尾的 e 也读出来，", "home 就读成了两个音节。"],
+      "typical_error": "silent-e-pronounced-3b",
+      "ladder": [
+        {"q": "dog 和 nose，哪个词里的 o 和 home 里的 o 读音一样？", "a": "nose"},
+        {"q": "圈出 o-e 的词：dog、joke、box、bone", "a": "joke、bone"},
+        {"q": "补全单词并读一读：h_m_（家）", "a": "home（填 o、e）"}
+      ]
+    },
+    {
       "id": "en-3b-10",
       "type": "choice",
       "unit": "Unit 4 Healthy food",
-      "lesson": "Part B What shall we eat?",
+      "lesson": "part B What shall we eat?",
       "lessons": ["Part B", "eat"],
       "points": ["EN-S1-LC-01.5", "EN-S1-LS-01.12"],
       "topic": "回答 Would you like",
@@ -184,31 +340,71 @@
       ]
     },
     {
+      "id": "en-3b-20",
+      "type": "choice",
+      "unit": "Unit 4 Healthy food",
+      "lesson": "part B What shall we eat?",
+      "lessons": ["Part B", "What shall we eat", "Read and write"],
+      "points": ["EN-S1-LC-02.5", "EN-S1-TH-01.7"],
+      "topic": "but 后面在提醒什么",
+      "stem": "读一读：Juice is yummy, but don't drink too much! 这句话是什么意思？",
+      "options": ["果汁好喝，要多喝一点", "果汁不健康，一口也别喝", "果汁好喝，但别喝太多"],
+      "answer": 2,
+      "wrong": {"0": "but-ignored-3b", "1": "too-much-dropped-3b"},
+      "right": ["but 后面的半句才是提醒：don't drink too much。", "可以喝，只是别喝太多。"],
+      "typical": ["读到 Juice is yummy 就停了：", "“果汁好喝，要多喝一点”。"],
+      "typical_error": "but-ignored-3b",
+      "ladder": [
+        {"q": "Don't eat. 和 Don't eat too much. 哪一句还可以吃一点？", "a": "Don't eat too much."},
+        {"q": "读：Noodles are yummy, but don't eat too much. 能吃面条吗？", "a": "能，但别吃太多"},
+        {"q": "用英语提醒同学：牛奶很好喝，但别喝太多。", "a": "Milk is yummy, but don't drink too much!"}
+      ]
+    },
+    {
       "id": "en-3b-11",
       "type": "judge",
       "unit": "Unit 5 Old things",
-      "lesson": "Part A What old things do you have?",
+      "lesson": "part A What old things do you have?",
       "lessons": ["Part A", "old things"],
-      "points": ["EN-S1-LK-01.9", "EN-S1-LC-02.5"],
+      "points": ["EN-S1-LK-01.9", "EN-S1-LS-01.11"],
       "topic": "回答 Do you have",
       "stem": "Mike 问 Amy 有没有旧玩具，Amy 这样回答。同意吗？",
-      "work": ["— Do you have old toys?", "— Yes, I do. I have an old kite."],
+      "work": ["— Do you have old toys?", "— Yes, I do. I have an old boat."],
       "answer": true,
       "wrong": {"disagree": "have-short-answer-3b"},
       "right": ["Do 开头的问句，用 do 回答：Yes, I do.", "后面再用 I have ... 说出有什么。"],
       "ladder": [
         {"q": "— Do you have a doll? 你有，回答。", "a": "Yes, I do."},
         {"q": "— Do you have old balls? 你没有，回答。", "a": "No, I don't."},
-        {"q": "— Do you have old caps? 你有两顶旧帽子，回答两句。", "a": "Yes, I do. I have two old caps."}
+        {"q": "— Do you have old cars? 你有两辆旧汽车，回答两句。", "a": "Yes, I do. I have two old cars."}
+      ]
+    },
+    {
+      "id": "en-3b-21",
+      "type": "judge",
+      "unit": "Unit 5 Old things",
+      "lesson": "part A What old things do you have?",
+      "lessons": ["Part A", "old things", "Let's spell"],
+      "points": ["EN-S1-LK-01.3", "EN-S1-LK-01.2"],
+      "topic": "cut 和 cute 一样读吗",
+      "stem": "Amy 说了下面的话。同意吗？",
+      "work": ["cute 就是 cut 后面加个 e，", "e 不发音，所以两个词读音一样。"],
+      "answer": false,
+      "wrong": {"agree": "magic-e-ignored"},
+      "right": ["e 不发音，但它让 u 读字母 U 的名字：", "cut 里的 u 读短音，cute 里的 u 读字母 U 的名字。"],
+      "ladder": [
+        {"q": "us 和 use，哪个词里的 u 读字母 U 的名字？", "a": "use"},
+        {"q": "圈出 u-e 的词：fun、cute、bus、use", "a": "cute、use"},
+        {"q": "补全单词并读一读：a c_t_ dog（可爱的）", "a": "cute（填 u、e）"}
       ]
     },
     {
       "id": "en-3b-04",
       "type": "choice",
       "unit": "Unit 5 Old things",
-      "lesson": "Part B How can we reuse things?",
-      "lessons": ["Part B", "reuse things"],
-      "points": ["EN-S1-LK-01.9", "EN-S1-LC-02.5"],
+      "lesson": "part B How can we reuse things?",
+      "lessons": ["Part B", "reuse"],
+      "points": ["EN-S1-LK-01.9", "EN-S1-LS-01.16"],
       "topic": "回答 where 问句",
       "stem": "— Where is my old boat? — ____",
       "options": ["It's in the box.", "Yes, it is.", "It's my old boat."],
@@ -218,18 +414,39 @@
       "typical": ["听到问句，先说 Yes：", "Yes, it is."],
       "typical_error": "wh-yes-no",
       "ladder": [
-        {"q": "补全：— Where is my cap? — It's ____ the chair.（在椅子下面）", "a": "under"},
-        {"q": "补全：— Is it under the bed? — No, ____ .", "a": "it isn't"},
+        {"q": "补全：— Where is my cap? — It's ____ the bed.（在床下面）", "a": "under"},
+        {"q": "补全：— Is it in the bag? — No, ____ .", "a": "it isn't（或 it's not）"},
         {"q": "— Where is your doll? 它在盒子里，用英语回答。", "a": "It's in the box."}
+      ]
+    },
+    {
+      "id": "en-3b-22",
+      "type": "choice",
+      "unit": "Unit 5 Old things",
+      "lesson": "part B How can we reuse things?",
+      "lessons": ["Part B", "reuse", "Read and write"],
+      "points": ["EN-S1-LK-01.11", "EN-S1-LC-02.5"],
+      "topic": "put 后面用 them",
+      "stem": "I have two old balls. I put ____ under the bed. 空格里填哪个词？",
+      "options": ["they", "it", "them"],
+      "answer": 2,
+      "wrong": {"0": "they-as-object-3b", "1": "plural-as-it"},
+      "right": ["两个球，说“它们”；", "放在 put 后面要用 them：I put them under the bed."],
+      "typical": ["“它们”就是 they：", "I put they under the bed."],
+      "typical_error": "they-as-object-3b",
+      "ladder": [
+        {"q": "补全：I have three old caps. ____ are still nice.（它们）", "a": "They"},
+        {"q": "补全：I have some old maps. I put ____ on the wall.", "a": "them"},
+        {"q": "用英语说：我有一些旧书，我把它们放在架子上。", "a": "I have some old books. I put them on the shelf."}
       ]
     },
     {
       "id": "en-3b-06",
       "type": "choice",
       "unit": "Unit 6 Numbers in life",
-      "lesson": "Part A How do numbers help us count things?",
-      "lessons": ["Part A", "count things"],
-      "points": ["EN-S1-LK-01.9", "EN-S1-LK-01.11"],
+      "lesson": "part A How do numbers help us count things?",
+      "lessons": ["Part A", "count"],
+      "points": ["EN-S1-LK-01.11", "EN-S1-LK-01.7"],
       "topic": "How many 问数量",
       "stem": "体育课前清点球，选出正确的问句。",
       "options": ["How many ball do we have?", "How many balls we have?", "How many balls do we have?"],
@@ -245,10 +462,29 @@
       ]
     },
     {
+      "id": "en-3b-23",
+      "type": "judge",
+      "unit": "Unit 6 Numbers in life",
+      "lesson": "part A How do numbers help us count things?",
+      "lessons": ["Part A", "count", "Let's spell"],
+      "points": ["EN-S1-LK-01.3", "EN-S1-LK-01.2"],
+      "topic": "y 在不同词里的读音",
+      "stem": "Zhang Peng 说了下面的话。同意吗？",
+      "work": ["my 和 yes 里都有 y，", "所以 y 在两个词里读音一样。"],
+      "answer": false,
+      "wrong": {"agree": "one-letter-one-sound"},
+      "right": ["yes 开头的 y 读 you、yellow 开头的音；", "my 末尾的 y 读字母 I 的名字。同一个字母，位置不同，读音也不同。"],
+      "ladder": [
+        {"q": "you 和 my，哪个词里的 y 和 yellow 开头的音一样？", "a": "you"},
+        {"q": "cake 和 face 里的 c 读音一样吗？", "a": "不一样：cake 里读 /k/，face 里读 /s/"},
+        {"q": "girl 和 age 里的 g 读音一样吗？", "a": "不一样：girl 里读 /g/，age 里读 /dʒ/"}
+      ]
+    },
+    {
       "id": "en-3b-12",
       "type": "write",
       "unit": "Unit 6 Numbers in life",
-      "lesson": "Part B How do numbers help us buy things?",
+      "lesson": "part B How do numbers help us buy things?",
       "lessons": ["Part B", "buy things"],
       "points": ["EN-S1-LK-01.9", "EN-S1-LC-02.5"],
       "topic": "问价钱 How much",
@@ -263,6 +499,28 @@
         {"q": "补全：____ books do you have?（问几本）", "a": "How many"},
         {"q": "用英语问这个娃娃多少钱。", "a": "How much is this doll?"}
       ]
+    },
+    {
+      "id": "en-3b-24",
+      "type": "choice",
+      "unit": "Unit 6 Numbers in life",
+      "lesson": "part B How do numbers help us buy things?",
+      "lessons": ["Part B", "buy things", "Read and write"],
+      "points": ["EN-S1-LS-01.3", "EN-S1-LC-01.6"],
+      "topic": "each 是“每一个”",
+      "stem": "— How much is each pencil? — It's two yuan. 买 6 支这样的铅笔，一共付多少钱？",
+      "options": ["twelve yuan", "two yuan", "six yuan"],
+      "answer": 0,
+      "wrong": {"1": "each-as-total-3b", "2": "count-as-price-3b"},
+      "right": ["each pencil 是“每支铅笔”，每支 2 元，", "6 支就是 2 × 6 = 12 元：twelve yuan。"],
+      "typical": ["看到 It's two yuan，", "就答 two yuan。"],
+      "typical_error": "each-as-total-3b",
+      "ladder": [
+        {"q": "— How much is each ruler? — It's five yuan. 买 3 把要几元？", "a": "fifteen yuan（15 元）"},
+        {"q": "每个苹果 2 元，买 7 个。用英语说一共多少钱。", "a": "Fourteen yuan."},
+        {"q": "— How much is each cake? — It's ten yuan. 买 2 个，用英语说一共多少钱。", "a": "Twenty yuan."}
+      ],
+      "verify": ["2*6 == 12", "5*3 == 15", "2*7 == 14", "10*2 == 20"]
     }
   ]
 }

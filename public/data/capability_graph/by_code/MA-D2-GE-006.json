@@ -122,7 +122,7 @@
         "external_smartedu_2026_bsd_math_primary_grade_3_up",
         "tes_35f42c6dac48661b",
         "textbook-node:tcn_127eaefb4b353b70",
-        "textbook-unit:tcu_0d8200eae031c6cf"
+        "textbook-unit:tcu_a41e23e5c8b69e72"
       ],
       "evidence_role": "direct_textbook",
       "evidence_spans": [
@@ -160,63 +160,8 @@
       "textbook_subject": "数学",
       "textbook_title": "数学3年级上册",
       "textbook_volume": "上册",
-      "unit_id": "tcu_0d8200eae031c6cf",
-      "unit_title": "第八单元 调查与记录"
-    },
-    {
-      "algorithm_version": "component-evidence-hybrid-v3",
-      "alignment_id": "tca_bddea561b7d161f8",
-      "alignment_type": "supports",
-      "confidence": 0.86,
-      "coverage": "partial",
-      "edition_id": "ed_d606965a5c7bfd83f238",
-      "evidence_basis": "textbook_page_span",
-      "evidence_gap": null,
-      "evidence_level": "L3_page_evidence",
-      "evidence_refs": [
-        "external_smartedu_2026_bsd_math_primary_grade_4_up",
-        "tes_9b792fb058ce1c20",
-        "textbook-node:tcn_b38e860932bda520",
-        "textbook-unit:tcu_af5816368ca5e68a"
-      ],
-      "evidence_role": "direct_textbook",
-      "evidence_spans": [
-        {
-          "evidence_role": "direct_textbook",
-          "excerpt": "谁占的格子先形成一条直线,谁就获胜。",
-          "excerpt_hash": "f0a2f95c23775a322633a71796d1fd254607b72bd755cf1cf45b525d069a83cc",
-          "pdf_page": 62,
-          "printed_page": "57",
-          "span_id": "tes_9b792fb058ce1c20"
-        }
-      ],
-      "learning_component_ids": [
-        "lc_25b3dbd17b68879c"
-      ],
-      "learning_components": [
-        {
-          "component_id": "lc_25b3dbd17b68879c",
-          "label": "经历用直尺和圆规将三角形的三条边画到一条直线上的过程，直观感受三角形的周长，知道什么是图形的周长"
-        }
-      ],
-      "level": "page",
-      "method": "component_evidence_hybrid",
-      "node_id": "tcn_b38e860932bda520",
-      "node_title": "谁占的格子先形成一条直线,谁就获胜。",
-      "pdf_page": 62,
-      "printed_page": "57",
-      "publication_status": "published",
-      "rationale": "教材学习目标“谁占的格子先形成一条直线,谁就获胜。”与课标 MA-D2-GE-006 的可教学小能力“经历用直尺和圆规将三角形的三条边画到一条直线上的过程，直观感受三角形的周长，知道什么是图形的周长”形成页内证据匹配。",
-      "relation_type": "supports",
-      "resource_type": "student_textbook",
-      "review_status": "machine_checked",
-      "revision_status": "current_confirmed",
-      "textbook_grade": 4,
-      "textbook_subject": "数学",
-      "textbook_title": "数学4年级上册",
-      "textbook_volume": "上册",
-      "unit_id": "tcu_af5816368ca5e68a",
-      "unit_title": "第三单元 整数乘法（二）"
+      "unit_id": "tcu_a41e23e5c8b69e72",
+      "unit_title": "综合实践 探索年月日的秘密"
     },
     {
       "algorithm_version": "component-evidence-hybrid-v3",
@@ -263,6 +208,61 @@
       "publication_status": "published",
       "rationale": "教材练习“计算器是生活中常用的计算工具。关于计算器你知道什么?”与课标 MA-D2-GE-006 的可教学小能力“经历用直尺和圆规将三角形的三条边画到一条直线上的过程，直观感受三角形的周长，知道什么是图形的周长”形成页内证据匹配。",
       "relation_type": "practices",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "textbook_grade": 4,
+      "textbook_subject": "数学",
+      "textbook_title": "数学4年级上册",
+      "textbook_volume": "上册",
+      "unit_id": "tcu_af5816368ca5e68a",
+      "unit_title": "第三单元 整数乘法（二）"
+    },
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_bddea561b7d161f8",
+      "alignment_type": "supports",
+      "confidence": 0.86,
+      "coverage": "partial",
+      "edition_id": "ed_d606965a5c7bfd83f238",
+      "evidence_basis": "textbook_page_span",
+      "evidence_gap": null,
+      "evidence_level": "L3_page_evidence",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_primary_grade_4_up",
+        "tes_9b792fb058ce1c20",
+        "textbook-node:tcn_b38e860932bda520",
+        "textbook-unit:tcu_af5816368ca5e68a"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "谁占的格子先形成一条直线,谁就获胜。",
+          "excerpt_hash": "f0a2f95c23775a322633a71796d1fd254607b72bd755cf1cf45b525d069a83cc",
+          "pdf_page": 62,
+          "printed_page": "57",
+          "span_id": "tes_9b792fb058ce1c20"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_25b3dbd17b68879c"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_25b3dbd17b68879c",
+          "label": "经历用直尺和圆规将三角形的三条边画到一条直线上的过程，直观感受三角形的周长，知道什么是图形的周长"
+        }
+      ],
+      "level": "page",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_b38e860932bda520",
+      "node_title": "谁占的格子先形成一条直线,谁就获胜。",
+      "pdf_page": 62,
+      "printed_page": "57",
+      "publication_status": "published",
+      "rationale": "教材学习目标“谁占的格子先形成一条直线,谁就获胜。”与课标 MA-D2-GE-006 的可教学小能力“经历用直尺和圆规将三角形的三条边画到一条直线上的过程，直观感受三角形的周长，知道什么是图形的周长”形成页内证据匹配。",
+      "relation_type": "supports",
       "resource_type": "student_textbook",
       "review_status": "machine_checked",
       "revision_status": "current_confirmed",
@@ -385,71 +385,6 @@
     },
     {
       "algorithm_version": "component-evidence-hybrid-v3",
-      "alignment_id": "tca_b0c51bc49a27e0a0",
-      "alignment_type": "supports",
-      "confidence": 0.92,
-      "coverage": "partial",
-      "edition_id": "ed_e9b67fbb7a2f5b25129e",
-      "evidence_basis": "textbook_page_span",
-      "evidence_gap": null,
-      "evidence_level": "L3_page_evidence",
-      "evidence_refs": [
-        "external_smartedu_2026_bsd_math_primary_grade_3_down",
-        "tes_8ac3ee2b757eb444",
-        "textbook-node:tcn_b0dc482225282dee",
-        "textbook-unit:tcu_201d736991e84a31"
-      ],
-      "evidence_role": "direct_textbook",
-      "evidence_spans": [
-        {
-          "evidence_role": "direct_textbook",
-          "excerpt": "量一量,算出右面长方形的周长,",
-          "excerpt_hash": "f6020ae537bb27201c82e94884f4428b0ec1156fec5beac991996ff843c00237",
-          "pdf_page": 40,
-          "printed_page": null,
-          "span_id": "tes_8ac3ee2b757eb444"
-        }
-      ],
-      "learning_component_ids": [
-        "lc_8380938e75c88796",
-        "lc_a35aea4ec4f35180",
-        "lc_25b3dbd17b68879c"
-      ],
-      "learning_components": [
-        {
-          "component_id": "lc_8380938e75c88796",
-          "label": "计算长方形、正方形的周长和面积"
-        },
-        {
-          "component_id": "lc_a35aea4ec4f35180",
-          "label": "测量三角形、长方形和正方形的周长"
-        },
-        {
-          "component_id": "lc_25b3dbd17b68879c",
-          "label": "经历用直尺和圆规将三角形的三条边画到一条直线上的过程，直观感受三角形的周长，知道什么是图形的周长"
-        }
-      ],
-      "level": "page",
-      "method": "component_evidence_hybrid",
-      "node_id": "tcn_b0dc482225282dee",
-      "node_title": "量一量,算出右面长方形的周长,",
-      "pdf_page": 40,
-      "printed_page": null,
-      "publication_status": "published",
-      "rationale": "教材学习目标“量一量,算出右面长方形的周长,”与课标 MA-D2-GE-006 的可教学小能力“计算长方形、正方形的周长和面积、测量三角形、长方形和正方形的周长、经历用直尺和圆规将三角形的三条边画到一条直线上的过程，直观感受三角形的周长，知道什么是图形的周长”形成页内证据匹配。",
-      "relation_type": "supports",
-      "resource_type": "student_textbook",
-      "review_status": "machine_checked",
-      "revision_status": "current_confirmed",
-      "textbook_grade": 3,
-      "textbook_subject": "数学",
-      "textbook_title": "数学3年级下册",
-      "textbook_volume": "下册",
-      "unit_id": "tcu_201d736991e84a31",
-      "unit_title": "第三单元 周长"
-    },
-    {
-      "algorithm_version": "component-evidence-hybrid-v3",
       "alignment_id": "tca_cd00041e622bdc96",
       "alignment_type": "supports",
       "confidence": 0.92,
@@ -502,6 +437,71 @@
       "printed_page": null,
       "publication_status": "published",
       "rationale": "教材学习目标“描一描,数一数,下面图形的周长分别是多少厘米?”与课标 MA-D2-GE-006 的可教学小能力“经历用直尺和圆规将三角形的三条边画到一条直线上的过程，直观感受三角形的周长，知道什么是图形的周长、计算长方形、正方形的周长和面积、测量三角形、长方形和正方形的周长”形成页内证据匹配。",
+      "relation_type": "supports",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "textbook_grade": 3,
+      "textbook_subject": "数学",
+      "textbook_title": "数学3年级下册",
+      "textbook_volume": "下册",
+      "unit_id": "tcu_201d736991e84a31",
+      "unit_title": "第三单元 周长"
+    },
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_b0c51bc49a27e0a0",
+      "alignment_type": "supports",
+      "confidence": 0.92,
+      "coverage": "partial",
+      "edition_id": "ed_e9b67fbb7a2f5b25129e",
+      "evidence_basis": "textbook_page_span",
+      "evidence_gap": null,
+      "evidence_level": "L3_page_evidence",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_primary_grade_3_down",
+        "tes_8ac3ee2b757eb444",
+        "textbook-node:tcn_b0dc482225282dee",
+        "textbook-unit:tcu_201d736991e84a31"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "量一量,算出右面长方形的周长,",
+          "excerpt_hash": "f6020ae537bb27201c82e94884f4428b0ec1156fec5beac991996ff843c00237",
+          "pdf_page": 40,
+          "printed_page": null,
+          "span_id": "tes_8ac3ee2b757eb444"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_8380938e75c88796",
+        "lc_a35aea4ec4f35180",
+        "lc_25b3dbd17b68879c"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_8380938e75c88796",
+          "label": "计算长方形、正方形的周长和面积"
+        },
+        {
+          "component_id": "lc_a35aea4ec4f35180",
+          "label": "测量三角形、长方形和正方形的周长"
+        },
+        {
+          "component_id": "lc_25b3dbd17b68879c",
+          "label": "经历用直尺和圆规将三角形的三条边画到一条直线上的过程，直观感受三角形的周长，知道什么是图形的周长"
+        }
+      ],
+      "level": "page",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_b0dc482225282dee",
+      "node_title": "量一量,算出右面长方形的周长,",
+      "pdf_page": 40,
+      "printed_page": null,
+      "publication_status": "published",
+      "rationale": "教材学习目标“量一量,算出右面长方形的周长,”与课标 MA-D2-GE-006 的可教学小能力“计算长方形、正方形的周长和面积、测量三角形、长方形和正方形的周长、经历用直尺和圆规将三角形的三条边画到一条直线上的过程，直观感受三角形的周长，知道什么是图形的周长”形成页内证据匹配。",
       "relation_type": "supports",
       "resource_type": "student_textbook",
       "review_status": "machine_checked",

@@ -3,7 +3,7 @@ import { Link, useNavigate, useSearchParams } from 'react-router-dom'
 import { PageLoading, ErrorState } from '../components/StateComponents'
 import QuestionCard from '../features/checks/QuestionCard.jsx'
 import { MarkupContext } from '../features/checks/markup.js'
-import { bookOfKey, buildDeck, loadBank, loadChecksIndex, pickBook, pickSubject, presentHref, questionsForBook, questionsForPoint, unitsOf } from '../features/checks/checksData.js'
+import { bookGroups, bookInGroup, bookOfKey, buildDeck, loadBank, loadChecksIndex, pickBook, pickSubject, presentHref, questionsForBook, questionsForPoint, unitsOf } from '../features/checks/checksData.js'
 import { subjectBySlug } from '../features/checks/subjects.js'
 import { publisherOf, useMyBook } from '../features/mybook/myBook.js'
 import { STATIC_PAGE_META } from '../seo/pageMeta.js'
@@ -55,6 +55,8 @@ export default function ChecksPage() {
     if (!index || !bank || bank.subject_slug !== slug) return <PageLoading message="正在打开课堂诊断" />
 
     const book = bookOfKey(bank, bookKey)
+    const groups = bookGroups(bank)
+    const group = groups.find(entry => entry.books.some(item => item.key === bookKey)) || groups[0]
     const items = point ? questionsForPoint(bank, point) : questionsForBook(bank, bookKey)
     const units = unitsOf(items)
     const total = index.subjects.reduce((sum, entry) => sum + entry.questions, 0)
@@ -105,10 +107,19 @@ export default function ChecksPage() {
                     </section>
                 ) : (
                     <>
+                        {groups.length > 1 ? (
+                            <nav className={styles.books} aria-label={`选${bank.subject}的教材版本`}>
+                                {groups.map(entry => (
+                                    <button key={entry.name} type="button" aria-pressed={entry === group} onClick={() => setParams({ subject: slug, book: bookInGroup(entry, book) }, { replace: true })}>
+                                        {entry.name}<small>{entry.count}</small>
+                                    </button>
+                                ))}
+                            </nav>
+                        ) : null}
                         <nav className={styles.books} aria-label={`选${bank.subject}的年级`}>
-                            {bank.books.map(entry => (
+                            {(group?.books || bank.books).map(entry => (
                                 <button key={entry.key} type="button" aria-pressed={entry.key === bookKey} onClick={() => setParams({ subject: slug, book: entry.key }, { replace: true })} title={`${entry.label} · ${entry.count} 题`}>
-                                    {entry.short}<small>{entry.count}</small>
+                                    {groups.length > 1 ? `${entry.grade}${entry.term}` : entry.short}<small>{entry.count}</small>
                                 </button>
                             ))}
                         </nav>
@@ -135,7 +146,7 @@ export default function ChecksPage() {
                 <section className={concepts.block} aria-labelledby="checks-about">
                     <div className={concepts.blockHead}>
                         <h2 id="checks-about">这些题是怎么来的</h2>
-                        <p>题目由 kebiao 按课标要点和教材单元编写：语文、道德与法治、历史按统编版，数学、英语、物理、化学、生物学、地理按人教版，科学按教科版；信息科技、劳动、体育与健康、音乐、美术各地版本不同，按课标的学段和学习任务编排。每个错误答案对应一种常见错法，并写明为什么会错、课上怎么接；数学、物理、化学的数值答案都经程序验算。每题都附“比一比”的两种做法和三级阶梯练习，放映时可以加在题后。发现错题，请 <Link to="/feedback">告诉我们</Link>。</p>
+                        <p>题目由 kebiao 按课标要点和教材单元编写：语文、道德与法治、历史按统编版，数学、英语、物理、化学、生物学、地理按人教版，数学另有北师大版、英语另有外研社版，科学按教科版；信息科技、劳动、体育与健康、音乐、美术各地版本不同，按课标的学段和学习任务编排。每个错误答案对应一种常见错法，并写明为什么会错、课上怎么接；数学、物理、化学的数值答案都经程序验算；每道题都由另一个 AI 对照教材原文复核过，还没有老师逐题审过。每题都附“比一比”的两种做法和三级阶梯练习，放映时可以加在题后。发现错题，请 <Link to="/feedback">告诉我们</Link>。</p>
                     </div>
                 </section>
 

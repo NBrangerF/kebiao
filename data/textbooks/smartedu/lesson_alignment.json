@@ -6883,6 +6883,63 @@
       ]
      ],
      "d": 0
+    },
+    "tcu_d782c03a95291a95": {
+     "m": [
+      [
+       "AR-S4-MU-06.1",
+       "T",
+       "马林巴非洲打击乐器，用小槌敲击琴板发音。",
+       "book",
+       40
+      ],
+      [
+       "AR-S4-MU-01.2",
+       "P",
+       "东非民间乐曲",
+       "book",
+       39
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_8f136329d8472c76": {
+     "m": [
+      [
+       "AR-S4-MU-02.1",
+       "T",
+       "混声合唱",
+       "book",
+       43
+      ],
+      [
+       "AR-S4-MU-06.1",
+       "P",
+       "康加鼓又称“非洲手鼓”。",
+       "book",
+       44
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_dd1c230a4b146172": {
+     "m": [
+      [
+       "AR-S4-MU-04.2",
+       "P",
+       "边唱、边舞、边用自制的非洲鼓伴奏。",
+       "book",
+       46
+      ],
+      [
+       "AR-S4-MU-02.1",
+       "P",
+       "任选《阿伊亚—非洲的灵感》或《鼓声》",
+       "book",
+       46
+      ]
+     ],
+     "d": 0
     }
    }
   },
@@ -13500,6 +13557,403 @@
        "1公顷 =10000平方米",
        "book",
        80
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_7d739840da51d99a": {
+     "m": [
+      [
+       "MA-S3-NA-01.5",
+       "T",
+       "把它转化成整数乘法来计算。",
+       "book",
+       13
+      ],
+      [
+       "MA-S3-NA-01.4",
+       "P",
+       "买3个需要多少钱?",
+       "book",
+       12
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_ec62d1fe656c04bf": {
+     "m": [
+      [
+       "MA-S3-NA-01.5",
+       "T",
+       "先按照整数乘法算出积,再点小数点;",
+       "book",
+       14
+      ],
+      [
+       "MA-S3-NA-01.4",
+       "P",
+       "长4.2 m、宽0.8 m的长方形",
+       "book",
+       14
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_7076b9689377a740": {
+     "m": [
+      [
+       "MA-S3-NA-01.5",
+       "T",
+       "整数乘法的交换律、结合律和分配律,对于小数乘法也适用。",
+       "book",
+       20
+      ],
+      [
+       "MA-S3-NA-01.4",
+       "P",
+       "买 0.8 m 要花多少元?",
+       "book",
+       20
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_0b6dafaae945d85c": {
+     "m": [
+      [
+       "MA-S3-NA-01.5",
+       "P",
+       "用你喜欢的方法计算下面各题。",
+       "book",
+       27
+      ],
+      [
+       "MA-S3-NA-01.4",
+       "P",
+       "和平方舟号的总航程约为多少万千米?",
+       "book",
+       27
+      ],
+      [
+       "MA-S3-NA-02.2",
+       "P",
+       "利用估算解决含有小数的实际问题很方便。",
+       "book",
+       26
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_0317392e7ed5eb8f": {
+     "m": [
+      [
+       "MA-S3-NA-01.5",
+       "T",
+       "商的小数点要和被除数的小数点对齐",
+       "book",
+       30
+      ],
+      [
+       "MA-S3-NA-01.3",
+       "P",
+       "循环小数是无限小数",
+       "book",
+       29
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_780a19a5ffa98230": {
+     "m": [
+      [
+       "MA-S3-NA-01.5",
+       "T",
+       "先移动除数的小数点,使它变成整数;",
+       "book",
+       37
+      ],
+      [
+       "MA-S3-NA-01.4",
+       "P",
+       "7.65÷0.85= 想一想:除数是小数时要怎样计算?",
+       "book",
+       36
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_6b5713229bbc7bf0": {
+     "m": [
+      [
+       "MA-S3-NA-01.5",
+       "P",
+       "小数除法要将除数转化为整数来计算",
+       "book",
+       41
+      ],
+      [
+       "MA-S3-NA-01.3",
+       "P",
+       "循环小数是无限小数,那有没有无限不循环小数呢?",
+       "book",
+       41
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_f075950d0c942367": {
+     "m": [
+      [
+       "MA-S3-GG-02.5",
+       "T",
+       "点A与点A'到对称轴的距离都是3格。",
+       "book",
+       44
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_3aa92768c99dae23": {
+     "m": [
+      [
+       "MA-S3-GG-02.4",
+       "T",
+       "右图是由左图平移得到的。",
+       "book",
+       46
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_ed9ead541ff1a2c4": {
+     "m": [
+      [
+       "MA-S3-GG-02.4",
+       "T",
+       "从“12”走到“1”,指针绕点O 按顺时针方向旋转了30°。",
+       "book",
+       51
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_fc68ac39a237dc45": {
+     "m": [
+      [
+       "MA-S3-GG-02.6",
+       "T",
+       "试一试用图形运动的知识设计图案。",
+       "book",
+       56
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_bbf63bc0bd553eff": {
+     "m": [
+      [
+       "MA-S3-GG-02.4",
+       "P",
+       "画出平移、旋转后的图形",
+       "book",
+       57
+      ],
+      [
+       "MA-S3-GG-02.5",
+       "P",
+       "补全轴对称图形",
+       "book",
+       57
+      ],
+      [
+       "MA-S3-GG-02.6",
+       "P",
+       "我能借助图形的运动设计美丽的图案。",
+       "book",
+       57
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_31257469ea168db5": {
+     "m": [
+      [
+       "MA-S3-NA-02.3",
+       "T",
+       "用a表示左上角的数",
+       "book",
+       73
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_63b57c7bf574a386": {
+     "m": [
+      [
+       "MA-S3-NA-02.3",
+       "P",
+       "用含有字母的式子表示数量之间的关系",
+       "book",
+       74
+      ],
+      [
+       "MA-S3-NA-02.1",
+       "P",
+       "如果a=b,根据等式的基本性质填空。",
+       "book",
+       75
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_a0c49bc4fec369e0": {
+     "m": [
+      [
+       "MA-S3-GG-01.2",
+       "T",
+       "平行四边形的面积 =",
+       "book",
+       78
+      ],
+      [
+       "MA-S3-GG-01.5",
+       "P",
+       "1公顷 =10000平方米",
+       "book",
+       80
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_42cb879eba69faad": {
+     "m": [
+      [
+       "MA-S3-GG-01.2",
+       "T",
+       "三角形的面积 =",
+       "book",
+       84
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_e683fd175f199c91": {
+     "m": [
+      [
+       "MA-S3-GG-01.2",
+       "T",
+       "梯形的面积 =",
+       "book",
+       88
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_adf7bde6baf51a89": {
+     "m": [
+      [
+       "MA-S3-GG-01.2",
+       "T",
+       "可以把它看作一个正方形和一个三角",
+       "book",
+       92
+      ],
+      [
+       "MA-S3-GG-01.5",
+       "P",
+       "每个小方格的面积是1 cm2",
+       "book",
+       93
+      ],
+      [
+       "MA-S3-NA-01.3",
+       "P",
+       "不满1格按半格算",
+       "book",
+       93
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_acbf8f42091a6fdc": {
+     "m": [
+      [
+       "MA-S3-GG-01.2",
+       "T",
+       "S=a+b÷2-1",
+       "book",
+       96
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_835f577b2bfe6b92": {
+     "m": [
+      [
+       "MA-S3-GG-01.2",
+       "P",
+       "S = (a + b)h ÷ 2",
+       "book",
+       97
+      ],
+      [
+       "MA-S3-GG-01.5",
+       "P",
+       "1平方千米 =100公顷 =1000000平方米",
+       "book",
+       97
+      ],
+      [
+       "MA-S3-GG-01.3",
+       "P",
+       "圆的面积也能用转化的方法来计算吗?",
+       "book",
+       97
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_2cbdf42d2859e97b": {
+     "m": [
+      [
+       "MA-S3-SP-02.1",
+       "T",
+       "出现的点数之和有哪些可能?",
+       "book",
+       109
+      ],
+      [
+       "MA-S3-SP-01.1",
+       "P",
+       "将掷出的点数之和绘制成条形统计图",
+       "book",
+       109
+      ],
+      [
+       "MA-S3-SP-02.2",
+       "P",
+       "你认为这个游戏公平吗?",
+       "book",
+       109
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_21f5fccdb354ce02": {
+     "m": [
+      [
+       "MA-S3-SP-02.1",
+       "P",
+       "指针可能停在红色、黄色或蓝色区域",
+       "book",
+       110
+      ],
+      [
+       "MA-S3-SP-01.1",
+       "P",
+       "并且停在蓝色区域的可能性最大",
+       "book",
+       110
       ]
      ],
      "d": 0
@@ -37421,6 +37875,217 @@
       ]
      ],
      "d": 0
+    },
+    "tcu_1795bd83ae4a61dd": {
+     "m": [
+      [
+       "MA-S4-NA-08.1",
+       "T",
+       "通过观察图象估计函数的类型,求出一个大致满足这些数据的函数解析式.",
+       "book",
+       65
+      ],
+      [
+       "MA-S4-NA-08.2",
+       "T",
+       "以刹车时车速为横坐标,刹车距离为纵坐标,根据表中数据, 在平面直角坐标系中描点,并用平滑的曲线连接这些点,得到大致满足这",
+       "book",
+       65
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_11a909d3adedeecf": {
+     "m": [
+      [
+       "MA-S4-NA-08.2",
+       "T",
+       "二次函数y=ax2+bx+c (a≠0)",
+       "book",
+       66
+      ],
+      [
+       "MA-S4-NA-08.4",
+       "T",
+       "二次函数y=ax2+bx+c的图象与x轴的公共点的情况,与一元二次方程ax2+bx+c=0的根的情况联系密切.",
+       "book",
+       66
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_8a15c90730265174": {
+     "m": [
+      [
+       "MA-S4-NA-09.1",
+       "T",
+       "请选择合适的函数模型描述这种关系",
+       "book",
+       90
+      ],
+      [
+       "MA-S4-NA-09.3",
+       "T",
+       "当简易密度计悬浮在牛奶中时,它浸入牛奶的深度为6.99cm, 则牛奶的密度为多少",
+       "book",
+       90
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_0da1a522a3ddf879": {
+     "m": [
+      [
+       "MA-S4-NA-09.1",
+       "P",
+       "反比例函数刻画了具有反比例关系的两个变量之间的对应关系",
+       "book",
+       91
+      ],
+      [
+       "MA-S4-NA-09.2",
+       "P",
+       "反比例函数 =k的图象是怎样的?",
+       "book",
+       91
+      ],
+      [
+       "MA-S4-NA-09.3",
+       "P",
+       "回顾应用反比例函数解决实际问题的过程,总结建立函数模型解决实际问题的步骤",
+       "book",
+       92
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_3251b78185d9e3b5": {
+     "m": [
+      [
+       "MA-S4-GG-09.3",
+       "T",
+       "我们可以利用平移、轴对称和旋转中的一种进行图案设计",
+       "book",
+       115
+      ],
+      [
+       "MA-S4-GG-08.1",
+       "P",
+       "以点O为旋转中心,将图形逆时针旋转90°三次",
+       "book",
+       115
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_906a99355569af4e": {
+     "m": [
+      [
+       "MA-S4-GG-08.1",
+       "P",
+       "抽象得到平面图形的旋转的概念",
+       "book",
+       116
+      ],
+      [
+       "MA-S4-GG-08.2",
+       "P",
+       "中心对称是旋转的特殊情况,是旋转角为180°的旋转",
+       "book",
+       116
+      ],
+      [
+       "MA-S4-GG-13.1",
+       "P",
+       "在平面直角坐标系中关于原点对称的点的坐标的关系",
+       "book",
+       116
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_304e14e20e914e71": {
+     "m": [
+      [
+       "MA-S4-GG-05.3",
+       "T",
+       "由上面的探究,归纳出判定过某个四边形的四个顶点能作一个圆的条件.",
+       "book",
+       148
+      ],
+      [
+       "MA-S4-GG-05.6",
+       "P",
+       "再逐步等分圆心角,就可以得到所需的八等分、十六等分了.",
+       "book",
+       147
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_edd2a07b28436a12": {
+     "m": [
+      [
+       "MA-S4-GG-05.1",
+       "P",
+       "圆的位置及大小由哪些要素确定?如何从点的集合的角度理解圆的概念?",
+       "book",
+       150
+      ],
+      [
+       "MA-S4-GG-05.3",
+       "P",
+       "一条弧所对的圆周角和这条弧所对的圆心角有什么关系?",
+       "book",
+       150
+      ],
+      [
+       "MA-S4-GG-05.9",
+       "P",
+       "弧长、扇形面积等的计算.",
+       "book",
+       149
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_ccfef4218a6df14f": {
+     "m": [
+      [
+       "MA-S4-GG-05.10",
+       "P",
+       "利用等分圆周得到的正多边形",
+       "book",
+       175
+      ],
+      [
+       "MA-S4-GG-05.6",
+       "P",
+       "你能画出其中的一些图案吗?",
+       "book",
+       175
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_3de25539ce2548bd": {
+     "m": [
+      [
+       "MA-S4-GG-05.5",
+       "T",
+       "直线与圆的三种位置关系",
+       "book",
+       176
+      ],
+      [
+       "MA-S4-GG-05.8",
+       "T",
+       "探索并证明了切线长定理",
+       "book",
+       176
+      ]
+     ],
+     "d": 0
     }
    }
   },
@@ -41720,6 +42385,353 @@
        "百分数和平均数都是刻画和表达数据的统计量",
        "book",
        114
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_5cdf1eed57ac5e2f": {
+     "m": [
+      [
+       "MA-S3-GG-02.2",
+       "P",
+       "用有序数对确定位置",
+       "book",
+       15
+      ],
+      [
+       "MA-S3-GG-02.1",
+       "P",
+       "用方向和距离确定位置",
+       "book",
+       15
+      ],
+      [
+       "MA-S3-GG-02.3",
+       "P",
+       "在电视塔的北偏东45°方向1 km处。",
+       "book",
+       17
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_4ce2eb2f0f473379": {
+     "m": [
+      [
+       "MA-S3-NA-01.5",
+       "T",
+       "分数乘整数,用分子乘整数的积作分子, 分母不变。",
+       "book",
+       21
+      ],
+      [
+       "MA-S3-NA-01.4",
+       "P",
+       "环保小组用回收的包装纸做纸花,做一朵花需要用张纸。",
+       "book",
+       21
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_6aea7ebbbc25274c": {
+     "m": [
+      [
+       "MA-S3-NA-01.5",
+       "T",
+       "分数乘法,用分子相乘的积作分子,用分母相乘的积作分母。",
+       "book",
+       23
+      ],
+      [
+       "MA-S3-NA-01.4",
+       "P",
+       "一个面积为2公顷的育苗基地,它的用来种柳树苗。",
+       "book",
+       22
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_1ef172e1fbcae066": {
+     "m": [
+      [
+       "MA-S3-NA-01.5",
+       "T",
+       "我们已经学过整数和小数的乘法运算律,这些运算律在分数运算中依然适用。",
+       "book",
+       27
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_f86766be7a90e855": {
+     "m": [
+      [
+       "MA-S3-NA-01.5",
+       "T",
+       "分数乘法,用分子之积作 “求一个数的几分之几”的分子,分母之积作分母。",
+       "book",
+       35
+      ],
+      [
+       "MA-S3-NA-01.4",
+       "P",
+       "这个垃圾处理场15天收到的垃圾中有多少吨是可回收利用的?",
+       "book",
+       36
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_0571d7a08901f4ee": {
+     "m": [
+      [
+       "MA-S3-NA-01.5",
+       "T",
+       "乘积是1的两个数互为倒数。",
+       "book",
+       37
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_3b4b08ec9f162067": {
+     "m": [
+      [
+       "MA-S3-NA-01.5",
+       "T",
+       "一个数除以分数,等于乘这个分数的倒数。",
+       "book",
+       40
+      ],
+      [
+       "MA-S3-NA-01.4",
+       "T",
+       "学校种植社团管理着一块公顷的蔬菜种植基地。",
+       "book",
+       38
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_ef22021b5f2ea62e": {
+     "m": [
+      [
+       "MA-S3-NA-01.5",
+       "P",
+       "一个数除以分数,等于乘这个分数的倒数:",
+       "book",
+       46
+      ],
+      [
+       "MA-S3-NA-01.4",
+       "P",
+       "把整体看作“1”来解决",
+       "book",
+       46
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_18e4cd241671f28c": {
+     "m": [
+      [
+       "MA-S3-GG-01.3",
+       "T",
+       "半径:连接圆心和圆上任意一点的线段",
+       "book",
+       54
+      ],
+      [
+       "MA-S3-GG-02.5",
+       "P",
+       "把圆沿任何一条直径对折,两边可以重合",
+       "book",
+       53
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_2a357ebcb589c67d": {
+     "m": [
+      [
+       "MA-S3-GG-01.3",
+       "T",
+       "C =πd 或 C =2πr",
+       "book",
+       61
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_1aa944322768b447": {
+     "m": [
+      [
+       "MA-S3-GG-01.3",
+       "T",
+       "S=πr 2",
+       "book",
+       67
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_172dc160473338ab": {
+     "m": [
+      [
+       "MA-S3-GG-01.3",
+       "T",
+       "圆心确定圆的位置,半径决定圆的大小",
+       "book",
+       75
+      ],
+      [
+       "MA-S3-GG-02.6",
+       "P",
+       "用圆可以设计许多漂亮的图案。",
+       "book",
+       75
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_ed68bff413ff3aed": {
+     "m": [
+      [
+       "MA-S3-GG-01.3",
+       "P",
+       "圆的周长 C=πd或C=2πr",
+       "book",
+       76
+      ],
+      [
+       "MA-S3-GG-02.5",
+       "P",
+       "圆是一种轴对称图形",
+       "book",
+       76
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_3c2b34e8d23bb77f": {
+     "m": [
+      [
+       "MA-S3-SP-01.2",
+       "T",
+       "百分数表示一个数是另一个数的百分之多少",
+       "book",
+       85
+      ],
+      [
+       "MA-S3-NA-01.3",
+       "T",
+       "小数化成百分数,可以把小数点向右移动两位",
+       "book",
+       86
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_d1f7d357bf8bbb72": {
+     "m": [
+      [
+       "MA-S3-SP-01.2",
+       "T",
+       "打九折就是按原价的90%出售",
+       "book",
+       90
+      ],
+      [
+       "MA-S3-NA-01.5",
+       "P",
+       "利息 = 本金 × 利率 × 存期",
+       "book",
+       91
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_787d497eec132c29": {
+     "m": [
+      [
+       "MA-S3-SP-01.2",
+       "P",
+       "百分数表示一个数是另一个数的百分之多少",
+       "book",
+       103
+      ],
+      [
+       "MA-S3-NA-01.3",
+       "P",
+       "百分数与小数、分数的互化",
+       "book",
+       103
+      ]
+     ],
+     "d": 1,
+     "r": [
+      [
+       "MA-S3-SP-01.2",
+       "repeat",
+       "折扣百分数的应用"
+      ]
+     ]
+    },
+    "tcu_67f9e2727dbe1a92": {
+     "m": [
+      [
+       "MA-S3-NA-01.5",
+       "T",
+       "分数乘、除法",
+       "book",
+       111
+      ],
+      [
+       "MA-S3-GG-01.3",
+       "P",
+       "圆的周长",
+       "book",
+       112
+      ],
+      [
+       "MA-S3-GG-02.2",
+       "P",
+       "用有序数对表示物体的位置",
+       "book",
+       113
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_b02fd89d169e8aa0": {
+     "m": [
+      [
+       "MA-S3-SP-01.2",
+       "T",
+       "百分数和平均数都是刻画和表达数据的统计量",
+       "book",
+       114
+      ],
+      [
+       "MA-S3-NA-01.4",
+       "P",
+       "一件衬衣原价125元,现在降价20%.",
+       "book",
+       115
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_44f99f7c4660c358": {
+     "m": [
+      [
+       "MA-S3-NA-02.6",
+       "T",
+       "7只鸽子飞进3个鸽笼,总有一个鸽笼至少要飞进3只鸽子。",
+       "book",
+       121
       ]
      ],
      "d": 0
@@ -60606,6 +61618,402 @@
        "Listen and read aloud. Notice the intonation.",
        "title",
        null
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_63dbd97c78e41042": {
+     "m": [
+      [
+       "EN-S1-LC-01.4",
+       "T",
+       "What's your name? Where are you from?",
+       "book",
+       9
+      ],
+      [
+       "EN-S1-LK-01.3",
+       "P",
+       "Listen, repeat and chant. a-e",
+       "book",
+       11
+      ],
+      [
+       "EN-S1-LS-01.10",
+       "P",
+       "Listen and chant We are friends.",
+       "book",
+       10
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_e5280c4711837954": {
+     "m": [
+      [
+       "EN-S1-CA-02.4",
+       "T",
+       "Let me help. Thank you. After you! You're welcome.",
+       "book",
+       12
+      ],
+      [
+       "EN-S1-LK-01.15",
+       "P",
+       "Who's that girl? That's our new neighbour, Amy.",
+       "book",
+       12
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_fd530a5afe55cde4": {
+     "m": [
+      [
+       "EN-S1-LC-03.1",
+       "T",
+       "I can greet new people and politely offer help.",
+       "book",
+       16
+      ],
+      [
+       "EN-S1-LC-01.4",
+       "P",
+       "I can say the name of different countries.",
+       "book",
+       16
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_881305cebb39ffb8": {
+     "m": [
+      [
+       "EN-S1-LK-01.11",
+       "T",
+       "It has a long body and short legs.",
+       "book",
+       21
+      ],
+      [
+       "EN-S1-LS-01.10",
+       "P",
+       "Listen, repeat and chant.",
+       "book",
+       23
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_af93387d5c05c183": {
+     "m": [
+      [
+       "EN-S1-LS-01.12",
+       "T",
+       "We express ourselves in many ways.",
+       "book",
+       26
+      ],
+      [
+       "EN-S1-LA-03.1",
+       "P",
+       "Do a survey",
+       "book",
+       24
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_b92e57537dff0407": {
+     "m": [
+      [
+       "EN-S1-LK-01.11",
+       "T",
+       "Do you have a pet? Yes, I have a dog. It's thin. It has a lo",
+       "book",
+       27
+      ],
+      [
+       "EN-S1-LA-03.1",
+       "P",
+       "Share your mind map in class.",
+       "book",
+       28
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_b9502dc46f338b33": {
+     "m": [
+      [
+       "EN-S1-LK-01.6",
+       "T",
+       "bag book pencil paper pen ruler",
+       "book",
+       34
+      ],
+      [
+       "EN-S1-LK-01.7",
+       "T",
+       "I have a pen, a pencil, ...",
+       "book",
+       34
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_e8cd5a03492444f6": {
+     "m": [
+      [
+       "EN-S1-LK-01.6",
+       "T",
+       "see smell taste hear touch",
+       "book",
+       37
+      ],
+      [
+       "EN-S1-LS-01.16",
+       "P",
+       "I smell with my nose.",
+       "book",
+       38
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_9cfe7bf964cd0e6d": {
+     "m": [
+      [
+       "EN-S1-LS-01.19",
+       "T",
+       "I see teachers and students.",
+       "book",
+       40
+      ],
+      [
+       "EN-S1-LS-01.16",
+       "P",
+       "This is my sense book. I see ...",
+       "book",
+       40
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_93539d91a873a415": {
+     "m": [
+      [
+       "EN-S1-LS-01.12",
+       "T",
+       "I'd like some milk and bread.",
+       "book",
+       46
+      ],
+      [
+       "EN-S1-LK-01.6",
+       "P",
+       "Let’s learn noodles egg",
+       "book",
+       46
+      ],
+      [
+       "EN-S1-LS-01.1",
+       "P",
+       "Listen and do Eat your egg.",
+       "book",
+       46
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_99ce719f5003fc7f": {
+     "m": [
+      [
+       "EN-S1-LS-01.12",
+       "T",
+       "Would you like some rice?",
+       "book",
+       48
+      ],
+      [
+       "EN-S1-LK-01.6",
+       "P",
+       "rice soup fruit meat vegetables",
+       "book",
+       49
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_ea5db87cc63df145": {
+     "m": [
+      [
+       "EN-S1-LS-01.13",
+       "T",
+       "Plan your healthy plates for a day",
+       "book",
+       52
+      ],
+      [
+       "EN-S1-LS-01.19",
+       "P",
+       "This is my healthy plate for breakfast.",
+       "book",
+       52
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_2d79d5559a6089ce": {
+     "m": [
+      [
+       "EN-S1-LK-01.11",
+       "T",
+       "Yes, I do. I have some old books.",
+       "book",
+       57
+      ],
+      [
+       "EN-S1-LK-01.3",
+       "T",
+       "u-e One cute cat uses two old balls.",
+       "book",
+       59
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_784d9d0150e0f6d4": {
+     "m": [
+      [
+       "EN-S1-LS-01.16",
+       "T",
+       "Where is the doll? Is it in the box?",
+       "book",
+       60
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_416aeb6eb137bc45": {
+     "m": [
+      [
+       "EN-S1-LA-03.1",
+       "T",
+       "Share your work in class.",
+       "book",
+       64
+      ],
+      [
+       "EN-S1-TH-01.1",
+       "T",
+       "Reuse some things at home.",
+       "book",
+       64
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_249acf3f7c370ced": {
+     "m": [
+      [
+       "EN-S1-LK-01.7",
+       "T",
+       "How many books do we have? We have fifteen books.",
+       "book",
+       69
+      ],
+      [
+       "EN-S1-LC-01.3",
+       "P",
+       "Listen and chant Five and six makes eleven.",
+       "book",
+       70
+      ],
+      [
+       "EN-S1-LK-01.4",
+       "P",
+       "Let's spell Listen and repeat.",
+       "book",
+       71
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_7f6f8a7a979469f9": {
+     "m": [
+      [
+       "EN-S1-LK-01.9",
+       "T",
+       "How much is this bag? It's twenty yuan.",
+       "book",
+       72
+      ],
+      [
+       "EN-S1-LS-01.3",
+       "P",
+       "I pay fifteen yuan for five books.",
+       "book",
+       74
+      ],
+      [
+       "EN-S1-LC-01.3",
+       "P",
+       "Sixteen, seventeen, eighteen.",
+       "book",
+       73
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_a2bf91299bce2e5d": {
+     "m": [
+      [
+       "EN-S1-LK-01.7",
+       "T",
+       "I can use the numbers 11 to 20 to count things.",
+       "book",
+       76
+      ],
+      [
+       "EN-S1-TH-01.7",
+       "P",
+       "Are the foods healthy? Read and group.",
+       "book",
+       75
+      ],
+      [
+       "EN-S1-LS-01.3",
+       "P",
+       "Sell fun sandwiches. How much is it? It's six yuan.",
+       "book",
+       75
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_cf7d42dc16be9216": {
+     "m": [
+      [
+       "EN-S1-TX-01.2",
+       "T",
+       "What's your name?",
+       "book",
+       80
+      ],
+      [
+       "EN-S1-LS-01.11",
+       "T",
+       "I'm from the UK.",
+       "book",
+       80
+      ],
+      [
+       "EN-S1-LC-01.3",
+       "P",
+       "Read aloud.",
+       "book",
+       79
       ]
      ],
      "d": 0
@@ -83108,6 +84516,682 @@
       ]
      ],
      "d": 0
+    },
+    "tcu_2f3067b2e762b578": {
+     "m": [
+      [
+       "EN-S2-LC-03.1",
+       "T",
+       "Ask and answer What do we have on ...? We have ... What's yo",
+       "book",
+       33
+      ],
+      [
+       "EN-S2-LK-01.7",
+       "P",
+       "I have Chinese, maths, music and PE.",
+       "book",
+       33
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_51f54a238069b9c4": {
+     "m": [
+      [
+       "EN-S2-LC-03.1",
+       "T",
+       "What's your favourite day at school? It's Tuesday.",
+       "book",
+       34
+      ],
+      [
+       "EN-S2-LS-01.12",
+       "P",
+       "What do you have on ...? I have ...",
+       "book",
+       34
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_db726611efe706fa": {
+     "m": [
+      [
+       "EN-S2-LK-01.1",
+       "T",
+       "Listen, repeat and chant. ie igh",
+       "book",
+       35
+      ],
+      [
+       "EN-S2-LK-01.4",
+       "P",
+       "Read and say.",
+       "book",
+       35
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_5e4ac540f1712b76": {
+     "m": [
+      [
+       "EN-S2-LS-01.12",
+       "T",
+       "What do you usually do",
+       "book",
+       36
+      ],
+      [
+       "EN-S2-LK-01.7",
+       "T",
+       "I often play football.",
+       "book",
+       36
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_434af64ab3493e90": {
+     "m": [
+      [
+       "EN-S2-LK-01.11",
+       "T",
+       "Chen Jie does her homework on Saturday mornings.",
+       "book",
+       37
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_04147e7565f52a4d": {
+     "m": [
+      [
+       "EN-S2-LS-01.18",
+       "T",
+       "I play ping-pong with Binbin",
+       "book",
+       38
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_df187611483733bc": {
+     "m": [
+      [
+       "EN-S2-LS-01.14",
+       "T",
+       "What do you do at the weekend? I often ...",
+       "book",
+       39
+      ],
+      [
+       "EN-S2-TH-01.1",
+       "T",
+       "Make a chart about work-play balance",
+       "book",
+       39
+      ],
+      [
+       "EN-S2-LC-03.1",
+       "P",
+       "I can talk about the classes I have each day.",
+       "book",
+       40
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_d3d8768d5e3ec082": {
+     "m": [
+      [
+       "EN-S2-LC-01.6",
+       "T",
+       "Please read our school's top five tips.",
+       "book",
+       41
+      ],
+      [
+       "EN-S2-TH-01.4",
+       "P",
+       "Stay healthy. Exercise, eat well and get enough sleep.",
+       "book",
+       42
+      ],
+      [
+       "EN-S2-LS-01.2",
+       "P",
+       "Here's my to-do list.",
+       "book",
+       42
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_dc10b8a3a8d1af2c": {
+     "m": [
+      [
+       "EN-S2-TH-01.3",
+       "T",
+       "How can we stay healthy?",
+       "book",
+       45
+      ],
+      [
+       "EN-S2-LC-01.4",
+       "P",
+       "Listen and write T (True) or F (False).",
+       "book",
+       45
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_993c09f56743f784": {
+     "m": [
+      [
+       "EN-S2-LC-03.1",
+       "T",
+       "How can I stay healthy? You should get enough sleep.",
+       "book",
+       46
+      ],
+      [
+       "EN-S2-TH-01.3",
+       "P",
+       "Eat healthy food. Drink enough water. Exercise every day. Ge",
+       "book",
+       46
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_cee87b6aa316b7b6": {
+     "m": [
+      [
+       "EN-S2-LK-01.1",
+       "T",
+       "oa ow We put on our coats and play in the snow.",
+       "book",
+       47
+      ],
+      [
+       "EN-S2-TH-01.3",
+       "P",
+       "We wash our hands with soap.",
+       "book",
+       47
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_6e7132f3c0cb726d": {
+     "m": [
+      [
+       "EN-S2-TX-01.1",
+       "T",
+       "Can I watch a TV show now, please?",
+       "book",
+       48
+      ],
+      [
+       "EN-S2-LK-01.7",
+       "P",
+       "You should rest your eyes.",
+       "book",
+       48
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_2914a14b4d3378bd": {
+     "m": [
+      [
+       "EN-S2-LK-01.7",
+       "T",
+       "You should brush your teeth twice a day.",
+       "book",
+       49
+      ],
+      [
+       "EN-S2-LC-01.4",
+       "P",
+       "Listen, write and role-play",
+       "book",
+       49
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_d0cc1436cf274c58": {
+     "m": [
+      [
+       "EN-S2-LC-01.6",
+       "T",
+       "Do you have healthy habits?",
+       "book",
+       50
+      ],
+      [
+       "EN-S2-LS-01.17",
+       "P",
+       "You should ... You shouldn’t ...",
+       "book",
+       50
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_f01029ce8855dac9": {
+     "m": [
+      [
+       "EN-S2-TH-01.3",
+       "T",
+       "tell others how to",
+       "book",
+       52
+      ],
+      [
+       "EN-S2-LS-01.14",
+       "T",
+       "Here are my habits.",
+       "book",
+       52
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_a4382bd33a8e780c": {
+     "m": [
+      [
+       "EN-S2-TH-01.3",
+       "T",
+       "You should get enough sleep.",
+       "book",
+       53
+      ],
+      [
+       "EN-S2-LK-01.7",
+       "T",
+       "You should eat healthy food,",
+       "book",
+       53
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_9dd00f7f717346b1": {
+     "m": [
+      [
+       "EN-S2-LC-03.1",
+       "T",
+       "What would you like to eat?",
+       "book",
+       57
+      ],
+      [
+       "EN-S2-TH-01.3",
+       "P",
+       "Vegetables are good for you.",
+       "book",
+       57
+      ],
+      [
+       "EN-S2-LK-01.6",
+       "P",
+       "I'd like beef and rice.",
+       "book",
+       57
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_02181fc8ef29cbae": {
+     "m": [
+      [
+       "EN-S2-LC-03.1",
+       "T",
+       "What would you like to eat? I'd like a hamburger and some ic",
+       "book",
+       58
+      ],
+      [
+       "EN-S2-LK-01.7",
+       "P",
+       "Zhang Peng would like to eat dumplings and beef.",
+       "book",
+       58
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_f94de5a0c7944661": {
+     "m": [
+      [
+       "EN-S2-LK-01.1",
+       "T",
+       "book foot good too tool zoo",
+       "book",
+       59
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_7fab87bba8d05aed": {
+     "m": [
+      [
+       "EN-S2-LS-01.14",
+       "T",
+       "Where does our food come from?",
+       "book",
+       60
+      ],
+      [
+       "EN-S2-LC-02.1",
+       "P",
+       "It comes from Hainan.",
+       "book",
+       60
+      ],
+      [
+       "EN-S2-LK-01.7",
+       "P",
+       "What's your favourite fruit, Binbin?",
+       "book",
+       60
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_a7f5a8aa32efdb0e": {
+     "m": [
+      [
+       "EN-S2-LK-01.7",
+       "T",
+       "Amy grows carrots from seeds.",
+       "book",
+       61
+      ],
+      [
+       "EN-S2-LS-01.17",
+       "P",
+       "Write about it.",
+       "book",
+       61
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_9a4a38e00307e9b2": {
+     "m": [
+      [
+       "EN-S2-LC-01.6",
+       "T",
+       "We eat lotus roots.",
+       "book",
+       62
+      ],
+      [
+       "EN-S2-LK-01.7",
+       "P",
+       "Lotus leaves are big",
+       "book",
+       62
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_46f1b795332979df": {
+     "m": [
+      [
+       "EN-S2-LC-03.1",
+       "T",
+       "Make a presentation in class.",
+       "book",
+       63
+      ],
+      [
+       "EN-S2-LK-01.7",
+       "P",
+       "This is how you grow it.",
+       "book",
+       64
+      ],
+      [
+       "EN-S2-LS-01.17",
+       "P",
+       "Write a draft.",
+       "book",
+       64
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_7626142e045f99d7": {
+     "m": [
+      [
+       "EN-S2-LC-01.6",
+       "T",
+       "The history of tea",
+       "book",
+       65
+      ],
+      [
+       "EN-S2-CA-01.2",
+       "P",
+       "Tea was first popular in China.",
+       "book",
+       65
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_223ceab0dcfed8dc": {
+     "m": [
+      [
+       "EN-S2-LC-02.1",
+       "T",
+       "There are also many rivers in the nature park.",
+       "book",
+       69
+      ],
+      [
+       "EN-S2-LC-01.4",
+       "T",
+       "Mike's dad: Wow! That lake is really lovely!",
+       "book",
+       69
+      ],
+      [
+       "EN-S2-TX-01.1",
+       "P",
+       "Are there any waterfalls in the park?",
+       "book",
+       69
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_c40cecf22b81be7d": {
+     "m": [
+      [
+       "EN-S2-LK-01.11",
+       "T",
+       "There is a big forest in the park.",
+       "book",
+       70
+      ],
+      [
+       "EN-S2-LK-01.6",
+       "P",
+       "There are some beautiful mountains.",
+       "book",
+       70
+      ],
+      [
+       "EN-S2-LS-01.2",
+       "P",
+       "Design a nature park",
+       "book",
+       70
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_f19bd1709188bdbf": {
+     "m": [
+      [
+       "EN-S2-LK-01.1",
+       "T",
+       "Listen and repeat.",
+       "book",
+       71
+      ],
+      [
+       "EN-S2-LK-01.6",
+       "P",
+       "Paul is an author.",
+       "book",
+       71
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_70701dfbbfcfaf65": {
+     "m": [
+      [
+       "EN-S2-LC-01.4",
+       "T",
+       "Listen and circle.",
+       "book",
+       72
+      ],
+      [
+       "EN-S2-LS-01.14",
+       "P",
+       "What do you usually do at the weekend?",
+       "book",
+       72
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_1e7ed532784fae47": {
+     "m": [
+      [
+       "EN-S2-LC-01.6",
+       "T",
+       "In London, there will be heavy rain today.",
+       "book",
+       73
+      ],
+      [
+       "EN-S2-LK-01.6",
+       "P",
+       "There is heavy rain.",
+       "book",
+       73
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_ec13954797f2f6bd": {
+     "m": [
+      [
+       "EN-S2-LS-01.18",
+       "T",
+       "Wear good hiking shoes and the right clothes.",
+       "book",
+       74
+      ],
+      [
+       "EN-S2-LS-01.1",
+       "P",
+       "Don't go hiking in bad weather!",
+       "book",
+       74
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_b1f8f9d1c7fc6035": {
+     "m": [
+      [
+       "EN-S2-LC-03.1",
+       "T",
+       "Read aloud and act it out.",
+       "book",
+       79
+      ],
+      [
+       "EN-S2-LC-02.1",
+       "P",
+       "Listen and complete the schedule.",
+       "book",
+       79
+      ],
+      [
+       "EN-S2-TX-01.4",
+       "P",
+       "Let's have a class party.",
+       "book",
+       79
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_4de052ce5f2e9d14": {
+     "m": [
+      [
+       "EN-S2-TX-01.4",
+       "T",
+       "Write a welcome letter for a nature park",
+       "book",
+       75
+      ],
+      [
+       "EN-S2-LS-01.17",
+       "T",
+       "Dear visitors, I'd like to welcome you to our nature park.",
+       "book",
+       76
+      ],
+      [
+       "EN-S2-LK-01.7",
+       "P",
+       "There are so many things to see here.",
+       "book",
+       76
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_4bd3e8a590e41322": {
+     "m": [
+      [
+       "EN-S2-LC-01.6",
+       "T",
+       "There are so many beautiful views.",
+       "book",
+       77
+      ],
+      [
+       "EN-S2-LS-01.7",
+       "T",
+       "This place gives fresh water to millions of people in China.",
+       "book",
+       78
+      ],
+      [
+       "EN-S2-TH-01.20",
+       "P",
+       "It is sometimes called the \"Water Tower of China\"!",
+       "book",
+       78
+      ]
+     ],
+     "d": 0
     }
    }
   },
@@ -87617,6 +89701,51 @@
       ]
      ],
      "d": 0
+    },
+    "tcu_e1a476eb21992528": {
+     "m": [
+      [
+       "CN-S3-RA-01.1",
+       "T",
+       "有感情地朗读课文",
+       "book",
+       57
+      ],
+      [
+       "CN-S3-RA-03.1",
+       "T",
+       "说说这些描写对表现人物的作用",
+       "book",
+       57
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_cc335e7667797d2a": {
+     "m": [
+      [
+       "CN-S3-RA-04.1",
+       "T",
+       "我兴奋地仰起头,甩打着书包就大步跑进了楼门。",
+       "book",
+       79
+      ],
+      [
+       "CN-S3-RA-01.1",
+       "P",
+       "本册教科书按本音标注汉字字音,其中用棕色拼音标注的字在这里改读轻声。",
+       "book",
+       79
+      ],
+      [
+       "CN-S3-RA-03.1",
+       "P",
+       "天一下子变了脸色。",
+       "book",
+       78
+      ]
+     ],
+     "d": 0
     }
    }
   },
@@ -91399,6 +93528,233 @@
       ]
      ],
      "d": 0
+    },
+    "tcu_c4b197eec1b6ce50": {
+     "m": [
+      [
+       "MA-S2-NA-01.2",
+       "T",
+       "16×3=48 我是这样算的。",
+       "book",
+       44
+      ],
+      [
+       "MA-S2-NA-02.1",
+       "P",
+       "每筐有16盒草莓。 3 筐有多少盒草莓?",
+       "book",
+       44
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_2046ba7936f0740a": {
+     "m": [
+      [
+       "MA-S2-NA-01.2",
+       "T",
+       "先用两位数个位上的数去乘这个多位数",
+       "book",
+       49
+      ],
+      [
+       "MA-S2-NA-02.1",
+       "P",
+       "某小学有48个班,平均每班有37人。",
+       "book",
+       49
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_d44a26e02142f238": {
+     "m": [
+      [
+       "MA-S2-NA-01.2",
+       "P",
+       "不管几位数乘几位数,都是用其中一个乘数的每一位数和另一个乘数分别相乘,再把积相加。",
+       "book",
+       60
+      ],
+      [
+       "MA-S2-NA-02.1",
+       "P",
+       "要结合实际问题来确定用估算解决问题把数往大估还是往小估。",
+       "book",
+       60
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_6af0855e5efa08ef": {
+     "m": [
+      [
+       "MA-S2-GG-01.1",
+       "T",
+       "在同一个平面内不相交的两条直线叫作平行线",
+       "book",
+       76
+      ],
+      [
+       "MA-S2-GG-01.2",
+       "P",
+       "我用量角器画。",
+       "book",
+       77
+      ]
+     ],
+     "d": 1,
+     "r": [
+      [
+       "MA-S2-GG-01.1",
+       "repeat",
+       "两条直线相交成直角,就说这两条直线互相垂直"
+      ]
+     ]
+    },
+    "tcu_53bf1ee67042af5f": {
+     "m": [
+      [
+       "MA-S2-GG-01.4",
+       "T",
+       "两组对边分别平行的四边形,叫作平行四边形",
+       "book",
+       83
+      ],
+      [
+       "MA-S2-GG-01.7",
+       "P",
+       "一个周长是42 m的平行四边形花坛",
+       "book",
+       87
+      ]
+     ],
+     "d": 1,
+     "r": [
+      [
+       "MA-S2-GG-01.4",
+       "repeat",
+       "只有一组对边平行的四边形叫作梯形"
+      ]
+     ]
+    },
+    "tcu_203793d405f6c4d4": {
+     "m": [],
+     "d": 0
+    },
+    "tcu_b49972fae3c28ccf": {
+     "m": [
+      [
+       "MA-S2-GG-01.4",
+       "T",
+       "长方形是特殊的平行四边形。",
+       "book",
+       92
+      ],
+      [
+       "MA-S2-GG-01.1",
+       "P",
+       "图中有几组互相平行的线段?",
+       "book",
+       90
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_4078a17106130437": {
+     "m": [
+      [
+       "MA-S2-SP-01.2",
+       "T",
+       "天数还可以用条形统计图来表示。",
+       "book",
+       93
+      ],
+      [
+       "MA-S2-SP-01.1",
+       "P",
+       "做一做统计本班同学出生的月份。",
+       "book",
+       94
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_82ea3b97f4a72367": {
+     "m": [
+      [
+       "MA-S2-SP-01.2",
+       "T",
+       "有时为了便于比较,往往把两幅统计图合成一幅。",
+       "book",
+       101
+      ],
+      [
+       "MA-S2-SP-01.1",
+       "P",
+       "请根据以上数据绘制复式条形统计图。",
+       "book",
+       102
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_a7fe3a6e74435cdf": {
+     "m": [
+      [
+       "MA-S2-NA-01.1",
+       "P",
+       "我们认识了更大的数",
+       "book",
+       113
+      ],
+      [
+       "MA-S2-NA-01.2",
+       "P",
+       "学习了多位数乘两位数",
+       "book",
+       113
+      ],
+      [
+       "MA-S2-NA-02.1",
+       "P",
+       "总价 = 单价 × 数量",
+       "book",
+       113
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_fa13df153b648e8f": {
+     "m": [
+      [
+       "MA-S2-NA-01.1",
+       "T",
+       "将下面的数改写成用“万”或“亿”作单位的数",
+       "book",
+       119
+      ],
+      [
+       "MA-S2-NA-01.2",
+       "P",
+       "计算下面各题,并验算。",
+       "book",
+       120
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_d652f4e433948062": {
+     "m": [
+      [
+       "MA-S2-NA-02.3",
+       "T",
+       "从上面数,有35个头; 从下面数,有94只脚",
+       "book",
+       123
+      ]
+     ],
+     "d": 0
     }
    }
   },
@@ -91600,6 +93956,501 @@
        "Everybody is so excited about Sports Day.",
        "book",
        111
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_6ea61c9389442896": {
+     "m": [
+      [
+       "EN-S3-LS-01.17",
+       "T",
+       "Give a presentation to your class",
+       "book",
+       19
+      ],
+      [
+       "EN-S3-LK-01.15",
+       "T",
+       "Can you use the simple past",
+       "book",
+       19
+      ],
+      [
+       "EN-S3-LC-02.1",
+       "P",
+       "Note down their answers.",
+       "book",
+       19
+      ],
+      [
+       "EN-S3-TH-01.14",
+       "P",
+       "Project Compare then and now",
+       "book",
+       19
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_fec07effb9b13169": {
+     "m": [
+      [
+       "EN-S3-LS-01.2",
+       "T",
+       "Listen to the conversations.",
+       "book",
+       21
+      ],
+      [
+       "EN-S3-LK-01.10",
+       "P",
+       "Match the people",
+       "book",
+       21
+      ],
+      [
+       "EN-S3-LC-01.3",
+       "P",
+       "Talk about who you admire",
+       "book",
+       21
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_742a107bdaaeabc8": {
+     "m": [
+      [
+       "EN-S3-LS-01.55",
+       "T",
+       "The Inspiring Seed Scientist",
+       "book",
+       25
+      ],
+      [
+       "EN-S3-CK-01.2",
+       "P",
+       "well-respected biologist",
+       "book",
+       25
+      ],
+      [
+       "EN-S3-TH-01.20",
+       "P",
+       "protect all kinds of plant seeds",
+       "book",
+       25
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_c57a84fbd76f9cdc": {
+     "m": [
+      [
+       "EN-S3-LS-01.17",
+       "T",
+       "Present your poster to the class.",
+       "book",
+       29
+      ],
+      [
+       "EN-S3-LA-03.1",
+       "P",
+       "Work in your groups",
+       "book",
+       29
+      ],
+      [
+       "EN-S3-LS-01.68",
+       "P",
+       "write down a simple introduction.",
+       "book",
+       29
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_5b9513461502ca0c": {
+     "m": [
+      [
+       "EN-S3-LS-01.17",
+       "T",
+       "How do you study ...?",
+       "book",
+       31
+      ],
+      [
+       "EN-S3-LC-01.2",
+       "P",
+       "Listen to the conversations",
+       "book",
+       31
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_2bf9ef6211191dca": {
+     "m": [
+      [
+       "EN-S3-LS-01.8",
+       "T",
+       "Match each paragraph",
+       "book",
+       35
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_30fa8c5b6245a803": {
+     "m": [
+      [
+       "EN-S3-LA-03.1",
+       "T",
+       "Work in groups.",
+       "book",
+       39
+      ],
+      [
+       "EN-S3-LS-01.67",
+       "P",
+       "Create a chart",
+       "book",
+       39
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_340c4de38ca8c203": {
+     "m": [
+      [
+       "EN-S3-LS-01.2",
+       "T",
+       "Listen to the first conversation.",
+       "book",
+       41
+      ],
+      [
+       "EN-S3-LC-02.1",
+       "P",
+       "Listen again and complete the sentences.",
+       "book",
+       41
+      ],
+      [
+       "EN-S3-TQ-02.1",
+       "P",
+       "What does linking knowledge mean?",
+       "book",
+       42
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_6c116c96b96ae514": {
+     "m": [
+      [
+       "EN-S3-LS-01.6",
+       "T",
+       "Read the text and answer the questions.",
+       "book",
+       45
+      ],
+      [
+       "EN-S3-ST-01.16",
+       "P",
+       "How to Boost Your Memory",
+       "book",
+       45
+      ],
+      [
+       "EN-S3-LC-02.1",
+       "P",
+       "pay attention. However, you might fail to remember all the d",
+       "book",
+       45
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_3cf1cafcc70d55dd": {
+     "m": [
+      [
+       "EN-S3-LS-01.62",
+       "T",
+       "Have a debate on the question.",
+       "book",
+       49
+      ],
+      [
+       "EN-S3-LS-01.17",
+       "P",
+       "Add at least three reasons to support your opinion.",
+       "book",
+       49
+      ],
+      [
+       "EN-S3-ST-01.16",
+       "P",
+       "What have you learnt about how memory works?",
+       "book",
+       49
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_704c51853c98b59b": {
+     "m": [
+      [
+       "EN-S3-LS-01.2",
+       "T",
+       "1b Listen to the conversations. Choose the invention each co",
+       "book",
+       51
+      ],
+      [
+       "EN-S3-LC-02.1",
+       "P",
+       "Listen again and circle T for true or F for false.",
+       "book",
+       51
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_43a316e460ec5e24": {
+     "m": [
+      [
+       "EN-S3-LS-01.6",
+       "T",
+       "Read the text and match each paragraph with its topic.",
+       "book",
+       55
+      ],
+      [
+       "EN-S3-CK-01.4",
+       "P",
+       "Cai Lun became interested in trying to solve the problem.",
+       "book",
+       55
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_c5474c558d6e54e8": {
+     "m": [
+      [
+       "EN-S3-LS-01.68",
+       "T",
+       "Make a poster about your invention.",
+       "book",
+       59
+      ],
+      [
+       "EN-S3-LA-03.1",
+       "P",
+       "Work in groups.",
+       "book",
+       59
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_96fe029c1f2e0961": {
+     "m": [
+      [
+       "EN-S3-LS-01.2",
+       "T",
+       "Listen to three news reports and circle the objects",
+       "book",
+       61
+      ],
+      [
+       "EN-S3-LC-02.1",
+       "P",
+       "complete the notes.",
+       "book",
+       61
+      ],
+      [
+       "EN-S3-LC-01.2",
+       "P",
+       "Listen again and complete the notes.",
+       "book",
+       61
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_8b66eae5d461a432": {
+     "m": [
+      [
+       "EN-S3-LS-01.8",
+       "T",
+       "Read the title and the text quickly.",
+       "book",
+       65
+      ],
+      [
+       "EN-S3-TX-01.3",
+       "P",
+       "Identifying the text type",
+       "book",
+       65
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_974f8b5e09707780": {
+     "m": [
+      [
+       "EN-S3-LA-03.1",
+       "T",
+       "Work in groups.",
+       "book",
+       69
+      ],
+      [
+       "EN-S3-LS-01.17",
+       "P",
+       "Present your poster to the class and give a group presentati",
+       "book",
+       69
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_772ee4a5c7b59eeb": {
+     "m": [
+      [
+       "EN-S3-LS-01.17",
+       "T",
+       "What kind of music do you like? Talk about it with a partner",
+       "book",
+       71
+      ],
+      [
+       "EN-S3-LC-01.2",
+       "T",
+       "Listen to the interview. Tick the kinds of music that are me",
+       "book",
+       71
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_4ae34bf2b770fc49": {
+     "m": [
+      [
+       "EN-S3-LC-01.7",
+       "T",
+       "Read the text and complete Chopin’s profile.",
+       "book",
+       75
+      ],
+      [
+       "EN-S3-CK-01.3",
+       "P",
+       "Frédéric Chopin (1810–1849) is considered one of the greates",
+       "book",
+       75
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_0172ba1050387696": {
+     "m": [
+      [
+       "EN-S3-LS-01.43",
+       "T",
+       "Give your presentation to the class.",
+       "book",
+       79
+      ],
+      [
+       "EN-S3-LA-03.1",
+       "P",
+       "In groups, write a list of famous musicians.",
+       "book",
+       79
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_290152c4043c387e": {
+     "m": [
+      [
+       "EN-S3-LS-01.2",
+       "T",
+       "Listen to three conversations and choose their topics.",
+       "book",
+       81
+      ],
+      [
+       "EN-S3-LK-01.7",
+       "P",
+       "long jump pull-up high jump volleyball",
+       "book",
+       81
+      ],
+      [
+       "EN-S3-TH-01.17",
+       "P",
+       "Sports Day",
+       "book",
+       81
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_e4650927d1f659c3": {
+     "m": [
+      [
+       "EN-S3-LS-01.6",
+       "T",
+       "read the speech quickly to check your prediction.",
+       "book",
+       85
+      ],
+      [
+       "EN-S3-CK-01.11",
+       "P",
+       "Beijing Olympics",
+       "book",
+       85
+      ],
+      [
+       "EN-S3-TQ-01.1",
+       "P",
+       "Identifying the writer’s attitude",
+       "book",
+       85
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_72448b6cd8bd4e87": {
+     "m": [
+      [
+       "EN-S3-LS-01.68",
+       "T",
+       "Introduce your favourite sports event",
+       "book",
+       89
+      ],
+      [
+       "EN-S3-LA-03.1",
+       "P",
+       "Work in groups.",
+       "book",
+       89
+      ],
+      [
+       "EN-S3-ST-01.7",
+       "P",
+       "Research the questions.",
+       "book",
+       89
       ]
      ],
      "d": 0
@@ -147469,6 +150320,550 @@
       ]
      ],
      "d": 0
+    },
+    "tcu_c5b0a722c5447b02": {
+     "m": [
+      [
+       "EN-S2-LC-01.4",
+       "T",
+       "I have a bad cold.",
+       "book",
+       33
+      ],
+      [
+       "EN-S2-LK-01.6",
+       "P",
+       "I feel ill. My head hurts",
+       "book",
+       33
+      ],
+      [
+       "EN-S2-LS-01.12",
+       "P",
+       "How does Mike feel?",
+       "book",
+       33
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_56162e0e838f72d5": {
+     "m": [
+      [
+       "EN-S2-LK-01.7",
+       "T",
+       "What's the matter? I have a bad cold.",
+       "book",
+       34
+      ],
+      [
+       "EN-S2-TX-01.1",
+       "P",
+       "You should ...",
+       "book",
+       34
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_ca4f61afa862fe4c": {
+     "m": [
+      [
+       "EN-S2-TH-01.3",
+       "T",
+       "How can we live a healthy life?",
+       "book",
+       35
+      ],
+      [
+       "EN-S2-LC-03.1",
+       "P",
+       "We need to eat healthy food.",
+       "book",
+       35
+      ],
+      [
+       "EN-S2-LK-01.7",
+       "P",
+       "Take care of your eyes and teeth.",
+       "book",
+       35
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_bbd36953a5ea36be": {
+     "m": [
+      [
+       "EN-S2-TH-01.3",
+       "T",
+       "Have a healthy diet. Don't stay up late. Exercise often. Thi",
+       "book",
+       36
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_da5410c9d15b5830": {
+     "m": [
+      [
+       "EN-S2-LS-01.14",
+       "T",
+       "I'm feeling down.",
+       "book",
+       37
+      ],
+      [
+       "EN-S2-LS-01.17",
+       "P",
+       "Write some suggestions for the children below.",
+       "book",
+       38
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_4b522129a02644ae": {
+     "m": [
+      [
+       "EN-S2-LS-01.18",
+       "T",
+       "Make your healthy lifestyle guide.",
+       "book",
+       40
+      ],
+      [
+       "EN-S2-TH-01.3",
+       "P",
+       "How can we live a healthy life?",
+       "book",
+       39
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_73c17cc9982c236c": {
+     "m": [
+      [
+       "EN-S2-LC-01.6",
+       "T",
+       "We're important for his health.",
+       "book",
+       41
+      ],
+      [
+       "EN-S2-TH-01.3",
+       "P",
+       "washes us before every meal",
+       "book",
+       41
+      ],
+      [
+       "EN-S2-LS-01.13",
+       "P",
+       "Reading time",
+       "book",
+       41
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_60eefb260be11d77": {
+     "m": [
+      [
+       "EN-S2-LC-03.1",
+       "T",
+       "How are you going to spend your pocket money?",
+       "book",
+       45
+      ],
+      [
+       "EN-S2-TH-01.8",
+       "P",
+       "How are you going to spend your pocket money?",
+       "book",
+       45
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_f580e2bf72a99c82": {
+     "m": [
+      [
+       "EN-S2-TH-01.8",
+       "T",
+       "People use money to do different things.",
+       "book",
+       46
+      ],
+      [
+       "EN-S2-LK-01.7",
+       "P",
+       "We use money to buy goods.",
+       "book",
+       46
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_78b768cef266080b": {
+     "m": [
+      [
+       "EN-S2-TH-01.8",
+       "T",
+       "How can we use money wisely?",
+       "book",
+       47
+      ],
+      [
+       "EN-S2-LC-03.1",
+       "P",
+       "How much pocket money do you have?",
+       "book",
+       47
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_eaf0d6eec87a0842": {
+     "m": [
+      [
+       "EN-S2-TH-01.8",
+       "T",
+       "How can we use our money wisely?",
+       "book",
+       48
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_554a7724effebac2": {
+     "m": [
+      [
+       "EN-S2-LS-01.7",
+       "T",
+       "Chen Jie has her special way to manage money.",
+       "book",
+       49
+      ],
+      [
+       "EN-S2-TH-01.8",
+       "P",
+       "She keeps her money in three money jars.",
+       "book",
+       49
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_b43e414854d15446": {
+     "m": [
+      [
+       "EN-S2-TH-01.8",
+       "T",
+       "Write your spending plan.",
+       "book",
+       52
+      ],
+      [
+       "EN-S2-LS-01.18",
+       "T",
+       "I can make a spending plan and decide what to buy.",
+       "book",
+       52
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_e5689e1d5bae0292": {
+     "m": [
+      [
+       "EN-S2-LC-01.6",
+       "T",
+       "We still use paper money today.",
+       "book",
+       53
+      ],
+      [
+       "EN-S2-LS-01.2",
+       "P",
+       "Now we can use our mobile phones to pay.",
+       "book",
+       54
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_79c68fef370b395b": {
+     "m": [
+      [
+       "EN-S2-LC-02.1",
+       "T",
+       "What can we see in the sky?",
+       "book",
+       57
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_833e49e900d1e025": {
+     "m": [
+      [
+       "EN-S2-LC-01.6",
+       "T",
+       "Hi, I'm Earth. I'm a planet.",
+       "book",
+       58
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_78834cb370c11f56": {
+     "m": [
+      [
+       "EN-S2-LC-03.1",
+       "T",
+       "Is there any water on Mars?",
+       "book",
+       59
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_aa48113c3d734f00": {
+     "m": [
+      [
+       "EN-S2-LC-01.6",
+       "T",
+       "We explore space in different ways.",
+       "book",
+       60
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_01e8b5924c491872": {
+     "m": [
+      [
+       "EN-S2-LS-01.17",
+       "T",
+       "Use information in the text to complete the class wall newsp",
+       "book",
+       62
+      ],
+      [
+       "EN-S2-LC-01.6",
+       "P",
+       "Read and answer.",
+       "book",
+       62
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_d3a8c4f27a1fff45": {
+     "m": [
+      [
+       "EN-S2-LS-01.14",
+       "T",
+       "Share your facts in class.",
+       "book",
+       64
+      ],
+      [
+       "EN-S2-TH-01.23",
+       "P",
+       "Project: Share facts about Earth, the Sun and the Moon",
+       "book",
+       63
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_8c62f2d44474480f": {
+     "m": [
+      [
+       "EN-S2-LC-01.6",
+       "T",
+       "The hottest planet is Venus.",
+       "book",
+       65
+      ],
+      [
+       "EN-S2-LK-01.6",
+       "P",
+       "There are thousands of pieces of space junk",
+       "book",
+       66
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_76bbbed2c26595b3": {
+     "m": [
+      [
+       "EN-S2-LC-02.1",
+       "T",
+       "Maybe we can talk about water power.",
+       "book",
+       69
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_3e29b72779f945e3": {
+     "m": [
+      [
+       "EN-S2-LK-01.6",
+       "T",
+       "Wind power, solar power and water power are types of green e",
+       "book",
+       70
+      ],
+      [
+       "EN-S2-TH-01.20",
+       "P",
+       "We use green energy to light, heat and cool our homes and sc",
+       "book",
+       70
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_42f251714d0442ae": {
+     "m": [
+      [
+       "EN-S2-TH-01.20",
+       "T",
+       "We should save energy.",
+       "book",
+       71
+      ],
+      [
+       "EN-S2-LC-02.1",
+       "P",
+       "Binbin and Mike are presenting their project.",
+       "book",
+       71
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_a43dc459b699ac9f": {
+     "m": [
+      [
+       "EN-S2-TH-01.20",
+       "T",
+       "Follow the \"3R\" rules to save energy",
+       "book",
+       72
+      ],
+      [
+       "EN-S2-LS-01.14",
+       "T",
+       "Look, write and speak",
+       "book",
+       72
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_8105807a63866c85": {
+     "m": [
+      [
+       "EN-S2-LS-01.18",
+       "T",
+       "Tips to save energy and resources:",
+       "book",
+       74
+      ],
+      [
+       "EN-S2-TH-01.20",
+       "P",
+       "Save energy, save our Earth!",
+       "book",
+       73
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_c9ddfe5c59efdd4c": {
+     "m": [
+      [
+       "EN-S2-LS-01.14",
+       "T",
+       "Give a presentation about green energy",
+       "book",
+       75
+      ],
+      [
+       "EN-S2-TH-01.20",
+       "T",
+       "I can describe types of green energy and its uses.",
+       "book",
+       76
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_e18d268b7956b0d6": {
+     "m": [
+      [
+       "EN-S2-LC-01.6",
+       "T",
+       "The sun is very hot. We can use solar power to make food her",
+       "book",
+       77
+      ],
+      [
+       "EN-S2-TH-01.20",
+       "P",
+       "Yes, we should use energy in smart ways,",
+       "book",
+       78
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_24c2e70d813a9a1d": {
+     "m": [
+      [
+       "EN-S2-LC-03.1",
+       "T",
+       "Read aloud and act it out.",
+       "book",
+       79
+      ],
+      [
+       "EN-S2-LS-01.2",
+       "T",
+       "What do you see in the pictures?",
+       "book",
+       80
+      ],
+      [
+       "EN-S2-LK-01.7",
+       "P",
+       "We can read books or use the internet.",
+       "book",
+       79
+      ],
+      [
+       "EN-S2-LS-01.12",
+       "P",
+       "How do you feel? I have a bad cough.",
+       "book",
+       80
+      ],
+      [
+       "EN-S2-TH-01.15",
+       "P",
+       "we're going to plan some museum trips.",
+       "book",
+       79
+      ]
+     ],
+     "d": 0
     }
    }
   },
@@ -154883,6 +158278,319 @@
       ]
      ],
      "d": 0
+    },
+    "tcu_fb77cd00038579bc": {
+     "m": [
+      [
+       "EN-S3-LS-01.2",
+       "T",
+       "Listen to the first conversation.",
+       "book",
+       8
+      ],
+      [
+       "EN-S3-CK-01.5",
+       "P",
+       "How do people celebrate festivals?",
+       "book",
+       8
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_966cbb4b8222b537": {
+     "m": [
+      [
+       "EN-S3-LC-01.7",
+       "T",
+       "What is the author’s viewpoint",
+       "book",
+       12
+      ],
+      [
+       "EN-S3-CK-01.5",
+       "P",
+       "New Year is a wonderful time",
+       "book",
+       12
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_9611c34d4d209ba2": {
+     "m": [
+      [
+       "EN-S3-LS-01.17",
+       "T",
+       "Give a presentation on a festival",
+       "book",
+       16
+      ],
+      [
+       "EN-S3-CK-01.5",
+       "P",
+       "Write a list of festivals",
+       "book",
+       16
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_2a4b007880251975": {
+     "m": [
+      [
+       "EN-S3-LS-01.2",
+       "T",
+       "Listen to the conversations. Write down the objects or sites",
+       "book",
+       18
+      ],
+      [
+       "EN-S3-LC-02.2",
+       "P",
+       "must be / could be",
+       "book",
+       18
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_7ae61612325c93e6": {
+     "m": [
+      [
+       "EN-S3-LS-01.8",
+       "T",
+       "A Discovery That Shocked the World",
+       "book",
+       22
+      ],
+      [
+       "EN-S3-TH-01.14",
+       "P",
+       "the Sanxingdui Museum in Guanghan, Sichuan Province",
+       "book",
+       22
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_25464d7729ed7891": {
+     "m": [
+      [
+       "EN-S3-LA-03.1",
+       "T",
+       "Work in groups. List some historical objects or sites in you",
+       "book",
+       26
+      ],
+      [
+       "EN-S3-LS-01.43",
+       "P",
+       "give a group presentation",
+       "book",
+       26
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_b242b02536c69a81": {
+     "m": [
+      [
+       "EN-S3-LS-01.2",
+       "T",
+       "Listen to the telephone conversation. Circle T for true or F",
+       "book",
+       28
+      ],
+      [
+       "EN-S3-CK-01.3",
+       "P",
+       "Look at the paintings.",
+       "book",
+       28
+      ],
+      [
+       "EN-S3-TH-01.16",
+       "P",
+       "What are some themes often found in traditional Chinese pain",
+       "book",
+       28
+      ],
+      [
+       "EN-S3-LK-01.10",
+       "P",
+       "Look at the painting. What do you see? What do you know abou",
+       "book",
+       28
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_ae7d6f45ae873fc4": {
+     "m": [
+      [
+       "EN-S3-LS-01.6",
+       "T",
+       "Skim the text and check your predictions in la.",
+       "book",
+       32
+      ],
+      [
+       "EN-S3-CK-01.3",
+       "P",
+       "I came to learn that calligraphy is viewed by Chinese people",
+       "book",
+       32
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_7081ee77b96ea081": {
+     "m": [
+      [
+       "EN-S3-LS-01.68",
+       "T",
+       "Write a short introduction and add it to your piece of art.",
+       "book",
+       36
+      ],
+      [
+       "EN-S3-LA-03.1",
+       "P",
+       "Work in groups and choose a theme, such as Nature, Future, o",
+       "book",
+       36
+      ],
+      [
+       "EN-S3-TH-01.16",
+       "P",
+       "Everyone can be an artist in life.",
+       "book",
+       36
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_0ef9f673df0ba03b": {
+     "m": [
+      [
+       "EN-S3-LS-01.8",
+       "T",
+       "causes and effects",
+       "book",
+       38
+      ],
+      [
+       "EN-S3-TH-01.27",
+       "P",
+       "What causes pollution?",
+       "book",
+       38
+      ],
+      [
+       "EN-S3-LS-01.17",
+       "P",
+       "Talk about the kind of pollution you worry about.",
+       "book",
+       38
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_7bd932892dedf28c": {
+     "m": [
+      [
+       "EN-S3-TQ-02.1",
+       "T",
+       "because, because of, as a result",
+       "book",
+       42
+      ],
+      [
+       "EN-S3-TH-01.27",
+       "P",
+       "The Yangtze River and Its Guardians",
+       "book",
+       42
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_c28fb152f3a561a9": {
+     "m": [
+      [
+       "EN-S3-TX-01.4",
+       "T",
+       "Make a leaflet about the three Rs",
+       "book",
+       46
+      ],
+      [
+       "EN-S3-TH-01.27",
+       "P",
+       "Reduce Reuse Recycle",
+       "book",
+       46
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_2e2a50c2ab9c79e1": {
+     "m": [
+      [
+       "EN-S3-LS-01.2",
+       "T",
+       "Circle T for true, F for false, or NG",
+       "book",
+       48
+      ],
+      [
+       "EN-S3-LC-02.1",
+       "T",
+       "Complete the notes for the three students.",
+       "book",
+       48
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_f67f4896a85fbb15": {
+     "m": [
+      [
+       "EN-S3-LS-01.8",
+       "T",
+       "Read the speech quickly.",
+       "book",
+       52
+      ],
+      [
+       "EN-S3-TH-01.5",
+       "P",
+       "Find your passion, and follow your dream!",
+       "book",
+       52
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_d48db4ff8b7eaa66": {
+     "m": [
+      [
+       "EN-S3-LS-01.20",
+       "T",
+       "Write a page of your own to share your feclings and thoughts",
+       "book",
+       56
+      ],
+      [
+       "EN-S3-LA-03.1",
+       "P",
+       "Work in groups.",
+       "book",
+       56
+      ]
+     ],
+     "d": 0
     }
    }
   },
@@ -158967,6 +162675,213 @@
       ]
      ],
      "d": 0
+    },
+    "b82cebc7-8c65-0504-3d69-4be16d511c15": {
+     "m": [
+      [
+       "EN-S3-LC-01.2",
+       "T",
+       "Read and complete. Then listen and check.",
+       "title",
+       null
+      ]
+     ],
+     "d": 0
+    },
+    "9ddbfe12-21c7-3ab1-90e6-db12d0099f5b": {
+     "m": [
+      [
+       "EN-S3-LK-01.13",
+       "T",
+       "Listen and complete the conversation with a/an or a number.",
+       "title",
+       null
+      ]
+     ],
+     "d": 0
+    },
+    "69de05a0-9a84-6dbd-6845-4a5bd0df0547": {
+     "m": [
+      [
+       "EN-S3-LK-01.14",
+       "T",
+       "What are you going to wear tomorrow for school？",
+       "book",
+       10
+      ],
+      [
+       "EN-S3-LC-01.2",
+       "P",
+       "Listen and choose.",
+       "book",
+       10
+      ]
+     ],
+     "d": 0
+    },
+    "c4824d52-7320-6dbd-61a6-7d7ef6ca4c64": {
+     "m": [
+      [
+       "EN-S3-LC-01.1",
+       "T",
+       "Pronunciation： What problem does Tina have with her mother？",
+       "book",
+       58
+      ],
+      [
+       "EN-S3-LS-01.2",
+       "P",
+       "Listen to the family hotline programme.",
+       "book",
+       58
+      ]
+     ],
+     "d": 0
+    },
+    "b183a678-87b3-14a4-e7d8-be85a5ba1bbf": {
+     "m": [
+      [
+       "EN-S3-LS-01.30",
+       "T",
+       "A fact is true for everyone. An opinion is an idea about som",
+       "book",
+       75
+      ],
+      [
+       "EN-S3-CK-01.5",
+       "P",
+       "a green Christmas",
+       "book",
+       75
+      ]
+     ],
+     "d": 0
+    },
+    "556ba872-a58e-7305-086f-82edcf40534f": {
+     "m": [
+      [
+       "EN-S3-LS-01.17",
+       "T",
+       "Work in pairs. Talk about different ways to celebrate a fest",
+       "book",
+       76
+      ],
+      [
+       "EN-S3-CK-01.5",
+       "P",
+       "How do you usually celebrate...？",
+       "book",
+       76
+      ]
+     ],
+     "d": 0
+    },
+    "70e5bd52-ac3c-0631-6c0e-4fa6b0aaf51c": {
+     "m": [
+      [
+       "EN-S3-LS-01.8",
+       "T",
+       "Answer the questions.",
+       "book",
+       79
+      ],
+      [
+       "EN-S3-CK-01.5",
+       "P",
+       "give up their family time",
+       "book",
+       78
+      ]
+     ],
+     "d": 0
+    },
+    "413df310-0d8a-cc3f-7473-25e744c7bcf5": {
+     "m": [
+      [
+       "EN-S3-LC-01.3",
+       "T",
+       "Use the words and expressions",
+       "book",
+       77
+      ],
+      [
+       "EN-S3-CK-01.5",
+       "P",
+       "festivals usually mean a break",
+       "book",
+       77
+      ]
+     ],
+     "d": 0
+    },
+    "a82255ad-3c81-711e-3691-412cfc3e806f": {
+     "m": [
+      [
+       "EN-S3-TH-01.19",
+       "P",
+       "Unit 4 Time to celebrate (Starting out & Understanding ideas",
+       "title",
+       null
+      ]
+     ],
+     "d": 0
+    },
+    "c0069983-c939-3696-577e-512bd8c4265a": {
+     "m": [
+      [
+       "EN-S3-LS-01.8",
+       "T",
+       "They give more than food and oxygen.",
+       "book",
+       86
+      ],
+      [
+       "EN-S3-TX-01.3",
+       "P",
+       "Then workers in the Leaf will mix water, COz and sunlight.",
+       "book",
+       86
+      ]
+     ],
+     "d": 0
+    },
+    "53eb679f-4057-6bfb-19b2-50410f47b2c7": {
+     "m": [
+      [
+       "EN-S3-LC-01.3",
+       "T",
+       "Without plants， .. will / won't..",
+       "book",
+       89
+      ],
+      [
+       "EN-S3-LS-01.20",
+       "P",
+       "My plan for Planting Day",
+       "book",
+       89
+      ]
+     ],
+     "d": 0
+    },
+    "efb3a868-312b-4d9b-d341-80b5f0068fa8": {
+     "m": [
+      [
+       "EN-S3-LK-01.10",
+       "T",
+       "Look at the picture of a plant and match the words to it.",
+       "book",
+       85
+      ],
+      [
+       "EN-S3-TX-01.3",
+       "P",
+       "They give more than food and oxygen.",
+       "book",
+       86
+      ]
+     ],
+     "d": 0
     }
    }
   },
@@ -161100,6 +165015,322 @@
       ]
      ],
      "d": 0
+    },
+    "tcu_4c597701c0108d7f": {
+     "m": [
+      [
+       "MA-S1-NA-01.2",
+       "T",
+       "先画图,再列式计算。",
+       "book",
+       15
+      ],
+      [
+       "MA-S1-NA-02.1",
+       "P",
+       "小红的目标是跳 100 次,她还需要再跳多少次?",
+       "book",
+       16
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_ac7804dbf8fe6e19": {
+     "m": [
+      [
+       "MA-S1-NA-01.2",
+       "T",
+       "用竖式计算两位数加法,可以先从十位算吗?",
+       "book",
+       20
+      ],
+      [
+       "MA-S1-NA-02.1",
+       "P",
+       "(1)37 人跳远,跳绳的比跳远的多 15 人,有多少人跳绳?",
+       "book",
+       20
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_e46cf32cbd77f58b": {
+     "m": [
+      [
+       "MA-S1-GG-01.4",
+       "T",
+       "1 米 =100 厘米",
+       "book",
+       30
+      ],
+      [
+       "MA-S1-IP-01.5",
+       "P",
+       "晨晨量一量,黑板有多长?",
+       "book",
+       31
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_80a0ff322da41888": {
+     "m": [
+      [
+       "MA-S1-GG-01.4",
+       "P",
+       "在括号里填上合适的长度单位(厘米、米)。",
+       "book",
+       34
+      ],
+      [
+       "MA-S1-IP-01.5",
+       "P",
+       "剪一根 1 米长的绳子,用这根绳子比一比你家中的下列物体。",
+       "book",
+       34
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_a8440d6ee111bebb": {
+     "m": [
+      [
+       "MA-S1-NA-01.2",
+       "T",
+       "乘法算式是每行 2 个,共 3 行。 2×3=6",
+       "book",
+       39
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_9db14a933aa74eb5": {
+     "m": [
+      [
+       "MA-S1-NA-01.2",
+       "P",
+       "乘法算式 2×4",
+       "book",
+       46
+      ],
+      [
+       "MA-S1-NA-02.1",
+       "P",
+       "4+4=8 加法算式两张桌子 8 条腿",
+       "book",
+       46
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_a2f7b38244f61b04": {
+     "m": [
+      [
+       "MA-S1-NA-01.2",
+       "T",
+       "想一想,怎样编出 3 和 4 的乘法口诀?",
+       "book",
+       52
+      ],
+      [
+       "MA-S1-NA-02.1",
+       "P",
+       "需要几个轮子",
+       "book",
+       52
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_2bd3f7a2ff3bc8d2": {
+     "m": [
+      [
+       "MA-S1-NA-01.2",
+       "P",
+       "1~5 的乘法口诀一共有多少句?",
+       "book",
+       56
+      ],
+      [
+       "MA-S1-NA-02.1",
+       "P",
+       "你还能举出生活中运用乘法的例子吗?",
+       "book",
+       56
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_ebace96c04e54ba3": {
+     "m": [
+      [
+       "MA-S1-NA-01.2",
+       "T",
+       "36 元可以买几个 ?算一算,说一说。",
+       "book",
+       69
+      ],
+      [
+       "MA-S1-NA-02.1",
+       "P",
+       "再提出一个可以用除法解决的问题,并尝试解答。",
+       "book",
+       70
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_7d472c059cb2e547": {
+     "m": [
+      [
+       "MA-S1-NA-01.2",
+       "T",
+       "蜻蜓的只数是蝴蝶的几倍? 画一画,算一算",
+       "book",
+       72
+      ],
+      [
+       "MA-S1-NA-02.1",
+       "P",
+       "说一说图中有哪些数学信息,你能提出哪些问题?",
+       "book",
+       72
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_d1911bffc361240b": {
+     "m": [
+      [
+       "MA-S1-NA-01.2",
+       "T",
+       "7×4=28 乘法算式中的积 28÷4=7",
+       "book",
+       74
+      ],
+      [
+       "MA-S1-NA-02.1",
+       "P",
+       "看一看,说一说,可以用哪些算式表示题目中的数学信息?",
+       "book",
+       74
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_bdbde3f850515895": {
+     "m": [
+      [
+       "MA-S1-NA-01.2",
+       "T",
+       "你能编出 6 的乘法口诀吗?",
+       "book",
+       82
+      ],
+      [
+       "MA-S1-NA-02.1",
+       "P",
+       "算一算,墙上有多少张手抄报?",
+       "book",
+       83
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_992275e79ad46998": {
+     "m": [
+      [
+       "MA-S1-NA-01.2",
+       "T",
+       "做个乘法表",
+       "book",
+       89
+      ],
+      [
+       "MA-S1-NA-02.1",
+       "P",
+       "找出积是 18 的乘法算式,并填一填。",
+       "book",
+       89
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_3548d06a35149cd5": {
+     "m": [
+      [
+       "MA-S1-NA-01.2",
+       "T",
+       "把乘法口诀填完整。",
+       "book",
+       90
+      ],
+      [
+       "MA-S1-NA-02.1",
+       "P",
+       "9 个皮球多少元?",
+       "book",
+       90
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_0a36d76f7f47a99f": {
+     "m": [
+      [
+       "MA-S1-NA-02.1",
+       "T",
+       "想一想,长颈鹿要为这些小鸟准备几间房子?",
+       "book",
+       92
+      ],
+      [
+       "MA-S1-NA-01.2",
+       "P",
+       "用哪句乘法口诀呢?",
+       "book",
+       92
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_650bbaf70531ea32": {
+     "m": [
+      [
+       "MA-S1-NA-02.1",
+       "T",
+       "说一说,你能提出哪些可以用乘法或除法解决的问题?",
+       "book",
+       95
+      ],
+      [
+       "MA-S1-NA-01.2",
+       "P",
+       "可以装几盒?",
+       "book",
+       95
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_abae034afccb84a7": {
+     "m": [
+      [
+       "MA-S1-NA-01.2",
+       "T",
+       "×3=24 24÷3=",
+       "book",
+       98
+      ],
+      [
+       "MA-S1-NA-02.1",
+       "P",
+       "布置教室。 (1) 如果每人搬 4 盆, 需要多少人?",
+       "book",
+       97
+      ]
+     ],
+     "d": 0
     }
    }
   },
@@ -161313,6 +165544,753 @@
        "都能折叠回左侧的长方体吗？",
        "book",
        74
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_0cf099f3417036a3": {
+     "m": [
+      [
+       "MA-S2-NA-01.2",
+       "T",
+       "213×3= 200×3= 600",
+       "book",
+       7
+      ],
+      [
+       "MA-S2-NA-02.1",
+       "P",
+       "1件大衣的价格是1件毛衣的2倍。",
+       "book",
+       7
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_9ed00570201a7ccb": {
+     "m": [
+      [
+       "MA-S2-NA-01.2",
+       "T",
+       "算一算，3人、4人、5人坐太空船，分别需要多少元吧。",
+       "book",
+       8
+      ],
+      [
+       "MA-S2-NA-02.1",
+       "P",
+       "售票处太空船： 每人12元",
+       "book",
+       8
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_fd417e575764e0b1": {
+     "m": [
+      [
+       "MA-S2-NA-01.2",
+       "T",
+       "0×3= 8×0= 200×0=",
+       "book",
+       11
+      ],
+      [
+       "MA-S2-NA-02.1",
+       "P",
+       "小狗送信。 （1）小狗从邮局出发给狐狸送邮局狐狸家信，往返至少需要走多少米？",
+       "book",
+       12
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_5b73118281b047a2": {
+     "m": [
+      [
+       "MA-S2-NA-01.2",
+       "T",
+       "淘气家到奶奶家一共有多少千米？ 包括乘火车和乘汽车两部分，先 15×4=",
+       "book",
+       14
+      ],
+      [
+       "MA-S2-NA-02.1",
+       "P",
+       "淘气家到奶奶家一共有多少千米？",
+       "book",
+       14
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_1299db0a2cb78f9b": {
+     "m": [
+      [
+       "MA-S2-NA-01.5",
+       "T",
+       "12×2=24（元） 24×3=72（元）",
+       "book",
+       15
+      ]
+     ],
+     "d": 1,
+     "r": [
+      [
+       "MA-S2-NA-01.2",
+       "quote_not_found",
+       "用竖式算一算。 48×3 243×4"
+      ]
+     ]
+    },
+    "tcu_b73256133b8533ef": {
+     "m": [
+      [
+       "MA-S2-NA-02.1",
+       "T",
+       "要估计这个体育场的观众席上有多少人，你有什么办法？",
+       "book",
+       17
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_e11e3fcb7ca9a5b1": {
+     "m": [
+      [
+       "MA-S2-NA-02.1",
+       "T",
+       "幼苗有两种包装， 怎样买才能小包装4元，有3 棵幼苗⋯… 怎样买最省钱？",
+       "book",
+       19
+      ],
+      [
+       "MA-S2-NA-02.2",
+       "P",
+       "方案大包装/盒小包装/盒幼苗总数/棵金额/元",
+       "book",
+       20
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_b03c8b0066e43747": {
+     "m": [
+      [
+       "MA-S2-NA-02.1",
+       "P",
+       "看图提出数学问题并解答",
+       "book",
+       21
+      ],
+      [
+       "MA-S2-NA-01.2",
+       "P",
+       "用竖式计算，并说一说竖式每一步的意思。",
+       "book",
+       22
+      ],
+      [
+       "MA-S2-NA-01.4",
+       "P",
+       "0乘任何数等于0， 0除以任何数呢？",
+       "book",
+       21
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_0902c59b94d1e617": {
+     "m": [
+      [
+       "MA-S2-GG-02.1",
+       "T",
+       "对称轴这样的图形是沿对称轴对折后轴对称图形。",
+       "book",
+       24
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_28e14b0b02adad05": {
+     "m": [
+      [
+       "MA-S2-GG-02.1",
+       "T",
+       "将一张纸对折后剪去两个圆，展开后是哪一个？",
+       "book",
+       26
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_e9efa8b18a51d850": {
+     "m": [
+      [
+       "MA-S2-GG-02.1",
+       "T",
+       "它们都是怎么运动的？你能按运动方式把它们分成两类吗？",
+       "book",
+       28
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_782c3b543662d625": {
+     "m": [
+      [
+       "MA-S2-GG-02.1",
+       "T",
+       "怎样把这块拼图沿方格移回到原来的位置？",
+       "book",
+       31
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_5ccabb2edc4ae04a": {
+     "m": [
+      [
+       "MA-S2-GG-02.1",
+       "T",
+       "可以全部或部分是轴对称图形。",
+       "book",
+       34
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_a8cb0f1dab8f7c7b": {
+     "m": [
+      [
+       "MA-S2-GG-02.1",
+       "P",
+       "说一说你对轴对称图形、平移和旋转的认识。",
+       "book",
+       35
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_deff0fa5fccaab33": {
+     "m": [
+      [
+       "MA-S2-GG-01.7",
+       "T",
+       "图形一周的长度就是图形的周长",
+       "book",
+       37
+      ],
+      [
+       "MA-S2-GG-01.5",
+       "P",
+       "一条小路环绕着一个小公园，小公园的周长是多少米？",
+       "book",
+       38
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_573720a06ed8cb51": {
+     "m": [
+      [
+       "MA-S2-GG-01.7",
+       "T",
+       "把它们所有的边长都加起来",
+       "book",
+       40
+      ],
+      [
+       "MA-S2-GG-01.5",
+       "P",
+       "(5+3)×2=16（厘米）",
+       "book",
+       40
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_ce3720ffd90162b1": {
+     "m": [
+      [
+       "MA-S2-GG-01.7",
+       "T",
+       "不一样的长方形，周长也可能相等",
+       "book",
+       42
+      ],
+      [
+       "MA-S2-NA-02.3",
+       "P",
+       "我发现，这些长方形的一个长与一个宽的和都是12厘米",
+       "book",
+       43
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_b12b1ba3c93ee622": {
+     "m": [
+      [
+       "MA-S2-GG-01.7",
+       "T",
+       "就是把所有边的长度加起来。",
+       "book",
+       44
+      ],
+      [
+       "MA-S2-GG-01.5",
+       "P",
+       "46码是指头围约 46厘米的人适用。",
+       "book",
+       46
+      ],
+      [
+       "MA-S2-GG-01.8",
+       "P",
+       "生活中有哪些与周长有关的问题？找一找，说一说。",
+       "book",
+       44
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_56c0fe1dc2dffd0b": {
+     "m": [
+      [
+       "MA-S2-IP-01.2",
+       "T",
+       "生活中我们常用克、千克、 吨来表示物体",
+       "book",
+       47
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_fc2a1054f9c1e430": {
+     "m": [
+      [
+       "MA-S2-IP-01.2",
+       "T",
+       "1千克=1000克",
+       "book",
+       48
+      ],
+      [
+       "MA-S2-NA-02.1",
+       "P",
+       "1克、1千克分别有多重？掂一掂，称一称。",
+       "book",
+       48
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_b00c6da9d95f58ae": {
+     "m": [
+      [
+       "MA-S2-IP-01.2",
+       "T",
+       "1吨=1000千克",
+       "book",
+       49
+      ],
+      [
+       "MA-S2-NA-02.1",
+       "P",
+       "1吨到底有多重？你能用别的物品进行推算吗？",
+       "book",
+       49
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_2e05253824eb821c": {
+     "m": [
+      [
+       "MA-S2-IP-01.2",
+       "T",
+       "曹冲称象的方法真的能称出大象的体重吗？",
+       "book",
+       50
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_476f7f39c9c32f8a": {
+     "m": [
+      [
+       "MA-S2-IP-01.2",
+       "T",
+       "认识克、千克、吨，了解它们之间的关系",
+       "book",
+       51
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_1afefbd1a3a8ee6b": {
+     "m": [
+      [
+       "MA-S2-NA-01.2",
+       "T",
+       "把849个松果平均分给4只松鼠，每只松鼠可以分到多少个？",
+       "book",
+       53
+      ],
+      [
+       "MA-S2-NA-01.4",
+       "P",
+       "40×2=80",
+       "book",
+       53
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_78a7487b2c0bbd64": {
+     "m": [
+      [
+       "MA-S2-NA-01.2",
+       "T",
+       "哥哥平均每天要读多少页？算一算。",
+       "book",
+       55
+      ],
+      [
+       "MA-S2-NA-01.4",
+       "P",
+       "为什么除法竖式要从高位算起呢？算一算，说一说。",
+       "book",
+       56
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_3df0dda88a19b862": {
+     "m": [
+      [
+       "MA-S2-NA-01.2",
+       "T",
+       "0除以3等于0。",
+       "book",
+       58
+      ],
+      [
+       "MA-S2-NA-02.1",
+       "P",
+       "列车运行时间约3小时，平均每小时运行多少千米？",
+       "book",
+       59
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_3e90b50989e096ff": {
+     "m": [
+      [
+       "MA-S2-NA-01.2",
+       "T",
+       "每页放5张，这些邮票大约能放多少页？",
+       "book",
+       60
+      ],
+      [
+       "MA-S2-NA-02.1",
+       "P",
+       "如果每页放7张，可以放满多少页，还剩多少张？",
+       "book",
+       61
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_187f06b91a0852dd": {
+     "m": [
+      [
+       "MA-S2-NA-01.4",
+       "T",
+       "有余数的除法怎样验算呢？说一说，算一算。",
+       "book",
+       63
+      ],
+      [
+       "MA-S2-NA-01.2",
+       "P",
+       "我用乘法验算了一下，",
+       "book",
+       62
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_719991390bb89a7c": {
+     "m": [
+      [
+       "MA-S2-NA-02.1",
+       "T",
+       "平均每个书架每层放多少本书？",
+       "book",
+       64
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_038e4192367dd032": {
+     "m": [
+      [
+       "MA-S2-NA-01.2",
+       "T",
+       "先求1分钟能讲也可以这样多少字",
+       "book",
+       66
+      ],
+      [
+       "MA-S2-NA-02.1",
+       "P",
+       "你能给淘气提出建议吗？",
+       "book",
+       66
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_cc54d46be52cfd08": {
+     "m": [
+      [
+       "MA-S2-NA-01.2",
+       "P",
+       "结合除法算式回顾本单元学过的内容",
+       "book",
+       68
+      ],
+      [
+       "MA-S2-NA-02.1",
+       "P",
+       "学校新买406本书，平均分给8个班，每班分到多少本？还剩多少本？",
+       "book",
+       68
+      ],
+      [
+       "MA-S2-NA-01.4",
+       "P",
+       "记得验算 400+6=406",
+       "book",
+       68
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_15dfa7ecd3e3e377": {
+     "m": [
+      [
+       "MA-S2-GG-01.1",
+       "T",
+       "剪开后得到的 6个正方形连在一起",
+       "book",
+       72
+      ],
+      [
+       "MA-S2-GG-01.4",
+       "P",
+       "是6个连起来的长方形",
+       "book",
+       71
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_54ba78fa393cd399": {
+     "m": [
+      [
+       "MA-S2-GG-01.4",
+       "T",
+       "上下两个面是正方形",
+       "book",
+       74
+      ],
+      [
+       "MA-S2-GG-01.1",
+       "P",
+       "这个面四条边相等。 上下两个面是正方形",
+       "book",
+       74
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_585066bbc660c074": {
+     "m": [
+      [
+       "MA-S2-NA-02.2",
+       "T",
+       "都是45加一个数",
+       "book",
+       78
+      ],
+      [
+       "MA-S2-NA-02.3",
+       "P",
+       "不计算，你知道哪个班人数多吗？",
+       "book",
+       79
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_441676df26239833": {
+     "m": [
+      [
+       "MA-S2-NA-02.3",
+       "T",
+       "12+口和〇+8能成好朋友？",
+       "book",
+       80
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_53cc0d2679c3255f": {
+     "m": [
+      [
+       "MA-S2-NA-02.2",
+       "T",
+       "彩旗按红、红、蓝、黄的顺序不断重复",
+       "book",
+       82
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_b27cabf6b7037384": {
+     "m": [
+      [
+       "MA-S2-SP-01.1",
+       "T",
+       "整理一下并把结果表示出来。",
+       "book",
+       84
+      ],
+      [
+       "MA-S2-SP-01.2",
+       "P",
+       "我把相同鞋号的放",
+       "book",
+       84
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_d4214c9c449863e7": {
+     "m": [
+      [
+       "MA-S2-SP-01.1",
+       "T",
+       "在下图中画一画，整理同学们身高的数据。",
+       "book",
+       86
+      ],
+      [
+       "MA-S2-SP-01.2",
+       "P",
+       "142 厘米有5人， 149厘米有3人， 143厘米有2人， 150厘米也有3人",
+       "book",
+       87
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_b04f8976aaff588c": {
+     "m": [
+      [
+       "MA-S2-SP-01.1",
+       "T",
+       "小组4人轮流做游戏，每人抓5次并记录。",
+       "book",
+       88
+      ],
+      [
+       "MA-S2-SP-01.2",
+       "P",
+       "把全班同学抓尺子的数据整理到下表中",
+       "book",
+       89
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_897f3cf5ede33c80": {
+     "m": [
+      [
+       "MA-S2-IP-01.4",
+       "T",
+       "制订一个家庭旅行计划。",
+       "book",
+       90
+      ],
+      [
+       "MA-S2-SP-01.1",
+       "P",
+       "尝试查询相关的旅行信息。",
+       "book",
+       90
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_73ca13649a0d1322": {
+     "m": [
+      [
+       "MA-S2-SP-01.1",
+       "T",
+       "我查询到的信息地点： 交通方式： 景点： 餐饮：",
+       "book",
+       91
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_c431b9ad19d0497e": {
+     "m": [
+      [
+       "MA-S2-NA-02.1",
+       "T",
+       "估计费用： 成人和儿童的景点门票",
+       "book",
+       92
+      ],
+      [
+       "MA-S2-SP-01.1",
+       "P",
+       "我的家庭旅行计划 （1） 旅行地点：",
+       "book",
+       92
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_024cb34d87b241dc": {
+     "m": [
+      [
+       "MA-S2-IP-01.4",
+       "T",
+       "能调查、收集和整理信息",
+       "book",
+       93
+      ],
+      [
+       "MA-S2-SP-01.1",
+       "P",
+       "估计费用：驻返交通住宿门票就餐当地交通其他合计",
+       "book",
+       93
+      ],
+      [
+       "MA-S2-NA-02.1",
+       "P",
+       "你的旅行计划时间安排、预算规划合理吗？",
+       "book",
+       93
       ]
      ],
      "d": 0
@@ -161569,6 +166547,724 @@
        "把每片树叶描在边长是 1 cm 的方格纸上",
        "book",
        114
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_6ed46e1ad3872c05": {
+     "m": [
+      [
+       "MA-S3-NA-01.3",
+       "T",
+       "说一说，1.11元是什么意思？1.11m呢？",
+       "book",
+       7
+      ],
+      [
+       "MA-S3-NA-01.4",
+       "P",
+       "购物小票和家庭成员身高中的小数是什么意思。",
+       "book",
+       8
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_e41d5034297ac924": {
+     "m": [
+      [
+       "MA-S3-NA-01.3",
+       "T",
+       "小数点右面第一位是十分位",
+       "book",
+       10
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_d5ce2b1404586442": {
+     "m": [
+      [
+       "MA-S3-NA-01.5",
+       "T",
+       "余下的1元平均分成4份，每份是多少元？",
+       "book",
+       13
+      ],
+      [
+       "MA-S3-NA-01.4",
+       "P",
+       "1套《数学家的故事》是23.25元。",
+       "book",
+       13
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_d1765b79ae995cc1": {
+     "m": [
+      [
+       "MA-S3-NA-01.3",
+       "T",
+       "0.9>0.79。",
+       "book",
+       15
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_6be8b28030e35e3b": {
+     "m": [
+      [
+       "MA-S3-NA-01.5",
+       "T",
+       "用竖式计算，并说一说怎样计算小数加减法。",
+       "book",
+       18
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_bdc04ceb49cce968": {
+     "m": [
+      [
+       "MA-S3-NA-01.5",
+       "T",
+       "35.4kg，比上次重了2.8kg。",
+       "book",
+       19
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_76c4f05f8234d097": {
+     "m": [
+      [
+       "MA-S3-NA-01.5",
+       "T",
+       "算一算，小数加减混合运算",
+       "book",
+       21
+      ],
+      [
+       "MA-S3-NA-01.3",
+       "P",
+       "估一估，谁的总分高？",
+       "book",
+       21
+      ],
+      [
+       "MA-S3-NA-02.2",
+       "P",
+       "估一估，谁的总分高？",
+       "book",
+       21
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_91a0fe94f411135d": {
+     "m": [
+      [
+       "MA-S3-NA-01.3",
+       "P",
+       "把涂色的部分分别用分数和小数表示出来。",
+       "book",
+       24
+      ],
+      [
+       "MA-S3-NA-01.5",
+       "P",
+       "4.32+2.81",
+       "book",
+       25
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_55f05b767d1d73de": {
+     "m": [
+      [
+       "MA-S3-GG-01.1",
+       "T",
+       "內角的和是180°。",
+       "book",
+       26
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_40f389efde451777": {
+     "m": [
+      [
+       "MA-S3-GG-01.3",
+       "T",
+       "只能用“无刻度”直尺和圆规来画图",
+       "book",
+       28
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_b0ef6353d82b5892": {
+     "m": [
+      [
+       "MA-S3-GG-01.1",
+       "T",
+       "三角形任意两边之和大于第三边。",
+       "book",
+       32
+      ],
+      [
+       "MA-S3-GG-01.3",
+       "P",
+       "请你用尺规作出上面这个等边三角形。",
+       "book",
+       31
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_6cd9dbc09242ac5c": {
+     "m": [
+      [
+       "MA-S3-GG-01.1",
+       "T",
+       "三角形内角和是180°",
+       "book",
+       35
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_f03c3242d71f3b27": {
+     "m": [
+      [
+       "MA-S3-NA-01.5",
+       "T",
+       "0.2×4=0.8（元）",
+       "book",
+       40
+      ],
+      [
+       "MA-S3-NA-01.4",
+       "P",
+       "买4 块橡皮需要多少元？",
+       "book",
+       40
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_606c72fbc5c286cd": {
+     "m": [
+      [
+       "MA-S3-NA-01.5",
+       "T",
+       "0.3×0.2=0.06",
+       "book",
+       42
+      ],
+      [
+       "MA-S3-GG-01.2",
+       "P",
+       "街心广场花坛地砖面积/m2",
+       "book",
+       42
+      ],
+      [
+       "MA-S3-NA-01.3",
+       "P",
+       "0.1x0.1=0.01",
+       "book",
+       43
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_110481a47ef2812b": {
+     "m": [
+      [
+       "MA-S3-NA-01.5",
+       "T",
+       "2.4×1.2= 2.88（元）",
+       "book",
+       44
+      ],
+      [
+       "MA-S3-NA-01.3",
+       "P",
+       "积的小数位数与乘数的小数位数有什么关系？",
+       "book",
+       45
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_f14ced5459eb081f": {
+     "m": [
+      [
+       "MA-S3-NA-01.5",
+       "T",
+       "想一想，计算小数乘法时要注意什么？",
+       "book",
+       46
+      ],
+      [
+       "MA-S3-NA-01.3",
+       "P",
+       "一条秋蚕吐的丝长约1.2km，质量约 0.35g。",
+       "book",
+       46
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_e0f42c707a1a4ad5": {
+     "m": [
+      [
+       "MA-S3-NA-01.5",
+       "T",
+       "以前学过的运算顺序和运算律在小数中仍然适用。",
+       "book",
+       49
+      ],
+      [
+       "MA-S3-NA-01.4",
+       "P",
+       "笑笑要给希望小学1名小朋友买1本练习本、1个文具盒和1本《数学真奇妙》",
+       "book",
+       48
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_33a730db1db23cbf": {
+     "m": [
+      [
+       "MA-S3-NA-02.2",
+       "T",
+       "把21.3 看成 21，四舍五入就行了。",
+       "book",
+       50
+      ],
+      [
+       "MA-S3-NA-01.4",
+       "P",
+       "我带了100元， 班级要开买了3副跳棋、 1副飞行棋。",
+       "book",
+       50
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_5387302d9e491fde": {
+     "m": [
+      [
+       "MA-S3-NA-01.5",
+       "T",
+       "小数乘法可以按整数乘法整数运算顺序和运算律来算，积的小数位数⋯",
+       "book",
+       52
+      ],
+      [
+       "MA-S3-NA-01.4",
+       "P",
+       "估一估，100 元够吗？",
+       "book",
+       52
+      ],
+      [
+       "MA-S3-NA-02.2",
+       "P",
+       "估一估，100 元够吗？",
+       "book",
+       52
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_693df900c12ffa76": {
+     "m": [
+      [
+       "MA-S3-NA-02.3",
+       "T",
+       "a只青蛙a条腿。",
+       "book",
+       55
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_a67014869679486d": {
+     "m": [
+      [
+       "MA-S3-NA-02.3",
+       "T",
+       "速度×时间=路程",
+       "book",
+       57
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_751f368b36e0921a": {
+     "m": [
+      [
+       "MA-S3-NA-02.3",
+       "T",
+       "用s，v，t表示数量之间的关系",
+       "book",
+       59
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_cd546e64fea7b947": {
+     "m": [
+      [
+       "MA-S3-NA-02.3",
+       "T",
+       "摆n个大门需要. 个小正方形；",
+       "book",
+       62
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_adfa925e7808ccef": {
+     "m": [
+      [
+       "MA-S3-NA-02.1",
+       "T",
+       "等式两边都加（或减）同一个数，等式仍然成立。",
+       "book",
+       64
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_e69f8e1b17a1a05b": {
+     "m": [
+      [
+       "MA-S3-GG-01.2",
+       "P",
+       "这就是数学上的“出入相补”原理",
+       "book",
+       66
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_f0899212a7f7591f": {
+     "m": [
+      [
+       "MA-S3-GG-01.2",
+       "T",
+       "画出下面图形中给定底边上的高",
+       "book",
+       68
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_53ba5e18a3b4e0c0": {
+     "m": [
+      [
+       "MA-S3-GG-01.2",
+       "T",
+       "我猜想平行四边形的面积是底x高。",
+       "book",
+       69
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_58cc62546e7c3692": {
+     "m": [
+      [
+       "MA-S3-GG-01.2",
+       "T",
+       "三角形的面积公式可以写成： S=",
+       "book",
+       71
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_0edd848ddf4767d9": {
+     "m": [
+      [
+       "MA-S3-GG-01.2",
+       "T",
+       "梯形的面积公式可以写成： S=",
+       "book",
+       74
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_4e8bad2ead6ad3e1": {
+     "m": [
+      [
+       "MA-S3-GG-01.2",
+       "T",
+       "如何计算组合图形的面积？",
+       "book",
+       77
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_773addd09500c1a4": {
+     "m": [
+      [
+       "MA-S3-GG-01.5",
+       "T",
+       "测量和计算土地面积时， 通常用公顷、平方千米",
+       "book",
+       78
+      ],
+      [
+       "MA-S3-IP-01.2",
+       "P",
+       "想办法测量学校操场的面积",
+       "book",
+       79
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_35427d72c13cb7e0": {
+     "m": [
+      [
+       "MA-S3-GG-01.2",
+       "P",
+       "我用数格子的方法",
+       "book",
+       80
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_db245dc3fe49fd24": {
+     "m": [
+      [
+       "MA-S3-GG-01.2",
+       "T",
+       "平行四边形、三角形和梯形的面积公式是怎样推导的？",
+       "book",
+       82
+      ],
+      [
+       "MA-S3-GG-01.5",
+       "P",
+       "3 km2=（）公顷",
+       "book",
+       83
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_eaf153c4c42c7d3d": {
+     "m": [
+      [
+       "MA-S3-GG-02.2",
+       "T",
+       "淘气的位置可以用数对（2，4）表示。",
+       "book",
+       87
+      ],
+      [
+       "MA-S3-GG-02.1",
+       "P",
+       "淘气坐在第2組倒数第4个。",
+       "book",
+       87
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_6b535935702e815d": {
+     "m": [
+      [
+       "MA-S3-GG-02.4",
+       "T",
+       "是平移运动，表示位置的数对是如何发生变化的？",
+       "book",
+       89
+      ],
+      [
+       "MA-S3-GG-02.2",
+       "P",
+       "用数对表示站成“1”的5名同学的位置",
+       "book",
+       89
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_6e131cfda650afcd": {
+     "m": [
+      [
+       "MA-S3-GG-02.4",
+       "T",
+       "请你画出长方形向左平移4格后得到的图形，",
+       "book",
+       91
+      ],
+      [
+       "MA-S3-GG-02.2",
+       "P",
+       "用数对表示A，B的位置及平移后的位置，你有什么发现？",
+       "book",
+       92
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_72e49c160977c3d5": {
+     "m": [
+      [
+       "MA-S3-GG-02.2",
+       "T",
+       "先将表示点点轮廓的点的数对填在表 4 中",
+       "book",
+       93
+      ],
+      [
+       "MA-S3-GG-02.4",
+       "T",
+       "在下面的方格纸中分别画出团团和喵喵的轮廓",
+       "book",
+       93
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_292db0418cfc8050": {
+     "m": [
+      [
+       "MA-S3-NA-01.2",
+       "T",
+       "36是9和4的倍数，9和4是36的因数。",
+       "book",
+       94
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_f25017cba5e181a0": {
+     "m": [
+      [
+       "MA-S3-NA-01.1",
+       "T",
+       "末尾只有0或5。",
+       "book",
+       96
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_f563d1cc21dc2eea": {
+     "m": [
+      [
+       "MA-S3-NA-01.1",
+       "T",
+       "各个数位上的数字之和都是3的倍数。",
+       "book",
+       98
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_1e591b1dfda4eba2": {
+     "m": [
+      [
+       "MA-S3-NA-01.2",
+       "T",
+       "其中最大的一个是它们的最大公因数。",
+       "book",
+       100
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_b577aee884d5b07a": {
+     "m": [
+      [
+       "MA-S3-NA-01.2",
+       "T",
+       "一个数只有1和它本身两个因数，这个数叫作质数。",
+       "book",
+       103
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_9fab06139a3857d3": {
+     "m": [
+      [
+       "MA-S3-NA-01.2",
+       "T",
+       "请在百数表中圈出所有的质数，并与同伴交流。",
+       "book",
+       104
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_aa804512917bbc18": {
+     "m": [
+      [
+       "MA-S3-NA-01.2",
+       "T",
+       "12 的因数 30 的因数 30以内3的倍数 30以内4的倍数",
+       "book",
+       105
+      ],
+      [
+       "MA-S3-NA-01.1",
+       "P",
+       "2的倍数： 3的倍数： 5的倍数：",
+       "book",
+       105
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_205e8ea5e2079067": {
+     "m": [
+      [
+       "MA-S3-SP-02.1",
+       "T",
+       "每次转到的数是不确定的",
+       "book",
+       108
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_6694932d1bc61da6": {
+     "m": [
+      [
+       "MA-S3-SP-02.1",
+       "T",
+       "你认为他们的方法公平吗？",
+       "book",
+       109
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_48e1d1d0398600a2": {
+     "m": [
+      [
+       "MA-S3-SP-02.2",
+       "T",
+       "根据大家的数据，推测一下盒子里哪种颜色的球多。",
+       "book",
+       113
       ]
      ],
      "d": 0
@@ -162845,6 +168541,234 @@
       ]
      ],
      "d": 0
+    },
+    "bd89bae9-2317-3bcf-e0cb-1bdb49642803": {
+     "m": [
+      [
+       "EN-S3-LS-01.2",
+       "T",
+       "Listen to the radio programme and choose the main ide",
+       "title",
+       null
+      ]
+     ],
+     "d": 0
+    },
+    "1ae4f997-d917-0835-0149-b75973e10a1d": {
+     "m": [
+      [
+       "EN-S3-LK-01.5",
+       "T",
+       "Phonetics: Pronunciation: /au/ /au/",
+       "book",
+       6
+      ]
+     ],
+     "d": 0
+    },
+    "0d504a4c-ab35-06c1-05a8-40a80753a870": {
+     "m": [
+      [
+       "EN-S3-LS-01.24",
+       "T",
+       "Listen again and complete the survey report.",
+       "title",
+       null
+      ]
+     ],
+     "d": 0
+    },
+    "0c97fb6f-4af8-80f6-ef5b-610856544997": {
+     "m": [
+      [
+       "EN-S3-LC-01.7",
+       "T",
+       "What's the writer's favourite food？",
+       "book",
+       41
+      ],
+      [
+       "EN-S3-LK-01.7",
+       "P",
+       "dumpling porridge",
+       "book",
+       41
+      ],
+      [
+       "EN-S3-LS-01.8",
+       "P",
+       "Read the passage.",
+       "book",
+       41
+      ]
+     ],
+     "d": 0
+    },
+    "d0c3f75d-98fd-3f7f-4d67-c7c62064ca83": {
+     "m": [
+      [
+       "EN-S3-LC-01.7",
+       "T",
+       "What's the writer's favourite food？",
+       "book",
+       41
+      ],
+      [
+       "EN-S3-LK-01.7",
+       "P",
+       "dumpling porridge",
+       "book",
+       41
+      ],
+      [
+       "EN-S3-LS-01.8",
+       "P",
+       "Read the passage.",
+       "book",
+       41
+      ]
+     ],
+     "d": 0
+    },
+    "899a7a22-8e5d-7abd-0c3e-e63a1b52317a": {
+     "m": [
+      [
+       "EN-S3-LS-01.2",
+       "T",
+       "Listen to the conversation",
+       "book",
+       46
+      ],
+      [
+       "EN-S3-LK-01.5",
+       "P",
+       "Pronunciation： The girl and the boy.. /p/",
+       "book",
+       46
+      ],
+      [
+       "EN-S3-LS-01.46",
+       "P",
+       "Hold on, I don't agree",
+       "book",
+       47
+      ]
+     ],
+     "d": 0
+    },
+    "71096058-b9a2-bde5-f292-a00b268b7f32": {
+     "m": [
+      [
+       "EN-S3-LS-01.8",
+       "T",
+       "Read the passage",
+       "book",
+       73
+      ],
+      [
+       "EN-S3-LK-01.10",
+       "P",
+       "clean soft nature calm",
+       "book",
+       73
+      ],
+      [
+       "EN-S3-LC-01.4",
+       "P",
+       "clean soft nature calm",
+       "book",
+       73
+      ]
+     ],
+     "d": 0
+    },
+    "b25c470a-2f86-2284-8e6d-cd2ad11ba8d6": {
+     "m": [
+      [
+       "EN-S3-LS-01.8",
+       "T",
+       "Read the passage",
+       "book",
+       73
+      ],
+      [
+       "EN-S3-LK-01.10",
+       "P",
+       "clean soft nature calm",
+       "book",
+       73
+      ],
+      [
+       "EN-S3-LC-01.4",
+       "P",
+       "clean soft nature calm",
+       "book",
+       73
+      ]
+     ],
+     "d": 0
+    },
+    "cfcb5b58-3fbe-a5c1-9e4a-72932da9d638": {
+     "m": [
+      [
+       "EN-S3-LS-01.8",
+       "T",
+       "Read the passage",
+       "book",
+       73
+      ],
+      [
+       "EN-S3-LK-01.10",
+       "P",
+       "clean soft nature calm",
+       "book",
+       73
+      ],
+      [
+       "EN-S3-LC-01.4",
+       "P",
+       "clean soft nature calm",
+       "book",
+       73
+      ]
+     ],
+     "d": 0
+    },
+    "c4b9359c-acde-03f4-42f9-6e2c5b350b03": {
+     "m": [
+      [
+       "EN-S3-LS-01.24",
+       "T",
+       "personal homepage.",
+       "book",
+       95
+      ]
+     ],
+     "d": 0
+    },
+    "b37ec5ac-136e-b46f-9b97-b341c20eaee1": {
+     "m": [
+      [
+       "EN-S3-LS-01.24",
+       "T",
+       "complete the notes.",
+       "title",
+       null
+      ]
+     ],
+     "d": 0
+    },
+    "13f06210-79ce-3aa1-7ee9-a9188ba8caa8": {
+     "m": [
+      [
+       "EN-S3-LK-01.14",
+       "T",
+       "can't wait to do表示“迫不及待地想要做”",
+       "book",
+       121
+      ]
+     ],
+     "d": 0
     }
    }
   },
@@ -162982,6 +168906,852 @@
        "I'm making a watering bottle for the plants.",
        "book",
        46
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_a8010a567f9194c7": {
+     "m": [],
+     "d": 0
+    },
+    "tcu_ddf3eb68733fc557": {
+     "m": [
+      [
+       "EN-S2-LS-01.2",
+       "T",
+       "Spend or save",
+       "book",
+       10
+      ],
+      [
+       "EN-S2-TH-01.8",
+       "P",
+       "Pll save my money",
+       "book",
+       10
+      ],
+      [
+       "EN-S2-LK-01.16",
+       "P",
+       "How much is the robot？",
+       "book",
+       10
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_5ad2f18ddf31eb63": {
+     "m": [
+      [
+       "EN-S2-LK-01.16",
+       "T",
+       "How much are they！",
+       "book",
+       11
+      ],
+      [
+       "EN-S2-LC-02.1",
+       "P",
+       "Listen and Circle",
+       "book",
+       11
+      ],
+      [
+       "EN-S2-LS-01.2",
+       "P",
+       "Work in pairs. Ask and answer.",
+       "book",
+       11
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_61861143de7f6494": {
+     "m": [
+      [
+       "EN-S2-LC-01.6",
+       "T",
+       "Read and answer.",
+       "book",
+       12
+      ],
+      [
+       "EN-S2-LK-01.12",
+       "P",
+       "Read again and answer.",
+       "book",
+       13
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_d97d05f2018c4556": {
+     "m": [
+      [
+       "EN-S2-TH-01.8",
+       "T",
+       "With money in my saving box， I make clever choices.",
+       "book",
+       14
+      ],
+      [
+       "EN-S2-LC-01.4",
+       "P",
+       "Listen and chant.",
+       "book",
+       14
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_57c2c29c82a4c78e": {
+     "m": [
+      [
+       "EN-S2-LC-03.1",
+       "T",
+       "Make a plan for your money",
+       "book",
+       16
+      ],
+      [
+       "EN-S2-TH-01.8",
+       "P",
+       "You have 100 yuan. Make a plan.",
+       "book",
+       17
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_43f3d0f38ae4ef7b": {
+     "m": [
+      [
+       "EN-S2-LK-01.7",
+       "T",
+       "What do you ？",
+       "book",
+       18
+      ],
+      [
+       "EN-S2-TX-01.1",
+       "P",
+       "Ask and answer.",
+       "book",
+       18
+      ],
+      [
+       "EN-S2-TH-01.8",
+       "P",
+       "How much pocket",
+       "book",
+       18
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_5759284c73f1be9c": {
+     "m": [
+      [
+       "EN-S2-CK-01.1",
+       "T",
+       "Money from different countries",
+       "book",
+       19
+      ],
+      [
+       "EN-S2-LS-01.2",
+       "P",
+       "Look and say.",
+       "book",
+       19
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_ebd260cd413d6c68": {
+     "m": [
+      [
+       "EN-S2-TQ-01.1",
+       "T",
+       "fact / opinion",
+       "book",
+       21
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_68365d10132687db": {
+     "m": [
+      [
+       "EN-S2-TQ-03.1",
+       "T",
+       "Why do they think so？",
+       "book",
+       22
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_60ece2405d39e5ea": {
+     "m": [
+      [
+       "EN-S2-LS-01.14",
+       "T",
+       "What's your opinion about the saying？",
+       "book",
+       23
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_ebca1a9f64976a50": {
+     "m": [
+      [
+       "EN-S2-LC-01.6",
+       "T",
+       "Read again and answer.",
+       "book",
+       25
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_e45d1cd73969c395": {
+     "m": [
+      [
+       "EN-S2-LK-01.1",
+       "T",
+       "Which words have “dr” or “tr\" sounds？",
+       "book",
+       26
+      ],
+      [
+       "EN-S2-LC-01.4",
+       "P",
+       "Listen and choose.",
+       "book",
+       27
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_5572d026aa99744c": {
+     "m": [
+      [
+       "EN-S2-LC-03.1",
+       "T",
+       "Have a debate",
+       "book",
+       28
+      ],
+      [
+       "EN-S2-LA-03.1",
+       "P",
+       "Work in groups.",
+       "book",
+       28
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_af82f8d61bd6600c": {
+     "m": [
+      [
+       "EN-S2-LS-01.14",
+       "T",
+       "Give an opinion on Little Red Riding Hood.",
+       "book",
+       30
+      ],
+      [
+       "EN-S2-TQ-03.1",
+       "P",
+       "Give a fact about yourself.",
+       "book",
+       30
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_4cbbe333fc14ca08": {
+     "m": [
+      [
+       "EN-S2-LS-01.14",
+       "T",
+       "Come and share your opinions！",
+       "book",
+       31
+      ],
+      [
+       "EN-S2-LA-03.1",
+       "P",
+       "3 Work in groups.",
+       "book",
+       31
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_ee85f883a8e5ced9": {
+     "m": [],
+     "d": 0
+    },
+    "tcu_b8b5a39817569edc": {
+     "m": [
+      [
+       "EN-S2-LC-01.6",
+       "T",
+       "Mount Qomolangma is the world's highest mountain.",
+       "book",
+       34
+      ],
+      [
+       "EN-S2-LK-01.10",
+       "P",
+       "lt will be higher in the future.",
+       "book",
+       34
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_a3986f72709b776b": {
+     "m": [
+      [
+       "EN-S2-LK-01.11",
+       "T",
+       "What's the longest river in Asia！",
+       "book",
+       35
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_f1ecda2ed0826dc9": {
+     "m": [
+      [
+       "EN-S2-LC-01.6",
+       "T",
+       "He visited many places in China.",
+       "book",
+       36
+      ],
+      [
+       "EN-S2-LS-01.17",
+       "P",
+       "Write your opinions about Xu Xiake.",
+       "book",
+       37
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_7a578b90a530f657": {
+     "m": [
+      [
+       "EN-S2-LK-01.1",
+       "T",
+       "Which words have “bl” or “br\" sounds？",
+       "book",
+       38
+      ],
+      [
+       "EN-S2-LC-02.1",
+       "P",
+       "Listen and choose. What is the talk about？",
+       "book",
+       39
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_c8d0ad61905a7779": {
+     "m": [
+      [
+       "EN-S2-LS-01.17",
+       "T",
+       "Design a travel poster",
+       "book",
+       40
+      ],
+      [
+       "EN-S2-LC-03.1",
+       "P",
+       "Tell the class about your poster.",
+       "book",
+       41
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_a515b7842d6e7aa5": {
+     "m": [
+      [
+       "EN-S2-LC-03.1",
+       "P",
+       "Ask and answer",
+       "book",
+       42
+      ],
+      [
+       "EN-S2-LS-01.13",
+       "P",
+       "Checkit 1. What did I learn？",
+       "book",
+       42
+      ],
+      [
+       "EN-S2-LS-01.14",
+       "P",
+       "Name four",
+       "book",
+       42
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_aaee3e8f7dc208b6": {
+     "m": [
+      [
+       "EN-S2-TX-01.3",
+       "T",
+       "Read and write.",
+       "book",
+       43
+      ],
+      [
+       "EN-S2-LS-01.2",
+       "P",
+       "Which country is the park in？",
+       "book",
+       43
+      ],
+      [
+       "EN-S2-LC-03.1",
+       "P",
+       "Work in groups. Talk about a famous national park.",
+       "book",
+       43
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_cc8fe88e1373d250": {
+     "m": [],
+     "d": 0
+    },
+    "tcu_e5dc5d8cd2a9878d": {
+     "m": [
+      [
+       "EN-S2-TX-01.3",
+       "T",
+       "First, make a small hole in the middle of the bottle cap.",
+       "book",
+       46
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_d3e82686de46cc8d": {
+     "m": [
+      [
+       "EN-S2-TX-01.3",
+       "T",
+       "First, clean the milk box.",
+       "book",
+       47
+      ],
+      [
+       "EN-S2-LS-01.14",
+       "P",
+       "Work in pairs and talk. What are the steps of making a bird ",
+       "book",
+       47
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_e8ddaeb0e7e0d95b": {
+     "m": [
+      [
+       "EN-S2-LC-01.6",
+       "T",
+       "That was the first umbrella！",
+       "book",
+       48
+      ],
+      [
+       "EN-S2-LS-01.17",
+       "T",
+       "First， Next， Then， Last，",
+       "book",
+       49
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_fab526016270ceff": {
+     "m": [
+      [
+       "EN-S2-LK-01.1",
+       "T",
+       "Which words have “fr” or \"fl\" sounds？",
+       "book",
+       50
+      ],
+      [
+       "EN-S2-LC-02.1",
+       "T",
+       "Why does the music group use special instruments？",
+       "book",
+       51
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_87875e9e5a80c37d": {
+     "m": [
+      [
+       "EN-S2-LC-03.1",
+       "T",
+       "Work in groups and answer.",
+       "book",
+       52
+      ],
+      [
+       "EN-S2-LA-03.1",
+       "T",
+       "First， Next， Then， Last，",
+       "book",
+       53
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_abae3ff5de2bde61": {
+     "m": [
+      [
+       "EN-S2-ST-01.6",
+       "T",
+       "What did I learn？",
+       "book",
+       54
+      ],
+      [
+       "EN-S2-LK-01.4",
+       "P",
+       "Say a word with the sound “fr”",
+       "book",
+       54
+      ],
+      [
+       "EN-S2-LS-01.16",
+       "P",
+       "Say the steps of Damings invention.",
+       "book",
+       54
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_dd82723e30c145b2": {
+     "m": [
+      [
+       "EN-S2-LC-01.6",
+       "T",
+       "Read and answer.",
+       "book",
+       55
+      ],
+      [
+       "EN-S2-TQ-02.1",
+       "P",
+       "Find out about other inventions.",
+       "book",
+       55
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_7926b0e4020ed1ec": {
+     "m": [
+      [
+       "EN-S2-LC-01.2",
+       "P",
+       "Get ready",
+       "book",
+       57
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_d590412aa158f56c": {
+     "m": [
+      [
+       "EN-S2-LS-01.2",
+       "T",
+       "They can give you the flu.",
+       "book",
+       58
+      ],
+      [
+       "EN-S2-LK-01.7",
+       "P",
+       "Viruses are very small.",
+       "book",
+       58
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_5414b7c828871a6c": {
+     "m": [
+      [
+       "EN-S2-LS-01.12",
+       "T",
+       "What's the matter？ I have a fever and a bad headache.",
+       "book",
+       59
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_7c8ecf2ca0a9a8e2": {
+     "m": [
+      [
+       "EN-S2-TH-01.3",
+       "T",
+       "You should take care of your eyes.",
+       "book",
+       60
+      ],
+      [
+       "EN-S2-LS-01.2",
+       "P",
+       "Read and answer.",
+       "book",
+       60
+      ],
+      [
+       "EN-S2-LK-01.7",
+       "P",
+       "Do eye exercises every day.",
+       "book",
+       60
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_e8999b553f58ab16": {
+     "m": [
+      [
+       "EN-S2-TH-01.3",
+       "T",
+       "Let's keep our bodies healthy.",
+       "book",
+       62
+      ],
+      [
+       "EN-S2-LK-01.1",
+       "P",
+       "Which words have \"gl\" or \"gr\" sounds？",
+       "book",
+       62
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_4af9c9cbe00ec5bf": {
+     "m": [
+      [
+       "EN-S2-TH-01.3",
+       "T",
+       "Write your plan.",
+       "book",
+       65
+      ],
+      [
+       "EN-S2-LS-01.17",
+       "P",
+       "Tell the class about your plan.",
+       "book",
+       65
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_15d10f306c1891c7": {
+     "m": [
+      [
+       "EN-S2-LC-03.1",
+       "T",
+       "Say three things he can do.",
+       "book",
+       66
+      ],
+      [
+       "EN-S2-TH-01.3",
+       "P",
+       "Your brother wants to stay healthy.",
+       "book",
+       66
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_9e7f6a31e01a2e51": {
+     "m": [
+      [
+       "EN-S2-LC-01.6",
+       "T",
+       "There are many natural medicines.",
+       "book",
+       67
+      ],
+      [
+       "EN-S2-TH-01.3",
+       "P",
+       "natural medicines",
+       "book",
+       67
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_2ec7756ba3d74d14": {
+     "m": [
+      [
+       "EN-S2-LK-01.4",
+       "T",
+       "Get ready",
+       "book",
+       69
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_b2180a8c80af5452": {
+     "m": [
+      [
+       "EN-S2-LC-01.6",
+       "T",
+       "We had a good view from the London Eye.",
+       "book",
+       70
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_dfc68d9acf4d5852": {
+     "m": [
+      [
+       "EN-S2-LC-02.4",
+       "T",
+       "Use “What” or “How\".",
+       "book",
+       71
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_b88837e348d6e32a": {
+     "m": [
+      [
+       "EN-S2-LS-01.16",
+       "T",
+       "Write about your travel story.",
+       "book",
+       73
+      ],
+      [
+       "EN-S2-LC-01.6",
+       "P",
+       "Read and answer.",
+       "book",
+       72
+      ],
+      [
+       "EN-S2-CA-01.2",
+       "P",
+       "It's the Water-splashing Festival！",
+       "book",
+       72
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_2280dc387954e8e8": {
+     "m": [
+      [
+       "EN-S2-CK-01.1",
+       "T",
+       "What should we do about cultural differences？",
+       "book",
+       75
+      ],
+      [
+       "EN-S2-LK-01.4",
+       "P",
+       "Listen and chant.",
+       "book",
+       74
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_00a090088b94260d": {
+     "m": [
+      [
+       "EN-S2-LS-01.17",
+       "T",
+       "Write about your hometown.",
+       "book",
+       77
+      ],
+      [
+       "EN-S2-CA-01.4",
+       "P",
+       "What is special about the culture there？",
+       "book",
+       76
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_56d258d8c649eac7": {
+     "m": [
+      [
+       "EN-S2-LC-03.1",
+       "T",
+       "Choose a country. Name three things you know Say three thing",
+       "book",
+       78
+      ],
+      [
+       "EN-S2-LS-01.14",
+       "P",
+       "Think about the about your places you visited. hometown. Whi",
+       "book",
+       78
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_b54c37be347c24a6": {
+     "m": [
+      [
+       "EN-S2-LC-01.6",
+       "T",
+       "In 138 BCE, Zhang Qian travelled from Chang'an （today's Xian",
+       "book",
+       79
+      ],
+      [
+       "EN-S2-CK-01.7",
+       "P",
+       "He was one of the first Europeans to visit China.",
+       "book",
+       79
       ]
      ],
      "d": 0
@@ -167989,6 +174759,111 @@
       ]
      ],
      "d": 0
+    },
+    "8e6da23f-3de0-f5af-d79b-acdf3217e724": {
+     "m": [
+      [
+       "EN-S1-LK-01.6",
+       "T",
+       "This new machine can wash all your clothes.",
+       "book",
+       30
+      ],
+      [
+       "EN-S1-LS-01.16",
+       "T",
+       "It can clean the floor.",
+       "book",
+       30
+      ]
+     ],
+     "d": 0
+    },
+    "95db922b-fc99-9ec3-c1c6-2dd747879d5f": {
+     "m": [
+      [
+       "EN-S1-LK-01.6",
+       "T",
+       "Learn the words",
+       "book",
+       44
+      ]
+     ],
+     "d": 0
+    },
+    "f7925477-0086-6409-f011-335fd8e3d8d2": {
+     "m": [
+      [
+       "EN-S1-LC-03.1",
+       "T",
+       "I like summer best.",
+       "book",
+       45
+      ],
+      [
+       "EN-S1-LK-01.6",
+       "P",
+       "What's your favourite season",
+       "book",
+       45
+      ],
+      [
+       "EN-S1-LS-01.19",
+       "P",
+       "Read again and write.",
+       "book",
+       45
+      ]
+     ],
+     "d": 0
+    },
+    "cc6a04a3-67ff-2475-2030-b9040753f421": {
+     "m": [
+      [
+       "EN-S1-TH-01.18",
+       "P",
+       "Unit 4 Wonderful seasons (Speed up)",
+       "title",
+       null
+      ]
+     ],
+     "d": 0
+    },
+    "700c0b52-bb63-c97e-36a7-c25da68b77db": {
+     "m": [
+      [
+       "EN-S1-TX-01.1",
+       "T",
+       "Listen and sing",
+       "title",
+       null
+      ]
+     ],
+     "d": 0
+    },
+    "6a82b068-0ac9-6649-1d66-afc4dcfeca7a": {
+     "m": [
+      [
+       "EN-S1-LK-01.7",
+       "T",
+       "Learn the words",
+       "book",
+       56
+      ]
+     ],
+     "d": 0
+    },
+    "07683dea-7645-56c3-aa89-96e999543f26": {
+     "m": [
+      [
+       "EN-S1-TX-01.1",
+       "T",
+       "Listen and sing",
+       "title",
+       null
+      ]
+     ],
+     "d": 0
     }
    }
   },
@@ -169094,6 +175969,789 @@
       ]
      ],
      "d": 0
+    },
+    "tcu_554ea47eebe99926": {
+     "m": [
+      [
+       "MA-S3-NA-01.3",
+       "T",
+       "把一张纸的平均分成 2 份,每份是这张纸的几分之几?",
+       "book",
+       7
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_5de538eff6436548": {
+     "m": [
+      [
+       "MA-S3-NA-01.5",
+       "T",
+       "除以一个不为零的数,等于乘它的倒数。",
+       "book",
+       10
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_23608a76f8adadec": {
+     "m": [
+      [
+       "MA-S3-NA-01.4",
+       "T",
+       "分数除法能帮助我们解决生活中的哪些问题?",
+       "book",
+       13
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_c0d6eac1cb8b6946": {
+     "m": [
+      [
+       "MA-S3-NA-01.5",
+       "T",
+       "小数除法也可以用“除以一个不为零的数,等于乘这个数的倒数”的方法计算吗?",
+       "book",
+       14
+      ],
+      [
+       "MA-S3-NA-01.3",
+       "P",
+       "整数、小数和分数除法都是算有多少个计数单位",
+       "book",
+       14
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_bd688af5bf2def3a": {
+     "m": [
+      [
+       "MA-S3-GG-01.3",
+       "T",
+       "车轮为什么是圆的?",
+       "book",
+       16
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_188ab322de4f76e1": {
+     "m": [
+      [
+       "MA-S3-GG-01.3",
+       "T",
+       "线段 OA 是半径,通常用字母 r 表示",
+       "book",
+       18
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_cf4b9ad3c2fc0fc5": {
+     "m": [
+      [
+       "MA-S3-GG-02.5",
+       "T",
+       "圆是轴对称图形。",
+       "book",
+       20
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_d2d1df8fa0165323": {
+     "m": [
+      [
+       "MA-S3-GG-01.3",
+       "T",
+       "需要确定圆心和半径",
+       "book",
+       22
+      ],
+      [
+       "MA-S3-GG-02.5",
+       "P",
+       "圆有无数条对称轴,我补全了圆。",
+       "book",
+       22
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_977240842ebd8f0f": {
+     "m": [
+      [
+       "MA-S3-GG-01.3",
+       "P",
+       "试着画一画。",
+       "book",
+       24
+      ],
+      [
+       "MA-S3-GG-02.6",
+       "P",
+       "再设计一个有趣的图案",
+       "book",
+       25
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_7aec9f37dfad4325": {
+     "m": [
+      [
+       "MA-S3-GG-01.3",
+       "T",
+       "C = πd 或 C = 2πr。",
+       "book",
+       27
+      ],
+      [
+       "MA-S3-NA-02.2",
+       "P",
+       "测量中会有误差, 可以多测量几次, 怎么办呢? 求平均数。",
+       "book",
+       26
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_5791e4ae768c9e4b": {
+     "m": [
+      [
+       "MA-S3-GG-01.3",
+       "T",
+       "圆的周长总是其直径的 3 倍多。",
+       "book",
+       29
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_aa9323f558af8085": {
+     "m": [
+      [
+       "MA-S3-GG-01.3",
+       "T",
+       "S = πr ×r",
+       "book",
+       32
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_a445f4820e2afab7": {
+     "m": [
+      [
+       "MA-S3-GG-01.3",
+       "T",
+       "就是求圆的面积,S = 9π。",
+       "book",
+       33
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_0c2ee76ea46c09a9": {
+     "m": [
+      [
+       "MA-S3-GG-01.3",
+       "P",
+       "圆的周长和面积公式的推导过程",
+       "book",
+       35
+      ],
+      [
+       "MA-S3-GG-01.5",
+       "P",
+       "盖子的面积至少是多少平方米?",
+       "book",
+       36
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_eec94f17c273f092": {
+     "m": [
+      [
+       "MA-S3-NA-02.3",
+       "T",
+       "你能用字母表示上面三个数量之间的关系吗?",
+       "book",
+       38
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_b4f7befdecc9924b": {
+     "m": [
+      [
+       "MA-S3-NA-02.3",
+       "T",
+       "直接代入上面含有字母的式子中计算",
+       "book",
+       41
+      ],
+      [
+       "MA-S3-NA-02.1",
+       "T",
+       "71 = 1+2n,怎么求 n 呢? 可以利用等式的性质",
+       "book",
+       41
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_9d54ae465695dc60": {
+     "m": [
+      [
+       "MA-S3-NA-02.3",
+       "T",
+       "m = 4n-2(n-1)。 m = 2n+2。",
+       "book",
+       44
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_94630d0c2661d33e": {
+     "m": [
+      [
+       "MA-S3-NA-02.3",
+       "T",
+       "用 y 表示中间数",
+       "book",
+       46
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_c4776ab81d2be697": {
+     "m": [
+      [
+       "MA-S3-NA-02.3",
+       "P",
+       "我用 r 表示花坛半径。",
+       "book",
+       48
+      ]
+     ],
+     "d": 1,
+     "r": [
+      [
+       "MA-S3-GG-01.3",
+       "quote_not_found",
+       "增加 2π m。"
+      ]
+     ]
+    },
+    "tcu_464c8dde0f70f022": {
+     "m": [
+      [
+       "MA-S3-IP-01.5",
+       "T",
+       "调查生活中的用水情况,发现、提出、分析和解决问题,为家庭或学校制订节水方案。",
+       "book",
+       49
+      ],
+      [
+       "MA-S3-SP-01.1",
+       "P",
+       "调查用水情况",
+       "book",
+       50
+      ],
+      [
+       "MA-S3-NA-02.2",
+       "P",
+       "1 小时、 1 天、1 年呢?",
+       "book",
+       51
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_9a4aeab89c7d3d3c": {
+     "m": [
+      [
+       "MA-S3-NA-01.4",
+       "T",
+       "航模小组的人数是摄影小组的",
+       "book",
+       54
+      ],
+      [
+       "MA-S3-NA-01.5",
+       "P",
+       "分数混合运算的顺序与整数混合运算的顺序一样。",
+       "book",
+       55
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_39942ef16010bba4": {
+     "m": [
+      [
+       "MA-S3-NA-01.4",
+       "T",
+       "冰的体积比原来水的体积约增加了几分之几?",
+       "book",
+       57
+      ],
+      [
+       "MA-S3-NA-01.5",
+       "P",
+       "整数的运算律 ... 在分数运算中 同样适用。",
+       "book",
+       57
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_e463b088717382f7": {
+     "m": [
+      [
+       "MA-S3-NA-01.4",
+       "P",
+       "本单元我们学习了哪些内容?",
+       "book",
+       60
+      ],
+      [
+       "MA-S3-SP-01.2",
+       "P",
+       "5.38% 是什么数? 和分数有联系吗?",
+       "book",
+       60
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_87889fe8394020e3": {
+     "m": [
+      [
+       "MA-S3-NA-02.4",
+       "T",
+       "长和宽的比写作 6∶4",
+       "book",
+       62
+      ],
+      [
+       "MA-S3-NA-01.3",
+       "P",
+       "6∶4 = 6÷4",
+       "book",
+       62
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_2b17f308270e8500": {
+     "m": [
+      [
+       "MA-S3-NA-02.4",
+       "T",
+       "总价与数量的比就是单价",
+       "book",
+       64
+      ],
+      [
+       "MA-S3-NA-01.3",
+       "P",
+       "比可以通过除法运算得到比值",
+       "book",
+       65
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_fa0198485fa04e3c": {
+     "m": [
+      [
+       "MA-S3-NA-02.4",
+       "T",
+       "比也可以化简",
+       "book",
+       67
+      ],
+      [
+       "MA-S3-NA-01.3",
+       "P",
+       "分数可以约分,比也可以化简",
+       "book",
+       67
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_e3b44215fc2d9922": {
+     "m": [
+      [
+       "MA-S3-NA-02.4",
+       "T",
+       "只要蜂蜜和水 4∶14 = 2∶7 的体积比相等",
+       "book",
+       68
+      ],
+      [
+       "MA-S3-NA-02.5",
+       "P",
+       "汽车行驶路程和时间之间的关系。",
+       "book",
+       69
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_a4906a5f48bee715": {
+     "m": [
+      [
+       "MA-S3-NA-02.4",
+       "P",
+       "把下面问题中的数量关系写成比",
+       "book",
+       71
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_a18d0ab2f149eaf2": {
+     "m": [
+      [
+       "MA-S3-GG-02.1",
+       "T",
+       "象群在居拉里村南偏东 15°方向上,距离 2 km。",
+       "book",
+       73
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_4dbcaeb4d793501f": {
+     "m": [
+      [
+       "MA-S3-GG-02.2",
+       "T",
+       "如果象群的位置用数对(0,0) 说一说小公象的位置。",
+       "book",
+       74
+      ],
+      [
+       "MA-S3-GG-02.3",
+       "P",
+       "1 cm 表示 5000 m",
+       "book",
+       74
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_e0a29ca0a1b90372": {
+     "m": [
+      [
+       "MA-S3-GG-02.1",
+       "T",
+       "要说清楚方向和距离, 具体方向要标明角度。",
+       "book",
+       77
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_774f3498e13e9278": {
+     "m": [
+      [
+       "MA-S3-IP-01.3",
+       "P",
+       "初步尝试和同伴玩几次,选择最有意思的一次,和大家交流。",
+       "book",
+       79
+      ],
+      [
+       "MA-S3-GG-02.2",
+       "P",
+       "下在“1”的上面",
+       "book",
+       79
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_c55296ba4a2644fd": {
+     "m": [
+      [
+       "MA-S3-SP-01.2",
+       "T",
+       "像 90%,80%,60%,84%",
+       "book",
+       80
+      ],
+      [
+       "MA-S3-NA-01.3",
+       "P",
+       "都化成分母是 100 的分数",
+       "book",
+       80
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_e44eec999471a6ca": {
+     "m": [
+      [
+       "MA-S3-SP-01.2",
+       "T",
+       "合格率也是一种百分数",
+       "book",
+       82
+      ],
+      [
+       "MA-S3-NA-01.3",
+       "P",
+       "把小数化成百分数, 把分数化成百分数",
+       "book",
+       83
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_18c0399c2486e19f": {
+     "m": [
+      [
+       "MA-S3-SP-01.1",
+       "T",
+       "这是扇形统计图。",
+       "book",
+       84
+      ],
+      [
+       "MA-S3-SP-01.2",
+       "P",
+       "主食占所有食物的 93%",
+       "book",
+       84
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_a0f501327baa892d": {
+     "m": [
+      [
+       "MA-S3-NA-01.4",
+       "T",
+       "利息 = 本金×利率×时间。",
+       "book",
+       86
+      ],
+      [
+       "MA-S3-NA-01.6",
+       "P",
+       "看来还是一次性存三年的利息多。",
+       "book",
+       87
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_ad371ca80e6be576": {
+     "m": [
+      [
+       "MA-S3-SP-01.2",
+       "P",
+       "你能读懂下面资料中百分数的含义吗?读一读,说一说。",
+       "book",
+       88
+      ],
+      [
+       "MA-S3-NA-01.3",
+       "P",
+       "分数 5 8 小数 0.3 1.35 百分数 75% 45%",
+       "book",
+       89
+      ],
+      [
+       "MA-S3-NA-01.4",
+       "P",
+       "按年利率 1.1% 计算",
+       "book",
+       90
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_a4e606d5d14c92e1": {
+     "m": [
+      [
+       "MA-S3-GG-01.6",
+       "T",
+       "从上面、正面和侧面观察圆柱和圆锥,看到的分别是什么形状?",
+       "book",
+       91
+      ],
+      [
+       "MA-S3-GG-01.4",
+       "P",
+       "圆柱正面和侧面的投影都是长方形",
+       "book",
+       91
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_a9cc27f3890f8626": {
+     "m": [
+      [
+       "MA-S3-GG-01.6",
+       "T",
+       "一个立体图形,从上面看到的形状是 ,从左面看到的形状是 ,从正面看到的形状是 。",
+       "book",
+       93
+      ],
+      [
+       "MA-S3-GG-01.4",
+       "P",
+       "用 6 个小正方体搭一个立体图形",
+       "book",
+       94
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_0f1f8d95757c1975": {
+     "m": [
+      [
+       "MA-S3-SP-01.1",
+       "T",
+       "按照小组设计的研究方案收集数据,并进行整理。",
+       "book",
+       96
+      ],
+      [
+       "MA-S3-SP-01.2",
+       "P",
+       "所占百分比......",
+       "book",
+       96
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_b9862f317cbd9e97": {
+     "m": [
+      [
+       "MA-S3-SP-01.1",
+       "T",
+       "比较三种统计图的特点,并与同伴交流。",
+       "book",
+       99
+      ],
+      [
+       "MA-S3-SP-01.2",
+       "P",
+       "所占的百分比。",
+       "book",
+       99
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_7254d328117cb3bc": {
+     "m": [
+      [
+       "MA-S3-SP-01.1",
+       "T",
+       "整理上表中的数据,与同伴交流你的整理方法。",
+       "book",
+       101
+      ],
+      [
+       "MA-S3-SP-01.3",
+       "P",
+       "你可以对你们班订购校服提一些建议吗?",
+       "book",
+       101
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_0389f4f80b92e277": {
+     "m": [
+      [
+       "MA-S3-SP-01.1",
+       "T",
+       "根据上面的数据完成下图。",
+       "book",
+       102
+      ],
+      [
+       "MA-S3-NA-02.2",
+       "P",
+       "估计淘气三年后的身高",
+       "book",
+       103
+      ],
+      [
+       "MA-S3-SP-01.3",
+       "P",
+       "说一说,你能获得哪些信息?",
+       "book",
+       104
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_0bbe62344f57b6c0": {
+     "m": [
+      [
+       "MA-S3-SP-01.1",
+       "T",
+       "从这个扇形统计图中,你知道了什么?",
+       "book",
+       105
+      ],
+      [
+       "MA-S3-SP-01.2",
+       "P",
+       "如果奇思家这个月的支出是 3000 元",
+       "book",
+       105
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_9fbde5b07f57e29e": {
+     "m": [
+      [
+       "MA-S3-IP-01.4",
+       "T",
+       "记录并分析自己的一日三餐,进行优化设计,制订营养均衡的科学食谱",
+       "book",
+       108
+      ],
+      [
+       "MA-S3-NA-02.4",
+       "P",
+       "算出食谱中每类食物的比",
+       "book",
+       110
+      ]
+     ],
+     "d": 2,
+     "r": [
+      [
+       "MA-S3-SP-01.1",
+       "quote_not_found",
+       "画成扇形统计图"
+      ],
+      [
+       "MA-S3-SP-01.2",
+       "quote_not_found",
+       "约占全天食物的 30%"
+      ]
+     ]
     }
    }
   },
@@ -169684,6 +177342,253 @@
        "1厘米是0.01米。",
        "book",
        91
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_eda73933ba439d38": {
+     "m": [
+      [
+       "MA-S2-NA-01.4",
+       "T",
+       "说一说先算什么,再算什么,并计算。",
+       "book",
+       16
+      ],
+      [
+       "MA-S2-NA-02.1",
+       "P",
+       "谁买的矿泉水便宜,每瓶便宜多少元 ?",
+       "book",
+       16
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_70a0290afd5ca75f": {
+     "m": [
+      [
+       "MA-S2-GG-01.5",
+       "T",
+       "选择合适的单位。",
+       "book",
+       26
+      ],
+      [
+       "MA-S2-NA-02.1",
+       "P",
+       "估一估,量一量,说一说。",
+       "book",
+       28
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_6984a6481ed976a9": {
+     "m": [
+      [
+       "MA-S2-NA-01.4",
+       "P",
+       "混合运算都是从左往右算",
+       "book",
+       44
+      ],
+      [
+       "MA-S2-NA-02.1",
+       "P",
+       "三年级共捐书 800 本",
+       "book",
+       44
+      ],
+      [
+       "MA-S2-GG-01.5",
+       "P",
+       "北京—西安沿线主要车站的火车里程表",
+       "book",
+       45
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_3555e81a7401815a": {
+     "m": [
+      [
+       "MA-S2-GG-01.1",
+       "T",
+       "从不同位置观察,说说你看到了什么。",
+       "book",
+       46
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_8c64a7243525823f": {
+     "m": [
+      [
+       "MA-S2-GG-01.4",
+       "T",
+       "图中有正方形、三角形",
+       "book",
+       62
+      ],
+      [
+       "MA-S2-GG-02.1",
+       "P",
+       "这些图形的排列是有规律的",
+       "book",
+       62
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_126ce23a21b0e5d5": {
+     "m": [
+      [
+       "MA-S2-GG-01.2",
+       "P",
+       "我们认识了三种角",
+       "book",
+       64
+      ],
+      [
+       "MA-S2-GG-01.4",
+       "P",
+       "我们还认识了长方形和正方形",
+       "book",
+       64
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_44d5ec4b2e51b25a": {
+     "m": [
+      [
+       "MA-S2-NA-02.1",
+       "T",
+       "平均每班分到多少棵树苗?",
+       "book",
+       75
+      ],
+      [
+       "MA-S2-NA-01.4",
+       "P",
+       "30÷3=10 (12)×3=36",
+       "book",
+       75
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_860ffa833ec2a369": {
+     "m": [
+      [
+       "MA-S2-NA-01.2",
+       "T",
+       "三位数乘或除以一位数, 应该怎样计算?",
+       "book",
+       78
+      ],
+      [
+       "MA-S2-NA-02.1",
+       "P",
+       "买 4 箱苹果和 6 箱梨, 分别需要多少元?",
+       "book",
+       79
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_91fe69822408edb5": {
+     "m": [
+      [
+       "MA-S2-NA-01.3",
+       "T",
+       "1.44米是144厘米",
+       "book",
+       82
+      ],
+      [
+       "MA-S2-GG-01.5",
+       "P",
+       "1 分米是 0.1 米",
+       "book",
+       83
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_63f0dca6d7f315ba": {
+     "m": [
+      [
+       "MA-S2-NA-01.3",
+       "T",
+       "需要把小数点 . 对齐",
+       "book",
+       86
+      ],
+      [
+       "MA-S2-NA-02.1",
+       "P",
+       "淘气这两个月一共存了多少零用钱?",
+       "book",
+       86
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_7921fea7fa0db7b9": {
+     "m": [
+      [
+       "MA-S2-NA-01.3",
+       "T",
+       "1 角是 0.1 元。",
+       "book",
+       90
+      ],
+      [
+       "MA-S2-GG-01.5",
+       "P",
+       "1厘米是0.01米。",
+       "book",
+       91
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_c8a89c64a5779b0c": {
+     "m": [
+      [
+       "MA-S2-NA-01.3",
+       "P",
+       "只要小数点对齐了,相同单位上的数就对齐了",
+       "book",
+       92
+      ],
+      [
+       "MA-S2-NA-02.1",
+       "P",
+       "买一支手电筒和一节电池共需要多少元?",
+       "book",
+       93
+      ],
+      [
+       "MA-S2-SP-01.1",
+       "P",
+       "记录你家今年最近两次的水费、燃气费支出情况,算一算一共是多少元",
+       "book",
+       94
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_7fc09e6c81c1a465": {
+     "m": [
+      [
+       "MA-S2-SP-01.1",
+       "T",
+       "调查全班同学最喜欢的水果,把大家的选择情况记录下来。",
+       "book",
+       97
       ]
      ],
      "d": 0
@@ -171384,6 +179289,113 @@
       ]
      ],
      "d": 0
+    },
+    "e9b15c95-4e9e-3a08-5968-23543f619a5b": {
+     "m": [
+      [
+       "EN-S1-LC-01.4",
+       "T",
+       "Work in groups. Talk about your friends' hobbies.",
+       "book",
+       50
+      ],
+      [
+       "EN-S1-LS-01.3",
+       "P",
+       "Listen and match.",
+       "book",
+       50
+      ]
+     ],
+     "d": 0
+    },
+    "ad3c1a17-7a72-f7cd-3898-68d44c89d9dc": {
+     "m": [
+      [
+       "EN-S1-LK-01.11",
+       "T",
+       "use \"I / They like..\" and \"He / She likes.. \" to talk about ",
+       "book",
+       51
+      ],
+      [
+       "EN-S1-TX-01.4",
+       "P",
+       "Tell the class about your chart.",
+       "book",
+       52
+      ]
+     ],
+     "d": 0
+    },
+    "09de0abf-35ac-f388-0f5f-3d9a459eed1b": {
+     "m": [
+      [
+       "EN-S1-LS-01.12",
+       "P",
+       "Now I can name different hobbies",
+       "book",
+       53
+      ],
+      [
+       "EN-S1-LK-01.11",
+       "P",
+       "\"He / She likes.. \"",
+       "book",
+       53
+      ],
+      [
+       "EN-S1-CK-01.2",
+       "P",
+       "Hobbies in China",
+       "book",
+       54
+      ]
+     ],
+     "d": 0
+    },
+    "008cbf2a-0414-c5ad-3b73-4aa4f5e120c8": {
+     "m": [
+      [
+       "EN-S1-LS-01.13",
+       "T",
+       "Listen and draw the times.",
+       "title",
+       null
+      ],
+      [
+       "EN-S1-LC-02.1",
+       "P",
+       "Listen and draw the times.",
+       "title",
+       null
+      ]
+     ],
+     "d": 0
+    },
+    "a3e02194-a625-8193-4fdf-29fae3ede50a": {
+     "m": [
+      [
+       "EN-S1-LS-01.13",
+       "T",
+       "What time is it？",
+       "book",
+       58
+      ]
+     ],
+     "d": 0
+    },
+    "59005756-fa2c-6415-311c-44f8e148d71a": {
+     "m": [
+      [
+       "EN-S1-LS-01.13",
+       "T",
+       "Help Sam plan his time.",
+       "book",
+       58
+      ]
+     ],
+     "d": 0
     }
    }
   },
@@ -172786,6 +180798,151 @@
       ]
      ],
      "d": 0
+    },
+    "089b7dd4-57b3-3f02-5157-5b02085e7235": {
+     "m": [
+      [
+       "EN-S1-LK-01.6",
+       "T",
+       "police station school fire station",
+       "book",
+       8
+      ],
+      [
+       "EN-S1-TH-01.15",
+       "P",
+       "Unit 1 People at work",
+       "title",
+       null
+      ]
+     ],
+     "d": 0
+    },
+    "4ca575f2-9923-73aa-3084-74b9dea54186": {
+     "m": [
+      [
+       "EN-S1-LK-01.9",
+       "T",
+       "This is my father. He often works in the fields.",
+       "book",
+       9
+      ],
+      [
+       "EN-S1-TH-01.15",
+       "P",
+       "What does he do？",
+       "book",
+       9
+      ]
+     ],
+     "d": 0
+    },
+    "aed87f8c-384f-1621-d882-2a50f5ceca73": {
+     "m": [
+      [
+       "EN-S1-LC-02.1",
+       "T",
+       "Listen and circle",
+       "book",
+       10
+      ],
+      [
+       "EN-S1-LS-01.17",
+       "P",
+       "Work in pairs. Ask and answer questions about your family me",
+       "book",
+       10
+      ]
+     ],
+     "d": 0
+    },
+    "f2711e5d-85e2-b556-5044-9d16391bafdf": {
+     "m": [
+      [
+       "EN-S1-LS-01.12",
+       "T",
+       "share my feelings.",
+       "book",
+       29
+      ],
+      [
+       "EN-S1-LC-01.4",
+       "T",
+       "Now Ican name feelings：",
+       "book",
+       29
+      ]
+     ],
+     "d": 0
+    },
+    "93246d2d-41fb-f665-68b1-f06a58e276b8": {
+     "m": [
+      [
+       "EN-S1-LS-01.3",
+       "T",
+       "Listen and write.",
+       "book",
+       30
+      ],
+      [
+       "EN-S1-LS-01.12",
+       "T",
+       "It makes me feel",
+       "book",
+       30
+      ]
+     ],
+     "d": 0
+    },
+    "d43339c0-c9fe-80aa-c7e0-1b03be34e408": {
+     "m": [
+      [
+       "EN-S1-LK-01.6",
+       "T",
+       "Parts ② of plants stem flower 3 root seed leaf",
+       "book",
+       44
+      ],
+      [
+       "EN-S1-LK-01.7",
+       "P",
+       "Learn the words",
+       "book",
+       44
+      ]
+     ],
+     "d": 0
+    },
+    "89a6cb84-e32b-a085-b221-9fd4fcbac98f": {
+     "m": [
+      [
+       "EN-S1-LK-01.10",
+       "T",
+       "What are you doing？ We're digging.",
+       "book",
+       45
+      ],
+      [
+       "EN-S1-LK-01.6",
+       "P",
+       "I've got tomato seeds.",
+       "book",
+       45
+      ]
+     ],
+     "d": 0
+    },
+    "1a8e32e8-13fe-f888-b5af-16647bb8f555": {
+     "m": [
+      [
+       "EN-S1-TX-01.3",
+       "P",
+       "Unit 4 Plant life (Speed up)",
+       "title",
+       null
+      ]
+     ],
+     "d": 0
     }
    }
   },
@@ -173711,6 +181868,786 @@
       ]
      ],
      "d": 0
+    },
+    "tcu_a09ef547da5c6321": {
+     "m": [
+      [
+       "MA-S4-GG-03.2",
+       "T",
+       "三角形内角和定理三角形三个内角的和等于 180°。",
+       "book",
+       9
+      ],
+      [
+       "MA-S4-GG-02.11",
+       "P",
+       "过点C作射线CE，使CE// BA",
+       "book",
+       8
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_b6a1f75030e1ed10": {
+     "m": [
+      [
+       "MA-S4-GG-03.11",
+       "T",
+       "等腰三角形的两个底角相等。",
+       "book",
+       20
+      ],
+      [
+       "MA-S4-GG-06.5",
+       "P",
+       "这种证明方法称为反证法（reduction to absurdity ）。",
+       "book",
+       23
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_43dd92233e7e9a84": {
+     "m": [
+      [
+       "MA-S4-GG-03.12",
+       "T",
+       "直角三角形的两个锐角互余。",
+       "book",
+       30
+      ],
+      [
+       "MA-S4-GG-03.13",
+       "T",
+       "勾股定理直角三角形两条直角边的平方和等于斜边的平方。",
+       "book",
+       30
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_bacb73965a7e0976": {
+     "m": [
+      [
+       "MA-S4-GG-03.10",
+       "T",
+       "线段垂直平分线上的点到这条线段两个端点的距离相等",
+       "book",
+       39
+      ],
+      [
+       "MA-S4-GG-02.3",
+       "P",
+       "还记得用尺规作线段垂直平分线的方法吗？",
+       "book",
+       40
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_6cb32ef7e0d788e8": {
+     "m": [
+      [
+       "MA-S4-GG-03.9",
+       "T",
+       "角平分线上的点到这个角的两边的距离相等",
+       "book",
+       46
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_93db6ca90a29aa12": {
+     "m": [
+      [
+       "MA-S4-GG-06.3",
+       "T",
+       "问题证明：等腰三角形两腰上的中线相等",
+       "book",
+       52
+      ],
+      [
+       "MA-S4-GG-03.11",
+       "P",
+       "本题证明了等腰三角形两腰上的中线相等。",
+       "book",
+       53
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_0c9930f16a89a818": {
+     "m": [
+      [
+       "MA-S4-GG-03.2",
+       "P",
+       "说说三角形内角和定理的证明思路。",
+       "book",
+       54
+      ],
+      [
+       "MA-S4-GG-03.4",
+       "P",
+       "叙述两个直角三角形全等的判定条件，并证明本章中学过的一个判定条件。",
+       "book",
+       54
+      ],
+      [
+       "MA-S4-GG-06.3",
+       "P",
+       "你认为本章哪些定理的证明方法比较独特？举例说明如何用反证法证明",
+       "book",
+       54
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_90c9b23fbf3416d2": {
+     "m": [
+      [
+       "MA-S4-GG-03.2",
+       "P",
+       "多边形的内角和与边数有怎样的关系？",
+       "book",
+       54
+      ],
+      [
+       "MA-S4-GG-03.4",
+       "P",
+       "叙述两个直角三角形全等的判定条件，并证明本章中学过的一个判定条件。",
+       "book",
+       54
+      ],
+      [
+       "MA-S4-GG-03.11",
+       "P",
+       "等腰三角形有哪些性质？等边三角形呢？直角三角形呢？",
+       "book",
+       54
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_f9d30c8d653be3a3": {
+     "m": [
+      [
+       "MA-S4-NA-05.2",
+       "T",
+       "不等式6+>10的解集是x>4",
+       "book",
+       63
+      ],
+      [
+       "MA-S4-NA-05.1",
+       "P",
+       "叫作不等式（inequality）",
+       "book",
+       62
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_4203708447f73442": {
+     "m": [
+      [
+       "MA-S4-NA-05.2",
+       "T",
+       "解：去分母，得 3 （x-2）≥2（7-x）。",
+       "book",
+       70
+      ],
+      [
+       "MA-S4-NA-05.3",
+       "P",
+       "请你帮助售货员计算一下，这种商品最多可以打几折？",
+       "book",
+       71
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_77268a9a126ec9a8": {
+     "m": [
+      [
+       "MA-S4-NA-06.2",
+       "T",
+       "一次函数刻画了问题中两个变量之间的一种相互依赖关系",
+       "book",
+       74
+      ],
+      [
+       "MA-S4-NA-05.2",
+       "P",
+       "x取哪些值时，2×-5>0？",
+       "book",
+       73
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_f952c6b3a96173f1": {
+     "m": [
+      [
+       "MA-S4-NA-05.2",
+       "T",
+       "把它们合在一起，就组成一个一元一次不等式组",
+       "book",
+       77
+      ],
+      [
+       "MA-S4-NA-05.3",
+       "P",
+       "设八（1）班原计划每天制作x 面彩旗",
+       "book",
+       77
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_565155c9c61f114c": {
+     "m": [
+      [
+       "MA-S4-NA-05.1",
+       "P",
+       "不等式有哪些基本性质？",
+       "book",
+       81
+      ],
+      [
+       "MA-S4-NA-05.2",
+       "P",
+       "举例说明在数轴上如何表示一元一次不等式（组）的解集。",
+       "book",
+       81
+      ],
+      [
+       "MA-S4-NA-05.3",
+       "P",
+       "回顾本章学习过程，你是怎样利用一元一次不等式解决实际问题的？",
+       "book",
+       81
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_48efcc901a0e4bc2": {
+     "m": [
+      [
+       "MA-S4-NA-05.2",
+       "P",
+       "解下列不等式组，并把它们的解集分别表示在数轴上：",
+       "book",
+       82
+      ],
+      [
+       "MA-S4-NA-05.3",
+       "P",
+       "回顾本章学习过程，你是怎样利用一元一次不等式解决实际问题的？",
+       "book",
+       81
+      ],
+      [
+       "MA-S4-NA-05.1",
+       "P",
+       "不等式有哪些基本性质？",
+       "book",
+       81
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_b21b37b291661f9f": {
+     "m": [
+      [
+       "MA-S4-GG-09.1",
+       "T",
+       "在平面内，将一个图形沿某个方向移动一定的距离，这样的图形运动称为平移",
+       "book",
+       86
+      ],
+      [
+       "MA-S4-GG-13.2",
+       "P",
+       "将这条“鱼”向右平移5个单位长度。",
+       "book",
+       88
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_789448bab000785a": {
+     "m": [
+      [
+       "MA-S4-GG-08.1",
+       "T",
+       "在平面内，将一个图形绕一个定点按某个方向转动一个角度，这样的图形运动称为旋转",
+       "book",
+       96
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_25100491303f0ce8": {
+     "m": [
+      [
+       "MA-S4-GG-09.3",
+       "T",
+       "你能用平移、旋转或轴对称分析图3-29中各个图案的形成过程吗？",
+       "book",
+       107
+      ],
+      [
+       "MA-S4-GG-07.3",
+       "P",
+       "借助轴对称和平移，你还能设计哪些图案？",
+       "book",
+       108
+      ],
+      [
+       "MA-S4-GG-08.3",
+       "P",
+       "请你设计一个中心对称图案，并解释其中的含义。",
+       "book",
+       109
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_bae66dbaecd7df3b": {
+     "m": [
+      [
+       "MA-S4-GG-09.1",
+       "T",
+       "你能设法将居民区、通道或工厂“移动”位置，让前后两段路连起来吗？",
+       "book",
+       110
+      ],
+      [
+       "MA-S4-GG-01.5",
+       "P",
+       "最短距离",
+       "book",
+       110
+      ],
+      [
+       "MA-S4-GG-02.2",
+       "P",
+       "天桥与道路垂直。那么，天桥建在何处才能使由甲到乙的路线最短？",
+       "book",
+       111
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_12a52079c82c4496": {
+     "m": [
+      [
+       "MA-S4-GG-09.1",
+       "P",
+       "平移是否改变图形的位置、形状和大小？旋转呢？",
+       "book",
+       112
+      ],
+      [
+       "MA-S4-GG-08.1",
+       "P",
+       "平移、旋转各有哪些基本性质？",
+       "book",
+       112
+      ],
+      [
+       "MA-S4-GG-13.2",
+       "P",
+       "在平面直角坐标系中，平移后的图形与原图形对应点的坐标之间有怎样的关系？",
+       "book",
+       112
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_0e6b95b2d23e411a": {
+     "m": [
+      [
+       "MA-S4-GG-13.2",
+       "P",
+       "将图案N 向左平移3个单位长度，画出平移后的图案；",
+       "book",
+       112
+      ],
+      [
+       "MA-S4-GG-08.1",
+       "P",
+       "将一个正三角形绕它的一个顶点按逆时针方向旋转，分别画出旋转下列角度后的图形：",
+       "book",
+       113
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_767ea2d95ed99109": {
+     "m": [
+      [
+       "MA-S4-NA-03.7",
+       "T",
+       "a=a（a+1）（a-1）",
+       "book",
+       118
+      ],
+      [
+       "MA-S4-NA-03.6",
+       "P",
+       "x2+2x+1=（x+1）2都是因式分解",
+       "book",
+       118
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_48de870aa666eaa9": {
+     "m": [
+      [
+       "MA-S4-NA-03.7",
+       "T",
+       "这种因式分解的方法叫作提公因式法。",
+       "book",
+       120
+      ],
+      [
+       "MA-S4-NA-03.5",
+       "P",
+       "提公因式法因式分解与单项式乘多项式有什么关系？",
+       "book",
+       121
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_1e26e2d458168d51": {
+     "m": [
+      [
+       "MA-S4-NA-03.6",
+       "T",
+       "利用乘法公式把某些多项式因式分解，这种因式分解的方法叫作公式法。",
+       "book",
+       126
+      ],
+      [
+       "MA-S4-NA-03.7",
+       "P",
+       "把下列各式因式分解：",
+       "book",
+       124
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_a89fe9f7a1c31ce2": {
+     "m": [
+      [
+       "MA-S4-NA-03.7",
+       "T",
+       "把下列各式因式分解：",
+       "book",
+       129
+      ],
+      [
+       "MA-S4-NA-03.6",
+       "P",
+       "（x+1）（x+2）",
+       "book",
+       129
+      ],
+      [
+       "MA-S4-NA-03.5",
+       "P",
+       "因式分解与整式乘法有什么关系？",
+       "book",
+       129
+      ],
+      [
+       "MA-S4-NA-03.3",
+       "P",
+       "先因式分解，再计算求值：",
+       "book",
+       129
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_1a66907a0eb58682": {
+     "m": [
+      [
+       "MA-S4-NA-03.7",
+       "T",
+       "把下列各式因式分解：",
+       "book",
+       129
+      ],
+      [
+       "MA-S4-NA-03.6",
+       "P",
+       "（x+1）（x+2）",
+       "book",
+       129
+      ],
+      [
+       "MA-S4-NA-03.5",
+       "P",
+       "因式分解与整式乘法有什么关系？",
+       "book",
+       129
+      ],
+      [
+       "MA-S4-NA-03.3",
+       "P",
+       "先因式分解，再计算求值：",
+       "book",
+       129
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_19858f03bdd617a1": {
+     "m": [
+      [
+       "MA-S4-NA-03.8",
+       "T",
+       "分母都不能为零。",
+       "book",
+       133
+      ],
+      [
+       "MA-S4-NA-03.5",
+       "P",
+       "把一个分式的分子和分母的公因式约去",
+       "book",
+       135
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_2d798c494c2719e4": {
+     "m": [
+      [
+       "MA-S4-NA-03.8",
+       "T",
+       "两个分式相乘，把分子相乘的积作为积的分子",
+       "book",
+       139
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_34a9ae11f2eb4b41": {
+     "m": [
+      [
+       "MA-S4-NA-04.2",
+       "T",
+       "解分式方程必须检验。",
+       "book",
+       151
+      ],
+      [
+       "MA-S4-NA-03.8",
+       "P",
+       "分母中都含有未知数",
+       "book",
+       149
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_b54de9a96147e3b4": {
+     "m": [
+      [
+       "MA-S4-NA-03.8",
+       "P",
+       "分式的基本性质及有关运算法则",
+       "book",
+       154
+      ],
+      [
+       "MA-S4-NA-04.2",
+       "P",
+       "如何解分式方程？",
+       "book",
+       154
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_9e2eee982fe86fa6": {
+     "m": [
+      [
+       "MA-S4-NA-03.8",
+       "P",
+       "分式的基本性质及有关运算法则",
+       "book",
+       154
+      ],
+      [
+       "MA-S4-NA-04.2",
+       "P",
+       "如何解分式方程？",
+       "book",
+       154
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_2aabb08d220ec51a": {
+     "m": [
+      [
+       "MA-S4-GG-04.3",
+       "T",
+       "平行四边形的对边相等、对角相等。",
+       "book",
+       160
+      ],
+      [
+       "MA-S4-GG-08.3",
+       "P",
+       "平行四边形是中心对称图形，两条对角线的交点是它的对称中心。",
+       "book",
+       159
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_22673e8ace9c3065": {
+     "m": [
+      [
+       "MA-S4-GG-04.3",
+       "T",
+       "两组对边分别相等的四边形是平行四边形。",
+       "book",
+       165
+      ]
+     ],
+     "d": 1,
+     "r": [
+      [
+       "MA-S4-GG-04.3",
+       "repeat",
+       "对角线互相平分的四边形是平行四边形。"
+      ]
+     ]
+    },
+    "tcu_1ee8c5185d878029": {
+     "m": [
+      [
+       "MA-S4-GG-04.6",
+       "T",
+       "三角形的中位线平行于第三边，且等于第三边的一半。",
+       "book",
+       177
+      ],
+      [
+       "MA-S4-GG-04.3",
+       "P",
+       "四边形 DBCF是平行四边形",
+       "book",
+       178
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_4062c89ba349f84b": {
+     "m": [
+      [
+       "MA-S4-GG-04.3",
+       "T",
+       "平行四边形还有哪些性质？",
+       "book",
+       181
+      ],
+      [
+       "MA-S4-GG-07.1",
+       "P",
+       "平行四边形是轴对称图形吗？",
+       "book",
+       181
+      ],
+      [
+       "MA-S4-GG-08.3",
+       "P",
+       "是中心对称图形吗？",
+       "book",
+       181
+      ],
+      [
+       "MA-S4-GG-04.6",
+       "P",
+       "你是怎样得到三角形的中位线定理的？",
+       "book",
+       181
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_9f1717da9aec420c": {
+     "m": [
+      [
+       "MA-S4-GG-04.3",
+       "P",
+       "平行四边形还有哪些性质？",
+       "book",
+       181
+      ],
+      [
+       "MA-S4-GG-04.6",
+       "P",
+       "你是怎样得到三角形的中位线定理的？",
+       "book",
+       181
+      ],
+      [
+       "MA-S4-GG-02.11",
+       "P",
+       "EF//AD,GH// CD",
+       "book",
+       181
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_f18f89d2d794c197": {
+     "m": [
+      [
+       "MA-S4-IP-01.2",
+       "T",
+       "分组开展宣传活动，收集能够反映宣传活动效果的数据",
+       "book",
+       186
+      ],
+      [
+       "MA-S4-SP-01.2",
+       "T",
+       "制作评价宣传效果的问卷",
+       "book",
+       186
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_64973c711dc650d2": {
+     "m": [
+      [
+       "MA-S4-GG-09.1",
+       "T",
+       "仿照埃舍尔的方法，设计一个镶嵌图案",
+       "book",
+       188
+      ],
+      [
+       "MA-S4-GG-07.1",
+       "P",
+       "它如何由一个正方形演变而成？",
+       "book",
+       188
+      ]
+     ],
+     "d": 0
     }
    }
   },
@@ -174273,6 +183210,139 @@
       ]
      ],
      "d": 0
+    },
+    "tcu_bc32591898fd81a8": {
+     "m": [
+      [
+       "MA-S1-GG-01.3",
+       "T",
+       "创作一个你喜欢的图案，并与同伴交流。",
+       "book",
+       23
+      ],
+      [
+       "MA-S1-GG-01.1",
+       "P",
+       "用身边的物品描一描，印一印。",
+       "book",
+       22
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_7d2af17be537c30b": {
+     "m": [
+      [
+       "MA-S1-NA-01.2",
+       "T",
+       "把12分成10和2。",
+       "book",
+       31
+      ],
+      [
+       "MA-S1-NA-02.1",
+       "P",
+       "我买9本练习本。",
+       "book",
+       31
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_8f0f48e1191100f6": {
+     "m": [
+      [
+       "MA-S1-NA-01.2",
+       "T",
+       "14-5=9 5+（9）= 14",
+       "book",
+       35
+      ],
+      [
+       "MA-S1-NA-02.1",
+       "P",
+       "两人一组玩一玩",
+       "book",
+       35
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_415bb990eb7c8e90": {
+     "m": [
+      [
+       "MA-S1-NA-01.2",
+       "T",
+       "结果相同， 都是9。",
+       "book",
+       40
+      ],
+      [
+       "MA-S1-NA-02.1",
+       "P",
+       "如果解决问题有困难，可以画一画。",
+       "book",
+       40
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_bd38f43e5c9ce0b1": {
+     "m": [
+      [
+       "MA-S1-NA-01.2",
+       "T",
+       "把下面的减法表填完整。",
+       "book",
+       44
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_7142c9b13d855658": {
+     "m": [
+      [
+       "MA-S1-NA-01.2",
+       "P",
+       "13-6=7",
+       "book",
+       45
+      ],
+      [
+       "MA-S1-NA-02.1",
+       "P",
+       "有13个停车位，",
+       "book",
+       45
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_b87c52889b061602": {
+     "m": [
+      [
+       "MA-S1-GG-01.3",
+       "T",
+       "与同伴合作设计一个图案，说一说用到了哪些图形。",
+       "book",
+       88
+      ],
+      [
+       "MA-S1-GG-01.1",
+       "P",
+       "找出你认识的图形。",
+       "book",
+       87
+      ],
+      [
+       "MA-S1-SP-01.1",
+       "P",
+       "找到和左上角形状相同的图形，涂一涂。",
+       "book",
+       88
+      ]
+     ],
+     "d": 0
     }
    }
   },
@@ -174412,6 +183482,708 @@
        "10 盘能装多少个鸡蛋?",
        "book",
        45
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_fb9d63edf80ef57a": {
+     "m": [],
+     "d": 1,
+     "r": [
+      [
+       "MA-S2-NA-01",
+       "unknown_point",
+       "这些数都比一万大"
+      ]
+     ]
+    },
+    "tcu_f4c702f1f725e07f": {
+     "m": [],
+     "d": 1,
+     "r": [
+      [
+       "MA-S2-NA-01",
+       "unknown_point",
+       "十个一万是十万。"
+      ]
+     ]
+    },
+    "tcu_bbdcde7f463d15ec": {
+     "m": [],
+     "d": 2,
+     "r": [
+      [
+       "MA-S2-NA-01",
+       "unknown_point",
+       "10 个十万是一百万"
+      ],
+      [
+       "MA-S2-NA-02",
+       "unknown_point",
+       "世界人口总数大约八十亿"
+      ]
+     ]
+    },
+    "tcu_c736206086481daf": {
+     "m": [],
+     "d": 1,
+     "r": [
+      [
+       "MA-S2-NA-01",
+       "unknown_point",
+       "你能读出全国总人口数吗?"
+      ]
+     ]
+    },
+    "tcu_98ffff3a9e6aba24": {
+     "m": [],
+     "d": 1,
+     "r": [
+      [
+       "MA-S2-NA-01",
+       "unknown_point",
+       "位数多的数位数相同,从高位比较大。"
+      ]
+     ]
+    },
+    "tcu_8d2ce67416a9f512": {
+     "m": [],
+     "d": 2,
+     "r": [
+      [
+       "MA-S2-NA-02",
+       "unknown_point",
+       "133800 ≈ 130000"
+      ],
+      [
+       "MA-S2-NA-01",
+       "unknown_point",
+       "约 13 万帧画面"
+      ]
+     ]
+    },
+    "tcu_6fe5a018cdbdf22f": {
+     "m": [
+      [
+       "MA-S2-NA-01.1",
+       "T",
+       "十万位、万位、百位上的 5 表示的意义有什么",
+       "book",
+       20
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_65327c36c078bd0f": {
+     "m": [
+      [
+       "MA-S2-NA-01.1",
+       "T",
+       "把上面的数先改写成以“万”为单位的数",
+       "book",
+       22
+      ],
+      [
+       "MA-S2-NA-02.1",
+       "P",
+       "如果在一则报道中,有一个数据为“约 6 万”,实际数据可能是多少呢?画出它的范围.",
+       "book",
+       23
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_37428e3efcbce494": {
+     "m": [
+      [
+       "MA-S2-IP-01.4",
+       "T",
+       "小组合作,设计“我爱祖国”主题活动的选手编码方案。",
+       "book",
+       24
+      ],
+      [
+       "MA-S2-SP-01.1",
+       "P",
+       "你收集到了哪些编码?从中你知道了哪些信息?",
+       "book",
+       25
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_80ef7cbf2bde9c91": {
+     "m": [
+      [
+       "MA-S2-GG-01.1",
+       "T",
+       "两点之间所有连线中线段最短。",
+       "book",
+       29
+      ],
+      [
+       "MA-S2-GG-01.5",
+       "P",
+       "6.25 千米长的公路",
+       "book",
+       29
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_61aece440389bee4": {
+     "m": [
+      [
+       "MA-S2-GG-01.1",
+       "T",
+       "当两条直线相交成直角时,这两条直线就互相垂直。",
+       "book",
+       30
+      ],
+      [
+       "MA-S2-GG-01.2",
+       "P",
+       "用三角板比一比。",
+       "book",
+       31
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_93992ed480ccb237": {
+     "m": [
+      [
+       "MA-S2-GG-02.1",
+       "T",
+       "用三角板平移可以画出一组平行线。",
+       "book",
+       33
+      ],
+      [
+       "MA-S2-GG-01.1",
+       "P",
+       "从下图中找出两组互相平行的线段",
+       "book",
+       32
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_d279dce34343e252": {
+     "m": [
+      [
+       "MA-S2-GG-01.2",
+       "T",
+       "找一找,说一说生活中的直角、平角和周角。",
+       "book",
+       35
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_9c61d9159c6c9456": {
+     "m": [
+      [
+       "MA-S2-GG-01.2",
+       "T",
+       "将圆平均分成 360 份",
+       "book",
+       37
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_3de40842f28eab99": {
+     "m": [
+      [
+       "MA-S2-GG-01.2",
+       "T",
+       "量角器是把半圆每份对应的角是 1°",
+       "book",
+       38
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_af4a4f56bf30472e": {
+     "m": [
+      [
+       "MA-S2-GG-01.1",
+       "T",
+       "我知道了线有线段、 射线和直线",
+       "book",
+       41
+      ],
+      [
+       "MA-S2-GG-01.2",
+       "T",
+       "我学会了用量角器量角",
+       "book",
+       41
+      ],
+      [
+       "MA-S2-GG-02.1",
+       "P",
+       "平移前后两幅图",
+       "book",
+       43
+      ],
+      [
+       "MA-S2-GG-01.4",
+       "P",
+       "折出一个长方形",
+       "book",
+       42
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_b8cc2fa5f1b44e2c": {
+     "m": [
+      [
+       "MA-S2-NA-01.2",
+       "T",
+       "18×2=36 我发现每组后面的算式",
+       "book",
+       44
+      ],
+      [
+       "MA-S2-NA-02.1",
+       "P",
+       "10 盘能装多少个鸡蛋?",
+       "book",
+       45
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_34966626b0489f70": {
+     "m": [
+      [
+       "MA-S2-NA-01.5",
+       "T",
+       "把 14 分成 10 100 40 10 和 4......",
+       "book",
+       46
+      ],
+      [
+       "MA-S2-NA-02.1",
+       "P",
+       "有多少人参加队列表演?",
+       "book",
+       46
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_3d20e74d5baa96bb": {
+     "m": [
+      [
+       "MA-S2-NA-01.2",
+       "T",
+       "你能用竖式计算 14×12 吗?",
+       "book",
+       48
+      ],
+      [
+       "MA-S2-NA-01.5",
+       "P",
+       "说一说竖式中每一步的意思。",
+       "book",
+       48
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_e8ef5e342b0a295d": {
+     "m": [
+      [
+       "MA-S2-NA-01.2",
+       "T",
+       "试一试试一试试一试试一试尝试计算 408×23,说一说要注意什么。",
+       "book",
+       52
+      ],
+      [
+       "MA-S2-NA-02.1",
+       "P",
+       "估一估,'东方红一号'绕地球 21 圈需要多少时间?",
+       "book",
+       51
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_9b0e821a541f4aa8": {
+     "m": [
+      [
+       "MA-S2-NA-02.2",
+       "T",
+       "用计算器算一算。",
+       "book",
+       54
+      ],
+      [
+       "MA-S2-NA-02.1",
+       "P",
+       "全国约 490000000 个家庭, 按每个家庭 1 台电视机计算,一年约 被浪费的电...",
+       "book",
+       55
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_b4fcd37c391fba2c": {
+     "m": [
+      [
+       "MA-S2-NA-01.5",
+       "T",
+       "先用计算器算一算 15×15,25×25,35×35,45×45,55×55,再照样子写一写",
+       "book",
+       57
+      ],
+      [
+       "MA-S2-NA-01.3",
+       "P",
+       "在运算中,有很多有趣的算式",
+       "book",
+       56
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_135c0d350f86eb22": {
+     "m": [
+      [
+       "MA-S2-NA-02.1",
+       "T",
+       "想知道座位够不够,带的钱够不够,可以估一估。",
+       "book",
+       58
+      ],
+      [
+       "MA-S2-NA-01.2",
+       "T",
+       "我想用竖式算一算",
+       "book",
+       58
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_9e8e220de16afdc5": {
+     "m": [
+      [
+       "MA-S2-NA-01.5",
+       "T",
+       "把一个数拆成整百数、整十数、一位数,再计算!",
+       "book",
+       60
+      ],
+      [
+       "MA-S2-NA-01.2",
+       "T",
+       "选一种喜欢的方法计算 369×27。",
+       "book",
+       62
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_49aabdcd55ef71f6": {
+     "m": [
+      [
+       "MA-S2-GG-01.1",
+       "T",
+       "视线不会拐弯, 都是直直",
+       "book",
+       63
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_bab6e1159d295c43": {
+     "m": [
+      [
+       "MA-S2-GG-01.1",
+       "T",
+       "图 a 是从正面拍摄的,是位置1。",
+       "book",
+       65
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_4d1f6d5af76da88a": {
+     "m": [
+      [
+       "MA-S2-NA-01.4",
+       "T",
+       "先说出下面各题的运算顺序,再计算。",
+       "book",
+       69
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_46e939bc579baab5": {
+     "m": [
+      [
+       "MA-S2-NA-01.5",
+       "T",
+       "a+b=b+a a×b=b×a",
+       "book",
+       72
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_b8df3db57cf8f606": {
+     "m": [
+      [
+       "MA-S2-NA-01.5",
+       "T",
+       "(a+b)+c=a+(b+c)",
+       "book",
+       73
+      ],
+      [
+       "MA-S2-NA-01.4",
+       "P",
+       "100-24-36=100-(24+36)",
+       "book",
+       74
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_09d3ac74748ee791": {
+     "m": [
+      [
+       "MA-S2-NA-01.5",
+       "T",
+       "(a×b)×c=a×(b×c)",
+       "book",
+       75
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_a76ced3cb39ddbb9": {
+     "m": [
+      [
+       "MA-S2-NA-01.5",
+       "T",
+       "(a+b)×c=a×c+b×c",
+       "book",
+       78
+      ],
+      [
+       "MA-S2-NA-01.2",
+       "P",
+       "试着运用乘法分配律计算 148×21。",
+       "book",
+       77
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_df72ff4977ea6c06": {
+     "m": [
+      [
+       "MA-S2-NA-01.5",
+       "P",
+       "(3×5)×4=3×(5×4)",
+       "book",
+       80
+      ],
+      [
+       "MA-S2-GG-01.7",
+       "P",
+       "这个花圃的篱笆长多少米?",
+       "book",
+       81
+      ],
+      [
+       "MA-S2-NA-02.1",
+       "P",
+       "一共有多少箱水果?",
+       "book",
+       81
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_1b12387e7a4095f1": {
+     "m": [
+      [
+       "MA-S2-NA-02.2",
+       "T",
+       "有多少条不同的路线?想一想,数一数。",
+       "book",
+       82
+      ],
+      [
+       "MA-S2-GG-01.1",
+       "P",
+       "把一个洞或一个车站看成一个点, 按顺序,不重复, 用画图的方法解决",
+       "book",
+       83
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_5b6632d3620936a0": {
+     "m": [
+      [
+       "MA-S2-GG-01.1",
+       "T",
+       "把圆柱切开,想象切开后的面是什么形状。",
+       "book",
+       84
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_a826d252dbbf6520": {
+     "m": [
+      [
+       "MA-S2-GG-01.1",
+       "T",
+       "试着根据图纸搭出立体大楼。",
+       "book",
+       86
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_d2efbefd82933a89": {
+     "m": [
+      [
+       "MA-S2-GG-02.1",
+       "T",
+       "正方体翻滚一圈,蓝色面再次朝上",
+       "book",
+       88
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_dbb56cc644dc505b": {
+     "m": [
+      [
+       "MA-S2-NA-01.4",
+       "T",
+       "减法是加法的逆运算。",
+       "book",
+       91
+      ],
+      [
+       "MA-S2-NA-02.1",
+       "P",
+       "总量=分量+分量",
+       "book",
+       90
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_ab630eaf0848643a": {
+     "m": [
+      [
+       "MA-S2-NA-02.1",
+       "T",
+       "单价、数量与总价之间有什么关系。",
+       "book",
+       92
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_65c2e0d456b65257": {
+     "m": [
+      [
+       "MA-S2-NA-02.2",
+       "T",
+       "速度、时间与路程有什么关系?",
+       "book",
+       96
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_1bd56310377bd2a6": {
+     "m": [
+      [
+       "MA-S2-NA-02.1",
+       "T",
+       "直接用 90 除以 15 就行",
+       "book",
+       98
+      ],
+      [
+       "MA-S2-NA-01.4",
+       "P",
+       "路程=速度 × 时间",
+       "book",
+       97
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_4f691a467450868e": {
+     "m": [
+      [
+       "MA-S2-SP-01.2",
+       "T",
+       "把调查的结果在下面的格子里涂一涂",
+       "book",
+       99
+      ],
+      [
+       "MA-S2-SP-01.1",
+       "P",
+       "你准备如何调查?说一说并实际调查。",
+       "book",
+       99
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_171479e8f295f7e1": {
+     "m": [
+      [
+       "MA-S2-SP-01.2",
+       "T",
+       "完成条形统计图",
+       "book",
+       102
+      ],
+      [
+       "MA-S2-SP-01.1",
+       "P",
+       "尝试将年龄分段整理,填一填。",
+       "book",
+       102
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_39678fe0552c60fd": {
+     "m": [
+      [
+       "MA-S2-SP-01.1",
+       "T",
+       "记录的数据和导航提供的相关信息一致吗?",
+       "book",
+       106
+      ],
+      [
+       "MA-S2-NA-02.1",
+       "P",
+       "步行 800 米需要 12 分钟吗?",
+       "book",
+       104
       ]
      ],
      "d": 0
@@ -177238,6 +187010,156 @@
       ]
      ],
      "d": 0
+    },
+    "4f44fb48-7e4f-6e75-b19a-969126f4cf1b": {
+     "m": [
+      [
+       "EN-S1-LS-01.8",
+       "T",
+       "Now I can greet my friends with “Hello” and “Hi”",
+       "book",
+       22
+      ],
+      [
+       "EN-S1-LK-01.15",
+       "T",
+       "use \"I'm.. ”，“He / She is..”and“We're...\" to talk about myse",
+       "book",
+       22
+      ]
+     ],
+     "d": 0
+    },
+    "0684265b-c84d-b2f3-3902-52991ff5bdcc": {
+     "m": [
+      [
+       "EN-S1-LK-01.6",
+       "T",
+       "Unit 2 My school things (Get ready)",
+       "title",
+       null
+      ]
+     ],
+     "d": 0
+    },
+    "7843a751-dbd8-ef23-38b9-310b85ad26c0": {
+     "m": [
+      [
+       "EN-S1-LK-01.7",
+       "T",
+       "What's this？ What's in Amy's schoolbag？",
+       "book",
+       26
+      ]
+     ],
+     "d": 0
+    },
+    "47ca149e-4b37-0e30-a583-ec1d87498f71": {
+     "m": [
+      [
+       "EN-S1-LK-01.7",
+       "T",
+       "What's this？",
+       "book",
+       26
+      ],
+      [
+       "EN-S1-LK-01.6",
+       "P",
+       "It's a book",
+       "book",
+       26
+      ]
+     ],
+     "d": 0
+    },
+    "466045b5-cd98-d684-b9a6-9dc2835881bf": {
+     "m": [
+      [
+       "EN-S1-LK-01.7",
+       "T",
+       "Unit 2_Start up_1 Read and answer",
+       "title",
+       null
+      ]
+     ],
+     "d": 0
+    },
+    "48118fe3-7387-a1a8-0dba-4d76fe644c7e": {
+     "m": [
+      [
+       "EN-S1-LK-01.7",
+       "T",
+       "What's this？ Oh, it's a pen.",
+       "book",
+       28
+      ],
+      [
+       "EN-S1-LK-01.9",
+       "P",
+       "Is it a penci？  Yes, it is. / No, it isn't.",
+       "book",
+       27
+      ]
+     ],
+     "d": 0
+    },
+    "4abc6332-7430-b8bd-4ab6-ce1c602ed84e": {
+     "m": [
+      [
+       "EN-S1-LK-01.6",
+       "T",
+       "What colour is it！ It's..",
+       "book",
+       44
+      ],
+      [
+       "EN-S1-LK-01.9",
+       "T",
+       "What colour is it！ It's..",
+       "book",
+       44
+      ]
+     ],
+     "d": 0
+    },
+    "3bd665ba-19e6-4609-daff-85706976e7f1": {
+     "m": [
+      [
+       "EN-S1-LK-01.6",
+       "T",
+       "What colour is it！ It's..",
+       "book",
+       44
+      ],
+      [
+       "EN-S1-LK-01.9",
+       "T",
+       "What colour is it！ It's..",
+       "book",
+       44
+      ]
+     ],
+     "d": 0
+    },
+    "fb7baca5-d218-059d-cfc3-78db168d0f91": {
+     "m": [
+      [
+       "EN-S1-LK-01.6",
+       "T",
+       "What colour is it！ It's..",
+       "book",
+       44
+      ],
+      [
+       "EN-S1-LK-01.9",
+       "T",
+       "What colour is it！ It's..",
+       "book",
+       44
+      ]
+     ],
+     "d": 0
     }
    }
   },
@@ -177970,6 +187892,44 @@
       ]
      ],
      "d": 0
+    },
+    "tcu_01a61c05f00dd3a2": {
+     "m": [
+      [
+       "MA-S1-GG-01.1",
+       "P",
+       "拿个圆圆的物品跑回来",
+       "book",
+       14
+      ]
+     ],
+     "d": 1,
+     "r": [
+      [
+       "MA-S1-NA-01",
+       "unknown_point",
+       "开几朵？ 我们还少一朵。 开四朵。"
+      ]
+     ]
+    },
+    "tcu_da69be080e935878": {
+     "m": [
+      [
+       "MA-S1-NA-01.2",
+       "T",
+       "为什么3+0和3-0 的结果都是3？",
+       "book",
+       42
+      ],
+      [
+       "MA-S1-NA-02.1",
+       "P",
+       "猜一猜，每个盒子里可能还有哪些卡片？",
+       "book",
+       44
+      ]
+     ],
+     "d": 0
     }
    }
   },
@@ -178211,6 +188171,771 @@
        "利用附页2中的图3， 动手画出七巧板吧！",
        "book",
        60
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_225f91ec77949a9c": {
+     "m": [
+      [
+       "MA-S1-NA-01.2",
+       "T",
+       "算一算，他们分别得了多少分？谁获胜？",
+       "book",
+       7
+      ],
+      [
+       "MA-S1-NA-02.1",
+       "P",
+       "每人投3次， 总分高的获胜！",
+       "book",
+       6
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_6316afdfdd7c3882": {
+     "m": [
+      [
+       "MA-S1-NA-01.2",
+       "T",
+       "90-45-25= （ ）",
+       "book",
+       8
+      ],
+      [
+       "MA-S1-NA-02.1",
+       "P",
+       "你知道了哪些数学信息？你想提出什么数学问题？",
+       "book",
+       8
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_74158b35bb282212": {
+     "m": [
+      [
+       "MA-S1-NA-01.2",
+       "T",
+       "52-9+15=（）",
+       "book",
+       10
+      ],
+      [
+       "MA-S1-NA-02.1",
+       "P",
+       "合唱队人数比原来多了还是少了？画一画，说一说。",
+       "book",
+       10
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_b4964588904e136d": {
+     "m": [
+      [
+       "MA-S1-NA-01.2",
+       "T",
+       "56+21+18 48+32-16 39-13+47 96-34-35 57+22-45 100-69+25",
+       "book",
+       13
+      ],
+      [
+       "MA-S1-NA-02.1",
+       "P",
+       "买哪几种玩具正好需要花100元？",
+       "book",
+       12
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_ebc886ca407c4f85": {
+     "m": [
+      [
+       "MA-S1-GG-01.3",
+       "T",
+       "试着折出一张长桌",
+       "book",
+       14
+      ],
+      [
+       "MA-S1-GG-01.1",
+       "P",
+       "长桌像长方体",
+       "book",
+       14
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_602ff5141b41a62e": {
+     "m": [
+      [
+       "MA-S1-GG-01.3",
+       "T",
+       "把一张长方形纸条一卷出很多个大小不同的圆圈",
+       "book",
+       16
+      ],
+      [
+       "MA-S1-GG-01.1",
+       "P",
+       "卷成的圆柱有的粗、",
+       "book",
+       16
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_21ea8d08805092c8": {
+     "m": [
+      [
+       "MA-S1-GG-01.3",
+       "T",
+       "得到了6个长方形",
+       "book",
+       18
+      ],
+      [
+       "MA-S1-GG-01.1",
+       "P",
+       "长方体盒子",
+       "book",
+       18
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_18d6e82cbed452c3": {
+     "m": [
+      [
+       "MA-S1-NA-01.2",
+       "T",
+       "用13根小棒可以搭几个正方形？还剩几根？",
+       "book",
+       20
+      ],
+      [
+       "MA-S1-NA-02.1",
+       "P",
+       "平均分给5个小朋友。",
+       "book",
+       21
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_53e420cfc7e533de": {
+     "m": [
+      [
+       "MA-S1-NA-01.2",
+       "T",
+       "除数是6，余数一定比除数小。",
+       "book",
+       23
+      ],
+      [
+       "MA-S1-NA-02.1",
+       "P",
+       "用小棒搭台，余数可能是多少？",
+       "book",
+       23
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_4309b57ac868cc55": {
+     "m": [
+      [
+       "MA-S1-NA-02.1",
+       "T",
+       "每盘放8个，可以放几盘？还剩几个？",
+       "book",
+       24
+      ],
+      [
+       "MA-S1-NA-01.2",
+       "P",
+       "平均分给7只小松鼠，每只小松鼠分到几个",
+       "book",
+       24
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_54c9f578bc1090b0": {
+     "m": [
+      [
+       "MA-S1-NA-02.1",
+       "T",
+       "至少要租几条船？做一做，说一说。",
+       "book",
+       26
+      ],
+      [
+       "MA-S1-NA-01.2",
+       "P",
+       "每4人坐1条船，可余数是2",
+       "book",
+       27
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_74e3bdf904206d45": {
+     "m": [
+      [
+       "MA-S1-NA-02.1",
+       "T",
+       "圈一圈，填一填。结合分物过程，说一说算式中每个数的意思。",
+       "book",
+       30
+      ],
+      [
+       "MA-S1-NA-01.2",
+       "P",
+       "买7本余1元，买 8 本钱就不够了。",
+       "book",
+       29
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_0692d5b9bf72dd84": {
+     "m": [
+      [
+       "MA-S1-IP-01.3",
+       "T",
+       "你对时、分、秒有哪些了解？借助钟面拨一拨，说一说。",
+       "book",
+       32
+      ],
+      [
+       "MA-S1-IP-01.6",
+       "P",
+       "在四项比赛中选择三项参加，记录你从开始比赛到三项比赛都结束一共用了多长时间。",
+       "book",
+       32
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_976a0bc3046a62b1": {
+     "m": [
+      [
+       "MA-S1-IP-01.3",
+       "T",
+       "90秒=1分30秒，",
+       "book",
+       33
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_84329ce5ccf8f41c": {
+     "m": [
+      [
+       "MA-S1-IP-01.3",
+       "T",
+       "怎样记录完成三项比赛一共用了多长时间？",
+       "book",
+       34
+      ],
+      [
+       "MA-S1-IP-01.6",
+       "P",
+       "小组合作，在同伴参加比赛时， 小组成员互相记录时间及比赛的成绩。",
+       "book",
+       34
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_1580635fbdf14812": {
+     "m": [
+      [
+       "MA-S1-IP-01.3",
+       "T",
+       "能说出钟表上的时间，了解时、分、秒之间的关系",
+       "book",
+       35
+      ],
+      [
+       "MA-S1-NA-02.1",
+       "P",
+       "比一比，大家完成比赛用的时间一样吗？结束时间和你估计的接近吗？",
+       "book",
+       35
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_8b682f776b7b2995": {
+     "m": [
+      [
+       "MA-S1-NA-02.1",
+       "P",
+       "生活中还有哪些大数？读一读，说一说。",
+       "book",
+       37
+      ]
+     ],
+     "d": 1,
+     "r": [
+      [
+       "MA-S1-NA-01",
+       "unknown_point",
+       "试着数出二百一十五，说一说你是怎么数的。"
+      ]
+     ]
+    },
+    "tcu_ea76a00885e16e60": {
+     "m": [
+      [
+       "MA-S1-NA-01.2",
+       "P",
+       "99+1=100",
+       "book",
+       38
+      ]
+     ],
+     "d": 1,
+     "r": [
+      [
+       "MA-S1-NA-01",
+       "unknown_point",
+       "千位上1个珠子表示1个千。"
+      ]
+     ]
+    },
+    "tcu_00fc77c3afb1cb05": {
+     "m": [
+      [
+       "MA-S1-NA-02.1",
+       "P",
+       "说一说，生活中有哪些大数？",
+       "book",
+       42
+      ]
+     ],
+     "d": 1,
+     "r": [
+      [
+       "MA-S1-NA-01",
+       "unknown_point",
+       "九千九百九十九再添1个是一万。"
+      ]
+     ]
+    },
+    "tcu_197e05b1f420e465": {
+     "m": [
+      [
+       "MA-S1-NA-01.1",
+       "T",
+       "整理学过的数位，填一填，说一说。",
+       "book",
+       43
+      ],
+      [
+       "MA-S1-NA-02.1",
+       "P",
+       "数说西藏 2022年，西藏全区有",
+       "book",
+       43
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_c507b39534442fc7": {
+     "m": [
+      [
+       "MA-S1-NA-01.1",
+       "T",
+       "先看最高位⋯⋯",
+       "book",
+       46
+      ],
+      [
+       "MA-S1-NA-02.1",
+       "P",
+       "哪座山最高？",
+       "book",
+       46
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_51c291c3754d1e20": {
+     "m": [
+      [
+       "MA-S1-NA-02.1",
+       "T",
+       "估一估，这个故事有多少个字？",
+       "book",
+       49
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_fa9d51252d01d65a": {
+     "m": [
+      [
+       "MA-S1-NA-02.1",
+       "T",
+       "2800 张纸大约有多厚呢？",
+       "book",
+       51
+      ],
+      [
+       "MA-S1-NA-01.1",
+       "P",
+       "2800 张纸",
+       "book",
+       51
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_20fe86871927c854": {
+     "m": [
+      [
+       "MA-S1-NA-01.1",
+       "T",
+       "2441=2000 +400+40+1",
+       "book",
+       53
+      ],
+      [
+       "MA-S1-NA-02.1",
+       "P",
+       "结合本单元的内容，说一说中国石油钻井深度的变化。",
+       "book",
+       53
+      ],
+      [
+       "MA-S1-NA-01.2",
+       "P",
+       "找规律，填一填。",
+       "book",
+       55
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_f8d82a066d45ced0": {
+     "m": [
+      [
+       "MA-S1-GG-01.1",
+       "T",
+       "这些都是平行四边形。",
+       "book",
+       56
+      ],
+      [
+       "MA-S1-GG-01.2",
+       "P",
+       "右图中有哪些你认识的图形？",
+       "book",
+       57
+      ],
+      [
+       "MA-S1-GG-01.3",
+       "P",
+       "用附页2中的图2做出3个你认识的图形。",
+       "book",
+       57
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_1cc5b687d131c6c6": {
+     "m": [
+      [
+       "MA-S1-GG-01.1",
+       "T",
+       "小棒的长度没变……",
+       "book",
+       58
+      ],
+      [
+       "MA-S1-GG-01.2",
+       "P",
+       "下面哪些图形是平行四边形？涂一涂，说一说。",
+       "book",
+       59
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_16911dd67630a932": {
+     "m": [
+      [
+       "MA-S1-GG-01.3",
+       "T",
+       "找出五巧板中你认识的图形， 说一说。",
+       "book",
+       61
+      ],
+      [
+       "MA-S1-GG-01.1",
+       "P",
+       "你是怎样画出七巧板的？与同伴交流。",
+       "book",
+       61
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_3bfcbb4a5525bcb9": {
+     "m": [
+      [
+       "MA-S1-GG-01.3",
+       "T",
+       "想办法拼出长长方形",
+       "book",
+       62
+      ],
+      [
+       "MA-S1-GG-01.1",
+       "P",
+       "长方形是长长方方的",
+       "book",
+       62
+      ],
+      [
+       "MA-S1-GG-01.2",
+       "P",
+       "你还能再拼出一个长方形吗？想一想，做一做。",
+       "book",
+       63
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_b6c29b4d51dbe935": {
+     "m": [
+      [
+       "MA-S1-NA-01.2",
+       "T",
+       "400+300=700",
+       "book",
+       66
+      ],
+      [
+       "MA-S1-NA-02.1",
+       "P",
+       "第一批一共种了多少棵菜？",
+       "book",
+       66
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_8a2cb38ebe5a3690": {
+     "m": [
+      [
+       "MA-S1-NA-01.2",
+       "T",
+       "92 +300=392",
+       "book",
+       68
+      ],
+      [
+       "MA-S1-NA-01.1",
+       "P",
+       "相同数位要对齐。",
+       "book",
+       68
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_fc93754694be51c5": {
+     "m": [
+      [
+       "MA-S1-NA-01.2",
+       "T",
+       "72+90=162",
+       "book",
+       70
+      ],
+      [
+       "MA-S1-NA-01.1",
+       "P",
+       "用竖式计算，相同如果有进位，别忘了数位要对齐……",
+       "book",
+       71
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_14122887e32e95bb": {
+     "m": [
+      [
+       "MA-S1-NA-01.2",
+       "T",
+       "用竖式计算减法时要注意什么？",
+       "book",
+       73
+      ],
+      [
+       "MA-S1-NA-02.1",
+       "P",
+       "有多少只蝌蚪没有变成青蛙？",
+       "book",
+       73
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_c0d1b56b2114967b": {
+     "m": [
+      [
+       "MA-S1-NA-01.2",
+       "T",
+       "这就是验算，可以帮助我们减少错误。",
+       "book",
+       75
+      ],
+      [
+       "MA-S1-NA-02.1",
+       "P",
+       "付给售货员阿姨300元，找回44元，对吗？",
+       "book",
+       75
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_b41b3a25f87b3e3f": {
+     "m": [
+      [
+       "MA-S1-NA-02.1",
+       "T",
+       "乐乐家到学校有多少米？",
+       "book",
+       79
+      ],
+      [
+       "MA-S1-NA-01.2",
+       "P",
+       "264+360=624（米）",
+       "book",
+       79
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_a15a72887b55465e": {
+     "m": [
+      [
+       "MA-S1-NA-01.2",
+       "T",
+       "同数位要对齐",
+       "book",
+       80
+      ],
+      [
+       "MA-S1-NA-02.1",
+       "P",
+       "第二次调查，陕西省有多少只野生大熊猫？",
+       "book",
+       80
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_f8a2cbf850dd765d": {
+     "m": [
+      [
+       "MA-S1-SP-01.1",
+       "T",
+       "按上面标准把全班同学分为两组，分一分，数一数。",
+       "book",
+       83
+      ],
+      [
+       "MA-S1-NA-02.1",
+       "P",
+       "分一分，数一数。",
+       "book",
+       83
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_b64f5e28fece5510": {
+     "m": [
+      [
+       "MA-S1-SP-01.1",
+       "T",
+       "购买门票时需要怎样分类？分一分，记录每一类的人数。",
+       "book",
+       85
+      ],
+      [
+       "MA-S1-NA-02.1",
+       "P",
+       "分一分，记录每一类的人数。",
+       "book",
+       85
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_b1a7f5a09547c06b": {
+     "m": [
+      [
+       "MA-S1-SP-01.1",
+       "T",
+       "可以先按形状分， 再按扣眼数分.",
+       "book",
+       87
+      ],
+      [
+       "MA-S1-NA-02.1",
+       "P",
+       "怎样记录分类结果？想一想，说一说。",
+       "book",
+       87
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_8b43006a3732aa8e": {
+     "m": [
+      [
+       "MA-S1-IP-01.5",
+       "T",
+       "怎样用身体上的尺子测量长度呢？",
+       "book",
+       89
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_0016bf72b8036fa0": {
+     "m": [
+      [
+       "MA-S1-IP-01.5",
+       "T",
+       "记录测量的结果，并说一说测量的过程。",
+       "book",
+       90
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_dc373c6f556f5d5e": {
+     "m": [
+      [
+       "MA-S1-IP-01.5",
+       "P",
+       "在班级分享小组的测量结果，说一说测量过程中的故事。",
+       "book",
+       91
       ]
      ],
      "d": 0
@@ -181187,6 +191912,690 @@
        "suggest ways to live a green life.",
        "book",
        88
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_65ebc58c5a2940c7": {
+     "m": [
+      [
+       "EN-S3-TH-01.5",
+       "T",
+       "Which life stage are you at? And what should you do？",
+       "book",
+       9
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_71aa8b42a72f8063": {
+     "m": [
+      [
+       "EN-S3-CA-03.2",
+       "T",
+       "it was my responsibility to keep the art alive",
+       "book",
+       11
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_5310a9cfe9a3c566": {
+     "m": [
+      [
+       "EN-S3-LK-01.3",
+       "T",
+       "Stressing words in sentences",
+       "book",
+       15
+      ],
+      [
+       "EN-S3-LS-01.2",
+       "P",
+       "Listen and choose what the recording is.",
+       "book",
+       15
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_7919492c87aa5eb1": {
+     "m": [
+      [
+       "EN-S3-LS-01.6",
+       "T",
+       "Read the passage and check your answers.",
+       "book",
+       18
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_c7eeabe8cc9671e0": {
+     "m": [
+      [
+       "EN-S3-LS-01.68",
+       "T",
+       "I would like to recommend... as a role model for our class.",
+       "book",
+       22
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_b55996630f62690f": {
+     "m": [
+      [
+       "EN-S3-LK-01.15",
+       "T",
+       "use adverbial clauses with jf and because to talk about the ",
+       "book",
+       23
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_3b3623ed65fa65e4": {
+     "m": [
+      [
+       "EN-S3-TH-01.8",
+       "T",
+       "Understanding money",
+       "book",
+       25
+      ],
+      [
+       "EN-S3-LS-01.17",
+       "P",
+       "What fun facts about money do you know？",
+       "book",
+       25
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_7f534a3f943b6ea2": {
+     "m": [
+      [
+       "EN-S3-TH-01.8",
+       "T",
+       "The key is not how much money we have, but how we use it.",
+       "book",
+       27
+      ],
+      [
+       "EN-S3-LS-01.8",
+       "P",
+       "find out how Money the dog helps Kira G manage her money.",
+       "book",
+       26
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_1fe3c877282ab52b": {
+     "m": [
+      [
+       "EN-S3-LS-01.2",
+       "T",
+       "Listen to the ad and choose its Learning to learn purpose.",
+       "book",
+       31
+      ],
+      [
+       "EN-S3-TH-01.8",
+       "P",
+       "Run to raise money",
+       "book",
+       32
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_902f25e0d844c999": {
+     "m": [
+      [
+       "EN-S3-LS-01.6",
+       "T",
+       "find out the writer's opinion",
+       "book",
+       34
+      ],
+      [
+       "EN-S3-TX-01.2",
+       "P",
+       "The story is about Della and Jim",
+       "book",
+       35
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_850f0664aae9693a": {
+     "m": [
+      [
+       "EN-S3-LS-01.17",
+       "T",
+       "using your pocket money",
+       "book",
+       38
+      ],
+      [
+       "EN-S3-TH-01.8",
+       "P",
+       "pocket money",
+       "book",
+       38
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_0f8502e3218ebe6e": {
+     "m": [
+      [
+       "EN-S3-LK-01.15",
+       "T",
+       "use adverbial clauses",
+       "book",
+       39
+      ],
+      [
+       "EN-S3-TH-01.8",
+       "P",
+       "the use of money",
+       "book",
+       39
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_65d6225529d7ac3a": {
+     "m": [
+      [
+       "EN-S3-LC-01.7",
+       "T",
+       "Look at the picture and answer",
+       "book",
+       41
+      ],
+      [
+       "EN-S3-TH-01.14",
+       "P",
+       "Understanding history",
+       "book",
+       41
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_9151755e30908399": {
+     "m": [
+      [
+       "EN-S3-CA-01.2",
+       "T",
+       "The finds at Sanxingdui",
+       "book",
+       43
+      ],
+      [
+       "EN-S3-LC-01.7",
+       "P",
+       "Read the speech.",
+       "book",
+       42
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_0613dd0bdb17ca67": {
+     "m": [
+      [
+       "EN-S3-LS-01.2",
+       "T",
+       "Listen to the guide's introduction",
+       "book",
+       47
+      ],
+      [
+       "EN-S3-LK-01.4",
+       "P",
+       "Linking sounds",
+       "book",
+       47
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_8e9e8f1bf38cfed0": {
+     "m": [
+      [
+       "EN-S3-LS-01.6",
+       "T",
+       "Read the passage and check your prediction.",
+       "book",
+       50
+      ],
+      [
+       "EN-S3-LK-01.7",
+       "P",
+       "ancient creativity past technology",
+       "book",
+       50
+      ],
+      [
+       "EN-S3-TQ-01.1",
+       "P",
+       "The past comes to life for us to see and feel.",
+       "book",
+       50
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_2717358fc473132b": {
+     "m": [
+      [
+       "EN-S3-LS-01.20",
+       "T",
+       "Organise your ideas with the help of the following outline",
+       "book",
+       54
+      ],
+      [
+       "EN-S3-LA-03.1",
+       "P",
+       "Work in groups.",
+       "book",
+       54
+      ],
+      [
+       "EN-S3-LK-01.16",
+       "P",
+       "Introduction Introducing the historical topic",
+       "book",
+       54
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_272adb05ca1fb550": {
+     "m": [
+      [
+       "EN-S3-LK-01.14",
+       "T",
+       "use adverbial clauses with such / so... that and so that",
+       "book",
+       55
+      ],
+      [
+       "EN-S3-LS-01.68",
+       "P",
+       "explain the importance of learning about and passing on hist",
+       "book",
+       55
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_8374206611ef330d": {
+     "m": [
+      [
+       "EN-S3-LK-01.10",
+       "T",
+       "Who is your hero？",
+       "book",
+       57
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_de9903606a15adff": {
+     "m": [
+      [
+       "EN-S3-LS-01.11",
+       "T",
+       "she was a brave soldier who never gave in.",
+       "book",
+       58
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_1fc41b8cb3d13a32": {
+     "m": [
+      [
+       "EN-S3-LS-01.26",
+       "T",
+       "Noticing the way people speak can help us understand them be",
+       "book",
+       63
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_41344b3f779a6f6a": {
+     "m": [
+      [
+       "EN-S3-LC-01.7",
+       "T",
+       "Read the passage and check your prediction.",
+       "book",
+       66
+      ],
+      [
+       "EN-S3-CK-01.2",
+       "P",
+       "His name was Yuan Longping.",
+       "book",
+       66
+      ],
+      [
+       "EN-S3-LC-02.1",
+       "P",
+       "Predict what the passage is about.",
+       "book",
+       66
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_8ae299426decf842": {
+     "m": [
+      [
+       "EN-S3-LS-01.17",
+       "T",
+       "Make a short video",
+       "book",
+       70
+      ],
+      [
+       "EN-S3-CK-01.2",
+       "P",
+       "local hero",
+       "book",
+       70
+      ],
+      [
+       "EN-S3-TH-01.20",
+       "P",
+       "A promising nation cannot",
+       "book",
+       70
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_a72f246fa348468c": {
+     "m": [
+      [
+       "EN-S3-LK-01.14",
+       "T",
+       "use attributive clauses",
+       "book",
+       71
+      ],
+      [
+       "EN-S3-LC-01.3",
+       "T",
+       "use words and expressions",
+       "book",
+       71
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_b8c8f4ba502a6cf8": {
+     "m": [
+      [
+       "EN-S3-LS-01.7",
+       "T",
+       "Look at the pictures and match them with the words.",
+       "book",
+       73
+      ],
+      [
+       "EN-S3-TH-01.26",
+       "P",
+       "How can people influence nature？",
+       "book",
+       73
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_daf105f87d11620d": {
+     "m": [
+      [
+       "EN-S3-LS-01.6",
+       "T",
+       "Read the passage and check your prediction.",
+       "book",
+       74
+      ],
+      [
+       "EN-S3-LS-01.7",
+       "P",
+       "Predict what the passage is about.",
+       "book",
+       74
+      ],
+      [
+       "EN-S3-TH-01.26",
+       "P",
+       "what would happen to the natural world if people were gone?",
+       "book",
+       74
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_564ac9247ea55598": {
+     "m": [
+      [
+       "EN-S3-LK-01.4",
+       "T",
+       "Function words like a（n）， the, that, of, etc.， are usually i",
+       "book",
+       79
+      ],
+      [
+       "EN-S3-LS-01.2",
+       "P",
+       "Listen again and tick True or False.",
+       "book",
+       80
+      ],
+      [
+       "EN-S3-TH-01.26",
+       "P",
+       "How much do you know about rainforests？",
+       "book",
+       80
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_dfabd066d3d09117": {
+     "m": [
+      [
+       "EN-S3-LS-01.8",
+       "T",
+       "find out why the panda",
+       "book",
+       82
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_44d5f45deaf435ff": {
+     "m": [
+      [
+       "EN-S3-LS-01.17",
+       "T",
+       "Make a nature protection plan.",
+       "book",
+       86
+      ],
+      [
+       "EN-S3-TH-01.26",
+       "P",
+       "Water pollution",
+       "book",
+       86
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_f9c44cf27e52a455": {
+     "m": [
+      [
+       "EN-S3-LK-01.14",
+       "T",
+       "use attributive clauses with that and which",
+       "book",
+       87
+      ],
+      [
+       "EN-S3-LS-01.17",
+       "P",
+       "Practise and present your plan to the class.",
+       "book",
+       87
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_4e9c5628c42e1a04": {
+     "m": [
+      [
+       "EN-S3-TH-01.27",
+       "T",
+       "What green living ideas are shown in the picture？",
+       "book",
+       89
+      ],
+      [
+       "EN-S3-LS-01.17",
+       "P",
+       "Look at the picture and answer the questions.",
+       "book",
+       89
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_bbaece7e77a9db36": {
+     "m": [
+      [
+       "EN-S3-LS-01.6",
+       "T",
+       "find out whether plastic has made life better or worse.",
+       "book",
+       90
+      ],
+      [
+       "EN-S3-TH-01.27",
+       "P",
+       "danger to sea animals",
+       "book",
+       91
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_47ce5cc2e62a87b5": {
+     "m": [
+      [
+       "EN-S3-TH-01.27",
+       "T",
+       "The green idea of \"3Rs\"",
+       "book",
+       95
+      ],
+      [
+       "EN-S3-LK-01.3",
+       "P",
+       "Function words are often unstressed in normal speech.",
+       "book",
+       95
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_4af645a393b0a81c": {
+     "m": [
+      [
+       "EN-S3-LS-01.7",
+       "T",
+       "Look at the title and the pictures. Talk about what may happ",
+       "book",
+       98
+      ],
+      [
+       "EN-S3-LS-01.6",
+       "P",
+       "Read the story and check your prediction.",
+       "book",
+       98
+      ],
+      [
+       "EN-S3-TX-01.2",
+       "P",
+       "Read the story and check your prediction.",
+       "book",
+       98
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_2f3418dd3cc09f34": {
+     "m": [
+      [
+       "EN-S3-LS-01.68",
+       "T",
+       "Make a report on your family's environmental habits.",
+       "book",
+       102
+      ],
+      [
+       "EN-S3-LK-01.10",
+       "P",
+       "You may use the following language tips or find useful expre",
+       "book",
+       102
+      ],
+      [
+       "EN-S3-LS-01.69",
+       "P",
+       "Introduction stating the purpose or main idea of your report",
+       "book",
+       102
+      ]
+     ],
+     "d": 0
+    },
+    "tcu_6c2e04bd49535337": {
+     "m": [
+      [
+       "EN-S3-LS-01.17",
+       "T",
+       "Practise and present your report to the class.",
+       "book",
+       103
+      ],
+      [
+       "EN-S3-LK-01.7",
+       "P",
+       "use words and expressions in the unit to talk about green li",
+       "book",
+       103
+      ],
+      [
+       "EN-S3-TH-01.27",
+       "P",
+       "environmental problems.",
+       "book",
+       103
       ]
      ],
      "d": 0

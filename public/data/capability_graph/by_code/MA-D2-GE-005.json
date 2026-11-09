@@ -94,6 +94,71 @@
   "curriculum_alignments": [
     {
       "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_ade400164139298f",
+      "alignment_type": "practices",
+      "confidence": 0.92,
+      "coverage": "partial",
+      "edition_id": "ed_1ff36a7d6984de2292ee",
+      "evidence_basis": "textbook_page_span",
+      "evidence_gap": null,
+      "evidence_level": "L3_page_evidence",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_primary_grade_3_up",
+        "tes_bbd8393f8dec9297",
+        "textbook-node:tcn_d7918917a7f8ac9a",
+        "textbook-unit:tcu_06da880204671671"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "想一想,填上合适的长度单位。",
+          "excerpt_hash": "92b9bd7ed9af38bea0a698ee6af208f389873de350ac5e6d4f35309d5842b08a",
+          "pdf_page": 19,
+          "printed_page": "14",
+          "span_id": "tes_bbd8393f8dec9297"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_b07e86692efaa1c0",
+        "lc_08809dd6ae12b0a4",
+        "lc_f575ab73d98d3bd7"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_b07e86692efaa1c0",
+          "label": "选择合适的长度单位"
+        },
+        {
+          "component_id": "lc_08809dd6ae12b0a4",
+          "label": "描述长度单位千米、分米、毫米"
+        },
+        {
+          "component_id": "lc_f575ab73d98d3bd7",
+          "label": "进行长度单位之间的换算"
+        }
+      ],
+      "level": "page",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_d7918917a7f8ac9a",
+      "node_title": "想一想,填上合适的长度单位。",
+      "pdf_page": 19,
+      "printed_page": "14",
+      "publication_status": "published",
+      "rationale": "教材练习“想一想,填上合适的长度单位。”与课标 MA-D2-GE-005 的可教学小能力“选择合适的长度单位、描述长度单位千米、分米、毫米、进行长度单位之间的换算”形成页内证据匹配。",
+      "relation_type": "practices",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "textbook_grade": 3,
+      "textbook_subject": "数学",
+      "textbook_title": "数学3年级上册",
+      "textbook_volume": "上册",
+      "unit_id": "tcu_06da880204671671",
+      "unit_title": "第二单元 测量（二）"
+    },
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
       "alignment_id": "tca_5a36c239be10bbee",
       "alignment_type": "practices",
       "confidence": 0.86,
@@ -211,71 +276,6 @@
       "printed_page": "21",
       "publication_status": "published",
       "rationale": "教材练习“想一想,我们认识了哪些长度单位?用自己喜欢的方式整理出来。”与课标 MA-D2-GE-005 的可教学小能力“描述长度单位千米、分米、毫米、选择合适的长度单位、进行长度单位之间的换算”形成页内证据匹配。",
-      "relation_type": "practices",
-      "resource_type": "student_textbook",
-      "review_status": "machine_checked",
-      "revision_status": "current_confirmed",
-      "textbook_grade": 3,
-      "textbook_subject": "数学",
-      "textbook_title": "数学3年级上册",
-      "textbook_volume": "上册",
-      "unit_id": "tcu_06da880204671671",
-      "unit_title": "第二单元 测量（二）"
-    },
-    {
-      "algorithm_version": "component-evidence-hybrid-v3",
-      "alignment_id": "tca_ade400164139298f",
-      "alignment_type": "practices",
-      "confidence": 0.92,
-      "coverage": "partial",
-      "edition_id": "ed_1ff36a7d6984de2292ee",
-      "evidence_basis": "textbook_page_span",
-      "evidence_gap": null,
-      "evidence_level": "L3_page_evidence",
-      "evidence_refs": [
-        "external_smartedu_2026_bsd_math_primary_grade_3_up",
-        "tes_bbd8393f8dec9297",
-        "textbook-node:tcn_d7918917a7f8ac9a",
-        "textbook-unit:tcu_06da880204671671"
-      ],
-      "evidence_role": "direct_textbook",
-      "evidence_spans": [
-        {
-          "evidence_role": "direct_textbook",
-          "excerpt": "想一想,填上合适的长度单位。",
-          "excerpt_hash": "92b9bd7ed9af38bea0a698ee6af208f389873de350ac5e6d4f35309d5842b08a",
-          "pdf_page": 19,
-          "printed_page": "14",
-          "span_id": "tes_bbd8393f8dec9297"
-        }
-      ],
-      "learning_component_ids": [
-        "lc_b07e86692efaa1c0",
-        "lc_08809dd6ae12b0a4",
-        "lc_f575ab73d98d3bd7"
-      ],
-      "learning_components": [
-        {
-          "component_id": "lc_b07e86692efaa1c0",
-          "label": "选择合适的长度单位"
-        },
-        {
-          "component_id": "lc_08809dd6ae12b0a4",
-          "label": "描述长度单位千米、分米、毫米"
-        },
-        {
-          "component_id": "lc_f575ab73d98d3bd7",
-          "label": "进行长度单位之间的换算"
-        }
-      ],
-      "level": "page",
-      "method": "component_evidence_hybrid",
-      "node_id": "tcn_d7918917a7f8ac9a",
-      "node_title": "想一想,填上合适的长度单位。",
-      "pdf_page": 19,
-      "printed_page": "14",
-      "publication_status": "published",
-      "rationale": "教材练习“想一想,填上合适的长度单位。”与课标 MA-D2-GE-005 的可教学小能力“选择合适的长度单位、描述长度单位千米、分米、毫米、进行长度单位之间的换算”形成页内证据匹配。",
       "relation_type": "practices",
       "resource_type": "student_textbook",
       "review_status": "machine_checked",

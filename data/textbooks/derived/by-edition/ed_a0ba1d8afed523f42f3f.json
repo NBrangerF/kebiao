@@ -1183,7 +1183,7 @@
   ],
   "audit": {
     "approved_page_map_count": 133,
-    "approved_toc_entry_count": 63,
+    "approved_toc_entry_count": 65,
     "candidate_toc_entry_count": 0,
     "machine_checked_toc_entry_count": 0,
     "numeric_page_offset": 5,
@@ -1201,7 +1201,7 @@
     "algorithm_version": "component-evidence-hybrid-v3",
     "alignment_count": 20,
     "automatic_content_unit_count": 0,
-    "content_node_count": 324,
+    "content_node_count": 326,
     "evidence_span_count": 124,
     "generated_alignment_count": 20,
     "native_text_ratio": 0.9783,
@@ -3678,13 +3678,32 @@
       "unit_id": "tcu_4a0999eec5a2130d"
     },
     {
+      "confidence": 0.95,
+      "end_pdf_page": 57,
+      "end_printed_page": null,
+      "evidence_span_ids": [],
+      "kind": "lesson",
+      "node_id": "tcn_20ac375ab772b053",
+      "parent_id": "tcn_8849b8f6277f687d",
+      "pdf_page": 55,
+      "pdf_page_end": 57,
+      "pdf_page_start": 55,
+      "printed_page": "50",
+      "review_status": "approved",
+      "source": "verified_toc",
+      "text_excerpt": "11 桥",
+      "title": "11 桥",
+      "toc_entry_id": "tcu_e1a476eb21992528",
+      "unit_id": "tcu_e1a476eb21992528"
+    },
+    {
       "confidence": 0.98,
       "end_pdf_page": 55,
       "end_printed_page": "50",
       "evidence_span_ids": [],
       "kind": "page",
       "node_id": "tcn_f08e74c553d75eab",
-      "parent_id": "tcn_8849b8f6277f687d",
+      "parent_id": "tcn_20ac375ab772b053",
       "pdf_page": 55,
       "pdf_page_end": 55,
       "pdf_page_start": 55,
@@ -3701,7 +3720,7 @@
       "evidence_span_ids": [],
       "kind": "page",
       "node_id": "tcn_5fb1920b45d93cab",
-      "parent_id": "tcn_8849b8f6277f687d",
+      "parent_id": "tcn_20ac375ab772b053",
       "pdf_page": 56,
       "pdf_page_end": 56,
       "pdf_page_start": 56,
@@ -3778,7 +3797,7 @@
       "evidence_span_ids": [],
       "kind": "page",
       "node_id": "tcn_4a80eef7b9103ce8",
-      "parent_id": "tcn_8849b8f6277f687d",
+      "parent_id": "tcn_20ac375ab772b053",
       "pdf_page": 57,
       "pdf_page_end": 57,
       "pdf_page_start": 57,
@@ -4512,14 +4531,14 @@
     },
     {
       "confidence": 0.95,
-      "end_pdf_page": 81,
+      "end_pdf_page": 77,
       "end_printed_page": null,
       "evidence_span_ids": [],
       "kind": "lesson",
       "node_id": "tcn_65cbb767a938a063",
       "parent_id": "tcn_7114a256dd2bb2b6",
       "pdf_page": 75,
-      "pdf_page_end": 81,
+      "pdf_page_end": 77,
       "pdf_page_start": 75,
       "printed_page": "70",
       "review_status": "approved",
@@ -4581,13 +4600,32 @@
       "unit_id": "tcu_e99bed77342a4f70"
     },
     {
+      "confidence": 0.95,
+      "end_pdf_page": 81,
+      "end_printed_page": null,
+      "evidence_span_ids": [],
+      "kind": "lesson",
+      "node_id": "tcn_0c6688eb0e9674f6",
+      "parent_id": "tcn_7114a256dd2bb2b6",
+      "pdf_page": 78,
+      "pdf_page_end": 81,
+      "pdf_page_start": 78,
+      "printed_page": "73",
+      "review_status": "approved",
+      "source": "verified_toc",
+      "text_excerpt": "15 盼",
+      "title": "15 盼",
+      "toc_entry_id": "tcu_cc335e7667797d2a",
+      "unit_id": "tcu_cc335e7667797d2a"
+    },
+    {
       "confidence": 0.98,
       "end_pdf_page": 78,
       "end_printed_page": "73",
       "evidence_span_ids": [],
       "kind": "page",
       "node_id": "tcn_3514d6de5699cd87",
-      "parent_id": "tcn_65cbb767a938a063",
+      "parent_id": "tcn_0c6688eb0e9674f6",
       "pdf_page": 78,
       "pdf_page_end": 78,
       "pdf_page_start": 78,
@@ -4604,7 +4642,7 @@
       "evidence_span_ids": [],
       "kind": "page",
       "node_id": "tcn_364f2b27bcecb292",
-      "parent_id": "tcn_65cbb767a938a063",
+      "parent_id": "tcn_0c6688eb0e9674f6",
       "pdf_page": 79,
       "pdf_page_end": 79,
       "pdf_page_start": 79,
@@ -4661,7 +4699,7 @@
       "evidence_span_ids": [],
       "kind": "page",
       "node_id": "tcn_15c2f3129816a421",
-      "parent_id": "tcn_65cbb767a938a063",
+      "parent_id": "tcn_0c6688eb0e9674f6",
       "pdf_page": 80,
       "pdf_page_end": 80,
       "pdf_page_start": 80,
@@ -4678,7 +4716,7 @@
       "evidence_span_ids": [],
       "kind": "page",
       "node_id": "tcn_a025b935d40f2575",
-      "parent_id": "tcn_65cbb767a938a063",
+      "parent_id": "tcn_0c6688eb0e9674f6",
       "pdf_page": 81,
       "pdf_page_end": 81,
       "pdf_page_start": 81,
@@ -4758,8 +4796,8 @@
       "printed_page": "78",
       "review_status": "approved",
       "source": "verified_toc",
-      "text_excerpt": "爸爸的计划",
-      "title": "爸爸的计划",
+      "text_excerpt": "习作例文：爸爸的计划",
+      "title": "习作例文：爸爸的计划",
       "toc_entry_id": "tcu_de0f5847f6dea200",
       "unit_id": "tcu_de0f5847f6dea200"
     },
@@ -6784,8 +6822,8 @@
       "printed_page": "121",
       "review_status": "approved",
       "source": "verified_toc",
-      "text_excerpt": "26* 有的人—纪念鲁迅有感",
-      "title": "26* 有的人—纪念鲁迅有感",
+      "text_excerpt": "26* 有的人——纪念鲁迅有感",
+      "title": "26* 有的人——纪念鲁迅有感",
       "toc_entry_id": "tcu_c5be48df13fb2abf",
       "unit_id": "tcu_c5be48df13fb2abf"
     },
@@ -11279,11 +11317,12 @@
   ],
   "printed_toc": {
     "algorithm_version": "printed-toc-v1",
-    "approved_entry_count": 63,
+    "approved_entry_count": 65,
     "contents_pdf_pages": [
       4,
       5
     ],
+    "contents_read_from": "docs/data/textbooks/toc-transcribed/ed_a0ba1d8afed523f42f3f.tsv",
     "decision": "more_lessons",
     "evidence_policy": "printed_contents_page_number_and_title_at_page_top",
     "page_offset_source": "page_map",
@@ -11297,24 +11336,10 @@
       ],
       "units": 8
     },
-    "reused_entry_id_count": 32,
+    "reused_entry_id_count": 63,
     "review_policy": "automatic_no_human_gate",
-    "unverified_entries": [
-      {
-        "kind": "lesson",
-        "reason": "title_not_at_top_of_page",
-        "title": "11 桥",
-        "toc_pdf_page": 4,
-        "toc_printed_page": "50"
-      },
-      {
-        "kind": "lesson",
-        "reason": "title_not_at_top_of_page",
-        "title": "15 盼",
-        "toc_pdf_page": 5,
-        "toc_printed_page": "73"
-      }
-    ]
+    "unverified_entries": [],
+    "verified_share": 1
   },
   "schema_version": 2,
   "standard_scopes": [
@@ -11423,7 +11448,7 @@
       "source_order": 1,
       "title": "第一单元",
       "toc_pdf_page": 4,
-      "toc_printed_page": "1"
+      "toc_printed_page": 1
     },
     {
       "confidence": 0.95,
@@ -11445,7 +11470,7 @@
       "source_order": 2,
       "title": "1 草原",
       "toc_pdf_page": 4,
-      "toc_printed_page": "2"
+      "toc_printed_page": 2
     },
     {
       "confidence": 0.95,
@@ -11467,7 +11492,7 @@
       "source_order": 3,
       "title": "2 丁香结",
       "toc_pdf_page": 4,
-      "toc_printed_page": "5"
+      "toc_printed_page": 5
     },
     {
       "confidence": 0.95,
@@ -11489,7 +11514,7 @@
       "source_order": 4,
       "title": "3 古诗词三首",
       "toc_pdf_page": 4,
-      "toc_printed_page": "8"
+      "toc_printed_page": 8
     },
     {
       "confidence": 0.95,
@@ -11511,7 +11536,7 @@
       "source_order": 5,
       "title": "宿建德江",
       "toc_pdf_page": 4,
-      "toc_printed_page": "8"
+      "toc_printed_page": 8
     },
     {
       "confidence": 0.95,
@@ -11533,7 +11558,7 @@
       "source_order": 6,
       "title": "六月二十七日望湖楼醉书",
       "toc_pdf_page": 4,
-      "toc_printed_page": "8"
+      "toc_printed_page": 8
     },
     {
       "confidence": 0.95,
@@ -11555,7 +11580,7 @@
       "source_order": 7,
       "title": "西江月·夜行黄沙道中",
       "toc_pdf_page": 4,
-      "toc_printed_page": "9"
+      "toc_printed_page": 9
     },
     {
       "confidence": 0.95,
@@ -11577,7 +11602,7 @@
       "source_order": 8,
       "title": "习作：变形记",
       "toc_pdf_page": 4,
-      "toc_printed_page": "10"
+      "toc_printed_page": 10
     },
     {
       "confidence": 0.95,
@@ -11599,7 +11624,7 @@
       "source_order": 9,
       "title": "语文园地",
       "toc_pdf_page": 4,
-      "toc_printed_page": "11"
+      "toc_printed_page": 11
     },
     {
       "confidence": 0.95,
@@ -11663,7 +11688,7 @@
       "source_order": 10,
       "title": "第二单元",
       "toc_pdf_page": 4,
-      "toc_printed_page": "13"
+      "toc_printed_page": 13
     },
     {
       "confidence": 0.95,
@@ -11685,7 +11710,7 @@
       "source_order": 11,
       "title": "4 七律·长征",
       "toc_pdf_page": 4,
-      "toc_printed_page": "14"
+      "toc_printed_page": 14
     },
     {
       "confidence": 0.95,
@@ -11707,7 +11732,7 @@
       "source_order": 12,
       "title": "5 狼牙山五壮士",
       "toc_pdf_page": 4,
-      "toc_printed_page": "16"
+      "toc_printed_page": 16
     },
     {
       "confidence": 0.95,
@@ -11729,7 +11754,7 @@
       "source_order": 13,
       "title": "6 开国大典",
       "toc_pdf_page": 4,
-      "toc_printed_page": "19"
+      "toc_printed_page": 19
     },
     {
       "confidence": 0.95,
@@ -11751,7 +11776,7 @@
       "source_order": 14,
       "title": "7 我的战友邱少云",
       "toc_pdf_page": 4,
-      "toc_printed_page": "24"
+      "toc_printed_page": 24
     },
     {
       "confidence": 0.95,
@@ -11773,7 +11798,7 @@
       "source_order": 15,
       "title": "口语交际：演讲",
       "toc_pdf_page": 4,
-      "toc_printed_page": "27"
+      "toc_printed_page": 27
     },
     {
       "confidence": 0.95,
@@ -11795,7 +11820,7 @@
       "source_order": 16,
       "title": "习作：多彩的活动",
       "toc_pdf_page": 4,
-      "toc_printed_page": "28"
+      "toc_printed_page": 28
     },
     {
       "confidence": 0.95,
@@ -11817,7 +11842,7 @@
       "source_order": 17,
       "title": "语文园地",
       "toc_pdf_page": 4,
-      "toc_printed_page": "29"
+      "toc_printed_page": 29
     },
     {
       "confidence": 0.95,
@@ -11881,7 +11906,7 @@
       "source_order": 18,
       "title": "第三单元",
       "toc_pdf_page": 4,
-      "toc_printed_page": "31"
+      "toc_printed_page": 31
     },
     {
       "confidence": 0.95,
@@ -11903,7 +11928,7 @@
       "source_order": 19,
       "title": "8 竹节人",
       "toc_pdf_page": 4,
-      "toc_printed_page": "32"
+      "toc_printed_page": 32
     },
     {
       "confidence": 0.95,
@@ -11925,7 +11950,7 @@
       "source_order": 20,
       "title": "9 宇宙生命之谜",
       "toc_pdf_page": 4,
-      "toc_printed_page": "36"
+      "toc_printed_page": 36
     },
     {
       "confidence": 0.95,
@@ -11947,7 +11972,7 @@
       "source_order": 21,
       "title": "10* 故宫博物院",
       "toc_pdf_page": 4,
-      "toc_printed_page": "40"
+      "toc_printed_page": 40
     },
     {
       "confidence": 0.95,
@@ -11969,7 +11994,7 @@
       "source_order": 22,
       "title": "习作：让生活更美好",
       "toc_pdf_page": 4,
-      "toc_printed_page": "46"
+      "toc_printed_page": 46
     },
     {
       "confidence": 0.95,
@@ -11991,7 +12016,7 @@
       "source_order": 23,
       "title": "语文园地",
       "toc_pdf_page": 4,
-      "toc_printed_page": "47"
+      "toc_printed_page": 47
     },
     {
       "confidence": 0.95,
@@ -12055,7 +12080,29 @@
       "source_order": 24,
       "title": "第四单元",
       "toc_pdf_page": 4,
-      "toc_printed_page": "49"
+      "toc_printed_page": 49
+    },
+    {
+      "confidence": 0.95,
+      "end_pdf_page": 57,
+      "entry_id": "tcu_e1a476eb21992528",
+      "heading_evidence": {
+        "evidence_type": "printed_toc_title_at_page_top",
+        "line_index": 2,
+        "pdf_page": 55,
+        "verbatim_title": "11 桥"
+      },
+      "kind": "lesson",
+      "level": 2,
+      "parent_id": "tcu_4a0999eec5a2130d",
+      "pdf_page": 55,
+      "printed_page": "50",
+      "review_status": "approved",
+      "source": "printed_toc",
+      "source_order": 25,
+      "title": "11 桥",
+      "toc_pdf_page": 4,
+      "toc_printed_page": 50
     },
     {
       "confidence": 0.95,
@@ -12074,10 +12121,10 @@
       "printed_page": "53",
       "review_status": "approved",
       "source": "printed_toc",
-      "source_order": 25,
+      "source_order": 26,
       "title": "12 穷人",
       "toc_pdf_page": 4,
-      "toc_printed_page": "53"
+      "toc_printed_page": 53
     },
     {
       "confidence": 0.95,
@@ -12096,10 +12143,10 @@
       "printed_page": "58",
       "review_status": "approved",
       "source": "printed_toc",
-      "source_order": 26,
+      "source_order": 27,
       "title": "13* 金色的鱼钩",
       "toc_pdf_page": 4,
-      "toc_printed_page": "58"
+      "toc_printed_page": 58
     },
     {
       "confidence": 0.95,
@@ -12118,10 +12165,10 @@
       "printed_page": "63",
       "review_status": "approved",
       "source": "printed_toc",
-      "source_order": 27,
+      "source_order": 28,
       "title": "口语交际：请你支持我",
       "toc_pdf_page": 4,
-      "toc_printed_page": "63"
+      "toc_printed_page": 63
     },
     {
       "confidence": 0.95,
@@ -12140,10 +12187,10 @@
       "printed_page": "64",
       "review_status": "approved",
       "source": "printed_toc",
-      "source_order": 28,
+      "source_order": 29,
       "title": "习作：笔尖流出的故事",
       "toc_pdf_page": 4,
-      "toc_printed_page": "64"
+      "toc_printed_page": 64
     },
     {
       "confidence": 0.95,
@@ -12162,10 +12209,10 @@
       "printed_page": "65",
       "review_status": "approved",
       "source": "printed_toc",
-      "source_order": 29,
+      "source_order": 30,
       "title": "语文园地",
       "toc_pdf_page": 4,
-      "toc_printed_page": "65"
+      "toc_printed_page": 65
     },
     {
       "confidence": 0.95,
@@ -12184,10 +12231,10 @@
       "printed_page": "67",
       "review_status": "approved",
       "source": "printed_toc",
-      "source_order": 30,
+      "source_order": 31,
       "title": "快乐读书吧：笑与泪，经历与成长",
       "toc_pdf_page": 4,
-      "toc_printed_page": "67"
+      "toc_printed_page": 67
     },
     {
       "confidence": 0.95,
@@ -12248,14 +12295,14 @@
       "range_source": "sidecar-top-heading-unit-range-v2",
       "review_status": "approved",
       "source": "printed_toc",
-      "source_order": 31,
+      "source_order": 32,
       "title": "第五单元",
-      "toc_pdf_page": 5,
-      "toc_printed_page": "69"
+      "toc_pdf_page": 4,
+      "toc_printed_page": 69
     },
     {
       "confidence": 0.95,
-      "end_pdf_page": 81,
+      "end_pdf_page": 77,
       "entry_id": "tcu_56d9c4dcbc2e9e15",
       "heading_evidence": {
         "evidence_type": "printed_toc_title_at_page_top",
@@ -12270,10 +12317,32 @@
       "printed_page": "70",
       "review_status": "approved",
       "source": "printed_toc",
-      "source_order": 32,
+      "source_order": 33,
       "title": "14 灯光",
-      "toc_pdf_page": 5,
-      "toc_printed_page": "70"
+      "toc_pdf_page": 4,
+      "toc_printed_page": 70
+    },
+    {
+      "confidence": 0.95,
+      "end_pdf_page": 81,
+      "entry_id": "tcu_cc335e7667797d2a",
+      "heading_evidence": {
+        "evidence_type": "printed_toc_title_at_page_top",
+        "line_index": 1,
+        "pdf_page": 78,
+        "verbatim_title": "15 盼"
+      },
+      "kind": "lesson",
+      "level": 2,
+      "parent_id": "tcu_e99bed77342a4f70",
+      "pdf_page": 78,
+      "printed_page": "73",
+      "review_status": "approved",
+      "source": "printed_toc",
+      "source_order": 34,
+      "title": "15 盼",
+      "toc_pdf_page": 4,
+      "toc_printed_page": 73
     },
     {
       "confidence": 0.95,
@@ -12292,10 +12361,10 @@
       "printed_page": "77",
       "review_status": "approved",
       "source": "printed_toc",
-      "source_order": 33,
+      "source_order": 35,
       "title": "习作：围绕中心意思写",
-      "toc_pdf_page": 5,
-      "toc_printed_page": "77"
+      "toc_pdf_page": 4,
+      "toc_printed_page": 77
     },
     {
       "confidence": 0.95,
@@ -12314,10 +12383,10 @@
       "printed_page": "78",
       "review_status": "approved",
       "source": "printed_toc",
-      "source_order": 34,
-      "title": "爸爸的计划",
-      "toc_pdf_page": 5,
-      "toc_printed_page": "78"
+      "source_order": 36,
+      "title": "习作例文：爸爸的计划",
+      "toc_pdf_page": 4,
+      "toc_printed_page": 78
     },
     {
       "confidence": 0.95,
@@ -12336,10 +12405,10 @@
       "printed_page": "79",
       "review_status": "approved",
       "source": "printed_toc",
-      "source_order": 35,
+      "source_order": 37,
       "title": "小站",
-      "toc_pdf_page": 5,
-      "toc_printed_page": "79"
+      "toc_pdf_page": 4,
+      "toc_printed_page": 79
     },
     {
       "confidence": 0.95,
@@ -12400,10 +12469,10 @@
       "range_source": "sidecar-top-heading-unit-range-v2",
       "review_status": "approved",
       "source": "printed_toc",
-      "source_order": 36,
+      "source_order": 38,
       "title": "第六单元",
-      "toc_pdf_page": 5,
-      "toc_printed_page": "81"
+      "toc_pdf_page": 4,
+      "toc_printed_page": 81
     },
     {
       "confidence": 0.95,
@@ -12422,10 +12491,10 @@
       "printed_page": "82",
       "review_status": "approved",
       "source": "printed_toc",
-      "source_order": 37,
+      "source_order": 39,
       "title": "16 只有一个地球",
-      "toc_pdf_page": 5,
-      "toc_printed_page": "82"
+      "toc_pdf_page": 4,
+      "toc_printed_page": 82
     },
     {
       "confidence": 0.95,
@@ -12444,10 +12513,10 @@
       "printed_page": "84",
       "review_status": "approved",
       "source": "printed_toc",
-      "source_order": 38,
+      "source_order": 40,
       "title": "17* 青山不老",
-      "toc_pdf_page": 5,
-      "toc_printed_page": "84"
+      "toc_pdf_page": 4,
+      "toc_printed_page": 84
     },
     {
       "confidence": 0.95,
@@ -12466,10 +12535,10 @@
       "printed_page": "86",
       "review_status": "approved",
       "source": "printed_toc",
-      "source_order": 39,
+      "source_order": 41,
       "title": "18* 三黑和土地",
-      "toc_pdf_page": 5,
-      "toc_printed_page": "86"
+      "toc_pdf_page": 4,
+      "toc_printed_page": 86
     },
     {
       "confidence": 0.95,
@@ -12488,10 +12557,10 @@
       "printed_page": "91",
       "review_status": "approved",
       "source": "printed_toc",
-      "source_order": 40,
+      "source_order": 42,
       "title": "19 古诗三首",
-      "toc_pdf_page": 5,
-      "toc_printed_page": "91"
+      "toc_pdf_page": 4,
+      "toc_printed_page": 91
     },
     {
       "confidence": 0.95,
@@ -12510,10 +12579,10 @@
       "printed_page": "91",
       "review_status": "approved",
       "source": "printed_toc",
-      "source_order": 41,
+      "source_order": 43,
       "title": "浪淘沙（其一）",
-      "toc_pdf_page": 5,
-      "toc_printed_page": "91"
+      "toc_pdf_page": 4,
+      "toc_printed_page": 91
     },
     {
       "confidence": 0.95,
@@ -12532,10 +12601,10 @@
       "printed_page": "91",
       "review_status": "approved",
       "source": "printed_toc",
-      "source_order": 42,
+      "source_order": 44,
       "title": "江南春",
-      "toc_pdf_page": 5,
-      "toc_printed_page": "91"
+      "toc_pdf_page": 4,
+      "toc_printed_page": 91
     },
     {
       "confidence": 0.95,
@@ -12554,10 +12623,10 @@
       "printed_page": "92",
       "review_status": "approved",
       "source": "printed_toc",
-      "source_order": 43,
+      "source_order": 45,
       "title": "书湖阴先生壁",
-      "toc_pdf_page": 5,
-      "toc_printed_page": "92"
+      "toc_pdf_page": 4,
+      "toc_printed_page": 92
     },
     {
       "confidence": 0.95,
@@ -12576,10 +12645,10 @@
       "printed_page": "93",
       "review_status": "approved",
       "source": "printed_toc",
-      "source_order": 44,
+      "source_order": 46,
       "title": "口语交际：意见不同怎么办",
-      "toc_pdf_page": 5,
-      "toc_printed_page": "93"
+      "toc_pdf_page": 4,
+      "toc_printed_page": 93
     },
     {
       "confidence": 0.95,
@@ -12598,10 +12667,10 @@
       "printed_page": "94",
       "review_status": "approved",
       "source": "printed_toc",
-      "source_order": 45,
+      "source_order": 47,
       "title": "习作：学写倡议书",
-      "toc_pdf_page": 5,
-      "toc_printed_page": "94"
+      "toc_pdf_page": 4,
+      "toc_printed_page": 94
     },
     {
       "confidence": 0.95,
@@ -12620,10 +12689,10 @@
       "printed_page": "95",
       "review_status": "approved",
       "source": "printed_toc",
-      "source_order": 46,
+      "source_order": 48,
       "title": "语文园地",
-      "toc_pdf_page": 5,
-      "toc_printed_page": "95"
+      "toc_pdf_page": 4,
+      "toc_printed_page": 95
     },
     {
       "confidence": 0.95,
@@ -12684,10 +12753,10 @@
       "range_source": "sidecar-top-heading-unit-range-v2",
       "review_status": "approved",
       "source": "printed_toc",
-      "source_order": 47,
+      "source_order": 49,
       "title": "第七单元",
-      "toc_pdf_page": 5,
-      "toc_printed_page": "97"
+      "toc_pdf_page": 4,
+      "toc_printed_page": 97
     },
     {
       "confidence": 0.95,
@@ -12706,10 +12775,10 @@
       "printed_page": "98",
       "review_status": "approved",
       "source": "printed_toc",
-      "source_order": 48,
+      "source_order": 50,
       "title": "20 文言文二则",
-      "toc_pdf_page": 5,
-      "toc_printed_page": "98"
+      "toc_pdf_page": 4,
+      "toc_printed_page": 98
     },
     {
       "confidence": 0.95,
@@ -12728,10 +12797,10 @@
       "printed_page": "98",
       "review_status": "approved",
       "source": "printed_toc",
-      "source_order": 49,
+      "source_order": 51,
       "title": "两小儿辩日",
-      "toc_pdf_page": 5,
-      "toc_printed_page": "98"
+      "toc_pdf_page": 4,
+      "toc_printed_page": 98
     },
     {
       "confidence": 0.95,
@@ -12750,10 +12819,10 @@
       "printed_page": "99",
       "review_status": "approved",
       "source": "printed_toc",
-      "source_order": 50,
+      "source_order": 52,
       "title": "曹冲称象",
-      "toc_pdf_page": 5,
-      "toc_printed_page": "99"
+      "toc_pdf_page": 4,
+      "toc_printed_page": 99
     },
     {
       "confidence": 0.95,
@@ -12772,10 +12841,10 @@
       "printed_page": "100",
       "review_status": "approved",
       "source": "printed_toc",
-      "source_order": 51,
+      "source_order": 53,
       "title": "21 表里的生物",
-      "toc_pdf_page": 5,
-      "toc_printed_page": "100"
+      "toc_pdf_page": 4,
+      "toc_printed_page": 100
     },
     {
       "confidence": 0.95,
@@ -12794,10 +12863,10 @@
       "printed_page": "103",
       "review_status": "approved",
       "source": "printed_toc",
-      "source_order": 52,
+      "source_order": 54,
       "title": "22* 他们那时候多有趣啊",
-      "toc_pdf_page": 5,
-      "toc_printed_page": "103"
+      "toc_pdf_page": 4,
+      "toc_printed_page": 103
     },
     {
       "confidence": 0.95,
@@ -12816,10 +12885,10 @@
       "printed_page": "106",
       "review_status": "approved",
       "source": "printed_toc",
-      "source_order": 53,
+      "source_order": 55,
       "title": "习作：插上科学的翅膀飞",
-      "toc_pdf_page": 5,
-      "toc_printed_page": "106"
+      "toc_pdf_page": 4,
+      "toc_printed_page": 106
     },
     {
       "confidence": 0.95,
@@ -12838,10 +12907,10 @@
       "printed_page": "107",
       "review_status": "approved",
       "source": "printed_toc",
-      "source_order": 54,
+      "source_order": 56,
       "title": "语文园地",
-      "toc_pdf_page": 5,
-      "toc_printed_page": "107"
+      "toc_pdf_page": 4,
+      "toc_printed_page": 107
     },
     {
       "confidence": 0.95,
@@ -12887,10 +12956,10 @@
       "range_source": "sidecar-top-heading-unit-range-v2",
       "review_status": "approved",
       "source": "printed_toc",
-      "source_order": 55,
+      "source_order": 57,
       "title": "第八单元",
-      "toc_pdf_page": 5,
-      "toc_printed_page": "109"
+      "toc_pdf_page": 4,
+      "toc_printed_page": 109
     },
     {
       "confidence": 0.95,
@@ -12909,10 +12978,10 @@
       "printed_page": "110",
       "review_status": "approved",
       "source": "printed_toc",
-      "source_order": 56,
+      "source_order": 58,
       "title": "23 少年闰土",
-      "toc_pdf_page": 5,
-      "toc_printed_page": "110"
+      "toc_pdf_page": 4,
+      "toc_printed_page": 110
     },
     {
       "confidence": 0.95,
@@ -12931,10 +13000,10 @@
       "printed_page": "114",
       "review_status": "approved",
       "source": "printed_toc",
-      "source_order": 57,
+      "source_order": 59,
       "title": "24 好的故事",
-      "toc_pdf_page": 5,
-      "toc_printed_page": "114"
+      "toc_pdf_page": 4,
+      "toc_printed_page": 114
     },
     {
       "confidence": 0.95,
@@ -12953,10 +13022,10 @@
       "printed_page": "117",
       "review_status": "approved",
       "source": "printed_toc",
-      "source_order": 58,
+      "source_order": 60,
       "title": "25* 我的伯父鲁迅先生",
-      "toc_pdf_page": 5,
-      "toc_printed_page": "117"
+      "toc_pdf_page": 4,
+      "toc_printed_page": 117
     },
     {
       "confidence": 0.95,
@@ -12975,10 +13044,10 @@
       "printed_page": "121",
       "review_status": "approved",
       "source": "printed_toc",
-      "source_order": 59,
-      "title": "26* 有的人—纪念鲁迅有感",
-      "toc_pdf_page": 5,
-      "toc_printed_page": "121"
+      "source_order": 61,
+      "title": "26* 有的人——纪念鲁迅有感",
+      "toc_pdf_page": 4,
+      "toc_printed_page": 121
     },
     {
       "confidence": 0.95,
@@ -12997,10 +13066,10 @@
       "printed_page": "123",
       "review_status": "approved",
       "source": "printed_toc",
-      "source_order": 60,
+      "source_order": 62,
       "title": "习作：传承好家风",
-      "toc_pdf_page": 5,
-      "toc_printed_page": "123"
+      "toc_pdf_page": 4,
+      "toc_printed_page": 123
     },
     {
       "confidence": 0.95,
@@ -13019,10 +13088,10 @@
       "printed_page": "124",
       "review_status": "approved",
       "source": "printed_toc",
-      "source_order": 61,
+      "source_order": 63,
       "title": "语文园地",
-      "toc_pdf_page": 5,
-      "toc_printed_page": "124"
+      "toc_pdf_page": 4,
+      "toc_printed_page": 124
     },
     {
       "confidence": 0.95,
@@ -13041,10 +13110,10 @@
       "printed_page": "126",
       "review_status": "approved",
       "source": "printed_toc",
-      "source_order": 62,
+      "source_order": 64,
       "title": "写字表",
-      "toc_pdf_page": 5,
-      "toc_printed_page": "126"
+      "toc_pdf_page": 4,
+      "toc_printed_page": 126
     },
     {
       "confidence": 0.95,
@@ -13063,10 +13132,10 @@
       "printed_page": "128",
       "review_status": "approved",
       "source": "printed_toc",
-      "source_order": 63,
+      "source_order": 65,
       "title": "词语表",
-      "toc_pdf_page": 5,
-      "toc_printed_page": "128"
+      "toc_pdf_page": 4,
+      "toc_printed_page": 128
     }
   ],
   "unit_range_reconciliation": {
@@ -13074,14 +13143,14 @@
     "auxiliary_boundary_evidence": null,
     "changed_unit_range_count": 0,
     "changes": [],
-    "clamped_content_node_range_count": 4,
-    "detached_auxiliary_content_node_count": 0,
+    "clamped_content_node_range_count": 0,
+    "detached_auxiliary_content_node_count": 9,
     "evidence_policy": "sidecar_top_verbatim_titles_and_auxiliary_titles_only",
     "exact_unit_heading_evidence_count": 8,
     "inspected_page_count": 138,
     "provenance": "machine_generated",
     "publication_gate": false,
-    "reassigned_content_node_count": 162,
+    "reassigned_content_node_count": 208,
     "review_policy": "automatic_no_human_gate",
     "schema_version": 1,
     "sidecar_sha256": "a0707375fe52b974f206365a413b4bca05b051de23b356f179c67735dd0ff898",
