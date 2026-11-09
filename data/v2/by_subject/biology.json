@@ -478,9 +478,9 @@
       "status": "verified"
      },
      "grades": [
-      8
+      7
      ],
-     "grade_basis": "八年级上册 第五单元 生物圈中的其他生物、第六单元 生物的多样性及其保护",
+     "grade_basis": "七年级上册 第二单元 多种多样的生物",
      "legacy_codes": [],
      "examples": []
     },
@@ -704,7 +704,7 @@
      "grades": [
       8
      ],
-     "grade_basis": "八年级上册 第五单元 生物圈中的其他生物、第六单元 生物的多样性及其保护",
+     "grade_basis": "八年级下册 第六单元 生命的延续和发展",
      "legacy_codes": [],
      "examples": []
     },
@@ -745,7 +745,7 @@
      "grades": [
       8
      ],
-     "grade_basis": "八年级上册 第五单元 生物圈中的其他生物、第六单元 生物的多样性及其保护",
+     "grade_basis": "八年级下册 第六单元 生命的延续和发展",
      "legacy_codes": [],
      "examples": []
     }
@@ -794,9 +794,9 @@
       "status": "verified"
      },
      "grades": [
-      7
+      8
      ],
-     "grade_basis": "七年级上册 第一单元 生物和生物圈",
+     "grade_basis": "八年级上册 第五单元 生物与环境",
      "legacy_codes": [],
      "examples": []
     },
@@ -854,9 +854,9 @@
       "status": "verified"
      },
      "grades": [
-      7
+      8
      ],
-     "grade_basis": "七年级上册 第一单元 生物和生物圈",
+     "grade_basis": "八年级上册 第五单元 生物与环境",
      "legacy_codes": [],
      "examples": []
     },
@@ -1076,9 +1076,10 @@
       "status": "verified"
      },
      "grades": [
-      7
+      7,
+      8
      ],
-     "grade_basis": "七年级上册 第三单元 生物圈中的绿色植物",
+     "grade_basis": "七年级上册 第二单元 多种多样的生物；七年级下册 第三单元 植物的生活；八年级下册 第六单元 生命的延续和发展",
      "legacy_codes": [],
      "examples": []
     },
@@ -1189,7 +1190,7 @@
      "grades": [
       7
      ],
-     "grade_basis": "七年级上册 第三单元 生物圈中的绿色植物",
+     "grade_basis": "七年级下册 第三单元 植物的生活",
      "legacy_codes": [],
      "examples": []
     },
@@ -1209,7 +1210,7 @@
      "grades": [
       7
      ],
-     "grade_basis": "七年级上册 第三单元 生物圈中的绿色植物",
+     "grade_basis": "七年级下册 第三单元 植物的生活",
      "legacy_codes": [],
      "examples": []
     }
@@ -1300,7 +1301,7 @@
      "grades": [
       7
      ],
-     "grade_basis": "七年级上册 第三单元 生物圈中的绿色植物",
+     "grade_basis": "七年级下册 第三单元 植物的生活",
      "legacy_codes": [],
      "examples": []
     },
@@ -1320,7 +1321,7 @@
      "grades": [
       7
      ],
-     "grade_basis": "七年级上册 第三单元 生物圈中的绿色植物",
+     "grade_basis": "七年级下册 第三单元 植物的生活",
      "legacy_codes": [],
      "examples": []
     },
@@ -1409,11 +1410,9 @@
       "status": "verified"
      },
      "grades": [
-      7,
-      8,
-      9
+      7
      ],
-     "grade_basis": null,
+     "grade_basis": "七年级下册 第四单元 人体生理与健康(一)",
      "legacy_codes": [],
      "examples": []
     },
@@ -1471,11 +1470,9 @@
       "status": "verified"
      },
      "grades": [
-      7,
-      8,
-      9
+      7
      ],
-     "grade_basis": null,
+     "grade_basis": "七年级下册 第四单元 人体生理与健康(一)",
      "legacy_codes": [],
      "examples": []
     }
@@ -1735,11 +1732,9 @@
       "status": "verified"
      },
      "grades": [
-      7,
-      8,
-      9
+      7
      ],
-     "grade_basis": null,
+     "grade_basis": "七年级下册 第四单元 人体生理与健康(一)",
      "legacy_codes": [],
      "examples": []
     }
@@ -1931,10 +1926,9 @@
      },
      "grades": [
       7,
-      8,
-      9
+      8
      ],
-     "grade_basis": null,
+     "grade_basis": "八年级上册 第四单元 人体生理与健康（二）；七年级下册 第四单元 人体生理与健康(一)",
      "legacy_codes": [],
      "examples": []
     }
@@ -2016,11 +2010,9 @@
       ]
      },
      "grades": [
-      7,
-      8,
-      9
+      8
      ],
-     "grade_basis": null,
+     "grade_basis": "八年级上册 第四单元 人体生理与健康（二）",
      "legacy_codes": [],
      "examples": []
     },
@@ -2058,11 +2050,9 @@
       "status": "verified"
      },
      "grades": [
-      7,
-      8,
-      9
+      8
      ],
-     "grade_basis": null,
+     "grade_basis": "八年级上册 第四单元 人体生理与健康（二）",
      "legacy_codes": [],
      "examples": []
     },
@@ -2089,11 +2079,9 @@
       ]
      },
      "grades": [
-      7,
-      8,
-      9
+      8
      ],
-     "grade_basis": null,
+     "grade_basis": "八年级上册 第四单元 人体生理与健康（二）",
      "legacy_codes": [],
      "examples": []
     },
@@ -2120,11 +2108,9 @@
       ]
      },
      "grades": [
-      7,
-      8,
-      9
+      8
      ],
-     "grade_basis": null,
+     "grade_basis": "八年级上册 第四单元 人体生理与健康（二）",
      "legacy_codes": [],
      "examples": []
     }
@@ -2173,11 +2159,9 @@
       "status": "verified"
      },
      "grades": [
-      7,
-      8,
-      9
+      8
      ],
-     "grade_basis": null,
+     "grade_basis": "八年级上册 第四单元 人体生理与健康（二）",
      "legacy_codes": [],
      "examples": []
     },
@@ -2310,10 +2294,9 @@
      },
      "grades": [
       7,
-      8,
-      9
+      8
      ],
-     "grade_basis": null,
+     "grade_basis": "七年级下册 第四单元 人体生理与健康(一)；八年级下册 第六单元 生命的延续和发展",
      "legacy_codes": [],
      "examples": []
     }
@@ -2442,11 +2425,9 @@
       "status": "verified"
      },
      "grades": [
-      7,
-      8,
-      9
+      8
      ],
-     "grade_basis": null,
+     "grade_basis": "八年级下册 第六单元 生命的延续和发展",
      "legacy_codes": [],
      "examples": []
     },
@@ -2464,11 +2445,9 @@
       "status": "verified"
      },
      "grades": [
-      7,
-      8,
-      9
+      8
      ],
-     "grade_basis": null,
+     "grade_basis": "八年级下册 第六单元 生命的延续和发展",
      "legacy_codes": [],
      "examples": []
     }
@@ -2608,11 +2587,9 @@
       "status": "verified"
      },
      "grades": [
-      7,
-      8,
-      9
+      8
      ],
-     "grade_basis": null,
+     "grade_basis": "八年级下册 第六单元 生命的延续和发展",
      "legacy_codes": [],
      "examples": []
     },

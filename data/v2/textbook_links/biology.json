@@ -114,45 +114,6 @@
   ],
   "BI-S4-DI-02": [
    {
-    "edition_id": "ed_0f6edf1eb52b44920973",
-    "textbook_title": "人教版生物学8年级上册",
-    "entry_id": "toc_ed_0f6edf1eb52b44920973_7_第五单元",
-    "unit_id": null,
-    "title": "第五单元 生物圈中的其他生物",
-    "level": 1,
-    "printed_page": null,
-    "pdf_page": 7,
-    "indicator": null,
-    "method": "grade_basis",
-    "score": 1
-   },
-   {
-    "edition_id": "ed_0f6edf1eb52b44920973",
-    "textbook_title": "人教版生物学8年级上册",
-    "entry_id": "toc_ed_0f6edf1eb52b44920973_7_第一章",
-    "unit_id": null,
-    "title": "第一章 动物的主要类群",
-    "level": 1,
-    "printed_page": 2,
-    "pdf_page": 7,
-    "indicator": "BI-S4-DI-02.4",
-    "method": "toc_title",
-    "score": 0.83
-   },
-   {
-    "edition_id": "ed_0f6edf1eb52b44920973",
-    "textbook_title": "人教版生物学8年级上册",
-    "entry_id": "toc_ed_0f6edf1eb52b44920973_101_第六单元",
-    "unit_id": null,
-    "title": "第六单元 生物的多样性及其保护",
-    "level": 1,
-    "printed_page": null,
-    "pdf_page": 101,
-    "indicator": null,
-    "method": "grade_basis",
-    "score": 1
-   },
-   {
     "edition_id": "ed_913b2b9b81e81dabcf0a",
     "textbook_title": "人教版生物学7年级上册",
     "entry_id": "tcu_93c336dc5572342f",
@@ -196,45 +157,6 @@
   ],
   "BI-S4-DI-04": [
    {
-    "edition_id": "ed_0f6edf1eb52b44920973",
-    "textbook_title": "人教版生物学8年级上册",
-    "entry_id": "toc_ed_0f6edf1eb52b44920973_7_第五单元",
-    "unit_id": null,
-    "title": "第五单元 生物圈中的其他生物",
-    "level": 1,
-    "printed_page": null,
-    "pdf_page": 7,
-    "indicator": null,
-    "method": "grade_basis",
-    "score": 1
-   },
-   {
-    "edition_id": "ed_0f6edf1eb52b44920973",
-    "textbook_title": "人教版生物学8年级上册",
-    "entry_id": "toc_ed_0f6edf1eb52b44920973_101_第六单元",
-    "unit_id": null,
-    "title": "第六单元 生物的多样性及其保护",
-    "level": 1,
-    "printed_page": null,
-    "pdf_page": 101,
-    "indicator": null,
-    "method": "grade_basis",
-    "score": 1
-   },
-   {
-    "edition_id": "ed_0f6edf1eb52b44920973",
-    "textbook_title": "人教版生物学8年级上册",
-    "entry_id": "toc_ed_0f6edf1eb52b44920973_115_第三章",
-    "unit_id": null,
-    "title": "第三章 保护生物的多样性",
-    "level": 1,
-    "printed_page": 110,
-    "pdf_page": 115,
-    "indicator": null,
-    "method": "toc_title",
-    "score": 1
-   },
-   {
     "edition_id": "ed_c8cec7bb4ee4d9a29577",
     "textbook_title": "人教版生物学8年级下册",
     "entry_id": "tcu_f3b79d5a6c5b8669",
@@ -250,30 +172,17 @@
   ],
   "BI-S4-EN-01": [
    {
-    "edition_id": "ed_913b2b9b81e81dabcf0a",
-    "textbook_title": "人教版生物学7年级上册",
-    "entry_id": "tcu_11c1e3f325fb8a9e",
-    "unit_id": "tcu_11c1e3f325fb8a9e",
-    "title": "第一单元 生物和生物圈",
-    "level": 1,
-    "printed_page": 1,
-    "pdf_page": 8,
+    "edition_id": "ed_0f6edf1eb52b44920973",
+    "textbook_title": "人教版生物学8年级上册",
+    "entry_id": null,
+    "unit_id": null,
+    "title": null,
+    "level": 0,
+    "printed_page": null,
+    "pdf_page": null,
     "indicator": null,
-    "method": "grade_basis",
+    "method": "grade_basis_volume",
     "score": 1
-   },
-   {
-    "edition_id": "ed_913b2b9b81e81dabcf0a",
-    "textbook_title": "人教版生物学7年级上册",
-    "entry_id": "tcu_3569d7f0b2121be7",
-    "unit_id": "tcu_3569d7f0b2121be7",
-    "title": "第三节 生物圈是最大的生态系统",
-    "level": 2,
-    "printed_page": 26,
-    "pdf_page": 33,
-    "indicator": "BI-S4-EN-01.6",
-    "method": "toc_title",
-    "score": 0.8
    }
   ],
   "BI-S4-EN-02": [
@@ -317,19 +226,6 @@
     "indicator": "BI-S4-PL-01.3",
     "method": "toc_title",
     "score": 0.75
-   },
-   {
-    "edition_id": "ed_913b2b9b81e81dabcf0a",
-    "textbook_title": "人教版生物学7年级上册",
-    "entry_id": "toc_ed_913b2b9b81e81dabcf0a_78_第三单元",
-    "unit_id": null,
-    "title": "第三单元 生物圈中的绿色植物",
-    "level": 1,
-    "printed_page": 71,
-    "pdf_page": 78,
-    "indicator": null,
-    "method": "grade_basis",
-    "score": 1
    },
    {
     "edition_id": "ed_c8cec7bb4ee4d9a29577",
@@ -384,19 +280,6 @@
     "indicator": null,
     "method": "grade_basis",
     "score": 1
-   },
-   {
-    "edition_id": "ed_913b2b9b81e81dabcf0a",
-    "textbook_title": "人教版生物学7年级上册",
-    "entry_id": "toc_ed_913b2b9b81e81dabcf0a_78_第三单元",
-    "unit_id": null,
-    "title": "第三单元 生物圈中的绿色植物",
-    "level": 1,
-    "printed_page": 71,
-    "pdf_page": 78,
-    "indicator": "BI-S4-PL-02.3",
-    "method": "grade_basis",
-    "score": 1
    }
   ],
   "BI-S4-PL-03": [
@@ -437,19 +320,6 @@
     "pdf_page": 43,
     "indicator": "BI-S4-PL-03.3",
     "method": "toc_title",
-    "score": 1
-   },
-   {
-    "edition_id": "ed_913b2b9b81e81dabcf0a",
-    "textbook_title": "人教版生物学7年级上册",
-    "entry_id": "toc_ed_913b2b9b81e81dabcf0a_78_第三单元",
-    "unit_id": null,
-    "title": "第三单元 生物圈中的绿色植物",
-    "level": 1,
-    "printed_page": 71,
-    "pdf_page": 78,
-    "indicator": "BI-S4-PL-03.4",
-    "method": "grade_basis",
     "score": 1
    }
   ],
