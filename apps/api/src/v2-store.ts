@@ -95,6 +95,8 @@ export function createV2Store(dataRoot: string) {
             if (!entry) return null
             const subject = await store.subject(entry.subject_slug)
             const standard = subject?.standards.find(item => item.code === code.replace(/\.\d+$/u, ''))
+            // a 要点 code must name a 要点 the standard has: MA-S2-NA-02.9 is not a code when it stops at .3
+            if (standard && /\.\d+$/u.test(code) && !standard.indicators.some(item => item.code === code)) return null
             return standard && subject ? { standard, subject } : null
         },
         async movedTo(code: string) {

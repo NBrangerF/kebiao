@@ -61,6 +61,9 @@ const ChecksPresentPage = lazy(() => import('./pages/ChecksPresentPage'))
 // v2 codes (MA-S1-NA-01, MA-S1-NA-01.3) open the standard; old codes move to where their record now lives.
 function StandardRoute() {
     const { code } = useParams()
+    // a 要点 code (MA-S1-NA-01.3) opens its standard at that 要点
+    const point = /^([A-Z]{2}-S\d-[A-Z0-9]{2}-\d{2})\.\d+$/u.exec(code || '')
+    if (point) return <Navigate to={`/standards/${point[1]}#${code}`} replace />
     return isV2Code(code) ? lazyPage(<StandardV2Page />, '正在打开标准') : <LegacyStandardRedirect code={code} />
 }
 
