@@ -177,20 +177,28 @@ for (const book of books) {
             ? titled.filter(key => bookText.includes(key)).length
             : nodes.filter(node => ours.has(normaliseTitle(node.title))).length
         const variant = variantScore(book, candidate.title)
+        // the book's own printed 目录 names its units: a list whose top-level titles are those units is this book's.
+        // Book text alone misleads: an old PEP list's 「What would you like?」 is also a sentence in the new book.
+        const tops = (tree || []).map(node => normaliseTitle(node.title)).filter(key => key.length >= 3 && !/recycle|revision|复习|整理/iu.test(key))
+        const topHits = tops.filter(key => ours.has(key) || [...ours].some(own => own.length >= 3 && (own.includes(key) || key.includes(own)))).length
+        const topFit = ours.size >= 3 && tops.length ? topHits / tops.length : null
         // from the OCR'd 目录: old and new editions share lesson names but not chapter numbers (「第五章中国的地理差异」)
         const numbered = fromOcr ? nodes.map(node => squash(node.title)).filter(key => NUMBERED.test(key) && key.length >= 5).filter(key => bookText.includes(key)).length : 0
-        const score = fromOcr ? numbered * 10 + overlap : overlap / Math.max(1, bookText ? titled.length : Math.min(nodes.length, ours.size)) + variant * 0.2
-        scored.push({ candidate, tree, nodes, titled: titled.length, overlap, score, variant, tie: false })
-        if (!best || score > best.score) { runnerUp = best ? Math.max(runnerUp, best.score) : runnerUp; best = { candidate, tree, nodes, titled: titled.length, overlap, score, variant, tie: false } }
+        const textScore = overlap / Math.max(1, bookText ? titled.length : Math.min(nodes.length, ours.size))
+        const score = fromOcr ? numbered * 10 + overlap : (topFit != null ? (topFit + textScore) / 2 : textScore) + variant * 0.2
+        const entry = { candidate, tree, nodes, titled: titled.length, overlap: Math.max(overlap, topHits), score, variant, topFit, textScore, tie: false }
+        scored.push(entry)
+        if (!best || score > best.score) { runnerUp = best ? Math.max(runnerUp, best.score) : runnerUp; best = { ...entry } }
         else {
             runnerUp = Math.max(runnerUp, score)
             if (score === best.score) best.tie = true
         }
     }
+    if (process.env.KB_DEBUG) for (const item of scored) console.log('   ', item.candidate.title, 'titled', item.titled, 'overlap', item.overlap, 'topFit', item.topFit, 'text', item.textScore?.toFixed(2), 'variant', item.variant, 'score', item.score.toFixed(2))
     // a new edition the platform has only begun (one or two titled nodes) wins on ratio alone (语文4上: 1/1 against 54/56);
     // prefer a full tree that shares at least three titles with the book
     if (best && best.titled < 3) {
-        const full = scored.filter(item => item.titled >= 3 && item.overlap >= 3).sort((a, b) => b.overlap - a.overlap)[0]
+        const full = scored.filter(item => item.titled >= 3 && item.overlap >= 3 && !(best.topFit > (item.topFit ?? 0))).sort((a, b) => b.overlap - a.overlap)[0]
         if (full) best = full
     }
     // OCR'd books must win clearly: at least five titles (or numbered chapters) and twice the next edition's score
@@ -199,7 +207,8 @@ for (const book of books) {
     // barely fits this book (教科 科学5上 2025: 5 of 32 titles): its lessons would point to pages the book does not have.
     // No list until the newer one is out. Only books whose pages carry real text are judged this way: a scan with no
     // readable text (音乐 简谱 books) fits no list by text, right or wrong.
-    const unpublished = trees.find(item => item.candidate.title.startsWith('新教材') && !item.nodes.length)
+    // only a list of the same series counts (人音版 吴斌's book waits for 吴斌's new list, not 李心草's)
+    const unpublished = trees.find(item => item.candidate.title.startsWith('新教材') && !item.nodes.length && variantScore(book, item.candidate.title) >= 0)
     const readable = pages.length && (bookText.match(/[一-鿿]/gu) || []).length / pages.length >= 40
     if (best && readable && unpublished && !best.candidate.title.startsWith('新教材') && best.overlap * 2 < best.titled) {
         console.log(`  · ${book.title}: 「${unpublished.candidate.title}」 has no lessons yet and 「${best.candidate.title}」 shares only ${best.overlap} of ${best.titled} titles`)
@@ -207,7 +216,11 @@ for (const book of books) {
     }
     // one candidate with the same subject, edition, grade, volume and editor is the book even when our 目录 is too sparse to compare
     const sole = best && best.variant >= 0 && (candidates.length === 1 || (best.overlap === 0 && !best.tie && best.variant > 0))
-    if (!best || best.variant < 0 || (best.overlap < 2 && !sole) || (bookText && best.tie && best.overlap < 3)) {
+    // the book's own 目录 shares under a third of the list's units and its pages hold few of the lessons: another
+    // printing's list (人美 美术6上 2024 against the 杨力 list: 0 of 15). 体育与健康 lists cover a 水平 (two grades),
+    // not one book, and stay as they were.
+    const foreign = best && book.subject !== '体育与健康' && best.topFit != null && best.topFit < 1 / 3 && best.textScore < 0.3
+    if (!best || foreign || best.variant < 0 || (best.overlap < 2 && !sole) || (bookText && best.tie && best.overlap < 3)) {
         index.editions[book.edition_id] = { status: 'not_found', candidates: candidates.map(item => item.title) }
         // a list matched on an earlier run no longer fits (the PDF was replaced by a newer printing): drop it
         rmSync(path.join(OUT, `${book.edition_id}.json`), { force: true })
