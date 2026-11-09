@@ -99,7 +99,7 @@
       "standards": 25,
       "lanes": 7,
       "taught": 80,
-      "edges": 82
+      "edges": 84
     },
     {
       "slug": "it",
@@ -143,8 +143,8 @@
     }
   ],
   "prerequisites": {
-    "judged": 910,
-    "kept": 910,
+    "judged": 912,
+    "kept": 912,
     "dropped": 0,
     "audit": {
       "checked": 60,
