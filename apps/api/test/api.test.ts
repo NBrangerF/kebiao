@@ -2062,7 +2062,8 @@ test('find_textbook_chapter reads a lesson the way teachers name it', async () =
     // a two-character title with the book in front, which used to find nothing
     const watch = await call({ query: '统编版 四年级上册 观潮' })
     assert.match(watch.structuredContent.lessons[0].textbook, /统编版语文4年级上册/)
-    assert.equal(watch.structuredContent.lessons[0].lesson, '观潮')
+    // the 2026 printing's lessons come from its printed 目录, numbered as printed (「1 观潮」)
+    assert.match(watch.structuredContent.lessons[0].lesson, /^(?:\d+\s*)?观潮$/u)
     // each 要点 comes with its 原文 and page, so one call answers 「列原文和页码」
     const point = watch.structuredContent.lessons[0].points[0]
     assert.ok(point.text.length > 5 && /课标第 \d+/u.test(point.page), JSON.stringify(point))

@@ -420,7 +420,7 @@ test('FileCurriculumRepository matches plans to real standards with explanations
 test('FileTextbookRepository exposes specific evidence and deduplicated curriculum scopes', async () => {
     const repository = new FileTextbookRepository(publicDataRoot)
     const catalog = await repository.loadCatalog()
-    assert.equal(catalog.items.length, 170)
+    assert.equal(catalog.items.length, 174)
 
     const detail = await repository.get('ed_9d4028e2ab482520d0aa')
     assert.ok(detail)

@@ -806,24 +806,27 @@ test('AI 备课 lesson list: the 国家平台 lessons first and unchanged, then 
     assert.deepEqual(platform.lessons.filter((item: any) => !item.toc).map((item: any) => item.id), national.lessons.map((item: any) => item.id))
     assert.ok(platform.lessons.filter((item: any) => !item.toc).every((item: any) => item.url.startsWith('https://basic.smartedu.cn/')))
 
-    // 语文5上: the platform lists only 第一单元's lessons; the other seven units come from the 目录, in book order
+    // 语文5上: the platform lists only the first units' lessons (it adds more as it goes); the other units come from the
+    // 目录, in book order
     const chinese5a = books.find((book: any) => book.title === '语文5年级上册' && book.edition_name === '统编版').edition_id
     const listed = (await get(`/api/v1/lesson-plans/textbooks/${chinese5a}/lessons`)).data
     const record = JSON.parse(await readFile(resolve(publicDataRoot, `textbooks/by-edition/${chinese5a}.json`), 'utf8'))
     assert.deepEqual([...new Set(listed.lessons.map((item: any) => item.chapters[0]))], record.toc.filter((entry: any) => entry.kind === 'unit').map((entry: any) => entry.title))
     const fromToc = listed.lessons.filter((item: any) => item.toc)
-    assert.ok(fromToc.length > 30 && fromToc.every((item: any) => item.url === null && item.id.startsWith('tcu_')))
+    assert.ok(fromToc.length > 20 && fromToc.every((item: any) => item.url === null && item.id.startsWith('tcu_')))
 
     // a 目录 lesson opens like a platform one: its unit, its standards, and no 同步课 where the platform has none
-    const lesson = fromToc.find((item: any) => item.title === '5 将相和')
+    const platformUnits = new Set(listed.lessons.filter((item: any) => !item.toc).map((item: any) => item.chapters[0]))
+    const lesson = fromToc.find((item: any) => !platformUnits.has(item.chapters[0]) && /^\d+ /u.test(item.title))
+    const unitTitle = lesson.chapters[0]
     const context = (await get(`/api/v1/lesson-plans/context?edition_id=${chinese5a}&lesson_id=${lesson.id}`)).data
-    assert.equal(context.lesson.title, '5 将相和')
-    assert.equal(context.lesson.unit_title, '第二单元')
+    assert.equal(context.lesson.title, lesson.title)
+    assert.equal(context.lesson.unit_title, unitTitle)
     assert.equal(context.lesson.lesson_id, lesson.id)
     assert.ok(context.standards.length)
     assert.deepEqual(context.national_lessons, [])
-    const unit = (await get(`/api/v1/lesson-plans/context?edition_id=${chinese5a}&chapter=${encodeURIComponent('第二单元')}`)).data
-    assert.deepEqual(unit.unit_lessons.map((item: any) => item.id), fromToc.filter((item: any) => item.chapters[0] === '第二单元').map((item: any) => item.id))
+    const unit = (await get(`/api/v1/lesson-plans/context?edition_id=${chinese5a}&chapter=${encodeURIComponent(unitTitle)}`)).data
+    assert.deepEqual(unit.unit_lessons.map((item: any) => item.id), fromToc.filter((item: any) => item.chapters[0] === unitTitle).map((item: any) => item.id))
 
     // the plan knows the rest of the unit
     const saved = process.env.KEBIAO_LLM_API_KEY
@@ -832,8 +835,12 @@ test('AI 备课 lesson list: the 国家平台 lessons first and unchanged, then 
     const calls: string[] = []
     t.mock.method(globalThis, 'fetch', fakeModel(calls))
     const point = context.standards[0].indicators[0].code
-    await app.request('/api/v1/lesson-plans/draft', { method: 'POST', headers: { 'content-type': 'application/json', 'x-forwarded-for': TOC_IP }, body: JSON.stringify({ step: 'frame', lesson: { title: '5 将相和', unit_title: '第二单元', subject_slug: 'chinese', grade: 5, edition_id: chinese5a, lesson_id: lesson.id }, indicator_codes: [point] }) })
-    assert.match(calls[0], /本单元的课（教材顺序）：4 冀中的地道战 → 「5 将相和」（本课） → 6 什么比猎豹的速度更快/)
+    await app.request('/api/v1/lesson-plans/draft', { method: 'POST', headers: { 'content-type': 'application/json', 'x-forwarded-for': TOC_IP }, body: JSON.stringify({ step: 'frame', lesson: { title: lesson.title, unit_title: unitTitle, subject_slug: 'chinese', grade: 5, edition_id: chinese5a, lesson_id: lesson.id }, indicator_codes: [point] }) })
+    // the unit's lessons in book order, this one marked
+    const order = fromToc.filter((item: any) => item.chapters[0] === unitTitle).map((item: any) => item.title)
+    const at = order.indexOf(lesson.title)
+    const near = [order[at - 1], `「${lesson.title}」（本课）`, order[at + 1]].filter(Boolean).join(' → ')
+    assert.ok(calls[0].includes(`本单元的课（教材顺序）：`) && calls[0].includes(near), near)
 })
 
 test('课堂学习目标: each objective keeps the lesson\'s own 要点 and a quote that is in the 要点; the rest is dropped', async t => {

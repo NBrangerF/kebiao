@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import { parseArgs, readJson, readJsonLines } from './library_common.js'
 
-const EXPECTED = { primary: 104, junior: 65, current: 169, editions: 170, scheduled: 1, companions: 4 }
+const EXPECTED = { primary: 105, junior: 68, current: 173, editions: 174, scheduled: 1, companions: 4 }
 
 function main() {
   const args = parseArgs(process.argv.slice(2))

@@ -51,7 +51,7 @@ kebiao 以课程标准为主轴，把分散在文档、教材、资源和教学�
 | 快速找到相关课标 | 按学科、学段和可迁移技能[筛选课标](https://www.kebiao.org/search)，结果可按领域展开；也可以直接[用教学语言检索](https://www.kebiao.org/smart-search)主题和关键词。 |
 | 比较学科与学段差异 | [并列对比](https://www.kebiao.org/#compare-filter) 1–3 个学科的同一学段，或同一学科跨 1–6 个学段/年级的变化。 |
 | 理解一条标准的前后联系 | 在[标准详情](https://www.kebiao.org/standards/MA-D2-GE-003)中查看能力拆解、课程进阶、相邻标准和关系图谱，并查看前置关系候选及其核验状态。 |
-| 对照教材与课标 | 在[教材馆](https://www.kebiao.org/textbooks)浏览 170 册小学与初中教材（含北师大版数学、外研社版英语等多个版本），每一课对到课标要点，可定位到具体 PDF 页。 |
+| 对照教材与课标 | 在[教材馆](https://www.kebiao.org/textbooks)浏览 174 册小学与初中教材（含北师大版数学、外研社版英语等多个版本），每一课对到课标要点，可定位到具体 PDF 页。 |
 | 下载最新版教材 PDF | 姊妹仓库 [China Textbook New](https://github.com/NBrangerF/China-Textbook-New) 收录 147 本义务教育最新版教材（其中 115 本是 2022 课标修订版），逐本核对国家中小学智慧教育平台，大文件也能整本下载。 |
 | 找到可用的学习材料 | [浏览简体中文学习资源](https://www.kebiao.org/learning-resources)，在详情页查看来源、许可与已有的课标关联证据。 |
 | 整理自己的备课线索 | 把标准保存在当前浏览器的[清单](https://www.kebiao.org/collections)中，导入或导出 JSON，并生成适合打印的版本。 |
@@ -105,7 +105,7 @@ flowchart LR
 | 学段/年级 | S1（1–2 年级）、S2（3–4 年级）、S3（5–6 年级）、S4（7–9 年级）；英语 S1–S3 对应 3–4、5–6、7–9 年级 |
 | 2022 年版旧编码 | 2,025 个，全部解析到它并入的新标准；旧记录只在 `/api/v1/legacy/...` 对照 |
 | 可迁移技能 | 7 类：批判性思维与问题解决；创造力与创新；学习者能动性与自我导向学习；协作；沟通；数字、信息与媒体素养；全球公民与伦理责任 |
-| 教材索引 | 170 册学生教材：小学 104 册、初中 66 册，覆盖 13 个教材学科分类，12 个版本 |
+| 教材索引 | 174 册学生教材：小学 105 册、初中 69 册，覆盖 13 个教材学科分类，12 个版本 |
 | 数据版本 | [`public/data/v2/version.json`](./public/data/v2/version.json)：由标准内容算出，内容不变就不变 |
 
 这些数字描述的是当前项目数据集，不代表对所有国家课程文件、教材版本或教学资源的完整收录。可复现统计见 [`public/data/v2/manifest.json`](./public/data/v2/manifest.json)、[`public/data/textbooks/manifest.json`](./public/data/textbooks/manifest.json) 和 [`public/data/quality/trust_report.json`](./public/data/quality/trust_report.json)。
