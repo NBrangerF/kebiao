@@ -81,16 +81,20 @@ function candidatesFor(book, materials) {
     })
 }
 
+// the platform's typos, corrected to the printed book's title
+const TITLE_FIXES = [['“象征性“长跑', '“象征性”长跑'], ['Make a dream community mode', 'Make a dream community model']]
+const fixTitle = title => TITLE_FIXES.reduce((text, [from, to]) => text.endsWith(to) ? text : text.replace(from, to), String(title || ''))
+
 function flattenTree(nodes, parents = [], out = []) {
     for (const node of nodes || []) {
-        const entry = { id: node.id, title: node.title, path: [...parents, node.id] }
+        const entry = { id: node.id, title: fixTitle(node.title), path: [...parents, node.id] }
         out.push(entry)
         flattenTree(node.child_nodes, entry.path, out)
     }
     return out
 }
 
-const slimTree = nodes => (nodes || []).filter(node => !node.custom_properties?.hidden).map(node => ({ id: node.id, title: node.title, children: slimTree(node.child_nodes) }))
+const slimTree = nodes => (nodes || []).filter(node => !node.custom_properties?.hidden).map(node => ({ id: node.id, title: fixTitle(node.title), children: slimTree(node.child_nodes) }))
 
 const MATERIALS = ['视频课程', '课件', '教学设计', '学习任务单', '课后练习', '基础性作业', '拓展性作业']
 function lessonMaterials(lesson) {
