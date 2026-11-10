@@ -37,7 +37,21 @@
     {"id": "fourty-spelling-6a", "name": "forty 多写了 u", "why": "four、fourteen 都有 u，就以为 forty 也有。", "move": "把 four、fourteen、forty 竖着写，圈出 forty 少了 u；全班拼读 f-o-r-t-y 三遍。"},
     {"id": "to-plus-3sg-6a", "name": "to 后面的动词也加了 s", "why": "记住了主语是三单要加 s，给 want 加了 s 还不放心，to 后面的动词也加上。", "move": "画箭头：只有 want 随主语变成 wants，to 后面的动词“回到原形”，和 going to buy 一样。"},
     {"id": "not-missed-6a", "name": "漏看了 not，意思读反", "why": "not 夹在句子后半截，读得快就只抓住了后面几个词。", "move": "让学生用手指着读，读到 not 停一停：not 后面说的是“不要这样做”。"},
-    {"id": "one-at-a-time-as-once-6a", "name": "把“一个一个地”当成“一次”", "why": "看到 one 和 time，就拼成了“一次”。", "move": "演示：一支一支地把笔放进盒子（one at a time），和一把全放进去（together）比一比。"}
+    {"id": "one-at-a-time-as-once-6a", "name": "把“一个一个地”当成“一次”", "why": "看到 one 和 time，就拼成了“一次”。", "move": "演示：一支一支地把笔放进盒子（one at a time），和一把全放进去（together）比一比。"},
+    {"id": "and-verb-not-past-6a", "name": "and 后面的动词忘了变", "why": "前一个动词已经变成过去式，以为 and 后面的动词跟着就行，不用再变。", "move": "把 and 前后的两个动作各圈一下：两件事都发生在过去，两个动词都要变成过去式。"},
+    {"id": "mentioned-as-writer-6a", "name": "把文中提到的人当成作者", "why": "点评第一句出现了 my uncle，就以为是他写的，没看末尾括号里的署名。", "move": "先找点评末尾括号里的名字，再问：文中的 I、me、my 说的是谁？"},
+    {"id": "byline-ignored-6a", "name": "没注意括号里的署名", "why": "以为作者要写在正文里，没把末尾括号里的名字当成作者。", "move": "指着 Reading time 每篇末尾的括号问：这里写的是谁？他是做什么的？"},
+    {"id": "custom-mismatch-6a", "name": "把习俗和原因配错了", "why": "记住了年兽怕三样东西，没对上哪个习俗对应哪一样。", "move": "画三栏：红色、亮光、响声，让学生把贴红纸、点蜡烛、放鞭炮分别放进栏里。"},
+    {"id": "not-for-dont-6a", "name": "叫人别做时用 not 开头", "why": "汉语“不要熬夜”只在动词前加“不要”，就照着在动词前放一个 not。", "move": "对比：Don't eat too much. / Not eat too much.：叫人别做什么，用 Don't 开头，后面跟原形。"},
+    {"id": "want-before-need-6a", "name": "先买想要的，不先顾需要的", "why": "看到喜欢的东西就想先买，没想到钱花了，需要的东西就买不起了。", "move": "在计划表上先写 need 的东西，算算还剩多少钱，再看 want 的东西买不买得起。"},
+    {"id": "over-budget-6a", "name": "没算总价就都想买", "why": "只看到每样东西都比手里的钱便宜，没把两样的价钱加起来。", "move": "让学生把两样的价钱加起来，和手里的钱比一比。"},
+    {"id": "order-swapped-6a", "name": "把先后顺序弄反了", "why": "没按 a long time ago、later、so 这些词理清先后，以为纸币比金属钱币出现得早。", "move": "让学生在短文里圈出 A long time ago、Later、So，按顺序把钱的样子排一排。"},
+    {"id": "orbit-for-day-night-6a", "name": "以为绕太阳转带来昼夜", "why": "地球的两种转动都听说过，没分清自转带来白天黑夜，绕太阳转一圈是一年。", "move": "用手电筒当太阳，让地球仪原地转一圈：亮的一面是白天，暗的一面是黑夜。"},
+    {"id": "junk-any-around-earth-6a", "name": "以为绕地球转的都是太空垃圾", "why": "只记住了太空垃圾绕着地球转，没注意它必须是人造的。", "move": "把定义拆成两问：是人做的吗？在太空里吗？两问都是“是”才算。"},
+    {"id": "junk-any-old-thing-6a", "name": "以为旧东西都是太空垃圾", "why": "只记住了 junk 是“垃圾、旧东西”，漏了“在太空里”。", "move": "把定义拆成两问：是人做的吗？在太空里吗？两问都是“是”才算。"},
+    {"id": "reduce-reuse-swap-6a", "name": "reduce、reuse 混了", "why": "三个词都以 re 开头，又是一起学的，只记住了都和节约有关。", "move": "给每个词配动作：reduce 双手往里收（少用），reuse 拿起来再用一次，recycle 双手画圈（回收再做新的）。"},
+    {"id": "reduce-recycle-swap-6a", "name": "reduce、recycle 混了", "why": "三个词都以 re 开头，又是一起学的，只记住了都和节约有关。", "move": "给每个词配动作：reduce 双手往里收（少用），reuse 拿起来再用一次，recycle 双手画圈（回收再做新的）。"},
+    {"id": "sun-only-light-6a", "name": "以为太阳能只能用来照明", "why": "平时只见到太阳把东西照亮，没读到故事里用太阳能把饭做熟了。", "move": "让学生从故事里找出阳光能做的三件事：照亮房子、开车、做饭。"}
   ],
   "items": [
     {
@@ -144,6 +158,47 @@
       ]
     },
     {
+      "id": "en-6a-34",
+      "type": "write",
+      "unit": "Unit 1 Amazing places",
+      "lesson": "C Project: Make a holiday scrapbook",
+      "lessons": ["Amazing places", "Project", "Make a holiday scrapbook"],
+      "points": ["EN-S2-LK-01.10", "EN-S2-LS-01.14"],
+      "topic": "and 连两件过去的事",
+      "stem": "给旅行剪贴簿配文字。用括号里的词填空：Last summer, my family went to Qingdao and ____ (eat) fresh fish.",
+      "answer": "ate",
+      "wrong": {"eat": "and-verb-not-past-6a", "eated": "past-ed-overgeneralize"},
+      "right": ["去青岛、吃鱼都是去年夏天的事，两个动词都用过去式；", "eat 的过去式是 ate：went to Qingdao and ate fresh fish."],
+      "typical": ["前面 went 已经变了，and 后面不用再变：", "went to Qingdao and eat fresh fish"],
+      "typical_error": "and-verb-not-past-6a",
+      "ladder": [
+        {"q": "用括号里的词填空：I visited my grandma and ____ (watch) TV with her.", "a": "watched"},
+        {"q": "用括号里的词填空：They climbed the mountain and ____ (see) the sunrise.", "a": "saw"},
+        {"q": "用 and 连起两件事，为剪贴簿写一句：你去了哪里、做了什么。", "a": "如：I went to Xi'an and ate some noodles."}
+      ]
+    },
+    {
+      "id": "en-6a-35",
+      "type": "choice",
+      "unit": "Unit 1 Amazing places",
+      "lesson": "Reading time",
+      "lessons": ["Amazing places", "Reading time"],
+      "points": ["EN-S2-LC-01.6", "EN-S2-TH-01.15"],
+      "topic": "旅行点评是谁写的",
+      "stem": "Read: My uncle took me to Mount Huangshan. We watched the sunrise! (Lily, a student from Hefei) 这篇点评是谁写的？",
+      "options": ["Lily 的 uncle", "文中没有说是谁写的", "Lily"],
+      "answer": 2,
+      "wrong": {"0": "mentioned-as-writer-6a", "1": "byline-ignored-6a"},
+      "right": ["点评末尾括号里写的就是作者：Lily，合肥的学生；", "文中的 me、we 说的也是 Lily 自己。"],
+      "typical": ["第一句就是 My uncle，点评是叔叔写的：", "选“Lily 的 uncle”"],
+      "typical_error": "mentioned-as-writer-6a",
+      "ladder": [
+        {"q": "(Tom, bus driver) 括号里告诉了我们作者的哪两样信息？", "a": "名字 Tom，职业 bus driver"},
+        {"q": "Read: My dad and I went to Mount Tai. (Ben, student) 谁写的？I 指谁？", "a": "Ben 写的；I 指 Ben"},
+        {"q": "照 Reading time 的样子，给你的旅行点评写个署名。", "a": "如：(Wang Lin, 12-year-old student)"}
+      ]
+    },
+    {
       "id": "en-6a-10",
       "type": "choice",
       "unit": "Unit 2 Getting together",
@@ -243,6 +298,48 @@
         {"q": "Fact 还是 Opinion？Amy ran in the race.", "a": "Fact"},
         {"q": "Fact 还是 Opinion？Dragon boat races are the most fun!", "a": "Opinion"},
         {"q": "写一句关于运动会的 Fact，再写一句 Opinion。", "a": "如：We ran a race. It was great fun!"}
+      ]
+    },
+    {
+      "id": "en-6a-36",
+      "type": "choice",
+      "unit": "Unit 2 Getting together",
+      "lesson": "C Project: Present photos from school events",
+      "lessons": ["Getting together", "Project", "Present photos from school events"],
+      "points": ["EN-S2-LK-01.10", "EN-S2-LC-02.1"],
+      "topic": "介绍照片里做过的事",
+      "stem": "展示上周运动会的照片：Look! These are photos from our sports meet last week. We ____ in three races.",
+      "options": ["ran", "run", "runned"],
+      "answer": 0,
+      "wrong": {"1": "past-tense-drop", "2": "past-ed-overgeneralize"},
+      "right": ["赛跑是上周（last week）的事，动词用过去式；", "run 是不规则动词，过去式是 ran：We ran in three races."],
+      "typical": ["照片就在眼前，动词不用变：", "We run in three races."],
+      "typical_error": "past-tense-drop",
+      "ladder": [
+        {"q": "补全：This is a photo from New Year's Day. We ____ (sing) songs.", "a": "sang"},
+        {"q": "补全：Look! These are our kites. We ____ (make) them last week.", "a": "made"},
+        {"q": "用两句英语介绍一张学校活动的照片：这是什么照片，你们做了什么。", "a": "如：This is a photo from our music day. We sang and danced."}
+      ]
+    },
+    {
+      "id": "en-6a-37",
+      "type": "choice",
+      "unit": "Unit 2 Getting together",
+      "lesson": "Reading time",
+      "lessons": ["Getting together", "Reading time", "Nian"],
+      "points": ["EN-S2-LC-01.6", "EN-S2-CA-01.2"],
+      "topic": "用年兽故事解释习俗",
+      "stem": "按年兽（Nian）的故事，人们过年为什么在门上贴红色的福字和春联？",
+      "options": ["Nian hates loud noises.", "Nian hates the colour red.", "Red paper makes the doors pretty."],
+      "answer": 1,
+      "wrong": {"0": "custom-mismatch-6a", "2": "add-outside-info-3b"},
+      "right": ["老人在门窗上贴红纸，年兽说 I hate the colour red!", "故事说从那以后人们过年贴福字、春联，用的就是这红色。"],
+      "typical": ["年兽最后是被鞭炮吓跑的，就选怕响声：", "Nian hates loud noises."],
+      "typical_error": "custom-mismatch-6a",
+      "ladder": [
+        {"q": "过年放烟花爆竹，对应年兽怕的哪样东西？", "a": "loud noises（响声）"},
+        {"q": "把窗户照得亮亮的，对应年兽怕的哪样东西？", "a": "bright lights（亮光）"},
+        {"q": "用英语说说你家过春节时做的一件事。", "a": "如：We eat dumplings with our grandparents."}
       ]
     },
     {
@@ -370,6 +467,46 @@
       ]
     },
     {
+      "id": "en-6a-38",
+      "type": "choice",
+      "unit": "Unit 3 Healthy life",
+      "lesson": "C Project: Make a healthy lifestyle guide",
+      "lessons": ["Healthy life", "Project", "Make a healthy lifestyle guide"],
+      "points": ["EN-S2-LS-01.18", "EN-S2-TH-01.3"],
+      "topic": "指南里的 Don't",
+      "stem": "健康生活指南写“不要看太久电视”。选出正确的一句。",
+      "options": ["Don't watch TV for too long.", "Not watch TV for too long.", "Don't watching TV for too long."],
+      "answer": 0,
+      "wrong": {"1": "not-for-dont-6a", "2": "imperative-ing-5b"},
+      "right": ["叫人不要做某事，用 Don't + 动词原形开头：", "Don't watch TV for too long."],
+      "typical": ["汉语“不要”放在动词前，就写 not：", "Not watch TV for too long."],
+      "typical_error": "not-for-dont-6a",
+      "ladder": [
+        {"q": "改成“不要……”：Eat too much candy.", "a": "Don't eat too much candy."},
+        {"q": "改错：Not play computer games late at night.", "a": "Don't play computer games late at night."},
+        {"q": "为健康生活指南写两条：一条“要……”，一条“不要……”。", "a": "如：Exercise every day. Don't go to bed late."}
+      ]
+    },
+    {
+      "id": "en-6a-39",
+      "type": "judge",
+      "unit": "Unit 3 Healthy life",
+      "lesson": "Reading time",
+      "lessons": ["Healthy life", "Reading time"],
+      "points": ["EN-S2-LC-01.6", "EN-S2-TH-01.3"],
+      "topic": "开心也关系到健康",
+      "stem": "读完 Right Hand 和 Left Hand 的故事，Tom 这样说。你同意吗？",
+      "work": ["Making things with our hands can make us happy.", "That's good for our health, too."],
+      "answer": true,
+      "wrong": {"disagree": "mood-not-health-6a"},
+      "right": ["故事里主人不开心，双手帮他做手工，他又开心了；", "故事说开心对健康很重要，所以这也有益健康。"],
+      "ladder": [
+        {"q": "故事里，双手帮主人做了哪件让他开心的事？", "a": "做手工（make handicrafts）"},
+        {"q": "同意吗？Talking with friends is good for our health.", "a": "同意"},
+        {"q": "用英语说一件你用双手做、能让自己开心的事。", "a": "如：I draw pictures. It makes me happy."}
+      ]
+    },
+    {
       "id": "en-6a-03",
       "type": "choice",
       "unit": "Unit 4 Managing money well",
@@ -493,6 +630,48 @@
       ]
     },
     {
+      "id": "en-6a-40",
+      "type": "choice",
+      "unit": "Unit 4 Managing money well",
+      "lesson": "C Project: Make a spending plan",
+      "lessons": ["Managing money well", "Project", "Make a spending plan"],
+      "points": ["EN-S2-TH-01.8", "EN-S2-LS-01.18"],
+      "topic": "花钱计划先顾需要",
+      "stem": "Amy has 100 yuan. She needs a schoolbag (60 yuan). She wants a toy car (70 yuan). 她的计划该怎样写？",
+      "options": ["First, I'm going to buy the toy car.", "I'm going to buy both today.", "First, I'm going to buy the schoolbag."],
+      "answer": 2,
+      "wrong": {"0": "want-before-need-6a", "1": "over-budget-6a"},
+      "right": ["先买需要的书包：100 − 60 = 40 元；", "玩具车 70 元，钱不够，可以先存钱以后再买。"],
+      "typical": ["喜欢玩具车，先买它：", "First, I'm going to buy the toy car."],
+      "typical_error": "want-before-need-6a",
+      "ladder": [
+        {"q": "一本书 30 元，一个球 60 元，你有 80 元。两样都买得起吗？", "a": "买不起：一共 90 元"},
+        {"q": "need 还是 want？Tom's shoes are too small. He ____ new shoes.", "a": "needs"},
+        {"q": "用 I need ... I want ... First, I'm going to ... 写你的花钱计划。", "a": "如：I need a pen. I want a ball. First, I'm going to buy the pen."}
+      ]
+    },
+    {
+      "id": "en-6a-41",
+      "type": "choice",
+      "unit": "Unit 4 Managing money well",
+      "lesson": "Reading time",
+      "lessons": ["Managing money well", "Reading time"],
+      "points": ["EN-S2-LC-01.6", "EN-S2-LS-01.2"],
+      "topic": "纸币是怎么来的",
+      "stem": "读 Reading time：后来人们为什么用起了纸币？",
+      "options": ["纸币比金属钱币更值钱。", "金属钱币太重，带着不方便。", "那时候还没有金属钱币。"],
+      "answer": 1,
+      "wrong": {"0": "guess-not-text-5a", "2": "order-swapped-6a"},
+      "right": ["短文说：Metal coins were heavy to carry.", "金属钱币太重，带着不方便，人们就用起了纸币。"],
+      "typical": ["纸币现在还在用，一定是更值钱：", "选“纸币比金属钱币更值钱”"],
+      "typical_error": "guess-not-text-5a",
+      "ladder": [
+        {"q": "按短文排顺序：A paper money　B exchanging goods　C metal coins", "a": "B C A"},
+        {"q": "短文说，最早人们交换东西时会遇到什么麻烦？", "a": "有时很难换到自己想要的东西"},
+        {"q": "今天人们还能用什么付钱？用英语说出两样。", "a": "如：cards, mobile phones（或 cash）"}
+      ]
+    },
+    {
       "id": "en-6a-19",
       "type": "choice",
       "unit": "Unit 5 Exploring space",
@@ -594,6 +773,48 @@
         {"q": "用括号里的词填空：She ____ (brush) her teeth every morning.", "a": "brushes"},
         {"q": "用括号里的词填空：He ____ (watch) the sunrise in space.", "a": "watches"},
         {"q": "用括号里的词填空：Every afternoon the taikonaut ____ (do) exercise.", "a": "does"}
+      ]
+    },
+    {
+      "id": "en-6a-42",
+      "type": "choice",
+      "unit": "Unit 5 Exploring space",
+      "lesson": "C Project: Share facts about Earth, the Sun and the Moon",
+      "lessons": ["Exploring space", "Project", "Share facts about Earth, the Sun and the Moon"],
+      "points": ["EN-S2-TH-01.23", "EN-S2-LS-01.14"],
+      "topic": "白天黑夜从哪里来",
+      "stem": "做太空知识卡：Why do we have day and night on Earth?",
+      "options": ["Because Earth spins.", "Because the Sun goes around Earth.", "Because Earth goes around the Sun."],
+      "answer": 0,
+      "wrong": {"1": "sun-goes-round-earth-6a", "2": "orbit-for-day-night-6a"},
+      "right": ["地球在不停地自转（spins），", "转到朝着太阳的一面是白天，背着太阳的一面是黑夜。"],
+      "typical": ["每天看到太阳东升西落，是太阳在绕着地球转：", "Because the Sun goes around Earth."],
+      "typical_error": "sun-goes-round-earth-6a",
+      "ladder": [
+        {"q": "地球自转一圈大约要多长时间？A 一天　B 一年", "a": "A"},
+        {"q": "Earth goes around the Sun. 地球绕太阳转一圈大约要多长时间？", "a": "一年"},
+        {"q": "北京是白天的时候，地球另一面的地方可能是白天还是黑夜？", "a": "黑夜（night）"}
+      ]
+    },
+    {
+      "id": "en-6a-43",
+      "type": "choice",
+      "unit": "Unit 5 Exploring space",
+      "lesson": "Reading time",
+      "lessons": ["Exploring space", "Reading time", "space junk"],
+      "points": ["EN-S2-LC-01.6", "EN-S2-LK-01.6"],
+      "topic": "什么是太空垃圾",
+      "stem": "太空垃圾（space junk）是人造的、留在太空里的东西。下面哪一个是 space junk？",
+      "options": ["the Moon going around Earth", "an old toy at home", "an old spaceship part going around Earth"],
+      "answer": 2,
+      "wrong": {"0": "junk-any-around-earth-6a", "1": "junk-any-old-thing-6a"},
+      "right": ["太空垃圾要同时满足两条：是人造的，在太空里；", "旧飞船的零件是人造的，又绕着地球转，所以是。"],
+      "typical": ["绕着地球转的东西都是太空垃圾：", "the Moon going around Earth"],
+      "typical_error": "junk-any-around-earth-6a",
+      "ladder": [
+        {"q": "Is the Sun space junk? 用英语回答，再用中文说为什么。", "a": "No, it isn't. 它不是人造的"},
+        {"q": "从飞船上掉下来、在太空里飘着的一个旧螺丝，是不是 space junk？", "a": "是：人造的，又在太空里"},
+        {"q": "Space junk is growing. 意思是太空垃圾越来越多，还是越来越少？", "a": "越来越多"}
       ]
     },
     {
@@ -718,6 +939,67 @@
         {"q": "选一选：Come in one at a time. A 一个一个进来 B 一起进来", "a": "A"},
         {"q": "Walk to school. Don't go by car. 用汉语说说这条建议。", "a": "走路上学，不要坐车。"},
         {"q": "用英语写一条节约用电的小贴士。", "a": "如：Turn off the lights when you leave."}
+      ]
+    },
+    {
+      "id": "en-6a-44",
+      "type": "choice",
+      "unit": "Unit 6 Energy, nature and us",
+      "lesson": "C Project: Give a presentation about green energy",
+      "lessons": ["Energy, nature and us", "Project", "Give a presentation about green energy"],
+      "points": ["EN-S2-TH-01.20", "EN-S2-LS-01.14"],
+      "topic": "分清 3R 里的 Reduce",
+      "stem": "演讲稿讲 3R 规则。下面哪一个是 Reduce 的例子？",
+      "options": ["Keep crayons in an old jar.", "Use less water when you wash.", "Recycle old newspapers."],
+      "answer": 1,
+      "wrong": {"0": "reduce-reuse-swap-6a", "2": "reduce-recycle-swap-6a"},
+      "right": ["Reduce 是少用：水、电、东西都少用一点；", "旧罐子装蜡笔是 Reuse，旧报纸回收是 Recycle。"],
+      "typical": ["reduce、reuse 都以 re 开头，都是节约：", "Keep crayons in an old jar."],
+      "typical_error": "reduce-reuse-swap-6a",
+      "ladder": [
+        {"q": "Reduce、Reuse 还是 Recycle？Turn off the lights when you leave.", "a": "Reduce"},
+        {"q": "Reduce、Reuse 还是 Recycle？Make a pencil box from an old box.", "a": "Reuse"},
+        {"q": "为演讲稿写一句 Reduce 的建议。", "a": "如：We should use less paper."}
+      ]
+    },
+    {
+      "id": "en-6a-45",
+      "type": "judge",
+      "unit": "Unit 6 Energy, nature and us",
+      "lesson": "Reading time",
+      "lessons": ["Energy, nature and us", "Reading time", "solar oven"],
+      "points": ["EN-S2-LC-01.6", "EN-S2-TH-01.20"],
+      "topic": "太阳能还能做饭",
+      "stem": "读完太阳能“烤箱”的故事，Lily 这样说。你同意吗？",
+      "work": ["Solar power can light our homes,", "but it can't help us cook."],
+      "answer": false,
+      "wrong": {"agree": "sun-only-light-6a"},
+      "right": ["故事里爷爷、Binbin 和 Robin 用太阳能“烤箱”做好了饭，", "没用燃气也没用电：太阳能也能用来做饭。"],
+      "ladder": [
+        {"q": "故事里，Robin 说阳光能做哪三件事？", "a": "照亮房子、让汽车跑起来、做饭"},
+        {"q": "同意吗？We can use solar power to run cars.", "a": "同意"},
+        {"q": "用 We can use solar power to ... 写一句。", "a": "如：We can use solar power to make electricity."}
+      ]
+    },
+    {
+      "id": "en-6a-46",
+      "type": "choice",
+      "unit": "Revision Learning in museums",
+      "lesson": "Revision Learning in museums",
+      "lessons": ["Revision", "museums"],
+      "points": ["EN-S2-LK-01.10", "EN-S2-TH-01.15"],
+      "topic": "过去做的和打算做的",
+      "stem": "Last Sunday, I ____ the science museum. Next Sunday, I ____ the car museum.",
+      "options": ["visited；am going to visit", "visit；am going to visit", "visited；going to visit", "visited；am going to visiting"],
+      "answer": 0,
+      "wrong": {"1": "past-tense-drop", "2": "going-to-be-drop", "3": "to-plus-ing"},
+      "right": ["Last Sunday 是过去：I visited ...", "Next Sunday 是打算：I am going to visit ..."],
+      "typical": ["going to 就是“打算”，", "写成 I going to visit the car museum."],
+      "typical_error": "going-to-be-drop",
+      "ladder": [
+        {"q": "补全：I ____ going to visit my grandma tomorrow.", "a": "am"},
+        {"q": "Last week we ____ (visit) the zoo. Next week we ____ (visit) a museum.（后一空用 be going to）", "a": "visited；are going to visit"},
+        {"q": "用英语说：上周我去了公园，下周我打算去参观博物馆。", "a": "Last week I went to the park. Next week I'm going to visit a museum."}
       ]
     }
   ]

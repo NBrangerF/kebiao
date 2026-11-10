@@ -420,6 +420,27 @@
       ]
     },
     {
+      "id": "en-5b-37",
+      "type": "choice",
+      "unit": "Recycle 1",
+      "lesson": "Recycle 1",
+      "lessons": ["Recycle 1"],
+      "points": ["EN-S2-LK-01.11", "EN-S2-TH-01.1"],
+      "topic": "月份和钟点前的介词",
+      "stem": "班级通知：Our class party is ____ June. We will meet ____ 2:30 p.m.",
+      "options": ["in；at", "on；at", "in；in", "at；at"],
+      "answer": 0,
+      "wrong": {"1": "month-on", "2": "zai-always-in", "3": "time-always-at"},
+      "right": ["只说到月份用 in：in June.", "钟点前用 at：at 2:30 p.m."],
+      "typical": ["“在六月”“在两点半”都是“在”，", "都用 in：in June, in 2:30 p.m."],
+      "typical_error": "zai-always-in",
+      "ladder": [
+        {"q": "补全：I go to bed ____ 9:15 p.m.", "a": "at"},
+        {"q": "补全：My birthday is ____ March.", "a": "in"},
+        {"q": "补全：We go swimming ____ summer, usually ____ 4:00 p.m.", "a": "in；at"}
+      ]
+    },
+    {
       "id": "en-5b-23",
       "type": "choice",
       "unit": "Unit 4 When is the art show?",
@@ -788,6 +809,27 @@
         {"q": "— Are you watching TV? — No, ____ .", "a": "I'm not（或 I am not）"},
         {"q": "— Is your brother doing his homework? — Yes, ____ .", "a": "he is"},
         {"q": "— Are the children playing football? — Yes, ____ .", "a": "they are"}
+      ]
+    },
+    {
+      "id": "en-5b-38",
+      "type": "choice",
+      "unit": "Recycle 2",
+      "lesson": "Recycle 2",
+      "lessons": ["Recycle 2"],
+      "points": ["EN-S2-LK-01.9", "EN-S2-LK-01.11"],
+      "topic": "hers 和进行时连用",
+      "stem": "Chen Jie 牵着一只小狗。— Whose dog is that? — It's ____ . Look! It ____ water.",
+      "options": ["her；is drinking", "hers；drinking", "hers；is drink", "hers；is drinking"],
+      "answer": 3,
+      "wrong": {"0": "wy-her-for-hers-7a", "1": "progressive-be-drop", "2": "progressive-bare-verb"},
+      "right": ["“她的”后面不再跟名词，要用 hers：It's hers.", "Look! 说正在做：It is drinking water."],
+      "typical": ["“它是她的”，", "她的就是 her：It's her."],
+      "typical_error": "wy-her-for-hers-7a",
+      "ladder": [
+        {"q": "补全：This is Amy's kite. It's ____ .", "a": "hers"},
+        {"q": "补全（她的）：The red bike is ____ bike. It's ____ .", "a": "her；hers"},
+        {"q": "用英语说：这是 Mike 的帽子，是他的。看！他正在吃苹果。", "a": "This is Mike's hat. It's his. Look! He's eating an apple."}
       ]
     }
   ]

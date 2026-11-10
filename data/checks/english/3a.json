@@ -834,6 +834,27 @@
         {"q": "— How old are you? — I'm ____ .（9 岁）", "a": "nine"},
         {"q": "同学过生日，用英语祝贺他，再问问他几岁。", "a": "Happy birthday! How old are you?"}
       ]
+    },
+    {
+      "id": "en-3a-39",
+      "type": "choice",
+      "unit": "Revision Being a good guest",
+      "lesson": "Revision Being a good guest",
+      "lessons": ["Revision", "Being a good guest"],
+      "points": ["EN-S1-LS-01.12", "EN-S1-CA-02.4"],
+      "topic": "做客时怎样答 Do you like",
+      "stem": "你去 Zhang Peng 家做客。他奶奶切好蛋糕问你：Do you like cake? 你很喜欢，你说：",
+      "options": ["Yes, I am. Thank you.", "Yes, I do. Thank you.", "Yes, I like. Thank you."],
+      "answer": 1,
+      "wrong": {"0": "do-be-short-answer", "2": "short-answer-repeat-verb-3a"},
+      "right": ["Do you like ...? 用 Do 问，就用 do 答：Yes, I do.", "别人请你吃东西，再说一声 Thank you.，做个有礼貌的客人。"],
+      "typical": ["问句里有 like，", "我就答 Yes, I like."],
+      "typical_error": "short-answer-repeat-verb-3a",
+      "ladder": [
+        {"q": "— Do you like pandas? — Yes, I ____ .", "a": "do"},
+        {"q": "— Do you like tigers?（不喜欢）— No, I ____ .", "a": "don't"},
+        {"q": "Sarah 问你：Do you like my cat? 你喜欢，回答并夸它可爱。", "a": "Yes, I do. It's cute."}
+      ]
     }
   ]
 }

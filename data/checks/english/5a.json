@@ -43,7 +43,18 @@
     {"id": "how-as-how-are-you-5a", "name": "见到 How 就当成问“你好吗”", "why": "How are you? 学得最早，听到 How 开头的问句就按问候来答。", "move": "把 How are you? 和 How can I ...? 写在两边，划出 can I 后面的动作，问：他想知道的是心情还是做法？"},
     {"id": "but-clause-ignored-5a", "name": "没读 but 后面就下结论", "why": "读到 like computer games 就认定是坏习惯，没看 but 后面说他玩得不多。", "move": "用两种颜色划出 but 前后两半，问：后半句把前半句的意思改了吗？"},
     {"id": "looks-as-use-5a", "name": "把“长什么样”当成“怎么用”", "why": "短文写花写得最多又在前面，就以为花是人们拿来吃的部分。", "move": "分两种颜色划句子：写样子的、写人们拿来做什么的，答案只在第二种里找。"},
-    {"id": "guess-from-other-plant-5a", "name": "拿别的植物的吃法来猜", "why": "刚学过吃莲叶、兔子吃萝卜叶，就凭印象选叶子，没回短文找。", "move": "问：短文里哪一句有 eat？划出来，eat 后面是什么就选什么。"}
+    {"id": "guess-from-other-plant-5a", "name": "拿别的植物的吃法来猜", "why": "刚学过吃莲叶、兔子吃萝卜叶，就凭印象选叶子，没回短文找。", "move": "问：短文里哪一句有 eat？划出来，eat 后面是什么就选什么。"},
+    {"id": "cant-read-as-can-5a", "name": "把 can't 看成 can", "why": "can't 和 can 只差几个字母，读得快就漏看了 't，把“不会”读成了“会”。", "move": "让学生先圈出句子里所有的 can 和 can't，再说每一句是“会”还是“不会”。"},
+    {"id": "want-no-to-5a", "name": "want 后直接接动词", "why": "汉语“想喊”两个字连着说，就把 want 和 shout 直接连上。", "move": "把 want to 写在同一张卡片上：I want to shout. / I want to cry. 读时三个词一起出来。"},
+    {"id": "copy-story-fix-5a", "name": "照搬故事里的办法", "why": "故事里陪 Benjy 玩，它就开心了，没看这一次不开心的原因是什么。", "move": "先问：它为什么不开心？把写原因的那句圈出来，再选对着原因的办法。"},
+    {"id": "more-work-better-5a", "name": "以为学习越多越好", "why": "觉得多做作业总没错，没看出表里已经全是学习，缺的是玩。", "move": "把表里的事分成 work 和 play 两堆，问：哪一堆是空的？建议就补那一堆。"},
+    {"id": "many-tasks-balanced-5a", "name": "以为做的事多就是平衡好", "why": "看到每天都安排得满满的、做的都是好事，就觉得很平衡，没看有没有玩的时间。", "move": "同样分成 work 和 play 两堆数一数：只有一堆有东西，就不算平衡。"},
+    {"id": "multitask-balance-5a", "name": "以为边学边玩就是平衡", "why": "把“学习和玩都要有”理解成同一时间把两件事一起做。", "move": "追问：边看电视边写作业，作业能写好吗？电视看得开心吗？再说说“先写完作业再玩”。"},
+    {"id": "not-always-as-never-5a", "name": "把 not always 当成从不", "why": "看到 doesn't 就把整句当成否定，没注意 always 让意思变成“不总是”。", "move": "画一周七格：always 七格全涂，not always 涂几格空几格，never 一格不涂。"},
+    {"id": "brush-then-candy-ok-5a", "name": "以为刷了牙就能多吃糖", "why": "觉得一个好习惯能抵掉一个坏习惯，没想到两条建议都要做到。", "move": "问：牙刷得再勤，糖吃得很多，牙会怎样？把两条建议并排写，两条都打钩才算做到。"},
+    {"id": "uk-tea-first-5a", "name": "以为茶最早在英国流行", "why": "听说过英国人爱喝下午茶，没看短文先写中国、后写日本、最后才写英国。", "move": "让学生在短文里圈出 first、then、in the 1700s，按顺序排一排茶走过的地方。"},
+    {"id": "tea-only-drink-5a", "name": "以为茶叶只能泡水喝", "why": "生活里见到的茶都是泡来喝的，没读到用茶叶做菜、做点心的那一段。", "move": "让学生找出短文里 cook、make 后面的东西，数一数茶叶还能做成什么。"},
+    {"id": "water-tower-literal-5a", "name": "把外号当成真的东西", "why": "按字面把 Water Tower 想成一座真的水塔，没去短文里找这个外号是怎么来的。", "move": "问：短文里哪几句写到了 water？把它们读出来，说说外号的来由。"}
   ],
   "items": [
     {
@@ -171,6 +182,46 @@
       ]
     },
     {
+      "id": "en-5a-37",
+      "type": "step",
+      "unit": "Unit 1 Different friends",
+      "lesson": "C Project: Make an album of your friends",
+      "lessons": ["Different friends", "Project", "Make an album of your friends"],
+      "points": ["EN-S2-LC-02.4", "EN-S2-LK-01.7"],
+      "topic": "给朋友相册写介绍",
+      "stem": "Lily 给朋友相册写了四句介绍。她从第几句开始写错了？",
+      "work": ["This is my friend Ben.", "He is funny and helpful.", "He can draws very well.", "He is good at playing ping-pong."],
+      "answer": 2,
+      "error": "modal-plus-s",
+      "right": ["can 后面的动词用原形，主语是谁都不变：", "He can draw very well."],
+      "ladder": [
+        {"q": "补全朋友卡：Amy is kind. She can ____ (sing) very well.", "a": "sing"},
+        {"q": "改错：My friend Tom can plays the erhu.", "a": "can plays → can play"},
+        {"q": "用三句话介绍一位朋友：性格、会做什么、擅长什么。", "a": "如：He is clever. He can swim. He is good at drawing."}
+      ]
+    },
+    {
+      "id": "en-5a-38",
+      "type": "choice",
+      "unit": "Unit 1 Different friends",
+      "lesson": "Reading time",
+      "lessons": ["Different friends", "Reading time"],
+      "points": ["EN-S2-LC-01.6", "EN-S2-LK-01.7"],
+      "topic": "不会这样，但会那样",
+      "stem": "Tim can't sing well, but he can play the erhu well. We need music for our party. — Can Tim help? — ____",
+      "options": ["No, he can't. He can't sing well.", "Yes, he can. He can sing for us.", "Yes, he can. He can play the erhu."],
+      "answer": 2,
+      "wrong": {"0": "but-clause-ignored-5a", "1": "cant-read-as-can-5a"},
+      "right": ["but 后面说 Tim 二胡拉得好，晚会正需要音乐，", "他会的事能帮上忙：Yes, he can."],
+      "typical": ["Tim 唱歌不好，就帮不上忙：", "No, he can't. He can't sing well."],
+      "typical_error": "but-clause-ignored-5a",
+      "ladder": [
+        {"q": "Ann can't swim, but she can run fast. Ann 会做什么？", "a": "run fast（跑得快）"},
+        {"q": "Ben can't draw, but he can write well. 海报要写字，Ben 能帮忙吗？用英语答。", "a": "Yes, he can. He can write well."},
+        {"q": "用 I can't ..., but I can ... 说说你自己。", "a": "如：I can't sing well, but I can dance."}
+      ]
+    },
+    {
       "id": "en-5a-10",
       "type": "choice",
       "unit": "Unit 2 My feelings",
@@ -292,6 +343,48 @@
         {"q": "Tom 在学校感觉怎样？用一个英语词回答。", "a": "happy"},
         {"q": "I'm worried. My grandma is sick. 我为什么担心？用中文答。", "a": "奶奶病了"},
         {"q": "给 Tom 一条建议，用 You can ... 写一句。", "a": "如 You can help your dog."}
+      ]
+    },
+    {
+      "id": "en-5a-39",
+      "type": "choice",
+      "unit": "Unit 2 My feelings",
+      "lesson": "C Project: Make a feelings book",
+      "lessons": ["My feelings", "Project", "Make a feelings book"],
+      "points": ["EN-S2-LC-02.3", "EN-S2-LS-01.14"],
+      "topic": "写情绪书：想做和能做",
+      "stem": "做情绪书：生气时我想大喊，但我可以出去散散步。选出正确的一句。",
+      "options": ["I want shout, but I can take a walk.", "I want to shout, but I can take a walk.", "I want to shout, but I can to take a walk."],
+      "answer": 1,
+      "wrong": {"0": "want-no-to-5a", "2": "can-to-verb"},
+      "right": ["want 后面先加 to 再接动作：want to shout；", "can 后面直接跟原形：can take a walk。"],
+      "typical": ["汉语“想喊”两个字连着说：", "I want shout, but I can take a walk."],
+      "typical_error": "want-no-to-5a",
+      "ladder": [
+        {"q": "When I feel sad, I want ____ cry.", "a": "to"},
+        {"q": "补全（要就写 to，不要写 ×）：I want ____ run, but I can ____ sing a song.", "a": "to，×"},
+        {"q": "用英语写情绪书的一句：难过时我想哭，但我可以画一幅画。", "a": "When I feel sad, I want to cry, but I can draw a picture."}
+      ]
+    },
+    {
+      "id": "en-5a-40",
+      "type": "choice",
+      "unit": "Unit 2 My feelings",
+      "lesson": "Reading time",
+      "lessons": ["My feelings", "Reading time"],
+      "points": ["EN-S2-LC-01.6", "EN-S2-LC-03.1"],
+      "topic": "先找原因再帮忙",
+      "stem": "Read: Mimi the cat is not happy today. She's very hungry. 怎样帮 Mimi 最合适？",
+      "options": ["Let's give her some food.", "Let's play with her. Then she can be happy.", "Don't talk to her. She's angry."],
+      "answer": 0,
+      "wrong": {"1": "copy-story-fix-5a", "2": "guess-not-text-5a"},
+      "right": ["短文说了原因：She's hungry.（她饿了）", "办法要对着原因：给她吃的。"],
+      "typical": ["故事里陪 Benjy 玩，它就开心了，这次也一样：", "Let's play with her."],
+      "typical_error": "copy-story-fix-5a",
+      "ladder": [
+        {"q": "小狗 Lucky 冷得发抖。选办法：A Give him some water. B Take him inside.", "a": "B"},
+        {"q": "Tom looks sad. He can't find his ball. 用英语对他说一句话。", "a": "如：Don't be sad. I can help you."},
+        {"q": "Kitty looks worried. She has a maths test tomorrow. 用英语说一句帮她的话。", "a": "如：Don't worry. Let's study together."}
       ]
     },
     {
@@ -417,6 +510,46 @@
       ]
     },
     {
+      "id": "en-5a-41",
+      "type": "choice",
+      "unit": "Unit 3 Work and play",
+      "lesson": "C Project: Make a chart about work-play balance",
+      "lessons": ["Work and play", "Project", "Make a chart about work-play balance"],
+      "points": ["EN-S2-TH-01.1", "EN-S2-LS-01.14"],
+      "topic": "看表给出平衡建议",
+      "stem": "Lily: I do my homework every day. I help my mum. I study English every evening. I don't play outside. 哪一句说得对？",
+      "options": ["Lily should do more homework.", "Lily has a good work-play balance.", "Lily should play outside more."],
+      "answer": 2,
+      "wrong": {"0": "more-work-better-5a", "1": "many-tasks-balanced-5a"},
+      "right": ["Lily 的学习、家务都做到了，", "可是没有玩的时间，所以该多去外面玩一玩。"],
+      "typical": ["作业做得越多越好：", "Lily should do more homework."],
+      "typical_error": "more-work-better-5a",
+      "ladder": [
+        {"q": "分成 work 和 play 两组：do homework, play football, do chores, fly kites", "a": "work：homework, chores；play：football, kites"},
+        {"q": "Ben: I play games every day. I don't do my homework. 给 Ben 一条建议。", "a": "Ben should do his homework."},
+        {"q": "用两句英语说说你放学后的学习和玩。", "a": "如：I do my homework after school. Then I play football."}
+      ]
+    },
+    {
+      "id": "en-5a-42",
+      "type": "judge",
+      "unit": "Unit 3 Work and play",
+      "lesson": "Reading time",
+      "lessons": ["Work and play", "Reading time"],
+      "points": ["EN-S2-LC-01.6", "EN-S2-TH-01.1"],
+      "topic": "边学边玩不是平衡",
+      "stem": "读完校长写给家长的信，Ken 这样说。你同意吗？",
+      "work": ["I do my homework and watch TV at the same time.", "这样学习、玩耍都有了，是好的平衡。"],
+      "answer": false,
+      "wrong": {"agree": "multitask-balance-5a"},
+      "right": ["平衡是学习有学习的时间，玩有玩的时间；", "一边写作业一边看电视，两样都做不好。"],
+      "ladder": [
+        {"q": "这样安排好吗？I finish my homework first. Then I watch TV.", "a": "好：先学习，再玩"},
+        {"q": "watch TV 和 do homework，Ken 应该先做哪一件？", "a": "先 do homework，再 watch TV"},
+        {"q": "用 First ... Then ... 说说你放学后怎样安排学习和玩。", "a": "如：First, I do my homework. Then I play outside."}
+      ]
+    },
+    {
       "id": "en-5a-20",
       "type": "judge",
       "unit": "Unit 4 Healthy habits",
@@ -536,6 +669,46 @@
         {"q": "I like ice cream, but I don't eat it every day. 他每天吃冰激凌吗？", "a": "不是每天吃"},
         {"q": "Lily: I eat a lot of candy. I don't brush my teeth at night. 是好习惯吗？", "a": "不是，是坏习惯"},
         {"q": "用 but 写一句自己的习惯：I like ..., but I don't ... too often.", "a": "如 I like TV, but I don't watch it too often."}
+      ]
+    },
+    {
+      "id": "en-5a-43",
+      "type": "choice",
+      "unit": "Unit 4 Healthy habits",
+      "lesson": "C Project: Make a healthy habits checklist",
+      "lessons": ["Healthy habits", "Project", "Make a healthy habits checklist"],
+      "points": ["EN-S2-TH-01.3", "EN-S2-LS-01.14"],
+      "topic": "doesn't always 的意思",
+      "stem": "Mike 分享打卡表：My brother doesn't always get enough sleep. 意思是：",
+      "options": ["我弟弟从来都睡不够。", "我弟弟有时候睡不够。", "我弟弟每天都睡得很够。"],
+      "answer": 1,
+      "wrong": {"0": "not-always-as-never-5a", "2": "not-missed-6a"},
+      "right": ["not always 是“不总是”：有的天睡够了，有的天没睡够；", "所以他有时候睡不够，打卡表上有空格。"],
+      "typical": ["看到 doesn't 就是“不”，整句是“从来睡不够”：", "我弟弟从来都睡不够。"],
+      "typical_error": "not-always-as-never-5a",
+      "ladder": [
+        {"q": "选一选：I don't always eat breakfast. A 我有时不吃早饭 B 我从不吃早饭", "a": "A"},
+        {"q": "Amy 一周有三天没喝够水。用 doesn't always 说一句。", "a": "Amy doesn't always drink enough water."},
+        {"q": "用 I don't always ... I should ... 说说你的一个习惯。", "a": "如：I don't always drink enough water. I should drink more."}
+      ]
+    },
+    {
+      "id": "en-5a-44",
+      "type": "judge",
+      "unit": "Unit 4 Healthy habits",
+      "lesson": "Reading time",
+      "lessons": ["Healthy habits", "Reading time"],
+      "points": ["EN-S2-TH-01.3", "EN-S2-LK-01.7"],
+      "topic": "护牙建议要都做到",
+      "stem": "读完护眼、护牙小贴士，Mike 这样说。你同意吗？",
+      "work": ["I brush my teeth twice a day,", "but I still shouldn't eat too much candy."],
+      "answer": true,
+      "wrong": {"disagree": "brush-then-candy-ok-5a"},
+      "right": ["刷牙和少吃糖是两条建议，都要做到；", "牙刷得勤，糖却吃得多，牙还是会坏。"],
+      "ladder": [
+        {"q": "哪条是护牙的建议？A Brush your teeth at night. B Look out of the window.", "a": "A"},
+        {"q": "同意吗？I exercise every day, so I can watch TV all evening.", "a": "不同意"},
+        {"q": "给爱吃糖的弟弟写一条建议，用 shouldn't。", "a": "如：You shouldn't eat too much candy."}
       ]
     },
     {
@@ -662,6 +835,48 @@
       ]
     },
     {
+      "id": "en-5a-45",
+      "type": "choice",
+      "unit": "Unit 5 Food we eat",
+      "lesson": "C Project: Make a presentation about how a plant grows",
+      "lessons": ["Food we eat", "Project", "how a plant grows"],
+      "points": ["EN-S2-LK-01.7", "EN-S2-LC-03.1"],
+      "topic": "介绍植物：they 还是 it",
+      "stem": "介绍植物怎么长：Look at these sunflowers! ____ from small seeds.",
+      "options": ["They grow", "It grows", "They grows"],
+      "answer": 0,
+      "wrong": {"1": "plural-as-it", "2": "they-verb-s-4b"},
+      "right": ["these sunflowers 是好几棵，用 they；", "they 后面的动词不加 s：They grow from small seeds."],
+      "typical": ["介绍的是一种植物，就用 it：", "It grows from small seeds."],
+      "typical_error": "plural-as-it",
+      "ladder": [
+        {"q": "补全：Look at this carrot. ____ grows in the ground.", "a": "It"},
+        {"q": "补全：These potatoes are from Grandpa's farm. They ____ (grow) under the ground.", "a": "grow"},
+        {"q": "用 First ... Then ... 说说向日葵怎么长，用上 they。", "a": "如：First, we plant sunflower seeds. Then they grow tall."}
+      ]
+    },
+    {
+      "id": "en-5a-46",
+      "type": "choice",
+      "unit": "Unit 5 Food we eat",
+      "lesson": "Reading time",
+      "lessons": ["Food we eat", "Reading time", "The history of tea"],
+      "points": ["EN-S2-LC-01.6", "EN-S2-CA-01.2"],
+      "topic": "读懂茶的历史",
+      "stem": "读完 The history of tea，哪一句说得对？",
+      "options": ["茶最早是在英国流行起来的。", "茶叶只能泡水喝，不能做吃的。", "最早，人们是吃茶叶的。"],
+      "answer": 2,
+      "wrong": {"0": "uk-tea-first-5a", "1": "tea-only-drink-5a"},
+      "right": ["短文开头说，最早人们不喝茶，而是吃茶叶；", "茶先在中国流行，18 世纪才在英国流行起来。"],
+      "typical": ["英国人爱喝茶，茶一定是从英国流行起来的：", "选“茶最早是在英国流行起来的”"],
+      "typical_error": "uk-tea-first-5a",
+      "ladder": [
+        {"q": "按短文排顺序：A 茶在英国流行 B 人们吃茶叶 C 茶传到日本", "a": "B C A"},
+        {"q": "短文说，在中国有人用茶叶做什么吃的？说出一样。", "a": "chicken、eggs、cakes 或 ice cream（任说一样）"},
+        {"q": "用英语说说你喜欢的一种饮料，它从哪里来。", "a": "如：I like green tea. It comes from China."}
+      ]
+    },
+    {
       "id": "en-5a-08",
       "type": "choice",
       "unit": "Unit 6 Nature and us",
@@ -783,6 +998,69 @@
         {"q": "I'd like a little ice cream. 他想要冰激凌吗？", "a": "想要，要一点"},
         {"q": "There is little food at home. 家里吃的多不多？", "a": "很少，几乎没有"},
         {"q": "用英语说：家里的牛奶很少了。", "a": "There is little milk at home."}
+      ]
+    },
+    {
+      "id": "en-5a-47",
+      "type": "choice",
+      "unit": "Unit 6 Nature and us",
+      "lesson": "C Project: Write a welcome letter for a nature park",
+      "lessons": ["Nature and us", "Project", "Write a welcome letter for a nature park"],
+      "points": ["EN-S2-TX-01.4", "EN-S2-LS-01.17"],
+      "topic": "欢迎信里写季节天气",
+      "stem": "给自然公园写欢迎信，写冬天的天气：____ winter, there is often heavy snow.",
+      "options": ["In", "On", "At"],
+      "answer": 0,
+      "wrong": {"1": "season-on-5b", "2": "time-always-at"},
+      "right": ["季节前用 in：in winter、in spring；", "on 用在某一天前，at 用在钟点前。"],
+      "typical": ["on Monday 用 on，冬天也用 on：", "On winter, there is often heavy snow."],
+      "typical_error": "season-on-5b",
+      "ladder": [
+        {"q": "补全：____ spring, there are many flowers in the park.", "a": "In"},
+        {"q": "补全（in、on 或 at）：We go hiking ____ Saturdays ____ autumn.", "a": "on，in"},
+        {"q": "为欢迎信写一句：这里夏天常常很热。", "a": "In summer, it is often very hot here."}
+      ]
+    },
+    {
+      "id": "en-5a-48",
+      "type": "choice",
+      "unit": "Unit 6 Nature and us",
+      "lesson": "Reading time",
+      "lessons": ["Nature and us", "Reading time", "Sanjiangyuan National Park"],
+      "points": ["EN-S2-LC-01.6", "EN-S2-TH-01.20"],
+      "topic": "“中华水塔”的由来",
+      "stem": "读完三江源国家公园的短文：它为什么被叫作 “Water Tower of China”？",
+      "options": ["那里有一座很高的大水塔。", "三条大河从这里流出，给很多人送去淡水。", "那里一年到头都下大雨。"],
+      "answer": 1,
+      "wrong": {"0": "water-tower-literal-5a", "2": "guess-not-text-5a"},
+      "right": ["短文说：长江、黄河、澜沧江都从这里发源，", "给千百万人送去淡水，所以叫“中华水塔”。"],
+      "typical": ["Water Tower 就是“水塔”：", "那里有一座很高的大水塔。"],
+      "typical_error": "water-tower-literal-5a",
+      "ladder": [
+        {"q": "读短文：哪三条大河从三江源流出？", "a": "长江、黄河、澜沧江"},
+        {"q": "我们镇的外号叫 Flower Town。读：There are so many flowers here. 外号怎么来的？", "a": "因为镇上的花特别多"},
+        {"q": "给你的学校起个英文外号，再用一句英语说明原因。", "a": "如：Book School. There are so many books here."}
+      ]
+    },
+    {
+      "id": "en-5a-49",
+      "type": "choice",
+      "unit": "Revision New Year’s party",
+      "lesson": "Revision New Year’s party",
+      "lessons": ["Revision", "New Year’s party"],
+      "points": ["EN-S2-LK-01.11", "EN-S2-LK-01.9"],
+      "topic": "星期介词和 shouldn't",
+      "stem": "教练提醒队员：We have a football game ____ Saturday. You ____ go to bed late.",
+      "options": ["in；shouldn't", "on；don't should", "on；shouldn't", "on；shouldn't to"],
+      "answer": 2,
+      "wrong": {"0": "zai-always-in", "1": "dont-should-5a", "3": "modal-plus-to"},
+      "right": ["星期几前用 on：on Saturday.", "“不应该”是 shouldn't + 动词原形：You shouldn't go to bed late."],
+      "typical": ["说“不”就在前面加 don't，", "写成 You don't should go to bed late."],
+      "typical_error": "dont-should-5a",
+      "ladder": [
+        {"q": "补全（不应该）：You ____ read in bed.", "a": "shouldn't"},
+        {"q": "改错：We don't should play on the road.", "a": "We shouldn't play on the road."},
+        {"q": "用英语提醒朋友：星期三我们有篮球赛，你不应该晚睡。", "a": "We have a basketball game on Wednesday. You shouldn't go to bed late."}
       ]
     }
   ]

@@ -25,7 +25,12 @@
     {"id": "too-much-dropped-3b", "name": "把“别喝太多”读成“别喝”", "why": "看到 don't 就以为是不让喝，漏看了 too much。", "move": "对比：Don't drink.（别喝）/ Don't drink too much.（别喝太多），问哪一句还可以喝一点。"},
     {"id": "they-as-object-3b", "name": "动词后面的“它们”还用 they", "why": "they 学得最早，以为“它们”都说 they，放在 put 后面也不变。", "move": "把 they 和 them 写成一对：They are old. / I put them in a box. 动作词后面用 them。"},
     {"id": "each-as-total-3b", "name": "把一个的价钱当成总价", "why": "看到 It's two yuan 就当成要付的钱，没注意问的是 each（每一个）。", "move": "画 6 支铅笔，每支下面写 2 元，全班一起数：2、4、6、8、10、12。"},
-    {"id": "count-as-price-3b", "name": "把买的个数当成付的钱", "why": "题里有两个数，没分清哪个是买了几个、哪个是钱数。", "move": "给每个数配上单位：6 pencils、two yuan，再问：要付的是几元？"}
+    {"id": "count-as-price-3b", "name": "把买的个数当成付的钱", "why": "题里有两个数，没分清哪个是买了几个、哪个是钱数。", "move": "给每个数配上单位：6 pencils、two yuan，再问：要付的是几元？"},
+    {"id": "is-for-has-3b", "name": "说身体部位也用 It's", "why": "汉语说“它腿很短”，句子里没有“有”字，就用 It's 接着说腿、尾巴。", "move": "问：它“是”短腿吗？说它什么样（fat、thin）用 It's，说它身上有什么（legs、tail）用 It has。"},
+    {"id": "sense-verb-mixup-3b", "name": "感官动词和五官没对上", "why": "see、hear、smell、taste、touch 刚学，还没和眼、耳、鼻、舌、手一一对上，画里有什么就说 see。", "move": "指着五官快问快答：eyes—see，ears—hear，nose—smell，tongue—taste，hands—touch。"},
+    {"id": "yummy-as-healthy-3b", "name": "以为好吃的就是健康的", "why": "蛋糕、糖果好吃又爱吃，就把它们放进了健康餐盘。", "move": "把食物分两堆：每天要吃的（米饭、蔬菜、水果、肉蛋奶）和要少吃的（蛋糕、糖果），再看餐盘里哪一堆多。"},
+    {"id": "veg-only-healthy-3b", "name": "以为健康餐只要吃蔬菜", "why": "常听说蔬菜健康，就以为只吃蔬菜最好，忘了米饭、肉、蛋、奶也是好东西。", "move": "问：晚饭只吃蔬菜，第二天上体育课有力气吗？再一起把米饭、肉、蔬菜放进同一个盘子。"},
+    {"id": "teen-from-ones-3b", "name": "把 15 拼成 fiveteen", "why": "four、six 直接加 teen 就是 fourteen、sixteen，就以为 three、five 也直接加 teen。", "move": "把 13、15 单拎出来对比：three → thirteen，five → fifteen，全班拍手读三遍。"}
   ],
   "items": [
     {
@@ -108,6 +113,27 @@
         {"q": "介绍男孩 Mike，补全：____ my friend.（他是）", "a": "He's"},
         {"q": "补全：She's ____ new student.", "a": "a"},
         {"q": "介绍女孩 Amy：她来自英国。用英语说一句。", "a": "She's from the UK."}
+      ]
+    },
+    {
+      "id": "en-3b-25",
+      "type": "choice",
+      "unit": "Unit 1 Meeting new people",
+      "lesson": "part C Project: Make a poster for the food festival",
+      "lessons": ["Part C", "Project", "food festival"],
+      "points": ["EN-S1-LC-01.4", "EN-S1-LC-03.1"],
+      "topic": "介绍海报上的人来自哪里",
+      "stem": "海报上画着一个来自加拿大的女孩。同学指着她问：Where is she from? 你回答：",
+      "options": ["He's from Canada.", "She from Canada.", "Yes, she is.", "She's from Canada."],
+      "answer": 3,
+      "wrong": {"0": "he-she-mixup", "1": "be-drop", "2": "wh-yes-no"},
+      "right": ["问的是 she（她），回答也用 she；where 问地方，要说出国家。", "She's 就是 She is，“她来自”说 is from：She's from Canada."],
+      "typical": ["“她来自加拿大”照着说：", "She from Canada."],
+      "typical_error": "be-drop",
+      "ladder": [
+        {"q": "补全：— Where is he from? — ____ from the USA.", "a": "He's（或 He is）"},
+        {"q": "海报上的男孩来自中国。替他回答：Where are you from?", "a": "I'm from China."},
+        {"q": "指着海报上来自英国的女孩，用英语问一问，再答一答。", "a": "Where is she from? She's from the UK."}
       ]
     },
     {
@@ -195,6 +221,27 @@
       ]
     },
     {
+      "id": "en-3b-26",
+      "type": "choice",
+      "unit": "Unit 2 My words and actions",
+      "lesson": "part C Project: Make a mind map about pets and friends",
+      "lessons": ["Part C", "Project", "mind map"],
+      "points": ["EN-S1-LK-01.11", "EN-S1-LS-01.16"],
+      "topic": "It's 还是 It has",
+      "stem": "思维导图 My pets 一枝：我的鸭子很胖，腿很短。选出正确的两句。",
+      "options": ["It fat. It has short legs.", "It's fat. It has short legs.", "It's fat. It's short legs."],
+      "answer": 1,
+      "wrong": {"0": "be-drop", "2": "is-for-has-3b"},
+      "right": ["说它什么样（胖、瘦）用 It's：It's fat.", "说它身上有什么（腿、尾巴）用 It has：It has short legs."],
+      "typical": ["“腿很短”也接着用 It's：", "It's fat. It's short legs."],
+      "typical_error": "is-for-has-3b",
+      "ladder": [
+        {"q": "补全：My dog is big. It ____ a long tail.", "a": "has"},
+        {"q": "补全：My cat ____ thin. It has a long tail.（很瘦）", "a": "is"},
+        {"q": "用英语介绍你的小鸟：它很小，尾巴很长。", "a": "It's small. It has a long tail."}
+      ]
+    },
+    {
       "id": "en-3b-07",
       "type": "choice",
       "unit": "Unit 3 Tools and senses for learning",
@@ -274,6 +321,27 @@
         {"q": "补全：I hear ____ my ears.", "a": "with"},
         {"q": "连词成句：see / I / my eyes / with", "a": "I see with my eyes."},
         {"q": "用英语说：我用舌头尝。", "a": "I taste with my tongue."}
+      ]
+    },
+    {
+      "id": "en-3b-27",
+      "type": "choice",
+      "unit": "Unit 3 Tools and senses for learning",
+      "lesson": "part C Project: Make a sense book",
+      "lessons": ["Part C", "Project", "sense book"],
+      "points": ["EN-S1-LS-01.19", "EN-S1-LK-01.6"],
+      "topic": "感官书：五官配动词",
+      "stem": "Lily 做感官书。画着耳朵的一页，她要写公园里好几只小狗在叫。写哪一句？",
+      "options": ["I see dogs.", "I hear dog.", "I hear dogs."],
+      "answer": 2,
+      "wrong": {"0": "sense-verb-mixup-3b", "1": "plural-s-drop"},
+      "right": ["这一页画的是耳朵，耳朵管听：hear。", "好几只小狗，dog 加 s：I hear dogs."],
+      "typical": ["画里有小狗，就写看见了：", "I see dogs."],
+      "typical_error": "sense-verb-mixup-3b",
+      "ladder": [
+        {"q": "画着鼻子的一页，你闻到了妈妈做的蛋糕：I ____ the cake.", "a": "smell"},
+        {"q": "画着舌头的一页，你尝了一个橙子：I ____ an orange.", "a": "taste"},
+        {"q": "画着手的一页，你摸了摸好几只小兔子，写一句。", "a": "I touch rabbits.（或 I touch the rabbits.）"}
       ]
     },
     {
@@ -361,6 +429,27 @@
       ]
     },
     {
+      "id": "en-3b-28",
+      "type": "choice",
+      "unit": "Unit 4 Healthy food",
+      "lesson": "part C Project: Plan healthy plates for a day",
+      "lessons": ["Part C", "Project", "healthy plates"],
+      "points": ["EN-S1-LS-01.13", "EN-S1-TH-01.7"],
+      "topic": "健康餐盘怎么搭配",
+      "stem": "制订一日健康餐盘。下面三盘晚餐，哪一盘搭配最健康？",
+      "options": ["some cake, candy and juice", "some rice, meat and vegetables", "some vegetables and water"],
+      "answer": 1,
+      "wrong": {"0": "yummy-as-healthy-3b", "2": "veg-only-healthy-3b"},
+      "right": ["米饭、肉、蔬菜都有：能吃饱，也吃到了蔬菜。", "蛋糕、糖果好吃，但不能多吃；只吃蔬菜也不够。"],
+      "typical": ["蛋糕和糖果最好吃，", "就把它们放进了健康餐盘。"],
+      "typical_error": "yummy-as-healthy-3b",
+      "ladder": [
+        {"q": "cake、fruit、candy、vegetables：哪两样要每天吃？", "a": "fruit、vegetables"},
+        {"q": "你的午餐盘只有 rice 和 meat，再加一样什么更健康？", "a": "vegetables（或 fruit）"},
+        {"q": "健康午餐：米饭、鸡蛋和蔬菜。用英语说：I'd like ...", "a": "I'd like some rice, eggs and vegetables."}
+      ]
+    },
+    {
       "id": "en-3b-11",
       "type": "judge",
       "unit": "Unit 5 Old things",
@@ -438,6 +527,27 @@
         {"q": "补全：I have three old caps. ____ are still nice.（它们）", "a": "They"},
         {"q": "补全：I have some old maps. I put ____ on the wall.", "a": "them"},
         {"q": "用英语说：我有一些旧书，我把它们放在架子上。", "a": "I have some old books. I put them on the shelf."}
+      ]
+    },
+    {
+      "id": "en-3b-31",
+      "type": "choice",
+      "unit": "Unit 5 Old things",
+      "lesson": "part C Project: Reuse some old things",
+      "lessons": ["Part C", "Project", "reuse"],
+      "points": ["EN-S1-LK-01.11", "EN-S1-LA-03.1"],
+      "topic": "回答 What are these",
+      "stem": "整理旧物时，同学指着你箱子里的两辆旧玩具汽车问：What are these? 你回答：",
+      "options": ["It's a car.", "Yes, they are.", "They're car.", "They're cars."],
+      "answer": 3,
+      "wrong": {"0": "plural-as-it", "1": "wh-yes-no", "2": "plural-s-drop"},
+      "right": ["两辆汽车是好几样东西，用 They're ...", "car 还要加 s：They're cars."],
+      "typical": ["It's 说得最顺口：", "It's a car."],
+      "typical_error": "plural-as-it",
+      "ladder": [
+        {"q": "补全：— What are these? — ____ old maps.", "a": "They're（或 They are）"},
+        {"q": "选 is 或 are 补全：— What ____ this? — It's a cap. — What ____ these? — They're caps.", "a": "is；are"},
+        {"q": "你的旧物箱里有三个旧娃娃，同学问 What are these? 用英语回答。", "a": "They're dolls.（或 They are dolls.）"}
       ]
     },
     {
@@ -521,6 +631,47 @@
         {"q": "— How much is each cake? — It's ten yuan. 买 2 个，用英语说一共多少钱。", "a": "Twenty yuan."}
       ],
       "verify": ["2*6 == 12", "5*3 == 15", "2*7 == 14", "10*2 == 20"]
+    },
+    {
+      "id": "en-3b-29",
+      "type": "judge",
+      "unit": "Unit 6 Numbers in life",
+      "lesson": "part C Project: Make and sell fun sandwiches",
+      "lessons": ["Part C", "Project", "sandwiches"],
+      "points": ["EN-S1-LK-01.7", "EN-S1-LS-01.3"],
+      "topic": "15 用英语怎么说",
+      "stem": "卖三明治：鸡蛋三明治 9 元，水果三明治 6 元，顾客各买一个。同意吗？",
+      "work": ["Zhang Peng 收钱时说：", "Fiveteen yuan, please."],
+      "answer": false,
+      "wrong": {"agree": "teen-from-ones-3b"},
+      "right": ["9 + 6 = 15，钱算对了，但 15 不说 fiveteen。", "five 变成 fif 再加 teen：Fifteen yuan, please."],
+      "ladder": [
+        {"q": "13 用英语怎么说？", "a": "thirteen"},
+        {"q": "10 + 5 = ____（用英语写）", "a": "fifteen"},
+        {"q": "一个三明治 8 元，一杯牛奶 5 元，各买一个。用英语说要付多少钱。", "a": "Thirteen yuan, please.（或 It's thirteen yuan.）"}
+      ],
+      "verify": ["9 + 6 == 15", "10 + 5 == 15", "8 + 5 == 13"]
+    },
+    {
+      "id": "en-3b-30",
+      "type": "choice",
+      "unit": "Revision Going to a school fair",
+      "lesson": "Revision Going to a school fair",
+      "lessons": ["Revision", "school fair"],
+      "points": ["EN-S1-LS-01.12", "EN-S1-LC-02.5"],
+      "topic": "想要东西再问价钱怎么说",
+      "stem": "社区旧物集市上，阿姨拿起一只旧玩具船问你：Would you like this boat? 你想要，还想问价钱。你说：",
+      "options": ["Yes, I do. How much is it?", "Yes, please. How many is it?", "Yes, please. How much is it?"],
+      "answer": 2,
+      "wrong": {"0": "would-like-answer-do-3b", "1": "how-many-asks-price"},
+      "right": ["Would you like ...? 想要就答：Yes, please.", "问价钱用 How much：How much is it?"],
+      "typical": ["Do you like 答 Yes, I do.，", "Would you like 也这样答。"],
+      "typical_error": "would-like-answer-do-3b",
+      "ladder": [
+        {"q": "— Would you like some milk?（想要）— ____", "a": "Yes, please."},
+        {"q": "补全问价钱：How ____ is this ball?", "a": "much"},
+        {"q": "你想买一个旧娃娃：先回答 Would you like this doll?，再问价钱。", "a": "Yes, please. How much is it?"}
+      ]
     }
   ]
 }

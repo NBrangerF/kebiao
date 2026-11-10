@@ -35,7 +35,13 @@
     {"id": "look-up-down-swapped-9a", "name": "把瞧不起和敬佩弄反", "why": "两个短语都在说对别人的态度，只记住了 look，没分清上和下。", "move": "画一高一低两个人：仰头看是 look up to（敬佩），往下看是 look down on（瞧不起）。"},
     {"id": "everyone-plural-9a", "name": "everyone 后面用了复数动词", "why": "everyone 意思是“大家”，想到很多人，就用了 are。", "move": "把 everyone 拆成 every + one，问：one 是几个？everyone、everybody、each 作主语，动词用单数。"},
     {"id": "verb-nearest-noun-9a", "name": "谓语只看紧挨着的名词", "why": "只看到动词前面的 Jim 是一个人，就用了 is。", "move": "圈出整个主语 Both Tom and Jim，问：一共几个人？两个人用 are。"},
-    {"id": "catch-up-as-pass-9a", "name": "把“追上”当成“超过”", "why": "比赛里追上的人常常接着超过对方，就把“追上”和“超过”当成一回事。", "move": "画两个小人：追到并排是 catch up with，跑到前面才是“超过”。问：句子说他跑到前面了吗？"}
+    {"id": "catch-up-as-pass-9a", "name": "把“追上”当成“超过”", "why": "比赛里追上的人常常接着超过对方，就把“追上”和“超过”当成一回事。", "move": "画两个小人：追到并排是 catch up with，跑到前面才是“超过”。问：句子说他跑到前面了吗？"},
+    {"id": "of-with-thing-adj-9a", "name": "说事情的形容词也用了 of", "why": "刚学会 It was brave of him …，就以为 It is … 后面说到人都用 of。", "move": "问：necessary 是在夸这个人吗？能说 We are necessary 吗？说事情难不难、要不要紧用 for，夸人的品质才用 of。"},
+    {"id": "low-score-as-top-9a", "name": "把低分当成更重要", "why": "习惯了“第 1 名最好”，把打分当成排名，看到小的数就以为排在前面。", "move": "指着 1 = least important 读一遍，问：分数越大越重要还是越不重要？再看 2.5 落在哪一头。"},
+    {"id": "restate-opinion-as-reason-9a", "name": "把重复观点当成理由", "why": "觉得换个说法、说得更肯定，就算给出了理由。", "move": "把这句接在观点后面，问：它回答了“为什么”吗？只是把观点又说一遍的，不算理由。"},
+    {"id": "reason-for-other-side-9a", "name": "选了支持对方的理由", "why": "只看这句话说得对不对，没看它帮的是哪一方。", "move": "问：这句话说出来，对 Yes 方有利还是对 No 方有利？让学生把它放进辩论表格的一栏。"},
+    {"id": "relative-extra-object-9a", "name": "定语从句里又加了宾语 it", "why": "照汉语“冼星海写了它”把宾语补全，没想到 which 已经在从句里作宾语。", "move": "问：wrote 的宾语是什么？which 就指那首作品，已经占了宾语的位置，后面不再加 it。"},
+    {"id": "who-for-things-9a", "name": "指物的先行词用了 who", "why": "看到从句里有人名，就用了 who，没看先行词 piece 是物。", "move": "圈出空前面的名词 piece，问：人还是物？物用 which / that，人才用 who。"}
   ],
   "items": [
     {
@@ -160,6 +166,27 @@
       ]
     },
     {
+      "id": "en-9a-21",
+      "type": "choice",
+      "unit": "Unit 1 The Changing World",
+      "lesson": "Project Compare then and now",
+      "lessons": ["Project", "Compare then and now"],
+      "points": ["EN-S3-LK-01.15", "EN-S3-TH-01.14"],
+      "topic": "汇报“过去”用过去时",
+      "stem": "汇报爷爷小时候的生活：When Grandpa was 12, he ____ to school on foot. Now I go by bus.",
+      "options": ["goes", "has gone", "went", "used to going"],
+      "answer": 2,
+      "wrong": {"0": "past-tense-drop", "1": "perfect-with-past-time", "3": "used-to-doing"},
+      "right": ["When Grandpa was 12 说的是过去的一段时间，用一般过去时：went；", "Now 后面说现在的事，才用一般现在时。"],
+      "typical": ["照汉语“爷爷 12 岁时走路上学”，动词不变：", "When Grandpa was 12, he goes to school on foot."],
+      "typical_error": "past-tense-drop",
+      "ladder": [
+        {"q": "When my mum was a child, she ____ (live) in a small village.", "a": "lived（或 used to live）"},
+        {"q": "Back then, people wrote letters. Now people ____ (send) messages by phone.", "a": "send"},
+        {"q": "改错：When Grandma was young, she has never seen a computer.", "a": "has never seen → never saw（或 had never seen）"}
+      ]
+    },
+    {
       "id": "en-9a-07",
       "type": "choice",
       "unit": "Unit 2 Inspiring People",
@@ -198,6 +225,27 @@
         {"q": "写出指人的词：science → ____", "a": "scientist"},
         {"q": "用所给词的正确形式填空：Einstein was a great ____ (physics).", "a": "physicist"},
         {"q": "用所给词的正确形式填空：Many ____ (research) are studying seeds.", "a": "researchers"}
+      ]
+    },
+    {
+      "id": "en-9a-22",
+      "type": "choice",
+      "unit": "Unit 2 Inspiring People",
+      "lesson": "Project Make a wall of inspiration",
+      "lessons": ["Project", "Make a wall of inspiration"],
+      "points": ["EN-S3-LK-01.15", "EN-S3-LS-01.68"],
+      "topic": "写人物介绍：It is … 句型",
+      "stem": "为“激励墙”写人物介绍。哪一句是对的？",
+      "options": ["It is necessary of us to learn from her.", "It was amazing that she never gave up.", "It was kind for him to share his ideas."],
+      "answer": 1,
+      "wrong": {"0": "of-with-thing-adj-9a", "2": "for-with-quality-adj-9a"},
+      "right": ["夸人的品质（kind、brave）用 of，说事情（necessary）用 for；", "It was amazing that … 后面接一个完整的句子。"],
+      "typical": ["学了 It was brave of him …，就都用 of：", "It is necessary of us to learn from her."],
+      "typical_error": "of-with-thing-adj-9a",
+      "ladder": [
+        {"q": "填 of 或 for：It is easy ____ me to remember her story.", "a": "for"},
+        {"q": "填 of 或 for：It was clever ____ him to find a new way.", "a": "of"},
+        {"q": "用 It is amazing that … 改写：She helps poor children.", "a": "It is amazing that she helps poor children."}
       ]
     },
     {
@@ -243,6 +291,25 @@
       ]
     },
     {
+      "id": "en-9a-23",
+      "type": "judge",
+      "unit": "Unit 3 Smart Learning",
+      "lesson": "Project Carry out a survey on learning",
+      "lessons": ["Project", "Carry out a survey on learning"],
+      "points": ["EN-S3-LS-01.67"],
+      "topic": "读懂打分结果再汇报",
+      "stem": "打分 1–10（1 最不重要，10 最重要）。平均分：taking notes 8.5，studying all the time 2.5。这样汇报，你同意吗？",
+      "work": ["Taking notes is more important than studying all the time."],
+      "answer": true,
+      "wrong": {"disagree": "low-score-as-top-9a"},
+      "right": ["分数越高越重要：taking notes 8.5 分，studying all the time 只得 2.5 分，", "所以 taking notes 更重要，这样汇报是对的。"],
+      "ladder": [
+        {"q": "打分 1–10，10 最重要。A 平均 9 分，B 平均 3 分。小组认为哪个更重要？", "a": "A"},
+        {"q": "用英语汇报：reviewing lessons 平均 7.5 分，taking notes 平均 6 分。", "a": "Our group thinks reviewing lessons is more important than taking notes."},
+        {"q": "改成排名（第 1 名 = 最重要），排第 1 的方法最重要还是最不重要？", "a": "最重要；排名看名次，打分看分数，先读说明"}
+      ]
+    },
+    {
       "id": "en-9a-11",
       "type": "choice",
       "unit": "Unit 4 Our Memory",
@@ -281,6 +348,27 @@
         {"q": "写出形容词：help → ____", "a": "helpful"},
         {"q": "用所给词的正确形式填空：Mind maps are an ____ (effect) way to review.", "a": "effective"},
         {"q": "用所给词的正确形式填空：Be an ____ (act) learner.", "a": "active"}
+      ]
+    },
+    {
+      "id": "en-9a-24",
+      "type": "choice",
+      "unit": "Unit 4 Our Memory",
+      "lesson": "Project Debate: Do we need to memorize things?",
+      "lessons": ["Project", "Debate", "Do we need to memorize things"],
+      "points": ["EN-S3-LS-01.62"],
+      "topic": "辩论：给观点找理由",
+      "stem": "辩论题：Do we need to memorize things? 你方观点是 Yes。哪一句是支持你方的理由？",
+      "options": ["During exams, we can't look things up online.", "Memorizing things is really necessary.", "Search engines can answer questions fast."],
+      "answer": 0,
+      "wrong": {"1": "restate-opinion-as-reason-9a", "2": "reason-for-other-side-9a"},
+      "right": ["理由要回答“为什么需要记”：考试时不能上网查，", "所以有些东西必须记在脑子里。"],
+      "typical": ["说得更肯定就是理由：", "Memorizing things is really necessary."],
+      "typical_error": "restate-opinion-as-reason-9a",
+      "ladder": [
+        {"q": "观点 We should read more. 哪句是理由？A. Reading is a must. B. Reading teaches us new words.", "a": "B"},
+        {"q": "哪句支持“不用背电话号码”？A. Our phones can save them. B. Phones can run out of power.", "a": "A"},
+        {"q": "哪句用例子说明需要记？A. Memory matters a lot. B. In an emergency, doctors have no time to search.", "a": "B"}
       ]
     },
     {
@@ -326,6 +414,27 @@
       ]
     },
     {
+      "id": "en-9a-25",
+      "type": "choice",
+      "unit": "Unit 5 Power of Ideas",
+      "lesson": "Project Come up with your own invention",
+      "lessons": ["Project", "Come up with your own invention"],
+      "points": ["EN-S3-LK-01.15", "EN-S3-LS-01.68"],
+      "topic": "发明海报：be made of",
+      "stem": "在发明海报上介绍材料：Our new plant pot ____ of old newspapers.",
+      "options": ["makes", "made", "is make", "is made"],
+      "answer": 3,
+      "wrong": {"0": "active-for-passive-9a", "1": "passive-no-be-9a", "2": "passive-base-verb-9a"},
+      "right": ["花盆是“被做”出来的，用被动语态 be + 过去分词；", "说现在的样子用 is：Our new plant pot is made of old newspapers."],
+      "typical": ["花盆是用旧报纸做的，made 就是“做的”：", "Our new plant pot made of old newspapers."],
+      "typical_error": "passive-no-be-9a",
+      "ladder": [
+        {"q": "用所给词的正确形式填空：This bag ____ (make) of cloth.", "a": "is made"},
+        {"q": "用所给词的正确形式填空：Our robot ____ (use) to clean windows.", "a": "is used"},
+        {"q": "改成被动语态：We make these toys from old bottles.", "a": "These toys are made from old bottles."}
+      ]
+    },
+    {
       "id": "en-9a-15",
       "type": "choice",
       "unit": "Unit 6 Beyond Earth",
@@ -365,6 +474,25 @@
         {"q": "in case 的意思是：A. 以防 B. 因为", "a": "A"},
         {"q": "翻译：带上外套，以防天变冷。", "a": "Take a coat in case it gets cold."},
         {"q": "用 in case 连成一句：Leave early. The roads may be busy.", "a": "Leave early in case the roads are busy."}
+      ]
+    },
+    {
+      "id": "en-9a-26",
+      "type": "step",
+      "unit": "Unit 6 Beyond Earth",
+      "lesson": "Project Make a poster about China’s space programme",
+      "lessons": ["Project", "Make a poster about China’s space programme"],
+      "points": ["EN-S3-LK-01.15", "EN-S3-TH-01.29"],
+      "topic": "航天海报：将来的被动",
+      "stem": "小组给中国航天海报写了四句。从第几句开始出错？",
+      "work": ["Tianhe was sent into space in 2021.", "Since then, many astronauts have worked there.", "More experiments will do there in the future.", "One day, people may be sent to Mars."],
+      "answer": 2,
+      "error": "active-for-passive-9a",
+      "right": ["实验是“被做”的，要用将来时的被动语态 will be + 过去分词：", "More experiments will be done there in the future."],
+      "ladder": [
+        {"q": "用所给词的正确形式填空：New photos of Mars ____ (send) back next week.", "a": "will be sent"},
+        {"q": "改成被动语态：They will choose three astronauts for the mission.", "a": "Three astronauts will be chosen for the mission."},
+        {"q": "改错：More robots will use to explore the moon.", "a": "will use → will be used"}
       ]
     },
     {
@@ -410,6 +538,27 @@
       ]
     },
     {
+      "id": "en-9a-27",
+      "type": "choice",
+      "unit": "Unit 7 Feel the Rhythm",
+      "lesson": "Project Give a presentation on a famous musician",
+      "lessons": ["Project", "Give a presentation on a famous musician"],
+      "points": ["EN-S3-LK-01.15", "EN-S3-LS-01.43"],
+      "topic": "介绍作品：定语从句",
+      "stem": "介绍音乐家冼星海：The Yellow River Cantata is a famous piece ____.",
+      "options": ["which Xian Xinghai wrote it", "which Xian Xinghai wrote", "who Xian Xinghai wrote"],
+      "answer": 1,
+      "wrong": {"0": "relative-extra-object-9a", "2": "who-for-things-9a"},
+      "right": ["piece 是物，用 which；which 在从句里就是 wrote 的宾语，", "后面不再加 it：… a famous piece which Xian Xinghai wrote."],
+      "typical": ["“冼星海写了它”，宾语 it 不能少：", "… a famous piece which Xian Xinghai wrote it."],
+      "typical_error": "relative-extra-object-9a",
+      "ladder": [
+        {"q": "改错：This is the song which I like it best.", "a": "去掉 it"},
+        {"q": "合成一句：I listened to a song. My friend wrote it.", "a": "I listened to a song (that / which) my friend wrote."},
+        {"q": "改错：The musician who I met him yesterday plays the erhu.", "a": "去掉 him"}
+      ]
+    },
+    {
       "id": "en-9a-19",
       "type": "choice",
       "unit": "Unit 8 More than a Game",
@@ -449,6 +598,25 @@
         {"q": "catch up with 的意思是：A. 追上 B. 抓住", "a": "A"},
         {"q": "翻译：跑快点，我们就能追上他们。", "a": "Run faster, and we can catch up with them."},
         {"q": "填 catch up with 或 sign up for：Tom fell behind, but he soon ____ the others.", "a": "caught up with"}
+      ]
+    },
+    {
+      "id": "en-9a-28",
+      "type": "step",
+      "unit": "Unit 8 More than a Game",
+      "lesson": "Project Introduce your favourite sports event",
+      "lessons": ["Project", "Introduce your favourite sports event"],
+      "points": ["EN-S3-LK-01.13", "EN-S3-LS-01.68"],
+      "topic": "介绍赛事：主谓一致",
+      "stem": "小林介绍他最喜欢的赛事，写了四句。从第几句开始出错？",
+      "work": ["Wimbledon started in 1877.", "Everyone in our school watch the final.", "Both my dad and I love tennis.", "We hope to go there one day."],
+      "answer": 1,
+      "error": "everyone-plural-9a",
+      "right": ["everyone 作主语看作单数，动词用三单：", "Everyone in our school watches the final."],
+      "ladder": [
+        {"q": "填 is 或 are：Nobody in our class ____ late today.", "a": "is"},
+        {"q": "用所给词的正确形式填空：Everybody in my family ____ (like) basketball.", "a": "likes"},
+        {"q": "改错：Every athlete in the race have a dream.", "a": "have → has"}
       ]
     }
   ]

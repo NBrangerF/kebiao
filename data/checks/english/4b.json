@@ -268,6 +268,27 @@
         {"q": "改错：Farmers plants corn.", "a": "Farmers plant corn."},
         {"q": "用 They 说两件农民在农场做的事。", "a": "They water the beans. They feed the cows.（合理即可）"}
       ]
+    },
+    {
+      "id": "en-4b-15",
+      "type": "choice",
+      "unit": "Revision A great weekend plan",
+      "lesson": "Revision A great weekend plan",
+      "lessons": ["Revision", "weekend plan"],
+      "points": ["EN-S1-TH-01.5", "EN-S1-TH-01.8"],
+      "topic": "出行提醒里的规则句",
+      "stem": "春游前，Miss White 提醒全班：We ____ be at school at 7:20 tomorrow. ____ late for the bus!",
+      "options": ["have；Don't be", "have to；Don't be", "have to；Don't", "are have to；Don't be"],
+      "answer": 1,
+      "wrong": {"0": "have-to-no-to-4b", "2": "dont-with-adjective", "3": "be-before-modal-4b"},
+      "right": ["“必须、得”是 have to 一整块：We have to be at school ...", "late 不是动作，要说 Don't be late.（别迟到）"],
+      "typical": ["“别迟到”就是 Don't + late，", "写成 Don't late for the bus!"],
+      "typical_error": "dont-with-adjective",
+      "ladder": [
+        {"q": "补全：Don't ____ loud in the library!", "a": "be"},
+        {"q": "改错：Please don't late for dinner.", "a": "Please don't be late for dinner."},
+        {"q": "用英语提醒弟弟：你得先洗手。别吵！", "a": "You have to wash your hands first. Don't be loud!（或 Don't be so loud!）"}
+      ]
     }
   ]
 }

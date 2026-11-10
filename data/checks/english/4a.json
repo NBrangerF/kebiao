@@ -8,7 +8,16 @@
     {"id": "plural-as-it", "name": "复数的东西还用 it", "why": "It's ... 说得最熟，没注意说的是好几样东西，要用 they。", "move": "先问说的是几样东西：一件外套用 It's ...，一双袜子、几把钥匙用 They're ...，is 配 it，are 配 they。"},
     {"id": "be-drop", "name": "照汉语漏掉 am/is/are", "why": "汉语“它们很暖和”“我九岁”里没有和 is、are 对应的词，就照着漏掉了。", "move": "让学生找句子里的“小帮手”：They ____ warm. 没有 are，这句话就不完整。"},
     {"id": "would-like-as-like", "name": "把“想要”听成“喜欢”", "why": "would like 里有 like，就当成“喜欢”，用回答 Do you like ...? 的方式来答。", "move": "并排写两句：Do you like soup?（喜欢吗）/ Would you like some soup?（要不要来点），分别配上 Yes, I do. 和 Yes, please."},
-    {"id": "dont-for-cant-4a", "name": "用 don't 给 can 变否定", "why": "见过用 don't 表示“不”，以为说“不”都在前面加 don't，就把“不能”说成 don't can。", "move": "把 can 和 can't 写成一对：can 自己加 n't 就是否定，前面不再加 don't，读一读 We can't play."}
+    {"id": "dont-for-cant-4a", "name": "用 don't 给 can 变否定", "why": "见过用 don't 表示“不”，以为说“不”都在前面加 don't，就把“不能”说成 don't can。", "move": "把 can 和 can't 写成一对：can 自己加 n't 就是否定，前面不再加 don't，读一读 We can't play."},
+    {"id": "together-before-verb-4a", "name": "together 放到了动词前", "why": "汉语说“一起看书”，“一起”在“看”前面，就照着把 together 放到 read 前。", "move": "英语先说做什么，together 放在最后：We read books / together.；连读 We sing together. We eat together."},
+    {"id": "still-missed-4a", "name": "漏看 still，以为妈妈不高兴", "why": "读到 But now we have this 就认定事情没做好、妈妈会不高兴，没读懂后面的 still。", "move": "盖住前面，只读 Mum is still happy!：still 是“仍然、还是”，问：妈妈高兴吗？"},
+    {"id": "there-before-verb-4a", "name": "照汉语把 there 放在动词前", "why": "汉语说“在那儿看书”，“在那儿”在“看”前面，就照着把 there 放到 read 前。", "move": "英语先说做什么，再说在哪儿：People read books / there.；对比连读 I often play there."},
+    {"id": "y-word-after-heavy-4a", "name": "heavy 后面用了带 y 的词", "why": "刚学会用 sunny、rainy 说天气，就以为说到雨、雪都要用带 y 的词。", "move": "对照读：It's rainy.（天气怎么样）/ There is heavy rain.（有大雨），问：heavy 后面要的是“雨”这个东西，还是“下雨的”？"},
+    {"id": "rain-no-fun-4a", "name": "以为下雨天就不能出去玩", "why": "学过 It's rainy. I stay at home，又记得故事里的女孩一开始不高兴，就以为下雨只能待在家里。", "move": "让学生找故事最后一幅：It's rainy and cool. 他们穿上了什么？要去做什么？"},
+    {"id": "clothes-weather-mismatch-4a", "name": "穿的衣服没对上天气冷热", "why": "只想着自己喜欢的衣服，没把前一句的 cold、hot 和要穿的衣服连起来看。", "move": "先圈出卡片上的天气词，再问：这么冷（热），穿这件行吗？换一件合适的。"},
+    {"id": "but-ignored-4a", "name": "只读了 But 前面的半句", "why": "读到 We want to make this 就以为想做的做成了，没往 But 后面看。", "move": "圈出 But，问：But 后面说的和前面一样吗？读完 But 后面那句再回答。"},
+    {"id": "guess-not-text-4a", "name": "凭自己猜，没回到文中找根据", "why": "以为刚搬家的孩子都会想家，没读最后一句 I love Chengdu!", "move": "问：文中哪一句说他不喜欢成都？找不到就不能选；再一起读最后一句。"},
+    {"id": "look-now-simple-4a", "name": "Look! 句也用了一般现在时", "why": "汉语“他在打篮球”和“他打篮球”动词一样，没注意 Look! 和 now 说的是此刻。", "move": "圈出 Look! 和 now，问：这是平时常做，还是此刻正在做？此刻正在做用 is + -ing。"}
   ],
   "items": [
     {
@@ -70,6 +79,27 @@
         {"q": "补全：Sarah has ____ hair.（短的）", "a": "short"},
         {"q": "改错：My brother has short hairs.", "a": "My brother has short hair."},
         {"q": "用英语介绍一个朋友：她很高，有一头长头发。", "a": "She's tall. She has long hair."}
+      ]
+    },
+    {
+      "id": "en-4a-17",
+      "type": "choice",
+      "unit": "Unit 2 My friends",
+      "lesson": "Part C Project: Make a book about your friend",
+      "lessons": ["Part C", "Project", "book about your friend"],
+      "points": ["EN-S1-LK-01.11", "EN-S1-LC-03.1"],
+      "topic": "She often 后的动词加 s",
+      "stem": "给好朋友 Lily 做一本书：她常常和我一起画画。选出正确的一句。",
+      "options": ["She often draws pictures with me.", "She often draw pictures with me.", "She's often draws pictures with me."],
+      "answer": 0,
+      "wrong": {"1": "3sg-no-s", "2": "be-plus-verb"},
+      "right": ["主语是 she，often 后面的动词加 s：draws。", "draws 已经是动词，前面不再加 is。"],
+      "typical": ["“她常常画画”，动词照原样：", "She often draw pictures with me."],
+      "typical_error": "3sg-no-s",
+      "ladder": [
+        {"q": "补全：My friend Tom often ____ (sing) with me.", "a": "sings"},
+        {"q": "改错：Amy often help her mum at home.", "a": "Amy often helps her mum at home."},
+        {"q": "用英语介绍朋友：她很友好，常常和我分享书。", "a": "She's kind. She often shares books with me.（She's 也可写 She is）"}
       ]
     },
     {
@@ -156,6 +186,48 @@
       ]
     },
     {
+      "id": "en-4a-15",
+      "type": "choice",
+      "unit": "Unit 1 Helping at home",
+      "lesson": "Part C Project: Make a poster of a happy family",
+      "lessons": ["Part C", "Project", "happy family"],
+      "points": ["EN-S1-LS-01.11", "EN-S1-TH-01.5"],
+      "topic": "together 放在哪儿",
+      "stem": "家庭海报上写：我们常常一起看书。选出正确的一句。",
+      "options": ["We often together read books.", "We often read book together.", "We often read books together."],
+      "answer": 2,
+      "wrong": {"0": "together-before-verb-4a", "1": "plural-s-drop"},
+      "right": ["英语先说做什么，together 放在后面：read books together。", "书不止一本，book 加 s：books。"],
+      "typical": ["照“一起看书”的顺序：", "We often together read books."],
+      "typical_error": "together-before-verb-4a",
+      "ladder": [
+        {"q": "连词成句：together / we / eat / often", "a": "We often eat together."},
+        {"q": "改错：We often together draw pictures.", "a": "We often draw pictures together."},
+        {"q": "用英语写海报上的一句：我们常常一起唱歌。", "a": "We often sing together."}
+      ]
+    },
+    {
+      "id": "en-4a-16",
+      "type": "choice",
+      "unit": "Unit 1 Helping at home",
+      "lesson": "Reading time",
+      "lessons": ["Reading time", "busy mum"],
+      "points": ["EN-S1-TX-01.3", "EN-S1-LC-01.6"],
+      "topic": "读懂 But 和 still",
+      "stem": "读故事结尾：We want to make this. But now we have this! Mum is still happy! 这几句是什么意思？",
+      "options": ["做出来的和想的不一样，妈妈还是高兴", "孩子们做出了想做的东西", "做出来的和想的不一样，妈妈不高兴了"],
+      "answer": 0,
+      "wrong": {"1": "but-ignored-4a", "2": "still-missed-4a"},
+      "right": ["But 说明做出来的和想做的不一样；", "still happy 是“仍然很高兴”。"],
+      "typical": ["只读了 We want to make this，", "就以为想做的做成了。"],
+      "typical_error": "but-ignored-4a",
+      "ladder": [
+        {"q": "读：We want to make a big cake. But now we have a small cake! 做成大蛋糕了吗？", "a": "没有"},
+        {"q": "读：The cake is not nice. Grandma is still happy. 奶奶高兴吗？", "a": "高兴"},
+        {"q": "补全：The room is not very clean. But Mum is ____ happy!（仍然）", "a": "still"}
+      ]
+    },
+    {
       "id": "en-4a-10",
       "type": "judge",
       "unit": "Unit 3 Places we live in",
@@ -196,6 +268,48 @@
       ]
     },
     {
+      "id": "en-4a-18",
+      "type": "choice",
+      "unit": "Unit 3 Places we live in",
+      "lesson": "Part C Project: Make a dream community mode",
+      "lessons": ["Part C", "Project", "dream community"],
+      "points": ["EN-S1-TX-01.4", "EN-S1-LS-01.16"],
+      "topic": "说人们在那儿做什么",
+      "stem": "介绍梦想社区模型：There is a library. 再说“人们常在那儿看书”，选哪一句？",
+      "options": ["People often reads books there.", "People often there read books.", "People often read books there."],
+      "answer": 2,
+      "wrong": {"0": "people-singular-7b", "1": "there-before-verb-4a"},
+      "right": ["people 是“人们”，指很多人，动词不加 s；", "先说做什么，再说在哪儿：read books there。"],
+      "typical": ["照“在那儿看书”的顺序：", "People often there read books."],
+      "typical_error": "there-before-verb-4a",
+      "ladder": [
+        {"q": "补全：There is a playground. Children often ____ (play) there.", "a": "play"},
+        {"q": "改错：People often there take a walk.", "a": "People often take a walk there."},
+        {"q": "介绍梦想社区：有一个体育馆，人们常在那里做运动。", "a": "There is a gym. People often do sports there."}
+      ]
+    },
+    {
+      "id": "en-4a-19",
+      "type": "choice",
+      "unit": "Unit 3 Places we live in",
+      "lesson": "Reading time",
+      "lessons": ["Reading time", "video diary"],
+      "points": ["EN-S1-TX-01.3", "EN-S1-LC-01.6"],
+      "topic": "视频日记主要讲什么",
+      "stem": "读 Peter 的视频日记（他刚搬到成都，交朋友、看变脸、看熊猫）。日记主要讲了什么？",
+      "options": ["搬到成都后，他喜欢上了这里", "他在成都看到了熊猫宝宝", "他想念伦敦，不喜欢成都"],
+      "answer": 0,
+      "wrong": {"1": "detail-as-main-idea-3b", "2": "guess-not-text-4a"},
+      "right": ["日记最后说：There are nice people and great places here. I love Chengdu!", "交朋友、看变脸、看熊猫都是细节，合起来说他喜欢上了成都。"],
+      "typical": ["熊猫最有趣，就以为整篇都在讲熊猫：", "他在成都看到了熊猫宝宝。"],
+      "typical_error": "detail-as-main-idea-3b",
+      "ladder": [
+        {"q": "读：I play football with Tom. I read books with Tom. Tom is my best friend. 主要讲什么？", "a": "Tom 是我最好的朋友（或：我和 Tom 是好朋友）"},
+        {"q": "读：There is a park. There is a library. I love my community! 主要讲什么？", "a": "我爱我的社区"},
+        {"q": "读：My new school is big. The teachers are kind. I have new friends. I like my new school! 主要讲什么？", "a": "我喜欢我的新学校"}
+      ]
+    },
+    {
       "id": "en-4a-12",
       "type": "choice",
       "unit": "Unit 4 Helping in the community",
@@ -214,6 +328,48 @@
         {"q": "补全：Look! Sarah is ____ (read) a story to the kids.", "a": "reading"},
         {"q": "补全：Look! Amy and John ____ washing the windows.", "a": "are"},
         {"q": "用英语说：看！陈杰正在做饭。", "a": "Look! Chen Jie is cooking."}
+      ]
+    },
+    {
+      "id": "en-4a-20",
+      "type": "choice",
+      "unit": "Unit 4 Helping in the community",
+      "lesson": "Part C Project: Make a poster of your school helpers",
+      "lessons": ["Part C", "Project", "school helpers"],
+      "points": ["EN-S1-LK-01.10", "EN-S1-TX-01.4"],
+      "topic": "每天做和现在正在做",
+      "stem": "海报介绍体育老师：Mr Liu ____ football with us every day. Look! He ____ basketball now. 选出正确的一组。",
+      "options": ["plays；plays", "play；is playing", "plays；playing", "plays；is playing"],
+      "answer": 3,
+      "wrong": {"0": "look-now-simple-4a", "1": "he-she-verb-no-s", "2": "progressive-no-be"},
+      "right": ["every day 说平时常做的事：He plays football ...", "Look! … now 说此刻正在做：He is playing basketball now."],
+      "typical": ["两个空都照“每天”的说法：", "Look! He plays basketball now."],
+      "typical_error": "look-now-simple-4a",
+      "ladder": [
+        {"q": "补全：Ms Wang is a nurse. She ____ (help) people every day.", "a": "helps"},
+        {"q": "补全：Look! The doctor ____ (talk) to a boy now.", "a": "is talking"},
+        {"q": "用英语说：看！保洁员现在正在扫地。", "a": "Look! The cleaner is sweeping the floor now."}
+      ]
+    },
+    {
+      "id": "en-4a-21",
+      "type": "choice",
+      "unit": "Unit 4 Helping in the community",
+      "lesson": "Reading time",
+      "lessons": ["Reading time", "safety"],
+      "points": ["EN-S1-TH-01.14", "EN-S1-LK-01.9"],
+      "topic": "用 Don't 提醒安全",
+      "stem": "Reading time 讲了社区安全。看到几个小朋友在马路上踢足球，你用英语提醒他们：",
+      "options": ["Not play on the road!", "Don't playing on the road!", "Don't play on the road!"],
+      "answer": 2,
+      "wrong": {"0": "wy-not-for-dont-7b", "1": "imperative-ing-5b"},
+      "right": ["叫人“别做”某事，用 Don't + 动词原形：", "Don't play on the road! 在马路上玩不安全。"],
+      "typical": ["“别”就是 not：", "Not play on the road!"],
+      "typical_error": "wy-not-for-dont-7b",
+      "ladder": [
+        {"q": "补全：It's a red light. ____ go!（别走）", "a": "Don't"},
+        {"q": "改错：Don't running in the classroom!", "a": "Don't run in the classroom!"},
+        {"q": "用英语提醒同学：别在路上跑，不安全。", "a": "Don't run on the road. It's not safe."}
       ]
     },
     {
@@ -238,6 +394,48 @@
       ]
     },
     {
+      "id": "en-4a-22",
+      "type": "choice",
+      "unit": "Unit 5 The weather and us",
+      "lesson": "Part C Project: Make a bad weather reminder",
+      "lessons": ["Part C", "Project", "bad weather reminder"],
+      "points": ["EN-S1-TH-01.17", "EN-S1-LS-01.16"],
+      "topic": "“大雨”怎么说",
+      "stem": "做恶劣天气提醒卡：今天雨下得很大，我们不能去公园。第一句写哪一个？",
+      "options": ["There is big rain today.", "There is heavy rain today.", "There is strong rain today.", "There is heavy rainy today."],
+      "answer": 1,
+      "wrong": {"0": "big-rain-5a", "2": "strong-rain-5a", "3": "y-word-after-heavy-4a"},
+      "right": ["雨、雪下得大用 heavy：heavy rain、heavy snow。", "风大才用 strong：a strong wind。"],
+      "typical": ["照汉语“大雨”：", "There is big rain today."],
+      "typical_error": "big-rain-5a",
+      "ladder": [
+        {"q": "补全：There is ____ snow. We can't go out.（大雪）", "a": "heavy"},
+        {"q": "补全：There is a ____ wind. We can't play outside.（大风）", "a": "strong"},
+        {"q": "用英语写提醒：今天雪下得很大，我们不能踢足球。", "a": "There is heavy snow today. We can't play football."}
+      ]
+    },
+    {
+      "id": "en-4a-23",
+      "type": "choice",
+      "unit": "Unit 5 The weather and us",
+      "lesson": "Reading time",
+      "lessons": ["Reading time", "weather"],
+      "points": ["EN-S1-LC-01.6", "EN-S1-TH-01.17"],
+      "topic": "这个天气故事讲什么",
+      "stem": "读 Reading time（晴、风、雪、雨四种天气里，孩子们在做什么）。这个故事主要想说什么？",
+      "options": ["下雨天只能待在家里", "什么天气都能玩得开心", "下雪天可以堆雪人"],
+      "answer": 1,
+      "wrong": {"0": "rain-no-fun-4a", "2": "detail-as-main-idea-3b"},
+      "right": ["晴天踢球、刮风放风筝、下雪堆雪人，", "下雨天穿上雨衣、雨靴也能出去玩：什么天气都能玩得开心。"],
+      "typical": ["记得下雨时女孩不高兴，", "就选“下雨天只能待在家里”。"],
+      "typical_error": "rain-no-fun-4a",
+      "ladder": [
+        {"q": "读：It's cloudy and cool. We can take a walk in the park. 这天能出门吗？", "a": "能，可以去公园散步"},
+        {"q": "读：It's hot. We can't run outside. But we can swim. 天热时可以做什么？", "a": "游泳"},
+        {"q": "用英语说：今天下雪，我们可以堆雪人。", "a": "It's snowy today. We can make a snowman."}
+      ]
+    },
+    {
       "id": "en-4a-14",
       "type": "choice",
       "unit": "Unit 6 Changing for the seasons",
@@ -256,6 +454,48 @@
         {"q": "— Which season do you like? — ____（夏天）", "a": "Summer."},
         {"q": "— Do you like winter? — ____（是的）", "a": "Yes, I do."},
         {"q": "用英语问同学喜欢哪个季节，再替他答：秋天，可以去散步。", "a": "Which season do you like? Autumn. I can take a walk."}
+      ]
+    },
+    {
+      "id": "en-4a-24",
+      "type": "choice",
+      "unit": "Unit 6 Changing for the seasons",
+      "lesson": "Part C Project: Make a travel card",
+      "lessons": ["Part C", "Project", "travel card"],
+      "points": ["EN-S1-TH-01.18", "EN-S1-LS-01.12"],
+      "topic": "旅行卡：穿的要配天气",
+      "stem": "Lily 写冬天的旅行卡：I like winter. It's cold and windy. 下一句写哪个最合适？",
+      "options": ["I can wear my warm coat.", "I can wear my T-shirt.", "I can to wear my coat."],
+      "answer": 0,
+      "wrong": {"1": "clothes-weather-mismatch-4a", "2": "can-to-verb"},
+      "right": ["前面写了 cold and windy，要穿暖和的：warm coat。", "can 后面直接跟动词原形：I can wear ..."],
+      "typical": ["只想着自己喜欢的衣服：", "I can wear my T-shirt."],
+      "typical_error": "clothes-weather-mismatch-4a",
+      "ladder": [
+        {"q": "It's hot and sunny. 穿 a sweater 还是 a T-shirt？", "a": "a T-shirt"},
+        {"q": "补全：I like autumn. It's cool. I can wear my ____ .（毛衣）", "a": "sweater"},
+        {"q": "写旅行卡：我喜欢冬天，天气很冷，我可以戴我的新手套。", "a": "I like winter. It's cold. I can wear my new gloves."}
+      ]
+    },
+    {
+      "id": "en-4a-25",
+      "type": "choice",
+      "unit": "Revision Let's help!",
+      "lesson": "Revision Let's help!",
+      "lessons": ["Revision", "Let's help"],
+      "points": ["EN-S1-LK-01.11", "EN-S1-LK-01.10"],
+      "topic": "there be 和进行时连用",
+      "stem": "社区公园里：Look! There ____ some old people in the park. They ____ a walk.",
+      "options": ["is；are taking", "are；taking", "have；are taking", "are；are taking"],
+      "answer": 3,
+      "wrong": {"0": "there-be-agreement", "1": "progressive-be-drop", "2": "there-have"},
+      "right": ["some old people 是好几个人：There are ...", "Look! 说的是正在做：They are taking a walk."],
+      "typical": ["“他们在散步”，taking 就是“在”，", "写成 They taking a walk."],
+      "typical_error": "progressive-be-drop",
+      "ladder": [
+        {"q": "补全：Look! Mike ____ reading a book.", "a": "is"},
+        {"q": "补全：Look! The children ____ (play) games in the park.", "a": "are playing"},
+        {"q": "用英语说：看！有两个女孩在公园里，她们正在浇花。", "a": "Look! There are two girls in the park. They're watering the flowers."}
       ]
     }
   ]

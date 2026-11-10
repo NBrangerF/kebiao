@@ -320,6 +320,27 @@
         {"q": "变成否定句：She cleaned her room.", "a": "She didn't clean her room."},
         {"q": "用英语说：昨天我感冒了，所以没去上学。", "a": "I had a cold, so I didn't go to school yesterday."}
       ]
+    },
+    {
+      "id": "en-6b-16",
+      "type": "choice",
+      "unit": "Recycle Mike’s happy days",
+      "lesson": "Recycle Mike’s happy days",
+      "lessons": ["Recycle", "Mike’s happy days"],
+      "points": ["EN-S2-LK-01.11", "EN-S2-LK-01.10"],
+      "topic": "过去与现在的比较",
+      "stem": "Two years ago, Tom ____ shorter than me. Now he is ____ than me.",
+      "options": ["is；taller", "was；more tall", "was；tall", "was；taller"],
+      "answer": 3,
+      "wrong": {"0": "past-tense-drop", "1": "comparative-more", "2": "comparative-no-change"},
+      "right": ["Two years ago 是过去：Tom was shorter.", "有 than 要用比较级：taller than me."],
+      "typical": ["“两年前他比我矮”，", "照汉语写成 Tom is shorter than me."],
+      "typical_error": "past-tense-drop",
+      "ladder": [
+        {"q": "补全：Three years ago, I ____ very short.", "a": "was"},
+        {"q": "补全：Five years ago, my cats ____ small. Now they are big.", "a": "were"},
+        {"q": "用英语说：以前我比哥哥矮，现在我比他高。", "a": "I was shorter than my brother before. Now I'm taller than him."}
+      ]
     }
   ]
 }

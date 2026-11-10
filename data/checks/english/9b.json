@@ -12,7 +12,11 @@
     {"id": "9b-come-across-as-look-for", "name": "把 come across 当成找", "why": "看到“在抽屉里”，就按情景猜成在找东西，没注意它是无意中碰到。", "move": "问：“我”是打开抽屉专门去找毛笔，还是无意中看到它？再和 look for（有意去找）对比。"},
     {"id": "9b-question-order-in-object-clause", "name": "宾语从句仍用疑问语序", "why": "原句是问句，就把 can we、is it 的顺序原样搬进了从句。", "move": "把从句单独拿出来读：how we can reduce waste 是在陈述“我们怎样做”，主语 we 要放回 can 前面。"},
     {"id": "9b-because-before-noun", "name": "名词短语前用了 because", "why": "汉语“因为”后面接词、接句都行，就把 because 直接放在名词短语前。", "move": "看“因为”后面：有主语和谓语的完整句子用 because；只有名词短语（the heavy smog）用 because of。"},
-    {"id": "9b-know-progressive", "name": "状态动词 know 用了进行时", "why": "觉得“到现在还认识”就是“正在”，就用了 be + doing。", "move": "问：know 能“正在做”吗？know、like、have（有）表示状态，从过去持续到现在用 have known。"}
+    {"id": "9b-know-progressive", "name": "状态动词 know 用了进行时", "why": "觉得“到现在还认识”就是“正在”，就用了 be + doing。", "move": "问：know 能“正在做”吗？know、like、have（有）表示状态，从过去持续到现在用 have known。"},
+    {"id": "9b-modal-plus-is", "name": "情态动词后用了 is/are", "why": "汉语“可能是”的“是”就译成 is，没注意 might、must 后面要用原形 be。", "move": "板书 might / must / can't + be，问：情态动词后面放什么形式？原形，所以 is 要还原成 be。"},
+    {"id": "9b-make-doing", "name": "make sb 后面用了 doing", "why": "觉得“让你想起”是正在发生的感受，或把 enjoy doing 的习惯套到了 make 后面。", "move": "两栏对比：make / let + sb + do；enjoy / finish + doing，让学生把 makes you think 放进对的一栏。"},
+    {"id": "might-plus-to-9b", "name": "might 后面多加了 to", "why": "have to、need to 说惯了，以为“可能是”的“是”前面也要加 to。", "move": "对比 have to be / might be，问：哪个本身带 to？might、must、could 后面直接跟动词原形。"},
+    {"id": "reduce-as-any-green-9b", "name": "把环保做法都叫 reduce", "why": "reduce 是 3R 里的第一个，就把所有环保做法都叫 reduce。", "move": "问 reduce 的意思：少用东西。把旧玻璃瓶当笔筒，是少用了东西，还是换个用法再用？"}
   ],
   "items": [
     {
@@ -56,6 +60,27 @@
       ]
     },
     {
+      "id": "en-9b-11",
+      "type": "choice",
+      "unit": "Unit 1 Let's Celebrate!",
+      "lesson": "Project Give a presentation on a festival",
+      "lessons": ["Project", "festival"],
+      "points": ["EN-S3-LS-01.17", "EN-S3-CK-01.5"],
+      "topic": "为节日列问题清单",
+      "stem": "为节日展示列问题清单：What ____ people in India throw during Holi?",
+      "options": ["are", "do", "does"],
+      "answer": 1,
+      "wrong": {"0": "be-for-did-question", "2": "people-singular-7b"},
+      "right": ["throw 是实义动词，问句要借助助动词；", "people 是复数，用 do：What do people in India throw during Holi?"],
+      "typical": ["people 没有 s，看着像一个人，", "所以用 does：What does people …"],
+      "typical_error": "people-singular-7b",
+      "ladder": [
+        {"q": "补全问题：How long ____ Holi last? (is / does)", "a": "does"},
+        {"q": "补全问题：What ____ people eat at the Spring Festival? (do / are)", "a": "do"},
+        {"q": "为你想介绍的节日写两个问题。", "a": "示例：Where do people celebrate it? What do they eat?"}
+      ]
+    },
+    {
       "id": "en-9b-03",
       "type": "choice",
       "unit": "Unit 2 A Look into the Past",
@@ -93,6 +118,27 @@
         {"q": "aim 是名词还是动词？The main aim of the trip is to learn about history.", "a": "名词"},
         {"q": "用 repair 的正确形式填空：The workers ____ the bronze mask last year.", "a": "repaired（动词）"},
         {"q": "用 trade 造两个句子，一句当名词，一句当动词。", "a": "如：Trade helps both countries. / They traded tea for silk."}
+      ]
+    },
+    {
+      "id": "en-9b-12",
+      "type": "choice",
+      "unit": "Unit 2 A Look into the Past",
+      "lesson": "Project Bring the past to life",
+      "lessons": ["Project", "Bring the past to life"],
+      "points": ["EN-S3-LA-03.1", "EN-S3-LK-01.14"],
+      "topic": "情态动词后接 be",
+      "stem": "介绍一件古物：This pot has black marks at the bottom. It might ____ a cooking pot.",
+      "options": ["is", "to be", "be"],
+      "answer": 2,
+      "wrong": {"0": "9b-modal-plus-is", "1": "might-plus-to-9b"},
+      "right": ["might 是情态动词，后面跟动词原形 be：", "It might be a cooking pot.（也许是一口煮饭的锅）"],
+      "typical": ["“是”就用 is：", "It might is a cooking pot."],
+      "typical_error": "9b-modal-plus-is",
+      "ladder": [
+        {"q": "This bronze mask must ____ very old. (is / be)", "a": "be"},
+        {"q": "改错：The jade cup could to be a gift for a king.", "a": "去掉 to"},
+        {"q": "用 might be 猜一猜：This small stone tool has a sharp edge.", "a": "示例：It might be a knife."}
       ]
     },
     {
@@ -138,6 +184,27 @@
       ]
     },
     {
+      "id": "en-9b-13",
+      "type": "choice",
+      "unit": "Unit 3 A Taste of Art",
+      "lesson": "Project Hold an art exhibition",
+      "lessons": ["Project", "art exhibition"],
+      "points": ["EN-S3-LS-01.68", "EN-S3-TH-01.16"],
+      "topic": "make sb do 的用法",
+      "stem": "作品介绍：Our paper-cut shows a full moon. We hope it makes you ____ of your family.",
+      "options": ["think", "to think", "thinking"],
+      "answer": 0,
+      "wrong": {"1": "make-let-to-do", "2": "9b-make-doing"},
+      "right": ["make sb do：让某人做某事，do 前不加 to；", "it makes you think of your family."],
+      "typical": ["学过 ask sb to do，就照着加 to：", "it makes you to think of your family"],
+      "typical_error": "make-let-to-do",
+      "ladder": [
+        {"q": "This song makes me ____ (feel) happy.", "a": "feel"},
+        {"q": "We asked the visitors ____ (write) their names.", "a": "to write"},
+        {"q": "用 make sb do 介绍一件艺术作品。", "a": "示例：The painting makes me want to visit the sea."}
+      ]
+    },
+    {
       "id": "en-9b-07",
       "type": "step",
       "unit": "Unit 4 Reduce, Reuse, Recycle",
@@ -175,6 +242,27 @@
         {"q": "选 because / because of：Many fish died ____ the dirty water.", "a": "because of"},
         {"q": "选 because / because of：Fishing was banned ____ there were too few fish.", "a": "because"},
         {"q": "用 as a result 改写：Factories put waste into the river, so the fish died.", "a": "Factories put waste into the river. As a result, the fish died."}
+      ]
+    },
+    {
+      "id": "en-9b-14",
+      "type": "choice",
+      "unit": "Unit 4 Reduce, Reuse, Recycle",
+      "lesson": "Project Make a leaflet about the three Rs",
+      "lessons": ["Project", "leaflet", "three Rs"],
+      "points": ["EN-S3-TX-01.4", "EN-S3-TH-01.27"],
+      "topic": "把做法归进三个 R",
+      "stem": "做三 R 传单时，这条做法应放进哪一栏？Use an old glass jar as a pencil holder.",
+      "options": ["Reduce", "Recycle", "Reuse"],
+      "answer": 2,
+      "wrong": {"0": "reduce-as-any-green-9b", "1": "recycle-for-reuse-6a"},
+      "right": ["玻璃瓶没有变回原料，只是换个用法再用一次，属于 Reuse；", "Recycle 要送去回收、重新加工成新材料。"],
+      "typical": ["旧瓶子变成了笔筒，变成了新东西，", "所以是 Recycle。"],
+      "typical_error": "recycle-for-reuse-6a",
+      "ladder": [
+        {"q": "哪一栏？Don't buy things that you don't need.", "a": "Reduce"},
+        {"q": "哪一栏？Put empty cans in the recycling bin.", "a": "Recycle"},
+        {"q": "为传单的 Reuse 一栏写一条做法。", "a": "示例：Use old T-shirts as cleaning cloths."}
       ]
     },
     {
@@ -216,6 +304,27 @@
         {"q": "用括号里的词填空：Please keep ____ (silent) in the library.", "a": "silence"},
         {"q": "写出名词形式：encourage → ____；develop → ____", "a": "encouragement；development"},
         {"q": "用括号里的词填空：Thanks for the useful ____ (inform) about high schools.", "a": "information"}
+      ]
+    },
+    {
+      "id": "en-9b-15",
+      "type": "choice",
+      "unit": "Unit 5 Open to New Beginnings",
+      "lesson": "Project Create a class yearbook",
+      "lessons": ["Project", "class yearbook"],
+      "points": ["EN-S3-LS-01.20", "EN-S3-LK-01.15"],
+      "topic": "年鉴里的一般过去时",
+      "stem": "年鉴照片说明：Last spring, our class ____ first prize in the school singing contest.",
+      "options": ["has won", "won", "wins"],
+      "answer": 1,
+      "wrong": {"0": "perfect-with-past-time", "2": "past-tense-drop"},
+      "right": ["Last spring 是过去的一个时间点，用一般过去时；", "win → won：our class won first prize."],
+      "typical": ["拿奖是“已经”发生的事，用现在完成时：", "our class has won first prize"],
+      "typical_error": "perfect-with-past-time",
+      "ladder": [
+        {"q": "We ____ (go) on a class trip to the Great Wall in Grade 8.", "a": "went"},
+        {"q": "We ____ (be) classmates for three years.", "a": "have been"},
+        {"q": "为年鉴写一句话，回忆初中的一件事。", "a": "示例：In Grade 7, we planted a tree in the school garden."}
       ]
     }
   ]

@@ -32,7 +32,25 @@
     {"id": "wy-simple-for-progressive-6a", "name": "问“在做什么”却答一般现在时", "why": "汉语“我在做纸船”和“我做纸船”动词一样，没注意 What are you doing? 问的是此刻正在做的事。", "move": "问：Jack 这会儿手里是不是正在做？此刻正在做的事用 am / is / are + -ing。"},
     {"id": "wy-long-adjective-er-6a", "name": "长词也在词尾加 -er", "why": "faster、easier 说得多，就把加 -er 的规则用到了 interesting 这样的长词上。", "move": "拍手数音节：fast 一拍，in-ter-est-ing 好几拍；长词前面加 more，不再加 -er。"},
     {"id": "wy-most-with-short-adj-6a", "name": "短词的最高级也用 most", "why": "读过 one of the most famous，就以为最高级都在前面加 most。", "move": "数音节：old 只有一个音节，直接加 -est：the oldest；famous 这样的长词才用 most。"},
-    {"id": "wy-should-plus-ing-6a", "name": "should 后面用了 -ing", "why": "I like reading、I like watching TV 说惯了，就在 should 后面也用 -ing。", "move": "对比 I like reading.（喜欢的事）和 You should read.（该做的事），should 后面用原形。"}
+    {"id": "wy-should-plus-ing-6a", "name": "should 后面用了 -ing", "why": "I like reading、I like watching TV 说惯了，就在 should 后面也用 -ing。", "move": "对比 I like reading.（喜欢的事）和 You should read.（该做的事），should 后面用原形。"},
+    {"id": "wy-opinion-as-example-6a", "name": "把观点重说一遍当例子", "why": "以为例子就是再说一遍自己的看法，没分清观点和能证明它的具体事情。", "move": "追问：这句话里发生了一件什么具体的事？说不出来，它就不是例子。"},
+    {"id": "wy-example-off-side-6a", "name": "选的例子反倒帮了对方", "why": "只看到句子和“读书”有关，没看它在支持哪一方。", "move": "把例子接在理由后面连起来读：它能证明这个理由吗，还是在帮对方说话？"},
+    {"id": "wy-comparative-as-opinion-6a", "name": "看到比较级就当成观点", "why": "比较像是在评价，就以为说“更……”的句子都是个人看法。", "move": "问：能不能量一量、数一数来核对？能核对的比较是 fact。"},
+    {"id": "wy-speak-for-as-language-6a", "name": "把 speak for 当成说外语", "why": "speak Chinese、speak English 说惯了，看到 speak 后面跟国家就想到语言。", "move": "对比 speak English（说英语）和 speak for Japan（代表日本发言），问：for 后面是语言还是国家？"},
+    {"id": "wy-speak-for-as-introduce-6a", "name": "把代表一国当成介绍一国", "why": "说到某个国家，最熟的活动是介绍它的名胜和美食，就套了上去。", "move": "追问：Model UN 里大家在谈什么？谈世界问题时，他要说的是这个国家的看法。"},
+    {"id": "wy-one-of-singular-6a", "name": "one of 后的名词没用复数", "why": "照汉语“之一”只想着说的是一个公园，就用了单数。", "move": "问：one of 是从几个里面挑一个？有很多个，后面的名词就加 s。"},
+    {"id": "wy-places-as-famous-for-6a", "name": "把有哪些景观当成以什么出名", "why": "表里“有什么自然景观”和“以什么出名”挨着，看到景观词就填了进去。", "move": "追问：人们专门从远处赶来看的是什么？那才是它出名的东西。"},
+    {"id": "wy-invention-misses-problem-6a", "name": "只抓住东西名，没对准难处", "why": "看到问题里有“书包”就去改书包，没抓住真正的难处是“太重”。", "move": "先圈出问题里的难处 too heavy，再问：这个发明让小朋友背得轻松了吗？"},
+    {"id": "wy-invention-just-nice-6a", "name": "只想发明好看，不管解决什么", "why": "以为发明就是做个新奇好看的东西，忘了先问它解决什么问题。", "move": "让学生用 It can… 说一说：这个发明能帮小朋友什么忙？"},
+    {"id": "wy-steps-base-for-past-6a", "name": "讲做过的事也用说步骤的原形", "why": "First、Next 后面常跟动词原形教别人做，讲自己已经做完的事时也照搬。", "move": "问：这是在教大家做，还是在讲上周已经做完的事？讲过去的事，动词用过去式。"},
+    {"id": "wy-some-think-as-fact-6a", "name": "把“有人认为”当成确定的事", "why": "只抓住句子里的人名，没注意 Nobody knows for sure 和 Some … think。", "move": "圈出 for sure 和 think，问：作者说这件事确定了吗？"},
+    {"id": "wy-plan-as-habit-6a", "name": "把现在的习惯写成计划", "why": "计划栏里照着写了自己现在的做法，没用 will 说今后要怎么改。", "move": "问：计划说的是以后要怎么做；这句写的是现在还是以后？要改的地方改了吗？"},
+    {"id": "wy-natural-medicine-no-doctor-6a", "name": "以为天然药物能代替看医生", "why": "读到这些东西能让人舒服些，就推得太远，以为生病都不用看医生了。", "move": "追问：短文说它们能治好所有的病吗？发高烧时该怎么做？"},
+    {"id": "wy-exclamation-question-order-6a", "name": "感叹句用了问句的语序", "why": "What 开头的句子平时都是问句，就照问句把 is 提到 it 前面。", "move": "把感叹句的后半截单独读：it is，和陈述句一样，不是问句的 is it。"},
+    {"id": "wy-pound-as-ten-6a", "name": "照“1 元 = 10 角”换英镑", "why": "人民币 1 元换 10 角最熟，就以为 1 pound 也是 10 pence。", "move": "回到课文找原句：One pound is ___ pence? 再换算 2 pounds。"},
+    {"id": "wy-pence-cents-mixed-6a", "name": "把英国的便士说成美国的分", "why": "两国的钱都是“100 个小单位换 1 个大单位”，记住了数，混了名称。", "move": "列表：美国 dollars / cents，英国 pounds / pence，问：Jack 在哪个国家？"},
+    {"id": "wy-one-of-first-as-first-6a", "name": "漏看 one of，当成第一个", "why": "抓住 first 就译成“第一个”，漏了前面的 one of。", "move": "问：one of 是“……之一”，最早来的是一个人还是好几个人？"},
+    {"id": "wy-first-as-visit-first-6a", "name": "把 first 读成“先去做”", "why": "把 first 当成“首先”，和后面的动作连起来读成“先去……”。", "move": "拆开读：Amy 是 one of the first students，to use the new library 说明她们是最早用新图书馆的人。"}
   ],
   "items": [
     {
@@ -140,6 +158,69 @@
       ]
     },
     {
+      "id": "en-wy-6a-31",
+      "type": "choice",
+      "unit": "Unit 1 What do you do with money?",
+      "lesson": "Hit it big",
+      "lessons": ["Hit it big", "Make a plan for your money"],
+      "points": ["EN-S2-LC-03.1", "EN-S2-TH-01.8"],
+      "topic": "说计划：spend … on",
+      "stem": "Mia 有 100 元，打算拿 45 元买一个足球。她向同桌介绍自己的计划，哪一句说对了？",
+      "options": ["I will spend 45 yuan on a football.", "I will to spend 45 yuan on a football.", "I will spend 45 yuan buy a football."],
+      "answer": 0,
+      "wrong": {"1": "will-plus-to-5b", "2": "two-bare-verbs"},
+      "right": ["说计划用 will + 动词原形：I will spend…；", "把钱花在什么上：spend + 钱 + on + 东西。"],
+      "typical": ["照“拿 45 元买足球”逐字说：", "I will spend 45 yuan buy a football."],
+      "typical_error": "two-bare-verbs",
+      "ladder": [
+        {"q": "用 save 说计划：我会存 30 元。", "a": "I will save 30 yuan."},
+        {"q": "填空：I will spend 15 yuan ____ a kite. (on / buy)", "a": "on"},
+        {"q": "你有 50 元，用 spend 和 save 各说一句计划。", "a": "如 I will spend 20 yuan on food. I will save 30 yuan."}
+      ]
+    },
+    {
+      "id": "en-wy-6a-32",
+      "type": "choice",
+      "unit": "Unit 1 What do you do with money?",
+      "lesson": "Wrap up",
+      "lessons": ["Wrap up"],
+      "points": ["EN-S2-LS-01.2", "EN-S2-LK-01.16"],
+      "topic": "复习：三单和 How much",
+      "stem": "Kate always ____ her pocket money. Now she wants two kites. She asks, “How much ____ they?”",
+      "options": ["save … are", "saves … are", "saves … is"],
+      "answer": 1,
+      "wrong": {"0": "3sg-no-s", "2": "plural-subject-is"},
+      "right": ["Kate 是一个人，说她平时的习惯：Kate always saves…；", "two kites 是复数：How much are they?"],
+      "typical": ["How much is 说得最顺口，没看 two kites：", "How much is they?"],
+      "typical_error": "plural-subject-is",
+      "ladder": [
+        {"q": "用括号里的词填空：Mike always ____ (spend) his money on toys.", "a": "spends"},
+        {"q": "— How much ____ the shoes? — They're 90 yuan.", "a": "are"},
+        {"q": "用英语写两句：Lucy 总是存钱；她问那两本书多少钱。", "a": "Lucy always saves her money. How much are the two books?"}
+      ]
+    },
+    {
+      "id": "en-wy-6a-33",
+      "type": "choice",
+      "unit": "Unit 1 What do you do with money?",
+      "lesson": "Let’s explore",
+      "lessons": ["Let’s explore", "Money from different countries"],
+      "points": ["EN-S2-CK-01.1", "EN-S2-LS-01.2"],
+      "topic": "pound 和 pence 换算",
+      "stem": "Jack lives in the UK. He has 2 pounds in his pocket. 2 pounds = ____",
+      "options": ["200 pence", "20 pence", "200 cents"],
+      "answer": 0,
+      "wrong": {"1": "wy-pound-as-ten-6a", "2": "wy-pence-cents-mixed-6a"},
+      "right": ["英国的钱是 pounds 和 pence，1 pound = 100 pence，", "所以 2 pounds = 200 pence。cents 是美国的钱。"],
+      "typical": ["照 1 元 = 10 角来换：", "2 pounds = 20 pence"],
+      "typical_error": "wy-pound-as-ten-6a",
+      "ladder": [
+        {"q": "How many cents are there in one dollar?", "a": "100 cents"},
+        {"q": "Lucy has 3 pounds. How many pence is that?", "a": "300 pence"},
+        {"q": "Tom has 1 dollar. Amy has 90 cents. Who has more money?", "a": "Tom（1 dollar = 100 cents）"}
+      ]
+    },
+    {
       "id": "en-wy-6a-06",
       "type": "judge",
       "unit": "Unit 2 What’s your opinion?",
@@ -238,6 +319,69 @@
         {"q": "dr 还是 tr：dream，train", "a": "dream dr，train tr"},
         {"q": "找出开头读音不同的词：drum，draw，try", "a": "try"},
         {"q": "按开头分两组：drive，trip，drink，tree", "a": "dr：drive drink；tr：trip tree"}
+      ]
+    },
+    {
+      "id": "en-wy-6a-34",
+      "type": "choice",
+      "unit": "Unit 2 What’s your opinion?",
+      "lesson": "Hit it big",
+      "lessons": ["Hit it big", "Have a debate"],
+      "points": ["EN-S2-LC-03.1", "EN-S2-LS-01.14"],
+      "topic": "辩论：给理由找例子",
+      "stem": "辩题 Should students read every day? 你方观点 Yes，理由是 Reading helps us learn new words. 哪一句能作这个理由的例子？",
+      "options": ["I learnt 20 new words from two books.", "We think students should read every day.", "Some of my friends don't like reading at all."],
+      "answer": 0,
+      "wrong": {"1": "wy-opinion-as-example-6a", "2": "wy-example-off-side-6a"},
+      "right": ["例子是一件具体的事，要能证明理由：", "读两本书学会 20 个新词，正好证明“读书帮我们学新词”。"],
+      "typical": ["选了 We think students should read every day.", "这是把观点又说了一遍，不是例子。"],
+      "typical_error": "wy-opinion-as-example-6a",
+      "ladder": [
+        {"q": "理由：Sport makes us strong. 哪句是例子？a) I run every day and now I'm strong. b) We should do sport.", "a": "a"},
+        {"q": "理由：Pets make people happy. 给它写一个例子。", "a": "如 My cat plays with me and I feel happy."},
+        {"q": "辩题 Should we walk to school? 选一方，写一个理由和一个例子。", "a": "如 Yes. Walking is good for us. I walk to school and I feel great."}
+      ]
+    },
+    {
+      "id": "en-wy-6a-35",
+      "type": "choice",
+      "unit": "Unit 2 What’s your opinion?",
+      "lesson": "Wrap up",
+      "lessons": ["Wrap up"],
+      "points": ["EN-S2-TQ-01.1", "EN-S2-LS-01.14"],
+      "topic": "比较句：事实还是观点",
+      "stem": "哪一句是 opinion（观点）？",
+      "options": ["Science is more interesting than maths.", "Tom is taller than his brother.", "Our school has 45 classrooms!"],
+      "answer": 0,
+      "wrong": {"1": "wy-comparative-as-opinion-6a", "2": "exclamation-as-opinion-6a"},
+      "right": ["“更有趣”是个人感受，有人同意有人不同意，是 opinion；", "谁更高、有几间教室，量一量、数一数就能核对，是 fact。"],
+      "typical": ["看到 taller than 在比较，就当成观点：", "Tom is taller than his brother."],
+      "typical_error": "wy-comparative-as-opinion-6a",
+      "ladder": [
+        {"q": "fact 还是 opinion：My ruler is longer than yours.", "a": "fact"},
+        {"q": "fact 还是 opinion：Cats are better than dogs.", "a": "opinion"},
+        {"q": "用 more beautiful 写一句 opinion。", "a": "如 Spring is more beautiful than winter."}
+      ]
+    },
+    {
+      "id": "en-wy-6a-36",
+      "type": "choice",
+      "unit": "Unit 2 What’s your opinion?",
+      "lesson": "Let’s explore",
+      "lessons": ["Let’s explore", "Model United Nations"],
+      "points": ["EN-S2-LS-01.14", "EN-S2-LA-03.1"],
+      "topic": "speak for 代表发言",
+      "stem": "In Model UN, Li Ming speaks for Japan. 这句话说的是 Li Ming 要做什么？",
+      "options": ["全程用日语发言", "向大家介绍日本的名胜和美食", "站在日本的立场，就世界问题发表意见"],
+      "answer": 2,
+      "wrong": {"0": "wy-speak-for-as-language-6a", "1": "wy-speak-for-as-introduce-6a"},
+      "right": ["speak for a country 是“代表一个国家发言”：", "Li Ming 要说出日本对世界问题的看法。"],
+      "typical": ["看到 speak 和 Japan，就以为是说日语：", "Li Ming 全程用日语发言。"],
+      "typical_error": "wy-speak-for-as-language-6a",
+      "ladder": [
+        {"q": "In Model UN, Tom speaks for the USA. 他代表哪个国家发言？", "a": "the USA（美国）"},
+        {"q": "用英语说：在模拟联合国里，我代表中国发言。", "a": "In Model UN, I speak for China."},
+        {"q": "在 Model UN 里你想谈什么世界问题？用 I want to talk about… 写一句。", "a": "如 I want to talk about saving animals."}
       ]
     },
     {
@@ -346,6 +490,67 @@
       ]
     },
     {
+      "id": "en-wy-6a-37",
+      "type": "choice",
+      "unit": "Unit 3 Wonderful nature",
+      "lesson": "Hit it big",
+      "lessons": ["Hit it big", "Design a travel poster"],
+      "points": ["EN-S2-LS-01.17", "EN-S2-LK-01.11"],
+      "topic": "one of the + 最高级",
+      "stem": "为家乡做旅游海报：Stone Bridge is one of ____ in our town.",
+      "options": ["the oldest bridge", "oldest bridges", "the most old bridges", "the oldest bridges"],
+      "answer": 3,
+      "wrong": {"0": "wy-one-of-singular-6a", "1": "superlative-without-the", "2": "wy-most-with-short-adj-6a"},
+      "right": ["one of the + 最高级 + 复数名词，old 是短词，最高级是 oldest：", "Stone Bridge is one of the oldest bridges in our town."],
+      "typical": ["说的只是一座桥，就用了单数：", "one of the oldest bridge"],
+      "typical_error": "wy-one-of-singular-6a",
+      "ladder": [
+        {"q": "选词填空：It is one of the tallest ____ in our park. (tree / trees)", "a": "trees"},
+        {"q": "用括号里的词填空：West Hill is one of the ____ (high) hills here.", "a": "highest"},
+        {"q": "仿写一句介绍你喜欢的地方：… is one of the most … in …", "a": "如 Moon Lake is one of the most beautiful lakes in our town."}
+      ]
+    },
+    {
+      "id": "en-wy-6a-38",
+      "type": "choice",
+      "unit": "Unit 3 Wonderful nature",
+      "lesson": "Wrap up",
+      "lessons": ["Wrap up"],
+      "points": ["EN-S2-LC-01.6", "EN-S2-LC-03.1"],
+      "topic": "How high 和 How long",
+      "stem": "— ____ is Moon Mountain? — It's about 2,000 metres high.",
+      "options": ["How long", "How high", "How much"],
+      "answer": 1,
+      "wrong": {"0": "how-long-any-length-8b", "2": "how-much-for-numbers-8b"},
+      "right": ["答句说的是 2,000 metres high，问的是山有多高：", "How high is Moon Mountain? 问河有多长才用 How long。"],
+      "typical": ["看到 metres，就用 How long：", "How long is Moon Mountain?"],
+      "typical_error": "how-long-any-length-8b",
+      "ladder": [
+        {"q": "— ____ is the river? — It's about 500 kilometres long.", "a": "How long"},
+        {"q": "— How high is the hill? — It's about 300 metres ____.", "a": "high"},
+        {"q": "就 Blue Lake 问一个问题并回答：湖深约 50 米。", "a": "How deep is Blue Lake? It's about 50 metres deep."}
+      ]
+    },
+    {
+      "id": "en-wy-6a-39",
+      "type": "judge",
+      "unit": "Unit 3 Wonderful nature",
+      "lesson": "Let’s explore",
+      "lessons": ["Let’s explore", "national parks"],
+      "points": ["EN-S2-TX-01.3", "EN-S2-LS-01.2"],
+      "topic": "famous for：找出名之处",
+      "stem": "读公园介绍，填表中的 What is it famous for? 同意 Tom 的填法吗？",
+      "work": ["Moon Park has lakes, hills and forests.", "Every autumn, people come to see its red leaves.", "Tom：It is famous for its lakes, hills and forests."],
+      "answer": false,
+      "wrong": {"agree": "wy-places-as-famous-for-6a"},
+      "right": ["lakes, hills and forests 是公园里有的自然景观；", "人们每年秋天专门来看红叶：It is famous for its red leaves."],
+      "ladder": [
+        {"q": "Star Lake is famous for its blue water. 它以什么出名？", "a": "its blue water（蓝色的湖水）"},
+        {"q": "Sun Park has rivers. Every spring, people come to see its flowers. 它以什么出名？", "a": "its flowers（它的花）"},
+        {"q": "用 famous for 介绍你家乡的一个地方。", "a": "如 Our town is famous for its old bridge."}
+      ]
+    },
+    {
       "id": "en-wy-6a-16",
       "type": "choice",
       "unit": "Unit 4 We can do it!",
@@ -446,6 +651,66 @@
         {"q": "fr 还是 fl：___uit（水果）", "a": "fr（fruit）"},
         {"q": "fr 还是 fl：Look at the red ___owers!", "a": "fl（flowers）"},
         {"q": "按开头分两组：Friday，flower，fruit，flag", "a": "fr：Friday fruit；fl：flower flag"}
+      ]
+    },
+    {
+      "id": "en-wy-6a-40",
+      "type": "choice",
+      "unit": "Unit 4 We can do it!",
+      "lesson": "Hit it big",
+      "lessons": ["Hit it big", "Be a little inventor"],
+      "points": ["EN-S2-LC-03.1", "EN-S2-LA-03.1"],
+      "topic": "发明要对准问题",
+      "stem": "Problem: The school bags are too heavy for little kids. 哪个发明能解决这个问题？",
+      "options": ["A bag with many colours. It looks nice.", "A bigger bag. You can put more books in it.", "A bag with wheels. It moves easily."],
+      "answer": 2,
+      "wrong": {"0": "wy-invention-just-nice-6a", "1": "wy-invention-misses-problem-6a"},
+      "right": ["难处是书包太重、小朋友背不动；", "装上轮子拉着走，就不用背着：A bag with wheels."],
+      "typical": ["只看到“书包”，就想把书包做得更大：", "A bigger bag. You can put more books in it."],
+      "typical_error": "wy-invention-misses-problem-6a",
+      "ladder": [
+        {"q": "Grandpa can't read small words. 哪个有用：a phone with big words 还是 a phone with many colours？", "a": "a phone with big words"},
+        {"q": "Problem: Our classroom floor is often dirty. 用 It can… 说一个发明的用处。", "a": "如 It can clean the floor fast."},
+        {"q": "说一个身边的问题，再用 This is our… It can… 介绍你们的发明。", "a": "如 This is our light pen. It can help us write at night."}
+      ]
+    },
+    {
+      "id": "en-wy-6a-41",
+      "type": "write",
+      "unit": "Unit 4 We can do it!",
+      "lesson": "Wrap up",
+      "lessons": ["Wrap up"],
+      "points": ["EN-S2-TX-01.3", "EN-S2-LS-01.17"],
+      "topic": "讲做法：原形还是过去式",
+      "stem": "Lily 讲她上周日怎样做玩具车，用括号里的词填空：Last Sunday I made a toy car. First, I ____ (find) a small box.",
+      "answer": "found",
+      "wrong": {"find": "wy-steps-base-for-past-6a", "finded": "past-ed-overgeneralize"},
+      "right": ["Last Sunday 说明讲的是已经做完的事，动词用过去式；", "find 是不规则动词，过去式是 found。"],
+      "typical": ["看到 First，就用说步骤时的原形：", "First, I find a small box."],
+      "typical_error": "wy-steps-base-for-past-6a",
+      "ladder": [
+        {"q": "教同学做手工，用括号里的词填空：First, ____ (cut) the paper.", "a": "cut"},
+        {"q": "讲昨天做的事，用括号里的词填空：Then I ____ (make) a paper bird.", "a": "made"},
+        {"q": "用 First 和 Then 讲你做过的一件手工（两句）。", "a": "如 First, I found some paper. Then I made a paper box."}
+      ]
+    },
+    {
+      "id": "en-wy-6a-42",
+      "type": "judge",
+      "unit": "Unit 4 We can do it!",
+      "lesson": "Let’s explore",
+      "lessons": ["Let’s explore", "The wheel"],
+      "points": ["EN-S2-LC-01.6", "EN-S2-TQ-02.1"],
+      "topic": "“有人认为”不是定论",
+      "stem": "读下面关于学校花园的介绍，同意 Tom 的说法吗？",
+      "work": ["Our school garden is very old. Who made it?", "Nobody knows for sure. Some teachers think it was Mr Wang.", "Tom：It may be Mr Wang, but nobody is sure."],
+      "answer": true,
+      "wrong": {"disagree": "wy-some-think-as-fact-6a"},
+      "right": ["Nobody knows for sure 说明谁也不能确定；", "Some teachers think 只是一部分人的看法，所以 Tom 说得对。"],
+      "ladder": [
+        {"q": "Some people think it was Lily. 这件事确定吗？", "a": "不确定，只是有些人这样想"},
+        {"q": "No one knows for sure who made the kite. 谁做的这只风筝，大家清楚吗？", "a": "不清楚"},
+        {"q": "用 We don't know for sure 和 Some people think 写两句话。", "a": "如 We don't know for sure. Some people think it was Tom."}
       ]
     },
     {
@@ -552,6 +817,69 @@
       ]
     },
     {
+      "id": "en-wy-6a-43",
+      "type": "choice",
+      "unit": "Unit 5 Health matters",
+      "lesson": "Hit it big",
+      "lessons": ["Hit it big", "Make a health plan"],
+      "points": ["EN-S2-TH-01.3", "EN-S2-LS-01.17"],
+      "topic": "健康计划用 I'll",
+      "stem": "Tom often goes to bed at eleven, and he is tired in class. 他的健康计划 Sleep 一栏写哪句？",
+      "options": ["I go to bed at eleven.", "I'll goes to bed at nine.", "I'll go to bed at nine."],
+      "answer": 2,
+      "wrong": {"0": "wy-plan-as-habit-6a", "1": "modal-plus-s"},
+      "right": ["计划说以后要做的事：I'll（= I will）+ 动词原形；", "早点睡才能解决上课犯困：I'll go to bed at nine."],
+      "typical": ["照着自己现在的作息写：", "I go to bed at eleven."],
+      "typical_error": "wy-plan-as-habit-6a",
+      "ladder": [
+        {"q": "用括号里的词填空：I'll ____ (drink) more water every day.", "a": "drink"},
+        {"q": "用 I'll 为自己写一句 Eat 计划。", "a": "如 I'll eat more fruit."},
+        {"q": "Amy watches TV for three hours every day. 替她写一句 Do 计划。", "a": "如 I'll play outside after school."}
+      ]
+    },
+    {
+      "id": "en-wy-6a-44",
+      "type": "choice",
+      "unit": "Unit 5 Health matters",
+      "lesson": "Wrap up",
+      "lessons": ["Wrap up"],
+      "points": ["EN-S2-LS-01.12", "EN-S2-TH-01.3"],
+      "topic": "复习：has 病名 + should",
+      "stem": "— What's the matter with Tom? — He ____ a fever. — He should ____ in bed.",
+      "options": ["is … stay", "have … stay", "has … stays", "has … stay"],
+      "answer": 3,
+      "wrong": {"0": "be-for-have-ill-6a", "1": "has-for-third", "2": "modal-plus-s"},
+      "right": ["说生病用 have / has + 病名，Tom 是三单：He has a fever.", "should 后面用动词原形：He should stay in bed."],
+      "typical": ["照“他发烧了”，用 is 把人和病连起来：", "He is a fever."],
+      "typical_error": "be-for-have-ill-6a",
+      "ladder": [
+        {"q": "— What's the matter? — I ____ a cough. (have / am)", "a": "have"},
+        {"q": "用括号里的词填空：She has a cold. She should ____ (drink) more water.", "a": "drink"},
+        {"q": "Your friend has a bad cough. 用 should 给他一条建议。", "a": "如 You should take some medicine."}
+      ]
+    },
+    {
+      "id": "en-wy-6a-45",
+      "type": "choice",
+      "unit": "Unit 5 Health matters",
+      "lesson": "Let’s explore",
+      "lessons": ["Let’s explore", "Natural medicines"],
+      "points": ["EN-S2-LC-01.6", "EN-S2-TH-01.3"],
+      "topic": "天然药物：抓主要意思",
+      "stem": "读完 Let’s explore 的短文 Natural medicines，哪一句说出了短文的主要意思？",
+      "options": ["Some natural medicines are in the park.", "There are many natural medicines around us.", "With them, we never need to go to the doctor."],
+      "answer": 1,
+      "wrong": {"0": "wy-detail-as-main-idea-5a", "2": "wy-natural-medicine-no-doctor-6a"},
+      "right": ["短文说天然药物可以在公园、花园、厨房里找到，", "又举了几种例子，合起来讲的是：我们身边有很多天然药物。"],
+      "typical": ["只记住了“在公园里”这一处：", "Some natural medicines are in the park."],
+      "typical_error": "wy-detail-as-main-idea-5a",
+      "ladder": [
+        {"q": "Walking is good for us. It makes our legs strong. It helps us sleep well. 哪句是主要意思？", "a": "Walking is good for us."},
+        {"q": "Milk is good for us. Fish is good for us. Eggs are good for us. 用一句话说主要意思。", "a": "如 Many foods are good for us."},
+        {"q": "Amy has a bad fever. 她只喝点天然药茶、不去看医生，行吗？为什么？", "a": "不行，天然药物不能代替看医生"}
+      ]
+    },
+    {
       "id": "en-wy-6a-26",
       "type": "choice",
       "unit": "Unit 6 See the world",
@@ -653,6 +981,69 @@
         {"q": "pl 还是 pr：plate，present", "a": "plate pl，present pr"},
         {"q": "找出含 pr 读音的词：April，apple，pen", "a": "April"},
         {"q": "按开头分两组：plate，pretty，plane，present", "a": "pl：plate plane；pr：pretty present"}
+      ]
+    },
+    {
+      "id": "en-wy-6a-46",
+      "type": "choice",
+      "unit": "Unit 6 See the world",
+      "lesson": "Hit it big",
+      "lessons": ["Hit it big", "Welcome people to your hometown"],
+      "points": ["EN-S2-LS-01.17", "EN-S2-CA-01.4"],
+      "topic": "介绍家乡：is / are famous",
+      "stem": "给外地朋友写家乡介绍，想说“家乡的橘子很有名”。哪一句写对了？",
+      "options": ["Oranges is famous in my hometown.", "Oranges famous in my hometown.", "Oranges are famous in my hometown."],
+      "answer": 2,
+      "wrong": {"0": "plural-subject-is", "1": "be-drop"},
+      "right": ["oranges 是复数，be 动词用 are：", "Oranges are famous in my hometown."],
+      "typical": ["照“橘子很有名”逐字说，漏了 be：", "Oranges famous in my hometown."],
+      "typical_error": "be-drop",
+      "ladder": [
+        {"q": "选词填空：The old bridge ____ famous in my hometown. (is / are)", "a": "is"},
+        {"q": "选词填空：Dumplings ____ famous in my hometown. (is / are)", "a": "are"},
+        {"q": "用 … is / are famous in my hometown. 介绍家乡的一样东西。", "a": "如 The tea is famous in my hometown."}
+      ]
+    },
+    {
+      "id": "en-wy-6a-47",
+      "type": "choice",
+      "unit": "Unit 6 See the world",
+      "lesson": "Wrap up",
+      "lessons": ["Wrap up"],
+      "points": ["EN-S2-LC-02.4", "EN-S2-LS-01.16"],
+      "topic": "复习：过去式和感叹句",
+      "stem": "讲去年的旅行：Last summer we ____ to Sanya. What a beautiful beach ____!",
+      "options": ["went … it is", "go … it is", "went … is it"],
+      "answer": 0,
+      "wrong": {"1": "past-tense-drop", "2": "wy-exclamation-question-order-6a"},
+      "right": ["Last summer 说的是过去，go 的过去式是 went；", "感叹句 What a + 形容词 + 名词 + 主语 + 动词：… it is!"],
+      "typical": ["照问句把 is 提到 it 前面：", "What a beautiful beach is it!"],
+      "typical_error": "wy-exclamation-question-order-6a",
+      "ladder": [
+        {"q": "用括号里的词填空：Yesterday I ____ (see) a tall tower.", "a": "saw"},
+        {"q": "连词成句（感叹句）：nice / what / a / is / it / day", "a": "What a nice day it is!"},
+        {"q": "用一句过去时和一句感叹句讲你的一次旅行。", "a": "如 Last year I went to Beijing. What a big city it is!"}
+      ]
+    },
+    {
+      "id": "en-wy-6a-48",
+      "type": "choice",
+      "unit": "Unit 6 See the world",
+      "lesson": "Let’s explore",
+      "lessons": ["Let’s explore", "Famous travellers"],
+      "points": ["EN-S2-LC-01.6", "EN-S2-CK-01.7"],
+      "topic": "one of the first 的意思",
+      "stem": "Amy was one of the first students to use the new library. 这句话是什么意思？",
+      "options": ["她是第一个用新图书馆的学生", "她是最早用新图书馆的学生之一", "她先去了新图书馆，再去别的地方"],
+      "answer": 1,
+      "wrong": {"0": "wy-one-of-first-as-first-6a", "2": "wy-first-as-visit-first-6a"},
+      "right": ["one of the first … to … 是“最早……的那批人之一”；", "不是说只有她第一个，也不是说她先去哪儿。"],
+      "typical": ["看到 first 就译成“第一个”：", "她是第一个用新图书馆的学生。"],
+      "typical_error": "wy-one-of-first-as-first-6a",
+      "ladder": [
+        {"q": "He was the first student to come to school today. 他是第几个到校的？", "a": "第一个"},
+        {"q": "She was one of the first girls to join the club. 她是唯一最先加入的人吗？", "a": "不是，她是最早加入的几个女孩之一"},
+        {"q": "用 one of the first 写一句：Tom 是最早到校的学生之一。", "a": "Tom was one of the first students to come to school."}
       ]
     }
   ]

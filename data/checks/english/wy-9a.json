@@ -39,9 +39,58 @@
     {"id": "wy-reduce-as-any-green-9a", "name": "把环保做法都叫 reduce", "why": "reduce 是 3R 里的第一个，就把所有环保做法都叫 reduce。", "move": "问 reduce 的意思：少用东西。Lucy 是少用了东西，还是给旧东西换了用法？"},
     {"id": "wy-stress-wrong-target-9a", "name": "以为重读是在强调后面的名词", "why": "习惯了名词重读，就以为重读 her 是在强调后面的 umbrella。", "move": "问：Mum 问的是“谁的”伞，还是“是不是伞”？重读哪个词就是在强调哪个词。"},
     {"id": "wy-stress-no-meaning-9a", "name": "以为重读虚词不改变意思", "why": "学过虚词一般弱读，就以为虚词读重只是读得响，不改变意思。", "move": "请两位同学分别读 it's her umbrella 和 it's HER umbrella，问：哪一句在纠正“不是我的”？"},
-    {"id": "wy-enough-before-adj-9a", "name": "enough 放在了形容词前", "why": "照汉语“足够大”的语序，把 enough 放在 old 前面。", "move": "记“形容词 + enough”：old enough、tall enough；再对比名词前的 enough time、enough money。"}
+    {"id": "wy-enough-before-adj-9a", "name": "enough 放在了形容词前", "why": "照汉语“足够大”的语序，把 enough 放在 old 前面。", "move": "记“形容词 + enough”：old enough、tall enough；再对比名词前的 enough time、enough money。"},
+    {"id": "wy-teen-from-ten-9a", "name": "把十一二岁也算成 teenager", "why": "汉语“十几岁”从十岁算起，就把 11、12 岁也算进去，没看 teenager 里的 -teen。", "move": "把 eleven 到 nineteen 写成一列，圈出带 -teen 的数：从 thirteen 开始的岁数才是 teenager。"},
+    {"id": "wy-teenager-as-youth-9a", "name": "把年轻人都当成 teenager", "why": "teenager 和 young people、youth 都译成“青少年、年轻人”，就以为二十多岁也算。", "move": "问：25 是 twenty-five，带 -teen 吗？young people 范围宽，teenager 只指 13–19 岁。"},
+    {"id": "wy-opening-as-conclusion-9a", "name": "把点明介绍对象的话当结尾", "why": "觉得结尾要再说一遍“我推荐的是谁”，没分清开头点题和结尾评价。", "move": "问：这句是在告诉听众“我要介绍谁”，还是在说“我们能从他身上学到什么”？前者放开头。"},
+    {"id": "wy-fact-as-comment-9a", "name": "把具体事实当成结尾评价", "why": "最打动人的事迹想留到最后说，没注意结尾要的是评价，不是事实。", "move": "问：这句能查证吗？能查证的事实放正文；结尾说看法，如 shows us…、we can learn…"},
+    {"id": "wy-if-because-swapped-9a", "name": "把条件和原因的连词用反", "why": "if 和 because 都引出主句以外的另一件事，没分清是还没确定的条件，还是已经知道的理由。", "move": "逐个问：这件事现在确定吗？不确定、要看情况的用 if；已经知道、用来解释的用 because。"},
+    {"id": "wy-overextend-saying-9a", "name": "把谚语的意思推得过了头", "why": "读出“钱买不来快乐”后，又自己往前推一步，变成“有钱就不快乐”。", "move": "问：原句说到“有钱人”了吗？只按原句说的范围解释，别加原句没有的话。"},
+    {"id": "wy-past-for-passed-9a", "name": "把 past 当成了 passed", "why": "past 和 passed 读音一样，又都和“过去”有关，就把 past 当成动词 pass 的变化形式。", "move": "问：空里要动词吗？have 后要过去分词，pass 加 -ed 是 passed；past 是名词、形容词或介词。"},
+    {"id": "wy-have-base-verb-9a", "name": "have 后面用了动词原形", "why": "汉语“已经过去了”动词不变，就在 have 后直接放原形。", "move": "板书 have / has + 过去分词，让学生把 pass、go、see 变成 passed、gone、seen 再放进句子。"},
+    {"id": "wy-a-before-such-9a", "name": "把 a 放在了 such 前面", "why": "照汉语“一个如此……的故事”，先说“一个”再说“如此”。", "move": "板书 such + a + 形容词 + 名词，和 so + 形容词 对比，让学生把 a 挪到 such 后面读一遍。"},
+    {"id": "wy-so-that-swapped-9a", "name": "把目的和结果弄反", "why": "两句都有 so 和 that，只记得一个表目的、一个表结果，没看 so 和 that 是分开还是连在一起。", "move": "圈出 so 的位置：so 后面先跟形容词再接 that，是“太……以至于”（结果）；so that 连在一起，是“为了”（目的）。"},
+    {"id": "wy-so-that-as-result-9a", "name": "以为有 so 和 that 就表结果", "why": "先学了 so…that 表结果，看到 so that 也照样套用。", "move": "问：用手电筒是为了什么？so that 后面常有 could / can，“为了能……”就是目的。"},
+    {"id": "wy-spend-past-echo-9a", "name": "spend 后的动作也用了过去式", "why": "前面的 spent 是过去式，就以为后面的动作也要跟着变成过去式。", "move": "问：这句话的谓语是哪个词？spent 已经是谓语，help 不能再当谓语，要变成 helping。"},
+    {"id": "wy-spend-base-verb-9a", "name": "spend 时间后直接接了原形", "why": "照汉语“花三十年帮助”，把两个动作直接连在一起。", "move": "问：句子已经有谓语 spent 了，第二个动作要变成什么形式才能放进来？加 -ing。"},
+    {"id": "wy-relative-keeps-pronoun-9a", "name": "who 后面又留下了 he/she", "why": "合并句子时把第二句整句照抄，没意识到 who 已经代替了那个代词。", "move": "用手盖住 who 后面的 she 读一遍：who 就是 she，从句里已经有主语了，不能再要第二个。"},
+    {"id": "wy-desert-dessert-mixup-9a", "name": "desert、dessert 记混", "why": "两个词只差一个 s，一眼看去几乎一样。", "move": "编口诀：甜点 dessert 人人想多吃一份，所以多一个 s；沙漠 desert 干巴巴，只有一个 s。"},
+    {"id": "wy-keyword-rain-9a", "name": "抓住 rain 就选了雨林", "why": "抓住句中的 rain 就去配带 rain 的词，没读出 very little 是“很少”。", "move": "让学生把 very little rain 译出来：雨很少。再问：rainforest 雨多还是雨少？"},
+    {"id": "wy-very-with-comparative-9a", "name": "用 very 修饰比较级", "why": "汉语“……得多”常说成“很……”，就把 very 放在了比较级前面。", "move": "两栏对比：very + 原级（very easy）；much / a lot / even + 比较级（much easier），让学生把例子分进对的一栏。"},
+    {"id": "wy-who-for-things-9a", "name": "指物的先行词用了 who", "why": "只看了第一空前的人，就两空都用 who，没再看第二空前的 bottles 是人还是物。", "move": "逐空圈出先行词：volunteers 是人，bottles 是物；who 只指人，which 只指物，that 两边都行。"},
+    {"id": "wy-suggest-that-to-do-9a", "name": "建议句 that 后加了 to", "why": "学过 want to do、plan to do，以为“建议去做”也要加 to。", "move": "问：that 后面是不是一个完整的句子？we 是主语，主语后面直接跟动词原形，不加 to。"},
+    {"id": "wy-suggest-that-doing-9a", "name": "建议句 that 后用了 -ing", "why": "enjoy doing、finish doing 用多了，以为放在另一个动词后面的动作都要加 -ing，没看 that 后面已经有了主语。", "move": "问：that 后面的 we 是不是主语？主语后面直接跟动词原形：we turn、we walk。"},
+    {"id": "wy-re-as-negative-9a", "name": "把 re- 当成否定前缀", "why": "刚学过 un-、im-、dis- 表示“不”，以为词首的前缀都表示否定。", "move": "把 reuse 拆成 re + use，问：reuse 是“不用”还是“再用一次”？再对比 unable、dislike。"},
+    {"id": "wy-re-as-reduce-9a", "name": "把 re- 理解成“减少”", "why": "3R 里的 reduce 也以 re 开头，就把“减少”的意思安到了 re- 上。", "move": "问：refill a bottle 是把瓶子装得更少，还是再装满一次？re- 表示“再”。"},
+    {"id": "wy-so-before-cause-9a", "name": "把原因放在 so 后面", "why": "只记得 so 能连两句话，没分清 so 后面要放结果。", "move": "问：“他爱剪纸”是他参加的原因还是结果？原因前用 because，so 后面只能放结果。"},
+    {"id": "wy-cant-missed-9a", "name": "漏看了 can't，意思读反", "why": "can't 缩写得短，读得快就只抓住了 money、buy、happiness 几个词。", "move": "让学生指着 can't 读两遍：can't buy 是“买不到”，再用中文说一遍整句。"},
+    {"id": "wy-purpose-no-to-9a", "name": "表示目的的动作前漏了 to", "why": "汉语“存钱买足球”两个动作直接连着说，“为了”常省掉。", "move": "问：每周存 5 元是为了什么？在“为了”的那个动作前补上 to，全班读 every week to buy a new football。"},
+    {"id": "wy-when-where-swapped-9a", "name": "when 和 where 用反", "why": "when、where 都能引导状语从句，没看从句说的是“时候”还是“地方”。", "move": "逐空问：买东西记账，说的是“什么时候”还是“什么地方”？放笔记，说的是“时候”还是“地方”？"},
+    {"id": "wy-in-before-where-keep-9a", "name": "地点从句前又加了 in", "why": "照汉语“放在……的地方”先写了 in，不知道 where 已经含有“在那里”。", "move": "把 where 换成 in the place 读一读：keep the notes in the place → keep the notes where，in 已经藏在 where 里了。"},
+    {"id": "wy-which-both-blanks-9a", "name": "指人的先行词也用了 which", "why": "只看了第二空前的 bottles 是物，就两空都填 which，没看第一空前的 volunteers 是人。", "move": "逐空圈出先行词：volunteers 是人还是物？which 只指物，who 只指人，that 两边都行。"}
   ],
   "items": [
+    {
+      "id": "en-wy-9a-25",
+      "type": "choice",
+      "unit": "Unit 1 Teenagers today",
+      "lesson": "Starting out",
+      "lessons": ["Starting out"],
+      "points": ["EN-S3-TH-01.5", "EN-S3-LK-01.8"],
+      "topic": "teenager 指几岁",
+      "stem": "Which of them is a teenager?（下面哪一位是 teenager？）",
+      "options": ["Mike, aged 11", "Mr Wang, aged 25", "Lucy, aged 15"],
+      "answer": 2,
+      "wrong": {"0": "wy-teen-from-ten-9a", "1": "wy-teenager-as-youth-9a"},
+      "right": ["teenager 指 13–19 岁、岁数带 -teen 的人；", "Lucy 15 岁（fifteen），是 teenager。"],
+      "typical": ["Mike 11 岁，是“十几岁”的少年，", "所以 Mike 是 teenager。"],
+      "typical_error": "wy-teen-from-ten-9a",
+      "ladder": [
+        {"q": "Tom is 12. Is he a teenager? 用 Yes / No 回答。", "a": "No, he isn't.（twelve 不带 -teen）"},
+        {"q": "用英文写出 teenager 年龄段里最小和最大的岁数。", "a": "thirteen, nineteen"},
+        {"q": "用英语说：我哥哥 20 岁了，已经不是 teenager 了。", "a": "示例：My brother is 20, so he isn't a teenager now."}
+      ]
+    },
     {
       "id": "en-wy-9a-01",
       "type": "choice",
@@ -127,6 +176,69 @@
       ]
     },
     {
+      "id": "en-wy-9a-26",
+      "type": "choice",
+      "unit": "Unit 1 Teenagers today",
+      "lesson": "Presenting ideas",
+      "lessons": ["Presenting ideas"],
+      "points": ["EN-S3-LS-01.68"],
+      "topic": "推荐稿的结尾句",
+      "stem": "推荐班级榜样时，哪一句最适合放在结尾（Conclusion），对榜样作出评价？",
+      "options": ["Today I'll introduce my role model to you.", "She shows us what a teenager can do.", "She started a reading club at 14."],
+      "answer": 1,
+      "wrong": {"0": "wy-opening-as-conclusion-9a", "2": "wy-fact-as-comment-9a"},
+      "right": ["结尾要对榜样作出评价，说出我们能从她身上学到什么；", "第一句点明要介绍谁，属于开头；第三句是事实，属于正文。"],
+      "typical": ["14 岁就办读书会，这件事最打动人，", "所以放在最后当结尾。"],
+      "typical_error": "wy-fact-as-comment-9a",
+      "ladder": [
+        {"q": "开头、正文还是结尾？My role model is my cousin Ann.", "a": "开头"},
+        {"q": "开头、正文还是结尾？She won a science prize at 15.", "a": "正文（介绍事实）"},
+        {"q": "为你的榜样写一句结尾评价。", "a": "示例：We can all learn from her hard work."}
+      ]
+    },
+    {
+      "id": "en-wy-9a-27",
+      "type": "choice",
+      "unit": "Unit 1 Teenagers today",
+      "lesson": "Reflection",
+      "lessons": ["Reflection"],
+      "points": ["EN-S3-LK-01.15", "EN-S3-LK-01.14"],
+      "topic": "if 与 because 的分工",
+      "stem": "Tom 爱剪纸，但还不知道社团有没有空位：Tom will join the club ____ it still has room, ____ he loves paper cutting.",
+      "options": ["because; if", "if; because", "if; so"],
+      "answer": 1,
+      "wrong": {"0": "wy-if-because-swapped-9a", "2": "wy-so-before-cause-9a"},
+      "right": ["“还有空位”现在还不确定，是条件，用 if；", "“他喜欢剪纸”是已知的理由，用 because。"],
+      "typical": ["两个空都在说他为什么参加，先填 because：", "… because it still has room, if he loves …"],
+      "typical_error": "wy-if-because-swapped-9a",
+      "ladder": [
+        {"q": "____ it rains tomorrow, we will stay at home. (If / Because)", "a": "If"},
+        {"q": "Amy stayed at home ____ she had a bad cold. (if / because)", "a": "because"},
+        {"q": "用 if 和 because 写一句话，说说负责任的青少年。", "a": "示例：If I make a promise, I keep it because others trust me."}
+      ]
+    },
+    {
+      "id": "en-wy-9a-28",
+      "type": "choice",
+      "unit": "Unit 2 On the money",
+      "lesson": "Starting out",
+      "lessons": ["Starting out"],
+      "points": ["EN-S3-TH-01.8", "EN-S3-LC-01.7"],
+      "topic": "读懂谚语里的观点",
+      "stem": "谚语 Money can't buy happiness. 表达的看法是：",
+      "options": ["钱买不来快乐", "有钱就能买到快乐", "有钱的人都不快乐"],
+      "answer": 0,
+      "wrong": {"1": "wy-cant-missed-9a", "2": "wy-overextend-saying-9a"},
+      "right": ["can't buy = 买不到：快乐不能靠钱买来；", "原句并没有说有钱的人就不快乐。"],
+      "typical": ["钱买不来快乐，说明钱和快乐对着干，", "所以有钱的人都不快乐。"],
+      "typical_error": "wy-overextend-saying-9a",
+      "ladder": [
+        {"q": "说出看法：Health is more important than money.", "a": "健康比金钱更重要"},
+        {"q": "说出看法：Money doesn't grow on trees.", "a": "钱来之不易，不能乱花"},
+        {"q": "用英语写一句你对钱的看法。", "a": "示例：Money is useful, but it isn't everything."}
+      ]
+    },
+    {
       "id": "en-wy-9a-05",
       "type": "choice",
       "unit": "Unit 2 On the money",
@@ -209,6 +321,69 @@
       ]
     },
     {
+      "id": "en-wy-9a-29",
+      "type": "choice",
+      "unit": "Unit 2 On the money",
+      "lesson": "Presenting ideas",
+      "lessons": ["Presenting ideas"],
+      "points": ["EN-S3-LS-01.17", "EN-S3-TH-01.8"],
+      "topic": "to do 表示目的",
+      "stem": "零花钱计划：I'll put ¥5 into my moneybox every week ____ a new football.",
+      "options": ["buy", "for buy", "to buy"],
+      "answer": 2,
+      "wrong": {"0": "wy-purpose-no-to-9a", "1": "for-purpose-verb"},
+      "right": ["存钱是为了买足球，表示目的用 to + 动词原形：", "put ¥5 … every week to buy a new football"],
+      "typical": ["“为了买”就是 for buy：", "… every week for buy a new football"],
+      "typical_error": "for-purpose-verb",
+      "ladder": [
+        {"q": "I went to the bank ____ (open) an account.", "a": "to open"},
+        {"q": "for 还是 to：We sold old books ____ raise money for the library.", "a": "to"},
+        {"q": "用 to do 说说你存零花钱的目的。", "a": "示例：I save my pocket money to buy books."}
+      ]
+    },
+    {
+      "id": "en-wy-9a-30",
+      "type": "choice",
+      "unit": "Unit 2 On the money",
+      "lesson": "Reflection",
+      "lessons": ["Reflection"],
+      "points": ["EN-S3-LK-01.15", "EN-S3-TH-01.8"],
+      "topic": "when 与 where 合用",
+      "stem": "理财建议：Write down what you spend ____ you buy something, and keep the notes ____ you can find them easily.",
+      "options": ["when; where", "where; when", "when; in where"],
+      "answer": 0,
+      "wrong": {"1": "wy-when-where-swapped-9a", "2": "wy-in-before-where-keep-9a"},
+      "right": ["买东西的“时候”记账，用 when；", "放在“能找到的地方”，用 where，where 前不加 in。"],
+      "typical": ["放“在”找得到的地方，先写 in：", "keep the notes in where you can find them"],
+      "typical_error": "wy-in-before-where-keep-9a",
+      "ladder": [
+        {"q": "____ you get pocket money, save part of it first. (When / Where)", "a": "When"},
+        {"q": "Put your money box ____ your little brother can't reach it. (when / where)", "a": "where"},
+        {"q": "用 when 和 where 各写一条理财建议。", "a": "示例：Shop where prices are low. Save when you can."}
+      ]
+    },
+    {
+      "id": "en-wy-9a-31",
+      "type": "choice",
+      "unit": "Unit 3 Past passing by",
+      "lesson": "Starting out",
+      "lessons": ["Starting out"],
+      "points": ["EN-S3-TH-01.14", "EN-S3-LK-01.8"],
+      "topic": "past 与 passed",
+      "stem": "Hundreds of years have ____, but the old city wall still stands.",
+      "options": ["passed", "past", "pass"],
+      "answer": 0,
+      "wrong": {"1": "wy-past-for-passed-9a", "2": "wy-have-base-verb-9a"},
+      "right": ["have 后面用过去分词：pass → passed → passed；", "past 是“过去（的）”，不是 pass 的变化形式。"],
+      "typical": ["“过去了”就是 past：", "Hundreds of years have past."],
+      "typical_error": "wy-past-for-passed-9a",
+      "ladder": [
+        {"q": "We learn about the ____ in history class. (past / passed)", "a": "past"},
+        {"q": "Two hours ____ quickly in the museum. (past / passed)", "a": "passed"},
+        {"q": "The bus went ____ the old temple. (past / passed)", "a": "past"}
+      ]
+    },
+    {
       "id": "en-wy-9a-09",
       "type": "choice",
       "unit": "Unit 3 Past passing by",
@@ -288,6 +463,69 @@
         {"q": "____ English, Lily can also speak French. (Besides / Except)", "a": "Besides"},
         {"q": "Everyone went to the museum ____ Tom. He was ill. (besides / except)", "a": "except"},
         {"q": "用 besides 说一句：除了时装秀，还有什么方式让历史“活”起来？", "a": "示例：Besides fashion shows, films can also bring history alive."}
+      ]
+    },
+    {
+      "id": "en-wy-9a-32",
+      "type": "choice",
+      "unit": "Unit 3 Past passing by",
+      "lesson": "Presenting ideas",
+      "lessons": ["Presenting ideas"],
+      "points": ["EN-S3-LS-01.20", "EN-S3-LK-01.14"],
+      "topic": "such a + 形容词 + 名词",
+      "stem": "为班级历史书写一页：The legend of Mulan is ____ that people still tell it today.",
+      "options": ["such moving story", "such a moving story", "a such moving story"],
+      "answer": 1,
+      "wrong": {"0": "article-drop", "2": "wy-a-before-such-9a"},
+      "right": ["such 后接“形容词 + 单数可数名词”时，a / an 放在 such 后面：", "such a moving story that …"],
+      "typical": ["照“一个如此感人的故事”的语序：", "a such moving story"],
+      "typical_error": "wy-a-before-such-9a",
+      "ladder": [
+        {"q": "It was ____ old temple that nobody knew its age. (such an / an such)", "a": "such an"},
+        {"q": "The bridge was ____ long that we walked for an hour. (such / so)", "a": "so"},
+        {"q": "用 such…that 介绍一处古迹。", "a": "示例：It is such a beautiful place that many people visit it."}
+      ]
+    },
+    {
+      "id": "en-wy-9a-33",
+      "type": "choice",
+      "unit": "Unit 3 Past passing by",
+      "lesson": "Reflection",
+      "lessons": ["Reflection"],
+      "points": ["EN-S3-LK-01.14", "EN-S3-LK-01.15"],
+      "topic": "so…that 与 so that",
+      "stem": "① The cave was so dark that we used torches. ② We used torches so that we could see the paintings. 两句的从句分别表示：",
+      "options": ["①目的，②结果", "①②都是结果", "①结果，②目的"],
+      "answer": 2,
+      "wrong": {"0": "wy-so-that-swapped-9a", "1": "wy-so-that-as-result-9a"},
+      "right": ["① so + 形容词 + that：因为太黑，结果用了手电筒；", "② so that 连在一起，后面有 could：为了能看清壁画。"],
+      "typical": ["两句都有 so 和 that，", "所以都是在说结果。"],
+      "typical_error": "wy-so-that-as-result-9a",
+      "ladder": [
+        {"q": "目的还是结果？I got up early so that I could see the sunrise.", "a": "目的"},
+        {"q": "目的还是结果？The film was so funny that we laughed a lot.", "a": "结果"},
+        {"q": "用 so that 合并：Mr Li made a video. Students could learn about the old town.", "a": "Mr Li made a video so that students could learn about the old town."}
+      ]
+    },
+    {
+      "id": "en-wy-9a-34",
+      "type": "choice",
+      "unit": "Unit 4 Heroes",
+      "lesson": "Starting out",
+      "lessons": ["Starting out"],
+      "points": ["EN-S3-LK-01.10", "EN-S3-CK-01.2"],
+      "topic": "hero 的复数",
+      "stem": "The doctors and nurses who saved lives in the flood are true ____.",
+      "options": ["heros", "heroes", "hero"],
+      "answer": 1,
+      "wrong": {"0": "plural-overgeneralize", "2": "plural-s-drop"},
+      "right": ["are 和 doctors and nurses 说明要用复数；", "hero 以 o 结尾，复数加 -es：heroes（像 tomatoes）。"],
+      "typical": ["复数就在词尾加 s：", "true heros"],
+      "typical_error": "plural-overgeneralize",
+      "ladder": [
+        {"q": "写复数：potato → ____", "a": "potatoes"},
+        {"q": "写复数：photo → ____（要特别记的词）", "a": "photos"},
+        {"q": "用 heroes 写一句话，说说你心中的英雄。", "a": "示例：Firefighters are heroes to me."}
       ]
     },
     {
@@ -375,6 +613,67 @@
       ]
     },
     {
+      "id": "en-wy-9a-35",
+      "type": "choice",
+      "unit": "Unit 4 Heroes",
+      "lesson": "Presenting ideas",
+      "lessons": ["Presenting ideas"],
+      "points": ["EN-S3-LS-01.17", "EN-S3-CK-01.2"],
+      "topic": "spend 时间 doing",
+      "stem": "介绍本地英雄：Dr Zhou spent 30 years ____ the people in the mountain villages.",
+      "options": ["helped", "help", "helping"],
+      "answer": 2,
+      "wrong": {"0": "wy-spend-past-echo-9a", "1": "wy-spend-base-verb-9a"},
+      "right": ["spend + 时间 + doing：花……时间做某事；", "spent 30 years helping the people …"],
+      "typical": ["spent 是过去式，help 也跟着变成过去式：", "spent 30 years helped the people"],
+      "typical_error": "wy-spend-past-echo-9a",
+      "ladder": [
+        {"q": "She spends an hour ____ (read) every day.", "a": "reading"},
+        {"q": "改错：He spent two years built the bridge.", "a": "built → building"},
+        {"q": "用 spend… doing 介绍一位本地英雄。", "a": "示例：She spent ten years teaching in the village."}
+      ]
+    },
+    {
+      "id": "en-wy-9a-36",
+      "type": "step",
+      "unit": "Unit 4 Heroes",
+      "lesson": "Reflection",
+      "lessons": ["Reflection"],
+      "points": ["EN-S3-LK-01.14", "EN-S3-LK-01.15"],
+      "topic": "用 who 合并英雄故事",
+      "stem": "小雨用 who 把两句合成一句：My aunt is a firefighter. She saved two children from a fire. 她从第几步开始错了？",
+      "work": ["两句说的是同一个人：a firefighter 就是 She", "在 a firefighter 后面接上 who", "who 后照抄第二句：who she saved two children", "写出：My aunt is a firefighter who she saved …"],
+      "answer": 2,
+      "error": "wy-relative-keeps-pronoun-9a",
+      "right": ["who 已经代替了 She，在从句里作主语，不能再留 she：", "My aunt is a firefighter who saved two children from a fire."],
+      "ladder": [
+        {"q": "合并：I have an uncle. He is a police officer.", "a": "I have an uncle who is a police officer."},
+        {"q": "改错：The man who he helped me is a doctor.", "a": "去掉 he"},
+        {"q": "用 who 合并：We thanked the volunteers. They cleaned the park.", "a": "We thanked the volunteers who cleaned the park."}
+      ]
+    },
+    {
+      "id": "en-wy-9a-37",
+      "type": "choice",
+      "unit": "Unit 5 A fine balance",
+      "lesson": "Starting out",
+      "lessons": ["Starting out"],
+      "points": ["EN-S3-LK-01.10", "EN-S3-TH-01.26"],
+      "topic": "认识 desert 一词",
+      "stem": "A place that gets very little rain and has few plants is a ____.",
+      "options": ["desert", "dessert", "rainforest"],
+      "answer": 0,
+      "wrong": {"1": "wy-desert-dessert-mixup-9a", "2": "wy-keyword-rain-9a"},
+      "right": ["雨很少、植物很少的地方是沙漠 desert（一个 s）；", "dessert（两个 s）是甜点；rainforest 雨水很多。"],
+      "typical": ["句子里有 rain，", "所以选 rainforest。"],
+      "typical_error": "wy-keyword-rain-9a",
+      "ladder": [
+        {"q": "We had ice cream for ____ after dinner. (desert / dessert)", "a": "dessert"},
+        {"q": "Cows and sheep eat grass on the ____. (grassland / desert)", "a": "grassland"},
+        {"q": "用英语说说 rainforest 是什么样的地方。", "a": "示例：It gets lots of rain and has many tall trees."}
+      ]
+    },
+    {
       "id": "en-wy-9a-17",
       "type": "judge",
       "unit": "Unit 5 A fine balance",
@@ -454,6 +753,69 @@
         {"q": "My room is as ____ (big) as yours.", "a": "big"},
         {"q": "This river is ____ (long) than that one.", "a": "longer"},
         {"q": "翻译：这个湖是那个湖的两倍大。", "a": "This lake is twice / two times as big as that one."}
+      ]
+    },
+    {
+      "id": "en-wy-9a-38",
+      "type": "choice",
+      "unit": "Unit 5 A fine balance",
+      "lesson": "Presenting ideas",
+      "lessons": ["Presenting ideas"],
+      "points": ["EN-S3-LS-01.17", "EN-S3-TH-01.26"],
+      "topic": "much 修饰比较级",
+      "stem": "预测结果：After we clean up the river, it will be ____ easier for fish to live there.",
+      "options": ["very", "much", "more"],
+      "answer": 1,
+      "wrong": {"0": "wy-very-with-comparative-9a", "2": "more-plus-er"},
+      "right": ["easier 已经是比较级，前面用 much 加强：much easier；", "very 只修饰原级（very easy），more 不和 -er 连用。"],
+      "typical": ["“容易得多”，“很”就是 very：", "it will be very easier for fish"],
+      "typical_error": "wy-very-with-comparative-9a",
+      "ladder": [
+        {"q": "The air is ____ cleaner now. (very / much)", "a": "much"},
+        {"q": "This park is ____ beautiful. (very / much)", "a": "very"},
+        {"q": "翻译：现在河水干净多了。", "a": "The river is much cleaner now."}
+      ]
+    },
+    {
+      "id": "en-wy-9a-39",
+      "type": "choice",
+      "unit": "Unit 5 A fine balance",
+      "lesson": "Reflection",
+      "lessons": ["Reflection"],
+      "points": ["EN-S3-LK-01.14", "EN-S3-TH-01.26"],
+      "topic": "that 既指人也指物",
+      "stem": "选一个词，两个空都能填：The volunteers ____ cleaned the river took away the bottles ____ were left on the bank.",
+      "options": ["which", "who", "that"],
+      "answer": 2,
+      "wrong": {"0": "wy-which-both-blanks-9a", "1": "wy-who-for-things-9a"},
+      "right": ["第一空指人（volunteers），第二空指物（bottles）；", "that 既能指人也能指物，两个空都能填。"],
+      "typical": ["第一空填 who 最顺，", "两个空就都填 who。"],
+      "typical_error": "wy-who-for-things-9a",
+      "ladder": [
+        {"q": "The trees ____ we planted last year are growing well. (who / which)", "a": "which"},
+        {"q": "The scientist ____ studies birds came to our school. (which / who)", "a": "who"},
+        {"q": "用 that 合并：Some rivers were dirty before. They are clean again.", "a": "Some rivers that were dirty before are clean again."}
+      ]
+    },
+    {
+      "id": "en-wy-9a-40",
+      "type": "choice",
+      "unit": "Unit 6 Live green",
+      "lesson": "Starting out",
+      "lessons": ["Starting out"],
+      "points": ["EN-S3-TH-01.27", "EN-S3-LS-01.17"],
+      "topic": "具体日期前用 on",
+      "stem": "World Environment Day is ____ 5 June every year.",
+      "options": ["on", "in", "at"],
+      "answer": 0,
+      "wrong": {"1": "in-for-full-date-7a", "2": "time-always-at"},
+      "right": ["5 June 是具体的某一天，用 on；", "只说月份才用 in：in June。"],
+      "typical": ["June 是月份，", "所以用 in：in 5 June"],
+      "typical_error": "in-for-full-date-7a",
+      "ladder": [
+        {"q": "Our school's Green Week is ____ June. (in / on)", "a": "in"},
+        {"q": "World Ocean Day is ____ 8 June. (in / on)", "a": "on"},
+        {"q": "用英语说：我们 4 月 22 日去捡垃圾。", "a": "We'll pick up rubbish on 22 April.（或 on April 22）"}
       ]
     },
     {
@@ -537,6 +899,48 @@
         {"q": "The water is not ____ (warm, enough) for swimming.", "a": "warm enough"},
         {"q": "We don't have ____ (time, enough) to finish the game.", "a": "enough time"},
         {"q": "翻译：这个盒子够大，能装下所有的书。", "a": "This box is big enough to hold all the books."}
+      ]
+    },
+    {
+      "id": "en-wy-9a-41",
+      "type": "choice",
+      "unit": "Unit 6 Live green",
+      "lesson": "Presenting ideas",
+      "lessons": ["Presenting ideas"],
+      "points": ["EN-S3-LS-01.68", "EN-S3-TH-01.27"],
+      "topic": "suggest that 从句",
+      "stem": "家庭环保报告：I suggest that we ____ off the TV when nobody is watching it.",
+      "options": ["to turn", "turn", "turning"],
+      "answer": 1,
+      "wrong": {"0": "wy-suggest-that-to-do-9a", "2": "wy-suggest-that-doing-9a"},
+      "right": ["suggest that 后面是完整的从句：we + 动词原形；", "I suggest that we turn off the TV …"],
+      "typical": ["建议“去”做某事，就加 to：", "I suggest that we to turn off the TV …"],
+      "typical_error": "wy-suggest-that-to-do-9a",
+      "ladder": [
+        {"q": "I suggest that we ____ (walk) to school more often.", "a": "walk"},
+        {"q": "I suggest that you ____ (drink) more water every day.", "a": "drink"},
+        {"q": "用 I suggest that we… 给家人提一条环保建议。", "a": "示例：I suggest that we take our own bags."}
+      ]
+    },
+    {
+      "id": "en-wy-9a-42",
+      "type": "choice",
+      "unit": "Unit 6 Live green",
+      "lesson": "Reflection",
+      "lessons": ["Reflection"],
+      "points": ["EN-S3-LK-01.9", "EN-S3-TH-01.27"],
+      "topic": "前缀 re- 的意思",
+      "stem": "按构词法，reuse、recycle、refill 里的前缀 re- 表示：",
+      "options": ["不，没有", "减少，少用", "再，重新"],
+      "answer": 2,
+      "wrong": {"0": "wy-re-as-negative-9a", "1": "wy-re-as-reduce-9a"},
+      "right": ["re- 表示“再，重复”：reuse 再用，refill 再装满，", "recycle 回收后再次利用。"],
+      "typical": ["3R 里第一个就是 reduce（减少），", "所以 re- 表示“减少”。"],
+      "typical_error": "wy-re-as-reduce-9a",
+      "ladder": [
+        {"q": "写出意思：reopen", "a": "重新打开"},
+        {"q": "用 build 的正确形式填空：After the flood, the school was ____.（重建）", "a": "rebuilt"},
+        {"q": "用 reuse 写一句话，说说你怎样再用旧东西。", "a": "示例：I reuse old boxes to keep my toys."}
       ]
     }
   ]
