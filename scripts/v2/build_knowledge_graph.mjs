@@ -307,7 +307,7 @@ for (const slug of SUBJECTS) {
 }
 writeFileSync(join(OUT, 'search.json'), `${JSON.stringify({ fields: ['code', 'column', 'text', 'standard', 'lessons'], rows: search })}\n`)
 writeFileSync(join(OUT, 'manifest.json'), `${JSON.stringify({
-    note: '知识图谱。要先会：学生没掌握来源要点，很可能学不好目标要点（不表示必须先学完）；由 AI 逐条判断，待核验。同一线索：课标里同一主题的上一学段或下一学段。',
+    note: '知识图谱。要先会：学生没掌握来源要点，很可能学不好目标要点（不表示必须先学完）；由 kebiao 逐条判断，待核验。同一线索：课标里同一主题的上一学段或下一学段。',
     subjects: manifest,
     prerequisites: { judged: report.judged, kept: report.kept, dropped: report.dropped.length, audit }
 }, null, 2)}\n`)

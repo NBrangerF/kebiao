@@ -77,7 +77,7 @@ export function buildGroundedStandardContext(record: StandardRecord): JsonObject
         structured,
         excluded,
         output_policy: {
-            required_labels: ['课标原文', 'kebiao 结构化整理', 'AI 解读或建议'],
+            required_labels: ['课标原文', 'kebiao 结构化整理', 'kebiao 解读或建议'],
             relationship_claim: 'candidate_only_unless_human_reviewed',
             skill_alignment_claim: 'candidate_only_unless_human_reviewed'
         }

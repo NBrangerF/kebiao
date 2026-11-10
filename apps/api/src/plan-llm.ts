@@ -288,7 +288,7 @@ export async function parsePlanWithLlm(
             usage: null,
             plan: fallback,
             field_evidence: [],
-            warnings: ['教学计划文本超过 AI 解析长度上限，已使用确定性规则解析。']
+            warnings: ['教学计划文本超过 解析长度上限，已使用确定性规则解析。']
         }
     }
 

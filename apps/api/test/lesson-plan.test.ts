@@ -801,7 +801,7 @@ test('the book\'s 目录 fills what the 国家平台 list lacks: a missing unit 
 const TOC_IP = '203.0.113.46'
 const get = async (path: string) => json(await app.request(path, { headers: { 'x-forwarded-for': TOC_IP } }))
 
-test('AI 备课 lesson list: the 国家平台 lessons first and unchanged, then what the book\'s own 目录 adds', async t => {
+test('备课助手 lesson list: the 国家平台 lessons first and unchanged, then what the book\'s own 目录 adds', async t => {
     const platform = (await get(`/api/v1/lesson-plans/textbooks/${math5b}/lessons`)).data
     assert.deepEqual(platform.lessons.filter((item: any) => !item.toc).map((item: any) => item.id), national.lessons.map((item: any) => item.id))
     assert.ok(platform.lessons.filter((item: any) => !item.toc).every((item: any) => item.url.startsWith('https://basic.smartedu.cn/')))

@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom'
 import { AnimatePresence, m } from 'motion/react'
 import { useSky } from '../features/starmap/SkyProvider.jsx'
 import { useMyBook } from '../features/mybook/myBook.js'
+import { COLLECTIONS_EVENT, countSavedStandards } from '../data/collections.js'
 import KebiaoLogo from './KebiaoLogo.jsx'
 import { MINOR_LINKS, NAV_GROUPS, groupOf, isItemActive } from './navGroups.js'
 import styles from './Header.module.css'
@@ -47,6 +48,19 @@ function Header() {
     const { openPalette } = useSky()
     const myBook = useMyBook()
     const current = groupOf(location.pathname)
+    // 我的清单: how many standards are saved, kept current as the teacher adds or removes them (other tabs too)
+    const [saved, setSaved] = useState(0)
+    useEffect(() => {
+        const update = () => setSaved(countSavedStandards())
+        update()
+        window.addEventListener(COLLECTIONS_EVENT, update)
+        window.addEventListener('storage', update)
+        return () => {
+            window.removeEventListener(COLLECTIONS_EVENT, update)
+            window.removeEventListener('storage', update)
+        }
+    }, [])
+    const onList = location.pathname === '/collections' || location.pathname.startsWith('/collections/')
 
     useEffect(() => {
         setMobileMenuOpen(false)
@@ -88,6 +102,17 @@ function Header() {
                     </nav>
 
                     <span className={styles.spacer} aria-hidden="true" />
+
+                    <Link
+                        to="/collections"
+                        className={`${styles.list} ${onList ? styles.listActive : ''}`}
+                        aria-current={onList ? 'page' : undefined}
+                        aria-label={`我的清单${saved ? `：已收藏 ${saved} 条标准` : ''}`}
+                    >
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill={saved ? 'currentColor' : 'none'} stroke="currentColor" strokeWidth="1.8" strokeLinejoin="round" aria-hidden="true"><path d="M12 3.5l2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8-4.3-4.1 5.9-.9z" /></svg>
+                        <span className={styles.listLabel}>我的清单</span>
+                        {saved ? <b>{saved}</b> : null}
+                    </Link>
 
                     {myBook ? (
                         <Link

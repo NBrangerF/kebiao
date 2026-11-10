@@ -248,7 +248,7 @@ function StyleGuidePage() {
 
                 <section id="brand" className={styles.section}>
                     <div className="container">
-                        <SectionHeading index="05" title="Brand" description="品牌来自 2,025 条真实课标组成的星图，不来自装饰性的数据面板或通用 AI 光球。" />
+                        <SectionHeading index="05" title="Brand" description="品牌来自 2,025 条真实课标组成的星图，不来自装饰性的数据面板或通用科技光球。" />
                         <div className={styles.brandLayout}>
                             <div className={styles.brandLockup}>
                                 <img src="/kebiao-mark.svg" alt="" />

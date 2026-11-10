@@ -80,8 +80,8 @@ export default function ConceptDetailPage() {
                 <section className={styles.section} aria-labelledby="concept-use">
                     <h2 id="concept-use">备课时怎么用</h2>
                     <p className={styles.prose}>{term.how_to_use}</p>
-                    {term.id === 'interdisciplinary' ? <p className={styles.callout}>课标给出的跨学科主题，按学科和年级整理在<Link to="/interdisciplinary">跨学科主题库</Link>，每个主题都能直接交给 AI 备课。</p> : null}
-                    {['unit-design', 'big-unit'].includes(term.id) ? <p className={styles.callout}>从教材出发做一次：在 <Link to="/lesson-plan">AI 备课</Link>选好教材后，在「哪一课」里选「◆ 整个单元」，AI 会按这个单元在教材里的课时，起草大概念、基本问题、表现性任务和课时安排。</p> : null}
+                    {term.id === 'interdisciplinary' ? <p className={styles.callout}>课标给出的跨学科主题，按学科和年级整理在<Link to="/interdisciplinary">跨学科主题库</Link>，每个主题都能直接交给备课助手。</p> : null}
+                    {['unit-design', 'big-unit'].includes(term.id) ? <p className={styles.callout}>从教材出发做一次：在 <Link to="/lesson-plan">备课助手</Link>选好教材后，在「哪一课」里选「◆ 整个单元」，kebiao 会按这个单元在教材里的课时，起草大概念、基本问题、表现性任务和课时安排。</p> : null}
                 </section>
 
                 {term.misreadings.length ? (

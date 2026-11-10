@@ -543,7 +543,7 @@ export function renderApiDocsPage() {
           <span class="docs-badge">OpenAPI 3.1</span>
         </div>
         <h1 id="docs-title">把课程标准数据接入你的教育产品</h1>
-        <p class="docs-lead">检索结构化课程标准，按 code 批量读取标准，并浏览已建立的年级进阶与相邻关系。智能检索可使用 AI 扩展查询，再由可追溯字段验证候选；模型失败时自动回退。请勿在查询中提交学生个人信息，所有机器匹配仍需教师确认。</p>
+        <p class="docs-lead">检索结构化课程标准，按 code 批量读取标准，并浏览已建立的年级进阶与相邻关系。智能检索会先扩展查询，再由可追溯字段验证候选；模型失败时自动回退。请勿在查询中提交学生个人信息，所有机器匹配仍需教师确认。</p>
         <div class="docs-actions">
           <a class="docs-button docs-button--primary" href="#api-reference">浏览接口</a>
           <button class="docs-button" id="open-auth" type="button">设置 API Key</button>

@@ -143,7 +143,7 @@ function standardsHubPage() {
 ${section('学科', subjectList())}
 ${section('并排看', '<p>一门学科九个年级、一个学段各科并排、一种可迁移能力散在哪些学科，放在一起对照着读。</p>')}
 ${section('其他查法', list([
-        `${link('/smart-search', 'AI 检索')}：用一句话找课标，例如「三年级科学里讲植物生长的」`,
+        `${link('/smart-search', '一句话检索')}：用一句话找课标，例如「三年级科学里讲植物生长的」`,
         `${link('/concepts', '概念词典')}：大概念、大单元、学习任务群，课标原文怎么说`,
         `${link('/skills', '可迁移技能')}：批判性思维、协作等七种能力落在哪些学科的哪几条`
     ]))}`, { jsonLd: [breadcrumbs(crumbs)] })
@@ -201,7 +201,7 @@ function standardPage({ standard, subject }) {
     for (const [edition, textbook, unit, unitId, viaAi] of nationalUnits.get(standard.code) || []) {
         const key = unitId || `${edition}|${unit}`
         if (pageEvidence.has(key)) continue
-        pageEvidence.set(key, `${link(unitId ? `/textbook-units/${unitId}` : `/textbooks/${edition}`, `${textbook} · ${unit}`)}<span class="kbp-note"> · ${viaAi === 2 ? 'AI 逐课判断' : viaAi ? 'AI 按单元判断' : '机器对齐'}，待核验</span>`)
+        pageEvidence.set(key, `${link(unitId ? `/textbook-units/${unitId}` : `/textbooks/${edition}`, `${textbook} · ${unit}`)}<span class="kbp-note"> · ${viaAi === 2 ? 'kebiao 逐课判断' : viaAi ? 'kebiao 按单元判断' : '机器对齐'}，待核验</span>`)
     }
     // 教材里在哪教, as on the page: one entry per book with its lesson count, opening the book's 对应表
     const books = new Map()
@@ -233,7 +233,7 @@ ${section('学习任务群说明', official(standard.intro || []))}
 ${section('学业要求', official(standard.requirements))}
 ${section('教学提示', official(standard.guidance))}
 ${standard.examples.length ? section('表现示例（kebiao 整理）', list(standard.examples.map(example => esc(example.text)))) : ''}
-${bookLine.length ? section('教材里在哪教', `${list(bookLine)}<p class="kbp-note">AI 逐课读了教材原文后判断，待核验。点书名看这本书的课标对应表。</p>`) : section('对应教材', list([...pageEvidence.values()]))}
+${bookLine.length ? section('教材里在哪教', `${list(bookLine)}<p class="kbp-note">kebiao 逐课读了教材原文后判断，待核验。点书名看这本书的课标对应表。</p>`) : section('对应教材', list([...pageEvidence.values()]))}
 ${section(`同学段同领域的其他标准（${standard.level1}）`, list(siblings))}
 <p class="kbp-note">${esc(subject.source_note)}</p>`
     add(meta, main, {
@@ -340,7 +340,7 @@ ${section('对应的课程标准', list(aligned))}`, {
         add(textbookAlignmentMeta(book), `${crumbNav(tableCrumbs)}
 <p class="kbp-kicker">课标对应表 · ${esc(book.edition_name)} · ${esc(book.title)}</p>
 <h1>这本书的每一课，教的是哪几条课标要点</h1>
-<p class="kbp-lede">${book.edition_id.startsWith('pf_') ? 'AI 逐课读了国家平台上这一课的课题，以及能找到的教学设计、学习任务单或课件（这一版教材馆里没有原书）' : 'AI 逐课读了这一课的教材原文（或国家平台教学设计里的教学目标）'}，对照本年级课标的全部要点判断「主要在教」和「也涉及」，每条附这一课材料的原话。机器判断，待核验。</p>
+<p class="kbp-lede">${book.edition_id.startsWith('pf_') ? 'kebiao 逐课读了国家平台上这一课的课题，以及能找到的教学设计、学习任务单或课件（这一版教材馆里没有原书）' : 'kebiao 逐课读了这一课的教材原文（或国家平台教学设计里的教学目标）'}，对照本年级课标的全部要点判断「主要在教」和「也涉及」，每条附这一课材料的原话。机器判断，待核验。</p>
 ${[...byUnit].map(([unit, lessons]) => section(unit, list([...lessons].map(([title, item]) => `<strong>${esc(title)}</strong><br>${rows(item.align)}`)))).join('')}`, { jsonLd: [breadcrumbs(tableCrumbs)] })
     }
 
@@ -377,7 +377,7 @@ ${[...byUnit].map(([unit, lessons]) => section(unit, list([...lessons].map(([tit
 <p class="kbp-kicker">${esc([book.edition_name, book.title].join(' · '))}</p>
 <h1>${esc(unit.title)}</h1>
 <p class="kbp-lede">${unit.printed_page ? `教材第 ${esc(unit.printed_page)} 页起` : ''}</p>
-${[...(lessonsByUnit.get(unit.entry_id) || [])].length ? section('这个单元的课教哪几条课标', `${list([...lessonsByUnit.get(unit.entry_id)].slice(0, 16).map(([title, align]) => `<strong>${esc(title)}</strong><br>${alignRows(align)}`))}<p class="kbp-note">AI 逐课读教材后判断，待核验。整本书见${link(`/textbooks/${book.edition_id}/standards`, '课标对应表')}。</p>`) : ''}
+${[...(lessonsByUnit.get(unit.entry_id) || [])].length ? section('这个单元的课教哪几条课标', `${list([...lessonsByUnit.get(unit.entry_id)].slice(0, 16).map(([title, align]) => `<strong>${esc(title)}</strong><br>${alignRows(align)}`))}<p class="kbp-note">kebiao 逐课读教材后判断，待核验。整本书见${link(`/textbooks/${book.edition_id}/standards`, '课标对应表')}。</p>`) : ''}
 ${aligned.length ? section('对应的课程标准', list(aligned)) : lessonsByUnit.has(unit.entry_id) ? '' : `<p class="kbp-note">这个单元还没有逐条对应的课标，可以在${link(`/subjects/${['art', 'music'].includes(book.subject_slug) ? 'arts' : book.subject_slug}`, `${['art', 'music'].includes(book.subject_slug) ? '艺术' : book.subject}课程标准`)}里按年级查找。</p>`}`, { jsonLd: [breadcrumbs(unitCrumbs)] })
     }
 }
@@ -511,7 +511,7 @@ function knowledgeGraphPages() {
 <h1>知识图谱</h1>
 <p class="kbp-lede">每个点是课标里的一句要点。点一个，看它要先会什么、后面用到哪里、在哪本教材哪一课教。</p>
 ${list(graphManifest.subjects.map(entry => `${link(`/knowledge-graph/${entry.slug}`, `${entry.subject}知识图谱`)} <span class="kbp-code">${entry.lanes} 条线索 · ${entry.points} 个要点 · ${entry.taught} 个找到了主要在教的课</span>`))}
-<p class="kbp-note">「要先会」：学生没掌握前一个要点，很可能学不好后一个，不表示必须先学完；由 AI 逐条判断，待核验。「同一线索」：课标里同一主题的上一学段或下一学段。</p>`, { jsonLd: [breadcrumbs(hubCrumbs)] })
+<p class="kbp-note">「要先会」：学生没掌握前一个要点，很可能学不好后一个，不表示必须先学完；由 kebiao 逐条判断，待核验。「同一线索」：课标里同一主题的上一学段或下一学段。</p>`, { jsonLd: [breadcrumbs(hubCrumbs)] })
     for (const entry of graphManifest.subjects) {
         const graph = readJson(`v2/graph/${entry.slug}.json`)
         const textOf = code => graph.points[code]?.t || graph.external[code]?.t || ''
@@ -540,16 +540,16 @@ ${list(graphManifest.subjects.map(entry => `${link(`/knowledge-graph/${entry.slu
 <p class="kbp-lede">${entry.lanes} 条线索，${entry.points} 个要点，按年级从左到右排开；${entry.taught} 个要点在教材里找到了主要在教的课。每个要点都可以看它要先会什么、后面用到哪里、在哪一课教。</p>
 ${graph.about.threads ? `<p class="kbp-note">${esc(graph.about.threads)}</p>` : ''}
 ${lanes}
-<p class="kbp-note">要点逐字取自${V2_STANDARDS_DOC}。「要先会」和「教材里的课」由 AI 判断，待核验。</p>`, { jsonLd: [breadcrumbs(crumbs)], image: cardUrl(`subject/${entry.slug}`) })
+<p class="kbp-note">要点逐字取自${V2_STANDARDS_DOC}。「要先会」和「教材里的课」由 kebiao 判断，待核验。</p>`, { jsonLd: [breadcrumbs(crumbs)], image: cardUrl(`subject/${entry.slug}`) })
     }
 }
 
 function staticPages() {
-    add(STATIC_PAGE_META['/open-data'], `<h1>课标数据，拿去用</h1><p class="kbp-lede">${esc(STATIC_PAGE_META['/open-data'].description)}</p><ul><li><a href="/data/v2/export/kebiao-indicators.csv">全部要点 CSV</a></li><li><a href="/data/v2/export/kebiao-standards.csv">全部标准 CSV</a></li><li><a href="/data/v2/legacy_codes.json">新旧编码对照 JSON</a></li></ul><p>署名：课标结构化数据：kebiao 课标（https://www.kebiao.org），CC BY 4.0。课标原文取自教育部《义务教育课程标准（2022年版2025年修订）》，不在许可内。</p><p>${link('/api/v1/docs', 'API 文档')} · ${link('/ai', '在 AI 里用 kebiao')}</p>`)
-    add(STATIC_PAGE_META['/ai'], `<h1>让你常用的 AI 引用课标原文</h1><p class="kbp-lede">${esc(STATIC_PAGE_META['/ai'].description)}</p><p>MCP 服务器地址：https://www.kebiao.org/mcp（Streamable HTTP，无需 API Key）。在 WorkBuddy 的「连接器 → 自定义连接器」里粘贴配置即可；扣子、魔搭、Claude、Cursor 也能接。</p><p>${link('/lesson-plan', 'AI 备课')} · ${link('/open-data', '数据与接口')}</p>`)
+    add(STATIC_PAGE_META['/open-data'], `<h1>课标数据，拿去用</h1><p class="kbp-lede">${esc(STATIC_PAGE_META['/open-data'].description)}</p><ul><li><a href="/data/v2/export/kebiao-indicators.csv">全部要点 CSV</a></li><li><a href="/data/v2/export/kebiao-standards.csv">全部标准 CSV</a></li><li><a href="/data/v2/legacy_codes.json">新旧编码对照 JSON</a></li></ul><p>署名：课标结构化数据：kebiao 课标（https://www.kebiao.org），CC BY 4.0。课标原文取自教育部《义务教育课程标准（2022年版2025年修订）》，不在许可内。</p><p>${link('/api/v1/docs', 'API 文档')} · ${link('/ai', '在智能体里用 kebiao')}</p>`)
+    add(STATIC_PAGE_META['/ai'], `<h1>让你常用的智能体引用课标原文</h1><p class="kbp-lede">${esc(STATIC_PAGE_META['/ai'].description)}</p><p>MCP 服务器地址：https://www.kebiao.org/mcp（Streamable HTTP，无需 API Key）。在 WorkBuddy 的「连接器 → 自定义连接器」里粘贴配置即可；扣子、魔搭、Claude、Cursor 也能接。</p><p>${link('/lesson-plan', '备课助手')} · ${link('/open-data', '数据与接口')}</p>`)
     add(STATIC_PAGE_META['/contact'], `<h1>联系我们</h1><p class="kbp-lede">${esc(STATIC_PAGE_META['/contact'].description)}</p>`)
-    add(STATIC_PAGE_META['/lesson-plan'], `<h1>AI 备课：从教材的一课起草有课标依据的教案</h1><p class="kbp-lede">${esc(STATIC_PAGE_META['/lesson-plan'].description)}</p><p>AI 只按你勾选的课标要点写，每条目标标出依据编码；写完后逐条核验：有没有超出课标写明的限定，目标有没有对应的教学环节和评价任务。可复制、下载 Word、打印。</p>`)
-    add(STATIC_PAGE_META['/guide'], `<h1>五分钟学会用 kebiao 备课</h1><p class="kbp-lede">${esc(STATIC_PAGE_META['/guide'].description)}</p><p>${link('/lesson-plan', 'AI 备课')} · ${link('/knowledge-graph', '知识图谱')} · ${link('/concepts', '概念词典')} · ${link('/experiments', '必做实验清单')}</p>`)
+    add(STATIC_PAGE_META['/lesson-plan'], `<h1>备课助手：从教材的一课起草有课标依据的教案</h1><p class="kbp-lede">${esc(STATIC_PAGE_META['/lesson-plan'].description)}</p><p>kebiao 只按你勾选的课标要点写，每条目标标出依据编码；写完后逐条核验：有没有超出课标写明的限定，目标有没有对应的教学环节和评价任务。可复制、下载 Word、打印。</p>`)
+    add(STATIC_PAGE_META['/guide'], `<h1>五分钟学会用 kebiao 备课</h1><p class="kbp-lede">${esc(STATIC_PAGE_META['/guide'].description)}</p><p>${link('/lesson-plan', '备课助手')} · ${link('/knowledge-graph', '知识图谱')} · ${link('/concepts', '概念词典')} · ${link('/experiments', '必做实验清单')}</p>`)
     add(STATIC_PAGE_META['/smart-search'], `<h1>智能检索</h1><p class="kbp-lede">${esc(STATIC_PAGE_META['/smart-search'].description)}</p>`)
 }
 

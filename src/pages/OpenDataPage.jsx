@@ -88,7 +88,7 @@ export default function OpenDataPage() {
                     ))}
                 </ul>
                 <h3 className={ai.subhead}>推断层（待核验）</h3>
-                <p className={ai.note}>由程序和 AI 生成，没有逐条人工审核，转用时请保留「待核验」：<a href="/data/v2/lesson_alignment.json" download>教材每一课与要点的对应</a>（约 2 MB，含引用的教材原话，原话版权归出版社）。</p>
+                <p className={ai.note}>由 kebiao 程序整理，没有逐条人工审核，转用时请保留「待核验」：<a href="/data/v2/lesson_alignment.json" download>教材每一课与要点的对应</a>（约 2 MB，含引用的教材原话，原话版权归出版社）。</p>
             </section>
 
             <section id="data-cite" className={ai.section}>
@@ -116,7 +116,7 @@ export default function OpenDataPage() {
                     <li><b>GET /data-version</b>当前数据版本，用来判断要不要重新同步</li>
                 </ul>
                 <CopyBlock text={CURL} label="第一次调用" />
-                <p className={ai.note}>全部接口见 <a href="/api/v1/docs">API 文档</a>和 <a href="/api/v1/openapi.yaml">OpenAPI</a>。给 AI 用的 MCP 服务器是 <code>{MCP_URL}</code>，接法见 <Link to="/ai">在 AI 里用 kebiao</Link>；网站说明在 <a href="/llms.txt">llms.txt</a>。需要更高的调用频率，请<Link to="/contact">联系我们</Link>。</p>
+                <p className={ai.note}>全部接口见 <a href="/api/v1/docs">API 文档</a>和 <a href="/api/v1/openapi.yaml">OpenAPI</a>。给智能体用的 MCP 服务器是 <code>{MCP_URL}</code>，接法见 <Link to="/ai">在智能体里用 kebiao</Link>；网站说明在 <a href="/llms.txt">llms.txt</a>。需要更高的调用频率，请<Link to="/contact">联系我们</Link>。</p>
             </section>
 
             <section id="data-source" className={ai.section}>

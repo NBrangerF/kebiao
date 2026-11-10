@@ -141,7 +141,7 @@ test('smart search applies AI exclusion intent and explains it once', async ({ p
     await expect(page.getByText(/系统没有用低相关记录补足 12 条/)).toBeVisible()
     await expect(page.getByText('使用数字资源开展识字、朗读、阅读活动')).toBeVisible()
     await expect(page.getByText(/用科学的方法洗手/)).toHaveCount(0)
-    await expect(page.getByText('AI 查询理解暂不可用')).toHaveCount(0)
+    await expect(page.getByText('查询理解暂不可用')).toHaveCount(0)
 })
 
 test('smart search discloses privacy redaction and deterministic fallback', async ({ page }) => {
@@ -169,7 +169,7 @@ test('smart search discloses privacy redaction and deterministic fallback', asyn
     await page.goto('/smart-search')
     await page.getByLabel('描述你的教学目标或使用情境').fill('教师姓名：测试用户 观察植物')
     await page.getByRole('button', { name: '检索', exact: true }).click()
-    await expect(page.getByText('AI 这次没能及时核对，下面是按你的原话做字面匹配的结果，相关性需要你自己判断。')).toBeVisible()
+    await expect(page.getByText('kebiao 这次没能及时核对，下面是按你的原话做字面匹配的结果，相关性需要你自己判断。')).toBeVisible()
     await expect(page.getByText(/发送到模型服务前已自动移除 1 处/)).toBeVisible()
 })
 
@@ -188,7 +188,7 @@ test('smart search shows the AI relevance check: its reason and the closest 要�
             relevant_candidates: 2,
             omitted_low_relevance: 38,
             relevance_summary: { direct: 1, supporting: 1 },
-            coverage_note: 'AI 逐条读了 5 条候选的要点原文：1 条直接对应，1 条相关，3 条不切题，已略去。',
+            coverage_note: 'kebiao 逐条读了 5 条候选的要点原文：1 条直接对应，1 条相关，3 条不切题，已略去。',
             relevance_version: 'topic-evidence-v1',
             retrieval_version: 'trusted-hybrid-v1',
             semantic_provider: 'none',
@@ -199,7 +199,7 @@ test('smart search shows the AI relevance check: its reason and the closest 要�
     }))
     await page.goto('/smart-search?q=%E7%A7%91%E5%AD%A6%E9%87%8C%E8%B7%9F%E9%98%85%E8%AF%BB%E6%9C%89%E5%85%B3%E7%9A%84')
     const direct = page.locator('[data-search-result="direct"]')
-    await expect(direct.getByText('AI 判断')).toBeVisible()
+    await expect(direct.getByText('kebiao 判断')).toBeVisible()
     await expect(direct.getByText('要求阅读科普材料获取信息')).toBeVisible()
     await expect(direct.getByText('最相关的要点')).toBeVisible()
     await expect(direct.getByText('SC-S2-LS-01.2')).toBeVisible()
@@ -219,11 +219,11 @@ test('the home page search box asks AI only when no 要点 matches the words', a
     await page.getByRole('button', { name: '搜索', exact: true }).click()
     const palette = page.getByRole('dialog', { name: '搜索课程标准' })
     await expect(palette.getByRole('option').first()).toContainText('分数')
-    await expect(palette.getByRole('option').last()).toContainText('让 AI 找：分数')
+    await expect(palette.getByRole('option').last()).toContainText('用一句话找：分数')
     await page.keyboard.press('Escape')
     // a sentence with no literal match goes straight to AI search
     await box.fill('三年级科学里讲植物生长的')
-    await expect(page.getByText('星图里没有字面匹配 · 回车让 AI 找')).toBeVisible()
+    await expect(page.getByText('星图里没有字面匹配 · 回车用一句话检索')).toBeVisible()
     await page.getByRole('button', { name: '搜索', exact: true }).click()
     await expect(page).toHaveURL(/\/smart-search\?q=%E4%B8%89%E5%B9%B4%E7%BA%A7/)
     await expect(page.getByLabel('描述你的教学目标或使用情境')).toHaveValue('三年级科学里讲植物生长的')
@@ -316,7 +316,7 @@ test('smart search explains failures without exposing server messages', async ({
     await expect(page.getByRole('alert')).toHaveCount(0)
 })
 
-test('the old alignment workbench opens 目标体检 in AI 备课', async ({ page }) => {
+test('the old alignment workbench opens 目标体检 in 备课助手', async ({ page }) => {
     await page.goto('/alignment-workbench')
     await expect(page).toHaveURL(/\/lesson-plan\?check=1$/u)
     await expect(page.getByText('目标体检：先在下面选一课或一个单元')).toBeVisible()
@@ -363,7 +363,7 @@ test('smart search groups a checked answer across subjects and names the subject
             relevant_candidates: 4,
             omitted_low_relevance: 50,
             relevance_summary: { direct: 3, supporting: 1 },
-            coverage_note: 'AI 逐条读了3–4 年级、5 个学科的全部 54 条标准的要点原文：3 条直接对应，1 条相关，50 条不切题，已略去。',
+            coverage_note: 'kebiao 逐条读了3–4 年级、5 个学科的全部 54 条标准的要点原文：3 条直接对应，1 条相关，50 条不切题，已略去。',
             relevance_check: { status: 'ok', model: 'gpt-5-mini', latency_ms: 8000, read: 54, kept: 4, dropped: 50 },
             // 科学 was not read to the end, so it is not named as having nothing
             search_scope: { standards: 54, subjects: ['math', 'morality_law', 'science', 'pe', 'arts', 'labor'], complete: true, read_subjects: ['math', 'morality_law', 'pe', 'arts', 'labor'] },

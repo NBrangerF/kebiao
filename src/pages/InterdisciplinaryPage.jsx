@@ -42,7 +42,7 @@ function ThemeCard({ group, theme, grade }) {
             {theme.with.length ? <p className={styles.with}>结合 {theme.with.map(name => <span key={name}>{name}</span>)}</p> : null}
             <blockquote>{theme.quote}</blockquote>
             <p className={styles.source}>{group.subject}课标 · 修订版第 {theme.pages.join('、')} 页</p>
-            <Link className={styles.action} to={planLink({ slug: group.subject_slug, name: group.subject, grade: grade || theme.grades[0], topic })}>用 AI 备课设计这个主题</Link>
+            <Link className={styles.action} to={planLink({ slug: group.subject_slug, name: group.subject, grade: grade || theme.grades[0], topic })}>用备课助手设计这个主题</Link>
         </li>
     )
 }
@@ -58,7 +58,7 @@ function StandardCard({ standard, grade }) {
             <ul className={styles.activities}>
                 {standard.indicators.map(item => <li key={item.code}>{item.text.length > 90 ? `${item.text.slice(0, 90)}…` : item.text}</li>)}
             </ul>
-            <Link className={styles.action} to={planLink({ slug: standard.subject_slug, name: standard.subject, grade: grade || standard.grades[0], topic: standard.title, code: standard.code })}>用 AI 备课设计</Link>
+            <Link className={styles.action} to={planLink({ slug: standard.subject_slug, name: standard.subject, grade: grade || standard.grades[0], topic: standard.title, code: standard.code })}>用备课助手设计</Link>
         </li>
     )
 }
@@ -127,7 +127,7 @@ export default function InterdisciplinaryPage() {
                 </div>
             </header>
 
-            {empty ? <p className={styles.empty}>{subjectName}{grade ? ` ${grade} 年级` : ''}没有课标直接给出的跨学科主题。可以换个年级，或用 <Link to={`/lesson-plan?mode=topic${subjectName ? `&subject=${encodeURIComponent(PLAN_SUBJECT[subject] || subjectName)}` : ''}`}>AI 备课</Link>按自己的主题设计。</p> : null}
+            {empty ? <p className={styles.empty}>{subjectName}{grade ? ` ${grade} 年级` : ''}没有课标直接给出的跨学科主题。可以换个年级，或用 <Link to={`/lesson-plan?mode=topic${subjectName ? `&subject=${encodeURIComponent(PLAN_SUBJECT[subject] || subjectName)}` : ''}`}>备课助手</Link>按自己的主题设计。</p> : null}
 
             {view.own.length ? (
                 <section className={concepts.block} aria-labelledby="xd-own">

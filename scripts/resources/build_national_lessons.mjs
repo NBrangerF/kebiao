@@ -410,7 +410,7 @@ export function buildNationalLessons() {
         ;(pointsBySubject[point.slice(0, 2)] ??= {})[point] = kept
     }
     writeFileSync(path.join(ROOT, 'public/data/v2/lesson_alignment.json'), `${JSON.stringify({
-        note: 'AI 逐课判断的教材与课标对应：relation T = 主要在教，P = 也涉及；quote 是这一课材料里的原话，source 说明出处（book = 教材 PDF 第 pdf_page 页，design = 国家平台教学设计，summary = 国家平台课程简介，title = 课题）。机器判断，待核验。',
+        note: 'kebiao 逐课判断的教材与课标对应：relation T = 主要在教，P = 也涉及；quote 是这一课材料里的原话，source 说明出处（book = 教材 PDF 第 pdf_page 页，design = 国家平台教学设计，summary = 国家平台课程简介，title = 课题）。机器判断，待核验。',
         fields: ['edition_id', 'textbook_title', 'unit', 'lesson_title', 'lesson_id', 'pdf_page', 'matches'],
         match_fields: ['point', 'relation', 'quote', 'source', 'pdf_page'],
         lessons: indexRows,
@@ -463,7 +463,7 @@ function buildCoverage(bookPoints) {
         }
         subjects.push({ slug, name: data.standards[0]?.subject || slug, stages })
     }
-    const out = { note: '按 AI 逐课判断（每条都摘了教材原文为证）统计：taught = 有一课主要在教，touched = 只是有课涉及，missing = 馆里的教材里没找到教它的课。机器判断，待核验。', subjects }
+    const out = { note: '按 kebiao 逐课判断（每条都摘了教材原文为证）统计：taught = 有一课主要在教，touched = 只是有课涉及，missing = 馆里的教材里没找到教它的课。机器判断，待核验。', subjects }
     writeFileSync(path.join(ROOT, 'public/data/textbooks/alignment_coverage.json'), `${JSON.stringify(out)}\n`)
     return subjects.reduce((sum, subject) => sum + subject.stages.reduce((n, stage) => n + stage.taught.length, 0), 0)
 }

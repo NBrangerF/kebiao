@@ -81,7 +81,7 @@ function ContactPage() {
                     <div className={styles.wechatCopy}>
                         <span>微信公众号</span>
                         <h2 id="wechat-title">关注公众号</h2>
-                        <p>使用微信扫描二维码，关注我的公众号。这里会分享教育研究、课程设计、AI 与学习系统相关内容。</p>
+                        <p>使用微信扫描二维码，关注我的公众号。这里会分享教育研究、课程设计、智能学习系统相关内容。</p>
                         <small>请使用微信扫一扫</small>
                     </div>
                     <figure className={styles.qrFigure}>
@@ -101,7 +101,7 @@ function ContactPage() {
                         <h2 id="contact-scope-title">联系时可以告诉我</h2>
                     </div>
                     <div className={styles.scopeList}>
-                        <div><span>01</span><strong>你的使用场景</strong><p>课程平台、知识图谱、教学设计工具、AI 应用或研究项目。</p></div>
+                        <div><span>01</span><strong>你的使用场景</strong><p>课程平台、知识图谱、教学设计工具、智能应用或研究项目。</p></div>
                         <div><span>02</span><strong>需要的 API 能力</strong><p>新的端点、更多字段、调用频率、批量访问或技术支持。</p></div>
                         <div><span>03</span><strong>希望达成的结果</strong><p>预计时间、用户规模，以及你希望这次合作解决的问题。</p></div>
                     </div>

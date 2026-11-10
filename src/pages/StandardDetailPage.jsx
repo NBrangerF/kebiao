@@ -39,7 +39,7 @@ const PROVENANCE_LABELS = {
     extracted: '课标章节抽取',
     editorial: 'kebiao 结构化整理',
     rule_generated: '规则生成',
-    ai_generated: 'AI 生成'
+    ai_generated: 'kebiao 整理'
 }
 
 const VERIFIED_REVIEW_STATUSES = new Set(['approved', 'expert_reviewed', 'expert_verified', 'human_reviewed', 'human_verified', 'verified'])
@@ -227,7 +227,7 @@ function TrustedContentCard({ title, value, metadata }) {
             {quarantined ? (
                 <div className={styles['quality-warning']} role="note">
                     <strong>内容暂缓展示</strong>
-                    <span>检测到文本截断或残片，已排除出 AI 检索，等待人工复核。</span>
+                    <span>检测到文本截断或残片，已排除出 一句话检索，等待人工复核。</span>
                 </div>
             ) : <p>{value}</p>}
         </div>

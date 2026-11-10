@@ -75,7 +75,7 @@ export default function ObjectiveCheck({ lesson, codes, taught, isUnit = false, 
                             </div>
                         ) : null}
                         {data.notes.map(note => <p key={note} className={styles.note}>{note}</p>)}
-                        <p className={styles.foot}>AI 依据课标原文体检，供参考；对不对由你判断。{data.privacy?.redacted ? ' 已隐去疑似个人信息。' : ''}</p>
+                        <p className={styles.foot}>kebiao 依据课标原文体检，供参考；对不对由你判断。{data.privacy?.redacted ? ' 已隐去疑似个人信息。' : ''}</p>
                     </div>
                 ) : null}
             </div>

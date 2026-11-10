@@ -34,7 +34,7 @@ export const PROVENANCE_LABELS = {
     extracted: '课标章节抽取',
     editorial: 'kebiao 编辑整理',
     rule_generated: '规则生成',
-    ai_generated: 'AI 生成'
+    ai_generated: 'kebiao 整理'
 }
 
 const SUBJECT_COLOR_TOKENS = { morality_law: 'morality' }
@@ -134,7 +134,7 @@ export function splitMatches(text, terms) {
 
 /** What to tell a teacher when the request itself fails; the raw server message stays out of the page. */
 export function friendlySearchError(error) {
-    if (error?.status === 429) return { title: '检索得有点频繁', detail: '为保护服务，每分钟的 AI 检索次数有限。请稍等一分钟再试。' }
+    if (error?.status === 429) return { title: '检索得有点频繁', detail: '为保护服务，每分钟的 一句话检索次数有限。请稍等一分钟再试。' }
     if (error?.status === 422) return { title: '这句话需要调整一下', detail: '请用 2 到 500 个字描述学段、学科或主题，再检索一次。' }
     if (!error?.status) return { title: '网络好像断开了', detail: '检查网络连接后，再试一次。' }
     return { title: '检索服务暂时没有响应', detail: '这不是你的问题。请稍后再试，或换一种说法。' }

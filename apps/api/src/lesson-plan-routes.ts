@@ -634,7 +634,7 @@ export function registerLessonPlanRoutes(app: Hono<ApiBindings>, deps: Deps) {
             const hours = body.unit_hours || Math.max(1, body.unit_lessons.length)
             const run = await draftUnit(input, body.unit_lessons, hours)
             c.set('aiMetrics', draftMetrics('unit', run, privacy.redaction_count))
-            if (!run.output) return deps.apiError(c, run.status === 'disabled' ? 503 : 502, `draft_${run.status}`, run.status === 'disabled' ? 'AI 起草暂不可用。' : run.status === 'timeout' ? 'AI 这次写得太久，没有完成。请再试一次。' : 'AI 这次没有写出可用的单元设计。请再试一次。')
+            if (!run.output) return deps.apiError(c, run.status === 'disabled' ? 503 : 502, `draft_${run.status}`, run.status === 'disabled' ? '起草服务暂不可用。' : run.status === 'timeout' ? 'kebiao 这次写得太久，没有完成。请再试一次。' : 'kebiao 这次没有写出可用的单元设计。请再试一次。')
             return deps.ok(c, version as never, { step: 'unit', unit: run.output, checks: checkUnit(run.output, input, hours), evidence, privacy, model: run.model, latency_ms: run.latency_ms })
         }
 
@@ -644,7 +644,7 @@ export function registerLessonPlanRoutes(app: Hono<ApiBindings>, deps: Deps) {
             if (!frame || !process) return deps.apiError(c, 422, 'validation_error', '说课稿需要一份写好的教案（目标和教学过程）。')
             const run = await draftTalk(input, frame, process)
             c.set('aiMetrics', draftMetrics('talk', run, privacy.redaction_count))
-            if (!run.output) return deps.apiError(c, run.status === 'disabled' ? 503 : 502, `draft_${run.status}`, run.status === 'disabled' ? 'AI 暂不可用。' : 'AI 这次没有写出可用的说课稿。请再试一次。')
+            if (!run.output) return deps.apiError(c, run.status === 'disabled' ? 503 : 502, `draft_${run.status}`, run.status === 'disabled' ? '服务暂不可用。' : 'kebiao 这次没有写出可用的说课稿。请再试一次。')
             return deps.ok(c, version as never, { step: 'talk', talk: run.output, evidence, model: run.model, latency_ms: run.latency_ms })
         }
 
@@ -654,7 +654,7 @@ export function registerLessonPlanRoutes(app: Hono<ApiBindings>, deps: Deps) {
             if (!frame || !process) return deps.apiError(c, 422, 'validation_error', '试讲稿需要一份写好的教案（目标和教学过程）。')
             const run = await draftTrial(input, frame, process)
             c.set('aiMetrics', draftMetrics('trial', run, privacy.redaction_count))
-            if (!run.output) return deps.apiError(c, run.status === 'disabled' ? 503 : 502, `draft_${run.status}`, run.status === 'disabled' ? 'AI 暂不可用。' : 'AI 这次没有写出可用的试讲稿。请再试一次。')
+            if (!run.output) return deps.apiError(c, run.status === 'disabled' ? 503 : 502, `draft_${run.status}`, run.status === 'disabled' ? '服务暂不可用。' : 'kebiao 这次没有写出可用的试讲稿。请再试一次。')
             return deps.ok(c, version as never, { step: 'trial', trial: run.output, evidence, model: run.model, latency_ms: run.latency_ms })
         }
 
@@ -682,14 +682,14 @@ export function registerLessonPlanRoutes(app: Hono<ApiBindings>, deps: Deps) {
             if (!frame) return deps.apiError(c, 422, 'validation_error', '缺少第一步生成的目标与评价。')
             const run = await draftPractice(input, frame)
             c.set('aiMetrics', draftMetrics('practice', run, privacy.redaction_count))
-            if (!run.output) return deps.apiError(c, run.status === 'disabled' ? 503 : 502, `draft_${run.status}`, run.status === 'disabled' ? 'AI 起草暂不可用。' : 'AI 这次没有写出可用的练习题。')
+            if (!run.output) return deps.apiError(c, run.status === 'disabled' ? 503 : 502, `draft_${run.status}`, run.status === 'disabled' ? '起草服务暂不可用。' : 'kebiao 这次没有写出可用的练习题。')
             return deps.ok(c, version as never, { step: 'practice', practice: run.output, checks: checkPractice(run.output, frame, input), model: run.model, latency_ms: run.latency_ms, self_check: run.self_check ?? null })
         }
 
         if (body.step === 'frame') {
             const run = await draftFrame(input)
             c.set('aiMetrics', draftMetrics('frame', run, privacy.redaction_count))
-            if (!run.output) return deps.apiError(c, run.status === 'disabled' ? 503 : 502, `draft_${run.status}`, run.status === 'disabled' ? 'AI 起草暂不可用。' : run.status === 'timeout' ? 'AI 这次写得太久，没有完成。请再试一次。' : 'AI 这次没有写出可用的草稿。请再试一次。')
+            if (!run.output) return deps.apiError(c, run.status === 'disabled' ? 503 : 502, `draft_${run.status}`, run.status === 'disabled' ? '起草服务暂不可用。' : run.status === 'timeout' ? 'kebiao 这次写得太久，没有完成。请再试一次。' : 'kebiao 这次没有写出可用的草稿。请再试一次。')
             return deps.ok(c, version as never, { step: 'frame', frame: run.output, checks: [...tooMany, ...notesChecks(input.teacherNotes), ...checkPlan(run.output, null, input)], evidence, privacy, model: run.model, latency_ms: run.latency_ms, self_check: run.self_check ?? null })
         }
 
@@ -697,7 +697,7 @@ export function registerLessonPlanRoutes(app: Hono<ApiBindings>, deps: Deps) {
         if (!frame) return deps.apiError(c, 422, 'validation_error', '缺少第一步生成的目标与评价。')
         const run = await draftProcess(input, frame)
         c.set('aiMetrics', draftMetrics('process', run, privacy.redaction_count))
-        if (!run.output) return deps.apiError(c, run.status === 'disabled' ? 503 : 502, `draft_${run.status}`, run.status === 'disabled' ? 'AI 起草暂不可用。' : run.status === 'timeout' ? 'AI 这次写得太久，没有完成。请再试一次。' : 'AI 这次没有写出可用的教学过程。请再试一次。')
+        if (!run.output) return deps.apiError(c, run.status === 'disabled' ? 503 : 502, `draft_${run.status}`, run.status === 'disabled' ? '起草服务暂不可用。' : run.status === 'timeout' ? 'kebiao 这次写得太久，没有完成。请再试一次。' : 'kebiao 这次没有写出可用的教学过程。请再试一次。')
         return deps.ok(c, version as never, { step: 'process', frame, process: run.output, checks: [...tooMany, ...notesChecks(input.teacherNotes), ...checkPlan(frame, run.output, input)], evidence, privacy, model: run.model, latency_ms: run.latency_ms, self_check: run.self_check ?? null })
     })
 
@@ -712,7 +712,7 @@ export function registerLessonPlanRoutes(app: Hono<ApiBindings>, deps: Deps) {
         const planText = redactSensitiveText(parsed.data.plan_text)
         const run = await readTeacherPlan(planText.text, input)
         c.set('aiMetrics', { feature: 'lesson_plan', used: run.status === 'ok', status: run.status, model: run.model, protocol: 'chat_completions', latency_ms: run.latency_ms, redaction_count: planText.redaction_count, input_tokens: run.usage?.input_tokens || 0, output_tokens: run.usage?.output_tokens || 0, total_tokens: run.usage?.total_tokens || 0 })
-        if (!run.output) return deps.apiError(c, run.status === 'disabled' ? 503 : 502, `check_${run.status}`, run.status === 'disabled' ? 'AI 核验暂不可用。' : 'AI 这次没有读完这份教案。请再试一次。')
+        if (!run.output) return deps.apiError(c, run.status === 'disabled' ? 503 : 502, `check_${run.status}`, run.status === 'disabled' ? '核验服务暂不可用。' : 'kebiao 这次没有读完这份教案。请再试一次。')
         return deps.ok(c, version as never, {
             read: run.output,
             checks: checkTeacherPlan(run.output, planText.text, input),
@@ -747,7 +747,7 @@ export function registerLessonPlanRoutes(app: Hono<ApiBindings>, deps: Deps) {
         const unitLessons = unit ? [] : await unitSequence(lesson.edition_id, lesson.lesson_id, lesson.title)
         const run = await checkObjectives(objectives, { line, subject_slug: lesson.subject_slug, points: points.slice(0, 24), taught: body.taught_codes, unitLessons, unit })
         c.set('aiMetrics', { feature: 'lesson_plan', used: run.status === 'ok', status: run.status, model: run.model, protocol: 'chat_completions', latency_ms: run.latency_ms, redaction_count: text.redaction_count, input_tokens: run.usage?.input_tokens || 0, output_tokens: run.usage?.output_tokens || 0, total_tokens: run.usage?.total_tokens || 0 })
-        if (!run.output) return deps.apiError(c, run.status === 'disabled' ? 503 : 502, `check_${run.status}`, run.status === 'disabled' ? 'AI 体检暂不可用。' : 'AI 这次没有读完这些目标，请再试一次。')
+        if (!run.output) return deps.apiError(c, run.status === 'disabled' ? 503 : 502, `check_${run.status}`, run.status === 'disabled' ? '体检服务暂不可用。' : 'kebiao 这次没有读完这些目标，请再试一次。')
         return deps.ok(c, version as never, { ...run.output, privacy: { redacted: text.redacted, redaction_count: text.redaction_count }, model: run.model, latency_ms: run.latency_ms })
     })
 
@@ -769,11 +769,11 @@ export function registerLessonPlanRoutes(app: Hono<ApiBindings>, deps: Deps) {
         const sum = (key: 'input_tokens' | 'output_tokens' | 'total_tokens') => runs.reduce((total, run) => total + (run.usage?.[key] || 0), 0)
         const latency = Math.max(...runs.map(run => run.latency_ms))
         c.set('aiMetrics', { feature: 'lesson_plan', used: done.length > 0, status: done.length === runs.length ? 'ok' : first.status, model: first.model, protocol: 'chat_completions', latency_ms: latency, redaction_count: testText.redaction_count, input_tokens: sum('input_tokens'), output_tokens: sum('output_tokens'), total_tokens: sum('total_tokens') })
-        if (!done.length) return deps.apiError(c, first.status === 'disabled' ? 503 : 502, `check_${first.status}`, first.status === 'disabled' ? 'AI 核验暂不可用。' : 'AI 这次没有读完这份试卷。请再试一次，或分两次贴入。')
+        if (!done.length) return deps.apiError(c, first.status === 'disabled' ? 503 : 502, `check_${first.status}`, first.status === 'disabled' ? '核验服务暂不可用。' : 'kebiao 这次没有读完这份试卷。请再试一次，或分两次贴入。')
         const read = mergeReads(done.map(run => run.output!))
         const { table, checks: found } = checkTest(read, testText.text, input)
         const checks = done.length < runs.length ? found.filter(item => item.kind !== 'aligned') : found
-        if (done.length < runs.length) checks.unshift({ level: 'warn', kind: 'reader_partial', message: `这份试卷分 ${runs.length} 段读，有 ${runs.length - done.length} 段 AI 没读完，细目表只含读到的题。可以再试一次，或把没读到的部分单独贴入。` })
+        if (done.length < runs.length) checks.unshift({ level: 'warn', kind: 'reader_partial', message: `这份试卷分 ${runs.length} 段读，有 ${runs.length - done.length} 段没读完，细目表只含读到的题。可以再试一次，或把没读到的部分单独贴入。` })
         return deps.ok(c, version as never, {
             read,
             table,
@@ -792,7 +792,7 @@ export function registerLessonPlanRoutes(app: Hono<ApiBindings>, deps: Deps) {
         // automated page renders fired a pick on every load (238 of 247 abandoned picks in 4 days); a crawler gets
         // the same plain refusal as the textbook files, before any model call
         if (CRAWLER_USER_AGENT.test(c.req.header('user-agent') || '')) {
-            return deps.apiError(c, 403, 'crawler_not_allowed', 'AI 找要点只供老师在页面上使用，不向自动抓取程序提供。')
+            return deps.apiError(c, 403, 'crawler_not_allowed', '找要点功能只供老师在页面上使用，不向自动抓取程序提供。')
         }
         const version = await deps.v2.version()
         const parsed = PickRequestSchema.safeParse(await deps.parseJson(c))
@@ -871,7 +871,7 @@ export function registerLessonPlanRoutes(app: Hono<ApiBindings>, deps: Deps) {
         const line = `${lesson.grade ? `${lesson.grade}年级` : ''}${subject.subject}${lesson.textbook_title ? `（${lesson.textbook_title}）` : ''}${lesson.unit_title ? `，单元「${lesson.unit_title}」` : ''}`
         const result = await writeLessonObjectives({ subject_slug: lesson.subject_slug, line }, unitLessons, pool, input)
         c.set('aiMetrics', { feature: 'lesson_plan', used: result.status !== 'disabled', status: result.status === 'partial' ? 'ok' : result.status, model: result.model, protocol: 'chat_completions', latency_ms: result.latency_ms, redaction_count: 0, input_tokens: result.usage?.input_tokens || 0, output_tokens: result.usage?.output_tokens || 0, total_tokens: result.usage?.total_tokens || 0 })
-        if (!result.lessons.length) return deps.apiError(c, result.status === 'timeout' ? 504 : 503, 'ai_unavailable', 'AI 这次没能写完，请稍后重试。')
+        if (!result.lessons.length) return deps.apiError(c, result.status === 'timeout' ? 504 : 503, 'ai_unavailable', 'kebiao 这次没能写完，请稍后重试。')
         return deps.ok(c, version as never, { status: result.status, lessons: result.lessons, latency_ms: result.latency_ms })
     })
 
@@ -898,7 +898,7 @@ export function registerLessonPlanRoutes(app: Hono<ApiBindings>, deps: Deps) {
         const input = lessons.map(item => ({ id: item.id, title: item.title, material: redactSensitiveText(item.material).text }))
         const result = await alignLessons(context, pool, input)
         c.set('aiMetrics', { feature: 'lesson_plan', used: result.status !== 'disabled', status: result.status === 'partial' ? 'ok' : result.status, model: result.model, protocol: 'chat_completions', latency_ms: result.latency_ms, redaction_count: 0, input_tokens: result.usage?.input_tokens || 0, output_tokens: result.usage?.output_tokens || 0, total_tokens: result.usage?.total_tokens || 0 })
-        if (!result.lessons.length) return deps.apiError(c, result.status === 'timeout' ? 504 : 503, 'ai_unavailable', 'AI 这次没能读完，请稍后重试。')
+        if (!result.lessons.length) return deps.apiError(c, result.status === 'timeout' ? 504 : 503, 'ai_unavailable', 'kebiao 这次没能读完，请稍后重试。')
         return deps.ok(c, version as never, {
             status: result.status,
             read: pool.length,

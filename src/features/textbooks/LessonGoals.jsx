@@ -44,7 +44,7 @@ export default function LessonGoals({ goals, lessonHref, focus = null, compact =
             <footer className={styles.foot}>
                 {lessonHref ? <Link to={lessonHref}>从这些目标开始备课 →</Link> : null}
                 <button type="button" onClick={copy}>{copied ? '已复制' : '复制目标'}</button>
-                <span>AI 依据课标原文起草，待老师核验</span>
+                <span>kebiao 依据课标原文起草，待老师核验</span>
             </footer>
         </section>
     )

@@ -34,7 +34,7 @@ const platformBooks = existsSync(platformIndex) ? JSON.parse(readFileSync(platfo
 const squash = text => String(text || '').replace(/[\s\p{P}\p{S}]/gu, '').toLowerCase()
 const out = existsSync(OUT) ? JSON.parse(readFileSync(OUT, 'utf8')) : {
     source: `${BASE}/api/v1/lesson-plans/align`,
-    note: 'AI 逐课判断的课标要点：T = 主要在教，P = 部分涉及。每条都摘了这一课材料里的原话，并标明出处（book = 教材 PDF 第几页，design = 国家平台教学设计，task = 国家平台学习任务单，slides = 国家平台课件，summary = 国家平台课程简介，title = 只有课题）。机器判断，待核验。',
+    note: 'kebiao 逐课判断的课标要点：T = 主要在教，P = 部分涉及。每条都摘了这一课材料里的原话，并标明出处（book = 教材 PDF 第几页，design = 国家平台教学设计，task = 国家平台学习任务单，slides = 国家平台课件，summary = 国家平台课程简介，title = 只有课题）。机器判断，待核验。',
     fields: ['point', 'relation', 'quote', 'source', 'pdf_page'],
     editions: {}
 }

@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import { Link, useLocation, useParams, useSearchParams } from 'react-router-dom'
 import { loadV2Standard, loadV2Subject, statusLabel, gradesLabel, standardCodeOf, subjectOfCode } from '../data/v2Data.js'
 import { loadLearningResourceCatalog, SUBJECT_COLORS } from '../data/dataLoader'
@@ -7,7 +7,8 @@ import FavoriteButton from '../components/FavoriteButton'
 import ShareStandardButton from '../features/share/ShareStandardButton'
 import StandardTextbookLinks from '../features/textbooks/StandardTextbookLinks'
 import { loadPlatforms, platformsFor } from '../features/learning-resources/platforms'
-import { loadChecksIndex, subjectOfPoint } from '../features/checks/checksData.js'
+import { loadBank, loadChecksIndex, presentHref, subjectOfPoint } from '../features/checks/checksData.js'
+import QuestionCard from '../features/checks/QuestionCard.jsx'
 import ResourceBadges, { OpenOriginalLink } from '../features/learning-resources/ResourceBadges'
 import { v2StandardMeta } from '../seo/pageMeta.js'
 import { usePageMeta } from '../seo/usePageMeta.js'
@@ -73,7 +74,7 @@ function Indicator({ item, dimmed, targeted, checks = 0 }) {
             <p className={styles.indicatorText}>{revised ? withAdditions(item.text, item.check.added) : item.text}</p>
             {item.official_examples ? <p className={styles.officialExample}>{item.official_examples}</p> : null}
             <SourceLine section={item.section} pages={item.pages} check={item.check} withPages={false} graph={`/knowledge-graph/${subjectOfCode(item.code)}?focus=${item.code}`} />
-            {checks ? <Link className={styles.checkLink} to={`/checks?point=${item.code}`}>课堂诊断题 {checks} 道：上课问一道，看全班怎么想</Link> : null}
+            {checks ? <a className={styles.checkLink} href={`#checks-${item.code}`} onClick={event => { event.preventDefault(); document.getElementById(`checks-${item.code}`)?.scrollIntoView({ block: 'start' }) }}>课堂诊断题 {checks} 道：上课问一道，看全班怎么想 ↓</a> : null}
             {item.examples.length ? (
                 <details className={styles.examples}>
                     <summary>表现示例 · {item.examples.length} 条 <span>kebiao 整理</span></summary>
@@ -183,6 +184,60 @@ function booksFor(data, indicators, myBook) {
     return [...books.values()].sort((a, b) => own(b) - own(a) || Number(a.edition.startsWith('pf_')) - Number(b.edition.startsWith('pf_')) || a.textbook.localeCompare(b.textbook, 'zh-Hans-CN', { numeric: true }))
 }
 
+// 课堂诊断题 for this standard, one group per 要点. A bank is up to ~2 MB, so it loads when the section comes near.
+const CHECKS_SHOWN = 2
+function StandardChecks({ standard, counts }) {
+    const ref = useRef(null)
+    const [near, setNear] = useState(false)
+    const [banks, setBanks] = useState(null)
+    const groups = standard.indicators.filter(item => counts[item.code]?.length)
+    const total = groups.reduce((n, item) => n + counts[item.code].length, 0)
+    const slugs = useMemo(() => [...new Set(groups.map(item => subjectOfPoint(item.code)).filter(Boolean))], [groups])
+    const slugKey = slugs.join(',')
+
+    useEffect(() => {
+        const el = ref.current
+        if (!el || near) return undefined
+        if (!window.IntersectionObserver) { setNear(true); return undefined }
+        const io = new IntersectionObserver(entries => { if (entries.some(entry => entry.isIntersecting)) setNear(true) }, { rootMargin: '600px 0px' })
+        io.observe(el)
+        return () => io.disconnect()
+    }, [near, total])
+    useEffect(() => {
+        if (!near || !slugKey) return undefined
+        let cancelled = false
+        Promise.all(slugKey.split(',').map(slug => loadBank(slug).then(bank => [slug, bank])))
+            .then(entries => { if (!cancelled) setBanks(Object.fromEntries(entries)) })
+            .catch(() => { if (!cancelled) setBanks({}) })
+        return () => { cancelled = true }
+    }, [near, slugKey])
+
+    if (!total) return null
+    const back = `/standards/${standard.code}`
+    const allIds = groups.flatMap(item => counts[item.code])
+    return (
+        <Sec id="standard-checks" labelledBy="checks-title" label={<><h2 id="checks-title">课堂诊断题</h2><p className={styles.labNote}>{total} 道 · 每道题对着这条标准的要点出，错选项对应一种常见错法</p></>}>
+            <div ref={ref} className={styles.checks}>
+                <p className={styles.checksTop}><Link to={presentHref([...new Set(allIds)].slice(0, 30), { title: standard.level2, back })}>放映这些题 →</Link></p>
+                {groups.map(item => {
+                    const ids = counts[item.code]
+                    const bank = banks?.[subjectOfPoint(item.code)]
+                    const shown = bank ? ids.map(id => bank.items.find(question => question.id === id)).filter(Boolean).slice(0, CHECKS_SHOWN) : []
+                    return (
+                        <div key={item.code} id={`checks-${item.code}`} className={styles.checkGroup}>
+                            <h3><a href={`#${item.code}`}>要点 .{item.code.split('.').pop()}</a><span>{item.text}</span></h3>
+                            {!banks ? <p className={styles.labNote}>正在载入题目…</p> : shown.length ? (
+                                <div className={styles.checkCards}>{shown.map(question => <QuestionCard key={question.id} item={question} misconceptions={bank.misconceptions} back={back} headingLevel={4} />)}</div>
+                            ) : <p className={styles.labNote}>题目暂时没能载入，<Link to={`/checks?point=${item.code}`}>去课堂诊断里看</Link>。</p>}
+                            {ids.length > CHECKS_SHOWN ? <p className={styles.checkMore}><Link to={`/checks?point=${item.code}`}>这条要点的全部 {ids.length} 道题 →</Link></p> : null}
+                        </div>
+                    )
+                })}
+            </div>
+        </Sec>
+    )
+}
+
 function TextbookLine({ code, data, list }) {
     if (data === undefined) return null
     if (!list.length) return <Sec id="standard-textbooks" label={<h2>教材里在哪教</h2>}><StandardTextbookLinks standardCode={code} /></Sec>
@@ -191,7 +246,7 @@ function TextbookLine({ code, data, list }) {
         <Sec
             id="standard-textbook-units"
             labelledBy="textbooks-title"
-            label={<><h2 id="textbooks-title">教材里在哪教</h2><p className={styles.labNote}><span className={styles.inferTag}>待核验</span>AI 逐课读教材后判断</p></>}
+            label={<><h2 id="textbooks-title">教材里在哪教</h2><p className={styles.labNote}><span className={styles.inferTag}>待核验</span>kebiao 逐课读教材后判断</p></>}
         >
             <table className={styles.books}>
                 <thead><tr><th scope="col">教材</th><th scope="col">这一条在书里</th></tr></thead>
@@ -429,10 +484,10 @@ export default function StandardV2Page() {
                             ) : null}
                             <div className={styles.actions}>
                                 <CopyCitationButton standard={standard} subjectName={subject.subject} stageLabel={stage?.label} />
+                                <FavoriteButton code={standard.code} showLabel={true} />
                                 <details className={styles.more}>
                                     <summary className="btn btn-ghost">更多</summary>
                                     <div className={styles.moreMenu}>
-                                        <FavoriteButton code={standard.code} showLabel={true} />
                                         <CopyLinkButton url={shareURL} />
                                         <ShareStandardButton code={standard.code} title={standard.level2} />
                                         <Link className={styles.badge} to={`/lesson-plan?mode=topic&subject=${encodeURIComponent(slug === 'arts' ? '艺术（音乐、美术等）' : subject.subject)}&grade=${(standard.grades || [])[0] || ''}&topic=${encodeURIComponent(standard.level2)}&codes=${standard.code}`}>用这条起草教案</Link>
@@ -469,6 +524,7 @@ export default function StandardV2Page() {
                 ) : null}
 
                 <TextbookLine code={standard.code} data={lessonData} list={books} />
+                <StandardChecks standard={standard} counts={checkCounts} />
                 <Platforms subjectSlug={slug} standard={standard} />
                 <LearningResources ids={standard.learning_resource_ids || []} legacyCodes={standard.legacy_codes || []} />
 

@@ -82,7 +82,7 @@ async function mockLessonPlans(page, { context = () => contextOf(), pick = () =>
     return calls
 }
 
-const draftButton = page => page.getByRole('button', { name: /起草教案|重新起草|最多 12 条|等 AI 找完要点/ })
+const draftButton = page => page.getByRole('button', { name: /起草教案|重新起草|最多 12 条|等 kebiao 找完要点/ })
 
 test('picking another lesson puts the finished plan away; the next lesson starts clean', async ({ page }) => {
     const calls = await mockLessonPlans(page, {
@@ -115,7 +115,7 @@ test('the AI pick keeps the 要点 the teacher ticked while it ran, and drafting
     await page.goto(`/lesson-plan?subject=${MATH}&edition=${EDITION}&lesson=L1`)
     await expect(page.getByText(/AI 正在把这个年级的课标逐条读一遍/)).toBeVisible()
     await expect(draftButton(page)).toBeDisabled()
-    await expect(draftButton(page)).toHaveText('等 AI 找完要点…')
+    await expect(draftButton(page)).toHaveText('等 kebiao 找完要点…')
     await page.getByRole('checkbox', { name: /等式的基本性质/ }).check()
     release()
     await expect(page.getByText(/AI 读完了，已勾选/)).toBeVisible()
@@ -149,13 +149,13 @@ test('a pick still running when the teacher moves to another lesson is cancelled
 
 test.describe('a crawler', () => {
     test.use({ userAgent: 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)' })
-    test('waits for 「让 AI 找要点」 instead of starting the AI pick', async ({ page }) => {
+    test('waits for 「让 kebiao 找要点」 instead of starting the AI pick', async ({ page }) => {
     const calls = await mockLessonPlans(page)
     await page.goto(`/lesson-plan?subject=${MATH}&edition=${EDITION}&lesson=L1`)
-    await expect(page.getByRole('button', { name: '让 AI 找要点' })).toBeVisible()
+    await expect(page.getByRole('button', { name: '让 kebiao 找要点' })).toBeVisible()
     await page.waitForTimeout(500)
     expect(calls.pick).toHaveLength(0)
-    await page.getByRole('button', { name: '让 AI 找要点' }).click()
+    await page.getByRole('button', { name: '让 kebiao 找要点' }).click()
     await expect(page.getByText(/AI 读完了，已勾选/)).toBeVisible()
     expect(calls.pick).toHaveLength(1)
     })
@@ -328,11 +328,11 @@ test('我的书 pointing at a lesson the reprint renamed opens the lesson with t
     await expect.poll(() => page.evaluate(() => JSON.parse(window.localStorage.getItem('kebiao.lessonPlan.lastBook')).lesson)).toBeUndefined()
 })
 
-test('a textbook unit page opens AI 备课 on its 国家平台 lesson, and no longer offers a 测试卷 check', async ({ page }) => {
+test('a textbook unit page opens 备课助手 on its 国家平台 lesson, and no longer offers a 测试卷 check', async ({ page }) => {
     await page.route('**/api/v1/units/tcu_d2e3a59e5cc5f759', route => route.fulfill(json({ entry_id: 'tcu_d2e3a59e5cc5f759', edition_id: EDITION, title: '观察物体（三）', textbook_title: '数学5年级下册', subject: '数学', subject_slug: 'math', grade: 5, volume: '下册', pdf_page: 8, printed_page: '2', alignments: [], related_resources: [] })))
     await page.route('**/api/v1/lesson-plans/context?*', route => route.fulfill(json(contextOf({ lesson_id: null, national_lessons: [{ id: '3e7ca3cb-0411-4dfe-aeb8-200ac1fedb84', title: '观察物体（三）', chapters: ['1 观察物体（三）'], pdf_page: 8, unit_id: 'tcu_d2e3a59e5cc5f759', materials: [], hours: 1, url: 'https://basic.smartedu.cn/x' }] }))))
     await page.goto('/textbook-units/tcu_d2e3a59e5cc5f759')
-    await expect(page.getByRole('link', { name: /用 AI 起草这一课的教案/ })).toHaveAttribute('href', /lesson=3e7ca3cb-0411-4dfe-aeb8-200ac1fedb84/u)
+    await expect(page.getByRole('link', { name: /用备课助手起草这一课的教案/ })).toHaveAttribute('href', /lesson=3e7ca3cb-0411-4dfe-aeb8-200ac1fedb84/u)
     await expect(page.getByRole('link', { name: /单元整体设计/ })).toHaveAttribute('href', /chapter=/u)
     await expect(page.getByRole('link', { name: '核验这个单元的测试卷' })).toHaveCount(0)
 })

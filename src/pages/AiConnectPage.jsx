@@ -69,9 +69,9 @@ export default function AiConnectPage() {
     return (
         <div className={`container ${concepts.page}`}>
             <header className={concepts.hero}>
-                <p className={concepts.kicker}>在 AI 里用 kebiao · 免费、只读、不用登录</p>
-                <h1 className={concepts.title}>让你常用的 AI 引用课标原文</h1>
-                <p className={concepts.lede}>WorkBuddy、扣子、豆包这些 AI 会写教案，但不知道 2025 修订版课标的原文，也不知道你手上这本教材。把 kebiao 接进去以后，它查到的每条课标都带编码、原文、页码和 kebiao 链接，你可以点回来核对。依据是什么、用不用，由你决定。</p>
+                <p className={concepts.kicker}>在智能体里用 kebiao · 免费、只读、不用登录</p>
+                <h1 className={concepts.title}>让你常用的智能体引用课标原文</h1>
+                <p className={concepts.lede}>WorkBuddy、扣子、豆包这些智能体会写教案，但不知道 2025 修订版课标的原文，也不知道你手上这本教材。把 kebiao 接进去以后，它查到的每条课标都带编码、原文、页码和 kebiao 链接，你可以点回来核对。依据是什么、用不用，由你决定。</p>
                 <ul className={guide.jump} aria-label="本页内容">
                     <li><a href="#ai-workbuddy">WorkBuddy</a></li>
                     <li><a href="#ai-prompts">三条提示词</a></li>
@@ -103,12 +103,12 @@ export default function AiConnectPage() {
                         </div>
                     ))}
                 </div>
-                <p className={styles.note}>第二条让 AI 先把依据交给你确认，第三条只挑问题不重写。教案由你定稿，AI 和 kebiao 只提供依据和检查。</p>
+                <p className={styles.note}>第二条让智能体先把依据交给你确认，第三条只挑问题不重写。教案由你定稿，智能体和 kebiao 只提供依据和检查。</p>
             </section>
 
             <section id="ai-clients" className={styles.section}>
                 <p className={guide.who}>同一个地址，各家都能接</p>
-                <h2>扣子、魔搭和其他 AI 工具</h2>
+                <h2>扣子、魔搭和其他智能体</h2>
                 <CopyBlock text={MCP_URL} label="kebiao MCP 服务器地址" />
                 <dl className={styles.clients}>
                     {CLIENTS.map(client => (
@@ -123,11 +123,11 @@ export default function AiConnectPage() {
 
             <section id="ai-no-connector" className={styles.section}>
                 <p className={guide.who}>网页版豆包、DeepSeek、元宝</p>
-                <h2>接不了连接器的 AI</h2>
-                <p className={styles.para}>在 <Link to="/lesson-plan">AI 备课</Link>里选好教材和这一课、勾好要点后点「复制成提示词」，或者在任一条课标页面点「复制成提示词」，课标原文和页码会一起带过去，贴进你常用的 AI 就行。</p>
+                <h2>接不了连接器的智能体</h2>
+                <p className={styles.para}>在 <Link to="/lesson-plan">备课助手</Link>里选好教材和这一课、勾好要点后点「复制成提示词」，或者在任一条课标页面点「复制成提示词」，课标原文和页码会一起带过去，贴进你常用的智能体就行。</p>
             </section>
 
-            <p className={concepts.footnote}>这些工具只读，不收集任何个人信息；请不要把学生姓名等个人信息或考试原题发给 AI。每个回答都带 kebiao 链接；课标原文取自《义务教育课程标准（2022年版2025年修订）》，教材对应是 AI 判断、待核验。开发者看 <Link to="/open-data">数据与接口</Link> 和 <a href="/llms.txt">llms.txt</a>。</p>
+            <p className={concepts.footnote}>这些工具只读，不收集任何个人信息；请不要把学生姓名等个人信息或考试原题发给智能体。每个回答都带 kebiao 链接；课标原文取自《义务教育课程标准（2022年版2025年修订）》，教材对应是 kebiao 判断、待核验。开发者看 <Link to="/open-data">数据与接口</Link> 和 <a href="/llms.txt">llms.txt</a>。</p>
         </div>
     )
 }

@@ -105,11 +105,8 @@ function HomePage() {
                 <div className={`${styles.wrap} ${styles.heroGrid}`}>
                     <div className={styles.heroCopy}>
                         <p className={styles.kicker}>义务教育课程标准 · 2022年版2025年修订 · {K ? `${K.cons.length} 条标准 · ` : ''}<span className={styles.count}>{count.toLocaleString('en-US')}</span> 条要点</p>
-                        <h1 className={styles.title} id="hero-title">从你手上的教材开始</h1>
-                        <p className={styles.lede}>每一课教的是哪几条课标、教材原文在第几页，都已经逐课标好。</p>
-                        {myBook && !changing
-                            ? <MyBookCard book={myBook} onChange={() => setChanging(true)} className={styles.entry} />
-                            : <BookPicker inline className={styles.entry} />}
+                        <h1 className={styles.title} id="hero-title">学生该学会什么，<br />课标里逐条查得到</h1>
+                        <p className={styles.lede}>十四门学科、一到九年级的课程标准，按学段和主题排好。每条要点都是课标原文，注明出处页码。</p>
 
                         {/* typing lights the matching stars; Enter shows them in the search box (⌘K), or asks AI when nothing matches */}
                         <form className={styles.search} role="search" onSubmit={event => {
@@ -124,10 +121,10 @@ function HomePage() {
                                 <SearchIcon />
                                 <input id="hero-q" type="search" autoComplete="off" placeholder="编码、关键词，或者一句话：三年级科学里讲植物生长的" value={query} onChange={event => setQuery(event.target.value)} />
                             </div>
-                            <button className={styles.go} type="submit" data-kb-telemetry-task="search_start">搜索</button>
+                            <button className={styles.go} type="submit" data-kb-telemetry-task="search_start"><SearchIcon size={17} />搜索课标</button>
                         </form>
-                        <p className={styles.match} aria-live="polite">{results == null ? '' : results.length ? `${results.length} 颗亮起 · 回车看是哪几条` : '星图里没有字面匹配 · 回车让 AI 找'}</p>
-                        <p className={styles.cue}><i aria-hidden="true" />向下是课标星图</p>
+                        <p className={styles.match} aria-live="polite">{results == null ? '' : results.length ? `${results.length} 颗亮起 · 回车看是哪几条` : '星图里没有字面匹配 · 回车用一句话检索'}</p>
+                        <p className={styles.cue}><i aria-hidden="true" />向下：从你手上的教材开始</p>
                     </div>
                     {/* the star lit in the 课标 glyph, joined to its caption by a gold line; phones show the glyph only */}
                     {narrow ? null : (
@@ -135,6 +132,20 @@ function HomePage() {
                             <NowBlock K={K} idx={nowIdx < 0 ? 0 : nowIdx} codeRef={codeRef} dotRef={dotRef} />
                         </div>
                     )}
+                </div>
+            </section>
+
+            {/* second screen: the textbook a teacher has in hand */}
+            <section className={styles.books} aria-labelledby="books-title">
+                <div className={styles.wrap}>
+                    <div className={styles.booksCopy}>
+                        <p className={styles.kicker}>教材 · 逐课对好课标</p>
+                        <h2 className={styles.title} id="books-title">从你手上的教材开始</h2>
+                        <p className={styles.lede}>选出你在教的那本书。打开就能看到：这一课对应哪几条课标要点、原书在第几页，还有能直接投影的课堂诊断题。</p>
+                        {myBook && !changing
+                            ? <MyBookCard book={myBook} onChange={() => setChanging(true)} className={styles.entry} />
+                            : <BookPicker inline className={styles.entry} />}
+                    </div>
                 </div>
             </section>
 

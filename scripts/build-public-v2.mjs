@@ -279,11 +279,11 @@ writeFileSync('public/llms.txt', `# kebiao 课标
 
 许可：kebiao 整理和编写的数据（编码、结构、kebiao 整理的文字、新旧编码对照、推断层）以 CC BY 4.0 开放，署名「kebiao 课标（https://www.kebiao.org），CC BY 4.0」；课标原文、教材内容和第三方平台内容不在此列。详见 https://github.com/NBrangerF/curriculum-standards-breakdown/blob/main/DATA_LICENSE.md 。
 
-## 给 AI 用的接口
+## 给智能体用的接口
 
 - [MCP 服务器](${SITE}/mcp): Streamable HTTP（POST JSON-RPC），无需登录；只读工具：检索课标、查看标准、列出标准、学段目标、标准对应的教材、从教材章节找课标、2025 修订对照、课堂诊断题
 - [插件 OpenAPI](${SITE}/api/v1/plugin/openapi.yaml): 扣子、文心等只能接 API 的平台可直接导入；每个接口都返回一段可直接引用的 answer
-- [在 AI 里用 kebiao](${SITE}/ai): WorkBuddy、扣子、魔搭、Claude 等的接入配置和三条备课提示词
+- [在智能体里用 kebiao](${SITE}/ai): WorkBuddy、扣子、魔搭、Claude 等的接入配置和三条备课提示词
 - [API 文档](${SITE}/api/v1/docs): 完整的课程智能 API
 
 ## 学科
@@ -300,7 +300,7 @@ ${subjects.map(s => `- [${s.subject}](${SITE}/subjects/${s.subject_slug}): ${s.s
 - [必做实验清单](${SITE}/experiments): 科学课标附录 4 的 126 项学生必做探究实践活动，物理、化学的学生必做实验，标页码
 - [教资课标速记](${SITE}/teacher-exam): 14 门课程的核心素养和课程理念，标页码
 - [知识图谱](${SITE}/knowledge-graph): 每门课的要点按线索和年级排开，每个要点要先会什么、后面用到哪里、在哪本教材哪一课教；每门课一页，如 ${SITE}/knowledge-graph/math
-- [AI 备课](${SITE}/lesson-plan): 从教材的一课起草有课标依据的教案
+- [备课助手](${SITE}/lesson-plan): 从教材的一课起草有课标依据的教案
 - [课堂诊断](${SITE}/checks): 15 个学科（语文、数学、英语、道德与法治、历史、地理、科学、物理、化学、生物学、信息科技、体育与健康、音乐、美术、劳动）的全班诊断题，按教材单元或课标学段编排；全班用手势、拇指或举草稿纸作答，每个错误答案对应一种常见错法（为什么错、课上怎么接），附正确做法、比一比和三级阶梯练习；可投影放映或下载 PPT。API：/api/v1/checks?subject=<学科>&code=<要点编码>&grade=<年级>&q=<关键词>
 - [站点地图](${SITE}/sitemap.xml)
 

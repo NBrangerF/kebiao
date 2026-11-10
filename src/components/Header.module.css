@@ -110,6 +110,27 @@
 .book:hover { border-color: var(--kb-gold); color: var(--kb-moon); }
 .bookActive { border-color: rgba(233, 200, 135, 0.6); }
 
+/* 我的清单: its own spot on the right, a star and how many standards are saved */
+.list {
+    display: inline-flex;
+    min-height: 40px;
+    flex: 0 0 auto;
+    align-items: center;
+    gap: 8px;
+    padding: 0 14px;
+    border: 1px solid var(--kb-line-strong);
+    border-radius: 0;
+    color: var(--kb-mist);
+    font-size: 14px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.list svg { color: var(--kb-gold); }
+.list b { color: var(--kb-moon); font-family: var(--font-num); font-weight: 500; font-variant-numeric: tabular-nums; }
+.list:hover { border-color: var(--kb-gold); color: var(--kb-moon); }
+.listActive { border-color: rgba(233, 200, 135, 0.6); color: var(--kb-moon); }
+
 .searchButton {
     display: inline-flex;
     min-height: 40px;
@@ -340,8 +361,14 @@
     .searchLabel,
     .kbd,
     .book small { display: none; }
-    .searchButton { width: 2.75rem; padding: 0; justify-content: center; }
-    .book { padding: 0 10px 0 8px; font-size: 14px; }
+    .searchButton { width: 2.5rem; padding: 0; justify-content: center; }
+    .listLabel,
+    .list b { display: none; }
+    .list { width: 2.5rem; padding: 0; justify-content: center; }
+    /* five things share a phone's width: keep the book's name whole */
+    .container { gap: 6px; }
+    .menuButton { width: 2.5rem; }
+    .book { gap: 6px; padding: 0 10px 0 8px; font-size: 14px; }
     .subnavInner { gap: 0 20px; }
 }
 

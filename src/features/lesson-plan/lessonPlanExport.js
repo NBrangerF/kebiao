@@ -115,7 +115,7 @@ const stageNote = item => {
     return item.stage_label && !(span && String(item.title).includes(span)) ? `（${item.stage_label}）` : ''
 }
 
-const PLAN_FOOT = '本教案由 AI 依据 kebiao.org 收录的《义务教育课程标准（2022年版2025年修订）》要点起草，按常规大班课堂设计，请结合教材和班级实际修改后使用。'
+const PLAN_FOOT = '本教案由 kebiao 依据 kebiao.org 收录的《义务教育课程标准（2022年版2025年修订）》要点起草，按常规大班课堂设计，请结合教材和班级实际修改后使用。'
 
 function lines(plan) {
     const { frame, process, practice, evidence } = plan
@@ -174,7 +174,7 @@ function lines(plan) {
         if (process.board.length) out.push('', next('板书设计'), ...process.board.map(t))
         if (process.homework.length) out.push('', next('作业设计'), ...process.homework.map(item => t(homeworkLine(item))))
     }
-    out.push('', '本教案由 AI 依据 kebiao.org 收录的课标要点起草，请结合教材和班级实际修改后使用。')
+    out.push('', '本教案由 kebiao 依据 kebiao.org 收录的课标要点起草，请结合教材和班级实际修改后使用。')
     return out
 }
 
@@ -266,7 +266,7 @@ export function planBlocks(plan) {
             ...section('教学过程', [{ type: 'table', cols: [0.15, null, null, 0.18], head: ['环节', '教师活动', '学生活动', '设计意图'], rows: process.stages.map(stage => [stageCell(stage), teacherCell(stage), studentCell(stage), t(stage.purpose)]) }]),
             ...section('当堂练习与检测', practice?.items?.length ? [
                 { type: 'list', ordered: true, items: practice.items.map(item => [`【${item.kind}·${item.level}】${t.exercise(item.question)}`, item.code ? small(`　${item.code}`) : '', dim(`\n参考答案：${t.exercise(item.answer)}`)]) },
-                { type: 'note', runs: '题目和答案由 AI 起草，课前请核对。' }
+                { type: 'note', runs: '题目和答案由 kebiao 起草，课前请核对。' }
             ] : []),
             ...section('板书设计', process.board.length ? [{ type: 'box', lines: process.board.map(t) }] : []),
             ...section('作业设计', process.homework.length ? [{ type: 'list', items: process.homework.map(item => t(homeworkLine(item))) }] : []),
@@ -330,7 +330,7 @@ export function briefBlocks(plan) {
             { paras: board.length ? board : [''] },
             { paras: [homework.length ? labelled('作业', homework.join('　')) : null, tests.length ? [b('答案：'), tests.map((item, index) => `${index + 1}. ${clip(t.exercise(item.answer), 40)}`).join('　')] : null].filter(Boolean) }
         ]] } : null,
-        { type: 'foot', runs: 'AI 依据 kebiao.org 收录的《义务教育课程标准（2022年版2025年修订）》要点起草，题目和答案课前请核对。' }
+        { type: 'foot', runs: 'kebiao 依据 kebiao.org 收录的《义务教育课程标准（2022年版2025年修订）》要点起草，题目和答案课前请核对。' }
     ].filter(Boolean)
 }
 
@@ -340,7 +340,7 @@ export function downloadBriefWord(plan) {
 
 // ---------- 单元整体设计 ----------
 const unitTitle = plan => plan.unit.title || plan.lesson.title || '单元'
-const UNIT_FOOT = '本单元设计由 AI 依据 kebiao.org 收录的《义务教育课程标准（2022年版2025年修订）》要点起草，请结合教材和班级实际修改后使用。'
+const UNIT_FOOT = '本单元设计由 kebiao 依据 kebiao.org 收录的《义务教育课程标准（2022年版2025年修订）》要点起草，请结合教材和班级实际修改后使用。'
 
 function unitLines(plan) {
     const { unit, lesson, evidence, hours } = plan
@@ -434,7 +434,7 @@ export function scriptBlocks(title, sections) {
             { type: 'h', text: TIMED.test(heading) ? heading.replace(TIMED, `（约 ${spokenMinutes(text)} 分钟）`) : heading },
             ...String(text).split(/\n+/u).filter(Boolean).map(line => ({ type: 'body', runs: line.split(CUE).map((part, index) => (index % 2 ? dim(part) : part)) }))
         ]),
-        { type: 'foot', runs: '由 AI 根据教案改写（kebiao.org），请结合自己的理解修改后使用。' }
+        { type: 'foot', runs: '由 kebiao 根据教案改写（kebiao.org），请结合自己的理解修改后使用。' }
     ]
 }
 
@@ -596,7 +596,7 @@ export function rubricBlocks(plan) {
         { type: 'p', runs: labelled('学生交出', task.product) },
         { type: 'hint', runs: '「达到」一栏是单元设计里写的评价标准。请把「基本达到」「尚未达到」写成看得见的表现（学生做了什么、缺了什么），不要只写「较好」「一般」。可以先发给学生，让他们对照着做、对照着自评。' },
         { type: 'table', cols: [0.17, 0.31, 0.26, null], minHeight: 900, head: ['评价维度', '达到', '基本达到', '尚未达到'], rows: task.criteria.map((criterion, index) => [...dimensionOf(criterion, index), '', '']) },
-        { type: 'foot', runs: '量规由 AI 起草的单元设计生成（kebiao.org），请结合学生作品修改后使用。' }
+        { type: 'foot', runs: '量规由 kebiao 起草的单元设计生成（kebiao.org），请结合学生作品修改后使用。' }
     ]
 }
 

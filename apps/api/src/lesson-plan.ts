@@ -363,10 +363,10 @@ export function checkPlan(frame: Frame, process: Process | null, input: Pick<Dra
 export function notesChecks(teacherNotes: string): PlanCheck[] {
     const checks: PlanCheck[] = []
     if (/(忽略|无视|不要管|别管|不用管|不要遵守|跳过)[^。；\n]{0,8}(规则|要求|限制|限定|检查|提示)/u.test(teacherNotes)) {
-        checks.push({ level: 'warn', kind: 'notes_ignored', message: '「老师的想法」里要 AI 忽略规则，这部分没有照做：目标、练习和作业仍按所选要点、本单元的课和「双减」来写。' })
+        checks.push({ level: 'warn', kind: 'notes_ignored', message: '「老师的想法」里要求忽略规则，这部分没有照做：目标、练习和作业仍按所选要点、本单元的课和「双减」来写。' })
     }
     if (STAMP.test(teacherNotes)) {
-        checks.push({ level: 'warn', kind: 'notes_ignored', message: 'AI 不替教案写「符合课标」之类的结论；对得上对不上，请看这里的逐条检查。' })
+        checks.push({ level: 'warn', kind: 'notes_ignored', message: 'kebiao 不替教案写「符合课标」之类的结论；对得上对不上，请看这里的逐条检查。' })
     }
     return checks
 }
@@ -1581,7 +1581,7 @@ export function checkTest(read: ReadTest, testText: string, input: DraftInput): 
     for (const key of DIFFICULTY) {
         if (weigh(table.by_difficulty, key) > 80) checks.push({ level: 'warn', kind: 'difficulty', message: `「${key}」题占 ${weigh(table.by_difficulty, key)}%，难度结构偏单一（物理课标：容易题、中档题、难题的比例设置合理）。` })
     }
-    if (read.dropped) checks.push({ level: 'warn', kind: 'reader_dropped', message: `有 ${read.dropped} 道题 AI 抄录的题干和原文对不上，没有计入细目表。` })
+    if (read.dropped) checks.push({ level: 'warn', kind: 'reader_dropped', message: `有 ${read.dropped} 道题 kebiao 抄录的题干和原文对不上，没有计入细目表。` })
     if (!checks.length) checks.push({ level: 'ok', kind: 'aligned', message: '每道题都对上了所选要点，每条要点都有题目考到，没有发现超出课标限定的内容。' })
     return { table, checks }
 }

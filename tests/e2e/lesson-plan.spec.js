@@ -64,7 +64,7 @@ const practiceDraft = {
     model: 'gpt-5-mini'
 }
 
-test('AI 备课: the AI search ticks the closest 要点, the draft cites it and the check runs', async ({ page }) => {
+test('备课助手: the AI search ticks the closest 要点, the draft cites it and the check runs', async ({ page }) => {
     const drafts = []
     await page.route('**/api/v1/lesson-plans/textbooks/*/lessons', route => route.fulfill({ contentType: 'application/json', body: JSON.stringify(envelope({ platform_title: '小学数学人教版五年级下册', confidence: 'text', lessons: [{ id: 'L1', title: '分数的基本性质', chapters: ['4 分数的意义和性质'], pdf_page: 62, materials: [], url: '' }] })) }))
     await page.route('**/api/v1/lesson-plans/context?*', route => route.fulfill({ contentType: 'application/json', body: JSON.stringify(envelope(context)) }))
@@ -95,7 +95,7 @@ test('AI 备课: the AI search ticks the closest 要点, the draft cites it and 
     const picked = page.getByRole('checkbox', { name: /能用直观的方式表示分数和小数/ })
     await expect(picked).toBeChecked()
     await expect(page.getByRole('checkbox', { name: /等式的基本性质/ })).not.toBeChecked()
-    await expect(page.getByText('AI 判断：不切题：讲的是等式的性质，不是分数')).toBeVisible()
+    await expect(page.getByText('kebiao 判断：不切题：讲的是等式的性质，不是分数')).toBeVisible()
     // the lesson's own 同步课 is one line in the lesson card (beside the 课堂诊断题 line); the subject note and the 核验 tabs are gone
     await expect(page.locator('p').filter({ hasText: '国家平台同步课' }).getByRole('link', { name: '分数的基本性质', exact: true })).toHaveAttribute('href', /basic\.smartedu\.cn.*activityId=L1/u)
     await expect(page.getByText('数学课标怎么组织内容')).toHaveCount(0)
@@ -195,7 +195,7 @@ test('AI 备课: the AI search ticks the closest 要点, the draft cites it and 
     expect(results.violations.filter(item => ['critical', 'serious'].includes(item.impact)).map(item => item.id)).toEqual([])
 })
 
-test('AI 备课 says when the AI could not read the 要点 and leaves the ticking to the teacher', async ({ page }) => {
+test('备课助手 says when the AI could not read the 要点 and leaves the ticking to the teacher', async ({ page }) => {
     await page.route('**/api/v1/lesson-plans/context?*', route => route.fulfill({ contentType: 'application/json', body: JSON.stringify(envelope(context)) }))
     await page.route('**/api/v1/lesson-plans/pick', route => route.fulfill({ contentType: 'application/json', body: JSON.stringify(envelope({ status: 'timeout', read: 9, picks: [] })) }))
     await page.goto('/lesson-plan?mode=topic&subject=%E6%95%B0%E5%AD%A6&grade=5&topic=%E5%88%86%E6%95%B0%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%80%A7%E8%B4%A8')
@@ -204,7 +204,7 @@ test('AI 备课 says when the AI could not read the 要点 and leaves the tickin
     await expect(page.getByRole('button', { name: /按选定的 0 条要点起草教案/ })).toBeDisabled()
 })
 
-test('when the live pick fails, AI 备课 ticks the 要点 the AI judged for the whole unit earlier', async ({ page }) => {
+test('when the live pick fails, 备课助手 ticks the 要点 the AI judged for the whole unit earlier', async ({ page }) => {
     const unitContext = { ...context, standards: [{ ...standards[1], via: 'ai_unit' }, standards[0]], ai_points: ['MA-S3-NA-01.3'] }
     await page.route('**/api/v1/lesson-plans/context?*', route => route.fulfill({ contentType: 'application/json', body: JSON.stringify(envelope(unitContext)) }))
     await page.route('**/api/v1/lesson-plans/pick', route => route.fulfill({ contentType: 'application/json', body: JSON.stringify(envelope({ status: 'timeout', read: 9, picks: [] })) }))
@@ -266,7 +266,7 @@ test('the AI reads the grade\'s standards for a lesson; the teacher hint reruns 
     await expect(page.getByText(/AI 没有找到直接对应的要点，先勾了 1 条最接近的/)).toBeVisible()
     expect(picks.at(-1).lesson).toMatchObject({ title: '2 落花生', subject_slug: 'chinese', grade: 5 })
     const before = contextCalls
-    await page.getByLabel(/让 AI 重新找/).fill('借物喻人')
+    await page.getByLabel(/让 kebiao 重新找/).fill('借物喻人')
     await page.getByRole('button', { name: '重新找' }).click()
     await expect.poll(() => picks.at(-1).hint).toBe('借物喻人')
     expect(contextCalls).toBe(before)
@@ -329,20 +329,20 @@ test('跨学科主题库: a subject and grade show its own themes and other subj
     await expect(page.getByRole('heading', { name: '其他学科的主题里，要用到语文的' })).toBeVisible()
     const hero = page.getByRole('listitem').filter({ has: page.getByRole('heading', { name: '中华英雄谱' }) })
     await expect(hero.getByText('历史课标 · 修订版第 44 页')).toBeVisible()
-    await expect(hero.getByRole('link', { name: '用 AI 备课设计这个主题' })).toHaveAttribute('href', /\/lesson-plan\?mode=topic&subject=%E5%8E%86%E5%8F%B2&grade=8&topic=/)
+    await expect(hero.getByRole('link', { name: '用备课助手设计这个主题' })).toHaveAttribute('href', /\/lesson-plan\?mode=topic&subject=%E5%8E%86%E5%8F%B2&grade=8&topic=/)
     // 体育与健康 themes are by 水平; 3 年级 shows 水平二 only
     await page.goto('/interdisciplinary?subject=pe&grade=3')
     await expect(page.getByRole('heading', { name: '争做小劳模' })).toBeVisible()
     await expect(page.getByRole('heading', { name: '小小特种兵' })).toHaveCount(0)
 })
 
-test('必做实验清单 lists the 课标 experiments with pages, matching 同步课 and AI 备课 links', async ({ page }) => {
+test('必做实验清单 lists the 课标 experiments with pages, matching 同步课 and 备课助手 links', async ({ page }) => {
     await page.goto('/experiments?subject=chemistry')
     await expect(page.getByRole('heading', { name: '课标规定的必做实验和探究实践' })).toBeVisible()
     const salt = page.getByRole('listitem').filter({ hasText: '粗盐中难溶性杂质的去除' })
     await expect(salt.getByText(/CH-S4-SI-06\.1 · 修订版第 18 页/)).toBeVisible()
     await expect(salt.getByRole('link', { name: /同步课：化学9年级下册/ })).toHaveAttribute('href', /basic\.smartedu\.cn/)
-    await expect(salt.getByRole('link', { name: '用 AI 备课设计这节课' })).toHaveAttribute('href', /codes=CH-S4-SI-06\.1/)
+    await expect(salt.getByRole('link', { name: '用备课助手设计这节课' })).toHaveAttribute('href', /codes=CH-S4-SI-06\.1/)
     await expect(page.getByText('跨学科实践活动（原则上从学习主题5中选择')).toHaveCount(0)
     await page.getByRole('tab', { name: '科学' }).click()
     await expect(page.getByRole('heading', { name: /科学 · 5–6 年级/ })).toBeVisible()
@@ -350,7 +350,7 @@ test('必做实验清单 lists the 课标 experiments with pages, matching 同�
     await expect(page.getByText('观察热传导现象，如比较不同材质勺子的导热能力')).toBeVisible()
 })
 
-test('AI 备课 keeps recent drafts in this browser, including one saved under the old single-draft key', async ({ page }) => {
+test('备课助手 keeps recent drafts in this browser, including one saved under the old single-draft key', async ({ page }) => {
     const old = { lesson: { ...lesson, subject_name: '数学' }, frame, process: processDraft, evidence, checks: [], meta: { period_minutes: 40, lesson_index: 1, lesson_count: 1 }, created_at: '2026-10-20T08:00:00.000Z' }
     await page.addInitScript(value => { if (!window.sessionStorage.getItem('seeded')) { window.localStorage.setItem('kebiao.lessonPlan.last', JSON.stringify(value)); window.sessionStorage.setItem('seeded', '1') } }, old)
     await page.route('**/api/v1/textbooks**', route => route.fulfill({ contentType: 'application/json', body: JSON.stringify(envelope({ items: [] })) }))
@@ -440,7 +440,7 @@ test('a textbook page maps each chapter\'s lessons to the 要点 they teach', as
 test('上手指南 lists the weekly workflows with a way into each', async ({ page }) => {
     await page.goto('/guide')
     await expect(page.getByRole('heading', { name: '五分钟学会用 kebiao 备课' })).toBeVisible()
-    await expect(page.locator('#guide-unit').getByRole('link', { name: '打开 AI 备课' })).toHaveAttribute('href', '/lesson-plan')
+    await expect(page.locator('#guide-unit').getByRole('link', { name: '打开备课助手' })).toHaveAttribute('href', '/lesson-plan')
     await expect(page.locator('#guide-term')).toHaveCount(0)
     await expect(page.getByText('核验试卷')).toHaveCount(0)
     await expect(page.getByRole('navigation', { name: '备课栏目' }).getByRole('link', { name: '上手指南' })).toHaveAttribute('href', '/guide')
@@ -456,7 +456,7 @@ test('a textbook page lists its 国家平台 units with 要点 and a way into ea
     await expect(page.getByRole('link', { name: '核验单元测试卷' })).toHaveCount(0)
 })
 
-test('AI 备课 opens on the textbook a teacher picked last time', async ({ page }) => {
+test('备课助手 opens on the textbook a teacher picked last time', async ({ page }) => {
     await page.route('**/api/v1/lesson-plans/textbooks/*/lessons', route => route.fulfill({ contentType: 'application/json', body: JSON.stringify(envelope({ platform_title: '小学数学人教版五年级下册', confidence: 'text', lessons: [{ id: 'L1', title: '分数的基本性质', chapters: ['4 分数的意义和性质'], pdf_page: 62, materials: [], url: '' }] })) }))
     await page.goto(`/lesson-plan?subject=${encodeURIComponent('数学')}&edition=ed_1bb9d396d4d884aee79e`)
     await expect.poll(() => page.evaluate(() => window.localStorage.getItem('kebiao.lessonPlan.lastBook'))).toContain('ed_1bb9d396d4d884aee79e')
@@ -467,11 +467,11 @@ test('AI 备课 opens on the textbook a teacher picked last time', async ({ page
 test('when the AI cannot draft, the error points the teacher to the prompt copy', async ({ page }) => {
     await page.route('**/api/v1/lesson-plans/context?*', route => route.fulfill({ contentType: 'application/json', body: JSON.stringify(envelope(context)) }))
     await page.route('**/api/v1/lesson-plans/pick', route => route.fulfill({ contentType: 'application/json', body: JSON.stringify(envelope({ status: 'ok', read: 9, picks: [{ code: 'MA-S3-NA-01', grade: 2, reason: '比较分数大小', point: 'MA-S3-NA-01.3' }] })) }))
-    await page.route('**/api/v1/lesson-plans/draft', route => route.fulfill({ status: 502, contentType: 'application/json', body: JSON.stringify({ error: { code: 'draft_timeout', message: 'AI 这次没有写完。请再试一次。', details: [] } }) }))
+    await page.route('**/api/v1/lesson-plans/draft', route => route.fulfill({ status: 502, contentType: 'application/json', body: JSON.stringify({ error: { code: 'draft_timeout', message: 'kebiao 这次没有写完。请再试一次。', details: [] } }) }))
     await page.goto(`/lesson-plan?subject=${encodeURIComponent('数学')}&edition=ed_1bb9d396d4d884aee79e&lesson=L1`)
     await expect(page.getByRole('checkbox', { name: /能用直观的方式表示分数和小数/ })).toBeChecked()
     await page.getByRole('button', { name: /按选定的 1 条要点起草教案/ }).click()
-    await expect(page.getByRole('alert')).toContainText('AI 这次没有写完')
+    await expect(page.getByRole('alert')).toContainText('kebiao 这次没有写完')
     await expect(page.getByRole('alert')).toContainText('复制成提示词')
     await expect(page.getByRole('button', { name: '复制成提示词' })).toBeVisible()
     // the 教案框架 needs no AI: the ticked 要点 verbatim, the sections left for the teacher
@@ -494,7 +494,7 @@ test('when only 当堂练习 fails, the plan stands and the teacher can ask for 
         const body = route.request().postDataJSON()
         if (body.step === 'practice') {
             practice.push(body)
-            if (practice.length === 1) return route.fulfill({ status: 502, contentType: 'application/json', body: JSON.stringify({ error: { code: 'draft_timeout', message: 'AI 这次没有写出可用的练习题。', details: [] } }) })
+            if (practice.length === 1) return route.fulfill({ status: 502, contentType: 'application/json', body: JSON.stringify({ error: { code: 'draft_timeout', message: 'kebiao 这次没有写出可用的练习题。', details: [] } }) })
         }
         const data = body.step === 'frame'
             ? { step: 'frame', frame, checks: [], evidence, privacy: { redacted: false }, model: 'gpt-5-mini' }
@@ -544,7 +544,7 @@ test('四个评价 quotes the 课程方案 and the subjects, and the long name f
     }
 })
 
-test('AI 备课: a lesson judged on its own pages is ticked at once, with the textbook\'s words, and a hint asks the AI again', async ({ page }) => {
+test('备课助手: a lesson judged on its own pages is ticked at once, with the textbook\'s words, and a hint asks the AI again', async ({ page }) => {
     let picks = 0
     await page.route('**/api/v1/lesson-plans/textbooks/*/lessons', route => route.fulfill({ contentType: 'application/json', body: JSON.stringify(envelope({ platform_title: '小学数学人教版五年级下册', confidence: 'text', lessons: [{ id: 'L1', title: '分数的基本性质', chapters: ['4 分数的意义和性质'], pdf_page: 62, materials: [], url: '' }] })) }))
     const judged = { ...context, lesson_align: [['MA-S3-NA-01.3', 'T', '分数的分子和分母同时乘或者除以相同的数（0除外），分数的大小不变', 'book', 62]] }
@@ -567,7 +567,7 @@ test('AI 备课: a lesson judged on its own pages is ticked at once, with the te
     expect(picks).toBe(1)
 })
 
-test('AI 备课: lessons the 国家平台 list lacks come from the book\'s own 目录', async ({ page }) => {
+test('备课助手: lessons the 国家平台 list lacks come from the book\'s own 目录', async ({ page }) => {
     const contexts = []
     const tocLessons = [
         { id: 'tcu_1', title: '通分', chapters: ['4 分数的意义和性质'], pdf_page: 70, materials: [], url: null, toc: true },

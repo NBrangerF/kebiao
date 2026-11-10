@@ -393,7 +393,7 @@ export const KEBIAO_TOOLS: KebiaoTool[] = [
     {
         name: 'get_textbook_links',
         title: '标准对应的教材',
-        description: '从一条课标反查教材：查看一条标准或要点在哪些教材的哪一课教（人教版、统编版、北师大版、外研社版等）：AI 逐课读了教材原文判断，每条附这一课教材的原话和页码；没有逐课结果的，再列机器对齐的单元。都待核验。Textbook lessons and chapters for a standard.',
+        description: '从一条课标反查教材：查看一条标准或要点在哪些教材的哪一课教（人教版、统编版、北师大版、外研社版等）：kebiao 逐课读了教材原文判断，每条附这一课教材的原话和页码；没有逐课结果的，再列机器对齐的单元。都待核验。Textbook lessons and chapters for a standard.',
         inputSchema: {
             type: 'object',
             properties: { code: { type: 'string', description: '标准或要点编码' } },
@@ -438,7 +438,7 @@ export const KEBIAO_TOOLS: KebiaoTool[] = [
                 data: { code: asked, name: standard.level2, lessons: lessons.slice(0, 12), lesson_total: lessons.length, textbooks: shown, total: items.length },
                 text: lessons.length || shown.length
                     ? [
-                        ...(lessons.length ? [`${asked} ${standard.level2} 在这些课教（AI 逐课读了教材原文判断，${lessons.length} 处，待核验）：`, ...lessonLines] : []),
+                        ...(lessons.length ? [`${asked} ${standard.level2} 在这些课教（kebiao 逐课读了教材原文判断，${lessons.length} 处，待核验）：`, ...lessonLines] : []),
                         ...(shown.length ? [`${lessons.length ? '另外，机器按单元对齐的' : `${standard.code} ${standard.level2} 对应的`}教材（${items.length} 处${items.length > shown.length ? `，列出前 ${shown.length} 处` : ''}）：`, ...shown.map(item => `- ${item.textbook}${item.chapter ? ` · ${item.chapter}` : '（整册）'}${item.printed_page ? `，第 ${item.printed_page} 页` : ''}（${item.status}）${item.url}`)] : [])
                     ].join('\n')
                     : `${standard.code} ${standard.level2} 暂时没有对应到具体教材。`
@@ -448,7 +448,7 @@ export const KEBIAO_TOOLS: KebiaoTool[] = [
     {
         name: 'find_textbook_chapter',
         title: '从教材的一课找课标',
-        description: '老师说的是教材里的一课时用它。把老师的原话放进 query 即可，例如「人教版 八年级上册 光的反射」「统编版四年级上册《观潮》」「五下 分数的基本性质」，工具会认出版本、年级、册次和学科。返回这一课「主要在教」「也涉及」的课标要点：要点原文和课标页码、教材里的原话和出处、这一课的课堂学习目标；再列机器按目录对齐的章节。对应关系是 AI 逐课判断，引用时注明「待核验」。找不到时如实告诉老师，不要编造。Find a textbook lesson the way teachers name it, with the standards it teaches.',
+        description: '老师说的是教材里的一课时用它。把老师的原话放进 query 即可，例如「人教版 八年级上册 光的反射」「统编版四年级上册《观潮》」「五下 分数的基本性质」，工具会认出版本、年级、册次和学科。返回这一课「主要在教」「也涉及」的课标要点：要点原文和课标页码、教材里的原话和出处、这一课的课堂学习目标；再列机器按目录对齐的章节。对应关系是 kebiao 逐课判断，引用时注明「待核验」。找不到时如实告诉老师，不要编造。Find a textbook lesson the way teachers name it, with the standards it teaches.',
         inputSchema: {
             type: 'object',
             properties: {
@@ -565,7 +565,7 @@ export const KEBIAO_TOOLS: KebiaoTool[] = [
                     objectives: (goals?.items || []).map(([text, basis, from, show]) => ({ text, basis, from, show }))
                 }
             }))
-            const lessonText = lessons.map(item => `- ${item.textbook} · ${item.unit}${item.lesson !== item.unit ? ` · ${item.lesson}` : ''} ${item.url}\n${item.points.map(point => `  ${point.relation} ${point.point}${point.text ? `「${point.text}」（${point.page}）` : ''}\n    教材里写着“${point.quote}”（${point.where}）`).join('\n') || '  没找到这一课主要在教的要点'}${item.objectives.length ? `\n  课堂学习目标（AI 依据要点原文起草，待核验）：\n${item.objectives.map((goal, k) => `   ${k + 1}. ${goal.text}（依据 ${goal.basis.join('、')}「${goal.from}」）`).join('\n')}` : ''}`)
+            const lessonText = lessons.map(item => `- ${item.textbook} · ${item.unit}${item.lesson !== item.unit ? ` · ${item.lesson}` : ''} ${item.url}\n${item.points.map(point => `  ${point.relation} ${point.point}${point.text ? `「${point.text}」（${point.page}）` : ''}\n    教材里写着“${point.quote}”（${point.where}）`).join('\n') || '  没找到这一课主要在教的要点'}${item.objectives.length ? `\n  课堂学习目标（kebiao 依据要点原文起草，待核验）：\n${item.objectives.map((goal, k) => `   ${k + 1}. ${goal.text}（依据 ${goal.basis.join('、')}「${goal.from}」）`).join('\n')}` : ''}`)
             const chapterText = results.map(r => `- ${r.textbook} · ${r.chapter}${r.printed_page ? `（第 ${r.printed_page} 页）` : ''} ${r.url}\n  ${r.standards.length ? `${r.standards.map(s => `${s.code} ${s.name}（${s.subject} · ${s.stage}）`).join('；')}（${note[r.via]}）` : note.none}`)
             // nothing under the filters: say where a lesson of that title does exist, so the next call can fix the grade or edition
             const elsewhere = !lessons.length && !results.length && filtered
@@ -577,7 +577,7 @@ export const KEBIAO_TOOLS: KebiaoTool[] = [
                 text: lessons.length || results.length
                     ? [
                         `按「${understood}」查找。`,
-                        ...(lessons.length ? [`找到 ${lessons.length} 节课（AI 逐课读了教材原文判断，附原话，待核验）：`, ...lessonText] : []),
+                        ...(lessons.length ? [`找到 ${lessons.length} 节课（kebiao 逐课读了教材原文判断，附原话，待核验）：`, ...lessonText] : []),
                         ...(otherEditions.length ? [`其他版本也有这一课：${otherEditions.join('、')}。`] : []),
                         ...(results.length ? [`${lessons.length ? '另外，' : ''}找到 ${results.length} 个教材章节（对应关系为机器对齐，待核验）：`, ...chapterText] : []),
                         SOURCE_NOTE
@@ -616,7 +616,7 @@ export const KEBIAO_TOOLS: KebiaoTool[] = [
             const { points, taught } = await objectiveCheckPoints({ objectives, slug: slug!, grade, topic, codes: args.codes }, ctx)
             if (!points.length) return { data: { objectives, points: [] }, text: '没有找到可对照的课标要点；请给出课题，或用 search_standards 找到要点编码后放进 codes。' }
             const run = await checkObjectives(objectives, { line: `${grade ? `${grade}年级` : ''}${slug}${topic ? `，课题「${topic}」` : ''}`, subject_slug: slug!, points: points.slice(0, 24), taught, unitLessons: [] })
-            if (!run.output) throw new Error('AI 这次没有读完这些目标，请再试一次。')
+            if (!run.output) throw new Error('kebiao 这次没有读完这些目标，请再试一次。')
             const LEVEL: Record<string, string> = { match: '程度相当', above: '超出要点', below: '没到要点', unclear: '程度没写清' }
             const lines = run.output.objectives.map((item, index) => [
                 `${index + 1}. ${item.text}`,
@@ -627,7 +627,7 @@ export const KEBIAO_TOOLS: KebiaoTool[] = [
             ].filter(Boolean).join('\n'))
             return {
                 data: { ...run.output, points: points.map(point => ({ ...point, url: standardUrl(point.code.replace(/\.\d+$/u, ''), point.code) })) },
-                text: [...(taught.length && !(Array.isArray(args.codes) && args.codes.length) ? [`「${topic}」这一课主要在教：${taught.join('、')}（kebiao 逐课读教材判断）`] : []), `对照了 ${points.length} 条课标要点（AI 体检，引用的课标原词已核对，判断待老师核验）：`, ...lines, ...run.output.uncovered.map(point => `还没有目标落到 ${point.code}：${point.text}`), ...run.output.notes].join('\n')
+                text: [...(taught.length && !(Array.isArray(args.codes) && args.codes.length) ? [`「${topic}」这一课主要在教：${taught.join('、')}（kebiao 逐课读教材判断）`] : []), `对照了 ${points.length} 条课标要点（kebiao 体检，引用的课标原词已核对，判断待老师核验）：`, ...lines, ...run.output.uncovered.map(point => `还没有目标落到 ${point.code}：${point.text}`), ...run.output.notes].join('\n')
             }
         }
     },

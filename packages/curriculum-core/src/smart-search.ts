@@ -298,7 +298,7 @@ function mergeFilters(request: SmartSearchRequest, parsed: ReturnType<typeof par
             discarded_inferred_values: modelSubjects,
             resolution: request.subjects?.length ? 'explicit_request_wins' : 'explicit_query_wins'
         })
-        warnings.push('AI 识别的学科与查询中的明确学科不一致；已以用户原话为准。')
+        warnings.push('kebiao 识别的学科与查询中的明确学科不一致；已以用户原话为准。')
     }
     if (parsed.grade_bands.length && modelGradeBands.length && !modelGradeBands.some(value => parsed.grade_bands.includes(value))) {
         conflicts.push({
@@ -307,7 +307,7 @@ function mergeFilters(request: SmartSearchRequest, parsed: ReturnType<typeof par
             discarded_inferred_values: modelGradeBands,
             resolution: request.grade_bands?.length ? 'explicit_request_wins' : 'explicit_query_wins'
         })
-        warnings.push('AI 识别的学段与查询中的明确学段不一致；已以用户原话为准。')
+        warnings.push('kebiao 识别的学段与查询中的明确学段不一致；已以用户原话为准。')
     }
     const excludedSubjects = unique([
         ...(request.excluded_subjects || []),
@@ -573,7 +573,7 @@ export function smartSearchStandards(
             .map(record => ({
                 ...scoreRecord(record, coreTerms, expansionTerms, filters, rankingProfile, request.include),
                 score: 0,
-                relevance_reason: '学段、学科符合，原文里没有检索词；由 AI 逐条核对。'
+                relevance_reason: '学段、学科符合，原文里没有检索词；由 kebiao 逐条核对。'
             }))
         : []
     const results = [...(wholeScope ? relevant : relevant.slice(0, limit)), ...scopeOnly]

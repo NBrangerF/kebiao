@@ -185,7 +185,7 @@ function applyJudgements(pool: SmartSearchResponse, judge: JudgeResult | null, s
         const verdict = judge.judgements.get(item.code)
         if (!verdict) {
             unread += 1
-            return evidenced(item) ? [{ ...item, relevance_reason: `AI 没来得及核对这一条；${item.relevance_reason}` }] : []
+            return evidenced(item) ? [{ ...item, relevance_reason: `kebiao 没来得及核对这一条；${item.relevance_reason}` }] : []
         }
         if (verdict.grade === 0) return []
         return [{
@@ -219,7 +219,7 @@ function applyJudgements(pool: SmartSearchResponse, judge: JudgeResult | null, s
         relevant_candidates: kept.length,
         omitted_low_relevance: pool.omitted_low_relevance + dropped,
         relevance_summary: { direct, supporting: kept.length - direct },
-        coverage_note: `AI 逐条读了${read}的要点原文：${direct} 条直接对应，${kept.length - direct} 条相关，${offTopic} 条不切题，已略去。${kept.length > limit ? `下面列出前 ${limit} 条。` : ''}${unread ? `有 ${unread} 条 AI 没来得及核对${scope?.complete ? '，其中原文没有检索词的未列出' : '，已标出'}。` : ''}`,
+        coverage_note: `kebiao 逐条读了${read}的要点原文：${direct} 条直接对应，${kept.length - direct} 条相关，${offTopic} 条不切题，已略去。${kept.length > limit ? `下面列出前 ${limit} 条。` : ''}${unread ? `有 ${unread} 条没来得及核对${scope?.complete ? '，其中原文没有检索词的未列出' : '，已标出'}。` : ''}`,
         relevance_check: { status: judge.status, model: judge.model, latency_ms: judge.latency_ms, read: pool.results.length - unread, kept: kept.length, dropped },
         ...(pool.search_scope ? { search_scope: { ...pool.search_scope, read_subjects: readSubjects } } : {})
     }
@@ -487,7 +487,7 @@ export function createApp(repository: FileCurriculumRepository, options: Curricu
             pdf_page: pdfPage,
             matches: matches.map(([point, relation, quote, source, page]) => ({ point, standard: point.replace(/\.\d+$/u, ''), relation: relation === 'T' ? 'teaches' : 'touches', quote, source, pdf_page: page, source_label: SOURCE_LABEL(source, page) }))
         }))
-        return ok(c, version, { edition_id: editionId, textbook_title: rows[0][1], lessons }, { total: lessons.length, review_status: 'machine_judged', method: 'AI 逐课读教材原文判断，每条附原话' })
+        return ok(c, version, { edition_id: editionId, textbook_title: rows[0][1], lessons }, { total: lessons.length, review_status: 'machine_judged', method: 'kebiao 逐课读教材原文判断，每条附原话' })
     })
 
     app.get('/api/v1/textbooks/:edition_id/toc', async c => {
@@ -932,7 +932,7 @@ export function createApp(repository: FileCurriculumRepository, options: Curricu
             result.warnings = [...new Set([...result.warnings, '发送到模型服务前已移除查询中的可识别个人信息；本地检索仍使用原始查询。'])]
         }
         if (interpretation.status !== 'ok' && interpretation.status !== 'disabled') {
-            result.warnings = [...new Set([...result.warnings, 'AI 查询理解暂不可用，已自动使用确定性可信检索。'])]
+            result.warnings = [...new Set([...result.warnings, '查询理解暂不可用，已自动使用确定性可信检索。'])]
         }
         return ok(c, version, result, {
             retrieval_version: result.retrieval_version,
@@ -1024,7 +1024,7 @@ export function createApp(repository: FileCurriculumRepository, options: Curricu
             ...interpretation.warnings,
             ...(privacy.redacted ? ['发送到模型服务前已移除教学计划中的可识别个人信息。'] : []),
             ...(interpretation.status !== 'ok' && interpretation.status !== 'disabled'
-                ? ['AI 计划解析暂不可用或未应用，已保留确定性规则解析结果。'] : [])
+                ? ['kebiao 计划解析暂不可用或未应用，已保留确定性规则解析结果。'] : [])
         ])]
         const result = {
             ...normalized,

@@ -92,23 +92,21 @@
     -webkit-line-clamp: 2;
 }
 
-/* search sits under the book, a step quieter than it */
+/* search is the hero's one action: right under the lede, with a filled button */
 .search {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
-    margin-top: 36px;
-    padding-top: 28px;
-    border-top: 1px solid var(--kb-line);
+    margin-top: 28px;
 }
 
 .field { position: relative; min-width: 0; flex: 1 1 240px; }
 
 .field input {
     width: 100%;
-    height: 48px;
+    height: 52px;
     padding: 0 16px 0 46px;
-    border: 1px solid var(--kb-line);
+    border: 1px solid rgba(233, 200, 135, 0.45);
     border-radius: 0;
     background: rgba(14, 17, 24, 0.96);
     color: var(--kb-moon);
@@ -130,19 +128,24 @@
 }
 
 .go {
-    height: 48px;
-    padding: 0 20px;
-    border: 1px solid var(--kb-line);
+    display: inline-flex;
+    height: 52px;
+    align-items: center;
+    gap: 8px;
+    padding: 0 22px;
+    border: 1px solid var(--kb-gold);
     border-radius: 0;
-    background: rgba(255, 255, 255, 0.04);
-    color: var(--kb-mist);
+    background: var(--kb-gold);
+    color: #14110a;
     font: inherit;
     font-size: 16px;
-    font-weight: 600;
-    transition: transform 0.2s var(--kb-ease), border-color 0.2s, color 0.2s;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.2s, border-color 0.2s, box-shadow 0.2s;
 }
 
-.go:hover { border-color: var(--kb-gold); color: var(--kb-moon); }
+.go:hover { background: #f3d9a4; box-shadow: 0 0 0 4px rgba(233, 200, 135, 0.18); }
+.go:focus-visible { outline: 2px solid var(--kb-moon); outline-offset: 2px; }
 
 .match {
     min-height: 1.6em;
@@ -224,6 +227,20 @@
     100% { opacity: 0; transform: scaleY(1); }
 }
 
+/* Second screen: the textbook. Left column like the hero, so the sky stays visible on the right. */
+.books {
+    display: flex;
+    min-height: 100vh;
+    min-height: 100svh;
+    align-items: center;
+}
+
+.books .wrap { width: 100%; padding-block: 72px; }
+
+.booksCopy { max-width: 540px; }
+
+.booksCopy .title { font-size: clamp(30px, 3.4vw, 44px); }
+
 /* Story: vertical captions, in the manner of the annotations on the Dunhuang star chart */
 /* one step of the star map: the sticky stage plus a little under a screen of scroll */
 .story { position: relative; height: 190vh; }
@@ -274,6 +291,10 @@
     /* the sky draws the glyph as a band under the header (skyEngine glyphRegion); the copy starts below it */
     .hero .wrap { padding-block: calc(min(20vh, 170px) + 20px) 48px; }
     .heroGrid { grid-template-columns: minmax(0, 1fr); }
+    .go { flex: 1 1 100%; justify-content: center; }
+    .books { align-items: flex-start; }
+    /* mid-scroll the stars spread into a cloud a little taller than the glyph band */
+    .books .wrap { padding-block: calc(min(28vh, 240px) + 16px) 48px; }
 
     .sbtn {
         min-height: 58px;

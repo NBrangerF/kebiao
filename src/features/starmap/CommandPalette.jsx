@@ -126,8 +126,8 @@ export default function CommandPalette({ open, onClose, initialQuery = '' }) {
                             onPointerMove={() => setSel(shown.length)}
                         >
                             <i aria-hidden="true" />
-                            <span className={styles.title}>让 AI 找：{q.trim()}</span>
-                            <span className={styles.meta}>AI 读懂这句话，再逐条核对要点原文 · 约 10–20 秒</span>
+                            <span className={styles.title}>用一句话找：{q.trim()}</span>
+                            <span className={styles.meta}>kebiao 读懂这句话，再逐条核对要点原文 · 约 10–20 秒</span>
                         </li>
                     ) : null}
                 </ul>

@@ -52,7 +52,7 @@ test('LLM query interpreter is disabled without a secret and keeps safe defaults
     assert.equal(result.interpretation, null)
 })
 
-test('AI privacy filter removes direct identifiers before provider calls', () => {
+test('kebiao privacy filter removes direct identifiers before provider calls', () => {
     const result = redactSensitiveText('学校：示例小学，学生姓名：张三，电话 13800138000，邮箱 teacher@example.com，身份证 11010519491231002X；查找三年级科学观察。')
     assert.equal(result.redacted, true)
     assert.equal(result.redaction_count, 5)
@@ -817,7 +817,7 @@ test('GET /api/v1/openapi.yaml and /api/v1/docs expose API documentation', async
     assert.match(docsHtml, /课程智能 API 中文开发者文档/)
     assert.match(docsHtml, /三步完成第一次调用/)
     assert.match(docsHtml, /设置 API Key/)
-    assert.match(docsHtml, /智能检索可使用 AI 扩展查询/)
+    assert.match(docsHtml, /智能检索会先扩展查询/)
     assert.match(docsHtml, /data-operation-id="matchPlanToStandards"/)
     assert.match(docsHtml, /docExpansion: 'none'/)
     assert.match(docsHtml, /filter: true/)
@@ -892,7 +892,7 @@ test('metrics can persist sanitized request events to file', async () => {
     assert.equal('body' in body.data.persistent, false)
 })
 
-test('AI metrics persist status and redaction counts without query contents', async () => {
+test('kebiao metrics persist status and redaction counts without query contents', async () => {
     const metricsFile = '/tmp/curriculum-api-ai-metrics.ndjson'
     await rm(metricsFile, { force: true })
     process.env.CURRICULUM_METRICS_FILE = metricsFile
@@ -1327,7 +1327,7 @@ test('semantic search checks the rule-based candidates while the model reads the
         assert.equal(first.data.relevance_check.read, first.data.search_scope.standards)
         assert.ok(first.data.results.length > 0)
         assert.ok(first.data.results.every((item: any) => item.checked_by_ai && item.ai_aspect && item.ai_aspect === item.matched_point?.quote && item.standard.subject_slug !== 'chinese'))
-        assert.match(first.data.coverage_note, /AI 逐条读了1–2 年级、\d+ 个学科的全部 \d+ 条标准的要点原文/)
+        assert.match(first.data.coverage_note, /kebiao 逐条读了1–2 年级、\d+ 个学科的全部 \d+ 条标准的要点原文/)
 
         events.length = 0
         const second = await json(await send(` ${query} `))
@@ -1377,7 +1377,7 @@ test('semantic search still checks the rule-based candidates when the model time
         assert.ok(body.meta.latency_ms < 7500)
         assert.equal(body.data.relevance_check.status, 'ok')
         assert.ok(body.data.results.length > 0 && body.data.results.every((item: any) => item.checked_by_ai && item.standard.subject_slug === 'science'))
-        assert.ok(body.data.warnings.some((warning: string) => warning.includes('AI 查询理解暂不可用')))
+        assert.ok(body.data.warnings.some((warning: string) => warning.includes('查询理解暂不可用')))
     })
 })
 
@@ -1841,7 +1841,7 @@ test('MCP tools return cited text and structured data', async () => {
         const first = lesson.result.structuredContent.lessons.find((item: any) => item.lesson === judged[3])
         assert.ok(first, judged[3])
         assert.equal(first.points[0].point, judged[6][0][0])
-        assert.match(lesson.result.content[0].text, /AI 逐课读了教材原文/)
+        assert.match(lesson.result.content[0].text, /kebiao 逐课读了教材原文/)
         const point = judged[6].find((m: any) => m[1] === 'T')
         const links = await call('get_textbook_links', { code: point[0] })
         assert.ok(links.result.structuredContent.lessons.some((item: any) => item.quote === point[2] && item.relation === '主要在教'))
@@ -2233,7 +2233,7 @@ test('smart search drops what the model judges off-topic and shows its reasons',
     assert.equal(data.results[0].matched_point.code, `${data.results[0].code}.1`)
     assert.ok(data.relevance_check.dropped > 0)
     assert.equal(data.relevance_summary.direct, data.results.filter((item: any) => item.match_strength === 'direct').length)
-    assert.match(data.coverage_note, /AI 逐条读了/)
+    assert.match(data.coverage_note, /kebiao 逐条读了/)
 })
 
 test('a request id from the caller is kept only when it is a plain token', async () => {

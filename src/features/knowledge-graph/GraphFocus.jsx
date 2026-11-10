@@ -162,7 +162,7 @@ export default function GraphFocus({ graph, code, wide, book, onPick, onBack }) 
                     {after.length ? null : <p className={styles.sideEmpty}>{/^[789]$|7-9|shared/u.test(point.col) ? '后面的内容不在义务教育课标里。' : '没有找到用到它的要点。'}</p>}
                 </div>
             </div>
-            <p className={styles.fcNote}>只显示直接的前后。金色实线「要先会」：学生没掌握前一个要点，很可能学不好后一个，不表示必须先学完；由 AI 逐条判断，待核验。虚线：课标里同一线索的上一站或下一站。</p>
+            <p className={styles.fcNote}>只显示直接的前后。金色实线「要先会」：学生没掌握前一个要点，很可能学不好后一个，不表示必须先学完；由 kebiao 逐条判断，待核验。虚线：课标里同一线索的上一站或下一站。</p>
         </section>
     )
 }
@@ -177,7 +177,7 @@ function Lessons({ rows, counts, book, loading }) {
     const shown = open ? list : list.slice(0, 3)
     return (
         <div className={styles.lessons}>
-            <h3>教材里在哪教<small>· {taught ? `${taught} 课主要在教` : `${touched} 课也涉及`}，{books} 本书 · AI 逐课判断，待核验</small></h3>
+            <h3>教材里在哪教<small>· {taught ? `${taught} 课主要在教` : `${touched} 课也涉及`}，{books} 本书 · kebiao 逐课判断，待核验</small></h3>
             <ul>
                 {shown.map(row => (
                     <li key={`${row.edition}-${row.unit}-${row.lesson}`}>

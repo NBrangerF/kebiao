@@ -8,7 +8,7 @@ import { STATIC_PAGE_META } from '../seo/pageMeta.js'
 import styles from './StandardsHubPage.module.css'
 
 const TOOLS = [
-    { to: '/smart-search', name: 'AI 检索', text: '用一句话找课标，例如「三年级科学里讲植物生长的」' },
+    { to: '/smart-search', name: '一句话检索', text: '用一句话找课标，例如「三年级科学里讲植物生长的」' },
     { to: '/concepts', name: '概念词典', text: '大概念、大单元、学习任务群，课标原文怎么说' },
     { to: '/skills', name: '可迁移技能', text: '批判性思维、协作等七种能力落在哪些学科的哪几条' }
 ]

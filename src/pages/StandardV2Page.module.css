@@ -828,3 +828,15 @@ button.badge:focus-visible {
         transition: none;
     }
 }
+
+/* 课堂诊断题: one group per 要点, the first cards shown, the rest one link away */
+.checks { display: grid; gap: 28px; }
+.checksTop { margin: 0; font-size: 14px; }
+.checksTop a, .checkMore a { color: var(--kb-gold); text-decoration: none; }
+.checksTop a:hover, .checkMore a:hover { text-decoration: underline; }
+.checkGroup { display: grid; gap: 12px; scroll-margin-top: 5rem; }
+.checkGroup h3 { display: flex; gap: 12px; margin: 0; color: var(--kb-mist); font-size: 14px; font-weight: 400; line-height: 1.6; }
+.checkGroup h3 a { flex: 0 0 auto; color: var(--kb-moon); font-family: var(--font-mono); text-decoration: none; }
+.checkGroup h3 span { display: -webkit-box; overflow: hidden; -webkit-box-orient: vertical; -webkit-line-clamp: 2; }
+.checkCards { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 12px; }
+.checkMore { margin: 0; font-size: 14px; }

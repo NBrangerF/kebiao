@@ -216,7 +216,7 @@ export default function TextbookDetailPage() {
                 <section className={`container ${styles.mapSection}`} aria-labelledby="textbook-map-heading">
                     <div className={styles.sectionHeading}>
                         <div><span>教材 × 课标</span><h2 id="textbook-map-heading">每一课教哪几条课标</h2></div>
-                        <p>左边是这一章的课，右边是它们教的课标要点。金线是「主要在教」，虚线是「也涉及」。AI 逐课读了教材原文后判断，待核验。</p>
+                        <p>左边是这一章的课，右边是它们教的课标要点。金线是「主要在教」，虚线是「也涉及」。kebiao 逐课读了教材原文后判断，待核验。</p>
                     </div>
                     <div className={styles.mapGrid}>
                         <nav className={styles.chapters} aria-label="选一章">
@@ -255,7 +255,7 @@ export default function TextbookDetailPage() {
                                             <Link className={styles.unitLink} to={`/textbook-units/${entry.entry_id}`}>关联页</Link>
                                         </div>
                                         {!mapUnits.length && aiPoints.get(entry.entry_id)?.length ? (
-                                            <p className={styles.aiPoints}><span>AI 判断的要点</span>{aiPoints.get(entry.entry_id).slice(0, 3).map(code => <Link key={code} to={`/standards/${code.replace(/\.\d+$/u, '')}#${code}`}>{code}</Link>)}<Link className={styles.report} to={`/feedback?code=${aiPoints.get(entry.entry_id)[0]}&title=${encodeURIComponent('教材单元的课标要点有误')}&message=${encodeURIComponent(`${book.title} · ${entry.title}\nAI 判断的要点：${aiPoints.get(entry.entry_id).slice(0, 3).join('、')}\n\n哪一条不对，应该是：`)}`}>报错</Link></p>
+                                            <p className={styles.aiPoints}><span>kebiao 判断的要点</span>{aiPoints.get(entry.entry_id).slice(0, 3).map(code => <Link key={code} to={`/standards/${code.replace(/\.\d+$/u, '')}#${code}`}>{code}</Link>)}<Link className={styles.report} to={`/feedback?code=${aiPoints.get(entry.entry_id)[0]}&title=${encodeURIComponent('教材单元的课标要点有误')}&message=${encodeURIComponent(`${book.title} · ${entry.title}\nAI 判断的要点：${aiPoints.get(entry.entry_id).slice(0, 3).join('、')}\n\n哪一条不对，应该是：`)}`}>报错</Link></p>
                                         ) : null}
                                     </li>
                                 ))}
@@ -265,7 +265,7 @@ export default function TextbookDetailPage() {
 
                     {platformUnits.length && !mapUnits.length ? (
                         <section className={styles.section} aria-labelledby="textbook-platform-units">
-                            <div className={styles.sectionHeading}><div><span>按单元备课</span><h2 id="textbook-platform-units">这本书的 {platformUnits.length} 个单元</h2></div><p>单元和课目来自国家中小学智慧教育平台的同步课目录；要点是 AI 逐课读了教材原文后判断的，待核验。每一课教哪几条、原话在哪一页，看<Link to={`/textbooks/${book.edition_id}/standards`}>课标对应表</Link>。</p></div>
+                            <div className={styles.sectionHeading}><div><span>按单元备课</span><h2 id="textbook-platform-units">这本书的 {platformUnits.length} 个单元</h2></div><p>单元和课目来自国家中小学智慧教育平台的同步课目录；要点是 kebiao 逐课读了教材原文后判断的，待核验。每一课教哪几条、原话在哪一页，看<Link to={`/textbooks/${book.edition_id}/standards`}>课标对应表</Link>。</p></div>
                             <ol className={styles.platformUnits}>
                                 {platformUnits.map(unit => (
                                     <li key={unit.name}>

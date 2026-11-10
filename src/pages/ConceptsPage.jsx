@@ -68,7 +68,7 @@ export default function ConceptsPage() {
                 )
             })}
             {q && !shown.length ? (
-                <p className={styles.none} role="status">词典里没有「{q}」。可以用 <Link to={`/smart-search?q=${encodeURIComponent(q)}`}>AI 检索</Link>在课标原文里找。</p>
+                <p className={styles.none} role="status">词典里没有「{q}」。可以用 <Link to={`/smart-search?q=${encodeURIComponent(q)}`}>一句话检索</Link>在课标原文里找。</p>
             ) : null}
 
             <section id="skeletons" className={styles.group} aria-labelledby="concept-skeletons">

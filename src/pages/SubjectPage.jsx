@@ -15,6 +15,8 @@ import { usePageMeta } from '../seo/usePageMeta.js'
 import styles from './SubjectPage.module.css'
 
 const SkillsGraphWorkspace = lazy(() => import('../features/graph/SkillsGraphWorkspace.jsx'))
+// 关系图谱 is switched off for now: the subject page shows only the 对照表 (old ?view=graph links fall back to it)
+const SHOW_RELATION_GRAPH = false
 const GRAPH_RELATION_TYPES = Object.freeze(['contains', 'progression', 'skill_alignment'])
 const reduceMotion = () => window.matchMedia('(prefers-reduced-motion: reduce)').matches
 // The relationship graph is built from the old (2022) records, which only these subjects have.
@@ -197,7 +199,7 @@ function SubjectPage() {
 
     const searchKey = searchParams.toString()
     const graphState = useMemo(() => parseGraphStateFromURL(new URLSearchParams(searchKey)), [searchKey])
-    const graphView = uiV2Enabled && GRAPH_SUBJECTS.has(slug) && graphState.view === 'graph'
+    const graphView = SHOW_RELATION_GRAPH && uiV2Enabled && GRAPH_SUBJECTS.has(slug) && graphState.view === 'graph'
     const s = K ? K.slugIndex.get(slug) : undefined
     const subjectInfo = s == null ? null : K.subjects[s]
     usePageMeta(subjectInfo ? subjectMeta({ subject: subjectInfo.name, subject_slug: slug }, { standardCount: subjectInfo.standards, indicatorCount: subjectInfo.count }) : null)
@@ -323,7 +325,7 @@ function SubjectPage() {
                             <Link to={`/concepts/subjects/${slug}`}>课标骨架与课程理念</Link>
                             <Link to={`/interdisciplinary?subject=${slug}`}>跨学科主题</Link>
                             <Link to={`/knowledge-graph/${slug}`}>知识图谱</Link>
-                            <Link to="/lesson-plan">AI 备课</Link>
+                            <Link to="/lesson-plan">备课助手</Link>
                         </p>
                         <p className={styles.cue}><i aria-hidden="true" />向下 · 展开</p>
                     </div>
@@ -338,7 +340,7 @@ function SubjectPage() {
                             <h2 id="s-table-title" className={styles.h2}>{CN_DIGIT[years]}年</h2>
                         </div>
                         <div className={styles.tools}>
-                            {uiV2Enabled && GRAPH_SUBJECTS.has(slug) ? (
+                            {SHOW_RELATION_GRAPH && uiV2Enabled && GRAPH_SUBJECTS.has(slug) ? (
                                 <div className={styles.seg} role="group" aria-label="视图">
                                     <button type="button" aria-pressed={!graphView} onClick={() => setViewMode('table')}>对照表</button>
                                     <button type="button" aria-pressed={graphView} onClick={() => setViewMode('graph')} data-kb-telemetry-task="graph_open">关系图谱</button>

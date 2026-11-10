@@ -145,9 +145,9 @@ function App() {
                     <Route path="/alignment-workbench" element={<Navigate to="/lesson-plan?check=1" replace />} />
                     {/* the 2022 术语表 explained kebiao's old data fields; 概念词典 covers the 课标's own terms */}
                     <Route path="/glossary" element={<Navigate to="/concepts" replace />} />
-                    <Route path="/lesson-plan" element={route('lessonPlan', lazyPage(<LessonPlanPage />, '正在打开 AI 备课'))} />
+                    <Route path="/lesson-plan" element={route('lessonPlan', lazyPage(<LessonPlanPage />, '正在打开备课助手'))} />
                     <Route path="/guide" element={route('guide', lazyPage(<GuidePage />, '正在打开上手指南'))} />
-                    <Route path="/ai" element={route('ai', lazyPage(<AiConnectPage />, '正在打开在 AI 里用 kebiao'))} />
+                    <Route path="/ai" element={route('ai', lazyPage(<AiConnectPage />, '正在打开在智能体里用 kebiao'))} />
                     <Route path="/checks" element={route('checks', lazyPage(<ChecksPage />, '正在打开课堂诊断'))} />
                     <Route path="/checks/after" element={route('checksAfter', lazyPage(<ChecksAfterPage />, '正在打开批完就用'))} />
                     <Route path="/checks/present" element={route('checksPresent', lazyPage(<ChecksPresentPage />, '正在准备放映'))} />

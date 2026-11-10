@@ -83,7 +83,7 @@ function PrepPanel({ unit, book, prep }) {
             <div className={styles.prepHead}>
                 <h2 id="unit-prep-heading">备这一课</h2>
                 <span className={styles.prepActions}>
-                    <Link className="btn btn-primary" to={planUrl}>用 AI 起草这一课的教案 <ArrowRightIcon size={16} aria-hidden="true" /></Link>
+                    <Link className="btn btn-primary" to={planUrl}>用备课助手起草这一课的教案 <ArrowRightIcon size={16} aria-hidden="true" /></Link>
                     {chapter ? <Link className="btn btn-secondary" to={`/lesson-plan?subject=${encodeURIComponent(book.subject || unit.subject || '')}&edition=${unit.edition_id}&chapter=${encodeURIComponent(chapter)}`}>做「{chapter.replace(/^\d+\s*/u, '')}」的单元整体设计</Link> : null}
                 </span>
             </div>
@@ -95,11 +95,11 @@ function PrepPanel({ unit, book, prep }) {
                             {standards.slice(0, 4).map(item => (
                                 <li key={item.code}>
                                     <Link to={`/standards/${item.code}`}><code>{item.code}</code>{item.title}</Link>
-                                    <span>{item.via === 'search' ? '按课题检索，仅供参考' : item.via === 'ai_lesson' ? 'AI 逐课读了教材原文判断，待核验' : item.via === 'ai_unit' ? 'AI 按教材单元判断，待核验' : '按教材页码机器对齐，待核验'} · {item.indicators.length} 条要点</span>
+                                    <span>{item.via === 'search' ? '按课题检索，仅供参考' : item.via === 'ai_lesson' ? 'kebiao 逐课读了教材原文判断，待核验' : item.via === 'ai_unit' ? 'kebiao 按教材单元判断，待核验' : '按教材页码机器对齐，待核验'} · {item.indicators.length} 条要点</span>
                                 </li>
                             ))}
                         </ul>
-                    ) : <p className={styles.prepEmpty}>{prep ? '还没有对齐到新版课标。可以用 AI 起草教案时让 AI 帮你找。' : '正在查找…'}</p>}
+                    ) : <p className={styles.prepEmpty}>{prep ? '还没有对齐到新版课标。可以在备课助手里起草教案时让它帮你找。' : '正在查找…'}</p>}
                     {standards.some(item => item.via === 'ai_lesson') ? <p className={styles.prepEmpty}>每一课教哪几条、教材原话在哪一页，看<Link to={`/textbooks/${unit.edition_id}/standards`}>这本书的课标对应表</Link>。</p> : null}
                 </div>
                 <div>

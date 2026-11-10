@@ -211,6 +211,6 @@ export async function progressionV2(v2: V2Store, found: V2Found) {
         method: byName.length > 1 ? 'same_name' : 'same_domain',
         note: byName.length > 1 ? '同一领域、同名的标准在各学段的写法。' : '这条标准的名称只在一个学段出现；列出同一领域在其他学段的标准。',
         chain: chain.map(item => ({ ...brief({ standard: item, subject }), current: item.code === standard.code })),
-        prerequisites: { note: '「要先会」是 AI 判断的推断层，见知识图谱 https://www.kebiao.org/knowledge-graph' }
+        prerequisites: { note: '「要先会」是 kebiao 判断的推断层，见知识图谱 https://www.kebiao.org/knowledge-graph' }
     }
 }

@@ -31,8 +31,8 @@ const SUBJECT_ORDER = ['语文', '数学', '英语', '道德与法治', '科学'
 const TOPIC_SUBJECTS = [['语文', 'chinese'], ['数学', 'math'], ['英语', 'english'], ['道德与法治', 'morality_law'], ['科学', 'science'], ['物理', 'physics'], ['化学', 'chemistry'], ['生物学', 'biology'], ['历史', 'history'], ['地理', 'geography'], ['信息科技', 'it'], ['体育与健康', 'pe'], ['艺术（音乐、美术等）', 'arts'], ['劳动', 'labor']]
 const MATERIAL_ORDER = ['视频课程', '课件', '教学设计', '学习任务单', '课后练习']
 const STEPS = [
-    { key: 'frame', label: 'AI 读课标，写目标、重难点和评价', hint: '同时写课标解读，一般 20–40 秒，慢时 1–2 分钟' },
-    { key: 'process', label: 'AI 写教学过程、当堂练习和板书', hint: '一般 20–40 秒，慢时 1–2 分钟' },
+    { key: 'frame', label: 'kebiao 读课标，写目标、重难点和评价', hint: '同时写课标解读，一般 20–40 秒，慢时 1–2 分钟' },
+    { key: 'process', label: 'kebiao 写教学过程、当堂练习和板书', hint: '一般 20–40 秒，慢时 1–2 分钟' },
     { key: 'check', label: '对照课标和课堂实际核验', hint: '编码、超标、目标—活动—评价、时间与作业量' }
 ]
 // the class as it usually is: about 45 students; 课型 left to the AI unless the teacher says
@@ -156,7 +156,7 @@ const draftDate = value => {
 // common 学情 a teacher can add with one tap; the AI reads them like typed notes
 const CLASS_NOTES = ['基础较好，能主动提问', '两极分化明显', '前置知识掌握不牢', '表达说理较弱', '小组合作习惯较好', '注意力容易分散']
 
-const viaLabel = { aligned: '教材页码对齐（机器）', ai_lesson: 'AI 逐课判断', ai_unit: 'AI 按单元判断', search: '按课题检索', ai: 'AI 推荐', seed: '你从标准页选的' }
+const viaLabel = { aligned: '教材页码对齐（机器）', ai_lesson: 'kebiao 逐课判断', ai_unit: 'kebiao 按单元判断', search: '按课题检索', ai: 'kebiao 推荐', seed: '你从标准页选的' }
 
 export default function LessonPlanPage() {
     usePageMeta(STATIC_PAGE_META['/lesson-plan'])
@@ -640,7 +640,7 @@ export default function LessonPlanPage() {
     const overMax = selectedCount > maxPoints
     const picking = ai.status === 'loading'
     // for screen readers: one line that says where the draft is
-    const status = step === 'frame' ? '正在起草：AI 在写目标、重难点和评价'
+    const status = step === 'frame' ? '正在起草：kebiao 在写目标、重难点和评价'
         : step === 'process' ? '第 1 步完成，正在写教学过程和当堂练习'
             : step === 'check' ? '教学过程写好了，正在核验'
                 : step === 'unit' ? '正在做单元设计'
@@ -649,10 +649,10 @@ export default function LessonPlanPage() {
     return (
         <div className={`container ${styles.page}`}>
             <header className={styles.hero}>
-                <p className={styles.kicker}>AI 备课 · 有据可查</p>
+                <p className={styles.kicker}>备课助手 · 有据可查</p>
                 <h1 className={styles.title}>从教材的一课，起草一份有课标依据的教案</h1>
                 <p className={styles.lede}>
-                    选你下周要教的一课，确认它对应的课标要点，再说说班级情况。AI 只按你勾选的要点写，每条目标都标出依据；写完后程序逐条核对有没有超出课标的限定。约一分钟。
+                    选你下周要教的一课，确认它对应的课标要点，再说说班级情况。kebiao 只按你勾选的要点写，每条目标都标出依据；写完后程序逐条核对有没有超出课标的限定。约一分钟。
                 </p>
                 {params.get('check') === '1' ? (
                     <p className={styles.trialNote}>目标体检：先在下面选一课或一个单元，到第 2 步「确认依据」把你写好的学习目标贴进去，逐条对照课标：依据哪条、程度够不够、缺了什么。</p>
@@ -738,7 +738,7 @@ export default function LessonPlanPage() {
                     )}
                 </div>
                 {!freeMode && lessons?.lessons?.length ? <p className={styles.small}>{lessonSource(lessons)}</p> : null}
-                {freeMode && topic && !grade ? <p className={styles.small}>先选年级：AI 只读这个年级的课标找要点。</p> : null}
+                {freeMode && topic && !grade ? <p className={styles.small}>先选年级：kebiao 只读这个年级的课标找要点。</p> : null}
                 {!freeMode && lessonGone && !lessonId ? <p className={styles.small} role="status">这本书里没有找到上次那一课（教材换成了最新印次），请重新选一课。</p> : null}
             </section>
 
@@ -761,21 +761,21 @@ export default function LessonPlanPage() {
                     {!isUnit && context.lesson_goals ? (
                         <>
                             <LessonGoals goals={context.lesson_goals} />
-                            <p className={styles.small}>写教案时，AI 会以这几条目标为起点，按你勾选的要点和班级情况再调整。</p>
+                            <p className={styles.small}>写教案时，kebiao 会以这几条目标为起点，按你勾选的要点和班级情况再调整。</p>
                         </>
                     ) : null}
 
                     <p className={styles.aiStatus} aria-live="polite">
-                        {ai.status === 'loading' ? 'AI 正在把这个年级的课标逐条读一遍，找这一课要教的要点（约 10–20 秒）…'
-                            : ai.status === 'ok' ? (isUnit ? `AI 读完了，已勾选这个单元对应的 ${selectedCount} 条要点。请核对：去掉单元里不教的，补上漏掉的。` : `AI 读完了，已勾选它判断直接对应的 ${selectedCount} 条要点。请核对：只留这节课真正要教的（一般 1–3 条）。`)
-                                : ai.status === 'closest' ? `AI 没有找到直接对应的要点，先勾了 ${selectedCount} 条最接近的。请读原文核对，或在下面补一句这节课主要教什么，让 AI 重新找。`
-                                : ai.status === 'none' ? 'AI 没有找到直接对应的要点。请从下面的候选里自己勾选，或换个课题写法。'
-                                    : ai.status === 'lesson' ? `已按这一课的教材原文勾好它主要在教的 ${selectedCount} 条要点（AI 事先逐课读过，每条附这一课的原话）。请核对；想换个角度，在下面补一句，AI 会重新找。`
-                                    : ai.status === 'fallback' ? 'AI 这次没能读完要点，先勾上了它此前按整个单元判断的要点：不一定都是这一课教的，请读原文，按这一课增删。'
-                                    : ai.status === 'failed' ? 'AI 这次没能读完要点。请读下面候选的原文，自己勾选：机器对齐和字面匹配可能出错，比如会把「分数的基本性质」对到「等式的基本性质」。'
-                                    : ai.status === 'manual' ? '可以让 AI 把这个年级的课标读一遍，勾出这一课要教的要点；也可以直接从下面的候选里勾选。' : ''}
+                        {ai.status === 'loading' ? 'kebiao 正在把这个年级的课标逐条读一遍，找这一课要教的要点（约 10–20 秒）…'
+                            : ai.status === 'ok' ? (isUnit ? `kebiao 读完了，已勾选这个单元对应的 ${selectedCount} 条要点。请核对：去掉单元里不教的，补上漏掉的。` : `kebiao 读完了，已勾选它判断直接对应的 ${selectedCount} 条要点。请核对：只留这节课真正要教的（一般 1–3 条）。`)
+                                : ai.status === 'closest' ? `kebiao 没有找到直接对应的要点，先勾了 ${selectedCount} 条最接近的。请读原文核对，或在下面补一句这节课主要教什么，让 kebiao 重新找。`
+                                : ai.status === 'none' ? 'kebiao 没有找到直接对应的要点。请从下面的候选里自己勾选，或换个课题写法。'
+                                    : ai.status === 'lesson' ? `已按这一课的教材原文勾好它主要在教的 ${selectedCount} 条要点（kebiao 事先逐课读过，每条附这一课的原话）。请核对；想换个角度，在下面补一句，kebiao 会重新找。`
+                                    : ai.status === 'fallback' ? 'kebiao 这次没能读完要点，先勾上了它此前按整个单元判断的要点：不一定都是这一课教的，请读原文，按这一课增删。'
+                                    : ai.status === 'failed' ? 'kebiao 这次没能读完要点。请读下面候选的原文，自己勾选：机器对齐和字面匹配可能出错，比如会把「分数的基本性质」对到「等式的基本性质」。'
+                                    : ai.status === 'manual' ? '可以让 kebiao 把这个年级的课标读一遍，勾出这一课要教的要点；也可以直接从下面的候选里勾选。' : ''}
                     </p>
-                    {ai.status === 'manual' ? <p><button type="button" className="btn btn-secondary" onClick={() => setPickAsked(true)}>让 AI 找要点</button></p> : null}
+                    {ai.status === 'manual' ? <p><button type="button" className="btn btn-secondary" onClick={() => setPickAsked(true)}>让 kebiao 找要点</button></p> : null}
 
                     {ai.status !== 'loading' && ai.status !== 'manual' ? <HintInput key={contextQuery} onSubmit={setHint} current={hint} /> : null}
 
@@ -787,7 +787,7 @@ export default function LessonPlanPage() {
                                     <span className={styles.via}>{viaLabel[standard.via] || standard.via}</span>
                                     <Link className={styles.graphLink} to={`/knowledge-graph/${subjectOfCode(standard.code)}?focus=${(standard.indicators.find(item => selected.has(item.code)) || standard.indicators[0])?.code || ''}`} target="_blank" rel="noopener">前后联系 ↗</Link>
                                 </div>
-                                {ai.reasons[standard.code] ? <p className={styles.reason}>AI 判断：{ai.reasons[standard.code]}</p> : null}
+                                {ai.reasons[standard.code] ? <p className={styles.reason}>kebiao 判断：{ai.reasons[standard.code]}</p> : null}
                                 <ul className={styles.indicators}>
                                     {standard.indicators.map(item => (
                                         <li key={item.code}>
@@ -801,7 +801,7 @@ export default function LessonPlanPage() {
                             </li>
                         ))}
                     </ul>
-                    {!context.standards.length ? <p className={styles.small}>这一课还没有对齐的课标。等 AI 读完，或改用「直接写课题」。</p> : null}
+                    {!context.standards.length ? <p className={styles.small}>这一课还没有对齐的课标。等 kebiao 读完，或改用「直接写课题」。</p> : null}
                     {context.standards.length ? <ObjectiveCheck key={`check:${contextQuery}`}lesson={draftLesson(context.lesson)} codes={[...selected, ...context.standards.flatMap(standard => standard.indicators.map(item => item.code)).filter(code => !selected.has(code))]} taught={[...selected]} isUnit={isUnit} open={params.get('check') === '1'} /> : null}
                     {selectedCount && ai.status !== 'loading' ? <PromptCopy context={context} selected={selected} isUnit={isUnit} settings={settings} unitHours={unitHours || defaultUnitHours(context.unit_lessons)} /> : null}
                 </section>
@@ -834,7 +834,7 @@ export default function LessonPlanPage() {
                         </label>
                         <div className={styles.go}>
                             <button type="button" className="btn btn-primary" disabled={step === 'unit' || !selectedCount || overMax || picking} onClick={generateUnit}>
-                                {step === 'unit' ? 'AI 正在做单元设计（约 30–50 秒）…' : picking ? '等 AI 找完要点…' : overMax ? `已选 ${selectedCount} 条要点，最多 ${maxPoints} 条：请去掉 ${selectedCount - maxPoints} 条` : `按选定的 ${selectedCount} 条要点起草单元设计`}
+                                {step === 'unit' ? 'kebiao 正在做单元设计（约 30–50 秒）…' : picking ? '等 kebiao 找完要点…' : overMax ? `已选 ${selectedCount} 条要点，最多 ${maxPoints} 条：请去掉 ${selectedCount - maxPoints} 条` : `按选定的 ${selectedCount} 条要点起草单元设计`}
                             </button>
                             {!selectedCount ? <span className={styles.small}>先在上面勾选这个单元依据的要点。</span> : <span className={styles.small}>一个单元最多选 {maxPoints} 条要点。</span>}
                         </div>
@@ -866,7 +866,7 @@ export default function LessonPlanPage() {
                         </label>
                         <label><span>课型</span>
                             <select value={settings.lessonType} onChange={event => setSettings({ ...settings, lessonType: event.target.value })}>
-                                <option value="">AI 判断</option>
+                                <option value="">kebiao 判断</option>
                                 {LESSON_TYPES.map(value => <option key={value} value={value}>{value}</option>)}
                             </select>
                         </label>
@@ -887,7 +887,7 @@ export default function LessonPlanPage() {
                     <div className={styles.go}>
                         {/* once a plan is on the page, drafting again replaces it: the button says so and steps back */}
                         <button type="button" className={`btn ${plan && !busy ? 'btn-secondary' : 'btn-primary'}`} disabled={busy || !selectedCount || overMax || picking} onClick={generate}>
-                            {busy ? '正在起草…' : picking ? '等 AI 找完要点…' : overMax ? `已选 ${selectedCount} 条要点，最多 ${maxPoints} 条：请去掉 ${selectedCount - maxPoints} 条` : plan ? '重新起草（会替换下面的教案）' : `按选定的 ${selectedCount} 条要点起草教案`}
+                            {busy ? '正在起草…' : picking ? '等 kebiao 找完要点…' : overMax ? `已选 ${selectedCount} 条要点，最多 ${maxPoints} 条：请去掉 ${selectedCount - maxPoints} 条` : plan ? '重新起草（会替换下面的教案）' : `按选定的 ${selectedCount} 条要点起草教案`}
                         </button>
                         {!selectedCount ? <span className={styles.small}>先在上面勾选至少一条要点。</span> : overMax ? <span className={styles.small}>一节课最多选 {maxPoints} 条要点，只留这节课真正要教的。</span> : null}
                     </div>
@@ -943,7 +943,7 @@ function HintInput({ onSubmit, current }) {
     const [text, setText] = useState(current)
     return (
         <form className={styles.hint} onSubmit={event => { event.preventDefault(); onSubmit(text.trim()) }}>
-            <label htmlFor="lp-hint">没找准？补一句这节课主要教什么，让 AI 重新找</label>
+            <label htmlFor="lp-hint">没找准？补一句这节课主要教什么，让 kebiao 重新找</label>
             <span className={styles.topicRow}>
                 <input id="lp-hint" type="text" maxLength={80} value={text} onChange={event => setText(event.target.value)} placeholder="例如：借物喻人，体会作者借助具体事物表达道理" />
                 <button type="submit" className="btn btn-secondary" disabled={!text.trim() || text.trim() === current}>重新找</button>
@@ -1091,7 +1091,7 @@ function UnitDocument({ plan, edition, subject, onCopy, copied }) {
                 {unit.performance_task?.criteria?.length ? <button type="button" className="btn btn-secondary" title="表现性任务的评价标准排成三级量规，可以先发给学生" onClick={() => { downloadRubricWord(plan); trackUmamiEvent('lesson_plan_export', { format: 'rubric', kind: 'unit' }) }}>评价量规</button> : null}
             </div>
             <header className={styles.docHead}>
-                <p className={styles.aiBadge}>AI 起草 · 需老师修改</p>
+                <p className={styles.aiBadge}>kebiao 起草 · 需老师修改</p>
                 <h2 id="lp-unit-title">单元整体设计：{unit.title || lesson.title}</h2>
                 <p>{[lesson.subject_name, lesson.grade ? `${lesson.grade} 年级` : '', lesson.textbook_title ? `${lesson.edition_name || ''}${lesson.textbook_title}` : '', `共 ${hours} 课时`].filter(Boolean).join(' · ')}</p>
             </header>
@@ -1151,7 +1151,7 @@ function UnitDocument({ plan, edition, subject, onCopy, copied }) {
                     {unit.connections ? <p><b>前后联系：</b>{unit.connections}</p> : null}
                 </section>
             ) : null}
-            <p className={styles.docFoot}>本单元设计由 AI{plan.model ? `（${plan.model}）` : ''}依据 kebiao.org 收录的《义务教育课程标准（2022年版2025年修订）》要点起草，课时安排用的是国家平台上这册教材的课目。请结合教材和班级实际修改后使用。</p>
+            <p className={styles.docFoot}>本单元设计由 kebiao 依据 kebiao.org 收录的《义务教育课程标准（2022年版2025年修订）》要点起草，课时安排用的是国家平台上这册教材的课目。请结合教材和班级实际修改后使用。</p>
         </article>
     )
 }
@@ -1165,7 +1165,7 @@ function TalkScriptView({ talk, title }) {
                 <button type="button" className="btn btn-secondary" onClick={async () => setCopied(await copyText(text))}>{copied ? '已复制' : '复制说课稿'}</button>
                 <button type="button" className="btn btn-secondary" onClick={() => downloadScriptWord(`《${title}》说课稿`, talk.sections, `${title}-说课稿`)}>下载 Word</button>
             </div>
-            <header className={styles.docHead}><p className={styles.aiBadge}>AI 根据上面的教案改写 · 约 {talk.minutes} 分钟</p><h2 id="lp-talk-title" tabIndex={-1}>《{title}》说课稿</h2><p>说课比赛、教师资格面试用。只改写教案已有的内容，没有新增活动。</p></header>
+            <header className={styles.docHead}><p className={styles.aiBadge}>kebiao 根据上面的教案改写 · 约 {talk.minutes} 分钟</p><h2 id="lp-talk-title" tabIndex={-1}>《{title}》说课稿</h2><p>说课比赛、教师资格面试用。只改写教案已有的内容，没有新增活动。</p></header>
             {talk.sections.map(item => (
                 <section key={item.heading}>
                     <h3>{item.heading}</h3>
@@ -1188,7 +1188,7 @@ function TrialScriptView({ trial, title }) {
                 <button type="button" className="btn btn-secondary" onClick={async () => setCopied(await copyText(text))}>{copied ? '已复制' : '复制试讲稿'}</button>
                 <button type="button" className="btn btn-secondary" onClick={() => downloadScriptWord(`《${title}》试讲稿`, [...trial.stages.map(item => ({ heading: `${item.name}（约 ${item.minutes} 分钟）`, text: item.text })), ...(trial.board.length ? [{ heading: '板书', text: trial.board.join('\n') }] : []), { heading: '答辩准备', text: trial.defense.map((item, index) => `${index + 1}. ${item.question}\n${item.answer}`).join('\n') }], `${title}-试讲稿`)}>下载 Word</button>
             </div>
-            <header className={styles.docHead}><p className={styles.aiBadge}>AI 根据上面的教案改写 · 约 {trial.minutes} 分钟</p><h2 id="lp-trial-title" tabIndex={-1}>《{title}》试讲稿</h2><p>教师资格面试用：面对评委模拟上课 10 分钟，再答辩。只改写教案已有的内容。灰色括号里是模拟的学生回答和板书时机。</p></header>
+            <header className={styles.docHead}><p className={styles.aiBadge}>kebiao 根据上面的教案改写 · 约 {trial.minutes} 分钟</p><h2 id="lp-trial-title" tabIndex={-1}>《{title}》试讲稿</h2><p>教师资格面试用：面对评委模拟上课 10 分钟，再答辩。只改写教案已有的内容。灰色括号里是模拟的学生回答和板书时机。</p></header>
             {trial.stages.map((item, index) => (
                 <section key={`${item.name}-${index}`}>
                     <h3>{item.name}<small> · 约 {item.minutes} 分钟</small></h3>
@@ -1380,7 +1380,7 @@ function PlanDocument({ plan, done, writing, onCopy, copied, onTalk, talking, on
                         <button type="button" className="btn btn-ghost" onClick={print}>打印</button>
                         {onTalk ? (
                             <>
-                                <small>AI 改写，约 20 秒</small>
+                                <small>kebiao 改写，约 20 秒</small>
                                 <button type="button" className="btn btn-ghost" onClick={() => onTalk('talk')} disabled={Boolean(talking)}>{talking === 'talk' ? '正在写说课稿…' : '生成说课稿'}</button>
                                 <button type="button" className="btn btn-ghost" onClick={() => onTalk('trial')} disabled={Boolean(talking)}>{talking === 'trial' ? '正在写试讲稿…' : '试讲稿 + 答辩'}</button>
                             </>
@@ -1392,7 +1392,7 @@ function PlanDocument({ plan, done, writing, onCopy, copied, onTalk, talking, on
                 </div>
             ) : null}
             <header className={styles.docHead}>
-                <p className={styles.aiBadge}>AI 起草 · 需老师修改</p>
+                <p className={styles.aiBadge}>kebiao 起草 · 需老师修改</p>
                 <h2 id="lp-doc-title">{frame?.title || lesson.title}</h2>
                 <p>{metaLine}</p>
             </header>
@@ -1497,7 +1497,7 @@ function PlanDocument({ plan, done, writing, onCopy, copied, onTalk, talking, on
                                     </li>
                                 ))}
                             </ol>
-                            <p className={styles.small}>题目和答案由 AI 起草，课前请核对后再用。</p>
+                            <p className={styles.small}>题目和答案由 kebiao 起草，课前请核对后再用。</p>
                         </section>
                     ) : done && onPractice ? (
                         <section id="lp-sec-practice">
@@ -1516,7 +1516,7 @@ function PlanDocument({ plan, done, writing, onCopy, copied, onTalk, talking, on
                 </section>
             )) : null}
 
-            <p className={styles.docFoot}>本教案由 AI{plan.model ? `（${plan.model}）` : ''}依据 kebiao.org 收录的《义务教育课程标准（2022年版2025年修订）》要点起草，按常规大班课堂设计：以讲解示范为主线，讲之前让学生先想先试，讲之后练习反馈。课标原文以官方出版物为准；请结合教材和班级实际修改后使用。{plan.privacy?.redacted ? ' 你填写的内容里有可识别的个人信息，发送前已移除。' : ''}</p>
+            <p className={styles.docFoot}>本教案由 kebiao 依据 kebiao.org 收录的《义务教育课程标准（2022年版2025年修订）》要点起草，按常规大班课堂设计：以讲解示范为主线，讲之前让学生先想先试，讲之后练习反馈。课标原文以官方出版物为准；请结合教材和班级实际修改后使用。{plan.privacy?.redacted ? ' 你填写的内容里有可识别的个人信息，发送前已移除。' : ''}</p>
         </article>
     )
 }
@@ -1571,7 +1571,7 @@ function StandardReading({ evidence, reading, core }) {
                     ))}
                 </details>
             ) : null}
-            {reading && !reading.reading ? <p className={styles.small}>这次 AI 没有写出课标解读；上面是课标原文和前后联系。</p> : null}
+            {reading && !reading.reading ? <p className={styles.small}>这次 kebiao 没有写出课标解读；上面是课标原文和前后联系。</p> : null}
         </section>
     )
 }

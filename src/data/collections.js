@@ -5,6 +5,12 @@
 
 const STORAGE_KEY = 'curriculum-collections'
 const STORAGE_VERSION = 1
+export const COLLECTIONS_EVENT = 'kebiao:collections'
+
+/** How many different standards are saved across all lists. */
+export function countSavedStandards() {
+    return new Set(Object.values(getCollections().collections || {}).flatMap(col => col.standardCodes || [])).size
+}
 
 // ============================================
 // STORAGE OPERATIONS
@@ -40,6 +46,8 @@ export function saveCollections(data) {
             version: STORAGE_VERSION,
             lastModified: new Date().toISOString()
         }))
+        // the header's 我的清单 count listens for this
+        window.dispatchEvent(new Event(COLLECTIONS_EVENT))
         return true
     } catch (err) {
         console.error('Failed to save collections:', err)

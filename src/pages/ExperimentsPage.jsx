@@ -33,7 +33,7 @@ function Item({ text, source, lessons, plan }) {
             <span className={styles.links}>
                 <span className={styles.source}>{source}</span>
                 {lessons.map(([, id, title, textbook]) => <a key={id} href={NATIONAL_URL(id)} target="_blank" rel="noopener noreferrer">同步课：{textbook}《{title.replace(/^(实验活动\d+|第\d+节|课题\d+)\s*/u, '')}》↗</a>)}
-                <Link to={plan}>用 AI 备课设计这节课</Link>
+                <Link to={plan}>用备课助手设计这节课</Link>
             </span>
         </li>
     )
@@ -62,7 +62,7 @@ export default function ExperimentsPage() {
                 <p className={concepts.kicker}>必做实验清单 · 科学 {scienceCount} 项 · 物理 {counts.physics} 项 · 化学 {counts.chemistry} 项</p>
                 <h1 className={concepts.title}>课标规定的必做实验和探究实践</h1>
                 <p className={concepts.lede}>
-                    科学课标附录 4 列出了 1–9 年级的学生必做探究实践活动，并写明「{data.science.intro.text}」物理、化学课标列出了初中学生必做实验。每一项都标出课标页码，能找到同名的国家平台同步课就附上，也可以直接交给 AI 备课设计成一节课。
+                    科学课标附录 4 列出了 1–9 年级的学生必做探究实践活动，并写明「{data.science.intro.text}」物理、化学课标列出了初中学生必做实验。每一项都标出课标页码，能找到同名的国家平台同步课就附上，也可以直接交给备课助手设计成一节课。
                 </p>
                 <p className={styles.note}>兼任科学课的老师，可以按年级先看这份清单，备齐器材。不少地方的中考有实验操作考查，具体考哪些实验，以当地考试说明为准。</p>
                 <div className={styles.tabs} role="tablist" aria-label="学科">

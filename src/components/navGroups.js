@@ -19,7 +19,7 @@ export const NAV_GROUPS = [
         to: '/lesson-plan',
         owns: ['/lesson-plan', '/checks', '/guide'],
         items: [
-            { to: '/lesson-plan', label: 'AI 备课' },
+            { to: '/lesson-plan', label: '备课助手' },
             { to: '/checks', label: '课堂诊断' },
             { to: '/guide', label: '上手指南' }
         ]
@@ -53,7 +53,7 @@ export const NAV_GROUPS = [
 /** Links that serve neither persona first; they live in the footer and at the foot of the mobile menu. */
 export const MINOR_LINKS = [
     { to: '/collections', label: '我的清单' },
-    { to: '/ai', label: '在 AI 里用' },
+    { to: '/ai', label: '接入智能体' },
     { to: '/open-data', label: '数据与接口' },
     { to: '/feedback', label: '反馈' }
 ]

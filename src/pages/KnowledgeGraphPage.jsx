@@ -69,8 +69,6 @@ export default function KnowledgeGraphPage() {
     const focused = graph && focus && graph.points[focus] ? focus : null
     const mine = graph ? myColumn(graph, myBook) : null
     const pointCount = graph ? Object.keys(graph.points).length : 0
-    const taught = graph ? Object.values(graph.points).filter(point => point.n[0] > 0).length : 0
-    const lineCount = graph ? graph.edges.filter(([, target]) => graph.points[target]).length : 0
     const audit = manifest?.prerequisites?.audit
 
     return (
@@ -92,10 +90,6 @@ export default function KnowledgeGraphPage() {
             ) : (
                 <>
                     <div className={styles.toolbar}>
-                        <p className={styles.summary}>
-                            {graph.lanes.length} 条线索，{pointCount} 个要点，{taught} 个在教材里找到了主要在教的课{lineCount ? `，${lineCount} 条「要先会」` : ''}。
-                            {graph.about.terms.length ? <> 相关概念：{graph.about.terms.map(([id, term], index) => <span key={id}>{index ? ' · ' : ''}<Link to={`/concepts/${id}`}>{term}</Link></span>)}</> : null}
-                        </p>
                         <div className={styles.views} role="group" aria-label="显示方式">
                             <button type="button" aria-pressed={view === 'map'} onClick={() => setView('map')}>图</button>
                             <button type="button" aria-pressed={view === 'list'} onClick={() => setView('list')}>列表</button>
@@ -122,8 +116,8 @@ export default function KnowledgeGraphPage() {
                     <ul>
                         <li>每个点是《义务教育课程标准（2022年版2025年修订）》里的一句要点，逐字取自课标原文，带页码。</li>
                         <li>每一行是一条线索：课标里同一主题在不同学段的内容，左早右晚。{graph.about.threads ? `${graph.about.threads}（kebiao 整理）` : ''}</li>
-                        <li>「要先会」：学生没掌握前一个要点，很可能学不好后一个；不表示必须先学完。由 AI（Claude）逐个读要点判断，每个要点最多 3 条，只指向同一年级里先教的或更早年级的要点。{audit?.checked ? `随机抽查 ${audit.checked} 条（也是 AI 核对，还没有教研员审过）：对 ${audit.right} 条，部分对 ${audit.partly} 条，不对 ${audit.wrong} 条。` : ''}</li>
-                        <li>金色的点和「教材里在哪教」：AI 逐课读了教材原文（或国家平台的教学设计），判断这一课主要在教这句要点。都待核验。</li>
+                        <li>「要先会」：学生没掌握前一个要点，很可能学不好后一个；不表示必须先学完。由 kebiao 逐个读要点判断，每个要点最多 3 条，只指向同一年级里先教的或更早年级的要点。{audit?.checked ? `随机抽查 ${audit.checked} 条（也是 kebiao 核对，还没有教研员审过）：对 ${audit.right} 条，部分对 ${audit.partly} 条，不对 ${audit.wrong} 条。` : ''}</li>
+                        <li>金色的点和「教材里在哪教」：kebiao 逐课读了教材原文（或国家平台的教学设计），判断这一课主要在教这句要点。都待核验。</li>
                         {graph.about.organized_by ? <li>{name}课标怎么组织内容：{graph.about.organized_by}</li> : null}
                         <li>哪一条不对，<Link to={`/feedback?title=${encodeURIComponent('知识图谱有误')}&message=${encodeURIComponent(`知识图谱 · ${name}：\n哪一条不对，应该是：`)}`}>告诉我们</Link>。</li>
                     </ul>

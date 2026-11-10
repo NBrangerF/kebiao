@@ -34,9 +34,9 @@ import styles from './SmartSearchPage.module.css'
 // The model reads the question (3–7 s) while it already reads the candidates the rules found (5–12 s); what its reading
 // of the question adds is read after that. A search usually takes 10–20 s in all.
 const STAGES = [
-    { label: 'AI 读懂你的问题：学段、学科、要排除的、主题', at: 0 },
+    { label: 'kebiao 读懂你的问题：学段、学科、要排除的、主题', at: 0 },
     { label: '按学段、学科圈出要读的课标', at: 1500 },
-    { label: 'AI 逐条读候选的要点原文，判断是否切题', at: 3000 }
+    { label: 'kebiao 逐条读候选的要点原文，判断是否切题', at: 3000 }
 ]
 
 function SearchProgress() {
@@ -96,7 +96,7 @@ function ResultItem({ item, rank, saved, onSave, onPreview, showStrength = false
             <h3 className={styles.resultTitle}>
                 <button type="button" aria-haspopup="dialog" onClick={open}>{standard.standard_title || standard.standard}</button>
             </h3>
-            <p className={styles.reason}>{item.checked_by_ai ? <span className={styles.aiTag}>AI 判断</span> : null}{item.relevance_reason || item.rationale}</p>
+            <p className={styles.reason}>{item.checked_by_ai ? <span className={styles.aiTag}>kebiao 判断</span> : null}{item.relevance_reason || item.rationale}</p>
             {item.matched_point ? (
                 <dl className={styles.evidence}>
                     <div>
@@ -147,7 +147,7 @@ function Understanding({ view, base, ignored, onToggle }) {
                             >
                                 <span className={styles.constraintGroup}>{chip.group}</span>
                                 <span className={styles.constraintValue}>{chip.label}</span>
-                                {chip.ai ? <em>AI</em> : null}
+                                {chip.ai ? <em>联想</em> : null}
                                 <span className={styles.constraintMark} aria-hidden="true">{active ? '×' : '+'}</span>
                             </Pill>
                         )
@@ -164,7 +164,7 @@ function Understanding({ view, base, ignored, onToggle }) {
                     ) : null}
                     {expanded.length ? (
                         <div>
-                            <dt>AI 联想</dt>
+                            <dt>联想词</dt>
                             <dd>
                                 {/* a phrase counts as used when it or a word split from it ranked results */}
                                 {expanded.map(term => effective.some(piece => String(term).toLowerCase().includes(piece))
@@ -310,15 +310,15 @@ function SmartSearchPage() {
         ? (scope.read_subjects || []).filter(slug => !subjectGroups.some(group => group.slug === slug)).map(slug => SUBJECT_LABELS[slug] || slug)
         : []
     const modelMissed = result && !checked && interpretation.status && interpretation.status !== 'disabled'
-    const visibleWarnings = (result?.warnings || []).filter(warning => !warning.includes('AI 查询理解暂不可用') && !warning.includes('可识别个人信息'))
+    const visibleWarnings = (result?.warnings || []).filter(warning => !warning.includes('查询理解暂不可用') && !warning.includes('可识别个人信息'))
     const friendly = error ? friendlySearchError(error) : null
 
     return (
         <div className={styles.page} data-kb-route="smart-search">
             <PageHero
-                kicker="AI 检索 · 用一句话描述"
+                kicker="一句话检索 · 用一句话描述"
                 title={'用教学语言\n查找课程标准'}
-                lede={<>说出学段、学科、要排除的学科和主题。AI 先读懂你的问题，再逐条读候选课标的要点原文，判断是否切题；通常需要 10–20 秒。已经写好学习目标，可以去 AI 备课做<Link to="/lesson-plan?check=1">目标体检</Link>。</>}
+                lede={<>说出学段、学科、要排除的学科和主题。kebiao 先读懂你的问题，再逐条读候选课标的要点原文，判断是否切题；通常需要 10–20 秒。已经写好学习目标，可以去备课助手做<Link to="/lesson-plan?check=1">目标体检</Link>。</>}
             >
                 <form className={styles.form} role="search" onSubmit={event => { event.preventDefault(); submit(query) }}>
                     <label className={kb.label} htmlFor="smart-query">描述你的教学目标或使用情境</label>
@@ -382,7 +382,7 @@ function SmartSearchPage() {
                                     </div>
 
                                     {batchMessage ? <p className={styles.note} role="status">{batchMessage}</p> : null}
-                                    {modelMissed ? <p className={styles.note}>AI 这次没能及时核对，下面是按你的原话做字面匹配的结果，相关性需要你自己判断。</p> : null}
+                                    {modelMissed ? <p className={styles.note}>kebiao 这次没能及时核对，下面是按你的原话做字面匹配的结果，相关性需要你自己判断。</p> : null}
                                     {interpretation.privacy?.redacted ? <p className={styles.note}>发送到模型服务前已自动移除 {interpretation.privacy.redaction_count} 处可识别信息；原始查询不会写入 API 指标。</p> : null}
                                     {result.coverage_note ? <p className={styles.coverage}>{result.coverage_note}</p> : null}
                                     {visibleWarnings.map(warning => <p className={styles.note} key={warning}>{warning}</p>)}
@@ -429,7 +429,7 @@ function SmartSearchPage() {
                                             <summary>
                                                 <span className={kb.kicker}>{checked ? '贰 · 相关' : '贰 · 教学延伸'}</span>
                                                 <strong>{checked ? `${supportingCount} 条相关，可作参考` : `${supportingCount} 条教学情境延伸`}</strong>
-                                                <span className={styles.summaryNote}>{checked ? 'AI 判断为相关、但不是直接对应' : '只在情境、实践建议或教学提示中出现相关表达'}</span>
+                                                <span className={styles.summaryNote}>{checked ? 'kebiao 判断为相关、但不是直接对应' : '只在情境、实践建议或教学提示中出现相关表达'}</span>
                                             </summary>
                                             <ol className={kb.list}>
                                                 {supportingResults.map((item, index) => <ResultItem key={item.code} item={item} rank={directResults.length + index + 1} saved={saved.has(item.code)} onSave={save} onPreview={openPreview} />)}

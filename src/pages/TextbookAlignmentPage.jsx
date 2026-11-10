@@ -20,8 +20,8 @@ const esc = value => String(value ?? '').replace(/[&<>"]/gu, char => ({ '&': '&a
 const METHOD = [
     ['找到这一课在原书的哪几页', '按国家平台同步课的课题，在原书里顺着书页往后找标题，跳过目录、单元导语和附录；扫描版教材先做文字识别。大多数课都找到了自己的页，没找到的读这一课的其他材料。'],
     ['读这一课自己的材料', '教材原文那几页；国家平台教学设计里写的教学目标和重难点；没找到原书文字的课，再读学习任务单或课件；平台的课程简介。都没有的，只读课题。'],
-    ['对照本年级的全部要点', 'AI 读这门课这个年级的全部课标要点（历史按这一册的时期），判断这一课「主要在教」哪几条——这一课的教学目标，最多两条——和「也涉及」哪几条。'],
-    ['每一条都要有原话为证', 'AI 必须从这一课的材料里摘一段原话说明理由。系统逐条核对：原话不在材料里的、摘的是课标原文而不是教材的，一律不算。']
+    ['对照本年级的全部要点', 'kebiao 读这门课这个年级的全部课标要点（历史按这一册的时期），判断这一课「主要在教」哪几条——这一课的教学目标，最多两条——和「也涉及」哪几条。'],
+    ['每一条都要有原话为证', 'kebiao 必须从这一课的材料里摘一段原话说明理由。系统逐条核对：原话不在材料里的、摘的是课标原文而不是教材的，一律不算。']
 ]
 const ACCURACY = '先在 12 门学科里选了 14 课，用另一个大模型（Claude）按课标原文标出每课该对的要点，再和这里的结果比较：全部跑完后，13 课里有 11 课找到了这一课该教的要点；标「主要在教」的 16 条里，13 条一致。再由 Claude 按学科随机抽样、逐条读这一课的材料和要点原文核对：馆里的书抽了 61 条「主要在教」，53 条对，5 条部分对（应是「也涉及」，或同一条标准下有更贴切的要点），3 条错；试点版本抽了 66 条，59 条对，6 条部分对，1 条错；只凭课题判断的另抽了 20 条，14 条对，3 条部分对，3 条错，错的都是「练习一」「试一试」这类不说明内容的课题，这类对应已不采用。错的多在同一条标准下相近的要点之间，比如讲正比例的课选了「比」，讲方向和距离的课选了「比例尺」。这些检查都还没有经过老师或教研员复核；「也涉及」放得宽，只作参考。所以页面上的对应都标着「待核验」，看到不对的请点「报错」；教研员可以下载每本书的审校表逐条核对，核对过的会标「教研员已核验」。'
 
@@ -45,7 +45,7 @@ async function loadBook(editionId) {
 function downloadWord(book, units, points) {
     const cell = rows => rows.map(([code, , quote, source, page]) => `${esc(code)} ${esc(points.get(code)?.text || '')}<br/><span style="color:#666">“${esc(quote)}”（${esc(sourceLabel(source, page))}）</span>`).join('<br/>') || '—'
     const body = units.map(unit => unit.lessons.map((lesson, index) => `<tr>${index === 0 ? `<td rowspan="${unit.lessons.length}">${esc(unit.name)}</td>` : ''}<td>${esc(lesson.title)}</td><td>${cell(lesson.rows.filter(row => row[1] === 'T'))}</td><td>${cell(lesson.rows.filter(row => row[1] === 'P'))}</td></tr>`).join('')).join('')
-    const html = `<html><head><meta charset="utf-8"><title>${esc(book.title)} 课标对应表</title><style>body{font-family:'SimSun',serif;font-size:10.5pt}table{border-collapse:collapse;width:100%}td,th{border:1px solid #999;padding:4pt;vertical-align:top}th{background:#eee}</style></head><body><h2>${esc(book.title)}（${esc(book.edition_name || '')}）课标对应表</h2><p>依据《义务教育课程标准（2022年版2025年修订）》。「主要在教」「也涉及」由 AI 逐课读了教材原文或国家平台教学设计后判断，引号里是这一课材料的原话，待核验。来源：kebiao.org/textbooks/${esc(book.edition_id)}/standards</p><table><tr><th>单元</th><th>课</th><th>主要在教的要点</th><th>也涉及</th></tr>${body}</table></body></html>`
+    const html = `<html><head><meta charset="utf-8"><title>${esc(book.title)} 课标对应表</title><style>body{font-family:'SimSun',serif;font-size:10.5pt}table{border-collapse:collapse;width:100%}td,th{border:1px solid #999;padding:4pt;vertical-align:top}th{background:#eee}</style></head><body><h2>${esc(book.title)}（${esc(book.edition_name || '')}）课标对应表</h2><p>依据《义务教育课程标准（2022年版2025年修订）》。「主要在教」「也涉及」由 kebiao 逐课读了教材原文或国家平台教学设计后判断，引号里是这一课材料的原话，待核验。来源：kebiao.org/textbooks/${esc(book.edition_id)}/standards</p><table><tr><th>单元</th><th>课</th><th>主要在教的要点</th><th>也涉及</th></tr>${body}</table></body></html>`
     const blob = new Blob(['﻿', html], { type: 'application/msword' })
     const url = URL.createObjectURL(blob)
     const link = document.createElement('a')
@@ -136,8 +136,8 @@ export default function TextbookAlignmentPage() {
                 <p className={concepts.kicker}>课标对应表 · {book.edition_name} · {book.title}</p>
                 <h1 className={concepts.title}>这本书的每一课，教的是哪几条课标要点</h1>
                 {book.platform_only
-                    ? <p className={concepts.lede}>这一版教材馆里没有原书：AI 读国家平台上每一课的课题和教学材料，对照本年级{data.subject.standards[0]?.subject}课标的全部要点判断，并摘出原话。只有课题的课判断最粗，请对照自己手里的书核对。机器判断，待核验。</p>
-                    : <p className={concepts.lede}>AI 逐课读教材原文，对照本年级{data.subject.standards[0]?.subject}课标的全部要点，判断每一课「主要在教」和「也涉及」哪几条，并摘出原话，点页码可以翻到原书核对。机器判断，待核验。</p>}
+                    ? <p className={concepts.lede}>这一版教材馆里没有原书：kebiao 读国家平台上每一课的课题和教学材料，对照本年级{data.subject.standards[0]?.subject}课标的全部要点判断，并摘出原话。只有课题的课判断最粗，请对照自己手里的书核对。机器判断，待核验。</p>
+                    : <p className={concepts.lede}>kebiao 逐课读教材原文，对照本年级{data.subject.standards[0]?.subject}课标的全部要点，判断每一课「主要在教」和「也涉及」哪几条，并摘出原话，点页码可以翻到原书核对。机器判断，待核验。</p>}
                 <dl className={styles.stats}>
                     <div><dt>逐课判断</dt><dd>{coverage.judged}<small> / {coverage.lessons} 课</small></dd></div>
                     <div><dt>本年级要点</dt><dd>{coverage.total}<small> 条</small></dd></div>
@@ -203,7 +203,7 @@ export default function TextbookAlignmentPage() {
 
             <section className={concepts.block} aria-labelledby="alignment-missing">
                 <h2 id="alignment-missing">本年级没有在这本书里找到的要点（{coverage.total - coverage.taught - coverage.touched} 条）</h2>
-                <p className={concepts.footnote}>{book.grade >= 7 ? '初中课标是 7–9 年级的共同要求；这里只列按教材标在本年级的要点，上下两册分着教，很多在另一册里。' : '课标按学段写，同一学段两个年级、上下两册分着教，很多要点在同学段的另一册里。'}标「在《…》教」的，是 AI 在馆里其他册找到的；都没有的，可能是教材没专门安排、放在综合实践里，也可能是 AI 没认出来。</p>
+                <p className={concepts.footnote}>{book.grade >= 7 ? '初中课标是 7–9 年级的共同要求；这里只列按教材标在本年级的要点，上下两册分着教，很多在另一册里。' : '课标按学段写，同一学段两个年级、上下两册分着教，很多要点在同学段的另一册里。'}标「在《…》教」的，是 kebiao 在馆里其他册找到的；都没有的，可能是教材没专门安排、放在综合实践里，也可能是 AI 没认出来。</p>
                 {missing.map(group => (
                     <div key={group.standard.code} className={styles.missingGroup}>
                         <h3><Link to={`/standards/${group.standard.code}`}>{group.standard.code}</Link> {group.standard.level2 || group.standard.title}</h3>
