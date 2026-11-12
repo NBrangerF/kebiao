@@ -104,7 +104,7 @@ function HomePage() {
             <section className={styles.hero} aria-labelledby="hero-title">
                 <div className={`${styles.wrap} ${styles.heroGrid}`}>
                     <div className={styles.heroCopy}>
-                        <p className={styles.kicker}>义务教育课程标准 · 2022年版2025年修订 · {K ? `${K.cons.length} 条标准 · ` : ''}<span className={styles.count}>{count.toLocaleString('en-US')}</span> 条要点</p>
+                        <p className={styles.kicker}>义务教育课程标准 · 2022年版2025年修订 · {K ? K.cons.length : 513} 条标准 · <span className={styles.count}>{count.toLocaleString('en-US')}</span> 条要点</p>
                         <h1 className={styles.title} id="hero-title">学生该学会什么，<br />课标里逐条查得到</h1>
                         <p className={styles.lede}>十四门学科、一到九年级的课程标准，按学段和主题排好。每条要点都是课标原文，注明出处页码。</p>
 

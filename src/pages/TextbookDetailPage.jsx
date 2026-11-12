@@ -58,19 +58,23 @@ function StandardScopeLinks({ standardCodes }) {
     )
 }
 
-// 课堂诊断题 for this volume (its 学段, for subjects filed by 学段), when the bank has some: a link, else ''
+// 课堂诊断题 for this volume (its 学段, for subjects filed by 学段), when the bank has some: a link, else '';
+// null while it is being looked up
 function useChecksLink(book) {
-    const [href, setHref] = useState('')
+    const [href, setHref] = useState(null)
     const { subject: name, grade, volume, edition_name: edition } = book || {}
     useEffect(() => {
-        setHref('')
         const subject = subjectByName(name)
         const key = bookKeyOf(subject, { grade, volume, edition })
-        if (!key) return undefined
+        if (!key) {
+            setHref('')
+            return undefined
+        }
+        setHref(null)
         let active = true
         loadChecksIndex().then(index => {
             const entry = index?.subjects?.find(item => item.slug === subject.slug)
-            if (active && entry?.books?.some(item => item.key === key && item.count)) setHref(`/checks?subject=${subject.slug}&book=${encodeURIComponent(key)}`)
+            if (active) setHref(entry?.books?.some(item => item.key === key && item.count) ? `/checks?subject=${subject.slug}&book=${encodeURIComponent(key)}` : '')
         })
         return () => { active = false }
     }, [name, grade, volume, edition])
@@ -92,13 +96,14 @@ export default function TextbookDetailPage() {
     useEffect(() => { if (book) viewMyBook(bookFields(book)) }, [book])
     const myBook = useMyBook()
     // the same volume in the other editions: 人教版 and 北师大版 数学5上
-    const [siblings, setSiblings] = useState([])
+    const [siblings, setSiblings] = useState(null)
     useEffect(() => {
         if (!book) return undefined
         let active = true
+        setSiblings(null)
         loadAllBooks().then(books => {
             if (active) setSiblings(books.filter(item => item.edition_id !== book.edition_id && item.subject === book.subject && item.grade === book.grade && item.volume === book.volume))
-        }).catch(() => {})
+        }).catch(() => { if (active) setSiblings([]) })
         return () => { active = false }
     }, [book])
     const checksHref = useChecksLink(book)
@@ -113,8 +118,10 @@ export default function TextbookDetailPage() {
     const [record, setRecord] = useState(null)
     const [points, setPoints] = useState(null)
     const [chapter, setChapter] = useState(0)
+    const [recordLoaded, setRecordLoaded] = useState(false)
     useEffect(() => {
         let active = true
+        setRecordLoaded(false)
         setAiPoints(new Map())
         setPlatformUnits([])
         setJudged(null)
@@ -122,7 +129,9 @@ export default function TextbookDetailPage() {
         setPoints(null)
         setChapter(0)
         fetch(`/data/textbooks/national-lessons/${editionId}.json`).then(response => (response.ok ? response.json() : null)).then(record => {
-            if (!active || !record) return
+            if (!active) return
+            setRecordLoaded(true)
+            if (!record) return
             setRecord(record)
             setPlatformUnits(unitsOf(record).filter(unit => unit.chapter))
             const judgedLessons = (record.lessons || []).filter(lesson => Array.isArray(lesson.align))
@@ -135,7 +144,7 @@ export default function TextbookDetailPage() {
                 byUnit.set(lesson.unit_id, list)
             }
             setAiPoints(byUnit)
-        }).catch(() => {})
+        }).catch(() => { if (active) setRecordLoaded(true) })
         return () => { active = false }
     }, [editionId])
 
@@ -173,7 +182,9 @@ export default function TextbookDetailPage() {
     }, [book])
 
     if (error) return <ErrorState title="教材加载失败" message={error} />
-    if (!book) return <PageLoading message="正在打开教材详情" />
+    // the other editions, the chapter figures and the links above the fold come from separate files: show the
+    // page once they are in, so it does not jump
+    if (!book || !siblings || !recordLoaded || checksHref === null) return <PageLoading message="正在打开教材详情" />
 
     const mapUnit = mapUnits[Math.min(chapter, mapUnits.length - 1)]
 

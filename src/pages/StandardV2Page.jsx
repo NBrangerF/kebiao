@@ -357,7 +357,12 @@ export default function StandardV2Page() {
                 if (result && !result.subject?.standards) {
                     loadV2Subject(subjectOfCode(result.standard.code))
                         .then(subject => { if (!cancelled) setState({ status: 'ready', standard: result.standard, subject }) })
-                        .catch(error => { if (!cancelled && !result.subject) setState({ status: 'error', message: error.message }) })
+                        .catch(error => {
+                            if (cancelled) return
+                            // keep the prerendered subject and go without the neighbours
+                            if (result.subject) setState({ status: 'ready', standard: result.standard, subject: { ...result.subject, standards: [] } })
+                            else setState({ status: 'error', message: error.message })
+                        })
                 }
             })
             .catch(error => { if (!cancelled) setState({ status: 'error', message: error.message }) })
@@ -368,23 +373,30 @@ export default function StandardV2Page() {
     usePageMeta(standard && subject ? v2StandardMeta(standard, subject) : null)
 
     // 课堂诊断题 per 要点: one small index for every subject (舞蹈、戏剧 have no bank yet)
-    const [checkCounts, setCheckCounts] = useState({})
+    const [checkCounts, setCheckCounts] = useState(null)
     useEffect(() => {
         let cancelled = false
-        setCheckCounts({})
-        if (!subjectOfPoint(standardCode)) return undefined
-        loadChecksIndex().then(index => { if (!cancelled && index) setCheckCounts(index.by_point || {}) })
+        setCheckCounts(null)
+        if (!subjectOfPoint(standardCode)) {
+            setCheckCounts({})
+            return undefined
+        }
+        loadChecksIndex().then(index => { if (!cancelled) setCheckCounts(index?.by_point || {}) })
         return () => { cancelled = true }
     }, [standardCode])
 
+    const lessonData = useNationalLessons(standardCode)
+    // the neighbours, question counts and textbooks each add lines near the top: show the page once all are in,
+    // so it does not jump (the prerendered copy stays on screen until then)
+    const pending = state.status === 'ready' && (!subject.standards || checkCounts === null || lessonData === undefined)
+
     // Open at the 要点 named in the hash (old links land here too).
     useEffect(() => {
-        if (state.status !== 'ready' || !target) return undefined
+        if (state.status !== 'ready' || pending || !target) return undefined
         const frame = requestAnimationFrame(() => document.getElementById(target)?.scrollIntoView({ block: 'center' }))
         return () => cancelAnimationFrame(frame)
-    }, [state.status, target])
+    }, [state.status, pending, target])
 
-    const lessonData = useNationalLessons(standardCode)
     const myBook = useMyBook()
     const books = useMemo(() => (lessonData ? booksFor(lessonData, standard?.indicators || [], myBook) : []), [lessonData, standard, myBook])
 
@@ -395,7 +407,7 @@ export default function StandardV2Page() {
         return k < 0 ? {} : { prev: list[k - 1], next: list[k + 1], index: k + 1, total: list.length }
     }, [subject, standard])
 
-    if (state.status === 'loading') return <PageLoading className="page-content container" message={`加载标准 ${standardCode}…`} />
+    if (state.status === 'loading' || pending) return <PageLoading className="page-content container" message={`加载标准 ${standardCode}…`} />
     if (state.status !== 'ready') {
         return (
             <div className="page-content container">

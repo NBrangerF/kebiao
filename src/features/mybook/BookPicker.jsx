@@ -6,6 +6,8 @@ import styles from './BookPicker.module.css'
 
 const SUBJECT_ORDER = ['语文', '数学', '英语', '道德与法治', '科学', '物理', '化学', '生物学', '历史', '地理', '信息科技', '体育与健康', '艺术', '美术', '音乐', '劳动']
 const CN = ['', '一', '二', '三', '四', '五', '六', '七', '八', '九']
+// the subjects that have books: drawn greyed out while the list loads, so the picker keeps its height
+const LOADING_SUBJECTS = ['语文', '数学', '英语', '道德与法治', '科学', '物理', '化学', '生物学', '历史', '地理', '信息科技', '体育与健康', '美术', '音乐']
 const order = name => (SUBJECT_ORDER.includes(name) ? SUBJECT_ORDER.indexOf(name) : SUBJECT_ORDER.length)
 
 let pending = null
@@ -76,7 +78,11 @@ export default function BookPicker({ className = '', inline = false }) {
                             )
                         })}
                     </div>
-                ) : <p className={styles.wait}>正在载入教材…</p>}
+                ) : (
+                    <div className={styles.chips} aria-label="正在载入教材">
+                        {LOADING_SUBJECTS.map(name => <button key={name} type="button" className={styles.chip} disabled><i aria-hidden="true" />{name}</button>)}
+                    </div>
+                )}
             </fieldset>
             {inline && !subject ? null : <fieldset className={styles.step} disabled={!subject}>
                 <legend><span>2</span>年级</legend>

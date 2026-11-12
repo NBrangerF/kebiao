@@ -54,7 +54,12 @@ export default function StandardsHubPage() {
                             </li>
                         ))}
                     </ul>
-                ) : <p className={styles.loading}>正在载入学科…</p>}
+                ) : (
+                    // empty buttons of the same size while the subjects load, so the sections below stay put
+                    <ul className={kb.rail} aria-label="正在载入学科">
+                        {Array.from({ length: 14 }, (_, i) => <li key={i}><span className={kb.railBtn} /></li>)}
+                    </ul>
+                )}
             </Wrap>
             <Wrap as="section" id="compare" className={`${styles.block} ${styles.compare}`} aria-labelledby="compare-title">
                 {K ? (

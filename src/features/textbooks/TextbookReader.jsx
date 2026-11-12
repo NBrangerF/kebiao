@@ -153,7 +153,17 @@ function evidenceRectangle(span) {
     }
 }
 
+// Textbook pages are about 185 × 260 mm; once a page has loaded, its own shape is used. Holding the page's height
+// before it is drawn stops the page, and everything under it, from jumping when the drawing arrives.
+let lastPageRatio = 1.41
+
 function PdfPageSurface({ pageNumber, width, evidenceSpans = [], highlighted = false }) {
+    const [ratio, setRatio] = useState(lastPageRatio)
+    const onPageLoad = page => {
+        if (!page.originalWidth || !page.originalHeight) return
+        lastPageRatio = page.originalHeight / page.originalWidth
+        setRatio(lastPageRatio)
+    }
     const rectangles = evidenceSpans.map(evidenceRectangle).filter(Boolean)
     const exact = rectangles.length > 0
     const pageFallback = highlighted && !exact
@@ -162,8 +172,9 @@ function PdfPageSurface({ pageNumber, width, evidenceSpans = [], highlighted = f
             className={`${styles.pageSurface} ${pageFallback ? styles.highlightedPage : ''}`}
             data-pdf-page={pageNumber}
             data-evidence-mode={exact ? 'exact' : pageFallback ? 'page' : undefined}
+            style={{ width, minHeight: Math.floor(width * ratio) }}
         >
-            <Page pageNumber={pageNumber} width={width} renderTextLayer renderAnnotationLayer />
+            <Page pageNumber={pageNumber} width={width} renderTextLayer renderAnnotationLayer onLoadSuccess={onPageLoad} />
             {exact ? (
                 <span className={styles.evidenceOverlay} aria-label="精确课标证据高亮">
                     {rectangles.map((style, index) => <span className={styles.evidenceRect} data-testid="textbook-evidence-highlight" style={style} key={index} />)}

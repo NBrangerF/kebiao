@@ -40,12 +40,12 @@ export default function TextbookLibraryPage() {
     const [changing, setChanging] = useState(false)
     // books whose lessons are matched to 课标 one by one, and the pilot editions known only by their lesson list
     const [aligned, setAligned] = useState(() => new Set())
-    const [pilots, setPilots] = useState([])
+    const [pilots, setPilots] = useState(null)
 
     useEffect(() => {
         loadTextbookCatalog().then(setCatalog).catch(errorValue => setError(errorValue.message))
         fetch('/data/textbooks/national-lessons/index.json').then(response => (response.ok ? response.json() : null)).then(data => setAligned(new Set(Object.keys(data?.editions || {})))).catch(() => {})
-        loadAllBooks().then(books => setPilots(books.filter(book => book.platform_only))).catch(() => {})
+        loadAllBooks().then(books => setPilots(books.filter(book => book.platform_only))).catch(() => setPilots([]))
     }, [])
 
     const filtered = useMemo(
@@ -56,7 +56,7 @@ export default function TextbookLibraryPage() {
     const editions = useMemo(() => {
         const counts = new Map()
         for (const book of filterTextbooks(catalog?.items || [], { ...filters, query: '', edition: '' })) counts.set(book.edition_name, (counts.get(book.edition_name) || 0) + 1)
-        for (const book of pilots) {
+        for (const book of pilots || []) {
             if ((filters.subject && book.subject_slug !== filters.subject) || (filters.grade && String(book.grade) !== String(filters.grade)) || (filters.volume && book.volume !== filters.volume)) continue
             counts.set(book.edition_name, (counts.get(book.edition_name) || 0) + 1)
         }
@@ -64,7 +64,7 @@ export default function TextbookLibraryPage() {
     }, [catalog, pilots, filters.stage, filters.subject, filters.grade, filters.volume])
     const pilotGroups = useMemo(() => {
         const groups = new Map()
-        for (const book of pilots) {
+        for (const book of pilots || []) {
             if (filters.subject && book.subject_slug !== filters.subject) continue
             if (filters.grade && String(book.grade) !== String(filters.grade)) continue
             if (filters.edition && book.edition_name !== filters.edition) continue
@@ -85,7 +85,8 @@ export default function TextbookLibraryPage() {
     }
 
     if (error) return <ErrorState title="教材馆加载失败" message={error} />
-    if (!catalog) return <PageLoading message="正在整理教材馆" />
+    // the intro names the pilot editions, so wait for them too rather than grow the page after it shows
+    if (!catalog || !pilots) return <PageLoading message="正在整理教材馆" />
 
     const manifest = catalog.manifest
     // the publishers of the pilot editions, most books first
