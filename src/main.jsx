@@ -11,6 +11,20 @@ import './styles/fonts.css'
 import './index.css'
 import { capturePrerenderSnapshot } from './seo/prerenderSnapshot.js'
 
+// After a deploy, a page opened earlier asks for script/CSS files that no longer exist.
+// Reload once to pick up the new build; the guard stops a reload loop if the files really are missing.
+window.addEventListener('vite:preloadError', event => {
+    try {
+        const last = Number(sessionStorage.getItem('kb-chunk-reload') || 0)
+        if (Date.now() - last < 60_000) return
+        sessionStorage.setItem('kb-chunk-reload', String(Date.now()))
+    } catch {
+        return
+    }
+    event.preventDefault()
+    window.location.reload()
+})
+
 // Rendering clears #root, so keep the prerendered page content first.
 capturePrerenderSnapshot()
 

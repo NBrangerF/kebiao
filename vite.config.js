@@ -27,6 +27,10 @@ function prerenderedPagesPreview() {
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), prerenderedPagesPreview()],
+  resolve: {
+    // react-pdf imports 'pdfjs-dist'; use PDF.js's legacy build so older phone browsers can open textbooks
+    alias: [{ find: /^pdfjs-dist$/, replacement: 'pdfjs-dist/legacy/build/pdf.mjs' }]
+  },
   define: {
     'import.meta.env.VITE_KB_CARD_VERSION': JSON.stringify(cardVersion(dataVersion))
   },
