@@ -10,9 +10,31 @@ async function fetchJson(url, options) {
     return payload?.data ?? payload
 }
 
-export async function loadTextbookCatalog() {
-    return fetchJson(`${PUBLIC_ROOT}/index.json`)
+// one request per visit: 教材馆, the book picker and 备课 share the catalog (a failed request is tried again next time)
+let catalogRequest = null
+let catalogValue = null
+export function loadTextbookCatalog() {
+    catalogRequest ||= fetchJson(`${PUBLIC_ROOT}/index.json`).then(
+        value => (catalogValue = value),
+        error => { catalogRequest = null; throw error }
+    )
+    return catalogRequest
 }
+
+/** The catalog if it has already arrived, so a page can show it without waiting. */
+export const loadedTextbookCatalog = () => catalogValue
+
+// the books whose lessons are matched to 课标 one by one (their 教材馆 cards say so), fetched once like the catalog
+let alignedRequest = null
+let alignedValue = null
+export function loadAlignedEditions() {
+    alignedRequest ||= fetch(`${PUBLIC_ROOT}/national-lessons/index.json`)
+        .then(response => (response.ok ? response.json() : null))
+        .then(data => (alignedValue = new Set(Object.keys(data?.editions || {}))), error => { alignedRequest = null; throw error })
+    return alignedRequest
+}
+
+export const loadedAlignedEditions = () => alignedValue
 
 export async function loadTextbookDetail(editionId) {
     if (!/^ed_[a-z0-9]+$/i.test(editionId)) throw new Error('教材编号无效。')
