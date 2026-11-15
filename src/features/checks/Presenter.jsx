@@ -415,7 +415,12 @@ export default function Presenter({ slides, title, misconceptions, onExit, onDow
 
     return (
         <div ref={rootRef} className={`${styles.root} ${idle ? styles.idle : ''}`} data-theme={theme}>
-            <div className={styles.stageWrap} onClick={event => { if (event.target === event.currentTarget) go(1) }}>
+            {/* 像放 PPT 一样：点幻灯片任意空白处或文字都翻到下一步；点按钮、选中文字时不翻 */}
+            <div className={styles.stageWrap} onClick={event => {
+                if (blackout || event.target.closest('button, a, input, select, textarea, label')) return
+                if (window.getSelection()?.toString()) return
+                go(1)
+            }}>
                 <div className={styles.stage} role="region" aria-roledescription="幻灯片" aria-label={`${title || '课堂诊断'}，第 ${index + 1} 页，共 ${slides.length} 页`}>
                     {content}
                     {timer !== null ? <div className={`${styles.timer} ${timer <= 0 ? styles.timeUp : ''}`} role="timer" aria-live="off">{timer > 0 ? `${timer}″` : '时间到'}</div> : null}
