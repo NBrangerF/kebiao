@@ -3,7 +3,7 @@
     "buildCommand": "npm run build",
     "installCommand": "npm install",
     "outputDirectory": "dist",
-    "regions": ["hkg1"],
+    "regions": ["hnd1"],
     "ignoreCommand": "[ \"$VERCEL_GIT_COMMIT_REF\" != \"main\" ]",
     "functions": {
         "api/cards/[...path].ts": {
