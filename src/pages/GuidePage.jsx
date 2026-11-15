@@ -38,6 +38,28 @@ const FLOWS = [
     }
 ]
 
+// 步骤里提到的工具名，第一次出现时直接链到那一页（老师常会直接点这些名字）
+const TOOL_PATHS = {
+    备课助手: '/lesson-plan',
+    课堂诊断: '/checks',
+    批完就用: '/checks/after',
+    知识图谱: '/knowledge-graph',
+    概念词典: '/concepts',
+    教资课标速记: '/teacher-exam',
+    必做实验清单: '/experiments',
+    跨学科主题库: '/interdisciplinary'
+}
+const TOOL_RE = new RegExp(`(${Object.keys(TOOL_PATHS).join('|')})`, 'u')
+
+function StepText({ text }) {
+    const seen = new Set()
+    return text.split(TOOL_RE).map((part, index) => {
+        if (!TOOL_PATHS[part] || seen.has(part)) return part
+        seen.add(part)
+        return <Link key={index} to={TOOL_PATHS[part]}>{part}</Link>
+    })
+}
+
 export default function GuidePage() {
     usePageMeta(STATIC_PAGE_META['/guide'])
     return (
@@ -56,7 +78,7 @@ export default function GuidePage() {
                         <p className={styles.who}>{String(index + 1).padStart(2, '0')} · {flow.who}</p>
                         <h2>{flow.title}</h2>
                         <ol className={styles.steps}>
-                            {flow.steps.map(step => <li key={step}>{step}</li>)}
+                            {flow.steps.map(step => <li key={step}><StepText text={step} /></li>)}
                         </ol>
                         <Link className="btn btn-secondary" to={flow.to}>{flow.action}</Link>
                     </li>

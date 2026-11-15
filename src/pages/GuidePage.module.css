@@ -76,6 +76,13 @@
     line-height: 1.75;
 }
 
+.steps a {
+    color: var(--kb-gold);
+    text-decoration: underline;
+    text-decoration-color: rgba(233, 200, 135, 0.45);
+    text-underline-offset: 3px;
+}
+
 .steps li::marker {
     color: var(--kb-gold);
 }

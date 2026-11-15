@@ -151,11 +151,11 @@ function CollectionsPage() {
                     <dl className={styles.summary} aria-label="清单统计">
                         <div>
                             <dt>清单</dt>
-                            <dd>{collections.length}</dd>
+                            <dd><a href="#collection-list-title" aria-label={`${collections.length} 个清单，跳到全部清单`}>{collections.length}</a></dd>
                         </div>
                         <div>
                             <dt>已收录标准</dt>
-                            <dd>{standardCount}</dd>
+                            <dd><a href="#collection-list-title" aria-label={`已收录 ${standardCount} 条标准，跳到全部清单`}>{standardCount}</a></dd>
                         </div>
                         <div>
                             <dt>保存位置</dt>
