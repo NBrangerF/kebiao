@@ -224,7 +224,10 @@ function Header() {
             {current && current.items.length > 1 ? (
                 <nav className={`${styles.subnav} ${subOpen ? styles.subnavOpen : ''}`} aria-label={`${current.label}栏目`} data-kb-shell="header">
                     <div className={`container ${styles.subnavInner}`} id="kb-subnav">
-                        <span className={styles.subnavLabel} aria-hidden="true">{current.label}</span>
+                        {/* the group name opens the group's main page; on that page it is only a label */}
+                        {location.pathname === current.to
+                            ? <span className={styles.subnavLabel} aria-hidden="true">{current.label}</span>
+                            : <Link to={current.to} className={`${styles.subnavLabel} ${styles.subnavLabelLink}`}>{current.label}</Link>}
                         {groupItems(current, myBook).map(item => {
                             const active = itemActive(item, location.pathname)
                             return (

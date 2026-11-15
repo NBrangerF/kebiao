@@ -321,15 +321,42 @@
 .subnavInner::-webkit-scrollbar { display: none; }
 
 .subnavLabel {
+    position: relative;
     display: inline-flex;
     align-items: center;
-    margin-right: -8px;
+    margin-right: -12px;
+    padding-right: 12px;
     color: var(--kb-dim);
     font-family: var(--font-sans);
     font-size: 12px;
     letter-spacing: 0.02em;
     white-space: nowrap;
+    cursor: default;
+    user-select: none;
 }
+
+/* a hairline after the group name: it reads as the row's caption, not as one of its pages */
+.subnavLabel::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    height: 14px;
+    border-right: 1px solid var(--kb-line-strong);
+    transform: translateY(-50%);
+}
+
+/* away from the group's main page the name is a link back to it, underlined so it looks like one */
+.subnavLabelLink {
+    min-height: 44px;
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-color: var(--kb-line-strong);
+    text-underline-offset: 4px;
+    transition: color var(--transition-fast);
+}
+
+.subnavLabelLink:hover { color: var(--kb-moon); }
 
 .subnavLink {
     display: inline-flex;

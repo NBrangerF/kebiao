@@ -17,6 +17,9 @@ import styles from './TextbookReader.module.css'
 
 // The legacy build carries PDF.js's own polyfills (Promise.withResolvers, URL.parse) for older phone browsers.
 pdfjs.GlobalWorkerOptions.workerSrc = new URL('pdfjs-dist/legacy/build/pdf.worker.min.mjs', import.meta.url).toString()
+// Start downloading the worker now, while the page asks for the book and its file: PDF.js would only ask for it
+// after both, and 「正在加载 PDF…」 waited for it (built files are cached for a year, so it is fetched once).
+if (typeof window !== 'undefined') fetch(pdfjs.GlobalWorkerOptions.workerSrc).catch(() => {})
 
 // Fetch only the byte ranges the visible pages need. By default PDF.js streams the whole
 // file in the background, so opening one page of a 100 MB textbook downloads all of it.
@@ -464,6 +467,13 @@ export default function TextbookReader({ book, fileUrl, initialPage = null, init
 
     const pageStep = mode === 'double' ? 2 : 1
     const spreadWidth = Math.max(230, Math.min(650, (viewportWidth - 92) / 2 * zoom))
+    // a page stops at 280–920 px (a spread at 230–650): the % shows the size on screen, zoom steps from it, and a
+    // button that would change nothing is disabled
+    const fitWidth = mode === 'double' ? (viewportWidth - 92) / 2 : viewportWidth - 56
+    const widthAt = value => (mode === 'double' ? Math.max(230, Math.min(650, fitWidth * value)) : Math.max(280, Math.min(920, fitWidth * value)))
+    const shownZoom = fitWidth > 0 ? widthAt(zoom) / fitWidth : zoom
+    const zoomOut = Math.max(.65, Math.round((shownZoom - .1) * 100) / 100)
+    const zoomIn = Math.min(1.7, Math.round((shownZoom + .1) * 100) / 100)
 
     return (
         <Document
@@ -487,9 +497,9 @@ export default function TextbookReader({ book, fileUrl, initialPage = null, init
                         {['single', 'continuous', 'double'].map(value => <button type="button" key={value} className={mode === value ? styles.active : ''} onClick={() => setMode(value)}>{value === 'single' ? '单页' : value === 'continuous' ? '连续' : '双页'}</button>)}
                     </div>
                     <div className={styles.zoomControls}>
-                        <button type="button" onClick={() => setZoom(value => Math.max(.65, value - .1))} aria-label="缩小"><MinusIcon size={16} aria-hidden="true" /></button>
-                        <span>{Math.round(zoom * 100)}%</span>
-                        <button type="button" onClick={() => setZoom(value => Math.min(1.7, value + .1))} aria-label="放大"><PlusIcon size={16} aria-hidden="true" /></button>
+                        <button type="button" onClick={() => setZoom(zoomOut)} disabled={widthAt(zoomOut) > widthAt(zoom) - 1} aria-label="缩小"><MinusIcon size={16} aria-hidden="true" /></button>
+                        <span>{Math.round(shownZoom * 100)}%</span>
+                        <button type="button" onClick={() => setZoom(zoomIn)} disabled={widthAt(zoomIn) < widthAt(zoom) + 1} aria-label="放大"><PlusIcon size={16} aria-hidden="true" /></button>
                     </div>
                     {showStandards ? <button type="button" className={`${styles.standardsToggle} ${standardsVisible ? styles.active : ''}`} onClick={toggleStandards} aria-expanded={standardsVisible} aria-controls="textbook-standards-panel">课标 <span>{alignmentContext.pageAlignments.length + alignmentContext.nodeAlignments.length + alignmentContext.unitAlignments.length}</span></button> : null}
                 </div>

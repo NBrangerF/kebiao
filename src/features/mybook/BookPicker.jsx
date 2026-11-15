@@ -11,17 +11,21 @@ const LOADING_SUBJECTS = ['语文', '数学', '英语', '道德与法治', '科�
 const order = name => (SUBJECT_ORDER.includes(name) ? SUBJECT_ORDER.indexOf(name) : SUBJECT_ORDER.length)
 
 let pending = null
+let loaded = null
 /** The library's books (with PDFs) and the pilot editions known only from the 国家平台 lesson list. */
 export function loadAllBooks() {
     pending ||= Promise.all([
         loadTextbookCatalog().catch(() => ({ items: [] })),
         fetch('/data/textbooks/platform_books.json').then(response => (response.ok ? response.json() : { books: [] })).catch(() => ({ books: [] }))
-    ]).then(([catalog, platform]) => [
+    ]).then(([catalog, platform]) => (loaded = [
         ...(catalog.items || []).filter(book => book.resource_type === 'student_textbook').map(book => ({ ...book, platform_only: false })),
         ...(platform.books || []).map(book => ({ ...book, platform_only: true }))
-    ])
+    ]))
     return pending
 }
+
+/** The books if they have already arrived (null until then). */
+export const loadedBooks = () => loaded
 
 /** A library book opens its own page; a pilot edition opens its 课标对应表, the only page it has. */
 export function bookHref(book) {
@@ -34,7 +38,7 @@ const slotLabel = book => `${CN[book.grade] || book.grade}${String(book.volume).
 /** Three steps to a textbook: subject, then grade and volume, then edition. `inline` (the home page) drops the
  *  panel and shows each step only once the one before it is chosen. */
 export default function BookPicker({ className = '', inline = false }) {
-    const [books, setBooks] = useState(null)
+    const [books, setBooks] = useState(loadedBooks)
     const [subject, setSubject] = useState('')
     const [slot, setSlot] = useState('')
     const [edition, setEdition] = useState('')

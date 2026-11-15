@@ -16,6 +16,8 @@ import UiTelemetryListener from './observability/UiTelemetryListener'
 import UmamiRouteTelemetry from './observability/UmamiRouteTelemetry'
 import { isKebiaoProductionHost } from './observability/umamiTelemetry.js'
 import { SkyProvider, useSky } from './features/starmap/SkyProvider.jsx'
+import { loadAllBooks } from './features/mybook/BookPicker.jsx'
+import { loadAlignedEditions } from './features/textbooks/textbookApi'
 import './App.css'
 
 const SubjectPage = lazy(() => import('./pages/SubjectPage'))
@@ -35,7 +37,11 @@ const PrintPage = lazy(() => import('./pages/PrintPage'))
 // development only (see the /styleguide route), so production builds leave the page out
 const StyleGuidePage = import.meta.env.DEV ? lazy(() => import('./pages/StyleGuidePage')) : null
 const SmartSearchPage = lazy(() => import('./pages/SmartSearchPage'))
-const TextbookLibraryPage = lazy(() => import('./pages/TextbookLibraryPage'))
+let textbookLibrary = null
+const loadTextbookLibrary = () => import('./pages/TextbookLibraryPage').then(module => (textbookLibrary = module))
+// once warmed (below), React gets the page at once through a thenable that resolves right away: a promise would
+// still flash 「正在打开教材馆」 and hold the page back for React's half-second fallback throttle
+const TextbookLibraryPage = lazy(() => (textbookLibrary ? { then: resolve => resolve(textbookLibrary) } : loadTextbookLibrary()))
 const TextbookDetailPage = lazy(() => import('./pages/TextbookDetailPage'))
 const TextbookReaderPage = lazy(() => import('./pages/TextbookReaderPage'))
 const TextbookResourceReaderPage = lazy(() => import('./pages/TextbookResourceReaderPage'))
@@ -116,6 +122,24 @@ function App() {
     const bare = useLocation().pathname.startsWith('/checks/present')
     // saved lists made before the 2025 rebuild hold old codes; move them to the new standards
     useEffect(() => { migrateSavedCodes({ getCollections, saveCollections }).catch(() => {}) }, [])
+    // 教材馆 is where most teachers go next: fetch its code and book list once the browser is idle, so a tap opens it
+    // at once instead of showing 「正在打开教材馆」 (both are small and fetched only once)
+    useEffect(() => {
+        const warm = () => {
+            // a failed warm-up is no reason to reload the page (main.jsx does after a deploy): the tap tries again
+            const quiet = event => { event.stopImmediatePropagation(); event.preventDefault() }
+            window.addEventListener('vite:preloadError', quiet, { capture: true })
+            loadTextbookLibrary().catch(() => {}).finally(() => window.removeEventListener('vite:preloadError', quiet, { capture: true }))
+            loadAllBooks().catch(() => {})
+            loadAlignedEditions().catch(() => {})
+        }
+        if (typeof window.requestIdleCallback === 'function') {
+            const id = window.requestIdleCallback(warm, { timeout: 4000 })
+            return () => window.cancelIdleCallback(id)
+        }
+        const id = setTimeout(warm, 2500)
+        return () => clearTimeout(id)
+    }, [])
 
     return (
         <SkyProvider>

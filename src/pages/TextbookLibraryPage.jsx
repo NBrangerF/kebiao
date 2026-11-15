@@ -7,9 +7,9 @@ import { PageLoading, ErrorState, EmptyState } from '../components/StateComponen
 import { textbooksMeta } from '../seo/pageMeta.js'
 import { usePageMeta } from '../seo/usePageMeta.js'
 import TextbookCover from '../features/textbooks/TextbookCover'
-import { filterTextbooks, loadTextbookCatalog } from '../features/textbooks/textbookApi'
+import { filterTextbooks, loadAlignedEditions, loadTextbookCatalog, loadedAlignedEditions, loadedTextbookCatalog } from '../features/textbooks/textbookApi'
 import { useMyBook } from '../features/mybook/myBook.js'
-import BookPicker, { loadAllBooks } from '../features/mybook/BookPicker.jsx'
+import BookPicker, { loadAllBooks, loadedBooks } from '../features/mybook/BookPicker.jsx'
 import MyBookCard from '../features/mybook/MyBookCard.jsx'
 import styles from './TextbookLibraryPage.module.css'
 
@@ -31,7 +31,8 @@ function filtersFromParams(params) {
 
 export default function TextbookLibraryPage() {
     const [searchParams, setSearchParams] = useSearchParams()
-    const [catalog, setCatalog] = useState(null)
+    // fetched once per visit and warmed while the browser is idle (App.jsx), so usually there is nothing to wait for
+    const [catalog, setCatalog] = useState(loadedTextbookCatalog)
     usePageMeta(catalog ? textbooksMeta({ textbookCount: catalog.items?.length }) : null)
     const [error, setError] = useState('')
     const [visibleCount, setVisibleCount] = useState(36)
@@ -39,12 +40,12 @@ export default function TextbookLibraryPage() {
     const myBook = useMyBook()
     const [changing, setChanging] = useState(false)
     // books whose lessons are matched to 课标 one by one, and the pilot editions known only by their lesson list
-    const [aligned, setAligned] = useState(() => new Set())
-    const [pilots, setPilots] = useState(null)
+    const [aligned, setAligned] = useState(() => loadedAlignedEditions() || new Set())
+    const [pilots, setPilots] = useState(() => loadedBooks()?.filter(book => book.platform_only) || null)
 
     useEffect(() => {
         loadTextbookCatalog().then(setCatalog).catch(errorValue => setError(errorValue.message))
-        fetch('/data/textbooks/national-lessons/index.json').then(response => (response.ok ? response.json() : null)).then(data => setAligned(new Set(Object.keys(data?.editions || {})))).catch(() => {})
+        loadAlignedEditions().then(setAligned).catch(() => {})
         loadAllBooks().then(books => setPilots(books.filter(book => book.platform_only))).catch(() => setPilots([]))
     }, [])
 
