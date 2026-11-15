@@ -97,7 +97,9 @@ function ThumbnailRail({ pdf, numPages, currentPage, onJump }) {
         count: numPages,
         getScrollElement: () => parentRef.current,
         estimateSize: () => 154,
-        overscan: 2
+        overscan: 2,
+        // measure on the next frame: re-rendering inside the resize callback can set off the browser's ResizeObserver loop error
+        useAnimationFrameWithResizeObserver: true
     })
 
     useEffect(() => {
@@ -193,7 +195,8 @@ function ContinuousPages({ numPages, width, currentPage, onCurrentPage, scrollRe
         count: numPages,
         getScrollElement: () => parentRef.current,
         estimateSize: () => width * 1.42 + 28,
-        overscan: 2
+        overscan: 2,
+        useAnimationFrameWithResizeObserver: true
     })
 
     useEffect(() => {
