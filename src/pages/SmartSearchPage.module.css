@@ -44,6 +44,7 @@
 .go:hover:not(:disabled) { background: #fff; }
 .go:focus-visible { outline: 2px solid var(--kb-gold); outline-offset: 2px; }
 .go:disabled { opacity: 0.5; cursor: default; }
+.hint { margin: 10px 0 0; color: var(--kb-gold); font-size: 14px; }
 
 .examples { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-top: 22px; }
 .examples > p { width: 100%; margin-bottom: 2px; }

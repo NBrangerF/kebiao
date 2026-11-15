@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { STATIC_PAGE_META } from '../seo/pageMeta.js'
 import { usePageMeta } from '../seo/usePageMeta.js'
@@ -46,20 +46,38 @@ const TOOLS = [
 ]
 
 export function CopyBlock({ text, label }) {
-    const [copied, setCopied] = useState(false)
+    const [copied, setCopied] = useState('')
+    const preRef = useRef(null)
     const copy = async () => {
+        let ok = false
         try {
             await navigator.clipboard.writeText(text)
-            setCopied(true)
-            window.setTimeout(() => setCopied(false), 1800)
+            ok = true
         } catch {
-            setCopied(false)
+            // 微信等内置浏览器常常不给 clipboard API，退回旧办法
+            const area = document.createElement('textarea')
+            area.value = text
+            area.setAttribute('readonly', '')
+            area.style.position = 'fixed'
+            area.style.opacity = '0'
+            document.body.appendChild(area)
+            area.select()
+            try { ok = document.execCommand('copy') } catch { ok = false }
+            area.remove()
         }
+        // 实在复制不了，就把文字选中，让老师长按复制
+        if (!ok && preRef.current) window.getSelection()?.selectAllChildren(preRef.current)
+        setCopied(ok ? 'done' : 'manual')
+        window.setTimeout(() => setCopied(''), ok ? 1800 : 4000)
+    }
+    // 点文字本身也复制；自己拖选了一段时不打扰
+    const copyFromText = () => {
+        if (!window.getSelection()?.toString()) copy()
     }
     return (
         <div className={styles.block}>
-            <pre tabIndex={0} aria-label={label}>{text}</pre>
-            <button type="button" className="btn btn-secondary" onClick={copy}>{copied ? '已复制' : '复制'}</button>
+            <pre ref={preRef} tabIndex={0} aria-label={label} title="点一下复制" onClick={copyFromText}>{text}</pre>
+            <button type="button" className="btn btn-secondary" onClick={copy} aria-live="polite">{copied === 'done' ? '已复制' : copied === 'manual' ? '请长按复制' : '复制'}</button>
         </div>
     )
 }

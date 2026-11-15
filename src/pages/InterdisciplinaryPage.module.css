@@ -25,6 +25,7 @@
     flex-wrap: wrap;
     gap: 0.75rem;
     margin-top: 1.5rem;
+    scroll-margin-top: 120px;
 }
 
 .filters label {
@@ -130,11 +131,25 @@
     font-size: 12px;
 }
 
-.with span {
+.with span,
+.with button {
     padding: 0.1rem 0.55rem;
     border: 1px solid var(--kb-line-strong);
     border-radius: 0;
     color: var(--kb-moon);
+}
+
+.with button {
+    min-height: 28px;
+    background: transparent;
+    font: inherit;
+    cursor: pointer;
+}
+
+.with button:hover,
+.with button:focus-visible {
+    border-color: var(--kb-gold);
+    color: var(--kb-gold);
 }
 
 .source {

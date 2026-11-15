@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import { Link, useSearchParams } from 'react-router-dom'
 import { PageLoading, ErrorState } from '../components/StateComponents'
 import { STATIC_PAGE_META } from '../seo/pageMeta.js'
@@ -28,7 +28,7 @@ function loadThemes() {
 const gradeText = grades => (grades.length > 1 ? `${grades[0]}–${grades.at(-1)} 年级` : `${grades[0]} 年级`)
 const planLink = ({ slug, name, grade, topic, code }) => `/lesson-plan?mode=topic&subject=${encodeURIComponent(PLAN_SUBJECT[slug] || name)}&grade=${grade || ''}&topic=${encodeURIComponent(topic.slice(0, 40))}${code ? `&codes=${code}` : ''}`
 
-function ThemeCard({ group, theme, grade }) {
+function ThemeCard({ group, theme, grade, onPickSubject }) {
     const topic = theme.group ? `${theme.group.replace(/[“”]/gu, '')}：${theme.name}` : theme.name
     return (
         <li className={styles.card} style={{ '--subject-color': group.color || 'var(--kb-gold)' }}>
@@ -39,7 +39,9 @@ function ThemeCard({ group, theme, grade }) {
                 {theme.kind ? <span>{theme.kind}</span> : null}
             </p>
             <h3>{theme.name}</h3>
-            {theme.with.length ? <p className={styles.with}>结合 {theme.with.map(name => <span key={name}>{name}</span>)}</p> : null}
+            {theme.with.length ? <p className={styles.with}>结合 {theme.with.map((name, index) => theme.with_slugs[index]
+                ? <button key={name} type="button" onClick={() => onPickSubject(theme.with_slugs[index])} aria-label={`只看${name}相关的主题`}>{name}</button>
+                : <span key={name}>{name}</span>)}</p> : null}
             <blockquote>{theme.quote}</blockquote>
             <p className={styles.source}>{group.subject}课标 · 修订版第 {theme.pages.join('、')} 页</p>
             <Link className={styles.action} to={planLink({ slug: group.subject_slug, name: group.subject, grade: grade || theme.grades[0], topic })}>用备课助手设计这个主题</Link>
@@ -54,7 +56,7 @@ function StandardCard({ standard, grade }) {
                 <span className={styles.lead}><i aria-hidden="true" />{standard.subject}</span>
                 <span>{standard.stage_label}</span>
             </p>
-            <h3><Link to={`/standards/${standard.code}`}>{standard.title}</Link> <code>{standard.code}</code></h3>
+            <h3><Link to={`/standards/${standard.code}`}>{standard.title} <code>{standard.code}</code></Link></h3>
             <ul className={styles.activities}>
                 {standard.indicators.map(item => <li key={item.code}>{item.text.length > 90 ? `${item.text.slice(0, 90)}…` : item.text}</li>)}
             </ul>
@@ -68,6 +70,7 @@ export default function InterdisciplinaryPage() {
     const [params, setParams] = useSearchParams()
     const [data, setData] = useState(null)
     const [error, setError] = useState('')
+    const filtersRef = useRef(null)
     const subject = params.get('subject') || ''
     const grade = Number(params.get('grade')) || 0
     useEffect(() => {
@@ -82,6 +85,11 @@ export default function InterdisciplinaryPage() {
             else next.delete(key)
         }
         setParams(next, { replace: true })
+    }
+    // 点卡片上「结合」后面的学科：换成看这门学科，并回到筛选处
+    const pickSubject = slug => {
+        update({ subject: slug })
+        filtersRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' })
     }
     const view = useMemo(() => {
         if (!data) return null
@@ -111,7 +119,7 @@ export default function InterdisciplinaryPage() {
                 <p className={concepts.lede}>
                     历史、地理、体育与健康三科的课标给出了具体的参考主题；语文、数学、信息科技、物理、化学、生物学和美术把跨学科学习写进了内容要求。选你教的学科和年级，看本学科的主题，以及其他学科里要用到你学科的主题。
                 </p>
-                <div className={styles.filters}>
+                <div className={styles.filters} ref={filtersRef}>
                     <label><span>学科</span>
                         <select value={subject} onChange={event => update({ subject: event.target.value })}>
                             <option value="">全部学科</option>
@@ -135,7 +143,7 @@ export default function InterdisciplinaryPage() {
                         <h2 id="xd-own">{subjectName ? `${subjectName}课标给出的主题` : '课标给出的主题'}</h2>
                         <p>{(subjectName ? data.groups.filter(group => group.subject_slug === subject) : data.groups).map(group => `${group.subject}：${group.where}`).join('；')}。课标说明这些是参考示例，可以按学校和学生的实际调整或自主设计。</p>
                     </div>
-                    <ul className={styles.grid}>{view.own.map(({ group, theme }) => <ThemeCard key={theme.id} group={group} theme={theme} grade={grade} />)}</ul>
+                    <ul className={styles.grid}>{view.own.map(({ group, theme }) => <ThemeCard key={theme.id} group={group} theme={theme} grade={grade} onPickSubject={pickSubject} />)}</ul>
                 </section>
             ) : null}
 
@@ -155,7 +163,7 @@ export default function InterdisciplinaryPage() {
                         <h2 id="xd-others">其他学科的主题里，要用到{subjectName}的</h2>
                         <p>课标在这些主题里点名要结合{subjectName}。可以和这些学科的老师一起设计，各自的课时都算进跨学科主题学习。</p>
                     </div>
-                    <ul className={styles.grid}>{view.others.map(({ group, theme }) => <ThemeCard key={theme.id} group={group} theme={theme} grade={grade} />)}</ul>
+                    <ul className={styles.grid}>{view.others.map(({ group, theme }) => <ThemeCard key={theme.id} group={group} theme={theme} grade={grade} onPickSubject={pickSubject} />)}</ul>
                 </section>
             ) : null}
 

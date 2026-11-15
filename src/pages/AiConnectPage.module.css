@@ -36,6 +36,7 @@
     line-height: 1.7;
     white-space: pre-wrap;
     overflow-wrap: anywhere;
+    cursor: copy;
 }
 
 .block pre:focus-visible {

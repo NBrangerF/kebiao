@@ -195,6 +195,8 @@ function SmartSearchPage() {
     const [preview, setPreview] = useState(null)
     const controllerRef = useRef(null)
     const lastRequestRef = useRef(null)
+    const inputRef = useRef(null)
+    const [hint, setHint] = useState('')
 
     // A fresh search forgets removed conditions; a refinement keeps the first answer's conditions on screen.
     const runSearch = useCallback(async (text, nextIgnored, refine) => {
@@ -244,7 +246,13 @@ function SmartSearchPage() {
 
     function submit(text) {
         const trimmed = text.trim()
-        if (trimmed.length < 2) return
+        // 空着点「检索」时不再没反应：提示一句，并把光标放回输入框
+        if (trimmed.length < 2) {
+            setHint('先写一句你要找的内容，或点下面的例子。')
+            inputRef.current?.focus()
+            return
+        }
+        setHint('')
         setQuery(trimmed)
         if (trimmed === urlQuery) runSearch(trimmed, NO_IGNORED, false)
         else setSearchParams({ q: trimmed })
@@ -329,11 +337,13 @@ function SmartSearchPage() {
                             maxLength={500}
                             placeholder="例如：三四年级科学中，适合培养证据推理的观察活动"
                             value={query}
-                            onChange={event => setQuery(event.target.value)}
+                            ref={inputRef}
+                            onChange={event => { setQuery(event.target.value); if (hint) setHint('') }}
                             onKeyDown={onKeyDown}
                         />
-                        <button type="submit" className={styles.go} disabled={loading || query.trim().length < 2}>{loading ? '检索中…' : '检索'}</button>
+                        <button type="submit" className={styles.go} disabled={loading}>{loading ? '检索中…' : '检索'}</button>
                     </div>
+                    {hint ? <p className={styles.hint} role="status">{hint}</p> : null}
                 </form>
                 <div className={styles.examples}>
                     <p className={kb.label}>可以这样问</p>

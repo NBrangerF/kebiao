@@ -645,8 +645,10 @@
     color: var(--kb-gold);
 }
 
+/* 核心素养 are labels, not links: a colour bar instead of the full box the link chips above use */
 .literacy li {
-    border-color: color-mix(in srgb, var(--subject-color) 55%, transparent);
+    border-color: transparent;
+    border-left: 3px solid color-mix(in srgb, var(--subject-color) 70%, transparent);
     background: color-mix(in srgb, var(--subject-color) 10%, transparent);
 }
 
