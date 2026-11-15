@@ -112,6 +112,22 @@ export default function CompareWindow({ K, state, setState, heading }) {
         set({ subs: a.sort((x, y) => x - y) })
     }
 
+    // the dots are a map of the column: tapping one scrolls the list below to that 要点 and lights it up
+    const jumpToDot = (event, list) => {
+        let best = -1
+        let bestD = Infinity
+        ;[...event.currentTarget.children].forEach((dot, k) => {
+            const r = dot.getBoundingClientRect()
+            const d = Math.hypot(r.left + r.width / 2 - event.clientX, r.top + r.height / 2 - event.clientY)
+            if (d < bestD) { bestD = d; best = k }
+        })
+        const el = items.current.get(list[best])
+        const ol = el?.closest('ol')
+        if (!el || !ol) return
+        ol.scrollTop += el.getBoundingClientRect().top - ol.getBoundingClientRect().top - 6
+        setActive(list[best])
+    }
+
     const S = K.S
     items.current = new Map()
     return (
@@ -168,7 +184,7 @@ export default function CompareWindow({ K, state, setState, heading }) {
                                         <b>{c.label}</b>
                                         <span className={styles.n}>{c.list.length}</span>
                                     </header>
-                                    <div className={styles.dots} aria-hidden="true">{c.list.map(i => <i key={i} />)}</div>
+                                    <div className={styles.dots} aria-hidden="true" onClick={event => jumpToDot(event, c.list)}>{c.list.map(i => <i key={i} />)}</div>
                                     <ol className={styles.items} onScroll={() => drawLines(false)}>
                                         {!c.list.length ? <li className={styles.emptyCol}>这一格没有要点</li> : null}
                                         {c.list.flatMap(i => {

@@ -133,7 +133,7 @@
 
 .tabs button[aria-pressed='true'] { border-color: var(--c); color: var(--kb-moon); }
 
-.dots { display: flex; flex-wrap: wrap; gap: 4px; padding: 0 14px 12px; }
+.dots { display: flex; flex-wrap: wrap; gap: 4px; padding: 0 14px 12px; cursor: pointer; }
 .dots i { width: 6px; height: 6px; border-radius: 50%; background: var(--c); box-shadow: none; opacity: 0.85; }
 
 .items {
