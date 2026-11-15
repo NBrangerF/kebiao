@@ -300,6 +300,28 @@
     text-decoration: none;
 }
 
+/* the book title and unit name in the lesson card open their own pages */
+.metaLink {
+    color: inherit;
+    text-decoration: underline;
+    text-decoration-color: rgba(233, 200, 135, 0.5);
+    text-underline-offset: 3px;
+}
+
+.metaLink:hover { color: var(--kb-gold); }
+
+/* 「在下面补一句」 in the status line: a link-looking button that jumps to the hint box */
+.hintJump {
+    padding: 0;
+    border: 0;
+    background: none;
+    color: var(--kb-gold);
+    font: inherit;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    cursor: pointer;
+}
+
 /* 国家平台同步课: one line in the lesson card */
 .sync {
     display: flex;

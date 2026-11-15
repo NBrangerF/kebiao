@@ -768,9 +768,11 @@ export default function LessonPlanPage() {
                 <section className={styles.step} aria-labelledby="lp-basis">
                     <h2 id="lp-basis"><span>2</span>确认依据</h2>
                     <div className={styles.lessonCard}>
-                        <p className={styles.lessonMeta}>{[context.subject_note?.name, context.lesson.grade ? `${context.lesson.grade} 年级` : '', context.lesson.edition_name, context.lesson.textbook_title].filter(Boolean).join(' · ')}</p>
+                        <p className={styles.lessonMeta}>{[context.subject_note?.name, context.lesson.grade ? `${context.lesson.grade} 年级` : '', context.lesson.edition_name, context.lesson.edition_id ? '' : context.lesson.textbook_title].filter(Boolean).join(' · ')}
+                            {context.lesson.edition_id && context.lesson.textbook_title ? <> · <Link className={styles.metaLink} to={`/textbooks/${context.lesson.edition_id}`}>{context.lesson.textbook_title}</Link></> : null}
+                        </p>
                         <p className={styles.lessonTitle}>{context.lesson.title}</p>
-                        {context.lesson.unit_title ? <p className={styles.lessonMeta}>所在单元：{context.lesson.unit_title}</p> : null}
+                        {context.lesson.unit_title ? <p className={styles.lessonMeta}>所在单元：{context.lesson.unit_id ? <Link className={styles.metaLink} to={`/textbook-units/${context.lesson.unit_id}`}>{context.lesson.unit_title}</Link> : context.lesson.unit_title}</p> : null}
                         {context.lesson.edition_id && context.lesson.pdf_page ? (
                             <Link className={styles.inlineLink} to={`/textbooks/${context.lesson.edition_id}/read?page=${context.lesson.pdf_page}`}>打开原书第 {context.lesson.pdf_page} 页（PDF） <ArrowRightIcon size={14} aria-hidden="true" /></Link>
                         ) : null}
@@ -788,9 +790,9 @@ export default function LessonPlanPage() {
                     <p className={styles.aiStatus} aria-live="polite">
                         {ai.status === 'loading' ? 'kebiao 正在把这个年级的课标逐条读一遍，找这一课要教的要点（约 10–20 秒）…'
                             : ai.status === 'ok' ? (isUnit ? `kebiao 读完了，已勾选这个单元对应的 ${selectedCount} 条要点。请核对：去掉单元里不教的，补上漏掉的。` : `kebiao 读完了，已勾选它判断直接对应的 ${selectedCount} 条要点。请核对：只留这节课真正要教的（一般 1–3 条）。`)
-                                : ai.status === 'closest' ? `kebiao 没有找到直接对应的要点，先勾了 ${selectedCount} 条最接近的。请读原文核对，或在下面补一句这节课主要教什么，让 kebiao 重新找。`
+                                : ai.status === 'closest' ? <>kebiao 没有找到直接对应的要点，先勾了 {selectedCount} 条最接近的。请读原文核对，或<button type="button" className={styles.hintJump} onClick={focusHint}>在下面补一句</button>这节课主要教什么，让 kebiao 重新找。</>
                                 : ai.status === 'none' ? 'kebiao 没有找到直接对应的要点。请从下面的候选里自己勾选，或换个课题写法。'
-                                    : ai.status === 'lesson' ? `已按这一课的教材原文勾好它主要在教的 ${selectedCount} 条要点（kebiao 事先逐课读过，每条附这一课的原话）。请核对；想换个角度，在下面补一句，kebiao 会重新找。`
+                                    : ai.status === 'lesson' ? <>已按这一课的教材原文勾好它主要在教的 {selectedCount} 条要点（kebiao 事先逐课读过，每条附这一课的原话）。请核对；想换个角度，<button type="button" className={styles.hintJump} onClick={focusHint}>在下面补一句</button>，kebiao 会重新找。</>
                                     : ai.status === 'fallback' ? 'kebiao 这次没能读完要点，先勾上了它此前按整个单元判断的要点：不一定都是这一课教的，请读原文，按这一课增删。'
                                     : ai.status === 'failed' ? 'kebiao 这次没能读完要点。请读下面候选的原文，自己勾选：机器对齐和字面匹配可能出错，比如会把「分数的基本性质」对到「等式的基本性质」。'
                                     : ai.status === 'manual' ? '可以让 kebiao 把这个年级的课标读一遍，勾出这一课要教的要点；也可以直接从下面的候选里勾选。' : ''}
@@ -971,6 +973,14 @@ function openSelect(event) {
     if (!select || select.disabled) return
     event.preventDefault()
     try { select.showPicker() } catch { select.focus() }
+}
+
+// the status line's 「在下面补一句」 brings the hint box into view and puts the cursor in it
+function focusHint() {
+    const input = document.getElementById('lp-hint')
+    if (!input) return
+    input.scrollIntoView({ block: 'center', behavior: 'smooth' })
+    input.focus({ preventScroll: true })
 }
 
 function HintInput({ onSubmit, current }) {
