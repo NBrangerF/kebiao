@@ -482,9 +482,9 @@ export default function TextbookReader({ book, fileUrl, initialPage = null, init
         <Document
             file={documentSource}
             options={DOCUMENT_OPTIONS}
-            noData={<div className={styles.documentState}>正在加载 PDF…</div>}
+            noData={<div className={styles.documentState} role="status">正在打开原书，第一次打开要几秒…</div>}
             onLoadSuccess={documentValue => { setPdf(documentValue); setNumPages(documentValue.numPages) }}
-            loading={<div className={styles.documentState}>正在加载 PDF…</div>}
+            loading={<div className={styles.documentState} role="status">正在打开原书，第一次打开要几秒…</div>}
             error={<div className={styles.documentState}>原书暂时没有打开。请检查网络后刷新页面再试。</div>}
         >
             <div className={styles.reader}>
