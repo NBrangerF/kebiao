@@ -678,6 +678,36 @@
     font-size: 14px;
 }
 
+.docHead > .editHint {
+    margin: 0.35rem 0 0;
+    color: #8a5a0b;
+    font-size: 12px;
+}
+
+/* drafted text the teacher can change in place */
+.editable {
+    cursor: text;
+    border-radius: 2px;
+}
+
+td > .editable,
+dd > .editable,
+.board > .editable {
+    display: block;
+}
+
+@media (hover: hover) {
+    .editable:hover {
+        background: rgba(138, 90, 11, 0.06);
+    }
+}
+
+.editable:focus {
+    outline: 1px dashed #6b4a10;
+    outline-offset: 2px;
+    background: rgba(138, 90, 11, 0.08);
+}
+
 /* 本页: links to the plan's parts */
 .jump {
     margin-top: 1rem;
@@ -1041,7 +1071,8 @@
     .hero,
     .step,
     .docActions,
-    .jump {
+    .jump,
+    .editHint {
         display: none !important;
     }
 

@@ -95,6 +95,8 @@ function Header() {
                                 to={group.to}
                                 className={`${styles.navLink} ${current?.key === group.key ? styles.navLinkActive : ''}`}
                                 aria-current={groupCurrent(group)}
+                                // already on this page: back to its top rather than a tap that does nothing
+                                onClick={event => { if (location.pathname === group.to && !location.search) { event.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }) } }}
                             >
                                 {group.label}
                             </Link>

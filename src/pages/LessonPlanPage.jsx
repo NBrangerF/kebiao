@@ -180,6 +180,9 @@ export default function LessonPlanPage() {
     // set by 「让 AI 找要点」 where the pick does not start by itself
     const [pickAsked, setPickAsked] = useState(false)
     const [plan, setPlan] = useState(null)
+    // the plan with the teacher's latest change in it, even before the page shows it again
+    const planRef = useRef(null)
+    planRef.current = plan
     const [step, setStep] = useState('')
     const [error, setError] = useState('')
     const [copied, setCopied] = useState(false)
@@ -560,8 +563,23 @@ export default function LessonPlanPage() {
         setStored(writeStored(next))
     }
 
+    // the teacher's own change to a drafted line, typed into the plan: kept on this device, and what 下载 Word and 复制 use
+    function editPlan(path, text) {
+        const next = JSON.parse(JSON.stringify(planRef.current))
+        path.slice(0, -1).reduce((node, key) => node[key], next)[path[path.length - 1]] = text
+        planRef.current = next
+        keepPlan(next)
+    }
+    // the plan to export or send: a line still being typed is saved first (on a phone a tap on a button can leave the
+    // text focused); the fallback is the plan a call started from, once another plan has replaced it
+    function latestPlan(from = plan) {
+        if (document.activeElement?.isContentEditable) document.activeElement.blur()
+        return planRef.current && storedKey(planRef.current) === storedKey(from) ? planRef.current : from
+    }
+
     // 说课稿 (说课比赛) or 试讲稿 + 答辩 (教资面试) from the drafted plan, saved with it
     async function makeTalk(step = 'talk') {
+        const plan = latestPlan()
         if (!plan?.process || talking) return
         setTalking(step)
         setTalkError('')
@@ -580,7 +598,7 @@ export default function LessonPlanPage() {
                 frame: plan.frame,
                 process: plan.process
             })).data
-            keepPlan({ ...plan, [step]: payload[step] })
+            keepPlan({ ...latestPlan(plan), [step]: payload[step] })
             revealHeading(step === 'trial' ? 'lp-trial-title' : 'lp-talk-title')
             trackUmamiEvent('lesson_plan_export', { format: step, kind: 'lesson' })
         } catch (errorValue) {
@@ -592,6 +610,7 @@ export default function LessonPlanPage() {
 
     // 当堂练习 once more, when its call failed and the rest of the plan came back
     async function retryPractice() {
+        const plan = latestPlan()
         if (!plan?.frame || talking) return
         setTalking('practice')
         setTalkError('')
@@ -604,7 +623,8 @@ export default function LessonPlanPage() {
                 ...(plan.meta?.class_size ? { class_size: plan.meta.class_size } : {}),
                 frame: plan.frame
             })).data
-            keepPlan({ ...plan, practice: payload.practice, checks: [...plan.checks, ...payload.checks] })
+            const base = latestPlan(plan)
+            keepPlan({ ...base, practice: payload.practice, checks: [...base.checks, ...payload.checks] })
         } catch (errorValue) {
             setTalkError(`当堂练习没写出来：${aiError(errorValue)}`)
         } finally {
@@ -613,7 +633,7 @@ export default function LessonPlanPage() {
     }
 
     async function copy() {
-        const done = await copyText(planToText(plan))
+        const done = await copyText(planToText(latestPlan()))
         setCopied(done)
         if (done) trackUmamiEvent('lesson_plan_export', { format: 'copy', kind: 'lesson' })
     }
@@ -812,7 +832,7 @@ export default function LessonPlanPage() {
                     <section className={styles.step} aria-labelledby="lp-unit">
                         <h2 id="lp-unit"><span>3</span>单元整体设计</h2>
                         <p className={styles.small}>按逆向设计的顺序：先写单元大概念、基本问题和单元目标，再定评价证据（含一个表现性任务），最后把课时排进教材这个单元的 {context.unit_lessons.length} 节课里。</p>
-                        <div className={styles.settings}>
+                        <div className={styles.settings} onClick={openSelect}>
                             <label><span>单元总课时</span>
                                 <select value={unitHours || defaultUnitHours(context.unit_lessons)} onChange={event => setUnitHours(Number(event.target.value))}>
                                     {Array.from({ length: 30 }, (_, k) => k + 1).map(value => <option key={value} value={value}>{value} 课时</option>)}
@@ -843,7 +863,7 @@ export default function LessonPlanPage() {
                 ) : (
                 <section className={styles.step} aria-labelledby="lp-class">
                     <h2 id="lp-class"><span>3</span>说说你的情况<small>（可不填）</small></h2>
-                    <div className={styles.settings}>
+                    <div className={styles.settings} onClick={openSelect}>
                         <label><span>每课时</span>
                             <select value={settings.period} onChange={event => setSettings({ ...settings, period: Number(event.target.value), periodSet: true })}>
                                 {[35, 40, 45].map(value => <option key={value} value={value}>{value} 分钟</option>)}
@@ -911,7 +931,7 @@ export default function LessonPlanPage() {
             {unitPlan && isUnit ? <UnitDocument plan={unitPlan} edition={edition} subject={subject} onCopy={async () => setCopied(await copyText(unitToText(unitPlan)))} copied={copied} /> : null}
             {/* the 说课稿/试讲稿/练习 buttons sit at the plan's head; their errors show right above it */}
             {plan && talkError ? <p className={styles.error} role="alert">{talkError}</p> : null}
-            {plan ? <PlanDocument plan={plan} done={!busy && Boolean(plan.process)} writing={busy} onCopy={copy} copied={copied} onTalk={makeTalk} talking={talking} onPractice={retryPractice} onContinue={continuePlan} /> : null}
+            {plan ? <PlanDocument plan={plan} done={!busy && Boolean(plan.process)} writing={busy} onCopy={copy} copied={copied} onTalk={makeTalk} talking={talking} onPractice={retryPractice} onContinue={continuePlan} onEdit={editPlan} latest={latestPlan} /> : null}
             {plan?.talk ? <TalkScriptView talk={plan.talk} title={plan.frame?.title || plan.lesson.title} /> : null}
             {plan?.trial ? <TrialScriptView trial={plan.trial} title={plan.frame?.title || plan.lesson.title} /> : null}
             <CopyFallback />
@@ -937,6 +957,20 @@ const defaultUnitHours = lessons => Math.min(30, Math.max(1, (lessons || []).red
 function subjectSlugOf(books, subject) {
     const slug = books.find(book => book.subject === subject)?.subject_slug || ''
     return ['art', 'music'].includes(slug) ? 'arts' : slug
+}
+
+// a tap on a setting's name, or beside its box, opens the nearest list: a label alone only focuses its select, which on
+// a phone shows nothing
+function openSelect(event) {
+    if (event.target.closest('select')) return
+    const away = label => {
+        const box = label.getBoundingClientRect()
+        return Math.hypot(Math.max(box.left - event.clientX, 0, event.clientX - box.right), Math.max(box.top - event.clientY, 0, event.clientY - box.bottom))
+    }
+    const select = (event.target.closest('label') || [...event.currentTarget.querySelectorAll('label')].sort((a, b) => away(a) - away(b))[0])?.querySelector('select')
+    if (!select || select.disabled) return
+    event.preventDefault()
+    try { select.showPicker() } catch { select.focus() }
 }
 
 function HintInput({ onSubmit, current }) {
@@ -1052,18 +1086,37 @@ function StageLinks({ objectives, assessments }) {
     )
 }
 
+// a drafted line the teacher can change in place: saved on leaving it, so 下载 Word and 复制 carry the change. Keyed by
+// its text, a saved change mounts afresh instead of patching what the typing left. Enter ends the line (not while an
+// input method is still choosing characters); in 板书 (`lines`) it starts a new one. Left empty, it goes back.
+function Editable({ text, onSave, lines = false }) {
+    if (!onSave || typeof text !== 'string') return text
+    const save = event => {
+        const value = event.currentTarget.innerText.replace(/\u00a0/gu, ' ').replace(/\n{3,}/gu, '\n\n').trim()
+        if (!value) event.currentTarget.textContent = text
+        else if (value !== text.trim()) onSave(lines ? value : value.replace(/\s*\n\s*/gu, ' '))
+    }
+    const onKeyDown = event => {
+        if (event.key !== 'Enter' || lines || event.nativeEvent.isComposing || event.keyCode === 229) return
+        event.preventDefault()
+        event.currentTarget.blur()
+    }
+    return <span key={text} className={styles.editable} contentEditable suppressContentEditableWarning spellCheck={false} onBlur={save} onKeyDown={onKeyDown}>{text}</span>
+}
+
 // 评价任务, numbered 评价 1, 2… as the 环节 heads cite them; on a phone each row stacks as a card with its labels
-function AssessmentTable({ assessments, say }) {
+function AssessmentTable({ assessments, say, edit = () => null }) {
     return (
         <div className={styles.tableWrap} tabIndex={0} role="region" aria-label="评价任务表">
             <table>
                 <thead><tr><th>评价任务</th><th>证据</th><th>达成标准</th><th>对应目标</th></tr></thead>
-                <tbody>
+                {/* a tap on a cell's edge (or its label, on a phone) goes into its text */}
+                <tbody onClick={event => { if (event.target.tagName === 'TD') event.target.querySelector('[contenteditable]')?.focus() }}>
                     {assessments.map((item, index) => (
                         <tr key={item.id}>
-                            <td data-label="评价任务"><b className={styles.rowNo}>评价 {/^A\d+$/u.test(item.id) ? assessmentNo(item.id) : index + 1}</b>{say(item.task)}</td>
-                            <td data-label="证据">{say(item.evidence)}</td>
-                            <td data-label="达成标准">{say(item.criteria)}</td>
+                            <td data-label="评价任务"><b className={styles.rowNo}>评价 {/^A\d+$/u.test(item.id) ? assessmentNo(item.id) : index + 1}</b><Editable text={say(item.task)} onSave={edit(['frame', 'assessments', index, 'task'])} /></td>
+                            <td data-label="证据"><Editable text={say(item.evidence)} onSave={edit(['frame', 'assessments', index, 'evidence'])} /></td>
+                            <td data-label="达成标准"><Editable text={say(item.criteria)} onSave={edit(['frame', 'assessments', index, 'criteria'])} /></td>
                             <td data-label="对应目标">{item.objective_ids.length ? `目标 ${item.objective_ids.map(objectiveNo).join('、')}` : ''}</td>
                         </tr>
                     ))}
@@ -1336,10 +1389,12 @@ function SyncLessons({ context }) {
     )
 }
 
-function PlanDocument({ plan, done, writing, onCopy, copied, onTalk, talking, onPractice, onContinue }) {
+function PlanDocument({ plan, done, writing, onCopy, copied, onTalk, talking, onPractice, onContinue, onEdit, latest = () => plan }) {
     const { lesson, frame, process, practice, reading, evidence, checks, meta } = plan
     const article = useRef(null)
     const say = idReader(frame?.objectives, frame?.assessments, lesson.subject_slug)
+    // once the draft is done its text can be changed in place; `edit(path)` saves one line of it
+    const edit = done && onEdit ? path => text => onEdit(path, text) : () => null
     const metaLine = [lesson.subject_name, lesson.grade ? `${lesson.grade} 年级` : '', lesson.textbook_title ? `${lesson.edition_name || ''}${lesson.textbook_title}` : '', meta ? `第 ${meta.lesson_index} 课时（共 ${meta.lesson_count} 课时）· ${meta.period_minutes} 分钟` : '', meta?.class_size ? `约 ${meta.class_size} 人` : '', meta?.lesson_type || ''].filter(Boolean).join(' · ')
     const hasPractice = Boolean(practice?.items?.length || (process && done && onPractice))
     const jump = [
@@ -1373,8 +1428,8 @@ function PlanDocument({ plan, done, writing, onCopy, copied, onTalk, talking, on
             {done ? (
                 // each label is one inline span: a flex button would otherwise read 「下载 Word （详案）」 with a space
                 <div className={styles.docActions}>
-                    <button type="button" className="btn btn-primary" onClick={() => { downloadWord(plan); trackUmamiEvent('lesson_plan_export', { format: 'word', kind: 'lesson' }) }}><span>下载 Word<span className={styles.extra}>（详案）</span></span></button>
-                    <button type="button" className="btn btn-secondary" title="一页纸：环节、时间、关键问题、练习和板书，带进课堂用" onClick={() => { downloadBriefWord(plan); trackUmamiEvent('lesson_plan_export', { format: 'brief', kind: 'lesson' }) }}><span>简案<span className={styles.extra}>（上课用）</span></span></button>
+                    <button type="button" className="btn btn-primary" onClick={() => { downloadWord(latest()); trackUmamiEvent('lesson_plan_export', { format: 'word', kind: 'lesson' }) }}><span>下载 Word<span className={styles.extra}>（详案）</span></span></button>
+                    <button type="button" className="btn btn-secondary" title="一页纸：环节、时间、关键问题、练习和板书，带进课堂用" onClick={() => { downloadBriefWord(latest()); trackUmamiEvent('lesson_plan_export', { format: 'brief', kind: 'lesson' }) }}><span>简案<span className={styles.extra}>（上课用）</span></span></button>
                     <button type="button" className="btn btn-secondary" onClick={onCopy}>{copied ? '已复制' : <span>复制<span className={styles.extra}>全文</span></span>}</button>
                     <MoreMenu label={<>更多{talking === 'talk' || talking === 'trial' ? ' · 正在写…' : ''}</>}>
                         <button type="button" className="btn btn-ghost" onClick={print}>打印</button>
@@ -1386,8 +1441,8 @@ function PlanDocument({ plan, done, writing, onCopy, copied, onTalk, talking, on
                             </>
                         ) : null}
                         <small>下载表格</small>
-                        <button type="button" className="btn btn-ghost" title="按这份教案的目标、评价和环节生成，供听课、评课、磨课时填写" onClick={() => { downloadObservationWord(plan); trackUmamiEvent('lesson_plan_export', { format: 'observation', kind: 'lesson' }) }}>听课观察表</button>
-                        <button type="button" className="btn btn-ghost" title="按这份教案的目标、证据和预设难点生成，上完课填写" onClick={() => { downloadReflectionWord(plan); trackUmamiEvent('lesson_plan_export', { format: 'reflection', kind: 'lesson' }) }}>课后反思表</button>
+                        <button type="button" className="btn btn-ghost" title="按这份教案的目标、评价和环节生成，供听课、评课、磨课时填写" onClick={() => { downloadObservationWord(latest()); trackUmamiEvent('lesson_plan_export', { format: 'observation', kind: 'lesson' }) }}>听课观察表</button>
+                        <button type="button" className="btn btn-ghost" title="按这份教案的目标、证据和预设难点生成，上完课填写" onClick={() => { downloadReflectionWord(latest()); trackUmamiEvent('lesson_plan_export', { format: 'reflection', kind: 'lesson' }) }}>课后反思表</button>
                     </MoreMenu>
                 </div>
             ) : null}
@@ -1395,6 +1450,7 @@ function PlanDocument({ plan, done, writing, onCopy, copied, onTalk, talking, on
                 <p className={styles.aiBadge}>kebiao 起草 · 需老师修改</p>
                 <h2 id="lp-doc-title">{frame?.title || lesson.title}</h2>
                 <p>{metaLine}</p>
+                {done && onEdit ? <p className={styles.editHint}>点文字可直接修改，下载 Word 和复制全文都按改后的内容</p> : null}
             </header>
             <JumpRow items={jump} />
 
@@ -1414,7 +1470,7 @@ function PlanDocument({ plan, done, writing, onCopy, copied, onTalk, talking, on
                         <ol className={styles.objectives}>
                             {frame.objectives.map(item => (
                                 <li key={item.id}>
-                                    <span>{say(item.text)}</span>
+                                    <span><Editable text={say(item.text)} onSave={edit(['frame', 'objectives', frame.objectives.indexOf(item), 'text'])} /></span>
                                     <span className={styles.basis}><em>{item.kind}</em>{item.basis.map(code => <code key={code}>{code}</code>)}</span>
                                 </li>
                             ))}
@@ -1423,14 +1479,14 @@ function PlanDocument({ plan, done, writing, onCopy, copied, onTalk, talking, on
                     <section id="lp-sec-keys">
                         <h3>三、教学重点与难点</h3>
                         <div className={styles.twoCol}>
-                            <div><h4>教学重点</h4><ul>{frame.key_points.map(text => <li key={text}>{say(text)}</li>)}</ul></div>
-                            <div><h4>教学难点</h4><ul>{frame.difficult_points.map(text => <li key={text}>{say(text)}</li>)}</ul></div>
+                            <div><h4>教学重点</h4><ul>{frame.key_points.map((text, index) => <li key={text}><Editable text={say(text)} onSave={edit(['frame', 'key_points', index])} /></li>)}</ul></div>
+                            <div><h4>教学难点</h4><ul>{frame.difficult_points.map((text, index) => <li key={text}><Editable text={say(text)} onSave={edit(['frame', 'difficult_points', index])} /></li>)}</ul></div>
                         </div>
                         {frame.strategies?.length ? <p className={styles.strategies}><b>突破难点：</b>{say(frame.strategies.join('；'))}</p> : null}
                     </section>
                     <section id="lp-sec-learners">
                         <h3>四、学情分析</h3>
-                        <p>{say(frame.learner_analysis)}</p>
+                        <p><Editable text={say(frame.learner_analysis)} onSave={edit(['frame', 'learner_analysis'])} /></p>
                         {frame.prior_knowledge.length ? <p><b>前置知识：</b>{frame.prior_knowledge.join('；')}</p> : null}
                         {frame.misconceptions.length ? (
                             <dl className={styles.misconceptions}>
@@ -1441,7 +1497,7 @@ function PlanDocument({ plan, done, writing, onCopy, copied, onTalk, talking, on
                     </section>
                     <section id="lp-sec-assessments">
                         <h3>五、评价任务</h3>
-                        <AssessmentTable assessments={frame.assessments} say={say} />
+                        <AssessmentTable assessments={frame.assessments} say={say} edit={edit} />
                     </section>
                 </>
             ) : null}
@@ -1462,24 +1518,24 @@ function PlanDocument({ plan, done, writing, onCopy, copied, onTalk, talking, on
                                 <li key={`${stage.name}-${index}`}>
                                     <div className={styles.stageHead}><b>{stage.name}</b><span>{stage.minutes} 分钟</span>{stage.org ? <span className={styles.org}>{stage.org}</span> : null}<StageLinks objectives={stage.objective_ids} assessments={stage.assessment_ids} /></div>
                                     <dl>
-                                        <div><dt>教师活动</dt><dd>{say(stage.teacher)}</dd></div>
-                                        <div><dt>学生活动</dt><dd>{say(stage.students)}</dd></div>
+                                        <div><dt>教师活动</dt><dd><Editable text={say(stage.teacher)} onSave={edit(['process', 'stages', index, 'teacher'])} /></dd></div>
+                                        <div><dt>学生活动</dt><dd><Editable text={say(stage.students)} onSave={edit(['process', 'stages', index, 'students'])} /></dd></div>
                                         {stage.questions?.length ? (
                                             <div><dt>关键问题</dt><dd>
                                                 <ul className={styles.questions}>
-                                                    {stage.questions.map(item => (
+                                                    {stage.questions.map((item, no) => (
                                                         <li key={item.q}>
-                                                            <span><b>问</b>{item.q}</span>
-                                                            {item.expect ? <span><b>预设</b>{item.expect}</span> : null}
-                                                            {item.follow ? <span><b>追问</b>{item.follow}</span> : null}
+                                                            <span><b>问</b><Editable text={item.q} onSave={edit(['process', 'stages', index, 'questions', no, 'q'])} /></span>
+                                                            {item.expect ? <span><b>预设</b><Editable text={item.expect} onSave={edit(['process', 'stages', index, 'questions', no, 'expect'])} /></span> : null}
+                                                            {item.follow ? <span><b>追问</b><Editable text={item.follow} onSave={edit(['process', 'stages', index, 'questions', no, 'follow'])} /></span> : null}
                                                         </li>
                                                     ))}
                                                 </ul>
                                             </dd></div>
                                         ) : null}
-                                        {stage.check ? <div><dt>看全班</dt><dd>{say(stage.check)}</dd></div> : null}
-                                        {stage.support ? <div><dt>照顾差异</dt><dd>{say(stage.support)}</dd></div> : null}
-                                        <div><dt>设计意图</dt><dd>{say(stage.purpose)}</dd></div>
+                                        {stage.check ? <div><dt>看全班</dt><dd><Editable text={say(stage.check)} onSave={edit(['process', 'stages', index, 'check'])} /></dd></div> : null}
+                                        {stage.support ? <div><dt>照顾差异</dt><dd><Editable text={say(stage.support)} onSave={edit(['process', 'stages', index, 'support'])} /></dd></div> : null}
+                                        <div><dt>设计意图</dt><dd><Editable text={say(stage.purpose)} onSave={edit(['process', 'stages', index, 'purpose'])} /></dd></div>
                                     </dl>
                                 </li>
                             ))}
@@ -1492,8 +1548,8 @@ function PlanDocument({ plan, done, writing, onCopy, copied, onTalk, talking, on
                                 {practice.items.map((item, index) => (
                                     <li key={`${item.question}-${index}`}>
                                         <div className={styles.practiceHead}><span data-kind={item.kind}>{item.kind}</span><span>{item.level}</span>{item.code ? <Link to={`/standards/${item.code.replace(/\.\d+$/u, '')}#${item.code}`} target="_blank" rel="noopener"><code>{item.code}</code></Link> : null}</div>
-                                        <p>{say(item.question)}</p>
-                                        <details><summary>参考答案</summary><p>{say(item.answer)}</p></details>
+                                        <p><Editable text={say(item.question)} onSave={edit(['practice', 'items', index, 'question'])} /></p>
+                                        <details><summary>参考答案</summary><p><Editable text={say(item.answer)} onSave={edit(['practice', 'items', index, 'answer'])} /></p></details>
                                     </li>
                                 ))}
                             </ol>
@@ -1505,8 +1561,8 @@ function PlanDocument({ plan, done, writing, onCopy, copied, onTalk, talking, on
                             <p className={styles.small}>这次没写出当堂练习。 <button type="button" className="btn btn-ghost" onClick={onPractice} disabled={Boolean(talking)}>{talking === 'practice' ? '正在写当堂练习…' : '再写一次'}</button></p>
                         </section>
                     ) : null}
-                    {process.board.length ? <section id="lp-sec-board"><h3>九、板书设计</h3><pre className={styles.board}>{process.board.map(say).join('\n')}</pre></section> : null}
-                    {process.homework.length ? <section id="lp-sec-homework"><h3>十、作业设计</h3><ul>{process.homework.map(item => <li key={item.task}><b>【{item.level}】</b>{say(item.task)}{item.minutes ? <small className={styles.minutes}>约 {item.minutes} 分钟</small> : null}</li>)}</ul></section> : null}
+                    {process.board.length ? <section id="lp-sec-board"><h3>九、板书设计</h3><pre className={styles.board}><Editable lines text={process.board.map(say).join('\n')} onSave={done && onEdit ? text => onEdit(['process', 'board'], text.split('\n')) : null} /></pre></section> : null}
+                    {process.homework.length ? <section id="lp-sec-homework"><h3>十、作业设计</h3><ul>{process.homework.map((item, index) => <li key={item.task}><b>【{item.level}】</b><Editable text={say(item.task)} onSave={edit(['process', 'homework', index, 'task'])} />{item.minutes ? <small className={styles.minutes}>约 {item.minutes} 分钟</small> : null}</li>)}</ul></section> : null}
                 </>
             ) : frame ? (writing ? <p className={styles.small}>正在写教学过程和当堂练习…</p> : (
                 <section>
