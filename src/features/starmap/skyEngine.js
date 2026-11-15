@@ -765,6 +765,7 @@ export function createSkyEngine(canvas, tipEl) {
         hovered = lens ? nearest(mx, my, mobile ? 28 : 26) : -1
         if (isHome && heroVis > 0.5) {
             if (hovered >= 0) { if (hovered !== nowIdx) setNow(hovered); nowHeld = true }
+            else if (home?.holdNow) nowHeld = true
             else { if (nowHeld) { nowHeld = false; nowAt = now } if (!reduce && now - nowAt > 4800) nextNow() }
         }
         if (isSubj) {
