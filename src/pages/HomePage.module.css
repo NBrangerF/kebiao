@@ -46,7 +46,11 @@
 
 .heroSky { display: flex; min-width: 0; justify-content: flex-end; }
 
-.now { --c: var(--kb-gold); max-width: 30rem; margin-top: 0; }
+.now { --c: var(--kb-gold); display: block; max-width: 30rem; margin-top: 0; color: inherit; text-decoration: none; }
+
+/* the caption opens the lit star's 要点 (Ignite's letters are inline-blocks, so no underline: the text turns gold) */
+.now:hover .nowText,
+.now:focus-visible .nowText { color: var(--kb-gold); }
 
 .nowMeta {
     display: flex;
@@ -85,6 +89,7 @@
     color: var(--kb-moon);
     font-family: var(--font-display);
     font-size: 20px;
+    transition: color 0.2s;
     font-weight: 700;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -203,14 +208,28 @@
 .compact .ct { font-size: 16px; }
 
 .cue {
+    position: relative;
     display: inline-flex;
     align-items: center;
     gap: 12px;
     margin-top: 40px;
+    border: 0;
+    background: none;
     color: var(--kb-dim);
+    font: inherit;
     font-size: 14px;
     letter-spacing: 0.02em;
+    cursor: pointer;
+    transition: color 0.2s;
 }
+
+.cue:hover { color: var(--kb-moon); }
+
+/* a taller tap area than the 36px line, without moving anything */
+.cue::after { position: absolute; inset: -6px -8px; content: ''; }
+
+/* focus lands here from the cue; the section itself is not a control */
+.books:focus { outline: none; }
 
 .cue i {
     display: block;

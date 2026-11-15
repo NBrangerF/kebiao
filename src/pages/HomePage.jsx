@@ -44,21 +44,35 @@ function RailLink({ to, color, name, count, list, compact, title }) {
     )
 }
 
-function NowBlock({ K, idx, codeRef, dotRef }) {
+// The lit star's caption opens that 要点; while pointer or focus is on it, the sky keeps this star lit.
+function NowBlock({ K, idx, codeRef, dotRef, holdRef }) {
+    const { revealTo } = useSky()
     const s = K ? K.S[idx] : null
     const code = s ? s[F.CODE] : FEATURE.code
+    const to = starHref(code)
     const scrambleRef = useScramble(code)
     const color = s ? K.subjects[s[F.SUBJ]].color : '#3FA2E0'
     const setCode = el => { scrambleRef.current = el; codeRef.current = el }
+    const hold = on => () => { holdRef.current = on }
     return (
-        <div className={styles.now} style={{ '--c': color }} aria-hidden="true" data-kb-live="now-star">
+        <Link
+            to={to}
+            className={styles.now}
+            style={{ '--c': color }}
+            data-kb-live="now-star"
+            onPointerEnter={hold(true)}
+            onPointerLeave={hold(false)}
+            onFocus={hold(true)}
+            onBlur={hold(false)}
+            onClick={event => { event.preventDefault(); const r = event.currentTarget.getBoundingClientRect(); revealTo(to, r.left + 12, r.top + 16) }}
+        >
             <p className={styles.nowMeta}>
                 <i ref={dotRef} />
                 <span>{s ? `${K.subjects[s[F.SUBJ]].name} · ${stageRange(K, s[F.SUBJ], s[F.BAND])} · ${K.cons[s[F.CON]][C.NAME]}` : '数学 · 3–4 年级'}</span>
                 <code ref={setCode} />
             </p>
             <Ignite key={code} as="p" className={styles.nowText} text={s ? s[F.TITLE] : FEATURE.title} step={30} />
-        </div>
+        </Link>
     )
 }
 
@@ -70,6 +84,8 @@ function HomePage() {
     const codeRef = useRef(null)
     const dotRef = useRef(null)
     const pageRef = useRef(null)
+    const booksRef = useRef(null)
+    const holdRef = useRef(false)
     const [nowIdx, setNowIdx] = useState(-1)
     const [query, setQuery] = useState('')
     const count = useCountUp(K ? K.N : 2520, 2200)
@@ -86,6 +102,7 @@ function HomePage() {
         get capEls() { return capRefs.current },
         get nowCodeEl() { return codeRef.current },
         get nowDotEl() { return dotRef.current },
+        get holdNow() { return holdRef.current },
         onNow: i => setNowIdx(i),
         onStarClick: (i, x, y) => { if (K) revealTo(starHref(K.S[i][F.CODE]), x, y) }
     }), [K, revealTo])
@@ -98,6 +115,15 @@ function HomePage() {
     }, [results, engineRef])
 
     const narrow = typeof window !== 'undefined' && window.innerWidth < 760
+
+    // the cue under the search scrolls to the textbook section and moves focus there
+    const toBooks = () => {
+        const books = booksRef.current
+        if (!books) return
+        const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+        books.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'start' })
+        books.focus({ preventScroll: true })
+    }
 
     return (
         <div ref={pageRef} className={styles.page} data-kb-route="home">
@@ -124,19 +150,19 @@ function HomePage() {
                             <button className={styles.go} type="submit" data-kb-telemetry-task="search_start"><SearchIcon size={17} />搜索课标</button>
                         </form>
                         <p className={styles.match} aria-live="polite">{results == null ? '' : results.length ? `${results.length} 颗亮起 · 回车看是哪几条` : '星图里没有字面匹配 · 回车用一句话检索'}</p>
-                        <p className={styles.cue}><i aria-hidden="true" />向下：从你手上的教材开始</p>
+                        <button type="button" className={styles.cue} onClick={toBooks}><i aria-hidden="true" />向下：从你手上的教材开始</button>
                     </div>
                     {/* the star lit in the 课标 glyph, joined to its caption by a gold line; phones show the glyph only */}
                     {narrow ? null : (
                         <div className={styles.heroSky}>
-                            <NowBlock K={K} idx={nowIdx < 0 ? 0 : nowIdx} codeRef={codeRef} dotRef={dotRef} />
+                            <NowBlock K={K} idx={nowIdx < 0 ? 0 : nowIdx} codeRef={codeRef} dotRef={dotRef} holdRef={holdRef} />
                         </div>
                     )}
                 </div>
             </section>
 
             {/* second screen: the textbook a teacher has in hand */}
-            <section className={styles.books} aria-labelledby="books-title">
+            <section ref={booksRef} className={styles.books} aria-labelledby="books-title" tabIndex={-1}>
                 <div className={styles.wrap}>
                     <div className={styles.booksCopy}>
                         <p className={styles.kicker}>教材 · 逐课对好课标</p>
