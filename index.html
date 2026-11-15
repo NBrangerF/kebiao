@@ -32,8 +32,9 @@
       }
     };
   </script>
+  <!-- async, not defer: a deferred script here would hold back the page's own script until it arrives -->
   <script
-    defer
+    async
     src="https://cloud.umami.is/script.js"
     data-website-id="aa120ad0-ee99-4ab5-8e66-0e539bb25c0b"
     data-domains="kebiao.org,www.kebiao.org"
