@@ -313,7 +313,10 @@ export function createSkyEngine(canvas, tipEl) {
         fin.set(T.sky)
         for (let i = 0; i < N; i++) { CS[i] = 0.9; CA[i] = 0.14 }
         if (wanted !== 'ambient') applyView(wanted)
-        const fontReady = document.fonts?.load ? Promise.race([document.fonts.load('900 120px "Noto Serif SC Variable"', '课标'), new Promise(r => setTimeout(r, 2500))]) : Promise.resolve()
+        // the glyph's serif face is not in the page's first CSS (main.jsx loads the Chinese faces late): fetch its
+        // stylesheet here, then only the two characters' slices, so the stars still trace 课标 in Noto Serif
+        const serif = import('@fontsource-variable/noto-serif-sc/wght.css').then(() => document.fonts?.load?.('900 120px "Noto Serif SC Variable"', '课标'))
+        const fontReady = Promise.race([serif, new Promise(r => setTimeout(r, 3500))])
         fontReady.catch(() => {}).then(() => { computeGlyph(); glyphReady = true; introStart = performance.now(); kick() })
     }
 
