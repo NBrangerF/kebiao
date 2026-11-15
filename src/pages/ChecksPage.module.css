@@ -421,3 +421,8 @@
     margin-left: auto;
     color: var(--kb-dim);
 }
+
+/* Keeps the space the books and questions take while the subject's questions load, so nothing below jumps. */
+.pending {
+    min-height: 100vh;
+}

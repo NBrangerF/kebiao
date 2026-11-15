@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from 'react'
 import { Link, useNavigate, useSearchParams } from 'react-router-dom'
-import { PageLoading, ErrorState } from '../components/StateComponents'
+import { PageLoading, ErrorState, LoadingState } from '../components/StateComponents'
 import QuestionCard from '../features/checks/QuestionCard.jsx'
 import { MarkupContext } from '../features/checks/markup.js'
 import { bookGroups, bookInGroup, bookOfKey, buildDeck, loadBank, loadChecksIndex, pickBook, pickSubject, presentHref, questionsForBook, questionsForPoint, unitsOf } from '../features/checks/checksData.js'
@@ -49,21 +49,23 @@ export default function ChecksPage() {
         return () => { active = false }
     }, [slug])
 
-    const bookKey = useMemo(() => (bank && !point ? pickBook(bank, { book: params.get('book') || '', grade: params.get('grade') || '', term: params.get('term') || '', myBook }) : ''), [bank, point, params, myBook])
+    // The first screen (hero, subjects) needs only the index; the subject's bank fills in the books and questions below.
+    const ready = Boolean(bank) && bank.subject_slug === slug
+    const bookKey = useMemo(() => (ready && !point ? pickBook(bank, { book: params.get('book') || '', grade: params.get('grade') || '', term: params.get('term') || '', myBook }) : ''), [ready, bank, point, params, myBook])
 
     if (error) return <ErrorState title="课堂诊断加载失败" message={error} />
-    if (!index || !bank || bank.subject_slug !== slug) return <PageLoading message="正在打开课堂诊断" />
+    if (!index) return <PageLoading message="正在打开课堂诊断" />
 
-    const book = bookOfKey(bank, bookKey)
-    const groups = bookGroups(bank)
+    const book = ready ? bookOfKey(bank, bookKey) : null
+    const groups = ready ? bookGroups(bank) : []
     const group = groups.find(entry => entry.books.some(item => item.key === bookKey)) || groups[0]
-    const items = point ? questionsForPoint(bank, point) : questionsForBook(bank, bookKey)
+    const items = !ready ? [] : point ? questionsForPoint(bank, point) : questionsForBook(bank, bookKey)
     const units = unitsOf(items)
     const total = index.subjects.reduce((sum, entry) => sum + entry.questions, 0)
     const back = `/checks?${point ? `point=${point}` : `subject=${slug}&book=${encodeURIComponent(bookKey)}`}`
     const toggle = id => setSelected(current => (current.includes(id) ? current.filter(entry => entry !== id) : [...current, id]))
-    const chosen = selected.map(id => bank.items.find(item => item.id === id)).filter(Boolean)
-    const deckTitle = chosen.length === 1 ? chosen[0].unit : `${point || `${bank.subject} ${book?.short || ''}`} · 课堂诊断`
+    const chosen = ready ? selected.map(id => bank.items.find(item => item.id === id)).filter(Boolean) : []
+    const deckTitle = chosen.length === 1 ? chosen[0].unit : `${point || `${bank?.subject || ''} ${book?.short || ''}`} · 课堂诊断`
     const shortOf = key => bookOfKey(bank, key)?.short || key
     const download = async () => {
         setBusy(true)
@@ -74,7 +76,7 @@ export default function ChecksPage() {
     }
 
     return (
-        <MarkupContext.Provider value={bank.markup || 'math'}>
+        <MarkupContext.Provider value={(ready && bank.markup) || 'math'}>
             <div className={`container ${concepts.page} ${chosen.length ? styles.withBar : ''}`}>
                 <header className={concepts.hero}>
                     <p className={concepts.kicker}>课堂诊断 · {index.subjects.length} 个学科 · {total} 题</p>
@@ -105,7 +107,7 @@ export default function ChecksPage() {
                             <p><Link to={`/standards/${point.replace(/\.\d+$/u, '')}#${point}`}>看这条要点的课标原文</Link> · <Link to={`/checks?subject=${slug}`}>按{subjectBySlug(slug)?.bands ? '学段' : '教材'}选题</Link></p>
                         </div>
                     </section>
-                ) : (
+                ) : ready ? (
                     <>
                         {groups.length > 1 ? (
                             <nav className={styles.books} aria-label={`选${bank.subject}的教材版本`}>
@@ -125,9 +127,11 @@ export default function ChecksPage() {
                         </nav>
                         {book ? <p className={styles.edition}>{book.edition === '课标' ? `${bank.subject}按课标的学段和学习任务编排，各地教材版本都能用。` : `按${book.edition}${book.label}的单元编排。`}{book.edition !== '课标' && myBook?.subject === bank.subject && myBook.edition_name && publisherOf(myBook.edition_name) !== publisherOf(book.edition) ? `你的书是${myBook.edition_name}：同一年级的课标要点相同，单元名和顺序不同，可以按课标要点挑题。` : ''}</p> : null}
                     </>
-                )}
+                ) : null}
 
-                {!items.length ? <p className={styles.empty}>{point ? '这条要点还没有诊断题。' : `${bank.subject}${book?.label || ''}的诊断题还在准备。`}</p> : null}
+                {!ready ? <div className={styles.pending}><LoadingState size="small" message="正在载入诊断题" /></div> : null}
+
+                {ready && !items.length ? <p className={styles.empty}>{point ? '这条要点还没有诊断题。' : `${bank.subject}${book?.label || ''}的诊断题还在准备。`}</p> : null}
 
                 {units.map(unit => (
                     <section key={`${unit.items[0].book}-${unit.unit}`} className={styles.unit} aria-labelledby={`unit-${unit.items[0].book}-${unit.unit}`}>
