@@ -88,7 +88,7 @@ function HomePage() {
     const holdRef = useRef(false)
     const [nowIdx, setNowIdx] = useState(-1)
     const [query, setQuery] = useState('')
-    const count = useCountUp(K ? K.N : 2520, 2200)
+    const count = useCountUp(K ? K.N : 2532, 2200)
     const navigate = useNavigate()
     const myBook = useMyBook()
     const [changing, setChanging] = useState(false)

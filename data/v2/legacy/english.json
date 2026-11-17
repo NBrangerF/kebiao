@@ -251,7 +251,7 @@
   "code": "EN-D1-LA-016",
   "kind": "indicator",
   "to": "EN-S1-LK-01",
-  "anchor": "EN-S1-LK-01.16",
+  "anchor": "EN-S1-LK-01.17",
   "match": 0.59,
   "verdict": "keep"
  },
@@ -919,7 +919,7 @@
   "code": "EN-H4G7-LA-013",
   "kind": "indicator",
   "to": "EN-S3-LK-01",
-  "anchor": "EN-S3-LK-01.12",
+  "anchor": "EN-S3-LK-01.13",
   "match": 0.9,
   "verdict": "keep"
  },
@@ -943,7 +943,7 @@
   "code": "EN-H4G7-LA-022",
   "kind": "indicator",
   "to": "EN-S3-LK-01",
-  "anchor": "EN-S3-LK-01.19",
+  "anchor": "EN-S3-LK-01.20",
   "match": 1,
   "verdict": "keep"
  },
@@ -1007,7 +1007,7 @@
   "code": "EN-H4G7-TP-001",
   "kind": "indicator",
   "to": "EN-S3-LK-01",
-  "anchor": "EN-S3-LK-01.22",
+  "anchor": "EN-S3-LK-01.24",
   "match": 0.9,
   "verdict": "edit"
  },
@@ -1265,7 +1265,7 @@
   "code": "EN-H4G8-LA-014",
   "kind": "indicator",
   "to": "EN-S3-LK-01",
-  "anchor": "EN-S3-LK-01.12",
+  "anchor": "EN-S3-LK-01.13",
   "match": 0.9,
   "verdict": "keep"
  },
@@ -1289,7 +1289,7 @@
   "code": "EN-H4G8-LA-023",
   "kind": "indicator",
   "to": "EN-S3-LK-01",
-  "anchor": "EN-S3-LK-01.19",
+  "anchor": "EN-S3-LK-01.20",
   "match": 1,
   "verdict": "keep"
  },
@@ -1353,7 +1353,7 @@
   "code": "EN-H4G8-TP-002",
   "kind": "indicator",
   "to": "EN-S3-LK-01",
-  "anchor": "EN-S3-LK-01.22",
+  "anchor": "EN-S3-LK-01.24",
   "match": 0.9,
   "verdict": "keep"
  },
@@ -1611,7 +1611,7 @@
   "code": "EN-H4G9-LA-015",
   "kind": "indicator",
   "to": "EN-S3-LK-01",
-  "anchor": "EN-S3-LK-01.12",
+  "anchor": "EN-S3-LK-01.13",
   "match": 0.9,
   "verdict": "keep"
  },
@@ -1635,7 +1635,7 @@
   "code": "EN-H4G9-LA-024",
   "kind": "indicator",
   "to": "EN-S3-LK-01",
-  "anchor": "EN-S3-LK-01.19",
+  "anchor": "EN-S3-LK-01.20",
   "match": 1,
   "verdict": "keep"
  },
@@ -1699,7 +1699,7 @@
   "code": "EN-H4G9-TP-003",
   "kind": "indicator",
   "to": "EN-S3-LK-01",
-  "anchor": "EN-S3-LK-01.22",
+  "anchor": "EN-S3-LK-01.24",
   "match": 0.9,
   "verdict": "keep"
  },

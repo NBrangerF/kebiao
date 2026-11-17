@@ -30,7 +30,7 @@ export default function StandardsHubPage() {
         if (patch) setCmp(s => ({ ...s, ...patch }))
         if (patch || window.location.hash === '#compare') requestAnimationFrame(() => document.getElementById('compare')?.scrollIntoView({ behavior: 'auto', block: 'start' }))
     }, [K, searchKey])
-    const points = K ? K.N : 2520
+    const points = K ? K.N : 2532
     const standards = K ? K.cons.length : 513
 
     return (

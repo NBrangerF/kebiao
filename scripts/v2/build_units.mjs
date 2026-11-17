@@ -622,17 +622,20 @@ function buildEnglish(goalsFn) {
     })
     // 内容要求.
     const lines = all.filter(e => e.part === '课程内容' && e.section === '内容要求' && EN_ELEMENT_LITERACY[(e.topic || [])[0]])
+    // 「级别+」 items: numbered "+1." "+2." in the text, or the single unnumbered item of a "+" row (english-lines.tsv).
+    // Each is an item of its own.
+    const plusItem = e => /^\+/u.test(e.text) || e.marker === '+'
     let table = null
     const items = []
     for (const e of lines) {
         const title = e.text.match(/^表\s*(\d+)\s*(\S*?)内容要求/u)
         if (title) { table = { n: +title[1], sub: /知识$/u.test(title[2]) && title[2] !== '文化知识' ? title[2] : null }; continue }
         // Row labels of the tables (主题群, 策略类型) sit between items without a number or punctuation.
-        if (!/^\d+\s*[.．]$/u.test(e.marker || '') && !/^\+/u.test(e.text) && !/[。；，、：）]/u.test(e.text) && e.text.length <= 10) { skipped.push({ id: e.id, why: 'table row label' }); continue }
+        if (!/^\d+\s*[.．]$/u.test(e.marker || '') && !plusItem(e) && !/[。；，、：）]/u.test(e.text) && e.text.length <= 10) { skipped.push({ id: e.id, why: 'table row label' }); continue }
         const ovr = EN_PARA_STAGE.find(([a, b]) => e.para >= a && e.para <= b && ((e.topic || [])[0] === '学习策略' || a === 283))
-        items.push({ ...e, stage: ovr ? ovr[2] : (e.stage === '7-9+' ? '7-9' : e.stage), element: e.topic[0], sub: table?.sub || null, plus: /^\+/u.test(e.text) || e.stage === '7-9+' })
+        items.push({ ...e, marker: plusItem(e) ? '+' : e.marker, stage: ovr ? ovr[2] : (e.stage === '7-9+' ? '7-9' : e.stage), element: e.topic[0], sub: table?.sub || null, plus: plusItem(e) || e.stage === '7-9+' })
     }
-    const marked = e => /^\d+\s*[.．]$/u.test(e.marker || '') || /^\+/u.test(e.text)
+    const marked = e => /^\d+\s*[.．]$/u.test(e.marker || '') || e.marker === '+'
     const paras = paragraphs(items.filter(e => e.stage), e => `${e.stage}|${e.element}`).filter(p => {
         const first = items.find(x => x.id === p.ids[0])
         if (marked(first)) return true

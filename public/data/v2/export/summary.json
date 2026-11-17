@@ -2,12 +2,12 @@
  "totals": {
   "subjects": 14,
   "standards": 513,
-  "indicators": 2520,
+  "indicators": 2532,
   "legacy_codes": 2025
  },
  "checks": {
-  "verified": 2181,
-  "ocr_doubt": 148,
+  "verified": 2192,
+  "ocr_doubt": 149,
   "revised": 43,
   "table": 148
  },
@@ -17,6 +17,6 @@
  },
  "files": {
   "standards": 513,
-  "indicators": 2520
+  "indicators": 2532
  }
 }

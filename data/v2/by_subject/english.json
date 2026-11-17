@@ -845,10 +845,6 @@
    "why": "element introduction or row label"
   },
   {
-   "id": "english:2025r:0373",
-   "why": "element introduction or row label"
-  },
-  {
    "id": "english:2025r:0374",
    "why": "element introduction or row label"
   },
@@ -886,10 +882,6 @@
   },
   {
    "id": "english:2025r:0400",
-   "why": "element introduction or row label"
-  },
-  {
-   "id": "english:2025r:0414",
    "why": "element introduction or row label"
   },
   {
@@ -938,10 +930,6 @@
   },
   {
    "id": "english:2025r:0439",
-   "why": "element introduction or row label"
-  },
-  {
-   "id": "english:2025r:0451",
    "why": "element introduction or row label"
   },
   {
@@ -2987,6 +2975,23 @@
     },
     {
      "code": "EN-S1-LK-01.16",
+     "text": "在语境中使用基本的礼貌用语与他人交流；",
+     "pages": [
+      26
+     ],
+     "source_ids": [
+      "english:2025r:0457+"
+     ],
+     "check": {
+      "status": "verified"
+     },
+     "section": "内容要求",
+     "label": "语用知识",
+     "legacy_codes": [],
+     "examples": []
+    },
+    {
+     "code": "EN-S1-LK-01.17",
      "text": "对他人的赞扬、道歉、致谢等作出恰当的回应。",
      "pages": [
       26
@@ -3432,12 +3437,29 @@
     },
     {
      "code": "EN-S1-LS-01.20",
-     "text": "在画面的提示下，为所学对话、故事或动画片段配音；+2．口头描述事件或讲述小故事。",
+     "text": "在画面的提示下，为所学对话、故事或动画片段配音；",
      "pages": [
       29
      ],
      "source_ids": [
-      "english:2025r:0517",
+      "english:2025r:0517"
+     ],
+     "check": {
+      "status": "verified"
+     },
+     "section": "内容要求",
+     "optional": true,
+     "label": "一级+（学有余力）",
+     "legacy_codes": [],
+     "examples": []
+    },
+    {
+     "code": "EN-S1-LS-01.21",
+     "text": "口头描述事件或讲述小故事。",
+     "pages": [
+      29
+     ],
+     "source_ids": [
       "english:2025r:0518"
      ],
      "check": {
@@ -6337,19 +6359,53 @@
     },
     {
      "code": "EN-S2-LS-01.20",
-     "text": "根据需要，运用图表、海报、自制绘本等方式创造性地表达意义。+1.结合相关主题进行简短的主题演讲，做到观点基本明确、逻辑比较清楚、语音正确、语调自然；+2.结合主题图或连环画，口头创编故事，有一定的情节，语言基本准确。",
+     "text": "根据需要，运用图表、海报、自制绘本等方式创造性地表达意义。",
      "pages": [
       30
      ],
      "source_ids": [
-      "english:2025r:0538",
-      "english:2025r:0539",
+      "english:2025r:0538"
+     ],
+     "check": {
+      "status": "verified"
+     },
+     "section": "内容要求",
+     "legacy_codes": [],
+     "examples": []
+    },
+    {
+     "code": "EN-S2-LS-01.21",
+     "text": "结合相关主题进行简短的主题演讲，做到观点基本明确、逻辑比较清楚、语音正确、语调自然；",
+     "pages": [
+      30
+     ],
+     "source_ids": [
+      "english:2025r:0539"
+     ],
+     "check": {
+      "status": "verified"
+     },
+     "section": "内容要求",
+     "optional": true,
+     "label": "二级+（学有余力）",
+     "legacy_codes": [],
+     "examples": []
+    },
+    {
+     "code": "EN-S2-LS-01.22",
+     "text": "结合主题图或连环画，口头创编故事，有一定的情节，语言基本准确。",
+     "pages": [
+      30
+     ],
+     "source_ids": [
       "english:2025r:0540"
      ],
      "check": {
       "status": "verified"
      },
      "section": "内容要求",
+     "optional": true,
+     "label": "二级+（学有余力）",
      "legacy_codes": [],
      "examples": []
     }
@@ -9173,6 +9229,30 @@
      "grade_basis": null,
      "legacy_codes": [],
      "examples": []
+    },
+    {
+     "code": "EN-S3-TX-01.9",
+     "text": "简单的说理类文章。",
+     "pages": [
+      21
+     ],
+     "source_ids": [
+      "english:2025r:0373"
+     ],
+     "check": {
+      "status": "verified"
+     },
+     "section": "内容要求",
+     "optional": true,
+     "label": "三级+（学有余力）",
+     "grades": [
+      7,
+      8,
+      9
+     ],
+     "grade_basis": null,
+     "legacy_codes": [],
+     "examples": []
     }
    ],
    "guidance": [],
@@ -9464,6 +9544,30 @@
     },
     {
      "code": "EN-S3-LK-01.12",
+     "text": "围绕相关主题接触并使用约1800个单词进行交流与表达，另外可以根据实际情况接触并学习相关主题范围内约200个单词，以及一定数量的习惯用语或固定搭配。",
+     "pages": [
+      24
+     ],
+     "source_ids": [
+      "english:2025r:0414"
+     ],
+     "check": {
+      "status": "verified"
+     },
+     "section": "内容要求",
+     "label": "词汇知识 · 三级+（学有余力）",
+     "optional": true,
+     "grades": [
+      7,
+      8,
+      9
+     ],
+     "grade_basis": null,
+     "legacy_codes": [],
+     "examples": []
+    },
+    {
+     "code": "EN-S3-LK-01.13",
      "text": "初步意识到语言使用中的语法知识是“形式一意义一使用”的统一体，明确学习语法的目的是在语境中运用语法知识理解和表达意义；",
      "pages": [
       24
@@ -9490,7 +9594,7 @@
      "examples": []
     },
     {
-     "code": "EN-S3-LK-01.13",
+     "code": "EN-S3-LK-01.14",
      "text": "了解句子的结构特征，如句子的种类、成分、语序及主谓一致；",
      "pages": [
       24
@@ -9513,7 +9617,7 @@
      "examples": []
     },
     {
-     "code": "EN-S3-LK-01.14",
+     "code": "EN-S3-LK-01.15",
      "text": "在口语和书面语篇中理解、体会所学语法的形式和表意功能；",
      "pages": [
       24
@@ -9536,7 +9640,7 @@
      "examples": []
     },
     {
-     "code": "EN-S3-LK-01.15",
+     "code": "EN-S3-LK-01.16",
      "text": "在语境中运用所学语法知识进行描述、叙述和说明等。",
      "pages": [
       24
@@ -9559,7 +9663,7 @@
      "examples": []
     },
     {
-     "code": "EN-S3-LK-01.16",
+     "code": "EN-S3-LK-01.17",
      "text": "理解记叙文语篇的主要写作目的、结构特征、基本语言特点和信息组织方式，并用以描述自己和他人的经历；",
      "pages": [
       25
@@ -9582,7 +9686,7 @@
      "examples": []
     },
     {
-     "code": "EN-S3-LK-01.17",
+     "code": "EN-S3-LK-01.18",
      "text": "理解说明文语篇的主要写作目的、结构特征、基本语言特点和信息组织方式，并用以说明事物和阐释事理；",
      "pages": [
       25
@@ -9605,7 +9709,7 @@
      "examples": []
     },
     {
-     "code": "EN-S3-LK-01.18",
+     "code": "EN-S3-LK-01.19",
      "text": "理解常见应用文语篇和其他常见语篇类型的主要写作目的、结构特征、基本语言特点和信息组织方式，并用以传递信息；",
      "pages": [
       25
@@ -9628,7 +9732,7 @@
      "examples": []
     },
     {
-     "code": "EN-S3-LK-01.19",
+     "code": "EN-S3-LK-01.20",
      "text": "在语篇中辨识并尝试运用衔接和连贯手段，以提升理解的准确性和表达的逻辑性。",
      "pages": [
       25
@@ -9655,7 +9759,31 @@
      "examples": []
     },
     {
-     "code": "EN-S3-LK-01.20",
+     "code": "EN-S3-LK-01.21",
+     "text": "理解说理类语篇的主要写作目的、结构特征、论证方法、基本语言特点和信息组织方式。",
+     "pages": [
+      25
+     ],
+     "source_ids": [
+      "english:2025r:0451"
+     ],
+     "check": {
+      "status": "verified"
+     },
+     "section": "内容要求",
+     "label": "语篇知识 · 三级+（学有余力）",
+     "optional": true,
+     "grades": [
+      7,
+      8,
+      9
+     ],
+     "grade_basis": null,
+     "legacy_codes": [],
+     "examples": []
+    },
+    {
+     "code": "EN-S3-LK-01.22",
      "text": "在社会情境中，使用得体的语言和非语言形式进行日常生活交流，如请求和提供帮助等；",
      "pages": [
       26
@@ -9678,7 +9806,7 @@
      "examples": []
     },
     {
-     "code": "EN-S3-LK-01.21",
+     "code": "EN-S3-LK-01.23",
      "text": "具有一定的语用意识，尝试选择正式或非正式、直接或委婉的语言，进行社会交往，表达情感、态度等，保持良好的人际关系；",
      "pages": [
       26
@@ -9701,7 +9829,7 @@
      "examples": []
     },
     {
-     "code": "EN-S3-LK-01.22",
+     "code": "EN-S3-LK-01.24",
      "text": "在交际情境中，正确理解他人的情感、态度和观点，运用恰当的语言形式表达自己的情感、态度和观点。",
      "pages": [
       26
@@ -11268,14 +11396,12 @@
     },
     {
      "code": "EN-S3-LS-01.59",
-     "text": "理解语篇中显性或隐性的逻辑关系；+2.根据话语中的重复、解释、停顿等现象，理解话语的意义；+3.理解多模态语篇中非文字资源传达的意义。",
+     "text": "理解语篇中显性或隐性的逻辑关系；",
      "pages": [
       33
      ],
      "source_ids": [
-      "english:2025r:0599",
-      "english:2025r:0600",
-      "english:2025r:0601"
+      "english:2025r:0599"
      ],
      "check": {
       "status": "verified"
@@ -11292,6 +11418,50 @@
     },
     {
      "code": "EN-S3-LS-01.60",
+     "text": "根据话语中的重复、解释、停顿等现象，理解话语的意义；",
+     "pages": [
+      33
+     ],
+     "source_ids": [
+      "english:2025r:0600"
+     ],
+     "check": {
+      "status": "verified"
+     },
+     "section": "内容要求",
+     "optional": true,
+     "label": "三级+（学有余力）",
+     "grades": [
+      9
+     ],
+     "grade_basis": "课标原文：语言技能三级按年级列表",
+     "legacy_codes": [],
+     "examples": []
+    },
+    {
+     "code": "EN-S3-LS-01.61",
+     "text": "理解多模态语篇中非文字资源传达的意义。",
+     "pages": [
+      33
+     ],
+     "source_ids": [
+      "english:2025r:0601"
+     ],
+     "check": {
+      "status": "verified"
+     },
+     "section": "内容要求",
+     "optional": true,
+     "label": "三级+（学有余力）",
+     "grades": [
+      9
+     ],
+     "grade_basis": "课标原文：语言技能三级按年级列表",
+     "legacy_codes": [],
+     "examples": []
+    },
+    {
+     "code": "EN-S3-LS-01.62",
      "text": "沟通信息，参与讨论，恰当运用一般社交场合的礼貌用语；",
      "pages": [
       33
@@ -11317,7 +11487,7 @@
      "examples": []
     },
     {
-     "code": "EN-S3-LS-01.61",
+     "code": "EN-S3-LS-01.63",
      "text": "口头概括所读故事或短文的大意，转述他人简单的谈话；",
      "pages": [
       33
@@ -11337,7 +11507,7 @@
      "examples": []
     },
     {
-     "code": "EN-S3-LS-01.62",
+     "code": "EN-S3-LS-01.64",
      "text": "围绕相关主题口头表达个人的观点和态度，并说明理由；",
      "pages": [
       33
@@ -11357,7 +11527,7 @@
      "examples": []
     },
     {
-     "code": "EN-S3-LS-01.63",
+     "code": "EN-S3-LS-01.65",
      "text": "就口语或书面语篇的内容、观点和态度作出简单的口头评价，并说明理由；",
      "pages": [
       33
@@ -11377,7 +11547,7 @@
      "examples": []
     },
     {
-     "code": "EN-S3-LS-01.64",
+     "code": "EN-S3-LS-01.66",
      "text": "借助语调和重音突出需要强调的意义；",
      "pages": [
       33
@@ -11397,7 +11567,7 @@
      "examples": []
     },
     {
-     "code": "EN-S3-LS-01.65",
+     "code": "EN-S3-LS-01.67",
      "text": "根据所读语篇内容和所给条件，进行简单的口头或书面改编、创编；",
      "pages": [
       33
@@ -11417,7 +11587,7 @@
      "examples": []
     },
     {
-     "code": "EN-S3-LS-01.66",
+     "code": "EN-S3-LS-01.68",
      "text": "根据写作要求，收集、准备素材，独立起草、修改和完成语篇；",
      "pages": [
       33
@@ -11437,7 +11607,7 @@
      "examples": []
     },
     {
-     "code": "EN-S3-LS-01.67",
+     "code": "EN-S3-LS-01.69",
      "text": "为所给图表或自己创作的图片写出简单的说明；",
      "pages": [
       33
@@ -11457,7 +11627,7 @@
      "examples": []
     },
     {
-     "code": "EN-S3-LS-01.68",
+     "code": "EN-S3-LS-01.70",
      "text": "围绕相关主题，用所学语言，以书面语篇的形式描述和介绍身边的人和事物，表达情感、态度和观点；",
      "pages": [
       34
@@ -11477,7 +11647,7 @@
      "examples": []
     },
     {
-     "code": "EN-S3-LS-01.69",
+     "code": "EN-S3-LS-01.71",
      "text": "在口头和书面表达中使用常见的连接词表示顺序和逻辑关系，连接信息，做到意义连贯；",
      "pages": [
       34
@@ -11497,7 +11667,7 @@
      "examples": []
     },
     {
-     "code": "EN-S3-LS-01.70",
+     "code": "EN-S3-LS-01.72",
      "text": "在口头和书面表达中进行适当的自我修正，用语得当，沟通与交流得体、有效。",
      "pages": [
       34
@@ -11517,14 +11687,56 @@
      "examples": []
     },
     {
-     "code": "EN-S3-LS-01.71",
-     "text": "根据交际需要发起谈话并维持交谈；+2.使用文字和非文字手段描述个人经历、事件和事物特征；+3.恰当质疑语篇的内容、观点，解释不合理之处。",
+     "code": "EN-S3-LS-01.73",
+     "text": "根据交际需要发起谈话并维持交谈；",
      "pages": [
       34
      ],
      "source_ids": [
-      "english:2025r:0613",
-      "english:2025r:0614",
+      "english:2025r:0613"
+     ],
+     "check": {
+      "status": "verified"
+     },
+     "section": "内容要求",
+     "optional": true,
+     "label": "三级+（学有余力）",
+     "grades": [
+      9
+     ],
+     "grade_basis": "课标原文：语言技能三级按年级列表",
+     "legacy_codes": [],
+     "examples": []
+    },
+    {
+     "code": "EN-S3-LS-01.74",
+     "text": "使用文字和非文字手段描述个人经历、事件和事物特征；",
+     "pages": [
+      34
+     ],
+     "source_ids": [
+      "english:2025r:0614"
+     ],
+     "check": {
+      "status": "verified"
+     },
+     "section": "内容要求",
+     "optional": true,
+     "label": "三级+（学有余力）",
+     "grades": [
+      9
+     ],
+     "grade_basis": "课标原文：语言技能三级按年级列表",
+     "legacy_codes": [],
+     "examples": []
+    },
+    {
+     "code": "EN-S3-LS-01.75",
+     "text": "恰当质疑语篇的内容、观点，解释不合理之处。",
+     "pages": [
+      34
+     ],
+     "source_ids": [
       "english:2025r:0615"
      ],
      "check": {

@@ -5,7 +5,7 @@
  "totals": {
   "subjects": 14,
   "standards": 513,
-  "indicators": 2520,
+  "indicators": 2532,
   "legacy_codes": 2025
  },
  "subjects": [
@@ -136,7 +136,7 @@
      ],
      "label": "一级（3–4 年级）",
      "standard_count": 18,
-     "indicator_count": 127
+     "indicator_count": 129
     },
     {
      "stage_code": "S2",
@@ -147,7 +147,7 @@
      ],
      "label": "二级（5–6 年级）",
      "standard_count": 18,
-     "indicator_count": 137
+     "indicator_count": 139
     },
     {
      "stage_code": "S3",
@@ -159,11 +159,11 @@
      ],
      "label": "三级（7–9 年级）",
      "standard_count": 18,
-     "indicator_count": 225
+     "indicator_count": 232
     }
    ],
    "standard_count": 54,
-   "indicator_count": 489,
+   "indicator_count": 500,
    "legacy_count": 236
   },
   {
@@ -317,11 +317,11 @@
      ],
      "label": "第四学段（7–9 年级）",
      "standard_count": 13,
-     "indicator_count": 192
+     "indicator_count": 193
     }
    ],
    "standard_count": 49,
-   "indicator_count": 353,
+   "indicator_count": 354,
    "legacy_count": 349
   },
   {

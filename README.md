@@ -20,7 +20,7 @@
 
 <p align="center">
   <a href="https://github.com/NBrangerF/kebiao/actions/workflows/quality-gates.yml"><img src="https://github.com/NBrangerF/kebiao/actions/workflows/quality-gates.yml/badge.svg" alt="Quality gates"></a>
-  <a href="./public/data/v2/manifest.json"><img src="https://img.shields.io/badge/%E8%AF%BE%E6%A0%87-513_%E6%9D%A1%E6%A0%87%E5%87%86_%C2%B7_2%2C520_%E6%9D%A1%E8%A6%81%E7%82%B9-3d5afe" alt="课标 513 条标准、2,520 条要点"></a>
+  <a href="./public/data/v2/manifest.json"><img src="https://img.shields.io/badge/%E8%AF%BE%E6%A0%87-513_%E6%9D%A1%E6%A0%87%E5%87%86_%C2%B7_2%2C532_%E6%9D%A1%E8%A6%81%E7%82%B9-3d5afe" alt="课标 513 条标准、2,532 条要点"></a>
   <a href="./public/data/textbooks/manifest.json"><img src="https://img.shields.io/badge/%E6%95%99%E6%9D%90-174_%E5%86%8C_%C2%B7_8%2C370_%E8%AF%BE-15181e" alt="教材 174 册、8,370 课"></a>
   <a href="./data/checks/README.md"><img src="https://img.shields.io/badge/%E8%AF%8A%E6%96%AD%E9%A2%98-4%2C793_%E9%81%93-b8860b" alt="课堂诊断题 4,793 道"></a>
   <a href="./DATA_LICENSE.md"><img src="https://img.shields.io/badge/data-CC_BY_4.0-2c7a4b" alt="kebiao 整理的数据以 CC BY 4.0 开放"></a>
@@ -44,7 +44,7 @@ kebiao 不做动画，也不做一键生成。它只把这一层做准：每条�
 
 | 老师的问题 | 在 kebiao 里 |
 | --- | --- |
-| **教什么**<br>这一课对应哪几条课标？学生要达到什么？ | [**课标**](https://www.kebiao.org/standards)：14 门学科、1–9 年级，513 条标准拆成 2,520 条要点，每条逐字取自课标原文并注明页码。<br>**课堂学习目标**：16,728 条，每条写明依据哪条要点、用了课标哪句原话、怎样算做到。<br>**目标体检**：在[备课助手](https://www.kebiao.org/lesson-plan?check=1)里贴进自己写的目标，逐条对到课标，看依据、程度和缺了什么。 |
+| **教什么**<br>这一课对应哪几条课标？学生要达到什么？ | [**课标**](https://www.kebiao.org/standards)：14 门学科、1–9 年级，513 条标准拆成 2,532 条要点，每条逐字取自课标原文并注明页码。<br>**课堂学习目标**：16,728 条，每条写明依据哪条要点、用了课标哪句原话、怎样算做到。<br>**目标体检**：在[备课助手](https://www.kebiao.org/lesson-plan?check=1)里贴进自己写的目标，逐条对到课标，看依据、程度和缺了什么。 |
 | **怎么教**<br>学生之前要先会什么？有什么现成资源？ | [**教材馆**](https://www.kebiao.org/textbooks)：174 册教材（人教、统编、北师大、外研社等 12 个版本），8,370 课逐课对到课标要点，每条对应都摘了教材原话和页码。<br>[**知识图谱**](https://www.kebiao.org/knowledge-graph)：912 条「要先会」关系，学生卡在这一课时，往前找是哪一课没学会。<br>**同步课与资源**：国家中小学智慧教育平台同步课 7,039 节，按课挂好；另有 17 个国内官方平台。<br>[**备课助手**](https://www.kebiao.org/lesson-plan)：从教材的一课起草有课标依据的教案、单元设计、说课稿和试讲稿，可导出 Word。 |
 | **怎么评**<br>上完课，全班到底懂了没有？ | [**课堂诊断**](https://www.kebiao.org/checks)：4,793 道诊断题，教材每一页都有，附 6,808 个典型错误想法和「怎么接」。上课先问一道，全班举手指作答，一眼看见谁在怎么想；可以直接投影，也能导出 PPT。批完作业，还能记下看到的错法，生成明天开课的 5 分钟。 |
 
@@ -86,7 +86,7 @@ kebiao 不做动画，也不做一键生成。它只把这一层做准：每条�
 
 | 维度 | 当前公开数据 |
 | --- | --- |
-| 课程标准 | 《义务教育课程标准（2022年版2025年修订）》：513 条标准、2,520 条要点，逐字取自原文并注明页码 |
+| 课程标准 | 《义务教育课程标准（2022年版2025年修订）》：513 条标准、2,532 条要点，逐字取自原文并注明页码 |
 | 学科 | 语文、数学、英语、道德与法治、历史、地理、科学、物理、化学、生物学、信息科技、体育与健康、艺术、劳动 |
 | 学段 | S1（1–2 年级）、S2（3–4 年级）、S3（5–6 年级）、S4（7–9 年级）；英语 S1–S3 对应 3–4、5–6、7–9 年级 |
 | 教材 | 174 册（小学 105 册、初中 69 册），12 个版本，每本按印刷目录整理到课 |

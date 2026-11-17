@@ -431,7 +431,7 @@ test('GET /api/v1/meta returns data summary', async () => {
     assert.ok(response.headers.get('x-ratelimit-limit'))
     const body = await json(response)
     assert.equal(body.data.standard_count, 513)
-    assert.equal(body.data.indicator_count, 2520)
+    assert.equal(body.data.indicator_count, 2532)
     assert.equal(body.data.source_version, '义务教育课程标准（2022年版2025年修订）')
     assert.deepEqual(body.data.filters.stages, ['S1', 'S2', 'S3', 'S4'])
     assert.ok(body.data.filters.domains.math.includes('数与代数'))

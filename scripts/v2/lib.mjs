@@ -24,7 +24,23 @@ export const gradesOf = range => {
     return out
 }
 
-export const loadCatalog = (version, slug) => JSON.parse(readFileSync(`generated/source_catalog/${version}/${slug}.json`, 'utf8')).entries
+// The 2025r catalogue with the lines the scan got structurally wrong put right, each checked against the PDF
+// (docs/data/v2/units/<slug>-lines.tsv):
+//   item   <start of the line>  <marker>          — the line opens an item of its own; its number was lost or misread
+//   after  <start of the line>  <marker>  <text>  — a line the scan missed, put in after the named line
+export const loadCatalog = (version, slug) => {
+    const entries = JSON.parse(readFileSync(`generated/source_catalog/${version}/${slug}.json`, 'utf8')).entries
+    if (version !== '2025r') return entries
+    for (const [op, start, marker, text] of readTsv(`docs/data/v2/units/${slug}-lines.tsv`)) {
+        const hits = entries.map((e, i) => (plain(e.text).startsWith(plain(start)) ? i : -1)).filter(i => i >= 0)
+        if (hits.length !== 1) throw new Error(`${slug}-lines.tsv: ${hits.length} lines start with 「${start}」`)
+        const e = entries[hits[0]]
+        if (op === 'item') entries[hits[0]] = { ...e, marker }
+        else if (op === 'after' && text) entries.splice(hits[0] + 1, 0, { ...e, id: `${e.id}+`, para: e.para + 0.5, marker, text })
+        else throw new Error(`${slug}-lines.tsv: cannot read the line for 「${start}」`)
+    }
+    return entries
+}
 
 // For each 2025r catalogue entry: is its text confirmed by the 2022 edition, changed by the revision, or in doubt (OCR)?
 // Unchanged clauses are read from two different scans, so agreement is a cross-check of the OCR.

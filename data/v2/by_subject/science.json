@@ -4592,25 +4592,16 @@
     {
      "code": "SC-S4-PS-01.28",
      "section": "内容要求",
-     "text": "初步学会混合物的分离方法（如过滤、蒸发、结晶等）。四能根据物质的组成和性质对常见物质进行分类，认识同类物质通常具有相似的性质。",
+     "text": "初步学会混合物的分离方法（如过滤、蒸发、结晶等）。",
      "pages": [
       26
      ],
      "source_ids": [
-      "science:2025r:0350",
-      "science:2025r:0351"
+      "science:2025r:0350"
      ],
      "check": {
       "status": "ocr_doubt",
       "changes": [
-       {
-        "del": "必",
-        "ins": ""
-       },
-       {
-        "del": "",
-        "ins": "四"
-       },
        {
         "del": "必",
         "ins": ""
@@ -4632,6 +4623,38 @@
     },
     {
      "code": "SC-S4-PS-01.29",
+     "section": "内容要求",
+     "text": "能根据物质的组成和性质对常见物质进行分类，认识同类物质通常具有相似的性质。",
+     "pages": [
+      26
+     ],
+     "source_ids": [
+      "science:2025r:0351"
+     ],
+     "check": {
+      "status": "ocr_doubt",
+      "changes": [
+       {
+        "del": "必",
+        "ins": ""
+       },
+       {
+        "del": "",
+        "ins": "四"
+       }
+      ]
+     },
+     "grades": [
+      7,
+      8,
+      9
+     ],
+     "grade_basis": null,
+     "legacy_codes": [],
+     "examples": []
+    },
+    {
+     "code": "SC-S4-PS-01.30",
      "section": "内容要求",
      "text": "知道金属、金属氧化物、碱之间的转化，知道非金属、非金属氧化物、酸之间的转化。",
      "pages": [
