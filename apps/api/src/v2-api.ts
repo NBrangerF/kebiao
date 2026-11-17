@@ -7,14 +7,14 @@ export type V2Found = { standard: V2Standard, subject: V2Subject }
 type Entry = V2Found & { order: number }
 
 const SKILLS = ['TS1', 'TS2', 'TS3', 'TS4', 'TS5', 'TS6', 'TS7']
-// what kebiao releases under CC BY 4.0, and what it does not (DATA_LICENSE.md)
+// what kebiao releases under CC BY-NC 4.0 (no commercial use), and what it does not (DATA_LICENSE.md)
 export const DATA_LICENSE = {
-    name: 'CC BY 4.0',
-    url: 'https://creativecommons.org/licenses/by/4.0/',
+    name: 'CC BY-NC 4.0',
+    url: 'https://creativecommons.org/licenses/by-nc/4.0/',
     terms: 'https://github.com/NBrangerF/curriculum-standards-breakdown/blob/main/DATA_LICENSE.md',
-    covers: 'kebiao 整理和编写的数据：编码与结构、kebiao 整理的文字、新旧编码对照、修订与核对标记、推断层（待核验）、kebiao 编写的课堂诊断题',
-    excludes: '课标原文（教育部《义务教育课程标准（2022年版2025年修订）》）、教材内容与引用的教材原话、第三方平台内容、学习资源、源代码',
-    attribution: 'kebiao 课标（https://www.kebiao.org），CC BY 4.0'
+    covers: 'kebiao 整理和编写的数据：编码与结构、kebiao 整理的文字、新旧编码对照、修订与核对标记、推断层（待核验）、kebiao 编写的课堂诊断题；以及 kebiao 的源代码。仅限非商业使用，商业使用需另行取得许可（https://www.kebiao.org/contact）',
+    excludes: '课标原文（教育部《义务教育课程标准（2022年版2025年修订）》）、教材内容与引用的教材原话、第三方平台内容、学习资源、第三方依赖',
+    attribution: 'kebiao 课标（https://www.kebiao.org），CC BY-NC 4.0'
 }
 const STAGES = ['S1', 'S2', 'S3', 'S4']
 // the 2022 grade bands, read as the grades they meant

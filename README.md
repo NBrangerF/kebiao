@@ -23,7 +23,7 @@
   <a href="./public/data/v2/manifest.json"><img src="https://img.shields.io/badge/%E8%AF%BE%E6%A0%87-513_%E6%9D%A1%E6%A0%87%E5%87%86_%C2%B7_2%2C532_%E6%9D%A1%E8%A6%81%E7%82%B9-3d5afe" alt="课标 513 条标准、2,532 条要点"></a>
   <a href="./public/data/textbooks/manifest.json"><img src="https://img.shields.io/badge/%E6%95%99%E6%9D%90-174_%E5%86%8C_%C2%B7_8%2C370_%E8%AF%BE-15181e" alt="教材 174 册、8,370 课"></a>
   <a href="./data/checks/README.md"><img src="https://img.shields.io/badge/%E8%AF%8A%E6%96%AD%E9%A2%98-4%2C793_%E9%81%93-b8860b" alt="课堂诊断题 4,793 道"></a>
-  <a href="./DATA_LICENSE.md"><img src="https://img.shields.io/badge/data-CC_BY_4.0-2c7a4b" alt="kebiao 整理的数据以 CC BY 4.0 开放"></a>
+  <a href="./DATA_LICENSE.md"><img src="https://img.shields.io/badge/license-CC_BY--NC_4.0-2c7a4b" alt="kebiao 的数据和代码以 CC BY-NC 4.0 发布，禁止商用"></a>
 </p>
 
 <p align="center">
@@ -184,10 +184,10 @@ Pull request 与 `main` 分支推送会运行 [Quality gates](https://github.com
 
 ## 数据来源、版权与使用说明
 
-- **kebiao 整理和编写的数据以 [CC BY 4.0](./DATA_LICENSE.md) 开放**：编码与结构、kebiao 整理的文字、新旧编码对照、修订与核对标记、推断层（教材对应、课堂学习目标、「要先会」关系，待核验）和 kebiao 编写的课堂诊断题。注明「kebiao 课标（https://www.kebiao.org），CC BY 4.0」即可复制、改编和商用。详见 [DATA_LICENSE.md](./DATA_LICENSE.md)。
+- **kebiao 整理和编写的数据以 [CC BY-NC 4.0](./DATA_LICENSE.md) 发布，禁止商用**：编码与结构、kebiao 整理的文字、新旧编码对照、修订与核对标记、推断层（教材对应、课堂学习目标、「要先会」关系，待核验）和 kebiao 编写的课堂诊断题。注明「kebiao 课标（https://www.kebiao.org），CC BY-NC 4.0」即可复制和改编，用于教学、教研、研究等非商业用途；商业使用需另行取得许可，请通过[联系页面](https://www.kebiao.org/contact)联系。详见 [DATA_LICENSE.md](./DATA_LICENSE.md)。
 - 课标原文取自教育部《义务教育课程标准（2022年版2025年修订）》（修订版文本取自上海市青浦区凤溪中学网站转载的日常修订版，以官方出版物为准；2022 年版见[教育部发布页](https://www.moe.gov.cn/srcsite/A26/s8001/202204/t20220420_619921.html)）。原文不是 kebiao 的作品，不在上述许可内，引用时请注明原文出处。
 - 学习资源的来源与许可见各资源详情；教材仅作为索引和受控阅读入口，不代表授予转载或再分发权。第三方前端依赖见[第三方说明](./docs/legal/THIRD_PARTY_NOTICES.md)。
-- 网站、API 和脚本的源代码不在数据许可范围内，代码许可尚未确定；如需复用代码，请先通过[联系页面](https://www.kebiao.org/contact)确认。
+- 网站、API 和脚本的源代码同样以 CC BY-NC 4.0 发布，禁止商用；第三方依赖按各自的许可。
 - 本项目提供的是结构化整理、检索与研究辅助，不能替代官方文件、专业课程判断或教师审核。
 
 ---

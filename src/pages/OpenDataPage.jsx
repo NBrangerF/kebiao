@@ -10,9 +10,9 @@ import ai from './AiConnectPage.module.css'
 import styles from './OpenDataPage.module.css'
 
 // 数据: the free public base. What the data is, how to take it (files, API, MCP), how to cite it, where it comes
-// from and how it was checked, and which version it is. kebiao's own part is CC BY 4.0 (DATA_LICENSE.md).
+// from and how it was checked, and which version it is. kebiao's own part is CC BY-NC 4.0, no commercial use (DATA_LICENSE.md).
 const LICENSE_URL = 'https://github.com/NBrangerF/curriculum-standards-breakdown/blob/main/DATA_LICENSE.md'
-const ATTRIBUTION = '课标结构化数据：kebiao 课标（https://www.kebiao.org），CC BY 4.0'
+const ATTRIBUTION = '课标结构化数据：kebiao 课标（https://www.kebiao.org），CC BY-NC 4.0'
 const CITE_EXAMPLE = 'MA-S3-NA-01.3 能用直观的方式表示分数和小数，能比较两个分数的大小和两个小数的大小；会进行小数和分数的转化（不包括将循环小数转化成分数）。\n——教育部《义务教育课程标准（2022年版2025年修订）》数学，第 27、28 页；kebiao 课标 https://www.kebiao.org/standards/MA-S3-NA-01#MA-S3-NA-01.3'
 const CURL = `curl -s -X POST https://www.kebiao.org/api/v1/standards/search \\
   -H 'content-type: application/json' \\
@@ -33,6 +33,7 @@ const CHECK_ROWS = [
 ]
 
 const CHANGES = [
+    ['2026-11-17', '许可改为 CC BY-NC 4.0：可以复制、改编，用于教学、教研、研究等非商业用途；不得商用，商业使用需另行取得许可。此前按 CC BY 4.0 发布的版本，已经取得的人仍可按当时的许可使用。'],
     ['2026-11-04', '公开 API 只返回 2025 修订版，2022 年版旧记录移到 /api/v1/legacy/ 对照；数据版本改由标准内容算出；kebiao 整理的数据以 CC BY 4.0 开放；新增 CSV 下载。'],
     ['2026-11-03', '语文 73 条原先以「学段要求」为名的标准，按各自内容重新命名。'],
     ['2026-10-31', '推断层：教材每一课主要在教哪几条要点，附教材原话（待核验）。'],
@@ -57,9 +58,9 @@ export default function OpenDataPage() {
     return (
         <div className={`container ${concepts.page}`}>
             <header className={concepts.hero}>
-                <p className={concepts.kicker}>数据与接口 · 免费、不用登录 · CC BY 4.0</p>
+                <p className={concepts.kicker}>数据与接口 · 免费、不用登录 · CC BY-NC 4.0</p>
                 <h1 className={concepts.title}>课标数据，拿去用</h1>
-                <p className={concepts.lede}>《义务教育课程标准（2022年版2025年修订）》的结构化数据：{n(totals?.subjects)} 门学科、{n(totals?.standards)} 条标准、{n(totals?.indicators)} 条要点，要点逐字取自课标原文并标明页码。可以整包下载，也可以用 API 和 MCP 按需取。kebiao 整理的部分以 CC BY 4.0 开放，注明出处就能复制、改编和商用。</p>
+                <p className={concepts.lede}>《义务教育课程标准（2022年版2025年修订）》的结构化数据：{n(totals?.subjects)} 门学科、{n(totals?.standards)} 条标准、{n(totals?.indicators)} 条要点，要点逐字取自课标原文并标明页码。可以整包下载，也可以用 API 和 MCP 按需取。kebiao 整理的部分以 CC BY-NC 4.0 发布，注明出处就能复制和改编，用于教学、教研、研究等非商业用途；不得商用。</p>
                 <ul className={guide.jump} aria-label="本页内容">
                     <li><a href="#data-download">下载</a></li>
                     <li><a href="#data-cite">怎么引用</a></li>
@@ -92,15 +93,15 @@ export default function OpenDataPage() {
             </section>
 
             <section id="data-cite" className={ai.section}>
-                <p className={guide.who}>署名即可复制、改编和商用</p>
+                <p className={guide.who}>署名即可复制和改编，仅限非商业用途</p>
                 <h2>怎么引用</h2>
                 <p className={ai.para}>转用 kebiao 的数据时，写上这一行：</p>
                 <CopyBlock text={ATTRIBUTION} label="署名" />
                 <p className={ai.para}>引用一条要点时，给出编码、原文、页码和链接，原文一字不改：</p>
                 <CopyBlock text={CITE_EXAMPLE} label="引用一条要点的示例" />
                 <dl className={ai.clients}>
-                    <div><dt>在许可内</dt><dd>编码与结构、kebiao 整理的文字、新旧编码对照、修订与核对标记、推断层、kebiao 编写的课堂诊断题。</dd></div>
-                    <div><dt>不在许可内</dt><dd>课标原文（它是教育部的文件，kebiao 不主张权利）、教材内容和引用的教材原话、国家平台等第三方平台的内容、学习资源、源代码。</dd></div>
+                    <div><dt>在许可内</dt><dd>编码与结构、kebiao 整理的文字、新旧编码对照、修订与核对标记、推断层、kebiao 编写的课堂诊断题，以及 kebiao 的源代码。</dd></div>
+                    <div><dt>不在许可内</dt><dd>课标原文（它是教育部的文件，kebiao 不主张权利）、教材内容和引用的教材原话、国家平台等第三方平台的内容、学习资源、第三方依赖。</dd></div>
                 </dl>
                 <p className={ai.note}>全文见 <a href={LICENSE_URL} target="_blank" rel="noopener">DATA_LICENSE.md</a>。</p>
             </section>
@@ -145,7 +146,7 @@ export default function OpenDataPage() {
                 </ol>
             </section>
 
-            <p className={concepts.footnote}>kebiao 是独立的开放索引，与教育部无隶属关系。源代码在 <a href="https://github.com/NBrangerF/curriculum-standards-breakdown" target="_blank" rel="noopener">GitHub</a>，代码许可另行说明。</p>
+            <p className={concepts.footnote}>kebiao 是独立的开放索引，与教育部无隶属关系。源代码在 <a href="https://github.com/NBrangerF/curriculum-standards-breakdown" target="_blank" rel="noopener">GitHub</a>，同样以 CC BY-NC 4.0 发布。</p>
         </div>
     )
 }

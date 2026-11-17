@@ -10,7 +10,7 @@
 
 引用时请给出编码、要点原文和链接；不要编造编码，不要改写原文。
 
-许可：kebiao 整理和编写的数据（编码、结构、kebiao 整理的文字、新旧编码对照、推断层）以 CC BY 4.0 开放，署名「kebiao 课标（https://www.kebiao.org），CC BY 4.0」；课标原文、教材内容和第三方平台内容不在此列。详见 https://github.com/NBrangerF/curriculum-standards-breakdown/blob/main/DATA_LICENSE.md 。
+许可：kebiao 整理和编写的数据（编码、结构、kebiao 整理的文字、新旧编码对照、推断层）以 CC BY-NC 4.0 发布，仅限非商业使用，署名「kebiao 课标（https://www.kebiao.org），CC BY-NC 4.0」；商业使用需另行取得许可；课标原文、教材内容和第三方平台内容不在此列。详见 https://github.com/NBrangerF/curriculum-standards-breakdown/blob/main/DATA_LICENSE.md 。
 
 ## 给智能体用的接口
 

@@ -120,7 +120,7 @@ ${section('更多入口', list([
         `${link('/skills', '可迁移技能')}：从能力出发反查课标`,
         `${link('/learning-resources', '开放学习资源')}：对应到课标的精选资源`,
         `${link('/teacher-exam', '教资')}：考前把课标读懂`,
-        `${link('/open-data', '数据与接口')}：CSV、JSON 下载，API 和 MCP，CC BY 4.0`
+        `${link('/open-data', '数据与接口')}：CSV、JSON 下载，API 和 MCP，CC BY-NC 4.0（禁止商用）`
     ]))}`
     add(meta, main, {
         jsonLd: [{
@@ -545,7 +545,7 @@ ${lanes}
 }
 
 function staticPages() {
-    add(STATIC_PAGE_META['/open-data'], `<h1>课标数据，拿去用</h1><p class="kbp-lede">${esc(STATIC_PAGE_META['/open-data'].description)}</p><ul><li><a href="/data/v2/export/kebiao-indicators.csv">全部要点 CSV</a></li><li><a href="/data/v2/export/kebiao-standards.csv">全部标准 CSV</a></li><li><a href="/data/v2/legacy_codes.json">新旧编码对照 JSON</a></li></ul><p>署名：课标结构化数据：kebiao 课标（https://www.kebiao.org），CC BY 4.0。课标原文取自教育部《义务教育课程标准（2022年版2025年修订）》，不在许可内。</p><p>${link('/api/v1/docs', 'API 文档')} · ${link('/ai', '在智能体里用 kebiao')}</p>`)
+    add(STATIC_PAGE_META['/open-data'], `<h1>课标数据，拿去用</h1><p class="kbp-lede">${esc(STATIC_PAGE_META['/open-data'].description)}</p><ul><li><a href="/data/v2/export/kebiao-indicators.csv">全部要点 CSV</a></li><li><a href="/data/v2/export/kebiao-standards.csv">全部标准 CSV</a></li><li><a href="/data/v2/legacy_codes.json">新旧编码对照 JSON</a></li></ul><p>许可：CC BY-NC 4.0，可用于非商业用途，不得商用。署名：课标结构化数据：kebiao 课标（https://www.kebiao.org），CC BY-NC 4.0。课标原文取自教育部《义务教育课程标准（2022年版2025年修订）》，不在许可内。</p><p>${link('/api/v1/docs', 'API 文档')} · ${link('/ai', '在智能体里用 kebiao')}</p>`)
     add(STATIC_PAGE_META['/ai'], `<h1>让你常用的智能体引用课标原文</h1><p class="kbp-lede">${esc(STATIC_PAGE_META['/ai'].description)}</p><p>MCP 服务器地址：https://www.kebiao.org/mcp（Streamable HTTP，无需 API Key）。在 WorkBuddy 的「连接器 → 自定义连接器」里粘贴配置即可；扣子、魔搭、Claude、Cursor 也能接。</p><p>${link('/lesson-plan', '备课助手')} · ${link('/open-data', '数据与接口')}</p>`)
     add(STATIC_PAGE_META['/contact'], `<h1>联系我们</h1><p class="kbp-lede">${esc(STATIC_PAGE_META['/contact'].description)}</p>`)
     add(STATIC_PAGE_META['/lesson-plan'], `<h1>备课助手：从教材的一课起草有课标依据的教案</h1><p class="kbp-lede">${esc(STATIC_PAGE_META['/lesson-plan'].description)}</p><p>kebiao 只按你勾选的课标要点写，每条目标标出依据编码；写完后逐条核验：有没有超出课标写明的限定，目标有没有对应的教学环节和评价任务。可复制、下载 Word、打印。</p>`)
