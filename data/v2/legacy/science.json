@@ -469,8 +469,8 @@
   "code": "SC-D2-PR-002",
   "kind": "indicator",
   "to": "SC-S2-TE-01",
-  "anchor": "SC-S2-TE-01.1",
-  "match": 0.39,
+  "anchor": "SC-S2-TE-01.2",
+  "match": 0.9,
   "verdict": "trim"
  },
  {
@@ -852,7 +852,7 @@
   "kind": "indicator",
   "to": "SC-S3-ES-02",
   "anchor": "SC-S3-ES-02.4",
-  "match": 0.95,
+  "match": 1,
   "verdict": "keep"
  },
  {
@@ -1267,7 +1267,7 @@
   "kind": "indicator",
   "to": "SC-S4-LS-04",
   "anchor": "SC-S4-LS-04.20",
-  "match": 0.5,
+  "match": 0.79,
   "verdict": "keep"
  },
  {
@@ -1800,7 +1800,7 @@
   "kind": "indicator",
   "to": "SC-S4-LS-04",
   "anchor": "SC-S4-LS-04.20",
-  "match": 0.5,
+  "match": 0.79,
   "verdict": "keep"
  },
  {
@@ -2333,7 +2333,7 @@
   "kind": "indicator",
   "to": "SC-S4-LS-04",
   "anchor": "SC-S4-LS-04.20",
-  "match": 0.5,
+  "match": 0.79,
   "verdict": "keep"
  },
  {
