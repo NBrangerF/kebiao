@@ -5,6 +5,7 @@ import { LoadingState, ErrorState } from '../components/StateComponents'
 import TextbookReader from '../features/textbooks/TextbookReader'
 import { createTextbookViewerSession, loadTextbookDetail } from '../features/textbooks/textbookApi'
 import { resolveTextbookDeepLinkPage } from '../features/textbooks/textbookAlignmentContext'
+import PrepressNotice from '../features/textbooks/PrepressNotice'
 import styles from './TextbookReaderPage.module.css'
 
 export default function TextbookReaderPage() {
@@ -30,7 +31,7 @@ export default function TextbookReaderPage() {
         <div className={styles.page}>
             <div className={`container ${styles.heading}`}>
                 <Link to={`/textbooks/${editionId}`}><ArrowLeftIcon size={16} aria-hidden="true" /> 返回详情</Link>
-                <div><span>{state.book.edition_name}</span><h1>{state.book.title}</h1></div>
+                <div><span>{state.book.edition_name}</span><h1>{state.book.title}</h1><PrepressNotice book={state.book} /></div>
                 <p>阅读进度只保存在当前浏览器。</p>
             </div>
             <div className={`container ${styles.readerWrap}`}>

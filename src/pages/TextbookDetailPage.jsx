@@ -8,8 +8,9 @@ import { usePageMeta } from '../seo/usePageMeta.js'
 import TextbookAlignmentCard from '../features/textbooks/TextbookAlignmentCard'
 import TextbookCover from '../features/textbooks/TextbookCover'
 import TextbookStatus from '../features/textbooks/TextbookStatus'
+import PrepressNotice from '../features/textbooks/PrepressNotice'
 import { loadTextbookDetail } from '../features/textbooks/textbookApi'
-import { bookFields, saveMyBook, useMyBook, viewMyBook } from '../features/mybook/myBook.js'
+import { bookFields, isPrepress, publisherOf, saveMyBook, useMyBook, viewMyBook } from '../features/mybook/myBook.js'
 import { bookHref, loadAllBooks } from '../features/mybook/BookPicker.jsx'
 import { alignmentUnits, pointIndex, v2Slug } from '../features/textbooks/alignmentModel'
 import UnitMap from '../features/textbooks/UnitMap'
@@ -199,6 +200,7 @@ export default function TextbookDetailPage() {
                     <div className={styles.heroContent}>
                         <nav className={styles.eyebrow} aria-label="面包屑"><Link to="/textbooks">教材</Link> / {book.edition_name} · {book.stage_label} · {book.subject} · {book.volume}</nav>
                         <h1>{book.title}</h1>
+                        <PrepressNotice book={book} current={siblings.find(item => !isPrepress(item.edition_name) && publisherOf(item.edition_name) === publisherOf(book.edition_name))} />
                         {siblings.length ? (
                             <p className={styles.editions}>
                                 <span>{book.edition_name}</span>

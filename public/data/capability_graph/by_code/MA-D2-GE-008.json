@@ -127,12 +127,72 @@
     "evidence_note": "已有教材正文、任务或练习的页内证据；关系由机器自动生成并附带原文定位、证据哈希和置信度。",
     "gap_reason": null,
     "highest_evidence_level": "L3_page_evidence",
-    "page_evidence_count": 2,
-    "scope_count": 8,
-    "specific_count": 6,
+    "page_evidence_count": 3,
+    "scope_count": 9,
+    "specific_count": 7,
     "unit_topic_candidate_count": 0
   },
   "curriculum_alignments": [
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_e4162f5f8efdb378",
+      "alignment_type": "supports",
+      "confidence": 0.92,
+      "coverage": "partial",
+      "edition_id": "ed_4fd275bf2c77863dd8d1",
+      "evidence_basis": "textbook_page_span",
+      "evidence_gap": null,
+      "evidence_level": "L3_page_evidence",
+      "evidence_refs": [
+        "external_contributed_2026_bsd_math_2024_grade_4_down",
+        "tes_ff4860abf3559143",
+        "textbook-node:tcn_b07cf64380555a2b",
+        "textbook-unit:tcu_0a4a0d626db3b5cb"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "看一看,说一说生活中的平均数。",
+          "excerpt_hash": "1ba05292c908671a653980c6e406b9a891dc84df105033472ce32c087a12c55a",
+          "pdf_page": 90,
+          "printed_page": null,
+          "span_id": "tes_ff4860abf3559143"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_5dc314d5b125a1b1",
+        "lc_34b08f0d991f3b45"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_5dc314d5b125a1b1",
+          "label": "辨认出生活中的平移、旋转和轴对称现象，直观感知平移、旋转和轴对称的特征"
+        },
+        {
+          "component_id": "lc_34b08f0d991f3b45",
+          "label": "利用平移或旋转解释现实生活中的现象"
+        }
+      ],
+      "level": "page",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_b07cf64380555a2b",
+      "node_title": "看一看,说一说生活中的平均数。",
+      "pdf_page": 90,
+      "printed_page": null,
+      "publication_status": "published",
+      "rationale": "教材学习目标“看一看,说一说生活中的平均数。”与课标 MA-D2-GE-008 的可教学小能力“辨认出生活中的平移、旋转和轴对称现象，直观感知平移、旋转和轴对称的特征、利用平移或旋转解释现实生活中的现象”形成页内证据匹配。",
+      "relation_type": "supports",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "future_candidate",
+      "textbook_grade": 4,
+      "textbook_subject": "数学",
+      "textbook_title": "数学4年级下册",
+      "textbook_volume": "下册",
+      "unit_id": "tcu_0a4a0d626db3b5cb",
+      "unit_title": "第七单元 平均数"
+    },
     {
       "algorithm_version": "component-evidence-hybrid-v3",
       "alignment_id": "tca_c4d0b56655613773",
@@ -547,6 +607,37 @@
       "textbook_subject": "数学",
       "textbook_title": "数学3年级上册",
       "textbook_volume": "上册",
+      "unit_id": null,
+      "unit_title": ""
+    },
+    {
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "alignment_id": "ca_4782aa22af3296ce",
+      "alignment_type": "references",
+      "confidence": null,
+      "coverage": "scope_only",
+      "edition_id": "ed_4fd275bf2c77863dd8d1",
+      "evidence_basis": "subject_grade_scope",
+      "evidence_level": "L1_scope",
+      "evidence_refs": [
+        "external_contributed_2026_bsd_math_2024_grade_4_down"
+      ],
+      "evidence_role": "direct_textbook",
+      "level": "scope",
+      "method": "subject_grade_scope_mapping",
+      "pdf_page": null,
+      "printed_page": null,
+      "publication_status": "published_scope",
+      "rationale": "教材与课标处于同学科、同学段的适用范围；此关系不证明某一单元直接教授该条标准。",
+      "relation_type": "curriculum_scope",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "future_candidate",
+      "scope_id": "tcs_c6152d881b073992",
+      "textbook_grade": 4,
+      "textbook_subject": "数学",
+      "textbook_title": "数学4年级下册",
+      "textbook_volume": "下册",
       "unit_id": null,
       "unit_title": ""
     },

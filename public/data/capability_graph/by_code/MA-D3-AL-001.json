@@ -47,9 +47,9 @@
     "evidence_note": "已有教材正文、任务或练习的页内证据；关系由机器自动生成并附带原文定位、证据哈希和置信度。",
     "gap_reason": null,
     "highest_evidence_level": "L3_page_evidence",
-    "page_evidence_count": 9,
-    "scope_count": 8,
-    "specific_count": 10,
+    "page_evidence_count": 10,
+    "scope_count": 10,
+    "specific_count": 11,
     "unit_topic_candidate_count": 0
   },
   "curriculum_alignments": [
@@ -385,6 +385,61 @@
     },
     {
       "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_46df79db380f8346",
+      "alignment_type": "supports",
+      "confidence": 0.8768,
+      "coverage": "partial",
+      "edition_id": "ed_539ed38c65cb0d156de0",
+      "evidence_basis": "textbook_page_span",
+      "evidence_gap": null,
+      "evidence_level": "L3_page_evidence",
+      "evidence_refs": [
+        "external_contributed_2026_bsd_math_2024_grade_6_down",
+        "tes_cfd90ab1dc590105",
+        "textbook-node:tcn_a112e5551f84f28d",
+        "textbook-unit:tcu_f9eb10b56fe2a994"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "在山常生活和数学中都有很多变化的量,你还能找出一个量随着另一个量",
+          "excerpt_hash": "cce0a1202dbd82f66f20f04c6db314e573f37b5bc523d3f857d76e6240687d80",
+          "pdf_page": 40,
+          "printed_page": null,
+          "span_id": "tes_cfd90ab1dc590105"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_be5edf79492cfc20"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_be5edf79492cfc20",
+          "label": "找出一个自然数的所有因数，两个自然数的公因数和最大公因数"
+        }
+      ],
+      "level": "page",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_a112e5551f84f28d",
+      "node_title": "在山常生活和数学中都有很多变化的量,你还能找出一个量随着另一个量",
+      "pdf_page": 40,
+      "printed_page": null,
+      "publication_status": "published",
+      "rationale": "教材学习目标“在山常生活和数学中都有很多变化的量,你还能找出一个量随着另一个量”与课标 MA-D3-AL-001 的可教学小能力“找出一个自然数的所有因数，两个自然数的公因数和最大公因数”形成页内证据匹配。",
+      "relation_type": "supports",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "future_candidate",
+      "textbook_grade": 6,
+      "textbook_subject": "数学",
+      "textbook_title": "数学6年级下册",
+      "textbook_volume": "下册",
+      "unit_id": "tcu_f9eb10b56fe2a994",
+      "unit_title": "第三单元 正比例关系"
+    },
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
       "alignment_id": "tca_c5018471c09d8cac",
       "alignment_type": "supports",
       "confidence": 0.8768,
@@ -605,6 +660,37 @@
     },
     {
       "algorithm_version": "full-alignment-scope-preserve-v2",
+      "alignment_id": "ca_559489aec6b367f4",
+      "alignment_type": "references",
+      "confidence": null,
+      "coverage": "scope_only",
+      "edition_id": "ed_016ec9d2a84e7c41bf02",
+      "evidence_basis": "subject_grade_scope",
+      "evidence_level": "L1_scope",
+      "evidence_refs": [
+        "external_contributed_2026_bsd_math_2024_grade_5_down"
+      ],
+      "evidence_role": "direct_textbook",
+      "level": "scope",
+      "method": "subject_grade_scope_mapping",
+      "pdf_page": null,
+      "printed_page": null,
+      "publication_status": "published_scope",
+      "rationale": "教材与课标处于同学科、同学段的适用范围；此关系不证明某一单元直接教授该条标准。",
+      "relation_type": "curriculum_scope",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "future_candidate",
+      "scope_id": "tcs_64cb118a4dcebaa4",
+      "textbook_grade": 5,
+      "textbook_subject": "数学",
+      "textbook_title": "数学5年级下册",
+      "textbook_volume": "下册",
+      "unit_id": null,
+      "unit_title": ""
+    },
+    {
+      "algorithm_version": "full-alignment-scope-preserve-v2",
       "alignment_id": "ca_a89c835636ba4caf",
       "alignment_type": "references",
       "confidence": null,
@@ -692,6 +778,37 @@
       "textbook_grade": 5,
       "textbook_subject": "数学",
       "textbook_title": "数学5年级下册",
+      "textbook_volume": "下册",
+      "unit_id": null,
+      "unit_title": ""
+    },
+    {
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "alignment_id": "ca_0d3eeccbfb3df254",
+      "alignment_type": "references",
+      "confidence": null,
+      "coverage": "scope_only",
+      "edition_id": "ed_539ed38c65cb0d156de0",
+      "evidence_basis": "subject_grade_scope",
+      "evidence_level": "L1_scope",
+      "evidence_refs": [
+        "external_contributed_2026_bsd_math_2024_grade_6_down"
+      ],
+      "evidence_role": "direct_textbook",
+      "level": "scope",
+      "method": "subject_grade_scope_mapping",
+      "pdf_page": null,
+      "printed_page": null,
+      "publication_status": "published_scope",
+      "rationale": "教材与课标处于同学科、同学段的适用范围；此关系不证明某一单元直接教授该条标准。",
+      "relation_type": "curriculum_scope",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "future_candidate",
+      "scope_id": "tcs_42d194db334156f2",
+      "textbook_grade": 6,
+      "textbook_subject": "数学",
+      "textbook_title": "数学6年级下册",
       "textbook_volume": "下册",
       "unit_id": null,
       "unit_title": ""

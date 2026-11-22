@@ -43,16 +43,71 @@
   ],
   "curriculum_alignment_summary": {
     "candidate_count": 0,
-    "disposition": "scope_aligned_no_unit_evidence",
-    "evidence_note": "已关联适用教材范围，但尚无可靠单元级页内证据。",
+    "disposition": "page_aligned",
+    "evidence_note": "已有教材正文、任务或练习的页内证据；关系由机器自动生成并附带原文定位、证据哈希和置信度。",
     "gap_reason": null,
-    "highest_evidence_level": "L1_scope",
-    "page_evidence_count": 0,
-    "scope_count": 8,
-    "specific_count": 0,
+    "highest_evidence_level": "L3_page_evidence",
+    "page_evidence_count": 1,
+    "scope_count": 9,
+    "specific_count": 1,
     "unit_topic_candidate_count": 0
   },
   "curriculum_alignments": [
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_7d7378c12ed23169",
+      "alignment_type": "supports",
+      "confidence": 0.86,
+      "coverage": "partial",
+      "edition_id": "ed_4fd275bf2c77863dd8d1",
+      "evidence_basis": "textbook_page_span",
+      "evidence_gap": null,
+      "evidence_level": "L3_page_evidence",
+      "evidence_refs": [
+        "external_contributed_2026_bsd_math_2024_grade_4_down",
+        "tes_5621a49bbd9378ee",
+        "textbook-node:tcn_899057e7e43160b2",
+        "textbook-unit:tcu_82f3e141ae03c790"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "想一想,长方形和正方形的特征与它们的周长、面积计算公式之",
+          "excerpt_hash": "dc6b0e3f0494651480c0ecdb2fa9627cec5a29e4841d59ae8cc3433be51118c2",
+          "pdf_page": 68,
+          "printed_page": null,
+          "span_id": "tes_5621a49bbd9378ee"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_954e3e48a45f9dfc"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_954e3e48a45f9dfc",
+          "label": "在解决图形周长、面积的实际问题过程中，逐步积累操作的经验"
+        }
+      ],
+      "level": "page",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_899057e7e43160b2",
+      "node_title": "想一想,长方形和正方形的特征与它们的周长、面积计算公式之",
+      "pdf_page": 68,
+      "printed_page": null,
+      "publication_status": "published",
+      "rationale": "教材学习目标“想一想,长方形和正方形的特征与它们的周长、面积计算公式之”与课标 MA-D2-GE-007 的可教学小能力“在解决图形周长、面积的实际问题过程中，逐步积累操作的经验”形成页内证据匹配。",
+      "relation_type": "supports",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "future_candidate",
+      "textbook_grade": 4,
+      "textbook_subject": "数学",
+      "textbook_title": "数学4年级下册",
+      "textbook_volume": "下册",
+      "unit_id": "tcu_82f3e141ae03c790",
+      "unit_title": "第五单元 面积"
+    },
     {
       "algorithm_version": "full-alignment-scope-preserve-v2",
       "alignment_id": "ca_0a97c7f87c930823",
@@ -112,6 +167,37 @@
       "textbook_subject": "数学",
       "textbook_title": "数学3年级上册",
       "textbook_volume": "上册",
+      "unit_id": null,
+      "unit_title": ""
+    },
+    {
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "alignment_id": "ca_d61fa60facecc589",
+      "alignment_type": "references",
+      "confidence": null,
+      "coverage": "scope_only",
+      "edition_id": "ed_4fd275bf2c77863dd8d1",
+      "evidence_basis": "subject_grade_scope",
+      "evidence_level": "L1_scope",
+      "evidence_refs": [
+        "external_contributed_2026_bsd_math_2024_grade_4_down"
+      ],
+      "evidence_role": "direct_textbook",
+      "level": "scope",
+      "method": "subject_grade_scope_mapping",
+      "pdf_page": null,
+      "printed_page": null,
+      "publication_status": "published_scope",
+      "rationale": "教材与课标处于同学科、同学段的适用范围；此关系不证明某一单元直接教授该条标准。",
+      "relation_type": "curriculum_scope",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "future_candidate",
+      "scope_id": "tcs_c6152d881b073992",
+      "textbook_grade": 4,
+      "textbook_subject": "数学",
+      "textbook_title": "数学4年级下册",
+      "textbook_volume": "下册",
       "unit_id": null,
       "unit_title": ""
     },

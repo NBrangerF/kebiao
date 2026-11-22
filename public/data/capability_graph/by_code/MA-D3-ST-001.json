@@ -164,12 +164,232 @@
     "evidence_note": "已有教材正文、任务或练习的页内证据；关系由机器自动生成并附带原文定位、证据哈希和置信度。",
     "gap_reason": null,
     "highest_evidence_level": "L3_page_evidence",
-    "page_evidence_count": 3,
-    "scope_count": 8,
-    "specific_count": 4,
+    "page_evidence_count": 9,
+    "scope_count": 10,
+    "specific_count": 10,
     "unit_topic_candidate_count": 0
   },
   "curriculum_alignments": [
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_3ef54d553cc78948",
+      "alignment_type": "practices",
+      "confidence": 0.92,
+      "coverage": "partial",
+      "edition_id": "ed_016ec9d2a84e7c41bf02",
+      "evidence_basis": "textbook_page_span",
+      "evidence_gap": null,
+      "evidence_level": "L3_page_evidence",
+      "evidence_refs": [
+        "external_contributed_2026_bsd_math_2024_grade_5_down",
+        "tes_4981a3a198957a9b",
+        "textbook-node:tcn_3c261aad187c1704",
+        "textbook-unit:tcu_7905d17a65326074"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "根据上表,完成2022年“五一”假期期问两地的最高气温变化的复式折线统计图。",
+          "excerpt_hash": "a24e782d48721bfae20c9fc52c38d36be17a310895f595b32c378328e724eefb",
+          "pdf_page": 109,
+          "printed_page": null,
+          "span_id": "tes_4981a3a198957a9b"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_2c04e4a86c151cff"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_2c04e4a86c151cff",
+          "label": "把数据整理成条形统计图、折线统计图，知道条形统计图、折线统计图和扇形统计图的功能"
+        }
+      ],
+      "level": "page",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_3c261aad187c1704",
+      "node_title": "根据上表,完成2022年“五一”假期期问两地的最高气温变化的复式折线统计图。",
+      "pdf_page": 109,
+      "printed_page": null,
+      "publication_status": "published",
+      "rationale": "教材练习“根据上表,完成2022年“五一”假期期问两地的最高气温变化的复式折线统计图。”与课标 MA-D3-ST-001 的可教学小能力“把数据整理成条形统计图、折线统计图，知道条形统计图、折线统计图和扇形统计图的功能”形成页内证据匹配。",
+      "relation_type": "practices",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "future_candidate",
+      "textbook_grade": 5,
+      "textbook_subject": "数学",
+      "textbook_title": "数学5年级下册",
+      "textbook_volume": "下册",
+      "unit_id": "tcu_7905d17a65326074",
+      "unit_title": "第七单元 数据的表示和分析（二）"
+    },
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_9c12c59123b92b65",
+      "alignment_type": "supports",
+      "confidence": 0.92,
+      "coverage": "partial",
+      "edition_id": "ed_016ec9d2a84e7c41bf02",
+      "evidence_basis": "textbook_page_span",
+      "evidence_gap": null,
+      "evidence_level": "L3_page_evidence",
+      "evidence_refs": [
+        "external_contributed_2026_bsd_math_2024_grade_5_down",
+        "tes_e4e46e15539d460f",
+        "textbook-node:tcn_e7b20066e71c088b",
+        "textbook-unit:tcu_7905d17a65326074"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "请用条形统计图将各小组水培蒜|第12天的数据绘制在下图中,与同伴交流。",
+          "excerpt_hash": "2da2b72549f2b4fb7937d77288e1aa1f17a104b0f31587cf016bc9d427a7d448",
+          "pdf_page": 106,
+          "printed_page": null,
+          "span_id": "tes_e4e46e15539d460f"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_2c04e4a86c151cff"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_2c04e4a86c151cff",
+          "label": "把数据整理成条形统计图、折线统计图，知道条形统计图、折线统计图和扇形统计图的功能"
+        }
+      ],
+      "level": "page",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_e7b20066e71c088b",
+      "node_title": "请用条形统计图将各小组水培蒜|第12天的数据绘制在下图中,与同伴交流。",
+      "pdf_page": 106,
+      "printed_page": null,
+      "publication_status": "published",
+      "rationale": "教材学习目标“请用条形统计图将各小组水培蒜|第12天的数据绘制在下图中,与同伴交流。”与课标 MA-D3-ST-001 的可教学小能力“把数据整理成条形统计图、折线统计图，知道条形统计图、折线统计图和扇形统计图的功能”形成页内证据匹配。",
+      "relation_type": "supports",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "future_candidate",
+      "textbook_grade": 5,
+      "textbook_subject": "数学",
+      "textbook_title": "数学5年级下册",
+      "textbook_volume": "下册",
+      "unit_id": "tcu_7905d17a65326074",
+      "unit_title": "第七单元 数据的表示和分析（二）"
+    },
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_bf2fb212fbe2427e",
+      "alignment_type": "practices",
+      "confidence": 0.92,
+      "coverage": "partial",
+      "edition_id": "ed_016ec9d2a84e7c41bf02",
+      "evidence_basis": "textbook_page_span",
+      "evidence_gap": null,
+      "evidence_level": "L3_page_evidence",
+      "evidence_refs": [
+        "external_contributed_2026_bsd_math_2024_grade_5_down",
+        "tes_9bf1529da4159968",
+        "textbook-node:tcn_3a5dacc857cbe0c8",
+        "textbook-unit:tcu_7905d17a65326074"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "完成折线统计图。",
+          "excerpt_hash": "7dda43ee7a738192f9fc6fd54086b87578910178577ff6c36a55b3482eb6742f",
+          "pdf_page": 107,
+          "printed_page": null,
+          "span_id": "tes_9bf1529da4159968"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_2c04e4a86c151cff"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_2c04e4a86c151cff",
+          "label": "把数据整理成条形统计图、折线统计图，知道条形统计图、折线统计图和扇形统计图的功能"
+        }
+      ],
+      "level": "page",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_3a5dacc857cbe0c8",
+      "node_title": "完成折线统计图。",
+      "pdf_page": 107,
+      "printed_page": null,
+      "publication_status": "published",
+      "rationale": "教材练习“完成折线统计图。”与课标 MA-D3-ST-001 的可教学小能力“把数据整理成条形统计图、折线统计图，知道条形统计图、折线统计图和扇形统计图的功能”形成页内证据匹配。",
+      "relation_type": "practices",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "future_candidate",
+      "textbook_grade": 5,
+      "textbook_subject": "数学",
+      "textbook_title": "数学5年级下册",
+      "textbook_volume": "下册",
+      "unit_id": "tcu_7905d17a65326074",
+      "unit_title": "第七单元 数据的表示和分析（二）"
+    },
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_9bb1f68a3867b09a",
+      "alignment_type": "practices",
+      "confidence": 0.92,
+      "coverage": "partial",
+      "edition_id": "ed_016ec9d2a84e7c41bf02",
+      "evidence_basis": "textbook_page_span",
+      "evidence_gap": null,
+      "evidence_level": "L3_page_evidence",
+      "evidence_refs": [
+        "external_contributed_2026_bsd_math_2024_grade_5_down",
+        "tes_4a4b96e745e78d82",
+        "textbook-node:tcn_52c15ddce704bebc",
+        "textbook-unit:tcu_9ac121d65fd3e65f"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "根据表中的数据,完成下面的折线统计图,并与同伴说一说你发现了什么。",
+          "excerpt_hash": "7399ff2eebd93fa9b86567b7e6fcc6a206a7ddcca5e09668f17e5c265834ed01",
+          "pdf_page": 123,
+          "printed_page": null,
+          "span_id": "tes_4a4b96e745e78d82"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_2c04e4a86c151cff"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_2c04e4a86c151cff",
+          "label": "把数据整理成条形统计图、折线统计图，知道条形统计图、折线统计图和扇形统计图的功能"
+        }
+      ],
+      "level": "page",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_52c15ddce704bebc",
+      "node_title": "根据表中的数据,完成下面的折线统计图,并与同伴说一说你发现了什么。",
+      "pdf_page": 123,
+      "printed_page": null,
+      "publication_status": "published",
+      "rationale": "教材练习“根据表中的数据,完成下面的折线统计图,并与同伴说一说你发现了什么。”与课标 MA-D3-ST-001 的可教学小能力“把数据整理成条形统计图、折线统计图，知道条形统计图、折线统计图和扇形统计图的功能”形成页内证据匹配。",
+      "relation_type": "practices",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "future_candidate",
+      "textbook_grade": 5,
+      "textbook_subject": "数学",
+      "textbook_title": "数学5年级下册",
+      "textbook_volume": "下册",
+      "unit_id": "tcu_9ac121d65fd3e65f",
+      "unit_title": "总复习"
+    },
     {
       "algorithm_version": "component-evidence-hybrid-v3",
       "alignment_id": "tca_6c06927f4d3d4817",
@@ -224,6 +444,116 @@
       "textbook_volume": "下册",
       "unit_id": "tcu_18057a78a879faa4",
       "unit_title": "7 折线统计图"
+    },
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_6fd50971a3d5b77b",
+      "alignment_type": "supports",
+      "confidence": 0.92,
+      "coverage": "partial",
+      "edition_id": "ed_539ed38c65cb0d156de0",
+      "evidence_basis": "textbook_page_span",
+      "evidence_gap": null,
+      "evidence_level": "L3_page_evidence",
+      "evidence_refs": [
+        "external_contributed_2026_bsd_math_2024_grade_6_down",
+        "tes_178f7ef32f3248fc",
+        "textbook-node:tcn_aa0db9cdf3e41c89",
+        "textbook-unit:tcu_f46b87ad892f3562"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "观察折线统计图,回答下面的问题。",
+          "excerpt_hash": "14d95ff0f0c5c96860b1919a0c6cd91cffc19c87bafa2b3143b9a2fa9cff026d",
+          "pdf_page": 122,
+          "printed_page": null,
+          "span_id": "tes_178f7ef32f3248fc"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_2c04e4a86c151cff"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_2c04e4a86c151cff",
+          "label": "把数据整理成条形统计图、折线统计图，知道条形统计图、折线统计图和扇形统计图的功能"
+        }
+      ],
+      "level": "page",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_aa0db9cdf3e41c89",
+      "node_title": "观察折线统计图,回答下面的问题。",
+      "pdf_page": 122,
+      "printed_page": null,
+      "publication_status": "published",
+      "rationale": "教材学习目标“观察折线统计图,回答下面的问题。”与课标 MA-D3-ST-001 的可教学小能力“把数据整理成条形统计图、折线统计图，知道条形统计图、折线统计图和扇形统计图的功能”形成页内证据匹配。",
+      "relation_type": "supports",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "future_candidate",
+      "textbook_grade": 6,
+      "textbook_subject": "数学",
+      "textbook_title": "数学6年级下册",
+      "textbook_volume": "下册",
+      "unit_id": "tcu_f46b87ad892f3562",
+      "unit_title": "总复习"
+    },
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_898aac044bc91d86",
+      "alignment_type": "practices",
+      "confidence": 0.92,
+      "coverage": "partial",
+      "edition_id": "ed_539ed38c65cb0d156de0",
+      "evidence_basis": "textbook_page_span",
+      "evidence_gap": null,
+      "evidence_level": "L3_page_evidence",
+      "evidence_refs": [
+        "external_contributed_2026_bsd_math_2024_grade_6_down",
+        "tes_8a7f31049ef055d3",
+        "textbook-node:tcn_9598884e4f0a2afb",
+        "textbook-unit:tcu_f46b87ad892f3562"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "制作 复式条形统计图同学单手投球远我们以投球为例梳理了解决统",
+          "excerpt_hash": "a6202a2b12554f1c420123af2d75866c258dbf491a0b37ac976e58c4eee64940",
+          "pdf_page": 115,
+          "printed_page": null,
+          "span_id": "tes_8a7f31049ef055d3"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_2c04e4a86c151cff"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_2c04e4a86c151cff",
+          "label": "把数据整理成条形统计图、折线统计图，知道条形统计图、折线统计图和扇形统计图的功能"
+        }
+      ],
+      "level": "page",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_9598884e4f0a2afb",
+      "node_title": "制作 复式条形统计图同学单手投球远我们以投球为例梳理了解决统",
+      "pdf_page": 115,
+      "printed_page": null,
+      "publication_status": "published",
+      "rationale": "教材练习“制作 复式条形统计图同学单手投球远我们以投球为例梳理了解决统”与课标 MA-D3-ST-001 的可教学小能力“把数据整理成条形统计图、折线统计图，知道条形统计图、折线统计图和扇形统计图的功能”形成页内证据匹配。",
+      "relation_type": "practices",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "future_candidate",
+      "textbook_grade": 6,
+      "textbook_subject": "数学",
+      "textbook_title": "数学6年级下册",
+      "textbook_volume": "下册",
+      "unit_id": "tcu_f46b87ad892f3562",
+      "unit_title": "总复习"
     },
     {
       "algorithm_version": "component-evidence-hybrid-v3",
@@ -392,6 +722,37 @@
     },
     {
       "algorithm_version": "full-alignment-scope-preserve-v2",
+      "alignment_id": "ca_f56d4a09c18cf763",
+      "alignment_type": "references",
+      "confidence": null,
+      "coverage": "scope_only",
+      "edition_id": "ed_016ec9d2a84e7c41bf02",
+      "evidence_basis": "subject_grade_scope",
+      "evidence_level": "L1_scope",
+      "evidence_refs": [
+        "external_contributed_2026_bsd_math_2024_grade_5_down"
+      ],
+      "evidence_role": "direct_textbook",
+      "level": "scope",
+      "method": "subject_grade_scope_mapping",
+      "pdf_page": null,
+      "printed_page": null,
+      "publication_status": "published_scope",
+      "rationale": "教材与课标处于同学科、同学段的适用范围；此关系不证明某一单元直接教授该条标准。",
+      "relation_type": "curriculum_scope",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "future_candidate",
+      "scope_id": "tcs_64cb118a4dcebaa4",
+      "textbook_grade": 5,
+      "textbook_subject": "数学",
+      "textbook_title": "数学5年级下册",
+      "textbook_volume": "下册",
+      "unit_id": null,
+      "unit_title": ""
+    },
+    {
+      "algorithm_version": "full-alignment-scope-preserve-v2",
       "alignment_id": "ca_ffbaafdb4da1e1cc",
       "alignment_type": "references",
       "confidence": null,
@@ -479,6 +840,37 @@
       "textbook_grade": 5,
       "textbook_subject": "数学",
       "textbook_title": "数学5年级下册",
+      "textbook_volume": "下册",
+      "unit_id": null,
+      "unit_title": ""
+    },
+    {
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "alignment_id": "ca_adc8b18a0b78829c",
+      "alignment_type": "references",
+      "confidence": null,
+      "coverage": "scope_only",
+      "edition_id": "ed_539ed38c65cb0d156de0",
+      "evidence_basis": "subject_grade_scope",
+      "evidence_level": "L1_scope",
+      "evidence_refs": [
+        "external_contributed_2026_bsd_math_2024_grade_6_down"
+      ],
+      "evidence_role": "direct_textbook",
+      "level": "scope",
+      "method": "subject_grade_scope_mapping",
+      "pdf_page": null,
+      "printed_page": null,
+      "publication_status": "published_scope",
+      "rationale": "教材与课标处于同学科、同学段的适用范围；此关系不证明某一单元直接教授该条标准。",
+      "relation_type": "curriculum_scope",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "future_candidate",
+      "scope_id": "tcs_42d194db334156f2",
+      "textbook_grade": 6,
+      "textbook_subject": "数学",
+      "textbook_title": "数学6年级下册",
       "textbook_volume": "下册",
       "unit_id": null,
       "unit_title": ""

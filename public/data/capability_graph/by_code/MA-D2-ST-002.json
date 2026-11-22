@@ -86,9 +86,9 @@
     "evidence_note": "已有教材正文、任务或练习的页内证据；关系由机器自动生成并附带原文定位、证据哈希和置信度。",
     "gap_reason": null,
     "highest_evidence_level": "L3_page_evidence",
-    "page_evidence_count": 4,
-    "scope_count": 8,
-    "specific_count": 9,
+    "page_evidence_count": 5,
+    "scope_count": 9,
+    "specific_count": 10,
     "unit_topic_candidate_count": 0
   },
   "curriculum_alignments": [
@@ -201,6 +201,61 @@
       "textbook_volume": "下册",
       "unit_id": "tcu_7297df06a8fdc1e9",
       "unit_title": "六 数据的表示和分析"
+    },
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_3e7d649cffbf0d8d",
+      "alignment_type": "supports",
+      "confidence": 0.92,
+      "coverage": "partial",
+      "edition_id": "ed_4fd275bf2c77863dd8d1",
+      "evidence_basis": "textbook_page_span",
+      "evidence_gap": null,
+      "evidence_level": "L3_page_evidence",
+      "evidence_refs": [
+        "external_contributed_2026_bsd_math_2024_grade_4_down",
+        "tes_083045024b3190dc",
+        "textbook-node:tcn_64cd7ddfd5769442",
+        "textbook-unit:tcu_0a4a0d626db3b5cb"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "填一填,再根据整理的数据完成条形统计图。",
+          "excerpt_hash": "e67ca95bc64dabc543c0cc03626536aa6c6f6c9928bab3d18065a4340c4744e4",
+          "pdf_page": 97,
+          "printed_page": null,
+          "span_id": "tes_083045024b3190dc"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_3e5b2ca4f90fd7fe"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_3e5b2ca4f90fd7fe",
+          "label": "用条形统计图合理表示数据"
+        }
+      ],
+      "level": "page",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_64cd7ddfd5769442",
+      "node_title": "填一填,再根据整理的数据完成条形统计图。",
+      "pdf_page": 97,
+      "printed_page": null,
+      "publication_status": "published",
+      "rationale": "教材学习目标“填一填,再根据整理的数据完成条形统计图。”与课标 MA-D2-ST-002 的可教学小能力“用条形统计图合理表示数据”形成页内证据匹配。",
+      "relation_type": "supports",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "future_candidate",
+      "textbook_grade": 4,
+      "textbook_subject": "数学",
+      "textbook_title": "数学4年级下册",
+      "textbook_volume": "下册",
+      "unit_id": "tcu_0a4a0d626db3b5cb",
+      "unit_title": "第七单元 平均数"
     },
     {
       "algorithm_version": "component-evidence-hybrid-v3",
@@ -369,7 +424,7 @@
     },
     {
       "algorithm_version": "component-evidence-hybrid-v3",
-      "alignment_id": "tca_e62da17f4ba3acca",
+      "alignment_id": "tca_39ecb7cf73a3ba58",
       "alignment_type": "supports",
       "confidence": 0.92,
       "coverage": "partial",
@@ -379,19 +434,19 @@
       "evidence_level": "L2_topic",
       "evidence_refs": [
         "external_smartedu_2026_math_primary_grade_4_up",
-        "tes_bebd3fe65c1e1f50",
-        "textbook-node:tcn_1b3c95e9ea1d0017",
+        "tes_5c449f83822ae8f0",
+        "textbook-node:tcn_64903d20030c44df",
         "textbook-unit:tcu_07ea1c44be4fed34"
       ],
       "evidence_role": "direct_textbook",
       "evidence_spans": [
         {
           "evidence_role": "direct_textbook",
-          "excerpt": "90 条形统计图",
-          "excerpt_hash": "5d686cf61040452530a837dadad872bd05710713530875234c0a30dfcb1f642d",
-          "pdf_page": 95,
-          "printed_page": "90",
-          "span_id": "tes_bebd3fe65c1e1f50"
+          "excerpt": "98 条形统计图",
+          "excerpt_hash": "f19a5a3494baa31782dc0734c83bc931ce6566980ffd6f069fb63ea792eeef9e",
+          "pdf_page": 103,
+          "printed_page": "98",
+          "span_id": "tes_5c449f83822ae8f0"
         }
       ],
       "learning_component_ids": [
@@ -405,67 +460,12 @@
       ],
       "level": "unit",
       "method": "component_evidence_hybrid",
-      "node_id": "tcn_1b3c95e9ea1d0017",
-      "node_title": "90条形统计图",
-      "pdf_page": 95,
-      "printed_page": "90",
+      "node_id": "tcn_64903d20030c44df",
+      "node_title": "98条形统计图",
+      "pdf_page": 103,
+      "printed_page": "98",
       "publication_status": "published",
-      "rationale": "教材课文“90条形统计图”与课标 MA-D2-ST-002 的可教学小能力“用条形统计图合理表示数据”形成页内证据匹配。",
-      "relation_type": "supports",
-      "resource_type": "student_textbook",
-      "review_status": "machine_checked",
-      "revision_status": "current_confirmed",
-      "textbook_grade": 4,
-      "textbook_subject": "数学",
-      "textbook_title": "数学4年级上册",
-      "textbook_volume": "上册",
-      "unit_id": "tcu_07ea1c44be4fed34",
-      "unit_title": "六 条形统计图"
-    },
-    {
-      "algorithm_version": "component-evidence-hybrid-v3",
-      "alignment_id": "tca_bc0441a3b570eb0d",
-      "alignment_type": "supports",
-      "confidence": 0.92,
-      "coverage": "partial",
-      "edition_id": "ed_dda80e43104244896faa",
-      "evidence_basis": "toc_title",
-      "evidence_gap": "当前证据来自目录标题与课标概念匹配，尚未保存教材正文或练习摘录；因此只能声明主题支持，不能声明完整教授。",
-      "evidence_level": "L2_topic",
-      "evidence_refs": [
-        "external_smartedu_2026_math_primary_grade_4_up",
-        "tes_b1cb0dd4282a5dc6",
-        "textbook-node:tcn_cabbc9caf5de9314",
-        "textbook-unit:tcu_07ea1c44be4fed34"
-      ],
-      "evidence_role": "direct_textbook",
-      "evidence_spans": [
-        {
-          "evidence_role": "direct_textbook",
-          "excerpt": "92 条形统计图",
-          "excerpt_hash": "f2989f4d339a9927d99cb0d6a758b6b71b98864210f9eb6a9e35aee4fd477255",
-          "pdf_page": 97,
-          "printed_page": "92",
-          "span_id": "tes_b1cb0dd4282a5dc6"
-        }
-      ],
-      "learning_component_ids": [
-        "lc_3e5b2ca4f90fd7fe"
-      ],
-      "learning_components": [
-        {
-          "component_id": "lc_3e5b2ca4f90fd7fe",
-          "label": "用条形统计图合理表示数据"
-        }
-      ],
-      "level": "unit",
-      "method": "component_evidence_hybrid",
-      "node_id": "tcn_cabbc9caf5de9314",
-      "node_title": "92条形统计图",
-      "pdf_page": 97,
-      "printed_page": "92",
-      "publication_status": "published",
-      "rationale": "教材课文“92条形统计图”与课标 MA-D2-ST-002 的可教学小能力“用条形统计图合理表示数据”形成页内证据匹配。",
+      "rationale": "教材课文“98条形统计图”与课标 MA-D2-ST-002 的可教学小能力“用条形统计图合理表示数据”形成页内证据匹配。",
       "relation_type": "supports",
       "resource_type": "student_textbook",
       "review_status": "machine_checked",
@@ -534,7 +534,7 @@
     },
     {
       "algorithm_version": "component-evidence-hybrid-v3",
-      "alignment_id": "tca_39ecb7cf73a3ba58",
+      "alignment_id": "tca_bc0441a3b570eb0d",
       "alignment_type": "supports",
       "confidence": 0.92,
       "coverage": "partial",
@@ -544,19 +544,19 @@
       "evidence_level": "L2_topic",
       "evidence_refs": [
         "external_smartedu_2026_math_primary_grade_4_up",
-        "tes_5c449f83822ae8f0",
-        "textbook-node:tcn_64903d20030c44df",
+        "tes_b1cb0dd4282a5dc6",
+        "textbook-node:tcn_cabbc9caf5de9314",
         "textbook-unit:tcu_07ea1c44be4fed34"
       ],
       "evidence_role": "direct_textbook",
       "evidence_spans": [
         {
           "evidence_role": "direct_textbook",
-          "excerpt": "98 条形统计图",
-          "excerpt_hash": "f19a5a3494baa31782dc0734c83bc931ce6566980ffd6f069fb63ea792eeef9e",
-          "pdf_page": 103,
-          "printed_page": "98",
-          "span_id": "tes_5c449f83822ae8f0"
+          "excerpt": "92 条形统计图",
+          "excerpt_hash": "f2989f4d339a9927d99cb0d6a758b6b71b98864210f9eb6a9e35aee4fd477255",
+          "pdf_page": 97,
+          "printed_page": "92",
+          "span_id": "tes_b1cb0dd4282a5dc6"
         }
       ],
       "learning_component_ids": [
@@ -570,12 +570,67 @@
       ],
       "level": "unit",
       "method": "component_evidence_hybrid",
-      "node_id": "tcn_64903d20030c44df",
-      "node_title": "98条形统计图",
-      "pdf_page": 103,
-      "printed_page": "98",
+      "node_id": "tcn_cabbc9caf5de9314",
+      "node_title": "92条形统计图",
+      "pdf_page": 97,
+      "printed_page": "92",
       "publication_status": "published",
-      "rationale": "教材课文“98条形统计图”与课标 MA-D2-ST-002 的可教学小能力“用条形统计图合理表示数据”形成页内证据匹配。",
+      "rationale": "教材课文“92条形统计图”与课标 MA-D2-ST-002 的可教学小能力“用条形统计图合理表示数据”形成页内证据匹配。",
+      "relation_type": "supports",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "textbook_grade": 4,
+      "textbook_subject": "数学",
+      "textbook_title": "数学4年级上册",
+      "textbook_volume": "上册",
+      "unit_id": "tcu_07ea1c44be4fed34",
+      "unit_title": "六 条形统计图"
+    },
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_e62da17f4ba3acca",
+      "alignment_type": "supports",
+      "confidence": 0.92,
+      "coverage": "partial",
+      "edition_id": "ed_dda80e43104244896faa",
+      "evidence_basis": "toc_title",
+      "evidence_gap": "当前证据来自目录标题与课标概念匹配，尚未保存教材正文或练习摘录；因此只能声明主题支持，不能声明完整教授。",
+      "evidence_level": "L2_topic",
+      "evidence_refs": [
+        "external_smartedu_2026_math_primary_grade_4_up",
+        "tes_bebd3fe65c1e1f50",
+        "textbook-node:tcn_1b3c95e9ea1d0017",
+        "textbook-unit:tcu_07ea1c44be4fed34"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "90 条形统计图",
+          "excerpt_hash": "5d686cf61040452530a837dadad872bd05710713530875234c0a30dfcb1f642d",
+          "pdf_page": 95,
+          "printed_page": "90",
+          "span_id": "tes_bebd3fe65c1e1f50"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_3e5b2ca4f90fd7fe"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_3e5b2ca4f90fd7fe",
+          "label": "用条形统计图合理表示数据"
+        }
+      ],
+      "level": "unit",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_1b3c95e9ea1d0017",
+      "node_title": "90条形统计图",
+      "pdf_page": 95,
+      "printed_page": "90",
+      "publication_status": "published",
+      "rationale": "教材课文“90条形统计图”与课标 MA-D2-ST-002 的可教学小能力“用条形统计图合理表示数据”形成页内证据匹配。",
       "relation_type": "supports",
       "resource_type": "student_textbook",
       "review_status": "machine_checked",
@@ -646,6 +701,37 @@
       "textbook_subject": "数学",
       "textbook_title": "数学3年级上册",
       "textbook_volume": "上册",
+      "unit_id": null,
+      "unit_title": ""
+    },
+    {
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "alignment_id": "ca_8040da5a69a52f89",
+      "alignment_type": "references",
+      "confidence": null,
+      "coverage": "scope_only",
+      "edition_id": "ed_4fd275bf2c77863dd8d1",
+      "evidence_basis": "subject_grade_scope",
+      "evidence_level": "L1_scope",
+      "evidence_refs": [
+        "external_contributed_2026_bsd_math_2024_grade_4_down"
+      ],
+      "evidence_role": "direct_textbook",
+      "level": "scope",
+      "method": "subject_grade_scope_mapping",
+      "pdf_page": null,
+      "printed_page": null,
+      "publication_status": "published_scope",
+      "rationale": "教材与课标处于同学科、同学段的适用范围；此关系不证明某一单元直接教授该条标准。",
+      "relation_type": "curriculum_scope",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "future_candidate",
+      "scope_id": "tcs_c6152d881b073992",
+      "textbook_grade": 4,
+      "textbook_subject": "数学",
+      "textbook_title": "数学4年级下册",
+      "textbook_volume": "下册",
       "unit_id": null,
       "unit_title": ""
     },

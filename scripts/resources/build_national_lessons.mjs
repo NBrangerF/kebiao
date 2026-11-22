@@ -145,7 +145,8 @@ export function buildNationalLessons() {
     // 人教版 and 北师大版 数学5上 are both 「数学5年级上册」: where two books share a title, name each with its edition
     const editionOf = new Map(library.map(book => [book.edition_id, book.edition_name]))
     const bookOf = new Map(library.map(book => [book.edition_id, book]))
-    const family = name => String(name || '').replace(/（.*$/u, '')
+    // a 印前样本 is its own family: the book in classrooms now keeps its redirects and grade placement
+    const family = name => String(name || '').includes('印前样本') ? String(name) : String(name || '').replace(/（.*$/u, '')
     // a volume two editions share (人教版 and 北师大版 数学7上): the second edition's grades come from its own lessons
     const slotEditions = new Map()
     for (const book of library) {

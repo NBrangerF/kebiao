@@ -47,9 +47,9 @@
     "evidence_note": "已有教材正文、任务或练习的页内证据；关系由机器自动生成并附带原文定位、证据哈希和置信度。",
     "gap_reason": null,
     "highest_evidence_level": "L3_page_evidence",
-    "page_evidence_count": 9,
-    "scope_count": 8,
-    "specific_count": 19,
+    "page_evidence_count": 11,
+    "scope_count": 10,
+    "specific_count": 21,
     "unit_topic_candidate_count": 0
   },
   "curriculum_alignments": [
@@ -107,6 +107,116 @@
       "textbook_volume": "下册",
       "unit_id": "tcu_60a003a16adb6f72",
       "unit_title": "3 圆柱与圆锥"
+    },
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_274390574d89226b",
+      "alignment_type": "practices",
+      "confidence": 0.92,
+      "coverage": "partial",
+      "edition_id": "ed_539ed38c65cb0d156de0",
+      "evidence_basis": "textbook_page_span",
+      "evidence_gap": null,
+      "evidence_level": "L3_page_evidence",
+      "evidence_refs": [
+        "external_contributed_2026_bsd_math_2024_grade_6_down",
+        "tes_7cad574a9570a751",
+        "textbook-node:tcn_36caae948e35e5c7",
+        "textbook-unit:tcu_f46b87ad892f3562"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "画出一个长方形、平行四边形和梯形。",
+          "excerpt_hash": "c07a78bb980c2bd44cada80c399da5f755716c3e2c59e1ad31c8c9cb4cdff1e8",
+          "pdf_page": 104,
+          "printed_page": null,
+          "span_id": "tes_7cad574a9570a751"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_ed8cf8eca8c3b394"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_ed8cf8eca8c3b394",
+          "label": "计算平行四边形、三角形、梯形的面积"
+        }
+      ],
+      "level": "page",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_36caae948e35e5c7",
+      "node_title": "画出一个长方形、平行四边形和梯形。",
+      "pdf_page": 104,
+      "printed_page": null,
+      "publication_status": "published",
+      "rationale": "教材练习“画出一个长方形、平行四边形和梯形。”与课标 MA-D3-GE-002 的可教学小能力“计算平行四边形、三角形、梯形的面积”形成页内证据匹配。",
+      "relation_type": "practices",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "future_candidate",
+      "textbook_grade": 6,
+      "textbook_subject": "数学",
+      "textbook_title": "数学6年级下册",
+      "textbook_volume": "下册",
+      "unit_id": "tcu_f46b87ad892f3562",
+      "unit_title": "总复习"
+    },
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_c44b7c7ef97b2b27",
+      "alignment_type": "practices",
+      "confidence": 0.9071,
+      "coverage": "partial",
+      "edition_id": "ed_539ed38c65cb0d156de0",
+      "evidence_basis": "textbook_page_span",
+      "evidence_gap": null,
+      "evidence_level": "L3_page_evidence",
+      "evidence_refs": [
+        "external_contributed_2026_bsd_math_2024_grade_6_down",
+        "tes_b71251db5cfd4b19",
+        "textbook-node:tcn_0197b2a5029f084d",
+        "textbook-unit:tcu_f46b87ad892f3562"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "计算长方形的面积就是看一要度量的时间、质量、面共有多少个面积单位,计算",
+          "excerpt_hash": "4099feff32dfd5cf725707e7e9daea2a76049dd166d9152a585ecc1adaba0b00",
+          "pdf_page": 124,
+          "printed_page": null,
+          "span_id": "tes_b71251db5cfd4b19"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_ed8cf8eca8c3b394"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_ed8cf8eca8c3b394",
+          "label": "计算平行四边形、三角形、梯形的面积"
+        }
+      ],
+      "level": "page",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_0197b2a5029f084d",
+      "node_title": "计算长方形的面积就是看一要度量的时间、质量、面共有多少个面积单位,计算",
+      "pdf_page": 124,
+      "printed_page": null,
+      "publication_status": "published",
+      "rationale": "教材练习“计算长方形的面积就是看一要度量的时间、质量、面共有多少个面积单位,计算”与课标 MA-D3-GE-002 的可教学小能力“计算平行四边形、三角形、梯形的面积”形成页内证据匹配。",
+      "relation_type": "practices",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "future_candidate",
+      "textbook_grade": 6,
+      "textbook_subject": "数学",
+      "textbook_title": "数学6年级下册",
+      "textbook_volume": "下册",
+      "unit_id": "tcu_f46b87ad892f3562",
+      "unit_title": "总复习"
     },
     {
       "algorithm_version": "component-evidence-hybrid-v3",
@@ -275,61 +385,6 @@
     },
     {
       "algorithm_version": "component-evidence-hybrid-v3",
-      "alignment_id": "tca_c1e1a1529ae1cd5b",
-      "alignment_type": "practices",
-      "confidence": 0.92,
-      "coverage": "partial",
-      "edition_id": "ed_ec7081b7432dd6fd4fe7",
-      "evidence_basis": "textbook_page_span",
-      "evidence_gap": null,
-      "evidence_level": "L3_page_evidence",
-      "evidence_refs": [
-        "external_smartedu_2026_bsd_math_primary_grade_5_up",
-        "tes_e82a0b72c0e7c0f1",
-        "textbook-node:tcn_4d79b3de066b5031",
-        "textbook-unit:tcu_9b97cfe511275d02"
-      ],
-      "evidence_role": "direct_textbook",
-      "evidence_spans": [
-        {
-          "evidence_role": "direct_textbook",
-          "excerpt": "结合方格纸想一想,如何得到平行四边形的面积?",
-          "excerpt_hash": "103ad143ddf549522e345b3ce752256ea8778c03fc26a2ff0db1e223feb6cc4f",
-          "pdf_page": 69,
-          "printed_page": "64",
-          "span_id": "tes_e82a0b72c0e7c0f1"
-        }
-      ],
-      "learning_component_ids": [
-        "lc_ed8cf8eca8c3b394"
-      ],
-      "learning_components": [
-        {
-          "component_id": "lc_ed8cf8eca8c3b394",
-          "label": "计算平行四边形、三角形、梯形的面积"
-        }
-      ],
-      "level": "page",
-      "method": "component_evidence_hybrid",
-      "node_id": "tcn_4d79b3de066b5031",
-      "node_title": "结合方格纸想一想,如何得到平行四边形的面积?",
-      "pdf_page": 69,
-      "printed_page": "64",
-      "publication_status": "published",
-      "rationale": "教材练习“结合方格纸想一想,如何得到平行四边形的面积?”与课标 MA-D3-GE-002 的可教学小能力“计算平行四边形、三角形、梯形的面积”形成页内证据匹配。",
-      "relation_type": "practices",
-      "resource_type": "student_textbook",
-      "review_status": "machine_checked",
-      "revision_status": "current_confirmed",
-      "textbook_grade": 5,
-      "textbook_subject": "数学",
-      "textbook_title": "数学5年级上册",
-      "textbook_volume": "上册",
-      "unit_id": "tcu_9b97cfe511275d02",
-      "unit_title": "第五单元 多边形的面积"
-    },
-    {
-      "algorithm_version": "component-evidence-hybrid-v3",
       "alignment_id": "tca_12e3415aaa2dfa92",
       "alignment_type": "practices",
       "confidence": 0.92,
@@ -372,6 +427,61 @@
       "printed_page": "65",
       "publication_status": "published",
       "rationale": "教材练习“练一练练一练练一练1. 平行四边形的面积公式是怎么得到的?画一画,并与同伴交流。”与课标 MA-D3-GE-002 的可教学小能力“计算平行四边形、三角形、梯形的面积”形成页内证据匹配。",
+      "relation_type": "practices",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "textbook_grade": 5,
+      "textbook_subject": "数学",
+      "textbook_title": "数学5年级上册",
+      "textbook_volume": "上册",
+      "unit_id": "tcu_9b97cfe511275d02",
+      "unit_title": "第五单元 多边形的面积"
+    },
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_1e76372b624bae6c",
+      "alignment_type": "practices",
+      "confidence": 0.92,
+      "coverage": "partial",
+      "edition_id": "ed_ec7081b7432dd6fd4fe7",
+      "evidence_basis": "textbook_page_span",
+      "evidence_gap": null,
+      "evidence_level": "L3_page_evidence",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_primary_grade_5_up",
+        "tes_30e16a83c2e507d0",
+        "textbook-node:tcn_6cfdfeaad6da1e39",
+        "textbook-unit:tcu_9b97cfe511275d02"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "练一练练一练练一练1. 你是怎样得到梯形的面积公式的?",
+          "excerpt_hash": "9ff94f84acbf2e7ce2e3e15871d8f63172ccfcdd4b01874b3f937231ef0a2093",
+          "pdf_page": 75,
+          "printed_page": "70",
+          "span_id": "tes_30e16a83c2e507d0"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_ed8cf8eca8c3b394"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_ed8cf8eca8c3b394",
+          "label": "计算平行四边形、三角形、梯形的面积"
+        }
+      ],
+      "level": "page",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_6cfdfeaad6da1e39",
+      "node_title": "练一练练一练练一练1. 你是怎样得到梯形的面积公式的?",
+      "pdf_page": 75,
+      "printed_page": "70",
+      "publication_status": "published",
+      "rationale": "教材练习“练一练练一练练一练1. 你是怎样得到梯形的面积公式的?”与课标 MA-D3-GE-002 的可教学小能力“计算平行四边形、三角形、梯形的面积”形成页内证据匹配。",
       "relation_type": "practices",
       "resource_type": "student_textbook",
       "review_status": "machine_checked",
@@ -495,7 +605,7 @@
     },
     {
       "algorithm_version": "component-evidence-hybrid-v3",
-      "alignment_id": "tca_1e76372b624bae6c",
+      "alignment_id": "tca_c1e1a1529ae1cd5b",
       "alignment_type": "practices",
       "confidence": 0.92,
       "coverage": "partial",
@@ -505,19 +615,19 @@
       "evidence_level": "L3_page_evidence",
       "evidence_refs": [
         "external_smartedu_2026_bsd_math_primary_grade_5_up",
-        "tes_30e16a83c2e507d0",
-        "textbook-node:tcn_6cfdfeaad6da1e39",
+        "tes_e82a0b72c0e7c0f1",
+        "textbook-node:tcn_4d79b3de066b5031",
         "textbook-unit:tcu_9b97cfe511275d02"
       ],
       "evidence_role": "direct_textbook",
       "evidence_spans": [
         {
           "evidence_role": "direct_textbook",
-          "excerpt": "练一练练一练练一练1. 你是怎样得到梯形的面积公式的?",
-          "excerpt_hash": "9ff94f84acbf2e7ce2e3e15871d8f63172ccfcdd4b01874b3f937231ef0a2093",
-          "pdf_page": 75,
-          "printed_page": "70",
-          "span_id": "tes_30e16a83c2e507d0"
+          "excerpt": "结合方格纸想一想,如何得到平行四边形的面积?",
+          "excerpt_hash": "103ad143ddf549522e345b3ce752256ea8778c03fc26a2ff0db1e223feb6cc4f",
+          "pdf_page": 69,
+          "printed_page": "64",
+          "span_id": "tes_e82a0b72c0e7c0f1"
         }
       ],
       "learning_component_ids": [
@@ -531,12 +641,12 @@
       ],
       "level": "page",
       "method": "component_evidence_hybrid",
-      "node_id": "tcn_6cfdfeaad6da1e39",
-      "node_title": "练一练练一练练一练1. 你是怎样得到梯形的面积公式的?",
-      "pdf_page": 75,
-      "printed_page": "70",
+      "node_id": "tcn_4d79b3de066b5031",
+      "node_title": "结合方格纸想一想,如何得到平行四边形的面积?",
+      "pdf_page": 69,
+      "printed_page": "64",
       "publication_status": "published",
-      "rationale": "教材练习“练一练练一练练一练1. 你是怎样得到梯形的面积公式的?”与课标 MA-D3-GE-002 的可教学小能力“计算平行四边形、三角形、梯形的面积”形成页内证据匹配。",
+      "rationale": "教材练习“结合方格纸想一想,如何得到平行四边形的面积?”与课标 MA-D3-GE-002 的可教学小能力“计算平行四边形、三角形、梯形的面积”形成页内证据匹配。",
       "relation_type": "practices",
       "resource_type": "student_textbook",
       "review_status": "machine_checked",
@@ -605,171 +715,6 @@
     },
     {
       "algorithm_version": "component-evidence-hybrid-v3",
-      "alignment_id": "tca_cecdfd5176cec848",
-      "alignment_type": "supports",
-      "confidence": 0.86,
-      "coverage": "partial",
-      "edition_id": "ed_6f696b62cd631c35e5d0",
-      "evidence_basis": "toc_title",
-      "evidence_gap": "当前证据来自目录标题与课标概念匹配，尚未保存教材正文或练习摘录；因此只能声明主题支持，不能声明完整教授。",
-      "evidence_level": "L2_topic",
-      "evidence_refs": [
-        "external_smartedu_2026_math_primary_grade_5_up",
-        "tes_a8f83864e9bffa2f",
-        "textbook-node:tcn_e9f451d9eb33d288",
-        "textbook-unit:tcu_3b1fe896b58e7f77"
-      ],
-      "evidence_role": "direct_textbook",
-      "evidence_spans": [
-        {
-          "evidence_role": "direct_textbook",
-          "excerpt": "74 多边形的面积",
-          "excerpt_hash": "0923769daad63ce8cc5cbea0f8c2807627856727f1cdd7db8957698c86ac3a8f",
-          "pdf_page": 79,
-          "printed_page": "74",
-          "span_id": "tes_a8f83864e9bffa2f"
-        }
-      ],
-      "learning_component_ids": [
-        "lc_ed8cf8eca8c3b394"
-      ],
-      "learning_components": [
-        {
-          "component_id": "lc_ed8cf8eca8c3b394",
-          "label": "计算平行四边形、三角形、梯形的面积"
-        }
-      ],
-      "level": "unit",
-      "method": "component_evidence_hybrid",
-      "node_id": "tcn_e9f451d9eb33d288",
-      "node_title": "74多边形的面积",
-      "pdf_page": 79,
-      "printed_page": "74",
-      "publication_status": "published",
-      "rationale": "教材课文“74多边形的面积”与课标 MA-D3-GE-002 的可教学小能力“计算平行四边形、三角形、梯形的面积”形成页内证据匹配。",
-      "relation_type": "supports",
-      "resource_type": "student_textbook",
-      "review_status": "machine_checked",
-      "revision_status": "current_confirmed",
-      "textbook_grade": 5,
-      "textbook_subject": "数学",
-      "textbook_title": "数学5年级上册",
-      "textbook_volume": "上册",
-      "unit_id": "tcu_3b1fe896b58e7f77",
-      "unit_title": "六 多边形的面积"
-    },
-    {
-      "algorithm_version": "component-evidence-hybrid-v3",
-      "alignment_id": "tca_adf9bf18b529f43d",
-      "alignment_type": "supports",
-      "confidence": 0.86,
-      "coverage": "partial",
-      "edition_id": "ed_6f696b62cd631c35e5d0",
-      "evidence_basis": "toc_title",
-      "evidence_gap": "当前证据来自目录标题与课标概念匹配，尚未保存教材正文或练习摘录；因此只能声明主题支持，不能声明完整教授。",
-      "evidence_level": "L2_topic",
-      "evidence_refs": [
-        "external_smartedu_2026_math_primary_grade_5_up",
-        "tes_577a2cd29373bc90",
-        "textbook-node:tcn_0dabe33ea4476765",
-        "textbook-unit:tcu_3b1fe896b58e7f77"
-      ],
-      "evidence_role": "direct_textbook",
-      "evidence_spans": [
-        {
-          "evidence_role": "direct_textbook",
-          "excerpt": "76 多边形的面积",
-          "excerpt_hash": "bb33e538d9d6918a31ecd75e064098c722d2989a5ad6d09668b2e40485cafdf8",
-          "pdf_page": 81,
-          "printed_page": "76",
-          "span_id": "tes_577a2cd29373bc90"
-        }
-      ],
-      "learning_component_ids": [
-        "lc_ed8cf8eca8c3b394"
-      ],
-      "learning_components": [
-        {
-          "component_id": "lc_ed8cf8eca8c3b394",
-          "label": "计算平行四边形、三角形、梯形的面积"
-        }
-      ],
-      "level": "unit",
-      "method": "component_evidence_hybrid",
-      "node_id": "tcn_0dabe33ea4476765",
-      "node_title": "76多边形的面积",
-      "pdf_page": 81,
-      "printed_page": "76",
-      "publication_status": "published",
-      "rationale": "教材课文“76多边形的面积”与课标 MA-D3-GE-002 的可教学小能力“计算平行四边形、三角形、梯形的面积”形成页内证据匹配。",
-      "relation_type": "supports",
-      "resource_type": "student_textbook",
-      "review_status": "machine_checked",
-      "revision_status": "current_confirmed",
-      "textbook_grade": 5,
-      "textbook_subject": "数学",
-      "textbook_title": "数学5年级上册",
-      "textbook_volume": "上册",
-      "unit_id": "tcu_3b1fe896b58e7f77",
-      "unit_title": "六 多边形的面积"
-    },
-    {
-      "algorithm_version": "component-evidence-hybrid-v3",
-      "alignment_id": "tca_d3d14f1483a99aa6",
-      "alignment_type": "supports",
-      "confidence": 0.86,
-      "coverage": "partial",
-      "edition_id": "ed_6f696b62cd631c35e5d0",
-      "evidence_basis": "toc_title",
-      "evidence_gap": "当前证据来自目录标题与课标概念匹配，尚未保存教材正文或练习摘录；因此只能声明主题支持，不能声明完整教授。",
-      "evidence_level": "L2_topic",
-      "evidence_refs": [
-        "external_smartedu_2026_math_primary_grade_5_up",
-        "tes_7f061e2307c30c82",
-        "textbook-node:tcn_3e363276c2f13724",
-        "textbook-unit:tcu_3b1fe896b58e7f77"
-      ],
-      "evidence_role": "direct_textbook",
-      "evidence_spans": [
-        {
-          "evidence_role": "direct_textbook",
-          "excerpt": "80 多边形的面积",
-          "excerpt_hash": "50c5d28020af410a77c2e7366f2c118db638ff044137e51fb6648cc6f9054d8a",
-          "pdf_page": 85,
-          "printed_page": "80",
-          "span_id": "tes_7f061e2307c30c82"
-        }
-      ],
-      "learning_component_ids": [
-        "lc_ed8cf8eca8c3b394"
-      ],
-      "learning_components": [
-        {
-          "component_id": "lc_ed8cf8eca8c3b394",
-          "label": "计算平行四边形、三角形、梯形的面积"
-        }
-      ],
-      "level": "unit",
-      "method": "component_evidence_hybrid",
-      "node_id": "tcn_3e363276c2f13724",
-      "node_title": "80多边形的面积",
-      "pdf_page": 85,
-      "printed_page": "80",
-      "publication_status": "published",
-      "rationale": "教材课文“80多边形的面积”与课标 MA-D3-GE-002 的可教学小能力“计算平行四边形、三角形、梯形的面积”形成页内证据匹配。",
-      "relation_type": "supports",
-      "resource_type": "student_textbook",
-      "review_status": "machine_checked",
-      "revision_status": "current_confirmed",
-      "textbook_grade": 5,
-      "textbook_subject": "数学",
-      "textbook_title": "数学5年级上册",
-      "textbook_volume": "上册",
-      "unit_id": "tcu_3b1fe896b58e7f77",
-      "unit_title": "六 多边形的面积"
-    },
-    {
-      "algorithm_version": "component-evidence-hybrid-v3",
       "alignment_id": "tca_3d7b03a7e422a75f",
       "alignment_type": "supports",
       "confidence": 0.86,
@@ -812,171 +757,6 @@
       "printed_page": "82",
       "publication_status": "published",
       "rationale": "教材课文“82多边形的面积”与课标 MA-D3-GE-002 的可教学小能力“计算平行四边形、三角形、梯形的面积”形成页内证据匹配。",
-      "relation_type": "supports",
-      "resource_type": "student_textbook",
-      "review_status": "machine_checked",
-      "revision_status": "current_confirmed",
-      "textbook_grade": 5,
-      "textbook_subject": "数学",
-      "textbook_title": "数学5年级上册",
-      "textbook_volume": "上册",
-      "unit_id": "tcu_3b1fe896b58e7f77",
-      "unit_title": "六 多边形的面积"
-    },
-    {
-      "algorithm_version": "component-evidence-hybrid-v3",
-      "alignment_id": "tca_71a675b1619a6eda",
-      "alignment_type": "supports",
-      "confidence": 0.86,
-      "coverage": "partial",
-      "edition_id": "ed_6f696b62cd631c35e5d0",
-      "evidence_basis": "toc_title",
-      "evidence_gap": "当前证据来自目录标题与课标概念匹配，尚未保存教材正文或练习摘录；因此只能声明主题支持，不能声明完整教授。",
-      "evidence_level": "L2_topic",
-      "evidence_refs": [
-        "external_smartedu_2026_math_primary_grade_5_up",
-        "tes_a5f235d5ea8afbca",
-        "textbook-node:tcn_da77d19e0cb0fba5",
-        "textbook-unit:tcu_3b1fe896b58e7f77"
-      ],
-      "evidence_role": "direct_textbook",
-      "evidence_spans": [
-        {
-          "evidence_role": "direct_textbook",
-          "excerpt": "84 多边形的面积",
-          "excerpt_hash": "d849f3998d83f21602a06be14faee779da6f9068ec60b774b4d86bfe0b8b23d9",
-          "pdf_page": 89,
-          "printed_page": "84",
-          "span_id": "tes_a5f235d5ea8afbca"
-        }
-      ],
-      "learning_component_ids": [
-        "lc_ed8cf8eca8c3b394"
-      ],
-      "learning_components": [
-        {
-          "component_id": "lc_ed8cf8eca8c3b394",
-          "label": "计算平行四边形、三角形、梯形的面积"
-        }
-      ],
-      "level": "unit",
-      "method": "component_evidence_hybrid",
-      "node_id": "tcn_da77d19e0cb0fba5",
-      "node_title": "84多边形的面积",
-      "pdf_page": 89,
-      "printed_page": "84",
-      "publication_status": "published",
-      "rationale": "教材课文“84多边形的面积”与课标 MA-D3-GE-002 的可教学小能力“计算平行四边形、三角形、梯形的面积”形成页内证据匹配。",
-      "relation_type": "supports",
-      "resource_type": "student_textbook",
-      "review_status": "machine_checked",
-      "revision_status": "current_confirmed",
-      "textbook_grade": 5,
-      "textbook_subject": "数学",
-      "textbook_title": "数学5年级上册",
-      "textbook_volume": "上册",
-      "unit_id": "tcu_3b1fe896b58e7f77",
-      "unit_title": "六 多边形的面积"
-    },
-    {
-      "algorithm_version": "component-evidence-hybrid-v3",
-      "alignment_id": "tca_c090d49db93e7c1c",
-      "alignment_type": "supports",
-      "confidence": 0.86,
-      "coverage": "partial",
-      "edition_id": "ed_6f696b62cd631c35e5d0",
-      "evidence_basis": "toc_title",
-      "evidence_gap": "当前证据来自目录标题与课标概念匹配，尚未保存教材正文或练习摘录；因此只能声明主题支持，不能声明完整教授。",
-      "evidence_level": "L2_topic",
-      "evidence_refs": [
-        "external_smartedu_2026_math_primary_grade_5_up",
-        "tes_3f2d9d2984607df0",
-        "textbook-node:tcn_d6b30f109f91cf3c",
-        "textbook-unit:tcu_3b1fe896b58e7f77"
-      ],
-      "evidence_role": "direct_textbook",
-      "evidence_spans": [
-        {
-          "evidence_role": "direct_textbook",
-          "excerpt": "86 多边形的面积",
-          "excerpt_hash": "0a89ec92a46451027f5be5247c372051b4bf4d535aa616c92ce6115e1abc3164",
-          "pdf_page": 91,
-          "printed_page": "86",
-          "span_id": "tes_3f2d9d2984607df0"
-        }
-      ],
-      "learning_component_ids": [
-        "lc_ed8cf8eca8c3b394"
-      ],
-      "learning_components": [
-        {
-          "component_id": "lc_ed8cf8eca8c3b394",
-          "label": "计算平行四边形、三角形、梯形的面积"
-        }
-      ],
-      "level": "unit",
-      "method": "component_evidence_hybrid",
-      "node_id": "tcn_d6b30f109f91cf3c",
-      "node_title": "86多边形的面积",
-      "pdf_page": 91,
-      "printed_page": "86",
-      "publication_status": "published",
-      "rationale": "教材课文“86多边形的面积”与课标 MA-D3-GE-002 的可教学小能力“计算平行四边形、三角形、梯形的面积”形成页内证据匹配。",
-      "relation_type": "supports",
-      "resource_type": "student_textbook",
-      "review_status": "machine_checked",
-      "revision_status": "current_confirmed",
-      "textbook_grade": 5,
-      "textbook_subject": "数学",
-      "textbook_title": "数学5年级上册",
-      "textbook_volume": "上册",
-      "unit_id": "tcu_3b1fe896b58e7f77",
-      "unit_title": "六 多边形的面积"
-    },
-    {
-      "algorithm_version": "component-evidence-hybrid-v3",
-      "alignment_id": "tca_78e00c4fe9ddbb34",
-      "alignment_type": "supports",
-      "confidence": 0.86,
-      "coverage": "partial",
-      "edition_id": "ed_6f696b62cd631c35e5d0",
-      "evidence_basis": "toc_title",
-      "evidence_gap": "当前证据来自目录标题与课标概念匹配，尚未保存教材正文或练习摘录；因此只能声明主题支持，不能声明完整教授。",
-      "evidence_level": "L2_topic",
-      "evidence_refs": [
-        "external_smartedu_2026_math_primary_grade_5_up",
-        "tes_306493b1c7737307",
-        "textbook-node:tcn_c2f7d64cdb80d2d9",
-        "textbook-unit:tcu_3b1fe896b58e7f77"
-      ],
-      "evidence_role": "direct_textbook",
-      "evidence_spans": [
-        {
-          "evidence_role": "direct_textbook",
-          "excerpt": "88 多边形的面积",
-          "excerpt_hash": "4f86b62afe2482b1f779a118ddd66635d2416acf38a74c4d1a019fb2239236ae",
-          "pdf_page": 93,
-          "printed_page": "88",
-          "span_id": "tes_306493b1c7737307"
-        }
-      ],
-      "learning_component_ids": [
-        "lc_ed8cf8eca8c3b394"
-      ],
-      "learning_components": [
-        {
-          "component_id": "lc_ed8cf8eca8c3b394",
-          "label": "计算平行四边形、三角形、梯形的面积"
-        }
-      ],
-      "level": "unit",
-      "method": "component_evidence_hybrid",
-      "node_id": "tcn_c2f7d64cdb80d2d9",
-      "node_title": "88多边形的面积",
-      "pdf_page": 93,
-      "printed_page": "88",
-      "publication_status": "published",
-      "rationale": "教材课文“88多边形的面积”与课标 MA-D3-GE-002 的可教学小能力“计算平行四边形、三角形、梯形的面积”形成页内证据匹配。",
       "relation_type": "supports",
       "resource_type": "student_textbook",
       "review_status": "machine_checked",
@@ -1045,6 +825,336 @@
     },
     {
       "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_71a675b1619a6eda",
+      "alignment_type": "supports",
+      "confidence": 0.86,
+      "coverage": "partial",
+      "edition_id": "ed_6f696b62cd631c35e5d0",
+      "evidence_basis": "toc_title",
+      "evidence_gap": "当前证据来自目录标题与课标概念匹配，尚未保存教材正文或练习摘录；因此只能声明主题支持，不能声明完整教授。",
+      "evidence_level": "L2_topic",
+      "evidence_refs": [
+        "external_smartedu_2026_math_primary_grade_5_up",
+        "tes_a5f235d5ea8afbca",
+        "textbook-node:tcn_da77d19e0cb0fba5",
+        "textbook-unit:tcu_3b1fe896b58e7f77"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "84 多边形的面积",
+          "excerpt_hash": "d849f3998d83f21602a06be14faee779da6f9068ec60b774b4d86bfe0b8b23d9",
+          "pdf_page": 89,
+          "printed_page": "84",
+          "span_id": "tes_a5f235d5ea8afbca"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_ed8cf8eca8c3b394"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_ed8cf8eca8c3b394",
+          "label": "计算平行四边形、三角形、梯形的面积"
+        }
+      ],
+      "level": "unit",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_da77d19e0cb0fba5",
+      "node_title": "84多边形的面积",
+      "pdf_page": 89,
+      "printed_page": "84",
+      "publication_status": "published",
+      "rationale": "教材课文“84多边形的面积”与课标 MA-D3-GE-002 的可教学小能力“计算平行四边形、三角形、梯形的面积”形成页内证据匹配。",
+      "relation_type": "supports",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "textbook_grade": 5,
+      "textbook_subject": "数学",
+      "textbook_title": "数学5年级上册",
+      "textbook_volume": "上册",
+      "unit_id": "tcu_3b1fe896b58e7f77",
+      "unit_title": "六 多边形的面积"
+    },
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_78e00c4fe9ddbb34",
+      "alignment_type": "supports",
+      "confidence": 0.86,
+      "coverage": "partial",
+      "edition_id": "ed_6f696b62cd631c35e5d0",
+      "evidence_basis": "toc_title",
+      "evidence_gap": "当前证据来自目录标题与课标概念匹配，尚未保存教材正文或练习摘录；因此只能声明主题支持，不能声明完整教授。",
+      "evidence_level": "L2_topic",
+      "evidence_refs": [
+        "external_smartedu_2026_math_primary_grade_5_up",
+        "tes_306493b1c7737307",
+        "textbook-node:tcn_c2f7d64cdb80d2d9",
+        "textbook-unit:tcu_3b1fe896b58e7f77"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "88 多边形的面积",
+          "excerpt_hash": "4f86b62afe2482b1f779a118ddd66635d2416acf38a74c4d1a019fb2239236ae",
+          "pdf_page": 93,
+          "printed_page": "88",
+          "span_id": "tes_306493b1c7737307"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_ed8cf8eca8c3b394"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_ed8cf8eca8c3b394",
+          "label": "计算平行四边形、三角形、梯形的面积"
+        }
+      ],
+      "level": "unit",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_c2f7d64cdb80d2d9",
+      "node_title": "88多边形的面积",
+      "pdf_page": 93,
+      "printed_page": "88",
+      "publication_status": "published",
+      "rationale": "教材课文“88多边形的面积”与课标 MA-D3-GE-002 的可教学小能力“计算平行四边形、三角形、梯形的面积”形成页内证据匹配。",
+      "relation_type": "supports",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "textbook_grade": 5,
+      "textbook_subject": "数学",
+      "textbook_title": "数学5年级上册",
+      "textbook_volume": "上册",
+      "unit_id": "tcu_3b1fe896b58e7f77",
+      "unit_title": "六 多边形的面积"
+    },
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_adf9bf18b529f43d",
+      "alignment_type": "supports",
+      "confidence": 0.86,
+      "coverage": "partial",
+      "edition_id": "ed_6f696b62cd631c35e5d0",
+      "evidence_basis": "toc_title",
+      "evidence_gap": "当前证据来自目录标题与课标概念匹配，尚未保存教材正文或练习摘录；因此只能声明主题支持，不能声明完整教授。",
+      "evidence_level": "L2_topic",
+      "evidence_refs": [
+        "external_smartedu_2026_math_primary_grade_5_up",
+        "tes_577a2cd29373bc90",
+        "textbook-node:tcn_0dabe33ea4476765",
+        "textbook-unit:tcu_3b1fe896b58e7f77"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "76 多边形的面积",
+          "excerpt_hash": "bb33e538d9d6918a31ecd75e064098c722d2989a5ad6d09668b2e40485cafdf8",
+          "pdf_page": 81,
+          "printed_page": "76",
+          "span_id": "tes_577a2cd29373bc90"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_ed8cf8eca8c3b394"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_ed8cf8eca8c3b394",
+          "label": "计算平行四边形、三角形、梯形的面积"
+        }
+      ],
+      "level": "unit",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_0dabe33ea4476765",
+      "node_title": "76多边形的面积",
+      "pdf_page": 81,
+      "printed_page": "76",
+      "publication_status": "published",
+      "rationale": "教材课文“76多边形的面积”与课标 MA-D3-GE-002 的可教学小能力“计算平行四边形、三角形、梯形的面积”形成页内证据匹配。",
+      "relation_type": "supports",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "textbook_grade": 5,
+      "textbook_subject": "数学",
+      "textbook_title": "数学5年级上册",
+      "textbook_volume": "上册",
+      "unit_id": "tcu_3b1fe896b58e7f77",
+      "unit_title": "六 多边形的面积"
+    },
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_c090d49db93e7c1c",
+      "alignment_type": "supports",
+      "confidence": 0.86,
+      "coverage": "partial",
+      "edition_id": "ed_6f696b62cd631c35e5d0",
+      "evidence_basis": "toc_title",
+      "evidence_gap": "当前证据来自目录标题与课标概念匹配，尚未保存教材正文或练习摘录；因此只能声明主题支持，不能声明完整教授。",
+      "evidence_level": "L2_topic",
+      "evidence_refs": [
+        "external_smartedu_2026_math_primary_grade_5_up",
+        "tes_3f2d9d2984607df0",
+        "textbook-node:tcn_d6b30f109f91cf3c",
+        "textbook-unit:tcu_3b1fe896b58e7f77"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "86 多边形的面积",
+          "excerpt_hash": "0a89ec92a46451027f5be5247c372051b4bf4d535aa616c92ce6115e1abc3164",
+          "pdf_page": 91,
+          "printed_page": "86",
+          "span_id": "tes_3f2d9d2984607df0"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_ed8cf8eca8c3b394"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_ed8cf8eca8c3b394",
+          "label": "计算平行四边形、三角形、梯形的面积"
+        }
+      ],
+      "level": "unit",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_d6b30f109f91cf3c",
+      "node_title": "86多边形的面积",
+      "pdf_page": 91,
+      "printed_page": "86",
+      "publication_status": "published",
+      "rationale": "教材课文“86多边形的面积”与课标 MA-D3-GE-002 的可教学小能力“计算平行四边形、三角形、梯形的面积”形成页内证据匹配。",
+      "relation_type": "supports",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "textbook_grade": 5,
+      "textbook_subject": "数学",
+      "textbook_title": "数学5年级上册",
+      "textbook_volume": "上册",
+      "unit_id": "tcu_3b1fe896b58e7f77",
+      "unit_title": "六 多边形的面积"
+    },
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_cecdfd5176cec848",
+      "alignment_type": "supports",
+      "confidence": 0.86,
+      "coverage": "partial",
+      "edition_id": "ed_6f696b62cd631c35e5d0",
+      "evidence_basis": "toc_title",
+      "evidence_gap": "当前证据来自目录标题与课标概念匹配，尚未保存教材正文或练习摘录；因此只能声明主题支持，不能声明完整教授。",
+      "evidence_level": "L2_topic",
+      "evidence_refs": [
+        "external_smartedu_2026_math_primary_grade_5_up",
+        "tes_a8f83864e9bffa2f",
+        "textbook-node:tcn_e9f451d9eb33d288",
+        "textbook-unit:tcu_3b1fe896b58e7f77"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "74 多边形的面积",
+          "excerpt_hash": "0923769daad63ce8cc5cbea0f8c2807627856727f1cdd7db8957698c86ac3a8f",
+          "pdf_page": 79,
+          "printed_page": "74",
+          "span_id": "tes_a8f83864e9bffa2f"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_ed8cf8eca8c3b394"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_ed8cf8eca8c3b394",
+          "label": "计算平行四边形、三角形、梯形的面积"
+        }
+      ],
+      "level": "unit",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_e9f451d9eb33d288",
+      "node_title": "74多边形的面积",
+      "pdf_page": 79,
+      "printed_page": "74",
+      "publication_status": "published",
+      "rationale": "教材课文“74多边形的面积”与课标 MA-D3-GE-002 的可教学小能力“计算平行四边形、三角形、梯形的面积”形成页内证据匹配。",
+      "relation_type": "supports",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "textbook_grade": 5,
+      "textbook_subject": "数学",
+      "textbook_title": "数学5年级上册",
+      "textbook_volume": "上册",
+      "unit_id": "tcu_3b1fe896b58e7f77",
+      "unit_title": "六 多边形的面积"
+    },
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_d3d14f1483a99aa6",
+      "alignment_type": "supports",
+      "confidence": 0.86,
+      "coverage": "partial",
+      "edition_id": "ed_6f696b62cd631c35e5d0",
+      "evidence_basis": "toc_title",
+      "evidence_gap": "当前证据来自目录标题与课标概念匹配，尚未保存教材正文或练习摘录；因此只能声明主题支持，不能声明完整教授。",
+      "evidence_level": "L2_topic",
+      "evidence_refs": [
+        "external_smartedu_2026_math_primary_grade_5_up",
+        "tes_7f061e2307c30c82",
+        "textbook-node:tcn_3e363276c2f13724",
+        "textbook-unit:tcu_3b1fe896b58e7f77"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "80 多边形的面积",
+          "excerpt_hash": "50c5d28020af410a77c2e7366f2c118db638ff044137e51fb6648cc6f9054d8a",
+          "pdf_page": 85,
+          "printed_page": "80",
+          "span_id": "tes_7f061e2307c30c82"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_ed8cf8eca8c3b394"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_ed8cf8eca8c3b394",
+          "label": "计算平行四边形、三角形、梯形的面积"
+        }
+      ],
+      "level": "unit",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_3e363276c2f13724",
+      "node_title": "80多边形的面积",
+      "pdf_page": 85,
+      "printed_page": "80",
+      "publication_status": "published",
+      "rationale": "教材课文“80多边形的面积”与课标 MA-D3-GE-002 的可教学小能力“计算平行四边形、三角形、梯形的面积”形成页内证据匹配。",
+      "relation_type": "supports",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "textbook_grade": 5,
+      "textbook_subject": "数学",
+      "textbook_title": "数学5年级上册",
+      "textbook_volume": "上册",
+      "unit_id": "tcu_3b1fe896b58e7f77",
+      "unit_title": "六 多边形的面积"
+    },
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
       "alignment_id": "tca_fd993a1936854093",
       "alignment_type": "supports",
       "confidence": 0.86,
@@ -1097,6 +1207,37 @@
       "textbook_volume": "上册",
       "unit_id": "tcu_3b1fe896b58e7f77",
       "unit_title": "六 多边形的面积"
+    },
+    {
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "alignment_id": "ca_765e69cbe5ff5e59",
+      "alignment_type": "references",
+      "confidence": null,
+      "coverage": "scope_only",
+      "edition_id": "ed_016ec9d2a84e7c41bf02",
+      "evidence_basis": "subject_grade_scope",
+      "evidence_level": "L1_scope",
+      "evidence_refs": [
+        "external_contributed_2026_bsd_math_2024_grade_5_down"
+      ],
+      "evidence_role": "direct_textbook",
+      "level": "scope",
+      "method": "subject_grade_scope_mapping",
+      "pdf_page": null,
+      "printed_page": null,
+      "publication_status": "published_scope",
+      "rationale": "教材与课标处于同学科、同学段的适用范围；此关系不证明某一单元直接教授该条标准。",
+      "relation_type": "curriculum_scope",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "future_candidate",
+      "scope_id": "tcs_64cb118a4dcebaa4",
+      "textbook_grade": 5,
+      "textbook_subject": "数学",
+      "textbook_title": "数学5年级下册",
+      "textbook_volume": "下册",
+      "unit_id": null,
+      "unit_title": ""
     },
     {
       "algorithm_version": "full-alignment-scope-preserve-v2",
@@ -1187,6 +1328,37 @@
       "textbook_grade": 5,
       "textbook_subject": "数学",
       "textbook_title": "数学5年级下册",
+      "textbook_volume": "下册",
+      "unit_id": null,
+      "unit_title": ""
+    },
+    {
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "alignment_id": "ca_8f193270e4165a15",
+      "alignment_type": "references",
+      "confidence": null,
+      "coverage": "scope_only",
+      "edition_id": "ed_539ed38c65cb0d156de0",
+      "evidence_basis": "subject_grade_scope",
+      "evidence_level": "L1_scope",
+      "evidence_refs": [
+        "external_contributed_2026_bsd_math_2024_grade_6_down"
+      ],
+      "evidence_role": "direct_textbook",
+      "level": "scope",
+      "method": "subject_grade_scope_mapping",
+      "pdf_page": null,
+      "printed_page": null,
+      "publication_status": "published_scope",
+      "rationale": "教材与课标处于同学科、同学段的适用范围；此关系不证明某一单元直接教授该条标准。",
+      "relation_type": "curriculum_scope",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "future_candidate",
+      "scope_id": "tcs_42d194db334156f2",
+      "textbook_grade": 6,
+      "textbook_subject": "数学",
+      "textbook_title": "数学6年级下册",
       "textbook_volume": "下册",
       "unit_id": null,
       "unit_title": ""

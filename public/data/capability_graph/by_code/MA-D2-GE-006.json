@@ -47,9 +47,9 @@
     "evidence_note": "已有教材正文、任务或练习的页内证据；关系由机器自动生成并附带原文定位、证据哈希和置信度。",
     "gap_reason": null,
     "highest_evidence_level": "L3_page_evidence",
-    "page_evidence_count": 9,
-    "scope_count": 8,
-    "specific_count": 15,
+    "page_evidence_count": 14,
+    "scope_count": 9,
+    "specific_count": 22,
     "unit_topic_candidate_count": 0
   },
   "curriculum_alignments": [
@@ -165,58 +165,298 @@
     },
     {
       "algorithm_version": "component-evidence-hybrid-v3",
-      "alignment_id": "tca_e3472e4d47796563",
-      "alignment_type": "practices",
+      "alignment_id": "tca_b98ca1dc9725a14c",
+      "alignment_type": "supports",
       "confidence": 0.86,
       "coverage": "partial",
-      "edition_id": "ed_d606965a5c7bfd83f238",
+      "edition_id": "ed_4fd275bf2c77863dd8d1",
       "evidence_basis": "textbook_page_span",
       "evidence_gap": null,
       "evidence_level": "L3_page_evidence",
       "evidence_refs": [
-        "external_smartedu_2026_bsd_math_primary_grade_4_up",
-        "tes_eedf3c835510605e",
-        "textbook-node:tcn_2cf8f138731011ba",
-        "textbook-unit:tcu_af5816368ca5e68a"
+        "external_contributed_2026_bsd_math_2024_grade_4_down",
+        "tes_30134b26d3ce1298",
+        "textbook-node:tcn_c47541261927113f",
+        "textbook-unit:tcu_22873cc9b9e6c7c0"
       ],
       "evidence_role": "direct_textbook",
       "evidence_spans": [
         {
           "evidence_role": "direct_textbook",
-          "excerpt": "计算器是生活中常用的计算工具。关于计算器你知道什么?",
-          "excerpt_hash": "0a6e805b709724ada53c598065c6566b7959a495f3f0d8fce32263058f4e389b",
-          "pdf_page": 54,
-          "printed_page": "49",
-          "span_id": "tes_eedf3c835510605e"
+          "excerpt": "像下图这样拉动平行四边形框架,想一想长方形和平行四边形",
+          "excerpt_hash": "25434251c5a08254d9f3be9d1affb11be4e5dac493760e84c4d9b253b84f187b",
+          "pdf_page": 27,
+          "printed_page": null,
+          "span_id": "tes_30134b26d3ce1298"
         }
       ],
       "learning_component_ids": [
-        "lc_25b3dbd17b68879c"
+        "lc_a35aea4ec4f35180"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_a35aea4ec4f35180",
+          "label": "测量三角形、长方形和正方形的周长"
+        }
+      ],
+      "level": "page",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_c47541261927113f",
+      "node_title": "像下图这样拉动平行四边形框架,想一想长方形和平行四边形",
+      "pdf_page": 27,
+      "printed_page": null,
+      "publication_status": "published",
+      "rationale": "教材学习目标“像下图这样拉动平行四边形框架,想一想长方形和平行四边形”与课标 MA-D2-GE-006 的可教学小能力“测量三角形、长方形和正方形的周长”形成页内证据匹配。",
+      "relation_type": "supports",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "future_candidate",
+      "textbook_grade": 4,
+      "textbook_subject": "数学",
+      "textbook_title": "数学4年级下册",
+      "textbook_volume": "下册",
+      "unit_id": "tcu_22873cc9b9e6c7c0",
+      "unit_title": "第二单元 认识三角形和四边形"
+    },
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_86a43c16525f0db6",
+      "alignment_type": "practices",
+      "confidence": 0.8493,
+      "coverage": "partial",
+      "edition_id": "ed_4fd275bf2c77863dd8d1",
+      "evidence_basis": "textbook_page_span",
+      "evidence_gap": null,
+      "evidence_level": "L3_page_evidence",
+      "evidence_refs": [
+        "external_contributed_2026_bsd_math_2024_grade_4_down",
+        "tes_7316f71915debec8",
+        "textbook-node:tcn_843841fb60c6749d",
+        "textbook-unit:tcu_82f3e141ae03c790"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "计算周长用⋯...正方特殊的长方长方形面积二长又零",
+          "excerpt_hash": "9a5c3c128c9ccc52ff3e6689bc569db926cdb7d7dfffba24af8715318f02e31a",
+          "pdf_page": 68,
+          "printed_page": null,
+          "span_id": "tes_7316f71915debec8"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_8380938e75c88796"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_8380938e75c88796",
+          "label": "计算长方形、正方形的周长和面积"
+        }
+      ],
+      "level": "page",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_843841fb60c6749d",
+      "node_title": "计算周长用⋯...正方特殊的长方长方形面积二长又零",
+      "pdf_page": 68,
+      "printed_page": null,
+      "publication_status": "published",
+      "rationale": "教材练习“计算周长用⋯...正方特殊的长方长方形面积二长又零”与课标 MA-D2-GE-006 的可教学小能力“计算长方形、正方形的周长和面积”形成页内证据匹配。",
+      "relation_type": "practices",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "future_candidate",
+      "textbook_grade": 4,
+      "textbook_subject": "数学",
+      "textbook_title": "数学4年级下册",
+      "textbook_volume": "下册",
+      "unit_id": "tcu_82f3e141ae03c790",
+      "unit_title": "第五单元 面积"
+    },
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_a94f58d1280eac2e",
+      "alignment_type": "supports",
+      "confidence": 0.92,
+      "coverage": "partial",
+      "edition_id": "ed_4fd275bf2c77863dd8d1",
+      "evidence_basis": "textbook_page_span",
+      "evidence_gap": null,
+      "evidence_level": "L3_page_evidence",
+      "evidence_refs": [
+        "external_contributed_2026_bsd_math_2024_grade_4_down",
+        "tes_695ec64824546228",
+        "textbook-node:tcn_29a5185f1fdcdf80",
+        "textbook-unit:tcu_82f3e141ae03c790"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "关于图形的周长与面积,你有哪些认识?请你进行整理,并与",
+          "excerpt_hash": "447497ea374ba09a4d6b2c906b7bc0de920cb7441c260452630eb799933b4679",
+          "pdf_page": 68,
+          "printed_page": null,
+          "span_id": "tes_695ec64824546228"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_25b3dbd17b68879c",
+        "lc_8380938e75c88796",
+        "lc_a35aea4ec4f35180"
       ],
       "learning_components": [
         {
           "component_id": "lc_25b3dbd17b68879c",
           "label": "经历用直尺和圆规将三角形的三条边画到一条直线上的过程，直观感受三角形的周长，知道什么是图形的周长"
+        },
+        {
+          "component_id": "lc_8380938e75c88796",
+          "label": "计算长方形、正方形的周长和面积"
+        },
+        {
+          "component_id": "lc_a35aea4ec4f35180",
+          "label": "测量三角形、长方形和正方形的周长"
         }
       ],
       "level": "page",
       "method": "component_evidence_hybrid",
-      "node_id": "tcn_2cf8f138731011ba",
-      "node_title": "计算器是生活中常用的计算工具。关于计算器你知道什么?",
-      "pdf_page": 54,
-      "printed_page": "49",
+      "node_id": "tcn_29a5185f1fdcdf80",
+      "node_title": "关于图形的周长与面积,你有哪些认识?请你进行整理,并与",
+      "pdf_page": 68,
+      "printed_page": null,
       "publication_status": "published",
-      "rationale": "教材练习“计算器是生活中常用的计算工具。关于计算器你知道什么?”与课标 MA-D2-GE-006 的可教学小能力“经历用直尺和圆规将三角形的三条边画到一条直线上的过程，直观感受三角形的周长，知道什么是图形的周长”形成页内证据匹配。",
-      "relation_type": "practices",
+      "rationale": "教材学习目标“关于图形的周长与面积,你有哪些认识?请你进行整理,并与”与课标 MA-D2-GE-006 的可教学小能力“经历用直尺和圆规将三角形的三条边画到一条直线上的过程，直观感受三角形的周长，知道什么是图形的周长、计算长方形、正方形的周长和面积、测量三角形、长方形和正方形的周长”形成页内证据匹配。",
+      "relation_type": "supports",
       "resource_type": "student_textbook",
       "review_status": "machine_checked",
-      "revision_status": "current_confirmed",
+      "revision_status": "future_candidate",
       "textbook_grade": 4,
       "textbook_subject": "数学",
-      "textbook_title": "数学4年级上册",
-      "textbook_volume": "上册",
-      "unit_id": "tcu_af5816368ca5e68a",
-      "unit_title": "第三单元 整数乘法（二）"
+      "textbook_title": "数学4年级下册",
+      "textbook_volume": "下册",
+      "unit_id": "tcu_82f3e141ae03c790",
+      "unit_title": "第五单元 面积"
+    },
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_b4a21e1998d22b35",
+      "alignment_type": "supports",
+      "confidence": 0.92,
+      "coverage": "partial",
+      "edition_id": "ed_4fd275bf2c77863dd8d1",
+      "evidence_basis": "textbook_page_span",
+      "evidence_gap": null,
+      "evidence_level": "L3_page_evidence",
+      "evidence_refs": [
+        "external_contributed_2026_bsd_math_2024_grade_4_down",
+        "tes_5621a49bbd9378ee",
+        "textbook-node:tcn_899057e7e43160b2",
+        "textbook-unit:tcu_82f3e141ae03c790"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "想一想,长方形和正方形的特征与它们的周长、面积计算公式之",
+          "excerpt_hash": "dc6b0e3f0494651480c0ecdb2fa9627cec5a29e4841d59ae8cc3433be51118c2",
+          "pdf_page": 68,
+          "printed_page": null,
+          "span_id": "tes_5621a49bbd9378ee"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_a35aea4ec4f35180",
+        "lc_8380938e75c88796"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_a35aea4ec4f35180",
+          "label": "测量三角形、长方形和正方形的周长"
+        },
+        {
+          "component_id": "lc_8380938e75c88796",
+          "label": "计算长方形、正方形的周长和面积"
+        }
+      ],
+      "level": "page",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_899057e7e43160b2",
+      "node_title": "想一想,长方形和正方形的特征与它们的周长、面积计算公式之",
+      "pdf_page": 68,
+      "printed_page": null,
+      "publication_status": "published",
+      "rationale": "教材学习目标“想一想,长方形和正方形的特征与它们的周长、面积计算公式之”与课标 MA-D2-GE-006 的可教学小能力“测量三角形、长方形和正方形的周长、计算长方形、正方形的周长和面积”形成页内证据匹配。",
+      "relation_type": "supports",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "future_candidate",
+      "textbook_grade": 4,
+      "textbook_subject": "数学",
+      "textbook_title": "数学4年级下册",
+      "textbook_volume": "下册",
+      "unit_id": "tcu_82f3e141ae03c790",
+      "unit_title": "第五单元 面积"
+    },
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_fb424307ac62e708",
+      "alignment_type": "supports",
+      "confidence": 0.9076,
+      "coverage": "partial",
+      "edition_id": "ed_4fd275bf2c77863dd8d1",
+      "evidence_basis": "textbook_page_span",
+      "evidence_gap": null,
+      "evidence_level": "L3_page_evidence",
+      "evidence_refs": [
+        "external_contributed_2026_bsd_math_2024_grade_4_down",
+        "tes_beb15d0654f77ffa",
+        "textbook-node:tcn_c06041c637a289f7",
+        "textbook-unit:tcu_82f3e141ae03c790"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "想一想,怎样计算正方形的面积?",
+          "excerpt_hash": "e971d50661f7c907f4d7d23bc566cce2cee26d4eef510be4d1c6deb01e13c02c",
+          "pdf_page": 63,
+          "printed_page": null,
+          "span_id": "tes_beb15d0654f77ffa"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_8380938e75c88796",
+        "lc_a35aea4ec4f35180"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_8380938e75c88796",
+          "label": "计算长方形、正方形的周长和面积"
+        },
+        {
+          "component_id": "lc_a35aea4ec4f35180",
+          "label": "测量三角形、长方形和正方形的周长"
+        }
+      ],
+      "level": "page",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_c06041c637a289f7",
+      "node_title": "想一想,怎样计算正方形的面积?",
+      "pdf_page": 63,
+      "printed_page": null,
+      "publication_status": "published",
+      "rationale": "教材学习目标“想一想,怎样计算正方形的面积?”与课标 MA-D2-GE-006 的可教学小能力“计算长方形、正方形的周长和面积、测量三角形、长方形和正方形的周长”形成页内证据匹配。",
+      "relation_type": "supports",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "future_candidate",
+      "textbook_grade": 4,
+      "textbook_subject": "数学",
+      "textbook_title": "数学4年级下册",
+      "textbook_volume": "下册",
+      "unit_id": "tcu_82f3e141ae03c790",
+      "unit_title": "第五单元 面积"
     },
     {
       "algorithm_version": "component-evidence-hybrid-v3",
@@ -263,6 +503,61 @@
       "publication_status": "published",
       "rationale": "教材学习目标“谁占的格子先形成一条直线,谁就获胜。”与课标 MA-D2-GE-006 的可教学小能力“经历用直尺和圆规将三角形的三条边画到一条直线上的过程，直观感受三角形的周长，知道什么是图形的周长”形成页内证据匹配。",
       "relation_type": "supports",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "textbook_grade": 4,
+      "textbook_subject": "数学",
+      "textbook_title": "数学4年级上册",
+      "textbook_volume": "上册",
+      "unit_id": "tcu_af5816368ca5e68a",
+      "unit_title": "第三单元 整数乘法（二）"
+    },
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_e3472e4d47796563",
+      "alignment_type": "practices",
+      "confidence": 0.86,
+      "coverage": "partial",
+      "edition_id": "ed_d606965a5c7bfd83f238",
+      "evidence_basis": "textbook_page_span",
+      "evidence_gap": null,
+      "evidence_level": "L3_page_evidence",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_primary_grade_4_up",
+        "tes_eedf3c835510605e",
+        "textbook-node:tcn_2cf8f138731011ba",
+        "textbook-unit:tcu_af5816368ca5e68a"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "计算器是生活中常用的计算工具。关于计算器你知道什么?",
+          "excerpt_hash": "0a6e805b709724ada53c598065c6566b7959a495f3f0d8fce32263058f4e389b",
+          "pdf_page": 54,
+          "printed_page": "49",
+          "span_id": "tes_eedf3c835510605e"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_25b3dbd17b68879c"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_25b3dbd17b68879c",
+          "label": "经历用直尺和圆规将三角形的三条边画到一条直线上的过程，直观感受三角形的周长，知道什么是图形的周长"
+        }
+      ],
+      "level": "page",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_2cf8f138731011ba",
+      "node_title": "计算器是生活中常用的计算工具。关于计算器你知道什么?",
+      "pdf_page": 54,
+      "printed_page": "49",
+      "publication_status": "published",
+      "rationale": "教材练习“计算器是生活中常用的计算工具。关于计算器你知道什么?”与课标 MA-D2-GE-006 的可教学小能力“经历用直尺和圆规将三角形的三条边画到一条直线上的过程，直观感受三角形的周长，知道什么是图形的周长”形成页内证据匹配。",
+      "relation_type": "practices",
       "resource_type": "student_textbook",
       "review_status": "machine_checked",
       "revision_status": "current_confirmed",
@@ -385,71 +680,6 @@
     },
     {
       "algorithm_version": "component-evidence-hybrid-v3",
-      "alignment_id": "tca_cd00041e622bdc96",
-      "alignment_type": "supports",
-      "confidence": 0.92,
-      "coverage": "partial",
-      "edition_id": "ed_e9b67fbb7a2f5b25129e",
-      "evidence_basis": "textbook_page_span",
-      "evidence_gap": null,
-      "evidence_level": "L3_page_evidence",
-      "evidence_refs": [
-        "external_smartedu_2026_bsd_math_primary_grade_3_down",
-        "tes_324dbfb543997f4d",
-        "textbook-node:tcn_ae2f192b8b1f9cd7",
-        "textbook-unit:tcu_201d736991e84a31"
-      ],
-      "evidence_role": "direct_textbook",
-      "evidence_spans": [
-        {
-          "evidence_role": "direct_textbook",
-          "excerpt": "描一描,数一数,下面图形的周长分别是多少厘米?",
-          "excerpt_hash": "f7df94ce11494f19cc2244eff3ca84a5053a65d352964b8a7af8f5152a69d5c3",
-          "pdf_page": 38,
-          "printed_page": null,
-          "span_id": "tes_324dbfb543997f4d"
-        }
-      ],
-      "learning_component_ids": [
-        "lc_25b3dbd17b68879c",
-        "lc_8380938e75c88796",
-        "lc_a35aea4ec4f35180"
-      ],
-      "learning_components": [
-        {
-          "component_id": "lc_25b3dbd17b68879c",
-          "label": "经历用直尺和圆规将三角形的三条边画到一条直线上的过程，直观感受三角形的周长，知道什么是图形的周长"
-        },
-        {
-          "component_id": "lc_8380938e75c88796",
-          "label": "计算长方形、正方形的周长和面积"
-        },
-        {
-          "component_id": "lc_a35aea4ec4f35180",
-          "label": "测量三角形、长方形和正方形的周长"
-        }
-      ],
-      "level": "page",
-      "method": "component_evidence_hybrid",
-      "node_id": "tcn_ae2f192b8b1f9cd7",
-      "node_title": "描一描,数一数,下面图形的周长分别是多少厘米?",
-      "pdf_page": 38,
-      "printed_page": null,
-      "publication_status": "published",
-      "rationale": "教材学习目标“描一描,数一数,下面图形的周长分别是多少厘米?”与课标 MA-D2-GE-006 的可教学小能力“经历用直尺和圆规将三角形的三条边画到一条直线上的过程，直观感受三角形的周长，知道什么是图形的周长、计算长方形、正方形的周长和面积、测量三角形、长方形和正方形的周长”形成页内证据匹配。",
-      "relation_type": "supports",
-      "resource_type": "student_textbook",
-      "review_status": "machine_checked",
-      "revision_status": "current_confirmed",
-      "textbook_grade": 3,
-      "textbook_subject": "数学",
-      "textbook_title": "数学3年级下册",
-      "textbook_volume": "下册",
-      "unit_id": "tcu_201d736991e84a31",
-      "unit_title": "第三单元 周长"
-    },
-    {
-      "algorithm_version": "component-evidence-hybrid-v3",
       "alignment_id": "tca_b0c51bc49a27e0a0",
       "alignment_type": "supports",
       "confidence": 0.92,
@@ -502,6 +732,71 @@
       "printed_page": null,
       "publication_status": "published",
       "rationale": "教材学习目标“量一量,算出右面长方形的周长,”与课标 MA-D2-GE-006 的可教学小能力“计算长方形、正方形的周长和面积、测量三角形、长方形和正方形的周长、经历用直尺和圆规将三角形的三条边画到一条直线上的过程，直观感受三角形的周长，知道什么是图形的周长”形成页内证据匹配。",
+      "relation_type": "supports",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "textbook_grade": 3,
+      "textbook_subject": "数学",
+      "textbook_title": "数学3年级下册",
+      "textbook_volume": "下册",
+      "unit_id": "tcu_201d736991e84a31",
+      "unit_title": "第三单元 周长"
+    },
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_cd00041e622bdc96",
+      "alignment_type": "supports",
+      "confidence": 0.92,
+      "coverage": "partial",
+      "edition_id": "ed_e9b67fbb7a2f5b25129e",
+      "evidence_basis": "textbook_page_span",
+      "evidence_gap": null,
+      "evidence_level": "L3_page_evidence",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_primary_grade_3_down",
+        "tes_324dbfb543997f4d",
+        "textbook-node:tcn_ae2f192b8b1f9cd7",
+        "textbook-unit:tcu_201d736991e84a31"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "描一描,数一数,下面图形的周长分别是多少厘米?",
+          "excerpt_hash": "f7df94ce11494f19cc2244eff3ca84a5053a65d352964b8a7af8f5152a69d5c3",
+          "pdf_page": 38,
+          "printed_page": null,
+          "span_id": "tes_324dbfb543997f4d"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_25b3dbd17b68879c",
+        "lc_8380938e75c88796",
+        "lc_a35aea4ec4f35180"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_25b3dbd17b68879c",
+          "label": "经历用直尺和圆规将三角形的三条边画到一条直线上的过程，直观感受三角形的周长，知道什么是图形的周长"
+        },
+        {
+          "component_id": "lc_8380938e75c88796",
+          "label": "计算长方形、正方形的周长和面积"
+        },
+        {
+          "component_id": "lc_a35aea4ec4f35180",
+          "label": "测量三角形、长方形和正方形的周长"
+        }
+      ],
+      "level": "page",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_ae2f192b8b1f9cd7",
+      "node_title": "描一描,数一数,下面图形的周长分别是多少厘米?",
+      "pdf_page": 38,
+      "printed_page": null,
+      "publication_status": "published",
+      "rationale": "教材学习目标“描一描,数一数,下面图形的周长分别是多少厘米?”与课标 MA-D2-GE-006 的可教学小能力“经历用直尺和圆规将三角形的三条边画到一条直线上的过程，直观感受三角形的周长，知道什么是图形的周长、计算长方形、正方形的周长和面积、测量三角形、长方形和正方形的周长”形成页内证据匹配。",
       "relation_type": "supports",
       "resource_type": "student_textbook",
       "review_status": "machine_checked",
@@ -577,6 +872,121 @@
       "textbook_volume": "下册",
       "unit_id": "tcu_201d736991e84a31",
       "unit_title": "第三单元 周长"
+    },
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_487d7a8ec1162e57",
+      "alignment_type": "supports",
+      "confidence": 0.86,
+      "coverage": "partial",
+      "edition_id": "ed_4fd275bf2c77863dd8d1",
+      "evidence_basis": "toc_title",
+      "evidence_gap": "当前证据来自目录标题与课标概念匹配，尚未保存教材正文或练习摘录；因此只能声明主题支持，不能声明完整教授。",
+      "evidence_level": "L2_topic",
+      "evidence_refs": [
+        "external_contributed_2026_bsd_math_2024_grade_4_down",
+        "tes_76805bd297b4f1d6",
+        "textbook-node:tcn_1eb8bf898e0713f4",
+        "textbook-unit:tcu_a89e4d3157d7924a"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "2.将正方形的回条边函在另-条",
+          "excerpt_hash": "ec24fbe1f817876e41ec25731caef1da2ebfe15a0e2837ccf61f5bd8b225aa1f",
+          "pdf_page": 50,
+          "printed_page": null,
+          "span_id": "tes_76805bd297b4f1d6"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_8380938e75c88796",
+        "lc_a35aea4ec4f35180"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_8380938e75c88796",
+          "label": "计算长方形、正方形的周长和面积"
+        },
+        {
+          "component_id": "lc_a35aea4ec4f35180",
+          "label": "测量三角形、长方形和正方形的周长"
+        }
+      ],
+      "level": "unit",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_1eb8bf898e0713f4",
+      "node_title": "2将正方形的回条边函在另-条",
+      "pdf_page": 50,
+      "printed_page": null,
+      "publication_status": "published",
+      "rationale": "教材课文“2将正方形的回条边函在另-条”与课标 MA-D2-GE-006 的可教学小能力“计算长方形、正方形的周长和面积、测量三角形、长方形和正方形的周长”形成页内证据匹配。",
+      "relation_type": "supports",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "future_candidate",
+      "textbook_grade": 4,
+      "textbook_subject": "数学",
+      "textbook_title": "数学4年级下册",
+      "textbook_volume": "下册",
+      "unit_id": "tcu_a89e4d3157d7924a",
+      "unit_title": "第四单元 尺规作图"
+    },
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_75f125793135ef2e",
+      "alignment_type": "supports",
+      "confidence": 0.92,
+      "coverage": "partial",
+      "edition_id": "ed_4fd275bf2c77863dd8d1",
+      "evidence_basis": "toc_title",
+      "evidence_gap": "当前证据来自目录标题与课标概念匹配，尚未保存教材正文或练习摘录；因此只能声明主题支持，不能声明完整教授。",
+      "evidence_level": "L2_topic",
+      "evidence_refs": [
+        "external_contributed_2026_bsd_math_2024_grade_4_down",
+        "tes_a36d2aa306121d7a",
+        "textbook-node:tcn_62a9d9a8b7728f3d",
+        "textbook-unit:tcu_a89e4d3157d7924a"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "1.用圖规和直尺将三角形的三条",
+          "excerpt_hash": "3177b38a50d1db2baf591af762baf06bfedaa7aca515af3c7cc74a8d920b02a9",
+          "pdf_page": 50,
+          "printed_page": null,
+          "span_id": "tes_a36d2aa306121d7a"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_25b3dbd17b68879c"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_25b3dbd17b68879c",
+          "label": "经历用直尺和圆规将三角形的三条边画到一条直线上的过程，直观感受三角形的周长，知道什么是图形的周长"
+        }
+      ],
+      "level": "unit",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_62a9d9a8b7728f3d",
+      "node_title": "1用圖规和直尺将三角形的三条",
+      "pdf_page": 50,
+      "printed_page": null,
+      "publication_status": "published",
+      "rationale": "教材课文“1用圖规和直尺将三角形的三条”与课标 MA-D2-GE-006 的可教学小能力“经历用直尺和圆规将三角形的三条边画到一条直线上的过程，直观感受三角形的周长，知道什么是图形的周长”形成页内证据匹配。",
+      "relation_type": "supports",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "future_candidate",
+      "textbook_grade": 4,
+      "textbook_subject": "数学",
+      "textbook_title": "数学4年级下册",
+      "textbook_volume": "下册",
+      "unit_id": "tcu_a89e4d3157d7924a",
+      "unit_title": "第四单元 尺规作图"
     },
     {
       "algorithm_version": "component-evidence-hybrid-v3",
@@ -967,6 +1377,37 @@
       "textbook_subject": "数学",
       "textbook_title": "数学3年级上册",
       "textbook_volume": "上册",
+      "unit_id": null,
+      "unit_title": ""
+    },
+    {
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "alignment_id": "ca_d2ad85267a5e2c80",
+      "alignment_type": "references",
+      "confidence": null,
+      "coverage": "scope_only",
+      "edition_id": "ed_4fd275bf2c77863dd8d1",
+      "evidence_basis": "subject_grade_scope",
+      "evidence_level": "L1_scope",
+      "evidence_refs": [
+        "external_contributed_2026_bsd_math_2024_grade_4_down"
+      ],
+      "evidence_role": "direct_textbook",
+      "level": "scope",
+      "method": "subject_grade_scope_mapping",
+      "pdf_page": null,
+      "printed_page": null,
+      "publication_status": "published_scope",
+      "rationale": "教材与课标处于同学科、同学段的适用范围；此关系不证明某一单元直接教授该条标准。",
+      "relation_type": "curriculum_scope",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "future_candidate",
+      "scope_id": "tcs_c6152d881b073992",
+      "textbook_grade": 4,
+      "textbook_subject": "数学",
+      "textbook_title": "数学4年级下册",
+      "textbook_volume": "下册",
       "unit_id": null,
       "unit_title": ""
     },

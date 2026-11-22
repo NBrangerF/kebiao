@@ -44,10 +44,15 @@ export function saveMyBook(patch) {
 /** 「人教版 PEP（三年级起点）」→ 人教, 「外研社版（孙有中）」→ 外研社: the publisher, short enough for the header. */
 export const publisherOf = name => String(name || '').replace(/（.*?）|\(.*?\)/gu, '').replace(/\s*PEP\b/u, '').replace(/版$/u, '').trim()
 
+/** A revised printing that is not in classrooms yet (2024 修订 印前样本). */
+export const isPrepress = name => String(name || '').includes('印前样本')
+
 /** Opening a book's page remembers it, except another publisher's book of the teacher's own subject: a 北师大版
  *  teacher who follows a link into a 人教版 book keeps her book (换一本 and 设为我的书 change it on purpose). */
 export function viewMyBook(patch) {
     const prev = readMyBook()
+    // looking at next term's 印前样本 doesn't move a teacher off the book they teach from
+    if (prev?.subject && prev.subject === patch?.subject && isPrepress(patch?.edition_name)) return
     if (prev?.subject && prev.subject === patch?.subject && prev.edition_name && patch?.edition_name && publisherOf(prev.edition_name) !== publisherOf(patch.edition_name)) return
     saveMyBook(patch)
 }

@@ -417,7 +417,7 @@ function publicBase(asset, structure, generatedAt) {
     page_count: asset.pages,
     file_size_bytes: asset.bytes,
     revision_status: revisionStatus,
-    revision_label: revisionLabel(revisionStatus),
+    revision_label: String(asset.revision_status || '').includes('prepress') ? '2024 修订版印前样本，2027 年春季起使用' : revisionLabel(revisionStatus),
     bibliographic_verified: Boolean(asset.bibliographic_verified),
     reading_available: Boolean(asset.transfer_verified && asset.pdf_structural_verified),
     text_quality: structure.text_quality,

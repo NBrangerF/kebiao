@@ -1,5 +1,5 @@
 {
-  "count": 174,
+  "count": 177,
   "filters": {
     "grades": [
       {
@@ -18,17 +18,17 @@
         "value": 3
       },
       {
-        "count": 19,
+        "count": 20,
         "label": "4年级",
         "value": 4
       },
       {
-        "count": 19,
+        "count": 20,
         "label": "5年级",
         "value": 5
       },
       {
-        "count": 18,
+        "count": 19,
         "label": "6年级",
         "value": 6
       },
@@ -55,7 +55,7 @@
         "value": "junior"
       },
       {
-        "count": 105,
+        "count": 108,
         "label": "小学",
         "value": "primary"
       }
@@ -97,7 +97,7 @@
         "value": "biology"
       },
       {
-        "count": 36,
+        "count": 39,
         "label": "数学",
         "value": "math"
       },
@@ -139,13 +139,13 @@
         "value": "上册"
       },
       {
-        "count": 81,
+        "count": 84,
         "label": "下册",
         "value": "下册"
       }
     ]
   },
-  "generated_at": "2026-11-09T05:30:55.002Z",
+  "generated_at": "2026-11-21T03:46:28.416Z",
   "schema_version": 2,
-  "source_generation_id": "gen-20261109053054-9c34b8a97a"
+  "source_generation_id": "gen-20261121034628-53ce6479a8"
 }

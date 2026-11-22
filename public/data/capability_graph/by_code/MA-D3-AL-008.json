@@ -174,12 +174,122 @@
     "evidence_note": "已有教材正文、任务或练习的页内证据；关系由机器自动生成并附带原文定位、证据哈希和置信度。",
     "gap_reason": null,
     "highest_evidence_level": "L3_page_evidence",
-    "page_evidence_count": 5,
-    "scope_count": 8,
-    "specific_count": 5,
+    "page_evidence_count": 7,
+    "scope_count": 10,
+    "specific_count": 7,
     "unit_topic_candidate_count": 0
   },
   "curriculum_alignments": [
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_9fd5810c6bfa2bed",
+      "alignment_type": "supports",
+      "confidence": 0.92,
+      "coverage": "partial",
+      "edition_id": "ed_539ed38c65cb0d156de0",
+      "evidence_basis": "textbook_page_span",
+      "evidence_gap": null,
+      "evidence_level": "L3_page_evidence",
+      "evidence_refs": [
+        "external_contributed_2026_bsd_math_2024_grade_6_down",
+        "tes_8a02633cd62f4ce2",
+        "textbook-node:tcn_7e1bbbe5c11027cc",
+        "textbook-unit:tcu_f46b87ad892f3562"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "实际问题中蕴含着数量关系,请你举例说一说常见的数量关系有哪些。",
+          "excerpt_hash": "d337696d9da60d52c35f89e176833a49b6e7704112d7d72fd90e5bc8a1096363",
+          "pdf_page": 91,
+          "printed_page": null,
+          "span_id": "tes_8a02633cd62f4ce2"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_6d8482d9f698a0c0"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_6d8482d9f698a0c0",
+          "label": "运用常见的数量关系解决实际问题"
+        }
+      ],
+      "level": "page",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_7e1bbbe5c11027cc",
+      "node_title": "实际问题中蕴含着数量关系,请你举例说一说常见的数量关系有哪些。",
+      "pdf_page": 91,
+      "printed_page": null,
+      "publication_status": "published",
+      "rationale": "教材学习目标“实际问题中蕴含着数量关系,请你举例说一说常见的数量关系有哪些。”与课标 MA-D3-AL-008 的可教学小能力“运用常见的数量关系解决实际问题”形成页内证据匹配。",
+      "relation_type": "supports",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "future_candidate",
+      "textbook_grade": 6,
+      "textbook_subject": "数学",
+      "textbook_title": "数学6年级下册",
+      "textbook_volume": "下册",
+      "unit_id": "tcu_f46b87ad892f3562",
+      "unit_title": "总复习"
+    },
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_d59501e305fa7f45",
+      "alignment_type": "supports",
+      "confidence": 0.92,
+      "coverage": "partial",
+      "edition_id": "ed_539ed38c65cb0d156de0",
+      "evidence_basis": "textbook_page_span",
+      "evidence_gap": null,
+      "evidence_level": "L3_page_evidence",
+      "evidence_refs": [
+        "external_contributed_2026_bsd_math_2024_grade_6_down",
+        "tes_4d9bc63a70fd7ff5",
+        "textbook-node:tcn_51cc4b61ede927e8",
+        "textbook-unit:tcu_f46b87ad892f3562"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "解决问题的步骤和关键是什么?与同学交流。",
+          "excerpt_hash": "7e7aa69825de92a874f053a51ba5a9b686e8f3ad9a8cf315796a93821c0fb32e",
+          "pdf_page": 92,
+          "printed_page": null,
+          "span_id": "tes_4d9bc63a70fd7ff5"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_3f847c988a0a188f"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_3f847c988a0a188f",
+          "label": "合理解释结果的实际意义，逐步形成模型意识和几何直观，提高解决问题的能力"
+        }
+      ],
+      "level": "page",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_51cc4b61ede927e8",
+      "node_title": "解决问题的步骤和关键是什么?与同学交流。",
+      "pdf_page": 92,
+      "printed_page": null,
+      "publication_status": "published",
+      "rationale": "教材学习目标“解决问题的步骤和关键是什么?与同学交流。”与课标 MA-D3-AL-008 的可教学小能力“合理解释结果的实际意义，逐步形成模型意识和几何直观，提高解决问题的能力”形成页内证据匹配。",
+      "relation_type": "supports",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "future_candidate",
+      "textbook_grade": 6,
+      "textbook_subject": "数学",
+      "textbook_title": "数学6年级下册",
+      "textbook_volume": "下册",
+      "unit_id": "tcu_f46b87ad892f3562",
+      "unit_title": "总复习"
+    },
     {
       "algorithm_version": "component-evidence-hybrid-v3",
       "alignment_id": "tca_1f985e1fb96189b6",
@@ -457,6 +567,37 @@
     },
     {
       "algorithm_version": "full-alignment-scope-preserve-v2",
+      "alignment_id": "ca_2e2153dd2365959a",
+      "alignment_type": "references",
+      "confidence": null,
+      "coverage": "scope_only",
+      "edition_id": "ed_016ec9d2a84e7c41bf02",
+      "evidence_basis": "subject_grade_scope",
+      "evidence_level": "L1_scope",
+      "evidence_refs": [
+        "external_contributed_2026_bsd_math_2024_grade_5_down"
+      ],
+      "evidence_role": "direct_textbook",
+      "level": "scope",
+      "method": "subject_grade_scope_mapping",
+      "pdf_page": null,
+      "printed_page": null,
+      "publication_status": "published_scope",
+      "rationale": "教材与课标处于同学科、同学段的适用范围；此关系不证明某一单元直接教授该条标准。",
+      "relation_type": "curriculum_scope",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "future_candidate",
+      "scope_id": "tcs_64cb118a4dcebaa4",
+      "textbook_grade": 5,
+      "textbook_subject": "数学",
+      "textbook_title": "数学5年级下册",
+      "textbook_volume": "下册",
+      "unit_id": null,
+      "unit_title": ""
+    },
+    {
+      "algorithm_version": "full-alignment-scope-preserve-v2",
       "alignment_id": "ca_998370807fdb69a7",
       "alignment_type": "references",
       "confidence": null,
@@ -544,6 +685,37 @@
       "textbook_grade": 5,
       "textbook_subject": "数学",
       "textbook_title": "数学5年级下册",
+      "textbook_volume": "下册",
+      "unit_id": null,
+      "unit_title": ""
+    },
+    {
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "alignment_id": "ca_0713447b10c16d59",
+      "alignment_type": "references",
+      "confidence": null,
+      "coverage": "scope_only",
+      "edition_id": "ed_539ed38c65cb0d156de0",
+      "evidence_basis": "subject_grade_scope",
+      "evidence_level": "L1_scope",
+      "evidence_refs": [
+        "external_contributed_2026_bsd_math_2024_grade_6_down"
+      ],
+      "evidence_role": "direct_textbook",
+      "level": "scope",
+      "method": "subject_grade_scope_mapping",
+      "pdf_page": null,
+      "printed_page": null,
+      "publication_status": "published_scope",
+      "rationale": "教材与课标处于同学科、同学段的适用范围；此关系不证明某一单元直接教授该条标准。",
+      "relation_type": "curriculum_scope",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "future_candidate",
+      "scope_id": "tcs_42d194db334156f2",
+      "textbook_grade": 6,
+      "textbook_subject": "数学",
+      "textbook_title": "数学6年级下册",
       "textbook_volume": "下册",
       "unit_id": null,
       "unit_title": ""

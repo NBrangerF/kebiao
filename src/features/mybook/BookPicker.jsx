@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { loadTextbookCatalog } from '../textbooks/textbookApi'
-import { SPINE_COLORS, bookFields, publisherOf, saveMyBook, useMyBook } from './myBook.js'
+import { SPINE_COLORS, bookFields, isPrepress, publisherOf, saveMyBook, useMyBook } from './myBook.js'
 import styles from './BookPicker.module.css'
 
 const SUBJECT_ORDER = ['语文', '数学', '英语', '道德与法治', '科学', '物理', '化学', '生物学', '历史', '地理', '信息科技', '体育与健康', '艺术', '美术', '音乐', '劳动']
@@ -60,8 +60,8 @@ export default function BookPicker({ className = '', inline = false }) {
     }, [books, subject])
     const versions = useMemo(() => (books || [])
         .filter(book => book.subject === subject && slotOf(book) === slot)
-        .sort((a, b) => Number(publisherOf(b.edition_name) === preferred) - Number(publisherOf(a.edition_name) === preferred) || Number(a.platform_only) - Number(b.platform_only) || a.edition_name.localeCompare(b.edition_name, 'zh-CN')), [books, subject, slot, preferred])
-    const chosen = versions.find(book => book.edition_id === edition) || (versions.length === 1 ? versions[0] : versions.find(book => preferred && publisherOf(book.edition_name) === preferred && !book.platform_only) || null)
+        .sort((a, b) => Number(isPrepress(a.edition_name)) - Number(isPrepress(b.edition_name)) || Number(publisherOf(b.edition_name) === preferred) - Number(publisherOf(a.edition_name) === preferred) || Number(a.platform_only) - Number(b.platform_only) || a.edition_name.localeCompare(b.edition_name, 'zh-CN')), [books, subject, slot, preferred])
+    const chosen = versions.find(book => book.edition_id === edition) || (versions.length === 1 ? versions[0] : versions.find(book => preferred && publisherOf(book.edition_name) === preferred && !book.platform_only && !isPrepress(book.edition_name)) || null)
 
     const pickSubject = name => { setSubject(name); setSlot(''); setEdition('') }
     const pickSlot = value => { setSlot(value); setEdition('') }

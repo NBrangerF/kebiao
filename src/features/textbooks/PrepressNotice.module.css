@@ -1,0 +1,2 @@
+.notice { margin: 14px 0 0; padding: 8px 12px; border-left: 3px solid var(--kb-gold); background: var(--kb-surface-muted); color: var(--kb-moon); font-size: 14px; line-height: 1.7; }
+.notice a { color: inherit; text-decoration: underline; text-underline-offset: 4px; }

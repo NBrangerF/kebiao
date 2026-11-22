@@ -127,12 +127,177 @@
     "evidence_note": "已有教材正文、任务或练习的页内证据；关系由机器自动生成并附带原文定位、证据哈希和置信度。",
     "gap_reason": null,
     "highest_evidence_level": "L3_page_evidence",
-    "page_evidence_count": 17,
-    "scope_count": 8,
-    "specific_count": 17,
+    "page_evidence_count": 22,
+    "scope_count": 10,
+    "specific_count": 22,
     "unit_topic_candidate_count": 0
   },
   "curriculum_alignments": [
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_2e415d23db1460a9",
+      "alignment_type": "supports",
+      "confidence": 0.86,
+      "coverage": "partial",
+      "edition_id": "ed_016ec9d2a84e7c41bf02",
+      "evidence_basis": "textbook_page_span",
+      "evidence_gap": null,
+      "evidence_level": "L3_page_evidence",
+      "evidence_refs": [
+        "external_contributed_2026_bsd_math_2024_grade_5_down",
+        "tes_b3b5d50add2c2c4b",
+        "textbook-node:tcn_651584b3a6742d2b",
+        "textbook-unit:tcu_1948a177cf7d7911"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "把完善后的展开图画在选择的材料上。说一说制作包装盒需要注意什么,",
+          "excerpt_hash": "719a0c55ebd82c499dbe619826bae52dbfa469b819b7481cb8511569fb29e30d",
+          "pdf_page": 116,
+          "printed_page": null,
+          "span_id": "tes_b3b5d50add2c2c4b"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_2e275d23aa87be79"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_2e275d23aa87be79",
+          "label": "辨认这些图形的展开图"
+        }
+      ],
+      "level": "page",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_651584b3a6742d2b",
+      "node_title": "把完善后的展开图画在选择的材料上。说一说制作包装盒需要注意什么,",
+      "pdf_page": 116,
+      "printed_page": null,
+      "publication_status": "published",
+      "rationale": "教材学习目标“把完善后的展开图画在选择的材料上。说一说制作包装盒需要注意什么,”与课标 MA-D3-GE-003 的可教学小能力“辨认这些图形的展开图”形成页内证据匹配。",
+      "relation_type": "supports",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "future_candidate",
+      "textbook_grade": 5,
+      "textbook_subject": "数学",
+      "textbook_title": "数学5年级下册",
+      "textbook_volume": "下册",
+      "unit_id": "tcu_1948a177cf7d7911",
+      "unit_title": "综合实践 设计制作包装盒"
+    },
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_5a9b1d9b3a9292ad",
+      "alignment_type": "supports",
+      "confidence": 0.86,
+      "coverage": "partial",
+      "edition_id": "ed_016ec9d2a84e7c41bf02",
+      "evidence_basis": "textbook_page_span",
+      "evidence_gap": null,
+      "evidence_level": "L3_page_evidence",
+      "evidence_refs": [
+        "external_contributed_2026_bsd_math_2024_grade_5_down",
+        "tes_420f829dd2d4bd08",
+        "textbook-node:tcn_178acc9bd08b89f4",
+        "textbook-unit:tcu_1948a177cf7d7911"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "选择一个包装盒,尝试描出它的展开图。",
+          "excerpt_hash": "925a22da4a4d51c11b3aeba93ffd661f642edb873c7a925c6723aad8a15e4bbe",
+          "pdf_page": 114,
+          "printed_page": null,
+          "span_id": "tes_420f829dd2d4bd08"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_2e275d23aa87be79"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_2e275d23aa87be79",
+          "label": "辨认这些图形的展开图"
+        }
+      ],
+      "level": "page",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_178acc9bd08b89f4",
+      "node_title": "选择一个包装盒,尝试描出它的展开图。",
+      "pdf_page": 114,
+      "printed_page": null,
+      "publication_status": "published",
+      "rationale": "教材学习目标“选择一个包装盒,尝试描出它的展开图。”与课标 MA-D3-GE-003 的可教学小能力“辨认这些图形的展开图”形成页内证据匹配。",
+      "relation_type": "supports",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "future_candidate",
+      "textbook_grade": 5,
+      "textbook_subject": "数学",
+      "textbook_title": "数学5年级下册",
+      "textbook_volume": "下册",
+      "unit_id": "tcu_1948a177cf7d7911",
+      "unit_title": "综合实践 设计制作包装盒"
+    },
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_6d86f330c97be1a2",
+      "alignment_type": "supports",
+      "confidence": 0.86,
+      "coverage": "partial",
+      "edition_id": "ed_016ec9d2a84e7c41bf02",
+      "evidence_basis": "textbook_page_span",
+      "evidence_gap": null,
+      "evidence_level": "L3_page_evidence",
+      "evidence_refs": [
+        "external_contributed_2026_bsd_math_2024_grade_5_down",
+        "tes_6b602f1d80c638b0",
+        "textbook-node:tcn_05e2cc11631998fb",
+        "textbook-unit:tcu_1948a177cf7d7911"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "要设计包装盒的展开图,需要测量哪些数据?",
+          "excerpt_hash": "be62367d2f1f4227e69d9a1ff1ebe709e3a16772f46a69d5ad7d73b7eee70e25",
+          "pdf_page": 115,
+          "printed_page": null,
+          "span_id": "tes_6b602f1d80c638b0"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_2e275d23aa87be79"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_2e275d23aa87be79",
+          "label": "辨认这些图形的展开图"
+        }
+      ],
+      "level": "page",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_05e2cc11631998fb",
+      "node_title": "要设计包装盒的展开图,需要测量哪些数据?",
+      "pdf_page": 115,
+      "printed_page": null,
+      "publication_status": "published",
+      "rationale": "教材学习目标“要设计包装盒的展开图,需要测量哪些数据?”与课标 MA-D3-GE-003 的可教学小能力“辨认这些图形的展开图”形成页内证据匹配。",
+      "relation_type": "supports",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "future_candidate",
+      "textbook_grade": 5,
+      "textbook_subject": "数学",
+      "textbook_title": "数学5年级下册",
+      "textbook_volume": "下册",
+      "unit_id": "tcu_1948a177cf7d7911",
+      "unit_title": "综合实践 设计制作包装盒"
+    },
     {
       "algorithm_version": "component-evidence-hybrid-v3",
       "alignment_id": "tca_af102ade8f61470d",
@@ -357,6 +522,116 @@
       "textbook_volume": "下册",
       "unit_id": "tcu_3ac7b8b222f3dad2",
       "unit_title": "3 长方体和正方体"
+    },
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_d440f95bd4e2963d",
+      "alignment_type": "supports",
+      "confidence": 0.92,
+      "coverage": "partial",
+      "edition_id": "ed_539ed38c65cb0d156de0",
+      "evidence_basis": "textbook_page_span",
+      "evidence_gap": null,
+      "evidence_level": "L3_page_evidence",
+      "evidence_refs": [
+        "external_contributed_2026_bsd_math_2024_grade_6_down",
+        "tes_31ed575e75e3f6b5",
+        "textbook-node:tcn_9c1600eebece3f68",
+        "textbook-unit:tcu_d014282c58b23a29"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "奇思提出了这样一个问题:“还有哪些立体图形的体积可以用底面积乘高计",
+          "excerpt_hash": "62df10660e1bc14366c6ce3537109e642546d40c63acfdf88bb7f4d20ac09a62",
+          "pdf_page": 30,
+          "printed_page": null,
+          "span_id": "tes_31ed575e75e3f6b5"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_dcf10f8276336508"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_dcf10f8276336508",
+          "label": "计算这些图形的体积和表面积"
+        }
+      ],
+      "level": "page",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_9c1600eebece3f68",
+      "node_title": "奇思提出了这样一个问题:“还有哪些立体图形的体积可以用底面积乘高计",
+      "pdf_page": 30,
+      "printed_page": null,
+      "publication_status": "published",
+      "rationale": "教材学习目标“奇思提出了这样一个问题:“还有哪些立体图形的体积可以用底面积乘高计”与课标 MA-D3-GE-003 的可教学小能力“计算这些图形的体积和表面积”形成页内证据匹配。",
+      "relation_type": "supports",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "future_candidate",
+      "textbook_grade": 6,
+      "textbook_subject": "数学",
+      "textbook_title": "数学6年级下册",
+      "textbook_volume": "下册",
+      "unit_id": "tcu_d014282c58b23a29",
+      "unit_title": "第二单元 圆柱和圆锥"
+    },
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_f05760e00b26b868",
+      "alignment_type": "practices",
+      "confidence": 0.8477,
+      "coverage": "partial",
+      "edition_id": "ed_539ed38c65cb0d156de0",
+      "evidence_basis": "textbook_page_span",
+      "evidence_gap": null,
+      "evidence_level": "L3_page_evidence",
+      "evidence_refs": [
+        "external_contributed_2026_bsd_math_2024_grade_6_down",
+        "tes_cf58c799308f0691",
+        "textbook-node:tcn_06c3cddd6f06eb26",
+        "textbook-unit:tcu_d014282c58b23a29"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "写出圆锥体积的计算公式吗?",
+          "excerpt_hash": "53413833373dbad9e823cc2cd7ef80e70078e79b33683a1e9597333b3a4bd557",
+          "pdf_page": 32,
+          "printed_page": null,
+          "span_id": "tes_cf58c799308f0691"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_3abdd76c24010dd9"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_3abdd76c24010dd9",
+          "label": "计算圆锥的体积"
+        }
+      ],
+      "level": "page",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_06c3cddd6f06eb26",
+      "node_title": "写出圆锥体积的计算公式吗?",
+      "pdf_page": 32,
+      "printed_page": null,
+      "publication_status": "published",
+      "rationale": "教材练习“写出圆锥体积的计算公式吗?”与课标 MA-D3-GE-003 的可教学小能力“计算圆锥的体积”形成页内证据匹配。",
+      "relation_type": "practices",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "future_candidate",
+      "textbook_grade": 6,
+      "textbook_subject": "数学",
+      "textbook_title": "数学6年级下册",
+      "textbook_volume": "下册",
+      "unit_id": "tcu_d014282c58b23a29",
+      "unit_title": "第二单元 圆柱和圆锥"
     },
     {
       "algorithm_version": "component-evidence-hybrid-v3",
@@ -690,61 +965,6 @@
     },
     {
       "algorithm_version": "component-evidence-hybrid-v3",
-      "alignment_id": "tca_fcec2354a04db56a",
-      "alignment_type": "supports",
-      "confidence": 0.8404,
-      "coverage": "partial",
-      "edition_id": "ed_b1800b5b9d4356b970d0",
-      "evidence_basis": "textbook_page_span",
-      "evidence_gap": null,
-      "evidence_level": "L3_page_evidence",
-      "evidence_refs": [
-        "external_smartedu_2026_bsd_math_primary_grade_6_down",
-        "tes_b015ca5707c28fe5",
-        "textbook-node:tcn_35da20824c874cbb",
-        "textbook-unit:tcu_54aac8a5ac652966"
-      ],
-      "evidence_role": "direct_textbook",
-      "evidence_spans": [
-        {
-          "evidence_role": "direct_textbook",
-          "excerpt": "你能计算出 “至少需要用多大面积的纸板”吗?",
-          "excerpt_hash": "b413005223a6166fd2d67ce38ea64e46a7bcbb9192a269f58ab76f833ca83623",
-          "pdf_page": 9,
-          "printed_page": null,
-          "span_id": "tes_b015ca5707c28fe5"
-        }
-      ],
-      "learning_component_ids": [
-        "lc_dcf10f8276336508"
-      ],
-      "learning_components": [
-        {
-          "component_id": "lc_dcf10f8276336508",
-          "label": "计算这些图形的体积和表面积"
-        }
-      ],
-      "level": "page",
-      "method": "component_evidence_hybrid",
-      "node_id": "tcn_35da20824c874cbb",
-      "node_title": "你能计算出 “至少需要用多大面积的纸板”吗?",
-      "pdf_page": 9,
-      "printed_page": null,
-      "publication_status": "published",
-      "rationale": "教材学习目标“你能计算出 “至少需要用多大面积的纸板”吗?”与课标 MA-D3-GE-003 的可教学小能力“计算这些图形的体积和表面积”形成页内证据匹配。",
-      "relation_type": "supports",
-      "resource_type": "student_textbook",
-      "review_status": "machine_checked",
-      "revision_status": "current_confirmed",
-      "textbook_grade": 6,
-      "textbook_subject": "数学",
-      "textbook_title": "数学6年级下册",
-      "textbook_volume": "下册",
-      "unit_id": "tcu_54aac8a5ac652966",
-      "unit_title": "一 圆柱与圆锥"
-    },
-    {
-      "algorithm_version": "component-evidence-hybrid-v3",
       "alignment_id": "tca_27a9cfc450f56209",
       "alignment_type": "practices",
       "confidence": 0.8593,
@@ -897,6 +1117,61 @@
       "printed_page": null,
       "publication_status": "published",
       "rationale": "教材学习目标“如果用V表示圆锥的体积,S表示底面积,h表示高,你能写出圆锥体积的”与课标 MA-D3-GE-003 的可教学小能力“计算圆锥的体积”形成页内证据匹配。",
+      "relation_type": "supports",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "current_confirmed",
+      "textbook_grade": 6,
+      "textbook_subject": "数学",
+      "textbook_title": "数学6年级下册",
+      "textbook_volume": "下册",
+      "unit_id": "tcu_54aac8a5ac652966",
+      "unit_title": "一 圆柱与圆锥"
+    },
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_fcec2354a04db56a",
+      "alignment_type": "supports",
+      "confidence": 0.8404,
+      "coverage": "partial",
+      "edition_id": "ed_b1800b5b9d4356b970d0",
+      "evidence_basis": "textbook_page_span",
+      "evidence_gap": null,
+      "evidence_level": "L3_page_evidence",
+      "evidence_refs": [
+        "external_smartedu_2026_bsd_math_primary_grade_6_down",
+        "tes_b015ca5707c28fe5",
+        "textbook-node:tcn_35da20824c874cbb",
+        "textbook-unit:tcu_54aac8a5ac652966"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "你能计算出 “至少需要用多大面积的纸板”吗?",
+          "excerpt_hash": "b413005223a6166fd2d67ce38ea64e46a7bcbb9192a269f58ab76f833ca83623",
+          "pdf_page": 9,
+          "printed_page": null,
+          "span_id": "tes_b015ca5707c28fe5"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_dcf10f8276336508"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_dcf10f8276336508",
+          "label": "计算这些图形的体积和表面积"
+        }
+      ],
+      "level": "page",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_35da20824c874cbb",
+      "node_title": "你能计算出 “至少需要用多大面积的纸板”吗?",
+      "pdf_page": 9,
+      "printed_page": null,
+      "publication_status": "published",
+      "rationale": "教材学习目标“你能计算出 “至少需要用多大面积的纸板”吗?”与课标 MA-D3-GE-003 的可教学小能力“计算这些图形的体积和表面积”形成页内证据匹配。",
       "relation_type": "supports",
       "resource_type": "student_textbook",
       "review_status": "machine_checked",
@@ -1075,6 +1350,37 @@
     },
     {
       "algorithm_version": "full-alignment-scope-preserve-v2",
+      "alignment_id": "ca_b6fe3466b322b8bd",
+      "alignment_type": "references",
+      "confidence": null,
+      "coverage": "scope_only",
+      "edition_id": "ed_016ec9d2a84e7c41bf02",
+      "evidence_basis": "subject_grade_scope",
+      "evidence_level": "L1_scope",
+      "evidence_refs": [
+        "external_contributed_2026_bsd_math_2024_grade_5_down"
+      ],
+      "evidence_role": "direct_textbook",
+      "level": "scope",
+      "method": "subject_grade_scope_mapping",
+      "pdf_page": null,
+      "printed_page": null,
+      "publication_status": "published_scope",
+      "rationale": "教材与课标处于同学科、同学段的适用范围；此关系不证明某一单元直接教授该条标准。",
+      "relation_type": "curriculum_scope",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "future_candidate",
+      "scope_id": "tcs_64cb118a4dcebaa4",
+      "textbook_grade": 5,
+      "textbook_subject": "数学",
+      "textbook_title": "数学5年级下册",
+      "textbook_volume": "下册",
+      "unit_id": null,
+      "unit_title": ""
+    },
+    {
+      "algorithm_version": "full-alignment-scope-preserve-v2",
       "alignment_id": "ca_07b90a4f60583b8b",
       "alignment_type": "references",
       "confidence": null,
@@ -1162,6 +1468,37 @@
       "textbook_grade": 5,
       "textbook_subject": "数学",
       "textbook_title": "数学5年级下册",
+      "textbook_volume": "下册",
+      "unit_id": null,
+      "unit_title": ""
+    },
+    {
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "alignment_id": "ca_64d300e9755d95dc",
+      "alignment_type": "references",
+      "confidence": null,
+      "coverage": "scope_only",
+      "edition_id": "ed_539ed38c65cb0d156de0",
+      "evidence_basis": "subject_grade_scope",
+      "evidence_level": "L1_scope",
+      "evidence_refs": [
+        "external_contributed_2026_bsd_math_2024_grade_6_down"
+      ],
+      "evidence_role": "direct_textbook",
+      "level": "scope",
+      "method": "subject_grade_scope_mapping",
+      "pdf_page": null,
+      "printed_page": null,
+      "publication_status": "published_scope",
+      "rationale": "教材与课标处于同学科、同学段的适用范围；此关系不证明某一单元直接教授该条标准。",
+      "relation_type": "curriculum_scope",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "future_candidate",
+      "scope_id": "tcs_42d194db334156f2",
+      "textbook_grade": 6,
+      "textbook_subject": "数学",
+      "textbook_title": "数学6年级下册",
       "textbook_volume": "下册",
       "unit_id": null,
       "unit_title": ""

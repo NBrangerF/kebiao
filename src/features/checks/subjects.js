@@ -11,7 +11,7 @@ const ARTS_STAGES = ['1-2', '3-5', '6-7', '8-9']
 
 export const CHECK_SUBJECTS = [
     { slug: 'chinese', name: '语文', code: 'cn', v2: 'chinese', editions: ['统编版'], markup: 'plain' },
-    { slug: 'math', name: '数学', code: 'ma', v2: 'math', editions: ['人教版', '北师大版'], editionTags: { 北师大版: { stem: 'bsd', short: '北师大' } }, markup: 'math', sums: true },
+    { slug: 'math', name: '数学', code: 'ma', v2: 'math', editions: ['人教版', '北师大版', '北师大版（2024修订·印前样本）'], editionTags: { 北师大版: { stem: 'bsd', short: '北师大' }, '北师大版（2024修订·印前样本）': { stem: 'bsd24', short: '北师大新' } }, markup: 'math', sums: true },
     { slug: 'english', name: '英语', code: 'en', v2: 'english', editions: ['人教版 PEP（三年级起点）', '人教版', '外研社版（孙有中）'], editionTags: { '外研社版（孙有中）': { stem: 'wy', short: '外研' } }, markup: 'plain' },
     { slug: 'morality_law', name: '道德与法治', code: 'ml', v2: 'morality_law', editions: ['统编版'], markup: 'plain' },
     { slug: 'history', name: '历史', code: 'hi', v2: 'history', editions: ['统编版'], markup: 'plain' },

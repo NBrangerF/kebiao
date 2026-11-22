@@ -47,12 +47,122 @@
     "evidence_note": "已有教材正文、任务或练习的页内证据；关系由机器自动生成并附带原文定位、证据哈希和置信度。",
     "gap_reason": null,
     "highest_evidence_level": "L3_page_evidence",
-    "page_evidence_count": 1,
-    "scope_count": 8,
-    "specific_count": 1,
+    "page_evidence_count": 3,
+    "scope_count": 10,
+    "specific_count": 3,
     "unit_topic_candidate_count": 0
   },
   "curriculum_alignments": [
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_fa34249ad783cbf5",
+      "alignment_type": "supports",
+      "confidence": 0.8768,
+      "coverage": "partial",
+      "edition_id": "ed_539ed38c65cb0d156de0",
+      "evidence_basis": "textbook_page_span",
+      "evidence_gap": null,
+      "evidence_level": "L3_page_evidence",
+      "evidence_refs": [
+        "external_contributed_2026_bsd_math_2024_grade_6_down",
+        "tes_c93cb2990dcb2091",
+        "textbook-node:tcn_86de1554ebe72ba7",
+        "textbook-unit:tcu_0b1ce38e47be9460"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "很多图案都是由一个简单图形通过平移、旋转、轴对称的运动方式设计而",
+          "excerpt_hash": "7851aad521d8a3c1abca041d4494eef6f8b2afe82f7aaae7ee312b8d7bc36f14",
+          "pdf_page": 64,
+          "printed_page": null,
+          "span_id": "tes_c93cb2990dcb2091"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_30027006321531e3"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_30027006321531e3",
+          "label": "利用方格纸按比例将简单图形放大或缩小"
+        }
+      ],
+      "level": "page",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_86de1554ebe72ba7",
+      "node_title": "很多图案都是由一个简单图形通过平移、旋转、轴对称的运动方式设计而",
+      "pdf_page": 64,
+      "printed_page": null,
+      "publication_status": "published",
+      "rationale": "教材学习目标“很多图案都是由一个简单图形通过平移、旋转、轴对称的运动方式设计而”与课标 MA-D3-GE-009 的可教学小能力“利用方格纸按比例将简单图形放大或缩小”形成页内证据匹配。",
+      "relation_type": "supports",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "future_candidate",
+      "textbook_grade": 6,
+      "textbook_subject": "数学",
+      "textbook_title": "数学6年级下册",
+      "textbook_volume": "下册",
+      "unit_id": "tcu_0b1ce38e47be9460",
+      "unit_title": "第四单元 图形的位置与运动（二）"
+    },
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_835db07f622d5d6f",
+      "alignment_type": "supports",
+      "confidence": 0.86,
+      "coverage": "partial",
+      "edition_id": "ed_539ed38c65cb0d156de0",
+      "evidence_basis": "textbook_page_span",
+      "evidence_gap": null,
+      "evidence_level": "L3_page_evidence",
+      "evidence_refs": [
+        "external_contributed_2026_bsd_math_2024_grade_6_down",
+        "tes_1490193fe3beee61",
+        "textbook-node:tcn_cc5def7dfb3fb483",
+        "textbook-unit:tcu_c9e88c038b5e3c13"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "如果用下图中的长方形1 表示我们的教室,你能按4:1将图形放大,画",
+          "excerpt_hash": "197057338ad6fae1d87ddb134fd44bcb77ad2ea9e1e0b2543c82b2368378cf0a",
+          "pdf_page": 13,
+          "printed_page": null,
+          "span_id": "tes_1490193fe3beee61"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_30027006321531e3"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_30027006321531e3",
+          "label": "利用方格纸按比例将简单图形放大或缩小"
+        }
+      ],
+      "level": "page",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_cc5def7dfb3fb483",
+      "node_title": "如果用下图中的长方形1 表示我们的教室,你能按4:1将图形放大,画",
+      "pdf_page": 13,
+      "printed_page": null,
+      "publication_status": "published",
+      "rationale": "教材学习目标“如果用下图中的长方形1 表示我们的教室,你能按4:1将图形放大,画”与课标 MA-D3-GE-009 的可教学小能力“利用方格纸按比例将简单图形放大或缩小”形成页内证据匹配。",
+      "relation_type": "supports",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "future_candidate",
+      "textbook_grade": 6,
+      "textbook_subject": "数学",
+      "textbook_title": "数学6年级下册",
+      "textbook_volume": "下册",
+      "unit_id": "tcu_c9e88c038b5e3c13",
+      "unit_title": "第一单元 比的应用"
+    },
     {
       "algorithm_version": "component-evidence-hybrid-v3",
       "alignment_id": "tca_cdbade2e99db1239",
@@ -107,6 +217,37 @@
       "textbook_volume": "上册",
       "unit_id": "tcu_4b89433a2b986f80",
       "unit_title": "第二单元 圆"
+    },
+    {
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "alignment_id": "ca_1e4b5b1e4aa2df9b",
+      "alignment_type": "references",
+      "confidence": null,
+      "coverage": "scope_only",
+      "edition_id": "ed_016ec9d2a84e7c41bf02",
+      "evidence_basis": "subject_grade_scope",
+      "evidence_level": "L1_scope",
+      "evidence_refs": [
+        "external_contributed_2026_bsd_math_2024_grade_5_down"
+      ],
+      "evidence_role": "direct_textbook",
+      "level": "scope",
+      "method": "subject_grade_scope_mapping",
+      "pdf_page": null,
+      "printed_page": null,
+      "publication_status": "published_scope",
+      "rationale": "教材与课标处于同学科、同学段的适用范围；此关系不证明某一单元直接教授该条标准。",
+      "relation_type": "curriculum_scope",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "future_candidate",
+      "scope_id": "tcs_64cb118a4dcebaa4",
+      "textbook_grade": 5,
+      "textbook_subject": "数学",
+      "textbook_title": "数学5年级下册",
+      "textbook_volume": "下册",
+      "unit_id": null,
+      "unit_title": ""
     },
     {
       "algorithm_version": "full-alignment-scope-preserve-v2",
@@ -197,6 +338,37 @@
       "textbook_grade": 5,
       "textbook_subject": "数学",
       "textbook_title": "数学5年级下册",
+      "textbook_volume": "下册",
+      "unit_id": null,
+      "unit_title": ""
+    },
+    {
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "alignment_id": "ca_230737261957585e",
+      "alignment_type": "references",
+      "confidence": null,
+      "coverage": "scope_only",
+      "edition_id": "ed_539ed38c65cb0d156de0",
+      "evidence_basis": "subject_grade_scope",
+      "evidence_level": "L1_scope",
+      "evidence_refs": [
+        "external_contributed_2026_bsd_math_2024_grade_6_down"
+      ],
+      "evidence_role": "direct_textbook",
+      "level": "scope",
+      "method": "subject_grade_scope_mapping",
+      "pdf_page": null,
+      "printed_page": null,
+      "publication_status": "published_scope",
+      "rationale": "教材与课标处于同学科、同学段的适用范围；此关系不证明某一单元直接教授该条标准。",
+      "relation_type": "curriculum_scope",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "future_candidate",
+      "scope_id": "tcs_42d194db334156f2",
+      "textbook_grade": 6,
+      "textbook_subject": "数学",
+      "textbook_title": "数学6年级下册",
       "textbook_volume": "下册",
       "unit_id": null,
       "unit_title": ""

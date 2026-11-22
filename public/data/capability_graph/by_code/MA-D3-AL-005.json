@@ -85,12 +85,122 @@
     "evidence_note": "已有教材正文、任务或练习的页内证据；关系由机器自动生成并附带原文定位、证据哈希和置信度。",
     "gap_reason": null,
     "highest_evidence_level": "L3_page_evidence",
-    "page_evidence_count": 2,
-    "scope_count": 8,
-    "specific_count": 2,
+    "page_evidence_count": 4,
+    "scope_count": 10,
+    "specific_count": 4,
     "unit_topic_candidate_count": 0
   },
   "curriculum_alignments": [
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_79a05697ad850608",
+      "alignment_type": "practices",
+      "confidence": 0.92,
+      "coverage": "partial",
+      "edition_id": "ed_016ec9d2a84e7c41bf02",
+      "evidence_basis": "textbook_page_span",
+      "evidence_gap": null,
+      "evidence_level": "L3_page_evidence",
+      "evidence_refs": [
+        "external_contributed_2026_bsd_math_2024_grade_5_down",
+        "tes_c7e6ac745e322413",
+        "textbook-node:tcn_874edb4bac416200",
+        "textbook-unit:tcu_7905d17a65326074"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "选择合适的统计图,102",
+          "excerpt_hash": "5e77163007e6414697185ab68e98d7c467a810b34a47f2660f742ae2849a6094",
+          "pdf_page": 106,
+          "printed_page": null,
+          "span_id": "tes_c7e6ac745e322413"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_47762df430f0c3c7"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_47762df430f0c3c7",
+          "label": "选择合适的方法进行估算"
+        }
+      ],
+      "level": "page",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_874edb4bac416200",
+      "node_title": "选择合适的统计图,102",
+      "pdf_page": 106,
+      "printed_page": null,
+      "publication_status": "published",
+      "rationale": "教材练习“选择合适的统计图,102”与课标 MA-D3-AL-005 的可教学小能力“选择合适的方法进行估算”形成页内证据匹配。",
+      "relation_type": "practices",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "future_candidate",
+      "textbook_grade": 5,
+      "textbook_subject": "数学",
+      "textbook_title": "数学5年级下册",
+      "textbook_volume": "下册",
+      "unit_id": "tcu_7905d17a65326074",
+      "unit_title": "第七单元 数据的表示和分析（二）"
+    },
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_c40ced3c1243e233",
+      "alignment_type": "practices",
+      "confidence": 0.92,
+      "coverage": "partial",
+      "edition_id": "ed_539ed38c65cb0d156de0",
+      "evidence_basis": "textbook_page_span",
+      "evidence_gap": null,
+      "evidence_level": "L3_page_evidence",
+      "evidence_refs": [
+        "external_contributed_2026_bsd_math_2024_grade_6_down",
+        "tes_a86ac0002f17b52f",
+        "textbook-node:tcn_70329b5512c4b3fa",
+        "textbook-unit:tcu_f46b87ad892f3562"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "选择合适的策略解决 面的问题。",
+          "excerpt_hash": "2e40b7fb099015e670c84abeb9750a9e3fb8e50251ef0642f5b67755d7e5c2e5",
+          "pdf_page": 127,
+          "printed_page": null,
+          "span_id": "tes_a86ac0002f17b52f"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_47762df430f0c3c7"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_47762df430f0c3c7",
+          "label": "选择合适的方法进行估算"
+        }
+      ],
+      "level": "page",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_70329b5512c4b3fa",
+      "node_title": "选择合适的策略解决 面的问题。",
+      "pdf_page": 127,
+      "printed_page": null,
+      "publication_status": "published",
+      "rationale": "教材练习“选择合适的策略解决 面的问题。”与课标 MA-D3-AL-005 的可教学小能力“选择合适的方法进行估算”形成页内证据匹配。",
+      "relation_type": "practices",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "future_candidate",
+      "textbook_grade": 6,
+      "textbook_subject": "数学",
+      "textbook_title": "数学6年级下册",
+      "textbook_volume": "下册",
+      "unit_id": "tcu_f46b87ad892f3562",
+      "unit_title": "总复习"
+    },
     {
       "algorithm_version": "component-evidence-hybrid-v3",
       "alignment_id": "tca_720101f1957a613e",
@@ -203,6 +313,37 @@
     },
     {
       "algorithm_version": "full-alignment-scope-preserve-v2",
+      "alignment_id": "ca_6331c253eebc9251",
+      "alignment_type": "references",
+      "confidence": null,
+      "coverage": "scope_only",
+      "edition_id": "ed_016ec9d2a84e7c41bf02",
+      "evidence_basis": "subject_grade_scope",
+      "evidence_level": "L1_scope",
+      "evidence_refs": [
+        "external_contributed_2026_bsd_math_2024_grade_5_down"
+      ],
+      "evidence_role": "direct_textbook",
+      "level": "scope",
+      "method": "subject_grade_scope_mapping",
+      "pdf_page": null,
+      "printed_page": null,
+      "publication_status": "published_scope",
+      "rationale": "教材与课标处于同学科、同学段的适用范围；此关系不证明某一单元直接教授该条标准。",
+      "relation_type": "curriculum_scope",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "future_candidate",
+      "scope_id": "tcs_64cb118a4dcebaa4",
+      "textbook_grade": 5,
+      "textbook_subject": "数学",
+      "textbook_title": "数学5年级下册",
+      "textbook_volume": "下册",
+      "unit_id": null,
+      "unit_title": ""
+    },
+    {
+      "algorithm_version": "full-alignment-scope-preserve-v2",
       "alignment_id": "ca_d3d2ee2ec4ffe2a3",
       "alignment_type": "references",
       "confidence": null,
@@ -290,6 +431,37 @@
       "textbook_grade": 5,
       "textbook_subject": "数学",
       "textbook_title": "数学5年级下册",
+      "textbook_volume": "下册",
+      "unit_id": null,
+      "unit_title": ""
+    },
+    {
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "alignment_id": "ca_16fdacef79912d87",
+      "alignment_type": "references",
+      "confidence": null,
+      "coverage": "scope_only",
+      "edition_id": "ed_539ed38c65cb0d156de0",
+      "evidence_basis": "subject_grade_scope",
+      "evidence_level": "L1_scope",
+      "evidence_refs": [
+        "external_contributed_2026_bsd_math_2024_grade_6_down"
+      ],
+      "evidence_role": "direct_textbook",
+      "level": "scope",
+      "method": "subject_grade_scope_mapping",
+      "pdf_page": null,
+      "printed_page": null,
+      "publication_status": "published_scope",
+      "rationale": "教材与课标处于同学科、同学段的适用范围；此关系不证明某一单元直接教授该条标准。",
+      "relation_type": "curriculum_scope",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "future_candidate",
+      "scope_id": "tcs_42d194db334156f2",
+      "textbook_grade": 6,
+      "textbook_subject": "数学",
+      "textbook_title": "数学6年级下册",
       "textbook_volume": "下册",
       "unit_id": null,
       "unit_title": ""

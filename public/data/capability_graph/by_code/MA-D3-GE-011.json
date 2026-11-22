@@ -85,12 +85,177 @@
     "evidence_note": "已有教材正文、任务或练习的页内证据；关系由机器自动生成并附带原文定位、证据哈希和置信度。",
     "gap_reason": null,
     "highest_evidence_level": "L3_page_evidence",
-    "page_evidence_count": 1,
-    "scope_count": 8,
-    "specific_count": 1,
+    "page_evidence_count": 4,
+    "scope_count": 10,
+    "specific_count": 4,
     "unit_topic_candidate_count": 0
   },
   "curriculum_alignments": [
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_1360a6392eeb4fd6",
+      "alignment_type": "practices",
+      "confidence": 0.8768,
+      "coverage": "partial",
+      "edition_id": "ed_539ed38c65cb0d156de0",
+      "evidence_basis": "textbook_page_span",
+      "evidence_gap": null,
+      "evidence_level": "L3_page_evidence",
+      "evidence_refs": [
+        "external_contributed_2026_bsd_math_2024_grade_6_down",
+        "tes_e39c5dd6a4af074d",
+        "textbook-node:tcn_6b51501af6384659",
+        "textbook-unit:tcu_0b1ce38e47be9460"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "设计一个简单图案,再通过平移⋯⋯练一练",
+          "excerpt_hash": "75dfa22fd0cae8b0e0f014dd27141e50ab317cf6306053158e8a801374198d6b",
+          "pdf_page": 65,
+          "printed_page": null,
+          "span_id": "tes_e39c5dd6a4af074d"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_b33d15270f304ca5"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_b33d15270f304ca5",
+          "label": "借助方格纸设计简单图案，感受数学美"
+        }
+      ],
+      "level": "page",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_6b51501af6384659",
+      "node_title": "设计一个简单图案,再通过平移⋯⋯练一练",
+      "pdf_page": 65,
+      "printed_page": null,
+      "publication_status": "published",
+      "rationale": "教材练习“设计一个简单图案,再通过平移⋯⋯练一练”与课标 MA-D3-GE-011 的可教学小能力“借助方格纸设计简单图案，感受数学美”形成页内证据匹配。",
+      "relation_type": "practices",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "future_candidate",
+      "textbook_grade": 6,
+      "textbook_subject": "数学",
+      "textbook_title": "数学6年级下册",
+      "textbook_volume": "下册",
+      "unit_id": "tcu_0b1ce38e47be9460",
+      "unit_title": "第四单元 图形的位置与运动（二）"
+    },
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_5b24ea60c7933b2a",
+      "alignment_type": "practices",
+      "confidence": 0.8768,
+      "coverage": "partial",
+      "edition_id": "ed_539ed38c65cb0d156de0",
+      "evidence_basis": "textbook_page_span",
+      "evidence_gap": null,
+      "evidence_level": "L3_page_evidence",
+      "evidence_refs": [
+        "external_contributed_2026_bsd_math_2024_grade_6_down",
+        "tes_1e93ef84e13cfd93",
+        "textbook-node:tcn_4c5add769c96a2ec",
+        "textbook-unit:tcu_0b1ce38e47be9460"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "画出与图形2轴对称的图形3。画一画,说一说要注意什么。",
+          "excerpt_hash": "8a1e3e003d14584c23f6a3b70580ecdb240d05f450a77ca217067e89bb03f1cd",
+          "pdf_page": 62,
+          "printed_page": null,
+          "span_id": "tes_1e93ef84e13cfd93"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_e071c1dd24fed5f5"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_e071c1dd24fed5f5",
+          "label": "从平移、旋转和轴对称的角度欣赏生活中的图案"
+        }
+      ],
+      "level": "page",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_4c5add769c96a2ec",
+      "node_title": "画出与图形2轴对称的图形3。画一画,说一说要注意什么。",
+      "pdf_page": 62,
+      "printed_page": null,
+      "publication_status": "published",
+      "rationale": "教材练习“画出与图形2轴对称的图形3。画一画,说一说要注意什么。”与课标 MA-D3-GE-011 的可教学小能力“从平移、旋转和轴对称的角度欣赏生活中的图案”形成页内证据匹配。",
+      "relation_type": "practices",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "future_candidate",
+      "textbook_grade": 6,
+      "textbook_subject": "数学",
+      "textbook_title": "数学6年级下册",
+      "textbook_volume": "下册",
+      "unit_id": "tcu_0b1ce38e47be9460",
+      "unit_title": "第四单元 图形的位置与运动（二）"
+    },
+    {
+      "algorithm_version": "component-evidence-hybrid-v3",
+      "alignment_id": "tca_7d6d0cba5e300c48",
+      "alignment_type": "supports",
+      "confidence": 0.8768,
+      "coverage": "partial",
+      "edition_id": "ed_539ed38c65cb0d156de0",
+      "evidence_basis": "textbook_page_span",
+      "evidence_gap": null,
+      "evidence_level": "L3_page_evidence",
+      "evidence_refs": [
+        "external_contributed_2026_bsd_math_2024_grade_6_down",
+        "tes_0a544ccdb06ef4c9",
+        "textbook-node:tcn_5065370f7c26a755",
+        "textbook-unit:tcu_0b1ce38e47be9460"
+      ],
+      "evidence_role": "direct_textbook",
+      "evidence_spans": [
+        {
+          "evidence_role": "direct_textbook",
+          "excerpt": "両一两,再说一说平移、旋转、轴对称有什么特征。",
+          "excerpt_hash": "76060105f58b02feffeee6a112d62a85991ab98f16e675cf203fd993fa6fe006",
+          "pdf_page": 66,
+          "printed_page": null,
+          "span_id": "tes_0a544ccdb06ef4c9"
+        }
+      ],
+      "learning_component_ids": [
+        "lc_e071c1dd24fed5f5"
+      ],
+      "learning_components": [
+        {
+          "component_id": "lc_e071c1dd24fed5f5",
+          "label": "从平移、旋转和轴对称的角度欣赏生活中的图案"
+        }
+      ],
+      "level": "page",
+      "method": "component_evidence_hybrid",
+      "node_id": "tcn_5065370f7c26a755",
+      "node_title": "両一两,再说一说平移、旋转、轴对称有什么特征。",
+      "pdf_page": 66,
+      "printed_page": null,
+      "publication_status": "published",
+      "rationale": "教材学习目标“両一两,再说一说平移、旋转、轴对称有什么特征。”与课标 MA-D3-GE-011 的可教学小能力“从平移、旋转和轴对称的角度欣赏生活中的图案”形成页内证据匹配。",
+      "relation_type": "supports",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "future_candidate",
+      "textbook_grade": 6,
+      "textbook_subject": "数学",
+      "textbook_title": "数学6年级下册",
+      "textbook_volume": "下册",
+      "unit_id": "tcu_0b1ce38e47be9460",
+      "unit_title": "第四单元 图形的位置与运动（二）"
+    },
     {
       "algorithm_version": "component-evidence-hybrid-v3",
       "alignment_id": "tca_479a31de2019cce4",
@@ -145,6 +310,37 @@
       "textbook_volume": "上册",
       "unit_id": "tcu_464c8dde0f70f022",
       "unit_title": "综合实践 制订节水方案"
+    },
+    {
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "alignment_id": "ca_4092862e32d2dfd2",
+      "alignment_type": "references",
+      "confidence": null,
+      "coverage": "scope_only",
+      "edition_id": "ed_016ec9d2a84e7c41bf02",
+      "evidence_basis": "subject_grade_scope",
+      "evidence_level": "L1_scope",
+      "evidence_refs": [
+        "external_contributed_2026_bsd_math_2024_grade_5_down"
+      ],
+      "evidence_role": "direct_textbook",
+      "level": "scope",
+      "method": "subject_grade_scope_mapping",
+      "pdf_page": null,
+      "printed_page": null,
+      "publication_status": "published_scope",
+      "rationale": "教材与课标处于同学科、同学段的适用范围；此关系不证明某一单元直接教授该条标准。",
+      "relation_type": "curriculum_scope",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "future_candidate",
+      "scope_id": "tcs_64cb118a4dcebaa4",
+      "textbook_grade": 5,
+      "textbook_subject": "数学",
+      "textbook_title": "数学5年级下册",
+      "textbook_volume": "下册",
+      "unit_id": null,
+      "unit_title": ""
     },
     {
       "algorithm_version": "full-alignment-scope-preserve-v2",
@@ -235,6 +431,37 @@
       "textbook_grade": 5,
       "textbook_subject": "数学",
       "textbook_title": "数学5年级下册",
+      "textbook_volume": "下册",
+      "unit_id": null,
+      "unit_title": ""
+    },
+    {
+      "algorithm_version": "full-alignment-scope-preserve-v2",
+      "alignment_id": "ca_4cbb0a09f00a2898",
+      "alignment_type": "references",
+      "confidence": null,
+      "coverage": "scope_only",
+      "edition_id": "ed_539ed38c65cb0d156de0",
+      "evidence_basis": "subject_grade_scope",
+      "evidence_level": "L1_scope",
+      "evidence_refs": [
+        "external_contributed_2026_bsd_math_2024_grade_6_down"
+      ],
+      "evidence_role": "direct_textbook",
+      "level": "scope",
+      "method": "subject_grade_scope_mapping",
+      "pdf_page": null,
+      "printed_page": null,
+      "publication_status": "published_scope",
+      "rationale": "教材与课标处于同学科、同学段的适用范围；此关系不证明某一单元直接教授该条标准。",
+      "relation_type": "curriculum_scope",
+      "resource_type": "student_textbook",
+      "review_status": "machine_checked",
+      "revision_status": "future_candidate",
+      "scope_id": "tcs_42d194db334156f2",
+      "textbook_grade": 6,
+      "textbook_subject": "数学",
+      "textbook_title": "数学6年级下册",
       "textbook_volume": "下册",
       "unit_id": null,
       "unit_title": ""

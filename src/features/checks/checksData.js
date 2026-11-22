@@ -63,7 +63,8 @@ const publisher = edition => String(edition || '').replace(/（.*?）|\(.*?\)/gu
 export function bookGroups(bank) {
     const groups = []
     for (const entry of bank?.books || []) {
-        const name = entry.edition === '课标' ? '' : `${publisher(entry.edition)}版`
+        // next term's 印前样本 is its own row, so a teacher on the current printing never lands on it by switching publisher
+        const name = entry.edition === '课标' ? '' : String(entry.edition).includes('印前样本') ? entry.edition : `${publisher(entry.edition)}版`
         let group = groups.find(item => item.name === name)
         if (!group) groups.push(group = { name, books: [], count: 0 })
         group.books.push(entry)
