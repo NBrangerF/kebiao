@@ -20,7 +20,7 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-between;
     gap: 0.75rem 1.5rem;
     margin: 1.1rem 0 0;
 }
@@ -130,6 +130,7 @@
 .wires { position: absolute; top: 0; left: 0; overflow: visible; pointer-events: none; }
 .wires path { fill: none; stroke: rgba(222, 228, 238, 0.22); stroke-width: 1.5; }
 .wires path.fork { stroke-dasharray: 3 4; }
+.wires path.spine { stroke: rgba(222, 228, 238, 0.14); }
 
 .grid { position: relative; display: grid; }
 
@@ -140,6 +141,15 @@
     border-right: 1px solid rgba(233, 200, 135, 0.18);
     border-left: 1px solid rgba(233, 200, 135, 0.18);
     background: linear-gradient(180deg, rgba(233, 200, 135, 0.09), rgba(233, 200, 135, 0.025));
+    pointer-events: none;
+}
+
+.seniorBand {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    border-left: 1px solid rgba(143, 184, 232, 0.35);
+    background: rgba(143, 184, 232, 0.05);
     pointer-events: none;
 }
 
@@ -154,6 +164,7 @@
 
 .head small { display: block; font-size: 12px; }
 .headRoot small { color: #7fd69b; }
+.headSenior { color: #a9c8ee; }
 .headMine { color: var(--kb-gold); }
 .headMine small { color: var(--kb-gold); }
 .headLane { text-align: left; }
@@ -231,6 +242,20 @@
 
 .station:hover { border-color: var(--kb-line-strong); }
 
+.moreStations {
+    position: relative;
+    z-index: 1;
+    padding: 0.1rem 0.5rem;
+    border: 0;
+    background: var(--kb-night);
+    color: var(--kb-dim);
+    font: inherit;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.moreStations:hover { color: var(--kb-moon); }
+
 .stationName {
     display: -webkit-box;
     max-width: min(12em, 100%);
@@ -262,6 +287,7 @@
 }
 
 .dotNone { border-color: rgba(222, 228, 238, 0.45); background: transparent; }
+.dotSenior { border-color: #8fb8e8; background: #8fb8e8; }
 .stationRoot .dot { border-color: #45c46f; background: #45c46f; }
 .stationRoot .dotNone { border-color: rgba(69, 196, 111, 0.6); background: transparent; }
 .dot:hover { transform: scale(1.5); box-shadow: 0 0 0 3px rgba(233, 200, 135, 0.25); }
@@ -299,6 +325,7 @@
 .legend span { display: inline-flex; align-items: center; gap: 0.5rem; }
 .keyDot { width: 9px; height: 9px; border: 1.5px solid var(--kb-gold); border-radius: 50%; background: var(--kb-gold); }
 .keyDotNone { border-color: rgba(222, 228, 238, 0.45); background: transparent; }
+.keyDotSenior { border-color: #8fb8e8; background: #8fb8e8; }
 .keyLine { width: 26px; border-top: 1.5px solid rgba(222, 228, 238, 0.4); }
 .keyDash { border-top: 1.5px dashed rgba(222, 228, 238, 0.5); }
 

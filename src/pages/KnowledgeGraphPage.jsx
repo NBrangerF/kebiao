@@ -4,7 +4,7 @@ import { PageLoading, ErrorState } from '../components/StateComponents'
 import { STATIC_PAGE_META, knowledgeGraphMeta } from '../seo/pageMeta.js'
 import { usePageMeta } from '../seo/usePageMeta.js'
 import { useMyBook } from '../features/mybook/myBook.js'
-import { GRAPH_SUBJECTS, graphHref, isGraphSubject, loadGraph, loadGraphManifest, myColumn, slugOfCode } from '../features/knowledge-graph/graphData'
+import { GRAPH_SUBJECTS, bandOf, graphForBand, graphHref, isGraphSubject, loadGraph, loadGraphManifest, myColumn, slugOfCode } from '../features/knowledge-graph/graphData'
 import GraphOverview from '../features/knowledge-graph/GraphOverview'
 import GraphFocus from '../features/knowledge-graph/GraphFocus'
 import GraphList from '../features/knowledge-graph/GraphList'
@@ -14,6 +14,7 @@ import styles from '../features/knowledge-graph/KnowledgeGraph.module.css'
 
 const NAMES = Object.fromEntries(GRAPH_SUBJECTS)
 const WIDE = '(min-width: 900px)'
+const BANDS = [['all', '全部'], ['primary', '小学'], ['junior', '初中'], ['senior', '高中']]
 
 function useWide() {
     const [wide, setWide] = useState(() => window.matchMedia(WIDE).matches)
@@ -62,14 +63,22 @@ export default function KnowledgeGraphPage() {
     // a 要点 of another subject opens in that subject's map
     if (graph && focus && !graph.points[focus] && isGraphSubject(slugOfCode(focus)) && slugOfCode(focus) !== slug) return <Navigate to={graphHref(slugOfCode(focus), focus)} replace />
 
-    const pick = (code, targetSlug = slug) => navigate(graphHref(targetSlug, code))
-    const back = () => navigate(graphHref(slug))
-    const setView = next => setParams(next === 'list' ? { view: 'list' } : {}, { replace: true })
+    // 小学 / 初中 / 高中: the 学段 a subject has; the choice stays in the address so 返回 comes back to it
+    const bands = graph ? BANDS.filter(([value]) => value === 'all' || graph.columns.some(column => !column.root && bandOf(column.key) === value)) : []
+    const askedBand = params.get('stage')
+    const band = bands.some(([value]) => value === askedBand) ? askedBand : 'all'
+    const shown = graph ? graphForBand(graph, band) : null
+    const query = (nextView, nextBand) => ({ ...(nextView === 'list' ? { view: 'list' } : {}), ...(nextBand !== 'all' ? { stage: nextBand } : {}) })
+    const pick = (code, targetSlug = slug) => navigate(`${graphHref(targetSlug, code)}${band !== 'all' && targetSlug === slug ? `&stage=${band}` : ''}`)
+    const back = () => navigate(`${graphHref(slug)}${band !== 'all' ? `?stage=${band}` : ''}`)
+    const setView = next => setParams(query(next, band), { replace: true })
+    const setBand = next => setParams(query(view, next), { replace: true })
     const name = NAMES[slug] || ''
     const focused = graph && focus && graph.points[focus] ? focus : null
     const mine = graph ? myColumn(graph, myBook) : null
     const pointCount = graph ? Object.keys(graph.points).length : 0
     const audit = manifest?.prerequisites?.audit
+    const seniorAudit = manifest?.prerequisites?.senior_audit
 
     return (
         <div className={`container ${concepts.page}`}>
@@ -90,17 +99,23 @@ export default function KnowledgeGraphPage() {
             ) : (
                 <>
                     <div className={styles.toolbar}>
+                        {bands.length > 2 ? (
+                            <div className={styles.views} role="group" aria-label="学段">
+                                {bands.map(([value, label]) => <button key={value} type="button" aria-pressed={band === value} onClick={() => setBand(value)}>{label}</button>)}
+                            </div>
+                        ) : <span />}
                         <div className={styles.views} role="group" aria-label="显示方式">
                             <button type="button" aria-pressed={view === 'map'} onClick={() => setView('map')}>图</button>
                             <button type="button" aria-pressed={view === 'list'} onClick={() => setView('list')}>列表</button>
                         </div>
                     </div>
-                    {view === 'list' ? <GraphList graph={graph} onPick={pick} /> : (
+                    {view === 'list' ? <GraphList graph={shown} onPick={pick} /> : (
                         <>
-                            <GraphOverview graph={graph} wide={wide} mine={mine} onPick={pick} />
+                            <GraphOverview graph={shown} wide={wide} mine={shown.columns.some(column => column.key === mine) ? mine : null} onPick={pick} />
                             <p className={styles.legend}>
                                 <span><i className={styles.keyDot} />教材里找到了主要在教的课</span>
                                 <span><i className={`${styles.keyDot} ${styles.keyDotNone}`} />还没有</span>
+                                {shown.columns.some(column => column.senior) ? <span><i className={`${styles.keyDot} ${styles.keyDotSenior}`} />高中要点（教材逐课对应还没做）</span> : null}
                                 <span><i className={styles.keyLine} />同一线索</span>
                                 {graph.lanes.some(lane => lane.from) ? <span><i className={`${styles.keyLine} ${styles.keyDash}`} />从上一行分出</span> : null}
                                 {graph.lanes.some(lane => lane.roots) ? <span>绿色：小学科学里的同一核心概念</span> : null}
@@ -114,9 +129,9 @@ export default function KnowledgeGraphPage() {
                 <details className={styles.about}>
                     <summary>这张图是怎么做的</summary>
                     <ul>
-                        <li>每个点是《义务教育课程标准（2022年版2025年修订）》里的一句要点，逐字取自课标原文，带页码。</li>
+                        <li>每个点是课标里的一句要点，逐字取自原文，带页码。小学、初中来自《义务教育课程标准（2022年版2025年修订）》；高中来自《普通高中课程标准（2017年版2020年修订）》，按课标的必修、选择性必修、选修分列，不分年级。</li>
                         <li>每一行是一条线索：课标里同一主题在不同学段的内容，左早右晚。{graph.about.threads ? `${graph.about.threads}（kebiao 整理）` : ''}</li>
-                        <li>「要先会」：学生没掌握前一个要点，很可能学不好后一个；不表示必须先学完。由 kebiao 逐个读要点判断，每个要点最多 3 条，只指向同一年级里先教的或更早年级的要点。{audit?.checked ? `随机抽查 ${audit.checked} 条（也是 kebiao 核对，还没有教研员审过）：对 ${audit.right} 条，部分对 ${audit.partly} 条，不对 ${audit.wrong} 条。` : ''}</li>
+                        <li>「要先会」：学生没掌握前一个要点，很可能学不好后一个；不表示必须先学完。由 kebiao 逐个读要点判断，每个要点最多 3 条，只指向同一年级里先教的或更早年级的要点。{audit?.checked ? `随机抽查 ${audit.checked} 条（也是 kebiao 核对，还没有教研员审过）：对 ${audit.right} 条，部分对 ${audit.partly} 条，不对 ${audit.wrong} 条。` : ''}{seniorAudit?.checked ? `高中部分另抽查 ${seniorAudit.checked} 条：对 ${seniorAudit.right} 条，部分对 ${seniorAudit.partly} 条，不对 ${seniorAudit.wrong} 条（判错的已删）。` : ''}</li>
                         <li>金色的点和「教材里在哪教」：kebiao 逐课读了教材原文（或国家平台的教学设计），判断这一课主要在教这句要点。都待核验。</li>
                         {graph.about.organized_by ? <li>{name}课标怎么组织内容：{graph.about.organized_by}</li> : null}
                         <li>哪一条不对，<Link to={`/feedback?title=${encodeURIComponent('知识图谱有误')}&message=${encodeURIComponent(`知识图谱 · ${name}：\n哪一条不对，应该是：`)}`}>告诉我们</Link>。</li>

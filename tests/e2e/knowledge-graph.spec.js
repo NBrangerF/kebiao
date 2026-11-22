@@ -73,3 +73,33 @@ test('the list view gives every 要点 as text, and a standard page links each �
     await page.goto('/standards/MA-S3-NA-01')
     await expect(page.locator('[id="MA-S3-NA-01.3"]').getByRole('link', { name: '前后联系 →' })).toHaveAttribute('href', '/knowledge-graph/math?focus=MA-S3-NA-01.3')
 })
+
+test('高中: the 学段 filter, a 要先会 line from 初中 into 高中, and no 备课 link on a 高中 要点', async ({ page }) => {
+    await page.setViewportSize({ width: 1280, height: 900 })
+    const graph = graphOf('physics')
+    const [source, target, reason] = graph.edges.find(([from, to]) => /^PH-S4-/u.test(from) && /^PH-S5-BX-/u.test(to))
+    await page.goto('/knowledge-graph/physics')
+    await page.getByRole('group', { name: '学段' }).getByRole('button', { name: '高中' }).click()
+    await expect(page).toHaveURL(/stage=senior/)
+    await expect(page.locator('[data-head="bx"]')).toBeVisible()
+    await expect(page.locator('[data-head="9"]')).toHaveCount(0)
+    await page.goto(`/knowledge-graph/physics?focus=${target}`)
+    await expect(page.locator('[data-side="before"]').getByRole('button', { name: new RegExp(source.replace('.', '\\.')) })).toContainText(`要先会 · ${reason}`)
+    await expect(page.getByText('普通高中物理课程标准（2017年版2020年修订）', { exact: false })).toBeVisible()
+    await expect(page.getByText('高中教材的逐课对应还没有做。')).toBeVisible()
+    await expect(page.getByRole('link', { name: '用它备课 →' })).toHaveCount(0)
+    // the same line shows at its 初中 end
+    await page.goto(`/knowledge-graph/physics?focus=${source}`)
+    await expect(page.getByRole('heading', { name: '后学 · 会用到它的' })).toBeVisible()
+    const more = page.locator('[data-side="after"]').getByRole('button', { name: /^另外/ })
+    if (await more.count()) await more.click()
+    await expect(page.locator('[data-side="after"]').getByRole('button', { name: new RegExp(target.replace('.', '\\.')) })).toContainText('会用到它')
+})
+
+test('通用技术 has only 高中 columns', async ({ page }) => {
+    await page.setViewportSize({ width: 1280, height: 900 })
+    await page.goto('/knowledge-graph/technology')
+    await expect(page.getByRole('heading', { level: 1, name: '通用技术知识图谱' })).toBeVisible()
+    await expect(page.locator('[data-head="bx"]')).toBeVisible()
+    await expect(page.getByRole('group', { name: '学段' })).toHaveCount(0)
+})
