@@ -36,6 +36,11 @@ function assert(condition: unknown, message: string): asserts condition {
     if (!condition) throw new Error(message)
 }
 
+// the model is a production setting (KEBIAO_LLM_MODEL, not visible to CI): check that one answered, not which
+function expectConfiguredModel(model: unknown, role: string): void {
+    assert(typeof model === 'string' && model.trim().length > 0, `Expected a configured model on the ${role}`)
+}
+
 function asObject(value: unknown): JsonObject {
     assert(value && typeof value === 'object' && !Array.isArray(value), 'Expected JSON object')
     return value as JsonObject
@@ -237,7 +242,7 @@ const checks: SmokeCheck[] = [
                 'Expected an explicit query interpreter status'
             )
             if (interpretation.used === true) {
-                assert(interpretation.model === 'gpt-5-mini', 'Expected configured gpt-5-mini query interpreter')
+                expectConfiguredModel(interpretation.model, 'query interpreter')
             }
             const plan = expectObject(data.query_plan, 'Expected nlq-v2 query plan')
             assert(plan.version === 'nlq-v2', 'Expected nlq-v2 query plan')
@@ -276,7 +281,7 @@ const checks: SmokeCheck[] = [
             const interpretation = expectObject(data.query_interpretation, 'Expected query interpretation metadata')
             assert(interpretation.status === 'ok', 'Expected production AI query interpretation to be available')
             assert(interpretation.used === true, 'Expected production query to use AI interpretation')
-            assert(interpretation.model === 'gpt-5-mini', 'Expected configured gpt-5-mini query interpreter')
+            expectConfiguredModel(interpretation.model, 'query interpreter')
             const interpretedCoreTerms = expectArray(interpretation.core_terms, 'Expected interpreted core terms')
             assert(interpretedCoreTerms.includes('阅读'), 'Expected AI to identify reading as a core concept')
             const filters = expectObject(data.applied_filters, 'Expected applied smart search filters')
@@ -323,7 +328,7 @@ const checks: SmokeCheck[] = [
                 'Expected an explicit plan parser status'
             )
             if (interpretation.used === true) {
-                assert(interpretation.model === 'gpt-5-mini', 'Expected configured gpt-5-mini plan parser')
+                expectConfiguredModel(interpretation.model, 'plan parser')
             }
             const meta = getMeta(payload)
             assert(meta.review_required === true, 'Expected plan review requirement')
