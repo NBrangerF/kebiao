@@ -461,6 +461,8 @@ export function registerLessonPlanRoutes(app: Hono<ApiBindings>, deps: Deps) {
         const ownTitle = ownLesson ? canonicalTitle(ownLesson.title) : ''
         const columnLabel = new Map((graph?.columns || []).map(column => [column.key, column.label]))
         const describe = (code: string, reason: string): PointLink | null => {
+            // 备课 covers 义务教育; the graph's 高中 要点 stay out of a lesson's 前后联系
+            if (/-S5-/u.test(code)) return null
             const own = graph?.points[code]
             if (own) return { code, text: own.t, grade: columnLabel.get(own.col) || own.col, reason }
             const other = graph?.external?.[code]

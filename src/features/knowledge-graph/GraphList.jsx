@@ -1,9 +1,9 @@
-import { columnLabel, pointNumber } from './graphData'
+import { columnLabel, isJuniorKey, pointNumber } from './graphData'
 import styles from './KnowledgeGraph.module.css'
 
 /** The map as text: each thread, its stations in grade order, every 要点 with the lessons that teach it. */
 export default function GraphList({ graph, onPick }) {
-    const keys = [...graph.columns.map(column => column.key), 'shared']
+    const keys = [...graph.columns.map(column => column.key), ...(graph.columns.some(column => isJuniorKey(column.key)) ? ['shared'] : [])]
     return (
         <div className={styles.list}>
             {graph.lanes.map(lane => (

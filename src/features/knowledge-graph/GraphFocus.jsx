@@ -1,6 +1,6 @@
 import { useEffect, useLayoutEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
-import { columnLabel, linesOf, loadGraphLessons, lessonsFor, nodeOf, pointNumber, sourceLabel, standardHref, threadOf } from './graphData'
+import { columnLabel, isSeniorKey, linesOf, loadGraphLessons, lessonsFor, nodeOf, pointNumber, sourceLabel, standardHref, threadOf } from './graphData'
 import styles from './KnowledgeGraph.module.css'
 
 const enc = encodeURIComponent
@@ -113,6 +113,8 @@ export default function GraphFocus({ graph, code, wide, book, onPick, onBack }) 
     const before = [...lines.before.map(line => nodeCard(line, 'before')), ...threadBefore.map(pair => stationCard(pair, 'before'))].filter(Boolean)
     const after = [...lines.after.map(line => nodeCard(line, 'after')), ...threadAfter.map(pair => stationCard(pair, 'after'))].filter(Boolean)
     const point = graph.points[code]
+    const senior = isSeniorKey(point.col)
+    const hasSenior = graph.columns.some(column => column.senior)
 
     return (
         <section className={styles.focus} aria-label={`聚焦 ${code}`}>
@@ -137,7 +139,9 @@ export default function GraphFocus({ graph, code, wide, book, onPick, onBack }) 
                     </p>
                     <p className={styles.mainText}>{point.t}</p>
                     <p className={styles.mainSource}>
-                        课标原文{point.sec ? ` · ${point.sec}` : ''}{point.pg?.length ? ` · 修订版第 ${point.pg.join('、')} 页` : ''}{point.gb ? ` · 年级依据：${point.gb}` : ''}
+                        {senior
+                            ? `课标原文 · ${standard.source} · ${standard.module}${point.pg?.length ? ` · 第 ${point.pg.join('、')} 页` : ''}`
+                            : <>课标原文{point.sec ? ` · ${point.sec}` : ''}{point.pg?.length ? ` · 修订版第 ${point.pg.join('、')} 页` : ''}{point.gb ? ` · 年级依据：${point.gb}` : ''}</>}
                     </p>
                     {standard.points.length > 1 ? (
                         <div className={styles.sibs} role="group" aria-label="这条课标的要点">
@@ -147,10 +151,12 @@ export default function GraphFocus({ graph, code, wide, book, onPick, onBack }) 
                             ))}
                         </div>
                     ) : null}
-                    <Lessons rows={lessons ? lessons[code] : null} counts={point.n} book={book} loading={!lessons} />
+                    {senior
+                        ? <div className={styles.lessons}><h3>教材里在哪教</h3><p className={styles.mainSource}>高中教材的逐课对应还没有做。</p></div>
+                        : <Lessons rows={lessons ? lessons[code] : null} counts={point.n} book={book} loading={!lessons} />}
                     <div className={styles.actions}>
-                        <Link className="btn btn-primary" to={planHref}>用它备课 →</Link>
-                        <Link className="btn btn-secondary" to={standardHref(code)}>打开课标页</Link>
+                        {senior ? null : <Link className="btn btn-primary" to={planHref}>用它备课 →</Link>}
+                        {senior ? null : <Link className="btn btn-secondary" to={standardHref(code)}>打开课标页</Link>}
                         <Link className={styles.report} to={reportHref}>报错</Link>
                     </div>
                 </article>
@@ -159,7 +165,7 @@ export default function GraphFocus({ graph, code, wide, book, onPick, onBack }) 
                     <h2 className={styles.sideHead}>后学 · 会用到它的</h2>
                     {after.length ? <ul className={styles.cards}>{allAfter ? after : after.slice(0, MAX_AFTER)}</ul> : null}
                     {after.length > MAX_AFTER ? <button type="button" className={styles.more} aria-expanded={allAfter} onClick={() => setAllAfter(value => !value)}>{allAfter ? '收起' : `另外 ${after.length - MAX_AFTER} 个 ▾`}</button> : null}
-                    {after.length ? null : <p className={styles.sideEmpty}>{/^[789]$|7-9|shared/u.test(point.col) ? '后面的内容不在义务教育课标里。' : '没有找到用到它的要点。'}</p>}
+                    {after.length ? null : <p className={styles.sideEmpty}>{!hasSenior && /^[789]$|7-9|shared/u.test(point.col) ? '后面的内容不在义务教育课标里。' : '没有找到用到它的要点。'}</p>}
                 </div>
             </div>
             <p className={styles.fcNote}>只显示直接的前后。金色实线「要先会」：学生没掌握前一个要点，很可能学不好后一个，不表示必须先学完；由 kebiao 逐条判断，待核验。虚线：课标里同一线索的上一站或下一站。</p>

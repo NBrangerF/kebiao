@@ -6,7 +6,7 @@ const BASE = '/data/v2/graph'
 export const GRAPH_SUBJECTS = [
     ['chinese', '语文'], ['math', '数学'], ['english', '英语'], ['morality_law', '道德与法治'], ['history', '历史'],
     ['geography', '地理'], ['science', '科学'], ['physics', '物理'], ['chemistry', '化学'], ['biology', '生物学'],
-    ['it', '信息科技'], ['pe', '体育与健康'], ['arts', '艺术'], ['labor', '劳动']
+    ['it', '信息科技'], ['technology', '通用技术'], ['pe', '体育与健康'], ['arts', '艺术'], ['labor', '劳动']
 ]
 export const isGraphSubject = slug => GRAPH_SUBJECTS.some(([value]) => value === slug)
 
@@ -32,7 +32,7 @@ export const loadGraphManifest = () => load('/manifest.json')
 export const graphHref = (slug, code) => `/knowledge-graph/${slug}${code ? `?focus=${encodeURIComponent(code)}` : ''}`
 export const standardHref = code => `/standards/${code.replace(/\.\d+$/u, '')}#${code}`
 export const pointNumber = code => code.split('.').pop()
-const PREFIX_SLUG = { CN: 'chinese', MA: 'math', EN: 'english', ML: 'morality_law', HI: 'history', GE: 'geography', SC: 'science', PH: 'physics', CH: 'chemistry', BI: 'biology', IT: 'it', PE: 'pe', AR: 'arts', LA: 'labor' }
+const PREFIX_SLUG = { CN: 'chinese', MA: 'math', EN: 'english', ML: 'morality_law', HI: 'history', GE: 'geography', SC: 'science', PH: 'physics', CH: 'chemistry', BI: 'biology', IT: 'it', GT: 'technology', PE: 'pe', AR: 'arts', LA: 'labor' }
 export const slugOfCode = code => PREFIX_SLUG[String(code).slice(0, 2)] || null
 
 /** A 要点 of this subject or one the file carries from another (a cross-subject line, 小学科学 in front of a junior 领域). */
@@ -77,6 +77,27 @@ export function linesOf(graph, code) {
 
 // 七/八/九 and 7–9 are junior columns; 学段 columns before them are primary (a branch row only borrows those)
 export const isJuniorKey = key => /^\d$/u.test(key) || key === '7-9' || key === 'shared'
+// 高中 has no grades: its columns are the 课标's 必修, 选择性必修 and 选修
+export const SENIOR_LABELS = { bx: '高中必修', xb: '选择性必修', xx: '高中选修' }
+export const isSeniorKey = key => key in SENIOR_LABELS
+const isPrimaryKey = key => !isJuniorKey(key) && !isSeniorKey(key)
+
+/** Which 学段 a column belongs to, for the 小学 / 初中 / 高中 filter. 艺术's 8–9 and 6–7 count by where they start. */
+export function bandOf(key) {
+    if (isSeniorKey(key)) return 'senior'
+    if (isJuniorKey(key) || key === '8-9') return 'junior'
+    return 'primary'
+}
+
+/** The graph cut down to one 学段: its columns, and only the rows with something in them. */
+export function graphForBand(graph, band) {
+    if (band === 'all') return graph
+    const columns = graph.columns.filter(column => bandOf(column.key) === band)
+    const keep = new Set(columns.map(column => column.key))
+    if (band === 'junior') keep.add('shared')
+    const inBand = lane => [...Object.keys(lane.cells), ...Object.keys(lane.roots || {})].some(key => keep.has(key))
+    return { ...graph, columns, lanes: graph.lanes.filter(inBand) }
+}
 
 /**
  * 同一线索: the stations (standards) next to this 要点's own on its row — the one before it in the same column (they
@@ -95,20 +116,21 @@ export function threadOf(graph, code) {
     const parent = lane.from ? graph.lanes.find(item => item.id === lane.from) : null
     const stationsAt = (row, key) => [...(row?.roots?.[key] || []), ...(row?.cells?.[key] || [])]
     const notMine = std => std !== point.std
-    const cell = point.col === 'shared' ? [] : stationsAt(lane, own)
+    // only a single-grade column stands in textbook order; a 学段 or 高中 column holds parallel standards, which are not each other's 上一站
+    const cell = /^\d$/u.test(own) && point.col !== 'shared' ? stationsAt(lane, own) : []
     const at = cell.indexOf(point.std)
     const before = at > 0 ? [[cell[at - 1], own]] : []
     const after = at >= 0 && at < cell.length - 1 ? [[cell[at + 1], own]] : []
     for (let k = index - 1; k >= 0 && !before.length; k--) {
         const found = stationsAt(lane, keys[k]).filter(notMine)
-        const borrowed = !found.length && parent && !isJuniorKey(keys[k]) ? stationsAt(parent, keys[k]) : []
+        const borrowed = !found.length && parent && isPrimaryKey(keys[k]) ? stationsAt(parent, keys[k]) : []
         before.push(...[...found, ...borrowed].slice(-1).map(std => [std, keys[k]]))
     }
     for (let k = index + 1; k < keys.length && !after.length; k++) after.push(...stationsAt(lane, keys[k]).filter(notMine).slice(0, 2).map(std => [std, keys[k]]))
     // a row that branches off at this station: its first station follows too
     for (const child of graph.lanes.filter(item => item.from === lane.id)) {
         const first = keys.findIndex(key => child.cells[key]?.length)
-        const fork = keys.slice(0, first).filter(key => !isJuniorKey(key) && stationsAt(lane, key).length).at(-1)
+        const fork = keys.slice(0, first).filter(key => isPrimaryKey(key) && stationsAt(lane, key).length).at(-1)
         if (first >= 0 && fork === own && stationsAt(lane, own).at(-1) === point.std) after.push([child.cells[keys[first]][0], keys[first]])
     }
     return { before, after }
@@ -152,7 +174,7 @@ export function searchGraph(graph, index, query, limit = 12) {
         for (const [code, col, text, standard, lessons] of index.rows) {
             const slug = slugOfCode(code)
             if (graph && slug === graph.slug) continue
-            if (hit(`${code} ${text} ${standard} ${lessons}`.toLowerCase())) out.push({ code, slug, col: /^\d$/u.test(col) ? `${'一二三四五六七八九'[Number(col) - 1]}年级` : col === 'shared' ? '七至九年级' : `${col.replace('-', '–')} 年级`, text, standard, lessons, rank: rank(code, text, standard, lessons) + 3 })
+            if (hit(`${code} ${text} ${standard} ${lessons}`.toLowerCase())) out.push({ code, slug, col: SENIOR_LABELS[col] || (/^\d$/u.test(col) ? `${'一二三四五六七八九'[Number(col) - 1]}年级` : col === 'shared' ? '七至九年级' : `${col.replace('-', '–')} 年级`), text, standard, lessons, rank: rank(code, text, standard, lessons) + 3 })
         }
     }
     return out.sort((a, b) => a.rank - b.rank).slice(0, limit)

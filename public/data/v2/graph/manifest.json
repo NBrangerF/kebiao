@@ -5,67 +5,74 @@
       "slug": "chinese",
       "subject": "语文",
       "color": "#F2603A",
-      "points": 265,
-      "standards": 97,
-      "lanes": 26,
+      "points": 328,
+      "senior_points": 63,
+      "standards": 115,
+      "lanes": 33,
       "taught": 144,
-      "edges": 33
+      "edges": 78
     },
     {
       "slug": "math",
       "subject": "数学",
       "color": "#3FA2E0",
-      "points": 230,
-      "standards": 43,
-      "lanes": 9,
+      "points": 536,
+      "senior_points": 306,
+      "standards": 127,
+      "lanes": 24,
       "taught": 205,
-      "edges": 244
+      "edges": 727
     },
     {
       "slug": "english",
       "subject": "英语",
       "color": "#7D8AF8",
-      "points": 500,
-      "standards": 54,
+      "points": 780,
+      "senior_points": 280,
+      "standards": 96,
       "lanes": 18,
       "taught": 159,
-      "edges": 44
+      "edges": 202
     },
     {
       "slug": "morality_law",
       "subject": "道德与法治",
       "color": "#EC6FA0",
-      "points": 134,
-      "standards": 20,
-      "lanes": 7,
+      "points": 234,
+      "senior_points": 100,
+      "standards": 54,
+      "lanes": 16,
       "taught": 111,
-      "edges": 12
+      "edges": 83
     },
     {
       "slug": "history",
       "subject": "历史",
       "color": "#D98C55",
-      "points": 109,
-      "standards": 31,
-      "lanes": 6,
+      "points": 167,
+      "senior_points": 58,
+      "standards": 88,
+      "lanes": 11,
       "taught": 86,
-      "edges": 35
+      "edges": 140
     },
     {
       "slug": "geography",
       "subject": "地理",
       "color": "#93CF5A",
-      "points": 70,
-      "standards": 17,
-      "lanes": 3,
+      "points": 211,
+      "senior_points": 141,
+      "standards": 70,
+      "lanes": 20,
       "taught": 43,
-      "edges": 29
+      "edges": 151
     },
     {
       "slug": "science",
       "subject": "科学",
       "color": "#45C46F",
       "points": 354,
+      "senior_points": 0,
       "standards": 49,
       "lanes": 13,
       "taught": 148,
@@ -75,67 +82,85 @@
       "slug": "physics",
       "subject": "物理",
       "color": "#EF5A63",
-      "points": 86,
-      "standards": 18,
-      "lanes": 5,
+      "points": 223,
+      "senior_points": 137,
+      "standards": 49,
+      "lanes": 9,
       "taught": 72,
-      "edges": 75
+      "edges": 217
     },
     {
       "slug": "chemistry",
       "subject": "化学",
       "color": "#DC6CD2",
-      "points": 125,
-      "standards": 33,
-      "lanes": 5,
+      "points": 241,
+      "senior_points": 116,
+      "standards": 106,
+      "lanes": 7,
       "taught": 70,
-      "edges": 82
+      "edges": 191
     },
     {
       "slug": "biology",
       "subject": "生物学",
       "color": "#5DBFA1",
-      "points": 99,
-      "standards": 25,
-      "lanes": 7,
+      "points": 219,
+      "senior_points": 120,
+      "standards": 56,
+      "lanes": 19,
       "taught": 80,
-      "edges": 84
+      "edges": 210
     },
     {
       "slug": "it",
       "subject": "信息科技",
       "color": "#4FD1C5",
-      "points": 74,
-      "standards": 13,
-      "lanes": 10,
+      "points": 149,
+      "senior_points": 75,
+      "standards": 23,
+      "lanes": 13,
       "taught": 63,
-      "edges": 19
+      "edges": 80
+    },
+    {
+      "slug": "technology",
+      "subject": "通用技术",
+      "color": "#c3cad6",
+      "points": 154,
+      "senior_points": 154,
+      "standards": 29,
+      "lanes": 7,
+      "taught": 0,
+      "edges": 66
     },
     {
       "slug": "pe",
       "subject": "体育与健康",
       "color": "#F4B32F",
-      "points": 78,
-      "standards": 26,
+      "points": 116,
+      "senior_points": 38,
+      "standards": 34,
       "lanes": 9,
       "taught": 45,
-      "edges": 10
+      "edges": 27
     },
     {
       "slug": "arts",
       "subject": "艺术",
       "color": "#C08CF0",
-      "points": 275,
-      "standards": 56,
-      "lanes": 5,
+      "points": 434,
+      "senior_points": 159,
+      "standards": 88,
+      "lanes": 21,
       "taught": 119,
-      "edges": 36
+      "edges": 111
     },
     {
       "slug": "labor",
       "subject": "劳动",
       "color": "#B6C94A",
       "points": 133,
+      "senior_points": 0,
       "standards": 31,
       "lanes": 10,
       "taught": 0,
@@ -143,14 +168,20 @@
     }
   ],
   "prerequisites": {
-    "judged": 912,
-    "kept": 912,
+    "judged": 2492,
+    "kept": 2492,
     "dropped": 0,
     "audit": {
       "checked": 60,
       "right": 51,
       "partly": 9,
       "wrong": 0
+    },
+    "senior_audit": {
+      "checked": 152,
+      "right": 108,
+      "partly": 40,
+      "wrong": 4
     }
   }
 }

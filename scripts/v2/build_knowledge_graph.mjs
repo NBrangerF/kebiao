@@ -9,10 +9,11 @@
 //         public/data/v2/graph/manifest.json subjects, counts and how the 要先会 lines were checked
 import { existsSync, mkdirSync, readFileSync, readdirSync, rmSync, writeFileSync } from 'node:fs'
 import { join } from 'node:path'
+import { SOURCES } from '../senior/sources.mjs'
 
 const OUT = 'public/data/v2/graph'
 const readJson = path => JSON.parse(readFileSync(path, 'utf8'))
-const SUBJECTS = ['chinese', 'math', 'english', 'morality_law', 'history', 'geography', 'science', 'physics', 'chemistry', 'biology', 'it', 'pe', 'arts', 'labor']
+const SUBJECTS = ['chinese', 'math', 'english', 'morality_law', 'history', 'geography', 'science', 'physics', 'chemistry', 'biology', 'it', 'technology', 'pe', 'arts', 'labor']
 const GRADE_CN = { 7: '七', 8: '八', 9: '九' }
 const PRIMARY = ['1-2', '3-4', '5-6']
 const range = stage => stage.replace('-', '–')
@@ -26,7 +27,36 @@ const threads = readJson('data/v2/graph/threads.json').subjects
 const concepts = readJson('public/data/concepts.json')
 const termName = Object.fromEntries(concepts.terms.map(term => [term.id, term.term]))
 const subjectInfo = Object.fromEntries(concepts.subjects.map(subject => [subject.slug, subject]))
-const subjects = Object.fromEntries(SUBJECTS.map(slug => [slug, readJson(`public/data/v2/by_subject/${slug}.json`)]))
+// 通用技术 has a 高中 standard only, so it has no 义务教育 file
+const subjects = Object.fromEntries(SUBJECTS.map(slug => [slug, slug === 'technology' ? { subject: '通用技术', source_version: '2020', stages: [], standards: [] } : readJson(`public/data/v2/by_subject/${slug}.json`)]))
+
+// ---------- 高中: data/v2/senior/<key>.json, checked word for word against the PDF by scripts/senior/verify_senior.mjs ----------
+// 高中 has no grades: its 课标 sorts content into 必修 → 选择性必修 → 选修, and those are its columns
+const TRACKS = { 必修: { key: 'bx', code: 'BX', label: '高中必修', start: 10 }, 选择性必修: { key: 'xb', code: 'XB', label: '选择性必修', start: 11 }, 选修: { key: 'xx', code: 'XX', label: '高中选修', start: 12 } }
+const seniorOf = {}
+const seniorCount = {}
+for (const source of SOURCES) {
+    const path = `data/v2/senior/${source.key}.json`
+    if (!existsSync(path)) continue
+    for (const item of readJson(path).standards) {
+        const track = TRACKS[item.track]
+        const counter = `${source.graph}|${track.code}`
+        seniorCount[counter] = (seniorCount[counter] || 0) + 1
+        const code = `${source.prefix}-S5-${track.code}-${String(seniorCount[counter]).padStart(2, '0')}`
+        ;(seniorOf[source.graph] ||= []).push({
+            code,
+            stage: '10-12',
+            level1: item.module,
+            // the 课标's own heading without its number: 「1.2 相互作用与运动定律」 repeats across modules
+            level2: item.name.replace(/^\d+(?:\.\d+)*\s*/u, ''),
+            track,
+            lane: item.lane,
+            group: item.group,
+            source: `普通高中${source.name}课程标准（2017年版2020年修订）`,
+            indicators: item.points.map((point, index) => ({ code: `${code}.${index + 1}`, text: point.text, pages: point.pages, section: null }))
+        })
+    }
+}
 
 // ---------- columns: 学段 for the primary grades; 七/八/九 when most junior 要点 name their textbook grade ----------
 function columnsOf(subject) {
@@ -41,6 +71,9 @@ function columnsOf(subject) {
             }
         } else columns.push({ key: stage, label: `${range(stage)} 年级`, start: Number(stage.split('-')[0]) })
     }
+    for (const track of Object.values(TRACKS)) {
+        if ((seniorOf[subject.slug] || []).some(standard => standard.track === track)) columns.push({ key: track.key, label: track.label, start: track.start, senior: true })
+    }
     return { columns, split }
 }
 const columnOf = (standard, point, split) => {
@@ -54,7 +87,7 @@ const standards = new Map()
 const layout = {}
 for (const slug of SUBJECTS) {
     const subject = subjects[slug]
-    layout[slug] = columnsOf(subject)
+    layout[slug] = columnsOf({ ...subject, slug })
     for (const standard of subject.standards) {
         standards.set(standard.code, { slug, standard })
         for (const point of standard.indicators) {
@@ -62,6 +95,10 @@ for (const slug of SUBJECTS) {
             const start = column === 'shared' ? 7 : Number(column.split('-')[0])
             points.set(point.code, { slug, standard, point, column, start })
         }
+    }
+    for (const standard of seniorOf[slug] || []) {
+        standards.set(standard.code, { slug, standard })
+        for (const point of standard.indicators) points.set(point.code, { slug, standard, point, column: standard.track.key, start: standard.track.start })
     }
 }
 const columnLabel = (slug, column) => (column === 'shared' ? '七至九年级共同' : layout[slug].columns.find(c => c.key === column)?.label || `${range(column)} 年级`)
@@ -114,7 +151,7 @@ const report = { judged: 0, kept: 0, dropped: [] }
 const edges = []
 const PREREQ = 'data/v2/graph/prereq'
 const auditFile = join(PREREQ, 'audit.tsv')
-for (const file of existsSync(PREREQ) ? readdirSync(PREREQ).filter(name => name.endsWith('.tsv') && name !== 'audit.tsv').sort() : []) {
+for (const file of existsSync(PREREQ) ? readdirSync(PREREQ).filter(name => name.endsWith('.tsv') && !name.startsWith('audit')).sort() : []) {
     const lines = readFileSync(join(PREREQ, file), 'utf8').split('\n').filter(Boolean)
     for (const line of lines.slice(1)) {
         const [target, source, reason] = line.split('\t').map(cell => (cell || '').trim())
@@ -158,16 +195,20 @@ for (const [source, target, reason] of edges) {
 }
 report.kept = kept.length
 // spot check of the lines, by hand: audit.tsv rows are source, target, verdict (对 / 部分对 / 不对), note
-const audit = { checked: 0, right: 0, partly: 0, wrong: 0 }
-if (existsSync(auditFile)) {
-    for (const line of readFileSync(auditFile, 'utf8').split('\n').filter(Boolean).slice(1)) {
+function readAudit(file) {
+    const tally = { checked: 0, right: 0, partly: 0, wrong: 0 }
+    if (!existsSync(file)) return tally
+    for (const line of readFileSync(file, 'utf8').split('\n').filter(Boolean).slice(1)) {
         const verdict = line.split('\t')[2]
-        audit.checked += 1
-        if (verdict === '对') audit.right += 1
-        else if (verdict === '部分对') audit.partly += 1
-        else if (verdict === '不对') audit.wrong += 1
+        tally.checked += 1
+        if (verdict === '对') tally.right += 1
+        else if (verdict === '部分对') tally.partly += 1
+        else if (verdict === '不对') tally.wrong += 1
     }
+    return tally
 }
+const audit = readAudit(auditFile)
+const seniorAudit = readAudit(join(PREREQ, 'audit_senior.tsv'))
 
 // ---------- lanes (每一行): by theme, by 领域, or as threads.json lists them ----------
 const CN_DIGIT = { 一: 1, 二: 2, 三: 3, 四: 4, 五: 5, 六: 6, 七: 7, 八: 8, 九: 9 }
@@ -241,6 +282,19 @@ function lanesOf(slug) {
         delete lane.key
         if (!lane.theme) delete lane.theme
     }
+    // 高中: a standard continues the row it names, or opens a new one beside the rows of its group
+    let opened = 0
+    for (const standard of seniorOf[slug] || []) {
+        let lane = lanes.find(item => item.name === standard.lane)
+        if (!lane) {
+            opened += 1
+            lane = { id: `h${opened}`, name: standard.lane, group: standard.group || '高中', from: null, cells: {}, requirements: [] }
+            const last = lanes.findLastIndex(item => item.group === lane.group)
+            lanes.splice(last >= 0 ? last + 1 : lanes.length, 0, lane)
+        }
+        laneOfStandard.set(standard.code, lane.id)
+        ;(lane.cells[standard.track.key] ||= []).push(standard.code)
+    }
     return { lanes: lanes.filter(lane => Object.keys(lane.cells).length), laneOfStandard }
 }
 
@@ -274,6 +328,13 @@ for (const slug of SUBJECTS) {
             search.push([point.code, column, clip(point.text, 56), standard.level2, taughtTitles.join('｜')])
         }
     }
+    for (const standard of seniorOf[slug] || []) {
+        outStandards[standard.code] = { title: standard.level2, stage: standard.stage, lane: laneOfStandard.get(standard.code), points: standard.indicators.map(point => point.code), module: standard.level1, source: standard.source }
+        for (const point of standard.indicators) {
+            outPoints[point.code] = { t: point.text, std: standard.code, col: standard.track.key, sec: null, pg: point.pages || [], gb: null, tags: [], n: [0, 0, 0] }
+            search.push([point.code, standard.track.key, clip(point.text, 56), standard.level2, ''])
+        }
+    }
     const mine = new Set(Object.keys(outPoints))
     const outEdges = kept.filter(([source, target]) => mine.has(source) || mine.has(target))
     const external = {}
@@ -288,7 +349,7 @@ for (const slug of SUBJECTS) {
     const file = {
         slug,
         subject: subject.subject,
-        prefix: subject.standards[0].code.slice(0, 2),
+        prefix: (subject.standards[0] || seniorOf[slug][0]).code.slice(0, 2),
         color: color(slug),
         source_version: subject.source_version,
         about: { organized_by: info.organized_by || null, terms: (info.terms || []).map(id => [id, termName[id] || id]), threads: threads[slug]?.source || null },
@@ -303,13 +364,14 @@ for (const slug of SUBJECTS) {
     writeFileSync(join(OUT, `${slug}.json`), `${JSON.stringify(file)}\n`)
     writeFileSync(join(OUT, 'lessons', `${slug}.json`), `${JSON.stringify({ fields: ['book', 'unit', 'lesson', 'relation', 'quote', 'source', 'page', 'edition_id', 'reviewed'], points: outLessons })}\n`)
     const taught = Object.values(outPoints).filter(point => point.n[0] > 0).length
-    manifest.push({ slug, subject: subject.subject, color: color(slug), points: Object.keys(outPoints).length, standards: subject.standards.length, lanes: lanes.length, taught, edges: kept.filter(([, target]) => mine.has(target)).length })
+    const senior = seniorOf[slug] || []
+    manifest.push({ slug, subject: subject.subject, color: color(slug), points: Object.keys(outPoints).length, senior_points: senior.reduce((sum, standard) => sum + standard.indicators.length, 0), standards: subject.standards.length + senior.length, lanes: lanes.length, taught, edges: kept.filter(([, target]) => mine.has(target)).length })
 }
 writeFileSync(join(OUT, 'search.json'), `${JSON.stringify({ fields: ['code', 'column', 'text', 'standard', 'lessons'], rows: search })}\n`)
 writeFileSync(join(OUT, 'manifest.json'), `${JSON.stringify({
     note: '知识图谱。要先会：学生没掌握来源要点，很可能学不好目标要点（不表示必须先学完）；由 kebiao 逐条判断，待核验。同一线索：课标里同一主题的上一学段或下一学段。',
     subjects: manifest,
-    prerequisites: { judged: report.judged, kept: report.kept, dropped: report.dropped.length, audit }
+    prerequisites: { judged: report.judged, kept: report.kept, dropped: report.dropped.length, audit, senior_audit: seniorAudit }
 }, null, 2)}\n`)
 console.log(`knowledge graph: ${manifest.length} subjects, ${search.length} 要点, 要先会 ${report.kept}/${report.judged} kept${report.dropped.length ? `, ${report.dropped.length} dropped` : ''}${audit.checked ? `, audit ${audit.right}/${audit.checked} right` : ''}`)
 for (const line of report.dropped.slice(0, 20)) console.log(`  dropped ${line}`)

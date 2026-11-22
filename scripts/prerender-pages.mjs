@@ -507,7 +507,7 @@ function knowledgeGraphPages() {
     const graphManifest = readJson('v2/graph/manifest.json')
     const hubCrumbs = [['首页', '/'], ['知识图谱', '/knowledge-graph']]
     add(STATIC_PAGE_META['/knowledge-graph'], `${crumbNav(hubCrumbs)}
-<p class="kbp-kicker">${V2_STANDARDS_DOC}</p>
+<p class="kbp-kicker">${V2_STANDARDS_DOC} · 普通高中课程标准（2017年版2020年修订）</p>
 <h1>知识图谱</h1>
 <p class="kbp-lede">每个点是课标里的一句要点。点一个，看它要先会什么、后面用到哪里、在哪本教材哪一课教。</p>
 ${list(graphManifest.subjects.map(entry => `${link(`/knowledge-graph/${entry.slug}`, `${entry.subject}知识图谱`)} <span class="kbp-code">${entry.lanes} 条线索 · ${entry.points} 个要点 · ${entry.taught} 个找到了主要在教的课</span>`))}
@@ -524,7 +524,8 @@ ${list(graphManifest.subjects.map(entry => `${link(`/knowledge-graph/${entry.slu
                 const info = graph.standards[std]
                 const codes = info.points.filter(code => graph.points[code]?.col === key)
                 if (!codes.length) return ''
-                return `<h3>${esc(columnLabel(key))} · ${link(`/standards/${std}`, info.title)}</h3>${list(codes.map(code => {
+                // 高中 standards have no page of their own yet
+                return `<h3>${esc(columnLabel(key))} · ${/-S5-/u.test(std) ? esc(info.title) : link(`/standards/${std}`, info.title)}</h3>${list(codes.map(code => {
                     const point = graph.points[code]
                     const lines = (before.get(code) || []).map(([source, reason]) => `${esc(source)}「${esc(clip(textOf(source), 30))}」（${esc(reason)}）`)
                     return `<span class="kbp-code">${esc(code)}</span> ${esc(point.t)}${point.tags?.length ? `<br><span class="kbp-note">教材：${esc(point.tags.join('；'))}</span>` : ''}${lines.length ? `<br><span class="kbp-note">要先会：${lines.join('；')}</span>` : ''}`
@@ -540,7 +541,7 @@ ${list(graphManifest.subjects.map(entry => `${link(`/knowledge-graph/${entry.slu
 <p class="kbp-lede">${entry.lanes} 条线索，${entry.points} 个要点，按年级从左到右排开；${entry.taught} 个要点在教材里找到了主要在教的课。每个要点都可以看它要先会什么、后面用到哪里、在哪一课教。</p>
 ${graph.about.threads ? `<p class="kbp-note">${esc(graph.about.threads)}</p>` : ''}
 ${lanes}
-<p class="kbp-note">要点逐字取自${V2_STANDARDS_DOC}。「要先会」和「教材里的课」由 kebiao 判断，待核验。</p>`, { jsonLd: [breadcrumbs(crumbs)], image: cardUrl(`subject/${entry.slug}`) })
+<p class="kbp-note">要点逐字取自${V2_STANDARDS_DOC}${entry.senior_points ? '和《普通高中课程标准（2017年版2020年修订）》' : ''}。「要先会」和「教材里的课」由 kebiao 判断，待核验。</p>`, { jsonLd: [breadcrumbs(crumbs)], image: entry.slug === 'technology' ? undefined : cardUrl(`subject/${entry.slug}`) })
     }
 }
 
