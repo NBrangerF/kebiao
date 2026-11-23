@@ -50,7 +50,8 @@ export function alignmentUnits(record) {
         let unit = units.find(item => item.name === name)
         if (!unit) units.push(unit = { name, chapter: lesson.chapters?.[0] || null, lessons: [] })
         const key = lessonKey(lesson.title)
-        let row = unit.lessons.find(item => item.key === key)
+        // a lesson with its own 学习目标 keeps its own row, so 「分一分（二）」's goals are not lost under 「分一分（一）」
+        let row = unit.lessons.find(item => item.key === key && !(lesson.goals && item.goals))
         const title = lesson.title.replace(HOUR, '').trim()
         if (!row) unit.lessons.push(row = { key, id: lesson.id, title, pdf_page: lesson.pdf_page || null, judged: false, rows: [] })
         // the plainest title names the row: 「正数与负数」, not 「正数与负数（一）」
